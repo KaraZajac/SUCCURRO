@@ -19,11 +19,17 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 
 | Source | Terms | Handling |
 |---|---|---|
-| Census, SAMHSA, HRSA, HUD, USDA, VA | US federal public domain | Full use, attributed |
-| BMLT (NA), TSML feeds (AA), Al-Anon API | Open formats published for reuse | Facts extracted, feed cited per record; honor any intergroup takedown request |
-| NAMI, Feeding America, CenterLink directory scrapes | Site ToS vary | Facts-only re-expression, per-record citation + archive link; throttled, robots-respecting collection |
+| Census, SAMHSA, HRSA, HUD, USDA, VA (CC0), ACF (Head Start, RHY, FVPSA, LIHEAP), IRS EO BMF, EOIR | US federal public domain | Full use, attributed |
+| BMLT (NA), TSML feeds (AA, Recovery Dharma, Refuge Recovery) | Open community feeds, no stated license; Meeting Guide spec is MIT | Facts extracted, feed cited per record; courtesy notification; honor any service-body takedown request |
+| Al-Anon WSO locator dataset | Widget data URL, not an offered API; © Al-Anon HQ | Permission email before redistribution; facts-only |
+| Mutual Aid Hub | **PDDL 1.0** (public-domain dedication) | Full use, attributed; snapshot early (fragile endpoint) |
+| feedam.org HSDS | CC BY-SA / CC BY (inconsistent); relicensing of 211/AmpleHarvest slices questionable | Federal-derived slices usable; rest secondary pending review; share-alike implications if ingested |
+| Eldercare Locator (ACL) | **ODbL 1.0** per data.gov | Share-alike/attribution obligations if ingested — decide before use |
+| NAMI, PFLAG, Feeding America, NNEDV, CenterLink, NDBN, MHA, Clubhouse, CCUSA, LSC, 988 roster | Org sites, ToS vary; facts-only | Facts-only re-expression, per-record citation + archive link; throttled, robots-respecting |
+| ProPublica Nonprofit Explorer | Attribution + link required; no paywalling | Enrichment only, attributed |
 | 211/United Way, findhelp.org | ToS restrict bulk use | **Not bulk-collected.** Manual gap-fill/verification only, cited as secondary |
-| domesticshelters.org | ToS restricts reuse | Pending rights review; default is link-out, not ingestion |
+| domesticshelters.org, OutCare, In The Rooms, Vivery/AccessFood, FoodPantries.org | ToS prohibit scraping/reuse (verified) | **Not ingested.** Link-out only; Vivery/AmpleHarvest/IAN via partnership ask |
+| AmpleHarvest, Immigration Advocates Network, ThroughLine, NSPN | No public bulk; partnership-friendly orgs | Contact first — do not scrape |
 
 ## Umbrella license
 
