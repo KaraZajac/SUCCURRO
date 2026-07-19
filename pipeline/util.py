@@ -29,7 +29,12 @@ def _host(url: str) -> str:
     return url.split("/", 3)[2]
 
 
-def get(url: str, timeout: int = 120) -> bytes:
+# for the few sites whose WAF blocks non-browser clients outright; still throttled
+BROWSER_UA = ("Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 "
+              "Firefox/128.0 (SUCCURRO-pipeline; kara@soulstone.org)")
+
+
+def get(url: str, timeout: int = 120, ua: str = UA) -> bytes:
     """Throttled GET. Fails loud: a broken source should stop the run."""
     host = _host(url)
     wait = _last_request.get(host, 0) + THROTTLE - time.monotonic()
@@ -37,18 +42,18 @@ def get(url: str, timeout: int = 120) -> bytes:
         time.sleep(wait)
     _last_request[host] = time.monotonic()
     try:
-        with urlopen(Request(url, headers={"User-Agent": UA}), timeout=timeout) as resp:
+        with urlopen(Request(url, headers={"User-Agent": ua}), timeout=timeout) as resp:
             return resp.read()
     except (HTTPError, URLError, TimeoutError) as e:
         raise SystemExit(f"fetch failed: {url} ({e})")
 
 
-def fetch(url: str, cache: Path, force: bool = False) -> Path:
+def fetch(url: str, cache: Path, force: bool = False, ua: str = UA) -> Path:
     """Idempotent download: the file on disk is the cache."""
     if cache.exists() and not force:
         return cache
     cache.parent.mkdir(parents=True, exist_ok=True)
-    cache.write_bytes(get(url))
+    cache.write_bytes(get(url, ua=ua))
     print(f"fetched {url} -> {cache.relative_to(ROOT)}")
     return cache
 

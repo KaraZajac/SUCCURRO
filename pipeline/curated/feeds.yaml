@@ -2,9 +2,94 @@
 # publish a 12 Step Meeting List JSON feed. Hand-maintained; verify a feed with
 #   curl -sL '<feed>' | head -c 300   (expect a JSON array of meeting objects)
 # state: the feed's home state (fallback when an address doesn't parse).
-- id: aa-dc
-  name: Washington Area Intergroup Association
-  program: aa
-  state: dc
-  url: https://aa-dc.org
-  feed: https://www.aa-dc.org/wp-admin/admin-ajax.php?action=meetings
+# ua: browser  -> site WAF blocks non-browser clients; fetch with browser-like UA.
+# Cache-file feeds (/wp-content/tsml-cache-<hash>.json): hash rotates; if a feed
+# 404s, re-discover the hash on the site's /meetings/ page.
+# Discovery sweep 2026-07-19; 17 more intergroups run TSML with restricted
+# (401/nonce-or-key) feeds — see docs/sources.md #4 escalation notes.
+- {id: aa-dc, name: Washington Area Intergroup Association, program: aa, state: dc,
+   url: https://aa-dc.org, feed: 'https://www.aa-dc.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: nyintergroup, name: New York Intergroup, program: aa, state: ny,
+   url: https://www.nyintergroup.org, feed: 'https://www.nyintergroup.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aahouston, name: Intergroup Association of Greater Houston, program: aa, state: tx,
+   url: https://aahouston.org, feed: 'https://aahouston.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: oc-aa, name: Orange County Central Office, program: aa, state: ca,
+   url: https://oc-aa.org, feed: 'https://oc-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasepia, name: Southeastern Pennsylvania Intergroup, program: aa, state: pa,
+   url: https://aasepia.org, feed: 'https://aasepia.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aaphoenix, name: Salt River Intergroup, program: aa, state: az,
+   url: https://aaphoenix.org, feed: 'https://aaphoenix.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: seattleaa, name: Greater Seattle Intergroup, program: aa, state: wa, ua: browser,
+   url: https://www.seattleaa.org, feed: 'https://www.seattleaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: atlantaaa, name: Atlanta Central Office, program: aa, state: ga,
+   url: https://atlantaaa.org, feed: 'https://atlantaaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: kc-aa, name: Kansas City Area Central Office, program: aa, state: mo,
+   url: https://kc-aa.org, feed: 'https://kc-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasandiego, name: San Diego Central Office, program: aa, state: ca,
+   url: https://aasandiego.org, feed: 'https://aasandiego.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasacramento, name: Central California Fellowship, program: aa, state: ca,
+   url: https://aasacramento.org, feed: 'https://aasacramento.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: lvcentraloffice, name: Las Vegas Central Office, program: aa, state: nv,
+   url: https://lvcentraloffice.org, feed: 'https://lvcentraloffice.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: daccaa, name: Denver Area Central Committee, program: aa, state: co,
+   url: https://daccaa.org, feed: 'https://daccaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasanantonio, name: San Antonio Intergroup, program: aa, state: tx,
+   url: https://aasanantonio.org, feed: 'https://aasanantonio.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aanashville, name: Nashville Central Office, program: aa, state: tn,
+   url: https://aanashville.org, feed: 'https://aanashville.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: okcintergroup, name: Oklahoma City Intergroup, program: aa, state: ok,
+   url: https://okcintergroup.org, feed: 'https://okcintergroup.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aastl, name: St. Louis Intergroup, program: aa, state: mo,
+   url: https://aastl.org, feed: 'https://aastl.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aaminneapolis, name: Minneapolis Intergroup, program: aa, state: mn,
+   url: https://aaminneapolis.org, feed: 'https://aaminneapolis.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: pdxaa, name: Portland Area Intergroup, program: aa, state: or,
+   url: https://pdxaa.org, feed: 'https://pdxaa.org/wp-content/tsml-cache-e3fc9e909a.json'}
+- {id: eastbayaa, name: East Bay Intergroup, program: aa, state: ca,
+   url: https://eastbayaa.org, feed: 'https://eastbayaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: suffolkny-aa, name: Suffolk Intergroup, program: aa, state: ny,
+   url: https://suffolkny-aa.org, feed: 'https://suffolkny-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasfmarin, name: San Francisco and Marin Intergroup, program: aa, state: ca,
+   url: https://aasfmarin.org, feed: 'https://sheets.code4recovery.org/storage/aasfmarin.json'}
+- {id: aacentralohio, name: Central Ohio Group Fellowship, program: aa, state: oh,
+   url: https://aacentralohio.org, feed: 'https://aacentralohio.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: csoaamaine, name: Central Service Office of Maine, program: aa, state: me,
+   url: https://csoaamaine.org, feed: 'https://csoaamaine.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aasanjose, name: Santa Clara County Intergroup, program: aa, state: ca,
+   url: https://aasanjose.org, feed: 'https://sheets.code4recovery.org/storage/12Ga8uwMG4WJ8pZ_SEU7vNETp_aQZ-2yNVsYDFqIwHyE.json'}
+- {id: aacincinnati, name: Cincinnati Intergroup, program: aa, state: oh,
+   url: https://aacincinnati.org, feed: 'https://aacincinnati.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: nassauny-aa, name: Nassau Intergroup, program: aa, state: ny,
+   url: https://nassauny-aa.org, feed: 'https://nassauny-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: omahaaa, name: Omaha Central Office, program: aa, state: ne,
+   url: https://omahaaa.org, feed: 'https://omahaaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: loukyaa, name: Greater Louisville Intergroup, program: aa, state: ky,
+   url: https://loukyaa.org, feed: 'https://loukyaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aavt, name: Vermont Area 70, program: aa, state: vt,
+   url: https://aavt.org, feed: 'https://aavt.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aatucson, name: Tucson Area Intergroup, program: aa, state: az,
+   url: https://aatucson.org, feed: 'https://aatucson.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aa-palmbeachcounty, name: Palm Beach County Intergroup, program: aa, state: fl,
+   url: https://aa-palmbeachcounty.org, feed: 'https://aa-palmbeachcounty.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: indyaa, name: Indianapolis Intergroup, program: aa, state: in,
+   url: https://indyaa.org, feed: 'https://indyaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aarichmond, name: Richmond and Central Virginia Intergroup, program: aa, state: va,
+   url: https://aarichmond.org, feed: 'https://aarichmond.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: albuquerqueaa, name: Albuquerque Central Office, program: aa, state: nm,
+   url: https://albuquerqueaa.org, feed: 'https://albuquerqueaa.org/wp-content/tsml-cache-5b6e8714c9.json'}
+- {id: cflintergroup, name: Central Florida Intergroup, program: aa, state: fl,
+   url: https://cflintergroup.org, feed: 'https://cflintergroup.org/wp-content/tsml-cache-f0d4529a36.json'}
+- {id: area63aa, name: South Dakota Area 63, program: aa, state: sd,
+   url: https://area63aa.org, feed: 'https://area63aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: raleighaa, name: Raleigh Wake County Intergroup, program: aa, state: nc,
+   url: https://raleighaa.com, feed: 'https://raleighaa.com/wp-admin/admin-ajax.php?action=meetings'}
+- {id: memphis-aa, name: Memphis Area Intergroup, program: aa, state: tn,
+   url: https://www.memphis-aa.org, feed: 'https://www.memphis-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: oahuaa, name: Oahu Intergroup, program: aa, state: hi,
+   url: https://oahuaa.org, feed: 'https://oahuaa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: aaspokane, name: Spokane Area Intergroup, program: aa, state: wa,
+   url: https://aaspokane.org, feed: 'https://aaspokane.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: ct-aa, name: Connecticut Area 11, program: aa, state: ct,
+   url: https://ct-aa.org, feed: 'https://ct-aa.org/wp-admin/admin-ajax.php?action=meetings'}
+- {id: area02alaska, name: Alaska Area 2, program: aa, state: ak,
+   url: https://area02alaska.org, feed: 'https://area02alaska.org/wp-admin/admin-ajax.php?action=meetings'}

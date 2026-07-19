@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 from .emit import Places, replace_records, today, write_source
-from .util import Flow, ROOT, SOURCES, fetch, load_yaml, slugify
+from .util import BROWSER_UA, Flow, ROOT, SOURCES, UA, fetch, load_yaml, slugify
 
 FEEDS = ROOT / "pipeline" / "curated" / "feeds.yaml"
 
@@ -131,8 +131,9 @@ def main(argv):
     records, seen_exact, skipped_feeds = [], set(), []
     for feed in feeds:
         cache = SOURCES / "tsml" / f"{feed['id']}.json"
+        ua = BROWSER_UA if feed.get("ua") == "browser" else UA
         try:
-            rows = json.loads(fetch(feed["feed"], cache, force=force).read_text())
+            rows = json.loads(fetch(feed["feed"], cache, force=force, ua=ua).read_text())
         except (SystemExit, json.JSONDecodeError) as e:
             print(f"WARNING: skipping feed {feed['id']}: {e}")
             skipped_feeds.append(feed["id"])
