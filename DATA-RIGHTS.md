@@ -9,10 +9,10 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 
 | Layer | Contents | Provenance | Terms |
 |---|---|---|---|
-| `data/orgs`, `data/sites`, `data/meetings` | Curated factual records | Original curation over sources below | CC BY 4.0 |
+| `data/orgs`, `data/sites`, `data/meetings` | Curated factual records | Original curation over sources below | CC BY-NC 4.0 |
 | `data/places` | Place registry | US Census Bureau gazetteer | Public domain (US federal) |
-| `data/taxonomy`, `docs/`, `schemas/` | Original work | This project | CC BY 4.0 / MIT (code) |
-| `data/sources` | Provenance metadata (URLs, dates, hashes) | Original | CC BY 4.0 |
+| `data/taxonomy`, `docs/`, `schemas/` | Original work | This project | CC BY-NC 4.0 / MIT (code) |
+| `data/sources` | Provenance metadata (URLs, dates, hashes) | Original | CC BY-NC 4.0 |
 | `sources/` (gitignored) | Raw downloads, scrape caches | Upstream | Upstream terms; never redistributed |
 
 ## Per-source terms
@@ -23,7 +23,7 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 | BMLT (NA), TSML feeds (AA, Recovery Dharma, Refuge Recovery) | Open community feeds, no stated license; Meeting Guide spec is MIT | Facts extracted, feed cited per record; courtesy notification; honor any service-body takedown request |
 | Al-Anon WSO locator dataset | Widget data URL, not an offered API; © Al-Anon HQ | Permission email before redistribution; facts-only |
 | Mutual Aid Hub | **PDDL 1.0** (public-domain dedication) | Full use, attributed; snapshot early (fragile endpoint) |
-| feedam.org HSDS | CC BY-SA / CC BY (inconsistent); relicensing of 211/AmpleHarvest slices questionable | Federal-derived slices usable; rest secondary pending review; share-alike implications if ingested |
+| feedam.org HSDS | CC BY-SA / CC BY (inconsistent); relicensing of 211/AmpleHarvest slices questionable | Federal-derived slices usable; rest **not ingestable** — SA share-alike is incompatible with our BY-NC umbrella |
 | Eldercare Locator (ACL) | **ODbL 1.0** per data.gov | Share-alike/attribution obligations if ingested — decide before use |
 | NAMI, PFLAG, Feeding America, NNEDV, CenterLink, NDBN, MHA, Clubhouse, CCUSA, LSC, 988 roster | Org sites, ToS vary; facts-only | Facts-only re-expression, per-record citation + archive link; throttled, robots-respecting |
 | ProPublica Nonprofit Explorer | Attribution + link required; no paywalling | Enrichment only, attributed |
@@ -33,7 +33,7 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 
 ## Umbrella license
 
-Dataset (`data/`): **CC BY 4.0**. Code (`pipeline/`, `site/`, `schemas/`): **MIT**.
+Dataset (`data/`): **CC BY-NC 4.0**. Code (`pipeline/`, `site/`, `schemas/`): **MIT**.
 
 ## Safety and ethics posture
 

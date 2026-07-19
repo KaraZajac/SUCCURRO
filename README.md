@@ -63,4 +63,5 @@ Core rules inherited from the family:
 
 ## License
 
-Code is MIT (`LICENSE`). Dataset rights are layered per source — see `DATA-RIGHTS.md`.
+Code is MIT (`LICENSE`). The dataset is CC BY-NC 4.0, with rights layered per
+source — see `DATA-RIGHTS.md`.

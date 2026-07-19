@@ -19,8 +19,9 @@ Associates), which it cannot redistribute at record level.
 - Health Care Services 1990–2022 — E209050
 
 Role for SUCCURRO: validation/benchmark layer (tract-density cross-checks) and
-NAICS 624/813 taxonomy reference. The NC clause on recent releases makes
-SUCCURRO's open license a differentiator.
+NAICS 624/813 taxonomy reference. (SUCCURRO is also CC BY-NC by choice — the
+license differentiator vs NaNDA is point-level records with per-record
+provenance, not the license terms.)
 
 ## ICPSR / academic point-level attempts
 

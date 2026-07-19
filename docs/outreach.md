@@ -35,7 +35,7 @@ Happy to answer any questions about the project.
 Thank you,
 Kara Zajac
 
-**Status:** draft
+**Status:** sent 2026-07-19
 
 ---
 
@@ -66,7 +66,7 @@ Thanks for considering it — and for what AmpleHarvest does.
 
 Kara Zajac
 
-**Status:** draft
+**Status:** sent 2026-07-19
 
 ---
 
@@ -99,4 +99,4 @@ Happy to share more about the project or discuss over a call.
 Thank you,
 Kara Zajac
 
-**Status:** draft
+**Status:** sent 2026-07-19
