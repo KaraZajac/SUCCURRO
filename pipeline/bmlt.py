@@ -99,7 +99,14 @@ def meeting_format(row: dict) -> str:
     return "in-person"
 
 
-def build_record(row: dict, rs_id: int, places: Places, source_id: str) -> dict | None:
+def in_us_bounds(lat: float, lng: float) -> bool:
+    """Rough CONUS+AK+HI+PR box — enough to reject other continents whose
+    province codes collide with US states (Western Australia's WA, etc.)."""
+    return 17.5 <= lat <= 71.5 and -180.0 <= lng <= -64.5
+
+
+def build_record(row: dict, rs_id: int, places: Places, source_id: str,
+                 us_server: bool) -> dict | None:
     name = (row.get("meeting_name") or "").strip()
     if not name:
         return None
@@ -115,6 +122,8 @@ def build_record(row: dict, rs_id: int, places: Places, source_id: str) -> dict 
         return None
 
     fmt = meeting_format(row)
+    if fmt == "online" and not us_server:
+        return None  # foreign server's online meeting behind a colliding code
     entry = Flow(day=day, time=time)
     duration = parse_duration(row.get("duration_time"))
     if duration:
@@ -145,9 +154,13 @@ def build_record(row: dict, rs_id: int, places: Places, source_id: str) -> dict 
         try:
             lat, lng = float(row["latitude"]), float(row["longitude"])
             if (lat, lng) != (0.0, 0.0) and abs(lat) <= 90 and abs(lng) <= 180:
+                if not in_us_bounds(lat, lng):
+                    return None  # foreign meeting behind a colliding state code
                 geo = Flow(lat=round(lat, 5), lng=round(lng, 5))
         except (KeyError, TypeError, ValueError):
             pass
+        if geo is None and not us_server and not geoid:
+            return None  # no coords, foreign-centered server, unresolvable city
         if not geoid and geo:
             near = places.nearest(geo["lat"], geo["lng"])
             if near and near[0] == st:
@@ -200,6 +213,16 @@ def main(argv):
     per_server, skipped_servers = {}, []
     for rs in sorted(servers, key=lambda r: r["id"]):
         rs_id, rs_url = rs["id"], rs["url"].rstrip("/")
+        # a server whose own center point is outside the US only contributes
+        # meetings that carry in-bounds coordinates or a resolvable US city
+        us_server = False
+        try:
+            info = json.loads(rs.get("serverInfo") or "{}")
+            info = info[0] if isinstance(info, list) else info
+            us_server = in_us_bounds(float(info["centerLatitude"]),
+                                     float(info["centerLongitude"]))
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+            pass
         endpoint = f"{rs_url}/client_interface/json/?switcher=GetSearchResults"
         try:
             rows = fetch_json(endpoint, cache_dir / f"server-{rs_id}.json", force)
@@ -217,7 +240,7 @@ def main(argv):
         for row in rows:
             if not isinstance(row, dict) or str(row.get("published", "1")) == "0":
                 continue
-            rec = build_record(row, rs_id, places, source_id)
+            rec = build_record(row, rs_id, places, source_id, us_server)
             if rec is None:
                 continue
             ext = rec["external_ids"]["bmlt"]
