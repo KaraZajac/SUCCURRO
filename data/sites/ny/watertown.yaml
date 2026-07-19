@@ -66,15 +66,24 @@
   name: Harold T Wiley School
   categories:
   - meal-program
-  address: {street: 1351 Washington St, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 1351 Washington St
+    city: Watertown
+    state: ny
+    zip: '13601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Watertown City SD.
   place: '3678608'
-  geo: {lat: 43.95646, lng: -75.91408}
+  geo:
+    lat: 43.95646
+    lng: -75.91408
   phone: (315) 785-3717
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0222}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0222
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/jcc-health-wellness-center
   name: JCC Health & Wellness Center
   categories:
@@ -100,15 +109,24 @@
   name: Jefferson-Lewis Boces Alternative Ed
   categories:
   - meal-program
-  address: {street: 20104 St Rt 3, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 20104 St Rt 3
+    city: Watertown
+    state: ny
+    zip: '13601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Watertown City SD.
   place: '3678608'
-  geo: {lat: 43.97211, lng: -75.97173}
+  geo:
+    lat: 43.97211
+    lng: -75.97173
   phone: (315) 785-3717
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0290}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0290
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/louize-pantry
   name: louize pantry
   categories:
@@ -172,15 +190,24 @@
   name: North Elementary School
   categories:
   - meal-program
-  address: {street: 171 E Hoard St, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 171 E Hoard St
+    city: Watertown
+    state: ny
+    zip: '13601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Watertown City SD.
   place: '3678608'
-  geo: {lat: 43.98639, lng: -75.90181}
+  geo:
+    lat: 43.98639
+    lng: -75.90181
   phone: (315) 785-3717
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0426}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0426
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/north-star-industries-outpatient-clinic
   name: North Star Industries Outpatient Clinic
   categories:
@@ -418,6 +445,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/watertown/watertown-2-va-clinic
+  name: Watertown 2 VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 19472 US Route 11, city: Watertown, state: ny, zip: '13601'}
+  place: '3678608'
+  geo: {lat: 43.94832, lng: -75.91437}
+  phone: 315-425-4400
+  website: https://www.va.gov/syracuse-health-care/locations/watertown-2-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  external_ids: {va: vha_528QN}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/watertown/watertown-head-start
   name: Watertown Head Start
   categories:
@@ -459,18 +503,69 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/watertown/watertown-mobile-vet-center
+  name: Watertown Mobile Vet Center
+  categories: &id002
+  - vet-center
+  address: {street: '1511 Washington Street, Suite A', city: Watertown, state: ny, zip: '13601'}
+  place: '3678608'
+  geo: {lat: 43.95263, lng: -75.91456}
+  phone: 315-782-5479
+  website: https://www.va.gov/watertown-vet-center/locations/#watertown-mobile-vet-center
+  external_ids: {va: vc_0889MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/watertown/watertown-senior-high-school
   name: Watertown Senior High School
   categories:
   - meal-program
-  address: {street: 1335 Washington St, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 1335 Washington St
+    city: Watertown
+    state: ny
+    zip: '13601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Watertown City SD.
   place: '3678608'
-  geo: {lat: 43.95745, lng: -75.91396}
+  geo:
+    lat: 43.95745
+    lng: -75.91396
   phone: (315) 785-3717
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0805}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0805
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/watertown/watertown-va-clinic
+  name: Watertown VA Clinic
+  categories: *id001
+  description: Primary Care CBOC
+  address: {street: 1222 Arsenal Street, city: Watertown, state: ny, zip: '13601'}
+  place: '3678608'
+  geo: {lat: 43.98222, lng: -75.9432}
+  phone: 315-425-8240
+  website: https://www.va.gov/syracuse-health-care/locations/watertown-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_528GO}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ny/watertown/watertown-vet-center
+  name: Watertown Vet Center
+  categories: *id002
+  address: {street: '1511 Washington Street, Suite A', city: Watertown, state: ny, zip: '13601'}
+  place: '3678608'
+  geo: {lat: 43.95253, lng: -75.91371}
+  phone: 315-782-5479
+  website: https://www.va.gov/watertown-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0135V}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ny/watertown/wiley-school
   name: Wiley School

@@ -234,6 +234,23 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: in/marion-6908/marion-va-medical-center
+  name: Marion VA Medical Center
+  categories:
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 1700 East 38th Street, city: Marion, state: in, zip: '46953'}
+  place: '1846908'
+  geo: {lat: 40.52368, lng: -85.6372}
+  phone: 765-674-3321
+  website: https://www.va.gov/northern-indiana-health-care/locations/marion-va-medical-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_610}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/marion-6908/meridian-health-services-corp
   name: Meridian Health Services Corp
   categories:
@@ -295,15 +312,24 @@
   name: Nc Eastbrook Jr-Sr High School
   categories:
   - meal-program
-  address: {street: 560 S 900 E, city: Marion, state: in, zip: '46953'}
+  address:
+    street: 560 S 900 E
+    city: Marion
+    state: in
+    zip: '46953'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Eastbrook Community School
     Corp.
   place: '1846908'
-  geo: {lat: 40.54543, lng: -85.50353}
-  external_ids: {usda_master: Cycle 03_IN_SFSP_0567}
+  geo:
+    lat: 40.54543
+    lng: -85.50353
+  external_ids:
+    usda_master: Cycle 03_IN_SFSP_0567
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/marion-6908/radiant-health-adams-street
   name: Radiant Health Adams Street
   categories:
@@ -506,3 +532,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/marion-6908/va-regional-benefit-satellite-office-at-marion-v
+  name: VA Regional Benefit Satellite Office at Marion VA Medical Center
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: '1700 East 38th Street, Suite 1300', city: Marion, state: in, zip: '46953'}
+  place: '1846908'
+  geo: {lat: 40.52368, lng: -85.6372}
+  phone: 260-426-5431, ext. 73804
+  external_ids: {va: vba_326c}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

@@ -32,19 +32,55 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/kettering/dayton-mobile-vet-center
+  name: Dayton Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '3085 Woodman Drive, Suite 180', city: Kettering, state: oh, zip: '45420'}
+  place: '3940040'
+  geo: {lat: 39.69934, lng: -84.12453}
+  phone: 937-296-0489
+  website: https://www.va.gov/dayton-vet-center/locations/#dayton-mobile-vet-center
+  external_ids: {va: vc_0810MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: oh/kettering/dayton-vet-center
+  name: Dayton Vet Center
+  categories: *id001
+  address: {street: '3085 Woodman Drive, Suite 180', city: Kettering, state: oh, zip: '45420'}
+  place: '3940040'
+  geo: {lat: 39.69934, lng: -84.12453}
+  phone: 937-296-0489
+  website: https://www.va.gov/dayton-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0225V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/kettering/greenmont-elementary-school
   name: Greenmont Elementary School
   categories:
   - meal-program
-  address: {street: 500 Lincoln Park Blvd., city: Kettering, state: oh, zip: '45429'}
+  address:
+    street: 500 Lincoln Park Blvd.
+    city: Kettering
+    state: oh
+    zip: '45429'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Kettering City SD.
   place: '3940040'
-  geo: {lat: 39.69668, lng: -84.16023}
+  geo:
+    lat: 39.69668
+    lng: -84.16023
   phone: (937) 499-1449
-  external_ids: {usda_master: Cycle 08_OH_SSO_0046}
+  external_ids:
+    usda_master: Cycle 08_OH_SSO_0046
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/kettering/lifepointe-ymca
   name: Lifepointe YMCA
   categories:

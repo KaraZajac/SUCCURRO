@@ -42,15 +42,24 @@
   name: Capitol Encore Academy
   categories:
   - meal-program
-  address: {street: 126 Hay Street, city: Fayetteville, state: nc, zip: '28301'}
+  address:
+    street: 126 Hay Street
+    city: Fayetteville
+    state: nc
+    zip: '28301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Capitol Encore Academy.
   place: '3722920'
-  geo: {lat: 35.05291, lng: -78.87921}
+  geo:
+    lat: 35.05291
+    lng: -78.87921
   phone: (910) 849-0888
-  external_ids: {usda_master: Cycle 06_NC_SSO_0786}
+  external_ids:
+    usda_master: Cycle 06_NC_SSO_0786
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/carolina-outreach-llc-fayetteville
   name: Carolina Outreach LLC Fayetteville
   categories:
@@ -116,28 +125,46 @@
   name: Cliffdale Rec Center - Mobile
   categories:
   - meal-program
-  address: {street: 6404 Cliffdale Road, city: Fayetteville, state: nc, zip: '28314'}
+  address:
+    street: 6404 Cliffdale Road
+    city: Fayetteville
+    state: nc
+    zip: '28314'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.05827, lng: -78.99344}
+  geo:
+    lat: 35.05827
+    lng: -78.99344
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1860}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1860
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/college-lakes-elementary
   name: College Lakes Elementary
   categories:
   - meal-program
-  address: {street: 4963 Rosehill Road, city: Fayetteville, state: nc, zip: '28311'}
+  address:
+    street: 4963 Rosehill Road
+    city: Fayetteville
+    state: nc
+    zip: '28311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.12747, lng: -78.8984}
+  geo:
+    lat: 35.12747
+    lng: -78.8984
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1830}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1830
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/cumberland-county-communicare
   name: Cumberland County CommuniCare
   categories:
@@ -159,6 +186,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/fayetteville/cumberland-county-va-clinic
+  name: Cumberland County VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Health Care Center (HCC)
+  address: {street: 7300 South Raeford Road, city: Fayetteville, state: nc, zip: '28304'}
+  place: '3722920'
+  geo: {lat: 35.03346, lng: -79.03011}
+  phone: 910-488-2120
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/cumberland-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '17:00'}
+  external_ids: {va: vha_565GL}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/fayetteville/elite-care-service-inc-sacot-program
   name: Elite Care Service Inc SACOT Program
   categories:
@@ -239,6 +283,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/fayetteville/fayetteville-va-medical-center
+  name: Fayetteville VA Medical Center
+  categories: *id001
+  description: VA Medical Center (VAMC)
+  address: {street: 2300 Ramsey Street, city: Fayetteville, state: nc, zip: '28301'}
+  place: '3722920'
+  geo: {lat: 35.088, lng: -78.87674}
+  phone: 910-488-2120
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/fayetteville-va-medical-center/
+  external_ids: {va: vha_565}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nc/fayetteville/fayetteville-va-mobile-medical-unit
+  name: Fayetteville VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 2300 Ramsey Street, city: Fayetteville, state: nc, zip: '28301'}
+  place: '3722920'
+  geo: {lat: 35.088, lng: -78.87674}
+  phone: 910-488-2120
+  website: https://www.va.gov/find-locations/facility/vha_565QB
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565QB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/fayetteville/fisher-street
   name: Fisher Street
   categories:
@@ -394,28 +466,46 @@
   name: Kiwanis Rec Center - Mobile
   categories:
   - meal-program
-  address: {street: 352 Devers Street, city: Fayetteville, state: nc, zip: '28303'}
+  address:
+    street: 352 Devers Street
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.06944, lng: -78.92182}
+  geo:
+    lat: 35.06944
+    lng: -78.92182
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1857}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1857
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/lake-rim-elementary
   name: Lake Rim Elementary
   categories:
   - meal-program
-  address: {street: 1455 Hoke Loop Rd., city: Fayetteville, state: nc, zip: '28314'}
+  address:
+    street: 1455 Hoke Loop Rd.
+    city: Fayetteville
+    state: nc
+    zip: '28314'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.05081, lng: -79.07639}
+  geo:
+    lat: 35.05081
+    lng: -79.07639
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1847}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1847
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/life-net-services-llc
   name: Life Net Services LLC
   categories:
@@ -458,15 +548,24 @@
   name: Massey Hill Rec Center - Mobile
   categories:
   - meal-program
-  address: {street: 1612 Camden Road, city: Fayetteville, state: nc, zip: '28306'}
+  address:
+    street: 1612 Camden Road
+    city: Fayetteville
+    state: nc
+    zip: '28306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.0286, lng: -78.89751}
+  geo:
+    lat: 35.0286
+    lng: -78.89751
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1858}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1858
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/murray-fork-clinic
   name: Murray Fork Clinic
   categories:
@@ -525,6 +624,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/fayetteville/raeford-road-va-clinic
+  name: Raeford Road VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 4101 Raeford Road, city: Fayetteville, state: nc, zip: '28304'}
+  place: '3722920'
+  geo: {lat: 35.04374, lng: -78.94618}
+  phone: 910-908-2222
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/raeford-road-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565QD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/fayetteville/renew-counseling-center-llc
   name: Renew Counseling Center LLC
   categories:
@@ -546,45 +660,87 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/fayetteville/robeson-street-va-clinic
+  name: Robeson Street VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 2301 Robeson Street, city: Fayetteville, state: nc, zip: '28305'}
+  place: '3722920'
+  geo: {lat: 35.04327, lng: -78.91718}
+  phone: 910-483-9727
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/robeson-street-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/fayetteville/roy-turner-park-mobile
   name: Roy Turner Park- Mobile
   categories:
   - meal-program
-  address: {street: 4623 Blanton Rd, city: Fayetteville, state: nc, zip: '28303'}
+  address:
+    street: 4623 Blanton Rd
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.09443, lng: -78.94272}
+  geo:
+    lat: 35.09443
+    lng: -78.94272
   phone: (910) 584-2394
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1871}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1871
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/sanford-high-school
   name: Sanford High School
   categories:
   - meal-program
-  address: {street: 2301 Fort Bragg Road, city: Fayetteville, state: nc, zip: '28303'}
+  address:
+    street: 2301 Fort Bragg Road
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.06565, lng: -78.91481}
+  geo:
+    lat: 35.06565
+    lng: -78.91481
   phone: (910) 678-2502
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1827}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1827
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/smith-rec-center-mobile
   name: Smith Rec Center - Mobile
   categories:
   - meal-program
-  address: {street: 1520 Slater Ave, city: Fayetteville, state: nc, zip: '28301'}
+  address:
+    street: 1520 Slater Ave
+    city: Fayetteville
+    state: nc
+    zip: '28301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.07786, lng: -78.89793}
+  geo:
+    lat: 35.07786
+    lng: -78.89793
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1859}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1859
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/solas-health-pllc
   name: Solas Health PLLC
   categories:
@@ -666,27 +822,59 @@
   name: Sunny Side Elementary
   categories:
   - meal-program
-  address: {street: 3876 Sunnyside School Road, city: Fayetteville, state: nc, zip: '28312'}
+  address:
+    street: 3876 Sunnyside School Road
+    city: Fayetteville
+    state: nc
+    zip: '28312'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.02809, lng: -78.79687}
+  geo:
+    lat: 35.02809
+    lng: -78.79687
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1850}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1850
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/transitional-summer-school-westover-high
   name: Transitional Summer School @ Westover High
   categories:
   - meal-program
-  address: {street: 277 Bonanza Dr, city: Fayetteville, state: nc, zip: '28303'}
+  address:
+    street: 277 Bonanza Dr
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.08332, lng: -78.98918}
+  geo:
+    lat: 35.08332
+    lng: -78.98918
   phone: (910) 584-2394
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1825}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1825
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nc/fayetteville/veteran-readiness-and-employment-at-fayetteville
+  name: Veteran Readiness and Employment at Fayetteville Technical Community College
+  categories:
+  - va-facility
+  description: Veteran Readiness and Employment Office
+  address: {street: '2817 Fort Bragg Road, General Classroom Building, Room 202-A', city: Fayetteville,
+    state: nc, zip: '28303'}
+  place: '3722920'
+  geo: {lat: 35.07066, lng: -78.92591}
+  phone: 910-486-7383
+  external_ids: {va: vba_318r}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: nc/fayetteville/village-drive-little-free-pantry-fayetteville-nc
   name: Village Drive Little Free Pantry Fayetteville NC
@@ -749,25 +937,43 @@
   name: Walker Spivey Elementary
   categories:
   - meal-program
-  address: {street: 500 Fisher Street, city: Fayetteville, state: nc, zip: '28301'}
+  address:
+    street: 500 Fisher Street
+    city: Fayetteville
+    state: nc
+    zip: '28301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.03975, lng: -78.87232}
+  geo:
+    lat: 35.03975
+    lng: -78.87232
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1835}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1835
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/westover-rec-center-mobile
   name: Westover Rec Center - Mobile
   categories:
   - meal-program
-  address: {street: 267 Bonanza Drive, city: Fayetteville, state: nc, zip: '28303'}
+  address:
+    street: 267 Bonanza Drive
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cumberland County Schools.
   place: '3722920'
-  geo: {lat: 35.08329, lng: -78.98918}
+  geo:
+    lat: 35.08329
+    lng: -78.98918
   phone: (910) 678-2541
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1862}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1862
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

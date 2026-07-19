@@ -59,3 +59,42 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/secaucus/secaucus-mobile-vet-center
+  name: Secaucus Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '110A Meadowlands Parkway, Suite 102', city: Secaucus, state: nj, zip: 07094}
+  place: '3466570'
+  geo: {lat: 40.78663, lng: -74.07522}
+  phone: 201-223-7787
+  website: https://www.va.gov/secaucus-vet-center/locations/#secaucus-mobile-vet-center
+  external_ids: {va: vc_0857MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nj/secaucus/secaucus-mobile-vet-center-2
+  name: Secaucus Mobile Vet Center
+  categories: *id001
+  address: {street: '110A Meadowlands Parkway, Suite 102', city: Secaucus, state: nj, zip: 07094}
+  place: '3466570'
+  geo: {lat: 40.78669, lng: -74.07519}
+  phone: 201-223-7787
+  website: https://www.va.gov/find-locations/facility/vc_0896MVC
+  external_ids: {va: vc_0896MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nj/secaucus/secaucus-vet-center
+  name: Secaucus Vet Center
+  categories: *id001
+  address: {street: '110A Meadowlands Parkway, Suite 102', city: Secaucus, state: nj, zip: 07094}
+  place: '3466570'
+  geo: {lat: 40.78912, lng: -74.07389}
+  phone: 201-223-7787
+  website: https://www.va.gov/secaucus-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0102V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

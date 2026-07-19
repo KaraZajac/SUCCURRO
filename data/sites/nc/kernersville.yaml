@@ -32,6 +32,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/kernersville/kernersville-va-clinic
+  name: Kernersville VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Health Care Center (HCC)
+  address: {street: 1695 Kernersville Medical Parkway, city: Kernersville, state: nc, zip: '27284'}
+  place: '3735600'
+  geo: {lat: 36.09333, lng: -80.04914}
+  phone: 336-515-5000
+  website: https://www.va.gov/salisbury-health-care/locations/kernersville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri, sat], open: '07:00', close: '17:00'}
+  external_ids: {va: vha_659BY}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/kernersville/kernersville-va-healthcare-center-outpatient-cli
   name: Kernersville VA Healthcare Center Outpatient Clinic
   categories:
@@ -101,15 +118,24 @@
   name: Ncm Union Cross Elementary School
   categories:
   - meal-program
-  address: {street: 4300 High Point Road, city: Kernersville, state: nc, zip: '27284'}
+  address:
+    street: 4300 High Point Road
+    city: Kernersville
+    state: nc
+    zip: '27284'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3735600'
-  geo: {lat: 36.04803, lng: -80.11644}
+  geo:
+    lat: 36.04803
+    lng: -80.11644
   phone: (336) 727-0617
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0956}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0956
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/kernersville/piedmont-triad-regional-council
   name: Piedmont Triad Regional Council
   categories:

@@ -2,16 +2,25 @@
   name: Baypoint Preparatory Academy - San Diego
   categories:
   - meal-program
-  address: {street: 520 E. Carmel St., city: San Marcos, state: ca, zip: '92078'}
+  address:
+    street: 520 E. Carmel St.
+    city: San Marcos
+    state: ca
+    zip: '92078'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAYPOINT PREPARATORY
     ACADEMY.
   place: 0668196
-  geo: {lat: 33.13809, lng: -117.15105}
+  geo:
+    lat: 33.13809
+    lng: -117.15105
   phone: (951) 956-0403
-  external_ids: {usda_master: Cycle 04_CA_SSO_0479}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0479
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-marcos/capalina-comprehensive-treatment-center
   name: Capalina Comprehensive Treatment Center
   categories:
@@ -136,15 +145,53 @@
   name: San Marcos Elementary
   categories:
   - meal-program
-  address: {street: 1 Tiger Way, city: San Marcos, state: ca, zip: '92069'}
+  address:
+    street: 1 Tiger Way
+    city: San Marcos
+    state: ca
+    zip: '92069'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SAN MARCOS UNIFIED SCHOOL
     DISTRICT.
   place: 0668196
-  geo: {lat: 33.14156, lng: -117.16769}
+  geo:
+    lat: 33.14156
+    lng: -117.16769
   phone: (760) 752-1250
-  external_ids: {usda_master: Cycle 08_CA_SSO_0981}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_0981
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ca/san-marcos/san-marcos-mobile-vet-center
+  name: San Marcos Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: 'One Civic Drive, Suite 150', city: San Marcos, state: ca, zip: '92069'}
+  place: 0668196
+  geo: {lat: 33.14087, lng: -117.15883}
+  phone: 855-898-6050
+  website: https://www.va.gov/find-locations/facility/vc_0883MVC
+  external_ids: {va: vc_0883MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/san-marcos/san-marcos-vet-center
+  name: San Marcos Vet Center
+  categories: *id001
+  address: {street: '1 Civic Center Drive, Suite 150', city: San Marcos, state: ca, zip: '92069'}
+  place: 0668196
+  geo: {lat: 33.14091, lng: -117.15979}
+  phone: 855-898-6050
+  website: https://www.va.gov/san-marcos-vet-center/
+  hours:
+  - {days: [mon], open: '08:00', close: '20:30'}
+  - {days: [tue, wed, thu], open: '08:00', close: '20:00'}
+  - {days: [fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0642V}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ca/san-marcos/truecare
   name: TrueCare

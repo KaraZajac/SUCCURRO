@@ -42,15 +42,24 @@
   name: A1 Mobile Home Park
   categories:
   - meal-program
-  address: {street: 1025 Gamer St., city: Colorado Springs, state: co, zip: '80905'}
+  address:
+    street: 1025 Gamer St.
+    city: Colorado Springs
+    state: co
+    zip: '80905'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.8139, lng: -104.8342}
+  geo:
+    lat: 38.8139
+    lng: -104.8342
   phone: (719) 520-2933
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0092}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0092
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/achieve-whole-recovery
   name: Achieve Whole Recovery
   categories:
@@ -270,6 +279,22 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/colorado-springs-vet-center
+  name: Colorado Springs Vet Center
+  categories:
+  - vet-center
+  address: {street: '3920 North Union Blvd, Suite 310', city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.88714, lng: -104.78662}
+  phone: 719-471-9992
+  website: https://www.va.gov/colorado-springs-vet-center/
+  hours:
+  - {days: [mon, tue], open: '08:00', close: '18:30'}
+  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0525V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/colorado-springs/convenient-care-center
   name: Convenient Care Center
   categories:
@@ -587,6 +612,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/garden-of-the-gods-va-clinic
+  name: Garden of the Gods VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 1365 Garden of the Gods Road, city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.89648, lng: -104.85347}
+  phone: 719-593-5300
+  website: https://www.va.gov/eastern-colorado-health-care/locations/garden-of-the-gods-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_554QF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/colorado-springs/gateway-to-success
   name: Gateway to Success
   categories:
@@ -1099,15 +1141,24 @@
   name: Palmer Park
   categories:
   - meal-program
-  address: {street: 3650 Maizeland, city: Colorado Springs, state: co, zip: '80909'}
+  address:
+    street: 3650 Maizeland
+    city: Colorado Springs
+    state: co
+    zip: '80909'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.86791, lng: -104.76066}
+  geo:
+    lat: 38.86791
+    lng: -104.76066
   phone: (719) 520-2920
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0091}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0091
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/peak-vista-administrative-services-center
   name: Peak Vista Administrative Services Center
   categories:
@@ -1192,6 +1243,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/pfc-floyd-k-lindstrom-department-of-veterans-aff
+  name: PFC Floyd K. Lindstrom Department of Veterans Affairs Clinic
+  categories: *id001
+  description: Multi-Specialty CBOC
+  address: {street: 3141 Centennial Boulevard, city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.87414, lng: -104.84536}
+  phone: 719-327-5660
+  website: https://www.va.gov/eastern-colorado-health-care/locations/pfc-floyd-k-lindstrom-department-of-veterans-affairs-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  external_ids: {va: vha_554GE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/colorado-springs/pikes-peak
   name: PIKES PEAK
   categories:
@@ -1333,6 +1399,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/space-center-va-clinic
+  name: Space Center VA Clinic
+  categories: *id001
+  description: Primary Care CBOC
+  address: {street: 565 Space Center Drive, city: Colorado Springs, state: co, zip: '80915'}
+  place: 0816000
+  geo: {lat: 38.84058, lng: -104.72696}
+  phone: 719-638-5000
+  website: https://www.va.gov/eastern-colorado-health-care/locations/space-center-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_554GM}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/colorado-springs/stratton-meadows
   name: STRATTON MEADOWS
   categories:
@@ -1371,6 +1452,47 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/union-boulevard-va-clinic
+  name: Union Boulevard VA Clinic
+  categories: *id001
+  description: Primary Care CBOC
+  address: {street: '3920 North Union Boulevard, Premier Health Plaza', city: Colorado Springs, state: co,
+    zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.88767, lng: -104.78749}
+  phone: 719-327-5660
+  website: https://www.va.gov/eastern-colorado-health-care/locations/union-boulevard-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_554GK}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: co/colorado-springs/va-regional-benefit-satellite-office-at-garden-o
+  name: VA Regional Benefit Satellite Office at Garden of the Gods VA Clinic
+  categories: &id002
+  - va-facility
+  description: Satellite Office
+  address: {street: '1365 Garden of the Gods Rd, Suite 110', city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.89642, lng: -104.85384}
+  phone: 303-914-5550
+  external_ids: {va: vba_339g}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: co/colorado-springs/va-regional-benefit-satellite-office-at-pfc-floy
+  name: VA Regional Benefit Satellite Office at PFC Floyd K. Lindstrom VA Clinic
+  categories: *id002
+  description: Satellite Office
+  address: {street: 3141 Centennial Blvd, city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  geo: {lat: 38.87414, lng: -104.84536}
+  phone: 719-327-5660
+  external_ids: {va: vba_339b}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/colorado-springs/wasson-early-learning-center
   name: WASSON  EARLY LEARNING CENTER
   categories:
@@ -1394,12 +1516,21 @@
   name: Wilson Elementary School
   categories:
   - meal-program
-  address: {street: 1409 Dereamer Cr., city: Colorado Springs, state: co, zip: '80915'}
+  address:
+    street: 1409 Dereamer Cr.
+    city: Colorado Springs
+    state: co
+    zip: '80915'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.8532, lng: -104.7468}
+  geo:
+    lat: 38.8532
+    lng: -104.7468
   phone: (719) 250-2933
-  external_ids: {usda_master: Cycle 06_CO_SFSP_0207}
+  external_ids:
+    usda_master: Cycle 06_CO_SFSP_0207
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

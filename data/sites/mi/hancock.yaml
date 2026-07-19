@@ -21,16 +21,25 @@
   name: Barkell Elementary School - 310107366
   categories:
   - meal-program
-  address: {street: 1201 N Elevation St, city: Hancock, state: mi, zip: '49930'}
+  address:
+    street: 1201 N Elevation St
+    city: Hancock
+    state: mi
+    zip: '49930'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Hancock Public Schools
     - 31010.
   place: '2636300'
-  geo: {lat: 47.13746, lng: -88.59424}
+  geo:
+    lat: 47.13746
+    lng: -88.59424
   phone: (906) 487-5925
-  external_ids: {usda_master: Cycle 08_MI_SFSP_0056}
+  external_ids:
+    usda_master: Cycle 08_MI_SFSP_0056
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/hancock/hancock-family-health-center
   name: Hancock Family Health Center
   categories:
@@ -73,6 +82,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/hancock/hancock-va-clinic
+  name: Hancock VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 787 Market Street, city: Hancock, state: mi, zip: '49930'}
+  place: '2636300'
+  geo: {lat: 47.13127, lng: -88.59189}
+  phone: 800-215-8262
+  website: https://www.va.gov/iron-mountain-health-care/locations/hancock-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_585GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/hancock/ryan-center
   name: Ryan Center
   categories:

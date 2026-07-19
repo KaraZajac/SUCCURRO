@@ -60,6 +60,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/billings/benjamin-charles-steele-va-clinic
+  name: Benjamin Charles Steele VA Clinic
+  categories: &id002
+  - va-facility
+  - health
+  description: Health Care Center (HCC)
+  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.7369, lng: -108.60358}
+  phone: 406-373-3500
+  website: https://www.va.gov/montana-health-care/locations/benjamin-charles-steele-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_436GH}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/billings-addiction-counseling-llc
   name: Billings Addiction Counseling LLC
   categories:
@@ -113,19 +130,41 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: mt/billings/billings-mobile-vet-center
+  name: Billings Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '2795 Enterprise Avenue, Suite 1', city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.75023, lng: -108.58545}
+  phone: 406-657-6071
+  website: https://www.va.gov/billings-vet-center/locations/#billings-mobile-vet-center
+  external_ids: {va: vc_0829MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/billings-public-library
   name: Billings Public Library
   categories:
   - meal-program
-  address: {street: 510 N. Broadway, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 510 N. Broadway
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.77582, lng: -108.49967}
+  geo:
+    lat: 45.77582
+    lng: -108.49967
   phone: (719) 351-7696
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0244}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0244
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/billings-senior-high-school-school-based-health
   name: Billings Senior High School - School Based Health Center
   categories:
@@ -168,45 +207,86 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/billings/billings-vet-center
+  name: Billings Vet Center
+  categories: *id001
+  address: {street: '2795 Enterprise Avenue, Suite 1', city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.75023, lng: -108.58545}
+  phone: 406-657-6071
+  website: https://www.va.gov/billings-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0509V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/boys-girls-club-orchard
   name: Boys & Girls Club Orchard
   categories:
   - meal-program
-  address: {street: 505 Orchard, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 505 Orchard
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.76037, lng: -108.52531}
+  geo:
+    lat: 45.76037
+    lng: -108.52531
   phone: (406) 281-5879
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0235}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0235
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/castle-rock-middle-school
   name: Castle Rock Middle School
   categories:
   - meal-program
-  address: {street: 1441 Governor'S Blvd, city: Billings, state: mt, zip: '59105'}
+  address:
+    street: 1441 Governor'S Blvd
+    city: Billings
+    state: mt
+    zip: '59105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.82449, lng: -108.50656}
+  geo:
+    lat: 45.82449
+    lng: -108.50656
   phone: (406) 281-5879
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0236}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0236
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/castle-rock-park
   name: Castle Rock Park
   categories:
   - meal-program
-  address: {street: Wicks Lane & Nutter Blvd, city: Billings, state: mt, zip: '59105'}
+  address:
+    street: Wicks Lane & Nutter Blvd
+    city: Billings
+    state: mt
+    zip: '59105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.82744, lng: -108.49583}
+  geo:
+    lat: 45.82744
+    lng: -108.49583
   phone: (406) 281-5879
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0242}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0242
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/community-medical-services-billings
   name: Community Medical Services Billings
   categories:
@@ -247,6 +327,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/billings/dr-joseph-medicine-crow-va-clinic
+  name: Dr. Joseph Medicine Crow VA Clinic
+  categories: *id002
+  description: Other Outpatient Services (OOS)
+  address: {street: 1775 Spring Creek Lane, city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.7374, lng: -108.60617}
+  phone: 406-373-3500
+  website: https://www.va.gov/montana-health-care/locations/dr-joseph-medicine-crow-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_436GN}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: mt/billings/fort-harrison-va-regional-benefit-satellite-offi
+  name: Fort Harrison VA Regional Benefit Satellite Office at Benjamin Charles Steele VA Clinic
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.73687, lng: -108.60359}
+  phone: 800-827-1000
+  external_ids: {va: vba_436d}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/head-start-inc-aware-site
   name: Head Start, Inc. - AWARE Site
   categories:
@@ -371,15 +479,24 @@
   name: Lockwood Primary
   categories:
   - meal-program
-  address: {street: 1932 Us Highway 87, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 1932 Us Highway 87
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lockwood Public Schools.
   place: '3006550'
-  geo: {lat: 45.79784, lng: -108.43578}
+  geo:
+    lat: 45.79784
+    lng: -108.43578
   phone: (406) 867-6217
-  external_ids: {usda_master: Cycle 04_MT_SFSP_0183}
+  external_ids:
+    usda_master: Cycle 04_MT_SFSP_0183
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/medicine-crow-middle-school-school-based-health
   name: Medicine Crow Middle School - School-based Health Center
   categories:
@@ -423,6 +540,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/billings/montana-va-mobile-medical-unit
+  name: Montana VA Mobile Medical Unit
+  categories: *id002
+  description: Other Outpatient Services (OOS)
+  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  place: '3006550'
+  geo: {lat: 45.73673, lng: -108.60378}
+  phone: 406-447-6000
+  website: https://www.va.gov/find-locations/facility/vha_436QF
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_436QF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/new-day-inc-eagle-s-nest-adult-treatment-program
   name: New Day Inc Eagle's Nest Adult Treatment Program
   categories:
@@ -499,28 +631,46 @@
   name: Newman School
   categories:
   - meal-program
-  address: {street: 605 S Billings Blvd, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 605 S Billings Blvd
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.7587, lng: -108.53565}
+  geo:
+    lat: 45.7587
+    lng: -108.53565
   phone: (719) 351-7696
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0237}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0237
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/optimist-park
   name: Optimist Park
   categories:
   - meal-program
-  address: {street: 447 Hallowell Ln, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 447 Hallowell Ln
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.76096, lng: -108.52012}
+  geo:
+    lat: 45.76096
+    lng: -108.52012
   phone: (719) 351-7696
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0245}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0245
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/orchard-school-based-health-center
   name: Orchard School-Based Health Center
   categories:
@@ -546,28 +696,46 @@
   name: Pioneer Park
   categories:
   - meal-program
-  address: {street: Grand & 5Th Street, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: Grand & 5Th Street
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.78407, lng: -108.52793}
+  geo:
+    lat: 45.78407
+    lng: -108.52793
   phone: (406) 281-5879
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0238}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0238
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/ponderosa-school
   name: Ponderosa School
   categories:
   - meal-program
-  address: {street: 301 Parkhill Dr., city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 301 Parkhill Dr.
+    city: Billings
+    state: mt
+    zip: '59101'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.78999, lng: -108.52304}
+  geo:
+    lat: 45.78999
+    lng: -108.52304
   phone: (719) 351-7696
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0239}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0239
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/rimrock-main-building
   name: Rimrock Main Building
   categories:
@@ -636,15 +804,24 @@
   name: Sandstone School
   categories:
   - meal-program
-  address: {street: 1440 Nutter Blvd, city: Billings, state: mt, zip: '59105'}
+  address:
+    street: 1440 Nutter Blvd
+    city: Billings
+    state: mt
+    zip: '59105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.82435, lng: -108.49584}
+  geo:
+    lat: 45.82435
+    lng: -108.49584
   phone: (719) 351-7696
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0240}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0240
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/south-central-montana-regional-mhc-journey-recov
   name: South Central Montana Regional MHC Journey Recovery Program
   categories:
@@ -711,15 +888,24 @@
   name: Veteran'S Park
   categories:
   - meal-program
-  address: {street: 13Th St. W & Poly D, city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 13Th St. W & Poly D
+    city: Billings
+    state: mt
+    zip: '59102'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Billings Public Schools.
   place: '3006550'
-  geo: {lat: 45.79493, lng: -108.54866}
+  geo:
+    lat: 45.79493
+    lng: -108.54866
   phone: (406) 281-5879
-  external_ids: {usda_master: Cycle 05_MT_SFSP_0243}
+  external_ids:
+    usda_master: Cycle 05_MT_SFSP_0243
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/yellowstone-boys-and-girls-ranch-community-based
   name: Yellowstone Boys and Girls Ranch Community Based Services
   categories:

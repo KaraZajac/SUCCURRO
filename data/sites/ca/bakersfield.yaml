@@ -180,16 +180,25 @@
   name: Armstrong Youth Center
   categories:
   - meal-program
-  address: {street: 801 Niles Street, city: Bakersfield, state: ca, zip: '93305'}
+  address:
+    street: 801 Niles Street
+    city: Bakersfield
+    state: ca
+    zip: '93305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by THE BOYS & GIRLS CLUBS
     OF KERN COUNTY.
   place: '0603526'
-  geo: {lat: 35.38154, lng: -118.98917}
+  geo:
+    lat: 35.38154
+    lng: -118.98917
   phone: (661) 325-3730
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0479}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0479
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/aspire-behavioral-health
   name: Aspire Behavioral Health
   categories:
@@ -235,15 +244,24 @@
   name: Baker Library
   categories:
   - meal-program
-  address: {street: 1400 Baker St., city: Bakersfield, state: ca, zip: '93305'}
+  address:
+    street: 1400 Baker St.
+    city: Bakersfield
+    state: ca
+    zip: '93305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.38333, lng: -118.99061}
+  geo:
+    lat: 35.38333
+    lng: -118.99061
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 09_CA_SSO_2028}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_2028
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/baker-street-village-community-health-center
   name: Baker Street Village Community Health Center
   categories:
@@ -289,28 +307,59 @@
   name: Bakersfield High
   categories:
   - meal-program
-  address: {street: 1241 G St., city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 1241 G St.
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.36945, lng: -119.02241}
+  geo:
+    lat: 35.36945
+    lng: -119.02241
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_2222}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_2222
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ca/bakersfield/bakersfield-mobile-vet-center
+  name: Bakersfield Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: 1110 Golden State Avenue, city: Bakersfield, state: ca, zip: '93301'}
+  place: '0603526'
+  geo: {lat: 35.38418, lng: -119.01395}
+  phone: 661-323-8387
+  website: https://www.va.gov/bakersfield-vet-center/locations/#bakersfield-mobile-vet-center
+  external_ids: {va: vc_0841MVC}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ca/bakersfield/bakersfield-police-activities-league
   name: Bakersfield Police Activities League
   categories:
   - meal-program
-  address: {street: 301 E. 4Th Street, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 301 E. 4Th Street
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.36074, lng: -119.00023}
+  geo:
+    lat: 35.36074
+    lng: -119.00023
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 07_CA_SSO_0848}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_0848
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/bakersfield-recovery-services-capistrano-communi
   name: Bakersfield Recovery Services Capistrano Community for Women
   categories:
@@ -379,19 +428,60 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/bakersfield/bakersfield-va-clinic
+  name: Bakersfield VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 1801 Westwind Drive, city: Bakersfield, state: ca, zip: '93301'}
+  place: '0603526'
+  geo: {lat: 35.37582, lng: -119.04254}
+  phone: 661-632-1800
+  website: https://www.va.gov/greater-los-angeles-health-care/locations/bakersfield-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_691GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/bakersfield/bakersfield-vet-center
+  name: Bakersfield Vet Center
+  categories: *id001
+  address: {street: 1110 Golden State Avenue, city: Bakersfield, state: ca, zip: '93301'}
+  place: '0603526'
+  geo: {lat: 35.38418, lng: -119.01395}
+  phone: 661-323-8387
+  website: https://www.va.gov/bakersfield-vet-center/
+  hours:
+  - {days: [mon, wed, fri], open: '08:00', close: '16:30'}
+  - {days: [tue, thu], open: '08:00', close: '18:30'}
+  external_ids: {va: vc_0601V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/bakersfield/beale-memorial-library
   name: Beale Memorial Library
   categories:
   - meal-program
-  address: {street: 701 Truxtun Avenue, city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 701 Truxtun Avenue
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.37323, lng: -119.00983}
+  geo:
+    lat: 35.37323
+    lng: -119.00983
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 09_CA_SSO_0919}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_0919
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/blanton-academy
   name: BLANTON ACADEMY
   categories:
@@ -437,28 +527,46 @@
   name: Career Technical Education Center
   categories:
   - meal-program
-  address: {street: 7301 Old River Road, city: Bakersfield, state: ca, zip: '93311'}
+  address:
+    street: 7301 Old River Road
+    city: Bakersfield
+    state: ca
+    zip: '93311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.28805, lng: -119.10994}
+  geo:
+    lat: 35.28805
+    lng: -119.10994
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_1457}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1457
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/centennial-high
   name: Centennial High
   categories:
   - meal-program
-  address: {street: 8601 Hageman Rd., city: Bakersfield, state: ca, zip: '93312'}
+  address:
+    street: 8601 Hageman Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93312'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.39998, lng: -119.09787}
+  geo:
+    lat: 35.39998
+    lng: -119.09787
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_2223}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_2223
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/central-bakersfield-community-health-center
   name: Central Bakersfield Community Health Center
   categories:
@@ -485,15 +593,24 @@
   name: Central Kitchen
   categories:
   - meal-program
-  address: {street: 3701 E Belle Terrace Suite B, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 3701 E Belle Terrace Suite B
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.34638, lng: -118.96368}
+  geo:
+    lat: 35.34638
+    lng: -118.96368
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 11_CA_SSO_1320}
+  external_ids:
+    usda_master: Cycle 11_CA_SSO_1320
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/cleo-foran-cdc
   name: CLEO FORAN CDC
   categories:
@@ -557,16 +674,25 @@
   name: Colonel Howard Nichols Elementary
   categories:
   - meal-program
-  address: {street: 3401 Renegade Ave., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 3401 Renegade Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.40279, lng: -118.955}
+  geo:
+    lat: 35.40279
+    lng: -118.955
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 04_CA_SSO_0682}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0682
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/community-service-organization-cso-behav-hlth-pr
   name: Community Service Organization (CSO) Behav Hlth Program/Brotherhood Center
   categories:
@@ -677,42 +803,69 @@
   name: Del Oro High
   categories:
   - meal-program
-  address: {street: 1750 East Panama Ln., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 1750 East Panama Ln.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.29595, lng: -118.98424}
+  geo:
+    lat: 35.29595
+    lng: -118.98424
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_1541}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1541
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/dr-douglas-k-fletcher-elementary
   name: Dr. Douglas K. Fletcher Elementary
   categories:
   - meal-program
-  address: {street: 9801 Highland Knolls Dr., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 9801 Highland Knolls Dr.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.3924, lng: -118.89508}
+  geo:
+    lat: 35.3924
+    lng: -118.89508
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 04_CA_SSO_0321}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0321
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/dr-martin-luther-king-jr-community-center
   name: Dr. Martin Luther King Jr. Community Center
   categories:
   - meal-program
-  address: {street: 1001 South Owens, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 1001 South Owens
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.36718, lng: -118.99087}
+  geo:
+    lat: 35.36718
+    lng: -118.99087
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 09_CA_SSO_0900}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_0900
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/east-bakersfield-community-health-center
   name: East Bakersfield Community Health Center
   categories:
@@ -761,15 +914,24 @@
   name: East Bakersfield High
   categories:
   - meal-program
-  address: {street: 2200 Quincy St., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 2200 Quincy St.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.3794, lng: -118.9656}
+  geo:
+    lat: 35.3794
+    lng: -118.9656
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_2175}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_2175
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/east-niles-community-health-center
   name: East Niles Community Health Center
   categories:
@@ -877,42 +1039,69 @@
   name: Foothill High
   categories:
   - meal-program
-  address: {street: 501 Park Dr., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 501 Park Dr.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.36485, lng: -118.91862}
+  geo:
+    lat: 35.36485
+    lng: -118.91862
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_2176}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_2176
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/fremont-elementary
   name: Fremont Elementary
   categories:
   - meal-program
-  address: {street: 607 Texas St., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 607 Texas St.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.3575, lng: -118.99772}
+  geo:
+    lat: 35.3575
+    lng: -118.99772
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 04_CA_SSO_0001}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0001
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/friendship-house
   name: Friendship House
   categories:
   - meal-program
-  address: {street: 2424 Cottonwood Dr, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 2424 Cottonwood Dr
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.32805, lng: -118.98544}
+  geo:
+    lat: 35.32805
+    lng: -118.98544
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 07_CA_SSO_1116}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1116
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/garden-pathways
   name: GARDEN PATHWAYS
   categories:
@@ -936,28 +1125,46 @@
   name: Golden Valley High
   categories:
   - meal-program
-  address: {street: 801 Hosking Ave., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 801 Hosking Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.28126, lng: -119.00926}
+  geo:
+    lat: 35.28126
+    lng: -119.00926
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_0044}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_0044
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/greenacres-community-center
   name: Greenacres Community Center
   categories:
   - meal-program
-  address: {street: 2014 Calloway Drive, city: Bakersfield, state: ca, zip: '93312'}
+  address:
+    street: 2014 Calloway Drive
+    city: Bakersfield
+    state: ca
+    zip: '93312'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.37842, lng: -119.11008}
+  geo:
+    lat: 35.37842
+    lng: -119.11008
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 07_CA_SSO_1656}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1656
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/greenfield-community-health-center
   name: Greenfield Community Health Center
   categories:
@@ -1022,42 +1229,69 @@
   name: Highland High
   categories:
   - meal-program
-  address: {street: 2900 Royal Scots Way, city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 2900 Royal Scots Way
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.40126, lng: -118.93312}
+  geo:
+    lat: 35.40126
+    lng: -118.93312
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_2177}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_2177
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/holloway-gonzales-library
   name: Holloway-Gonzales Library
   categories:
   - meal-program
-  address: {street: 506 East Brundage Ln, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 506 East Brundage Ln
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.3539, lng: -118.99826}
+  geo:
+    lat: 35.3539
+    lng: -118.99826
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 09_CA_SSO_1785}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1785
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/horace-mann-elementary
   name: Horace Mann Elementary
   categories:
   - meal-program
-  address: {street: 2710 Niles St., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 2710 Niles St.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.37591, lng: -118.9573}
+  geo:
+    lat: 35.37591
+    lng: -118.9573
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 04_CA_SSO_0681}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0681
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/housing-authority-of-the-county-of-kern
   name: Housing Authority Of The County Of Kern
   categories:
@@ -1082,15 +1316,24 @@
   name: Independence High
   categories:
   - meal-program
-  address: {street: 8001 Old River Rd., city: Bakersfield, state: ca, zip: '93311'}
+  address:
+    street: 8001 Old River Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.28382, lng: -119.10998}
+  geo:
+    lat: 35.28382
+    lng: -119.10998
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 07_CA_SSO_0243}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_0243
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/kern-county-hispanic-commission-on-alc-la-vida-n
   name: Kern County Hispanic Commission on Alc La Vida Nueva
   categories:
@@ -1397,96 +1640,159 @@
   name: Martin Luther King Center
   categories:
   - meal-program
-  address: {street: 1100 Citadel St, city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 1100 Citadel St
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.34446, lng: -118.98888}
+  geo:
+    lat: 35.34446
+    lng: -118.98888
   phone: (661) 631-4733
-  external_ids: {usda_master: Cycle 04_CA_SSO_0068}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0068
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/mira-monte-high
   name: Mira Monte High
   categories:
   - meal-program
-  address: {street: 1800 South Fairfax Rd., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 1800 South Fairfax Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.33899, lng: -118.93205}
+  geo:
+    lat: 35.33899
+    lng: -118.93205
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_0270}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_0270
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/north-beardsley-park
   name: North Beardsley Park
   categories:
   - meal-program
-  address: {street: 901 Airport Drive, city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 901 Airport Drive
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BEARDSLEY ELEMENTARY
     SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.41542, lng: -119.03916}
+  geo:
+    lat: 35.41542
+    lng: -119.03916
   phone: (661) 392-8758
-  external_ids: {usda_master: Cycle 01_CA_SSO_0266}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0266
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/north-high
   name: North High
   categories:
   - meal-program
-  address: {street: 300 Galaxy Ave., city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 300 Galaxy Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.42956, lng: -119.02715}
+  geo:
+    lat: 35.42956
+    lng: -119.02715
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_2399}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2399
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/north-meadows-park
   name: North Meadows Park
   categories:
   - meal-program
-  address: {street: 3300 Mccray St, city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 3300 Mccray St
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by STANDARD ELEMENTARY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.43679, lng: -119.03012}
+  geo:
+    lat: 35.43679
+    lng: -119.03012
   phone: (661) 392-2106
-  external_ids: {usda_master: Cycle 01_CA_SSO_0290}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0290
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/north-park-self-help-apartments
   name: North Park Self-Help Apartments
   categories:
   - meal-program
-  address: {street: '601 Douglas St #144G', city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: '601 Douglas St #144G'
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.42616, lng: -119.03296}
+  geo:
+    lat: 35.42616
+    lng: -119.03296
   phone: (559) 802-1617
-  external_ids: {usda_master: Cycle 07_CA_SSO_1337}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1337
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/northeast-library
   name: Northeast Library
   categories:
   - meal-program
-  address: {street: 2671 Oswell St., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 2671 Oswell St.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.39478, lng: -118.94967}
+  geo:
+    lat: 35.39478
+    lng: -118.94967
   phone: (661) 397-5523
-  external_ids: {usda_master: Cycle 09_CA_SSO_1389}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1389
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/omni-family-health
   name: Omni Family Health
   categories:
@@ -1968,16 +2274,25 @@
   name: Pioneer Village Estates
   categories:
   - meal-program
-  address: {street: 600 Fairfax Road, city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 600 Fairfax Road
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by THE BOYS & GIRLS CLUBS
     OF KERN COUNTY.
   place: '0603526'
-  geo: {lat: 35.36801, lng: -118.93194}
+  geo:
+    lat: 35.36801
+    lng: -118.93194
   phone: (661) 325-3730
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0786}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0786
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/psychiatric-wellness-center
   name: Psychiatric Wellness Center
   categories:
@@ -2003,124 +2318,205 @@
   name: Rathbun Library
   categories:
   - meal-program
-  address: {street: 200 W. China Grade Loop, city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 200 W. China Grade Loop
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.42711, lng: -119.02401}
+  geo:
+    lat: 35.42711
+    lng: -119.02401
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 09_CA_SSO_1390}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1390
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/ridgeview-high
   name: Ridgeview High
   categories:
   - meal-program
-  address: {street: 8501 Stine Rd., city: Bakersfield, state: ca, zip: '93313'}
+  address:
+    street: 8501 Stine Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93313'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.2776, lng: -119.05671}
+  geo:
+    lat: 35.2776
+    lng: -119.05671
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_2401}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2401
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/rio-bravo-elementary
   name: Rio Bravo Elementary
   categories:
   - meal-program
-  address: {street: 22725 Elementary Ln., city: Bakersfield, state: ca, zip: '93314'}
+  address:
+    street: 22725 Elementary Ln.
+    city: Bakersfield
+    state: ca
+    zip: '93314'
   description: Free summer meals for kids and teens (2026 season) — sponsored by RIO BRAVO-GREELEY UNION
     ELEMENTARY SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.42222, lng: -119.25425}
+  geo:
+    lat: 35.42222
+    lng: -119.25425
   phone: (661) 589-3706
-  external_ids: {usda_master: Cycle 03_CA_SSO_0001}
+  external_ids:
+    usda_master: Cycle 03_CA_SSO_0001
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/riverview-community-center
   name: Riverview Community Center
   categories:
   - meal-program
-  address: {street: 401 Willow Drive, city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 401 Willow Drive
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.40203, lng: -119.02803}
+  geo:
+    lat: 35.40203
+    lng: -119.02803
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 07_CA_SSO_1605}
+  external_ids:
+    usda_master: Cycle 07_CA_SSO_1605
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/riverview-southern-baptist-church
   name: Riverview Southern Baptist Church
   categories:
   - meal-program
-  address: {street: 410 Beardsley Avenue, city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 410 Beardsley Avenue
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by THE BOYS & GIRLS CLUBS
     OF KERN COUNTY.
   place: '0603526'
-  geo: {lat: 35.40498, lng: -119.02962}
+  geo:
+    lat: 35.40498
+    lng: -119.02962
   phone: (661) 325-3730
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0815}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0815
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/san-lauren-elementary
   name: San Lauren Elementary
   categories:
   - meal-program
-  address: {street: 5210 Victor St., city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 5210 Victor St.
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BEARDSLEY ELEMENTARY
     SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.40758, lng: -119.06213}
+  geo:
+    lat: 35.40758
+    lng: -119.06213
   phone: (661) 392-8758
-  external_ids: {usda_master: Cycle 01_CA_SSO_0028}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0028
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/sequoia-middle
   name: Sequoia Middle
   categories:
   - meal-program
-  address: {street: 900 Belle Terr., city: Bakersfield, state: ca, zip: '93304'}
+  address:
+    street: 900 Belle Terr.
+    city: Bakersfield
+    state: ca
+    zip: '93304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.34676, lng: -119.0129}
+  geo:
+    lat: 35.34676
+    lng: -119.0129
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 04_CA_SSO_1071}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_1071
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/sierra-middle
   name: Sierra Middle
   categories:
   - meal-program
-  address: {street: 3017 Center St., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 3017 Center St.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.37225, lng: -118.95091}
+  geo:
+    lat: 35.37225
+    lng: -118.95091
   phone: (661) 631-4733
-  external_ids: {usda_master: Cycle 04_CA_SSO_0683}
+  external_ids:
+    usda_master: Cycle 04_CA_SSO_0683
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/silver-creek-community-center
   name: Silver Creek Community Center
   categories:
   - meal-program
-  address: {street: 7011 Harris Road, city: Bakersfield, state: ca, zip: '93313'}
+  address:
+    street: 7011 Harris Road
+    city: Bakersfield
+    state: ca
+    zip: '93313'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN CO SUPT OF SCHOOLS.
   place: '0603526'
-  geo: {lat: 35.30453, lng: -119.08081}
+  geo:
+    lat: 35.30453
+    lng: -119.08081
   phone: (661) 852-5930
-  external_ids: {usda_master: Cycle 09_CA_SSO_1626}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1626
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/south-bakersfield-community-health-center
   name: South Bakersfield Community Health Center
   categories:
@@ -2147,28 +2543,46 @@
   name: South High
   categories:
   - meal-program
-  address: {street: 1101 Planz Rd., city: Bakersfield, state: ca, zip: '93304'}
+  address:
+    street: 1101 Planz Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.32489, lng: -119.013}
+  geo:
+    lat: 35.32489
+    lng: -119.013
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_2403}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2403
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/southwest-branch-library
   name: Southwest Branch Library
   categories:
   - meal-program
-  address: {street: 8301 Ming Ave, city: Bakersfield, state: ca, zip: '93311'}
+  address:
+    street: 8301 Ming Ave
+    city: Bakersfield
+    state: ca
+    zip: '93311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.33964, lng: -119.09551}
+  geo:
+    lat: 35.33964
+    lng: -119.09551
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 09_CA_SSO_1283}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1283
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/specialty-services-center
   name: Specialty Services Center
   categories:
@@ -2195,30 +2609,48 @@
   name: Standard Middle
   categories:
   - meal-program
-  address: {street: 126 Ferguson Ave., city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 126 Ferguson Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by STANDARD ELEMENTARY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.41588, lng: -119.0204}
+  geo:
+    lat: 35.41588
+    lng: -119.0204
   phone: (661) 392-2106
-  external_ids: {usda_master: Cycle 01_CA_SSO_0066}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0066
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/stella-i-hills-elementary
   name: Stella I. Hills Elementary
   categories:
   - meal-program
-  address: {street: 3800 Jewett Ave., city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 3800 Jewett Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.39449, lng: -119.01429}
+  geo:
+    lat: 35.39449
+    lng: -119.01429
   phone: (661) 868-9424
-  external_ids: {usda_master: Cycle 05_CA_SSO_1029}
+  external_ids:
+    usda_master: Cycle 05_CA_SSO_1029
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/sterling-cdc
   name: STERLING CDC
   categories:
@@ -2263,29 +2695,47 @@
   name: Stockdale Club
   categories:
   - meal-program
-  address: {street: 5207 Young St. Ste. 200, city: Bakersfield, state: ca, zip: '93311'}
+  address:
+    street: 5207 Young St. Ste. 200
+    city: Bakersfield
+    state: ca
+    zip: '93311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by THE BOYS & GIRLS CLUBS
     OF KERN COUNTY.
   place: '0603526'
-  geo: {lat: 35.30737, lng: -119.09869}
+  geo:
+    lat: 35.30737
+    lng: -119.09869
   phone: (661) 663-8733
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0481}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0481
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/stockdale-high
   name: Stockdale High
   categories:
   - meal-program
-  address: {street: 2800 Buena Vista Rd., city: Bakersfield, state: ca, zip: '93311'}
+  address:
+    street: 2800 Buena Vista Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93311'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.32662, lng: -119.12782}
+  geo:
+    lat: 35.32662
+    lng: -119.12782
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_2404}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2404
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/stockdale-hs
   name: Stockdale HS
   categories:
@@ -2309,16 +2759,25 @@
   name: Suburu Club
   categories:
   - meal-program
-  address: {street: 7315 Harris Road, city: Bakersfield, state: ca, zip: '93313'}
+  address:
+    street: 7315 Harris Road
+    city: Bakersfield
+    state: ca
+    zip: '93313'
   description: Free summer meals for kids and teens (2026 season) — sponsored by THE BOYS & GIRLS CLUBS
     OF KERN COUNTY.
   place: '0603526'
-  geo: {lat: 35.30401, lng: -119.08337}
+  geo:
+    lat: 35.30401
+    lng: -119.08337
   phone: (661) 205-1909
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0480}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0480
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/sunset-early-education-childcare
   name: Sunset Early Education Childcare
   categories:
@@ -2361,15 +2820,24 @@
   name: Tierra Del Sol Continuation High
   categories:
   - meal-program
-  address: {street: 3700 East Belle Terrace, city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 3700 East Belle Terrace
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.34644, lng: -118.96175}
+  geo:
+    lat: 35.34644
+    lng: -118.96175
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_0765}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_0765
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/vineland-cdc
   name: VINELAND CDC
   categories:
@@ -2393,16 +2861,25 @@
   name: Virginia Avenue Elementary
   categories:
   - meal-program
-  address: {street: 3301 Virginia Ave., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 3301 Virginia Ave.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by FAIRFAX ELEMENTARY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.36142, lng: -118.94736}
+  geo:
+    lat: 35.36142
+    lng: -118.94736
   phone: (661) 366-7221
-  external_ids: {usda_master: Cycle 01_CA_SSO_0381}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0381
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/virginia-cdc
   name: VIRGINIA CDC
   categories:
@@ -2426,42 +2903,69 @@
   name: Vista West Continuation High
   categories:
   - meal-program
-  address: {street: 7115 Rosedale Hwy., city: Bakersfield, state: ca, zip: '93308'}
+  address:
+    street: 7115 Rosedale Hwy.
+    city: Bakersfield
+    state: ca
+    zip: '93308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.38326, lng: -119.08228}
+  geo:
+    lat: 35.38326
+    lng: -119.08228
   phone: (661) 303-8990
-  external_ids: {usda_master: Cycle 08_CA_SSO_2405}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2405
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/walter-stiern-middle
   name: Walter Stiern Middle
   categories:
   - meal-program
-  address: {street: 2551 Morning Dr., city: Bakersfield, state: ca, zip: '93306'}
+  address:
+    street: 2551 Morning Dr.
+    city: Bakersfield
+    state: ca
+    zip: '93306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BAKERSFIELD CITY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.38295, lng: -118.91422}
+  geo:
+    lat: 35.38295
+    lng: -118.91422
   phone: (661) 631-4733
-  external_ids: {usda_master: Cycle 05_CA_SSO_1030}
+  external_ids:
+    usda_master: Cycle 05_CA_SSO_1030
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/west-high
   name: West High
   categories:
   - meal-program
-  address: {street: 1200 New Stine Rd., city: Bakersfield, state: ca, zip: '93309'}
+  address:
+    street: 1200 New Stine Rd.
+    city: Bakersfield
+    state: ca
+    zip: '93309'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.34319, lng: -119.06104}
+  geo:
+    lat: 35.34319
+    lng: -119.06104
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 08_CA_SSO_2406}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2406
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/westcare-california-inc-residential
   name: WestCare California Inc Residential
   categories:
@@ -2527,26 +3031,44 @@
   name: Wilson Library
   categories:
   - meal-program
-  address: {street: 1901 Wilson Rd, city: Bakersfield, state: ca, zip: '93304'}
+  address:
+    street: 1901 Wilson Rd
+    city: Bakersfield
+    state: ca
+    zip: '93304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERN HIGH SCHOOL DISTRICT.
   place: '0603526'
-  geo: {lat: 35.33214, lng: -119.02377}
+  geo:
+    lat: 35.33214
+    lng: -119.02377
   phone: (661) 827-3190
-  external_ids: {usda_master: Cycle 09_CA_SSO_2029}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_2029
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/zephyr-lane-elementary
   name: Zephyr Lane Elementary
   categories:
   - meal-program
-  address: {street: 6327 Zephyr Ln., city: Bakersfield, state: ca, zip: '93307'}
+  address:
+    street: 6327 Zephyr Ln.
+    city: Bakersfield
+    state: ca
+    zip: '93307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by FAIRFAX ELEMENTARY SCHOOL
     DISTRICT.
   place: '0603526'
-  geo: {lat: 35.347, lng: -118.93389}
+  geo:
+    lat: 35.347
+    lng: -118.93389
   phone: (661) 366-7221
-  external_ids: {usda_master: Cycle 01_CA_SSO_0127}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0127
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

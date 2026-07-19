@@ -41,14 +41,23 @@
   name: Bayfront Ymca Club
   categories:
   - meal-program
-  address: {street: 31 West 10, city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 31 West 10
+    city: Erie
+    state: pa
+    zip: '16501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Erie.
   place: '4224000'
-  geo: {lat: 42.12515, lng: -80.08352}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0018}
+  geo:
+    lat: 42.12515
+    lng: -80.08352
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0018
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/benedictine-sisters-of-erie-mshs
   name: Benedictine Sisters of Erie MSHS
   categories:
@@ -72,28 +81,46 @@
   name: Bethesda Lutheran Services - Trinity Center
   categories:
   - meal-program
-  address: {street: 462 West 18Th Street, city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 462 West 18Th Street
+    city: Erie
+    state: pa
+    zip: '16501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bethesda Childrens Home.
   place: '4224000'
-  geo: {lat: 42.1147, lng: -80.08842}
+  geo:
+    lat: 42.1147
+    lng: -80.08842
   phone: (814) 724-7510
-  external_ids: {usda_master: Cycle 01_PA_SSO_0018}
+  external_ids:
+    usda_master: Cycle 01_PA_SSO_0018
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/boys-girls-club-of-erie
   name: Boys & Girls Club Of Erie
   categories:
   - meal-program
-  address: {street: 1515 East Lake Road, city: Erie, state: pa, zip: '16511'}
+  address:
+    street: 1515 East Lake Road
+    city: Erie
+    state: pa
+    zip: '16511'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.14177, lng: -80.05265}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0052}
+  geo:
+    lat: 42.14177
+    lng: -80.05265
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/cascade-child-development-center-inc
   name: Cascade Child Development Center, Inc.
   categories:
@@ -234,6 +261,50 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/erie/erie-mobile-vet-center
+  name: Erie Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '240 West 11th Street, Suite 105', city: Erie, state: pa, zip: '16501'}
+  place: '4224000'
+  geo: {lat: 42.12261, lng: -80.08717}
+  phone: 814-453-7955
+  website: https://www.va.gov/erie-vet-center/locations/#erie-mobile-vet-center
+  external_ids: {va: vc_0809MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: pa/erie/erie-va-medical-center
+  name: Erie VA Medical Center
+  categories:
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 135 East 38th Street, city: Erie, state: pa, zip: '16504'}
+  place: '4224000'
+  geo: {lat: 42.10213, lng: -80.06304}
+  phone: 814-868-8661
+  website: https://www.va.gov/erie-health-care/locations/erie-va-medical-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '20:00'}
+  external_ids: {va: vha_562}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: pa/erie/erie-vet-center
+  name: Erie Vet Center
+  categories: *id001
+  address: {street: '240 West 11th Street, Suite 105', city: Erie, state: pa, zip: '16501'}
+  place: '4224000'
+  geo: {lat: 42.12261, lng: -80.08717}
+  phone: 814-453-7955
+  website: https://www.va.gov/erie-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0222V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/erie/erie-veterans-affairs-medical-center-substance-u
   name: Erie Veterans Affairs Medical Center Substance Use Disorder Treatment Prog
   categories:
@@ -434,14 +505,23 @@
   name: Gridley Park
   categories:
   - meal-program
-  address: {street: 598 Liberty St, city: Erie, state: pa, zip: '16502'}
+  address:
+    street: 598 Liberty St
+    city: Erie
+    state: pa
+    zip: '16502'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Erie.
   place: '4224000'
-  geo: {lat: 42.12279, lng: -80.10213}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0124}
+  geo:
+    lat: 42.12279
+    lng: -80.10213
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0124
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/harborcreek-health-center
   name: Harborcreek Health Center
   categories:
@@ -488,15 +568,24 @@
   name: John F. Kennedy Center
   categories:
   - meal-program
-  address: {street: 2038 Buffalo Road, city: Erie, state: pa, zip: '16510'}
+  address:
+    street: 2038 Buffalo Road
+    city: Erie
+    state: pa
+    zip: '16510'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.13348, lng: -80.03111}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0256}
+  geo:
+    lat: 42.13348
+    lng: -80.03111
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0256
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/keystone-agricultural-worker-program-northwest
   name: Keystone Agricultural Worker Program - NorthWest
   categories:
@@ -522,27 +611,45 @@
   name: Luther Memorial Academy
   categories:
   - meal-program
-  address: {street: 220 W 11Th Street, city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 220 W 11Th Street
+    city: Erie
+    state: pa
+    zip: '16501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.12276, lng: -80.08688}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0161}
+  geo:
+    lat: 42.12276
+    lng: -80.08688
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0161
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/martin-luther-king-center
   name: Martin Luther King Center
   categories:
   - meal-program
-  address: {street: 312 Chestnut St, city: Erie, state: pa, zip: '16507'}
+  address:
+    street: 312 Chestnut St
+    city: Erie
+    state: pa
+    zip: '16507'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Erie.
   place: '4224000'
-  geo: {lat: 42.12948, lng: -80.09566}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0169}
+  geo:
+    lat: 42.12948
+    lng: -80.09566
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0169
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/mehds-peach-street-site
   name: MEHDS Peach Street Site
   categories:
@@ -612,14 +719,23 @@
   name: Mt. Zion
   categories:
   - meal-program
-  address: {street: 2247 East 19Th St, city: Erie, state: pa, zip: '16510'}
+  address:
+    street: 2247 East 19Th St
+    city: Erie
+    state: pa
+    zip: '16510'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Erie.
   place: '4224000'
-  geo: {lat: 42.1364, lng: -80.02793}
-  external_ids: {usda_master: Cycle 09_PA_SFSP_0059}
+  geo:
+    lat: 42.1364
+    lng: -80.02793
+  external_ids:
+    usda_master: Cycle 09_PA_SFSP_0059
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/multi-cultural-health-evaluation-delivery-system
   name: Multi-Cultural Health Evaluation Delivery System
   categories:
@@ -646,14 +762,23 @@
   name: Neighborhood Art House
   categories:
   - meal-program
-  address: {street: 201 East 10Th Street, city: Erie, state: pa, zip: '16503'}
+  address:
+    street: 201 East 10Th Street
+    city: Erie
+    state: pa
+    zip: '16503'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Erie.
   place: '4224000'
-  geo: {lat: 42.1271, lng: -80.07817}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0191}
+  geo:
+    lat: 42.1271
+    lng: -80.07817
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0191
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/new-directions-healthcare
   name: New Directions Healthcare
   categories:
@@ -678,28 +803,46 @@
   name: 'Perseus House - Site #2'
   categories:
   - meal-program
-  address: {street: 1309 French Street, city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 1309 French Street
+    city: Erie
+    state: pa
+    zip: '16501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.12247, lng: -80.07886}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0216}
+  geo:
+    lat: 42.12247
+    lng: -80.07886
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0216
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/persus-house-charter-school
   name: Persus House Charter School
   categories:
   - meal-program
-  address: {street: 1511 Peach St., city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 1511 Peach St.
+    city: Erie
+    state: pa
+    zip: '16501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.12006, lng: -80.08066}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0217}
+  geo:
+    lat: 42.12006
+    lng: -80.08066
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0217
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/pyramid-healthcare-inc-erie-outpatient
   name: Pyramid Healthcare Inc Erie Outpatient
   categories:
@@ -806,15 +949,24 @@
   name: Sarah Reed Children’S Center – Hamilton Campus
   categories:
   - meal-program
-  address: {street: 2931 Harvard Road, city: Erie, state: pa, zip: '16508'}
+  address:
+    street: 2931 Harvard Road
+    city: Erie
+    state: pa
+    zip: '16508'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.09568, lng: -80.10988}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0315}
+  geo:
+    lat: 42.09568
+    lng: -80.10988
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0315
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/snug-harbor-rehabilitation-and-recov
   name: Snug Harbor Rehabilitation and Recov
   categories:
@@ -1000,51 +1152,87 @@
   name: Ymca Burton Park
   categories:
   - meal-program
-  address: {street: East 40Th Street & Brandes St, city: Erie, state: pa, zip: '16504'}
+  address:
+    street: East 40Th Street & Brandes St
+    city: Erie
+    state: pa
+    zip: '16504'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.10992, lng: -80.03881}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0381}
+  geo:
+    lat: 42.10992
+    lng: -80.03881
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0381
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/ymca-gridley-park
   name: Ymca Gridley Park
   categories:
   - meal-program
-  address: {street: 598 Liberty Street, city: Erie, state: pa, zip: '16502'}
+  address:
+    street: 598 Liberty Street
+    city: Erie
+    state: pa
+    zip: '16502'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.12279, lng: -80.10213}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0382}
+  geo:
+    lat: 42.12279
+    lng: -80.10213
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0382
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/ymca-mckinley-park
   name: Ymca Mckinley Park
   categories:
   - meal-program
-  address: {street: East 21St Street & East Avenue, city: Erie, state: pa, zip: '16503'}
+  address:
+    street: East 21St Street & East Avenue
+    city: Erie
+    state: pa
+    zip: '16503'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.12426, lng: -80.0541}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0383}
+  geo:
+    lat: 42.12426
+    lng: -80.0541
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0383
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/ymca-rodger-young-park
   name: Ymca Rodger Young Park
   categories:
   - meal-program
-  address: {street: 1750 Buffalo Rd, city: Erie, state: pa, zip: '16510'}
+  address:
+    street: 1750 Buffalo Rd
+    city: Erie
+    state: pa
+    zip: '16510'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwest Tri County
     IU 5.
   place: '4224000'
-  geo: {lat: 42.1308, lng: -80.03827}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0384}
+  geo:
+    lat: 42.1308
+    lng: -80.03827
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0384
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -2,15 +2,24 @@
   name: Amen Food Pantry
   categories:
   - meal-program
-  address: {street: Po Box 1231, city: Dickinson, state: nd, zip: '58601'}
+  address:
+    street: Po Box 1231
+    city: Dickinson
+    state: nd
+    zip: '58601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Great Plains Food Bank.
   place: '3819620'
-  geo: {lat: 46.89332, lng: -102.79011}
+  geo:
+    lat: 46.89332
+    lng: -102.79011
   phone: (701) 476-9114
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0050}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0050
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/dickinson/badlands-human-service-center-behavioral-health
   name: Badlands Human Service Center Behavioral Health Services
   categories:
@@ -70,6 +79,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/dickinson/dickinson-va-clinic
+  name: Dickinson VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: '3275 West Ridge Drive, West Ridge Market Center', city: Dickinson, state: nd, zip: '58601'}
+  place: '3819620'
+  geo: {lat: 46.89459, lng: -102.83498}
+  phone: 701-483-1850
+  website: https://www.va.gov/fargo-health-care/locations/dickinson-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_437GJ}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/dickinson/heart-river-services-llc-drug-abuse-service-inc
   name: Heart River Services LLC Drug Abuse Service Inc
   categories:

@@ -14,6 +14,51 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/northport/northport-1-va-mobile-medical-unit
+  name: Northport 1 VA Mobile Medical Unit
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 79 Middleville Road, city: Northport, state: ny, zip: '11768'}
+  place: '3653396'
+  geo: {lat: 40.89885, lng: -73.31378}
+  phone: 631-261-4400
+  website: https://www.va.gov/find-locations/facility/vha_632QA
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_632QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ny/northport/northport-2-va-mobile-medical-unit
+  name: Northport 2 VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 79 Middleville Road, city: Northport, state: ny, zip: '11768'}
+  place: '3653396'
+  geo: {lat: 40.89885, lng: -73.31378}
+  phone: 631-261-4400
+  website: https://www.va.gov/find-locations/facility/vha_632QB
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_632QB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ny/northport/northport-va-medical-center
+  name: Northport VA Medical Center
+  categories: *id001
+  description: VA Medical Center (VAMC)
+  address: {street: 79 Middleville Road, city: Northport, state: ny, zip: '11768'}
+  place: '3653396'
+  geo: {lat: 40.89885, lng: -73.31378}
+  phone: 631-261-4400
+  website: https://www.va.gov/northport-health-care/locations/northport-va-medical-center/
+  external_ids: {va: vha_632}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/northport/northport-vamc-mental-health-116a
   name: Northport VAMC Mental Health (116A)
   categories:
@@ -35,3 +80,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/northport/va-regional-benefit-satellite-office-at-northpor
+  name: VA Regional Benefit Satellite Office at Northport VA Medical Center
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: '79 Middleville Road, Building 9, Room  103', city: Northport, state: ny, zip: '11768'}
+  place: '3653396'
+  geo: {lat: 40.89885, lng: -73.31378}
+  phone: 631-261-4400, ext. 7192
+  external_ids: {va: vba_306j}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

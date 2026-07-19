@@ -268,14 +268,57 @@
   name: Princeton Primary
   categories:
   - meal-program
-  address: {street: 180 Tiger Drive, city: Princeton, state: wv, zip: '24739'}
+  address:
+    street: 180 Tiger Drive
+    city: Princeton
+    state: wv
+    zip: '24739'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MERCER CO BD OF EDUCATION.
   place: '5465692'
-  geo: {lat: 37.35762, lng: -81.10254}
+  geo:
+    lat: 37.35762
+    lng: -81.10254
   phone: (304) 487-3904
-  external_ids: {usda_master: Cycle 03_WV_SFSP_0101}
+  external_ids:
+    usda_master: Cycle 03_WV_SFSP_0101
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wv/princeton/princeton-va-clinic
+  name: Princeton VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 150 Courthouse Road, city: Princeton, state: wv, zip: '24740'}
+  place: '5465692'
+  geo: {lat: 37.35941, lng: -81.10735}
+  phone: 304-323-4020
+  website: https://www.va.gov/beckley-health-care/locations/princeton-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_517QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: wv/princeton/princeton-vet-center
+  name: Princeton Vet Center
+  categories:
+  - vet-center
+  address: {street: 1511 North Walker Street, city: Princeton, state: wv, zip: '24740'}
+  place: '5465692'
+  geo: {lat: 37.36788, lng: -81.10203}
+  phone: 304-425-8098
+  website: https://www.va.gov/princeton-vet-center/
+  hours:
+  - {days: [mon], open: '08:00', close: '19:30'}
+  - {days: [tue, thu, fri], open: '08:00', close: '16:30'}
+  - {days: [wed], open: '08:00', close: '18:30'}
+  external_ids: {va: vc_0232V}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: wv/princeton/southern-highlands-cmhc-inc-child-and-adolescent
   name: Southern Highlands CMHC Inc Child and Adolescent Clinic
@@ -368,15 +411,24 @@
   name: Straley School
   categories:
   - meal-program
-  address: {street: 810 Straley Ave, city: Princeton, state: wv, zip: '24740'}
+  address:
+    street: 810 Straley Ave
+    city: Princeton
+    state: wv
+    zip: '24740'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MERCER CO BD OF EDUCATION.
   place: '5465692'
-  geo: {lat: 37.37048, lng: -81.09433}
+  geo:
+    lat: 37.37048
+    lng: -81.09433
   phone: (304) 425-3173
-  external_ids: {usda_master: Cycle 03_WV_SFSP_0102}
+  external_ids:
+    usda_master: Cycle 03_WV_SFSP_0102
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/princeton/tug-river-heatlh-princeton
   name: Tug River Heatlh --Princeton
   categories:

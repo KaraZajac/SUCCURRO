@@ -1,3 +1,19 @@
+- id: ma/bedford/bedford-va-clinic
+  name: Bedford VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: '200 Springs Road, Building 2 and 78', city: Bedford, state: ma, zip: '01730'}
+  geo: {lat: 42.50502, lng: -71.27465}
+  phone: 781-687-4949
+  website: https://www.va.gov/find-locations/facility/vha_523QB
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_523QB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/bedford/edinburg-center
   name: Edinburg Center
   categories:
@@ -18,6 +34,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/bedford/edith-nourse-rogers-memorial-veterans-hospital
+  name: Edith Nourse Rogers Memorial Veterans' Hospital
+  categories: *id001
+  description: VA Medical Center (VAMC)
+  address: {street: 200 Springs Road, city: Bedford, state: ma, zip: '01730'}
+  geo: {lat: 42.50367, lng: -71.27268}
+  phone: 781-687-2000
+  website: https://www.va.gov/bedford-health-care/locations/edith-nourse-rogers-memorial-veterans-hospital/
+  external_ids: {va: vha_518}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/bedford/forrest-behavioral-health
   name: Forrest Behavioral Health
   categories:

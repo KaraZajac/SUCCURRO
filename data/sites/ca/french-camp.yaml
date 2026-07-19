@@ -40,30 +40,48 @@
   name: Artessi 2 Migrant Family Camp
   categories:
   - meal-program
-  address: {street: 777 W. Mathews Rd., city: French Camp, state: ca, zip: '95231'}
+  address:
+    street: 777 W. Mathews Rd.
+    city: French Camp
+    state: ca
+    zip: '95231'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MANTECA UNIFIED SCHOOL
     DISTRICT.
   place: 0626028
-  geo: {lat: 37.88256, lng: -121.29489}
+  geo:
+    lat: 37.88256
+    lng: -121.29489
   phone: (209) 858-0778
-  external_ids: {usda_master: Cycle 03_CA_SSO_0290}
+  external_ids:
+    usda_master: Cycle 03_CA_SSO_0290
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/french-camp/artessi-3-migrant-family-camp
   name: Artessi 3 Migrant Family Camp
   categories:
   - meal-program
-  address: {street: 333 W. Mathews Road, city: French Camp, state: ca, zip: '95231'}
+  address:
+    street: 333 W. Mathews Road
+    city: French Camp
+    state: ca
+    zip: '95231'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MANTECA UNIFIED SCHOOL
     DISTRICT.
   place: 0626028
-  geo: {lat: 37.8824, lng: -121.28776}
+  geo:
+    lat: 37.8824
+    lng: -121.28776
   phone: (209) 858-0778
-  external_ids: {usda_master: Cycle 03_CA_SSO_0289}
+  external_ids:
+    usda_master: Cycle 03_CA_SSO_0289
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/french-camp/family-medicine-clinic
   name: Family Medicine Clinic
   categories:
@@ -152,3 +170,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/french-camp/richard-a-pittman-va-clinic
+  name: Richard A. Pittman VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 6505 South Manthey Road, city: French Camp, state: ca, zip: '95231'}
+  place: 0626028
+  geo: {lat: 37.89177, lng: -121.28461}
+  phone: 209-946-3400
+  website: https://www.va.gov/northern-california-health-care/locations/richard-a-pittman-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_612QE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/french-camp/sacramento-va-mobile-medical-unit
+  name: Sacramento VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 6505 South Manthey Road, city: French Camp, state: ca, zip: '95231'}
+  place: 0626028
+  geo: {lat: 37.89052, lng: -121.28199}
+  phone: 916-843-7000
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_612QF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

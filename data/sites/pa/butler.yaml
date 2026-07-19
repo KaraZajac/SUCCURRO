@@ -1,3 +1,18 @@
+- id: pa/butler/abie-abraham-va-clinic
+  name: Abie Abraham VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 353 North Duffy Road, city: Butler, state: pa, zip: '16001'}
+  place: '4210464'
+  geo: {lat: 40.88868, lng: -79.94452}
+  phone: 724-287-4781
+  website: https://www.va.gov/butler-health-care/locations/abie-abraham-va-clinic/
+  external_ids: {va: vha_529}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/butler/bon-aire
   name: Bon Aire
   categories:
@@ -113,6 +128,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/butler/butler-va-medical-center
+  name: Butler VA Medical Center
+  categories: *id001
+  description: VA Medical Center (VAMC)
+  address: {street: 325 New Castle Road, city: Butler, state: pa, zip: '16001'}
+  place: '4210464'
+  geo: {lat: 40.87408, lng: -79.94225}
+  phone: 724-287-4781
+  website: https://www.va.gov/butler-health-care/locations/butler-va-medical-center/
+  external_ids: {va: vha_529A4}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/butler/care-center-dba-sphs-care-center
   name: Care Center DBA SPHS Care Center
   categories:
@@ -337,15 +365,24 @@
   name: Rnc - Emily Brittain Elementary School
   categories:
   - meal-program
-  address: {street: 338 N Washington Street, city: Butler, state: pa, zip: '16001'}
+  address:
+    street: 338 N Washington Street
+    city: Butler
+    state: pa
+    zip: '16001'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Pittsburgh Community
     Food Bank.
   place: '4210464'
-  geo: {lat: 40.86461, lng: -79.8969}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0247}
+  geo:
+    lat: 40.86461
+    lng: -79.8969
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0247
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/butler/west-end
   name: West End
   categories:

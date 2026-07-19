@@ -163,12 +163,38 @@
   name: Pocahontas Upper Elementary
   categories:
   - meal-program
-  address: {street: 2301 N. Park St., city: Pocahontas, state: ar, zip: '72455'}
+  address:
+    street: 2301 N. Park St.
+    city: Pocahontas
+    state: ar
+    zip: '72455'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Pocahontas School District.
   place: '0556540'
-  geo: {lat: 36.27935, lng: -90.98361}
+  geo:
+    lat: 36.27935
+    lng: -90.98361
   phone: (870) 892-4573
-  external_ids: {usda_master: Cycle 04_AR_SSO_0217}
+  external_ids:
+    usda_master: Cycle 04_AR_SSO_0217
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ar/pocahontas/pocahontas-va-clinic
+  name: Pocahontas VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 300 Camp Road, city: Pocahontas, state: ar, zip: '72455'}
+  place: '0556540'
+  geo: {lat: 36.28963, lng: -90.99445}
+  phone: 573-686-4151
+  website: https://www.va.gov/poplar-bluff-health-care/locations/pocahontas-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_657GW}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}

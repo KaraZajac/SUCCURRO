@@ -2,15 +2,24 @@
   name: Finneytown Secondary Campus
   categories:
   - meal-program
-  address: {street: 8916 Fontainebleau Terrace, city: Norwood, state: oh, zip: '45231'}
+  address:
+    street: 8916 Fontainebleau Terrace
+    city: Norwood
+    state: oh
+    zip: '45231'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Milford Ex Vill SD.
   place: '3957386'
-  geo: {lat: 39.22822, lng: -84.5172}
+  geo:
+    lat: 39.22822
+    lng: -84.5172
   phone: (513) 576-2294
-  external_ids: {usda_master: Cycle 05_OH_SSO_0076}
+  external_ids:
+    usda_master: Cycle 05_OH_SSO_0076
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/norwood/hyde-park-bethlehem-umc
   name: Hyde Park Bethlehem UMC
   categories:
@@ -26,3 +35,20 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: oh/norwood/norwood-va-clinic
+  name: Norwood VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: '4600 Smith Road, Central Station', city: Norwood, state: oh, zip: '45212'}
+  place: '3957386'
+  geo: {lat: 39.16014, lng: -84.45222}
+  phone: 513-475-6547
+  website: https://www.va.gov/cincinnati-health-care/locations/norwood-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_539QD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

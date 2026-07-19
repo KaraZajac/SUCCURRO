@@ -23,16 +23,25 @@
   name: First Baptist Church
   categories:
   - meal-program
-  address: {street: 900 Palmer St, city: Miles City, state: mt, zip: '59301'}
+  address:
+    street: 900 Palmer St
+    city: Miles City
+    state: mt
+    zip: '59301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by First Baptist Chrch Miles
     City.
   place: '3049525'
-  geo: {lat: 46.40935, lng: -105.84789}
+  geo:
+    lat: 46.40935
+    lng: -105.84789
   phone: (406) 234-0447
-  external_ids: {usda_master: Cycle 02_MT_SFSP_0098}
+  external_ids:
+    usda_master: Cycle 02_MT_SFSP_0098
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/miles-city/miles-city-head-start
   name: Miles City Head Start
   categories:
@@ -52,6 +61,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/miles-city/miles-city-va-clinic
+  name: Miles City VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 316 South Haynes Avenue, city: Miles City, state: mt, zip: '59301'}
+  place: '3049525'
+  geo: {lat: 46.40499, lng: -105.82258}
+  phone: 406-874-5600
+  website: https://www.va.gov/montana-health-care/locations/miles-city-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_436QE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: mt/miles-city/miles-city-va-community-living-center
+  name: Miles City VA Community Living Center
+  categories: *id001
+  description: Extended Care Site (Community Living Center) (Stand-Alone)
+  address: {street: 210 South Winchester Avenue, city: Miles City, state: mt, zip: '59301'}
+  place: '3049525'
+  geo: {lat: 46.40603, lng: -105.83049}
+  phone: 406-874-5800
+  website: https://www.va.gov/montana-health-care/locations/miles-city-va-community-living-center/
+  external_ids: {va: vha_436A4}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/miles-city/one-health-miles-city
   name: One Health - Miles City
   categories:

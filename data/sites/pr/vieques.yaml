@@ -39,15 +39,23 @@
   name: Fe Que Transforma Inc.
   categories:
   - meal-program
-  address: {street: 'Barrio Florida, Sector Los Chivos (O Puerto Ferro), Vieques, Puerto Rico', city: Vieques,
-    state: pr, zip: '00765'}
+  address:
+    street: Barrio Florida, Sector Los Chivos (O Puerto Ferro), Vieques, Puerto Rico
+    city: Vieques
+    state: pr
+    zip: '00765'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Banco De Alimento.
-  geo: {lat: 18.14252, lng: -65.44644}
+  geo:
+    lat: 18.14252
+    lng: -65.44644
   phone: (939) 304-5659
-  external_ids: {usda_master: Cycle 07_PR_SFSP_0253}
+  external_ids:
+    usda_master: Cycle 07_PR_SFSP_0253
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pr/vieques/healthpromed-vieques
   name: HealthproMed Vieques
   categories:
@@ -69,3 +77,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pr/vieques/vieques-va-clinic
+  name: Vieques VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 'Road 997, Centro De Salud Susana Centeno', city: Vieques, state: pr, zip: '00765'}
+  geo: {lat: 18.1386, lng: -65.43653}
+  phone: 787-522-2690
+  website: https://www.va.gov/caribbean-health-care/locations/vieques-va-clinic/
+  hours:
+  - {days: [mon], open: '07:30', close: '14:00'}
+  - {days: [tue, fri], open: '07:30', close: '13:00'}
+  - {days: [wed, thu], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_672QC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

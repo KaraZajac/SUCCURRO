@@ -44,16 +44,25 @@
   name: Chautauqua Children'S Gym
   categories:
   - meal-program
-  address: {street: 3469 E Main St, city: Dunkirk, state: ny, zip: '14048'}
+  address:
+    street: 3469 E Main St
+    city: Dunkirk
+    state: ny
+    zip: '14048'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chautauqua Opportunities
     Inc.
   place: '3621105'
-  geo: {lat: 42.4603, lng: -79.28579}
+  geo:
+    lat: 42.4603
+    lng: -79.28579
   phone: (716) 661-9430
-  external_ids: {usda_master: Cycle 07_NY_SFSP_0127}
+  external_ids:
+    usda_master: Cycle 07_NY_SFSP_0127
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/dunkirk/chautauqua-county-dept-mental-hygiene-dunkirk-me
   name: Chautauqua County Dept Mental Hygiene Dunkirk Mental Health Clinic
   categories:
@@ -136,6 +145,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/dunkirk/dunkirk-va-clinic
+  name: Dunkirk VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1170 Central Avenue, city: Dunkirk, state: ny, zip: '14048'}
+  place: '3621105'
+  geo: {lat: 42.45757, lng: -79.33208}
+  phone: 716-203-6474
+  website: https://www.va.gov/western-new-york-health-care/locations/dunkirk-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_528GC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/dunkirk/early-childhood-community-center-holy-trinity
   name: Early Childhood Community Center/Holy Trinity
   categories:

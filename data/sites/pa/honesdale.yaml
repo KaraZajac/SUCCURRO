@@ -169,16 +169,25 @@
   name: Rnc - Honesdale High School
   categories:
   - meal-program
-  address: {street: 459 Terrace St., city: Honesdale, state: pa, zip: '18431'}
+  address:
+    street: 459 Terrace St.
+    city: Honesdale
+    state: pa
+    zip: '18431'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wayne Highlands School
     District.
   place: '4235520'
-  geo: {lat: 41.56131, lng: -75.2596}
+  geo:
+    lat: 41.56131
+    lng: -75.2596
   phone: (570) 253-4661
-  external_ids: {usda_master: Cycle 02_PA_SSO_0298}
+  external_ids:
+    usda_master: Cycle 02_PA_SSO_0298
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/honesdale/the-wright-center-for-community-health-wayne-pra
   name: The Wright Center for Community Health Wayne Practice
   categories:
@@ -222,6 +231,24 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/honesdale/wayne-county-va-clinic
+  name: Wayne County VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: '600 Maple Avenue, Wayne Memorial Health Systems Complex', city: Honesdale, state: pa,
+    zip: '18431'}
+  place: '4235520'
+  geo: {lat: 41.57498, lng: -75.26865}
+  phone: 570-251-6543
+  website: https://www.va.gov/wilkes-barre-health-care/locations/wayne-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_693QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/honesdale/wayne-memorial-community-health-centers-administ
   name: Wayne Memorial Community Health Centers Administration
   categories:

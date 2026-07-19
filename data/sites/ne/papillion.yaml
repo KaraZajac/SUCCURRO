@@ -88,6 +88,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/papillion/papillion-va-community-living-center
+  name: Papillion VA Community Living Center
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: '11111 South 84th Street, CHI Health Midlands', city: Papillion, state: ne, zip: '68046'}
+  place: '3138295'
+  geo: {lat: 41.13596, lng: -96.04004}
+  phone: 402-995-6600
+  website: https://www.va.gov/find-locations/facility/vha_6369BA
+  external_ids: {va: vha_6369BA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/papillion/sarpy-county-child-development-center
   name: Sarpy County Child Development Center
   categories:
@@ -108,6 +123,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/papillion/sarpy-county-va-clinic
+  name: Sarpy County VA Clinic
+  categories: *id001
+  description: Multi-Specialty CBOC
+  address: {street: 1330 Jersey Street, city: Papillion, state: ne, zip: '68046'}
+  place: '3138295'
+  geo: {lat: 41.17507, lng: -96.02745}
+  phone: 402-591-4500
+  website: https://www.va.gov/nebraska-western-iowa-health-care/locations/sarpy-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  external_ids: {va: vha_636GL}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/papillion/south-osage-street-pantry
   name: South Osage Street Pantry
   categories:

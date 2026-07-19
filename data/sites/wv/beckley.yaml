@@ -399,6 +399,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/beckley/beckley-mobile-vet-center
+  name: Beckley Mobile Vet Center
+  categories: &id002
+  - vet-center
+  address: {street: 201 Grey Flatts Road, city: Beckley, state: wv, zip: '25801'}
+  place: '5405332'
+  geo: {lat: 37.77892, lng: -81.15897}
+  phone: 304-252-8220
+  website: https://www.va.gov/beckley-vet-center/locations/#beckley-mobile-vet-center
+  external_ids: {va: vc_0812MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/beckley/beckley-stratton-school-based-clinic
   name: Beckley Stratton School-Based Clinic
   categories:
@@ -420,6 +433,50 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/beckley/beckley-va-medical-center
+  name: Beckley VA Medical Center
+  categories: &id001
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 200 Veterans Avenue, city: Beckley, state: wv, zip: '25801'}
+  place: '5405332'
+  geo: {lat: 37.76604, lng: -81.19195}
+  phone: 304-255-2121
+  website: https://www.va.gov/beckley-health-care/locations/beckley-va-medical-center/
+  external_ids: {va: vha_517}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: wv/beckley/beckley-va-mobile-medical-unit
+  name: Beckley VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 200 Veterans Avenue, city: Beckley, state: wv, zip: '25801'}
+  place: '5405332'
+  geo: {lat: 37.76512, lng: -81.19269}
+  phone: 304-255-2121
+  website: https://www.va.gov/beckley-health-care/locations/beckley-va-mobile-medical-unit/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_517HK}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: wv/beckley/beckley-vet-center
+  name: Beckley Vet Center
+  categories: *id002
+  address: {street: 201 Grey Flatts Road, city: Beckley, state: wv, zip: '25801'}
+  place: '5405332'
+  geo: {lat: 37.77892, lng: -81.15897}
+  phone: 304-252-8220
+  website: https://www.va.gov/beckley-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0231V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/beckley/bullfrogs-butterflies
   name: Bullfrogs & Butterflies
   categories:
@@ -763,15 +820,24 @@
   name: Office Of Special Programs (Esy)
   categories:
   - meal-program
-  address: {street: 301 Park Ave., city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 301 Park Ave.
+    city: Beckley
+    state: wv
+    zip: '25801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by RALEIGH CO BD OF EDUCATION.
   place: '5405332'
-  geo: {lat: 37.7728, lng: -81.19174}
+  geo:
+    lat: 37.7728
+    lng: -81.19174
   phone: (304) 256-4555
-  external_ids: {usda_master: Cycle 01_WV_SFSP_0042}
+  external_ids:
+    usda_master: Cycle 01_WV_SFSP_0042
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/pyramid-counseling-llc
   name: Pyramid Counseling LLC
   categories:
@@ -834,15 +900,24 @@
   name: Stratton Elementary
   categories:
   - meal-program
-  address: {street: '129 S. Fayette Street Beckley, West Virginia', city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 129 S. Fayette Street Beckley, West Virginia
+    city: Beckley
+    state: wv
+    zip: '25801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by RALEIGH CO BD OF EDUCATION.
   place: '5405332'
-  geo: {lat: 37.77743, lng: -81.18879}
+  geo:
+    lat: 37.77743
+    lng: -81.18879
   phone: (304) 256-4500
-  external_ids: {usda_master: Cycle 01_WV_SFSP_0044}
+  external_ids:
+    usda_master: Cycle 01_WV_SFSP_0044
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/woodrow-wilson-school-based-clinic
   name: Woodrow Wilson School-Based Clinic
   categories:

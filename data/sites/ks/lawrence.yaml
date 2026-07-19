@@ -179,15 +179,24 @@
   name: Douglas County Fairgrounds
   categories:
   - meal-program
-  address: {street: 2110 Harper St., city: Lawrence, state: ks, zip: '66046'}
+  address:
+    street: 2110 Harper St.
+    city: Lawrence
+    state: ks
+    zip: '66046'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0497 - Lawrence.
   place: '2038900'
-  geo: {lat: 38.94704, lng: -95.21415}
+  geo:
+    lat: 38.94704
+    lng: -95.21415
   phone: (785) 832-5000
-  external_ids: {usda_master: Cycle 02_KS_SFSP_0229}
+  external_ids:
+    usda_master: Cycle 02_KS_SFSP_0229
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lawrence/heartland-at-534-michigan
   name: Heartland at 534 Michigan
   categories:
@@ -271,16 +280,56 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/lawrence/lawrence-va-clinic
+  name: Lawrence VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 4821 Quail Crest Place, city: Lawrence, state: ks, zip: '66049'}
+  place: '2038900'
+  geo: {lat: 38.96013, lng: -95.30544}
+  phone: 800-574-8387
+  website: https://www.va.gov/eastern-kansas-health-care/locations/lawrence-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_589GU}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/lawrence/sunset-hill-elementary
   name: Sunset Hill Elementary
   categories:
   - meal-program
-  address: {street: 901 Schwarz Rd, city: Lawrence, state: ks, zip: '66049'}
+  address:
+    street: 901 Schwarz Rd
+    city: Lawrence
+    state: ks
+    zip: '66049'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0497 - Lawrence.
   place: '2038900'
-  geo: {lat: 38.96725, lng: -95.2697}
+  geo:
+    lat: 38.96725
+    lng: -95.2697
   phone: (785) 832-5000
-  external_ids: {usda_master: Cycle 02_KS_SFSP_0228}
+  external_ids:
+    usda_master: Cycle 02_KS_SFSP_0228
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ks/lawrence/vetsuccess-on-campus-at-university-of-kansas
+  name: VetSuccess on Campus at University of Kansas
+  categories:
+  - va-facility
+  description: VetSuccess On Campus
+  address: {street: '1300 Sunnyside Ave., KU Military-Affiliated Student Center', city: Lawrence, state: ks,
+    zip: '66045'}
+  place: '2038900'
+  geo: {lat: 38.95563, lng: -95.24981}
+  phone: 785-864-0903
+  external_ids: {va: vba_452c}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}

@@ -64,15 +64,24 @@
   name: Nc Scottsburg Middle School
   categories:
   - meal-program
-  address: {street: 425 S Third Street, city: Scottsburg, state: in, zip: '47170'}
+  address:
+    street: 425 S Third Street
+    city: Scottsburg
+    state: in
+    zip: '47170'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Scott County School
     Dist #2.'
   place: '1868526'
-  geo: {lat: 38.68068, lng: -85.76336}
-  external_ids: {usda_master: Cycle 02_IN_SFSP_0270}
+  geo:
+    lat: 38.68068
+    lng: -85.76336
+  external_ids:
+    usda_master: Cycle 02_IN_SFSP_0270
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/scottsburg/o-v-o-scottsburg-center
   name: O.V.O. Scottsburg Center
   categories:
@@ -92,3 +101,33 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/scottsburg/scott-county-va-clinic
+  name: Scott County VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1467 North Scott Valley Drive, city: Scottsburg, state: in, zip: '47170'}
+  place: '1868526'
+  geo: {lat: 38.70593, lng: -85.78879}
+  phone: 502-287-6900
+  website: https://www.va.gov/louisville-health-care/locations/scott-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_603GG}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: in/scottsburg/va-regional-benefit-satellite-office-at-scott-co
+  name: VA Regional Benefit Satellite Office at Scott County VA Clinic
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: 1467 N Scott Valley Drive, city: Scottsburg, state: in, zip: '56654'}
+  place: '1868526'
+  geo: {lat: 38.70593, lng: -85.78879}
+  phone: 877-690-1938, ext. 56654
+  external_ids: {va: vba_326d}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

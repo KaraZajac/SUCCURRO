@@ -23,16 +23,25 @@
   name: Hathaway High School Cafeteria Public Eating Establishment -- Nc
   categories:
   - meal-program
-  address: {street: 4040 Pine Island Hwy, city: Jennings, state: la, zip: '70546'}
+  address:
+    street: 4040 Pine Island Hwy
+    city: Jennings
+    state: la
+    zip: '70546'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Jefferson Davis Parish
     School Board.
   place: '2238355'
-  geo: {lat: 30.35004, lng: -92.67167}
+  geo:
+    lat: 30.35004
+    lng: -92.67167
   phone: (337) 824-0806
-  external_ids: {usda_master: Cycle 02_LA_SFSP_0167}
+  external_ids:
+    usda_master: Cycle 02_LA_SFSP_0167
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/jennings/housing-authority-of-the-city-of-jennings
   name: Housing Authority Of The City Of Jennings
   categories:
@@ -98,15 +107,41 @@
   name: Jennings Elementary Cafeteria Public Eating Establishment -Nc
   categories:
   - meal-program
-  address: {street: 1603 S Lake Arthur Ave, city: Jennings, state: la, zip: '70546'}
+  address:
+    street: 1603 S Lake Arthur Ave
+    city: Jennings
+    state: la
+    zip: '70546'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Jefferson Davis Parish
     School Board.
   place: '2238355'
-  geo: {lat: 30.20515, lng: -92.66356}
+  geo:
+    lat: 30.20515
+    lng: -92.66356
   phone: (337) 824-1420
-  external_ids: {usda_master: Cycle 04_LA_SFSP_0208}
+  external_ids:
+    usda_master: Cycle 04_LA_SFSP_0208
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: la/jennings/jennings-va-clinic
+  name: Jennings VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1907 Johnson Street, city: Jennings, state: la, zip: '70546'}
+  place: '2238355'
+  geo: {lat: 30.23828, lng: -92.66139}
+  phone: 337-785-4700
+  website: https://www.va.gov/alexandria-health-care/locations/jennings-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_502GA}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: la/jennings/rehab-of-sw-la-llc-jennings
   name: Rehab of SW LA LLC Jennings

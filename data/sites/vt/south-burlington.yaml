@@ -2,16 +2,25 @@
   name: Community Drive South Burlington Open, Non-Congregate
   categories:
   - meal-program
-  address: {street: 435 Community Drive, city: South Burlington, state: vt, zip: '05403'}
+  address:
+    street: 435 Community Drive
+    city: South Burlington
+    state: vt
+    zip: '05403'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Essex Westford Educational
     Community Unified Union School Dist..
   place: '5066175'
-  geo: {lat: 44.44826, lng: -73.14532}
+  geo:
+    lat: 44.44826
+    lng: -73.14532
   phone: (802) 857-7333
-  external_ids: {usda_master: Cycle 07_VT_SFSP_0043}
+  external_ids:
+    usda_master: Cycle 07_VT_SFSP_0043
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: vt/south-burlington/community-health-centers-good-health
   name: Community Health Centers - Good Health
   categories:
@@ -107,3 +116,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: vt/south-burlington/south-burlington-vet-center
+  name: South Burlington Vet Center
+  categories:
+  - vet-center
+  address: {street: '19 Gregory Drive, Suite 201', city: South Burlington, state: vt, zip: '05403'}
+  place: '5066175'
+  geo: {lat: 44.4548, lng: -73.14043}
+  phone: 802-862-1806
+  website: https://www.va.gov/south-burlington-vet-center/
+  hours:
+  - {days: [mon, tue], open: '08:00', close: '17:30'}
+  - {days: [wed], open: '08:00', close: '18:30'}
+  - {days: [thu], open: '08:00', close: '18:00'}
+  - {days: [fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0118V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

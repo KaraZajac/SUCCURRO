@@ -41,15 +41,24 @@
   name: Brooking-Harbor High
   categories:
   - meal-program
-  address: {street: 629 Easy St., city: Brookings, state: or, zip: '97415'}
+  address:
+    street: 629 Easy St.
+    city: Brookings
+    state: or
+    zip: '97415'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Brookings-Harbor SD 17C.
   place: '4108650'
-  geo: {lat: 42.05854, lng: -124.28379}
+  geo:
+    lat: 42.05854
+    lng: -124.28379
   phone: (541) 463-2108
-  external_ids: {usda_master: Cycle 08_OR_SFSP_0065}
+  external_ids:
+    usda_master: Cycle 08_OR_SFSP_0065
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/brookings/brookings
   name: BROOKINGS
   categories:
@@ -90,3 +99,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/brookings/brookings-va-clinic
+  name: Brookings VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 840 Railroad Street, city: Brookings, state: or, zip: '97415'}
+  place: '4108650'
+  geo: {lat: 42.05213, lng: -124.2883}
+  phone: 541-412-1152
+  website: https://www.va.gov/roseburg-health-care/locations/brookings-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_653GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

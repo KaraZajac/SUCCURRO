@@ -63,19 +63,46 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/hoffman-estates/hoffman-estates-va-clinic
+  name: Hoffman Estates VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 4885 Hoffman Boulevard, city: Hoffman Estates, state: il, zip: '60192'}
+  place: '1735411'
+  geo: {lat: 42.06805, lng: -88.199}
+  phone: 847-645-1443
+  website: https://www.va.gov/hines-health-care/locations/hoffman-estates-va-clinic/
+  hours:
+  - {days: [mon, thu, fri], open: '07:30', close: '16:30'}
+  - {days: [tue, wed], open: '07:30', close: '17:30'}
+  external_ids: {va: vha_578GE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/hoffman-estates/j-b-conant-high-school
   name: J B Conant High School
   categories:
   - meal-program
-  address: {street: 700 E Cougar Trl, city: Hoffman Estates, state: il, zip: '60169'}
+  address:
+    street: 700 E Cougar Trl
+    city: Hoffman Estates
+    state: il
+    zip: '60169'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Township HSD 211.
   place: '1735411'
-  geo: {lat: 42.02873, lng: -88.08839}
+  geo:
+    lat: 42.02873
+    lng: -88.08839
   phone: (847) 755-3626
-  external_ids: {usda_master: Cycle 01_IL_SFSP_0257}
+  external_ids:
+    usda_master: Cycle 01_IL_SFSP_0257
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/hoffman-estates/leyden-family-service-share-program
   name: Leyden Family Service SHARE Program
   categories:

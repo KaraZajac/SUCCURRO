@@ -23,12 +23,38 @@
   name: Bellevue High School
   categories:
   - meal-program
-  address: {street: 201 Center Street, city: Bellevue, state: ky, zip: '41073'}
+  address:
+    street: 201 Center Street
+    city: Bellevue
+    state: ky
+    zip: '41073'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bellevue Independent
     School District.
   place: '2105446'
-  geo: {lat: 39.10205, lng: -84.48191}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_0083}
+  geo:
+    lat: 39.10205
+    lng: -84.48191
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_0083
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ky/bellevue/bellevue-va-clinic
+  name: Bellevue VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 103 Landmark Drive, city: Bellevue, state: ky, zip: '41073'}
+  place: '2105446'
+  geo: {lat: 39.10096, lng: -84.48464}
+  phone: 859-392-3840
+  website: https://www.va.gov/cincinnati-health-care/locations/bellevue-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_539GA}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}

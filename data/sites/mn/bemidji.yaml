@@ -21,14 +21,40 @@
   name: Bemidji Senior High School
   categories:
   - meal-program
-  address: {street: 2900 Division St W, city: Bemidji, state: mn, zip: '56601'}
+  address:
+    street: 2900 Division St W
+    city: Bemidji
+    state: mn
+    zip: '56601'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Bemidji ISD #31.'
   place: '2705068'
-  geo: {lat: 47.46484, lng: -94.92353}
+  geo:
+    lat: 47.46484
+    lng: -94.92353
   phone: (218) 333-3100
-  external_ids: {usda_master: Cycle 03_MN_SFSP_0033}
+  external_ids:
+    usda_master: Cycle 03_MN_SFSP_0033
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mn/bemidji/bemidji-va-clinic
+  name: Bemidji VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1217 Anne Street NW, city: Bemidji, state: mn, zip: '56601'}
+  place: '2705068'
+  geo: {lat: 47.50506, lng: -94.89633}
+  phone: 218-755-6360
+  website: https://www.va.gov/fargo-health-care/locations/bemidji-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_437GE}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: mn/bemidji/hra-of-bemidji-minnesota
   name: Hra Of Bemidji, Minnesota
@@ -73,16 +99,25 @@
   name: North Country Park Ruralnc
   categories:
   - meal-program
-  address: {street: 1001 30Th St Nw, city: Bemidji, state: mn, zip: '56601'}
+  address:
+    street: 1001 30Th St Nw
+    city: Bemidji
+    state: mn
+    zip: '56601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of the Northern
     Sky.
   place: '2705068'
-  geo: {lat: 47.49774, lng: -94.89237}
+  geo:
+    lat: 47.49774
+    lng: -94.89237
   phone: (859) 240-0499
-  external_ids: {usda_master: Cycle 06_MN_SFSP_0049}
+  external_ids:
+    usda_master: Cycle 06_MN_SFSP_0049
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/bemidji/north-homes-children-and-family-servs
   name: North Homes Children and Family Servs
   categories:

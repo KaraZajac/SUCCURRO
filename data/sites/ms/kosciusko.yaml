@@ -36,6 +36,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/kosciusko/kosciusko-va-clinic
+  name: Kosciusko VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 405 West Adams Street, city: Kosciusko, state: ms, zip: '39090'}
+  place: '2838320'
+  geo: {lat: 33.05944, lng: -89.59466}
+  phone: 662-289-2880
+  website: https://www.va.gov/jackson-health-care/locations/kosciusko-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_586GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/kosciusko/life-help-mental-health-ctr-region-6-attala-coun
   name: Life Help Mental Health Ctr/Region 6 Attala County Office
   categories:
@@ -61,13 +78,22 @@
   name: Oprah Winfrey Boys & Girls Club Of East Mississippi
   categories:
   - meal-program
-  address: {street: 500 Knox Road, city: Kosciusko, state: ms, zip: '39090'}
+  address:
+    street: 500 Knox Road
+    city: Kosciusko
+    state: ms
+    zip: '39090'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club of
     East MS.
   place: '2838320'
-  geo: {lat: 33.06375, lng: -89.58089}
+  geo:
+    lat: 33.06375
+    lng: -89.58089
   phone: (662) 582-6736
-  external_ids: {usda_master: Cycle 06_MS_SFSP_0048}
+  external_ids:
+    usda_master: Cycle 06_MS_SFSP_0048
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

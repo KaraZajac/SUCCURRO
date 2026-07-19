@@ -97,6 +97,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/littleton/littleton-va-clinic
+  name: Littleton VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 264 Cottage Street, city: Littleton, state: nh, zip: '03561'}
+  place: '3342500'
+  geo: {lat: 44.29902, lng: -71.76871}
+  phone: 603-575-6700
+  website: https://www.va.gov/white-river-junction-health-care/locations/littleton-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_405HC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/littleton/mid-state-health-center-littleton-dental-clinic
   name: Mid-State Health Center - Littleton Dental Clinic
   categories:
@@ -122,16 +139,25 @@
   name: Mildred C. Lakeway School
   categories:
   - meal-program
-  address: {street: 325 Union St, city: Littleton, state: nh, zip: '03561'}
+  address:
+    street: 325 Union St
+    city: Littleton
+    state: nh
+    zip: '03561'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Belknap/Merrimack Cap,
     Inc.
   place: '3342500'
-  geo: {lat: 44.3087, lng: -71.75914}
+  geo:
+    lat: 44.3087
+    lng: -71.75914
   phone: (603) 444-2831
-  external_ids: {usda_master: Cycle 08_NH_SFSP_0093}
+  external_ids:
+    usda_master: Cycle 08_NH_SFSP_0093
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/littleton/north-country-recovery-center-weeks-medical-cent
   name: North Country Recovery Center Weeks Medical Center
   categories:

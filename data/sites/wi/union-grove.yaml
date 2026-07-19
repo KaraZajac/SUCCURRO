@@ -2,15 +2,24 @@
   name: American Roller
   categories:
   - meal-program
-  address: {street: 1440 13Th Street, city: Union Grove, state: wi, zip: '53182'}
+  address:
+    street: 1440 13Th Street
+    city: Union Grove
+    state: wi
+    zip: '53182'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Racine Unified School
     District.
   place: '5581775'
-  geo: {lat: 42.6843, lng: -88.05842}
-  external_ids: {usda_master: Cycle 06_WI_SFSP_0432}
+  geo:
+    lat: 42.6843
+    lng: -88.05842
+  external_ids:
+    usda_master: Cycle 06_WI_SFSP_0432
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/union-grove/clement-j-zablocki-vamc-union-grove-clinic
   name: Clement J Zablocki VAMC Union Grove Clinic
   categories:
@@ -32,3 +41,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/union-grove/union-grove-va-clinic
+  name: Union Grove VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 21425 Spring Street, city: Union Grove, state: wi, zip: '53182'}
+  place: '5581775'
+  geo: {lat: 42.69327, lng: -88.07856}
+  phone: 262-878-7000
+  website: https://www.va.gov/milwaukee-health-care/locations/union-grove-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_695GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

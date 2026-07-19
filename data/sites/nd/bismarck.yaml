@@ -44,14 +44,36 @@
   name: Bismarck High School
   categories:
   - meal-program
-  address: {street: 800 N 8Th St, city: Bismarck, state: nd, zip: '58501'}
+  address:
+    street: 800 N 8Th St
+    city: Bismarck
+    state: nd
+    zip: '58501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.81269, lng: -100.77999}
+  geo:
+    lat: 46.81269
+    lng: -100.77999
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0002}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0002
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nd/bismarck/bismarck-mobile-vet-center
+  name: Bismarck Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '619 Riverwood Drive, Suite 105', city: Bismarck, state: nd, zip: '58504'}
+  place: '3807200'
+  geo: {lat: 46.79433, lng: -100.80035}
+  phone: 701-224-9751
+  website: https://www.va.gov/bismarck-vet-center/locations/#bismarck-mobile-vet-center
+  external_ids: {va: vc_0819MVC}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: nd/bismarck/bismarck-north-health-center
   name: Bismarck North Health Center
@@ -74,6 +96,38 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/bismarck/bismarck-va-clinic
+  name: Bismarck VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: '2700 State Street, Gateway Mall', city: Bismarck, state: nd, zip: '58503'}
+  place: '3807200'
+  geo: {lat: 46.83534, lng: -100.77636}
+  phone: 701-221-9152
+  website: https://www.va.gov/fargo-health-care/locations/bismarck-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_437GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nd/bismarck/bismarck-vet-center
+  name: Bismarck Vet Center
+  categories: *id001
+  address: {street: '619 Riverwood Drive, Suite 105', city: Bismarck, state: nd, zip: '58504'}
+  place: '3807200'
+  geo: {lat: 46.79433, lng: -100.80035}
+  phone: 701-224-9751
+  website: https://www.va.gov/bismarck-vet-center/
+  hours:
+  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
+  - {days: [tue], open: '08:00', close: '18:30'}
+  external_ids: {va: vc_0446V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/bismarck/blessed-builders-ministry
   name: Blessed Builders Ministry
   categories:
@@ -139,15 +193,24 @@
   name: Century High School
   categories:
   - meal-program
-  address: {street: 1000 E Century Ave, city: Bismarck, state: nd, zip: '58503'}
+  address:
+    street: 1000 E Century Ave
+    city: Bismarck
+    state: nd
+    zip: '58503'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.8382, lng: -100.77723}
+  geo:
+    lat: 46.8382
+    lng: -100.77723
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0003}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0003
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/chambers-and-blohm-psychological-servs
   name: Chambers and Blohm Psychological Servs
   categories:
@@ -253,16 +316,25 @@
   name: Dorothy Moses-Cacfp
   categories:
   - meal-program
-  address: {street: 1312 Columbia Dr, city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 1312 Columbia Dr
+    city: Bismarck
+    state: nd
+    zip: '58504'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Central Region Educational
     Association (CREA).
   place: '3807200'
-  geo: {lat: 46.79057, lng: -100.78537}
+  geo:
+    lat: 46.79057
+    lng: -100.78537
   phone: (701) 415-0456
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0024}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0024
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/heartview-foundation
   name: Heartview Foundation
   categories:
@@ -353,28 +425,46 @@
   name: Legacy High School
   categories:
   - meal-program
-  address: {street: 3400 E Calgary Ave, city: Bismarck, state: nd, zip: '58503'}
+  address:
+    street: 3400 E Calgary Ave
+    city: Bismarck
+    state: nd
+    zip: '58503'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.84529, lng: -100.7382}
+  geo:
+    lat: 46.84529
+    lng: -100.7382
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0007}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0007
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/lions-park
   name: Lions Park
   categories:
   - meal-program
-  address: {street: 705 S 9Thst, city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 705 S 9Thst
+    city: Bismarck
+    state: nd
+    zip: '58504'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.78444, lng: -100.74615}
+  geo:
+    lat: 46.78444
+    lng: -100.74615
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0008}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0008
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/little-free-pantry-gslc
   name: Little Free Pantry - GSLC
   categories:
@@ -631,28 +721,46 @@
   name: Simle Middle School
   categories:
   - meal-program
-  address: {street: 1218 Simle Dr, city: Bismarck, state: nd, zip: '58501'}
+  address:
+    street: 1218 Simle Dr
+    city: Bismarck
+    state: nd
+    zip: '58501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.81832, lng: -100.76143}
+  geo:
+    lat: 46.81832
+    lng: -100.76143
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0012}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0012
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/theodore-jamerson-elem-school
   name: Theodore Jamerson Elem School
   categories:
   - meal-program
-  address: {street: 3315 University Dr, city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 3315 University Dr
+    city: Bismarck
+    state: nd
+    zip: '58504'
   description: Free summer meals for kids and teens (2026 season) — sponsored by United Tribes Tech College.
   place: '3807200'
-  geo: {lat: 46.76677, lng: -100.76324}
+  geo:
+    lat: 46.76677
+    lng: -100.76324
   phone: (701) 221-1840
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0091}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0091
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/unitarian-universalist-church-seth-family-sponso
   name: Unitarian Universalist Church - Seth Family Sponsor
   categories:
@@ -672,15 +780,24 @@
   name: Wachter Middle School
   categories:
   - meal-program
-  address: {street: 1107 S 7Th St, city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 1107 S 7Th St
+    city: Bismarck
+    state: nd
+    zip: '58504'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bismarck Public Schools.
   place: '3807200'
-  geo: {lat: 46.79451, lng: -100.78196}
+  geo:
+    lat: 46.79451
+    lng: -100.78196
   phone: (701) 323-4089
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0014}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0014
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/west-central-human-service-center
   name: West Central Human Service Center
   categories:

@@ -18,33 +18,96 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/decatur/atlanta-va-clinic
+  name: Atlanta VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 250 North Arcadia Avenue, city: Decatur, state: ga, zip: '30030'}
+  place: '1322052'
+  geo: {lat: 33.78142, lng: -84.27757}
+  phone: 404-297-1540
+  website: https://www.va.gov/atlanta-health-care/locations/atlanta-va-clinic/
+  hours:
+  - {days: [mon, tue, thu, fri], open: '07:30', close: '18:00'}
+  - {days: [wed], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_508QF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ga/decatur/atlanta-va-mobile-medical-unit
+  name: Atlanta VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 1670 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  place: '1322052'
+  geo: {lat: 33.80258, lng: -84.31041}
+  phone: 404-321-6111
+  website: https://www.va.gov/find-locations/facility/vha_508QK
+  external_ids: {va: vha_508QK}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ga/decatur/atlanta-veteran-readiness-and-employment-office
+  name: Atlanta Veteran Readiness and Employment Office
+  categories: &id002
+  - va-facility
+  description: Veteran Readiness and Employment Office
+  address: {street: 1700 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  place: '1322052'
+  geo: {lat: 33.80401, lng: -84.31033}
+  phone: 404-929-3152
+  website: https://www.va.gov/find-locations/facility/vba_316a
+  external_ids: {va: vba_316a}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/decatur/camp-jewell-house
   name: Camp Jewell House
   categories:
   - meal-program
-  address: {street: 2801 Candler Road, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 2801 Candler Road
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.70849, lng: -84.27214}
+  geo:
+    lat: 33.70849
+    lng: -84.27214
   phone: (770) 785-5000
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0083}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0083
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/candler-reserve
   name: Candler Reserve
   categories:
   - meal-program
-  address: {street: 2648 Candler Pkwy, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 2648 Candler Pkwy
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City of Atlanta - Vended.
   place: '1322052'
-  geo: {lat: 33.72824, lng: -84.28314}
+  geo:
+    lat: 33.72824
+    lng: -84.28314
   phone: (470) 312-3465
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0053}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0053
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/caringworks-inc
   name: CaringWorks Inc
   categories:
@@ -70,16 +133,25 @@
   name: Cedar Grove
   categories:
   - meal-program
-  address: {street: 2300 Wildcat Road, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 2300 Wildcat Road
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Real Talk Let's Talk
     Reunited Counseling Inc..
   place: '1322052'
-  geo: {lat: 33.68803, lng: -84.29585}
+  geo:
+    lat: 33.68803
+    lng: -84.29585
   phone: (678) 531-7953
-  external_ids: {usda_master: Cycle 08_GA_SFSP_0609}
+  external_ids:
+    usda_master: Cycle 08_GA_SFSP_0609
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/claratel-behavioral-health-clifton-springs-menta
   name: Claratel Behavioral Health Clifton Springs Mental Health Center
   categories:
@@ -147,70 +219,115 @@
   name: Columbia High School
   categories:
   - meal-program
-  address: {street: 2106 Columbia Dr, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 2106 Columbia Dr
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.72776, lng: -84.25172}
+  geo:
+    lat: 33.72776
+    lng: -84.25172
   phone: (678) 676-1773
-  external_ids: {usda_master: Cycle 04_GA_SSO_0036}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0036
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/coralwood-education-center
   name: Coralwood Education Center
   categories:
   - meal-program
-  address: {street: 2477 Coralwood Dr, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 2477 Coralwood Dr
+    city: Decatur
+    state: ga
+    zip: '30033'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.82838, lng: -84.2876}
+  geo:
+    lat: 33.82838
+    lng: -84.2876
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 04_GA_SSO_0316}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0316
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/decatur-family-ymca
   name: Decatur Family Ymca
   categories:
   - meal-program
-  address: {street: 1100 Clairemont Road, city: Decatur, state: ga, zip: '30030'}
+  address:
+    street: 1100 Clairemont Road
+    city: Decatur
+    state: ga
+    zip: '30030'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bread of Life Development
     Ministries ,Inc.
   place: '1322052'
-  geo: {lat: 33.78759, lng: -84.30679}
+  geo:
+    lat: 33.78759
+    lng: -84.30679
   phone: (404) 932-4980
-  external_ids: {usda_master: Cycle 11_GA_SFSP_0278}
+  external_ids:
+    usda_master: Cycle 11_GA_SFSP_0278
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/dekalb-county-juvenile-court
   name: Dekalb County Juvenile Court
   categories:
   - meal-program
-  address: {street: 4309 Memorial Drive, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 4309 Memorial Drive
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.77408, lng: -84.24647}
+  geo:
+    lat: 33.77408
+    lng: -84.24647
   phone: (404) 294-2750
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0085}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0085
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/exchange-recreation
   name: Exchange Recreation
   categories:
   - meal-program
-  address: {street: 2771 Columbia Drive, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 2771 Columbia Drive
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.70201, lng: -84.25743}
+  geo:
+    lat: 33.70201
+    lng: -84.25743
   phone: (404) 687-3430
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0073}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0073
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/free-food-pantry-first-christian-church-of-decat
   name: Free Food Pantry @ First Christian Church of Decatur GA
   categories:
@@ -287,76 +404,134 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/decatur/joseph-maxwell-cleland-atlanta-va-medical-center
+  name: Joseph Maxwell Cleland Atlanta VA Medical Center
+  categories: *id001
+  description: VA Medical Center (VAMC)
+  address: {street: 1670 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  place: '1322052'
+  geo: {lat: 33.80194, lng: -84.31303}
+  phone: 404-321-6111
+  website: https://www.va.gov/atlanta-health-care/locations/joseph-maxwell-cleland-atlanta-va-medical-center/
+  external_ids: {va: vha_508}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/decatur/kameo-production-studios-llc
   name: Kameo Production Studios,Llc.
   categories:
   - meal-program
-  address: {street: 2575 Snapfinger Road, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 2575 Snapfinger Road
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.70469, lng: -84.21511}
+  geo:
+    lat: 33.70469
+    lng: -84.21511
   phone: (678) 499-7537
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0076}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0076
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/kelley-chapel-united-methodist-church
   name: Kelley Chapel United Methodist Church
   categories:
   - meal-program
-  address: {street: 3411 Kelley Chapel Road, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 3411 Kelley Chapel Road
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Georgia Nutritional Services,
     Inc.-DCH.
   place: '1322052'
-  geo: {lat: 33.68397, lng: -84.21495}
+  geo:
+    lat: 33.68397
+    lng: -84.21495
   phone: (678) 708-9484
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0010}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0010
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/kickin-2-fitness-camp
   name: Kickin 2 Fitness Camp
   categories:
   - meal-program
-  address: {street: 4457 Covington Hwy Decatur, city: Decatur, state: ga, zip: '30035'}
+  address:
+    street: 4457 Covington Hwy Decatur
+    city: Decatur
+    state: ga
+    zip: '30035'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Connected Communities,
     Inc..
   place: '1322052'
-  geo: {lat: 33.7472, lng: -84.22242}
+  geo:
+    lat: 33.7472
+    lng: -84.22242
   phone: (470) 359-4985
-  external_ids: {usda_master: Cycle 08_GA_SFSP_0489}
+  external_ids:
+    usda_master: Cycle 08_GA_SFSP_0489
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/kickin-2-fitness-camp-2
   name: Kickin 2 Fitness Camp
   categories:
   - meal-program
-  address: {street: 4457 Covington Hwy, city: Decatur, state: ga, zip: '30035'}
+  address:
+    street: 4457 Covington Hwy
+    city: Decatur
+    state: ga
+    zip: '30035'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Connected Communities,
     Inc..
   place: '1322052'
-  geo: {lat: 33.7472, lng: -84.22242}
+  geo:
+    lat: 33.7472
+    lng: -84.22242
   phone: (470) 359-4985
-  external_ids: {usda_master: Cycle 11_GA_SFSP_0476}
+  external_ids:
+    usda_master: Cycle 11_GA_SFSP_0476
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/lou-walker-park
   name: Lou Walker Park
   categories:
   - meal-program
-  address: {street: 3569 Larkspur Terr., city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3569 Larkspur Terr.
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.73955, lng: -84.24302}
+  geo:
+    lat: 33.73955
+    lng: -84.24302
   phone: (574) 571-0780
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0072}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0072
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/marvelous-light-consultants-llc-counseling-servi
   name: Marvelous Light Consultants LLC Counseling Services
   categories:
@@ -382,55 +557,91 @@
   name: Mason Mill Center
   categories:
   - meal-program
-  address: {street: 1340 Mcconnell Dr., city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 1340 Mcconnell Dr.
+    city: Decatur
+    state: ga
+    zip: '30033'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.8077, lng: -84.30764}
+  geo:
+    lat: 33.8077
+    lng: -84.30764
   phone: (404) 679-1349
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0071}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0071
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/math-n-more-agnes-scott
   name: Math N' More Agnes Scott
   categories:
   - meal-program
-  address: {street: 141 E College Ave, city: Decatur, state: ga, zip: '30030'}
+  address:
+    street: 141 E College Ave
+    city: Decatur
+    state: ga
+    zip: '30030'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City of Atlanta - Vended.
   place: '1322052'
-  geo: {lat: 33.76997, lng: -84.29567}
+  geo:
+    lat: 33.76997
+    lng: -84.29567
   phone: (470) 740-6284
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0055}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0055
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/mclendon-elementary-school
   name: Mclendon Elementary School
   categories:
   - meal-program
-  address: {street: 3169 Hollywood Dr, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 3169 Hollywood Dr
+    city: Decatur
+    state: ga
+    zip: '30033'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.80476, lng: -84.26179}
+  geo:
+    lat: 33.80476
+    lng: -84.26179
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 06_GA_SSO_0881}
+  external_ids:
+    usda_master: Cycle 06_GA_SSO_0881
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/mcnair-middle-school
   name: Mcnair Middle School
   categories:
   - meal-program
-  address: {street: 2190 Wallingford Dr, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 2190 Wallingford Dr
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.71889, lng: -84.29891}
+  geo:
+    lat: 33.71889
+    lng: -84.29891
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 08_GA_SSO_0096}
+  external_ids:
+    usda_master: Cycle 08_GA_SSO_0096
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/medcura-candler
   name: MedCura Candler
   categories:
@@ -501,16 +712,25 @@
   name: Midway Recreation Center
   categories:
   - meal-program
-  address: {street: 3181 Midway Road, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3181 Midway Road
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.7548, lng: -84.25832}
+  geo:
+    lat: 33.7548
+    lng: -84.25832
   phone: (404) 294-3150
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0067}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0067
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/n-candler-decatur-little-free-pantry
   name: N Candler Decatur Little Free Pantry
   categories:
@@ -530,16 +750,25 @@
   name: N.H. Scott Recreation Center
   categories:
   - meal-program
-  address: {street: 2230 Tilson Road, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 2230 Tilson Road
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.72046, lng: -84.29997}
+  geo:
+    lat: 33.72046
+    lng: -84.29997
   phone: (404) 687-4071
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0066}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0066
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/newport-integrated-behavioral-healthcare
   name: Newport Integrated Behavioral Healthcare
   categories:
@@ -584,42 +813,69 @@
   name: Peachcrest Elementary School
   categories:
   - meal-program
-  address: {street: 1530 Joy Ln, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 1530 Joy Ln
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.74764, lng: -84.24627}
+  geo:
+    lat: 33.74764
+    lng: -84.24627
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 04_GA_SSO_0309}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0309
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/phoenix-station
   name: Phoenix Station
   categories:
   - meal-program
-  address: {street: 3345 Kensington Rd, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3345 Kensington Rd
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City of Atlanta - Vended.
   place: '1322052'
-  geo: {lat: 33.77169, lng: -84.25295}
+  geo:
+    lat: 33.77169
+    lng: -84.25295
   phone: (678) 374-6003
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0060}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0060
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/porter-sanford
   name: Porter Sanford
   categories:
   - meal-program
-  address: {street: 3181 Rainbow Dr., city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 3181 Rainbow Dr.
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.71081, lng: -84.25956}
+  geo:
+    lat: 33.71081
+    lng: -84.25956
   phone: (678) 770-1160
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0075}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0075
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/positive-impact-health-centers-inc
   name: Positive Impact Health Centers Inc
   categories:
@@ -688,16 +944,25 @@
   name: Restoration Ministries
   categories:
   - meal-program
-  address: {street: 4311 Mercer Road, city: Decatur, state: ga, zip: '30035'}
+  address:
+    street: 4311 Mercer Road
+    city: Decatur
+    state: ga
+    zip: '30035'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County Recreation
     Department.
   place: '1322052'
-  geo: {lat: 33.74858, lng: -84.21292}
+  geo:
+    lat: 33.74858
+    lng: -84.21292
   phone: (404) 516-6467
-  external_ids: {usda_master: Cycle 10_GA_SFSP_0079}
+  external_ids:
+    usda_master: Cycle 10_GA_SFSP_0079
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/scottdale-midway-woods
   name: Scottdale - Midway Woods
   categories:
@@ -717,6 +982,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/decatur/senator-johnny-isakson-va-atlanta-regional-offic
+  name: Senator Johnny Isakson VA Atlanta Regional Office
+  categories: *id002
+  description: Regional Benefit Office
+  address: {street: 1700 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  place: '1322052'
+  geo: {lat: 33.80356, lng: -84.31071}
+  phone: 800-827-1000
+  website: https://www.va.gov/find-locations/facility/vba_316
+  external_ids: {va: vba_316}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/decatur/sisson-super-saver
   name: Sisson Super Saver
   categories:
@@ -736,15 +1014,24 @@
   name: Southwest Dekalb High School
   categories:
   - meal-program
-  address: {street: 2863 Kelley Chapel Rd, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 2863 Kelley Chapel Rd
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.7029, lng: -84.22369}
+  geo:
+    lat: 33.7029
+    lng: -84.22369
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 04_GA_SSO_0808}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0808
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/stand-inc
   name: STAND Inc
   categories:
@@ -770,53 +1057,89 @@
   name: Sunrise View
   categories:
   - meal-program
-  address: {street: 3814 Redan Rd, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3814 Redan Rd
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City of Atlanta - Vended.
   place: '1322052'
-  geo: {lat: 33.76142, lng: -84.23561}
+  geo:
+    lat: 33.76142
+    lng: -84.23561
   phone: (404) 641-0278
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0052}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/the-salvation-army-red-shield-youth-center-decat
   name: The Salvation Army Red Shield Youth Center-Decatur
   categories:
   - meal-program
-  address: {street: 3500 Sherydale Lane, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3500 Sherydale Lane
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Georgia Nutritional Services,
     Inc.-DCH.
   place: '1322052'
-  geo: {lat: 33.7468, lng: -84.24648}
+  geo:
+    lat: 33.7468
+    lng: -84.24648
   phone: (239) 691-3141
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0013}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0013
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/the-village-at-wesley-chapel
   name: The Village At Wesley Chapel
   categories:
   - meal-program
-  address: {street: 4336 Pleasant Point Drive, city: Decatur, state: ga, zip: '30034'}
+  address:
+    street: 4336 Pleasant Point Drive
+    city: Decatur
+    state: ga
+    zip: '30034'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bread of Life Development
     Ministries ,Inc.
   place: '1322052'
-  geo: {lat: 33.7087, lng: -84.21183}
+  geo:
+    lat: 33.7087
+    lng: -84.21183
   phone: (770) 292-8906
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0285}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0285
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/towers-high-school
   name: Towers High School
   categories:
   - meal-program
-  address: {street: 3919 Brookcrest Cir, city: Decatur, state: ga, zip: '30032'}
+  address:
+    street: 3919 Brookcrest Cir
+    city: Decatur
+    state: ga
+    zip: '30032'
   description: Free summer meals for kids and teens (2026 season) — sponsored by DeKalb County.
   place: '1322052'
-  geo: {lat: 33.74657, lng: -84.2365}
+  geo:
+    lat: 33.74657
+    lng: -84.2365
   phone: (678) 676-1772
-  external_ids: {usda_master: Cycle 04_GA_SSO_0518}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0518
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

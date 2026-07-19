@@ -152,6 +152,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/fayetteville/fayetteville-ar-vet-center
+  name: Fayetteville, AR Vet Center
+  categories:
+  - vet-center
+  address: {street: '1905 East Mission Boulevard, Suite 2', city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.08653, lng: -94.13318}
+  phone: 479-582-7152
+  website: https://www.va.gov/fayetteville-ar-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0727V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/fayetteville-church-of-christ
   name: Fayetteville Church of Christ
   categories:
@@ -187,6 +202,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/fayetteville/fayetteville-va-medical-center
+  name: Fayetteville VA Medical Center
+  categories: &id001
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 1100 North College Avenue, city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.07986, lng: -94.15829}
+  phone: 479-443-4301
+  website: https://www.va.gov/fayetteville-arkansas-health-care/locations/fayetteville-va-medical-center/
+  external_ids: {va: vha_564}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/feed-communities
   name: Feed Communities
   categories:
@@ -257,16 +287,25 @@
   name: Hinkle Mobile Home Park
   categories:
   - meal-program
-  address: {street: 3483 East Huntsville Street, city: Fayetteville, state: ar, zip: '72701'}
+  address:
+    street: 3483 East Huntsville Street
+    city: Fayetteville
+    state: ar
+    zip: '72701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Harvest Rural Feeding
     Services Inc.
   place: 0523290
-  geo: {lat: 36.05576, lng: -94.11229}
+  geo:
+    lat: 36.05576
+    lng: -94.11229
   phone: (908) 798-3884
-  external_ids: {usda_master: Cycle 06_AR_SFSP_0008}
+  external_ids:
+    usda_master: Cycle 06_AR_SFSP_0008
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/fayetteville/housing-authority-of-the-city-of-fayetteville
   name: Housing Authority Of The City Of Fayetteville
   categories:
@@ -403,6 +442,19 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ar/fayetteville/north-college-avenue-va-mobile-medical-unit
+  name: North College Avenue VA Mobile Medical Unit
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 1100 North College Avenue, city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.07987, lng: -94.15829}
+  phone: 479-443-4301
+  website: https://www.va.gov/find-locations/facility/vha_564QC
+  external_ids: {va: vha_564QC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/nrhh-little-pantry
   name: NRHH Little Pantry
   categories:
@@ -561,20 +613,44 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ar/fayetteville/sunbridge-va-clinic
+  name: Sunbridge VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 180 East Sunbridge Drive, city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.09796, lng: -94.15434}
+  phone: 479-443-4301
+  website: https://www.va.gov/fayetteville-arkansas-health-care/locations/sunbridge-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_564QB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/the-avenue-apartments
   name: The Avenue Apartments
   categories:
   - meal-program
-  address: {street: 3001 West Wedington Drive, city: Fayetteville, state: ar, zip: '72701'}
+  address:
+    street: 3001 West Wedington Drive
+    city: Fayetteville
+    state: ar
+    zip: '72701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Harvest Rural Feeding
     Services Inc.
   place: 0523290
-  geo: {lat: 36.07616, lng: -94.20361}
+  geo:
+    lat: 36.07616
+    lng: -94.20361
   phone: (479) 333-8868
-  external_ids: {usda_master: Cycle 06_AR_SFSP_0017}
+  external_ids:
+    usda_master: Cycle 06_AR_SFSP_0017
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/fayetteville/the-grove-church-free-little-pantry
   name: The Grove Church Free Little Pantry
   categories:
@@ -641,6 +717,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/fayetteville/township-va-clinic
+  name: Township VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: '216 East Township Street, Township Building', city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.09589, lng: -94.15539}
+  phone: 479-443-4301
+  website: https://www.va.gov/fayetteville-arkansas-health-care/locations/township-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_564QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/truhealth-family-care
   name: TruHealth Family Care
   categories:
@@ -662,6 +753,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/fayetteville/va-regional-benefit-satellite-office-at-fayettev
+  name: VA Regional Benefit Satellite Office at Fayetteville, AR
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: '3930 N. Vantage Drive, Room 103', city: Fayetteville, state: ar, zip: '72703'}
+  place: 0523290
+  geo: {lat: 36.11914, lng: -94.13825}
+  phone: 800-827-1000
+  external_ids: {va: vba_350a}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/fayetteville/vantage-point-of-northwest-arkansas
   name: Vantage Point of Northwest Arkansas
   categories:

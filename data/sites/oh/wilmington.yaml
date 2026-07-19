@@ -62,15 +62,24 @@
   name: Denver Elementary
   categories:
   - meal-program
-  address: {street: 291 Lorish Ave., city: Wilmington, state: oh, zip: '45177'}
+  address:
+    street: 291 Lorish Ave.
+    city: Wilmington
+    state: oh
+    zip: '45177'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wilmington City SD.
   place: '3985792'
-  geo: {lat: 39.45426, lng: -83.82314}
+  geo:
+    lat: 39.45426
+    lng: -83.82314
   phone: (937) 668-1080
-  external_ids: {usda_master: Cycle 05_OH_SFSP_0014}
+  external_ids:
+    usda_master: Cycle 05_OH_SFSP_0014
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/wilmington/erdman-center-for-early-learning
   name: Erdman Center for Early Learning
   categories:
@@ -114,15 +123,24 @@
   name: Grab And Go Denver Elementary
   categories:
   - meal-program
-  address: {street: 291 Lorish Ave., city: Wilmington, state: oh, zip: '45177'}
+  address:
+    street: 291 Lorish Ave.
+    city: Wilmington
+    state: oh
+    zip: '45177'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wilmington City SD.
   place: '3985792'
-  geo: {lat: 39.45426, lng: -83.82314}
+  geo:
+    lat: 39.45426
+    lng: -83.82314
   phone: (937) 668-1080
-  external_ids: {usda_master: Cycle 03_OH_SFSP_0021}
+  external_ids:
+    usda_master: Cycle 03_OH_SFSP_0021
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/wilmington/healthsource-wilmington
   name: HealthSource Wilmington
   categories:
@@ -149,15 +167,24 @@
   name: Hybrid Rodger O. Borror Middle School
   categories:
   - meal-program
-  address: {street: 275 Thorne Ave, city: Wilmington, state: oh, zip: '45177'}
+  address:
+    street: 275 Thorne Ave
+    city: Wilmington
+    state: oh
+    zip: '45177'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wilmington City SD.
   place: '3985792'
-  geo: {lat: 39.44917, lng: -83.83695}
+  geo:
+    lat: 39.44917
+    lng: -83.83695
   phone: (937) 283-7250
-  external_ids: {usda_master: Cycle 03_OH_SFSP_0208}
+  external_ids:
+    usda_master: Cycle 03_OH_SFSP_0208
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/wilmington/phoenix-center
   name: Phoenix Center
   categories:
@@ -215,3 +242,20 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: oh/wilmington/wilmington-va-clinic
+  name: Wilmington VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 31 Clark Street, city: Wilmington, state: oh, zip: '45177'}
+  place: '3985792'
+  geo: {lat: 39.44542, lng: -83.82078}
+  phone: 937-382-3949
+  website: https://www.va.gov/chillicothe-health-care/locations/wilmington-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_538GF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

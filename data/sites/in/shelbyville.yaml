@@ -65,14 +65,23 @@
   name: Nc Shelbyville Senior High
   categories:
   - meal-program
-  address: {street: 2003 S Miller St, city: Shelbyville, state: in, zip: '46176'}
+  address:
+    street: 2003 S Miller St
+    city: Shelbyville
+    state: in
+    zip: '46176'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Shelbyville Central Schools.
   place: '1869318'
-  geo: {lat: 39.50552, lng: -85.78679}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0836}
+  geo:
+    lat: 39.50552
+    lng: -85.78679
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0836
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/shelbyville/shelbville-va-cboc
   name: Shelbville VA CBOC
   categories:
@@ -109,6 +118,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/shelbyville/shelbyville-va-clinic
+  name: Shelbyville VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 2158 Intelliplex Drive, city: Shelbyville, state: in, zip: '46176'}
+  place: '1869318'
+  geo: {lat: 39.55737, lng: -85.78067}
+  phone: 317-398-2812
+  website: https://www.va.gov/indiana-health-care/locations/shelbyville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_583GG}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/shelbyville/the-helping-house-sharing-shack
   name: The Helping House Sharing Shack
   categories:

@@ -86,15 +86,24 @@
   name: Pearson Middle School-Rural Non-Congregate
   categories:
   - meal-program
-  address: {street: 2 Wetmore Ave., city: Winsted, state: ct, zip: 06098}
+  address:
+    street: 2 Wetmore Ave.
+    city: Winsted
+    state: ct
+    zip: 06098
   description: Free summer meals for kids and teens (2026 season) — sponsored by Winchester Board of Education
     - Summer Food Service Program.
   place: 0987350
-  geo: {lat: 41.92658, lng: -73.06739}
-  external_ids: {usda_master: Cycle 08_CT_SFSP_0212}
+  geo:
+    lat: 41.92658
+    lng: -73.06739
+  external_ids:
+    usda_master: Cycle 08_CT_SFSP_0212
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/winsted/the-isabelle-pearson-school-sbhc
   name: The Isabelle Pearson School SBHC
   categories:
@@ -176,3 +185,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ct/winsted/winsted-va-clinic
+  name: Winsted VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 115 Spencer Street, city: Winsted, state: ct, zip: 06098}
+  place: 0987350
+  geo: {lat: 41.93038, lng: -73.07574}
+  phone: 860-738-6985
+  website: https://www.va.gov/connecticut-health-care/locations/winsted-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_689GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

@@ -60,29 +60,47 @@
   name: Tazewell Library- Tazewell
   categories:
   - meal-program
-  address: {street: 129 Main St., city: Tazewell, state: va, zip: '24651'}
+  address:
+    street: 129 Main St.
+    city: Tazewell
+    state: va
+    zip: '24651'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Feeding America Southwest
     Virginia.
   place: '5177792'
-  geo: {lat: 37.11594, lng: -81.52}
+  geo:
+    lat: 37.11594
+    lng: -81.52
   phone: (276) 988-2541
-  external_ids: {usda_master: Cycle 02_VA_SFSP_0589}
+  external_ids:
+    usda_master: Cycle 02_VA_SFSP_0589
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/tazewell/tazewell-middle
   name: Tazewell Middle
   categories:
   - meal-program
-  address: {street: 367 Hope Street, city: Tazewell, state: va, zip: '24651'}
+  address:
+    street: 367 Hope Street
+    city: Tazewell
+    state: va
+    zip: '24651'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Tazewell County Public
     Schools.
   place: '5177792'
-  geo: {lat: 37.12857, lng: -81.48561}
-  external_ids: {usda_master: Cycle 01_VA_SFSP_0149}
+  geo:
+    lat: 37.12857
+    lng: -81.48561
+  external_ids:
+    usda_master: Cycle 01_VA_SFSP_0149
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/tazewell/tazewell-new-day-recovery
   name: Tazewell - New Day Recovery
   categories:
@@ -104,3 +122,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/tazewell/tazewell-va-clinic
+  name: Tazewell VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: '388 Ben Bolt Avenue, Carilion Tazewell Community Hospital', city: Tazewell, state: va,
+    zip: '24651'}
+  place: '5177792'
+  geo: {lat: 37.12374, lng: -81.48904}
+  phone: 276-988-8863
+  website: https://www.va.gov/salem-health-care/locations/tazewell-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_658GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

@@ -42,16 +42,25 @@
   name: Knoxville High School
   categories:
   - meal-program
-  address: {street: 1811 West Madison, city: Knoxville, state: ia, zip: '50138'}
+  address:
+    street: 1811 West Madison
+    city: Knoxville
+    state: ia
+    zip: '50138'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KFYI Knoxville Food Youth
     Initiative.
   place: '1942015'
-  geo: {lat: 41.31342, lng: -93.11647}
+  geo:
+    lat: 41.31342
+    lng: -93.11647
   phone: (641) 820-0615
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0163}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0163
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/knoxville/knoxville-office
   name: Knoxville Office
   categories:
@@ -73,6 +82,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/knoxville/knoxville-va-clinic
+  name: Knoxville VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 1607 North Lincoln Street, city: Knoxville, state: ia, zip: '50138'}
+  place: '1942015'
+  geo: {lat: 41.33254, lng: -93.10947}
+  phone: 641-828-5019
+  website: https://www.va.gov/central-iowa-health-care/locations/knoxville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_636GR}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/knoxville/low-rent-housing-agency-of-knoxville
   name: Low Rent Housing Agency Of Knoxville
   categories:

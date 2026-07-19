@@ -196,14 +196,40 @@
   name: Kingston Motel
   categories:
   - meal-program
-  address: {street: 239 Forest Hill Dr, city: Kingston, state: ny, zip: '12401'}
+  address:
+    street: 239 Forest Hill Dr
+    city: Kingston
+    state: ny
+    zip: '12401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Family Of Woodstock Inc.
   place: '3639727'
-  geo: {lat: 41.95115, lng: -74.04152}
+  geo:
+    lat: 41.95115
+    lng: -74.04152
   phone: (845) 331-7080
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0325}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0325
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/kingston/kingston-va-clinic
+  name: Kingston VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 101 Frank Sottile Boulevard, city: Kingston, state: ny, zip: '12401'}
+  place: '3639727'
+  geo: {lat: 41.97105, lng: -73.98761}
+  phone: 845-331-8322
+  website: https://www.va.gov/albany-health-care/locations/kingston-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_528GZ}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ny/kingston/pine-street-family-health-center
   name: Pine Street Family Health Center

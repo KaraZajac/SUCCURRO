@@ -21,14 +21,40 @@
   name: Camdenton R-Iii - Camdenton High School - Non-Congregate
   categories:
   - meal-program
-  address: {street: 662 Laker Pride Rd, city: Camdenton, state: mo, zip: '65020'}
+  address:
+    street: 662 Laker Pride Rd
+    city: Camdenton
+    state: mo
+    zip: '65020'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Encounter Ministry, Inc..
   place: '2910810'
-  geo: {lat: 38.01137, lng: -92.72936}
+  geo:
+    lat: 38.01137
+    lng: -92.72936
   phone: (573) 346-9213
-  external_ids: {usda_master: Cycle 02_MO_SFSP_0055}
+  external_ids:
+    usda_master: Cycle 02_MO_SFSP_0055
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mo/camdenton/camdenton-va-clinic
+  name: Camdenton VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 30 Lakeview Drive, city: Camdenton, state: mo, zip: '65020'}
+  place: '2910810'
+  geo: {lat: 38.0007, lng: -92.7597}
+  phone: 573-317-9660
+  website: https://www.va.gov/columbia-missouri-health-care/locations/camdenton-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  external_ids: {va: vha_589GH}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: mo/camdenton/central-ozarks-medical-center-camdenton
   name: Central Ozarks Medical Center Camdenton

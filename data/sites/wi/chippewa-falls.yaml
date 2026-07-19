@@ -58,6 +58,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/chippewa-falls/chippewa-valley-va-clinic
+  name: Chippewa Valley VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 475 Chippewa Mall Drive, city: Chippewa Falls, state: wi, zip: '54729'}
+  place: '5514575'
+  geo: {lat: 44.92521, lng: -91.38206}
+  phone: 715-720-3780
+  website: https://www.va.gov/minneapolis-health-care/locations/chippewa-valley-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_618GE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/chippewa-falls/family-health-center-chippewa-falls-dental-cente
   name: Family Health Center - Chippewa Falls Dental Center
   categories:
@@ -84,16 +101,25 @@
   name: Halmstad Elementary
   categories:
   - meal-program
-  address: {street: 565 E South Street, city: Chippewa Falls, state: wi, zip: '54729'}
+  address:
+    street: 565 E South Street
+    city: Chippewa Falls
+    state: wi
+    zip: '54729'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chippewa Falls School
     District.
   place: '5514575'
-  geo: {lat: 44.9154, lng: -91.37938}
+  geo:
+    lat: 44.9154
+    lng: -91.37938
   phone: (715) 726-2415
-  external_ids: {usda_master: Cycle 01_WI_SFSP_0443}
+  external_ids:
+    usda_master: Cycle 01_WI_SFSP_0443
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/chippewa-falls/minneapolis-vamc-chippewa-valley-cboc
   name: Minneapolis VAMC Chippewa Valley CBOC
   categories:

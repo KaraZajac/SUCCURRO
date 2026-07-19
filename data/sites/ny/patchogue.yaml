@@ -40,14 +40,40 @@
   name: Patchogue-Medford Library
   categories:
   - meal-program
-  address: {street: 54-60 E Main St, city: Patchogue, state: ny, zip: '11772'}
+  address:
+    street: 54-60 E Main St
+    city: Patchogue
+    state: ny
+    zip: '11772'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Island Harvest.
   place: '3656660'
-  geo: {lat: 40.76565, lng: -73.01362}
+  geo:
+    lat: 40.76565
+    lng: -73.01362
   phone: (516) 860-0971
-  external_ids: {usda_master: Cycle 07_NY_SFSP_0751}
+  external_ids:
+    usda_master: Cycle 07_NY_SFSP_0751
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/patchogue/patchogue-va-clinic
+  name: Patchogue VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 4 Phyllis Drive, city: Patchogue, state: ny, zip: '11772'}
+  place: '3656660'
+  geo: {lat: 40.76831, lng: -72.99637}
+  phone: 631-754-7978
+  website: https://www.va.gov/northport-health-care/locations/patchogue-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_632HD}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ny/patchogue/pilgrim-psychiatric-center-act-team
   name: Pilgrim Psychiatric Center ACT Team

@@ -144,20 +144,46 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/nevada/nevada-va-clinic
+  name: Nevada VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1220 East Austin Boulevard, city: Nevada, state: mo, zip: '64772'}
+  place: '2951644'
+  geo: {lat: 37.83685, lng: -94.34189}
+  phone: 816-922-2635
+  website: https://www.va.gov/kansas-city-health-care/locations/nevada-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_589GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/nevada/osage-prairie-ymca-non-congregate
   name: Osage Prairie Ymca - Non-Congregate
   categories:
   - meal-program
-  address: {street: 500 W. Highland, city: Nevada, state: mo, zip: '64772'}
+  address:
+    street: 500 W. Highland
+    city: Nevada
+    state: mo
+    zip: '64772'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Osage Prairie Young Men's
     Christian Association, Inc..
   place: '2951644'
-  geo: {lat: 37.85842, lng: -94.36192}
+  geo:
+    lat: 37.85842
+    lng: -94.36192
   phone: (417) 266-7962
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0527}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0527
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/nevada/vernon-county-nevada-head-start
   name: Vernon County- Nevada Head Start
   categories:

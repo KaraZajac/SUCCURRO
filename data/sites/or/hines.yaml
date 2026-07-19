@@ -1,16 +1,42 @@
+- id: or/hines/eastern-oregon-va-clinic
+  name: Eastern Oregon VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 635 Highway 20 North, city: Hines, state: or, zip: '97738'}
+  place: '4134250'
+  geo: {lat: 43.57331, lng: -119.07462}
+  phone: 541-573-3339
+  website: https://www.va.gov/boise-health-care/locations/eastern-oregon-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_531GH}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/hines/hines-city-park
   name: Hines City Park
   categories:
   - meal-program
-  address: {street: 128 Circle Drive, city: Hines, state: or, zip: '97738'}
+  address:
+    street: 128 Circle Drive
+    city: Hines
+    state: or
+    zip: '97738'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Harney Co SD 3.
   place: '4134250'
-  geo: {lat: 43.56235, lng: -119.08145}
+  geo:
+    lat: 43.56235
+    lng: -119.08145
   phone: (541) 573-7170
-  external_ids: {usda_master: Cycle 01_OR_SFSP_0064}
+  external_ids:
+    usda_master: Cycle 01_OR_SFSP_0064
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/hines/independence-place
   name: Independence Place
   categories:

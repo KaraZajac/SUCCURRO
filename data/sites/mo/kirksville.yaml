@@ -116,16 +116,25 @@
   name: Jaycee Park - Non Congregate
   categories:
   - meal-program
-  address: {street: N. Osteopathy St And West Burton St., city: Kirksville, state: mo, zip: '63501'}
+  address:
+    street: N. Osteopathy St And West Burton St.
+    city: Kirksville
+    state: mo
+    zip: '63501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by The Adair County Family
     YMCA, Inc.
   place: '2939026'
-  geo: {lat: 40.20472, lng: -92.59086}
+  geo:
+    lat: 40.20472
+    lng: -92.59086
   phone: (660) 665-1922
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0765}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0765
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kirksville/kirksville-part-day-head-start-center
   name: Kirksville Part Day Head Start Center
   categories:
@@ -145,6 +154,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/kirksville/kirksville-va-clinic
+  name: Kirksville VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 506 Rosewood Drive, city: Kirksville, state: mo, zip: '63501'}
+  place: '2939026'
+  geo: {lat: 40.20901, lng: -92.5793}
+  phone: 660-627-8387
+  website: https://www.va.gov/columbia-missouri-health-care/locations/kirksville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  external_ids: {va: vha_589GE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/kirksville/kirksville-veteran-s-clinic
   name: Kirksville Veteran's Clinic
   categories:

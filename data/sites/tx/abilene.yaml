@@ -61,18 +61,86 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/abilene/abilene-mobile-vet-center
+  name: Abilene Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: 3564 North 6th Street, city: Abilene, state: tx, zip: '79603'}
+  place: '4801000'
+  geo: {lat: 32.45532, lng: -99.76636}
+  phone: 325-232-7925
+  website: https://www.va.gov/abilene-vet-center/locations/#abilene-mobile-vet-center
+  external_ids: {va: vc_0846MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/abilene/abilene-va-clinic
+  name: Abilene VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 3850 Ridgemont Drive, city: Abilene, state: tx, zip: '79606'}
+  place: '4801000'
+  geo: {lat: 32.40467, lng: -99.76615}
+  phone: 325-695-3252
+  website: https://www.va.gov/west-texas-health-care/locations/abilene-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_519HC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/abilene/abilene-vet-center
+  name: Abilene Vet Center
+  categories: *id001
+  address: {street: 3564 North 6th Street, city: Abilene, state: tx, zip: '79603'}
+  place: '4801000'
+  geo: {lat: 32.45532, lng: -99.76636}
+  phone: 325-232-7925
+  website: https://www.va.gov/abilene-vet-center/
+  hours:
+  - {days: [mon], open: '08:00', close: '20:00'}
+  - {days: [tue], open: '08:00', close: '18:30'}
+  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0733V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/abilene/abilene-veteran-readiness-and-employment-office
+  name: Abilene Veteran Readiness and Employment Office
+  categories:
+  - va-facility
+  description: Veteran Readiness and Employment Office
+  address: {street: '1150 Estates Dr, Suite B', city: Abilene, state: tx, zip: '79602'}
+  place: '4801000'
+  geo: {lat: 32.43563, lng: -99.70476}
+  phone: 325-677-1503
+  external_ids: {va: vba_349h}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/abilene/abilene-zoo
   name: Abilene Zoo
   categories:
   - meal-program
-  address: {street: '2070 Zoo Lane, Abilene, Tx, Usa', city: Abilene, state: tx, zip: '79602'}
+  address:
+    street: 2070 Zoo Lane, Abilene, Tx, Usa
+    city: Abilene
+    state: tx
+    zip: '79602'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ABILENE ISD.
   place: '4801000'
-  geo: {lat: 32.43711, lng: -99.69153}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_0008}
+  geo:
+    lat: 32.43711
+    lng: -99.69153
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_0008
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/butterfly-blessing-box
   name: Butterfly Blessing Box
   categories:
@@ -92,14 +160,23 @@
   name: Children'S Art & Literacy Festival
   categories:
   - meal-program
-  address: {street: 1101N 1St Street, city: Abilene, state: tx, zip: '79601'}
+  address:
+    street: 1101N 1St Street
+    city: Abilene
+    state: tx
+    zip: '79601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ABILENE ISD.
   place: '4801000'
-  geo: {lat: 32.44947, lng: -99.73457}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_0321}
+  geo:
+    lat: 32.44947
+    lng: -99.73457
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_0321
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/crockett-early-head-start
   name: Crockett Early Head Start
   categories:
@@ -123,14 +200,23 @@
   name: Highland Boys & Girls Club
   categories:
   - meal-program
-  address: {street: 425 Highland Ave, city: Abilene, state: tx, zip: '79605'}
+  address:
+    street: 425 Highland Ave
+    city: Abilene
+    state: tx
+    zip: '79605'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ABILENE ISD.
   place: '4801000'
-  geo: {lat: 32.44696, lng: -99.74932}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_0679}
+  geo:
+    lat: 32.44696
+    lng: -99.74932
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_0679
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/housing-authority-of-the-city-of-abilene
   name: Housing Authority Of The City Of Abilene
   categories:
@@ -174,14 +260,23 @@
   name: Martinez Boys & Girls Club Of Abilene
   categories:
   - meal-program
-  address: {street: 1301 Clinton Street, city: Abilene, state: tx, zip: '79603'}
+  address:
+    street: 1301 Clinton Street
+    city: Abilene
+    state: tx
+    zip: '79603'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ABILENE ISD.
   place: '4801000'
-  geo: {lat: 32.46424, lng: -99.74458}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_0987}
+  geo:
+    lat: 32.46424
+    lng: -99.74458
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_0987
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/serenity-foundation-of-texas-serenity-house-abil
   name: Serenity Foundation of Texas Serenity House Abilene
   categories:
@@ -226,11 +321,20 @@
   name: Ymca - Redbud Park
   categories:
   - meal-program
-  address: {street: 3125 South 32Nd Street, city: Abilene, state: tx, zip: '79605'}
+  address:
+    street: 3125 South 32Nd Street
+    city: Abilene
+    state: tx
+    zip: '79605'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ABILENE ISD.
   place: '4801000'
-  geo: {lat: 32.41189, lng: -99.75937}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_1775}
+  geo:
+    lat: 32.41189
+    lng: -99.75937
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_1775
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

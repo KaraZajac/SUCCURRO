@@ -17,20 +17,56 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/citrus-heights/citrus-heights-mobile-vet-center
+  name: Citrus Heights Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '5650 Sunrise Blvd., Suite 150', city: Citrus Heights, state: ca, zip: '95610'}
+  place: 0613588
+  geo: {lat: 38.66931, lng: -121.27169}
+  phone: 916-566-7430
+  website: https://www.va.gov/citrus-heights-vet-center/locations/#citrus-heights-mobile-vet-cent
+  external_ids: {va: vc_0880MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/citrus-heights/citrus-heights-vet-center
+  name: Citrus Heights Vet Center
+  categories: *id001
+  address: {street: '5650 Sunrise Boulevard, Suite 150', city: Citrus Heights, state: ca, zip: '95610'}
+  place: 0613588
+  geo: {lat: 38.66927, lng: -121.27141}
+  phone: 916-535-0420
+  website: https://www.va.gov/citrus-heights-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0610V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/citrus-heights/grand-oaks-elementary
   name: Grand Oaks Elementary
   categories:
   - meal-program
-  address: {street: 7901 Rosswood Dr., city: Citrus Heights, state: ca, zip: '95621'}
+  address:
+    street: 7901 Rosswood Dr.
+    city: Citrus Heights
+    state: ca
+    zip: '95621'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SAN JUAN UNIFIED SCHOOL
     DISTRICT.
   place: 0613588
-  geo: {lat: 38.71081, lng: -121.30144}
+  geo:
+    lat: 38.71081
+    lng: -121.30144
   phone: (916) 971-7025
-  external_ids: {usda_master: Cycle 09_CA_SSO_0716}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_0716
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/citrus-heights/grand-oaks-hs-cspp-wrap
   name: Grand Oaks HS/CSPP WRAP
   categories:

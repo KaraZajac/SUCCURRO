@@ -120,6 +120,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/boulder/boulder-vet-center
+  name: Boulder Vet Center
+  categories:
+  - vet-center
+  address: {street: '4940 Pearl East Circle, Suite 100', city: Boulder, state: co, zip: '80301'}
+  place: 0807850
+  geo: {lat: 40.02113, lng: -105.23696}
+  phone: 303-440-7306
+  website: https://www.va.gov/boulder-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0527V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/cfhw-specialty-behavioral-health-servs-ryan-well
   name: CFHW Specialty Behavioral Health Servs Ryan Wellness Center
   categories:
@@ -273,15 +288,24 @@
   name: Halcyon School
   categories:
   - meal-program
-  address: {street: 3100 Bucknell Ct, city: Boulder, state: co, zip: '80305'}
+  address:
+    street: 3100 Bucknell Ct
+    city: Boulder
+    state: co
+    zip: '80305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BOULDER VALLEY RE 2.
   place: 0807850
-  geo: {lat: 39.99204, lng: -105.25666}
+  geo:
+    lat: 39.99204
+    lng: -105.25666
   phone: (916) 710-1892
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0052}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/boulder/mapleton-y
   name: Mapleton-Y
   categories:

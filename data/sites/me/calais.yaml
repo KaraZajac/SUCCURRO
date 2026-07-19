@@ -85,15 +85,24 @@
   name: Calais Elementary School
   categories:
   - meal-program
-  address: {street: 53 Garfield Street, city: Calais, state: me, zip: 04619}
+  address:
+    street: 53 Garfield Street
+    city: Calais
+    state: me
+    zip: 04619
   description: Free summer meals for kids and teens (2026 season) — sponsored by Calais Public Schools.
   place: '2309585'
-  geo: {lat: 45.18109, lng: -67.28456}
+  geo:
+    lat: 45.18109
+    lng: -67.28456
   phone: (207) 454-2000
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0040}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0040
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/calais/calais-pk-hs
   name: Calais PK/HS
   categories:
@@ -113,6 +122,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: me/calais/calais-va-clinic
+  name: Calais VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 50 Union Street, city: Calais, state: me, zip: 04619}
+  place: '2309585'
+  geo: {lat: 45.18945, lng: -67.28073}
+  phone: 877-421-8263
+  website: https://www.va.gov/maine-health-care/locations/calais-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  external_ids: {va: vha_402GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: me/calais/groups-recover-together
   name: Groups Recover Together
   categories:

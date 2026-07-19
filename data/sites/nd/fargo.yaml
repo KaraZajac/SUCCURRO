@@ -23,16 +23,25 @@
   name: Brunsdale Park-Mobile Meal Unit
   categories:
   - meal-program
-  address: {street: 1702 27Th Ave S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 1702 27Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of the Northern
     Sky.
   place: '3825700'
-  geo: {lat: 46.83848, lng: -96.80868}
+  geo:
+    lat: 46.83848
+    lng: -96.80868
   phone: (218) 359-2322
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0107}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0107
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/cass-county-jail
   name: CASS COUNTY JAIL
   categories:
@@ -256,6 +265,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/fargo/fargo-mobile-vet-center
+  name: Fargo Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: 5622 34th Ave S, city: Fargo, state: nd, zip: '58104'}
+  place: '3825700'
+  geo: {lat: 46.82734, lng: -96.88103}
+  phone: 701-237-0942
+  website: https://www.va.gov/fargo-vet-center/locations/#fargo-mobile-vet-center
+  external_ids: {va: vc_0820MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/fargo-va-healthcare-system-substance-use-disorde
   name: Fargo VA Healthcare System Substance Use Disorder Treatment Prog
   categories:
@@ -277,6 +299,53 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/fargo/fargo-va-medical-center
+  name: Fargo VA Medical Center
+  categories: &id002
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 2101 Elm Street North, city: Fargo, state: nd, zip: '58102'}
+  place: '3825700'
+  geo: {lat: 46.90609, lng: -96.77504}
+  phone: 701-239-3700
+  website: https://www.va.gov/fargo-health-care/locations/fargo-va-medical-center/
+  external_ids: {va: vha_437}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nd/fargo/fargo-va-regional-benefit-office-at-north-fargo
+  name: Fargo VA Regional Benefit Office at North Fargo VA Clinic
+  categories:
+  - va-facility
+  description: Regional Benefit Office
+  address: {street: '2101 Elm Street N, Building 40', city: Fargo, state: nd, zip: '58102'}
+  place: '3825700'
+  geo: {lat: 46.87756, lng: -96.79235}
+  phone: 800-827-1000
+  external_ids: {va: vba_437}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nd/fargo/fargo-vet-center
+  name: Fargo Vet Center
+  categories: *id001
+  address: {street: 5622 34th Ave S, city: Fargo, state: nd, zip: '58104'}
+  place: '3825700'
+  geo: {lat: 46.82734, lng: -96.88103}
+  phone: 701-237-0942
+  website: https://www.va.gov/fargo-vet-center/
+  hours:
+  - {days: [mon], open: '07:00', close: '18:30'}
+  - {days: [tue], open: '07:00', close: '19:30'}
+  - {days: [wed], open: '07:00', close: '16:30'}
+  - {days: [thu], open: '07:00', close: '18:00'}
+  - {days: [fri], open: '07:00', close: '17:30'}
+  - {days: [sat], open: '08:00', close: '14:30'}
+  external_ids: {va: vc_0406V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/fhc-medical-dental-homeless-services-and-adminis
   name: FHC Medical, Dental, Homeless Services, and Administrative Site in Fargo
   categories:
@@ -365,15 +434,24 @@
   name: Jefferson Elementary School
   categories:
   - meal-program
-  address: {street: 1701 4Th Ave S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 1701 4Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fargo Public Schools.
   place: '3825700'
-  geo: {lat: 46.87086, lng: -96.80886}
+  geo:
+    lat: 46.87086
+    lng: -96.80886
   phone: (701) 446-1154
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0036}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0036
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/kappel
   name: Kappel
   categories:
@@ -398,15 +476,24 @@
   name: Lewis & Clark Elementary School
   categories:
   - meal-program
-  address: {street: 1729 16Th St S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 1729 16Th St S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fargo Public Schools.
   place: '3825700'
-  geo: {lat: 46.85287, lng: -96.80619}
+  geo:
+    lat: 46.85287
+    lng: -96.80619
   phone: (701) 446-1154
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0037}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0037
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/ndsu-goods-for-the-herd
   name: NDSU Goods for the Herd
   categories:
@@ -442,6 +529,22 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/fargo/north-fargo-va-clinic
+  name: North Fargo VA Clinic
+  categories: *id002
+  description: Primary Care CBOC
+  address: {street: '721 1st Avenue North, Community Resource & Referral Center (CRRC)', city: Fargo,
+    state: nd, zip: '58102'}
+  place: '3825700'
+  geo: {lat: 46.87756, lng: -96.79235}
+  phone: 701-461-7330
+  website: https://www.va.gov/fargo-health-care/locations/north-fargo-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_437QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/sagent-behavioral-health-formerly-nys
   name: Sagent Behavioral Health formerly Nys
   categories:
@@ -528,16 +631,25 @@
   name: Schlossman Family Ymca West Schoolage
   categories:
   - meal-program
-  address: {street: 4243 19Th Ave S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 4243 19Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of the Northern
     Sky.
   place: '3825700'
-  geo: {lat: 46.84983, lng: -96.8527}
+  geo:
+    lat: 46.84983
+    lng: -96.8527
   phone: (218) 359-2322
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0113}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0113
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/schlossman-ymca-mini-pantry
   name: Schlossman YMCA Mini Pantry
   categories:
@@ -677,15 +789,24 @@
   name: South High School
   categories:
   - meal-program
-  address: {street: 1840 15Th Ave S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 1840 15Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fargo Public Schools.
   place: '3825700'
-  geo: {lat: 46.85757, lng: -96.81208}
+  geo:
+    lat: 46.85757
+    lng: -96.81208
   phone: (701) 446-1154
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0038}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0038
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/southeast-human-service-center
   name: Southeast Human Service Center
   categories:
@@ -711,43 +832,70 @@
   name: The Arbors At Mccormick Park
   categories:
   - meal-program
-  address: {street: 618 23Rd St S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 618 23Rd St S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of the Northern
     Sky.
   place: '3825700'
-  geo: {lat: 46.86802, lng: -96.81709}
+  geo:
+    lat: 46.86802
+    lng: -96.81709
   phone: (218) 359-2322
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0117}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0117
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/urban-plains-ymca-sa-summer
   name: Urban Plains Ymca Sa Summer
   categories:
   - meal-program
-  address: {street: 5107 30Th Ave S, city: Fargo, state: nd, zip: '58104'}
+  address:
+    street: 5107 30Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58104'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of the Northern
     Sky.
   place: '3825700'
-  geo: {lat: 46.83653, lng: -96.87486}
+  geo:
+    lat: 46.83653
+    lng: -96.87486
   phone: (218) 359-2322
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0119}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0119
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/willow-park-elementary
   name: Willow Park Elementary
   categories:
   - meal-program
-  address: {street: 4901 15Th Ave S, city: Fargo, state: nd, zip: '58103'}
+  address:
+    street: 4901 15Th Ave S
+    city: Fargo
+    state: nd
+    zip: '58103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by West Fargo Public School.
   place: '3825700'
-  geo: {lat: 46.85922, lng: -96.86968}
+  geo:
+    lat: 46.85922
+    lng: -96.86968
   phone: (701) 499-1837
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0100}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0100
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/withdrawal-management-unit-city-of-fargo-dba-fcp
   name: Withdrawal Management Unit City of Fargo DBA FCPH
   categories:

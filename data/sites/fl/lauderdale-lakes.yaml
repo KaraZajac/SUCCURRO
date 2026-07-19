@@ -18,6 +18,22 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/lauderdale-lakes/fort-lauderdale-vet-center
+  name: Fort Lauderdale Vet Center
+  categories:
+  - vet-center
+  address: {street: 3666 West Oakland Park Boulevard, city: Lauderdale Lakes, state: fl, zip: '33311'}
+  place: '1239525'
+  geo: {lat: 26.16491, lng: -80.20208}
+  phone: 954-714-2381
+  website: https://www.va.gov/fort-lauderdale-vet-center/
+  hours:
+  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
+  - {days: [wed], open: '08:00', close: '17:30'}
+  external_ids: {va: vc_0311V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/lauderdale-lakes/lauderdale-lakes-health-center
   name: Lauderdale Lakes Health Center
   categories:
@@ -106,12 +122,21 @@
   name: Oriole Elementary
   categories:
   - meal-program
-  address: {street: 3081 Nw 39Th St, city: Lauderdale Lakes, state: fl, zip: '33309'}
+  address:
+    street: 3081 Nw 39Th St
+    city: Lauderdale Lakes
+    state: fl
+    zip: '33309'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Victory for Youth Corp..
   place: '1239525'
-  geo: {lat: 26.17356, lng: -80.18542}
+  geo:
+    lat: 26.17356
+    lng: -80.18542
   phone: (954) 605-9242
-  external_ids: {usda_master: Cycle 05_FL_SFSP_2977}
+  external_ids:
+    usda_master: Cycle 05_FL_SFSP_2977
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

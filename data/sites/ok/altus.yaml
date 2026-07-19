@@ -21,14 +21,40 @@
   name: Altus Intermediate School(145)
   categories:
   - meal-program
-  address: {street: 1221 N. Howse, city: Altus, state: ok, zip: '73521'}
+  address:
+    street: 1221 N. Howse
+    city: Altus
+    state: ok
+    zip: '73521'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ALTUS PUBLIC SCHOOLS.
   place: '4001700'
-  geo: {lat: 34.64957, lng: -99.32487}
+  geo:
+    lat: 34.64957
+    lng: -99.32487
   phone: (580) 481-3092
-  external_ids: {usda_master: Cycle 04_OK_SFSP_0096}
+  external_ids:
+    usda_master: Cycle 04_OK_SFSP_0096
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/altus/altus-va-clinic
+  name: Altus VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1604 North Main, city: Altus, state: ok, zip: '73521'}
+  place: '4001700'
+  geo: {lat: 34.65487, lng: -99.33398}
+  phone: 580-482-0721
+  website: https://www.va.gov/oklahoma-city-health-care/locations/altus-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_635GF}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ok/altus/jim-taliaferro-cmhc-altus-satellite
   name: Jim Taliaferro CMHC Altus Satellite

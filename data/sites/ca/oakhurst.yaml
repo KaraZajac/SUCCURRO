@@ -102,17 +102,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/oakhurst/oakhurst-va-clinic
+  name: Oakhurst VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 40597 Westlake Drive, city: Oakhurst, state: ca, zip: '93644'}
+  place: '0652764'
+  geo: {lat: 37.3385, lng: -119.66929}
+  phone: 559-683-5300
+  website: https://www.va.gov/central-california-health-care/locations/oakhurst-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_570GC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/oakhurst/yosemite-high
   name: Yosemite High
   categories:
   - meal-program
-  address: {street: 50200 Road 427, city: Oakhurst, state: ca, zip: '93644'}
+  address:
+    street: 50200 Road 427
+    city: Oakhurst
+    state: ca
+    zip: '93644'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YOSEMITE UNIFIED SCHOOL
     DISTRICT.
   place: '0652764'
-  geo: {lat: 37.32971, lng: -119.63092}
+  geo:
+    lat: 37.32971
+    lng: -119.63092
   phone: (559) 683-8801
-  external_ids: {usda_master: Cycle 08_CA_SSO_0179}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_0179
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

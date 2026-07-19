@@ -371,15 +371,24 @@
   name: Macdonald Knolls
   categories:
   - meal-program
-  address: {street: 10611 Tenbrook Drive, city: Silver Spring, state: md, zip: '20901'}
+  address:
+    street: 10611 Tenbrook Drive
+    city: Silver Spring
+    state: md
+    zip: '20901'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MONTGOMERY CO PUB SCH.
   place: '2472450'
-  geo: {lat: 39.03034, lng: -77.02739}
+  geo:
+    lat: 39.03034
+    lng: -77.02739
   phone: (240) 740-7400
-  external_ids: {usda_master: Cycle 08_MD_SFSP_0279}
+  external_ids:
+    usda_master: Cycle 08_MD_SFSP_0279
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/silver-spring/mary-s-center-silver-spring-md
   name: Mary's Center - Silver Spring MD
   categories:
@@ -582,6 +591,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/silver-spring/silver-spring-vet-center
+  name: Silver Spring Vet Center
+  categories:
+  - vet-center
+  address: {street: '2900 Linden Lane, Suite 100', city: Silver Spring, state: md, zip: '20910'}
+  place: '2472450'
+  geo: {lat: 39.01492, lng: -77.05748}
+  phone: 301-589-1073
+  website: https://www.va.gov/silver-spring-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0213V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/silver-spring/steven-a-cohen-military-family-clinic-easterseal
   name: Steven A Cohen Military Family Clinic Easterseals
   categories:

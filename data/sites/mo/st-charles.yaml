@@ -2,16 +2,25 @@
   name: Boys & Girls Club Of St Charles County - St Charles Unit
   categories:
   - meal-program
-  address: {street: 1211 Lindenwood, city: St Charles, state: mo, zip: '63301'}
+  address:
+    street: 1211 Lindenwood
+    city: St Charles
+    state: mo
+    zip: '63301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by JRO Community Outreach,
     Inc.
   place: '2964082'
-  geo: {lat: 38.79551, lng: -90.48116}
+  geo:
+    lat: 38.79551
+    lng: -90.48116
   phone: (314) 910-0316
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0303}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0303
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/st-charles/burrell-inc-centerstone-of-missouri
   name: Burrell Inc Centerstone of Missouri
   categories:
@@ -312,6 +321,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/st-charles/st-charles-county-va-clinic
+  name: St. Charles County VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 2845 Veterans Memorial Parkway, city: 'St. Charles,', state: mo, zip: '63303'}
+  place: '2964082'
+  geo: {lat: 38.78082, lng: -90.52434}
+  phone: 314-652-4100
+  website: https://www.va.gov/st-louis-health-care/locations/st-charles-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_657GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/st-charles/st-charles-elc
   name: St. Charles ELC
   categories:

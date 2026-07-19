@@ -144,13 +144,39 @@
   name: Show Low Junior High School
   categories:
   - meal-program
-  address: {street: 380 W Old Linden Road, city: Show Low, state: az, zip: '85901'}
+  address:
+    street: 380 W Old Linden Road
+    city: Show Low
+    state: az
+    zip: '85901'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Show Low Unified District.
   place: '0466470'
-  geo: {lat: 34.257, lng: -110.04668}
-  external_ids: {usda_master: Cycle 03_AZ_SFSP_0021}
+  geo:
+    lat: 34.257
+    lng: -110.04668
+  external_ids:
+    usda_master: Cycle 03_AZ_SFSP_0021
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: az/show-low/show-low-va-clinic
+  name: Show Low VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 5171 Cub Lake Road, city: Show Low, state: az, zip: '85901'}
+  place: '0466470'
+  geo: {lat: 34.20207, lng: -110.02076}
+  phone: 928-532-1069
+  website: https://www.va.gov/phoenix-health-care/locations/show-low-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_644GB}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: az/show-low/sober-mountain-triple-r-ranch
   name: Sober Mountain Triple R Ranch

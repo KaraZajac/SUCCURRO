@@ -2,15 +2,24 @@
   name: Franklin Elementary
   categories:
   - meal-program
-  address: {street: 67 S Branch Street, city: Franklin, state: wv, zip: '26807'}
+  address:
+    street: 67 S Branch Street
+    city: Franklin
+    state: wv
+    zip: '26807'
   description: Free summer meals for kids and teens (2026 season) — sponsored by PENDLETON CO BD OF EDUCATION.
   place: '5429044'
-  geo: {lat: 38.64585, lng: -79.32907}
+  geo:
+    lat: 38.64585
+    lng: -79.32907
   phone: (304) 358-2207
-  external_ids: {usda_master: Cycle 01_WV_SFSP_0040}
+  external_ids:
+    usda_master: Cycle 01_WV_SFSP_0040
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/franklin/franklin-school-based-health-clinic
   name: Franklin School Based Health Clinic
   categories:
@@ -32,6 +41,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/franklin/franklin-va-clinic
+  name: Franklin VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 91 Pine Street, city: Franklin, state: wv, zip: '26807'}
+  place: '5429044'
+  geo: {lat: 38.64349, lng: -79.33122}
+  phone: 800-817-3807
+  website: https://www.va.gov/martinsburg-health-care/locations/franklin-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_613GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/franklin/pendleton-community-care-clinic
   name: Pendleton Community Care Clinic
   categories:

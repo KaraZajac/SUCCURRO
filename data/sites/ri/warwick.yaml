@@ -177,19 +177,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/warwick/providence-vet-center
+  name: Providence Vet Center
+  categories:
+  - vet-center
+  address: {street: 2038 Warwick Avenue, city: Warwick, state: ri, zip: 02889}
+  place: '4474300'
+  geo: {lat: 41.72092, lng: -71.4038}
+  phone: 401-739-0167
+  website: https://www.va.gov/providence-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0113V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ri/warwick/sandy-lane-library
   name: Sandy Lane Library
   categories:
   - meal-program
-  address: {street: 600 Sandy Lane, city: Warwick, state: ri, zip: 02889}
+  address:
+    street: 600 Sandy Lane
+    city: Warwick
+    state: ri
+    zip: 02889
   description: Free summer meals for kids and teens (2026 season) — sponsored by W. Warwick Public Schools.
   place: '4474300'
-  geo: {lat: 41.71127, lng: -71.40282}
+  geo:
+    lat: 41.71127
+    lng: -71.40282
   phone: (401) 739-5440
-  external_ids: {usda_master: Cycle 10_RI_SFSP_0159}
+  external_ids:
+    usda_master: Cycle 10_RI_SFSP_0159
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/warwick/thrive-behavioral-health
   name: Thrive Behavioral Health
   categories:
@@ -232,6 +256,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/warwick/vetsuccess-on-campus-at-community-college-of-rho
+  name: VetSuccess on Campus at Community College of Rhode Island Knight Campus
+  categories:
+  - va-facility
+  description: VetSuccess On Campus
+  address: {street: '400 East Avenue, Enrollment Services, Lower Level 0032', city: Warwick, state: ri,
+    zip: 02886}
+  place: '4474300'
+  geo: {lat: 41.71674, lng: -71.47767}
+  phone: 800-827-1000
+  external_ids: {va: vba_304j}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ri/warwick/warwick-health-center
   name: Warwick Health Center
   categories:

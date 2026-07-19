@@ -76,19 +76,45 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/fort-yates/fort-yates-va-clinic
+  name: Fort Yates VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 116 Yates Street, city: Fort Yates, state: nd, zip: '58538'}
+  place: '3827860'
+  geo: {lat: 46.0885, lng: -100.62814}
+  phone: 701-854-9902
+  website: https://www.va.gov/black-hills-health-care/locations/fort-yates-va-clinic/
+  hours:
+  - {days: [tue, thu], open: '08:30', close: '15:00'}
+  external_ids: {va: vha_568QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fort-yates/st-bernard-mission-school
   name: St Bernard Mission School
   categories:
   - meal-program
-  address: {street: Po Box 394, city: Fort Yates, state: nd, zip: '58538'}
+  address:
+    street: Po Box 394
+    city: Fort Yates
+    state: nd
+    zip: '58538'
   description: Free summer meals for kids and teens (2026 season) — sponsored by St Bernard Mission School.
   place: '3827860'
-  geo: {lat: 46.0902, lng: -100.6603}
+  geo:
+    lat: 46.0902
+    lng: -100.6603
   phone: (701) 854-7413
-  external_ids: {usda_master: Cycle 02_ND_SFSP_0082}
+  external_ids:
+    usda_master: Cycle 02_ND_SFSP_0082
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fort-yates/standing-rock-treatment-program-standing-rock-si
   name: Standing Rock Treatment Program Standing Rock Sioux Tribe
   categories:

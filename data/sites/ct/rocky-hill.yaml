@@ -1,0 +1,27 @@
+- id: ct/rocky-hill/hartford-mobile-vet-center
+  name: Hartford Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '25 Elm Street, Suite A', city: Rocky Hill, state: ct, zip: '06067'}
+  geo: {lat: 41.66485, lng: -72.6406}
+  phone: 860-563-8800
+  website: https://www.va.gov/hartford-vet-center/locations/#hartford-mobile-vet-center
+  external_ids: {va: vc_0801MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ct/rocky-hill/hartford-vet-center
+  name: Hartford Vet Center
+  categories: *id001
+  address: {street: '25 Elm Street, Suite A', city: Rocky Hill, state: ct, zip: '06067'}
+  geo: {lat: 41.66485, lng: -72.6406}
+  phone: 860-563-8800
+  website: https://www.va.gov/hartford-vet-center/
+  hours:
+  - {days: [mon, tue, thu], open: '08:00', close: '18:30'}
+  - {days: [wed], open: '07:30', close: '18:30'}
+  - {days: [fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0117V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

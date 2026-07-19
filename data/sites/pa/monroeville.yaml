@@ -2,14 +2,23 @@
   name: Evergreen El Sch
   categories:
   - meal-program
-  address: {street: 3831 Evergreen Drive, city: Monroeville, state: pa, zip: '15146'}
+  address:
+    street: 3831 Evergreen Drive
+    city: Monroeville
+    state: pa
+    zip: '15146'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Gateway School District.
   place: '4250528'
-  geo: {lat: 40.44594, lng: -79.77112}
-  external_ids: {usda_master: Cycle 06_PA_SFSP_0050}
+  geo:
+    lat: 40.44594
+    lng: -79.77112
+  external_ids:
+    usda_master: Cycle 06_PA_SFSP_0050
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/monroeville/gateway-gcumc
   name: Gateway GCUMC
   categories:
@@ -30,6 +39,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/monroeville/henry-parham-va-clinic
+  name: Henry Parham VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 421 Mall Circle Drive, city: Monroeville, state: pa, zip: '15146'}
+  place: '4250528'
+  geo: {lat: 40.42714, lng: -79.79195}
+  phone: 866-482-7488
+  website: https://www.va.gov/pittsburgh-health-care/locations/monroeville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_646GF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/monroeville/jade-wellness-center
   name: Jade Wellness Center
   categories:

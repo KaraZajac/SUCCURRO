@@ -105,16 +105,25 @@
   name: Duncombe Elementary School
   categories:
   - meal-program
-  address: {street: 1620 6Th Ave. N., city: Fort Dodge, state: ia, zip: '50501'}
+  address:
+    street: 1620 6Th Ave. N.
+    city: Fort Dodge
+    state: ia
+    zip: '50501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fort Dodge Comm School
     District.
   place: '1928515'
-  geo: {lat: 42.512, lng: -94.1754}
+  geo:
+    lat: 42.512
+    lng: -94.1754
   phone: (515) 574-5673
-  external_ids: {usda_master: Cycle 01_IA_SFSP_0049}
+  external_ids:
+    usda_master: Cycle 01_IA_SFSP_0049
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/fort-dodge/epworth-umc
   name: Epworth UMC
   categories:
@@ -150,6 +159,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/fort-dodge/fort-dodge-va-clinic
+  name: Fort Dodge VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 530 South 25th Street, city: Fort Dodge, state: ia, zip: '50501'}
+  place: '1928515'
+  geo: {lat: 42.50076, lng: -94.16314}
+  phone: 515-576-2235
+  website: https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_636GK}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fort-dodge/grace-lutheran-church
   name: Grace Lutheran Church
   categories:

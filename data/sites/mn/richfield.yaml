@@ -77,15 +77,24 @@
   name: Richfield High School
   categories:
   - meal-program
-  address: {street: 7001 Harriet Ave S, city: Richfield, state: mn, zip: '55423'}
+  address:
+    street: 7001 Harriet Ave S
+    city: Richfield
+    state: mn
+    zip: '55423'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Richfield ISD #280.'
   place: '2754214'
-  geo: {lat: 44.87521, lng: -93.2858}
+  geo:
+    lat: 44.87521
+    lng: -93.2858
   phone: (612) 798-6071
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0084}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0084
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/richfield/richfield-hra
   name: Richfield Hra
   categories:
@@ -110,27 +119,62 @@
   name: Richfield Middle
   categories:
   - meal-program
-  address: {street: 7461 Oliver Ave, city: Richfield, state: mn, zip: '55423'}
+  address:
+    street: 7461 Oliver Ave
+    city: Richfield
+    state: mn
+    zip: '55423'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Richfield ISD #280.'
   place: '2754214'
-  geo: {lat: 44.86827, lng: -93.30733}
+  geo:
+    lat: 44.86827
+    lng: -93.30733
   phone: (612) 798-6071
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0086}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0086
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/richfield/richfield-stem-school
   name: Richfield Stem School
   categories:
   - meal-program
-  address: {street: 7020 12Th Ave S, city: Richfield, state: mn, zip: '55423'}
+  address:
+    street: 7020 12Th Ave S
+    city: Richfield
+    state: mn
+    zip: '55423'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Richfield ISD #280.'
   place: '2754214'
-  geo: {lat: 44.87499, lng: -93.258}
+  geo:
+    lat: 44.87499
+    lng: -93.258
   phone: (612) 798-6071
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0085}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0085
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mn/richfield/richfield-va-clinic
+  name: Richfield VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 6636 Cedar Avenue South, city: Richfield, state: mn, zip: '55423'}
+  place: '2754214'
+  geo: {lat: 44.88225, lng: -93.24791}
+  phone: 612-467-4406
+  website: https://www.va.gov/find-locations/facility/vha_618QC
+  hours:
+  - {days: [mon, tue, wed], open: '20:30', close: '09:00'}
+  external_ids: {va: vha_618QC}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: mn/richfield/south-branch
   name: South Branch
@@ -151,3 +195,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/richfield/twin-cities-mobile-vet-center
+  name: Twin Cities Mobile Vet Center
+  categories:
+  - vet-center
+  address: {street: '6636 Cedar Ave South, Suite 200', city: Richfield, state: mn, zip: '55423'}
+  place: '2754214'
+  geo: {lat: 44.88225, lng: -93.24797}
+  phone: 612-243-7920
+  website: https://www.va.gov/twin-cities-vet-center/locations/#twin-cities-mobile-vet-center
+  external_ids: {va: vc_0895MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

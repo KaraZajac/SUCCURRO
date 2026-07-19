@@ -67,12 +67,38 @@
   name: Pickens County High School
   categories:
   - meal-program
-  address: {street: 500 Dragon Dr, city: Jasper, state: ga, zip: '30143'}
+  address:
+    street: 500 Dragon Dr
+    city: Jasper
+    state: ga
+    zip: '30143'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Pickens County.
   place: '1341932'
-  geo: {lat: 34.4505, lng: -84.39782}
+  geo:
+    lat: 34.4505
+    lng: -84.39782
   phone: (706) 253-1700
-  external_ids: {usda_master: Cycle 04_GA_SSO_1094}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_1094
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ga/jasper/pickens-county-va-clinic
+  name: Pickens County VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 934 East Church Street, city: Jasper, state: ga, zip: '30143'}
+  place: '1341932'
+  geo: {lat: 34.46277, lng: -84.41614}
+  phone: 706-301-5720
+  website: https://www.va.gov/atlanta-health-care/locations/pickens-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_508GM}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}

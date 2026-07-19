@@ -36,6 +36,22 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/middletown/middletown-va-clinic
+  name: Middletown VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: One Corporate Place, city: Middletown, state: ri, zip: 02842}
+  geo: {lat: 41.53034, lng: -71.29726}
+  phone: 401-847-6239
+  website: https://www.va.gov/providence-health-care/locations/middletown-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
+  external_ids: {va: vha_650GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ri/middletown/newport-mental-health
   name: Newport Mental Health
   categories:
@@ -96,3 +112,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/middletown/va-regional-benefit-satellite-office-at-middleto
+  name: VA Regional Benefit Satellite Office at Middletown VA Clinic
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: '1 Corporate Place, Primary Care Department', city: Middletown, state: ri, zip: 02842}
+  geo: {lat: 41.53042, lng: -71.29735}
+  phone: 800-827-1186
+  external_ids: {va: vba_304l}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

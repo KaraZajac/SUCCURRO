@@ -38,6 +38,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/peru/hoosier-va-clinic
+  name: Hoosier VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1496 West Hoosier Boulevard, city: Peru, state: in, zip: '46970'}
+  place: '1859328'
+  geo: {lat: 40.66614, lng: -86.13657}
+  phone: 765-472-8907
+  website: https://www.va.gov/northern-indiana-health-care/locations/hoosier-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_610GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/peru/housing-authority-of-the-city-of-peru
   name: Housing Authority Of The City Of Peru
   categories:
@@ -104,26 +121,44 @@
   name: Miami Co Ymca Summer Camp
   categories:
   - meal-program
-  address: {street: 751 West Second, city: Peru, state: in, zip: '46970'}
+  address:
+    street: 751 West Second
+    city: Peru
+    state: in
+    zip: '46970'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Miami County YMCA.
   place: '1859328'
-  geo: {lat: 40.74446, lng: -86.08755}
-  external_ids: {usda_master: Cycle 02_IN_SFSP_0027}
+  geo:
+    lat: 40.74446
+    lng: -86.08755
+  external_ids:
+    usda_master: Cycle 02_IN_SFSP_0027
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/peru/nc-blair-pointe-upper-elementary-school
   name: Nc Blair Pointe Upper Elementary School
   categories:
   - meal-program
-  address: {street: 300 Blair Pike, city: Peru, state: in, zip: '46970'}
+  address:
+    street: 300 Blair Pike
+    city: Peru
+    state: in
+    zip: '46970'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Peru Community Schools.
   place: '1859328'
-  geo: {lat: 40.75818, lng: -86.0854}
-  external_ids: {usda_master: Cycle 03_IN_SFSP_0610}
+  geo:
+    lat: 40.75818
+    lng: -86.0854
+  external_ids:
+    usda_master: Cycle 03_IN_SFSP_0610
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/peru/va-northern-indiana-healthcare-system-peru-cboc
   name: VA Northern Indiana Healthcare System Peru CBOC
   categories:

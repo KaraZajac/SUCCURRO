@@ -65,15 +65,24 @@
   name: Belleview Park
   categories:
   - meal-program
-  address: {street: 5001 S. Inca Drive, city: Englewood, state: co, zip: '80110'}
+  address:
+    street: 5001 S. Inca Drive
+    city: Englewood
+    state: co
+    zip: '80110'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ENGLEWOOD 1.
   place: 0824785
-  geo: {lat: 39.62619, lng: -104.99902}
+  geo:
+    lat: 39.62619
+    lng: -104.99902
   phone: (303) 806-2402
-  external_ids: {usda_master: Cycle 06_CO_SFSP_0052}
+  external_ids:
+    usda_master: Cycle 06_CO_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/englewood/bonnie-mucklow-families-at-five
   name: Bonnie Mucklow Families at Five
   categories:
@@ -216,14 +225,39 @@
   name: Englewood Civic Center
   categories:
   - meal-program
-  address: {street: 1000 Englewood Pkwy, city: Englewood, state: co, zip: '80110'}
+  address:
+    street: 1000 Englewood Pkwy
+    city: Englewood
+    state: co
+    zip: '80110'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ENGLEWOOD 1.
   place: 0824785
-  geo: {lat: 39.65489, lng: -104.99872}
+  geo:
+    lat: 39.65489
+    lng: -104.99872
   phone: (303) 762-2310
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0043}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0043
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: co/englewood/englewood-va-clinic
+  name: Englewood VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: '500 East Hampden Avenue, Synergy Medical Center', city: Englewood, state: co, zip: '80113'}
+  place: 0824785
+  geo: {lat: 39.6531, lng: -104.981}
+  phone: 303-639-7000
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  external_ids: {va: vha_554GL}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: co/englewood/footprints-to-recovery-php-iop-op
   name: Footprints to Recovery PHP/IOP/OP

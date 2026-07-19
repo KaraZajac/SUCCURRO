@@ -21,15 +21,24 @@
   name: Boys & Girls Club Of Sierra Vista
   categories:
   - meal-program
-  address: {street: 1746 Paseo San Luis, city: Sierra Vista, state: az, zip: '85635'}
+  address:
+    street: 1746 Paseo San Luis
+    city: Sierra Vista
+    state: az
+    zip: '85635'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Center for Academic Success,
     Inc..
   place: 0466820
-  geo: {lat: 31.53696, lng: -110.25449}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0067}
+  geo:
+    lat: 31.53696
+    lng: -110.25449
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0067
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/sierra-vista/caring-connections-for-special-needs-llc
   name: Caring Connections for Special Needs LLC
   categories:
@@ -74,15 +83,24 @@
   name: 'Center For Academic Success #1 - Sierra Vista 9-12'
   categories:
   - meal-program
-  address: {street: 900 Carmelita Rd., city: Sierra Vista, state: az, zip: '85635'}
+  address:
+    street: 900 Carmelita Rd.
+    city: Sierra Vista
+    state: az
+    zip: '85635'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Center for Academic Success,
     Inc..
   place: 0466820
-  geo: {lat: 31.5586, lng: -110.28994}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0244}
+  geo:
+    lat: 31.5586
+    lng: -110.28994
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0244
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/sierra-vista/chiricahua-community-health-center-inc-sierra-vi
   name: Chiricahua Community Health Center, Inc. Sierra Vista Administration Office
   categories:
@@ -280,6 +298,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/sierra-vista/cochise-county-va-clinic
+  name: Cochise County VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 157 North Coronado Drive, city: Sierra Vista, state: az, zip: '85635'}
+  place: 0466820
+  geo: {lat: 31.55689, lng: -110.27566}
+  phone: 520-629-4802
+  website: https://www.va.gov/southern-arizona-health-care/locations/cochise-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_678QA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/sierra-vista/community-medical-services-sierra-vista
   name: Community Medical Services Sierra Vista
   categories:
@@ -367,15 +402,24 @@
   name: First Baptist Christian Academy
   categories:
   - meal-program
-  address: {street: 1447 S 7Th St., city: Sierra Vista, state: az, zip: '85635'}
+  address:
+    street: 1447 S 7Th St.
+    city: Sierra Vista
+    state: az
+    zip: '85635'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Center for Academic Success,
     Inc..
   place: 0466820
-  geo: {lat: 31.53917, lng: -110.29133}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0052}
+  geo:
+    lat: 31.53917
+    lng: -110.29133
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/sierra-vista/hope-inc-sierra-vista-office
   name: HOPE Inc Sierra Vista Office
   categories:
@@ -517,6 +561,21 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: az/sierra-vista/sierra-vista-va-clinic
+  name: Sierra Vista VA Clinic
+  categories: *id001
+  description: Multi-Specialty CBOC
+  address: {street: 101 North Coronado Drive, city: Sierra Vista, state: az, zip: '85635'}
+  place: 0466820
+  geo: {lat: 31.55577, lng: -110.27748}
+  phone: 520-459-1529
+  website: https://www.va.gov/southern-arizona-health-care/locations/sierra-vista-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_678GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/sierra-vista/southeastern-arizona-behavioral-health-services
   name: Southeastern Arizona Behavioral Health Services Inc (SEABHS)
   categories:

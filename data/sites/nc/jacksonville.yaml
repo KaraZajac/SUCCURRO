@@ -201,6 +201,80 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/jacksonville/jacksonville-2-va-clinic
+  name: Jacksonville 2 VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 306 Brynn Marr Road, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.74941, lng: -77.37783}
+  phone: 910-353-6406
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/jacksonville-2-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565GJ}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nc/jacksonville/jacksonville-3-va-clinic
+  name: Jacksonville 3 VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 4 Josh Court, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.7648, lng: -77.37731}
+  phone: 910-353-6406
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/jacksonville-3-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565GM}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nc/jacksonville/jacksonville-4-va-clinic
+  name: Jacksonville 4 VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 2580 Henderson Drive, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.78847, lng: -77.42206}
+  phone: 910-353-6406
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/jacksonville-4-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565GN}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nc/jacksonville/jacksonville-nc-mobile-vet-center
+  name: Jacksonville, NC Mobile Vet Center
+  categories: &id002
+  - vet-center
+  address: {street: 221 Memorial Drive, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.76529, lng: -77.38704}
+  phone: 410-764-9400
+  website: https://www.va.gov/jacksonville-nc-vet-center/locations/#jacksonville-nc-mobile-vet-cen
+  external_ids: {va: vc_0858MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nc/jacksonville/jacksonville-nc-vet-center
+  name: Jacksonville, NC Vet Center
+  categories: *id002
+  address: {street: 221 Memorial Drive, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.76539, lng: -77.38702}
+  phone: 910-577-1100
+  website: https://www.va.gov/jacksonville-nc-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vc_0343V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/jacksonville/jacksonville-treatment-center
   name: Jacksonville Treatment Center
   categories:
@@ -221,6 +295,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/jacksonville/jacksonville-va-clinic
+  name: Jacksonville VA Clinic
+  categories: *id001
+  description: Multi-Specialty CBOC
+  address: {street: 4006 Henderson Drive, city: Jacksonville, state: nc, zip: '28546'}
+  place: '3734200'
+  geo: {lat: 34.79498, lng: -77.41361}
+  phone: 910-353-6406
+  website: https://www.va.gov/fayetteville-coastal-health-care/locations/jacksonville-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_565GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/jacksonville/marine-corps-community-services-substance-assess
   name: Marine Corps Community Services Substance Assessment Counseling Center
   categories:
@@ -322,16 +411,25 @@
   name: Sandy Run Community Center
   categories:
   - meal-program
-  address: {street: 1503 Hargett Street, city: Jacksonville, state: nc, zip: '28540'}
+  address:
+    street: 1503 Hargett Street
+    city: Jacksonville
+    state: nc
+    zip: '28540'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Central
     and Eastern North Carolina.
   place: '3734200'
-  geo: {lat: 34.75628, lng: -77.40582}
+  geo:
+    lat: 34.75628
+    lng: -77.40582
   phone: (910) 459-7508
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1737}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1737
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/jacksonville/southwest-elementary
   name: SOUTHWEST ELEMENTARY
   categories:

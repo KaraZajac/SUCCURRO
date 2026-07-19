@@ -40,6 +40,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/washington/franklin-county-va-clinic
+  name: Franklin County VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1627 A Roy Drive, city: Washington, state: mo, zip: '63090'}
+  place: '2977416'
+  geo: {lat: 38.5398, lng: -90.99269}
+  phone: 314-652-4100
+  website: https://www.va.gov/st-louis-health-care/locations/franklin-county-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_657GS}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/washington/little-food-pantry-borgia-high-school
   name: Little Food Pantry @ Borgia High School
   categories:
@@ -164,13 +181,22 @@
   name: Washington Public Library - Non-Congregate
   categories:
   - meal-program
-  address: {street: 410 Lafayette, city: Washington, state: mo, zip: '63090'}
+  address:
+    street: 410 Lafayette
+    city: Washington
+    state: mo
+    zip: '63090'
   description: Free summer meals for kids and teens (2026 season) — sponsored by The Favored Foundation
     for Strengthening Families.
   place: '2977416'
-  geo: {lat: 38.55727, lng: -91.01371}
+  geo:
+    lat: 38.55727
+    lng: -91.01371
   phone: (636) 390-1071
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0782}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0782
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

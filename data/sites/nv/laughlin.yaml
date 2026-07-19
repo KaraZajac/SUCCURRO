@@ -2,15 +2,24 @@
   name: Bennett Elementary School
   categories:
   - meal-program
-  address: {street: 1450 Spirit Ln., city: Laughlin, state: nv, zip: '89029'}
+  address:
+    street: 1450 Spirit Ln.
+    city: Laughlin
+    state: nv
+    zip: '89029'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CLARK COUNTY SCHOOL DISTRICT.
   place: '3241000'
-  geo: {lat: 35.16445, lng: -114.61337}
+  geo:
+    lat: 35.16445
+    lng: -114.61337
   phone: (702) 799-8123
-  external_ids: {usda_master: Cycle 04_NV_SFSP_0089}
+  external_ids:
+    usda_master: Cycle 04_NV_SFSP_0089
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/laughlin/laughlin-rural-outreach-clinic
   name: Laughlin Rural Outreach Clinic
   categories:
@@ -32,6 +41,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/laughlin/master-chief-petty-officer-jesse-dean-va-clinic
+  name: Master Chief Petty Officer Jesse Dean VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 3650 South Pointe Circle, city: Laughlin, state: nv, zip: '89029'}
+  place: '3241000'
+  geo: {lat: 35.13163, lng: -114.62698}
+  phone: 702-298-1100
+  website: https://www.va.gov/southern-nevada-health-care/locations/master-chief-petty-officer-jesse-dean-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_593GH}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/laughlin/tri-state-community-healthcare-center
   name: Tri-State Community Healthcare Center
   categories:

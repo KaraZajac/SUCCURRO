@@ -119,16 +119,25 @@
   name: Kipp Valiant Community Prep
   categories:
   - meal-program
-  address: {street: 620 Willow Rd, city: Menlo Park, state: ca, zip: '94025'}
+  address:
+    street: 620 Willow Rd
+    city: Menlo Park
+    state: ca
+    zip: '94025'
   description: Free summer meals for kids and teens (2026 season) — sponsored by RAVENSWOOD CITY ELEMENTARY
     SCHOOL DISTRICT.
   place: 0646870
-  geo: {lat: 37.46338, lng: -122.15815}
+  geo:
+    lat: 37.46338
+    lng: -122.15815
   phone: (650) 329-2800
-  external_ids: {usda_master: Cycle 11_CA_SSO_1407}
+  external_ids:
+    usda_master: Cycle 11_CA_SSO_1407
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/menlo-park/menlo-park
   name: Menlo Park
   categories:
@@ -148,3 +157,35 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/menlo-park/palo-alto-va-medical-center-menlo-park
+  name: Palo Alto VA Medical Center-Menlo Park
+  categories:
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 795 Willow Road, city: Menlo Park, state: ca, zip: '94025'}
+  place: 0646870
+  geo: {lat: 37.46834, lng: -122.15871}
+  phone: 650-614-9997
+  website: https://www.va.gov/palo-alto-health-care/locations/palo-alto-va-medical-center-menlo-park/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_640A0}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/menlo-park/peninsula-vet-center
+  name: Peninsula Vet Center
+  categories:
+  - vet-center
+  address: {street: '795 Willow Road, Building 324 Wing B', city: Menlo Park, state: ca, zip: '94025'}
+  place: 0646870
+  geo: {lat: 37.46668, lng: -122.16038}
+  phone: 650-614-9825
+  website: https://www.va.gov/peninsula-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0647V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

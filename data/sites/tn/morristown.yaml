@@ -239,6 +239,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/morristown/morristown-east-va-clinic
+  name: Morristown East VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 226 Euclid Avenue, city: Morristown, state: tn, zip: '37813'}
+  place: '4750280'
+  geo: {lat: 36.21665, lng: -83.28229}
+  phone: 423-586-9100
+  website: https://www.va.gov/mountain-home-health-care/locations/morristown-east-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_621GP}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/morristown/morristown-va-clinic
   name: Morristown VA Clinic
   categories:
@@ -256,6 +273,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/morristown/morristown-va-clinic-2
+  name: Morristown VA Clinic
+  categories: *id001
+  description: Primary Care CBOC
+  address: {street: 226 Euclid Avenue, city: Morristown, state: tn, zip: '37813'}
+  place: '4750280'
+  geo: {lat: 36.21665, lng: -83.28229}
+  phone: 423-586-9100
+  website: https://www.va.gov/mountain-home-health-care/locations/morristown-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_621GG}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/morristown/mountain-view
   name: MOUNTAIN VIEW
   categories:
@@ -374,25 +406,43 @@
   name: West View
   categories:
   - meal-program
-  address: {street: One Indian Path, city: Morristown, state: tn, zip: '37813'}
+  address:
+    street: One Indian Path
+    city: Morristown
+    state: tn
+    zip: '37813'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Hamblen County.
   place: '4750280'
-  geo: {lat: 36.17234, lng: -83.34898}
+  geo:
+    lat: 36.17234
+    lng: -83.34898
   phone: (423) 581-3027
-  external_ids: {usda_master: Cycle 09_TN_SSO_0437}
+  external_ids:
+    usda_master: Cycle 09_TN_SSO_0437
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/morristown/witt-elementary
   name: Witt Elementary
   categories:
   - meal-program
-  address: {street: 4650 S Davy Crocket Pkwy, city: Morristown, state: tn, zip: '37813'}
+  address:
+    street: 4650 S Davy Crocket Pkwy
+    city: Morristown
+    state: tn
+    zip: '37813'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Hamblen County.
   place: '4750280'
-  geo: {lat: 36.15915, lng: -83.27395}
+  geo:
+    lat: 36.15915
+    lng: -83.27395
   phone: (423) 581-3027
-  external_ids: {usda_master: Cycle 09_TN_SSO_0438}
+  external_ids:
+    usda_master: Cycle 09_TN_SSO_0438
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

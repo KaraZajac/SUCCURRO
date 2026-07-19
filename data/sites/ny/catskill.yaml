@@ -2,15 +2,24 @@
   name: Catskill Elementary School
   categories:
   - meal-program
-  address: {street: 770 Embought Rd, city: Catskill, state: ny, zip: '12414'}
+  address:
+    street: 770 Embought Rd
+    city: Catskill
+    state: ny
+    zip: '12414'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Catskill CSD.
   place: '3613002'
-  geo: {lat: 42.20625, lng: -73.87403}
+  geo:
+    lat: 42.20625
+    lng: -73.87403
   phone: (518) 769-9053
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0087}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0087
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/catskill/catskill-housing-authority
   name: Catskill Housing Authority
   categories:
@@ -31,6 +40,24 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/catskill/catskill-va-clinic
+  name: Catskill VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: '159 Jefferson Heights, Greene Medical Arts Building', city: Catskill, state: ny,
+    zip: '12414'}
+  place: '3613002'
+  geo: {lat: 42.23168, lng: -73.87802}
+  phone: 518-626-5240
+  website: https://www.va.gov/albany-health-care/locations/catskill-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_528G7}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/catskill/riverside-residential-820-residential-reintegrat
   name: Riverside Residential 820 Residential Reintegration
   categories:

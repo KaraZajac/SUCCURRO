@@ -83,15 +83,24 @@
   name: Petersburg Elementary School
   categories:
   - meal-program
-  address: {street: 333 Rig Street, city: Petersburg, state: wv, zip: '26847'}
+  address:
+    street: 333 Rig Street
+    city: Petersburg
+    state: wv
+    zip: '26847'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GRANT CO BD OF EDUCATION.
   place: '5462956'
-  geo: {lat: 39.00125, lng: -79.11724}
+  geo:
+    lat: 39.00125
+    lng: -79.11724
   phone: (304) 257-1011
-  external_ids: {usda_master: Cycle 02_WV_SFSP_0009}
+  external_ids:
+    usda_master: Cycle 02_WV_SFSP_0009
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/petersburg/petersburg-high-school
   name: Petersburg High School
   categories:
@@ -113,6 +122,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/petersburg/petersburg-va-clinic
+  name: Petersburg VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 15 Grant Street, city: Petersburg, state: wv, zip: '26847'}
+  place: '5462956'
+  geo: {lat: 38.99479, lng: -79.11802}
+  phone: 800-817-3807
+  website: https://www.va.gov/martinsburg-health-care/locations/petersburg-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_613GE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/petersburg/potomac-highlands-mh-guild-inc-grant-county-clin
   name: Potomac Highlands MH Guild Inc Grant County Clinic Office
   categories:

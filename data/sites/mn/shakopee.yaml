@@ -106,15 +106,24 @@
   name: Pearson Early Learning Center
   categories:
   - meal-program
-  address: {street: 917 Dakota St S, city: Shakopee, state: mn, zip: '55379'}
+  address:
+    street: 917 Dakota St S
+    city: Shakopee
+    state: mn
+    zip: '55379'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Shakopee ISD #720.'
   place: '2759350'
-  geo: {lat: 44.78947, lng: -93.51426}
+  geo:
+    lat: 44.78947
+    lng: -93.51426
   phone: (952) 496-5140
-  external_ids: {usda_master: Cycle 02_MN_SFSP_0098}
+  external_ids:
+    usda_master: Cycle 02_MN_SFSP_0098
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/shakopee/scott-county-community-development-agency
   name: Scott County Community Development Agency
   categories:
@@ -175,3 +184,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/shakopee/shakopee-va-clinic-2
+  name: Shakopee VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1555 Lusitano Street, city: Shakopee, state: mn, zip: '55379'}
+  place: '2759350'
+  geo: {lat: 44.77212, lng: -93.53733}
+  phone: 612-629-7109
+  website: https://www.va.gov/minneapolis-health-care/locations/shakopee-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_618GJ}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

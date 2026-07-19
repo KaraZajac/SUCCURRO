@@ -68,15 +68,24 @@
   name: Hacc Summer Program
   categories:
   - meal-program
-  address: {street: 305 W 7Th St., city: Hays, state: ks, zip: '67601'}
+  address:
+    street: 305 W 7Th St.
+    city: Hays
+    state: ks
+    zip: '67601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0489 - Hays.
   place: '2031100'
-  geo: {lat: 38.87123, lng: -99.33542}
+  geo:
+    lat: 38.87123
+    lng: -99.33542
   phone: (785) 410-5057
-  external_ids: {usda_master: Cycle 11_KS_SFSP_0270}
+  external_ids:
+    usda_master: Cycle 11_KS_SFSP_0270
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/hays/hays-housing-authority
   name: Hays Housing Authority
   categories:
@@ -101,14 +110,40 @@
   name: Hays Middle School
   categories:
   - meal-program
-  address: {street: 201 W. 29Th, city: Hays, state: ks, zip: '67601'}
+  address:
+    street: 201 W. 29Th
+    city: Hays
+    state: ks
+    zip: '67601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0489 - Hays.
   place: '2031100'
-  geo: {lat: 38.88814, lng: -99.32313}
+  geo:
+    lat: 38.88814
+    lng: -99.32313
   phone: (785) 623-2450
-  external_ids: {usda_master: Cycle 01_KS_SFSP_0175}
+  external_ids:
+    usda_master: Cycle 01_KS_SFSP_0175
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ks/hays/hays-va-clinic
+  name: Hays VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 4107 Vine Street, city: Hays, state: ks, zip: '67601'}
+  place: '2031100'
+  geo: {lat: 38.9008, lng: -99.31791}
+  phone: 888-878-6881
+  website: https://www.va.gov/wichita-health-care/locations/hays-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_589G4}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ks/hays/high-plains-mental-health-center-hays
   name: High Plains Mental Health Center Hays

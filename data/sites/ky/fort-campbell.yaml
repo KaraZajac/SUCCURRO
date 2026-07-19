@@ -1,0 +1,43 @@
+- id: ky/fort-campbell/fort-campbell-va-clinic
+  name: Fort Campbell VA Clinic
+  categories: &id001
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: '650 Joel Drive, Blanchfield Army Community Hospital', city: Fort Campbell, state: ky,
+    zip: '42223'}
+  geo: {lat: 36.63758, lng: -87.44696}
+  phone: 931-645-3552
+  website: https://www.va.gov/tennessee-valley-health-care/locations/fort-campbell-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  external_ids: {va: vha_626GQ}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ky/fort-campbell/taylor-va-clinic
+  name: Taylor VA Clinic
+  categories: *id001
+  description: Other Outpatient Services (OOS)
+  address: {street: 5580 Desert Storm Avenue, city: Fort Campbell, state: ky, zip: '42223'}
+  geo: {lat: 36.641, lng: -87.46364}
+  phone: 931-221-4619
+  website: https://www.va.gov/tennessee-valley-health-care/locations/taylor-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:30'}
+  external_ids: {va: vha_626QG}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ky/fort-campbell/va-regional-benefits-satellite-office-at-fort-ca
+  name: VA Regional Benefits Satellite Office at Fort Campbell
+  categories:
+  - va-facility
+  description: Satellite Office
+  address: {street: 5663 Screaming Eagle Blvd, city: Fort Campbell, state: ky, zip: '42223'}
+  geo: {lat: 36.63824, lng: -87.45001}
+  phone: 615-279-6225
+  external_ids: {va: vba_320g}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

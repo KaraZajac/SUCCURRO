@@ -42,16 +42,25 @@
   name: Bad Axe High School - 320100165
   categories:
   - meal-program
-  address: {street: 200 N Barrie Rd, city: Bad Axe, state: mi, zip: '48413'}
+  address:
+    street: 200 N Barrie Rd
+    city: Bad Axe
+    state: mi
+    zip: '48413'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bad Axe Public Schools
     - 32010.
   place: '2604740'
-  geo: {lat: 43.80768, lng: -83.01549}
+  geo:
+    lat: 43.80768
+    lng: -83.01549
   phone: (989) 269-9938
-  external_ids: {usda_master: Cycle 07_MI_SFSP_0012}
+  external_ids:
+    usda_master: Cycle 07_MI_SFSP_0012
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/bad-axe/bad-axe-thumb-blessing-boxes
   name: Bad Axe Thumb Blessing Boxes
   categories:
@@ -67,6 +76,23 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: mi/bad-axe/bad-axe-va-clinic
+  name: Bad Axe VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1142 South Van Dyke Road, city: Bad Axe, state: mi, zip: '48413'}
+  place: '2604740'
+  geo: {lat: 43.80189, lng: -83.03759}
+  phone: 989-497-2500
+  website: https://www.va.gov/saginaw-health-care/locations/bad-axe-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_655GF}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bad-axe/great-lakes-bay-health-centers-integrated-care-t
   name: Great Lakes Bay Health Centers Integrated Care Thumb Area
   categories:

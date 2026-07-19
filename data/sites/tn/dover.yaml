@@ -17,6 +17,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/dover/dover-va-clinic
+  name: Dover VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 1406 Donelson Parkway, city: Dover, state: tn, zip: '37058'}
+  place: '4721400'
+  geo: {lat: 36.48072, lng: -87.88593}
+  phone: 931-232-1300
+  website: https://www.va.gov/tennessee-valley-health-care/locations/dover-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  external_ids: {va: vha_626GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/dover/stewart-county-community-health
   name: STEWART COUNTY COMMUNITY HEALTH
   categories:
@@ -43,12 +60,21 @@
   name: Stewart County Middle School
   categories:
   - meal-program
-  address: {street: 1031 Spring St., city: Dover, state: tn, zip: '37058'}
+  address:
+    street: 1031 Spring St.
+    city: Dover
+    state: tn
+    zip: '37058'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Stewart County.
   place: '4721400'
-  geo: {lat: 36.48273, lng: -87.82372}
+  geo:
+    lat: 36.48273
+    lng: -87.82372
   phone: (931) 232-5176
-  external_ids: {usda_master: Cycle 09_TN_SSO_0785}
+  external_ids:
+    usda_master: Cycle 09_TN_SSO_0785
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

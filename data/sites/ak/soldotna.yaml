@@ -15,6 +15,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ak/soldotna/kenai-vet-center-outstation
+  name: Kenai Vet Center Outstation
+  categories:
+  - vet-center
+  address: {street: '43299 Kalifornsky Beach Road, Suite 4', city: Soldotna, state: ak, zip: '99669'}
+  place: '0271640'
+  geo: {lat: 60.49406, lng: -151.1594}
+  phone: 907-260-7640
+  website: https://www.va.gov/anchorage-vet-center/locations/#kenai-vet-center-outstation
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_5021OS}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/soldotna/peninsula-community-health-services-of-alaska
   name: Peninsula Community Health Services of Alaska
   categories:
@@ -62,16 +77,25 @@
   name: Soldotna Clubhouse - School
   categories:
   - meal-program
-  address: {street: 486 W. Redoubt Ave., city: Soldotna, state: ak, zip: '99669'}
+  address:
+    street: 486 W. Redoubt Ave.
+    city: Soldotna
+    state: ak
+    zip: '99669'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys and Girls Clubs
     of the Kenai Peninsula.
   place: '0271640'
-  geo: {lat: 60.48825, lng: -151.0998}
+  geo:
+    lat: 60.48825
+    lng: -151.0998
   phone: (907) 491-1094
-  external_ids: {usda_master: Cycle 01_AK_SFSP_0014}
+  external_ids:
+    usda_master: Cycle 01_AK_SFSP_0014
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/soldotna/soldotna-montessori-mini-food-pantry
   name: Soldotna Montessori Mini Food Pantry
   categories:
@@ -91,12 +115,38 @@
   name: Soldotna United Methodist Church
   categories:
   - meal-program
-  address: {street: 158 South Binkley St, city: Soldotna, state: ak, zip: '99669'}
+  address:
+    street: 158 South Binkley St
+    city: Soldotna
+    state: ak
+    zip: '99669'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Alaska.
   place: '0271640'
-  geo: {lat: 60.48574, lng: -151.07232}
+  geo:
+    lat: 60.48574
+    lng: -151.07232
   phone: (907) 398-4373
-  external_ids: {usda_master: Cycle 03_AK_SFSP_0009}
+  external_ids:
+    usda_master: Cycle 03_AK_SFSP_0009
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ak/soldotna/soldotna-va-clinic
+  name: Soldotna VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 237 West Rockwell Avenue, city: Soldotna, state: ak, zip: '99669'}
+  place: '0271640'
+  geo: {lat: 60.49317, lng: -151.08223}
+  phone: 888-353-7574
+  website: https://www.va.gov/alaska-health-care/locations/soldotna-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  external_ids: {va: vha_463GB}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}

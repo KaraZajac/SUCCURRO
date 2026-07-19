@@ -53,15 +53,41 @@
   name: Lomita Park Elementary
   categories:
   - meal-program
-  address: {street: 200 Santa Helena Ave., city: San Bruno, state: ca, zip: '94066'}
+  address:
+    street: 200 Santa Helena Ave.
+    city: San Bruno
+    state: ca
+    zip: '94066'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MILLBRAE ELEMENTARY SCHOOL
     DISTRICT.
   place: 0665028
-  geo: {lat: 37.61252, lng: -122.40033}
+  geo:
+    lat: 37.61252
+    lng: -122.40033
   phone: (650) 697-5693
-  external_ids: {usda_master: Cycle 06_CA_SSO_0292}
+  external_ids:
+    usda_master: Cycle 06_CA_SSO_0292
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ca/san-bruno/san-bruno-va-clinic
+  name: San Bruno VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 1001 Sneath Lane, city: San Bruno, state: ca, zip: '94066'}
+  place: 0665028
+  geo: {lat: 37.63469, lng: -122.42579}
+  phone: 650-615-6000
+  website: https://www.va.gov/san-francisco-health-care/locations/san-bruno-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_662GE}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ca/san-bruno/san-bruno-va-clinic-san-francisco-va-healthcare
   name: San Bruno VA Clinic San Francisco VA Healthcare System

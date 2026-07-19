@@ -258,15 +258,24 @@
   name: Butterfield Community Center
   categories:
   - meal-program
-  address: {street: 9350 Berry Patch Lane, city: Las Cruces, state: nm, zip: '88011'}
+  address:
+    street: 9350 Berry Patch Lane
+    city: Las Cruces
+    state: nm
+    zip: '88011'
   description: Free summer meals for kids and teens (2026 season) — sponsored by County of Dona Ana.
   place: '3539380'
-  geo: {lat: 32.40235, lng: -106.64734}
+  geo:
+    lat: 32.40235
+    lng: -106.64734
   phone: (575) 528-8755
-  external_ids: {usda_master: Cycle 03_NM_SFSP_0025}
+  external_ids:
+    usda_master: Cycle 03_NM_SFSP_0025
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/las-cruces/centennial-school-based-health-center
   name: Centennial School-Based Health Center
   categories:
@@ -611,6 +620,51 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/las-cruces/las-cruces-mobile-vet-center
+  name: Las Cruces Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '1120 Commerce Drive, Suite B', city: Las Cruces, state: nm, zip: '88001'}
+  place: '3539380'
+  geo: {lat: 32.34704, lng: -106.76422}
+  phone: 575-523-9826
+  website: https://www.va.gov/las-cruces-vet-center/locations/#las-cruces-mobile-vet-center
+  external_ids: {va: vc_0838MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nm/las-cruces/las-cruces-va-clinic
+  name: Las Cruces VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 3401 Del Rey Boulevard, city: Las Cruces, state: nm, zip: '88012'}
+  place: '3539380'
+  geo: {lat: 32.35492, lng: -106.76862}
+  phone: 575-522-1241
+  website: https://www.va.gov/el-paso-health-care/locations/las-cruces-va-clinic/
+  hours:
+  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
+  - {days: [tue], open: '09:00', close: '16:30'}
+  external_ids: {va: vha_756GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nm/las-cruces/las-cruces-vet-center
+  name: Las Cruces Vet Center
+  categories: *id001
+  address: {street: '1120 Commerce Drive, Suite B', city: Las Cruces, state: nm, zip: '88011'}
+  place: '3539380'
+  geo: {lat: 32.34704, lng: -106.76422}
+  phone: 575-523-9826
+  website: https://www.va.gov/las-cruces-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0530V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/las-cruces/las-cruces-women-s-health-2
   name: Las Cruces Women's Health 2
   categories:

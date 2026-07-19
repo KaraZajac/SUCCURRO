@@ -1,0 +1,30 @@
+- id: oh/sheffield-village/lorain-1-va-mobile-medical-unit
+  name: Lorain 1 VA Mobile Medical Unit
+  categories: &id001
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 5275 North Abbe Road, city: Sheffield Village, state: oh, zip: '44035'}
+  geo: {lat: 41.42067, lng: -82.07706}
+  phone: 216-791-3800
+  website: https://www.va.gov/find-locations/facility/vha_541QE
+  hours:
+  - {days: [tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_541QE}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: oh/sheffield-village/lorain-va-clinic
+  name: Lorain VA Clinic
+  categories: *id001
+  description: Multi-Specialty CBOC
+  address: {street: 5275 North Abbe Road, city: Sheffield Village, state: oh, zip: '44035'}
+  geo: {lat: 41.42105, lng: -82.07706}
+  phone: 440-934-9158
+  website: https://www.va.gov/northeast-ohio-health-care/locations/lorain-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_541GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

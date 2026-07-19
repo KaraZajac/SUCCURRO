@@ -2,15 +2,41 @@
   name: Cheyenne River Bie Primary
   categories:
   - meal-program
-  address: {street: '122 E, Street', city: Eagle Butte, state: sd, zip: '57625'}
+  address:
+    street: 122 E, Street
+    city: Eagle Butte
+    state: sd
+    zip: '57625'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CHEYENNE RIVER BIE SCHOOLS
     (drop SFSP 3/2024).
   place: '4617620'
-  geo: {lat: 45.00247, lng: -101.23686}
+  geo:
+    lat: 45.00247
+    lng: -101.23686
   phone: (605) 964-2375
-  external_ids: {usda_master: Cycle 00_SD_SSO_0002}
+  external_ids:
+    usda_master: Cycle 00_SD_SSO_0002
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: sd/eagle-butte/cheyenne-river-va-clinic
+  name: Cheyenne River VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 220 East Prairie Road, city: Eagle Butte, state: sd, zip: '57625'}
+  place: '4617620'
+  geo: {lat: 44.99359, lng: -101.23383}
+  phone: 605-964-8389
+  website: https://www.va.gov/black-hills-health-care/locations/mclaughlin-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '09:00', close: '15:00'}
+  external_ids: {va: vha_568HK}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: sd/eagle-butte/eagle-butte
   name: Eagle Butte

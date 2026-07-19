@@ -404,15 +404,24 @@
   name: Ne - (Grab And Go) Sandusky Library
   categories:
   - meal-program
-  address: {street: 114 West Adams Street, city: Sandusky, state: oh, zip: '44870'}
+  address:
+    street: 114 West Adams Street
+    city: Sandusky
+    state: oh
+    zip: '44870'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Children's Hunger Alliance.
   place: '3970380'
-  geo: {lat: 41.45352, lng: -82.71066}
+  geo:
+    lat: 41.45352
+    lng: -82.71066
   phone: (419) 625-3834
-  external_ids: {usda_master: Cycle 02_OH_SFSP_0099}
+  external_ids:
+    usda_master: Cycle 02_OH_SFSP_0099
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/sandusky/northeast-ohio-va-healthcare-system-sandusky-cbo
   name: Northeast Ohio VA Healthcare System Sandusky CBOC
   categories:
@@ -530,3 +539,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/sandusky/sandusky-va-clinic
+  name: Sandusky VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 1912 Hayes Avenue, city: Sandusky, state: oh, zip: '44870'}
+  place: '3970380'
+  geo: {lat: 41.43745, lng: -82.71286}
+  phone: 419-609-1460
+  website: https://www.va.gov/northeast-ohio-health-care/locations/sandusky-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_541GC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

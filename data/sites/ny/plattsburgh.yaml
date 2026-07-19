@@ -97,15 +97,24 @@
   name: Cumberland Head Elementary School
   categories:
   - meal-program
-  address: {street: 1187 Cumberland Head Rd, city: Plattsburgh, state: ny, zip: '12901'}
+  address:
+    street: 1187 Cumberland Head Rd
+    city: Plattsburgh
+    state: ny
+    zip: '12901'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Beekmantown CSD.
   place: '3658574'
-  geo: {lat: 44.72054, lng: -73.39052}
+  geo:
+    lat: 44.72054
+    lng: -73.39052
   phone: (518) 563-8685
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0121}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0121
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/plattsburgh/cumberland-head-modular
   name: Cumberland Head Modular
   categories:
@@ -267,3 +276,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/plattsburgh/plattsburgh-va-clinic
+  name: Plattsburgh VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 5180 North Catherine Street, city: Plattsburgh, state: ny, zip: '12901'}
+  place: '3658574'
+  geo: {lat: 44.70009, lng: -73.45777}
+  phone: 518-561-6247
+  website: https://www.va.gov/albany-health-care/locations/plattsburgh-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_528GV}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}

@@ -142,15 +142,39 @@
   name: Chillin With Christ Summer Camp
   categories:
   - meal-program
-  address: {street: 2015 North Main Street, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 2015 North Main Street
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ministry of Intercession/Bridge
     2 Success.
   place: '0550450'
-  geo: {lat: 34.77349, lng: -92.26702}
+  geo:
+    lat: 34.77349
+    lng: -92.26702
   phone: (501) 251-5124
-  external_ids: {usda_master: Cycle 09_AR_SFSP_0011}
+  external_ids:
+    usda_master: Cycle 09_AR_SFSP_0011
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ar/north-little-rock/eugene-j-towbin-healthcare-center
+  name: Eugene J. Towbin Healthcare Center
+  categories:
+  - va-facility
+  - health
+  description: VA Medical Center (VAMC)
+  address: {street: 2200 Fort Roots Drive, city: North Little Rock, state: ar, zip: '72114'}
+  place: '0550450'
+  geo: {lat: 34.77605, lng: -92.29622}
+  phone: 501-257-1000
+  website: https://www.va.gov/central-arkansas-health-care/locations/eugene-j-towbin-healthcare-center/
+  external_ids: {va: vha_598A0}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: ar/north-little-rock/family-service-agency
   name: Family Service Agency
@@ -177,44 +201,71 @@
   name: Holt District Homes
   categories:
   - meal-program
-  address: {street: 820 West 19Thb Street, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 820 West 19Thb Street
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ministry of Intercession/Bridge
     2 Success.
   place: '0550450'
-  geo: {lat: 34.76607, lng: -92.267}
+  geo:
+    lat: 34.76607
+    lng: -92.267
   phone: (501) 916-2374
-  external_ids: {usda_master: Cycle 09_AR_SFSP_0014}
+  external_ids:
+    usda_master: Cycle 09_AR_SFSP_0014
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/north-little-rock/homes-at-pine-crossing-apartments
   name: Homes At Pine Crossing Apartments
   categories:
   - meal-program
-  address: {street: 1700 North Locust Street, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 1700 North Locust Street
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ministry of Intercession/Bridge
     2 Success.
   place: '0550450'
-  geo: {lat: 34.77182, lng: -92.26119}
+  geo:
+    lat: 34.77182
+    lng: -92.26119
   phone: (501) 297-4238
-  external_ids: {usda_master: Cycle 09_AR_SFSP_0015}
+  external_ids:
+    usda_master: Cycle 09_AR_SFSP_0015
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/north-little-rock/jim-wetherington-boys-girls-club
   name: Jim Wetherington Boys & Girls Club
   categories:
   - meal-program
-  address: {street: 1212 Jim Wetherington Place, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 1212 Jim Wetherington Place
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club of
     Central Arkansas.
   place: '0550450'
-  geo: {lat: 34.76581, lng: -92.26848}
+  geo:
+    lat: 34.76581
+    lng: -92.26848
   phone: (501) 374-0309
-  external_ids: {usda_master: Cycle 05_AR_SFSP_0024}
+  external_ids:
+    usda_master: Cycle 05_AR_SFSP_0024
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/north-little-rock/lakewood-united-methodist-church-blessing-box
   name: Lakewood United Methodist Church Blessing Box
   categories:
@@ -230,6 +281,35 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ar/north-little-rock/little-rock-va-regional-benefit-office-at-eugene
+  name: Little Rock VA Regional Benefit Office at Eugene J. Towbin Healthcare Center
+  categories:
+  - va-facility
+  description: Regional Benefit Office
+  address: {street: '2200 Fort Roots Drive, Building 111', city: North Little Rock, state: ar, zip: '72114'}
+  place: '0550450'
+  geo: {lat: 34.77605, lng: -92.29622}
+  phone: 800-827-1000
+  website: https://www.va.gov/little-rock-va-regional-benefit-office-at-eugene-j-towbin-healthcare-center/
+  external_ids: {va: vba_350}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: ar/north-little-rock/little-rock-vet-center
+  name: Little Rock Vet Center
+  categories:
+  - vet-center
+  address: {street: '10800 Financial Centre Parkway, Suite 175', city: North Little Rock, state: ar, zip: '72211'}
+  place: '0550450'
+  geo: {lat: 34.74917, lng: -92.39508}
+  phone: 501-918-1800
+  website: https://www.va.gov/little-rock-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0713V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/north-little-rock/nlrhs-little-free-pantry
   name: NLRHS little free pantry
   categories:
@@ -309,16 +389,25 @@
   name: North Little Rock Public Library System
   categories:
   - meal-program
-  address: {street: 2801 Orange Street, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 2801 Orange Street
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ministry of Intercession/Bridge
     2 Success.
   place: '0550450'
-  geo: {lat: 34.7774, lng: -92.26955}
+  geo:
+    lat: 34.7774
+    lng: -92.26955
   phone: (501) 758-1720
-  external_ids: {usda_master: Cycle 09_AR_SFSP_0021}
+  external_ids:
+    usda_master: Cycle 09_AR_SFSP_0021
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/north-little-rock/refuge-church
   name: Refuge Church
   categories:
@@ -376,13 +465,22 @@
   name: Urban Promise
   categories:
   - meal-program
-  address: {street: 1224 Franklin Street, city: North Little Rock, state: ar, zip: '72114'}
+  address:
+    street: 1224 Franklin Street
+    city: North Little Rock
+    state: ar
+    zip: '72114'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ministry of Intercession/Bridge
     2 Success.
   place: '0550450'
-  geo: {lat: 34.76611, lng: -92.28179}
+  geo:
+    lat: 34.76611
+    lng: -92.28179
   phone: (501) 749-2100
-  external_ids: {usda_master: Cycle 09_AR_SFSP_0024}
+  external_ids:
+    usda_master: Cycle 09_AR_SFSP_0024
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -2,16 +2,25 @@
   name: Boys & Girls Club Of Lco
   categories:
   - meal-program
-  address: {street: 8575 N. School House Rd, city: Hayward, state: wi, zip: '54843'}
+  address:
+    street: 8575 N. School House Rd
+    city: Hayward
+    state: wi
+    zip: '54843'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club-Lac
     Courte Oreilles.
   place: '5533450'
-  geo: {lat: 45.96904, lng: -91.35919}
+  geo:
+    lat: 45.96904
+    lng: -91.35919
   phone: (715) 634-4030
-  external_ids: {usda_master: Cycle 01_WI_SFSP_0061}
+  external_ids:
+    usda_master: Cycle 01_WI_SFSP_0061
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/hayward/hayward-high-school
   name: Hayward High School
   categories:
@@ -54,6 +63,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/hayward/hayward-va-clinic
+  name: Hayward VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 10369 State Highway 27, city: Hayward, state: wi, zip: '54843'}
+  place: '5533450'
+  geo: {lat: 46.00702, lng: -91.48144}
+  phone: 715-934-5454
+  website: https://www.va.gov/minneapolis-health-care/locations/hayward-va-clinic/
+  hours:
+  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
+  external_ids: {va: vha_618GH}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/hayward/lco-community-health-center
   name: LCO Community Health Center
   categories:

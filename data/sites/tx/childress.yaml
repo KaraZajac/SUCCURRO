@@ -17,6 +17,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/childress/childress-va-clinic
+  name: Childress VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address: {street: 2305 Avenue F Northwest, city: Childress, state: tx, zip: '79201'}
+  place: '4814668'
+  geo: {lat: 34.43641, lng: -100.2313}
+  phone: 940-937-8528
+  website: https://www.va.gov/amarillo-health-care/locations/childress-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_504GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/childress/housing-authority-of-childress
   name: Housing Authority Of Childress
   categories:
@@ -41,11 +58,20 @@
   name: Nc_Childress El
   categories:
   - meal-program
-  address: {street: 300 3Rd St Se, city: Childress, state: tx, zip: '79201'}
+  address:
+    street: 300 3Rd St Se
+    city: Childress
+    state: tx
+    zip: '79201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CHILDRESS ISD.
   place: '4814668'
-  geo: {lat: 34.41783, lng: -100.20737}
-  external_ids: {usda_master: Cycle 01_TX_SFSP_1815}
+  geo:
+    lat: 34.41783
+    lng: -100.20737
+  external_ids:
+    usda_master: Cycle 01_TX_SFSP_1815
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -37,6 +37,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sd/aberdeen/aberdeen-va-clinic
+  name: Aberdeen VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 3307 10th Avenue Southeast, city: Aberdeen, state: sd, zip: '57401'}
+  place: '4600100'
+  geo: {lat: 45.4552, lng: -98.44105}
+  phone: 605-229-3500
+  website: https://www.va.gov/sioux-falls-health-care/locations/aberdeen-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_438GD}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/aberdeen/avera-saint-lukes-hospital-behavioral-health-cen
   name: Avera Saint Lukes Hospital Behavioral Health Center
   categories:
@@ -84,12 +101,21 @@
   name: Youth Development Center
   categories:
   - meal-program
-  address: {street: 6 S State St, city: Aberdeen, state: sd, zip: '57401'}
+  address:
+    street: 6 S State St
+    city: Aberdeen
+    state: sd
+    zip: '57401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA OF ABERDEEN.
   place: '4600100'
-  geo: {lat: 45.46492, lng: -98.47932}
+  geo:
+    lat: 45.46492
+    lng: -98.47932
   phone: (605) 225-7113
-  external_ids: {usda_master: Cycle 06_SD_SFSP_0049}
+  external_ids:
+    usda_master: Cycle 06_SD_SFSP_0049
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

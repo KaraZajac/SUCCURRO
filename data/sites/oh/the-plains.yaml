@@ -41,6 +41,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/the-plains/athens-va-clinic
+  name: Athens VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 88 North Plains Road, city: The Plains, state: oh, zip: '45780'}
+  place: '3976568'
+  geo: {lat: 39.37541, lng: -82.13436}
+  phone: 740-592-7220
+  website: https://www.va.gov/chillicothe-health-care/locations/athens-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_538GA}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/the-plains/chillicothe-va-medical-center-athens-cboc
   name: Chillicothe VA Medical Center Athens CBOC
   categories:
@@ -87,13 +104,22 @@
   name: The Plains Library
   categories:
   - meal-program
-  address: {street: 14 S. Plains Road, city: The Plains, state: oh, zip: '45780'}
+  address:
+    street: 14 S. Plains Road
+    city: The Plains
+    state: oh
+    zip: '45780'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Hocking Athens Perry
     Community Action.
   place: '3976568'
-  geo: {lat: 39.36824, lng: -82.13202}
+  geo:
+    lat: 39.36824
+    lng: -82.13202
   phone: (740) 592-4272
-  external_ids: {usda_master: Cycle 04_OH_SFSP_0301}
+  external_ids:
+    usda_master: Cycle 04_OH_SFSP_0301
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

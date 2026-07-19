@@ -18,40 +18,112 @@
   name: Boys & Girls Club-Main Branch
   categories:
   - meal-program
-  address: {street: 1701 East K Street, city: Casper, state: wy, zip: '82601'}
+  address:
+    street: 1701 East K Street
+    city: Casper
+    state: wy
+    zip: '82601'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Natrona CSD #1.'
   place: '5613150'
-  geo: {lat: 42.86077, lng: -106.30305}
+  geo:
+    lat: 42.86077
+    lng: -106.30305
   phone: (307) 253-5203
-  external_ids: {usda_master: Cycle 02_WY_SFSP_0027}
+  external_ids:
+    usda_master: Cycle 02_WY_SFSP_0027
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/casper/casper-family-ymca
   name: Casper Family Ymca
   categories:
   - meal-program
-  address: {street: 1611 Casper Mountain Road, city: Casper, state: wy, zip: '82601'}
+  address:
+    street: 1611 Casper Mountain Road
+    city: Casper
+    state: wy
+    zip: '82601'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Natrona CSD #1.'
   place: '5613150'
-  geo: {lat: 42.83365, lng: -106.322}
+  geo:
+    lat: 42.83365
+    lng: -106.322
   phone: (307) 337-7874
-  external_ids: {usda_master: Cycle 02_WY_SFSP_0029}
+  external_ids:
+    usda_master: Cycle 02_WY_SFSP_0029
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wy/casper/casper-mobile-vet-center
+  name: Casper Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '1030 North Poplar Street, Suite B', city: Casper, state: wy, zip: '82601'}
+  place: '5613150'
+  geo: {lat: 42.86153, lng: -106.33267}
+  phone: 307-261-5355
+  website: https://www.va.gov/casper-vet-center/locations/#casper-mobile-vet-center
+  external_ids: {va: vc_0834MVC}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: wy/casper/casper-recreation-center
   name: Casper Recreation Center
   categories:
   - meal-program
-  address: {street: 1801 East 4Th Street, city: Casper, state: wy, zip: '82601'}
+  address:
+    street: 1801 East 4Th Street
+    city: Casper
+    state: wy
+    zip: '82601'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Natrona CSD #1.'
   place: '5613150'
-  geo: {lat: 42.84524, lng: -106.3}
+  geo:
+    lat: 42.84524
+    lng: -106.3
   phone: (307) 253-5203
-  external_ids: {usda_master: Cycle 02_WY_SFSP_0028}
+  external_ids:
+    usda_master: Cycle 02_WY_SFSP_0028
   sources:
   - usda/summer-meal-sites
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wy/casper/casper-va-clinic
+  name: Casper VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: '6000 East 2nd Street, Parkridge Professional Center', city: Casper, state: wy, zip: '82609'}
+  place: '5613150'
+  geo: {lat: 42.84315, lng: -106.23589}
+  phone: 866-338-5168
+  website: https://www.va.gov/sheridan-health-care/locations/casper-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  external_ids: {va: vha_666GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: wy/casper/casper-vet-center
+  name: Casper Vet Center
+  categories: *id001
+  address: {street: '1030 North Poplar Street, Suite B', city: Casper, state: wy, zip: '82601'}
+  place: '5613150'
+  geo: {lat: 42.86153, lng: -106.33267}
+  phone: 307-261-5355
+  website: https://www.va.gov/casper-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu], open: '07:30', close: '16:30'}
+  - {days: [fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0519V}
+  sources:
+  - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
 - id: wy/casper/central-wyoming-counseling-center
   name: Central Wyoming Counseling Center

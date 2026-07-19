@@ -76,6 +76,50 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/farmington/farmington-hopi-mobile-vet-center
+  name: Farmington (Hopi) Mobile Vet Center
+  categories: &id001
+  - vet-center
+  address: {street: '4251 East Main Street, Suite A', city: Farmington, state: nm, zip: '87402'}
+  place: '3525800'
+  geo: {lat: 36.76045, lng: -108.15557}
+  phone: 928-734-5166
+  website: https://www.va.gov/farmington-vet-center/locations/#farmington-hopi-mobile-vet-cen
+  external_ids: {va: vc_0832MVC}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nm/farmington/farmington-va-clinic
+  name: Farmington VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Primary Care CBOC
+  address: {street: 3605 English Road, city: Farmington, state: nm, zip: '87402'}
+  place: '3525800'
+  geo: {lat: 36.76236, lng: -108.14841}
+  phone: 505-326-4383
+  website: https://www.va.gov/new-mexico-health-care/locations/farmington-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_501GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
+- id: nm/farmington/farmington-vet-center
+  name: Farmington Vet Center
+  categories: *id001
+  address: {street: '4251 East Main Street, Suite A', city: Farmington, state: nm, zip: '87402'}
+  place: '3525800'
+  geo: {lat: 36.76046, lng: -108.15554}
+  phone: 505-327-9684
+  website: https://www.va.gov/farmington-vet-center/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_0516V}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/farmington/housing-authority-of-the-county-of-san-juan
   name: Housing Authority Of The County Of San Juan
   categories:
@@ -100,15 +144,24 @@
   name: Lee Acres Park
   categories:
   - meal-program
-  address: {street: Cr 5500, city: Farmington, state: nm, zip: '87401'}
+  address:
+    street: Cr 5500
+    city: Farmington
+    state: nm
+    zip: '87401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bloomfield Schools.
   place: '3525800'
-  geo: {lat: 36.6954, lng: -108.09576}
+  geo:
+    lat: 36.6954
+    lng: -108.09576
   phone: (505) 634-3608
-  external_ids: {usda_master: Cycle 03_NM_SFSP_0050}
+  external_ids:
+    usda_master: Cycle 03_NM_SFSP_0050
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/farmington/little-feet
   name: Little Feet
   categories:

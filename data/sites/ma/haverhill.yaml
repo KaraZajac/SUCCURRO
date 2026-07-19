@@ -2,16 +2,25 @@
   name: Boys & Girls Club Of Grtr Haverhill (Sd-258-001)
   categories:
   - meal-program
-  address: {street: 55 Emerson Street, city: Haverhill, state: ma, zip: 01830}
+  address:
+    street: 55 Emerson Street
+    city: Haverhill
+    state: ma
+    zip: 01830
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys and Girls Club of
     Greater Haverhill (05-128-SF-258).
   place: '2529405'
-  geo: {lat: 42.7751, lng: -71.08216}
+  geo:
+    lat: 42.7751
+    lng: -71.08216
   phone: (978) 374-6171
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0120}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0120
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/haverhill/community-action-drop-in-center
   name: Community Action Drop-In Center
   categories:
@@ -136,6 +145,23 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/haverhill/haverhill-va-clinic
+  name: Haverhill VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Multi-Specialty CBOC
+  address: {street: 209 Summer Street, city: Haverhill, state: ma, zip: 01830}
+  place: '2529405'
+  geo: {lat: 42.776, lng: -71.06795}
+  phone: 800-838-6331
+  website: https://www.va.gov/bedford-health-care/locations/haverhill-va-clinic/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vha_518GB}
+  sources:
+  - va/facilities-api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/haverhill/holy-family-hospital-haverhill-center-for-behavi
   name: Holy Family Hospital Haverhill Center for Behavioral Medicine
   categories:
