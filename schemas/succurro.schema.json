@@ -136,6 +136,7 @@
         "email": {"type": "string"},
         "website": {"type": "string", "format": "uri"},
         "hours": {"type": "array", "items": {"$ref": "#/$defs/hoursEntry"}},
+        "services": {"type": "array", "items": {"type": "string"}},
         "eligibility": {"type": "string"},
         "cost": {"enum": ["free", "sliding-scale", "insurance", "varies"]},
         "accessibility": {"type": "array", "items": {"$ref": "#/$defs/token"}},

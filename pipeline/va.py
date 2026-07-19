@@ -137,6 +137,11 @@ def main(argv):
         hours = parse_hours(a.get("hours") or {})
         if hours:
             rec["hours"] = hours
+        svc_names = [s["name"] for group in (a.get("services") or {}).values()
+                     if isinstance(group, list)
+                     for s in group if isinstance(s, dict) and s.get("name")]
+        if svc_names:
+            rec["services"] = sorted(set(svc_names))
         rec["external_ids"] = Flow(va=fac.get("id", ""))
         rec["sources"] = [source_id]
         rec["verified"] = Flow(on=today(), method="api")

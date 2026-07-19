@@ -72,6 +72,9 @@ geo: {lat: 33.7743, lng: -117.9380}
 phone: "714-897-6670"
 hours:                                 # day tokens mon..sun; 24h HH:MM strings
   - {days: [mon, tue, wed, thu, fri], open: "08:00", close: "16:30"}
+services: [Food boxes, SNAP application help]   # source-provided labels, free-form
+                                   # (categories: is the controlled vocabulary;
+                                   # services: preserves upstream detail verbatim)
 eligibility: Open to all OC residents; photo ID requested but not required.
 cost: free                             # free | sliding-scale | insurance | varies
 accessibility: [wheelchair]
