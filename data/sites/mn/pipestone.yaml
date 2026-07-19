@@ -2,13 +2,35 @@
   name: Hra Of Pipestone, Minnesota
   categories:
   - housing-assistance
-  address: {street: 202 2nd Ave SW, city: Pipestone, state: mn, zip: '56164'}
+  address:
+    street: 202 2nd Ave SW
+    city: Pipestone
+    state: mn
+    zip: '56164'
   description: Public housing and Housing Choice Voucher agency
   place: '2751388'
-  geo: {lat: 43.99937, lng: -96.31934}
+  geo:
+    lat: 43.99937
+    lng: -96.31934
   phone: 507-825-2221
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mn/pipestone/pipestone-area-schools
+  name: Pipestone Area Schools
+  categories:
+  - meal-program
+  address: {street: 1401 7Th St Sw, city: Pipestone, state: mn, zip: '56164'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Pipestone Area School
+    District 2689.
+  place: '2751388'
+  geo: {lat: 43.9943, lng: -96.33714}
+  phone: (507) 562-6018
+  external_ids: {usda_master: Cycle 03_MN_SFSP_0067}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: mn/pipestone/pipestone-head-start
   name: Pipestone Head Start
@@ -29,3 +51,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/pipestone/southwest-park
+  name: Southwest Park
+  categories:
+  - meal-program
+  address: {street: 400 8Th Ave Sw, city: Pipestone, state: mn, zip: '56164'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Pipestone Area School
+    District 2689.
+  place: '2751388'
+  geo: {lat: 43.9972, lng: -96.32783}
+  phone: (507) 562-6018
+  external_ids: {usda_master: Cycle 03_MN_SFSP_0068}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

@@ -2,13 +2,34 @@
   name: City Of Ronan Housing Authority
   categories:
   - housing-assistance
-  address: {street: 111 2nd Ave SW, city: Ronan, state: mt, zip: '59864'}
+  address:
+    street: 111 2nd Ave SW
+    city: Ronan
+    state: mt
+    zip: '59864'
   description: Housing Choice Voucher (Section 8) agency
   place: '3064150'
-  geo: {lat: 47.52826, lng: -114.09992}
+  geo:
+    lat: 47.52826
+    lng: -114.09992
   phone: 406-676-5900
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mt/ronan/k-william-harvey-elem
+  name: K William Harvey Elem
+  categories:
+  - meal-program
+  address: {street: 350 4Th Ave Nw, city: Ronan, state: mt, zip: '59864'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Ronan Public Schools.
+  place: '3064150'
+  geo: {lat: 47.53268, lng: -114.10353}
+  phone: (406) 676-3390
+  external_ids: {usda_master: Cycle 05_MT_SFSP_0197}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: mt/ronan/pache-early
   name: Pache Early
@@ -67,3 +88,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/ronan/ronan-middle-school
+  name: Ronan Middle School
+  categories:
+  - meal-program
+  address: {street: 35885 Round Butte Road, city: Ronan, state: mt, zip: '59864'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Ronan Public Schools.
+  place: '3064150'
+  geo: {lat: 47.52981, lng: -114.10089}
+  phone: (406) 676-3390
+  external_ids: {usda_master: Cycle 06_MT_SFSP_0272}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

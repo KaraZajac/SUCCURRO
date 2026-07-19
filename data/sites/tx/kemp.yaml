@@ -2,13 +2,33 @@
   name: Housing Authority Of Kemp
   categories:
   - housing-assistance
-  address: {street: 400 Dallas Plaza St, city: Kemp, state: tx, zip: '75143'}
+  address:
+    street: 400 Dallas Plaza St
+    city: Kemp
+    state: tx
+    zip: '75143'
   description: Public housing (Low-Rent) agency
   place: '4838788'
-  geo: {lat: 32.44502, lng: -96.23083}
+  geo:
+    lat: 32.44502
+    lng: -96.23083
   phone: 903-498-8211
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/kemp/kemp-housing-authority
+  name: Kemp Housing Authority
+  categories:
+  - meal-program
+  address: {street: 400 N. Dallas St., city: Kemp, state: tx, zip: '75143'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by NORA'S WOMEN OF PURPOSE.
+  place: '4838788'
+  geo: {lat: 32.44525, lng: -96.2307}
+  external_ids: {usda_master: Cycle 01_TX_SFSP_0814}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: tx/kemp/kemp-primary
   name: Kemp Primary
@@ -29,3 +49,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/kemp/nc-kemp-housing-authority
+  name: Nc_Kemp Housing Authority
+  categories:
+  - meal-program
+  address: {street: 400 N. Main St., city: Kemp, state: tx, zip: '75143'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by NORA'S WOMEN OF PURPOSE.
+  place: '4838788'
+  geo: {lat: 32.44479, lng: -96.23251}
+  external_ids: {usda_master: Cycle 01_TX_SFSP_1844}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

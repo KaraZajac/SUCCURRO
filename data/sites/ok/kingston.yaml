@@ -38,13 +38,34 @@
   name: Housing Authority Of The City Of Kingston
   categories:
   - housing-assistance
-  address: {street: 200 Gary Dr, city: Kingston, state: ok, zip: '73439'}
+  address:
+    street: 200 Gary Dr
+    city: Kingston
+    state: ok
+    zip: '73439'
   description: Public housing (Low-Rent) agency
   place: '4039900'
-  geo: {lat: 33.99696, lng: -96.71778}
+  geo:
+    lat: 33.99696
+    lng: -96.71778
   phone: 580-564-3309
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/kingston/kingston-es-105
+  name: Kingston Es(105)
+  categories:
+  - meal-program
+  address: {street: North East 4Th And Main, city: Kingston, state: ok, zip: '73439'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by KINGSTON PUBLIC SCHOOL.
+  place: '4039900'
+  geo: {lat: 34.00201, lng: -96.71926}
+  phone: (580) 564-9299
+  external_ids: {usda_master: Cycle 04_OK_SFSP_0112}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: ok/kingston/kingston-head-start
   name: Kingston Head Start

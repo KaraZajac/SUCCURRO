@@ -43,14 +43,22 @@
   name: Liberty County Housing Authority
   categories:
   - housing-assistance
-  address: {street: 2103 Cos St, city: Liberty, state: tx, zip: '77575'}
+  address:
+    street: 2103 Cos St
+    city: Liberty
+    state: tx
+    zip: '77575'
   description: Housing Choice Voucher (Section 8) agency
   place: '4842568'
-  geo: {lat: 30.06078, lng: -94.79378}
+  geo:
+    lat: 30.06078
+    lng: -94.79378
   phone: 936-336-4558
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/liberty/liberty-early-learning-center
   name: Liberty Early Learning Center
   categories:
@@ -70,6 +78,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/liberty/nc-hardin-elementary
+  name: Nc_Hardin Elementary
+  categories:
+  - meal-program
+  address: {street: 11285 Highway 146 N, city: Liberty, state: tx, zip: '77575'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by THE HOUSTON FOOD BANK.
+  place: '4842568'
+  geo: {lat: 30.17712, lng: -94.74198}
+  external_ids: {usda_master: Cycle 07_TX_SFSP_3687}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/liberty/nc-liberty-h-s
+  name: Nc_Liberty H S
+  categories:
+  - meal-program
+  address: {street: 2615 Jefferson Dr, city: Liberty, state: tx, zip: '77575'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by LIBERTY ISD.
+  place: '4842568'
+  geo: {lat: 30.07342, lng: -94.78774}
+  external_ids: {usda_master: Cycle 07_TX_SSO_3722}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/liberty/tri-county-behavioral-healthcare
   name: Tri County Behavioral Healthcare
   categories:

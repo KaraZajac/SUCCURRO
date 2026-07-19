@@ -2,12 +2,33 @@
   name: Lebanon Housing Authority
   categories:
   - housing-assistance
-  address: {street: 31 Romano Cir, city: West Lebanon, state: nh, zip: 03784}
+  address:
+    street: 31 Romano Cir
+    city: West Lebanon
+    state: nh
+    zip: 03784
   description: Public housing and Housing Choice Voucher agency
-  geo: {lat: 43.63841, lng: -72.31612}
+  geo:
+    lat: 43.63841
+    lng: -72.31612
   phone: 603-298-5753
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nh/west-lebanon/lebanon-public-library
+  name: Lebanon Public Library
+  categories:
+  - meal-program
+  address: {street: 9 East Park Street, city: West Lebanon, state: nh, zip: '03766'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by NH Catholic Charities.
+    NH Food Bank.
+  geo: {lat: 43.64243, lng: -72.25057}
+  phone: (603) 678-1153
+  external_ids: {usda_master: Cycle 09_NH_SFSP_0112}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: nh/west-lebanon/west-lebanon-comprehensive-treatment-c
   name: West Lebanon Comprehensive Treatment C

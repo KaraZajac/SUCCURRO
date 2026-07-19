@@ -62,13 +62,34 @@
   name: Brattleboro Housing Authority
   categories:
   - housing-assistance
-  address: {street: 224 Melrose St, city: Brattleboro, state: vt, zip: '05301'}
+  address:
+    street: 224 Melrose St
+    city: Brattleboro
+    state: vt
+    zip: '05301'
   description: Public housing and Housing Choice Voucher agency
   place: '5007975'
-  geo: {lat: 42.85368, lng: -72.59691}
+  geo:
+    lat: 42.85368
+    lng: -72.59691
   phone: 802-254-6071
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: vt/brattleboro/brattleboro-uhs-6
+  name: 'Brattleboro Uhs #6'
+  categories:
+  - meal-program
+  address: {street: 131 Fairground Road, city: Brattleboro, state: vt, zip: '05301'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Windham Southeast SU.
+  place: '5007975'
+  geo: {lat: 42.83707, lng: -72.56113}
+  phone: (774) 208-2932
+  external_ids: {usda_master: Cycle 06_VT_SFSP_0009}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: vt/brattleboro/healthcare-and-rehabilitation-services-brattlebo
   name: Healthcare and Rehabilitation Services Brattleboro Program

@@ -2,14 +2,22 @@
   name: Housing Authority Of Mount Vernon
   categories:
   - housing-assistance
-  address: {street: 944 Kaufman St S, city: Mount Vernon, state: tx, zip: '75457'}
+  address:
+    street: 944 Kaufman St S
+    city: Mount Vernon
+    state: tx
+    zip: '75457'
   description: Public housing (Low-Rent) agency
   place: '4849860'
-  geo: {lat: 33.17667, lng: -95.22347}
+  geo:
+    lat: 33.17667
+    lng: -95.22347
   phone: 903-537-4452
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/mount-vernon/mount-vernon-elementary
   name: MOUNT VERNON ELEMENTARY
   categories:
@@ -29,3 +37,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/mount-vernon/mt-vernon-el
+  name: Mt Vernon El
+  categories:
+  - meal-program
+  address: {street: 517 Hwy 37 South, city: Mount Vernon, state: tx, zip: '75457'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by MOUNT VERNON ISD.
+  place: '4849860'
+  geo: {lat: 33.14727, lng: -95.23875}
+  external_ids: {usda_master: Cycle 01_TX_SSO_1073}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/mount-vernon/nc-mp-mt-vernon
+  name: Nc_Mp-Mt. Vernon
+  categories:
+  - meal-program
+  address: {street: 406 Tx-37, city: Mt.Vernon, state: tx, zip: '75457'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by REGIONAL EAST TEXAS FOOD
+    BANK.
+  place: '4849860'
+  geo: {lat: 33.17945, lng: -95.2334}
+  external_ids: {usda_master: Cycle 01_TX_SFSP_1861}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

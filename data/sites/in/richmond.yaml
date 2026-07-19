@@ -245,13 +245,33 @@
   name: Housing Authority Of The City Of Richmond
   categories:
   - housing-assistance
-  address: {street: 58 S 15th St, city: Richmond, state: in, zip: '47374'}
+  address:
+    street: 58 S 15th St
+    city: Richmond
+    state: in
+    zip: '47374'
   description: Public housing and Housing Choice Voucher agency
   place: '1864260'
-  geo: {lat: 39.828, lng: -84.88194}
+  geo:
+    lat: 39.828
+    lng: -84.88194
   phone: 765-966-2687
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: in/richmond/jack-elstro-plaza
+  name: Jack Elstro Plaza
+  categories:
+  - meal-program
+  address: {street: 47 N 6Th Street, city: Richmond, state: in, zip: '47374'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond Community Schools.
+  place: '1864260'
+  geo: {lat: 39.83006, lng: -84.89393}
+  external_ids: {usda_master: Cycle 04_IN_SFSP_0860}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/mapleton-head-start
   name: Mapleton Head Start
@@ -480,6 +500,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/richmond/richmond-senior-high-school
+  name: Richmond Senior High School
+  categories:
+  - meal-program
+  address: {street: 380 Hub Etchinson Parkway, city: Richmond, state: in, zip: '47374'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond Community Schools.
+  place: '1864260'
+  geo: {lat: 39.82311, lng: -84.90078}
+  external_ids: {usda_master: Cycle 04_IN_SFSP_0851}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/richmond-state-hospital
   name: Richmond State Hospital
   categories:

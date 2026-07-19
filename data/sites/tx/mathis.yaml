@@ -42,13 +42,45 @@
   name: Mathis Housing Authority
   categories:
   - housing-assistance
-  address: {street: 300 W Fulton St, city: Mathis, state: tx, zip: '78368'}
+  address:
+    street: 300 W Fulton St
+    city: Mathis
+    state: tx
+    zip: '78368'
   description: Public housing and Housing Choice Voucher agency
   place: '4847040'
-  geo: {lat: 28.09728, lng: -97.8286}
+  geo:
+    lat: 28.09728
+    lng: -97.8286
   phone: 361-547-3315
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/mathis/mathis-int
+  name: Mathis Int
+  categories:
+  - meal-program
+  address: {street: 410 E San Patricio, city: Mathis, state: tx, zip: '78368'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by MATHIS ISD.
+  place: '4847040'
+  geo: {lat: 28.09178, lng: -97.82502}
+  external_ids: {usda_master: Cycle 01_TX_SFSP_0997}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/mathis/mathis-m-s
+  name: Mathis M S
+  categories:
+  - meal-program
+  address: {street: 1627 E San Patricio Ave, city: Mathis, state: tx, zip: '78368'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by MATHIS ISD.
+  place: '4847040'
+  geo: {lat: 28.082, lng: -97.81182}
+  external_ids: {usda_master: Cycle 01_TX_SFSP_0998}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: tx/mathis/mathis-pre-k-kindergarten-academy
   name: Mathis Pre-K/Kindergarten Academy

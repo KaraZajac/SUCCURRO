@@ -2,11 +2,31 @@
   name: Housing Authority Of Wolfe City
   categories:
   - housing-assistance
-  address: {street: 401 W Crockett St, city: Wolfe City, state: tx, zip: '75496'}
+  address:
+    street: 401 W Crockett St
+    city: Wolfe City
+    state: tx
+    zip: '75496'
   description: Public housing (Low-Rent) agency
   place: '4879948'
-  geo: {lat: 33.36255, lng: -96.07368}
+  geo:
+    lat: 33.36255
+    lng: -96.07368
   phone: 903-303-9728
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/wolfe-city/nc-wolfe-city-el
+  name: Nc_Wolfe City El
+  categories:
+  - meal-program
+  address: {street: 505 W Hanna St, city: Wolfe City, state: tx, zip: '75496'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by WOLFE CITY ISD.
+  place: '4879948'
+  geo: {lat: 33.36659, lng: -96.07521}
+  external_ids: {usda_master: Cycle 01_TX_SSO_1887}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

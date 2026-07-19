@@ -2,14 +2,22 @@
   name: Atwood Housing Authority
   categories:
   - housing-assistance
-  address: {street: 801 S 3rd St, city: Atwood, state: ks, zip: '67730'}
+  address:
+    street: 801 S 3rd St
+    city: Atwood
+    state: ks
+    zip: '67730'
   description: Public housing (Low-Rent) agency
   place: '2003150'
-  geo: {lat: 39.80027, lng: -101.04346}
+  geo:
+    lat: 39.80027
+    lng: -101.04346
   phone: 785-626-9572
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/atwood/rawlins-county
   name: Rawlins County
   categories:
@@ -29,3 +37,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/atwood/rawlins-county-elementary-school
+  name: Rawlins County Elementary School
+  categories:
+  - meal-program
+  address: {street: 205 N 4Th Street, city: Atwood, state: ks, zip: '67730'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by D0105 - Rawlins County.
+  place: '2003150'
+  geo: {lat: 39.80889, lng: -101.04223}
+  phone: (785) 626-3217
+  external_ids: {usda_master: Cycle 04_KS_SSO_0331}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

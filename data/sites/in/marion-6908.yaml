@@ -121,14 +121,22 @@
   name: Housing Authority Of The City Of Marion, In
   categories:
   - housing-assistance
-  address: {street: 601 S Adams St, city: Marion, state: in, zip: '46953'}
+  address:
+    street: 601 S Adams St
+    city: Marion
+    state: in
+    zip: '46953'
   description: Public housing and Housing Choice Voucher agency
   place: '1846908'
-  geo: {lat: 40.55603, lng: -85.65834}
+  geo:
+    lat: 40.55603
+    lng: -85.65834
   phone: 765-664-5194
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/marion-6908/ihc-grant-blackford
   name: IHC Grant-Blackford
   categories:
@@ -283,6 +291,19 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: in/marion-6908/nc-eastbrook-jr-sr-high-school
+  name: Nc Eastbrook Jr-Sr High School
+  categories:
+  - meal-program
+  address: {street: 560 S 900 E, city: Marion, state: in, zip: '46953'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Eastbrook Community School
+    Corp.
+  place: '1846908'
+  geo: {lat: 40.54543, lng: -85.50353}
+  external_ids: {usda_master: Cycle 03_IN_SFSP_0567}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: in/marion-6908/radiant-health-adams-street
   name: Radiant Health Adams Street
   categories:

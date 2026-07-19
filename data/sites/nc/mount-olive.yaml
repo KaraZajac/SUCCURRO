@@ -86,13 +86,34 @@
   name: Mount Olive Housing Authority
   categories:
   - housing-assistance
-  address: {street: 108 W Main St, city: Mount Olive, state: nc, zip: '28365'}
+  address:
+    street: 108 W Main St
+    city: Mount Olive
+    state: nc
+    zip: '28365'
   description: Public housing (Low-Rent) agency
   place: '3745100'
-  geo: {lat: 35.19575, lng: -78.06718}
+  geo:
+    lat: 35.19575
+    lng: -78.06718
   phone: 252-916-3240
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nc/mount-olive/ncm-calypso-trailer-park-mobile-route
+  name: Ncm Calypso Trailer Park - Mobile Route
+  categories:
+  - meal-program
+  address: {street: 111 Calypso Trailer Park Lane, city: Mt Olive, state: nc, zip: '28325'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Duplin County Schools.
+  place: '3745100'
+  geo: {lat: 35.14909, lng: -78.09878}
+  phone: (910) 296-8787
+  external_ids: {usda_master: Cycle 06_NC_SFSP_1987}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: nc/mount-olive/north-duplin-pre-k
   name: North Duplin Pre-K

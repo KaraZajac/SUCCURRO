@@ -87,14 +87,22 @@
   name: Housing Authority Of The City Of Pekin
   categories:
   - housing-assistance
-  address: {street: 1901 Broadway St, city: Pekin, state: il, zip: '61554'}
+  address:
+    street: 1901 Broadway St
+    city: Pekin
+    state: il
+    zip: '61554'
   description: Public housing (Low-Rent) agency
   place: '1758447'
-  geo: {lat: 40.56794, lng: -89.62451}
+  geo:
+    lat: 40.56794
+    lng: -89.62451
   phone: 309-346-7996
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/pekin/pekin-head-start
   name: Pekin Head Start
   categories:
@@ -135,3 +143,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/pekin/willow-elem-school
+  name: Willow Elem School
+  categories:
+  - meal-program
+  address: {street: 1110 Veerman St, city: Pekin, state: il, zip: '61554'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Pekin PSD 108.
+  place: '1758447'
+  geo: {lat: 40.57701, lng: -89.62019}
+  phone: (309) 477-4716
+  external_ids: {usda_master: Cycle 02_IL_SFSP_0117}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

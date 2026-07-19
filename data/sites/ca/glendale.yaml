@@ -397,14 +397,22 @@
   name: Housing Authority Of The City Of Glendale
   categories:
   - housing-assistance
-  address: {street: 141 N Glendale Ave Ste 202, city: Glendale, state: ca, zip: '91206'}
+  address:
+    street: 141 N Glendale Ave Ste 202
+    city: Glendale
+    state: ca
+    zip: '91206'
   description: Housing Choice Voucher (Section 8) agency
   place: '0630000'
-  geo: {lat: 34.14712, lng: -118.24706}
+  geo:
+    lat: 34.14712
+    lng: -118.24706
   phone: 818-548-3936
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/glendale/lexington-center
   name: Lexington Center
   categories:
@@ -424,6 +432,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/glendale/maple-park
+  name: Maple Park
+  categories:
+  - meal-program
+  address: {street: 820 E. Maple St., city: Glendale, state: ca, zip: '91205'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by GLENDALE UNIFIED SCHOOL
+    DISTRICT.
+  place: '0630000'
+  geo: {lat: 34.13897, lng: -118.24491}
+  phone: (818) 552-2677
+  external_ids: {usda_master: Cycle 09_CA_SSO_1116}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: ca/glendale/pacific-park
+  name: Pacific Park
+  categories:
+  - meal-program
+  address: {street: 501 S. Pacific Avenue, city: Glendale, state: ca, zip: '91204'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by GLENDALE UNIFIED SCHOOL
+    DISTRICT.
+  place: '0630000'
+  geo: {lat: 34.13967, lng: -118.26448}
+  phone: (818) 522-2677
+  external_ids: {usda_master: Cycle 09_CA_SSO_0767}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/glendale/st-marks-glendale
   name: St Marks Glendale
   categories:

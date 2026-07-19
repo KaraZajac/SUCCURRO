@@ -40,11 +40,43 @@
   name: Yoakum Housing Authority
   categories:
   - housing-assistance
-  address: {street: 712 Forrest St, city: Yoakum, state: tx, zip: '77995'}
+  address:
+    street: 712 Forrest St
+    city: Yoakum
+    state: tx
+    zip: '77995'
   description: Public housing (Low-Rent) agency
   place: '4880560'
-  geo: {lat: 29.28793, lng: -97.15342}
+  geo:
+    lat: 29.28793
+    lng: -97.15342
   phone: 361-293-5241
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/yoakum/yoakum-int
+  name: Yoakum Int
+  categories:
+  - meal-program
+  address: {street: 208 Aubrey St, city: Yoakum, state: tx, zip: '77995'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by YOAKUM ISD.
+  place: '4880560'
+  geo: {lat: 29.2802, lng: -97.14912}
+  external_ids: {usda_master: Cycle 01_TX_SSO_1781}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/yoakum/yoakum-pri
+  name: Yoakum Pri
+  categories:
+  - meal-program
+  address: {street: 701 W Grand Ave, city: Yoakum, state: tx, zip: '77995'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by YOAKUM ISD.
+  place: '4880560'
+  geo: {lat: 29.29119, lng: -97.1566}
+  external_ids: {usda_master: Cycle 01_TX_SSO_1782}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

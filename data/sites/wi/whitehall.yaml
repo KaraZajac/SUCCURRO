@@ -19,14 +19,22 @@
   name: Trempealeau County Housing Authority
   categories:
   - housing-assistance
-  address: {street: 36358 Main St, city: Whitehall, state: wi, zip: '54773'}
+  address:
+    street: 36358 Main St
+    city: Whitehall
+    state: wi
+    zip: '54773'
   description: Public housing and Housing Choice Voucher agency
   place: '5586725'
-  geo: {lat: 44.36879, lng: -91.3165}
+  geo:
+    lat: 44.36879
+    lng: -91.3165
   phone: 715-538-2274
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/whitehall/west-central-wi-behavioral-health
   name: West Central WI Behavioral Health
   categories:
@@ -48,3 +56,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/whitehall/whitehall-school
+  name: Whitehall School
+  categories:
+  - meal-program
+  address: {street: 19121 Hobson St, city: Whitehall, state: wi, zip: '54773'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Whitehall School District.
+  place: '5586725'
+  geo: {lat: 44.36629, lng: -91.33004}
+  phone: (715) 538-4364
+  external_ids: {usda_master: Cycle 05_WI_SFSP_0972}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

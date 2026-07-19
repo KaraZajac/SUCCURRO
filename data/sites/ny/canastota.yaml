@@ -21,13 +21,34 @@
   name: Canastota Housing Authority
   categories:
   - housing-assistance
-  address: {street: 400 Lamb Ave, city: Canastota, state: ny, zip: '13032'}
+  address:
+    street: 400 Lamb Ave
+    city: Canastota
+    state: ny
+    zip: '13032'
   description: Housing Choice Voucher (Section 8) agency
   place: '3612188'
-  geo: {lat: 43.08561, lng: -75.75667}
+  geo:
+    lat: 43.08561
+    lng: -75.75667
   phone: 315-606-9700
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/canastota/canastota-municipal-pool
+  name: Canastota Municipal Pool
+  categories:
+  - meal-program
+  address: {street: 100 Spencer St, city: Canastota, state: ny, zip: '13032'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Canastota CSD.
+  place: '3612188'
+  geo: {lat: 43.0815, lng: -75.75196}
+  phone: (315) 697-2025
+  external_ids: {usda_master: Cycle 09_NY_SFSP_0117}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: ny/canastota/community-action-program-for-madison-county
   name: Community Action Program For Madison County
@@ -48,3 +69,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/canastota/roberts-street-middle-school
+  name: Roberts Street Middle School
+  categories:
+  - meal-program
+  address: {street: 120 Roberts St, city: Canastota, state: ny, zip: '13032'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Canastota CSD.
+  place: '3612188'
+  geo: {lat: 43.08283, lng: -75.74628}
+  phone: (315) 697-2025
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0687}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

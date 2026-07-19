@@ -42,11 +42,31 @@
   name: Housing Authority Of Mabank
   categories:
   - housing-assistance
-  address: {street: 200 E Jack St Apt 47, city: Mabank, state: tx, zip: '75147'}
+  address:
+    street: 200 E Jack St Apt 47
+    city: Mabank
+    state: tx
+    zip: '75147'
   description: Public housing (Low-Rent) agency
   place: '4845324'
-  geo: {lat: 32.371, lng: -96.09768}
+  geo:
+    lat: 32.371
+    lng: -96.09768
   phone: 903-887-4220
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/mabank/mabank-h-s
+  name: Mabank H S
+  categories:
+  - meal-program
+  address: {street: 18786 E Hwy 175, city: Mabank, state: tx, zip: '75147'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by MABANK ISD.
+  place: '4845324'
+  geo: {lat: 32.37425, lng: -96.11039}
+  external_ids: {usda_master: Cycle 06_TX_SSO_2045}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

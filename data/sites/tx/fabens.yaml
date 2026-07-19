@@ -21,11 +21,30 @@
   name: El Paso County Housing Authority
   categories:
   - housing-assistance
-  address: {city: Fabens, state: tx, zip: '79838'}
+  address:
+    city: Fabens
+    state: tx
+    zip: '79838'
   description: Public housing (Low-Rent) agency
   place: '4825032'
-  geo: {lat: 31.50121, lng: -106.14837}
+  geo:
+    lat: 31.50121
+    lng: -106.14837
   phone: 915-764-3559
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/fabens/fabens-h-s
+  name: Fabens H S
+  categories:
+  - meal-program
+  address: {street: 601 Ne G Avenue, city: Fabens, state: tx, zip: '79838'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by FABENS ISD.
+  place: '4825032'
+  geo: {lat: 31.50166, lng: -106.1485}
+  external_ids: {usda_master: Cycle 06_TX_SSO_1042}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

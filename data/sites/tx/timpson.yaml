@@ -2,11 +2,31 @@
   name: Housing Authority Of Timpson
   categories:
   - housing-assistance
-  address: {street: 128 N 3rd St Ofc, city: Timpson, state: tx, zip: '75975'}
+  address:
+    street: 128 N 3rd St Ofc
+    city: Timpson
+    state: tx
+    zip: '75975'
   description: Public housing (Low-Rent) agency
   place: '4873076'
-  geo: {lat: 31.90578, lng: -94.40475}
+  geo:
+    lat: 31.90578
+    lng: -94.40475
   phone: 936-254-2378
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/timpson/timpson-school
+  name: Timpson School
+  categories:
+  - meal-program
+  address: {street: 836 Bear Dr, city: Timpson, state: tx, zip: '75975'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by TIMPSON ISD.
+  place: '4873076'
+  geo: {lat: 31.90737, lng: -94.38997}
+  external_ids: {usda_master: Cycle 06_TX_SSO_3186}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

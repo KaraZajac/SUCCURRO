@@ -24,14 +24,22 @@
   name: North Hempstead Housing Authority
   categories:
   - housing-assistance
-  address: {street: 899 Broadway, city: Westbury, state: ny, zip: '11590'}
+  address:
+    street: 899 Broadway
+    city: Westbury
+    state: ny
+    zip: '11590'
   description: Public housing and Housing Choice Voucher agency
   place: '3679444'
-  geo: {lat: 40.7595, lng: -73.56734}
+  geo:
+    lat: 40.7595
+    lng: -73.56734
   phone: 516-627-6433
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/westbury/westbury-head-start
   name: Westbury Head Start
   categories:
@@ -52,3 +60,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/westbury/westbury-middle-school
+  name: Westbury Middle School
+  categories:
+  - meal-program
+  address: {street: 455 Rockland St, city: Westbury, state: ny, zip: '11590'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Westbury UFSD.
+  place: '3679444'
+  geo: {lat: 40.7622, lng: -73.58491}
+  phone: (516) 874-1895
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0822}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

@@ -2,13 +2,33 @@
   name: Hughes Springs
   categories:
   - housing-assistance
-  address: {street: 1314 E 1st, city: Hughes Springs, state: tx, zip: '75656'}
+  address:
+    street: 1314 E 1st
+    city: Hughes Springs
+    state: tx
+    zip: '75656'
   description: Public housing (Low-Rent) agency
   place: '4835300'
-  geo: {lat: 32.99783, lng: -94.61644}
+  geo:
+    lat: 32.99783
+    lng: -94.61644
   phone: 903-639-2251
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/hughes-springs/hughes-springs-elementary
+  name: Hughes Springs Elementary
+  categories:
+  - meal-program
+  address: {street: 809 Russell, city: Hughes Springs, state: tx, zip: '75656'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by HUGHES SPRINGS ISD.
+  place: '4835300'
+  geo: {lat: 33.00667, lng: -94.63562}
+  external_ids: {usda_master: Cycle 01_TX_SSO_0721}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: tx/hughes-springs/hughes-springs-head-start-early-head-start
   name: Hughes Springs Head Start/Early Head Start

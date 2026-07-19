@@ -65,13 +65,34 @@
   name: Havre De Grace Housing Authority
   categories:
   - housing-assistance
-  address: {street: 101 Stansbury Ct, city: Havre De Grace, state: md, zip: '21078'}
+  address:
+    street: 101 Stansbury Ct
+    city: Havre De Grace
+    state: md
+    zip: '21078'
   description: Public housing (Low-Rent) agency
   place: '2437600'
-  geo: {lat: 39.54971, lng: -76.10152}
+  geo:
+    lat: 39.54971
+    lng: -76.10152
   phone: 410-939-2097
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: md/havre-de-grace/havre-de-grace-library
+  name: Havre De Grace Library
+  categories:
+  - meal-program
+  address: {street: 120 N Union Ave, city: Havre De Grace, state: md, zip: '21078'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by HARFORD CO PUB SCH.
+  place: '2437600'
+  geo: {lat: 39.54852, lng: -76.09167}
+  phone: (410) 939-6700
+  external_ids: {usda_master: Cycle 08_MD_SFSP_0250}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: md/havre-de-grace/havre-de-grace-office
   name: Havre de Grace Office

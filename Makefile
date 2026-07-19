@@ -1,6 +1,6 @@
 .PHONY: help places build meta verify conformance install-hooks site site-dev
 
-MODULES = findtreatment hrsa headstart hud bmlt nami pflag feedingamerica ndbn \
+MODULES = findtreatment summermeals hrsa headstart hud bmlt nami pflag feedingamerica ndbn \
           mutualaidhub littlefreepantry
 
 help: ## list targets

@@ -37,11 +37,45 @@
   name: Oneida Housing Authority
   categories:
   - housing-assistance
-  address: {street: 226 Farrier Ave, city: Oneida, state: ny, zip: '13421'}
+  address:
+    street: 226 Farrier Ave
+    city: Oneida
+    state: ny
+    zip: '13421'
   description: Public housing and Housing Choice Voucher agency
   place: '3654837'
-  geo: {lat: 43.09407, lng: -75.6549}
+  geo:
+    lat: 43.09407
+    lng: -75.6549
   phone: 315-363-8450
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/oneida/seneca-street-school
+  name: Seneca Street School
+  categories:
+  - meal-program
+  address: {street: 436 Seneca St, city: Oneida, state: ny, zip: '13421'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Oneida City SD.
+  place: '3654837'
+  geo: {lat: 43.08579, lng: -75.65283}
+  phone: (315) 363-6901
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0712}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: ny/oneida/w-f-prior-elementary-school
+  name: W F Prior Elementary School
+  categories:
+  - meal-program
+  address: {street: 205 East Ave, city: Oneida, state: ny, zip: '13421'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Oneida City SD.
+  place: '3654837'
+  geo: {lat: 43.09035, lng: -75.64602}
+  phone: (315) 363-6901
+  external_ids: {usda_master: Cycle 07_NY_SFSP_1001}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

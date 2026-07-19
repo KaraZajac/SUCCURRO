@@ -2,14 +2,22 @@
   name: Goliad Housing Authority
   categories:
   - housing-assistance
-  address: {street: 360 N Fort St, city: Goliad, state: tx, zip: '77963'}
+  address:
+    street: 360 N Fort St
+    city: Goliad
+    state: tx
+    zip: '77963'
   description: Public housing (Low-Rent) agency
   place: '4830080'
-  geo: {lat: 28.67137, lng: -97.38168}
+  geo:
+    lat: 28.67137
+    lng: -97.38168
   phone: 361-645-2774
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/goliad/goliad-isd-goliad-elementary
   name: Goliad ISD (Goliad Elementary)
   categories:
@@ -29,3 +37,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/goliad/nc-fenner-square
+  name: Nc_Fenner Square
+  categories:
+  - meal-program
+  address: {street: 555 S Burke St, city: Goliad, state: tx, zip: '77963'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by GOLIAD ISD.
+  place: '4830080'
+  geo: {lat: 28.66281, lng: -97.38557}
+  external_ids: {usda_master: Cycle 07_TX_SSO_3671}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

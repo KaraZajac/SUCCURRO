@@ -2,14 +2,22 @@
   name: Housing Authority Of The Town Of Merryville
   categories:
   - housing-assistance
-  address: {street: 100 Heard St, city: Merryville, state: la, zip: '70653'}
+  address:
+    street: 100 Heard St
+    city: Merryville
+    state: la
+    zip: '70653'
   description: Public housing (Low-Rent) agency
   place: '2250010'
-  geo: {lat: 30.75675, lng: -93.54164}
+  geo:
+    lat: 30.75675
+    lng: -93.54164
   phone: 337-825-8770
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/merryville/merryville-community-health-center
   name: Merryville Community Health Center
   categories:
@@ -32,3 +40,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/merryville/merryville-high-school-nc
+  name: Merryville High School - Nc
+  categories:
+  - meal-program
+  address: {street: 1061 Highway 110 W, city: Merryville, state: la, zip: '70653'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Beauregard Parish School
+    Board.
+  place: '2250010'
+  geo: {lat: 30.75477, lng: -93.54058}
+  phone: (337) 462-8858
+  external_ids: {usda_master: Cycle 02_LA_SFSP_0015}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

@@ -57,14 +57,22 @@
   name: Hra Of Alexandria, Minnesota
   categories:
   - housing-assistance
-  address: {street: 809 Broadway St, city: Alexandria, state: mn, zip: '56308'}
+  address:
+    street: 809 Broadway St
+    city: Alexandria
+    state: mn
+    zip: '56308'
   description: Public housing (Low-Rent) agency
   place: '2700928'
-  geo: {lat: 45.88351, lng: -95.37739}
+  geo:
+    lat: 45.88351
+    lng: -95.37739
   phone: 320-762-1311
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/alexandria/lakeland-mental-health-center
   name: Lakeland Mental Health Center
   categories:
@@ -230,3 +238,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/alexandria/woodland-elementary
+  name: Woodland Elementary
+  categories:
+  - meal-program
+  address: {street: '1410 S Mckay Ave, Suite 101', city: Alexandria, state: mn, zip: '56308'}
+  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Alexandria ISD #206.'
+  place: '2700928'
+  geo: {lat: 45.87666, lng: -95.35201}
+  phone: (320) 762-3315
+  external_ids: {usda_master: Cycle 02_MN_SFSP_0048}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: mn/alexandria/zion-lutheran-school
+  name: Zion Lutheran School
+  categories:
+  - meal-program
+  address: {street: 300 Lake St, city: Alexandria, state: mn, zip: '56308'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Zion Lutheran School.
+  place: '2700928'
+  geo: {lat: 45.88881, lng: -95.37006}
+  phone: (320) 763-4842
+  external_ids: {usda_master: Cycle 03_MN_SFSP_0073}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}

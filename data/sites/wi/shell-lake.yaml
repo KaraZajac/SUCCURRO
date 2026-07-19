@@ -2,11 +2,32 @@
   name: Housing Authority Of The City Of Shell Lake
   categories:
   - housing-assistance
-  address: {street: 201 2nd Ave, city: Shell Lake, state: wi, zip: '54871'}
+  address:
+    street: 201 2nd Ave
+    city: Shell Lake
+    state: wi
+    zip: '54871'
   description: Public housing (Low-Rent) agency
   place: '5573200'
-  geo: {lat: 45.7403, lng: -91.92728}
+  geo:
+    lat: 45.7403
+    lng: -91.92728
   phone: 715-468-2730
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wi/shell-lake/shell-lake-school
+  name: Shell Lake School
+  categories:
+  - meal-program
+  address: {street: 271 Hwy. 63, city: Shell Lake, state: wi, zip: '54871'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Shell Lake School District.
+  place: '5573200'
+  geo: {lat: 45.74279, lng: -91.92361}
+  phone: (715) 468-7816
+  external_ids: {usda_master: Cycle 01_WI_SFSP_0256}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}

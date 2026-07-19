@@ -2,13 +2,49 @@
   name: Horton Housing Authority
   categories:
   - housing-assistance
-  address: {street: 1701 Euclid Ave, city: Horton, state: ks, zip: '66439'}
+  address:
+    street: 1701 Euclid Ave
+    city: Horton
+    state: ks
+    zip: '66439'
   description: Public housing (Low-Rent) agency
   place: '2033200'
-  geo: {lat: 39.67092, lng: -95.52981}
+  geo:
+    lat: 39.67092
+    lng: -95.52981
   phone: 785-486-3615
   sources:
   - hud/resource-locator
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ks/horton/horton-library
+  name: Horton Library
+  categories:
+  - meal-program
+  address: {street: 809 1St Ave E, city: Horton, state: ks, zip: '66439'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by X0384 - Second Harvest
+    Community Food Bank.
+  place: '2033200'
+  geo: {lat: 39.66025, lng: -95.52589}
+  phone: (785) 486-3326
+  external_ids: {usda_master: Cycle 05_KS_SFSP_0579}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: ks/horton/kickapoo-boys-and-girls-club
+  name: Kickapoo Boys And Girls Club
+  categories:
+  - meal-program
+  address: {street: 884 112Th Dr, city: Horton, state: ks, zip: '66439'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by X0384 - Second Harvest
+    Community Food Bank.
+  place: '2033200'
+  geo: {lat: 39.67102, lng: -95.64198}
+  phone: (785) 486-0105
+  external_ids: {usda_master: Cycle 05_KS_SFSP_0349}
+  sources:
+  - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
 - id: ks/horton/south-brown-county-head-start
   name: South Brown County Head Start
