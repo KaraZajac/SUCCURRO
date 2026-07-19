@@ -16,6 +16,9 @@ build: ## run every source module, then recount meta
 meta: ## recount data/meta.yaml
 	python3 -m pipeline.meta
 
+modules: ## print the module list (used by the refresh workflow)
+	@echo $(MODULES)
+
 verify: ## full validation gate: schema conformance + referential integrity + freshness
 	python3 -m pipeline.validate
 

@@ -1,0 +1,48 @@
+name: refresh
+# Monthly re-pull of every source. A failing individual source warns but does
+# not block the others; the validation gate is the hard stop before commit.
+# verified.on stamps update on every refresh by design — freshness is a
+# first-class field — so refresh commits are large but mechanical.
+on:
+  schedule:
+    - cron: "17 8 5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      VA_API_KEY: ${{ secrets.VA_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml jsonschema
+      - name: re-pull all sources
+        run: |
+          python3 -m pipeline.places --force || echo "::warning::places failed"
+          for mod in $(make -s modules); do
+            echo "== $mod"
+            python3 -m pipeline.$mod --force || echo "::warning::$mod failed"
+          done
+          python3 -m pipeline.meta
+      - name: validation gate
+        run: python3 -m pipeline.validate
+      - name: commit if changed
+        run: |
+          git config user.name "succurro-refresh"
+          git config user.email "kara@soulstone.org"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "no changes"; exit 0
+          fi
+          git commit -m "Scheduled refresh: $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase && continue
+          done
+          exit 1
