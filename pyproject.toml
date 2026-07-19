@@ -1,0 +1,12 @@
+[project]
+name = "succurro"
+version = "0.1.0"
+description = "Curated hyper-local dataset of US help and support services"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+analysis = ["pandas>=2.0"]
+
+[tool.setuptools]
+packages = ["pipeline"]

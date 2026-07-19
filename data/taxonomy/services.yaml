@@ -1,0 +1,124 @@
+# Controlled service-category taxonomy. Tokens are stable forever — deprecate with
+# superseded_by, never delete. Hierarchy via parent. Referenced by categories: fields.
+- id: crisis
+  label: Crisis support
+- id: crisis-hotline
+  parent: crisis
+  label: Crisis hotline
+- id: suicide-prevention
+  parent: crisis
+  label: Suicide prevention
+- id: domestic-violence
+  parent: crisis
+  label: Domestic violence services
+- id: sexual-assault
+  parent: crisis
+  label: Sexual assault services
+
+- id: mental-health
+  label: Mental health
+- id: peer-support
+  parent: mental-health
+  label: Peer support
+- id: counseling
+  parent: mental-health
+  label: Counseling and therapy
+- id: mh-treatment
+  parent: mental-health
+  label: Mental health treatment facility
+
+- id: recovery
+  label: Substance use and recovery
+- id: recovery-meeting
+  parent: recovery
+  label: Recovery meeting (12-step and secular)
+- id: su-treatment
+  parent: recovery
+  label: Substance use treatment facility
+- id: harm-reduction
+  parent: recovery
+  label: Harm reduction
+
+- id: housing
+  label: Housing and shelter
+- id: emergency-shelter
+  parent: housing
+  label: Emergency shelter
+- id: transitional-housing
+  parent: housing
+  label: Transitional housing
+- id: housing-assistance
+  parent: housing
+  label: Housing assistance
+
+- id: food
+  label: Food assistance
+- id: food-bank
+  parent: food
+  label: Food bank
+- id: food-pantry
+  parent: food
+  label: Food pantry
+- id: meal-program
+  parent: food
+  label: Meal program
+- id: snap-assistance
+  parent: food
+  label: SNAP enrollment assistance
+
+- id: veterans
+  label: Veteran services
+- id: va-facility
+  parent: veterans
+  label: VA facility
+- id: vet-center
+  parent: veterans
+  label: Vet Center
+
+- id: lgbtq
+  label: LGBTQ+ services
+- id: lgbtq-center
+  parent: lgbtq
+  label: LGBTQ+ community center
+- id: lgbtq-youth
+  parent: lgbtq
+  label: LGBTQ+ youth services
+- id: trans-services
+  parent: lgbtq
+  label: Transgender services
+
+- id: health
+  label: Health care
+- id: community-health-center
+  parent: health
+  label: Community health center
+- id: free-clinic
+  parent: health
+  label: Free or charitable clinic
+
+- id: legal
+  label: Legal aid
+- id: legal-aid
+  parent: legal
+  label: Legal aid services
+- id: immigration-legal
+  parent: legal
+  label: Immigration legal services
+
+- id: family-youth
+  label: Family and youth
+- id: youth-shelter
+  parent: family-youth
+  label: Youth shelter
+- id: family-support
+  parent: family-youth
+  label: Family support services
+
+- id: seniors
+  label: Older adult services
+
+- id: financial
+  label: Financial assistance
+- id: utility-assistance
+  parent: financial
+  label: Utility assistance

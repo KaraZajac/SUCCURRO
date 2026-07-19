@@ -1,0 +1,9 @@
+#!/bin/sh
+# Run the validation gate only when dataset or schema files are staged.
+if git diff --cached --name-only | grep -qE '^(data/|schemas/)'; then
+  echo "pre-commit: data/ or schemas/ staged — running validation gate"
+  python3 -m pipeline.validate || {
+    echo "pre-commit: validation failed; commit blocked" >&2
+    exit 1
+  }
+fi
