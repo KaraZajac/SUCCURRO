@@ -50,10 +50,16 @@ sources: [nami/affiliate-directory-2026]
 verified: {on: "2026-07-19", method: scrape}   # method: api | scrape | human
 ```
 
-### Site — `data/sites/<state>/<place>/<slug>.yaml`
+### Site — `data/sites/<state>/<place-slug>.yaml` (per-place list file)
 
 A physical location where services are delivered: a pantry address, a shelter, a VA
-clinic, a drop-in center. Always belongs to an org.
+clinic, a drop-in center. Sites and meetings are stored as **per-place list files**
+(all of a town's sites in one YAML list) — at national scale one-file-per-record
+would mean 100k+ files; a per-place file keeps a town's services one diffable unit.
+Record ids remain `<state>/<place-slug>/<slug>`. `org:` is optional — standalone
+facilities (e.g. a treatment center that is its own operator) omit it. Records for
+cities that don't match a registry place still shard under the slugified city name;
+the validator soft-finds the missing `place` FK.
 
 ```yaml
 id: ca/garden-grove/oc-food-bank-distribution-center
@@ -73,7 +79,7 @@ sources: [oc-food-bank/locations-page-2026]
 verified: {on: "2026-07-19", method: scrape}
 ```
 
-### Meeting — `data/meetings/<state>/<place>/<slug>.yaml`
+### Meeting — `data/meetings/<state>/<place-slug>.yaml` (per-place list file)
 
 A recurring group meeting: an AA/NA/Al-Anon meeting, a NAMI support group, a grief
 group. May reference a site or carry its own venue; online-only meetings set

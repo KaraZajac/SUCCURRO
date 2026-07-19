@@ -88,21 +88,34 @@ def main(argv):
             check_date(rel, "retrieved_on", rec["retrieved_on"])
         source_ids.add(rec.get("id"))
 
-    org_ids, site_ids = set(), set()
+    # orgs are one record per file; sites/meetings are per-place list files
     entity_kinds = ("orgs", "sites", "meetings")
-    records_by_kind = {k: list(load_all(k)) for k in entity_kinds}
+    records_by_kind: dict[str, list] = {k: [] for k in entity_kinds}
+    for rel, path, rec in load_all("orgs"):
+        records_by_kind["orgs"].append((rel, path, rec))
+        if not rec.get("id", "").endswith("/" + path.stem):
+            err(f"{rel}: id {rec.get('id')!r} does not match filename {path.stem!r}")
+    for kind in ("sites", "meetings"):
+        for rel, path, recs in load_all(kind):
+            prefix = f"{path.parent.name}/{path.stem}/"
+            if not isinstance(recs, list):
+                err(f"{rel}: expected a list of records")
+                continue
+            seen_ids = set()
+            for rec in recs:
+                records_by_kind[kind].append((rel, path, rec))
+                rid = rec.get("id", "")
+                if not rid.startswith(prefix):
+                    err(f"{rel}: id {rid!r} does not match file shard {prefix!r}")
+                if rid in seen_ids:
+                    err(f"{rel}: duplicate id {rid!r}")
+                seen_ids.add(rid)
 
-    for rel, path, rec in records_by_kind["orgs"]:
-        org_ids.add(rec.get("id"))
-    for rel, path, rec in records_by_kind["sites"]:
-        site_ids.add(rec.get("id"))
+    org_ids = {rec.get("id") for _, _, rec in records_by_kind["orgs"]}
+    site_ids = {rec.get("id") for _, _, rec in records_by_kind["sites"]}
 
     for kind in entity_kinds:
         for rel, path, rec in records_by_kind[kind]:
-            rid = rec.get("id", "")
-            expected_tail = path.stem
-            if not rid.endswith("/" + expected_tail):
-                err(f"{rel}: id {rid!r} does not match filename {expected_tail!r}")
             for cat in rec.get("categories", []):
                 if cat not in tokens:
                     err(f"{rel}: unknown category token {cat!r}")

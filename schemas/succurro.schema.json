@@ -104,6 +104,9 @@
         "categories": {"type": "array", "items": {"$ref": "#/$defs/token"}, "minItems": 1},
         "parent_org": {"type": "string"},
         "description": {"type": "string"},
+        "address": {"$ref": "#/$defs/address"},
+        "place": {"type": "string"},
+        "geo": {"$ref": "#/$defs/geo"},
         "website": {"type": "string", "format": "uri"},
         "phone": {"type": "string"},
         "email": {"type": "string"},
@@ -143,7 +146,7 @@
         "sources": {"$ref": "#/$defs/sourceRefs"},
         "verified": {"$ref": "#/$defs/verified"}
       },
-      "required": ["id", "org", "name", "categories", "sources", "verified"],
+      "required": ["id", "name", "categories", "sources", "verified"],
       "additionalProperties": false
     },
     "meeting": {

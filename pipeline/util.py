@@ -67,15 +67,20 @@ def _flow_representer(dumper, data):
     return dumper.represent_mapping("tag:yaml.org,2002:map", data, flow_style=True)
 
 
+# use libyaml when available — the dataset is large enough for it to matter
+_Dumper = getattr(yaml, "CSafeDumper", yaml.SafeDumper)
+_Loader = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 yaml.SafeDumper.add_representer(Flow, _flow_representer)
+if _Dumper is not yaml.SafeDumper:
+    _Dumper.add_representer(Flow, _flow_representer)
 
 
 def dump_yaml(records, path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w") as f:
-        yaml.safe_dump(records, f, sort_keys=False, allow_unicode=True, width=100)
+        yaml.dump(records, f, Dumper=_Dumper, sort_keys=False, allow_unicode=True, width=100)
 
 
 def load_yaml(path: Path):
     with path.open() as f:
-        return yaml.safe_load(f)
+        return yaml.load(f, Loader=_Loader)
