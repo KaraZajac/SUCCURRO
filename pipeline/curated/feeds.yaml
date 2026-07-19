@@ -1,0 +1,10 @@
+# TSML feed registry: AA intergroups (and compatible fellowships) whose sites
+# publish a 12 Step Meeting List JSON feed. Hand-maintained; verify a feed with
+#   curl -sL '<feed>' | head -c 300   (expect a JSON array of meeting objects)
+# state: the feed's home state (fallback when an address doesn't parse).
+- id: aa-dc
+  name: Washington Area Intergroup Association
+  program: aa
+  state: dc
+  url: https://aa-dc.org
+  feed: https://www.aa-dc.org/wp-admin/admin-ajax.php?action=meetings

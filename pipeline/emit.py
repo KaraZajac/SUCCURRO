@@ -92,7 +92,14 @@ def write_source(pub_dir: str, slug: str, **fields) -> str:
 
 
 def _cites(rec: dict, source_id: str) -> bool:
-    return source_id in (rec.get("sources") or [])
+    """True if the record cites source_id. A trailing-slash source_id is a
+    prefix match ("aa/" owns every record citing any aa/<feed> source) so a
+    multi-feed module owns its whole family, including feeds since removed
+    from its registry."""
+    sources = rec.get("sources") or []
+    if source_id.endswith("/"):
+        return any(s.startswith(source_id) for s in sources)
+    return source_id in sources
 
 
 def replace_records(kind: str, source_id: str, records: list[dict]):
