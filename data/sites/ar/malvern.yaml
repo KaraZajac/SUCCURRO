@@ -14,6 +14,18 @@
     lng: -92.81239
   phone: 501-332-7360
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +46,13 @@
     lng: -92.79581
   phone: 501-315-3344
   website: https://www.birchtree.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,14 +86,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hot Spring County
-  address: {street: 1303 South MAin, city: Malvern, state: ar, zip: '72104'}
+  address:
+    street: 1303 South MAin
+    city: Malvern
+    state: ar
+    zip: '72104'
   place: '0543610'
   phone: 501-332-5426
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/malvern/glen-rose-high-school
   name: Glen Rose High School
   categories:
@@ -101,45 +126,29 @@
   name: Healthy Connections-Malvern
   categories:
   - community-health-center
-  address:
-    street: 900 Martin Luther King Blvd
-    city: Malvern
-    state: ar
-    zip: '72104'
+  cost: sliding-scale
+  address: {street: 900 Martin Luther King Blvd, city: Malvern, state: ar, zip: '72104'}
   place: '0543610'
-  geo:
-    lat: 34.37692
-    lng: -92.82745
+  geo: {lat: 34.37692, lng: -92.82745}
   phone: 501-332-7575
-  external_ids:
-    bphc: BPS-H80-030023
+  external_ids: {bphc: BPS-H80-030023}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/malvern/healthy-connections-pinnacle-malvern
   name: Healthy Connections- Pinnacle Malvern
   categories:
   - community-health-center
-  address:
-    street: 1003 Schneider Dr
-    city: Malvern
-    state: ar
-    zip: '72104'
+  cost: sliding-scale
+  address: {street: 1003 Schneider Dr, city: Malvern, state: ar, zip: '72104'}
   place: '0543610'
-  geo:
-    lat: 34.35934
-    lng: -92.78411
+  geo: {lat: 34.35934, lng: -92.78411}
   phone: 479-437-3449
   website: https://healthy-connections.org
-  external_ids:
-    bphc: BPS-H80-035626
+  external_ids: {bphc: BPS-H80-035626}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/malvern/housing-authority-of-the-city-of-malvern
   name: Housing Authority Of The City Of Malvern
   categories:
@@ -242,6 +251,11 @@
     lng: -92.82711
   phone: 501-332-5236
   website: https://www.obhaw.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

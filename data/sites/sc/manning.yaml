@@ -37,6 +37,9 @@
     lng: -80.20843
   phone: 803-435-2121
   website: https://www.clarendonbhs.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -138,86 +141,54 @@
   name: HopeHealth Manning
   categories:
   - community-health-center
-  address:
-    street: 12 W South St
-    city: Manning
-    state: sc
-    zip: '29102'
+  cost: sliding-scale
+  address: {street: 12 W South St, city: Manning, state: sc, zip: '29102'}
   place: '4544350'
-  geo:
-    lat: 33.68857
-    lng: -80.21315
+  geo: {lat: 33.68857, lng: -80.21315}
   phone: 803-433-4321
-  external_ids:
-    bphc: BPS-H80-032571
+  external_ids: {bphc: BPS-H80-032571}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/manning/hopehealth-manning-adult
   name: HopeHealth Manning Adult
   categories:
   - community-health-center
-  address:
-    street: 12 W South St
-    city: Manning
-    state: sc
-    zip: '29102'
+  cost: sliding-scale
+  address: {street: 12 W South St, city: Manning, state: sc, zip: '29102'}
   place: '4544350'
-  geo:
-    lat: 33.68857
-    lng: -80.21315
+  geo: {lat: 33.68857, lng: -80.21315}
   phone: 803-433-4321
-  external_ids:
-    bphc: BPS-H80-012452
+  external_ids: {bphc: BPS-H80-012452}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/manning/hopehealth-manning-pediatrics
   name: HopeHealth Manning Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 12 W South St
-    city: Manning
-    state: sc
-    zip: '29102'
+  cost: sliding-scale
+  address: {street: 12 W South St, city: Manning, state: sc, zip: '29102'}
   place: '4544350'
-  geo:
-    lat: 33.68857
-    lng: -80.21315
+  geo: {lat: 33.68857, lng: -80.21315}
   phone: 803-433-4124
-  external_ids:
-    bphc: BPS-H80-012449
+  external_ids: {bphc: BPS-H80-012449}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/manning/hopehealth-manning-school-based-health-center
   name: HopeHealth Manning School-based Health Center
   categories:
   - community-health-center
-  address:
-    street: 2155 Paxville Hwy
-    city: Manning
-    state: sc
-    zip: '29102'
+  cost: sliding-scale
+  address: {street: 2155 Paxville Hwy, city: Manning, state: sc, zip: '29102'}
   place: '4544350'
-  geo:
-    lat: 33.69805
-    lng: -80.22897
+  geo: {lat: 33.69805, lng: -80.22897}
   phone: 803-433-4124
-  external_ids:
-    bphc: BPS-H80-031385
+  external_ids: {bphc: BPS-H80-031385}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/manning/make-a-difference
   name: Make A Difference
   categories:
@@ -372,6 +343,19 @@
     lng: -80.22507
   phone: 803-435-2124
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -401,10 +385,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clarendon County
-  address: {street: 110 Breeding Street, city: Manning, state: sc, zip: '29204'}
+  address:
+    street: 110 Breeding Street
+    city: Manning
+    state: sc
+    zip: '29204'
   place: '4544350'
   phone: 803-435-4337
   website: https://www.wcai.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

@@ -14,6 +14,11 @@
     lng: -88.10358
   phone: 630-933-4608
   website: https://www.nm.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,14 +29,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Du Page County
-  address: {street: 421 North County Farm Road, city: Wheaton, state: il, zip: '60187'}
+  address:
+    street: 421 North County Farm Road
+    city: Wheaton
+    state: il
+    zip: '60187'
   place: '1781048'
   phone: 630-407-6500
   email: csprograms@dupageco.org
   website: https://dupagecounty.gov/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/wheaton/dupage-county-health-department-central-public-h
   name: DuPage County Health Department Central Public Health Center
   categories:
@@ -48,6 +59,13 @@
     lng: -88.14178
   phone: 630-682-7400
   website: https://www.dupagehealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -69,6 +87,17 @@
     lng: -88.13985
   phone: 630-627-1700
   website: https://www.dupagehealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -128,6 +157,9 @@
     lng: -88.1075
   phone: 630-653-6400
   website: https://www.evancfa.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -148,6 +180,10 @@
     lng: -88.13829
   phone: 630-349-6500
   website: https://www.firstchoicedui.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -169,6 +205,12 @@
     lng: -88.1422
   phone: 630-344-0001
   website: https://www.hascares.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -227,6 +269,17 @@
     lng: -88.08551
   phone: 630-221-1400
   website: https://www.stonybrookcenter.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -236,24 +289,16 @@
   name: VNA Health Center- DuPage County Health Department
   categories:
   - community-health-center
-  address:
-    street: 111 N County Farm Rd
-    city: Wheaton
-    state: il
-    zip: '60187'
+  cost: sliding-scale
+  address: {street: 111 N County Farm Rd, city: Wheaton, state: il, zip: '60187'}
   place: '1781048'
-  geo:
-    lat: 41.86545
-    lng: -88.14181
+  geo: {lat: 41.86545, lng: -88.14181}
   phone: 630-892-4355
   website: https://www.vnahealth.com
-  external_ids:
-    bphc: BPS-H80-027985
+  external_ids: {bphc: BPS-H80-027985}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/wheaton/whittier-elementary
   name: Whittier Elementary
   categories:

@@ -14,6 +14,13 @@
     lng: -90.88841
   phone: 602-758-0001
   website: https://www.fcconline.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Persons experiencing first-episode psychosis
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -31,6 +38,9 @@
   place: '5582925'
   phone: 608-782-7300
   website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,34 +66,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Vernon County
-  address: {street: '318 Fairline Dr., Suite 100', city: Viroqua, state: wi, zip: '54665'}
+  address:
+    street: 318 Fairline Dr., Suite 100
+    city: Viroqua
+    state: wi
+    zip: '54665'
   place: '5582925'
   phone: 608-637-5210
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/viroqua/viroqua-area-school-district
   name: Viroqua Area School District
   categories:
   - community-health-center
-  address:
-    street: 115 N Education Ave
-    city: Viroqua
-    state: wi
-    zip: '54665'
+  cost: sliding-scale
+  address: {street: 115 N Education Ave, city: Viroqua, state: wi, zip: '54665'}
   place: '5582925'
-  geo:
-    lat: 43.55679
-    lng: -90.90362
+  geo: {lat: 43.55679, lng: -90.90362}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-020919
+  external_ids: {bphc: BPS-H80-020919}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/viroqua/viroqua-elementary-school
   name: Viroqua Elementary School
   categories:
@@ -110,23 +118,15 @@
   name: Viroqua High School
   categories:
   - community-health-center
-  address:
-    street: 100 Blackhawk Dr RM 228
-    city: Viroqua
-    state: wi
-    zip: '54665'
+  cost: sliding-scale
+  address: {street: 100 Blackhawk Dr RM 228, city: Viroqua, state: wi, zip: '54665'}
   place: '5582925'
-  geo:
-    lat: 43.55885
-    lng: -90.90027
+  geo: {lat: 43.55885, lng: -90.90027}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-028273
+  external_ids: {bphc: BPS-H80-028273}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/viroqua/viroqua-high-school-2
   name: Viroqua High School
   categories:

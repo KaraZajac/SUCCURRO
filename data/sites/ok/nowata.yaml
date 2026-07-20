@@ -14,6 +14,20 @@
     lng: -95.62988
   phone: 844-458-2100
   website: https://www.grandmh.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,34 +38,31 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Nowata County
-  address: {city: Nowata, state: ok, zip: '74048'}
+  address:
+    city: Nowata
+    state: ok
+    zip: '74048'
   place: '4052900'
   phone: 405-522-5050
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/nowata/morton-nowata-health-center
   name: Morton Nowata Health Center
   categories:
   - community-health-center
-  address:
-    street: 207 S Locust St
-    city: Nowata
-    state: ok
-    zip: '74048'
+  cost: sliding-scale
+  address: {street: 207 S Locust St, city: Nowata, state: ok, zip: '74048'}
   place: '4052900'
-  geo:
-    lat: 36.69743
-    lng: -95.63019
+  geo: {lat: 36.69743, lng: -95.63019}
   phone: 918-273-9911
-  external_ids:
-    bphc: BPS-H80-010059
+  external_ids: {bphc: BPS-H80-010059}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/nowata/nowata-es-110
   name: Nowata Es (110)
   categories:
@@ -109,6 +120,14 @@
     lng: -95.63625
   phone: 918-273-7500
   website: https://www.Cherokee.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,23 +2,15 @@
   name: Harrisville Elementary School-based Health Center
   categories:
   - community-health-center
-  address:
-    street: 1201 E Main St RM H39
-    city: Harrisville
-    state: wv
-    zip: '26362'
+  cost: sliding-scale
+  address: {street: 1201 E Main St RM H39, city: Harrisville, state: wv, zip: '26362'}
   place: '5435428'
-  geo:
-    lat: 39.21251
-    lng: -81.04285
+  geo: {lat: 39.21251, lng: -81.04285}
   phone: 304-643-4005
-  external_ids:
-    bphc: BPS-H80-035858
+  external_ids: {bphc: BPS-H80-035858}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/harrisville/nc-harrisville-town-buidling
   name: Nc - Harrisville Town Buidling
   categories:
@@ -47,34 +39,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ritchie County
-  address: {street: 220 W. Main Street, city: Harrisville, state: wv, zip: '26362'}
-  place: '5435428'
-  phone: 304-643-2934
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: wv/harrisville/ritchie-county-primary-care-association
-  name: RITCHIE COUNTY PRIMARY CARE ASSOCIATION,
-  categories:
-  - community-health-center
   address:
-    street: 135 S Penn Ave
+    street: 220 W. Main Street
     city: Harrisville
     state: wv
     zip: '26362'
   place: '5435428'
-  geo:
-    lat: 39.20969
-    lng: -81.04341
-  phone: 304-643-4005
-  website: https://www.rcpca.org
-  external_ids:
-    bphc: BPS-H80-002196
+  phone: 304-643-2934
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: wv/harrisville/ritchie-county-primary-care-association
+  name: RITCHIE COUNTY PRIMARY CARE ASSOCIATION,
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 135 S Penn Ave, city: Harrisville, state: wv, zip: '26362'}
+  place: '5435428'
+  geo: {lat: 39.20969, lng: -81.04341}
+  phone: 304-643-4005
+  website: https://www.rcpca.org
+  external_ids: {bphc: BPS-H80-002196}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/harrisville/westbrook-health-services-ritchie-county-office
   name: Westbrook Health Services Ritchie County Office
   categories:
@@ -91,6 +81,21 @@
     lng: -81.04804
   phone: 304-643-2996
   website: https://www.westbrookhealth.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

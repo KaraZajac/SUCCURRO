@@ -32,6 +32,22 @@
     lng: -104.51054
   phone: 719-846-4481
   website: https://www.crossroadstp.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -53,6 +69,17 @@
     lng: -104.49144
   phone: 719-545-2746
   website: https://www.Health.Solutions
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -74,6 +101,10 @@
     lng: -104.49592
   phone: 719-631-3370
   website: https://www.health.solutions
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,55 +115,45 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Las Animas County
-  address: {street: 219 S. Chestnut St., city: Trinidad, state: co, zip: '81082'}
+  address:
+    street: 219 S. Chestnut St.
+    city: Trinidad
+    state: co
+    zip: '81082'
   place: 0878610
   phone: 719-846-2276
   website: https://lasanimascounty.colorado.gov/human-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/trinidad/salud-trinidad
   name: Salud Trinidad
   categories:
   - community-health-center
-  address:
-    street: 911 Robinson Ave
-    city: Trinidad
-    state: co
-    zip: '81082'
+  cost: sliding-scale
+  address: {street: 911 Robinson Ave, city: Trinidad, state: co, zip: '81082'}
   place: 0878610
-  geo:
-    lat: 37.16641
-    lng: -104.52089
+  geo: {lat: 37.16641, lng: -104.52089}
   phone: 719-422-8800
-  external_ids:
-    bphc: BPS-H80-021291
+  external_ids: {bphc: BPS-H80-021291}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/trinidad/salud-trinidad-dental-clinic
   name: Salud Trinidad Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 928 Smith Ave
-    city: Trinidad
-    state: co
-    zip: '81082'
+  cost: sliding-scale
+  address: {street: 928 Smith Ave, city: Trinidad, state: co, zip: '81082'}
   place: 0878610
-  geo:
-    lat: 37.16705
-    lng: -104.52176
+  geo: {lat: 37.16705, lng: -104.52176}
   phone: 303-697-2583
-  external_ids:
-    bphc: BPS-H80-030058
+  external_ids: {bphc: BPS-H80-030058}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/trinidad/trinidad-housing-authority
   name: Trinidad Housing Authority
   categories:

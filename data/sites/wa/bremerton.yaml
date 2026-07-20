@@ -32,6 +32,15 @@
     lng: -122.67908
   phone: 360-373-1529
   website: https://agapekitsap.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -52,6 +61,13 @@
     lng: -122.63194
   phone: 360-228-7246
   website: https://baartprograms.com/baart-programs-bremerton/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -138,6 +154,18 @@
     lng: -122.63062
   phone: 360-373-0155
   website: https://www.bountifullife.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -208,24 +236,16 @@
   name: Fairview Middle School SBHC
   categories:
   - community-health-center
-  address:
-    street: 8107 Central Valley Rd NE
-    city: Bremerton
-    state: wa
-    zip: '98311'
+  cost: sliding-scale
+  address: {street: 8107 Central Valley Rd NE, city: Bremerton, state: wa, zip: '98311'}
   place: '5307695'
-  geo:
-    lat: 47.63683
-    lng: -122.65303
+  geo: {lat: 47.63683, lng: -122.65303}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-028219
+  external_ids: {bphc: BPS-H80-028219}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/haddon-park
   name: Haddon Park
   categories:
@@ -330,13 +350,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kitsap County
-  address: {street: 845 8th St., city: Bremerton, state: wa, zip: '98337'}
+  address:
+    street: 845 8th St.
+    city: Bremerton
+    state: wa
+    zip: '98337'
   place: '5307695'
   phone: 360-479-1507
   website: https://www.kcr.org/energy/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/bremerton/larry-eyer-elc
   name: Larry Eyer ELC
   categories:
@@ -461,481 +487,305 @@
   name: PCHS-Administration
   categories:
   - community-health-center
-  address:
-    street: 400 Warren Ave, Suite 200
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: '400 Warren Ave, Suite 200', city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56605
-    lng: -122.63257
+  geo: {lat: 47.56605, lng: -122.63257}
   phone: 360-478-2366
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-004774
+  external_ids: {bphc: BPS-H80-004774}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/pchs-bremerton-clinic
   name: PCHS-Bremerton Clinic
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-002221
+  external_ids: {bphc: BPS-H80-002221}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/pchs-kmhs-almira-dr
   name: PCHS-KMHS-Almira Dr
   categories:
   - community-health-center
-  address:
-    street: 5455 Almira Dr NE
-    city: Bremerton
-    state: wa
-    zip: '98311'
+  cost: sliding-scale
+  address: {street: 5455 Almira Dr NE, city: Bremerton, state: wa, zip: '98311'}
   place: '5307695'
-  geo:
-    lat: 47.61191
-    lng: -122.62412
+  geo: {lat: 47.61191, lng: -122.62412}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-017480
+  external_ids: {bphc: BPS-H80-017480}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-agape
   name: Peninsula Community Health Services - Agape
   categories:
   - community-health-center
-  address:
-    street: 4841 Auto Center Way, Suite 203
-    city: Bremerton
-    state: wa
-    zip: '98312'
+  cost: sliding-scale
+  address: {street: '4841 Auto Center Way, Suite 203', city: Bremerton, state: wa, zip: '98312'}
   place: '5307695'
-  geo:
-    lat: 47.56249
-    lng: -122.67908
+  geo: {lat: 47.56249, lng: -122.67908}
   phone: 360-377-3776
-  external_ids:
-    bphc: BPS-H80-030408
+  external_ids: {bphc: BPS-H80-030408}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-barker-creek
   name: Peninsula Community Health Services - Barker Creek School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 1400 NE McWilliams Rd
-    city: Bremerton
-    state: wa
-    zip: '98311'
+  cost: sliding-scale
+  address: {street: 1400 NE McWilliams Rd, city: Bremerton, state: wa, zip: '98311'}
   place: '5307695'
-  geo:
-    lat: 47.62235
-    lng: -122.63148
+  geo: {lat: 47.62235, lng: -122.63148}
   phone: 360-377-3776
-  external_ids:
-    bphc: BPS-H80-031459
+  external_ids: {bphc: BPS-H80-031459}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-bremerton-am
   name: Peninsula Community Health Services - Bremerton Ambulatory Team
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-030682
+  external_ids: {bphc: BPS-H80-030682}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-bremerton-hi
   name: Peninsula Community Health Services - Bremerton High School School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 1500 13th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 1500 13th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.57335
-    lng: -122.63857
+  geo: {lat: 47.57335, lng: -122.63857}
   phone: 360-377-3776
   website: https://www.pchweb.org
-  external_ids:
-    bphc: BPS-H80-034441
+  external_ids: {bphc: BPS-H80-034441}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-call-center
   name: Peninsula Community Health Services - Call Center
   categories:
   - community-health-center
-  address:
-    street: 4020 Wheaton Way
-    city: Bremerton
-    state: wa
-    zip: '98310'
+  cost: sliding-scale
+  address: {street: 4020 Wheaton Way, city: Bremerton, state: wa, zip: '98310'}
   place: '5307695'
-  geo:
-    lat: 47.601
-    lng: -122.62813
+  geo: {lat: 47.601, lng: -122.62813}
   phone: 360-377-3776
   website: https://www.pchweb.org
-  external_ids:
-    bphc: BPS-H80-035477
+  external_ids: {bphc: BPS-H80-035477}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-cedar-house
   name: Peninsula Community Health Services - Cedar House 231
   categories:
   - community-health-center
-  address:
-    street: 231 5th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 231 5th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.5664
-    lng: -122.6245
+  geo: {lat: 47.5664, lng: -122.6245}
   phone: 360-377-3776
-  external_ids:
-    bphc: BPS-H80-038781
+  external_ids: {bphc: BPS-H80-038781}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-cedar-house-2
   name: Peninsula Community Health Services - Cedar House 233
   categories:
   - community-health-center
-  address:
-    street: 233 5th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 233 5th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56646
-    lng: -122.62492
+  geo: {lat: 47.56646, lng: -122.62492}
   phone: 360-377-3776
-  external_ids:
-    bphc: BPS-H80-038782
+  external_ids: {bphc: BPS-H80-038782}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-clare-avenue
   name: Peninsula Community Health Services - Clare Avenue
   categories:
   - community-health-center
-  address:
-    street: 2720 Clare Ave
-    city: Bremerton
-    state: wa
-    zip: '98310'
+  cost: sliding-scale
+  address: {street: 2720 Clare Ave, city: Bremerton, state: wa, zip: '98310'}
   place: '5307695'
-  geo:
-    lat: 47.58412
-    lng: -122.62821
+  geo: {lat: 47.58412, lng: -122.62821}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-035516
+  external_ids: {bphc: BPS-H80-035516}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-community-he
   name: Peninsula Community Health Services - Community Health on Wheels
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-036127
+  external_ids: {bphc: BPS-H80-036127}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-esquire-hill
   name: Peninsula Community Health Services  -  Esquire Hills Elementary School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 2650 NE John Carlson Rd
-    city: Bremerton
-    state: wa
-    zip: '98311'
+  cost: sliding-scale
+  address: {street: 2650 NE John Carlson Rd, city: Bremerton, state: wa, zip: '98311'}
   place: '5307695'
-  geo:
-    lat: 47.63308
-    lng: -122.61495
+  geo: {lat: 47.63308, lng: -122.61495}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-028220
+  external_ids: {bphc: BPS-H80-028220}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-family-denta
   name: Peninsula Community Health Services - Family Dental Care
   categories:
   - community-health-center
-  address:
-    street: 3102 Wheaton Way
-    city: Bremerton
-    state: wa
-    zip: '98310'
+  cost: sliding-scale
+  address: {street: 3102 Wheaton Way, city: Bremerton, state: wa, zip: '98310'}
   place: '5307695'
-  geo:
-    lat: 47.59172
-    lng: -122.62707
+  geo: {lat: 47.59172, lng: -122.62707}
   phone: 360-377-3776
-  external_ids:
-    bphc: BPS-H80-036128
+  external_ids: {bphc: BPS-H80-036128}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-mobile-behav
   name: Peninsula Community Health Services - Mobile Behavioral Health
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-027380
+  external_ids: {bphc: BPS-H80-027380}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-mobile-denta
   name: Peninsula Community Health Services - Mobile Dental
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-030764
+  external_ids: {bphc: BPS-H80-030764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-mobile-medic
   name: Peninsula Community Health Services - Mobile Medical
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-027343
+  external_ids: {bphc: BPS-H80-027343}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-mountain-vie
   name: Peninsula Community Health Services - Mountain View Middle School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 2442 Perry Ave
-    city: Bremerton
-    state: wa
-    zip: '98310'
+  cost: sliding-scale
+  address: {street: 2442 Perry Ave, city: Bremerton, state: wa, zip: '98310'}
   place: '5307695'
-  geo:
-    lat: 47.5821
-    lng: -122.61217
+  geo: {lat: 47.5821, lng: -122.61217}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-028267
+  external_ids: {bphc: BPS-H80-028267}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-olympic-high
   name: Peninsula Community Health Services - Olympic High School School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 7077 Stampede Blvd NW
-    city: Bremerton
-    state: wa
-    zip: '98311'
+  cost: sliding-scale
+  address: {street: 7077 Stampede Blvd NW, city: Bremerton, state: wa, zip: '98311'}
   place: '5307695'
-  geo:
-    lat: 47.62688
-    lng: -122.66517
+  geo: {lat: 47.62688, lng: -122.66517}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-035500
+  external_ids: {bphc: BPS-H80-035500}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-pendleton-pl
   name: Peninsula Community Health Services - Pendleton Place
   categories:
   - community-health-center
-  address:
-    street: 5454 Kitsap Way
-    city: Bremerton
-    state: wa
-    zip: '98312'
+  cost: sliding-scale
+  address: {street: 5454 Kitsap Way, city: Bremerton, state: wa, zip: '98312'}
   place: '5307695'
-  geo:
-    lat: 47.57199
-    lng: -122.68734
+  geo: {lat: 47.57199, lng: -122.68734}
   phone: 360-377-3776
   website: https://www.pchweb.org
-  external_ids:
-    bphc: BPS-H80-034443
+  external_ids: {bphc: BPS-H80-034443}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-peninsula-am
   name: Peninsula Community Health Services - Peninsula Ambulatory Team
   categories:
   - community-health-center
-  address:
-    street: 616 6th St
-    city: Bremerton
-    state: wa
-    zip: '98337'
+  cost: sliding-scale
+  address: {street: 616 6th St, city: Bremerton, state: wa, zip: '98337'}
   place: '5307695'
-  geo:
-    lat: 47.56782
-    lng: -122.62877
+  geo: {lat: 47.56782, lng: -122.62877}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-036228
+  external_ids: {bphc: BPS-H80-036228}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/peninsula-community-health-services-warehouse
   name: Peninsula Community Health Services - Warehouse
   categories:
   - community-health-center
-  address:
-    street: 4020 Wheaton Way
-    city: Bremerton
-    state: wa
-    zip: '98310'
+  cost: sliding-scale
+  address: {street: 4020 Wheaton Way, city: Bremerton, state: wa, zip: '98310'}
   place: '5307695'
-  geo:
-    lat: 47.601
-    lng: -122.62813
+  geo: {lat: 47.601, lng: -122.62813}
   phone: 360-377-3776
   website: https://www.pchsweb.org
-  external_ids:
-    bphc: BPS-H80-041581
+  external_ids: {bphc: BPS-H80-041581}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/bremerton/rosemary-moen-fd-hs-ehs
   name: Rosemary Moen FD HS/EHS
   categories:
@@ -971,6 +821,10 @@
     lng: -122.62647
   phone: 253-478-0827
   website: https://www.safeandsoundrecovery.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1057,6 +911,14 @@
     lng: -122.62792
   phone: 360-876-9430
   website: https://www.westsoundtreatmentcenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

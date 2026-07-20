@@ -4,13 +4,19 @@
   - utility-assistance
   description: LIHEAP intake office serving Christian, Clay, Effingham, Fayette, Montgomery, Moultrie,
     Shelby Counties
-  address: {street: 1805 South Banker Street (P. O. Box 928), city: Effingham, state: il, zip: 62401-0928}
+  address:
+    street: 1805 South Banker Street (P. O. Box 928)
+    city: Effingham
+    state: il
+    zip: 62401-0928
   place: '1722736'
   phone: 217-342-2193
   website: https://www.cefseoc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/effingham/cefs-head-start-0-5-program-effingham-ehs-hs
   name: CEFS Head Start 0-5 Program-Effingham (EHS & HS)
   categories:
@@ -104,6 +110,10 @@
     lng: -88.53714
   phone: 217-347-7384
   website: https://evolvecounseling.info
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -122,6 +132,10 @@
   place: '1722736'
   phone: 217-347-7179
   website: https://www.heartlandhs.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -138,6 +152,10 @@
   place: '1722736'
   phone: 217-347-7179
   website: https://www.heartlandhs.org
+  services:
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -147,20 +165,12 @@
   name: SIHF Healthcare  -  Effingham
   categories:
   - community-health-center
-  address:
-    street: 900 W Temple Ave, Suite 208
-    city: Effingham
-    state: il
-    zip: '62401'
+  cost: sliding-scale
+  address: {street: '900 W Temple Ave, Suite 208', city: Effingham, state: il, zip: '62401'}
   place: '1722736'
-  geo:
-    lat: 39.12849
-    lng: -88.55322
+  geo: {lat: 39.12849, lng: -88.55322}
   phone: 217-342-0211
-  external_ids:
-    bphc: BPS-H80-009322
+  external_ids: {bphc: BPS-H80-009322}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

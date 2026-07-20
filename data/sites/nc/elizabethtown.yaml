@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bladen County
-  address: {street: 208 Mckay Street (P. O Box 369), city: Elizabethtown, state: nc, zip: '28337'}
+  address:
+    street: 208 Mckay Street (P. O Box 369)
+    city: Elizabethtown
+    state: nc
+    zip: '28337'
   place: '3720600'
   phone: 910-862-6858
   website: https://bladennc.govoffice3.com/index.asp?SEC=B5244DDC-3A3A-482F-B577-8234E7098E1F&Type=B_BASIC
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/elizabethtown/elizabethtown-head-start-center
   name: Elizabethtown Head Start Center
   categories:
@@ -77,44 +83,28 @@
   name: GOSHEN MEDICAL CENTER - ELIZABETHTOWN
   categories:
   - community-health-center
-  address:
-    street: 400 Mercer Mill Rd
-    city: Elizabethtown
-    state: nc
-    zip: '28337'
+  cost: sliding-scale
+  address: {street: 400 Mercer Mill Rd, city: Elizabethtown, state: nc, zip: '28337'}
   place: '3720600'
-  geo:
-    lat: 34.62059
-    lng: -78.60548
+  geo: {lat: 34.62059, lng: -78.60548}
   phone: 910-879-3216
-  external_ids:
-    bphc: BPS-H80-034063
+  external_ids: {bphc: BPS-H80-034063}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/elizabethtown/goshen-medical-center-elizabethtown-mobile-unit
   name: GOSHEN MEDICAL CENTER - ELIZABETHTOWN MOBILE UNIT
   categories:
   - community-health-center
-  address:
-    street: 400 Mercer Mill Rd
-    city: Elizabethtown
-    state: nc
-    zip: '28337'
+  cost: sliding-scale
+  address: {street: 400 Mercer Mill Rd, city: Elizabethtown, state: nc, zip: '28337'}
   place: '3720600'
-  geo:
-    lat: 34.62059
-    lng: -78.60548
+  geo: {lat: 34.62059, lng: -78.60548}
   phone: 910-267-2044
-  external_ids:
-    bphc: BPS-H80-034187
+  external_ids: {bphc: BPS-H80-034187}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/elizabethtown/lifebridge-drug-and-substance-abuse-inc
   name: LifeBridge Drug and Substance Abuse Inc
   categories:
@@ -131,6 +121,16 @@
     lng: -78.60731
   phone: 910-738-7880
   website: https://www.lifebridgeds.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

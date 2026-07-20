@@ -14,6 +14,12 @@
     lng: -77.96224
   phone: 910-347-4477
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,56 +30,46 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Duplin County
-  address: {street: 423 N. Main St (P. O. Box 969), city: Kenansville, state: nc, zip: '28349'}
+  address:
+    street: 423 N. Main St (P. O. Box 969)
+    city: Kenansville
+    state: nc
+    zip: '28349'
   place: '3735460'
   phone: 910-296-2200
   website: http://www.duplincountync.com/governmentOffices/so
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/kenansville/goshen-medical-center-duplin
   name: GOSHEN MEDICAL CENTER - DUPLIN
   categories:
   - community-health-center
-  address:
-    street: 214 Duplin St
-    city: Kenansville
-    state: nc
-    zip: '28349'
+  cost: sliding-scale
+  address: {street: 214 Duplin St, city: Kenansville, state: nc, zip: '28349'}
   place: '3735460'
-  geo:
-    lat: 34.964
-    lng: -77.96196
+  geo: {lat: 34.964, lng: -77.96196}
   phone: 910-296-1811
-  external_ids:
-    bphc: BPS-H80-036220
+  external_ids: {bphc: BPS-H80-036220}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/kenansville/goshen-medical-center-kenansville
   name: GOSHEN MEDICAL CENTER - KENANSVILLE
   categories:
   - community-health-center
-  address:
-    street: 102 N Main St
-    city: Kenansville
-    state: nc
-    zip: '28349'
+  cost: sliding-scale
+  address: {street: 102 N Main St, city: Kenansville, state: nc, zip: '28349'}
   place: '3735460'
-  geo:
-    lat: 34.96172
-    lng: -77.9618
+  geo: {lat: 34.96172, lng: -77.9618}
   phone: 910-275-0195
   website: https://goshenmedical.org
-  external_ids:
-    bphc: BPS-H80-022069
+  external_ids: {bphc: BPS-H80-022069}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/kenansville/kenansville-pre-k
   name: Kenansville Pre-K
   categories:

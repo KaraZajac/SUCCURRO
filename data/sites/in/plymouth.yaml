@@ -2,23 +2,15 @@
   name: Bowen Center Marshall
   categories:
   - community-health-center
-  address:
-    street: 2904 Miller Dr
-    city: Plymouth
-    state: in
-    zip: '46563'
+  cost: sliding-scale
+  address: {street: 2904 Miller Dr, city: Plymouth, state: in, zip: '46563'}
   place: '1860822'
-  geo:
-    lat: 41.36048
-    lng: -86.349
+  geo: {lat: 41.36048, lng: -86.349}
   phone: 800-342-5653
-  external_ids:
-    bphc: BPS-LAL-039507
+  external_ids: {bphc: BPS-LAL-039507}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/plymouth/bowen-health-russell-house
   name: Bowen Health Russell House
   categories:
@@ -31,6 +23,11 @@
   place: '1860822'
   phone: 574-936-6164
   website: https://www.bowenhealth.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -104,10 +101,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marshall County
-  address: {street: '510 W. Adams St. #260', city: Plymouth, state: in, zip: '46563'}
+  address:
+    street: '510 W. Adams St. #260'
+    city: Plymouth
+    state: in
+    zip: '46563'
   place: '1860822'
   phone: 574-935-0132
   website: http://www.realservices.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

@@ -13,6 +13,11 @@
     lng: -74.04295
   phone: 201-336-7350
   website: https://www.bergencountynj.gov
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,14 +51,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bergen County
-  address: {street: 294 Union Street, city: Hackensack, state: nj, zip: '07601'}
+  address:
+    street: 294 Union Street
+    city: Hackensack
+    state: nj
+    zip: '07601'
   place: '3428680'
   phone: 201-968-0200
   email: LIHEAP@GreaterBergen.org
   website: https://www.greaterbergen.org/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nj/hackensack/bergen-county-dept-of-health-servs-addiction-rec
   name: Bergen County Dept of Health Servs Addiction Recovery Program
   categories:
@@ -69,6 +80,13 @@
     lng: -74.04325
   phone: 201-634-2745
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -87,6 +105,12 @@
   place: '3428680'
   phone: 201-343-8803
   website: https://www.ycs.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -108,6 +132,15 @@
     lng: -74.03678
   phone: 201-692-2645
   website: https://www.fdu.edu/academics/centers-institutes/center-for-psychological-services-2/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -374,24 +407,16 @@
   name: North Hudson Community Action Corporation Health Center@ Hackensack
   categories:
   - community-health-center
-  address:
-    street: 25 E Salem St
-    city: Hackensack
-    state: nj
-    zip: '07601'
+  cost: sliding-scale
+  address: {street: 25 E Salem St, city: Hackensack, state: nj, zip: '07601'}
   place: '3428680'
-  geo:
-    lat: 40.88518
-    lng: -74.04081
+  geo: {lat: 40.88518, lng: -74.04081}
   phone: 201-498-9080
   website: https://www.nhcac.org
-  external_ids:
-    bphc: BPS-H80-007623
+  external_ids: {bphc: BPS-H80-007623}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/hackensack/spring-house-female-halfway-house
   name: Spring House Female Halfway House
   categories:
@@ -404,6 +429,13 @@
   place: '3428680'
   phone: 201-336-2600
   website: https://www.co.bergen.nj.us/departments-and-services/about-health-services
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -425,6 +457,14 @@
     lng: -74.05255
   phone: 201-487-1390
   website: https://www.va.gov/new-jersey-health-care/locations/hackensack-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

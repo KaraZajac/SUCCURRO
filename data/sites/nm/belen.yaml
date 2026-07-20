@@ -90,24 +90,16 @@
   name: FCCH/BELEN CENTER
   categories:
   - community-health-center
-  address:
-    street: 120 S 9th St
-    city: Belen
-    state: nm
-    zip: '87002'
+  cost: sliding-scale
+  address: {street: 120 S 9th St, city: Belen, state: nm, zip: '87002'}
   place: '3506480'
-  geo:
-    lat: 34.66031
-    lng: -106.77877
+  geo: {lat: 34.66031, lng: -106.77877}
   phone: 505-861-1013
   website: https://www.fcch.com
-  external_ids:
-    bphc: BPS-H80-003462
+  external_ids: {bphc: BPS-H80-003462}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/belen/gil-sanchez-elementary
   name: Gil Sanchez Elementary
   categories:
@@ -154,12 +146,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Valencia County
-  address: {street: 100 S. 5th Street2nd floor, city: Belen, state: nm, zip: '87002'}
+  address:
+    street: 100 S. 5th Street2nd floor
+    city: Belen
+    state: nm
+    zip: '87002'
   place: '3506480'
   phone: 505-864-5200
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nm/belen/la-merced-elementary-head-start
   name: La Merced Elementary Head Start
   categories:
@@ -216,6 +214,22 @@
     lng: -106.73481
   phone: 469-830-8461
   website: https://www.medmark.com/locations/new-mexico/belen
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

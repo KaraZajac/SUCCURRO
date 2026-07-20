@@ -43,46 +43,30 @@
   name: Alliance Community Healthcare, Inc.
   categories:
   - community-health-center
-  address:
-    street: 115 Christopher Columbus Dr
-    city: Jersey City
-    state: nj
-    zip: '07302'
+  cost: sliding-scale
+  address: {street: 115 Christopher Columbus Dr, city: Jersey City, state: nj, zip: '07302'}
   place: '3436000'
-  geo:
-    lat: 40.71957
-    lng: -74.04406
+  geo: {lat: 40.71957, lng: -74.04406}
   phone: 201-830-1620
   website: https://www.alliancech.org
-  external_ids:
-    bphc: BPS-H80-011078
+  external_ids: {bphc: BPS-H80-011078}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/jersey-city/alliance-community-healthcare-inc-administrative
   name: Alliance Community Healthcare Inc. Administrative Offices
   categories:
   - community-health-center
-  address:
-    street: 26 Journal Sq, Suite 1600
-    city: Jersey City
-    state: nj
-    zip: '07306'
+  cost: sliding-scale
+  address: {street: '26 Journal Sq, Suite 1600', city: Jersey City, state: nj, zip: '07306'}
   place: '3436000'
-  geo:
-    lat: 40.73044
-    lng: -74.06372
+  geo: {lat: 40.73044, lng: -74.06372}
   phone: 201-451-6300
   website: https://www.alliancech.org
-  external_ids:
-    bphc: BPS-H80-036171
+  external_ids: {bphc: BPS-H80-036171}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/jersey-city/avita-hope-llc
   name: Avita Hope LLC
   categories:
@@ -98,6 +82,16 @@
     lng: -74.05967
   phone: 201-300-0160
   website: https://www.avitahopenj.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -204,6 +198,22 @@
     lng: -74.08728
   phone: 201-200-1965
   website: https://www.clineoutreach.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -947,6 +957,14 @@
     lng: -74.07259
   phone: 201-451-5425
   website: https://www.khcpmc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1072,6 +1090,10 @@
     lng: -74.09178
   phone: 201-395-7630 x77630
   website: https://www.rwjbh.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1103,24 +1125,16 @@
   name: METROPOLITAN FAMILY HEALTH NETWORK
   categories:
   - community-health-center
-  address:
-    street: 935 Garfield Ave
-    city: Jersey City
-    state: nj
-    zip: '07304'
+  cost: sliding-scale
+  address: {street: 935 Garfield Ave, city: Jersey City, state: nj, zip: '07304'}
   place: '3436000'
-  geo:
-    lat: 40.71104
-    lng: -74.07064
+  geo: {lat: 40.71104, lng: -74.07064}
   phone: 201-478-5802
   website: https://www.metrofhn.com
-  external_ids:
-    bphc: BPS-H80-003788
+  external_ids: {bphc: BPS-H80-003788}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/jersey-city/new-hope-etc-hq
   name: New Hope Etc Hq
   categories:
@@ -1169,24 +1183,16 @@
   name: North Hudson Community Action Corporation Health Center @ Jersey City
   categories:
   - community-health-center
-  address:
-    street: 324 Palisade Ave
-    city: Jersey City
-    state: nj
-    zip: '07307'
+  cost: sliding-scale
+  address: {street: 324 Palisade Ave, city: Jersey City, state: nj, zip: '07307'}
   place: '3436000'
-  geo:
-    lat: 40.73965
-    lng: -74.04655
+  geo: {lat: 40.73965, lng: -74.04655}
   phone: 201-459-8888
   website: https://www.nhcac.org
-  external_ids:
-    bphc: BPS-H80-001090
+  external_ids: {bphc: BPS-H80-001090}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/jersey-city/p-s-3-frank-r-conwell-elementary-school
   name: P.S. 3 Frank R Conwell Elementary School
   categories:
@@ -1258,14 +1264,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hudson County
-  address: {street: 307 Marthin Luther King Dr., city: Jersey City, state: nj, zip: '07305'}
+  address:
+    street: 307 Marthin Luther King Dr.
+    city: Jersey City
+    state: nj
+    zip: '07305'
   place: '3436000'
   phone: 844-722-6432
   email: liheap@pacoagency.org
   website: https://pacoagency.org/heap/#
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nj/jersey-city/rafael-cordero-y-molina-school-37
   name: 'Rafael Cordero Y Molina School #37'
   categories:
@@ -1391,6 +1403,15 @@
     lng: -74.0701
   phone: 201-451-2544
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

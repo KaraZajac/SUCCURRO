@@ -117,46 +117,30 @@
   name: Health Care Partners Mobile Dental Van
   categories:
   - community-health-center
-  address:
-    street: 145 Palmetto Pointe Rd
-    city: Marion
-    state: sc
-    zip: '29571'
+  cost: sliding-scale
+  address: {street: 145 Palmetto Pointe Rd, city: Marion, state: sc, zip: '29571'}
   place: '4544575'
-  geo:
-    lat: 34.18485
-    lng: -79.37069
+  geo: {lat: 34.18485, lng: -79.37069}
   phone: 843-248-4700
   website: https://hcpsc.org/
-  external_ids:
-    bphc: BPS-H80-036273
+  external_ids: {bphc: BPS-H80-036273}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/marion/health-care-partners-of-south-carolina-inc-mario
   name: Health Care Partners of South Carolina, Inc. - MARION OFFICE
   categories:
   - community-health-center
-  address:
-    street: 145 Palmetto Pointe Rd
-    city: Marion
-    state: sc
-    zip: '29571'
+  cost: sliding-scale
+  address: {street: 145 Palmetto Pointe Rd, city: Marion, state: sc, zip: '29571'}
   place: '4544575'
-  geo:
-    lat: 34.18485
-    lng: -79.37069
+  geo: {lat: 34.18485, lng: -79.37069}
   phone: 843-423-2400
   website: https://www.hcpsc.com
-  external_ids:
-    bphc: BPS-H80-011364
+  external_ids: {bphc: BPS-H80-011364}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/marion/housing-authority-of-marion
   name: Housing Authority Of Marion
   categories:
@@ -430,13 +414,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marion County
-  address: {street: 1011 East Godbold Street, city: Marion, state: sc, zip: '29571'}
+  address:
+    street: 1011 East Godbold Street
+    city: Marion
+    state: sc
+    zip: '29571'
   place: '4544575'
   phone: 843-765-3495
   website: https://www.peedeecap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/marion/pee-dee-mental-health-center-marion-clinic
   name: Pee Dee Mental Health Center Marion Clinic
   categories:
@@ -453,6 +443,19 @@
     lng: -79.39771
   phone: 843-431-1100
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

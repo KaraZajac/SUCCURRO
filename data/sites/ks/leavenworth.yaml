@@ -2,23 +2,15 @@
   name: ACHC in Leavenworth
   categories:
   - community-health-center
-  address:
-    street: 818 N 7th St
-    city: Leavenworth
-    state: ks
-    zip: '66048'
+  cost: sliding-scale
+  address: {street: 818 N 7th St, city: Leavenworth, state: ks, zip: '66048'}
   place: '2039000'
-  geo:
-    lat: 39.32522
-    lng: -94.92003
+  geo: {lat: 39.32522, lng: -94.92003}
   phone: 913-651-8860
-  external_ids:
-    bphc: BPS-H80-039174
+  external_ids: {bphc: BPS-H80-039174}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/leavenworth/anthony-elementary-school
   name: Anthony Elementary School
   categories:
@@ -171,6 +163,22 @@
     lng: -94.9097
   phone: 913-682-5118
   website: https://www.mytgc.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -203,12 +211,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Leavenworth County
-  address: {street: '515 Limit, Suite 100', city: Leavenworth, state: ks, zip: '66048'}
+  address:
+    street: 515 Limit, Suite 100
+    city: Leavenworth
+    state: ks
+    zip: '66048'
   place: '2039000'
   phone: 913-680-2200
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/leavenworth/leavenworth-housing-authority
   name: Leavenworth Housing Authority
   categories:
@@ -255,24 +269,16 @@
   name: Swope Health - KidsCARE Leavenworth Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 1001 6th Ave STE 210
-    city: Leavenworth
-    state: ks
-    zip: '66048'
+  cost: sliding-scale
+  address: {street: 1001 6th Ave STE 210, city: Leavenworth, state: ks, zip: '66048'}
   place: '2039000'
-  geo:
-    lat: 39.30869
-    lng: -94.91938
+  geo: {lat: 39.30869, lng: -94.91938}
   phone: 913-682-3920
   website: https://www.swopehealth.org
-  external_ids:
-    bphc: BPS-H80-036691
+  external_ids: {bphc: BPS-H80-036691}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/leavenworth/va-eastern-kansas-healthcare-system-sud-c
   name: VA Eastern Kansas Healthcare System SUD C
   categories:
@@ -289,6 +295,21 @@
     lng: -94.89308
   phone: 913-682-2000 x63050
   website: https://www.va.gov/eastern-kansas-health-care/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Long-term residential
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

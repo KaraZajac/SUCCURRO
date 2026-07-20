@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Essex County
-  address: {street: 47 Washinghton Street, city: Gloucester, state: ma, zip: 01930}
+  address:
+    street: 47 Washinghton Street
+    city: Gloucester
+    state: ma
+    zip: 01930
   place: '2526150'
   phone: 978-373-1971
   website: https://www.toapply.org/MassLIHEAP
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/gloucester/gloucester-family-health-center
   name: Gloucester Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 302 Washington St
-    city: Gloucester
-    state: ma
-    zip: 01930
+  cost: sliding-scale
+  address: {street: 302 Washington St, city: Gloucester, state: ma, zip: 01930}
   place: '2526150'
-  geo:
-    lat: 42.62644
-    lng: -70.6806
+  geo: {lat: 42.62644, lng: -70.6806}
   phone: 978-744-8388
   website: https://www.nschi.org
-  external_ids:
-    bphc: BPS-H80-007576
+  external_ids: {bphc: BPS-H80-007576}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/gloucester/gloucester-housing-authority
   name: Gloucester Housing Authority
   categories:
@@ -116,6 +114,14 @@
     lng: -70.654
   phone: 978-283-7198
   website: https://jri.org/community-services/childrens-friend-and-family-services
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -136,6 +142,12 @@
     lng: -70.66368
   phone: 978-515-7644
   website: https://www.middlesexrecovery.com/company/location
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -164,20 +176,12 @@
   name: Program for All-Inclusive Care for the Elderly (PACE) Site
   categories:
   - community-health-center
-  address:
-    street: 29 Emerson Ave
-    city: Gloucester
-    state: ma
-    zip: 01930
+  cost: sliding-scale
+  address: {street: 29 Emerson Ave, city: Gloucester, state: ma, zip: 01930}
   place: '2526150'
-  geo:
-    lat: 42.61611
-    lng: -70.67647
+  geo: {lat: 42.61611, lng: -70.67647}
   phone: 978-283-7375
-  external_ids:
-    bphc: BPS-H80-012153
+  external_ids: {bphc: BPS-H80-012153}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

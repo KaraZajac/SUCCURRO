@@ -137,24 +137,16 @@
   name: FoundCare Riviera Beach
   categories:
   - community-health-center
-  address:
-    street: 3501 Broadway
-    city: Riviera Beach
-    state: fl
-    zip: '33404'
+  cost: sliding-scale
+  address: {street: 3501 Broadway, city: Riviera Beach, state: fl, zip: '33404'}
   place: '1260975'
-  geo:
-    lat: 26.79062
-    lng: -80.05463
+  geo: {lat: 26.79062, lng: -80.05463}
   phone: 561-472-9160
   website: https://foundcare.org/
-  external_ids:
-    bphc: BPS-H80-040260
+  external_ids: {bphc: BPS-H80-040260}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/riviera-beach/inlet-grove-community-high-school
   name: Inlet Grove Community High School
   categories:
@@ -290,13 +282,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Palm Beach County
-  address: {street: 1440 Martin Luther King Blvd., city: Riviera Beach, state: fl, zip: '33404'}
+  address:
+    street: 1440 Martin Luther King Blvd.
+    city: Riviera Beach
+    state: fl
+    zip: '33404'
   place: '1260975'
   phone: 561-355-4792
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/riviera-beach/riviera-beach
   name: Riviera Beach
   categories:

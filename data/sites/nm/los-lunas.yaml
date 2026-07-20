@@ -33,6 +33,9 @@
     lng: -106.73135
   phone: 505-565-9496
   website: https://www.cnmcounseling.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -42,35 +45,33 @@
   name: FCCH/LOS LUNAS CENTER
   categories:
   - community-health-center
-  address:
-    street: 145 Don Pasqual Rd NW
-    city: Los Lunas
-    state: nm
-    zip: '87031'
+  cost: sliding-scale
+  address: {street: 145 Don Pasqual Rd NW, city: Los Lunas, state: nm, zip: '87031'}
   place: '3543370'
-  geo:
-    lat: 34.81278
-    lng: -106.74159
+  geo: {lat: 34.81278, lng: -106.74159}
   phone: 505-865-4618
   website: https://www.fcch.com
-  external_ids:
-    bphc: BPS-H80-010148
+  external_ids: {bphc: BPS-H80-010148}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/los-lunas/isd-field-office-for-the-los-lunas-area
   name: ISD Field Office for the Los Lunas Area
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Valencia County
-  address: {street: 445 Camino Del Rey, city: Los Lunas, state: nm, zip: '87031'}
+  address:
+    street: 445 Camino Del Rey
+    city: Los Lunas
+    state: nm
+    zip: '87031'
   place: '3543370'
   phone: 800-283-4465
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nm/los-lunas/meadow-lake-community-center
   name: Meadow Lake Community Center
   categories:
@@ -105,6 +106,10 @@
     lng: -106.7011
   phone: 505-352-7610
   website: https://www.loslunasnm.gov/1185/Valencia-County-DWI-Program
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:

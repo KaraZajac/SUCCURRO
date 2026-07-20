@@ -2,23 +2,15 @@
   name: HealthPoint Hearne
   categories:
   - community-health-center
-  address:
-    street: 300 Post Oak St
-    city: Hearne
-    state: tx
-    zip: '77859'
+  cost: sliding-scale
+  address: {street: 300 Post Oak St, city: Hearne, state: tx, zip: '77859'}
   place: '4832972'
-  geo:
-    lat: 30.87948
-    lng: -96.59758
+  geo: {lat: 30.87948, lng: -96.59758}
   phone: 979-279-3451
-  external_ids:
-    bphc: BPS-H80-040315
+  external_ids: {bphc: BPS-H80-040315}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/hearne/hearne-cdc
   name: Hearne CDC
   categories:
@@ -95,6 +87,15 @@
     lng: -96.60264
   phone: 979-279-5193
   website: https://www.mhmrabv.org
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

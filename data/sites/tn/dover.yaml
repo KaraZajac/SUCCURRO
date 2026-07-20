@@ -64,35 +64,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Stewart County
-  address: {street: Stewart County Courthouse (P. O. Box 704), city: Dover, state: tn, zip: '37058'}
+  address:
+    street: Stewart County Courthouse (P. O. Box 704)
+    city: Dover
+    state: tn
+    zip: '37058'
   place: '4721400'
   phone: 931-232-5184
   website: https://www.highlandrim.org/services/energy-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/dover/stewart-county-community-health
   name: STEWART COUNTY COMMUNITY HEALTH
   categories:
   - community-health-center
-  address:
-    street: 1021 Spring St
-    city: Dover
-    state: tn
-    zip: '37058'
+  cost: sliding-scale
+  address: {street: 1021 Spring St, city: Dover, state: tn, zip: '37058'}
   place: '4721400'
-  geo:
-    lat: 36.48344
-    lng: -87.82376
+  geo: {lat: 36.48344, lng: -87.82376}
   phone: 931-232-5329
   website: http://health.state.tn.us/
-  external_ids:
-    bphc: BPS-H80-004815
+  external_ids: {bphc: BPS-H80-004815}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/dover/stewart-county-middle-school
   name: Stewart County Middle School
   categories:

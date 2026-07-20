@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Middlesex County
-  address: {street: 18 Dartmouth St., city: Malden, state: ma, zip: 02148}
+  address:
+    street: 18 Dartmouth St.
+    city: Malden
+    state: ma
+    zip: 02148
   place: '2537875'
   phone: 781-322-6284
   website: https://bostonabcd.org/service/fuel-assistance-2/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/malden/commercial-street-clinic
   name: Commercial Street Clinic
   categories:
   - community-health-center
-  address:
-    street: 277 Commercial St
-    city: Malden
-    state: ma
-    zip: 02148
+  cost: sliding-scale
+  address: {street: 277 Commercial St, city: Malden, state: ma, zip: 02148}
   place: '2537875'
-  geo:
-    lat: 42.41796
-    lng: -71.07629
+  geo: {lat: 42.41796, lng: -71.07629}
   phone: 781-912-2500
   website: https://www.scchc.org
-  external_ids:
-    bphc: BPS-H80-021694
+  external_ids: {bphc: BPS-H80-021694}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/malden/coytemore-lea-park-sf-112-001
   name: Coytemore Lea Park (Sf-112-001)
   categories:
@@ -71,6 +69,11 @@
     lng: -71.07843
   phone: 833-356-8733
   website: https://elmtreeclinic.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

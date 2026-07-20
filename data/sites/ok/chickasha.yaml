@@ -85,13 +85,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Grady County
-  address: {street: 1707 W. Frisco, city: Chickasha, state: ok, zip: '73018'}
+  address:
+    street: 1707 W. Frisco
+    city: Chickasha
+    state: ok
+    zip: '73018'
   place: '4013950'
   phone: 405-574-7400
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/chickasha/red-rock-behavioral-health-services-outpatient-o
   name: Red Rock Behavioral Health Services Outpatient Office & MAT Clinic
   categories:
@@ -107,6 +113,10 @@
     lng: -97.94298
   phone: 405-222-0622
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -128,6 +138,13 @@
     lng: -97.94298
   phone: 405-222-0622
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -137,24 +154,16 @@
   name: South Central Medical Center-Chickasha
   categories:
   - community-health-center
-  address:
-    street: 2222 W Iowa Ave
-    city: Chickasha
-    state: ok
-    zip: '73018'
+  cost: sliding-scale
+  address: {street: 2222 W Iowa Ave, city: Chickasha, state: ok, zip: '73018'}
   place: '4013950'
-  geo:
-    lat: 35.04862
-    lng: -97.9629
+  geo: {lat: 35.04862, lng: -97.9629}
   phone: 405-756-1414
   website: https://www.okscmrc.org
-  external_ids:
-    bphc: BPS-H80-030056
+  external_ids: {bphc: BPS-H80-030056}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/chickasha/ymca-chickasha-n100
   name: Ymca Chickasha(N100)
   categories:

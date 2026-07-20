@@ -25,35 +25,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Catawba County
-  address: {street: 3030 Eleventh Ave. Dr. S.E., city: Hickory, state: nc, zip: '28658'}
+  address:
+    street: 3030 Eleventh Ave. Dr. S.E.
+    city: Hickory
+    state: nc
+    zip: '28658'
   place: '3731060'
   phone: 828-695-5600
   website: https://www.catawbacountync.gov/county-services/social-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/hickory/catawba-valley-family-medicine-northeast-hickory
   name: Catawba Valley Family Medicine - Northeast Hickory
   categories:
   - community-health-center
-  address:
-    street: 2365 Springs Road Northeast
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 2365 Springs Road Northeast, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.75001
-    lng: -81.28943
+  geo: {lat: 35.75001, lng: -81.28943}
   phone: 828-256-2112
   website: https://cvmgonline.org/our-practices/catawba-valley-family-medicine-northeast-hickory/
-  external_ids:
-    bphc: BPS-H80-019698
+  external_ids: {bphc: BPS-H80-019698}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/catawba-valley-medical-center-psychiatry-service
   name: Catawba Valley Medical Center Psychiatry Services
   categories:
@@ -66,6 +64,11 @@
   place: '3731060'
   phone: 828-326-3700
   website: https://www.catawbavalleyhealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -107,6 +110,17 @@
     lng: -81.3087
   phone: 828-327-6026
   website: https://www.thecogcon.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -128,6 +142,12 @@
     lng: -81.3178
   phone: 919-670-5545
   website: https://www.eleanorhealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -185,6 +205,22 @@
     lng: -81.31625
   phone: 828-485-1320
   website: https://www.newseason.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -251,6 +287,22 @@
     lng: -81.34614
   phone: 828-322-5915
   website: https://www.integratedcarehickory.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -260,478 +312,302 @@
   name: Kintegra at A Woman's View
   categories:
   - community-health-center
-  address:
-    street: 915 Tate Boulevard Southeast
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 915 Tate Boulevard Southeast, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.73078
-    lng: -81.31861
+  geo: {lat: 35.73078, lng: -81.31861}
   phone: 828-345-0800
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-028018
+  external_ids: {bphc: BPS-H80-028018}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-arndt-middle-school
   name: Kintegra at Arndt Middle School
   categories:
   - community-health-center
-  address:
-    street: 34th Street Dr NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 34th Street Dr NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.76843
-    lng: -81.26771
+  geo: {lat: 35.76843, lng: -81.26771}
   phone: 828-256-9545
-  external_ids:
-    bphc: BPS-H80-035435
+  external_ids: {bphc: BPS-H80-035435}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-catawba-valley-community-college
   name: Kintegra at Catawba Valley Community College
   categories:
   - community-health-center
-  address:
-    street: 2550 US Highway 70 SE
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 2550 US Highway 70 SE, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.69996
-    lng: -81.28797
+  geo: {lat: 35.69996, lng: -81.28797}
   phone: 828-327-7000
-  external_ids:
-    bphc: BPS-H80-033403
+  external_ids: {bphc: BPS-H80-033403}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-catawba-women-s-center
   name: Kintegra at Catawba Women's Center
   categories:
   - community-health-center
-  address:
-    street: 1501 Tate Blvd SE
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 1501 Tate Blvd SE, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.73035
-    lng: -81.31274
+  geo: {lat: 35.73035, lng: -81.31274}
   phone: 828-322-3767
-  external_ids:
-    bphc: BPS-H80-028010
+  external_ids: {bphc: BPS-H80-028010}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-challenger-high-school
   name: Kintegra at Challenger High School
   categories:
   - community-health-center
-  address:
-    street: 2550 US Highway 70 SE
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 2550 US Highway 70 SE, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.69996
-    lng: -81.28797
+  geo: {lat: 35.69996, lng: -81.28797}
   phone: 828-485-2980
-  external_ids:
-    bphc: BPS-H80-032846
+  external_ids: {bphc: BPS-H80-032846}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-clyde-campbell-elementary
   name: Kintegra at Clyde Campbell Elementary
   categories:
   - community-health-center
-  address:
-    street: 2121 35th Avenue Dr NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 2121 35th Avenue Dr NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.77744
-    lng: -81.28715
+  geo: {lat: 35.77744, lng: -81.28715}
   phone: 828-256-2769
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-041024
+  external_ids: {bphc: BPS-H80-041024}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-grandview-middle
   name: Kintegra at Grandview Middle
   categories:
   - community-health-center
-  address:
-    street: 451 Catawba Valley Blvd
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 451 Catawba Valley Blvd, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.70374
-    lng: -81.33011
+  geo: {lat: 35.70374, lng: -81.33011}
   phone: 828-328-2289
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-031436
+  external_ids: {bphc: BPS-H80-031436}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-hickory-career-arts-magnet
   name: Kintegra at Hickory Career & Arts Magnet
   categories:
   - community-health-center
-  address:
-    street: 409 8th Ave NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 409 8th Ave NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.74364
-    lng: -81.33117
+  geo: {lat: 35.74364, lng: -81.33117}
   phone: 828-328-6728
-  external_ids:
-    bphc: BPS-H80-031440
+  external_ids: {bphc: BPS-H80-031440}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-hickory-high
   name: Kintegra at Hickory High
   categories:
   - community-health-center
-  address:
-    street: 1234 3rd St NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 1234 3rd St NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.74934
-    lng: -81.33232
+  geo: {lat: 35.74934, lng: -81.33232}
   phone: 828-322-5860
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-031432
+  external_ids: {bphc: BPS-H80-031432}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-jenkins-elementary
   name: Kintegra at Jenkins Elementary
   categories:
   - community-health-center
-  address:
-    street: 3750 N Center St
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 3750 N Center St, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.78046
-    lng: -81.32103
+  geo: {lat: 35.78046, lng: -81.32103}
   phone: 828-327-3590
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-028376
+  external_ids: {bphc: BPS-H80-028376}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-longview-elementary
   name: Kintegra at Longview Elementary
   categories:
   - community-health-center
-  address:
-    street: 737 12th Street Southwest
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 737 12th Street Southwest, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.72384
-    lng: -81.36092
+  geo: {lat: 35.72384, lng: -81.36092}
   phone: 828-485-0975
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-028375
+  external_ids: {bphc: BPS-H80-028375}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-mountain-view-elementary
   name: Kintegra at Mountain View Elementary
   categories:
   - community-health-center
-  address:
-    street: 5911 Dwayne Starnes Dr
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 5911 Dwayne Starnes Dr, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.66282
-    lng: -81.38534
+  geo: {lat: 35.66282, lng: -81.38534}
   phone: 704-294-2020
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-041025
+  external_ids: {bphc: BPS-H80-041025}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-northview-middle
   name: Kintegra at Northview Middle
   categories:
   - community-health-center
-  address:
-    street: 302 28th Ave NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 302 28th Ave NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.76735
-    lng: -81.32453
+  geo: {lat: 35.76735, lng: -81.32453}
   phone: 828-327-6300
-  external_ids:
-    bphc: BPS-H80-031437
+  external_ids: {bphc: BPS-H80-031437}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-oakwood-elementary
   name: Kintegra at Oakwood Elementary
   categories:
   - community-health-center
-  address:
-    street: 366 4th St NW
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 366 4th St NW, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.7373
-    lng: -81.34371
+  geo: {lat: 35.7373, lng: -81.34371}
   phone: 828-322-1340
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-028378
+  external_ids: {bphc: BPS-H80-028378}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-snow-creek-elementary
   name: Kintegra at Snow Creek Elementary
   categories:
   - community-health-center
-  address:
-    street: 3238 Snow Creek Rd NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 3238 Snow Creek Rd NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.78096
-    lng: -81.26769
+  geo: {lat: 35.78096, lng: -81.26769}
   phone: 828-256-2335
-  external_ids:
-    bphc: BPS-H80-040896
+  external_ids: {bphc: BPS-H80-040896}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-southwest-elementary
   name: Kintegra at Southwest Elementary
   categories:
   - community-health-center
-  address:
-    street: 1580 32nd St SW
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 1580 32nd St SW, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.70955
-    lng: -81.38688
+  geo: {lat: 35.70955, lng: -81.38688}
   phone: 828-324-8884
   website: https://www.gfhs.info
-  external_ids:
-    bphc: BPS-H80-028380
+  external_ids: {bphc: BPS-H80-028380}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-st-stephens-high
   name: Kintegra at St Stephens HIgh
   categories:
   - community-health-center
-  address:
-    street: 3205 34th Street Dr NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 3205 34th Street Dr NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.77207
-    lng: -81.26885
+  geo: {lat: 35.77207, lng: -81.26885}
   phone: 828-256-9841
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-030345
+  external_ids: {bphc: BPS-H80-030345}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-viewmont-elementary
   name: Kintegra at Viewmont Elementary
   categories:
   - community-health-center
-  address:
-    street: 21 16th Ave NW
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 21 16th Ave NW, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.7528
-    lng: -81.339
+  geo: {lat: 35.7528, lng: -81.339}
   phone: 828-327-4619
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-028371
+  external_ids: {bphc: BPS-H80-028371}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-at-webb-a-murray-elementary
   name: Kintegra at Webb A. Murray Elementary
   categories:
   - community-health-center
-  address:
-    street: 3901 Section House Rd
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 3901 Section House Rd, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.73955
-    lng: -81.25115
+  geo: {lat: 35.73955, lng: -81.25115}
   phone: 828-256-2196
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-037474
+  external_ids: {bphc: BPS-H80-037474}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-behavioral-health-hickory
   name: Kintegra Behavioral Health - Hickory
   categories:
   - community-health-center
-  address:
-    street: 858 2nd St NE
-    city: Hickory
-    state: nc
-    zip: '28601'
+  cost: sliding-scale
+  address: {street: 858 2nd St NE, city: Hickory, state: nc, zip: '28601'}
   place: '3731060'
-  geo:
-    lat: 35.7445
-    lng: -81.33474
+  geo: {lat: 35.7445, lng: -81.33474}
   phone: 858-624-0550
-  external_ids:
-    bphc: BPS-H80-033916
+  external_ids: {bphc: BPS-H80-033916}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-family-dentistry-hickory
   name: Kintegra Family Dentistry - Hickory
   categories:
   - community-health-center
-  address:
-    street: 3070 11th Avenue Dr SE
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 3070 11th Avenue Dr SE, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.71297
-    lng: -81.2703
+  geo: {lat: 35.71297, lng: -81.2703}
   phone: 704-874-1902
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-016922
+  external_ids: {bphc: BPS-H80-016922}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/kintegra-family-medicine-hickory
   name: Kintegra Family Medicine - Hickory
   categories:
   - community-health-center
-  address:
-    street: 133 1st Ave SE
-    city: Hickory
-    state: nc
-    zip: '28602'
+  cost: sliding-scale
+  address: {street: 133 1st Ave SE, city: Hickory, state: nc, zip: '28602'}
   place: '3731060'
-  geo:
-    lat: 35.73106
-    lng: -81.3362
+  geo: {lat: 35.73106, lng: -81.3362}
   phone: 704-874-3356
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-012926
+  external_ids: {bphc: BPS-H80-012926}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/hickory/mcleod-centers-for-wellbeing-hickory
   name: McLeod Centers for Wellbeing Hickory
   categories:
@@ -747,6 +623,11 @@
     lng: -81.26561
   phone: 704-332-9001
   website: https://www.mcleodcenters.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -768,6 +649,14 @@
     lng: -81.34324
   phone: 828-695-5900
   website: https://www.cvhnc.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

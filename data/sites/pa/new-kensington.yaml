@@ -3,54 +3,44 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Allegheny, Westmoreland Counties
-  address: {street: 909 Industrial Blvd., city: New Kensington, state: pa, zip: 15068-0132}
+  address:
+    street: 909 Industrial Blvd.
+    city: New Kensington
+    state: pa
+    zip: 15068-0132
   place: '4253736'
   phone: 724-832-5524
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/new-kensington/community-health-clinic
   name: Community Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 943 4th Ave
-    city: New Kensington
-    state: pa
-    zip: '15068'
+  cost: sliding-scale
+  address: {street: 943 4th Ave, city: New Kensington, state: pa, zip: '15068'}
   place: '4253736'
-  geo:
-    lat: 40.56585
-    lng: -79.76675
+  geo: {lat: 40.56585, lng: -79.76675}
   phone: 724-335-3334
-  external_ids:
-    bphc: BPS-H80-008293
+  external_ids: {bphc: BPS-H80-008293}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/new-kensington/community-health-clinic-inc-dental-services
   name: Community Health Clinic,Inc - Dental Services
   categories:
   - community-health-center
-  address:
-    street: 947 4th Ave
-    city: New Kensington
-    state: pa
-    zip: '15068'
+  cost: sliding-scale
+  address: {street: 947 4th Ave, city: New Kensington, state: pa, zip: '15068'}
   place: '4253736'
-  geo:
-    lat: 40.56592
-    lng: -79.76652
+  geo: {lat: 40.56592, lng: -79.76652}
   phone: 724-335-2862
-  external_ids:
-    bphc: BPS-H80-011224
+  external_ids: {bphc: BPS-H80-011224}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/new-kensington/grc-advanced-recovery-network-new-kensington-out
   name: GRC Advanced Recovery Network New Kensington Outpatient
   categories:
@@ -66,6 +56,17 @@
     lng: -79.7668
   phone: 800-472-1177
   website: https://www.gatewayrehab.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -163,6 +164,17 @@
     lng: -79.76657
   phone: 724-339-6860
   website: https://www.sphs.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -207,6 +219,11 @@
     lng: -79.76704
   phone: 724-335-9883
   website: https://www.wfspa.org
+  services:
+  - Outpatient
+  - Young adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -228,6 +245,11 @@
     lng: -79.76704
   phone: 724-335-9883
   website: https://wfspa.org/program/child-adult-behavioral-health/
+  services:
+  - Outpatient
+  - Young adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

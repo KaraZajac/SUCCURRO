@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marion County
-  address: {street: 213 East Montgomery St., city: Knoxville, state: ia, zip: '50138'}
+  address:
+    street: 213 East Montgomery St.
+    city: Knoxville
+    state: ia
+    zip: '50138'
   place: '1942015'
   phone: 515-518-4770
   email: info@impactcap.org
   website: https://www.impactcap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/knoxville/infinity-health-knoxville
   name: Infinity Health Knoxville
   categories:
@@ -27,6 +33,9 @@
     lng: -93.11015
   phone: 641-856-6471
   website: https://www.weareinfinityhealth.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,23 +87,15 @@
   name: Knoxville Office
   categories:
   - community-health-center
-  address:
-    street: 1504 N Lincoln St
-    city: Knoxville
-    state: ia
-    zip: '50138'
+  cost: sliding-scale
+  address: {street: 1504 N Lincoln St, city: Knoxville, state: ia, zip: '50138'}
   place: '1942015'
-  geo:
-    lat: 41.33172
-    lng: -93.11012
+  geo: {lat: 41.33172, lng: -93.11012}
   phone: 641-446-2383
-  external_ids:
-    bphc: BPS-H80-032258
+  external_ids: {bphc: BPS-H80-032258}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/knoxville/knoxville-va-clinic
   name: Knoxville VA Clinic
   categories:
@@ -178,6 +179,11 @@
     lng: -93.10937
   phone: 515-280-3860
   website: https://www.ucsonline.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

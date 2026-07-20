@@ -133,24 +133,16 @@
   name: PanCare - Chipley
   categories:
   - community-health-center
-  address:
-    street: 1440 Main St
-    city: Chipley
-    state: fl
-    zip: '32428'
+  cost: sliding-scale
+  address: {street: 1440 Main St, city: Chipley, state: fl, zip: '32428'}
   place: '1211975'
-  geo:
-    lat: 30.76033
-    lng: -85.54661
+  geo: {lat: 30.76033, lng: -85.54661}
   phone: 850-872-4128
   website: https://pancarefl.org
-  external_ids:
-    bphc: BPS-H80-040469
+  external_ids: {bphc: BPS-H80-040469}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/chipley/senior-enrichment-northwest-florida-community-ho
   name: Senior Enrichment Northwest Florida Community Hospital
   categories:
@@ -167,6 +159,10 @@
     lng: -85.54295
   phone: 850-415-7207
   website: https://www.nfch.org/northwestfloridacommunityhospital/hom
+  services:
+  - Outpatient
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

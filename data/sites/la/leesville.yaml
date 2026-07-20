@@ -14,6 +14,17 @@
     lng: -93.26209
   phone: 337-238-6431
   website: https://www.clhsd.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -209,24 +220,16 @@
   name: Outpatient Medical Center, Inc. @ Leesville
   categories:
   - community-health-center
-  address:
-    street: 908 S 10th St
-    city: Leesville
-    state: la
-    zip: '71446'
+  cost: sliding-scale
+  address: {street: 908 S 10th St, city: Leesville, state: la, zip: '71446'}
   place: '2243010'
-  geo:
-    lat: 31.13551
-    lng: -93.27048
+  geo: {lat: 31.13551, lng: -93.27048}
   phone: 337-238-1274
   website: https://www.outpatientmedical.org
-  external_ids:
-    bphc: BPS-H80-021695
+  external_ids: {bphc: BPS-H80-021695}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/leesville/pickering-elementary-head-start
   name: Pickering Elementary Head Start
   categories:
@@ -270,31 +273,29 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Vernon County
-  address: {street: 12286 Lake Charles Highway, city: Leesville, state: la, zip: '71446'}
-  place: '2243010'
-  phone: 337-404-7710
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: la/leesville/vernon-parish-community-health-center
-  name: Vernon Parish Community Health Center
-  categories:
-  - community-health-center
   address:
-    street: 298 Nolan Trce
+    street: 12286 Lake Charles Highway
     city: Leesville
     state: la
     zip: '71446'
   place: '2243010'
-  geo:
-    lat: 31.14325
-    lng: -93.26615
-  phone: 337-392-0110
-  website: https://www.icchc.org
-  external_ids:
-    bphc: BPS-H80-027895
+  phone: 337-404-7710
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: la/leesville/vernon-parish-community-health-center
+  name: Vernon Parish Community Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 298 Nolan Trce, city: Leesville, state: la, zip: '71446'}
+  place: '2243010'
+  geo: {lat: 31.14325, lng: -93.26615}
+  phone: 337-392-0110
+  website: https://www.icchc.org
+  external_ids: {bphc: BPS-H80-027895}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}

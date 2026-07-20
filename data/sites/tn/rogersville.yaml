@@ -37,6 +37,15 @@
     lng: -82.97972
   phone: 423-467-3600
   website: https://www.frontierhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -88,24 +97,16 @@
   name: 'H.C. Mobile Unit #1'
   categories:
   - community-health-center
-  address:
-    street: 4966 Highway 11W
-    city: Rogersville
-    state: tn
-    zip: '37857'
+  cost: sliding-scale
+  address: {street: 4966 Highway 11W, city: Rogersville, state: tn, zip: '37857'}
   place: '4764820'
-  geo:
-    lat: 36.46088
-    lng: -82.94125
+  geo: {lat: 36.46088, lng: -82.94125}
   phone: 423-272-9163
   website: https://www.rhsctn.com
-  external_ids:
-    bphc: BPS-H80-008658
+  external_ids: {bphc: BPS-H80-008658}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/rogersville/harmon-street-apartments-non-congregate
   name: Harmon Street Apartments {Non-Congregate}
   categories:
@@ -133,24 +134,16 @@
   name: HAWKINS MEDICAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 4966 Highway 11W
-    city: Rogersville
-    state: tn
-    zip: '37857'
+  cost: sliding-scale
+  address: {street: 4966 Highway 11W, city: Rogersville, state: tn, zip: '37857'}
   place: '4764820'
-  geo:
-    lat: 36.46088
-    lng: -82.94125
+  geo: {lat: 36.46088, lng: -82.94125}
   phone: 423-272-9163
   website: https://www.rhsctn.com
-  external_ids:
-    bphc: BPS-H80-004665
+  external_ids: {bphc: BPS-H80-004665}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/rogersville/joseph-rogers-elementary-school
   name: Joseph Rogers Elementary School
   categories:
@@ -246,23 +239,15 @@
   name: Mobile Unit 02
   categories:
   - community-health-center
-  address:
-    street: 4966 Highway 11W
-    city: Rogersville
-    state: tn
-    zip: '37857'
+  cost: sliding-scale
+  address: {street: 4966 Highway 11W, city: Rogersville, state: tn, zip: '37857'}
   place: '4764820'
-  geo:
-    lat: 36.46088
-    lng: -82.94125
+  geo: {lat: 36.46088, lng: -82.94125}
   phone: 423-470-3642
-  external_ids:
-    bphc: BPS-H80-017968
+  external_ids: {bphc: BPS-H80-017968}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/rogersville/rogersville-city-pool
   name: Rogersville City Pool
   categories:
@@ -310,24 +295,16 @@
   name: ROGERSVILLE MEDICAL COMPLEX
   categories:
   - community-health-center
-  address:
-    street: 4307 Highway 66 S
-    city: Rogersville
-    state: tn
-    zip: '37857'
+  cost: sliding-scale
+  address: {street: 4307 Highway 66 S, city: Rogersville, state: tn, zip: '37857'}
   place: '4764820'
-  geo:
-    lat: 36.39649
-    lng: -83.01598
+  geo: {lat: 36.39649, lng: -83.01598}
   phone: 423-921-1600
   website: https://www.rhsctn.com
-  external_ids:
-    bphc: BPS-H80-008682
+  external_ids: {bphc: BPS-H80-008682}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/rogersville/rogersville-va-clinic
   name: Rogersville VA Clinic
   categories:
@@ -340,6 +317,17 @@
   place: '4764820'
   phone: 423-235-1471
   website: https://
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -392,13 +380,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hawkins County
-  address: {street: '904 East Main Street, Suite 1', city: Rogersville, state: tn, zip: '37857'}
+  address:
+    street: 904 East Main Street, Suite 1
+    city: Rogersville
+    state: tn
+    zip: '37857'
   place: '4764820'
   phone: 423-246-6180
   website: https://uethda.org/energy-2/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/rogersville/vererans-center-of-east-tn
   name: Vererans Center of East TN
   categories:

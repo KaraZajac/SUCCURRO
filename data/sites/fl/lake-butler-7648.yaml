@@ -2,23 +2,15 @@
   name: Florida Department of Health in Union County - New River Community Health Care Center
   categories:
   - community-health-center
-  address:
-    street: 495 E Main St
-    city: Lake Butler
-    state: fl
-    zip: '32054'
+  cost: sliding-scale
+  address: {street: 495 E Main St, city: Lake Butler, state: fl, zip: '32054'}
   place: '1237648'
-  geo:
-    lat: 30.02345
-    lng: -82.33155
+  geo: {lat: 30.02345, lng: -82.33155}
   phone: 386-496-3211
-  external_ids:
-    bphc: BPS-H80-022245
+  external_ids: {bphc: BPS-H80-022245}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/lake-butler-7648/lake-butler-elementary-school-summer
   name: Lake Butler Elementary School - Summer
   categories:
@@ -57,6 +49,13 @@
     lng: -82.33828
   phone: 386-496-2347 x8500
   website: https://www.mbhci.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,13 +66,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Union County
-  address: {street: 665 SE 4th St., city: Lake Butler, state: fl, zip: '32054'}
+  address:
+    street: 665 SE 4th St.
+    city: Lake Butler
+    state: fl
+    zip: '32054'
   place: '1237648'
   phone: 386-496-2342
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/lake-butler-7648/union-county-high-school
   name: Union County High School
   categories:

@@ -14,6 +14,14 @@
     lng: -88.58664
   phone: 731-244-0780
   website: https://applegaterecovery.com/locations/tennessee/selmer/?utm_source=google&utm_medium=GBP&utm_campa
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -69,24 +77,16 @@
   name: Lifespan Selmer
   categories:
   - community-health-center
-  address:
-    street: 181 S Y Sq
-    city: Selmer
-    state: tn
-    zip: '38375'
+  cost: sliding-scale
+  address: {street: 181 S Y Sq, city: Selmer, state: tn, zip: '38375'}
   place: '4766940'
-  geo:
-    lat: 35.16523
-    lng: -88.58449
+  geo: {lat: 35.16523, lng: -88.58449}
   phone: 731-925-2300
   website: https://lifespanhealth.com
-  external_ids:
-    bphc: BPS-H80-028147
+  external_ids: {bphc: BPS-H80-028147}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/selmer/mcnairy-central-high-school
   name: Mcnairy Central High School
   categories:
@@ -172,6 +172,9 @@
     lng: -88.55846
   phone: 731-658-6113
   website: https://QuincoTN.gov
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -224,13 +227,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving McNairy County
-  address: {street: 701 Industrial Park Drive, city: Selmer, state: tn, zip: '38375'}
+  address:
+    street: 701 Industrial Park Drive
+    city: Selmer
+    state: tn
+    zip: '38375'
   place: '4766940'
   phone: 731-645-5739
   website: https://www.swhra.org/low-income-energy-assistance-program/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/selmer/townhouse-apartments-noncongregate
   name: Townhouse Apartments - Noncongregate
   categories:

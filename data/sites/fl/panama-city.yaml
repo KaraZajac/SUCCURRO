@@ -88,13 +88,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bay County
-  address: {street: 'ATTN: LIHEAP 1116 Frankford Ave.', city: Panama City, state: fl, zip: '32401'}
+  address:
+    street: 'ATTN: LIHEAP 1116 Frankford Ave.'
+    city: Panama City
+    state: fl
+    zip: '32401'
   place: '1254700'
   phone: 850-769-3468
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/panama-city/bay-county-vet-center
   name: Bay County Vet Center
   categories:
@@ -214,6 +220,22 @@
     lng: -85.60711
   phone: 850-872-7676
   website: https://www.care4000.com
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -276,6 +298,21 @@
     lng: -85.65871
   phone: 850-481-0306
   website: https://www.emeraldcoastbehavioral.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -296,6 +333,9 @@
     lng: -85.66301
   phone: 813-290-8560
   website: https://www.familiesfirstfl.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -358,6 +398,11 @@
     lng: -85.66703
   phone: 850-522-1516
   website: https://www.gcamed.com/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -421,6 +466,15 @@
     lng: -85.65318
   phone: 850-522-4485 x1110
   website: https://www.lmccares.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -513,286 +567,182 @@
   name: PanCare Dental - Panama City
   categories:
   - community-health-center
-  address:
-    street: 403 E 11th St
-    city: Panama City
-    state: fl
-    zip: '32401'
+  cost: sliding-scale
+  address: {street: 403 E 11th St, city: Panama City, state: fl, zip: '32401'}
   place: '1254700'
-  geo:
-    lat: 30.16804
-    lng: -85.65522
+  geo: {lat: 30.16804, lng: -85.65522}
   phone: 850-767-3350
   website: https://www.pancarefl.org
-  external_ids:
-    bphc: BPS-H80-017645
+  external_ids: {bphc: BPS-H80-017645}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-dental-mobile-unit
   name: PanCare Health Dental Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 403 E 11th St
-    city: Panama City
-    state: fl
-    zip: '32401'
+  cost: sliding-scale
+  address: {street: 403 E 11th St, city: Panama City, state: fl, zip: '32401'}
   place: '1254700'
-  geo:
-    lat: 30.16804
-    lng: -85.65522
+  geo: {lat: 30.16804, lng: -85.65522}
   phone: 850-767-3350
-  external_ids:
-    bphc: BPS-H80-027534
+  external_ids: {bphc: BPS-H80-027534}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-gulf-coast
   name: PanCare Health Gulf Coast
   categories:
   - community-health-center
-  address:
-    street: 5230 W Highway 98
-    city: Panama City
-    state: fl
-    zip: '32401'
+  cost: sliding-scale
+  address: {street: 5230 W Highway 98, city: Panama City, state: fl, zip: '32401'}
   place: '1254700'
-  geo:
-    lat: 30.1817
-    lng: -85.72367
+  geo: {lat: 30.1817, lng: -85.72367}
   phone: 850-873-3535
   website: https://pancarefl.org
-  external_ids:
-    bphc: BPS-H80-033947
+  external_ids: {bphc: BPS-H80-033947}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-1
   name: 'PanCare Health Mobile Unit #1'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-747-5599
-  external_ids:
-    bphc: BPS-H80-027533
+  external_ids: {bphc: BPS-H80-027533}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-11
   name: 'PanCare Health Mobile Unit #11'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: https://pancarefl.org
-  external_ids:
-    bphc: BPS-H80-037271
+  external_ids: {bphc: BPS-H80-037271}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-5
   name: 'PanCare Health Mobile Unit #5'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: http://pancarefl.org/
-  external_ids:
-    bphc: BPS-H80-033514
+  external_ids: {bphc: BPS-H80-033514}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-6
   name: 'PanCare Health Mobile Unit #6'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: http://pancarefl.org/
-  external_ids:
-    bphc: BPS-H80-033511
+  external_ids: {bphc: BPS-H80-033511}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-7
   name: 'PanCare Health Mobile Unit #7'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: http://pancarefl.org/
-  external_ids:
-    bphc: BPS-H80-033513
+  external_ids: {bphc: BPS-H80-033513}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-8
   name: 'PanCare Health Mobile Unit #8'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: http://pancarefl.org/
-  external_ids:
-    bphc: BPS-H80-033512
+  external_ids: {bphc: BPS-H80-033512}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-mobile-unit-9
   name: 'PanCare Health Mobile Unit #9'
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-247-9834
   website: http:// pancarefl.org/
-  external_ids:
-    bphc: BPS-H80-033510
+  external_ids: {bphc: BPS-H80-033510}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-panama-city
   name: PanCare Health  -  Panama City
   categories:
   - community-health-center
-  address:
-    street: 2235 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2235 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63376
+  geo: {lat: 30.1754, lng: -85.63376}
   phone: 850-818-0050
   website: https://www.pancarefl.org
-  external_ids:
-    bphc: BPS-H80-031589
+  external_ids: {bphc: BPS-H80-031589}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-health-panama-city-2
   name: PanCare Health - Panama City
   categories:
   - community-health-center
-  address:
-    street: 2309 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2309 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63292
+  geo: {lat: 30.1754, lng: -85.63292}
   phone: 850-747-5272
   website: https://www.pancarefl.org
-  external_ids:
-    bphc: BPS-H80-000148
+  external_ids: {bphc: BPS-H80-000148}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/pancare-panama-city
   name: PanCare Panama City
   categories:
   - community-health-center
-  address:
-    street: 2235 E 15th St
-    city: Panama City
-    state: fl
-    zip: '32405'
+  cost: sliding-scale
+  address: {street: 2235 E 15th St, city: Panama City, state: fl, zip: '32405'}
   place: '1254700'
-  geo:
-    lat: 30.1754
-    lng: -85.63376
+  geo: {lat: 30.1754, lng: -85.63376}
   phone: 850-747-5272
   website: https://www.pancarefl.org
-  external_ids:
-    bphc: BPS-H80-033445
+  external_ids: {bphc: BPS-H80-033445}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/panama-city/parker-elementary-school
   name: Parker Elementary School
   categories:
@@ -852,6 +802,12 @@
     lng: -85.66001
   phone: 850-769-5695
   website: https://www.tcaclinics.com/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

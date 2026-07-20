@@ -2,23 +2,15 @@
   name: Berlin BH &CC
   categories:
   - community-health-center
-  address:
-    street: 10344 Old Ocean City Blvd, Ste 2
-    city: Berlin
-    state: md
-    zip: '21811'
+  cost: sliding-scale
+  address: {street: '10344 Old Ocean City Blvd, Ste 2', city: Berlin, state: md, zip: '21811'}
   place: '2406800'
-  geo:
-    lat: 38.33888
-    lng: -75.2034
+  geo: {lat: 38.33888, lng: -75.2034}
   phone: 410-673-6679
-  external_ids:
-    bphc: BPS-H80-038827
+  external_ids: {bphc: BPS-H80-038827}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/berlin/berlin-child-development-center
   name: Berlin Child Development Center
   categories:
@@ -42,24 +34,16 @@
   name: CHC - Berlin 9958
   categories:
   - community-health-center
-  address:
-    street: 9958 N Main St
-    city: Berlin
-    state: md
-    zip: '21811'
+  cost: sliding-scale
+  address: {street: 9958 N Main St, city: Berlin, state: md, zip: '21811'}
   place: '2406800'
-  geo:
-    lat: 38.34231
-    lng: -75.21894
+  geo: {lat: 38.34231, lng: -75.21894}
   phone: 410-973-2820
   website: https://chesapeakehc.org
-  external_ids:
-    bphc: BPS-H80-034110
+  external_ids: {bphc: BPS-H80-034110}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/berlin/chesapeake-healthcare
   name: Chesapeake Healthcare
   categories:
@@ -76,6 +60,9 @@
     lng: -75.21893
   phone: 410-973-2820
   website: https://chesapeakehc.org/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -119,6 +106,22 @@
     lng: -75.21007
   phone: 410-632-1100
   website: https://www.worcesterhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

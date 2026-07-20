@@ -2,24 +2,16 @@
   name: Agape Health Services- Plymouth
   categories:
   - community-health-center
-  address:
-    street: 115 Adams St
-    city: Plymouth
-    state: nc
-    zip: '27962'
+  cost: sliding-scale
+  address: {street: 115 Adams St, city: Plymouth, state: nc, zip: '27962'}
   place: '3753040'
-  geo:
-    lat: 35.86707
-    lng: -76.74968
+  geo: {lat: 35.86707, lng: -76.74968}
   phone: 252-940-0602
   website: https://wwww.agapechc.org
-  external_ids:
-    bphc: BPS-H80-035150
+  external_ids: {bphc: BPS-H80-035150}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/plymouth/spring-life-behavioral-care-llc
   name: Spring Life Behavioral Care LLC
   categories:
@@ -36,6 +28,22 @@
     lng: -76.75644
   phone: 252-791-1052
   website: https://springlifecare.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,13 +54,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: 209 E. Main St. (P. O. Box 10), city: Plymouth, state: nc, zip: '27962'}
+  address:
+    street: 209 E. Main St. (P. O. Box 10)
+    city: Plymouth
+    state: nc
+    zip: '27962'
   place: '3753040'
   phone: 252-793-4041
   website: https://washconc.org/department-of-social-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/plymouth/washington-county-early-head-start
   name: Washington County Early Head Start
   categories:

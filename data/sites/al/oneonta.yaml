@@ -25,58 +25,48 @@
   name: BLOUNT COUNTY QUALITY HEALTH CARE
   categories:
   - community-health-center
-  address:
-    street: 1000 Lincoln Ave
-    city: Oneonta
-    state: al
-    zip: '35121'
+  cost: sliding-scale
+  address: {street: 1000 Lincoln Ave, city: Oneonta, state: al, zip: '35121'}
   place: '0157000'
-  geo:
-    lat: 33.9574
-    lng: -86.46644
+  geo: {lat: 33.9574, lng: -86.46644}
   phone: 205-274-9799
   website: https://www.qolhs.org
-  external_ids:
-    bphc: BPS-H80-002354
+  external_ids: {bphc: BPS-H80-002354}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/oneonta/blount-county-quality-health-care-2
   name: Blount County Quality Health Care
   categories:
   - community-health-center
-  address:
-    street: 1008 Park Ave
-    city: Oneonta
-    state: al
-    zip: '35121'
+  cost: sliding-scale
+  address: {street: 1008 Park Ave, city: Oneonta, state: al, zip: '35121'}
   place: '0157000'
-  geo:
-    lat: 33.95783
-    lng: -86.46701
+  geo: {lat: 33.95783, lng: -86.46701}
   phone: 256-492-0131
   website: https://www.qolhs.org
-  external_ids:
-    bphc: BPS-H80-033427
+  external_ids: {bphc: BPS-H80-033427}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/oneonta/community-action-agency-of-northeast-alabama-blo
   name: Community Action Agency of Northeast Alabama Blount
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Blount County
-  address: {street: 1004 2nd Ave. E, city: Oneonta, state: al, zip: '35122'}
+  address:
+    street: 1004 2nd Ave. E
+    city: Oneonta
+    state: al
+    zip: '35122'
   place: '0157000'
   phone: 256-638-4430
   website: http://www.caaneal.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/oneonta/free-little-food-pantry-on-crestwood-dr
   name: Free Little Food Pantry on Crestwood Dr.
   categories:
@@ -127,6 +117,13 @@
     lng: -86.46612
   phone: 205-625-4673 x301
   website: https://myhopehouse.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

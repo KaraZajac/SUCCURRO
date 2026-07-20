@@ -21,24 +21,16 @@
   name: Community Health Shawnee Family Medical Center
   categories:
   - community-health-center
-  address:
-    street: 130 N Broadway Ave, Suite 300
-    city: Shawnee
-    state: ok
-    zip: '74801'
+  cost: sliding-scale
+  address: {street: '130 N Broadway Ave, Suite 300', city: Shawnee, state: ok, zip: '74801'}
   place: '4066800'
-  geo:
-    lat: 35.32854
-    lng: -96.9237
+  geo: {lat: 35.32854, lng: -96.9237}
   phone: 405-395-0399
   website: https://www.communityhealthok.org
-  external_ids:
-    bphc: BPS-H80-027783
+  external_ids: {bphc: BPS-H80-027783}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/shawnee/community-market-of-pottawatomie-county-noncongr
   name: Community Market Of Pottawatomie County Noncongregate(N271)
   categories:
@@ -78,6 +70,11 @@
     lng: -96.91148
   phone: 405-214-0116
   website: https://www.focusmhs.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -130,13 +127,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pottawatomie County
-  address: {street: 2320 Arlington Ste. B, city: Shawnee, state: ok, zip: '74801'}
+  address:
+    street: 2320 Arlington Ste. B
+    city: Shawnee
+    state: ok
+    zip: '74801'
   place: '4066800'
   phone: 405-878-4000
   website: http://www.okdhs.org/okdhslocal/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/shawnee/learning-tree-hs-ehs-shawnee
   name: Learning Tree HS/EHS - Shawnee
   categories:
@@ -251,6 +254,13 @@
     lng: -96.91238
   phone: 405-214-4777
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -272,6 +282,13 @@
     lng: -96.91257
   phone: 405-275-7100
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

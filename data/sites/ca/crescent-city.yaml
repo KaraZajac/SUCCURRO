@@ -41,78 +41,60 @@
   name: Del Norte Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 550 E Washington Blvd
-    city: Crescent City
-    state: ca
-    zip: '95531'
+  cost: sliding-scale
+  address: {street: 550 E Washington Blvd, city: Crescent City, state: ca, zip: '95531'}
   place: '0617022'
-  geo:
-    lat: 41.77322
-    lng: -124.1989
+  geo: {lat: 41.77322, lng: -124.1989}
   phone: 707-465-6925
   website: https://www.opendoorhealth.com
-  external_ids:
-    bphc: BPS-H80-000666
+  external_ids: {bphc: BPS-H80-000666}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/crescent-city/del-norte-mobile-dental
   name: Del Norte Mobile Dental
   categories:
   - community-health-center
-  address:
-    street: 550 E Washington Blvd
-    city: Crescent City
-    state: ca
-    zip: '95531'
+  cost: sliding-scale
+  address: {street: 550 E Washington Blvd, city: Crescent City, state: ca, zip: '95531'}
   place: '0617022'
-  geo:
-    lat: 41.77322
-    lng: -124.1989
+  geo: {lat: 41.77322, lng: -124.1989}
   phone: 707-465-4636
-  external_ids:
-    bphc: BPS-H80-019352
+  external_ids: {bphc: BPS-H80-019352}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/crescent-city/del-norte-mobile-health-services
   name: Del Norte Mobile Health Services
   categories:
   - community-health-center
-  address:
-    street: 550 E Washington Blvd, Suite 100
-    city: Crescent City
-    state: ca
-    zip: '95531'
+  cost: sliding-scale
+  address: {street: '550 E Washington Blvd, Suite 100', city: Crescent City, state: ca, zip: '95531'}
   place: '0617022'
-  geo:
-    lat: 41.77322
-    lng: -124.1989
+  geo: {lat: 41.77322, lng: -124.1989}
   phone: 707-465-6925
-  external_ids:
-    bphc: BPS-H80-038744
+  external_ids: {bphc: BPS-H80-038744}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/crescent-city/del-norte-senior-center
   name: Del Norte Senior Center
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Del Norte County
-  address: {street: 1765 Northcrest Drive, city: Crescent City, state: ca, zip: '95531'}
+  address:
+    street: 1765 Northcrest Drive
+    city: Crescent City
+    state: ca
+    zip: '95531'
   place: '0617022'
   phone: 707-464-3069
   website: http://www.delnorteseniorcenter.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ca/crescent-city/del-norte-usd-sunset-center
   name: Del Norte USD-Sunset Center
   categories:
@@ -155,23 +137,15 @@
   name: Open Door Teen Clinic
   categories:
   - community-health-center
-  address:
-    street: 833 W Washington Blvd
-    city: Crescent City
-    state: ca
-    zip: '95531'
+  cost: sliding-scale
+  address: {street: 833 W Washington Blvd, city: Crescent City, state: ca, zip: '95531'}
   place: '0617022'
-  geo:
-    lat: 41.77268
-    lng: -124.21177
+  geo: {lat: 41.77268, lng: -124.21177}
   phone: 707-495-6925
-  external_ids:
-    bphc: BPS-H80-019351
+  external_ids: {bphc: BPS-H80-019351}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/crescent-city/st-paul-s-little-free-pantry
   name: St. Paul's Little Free Pantry
   categories:
@@ -202,6 +176,17 @@
     lng: -124.15906
   phone: 707-464-2919
   website: https://www.unitedindianhealthservices.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

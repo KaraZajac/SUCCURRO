@@ -175,23 +175,15 @@
   name: Rhea County Primary Care Center
   categories:
   - community-health-center
-  address:
-    street: 8850 Rhea County Hwy
-    city: Dayton
-    state: tn
-    zip: '37321'
+  cost: sliding-scale
+  address: {street: 8850 Rhea County Hwy, city: Dayton, state: tn, zip: '37321'}
   place: '4719700'
-  geo:
-    lat: 35.52557
-    lng: -84.98893
+  geo: {lat: 35.52557, lng: -84.98893}
   phone: 423-775-1160
-  external_ids:
-    bphc: BPS-H80-011187
+  external_ids: {bphc: BPS-H80-011187}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/dayton/volunteer-behavioral-health-dayton-campus
   name: Volunteer Behavioral Health Dayton Campus
   categories:
@@ -208,6 +200,13 @@
     lng: -85.00109
   phone: 423-570-0077
   website: https://volunteerbehavioralhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

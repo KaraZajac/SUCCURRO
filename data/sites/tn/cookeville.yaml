@@ -54,6 +54,16 @@
     lng: -85.47924
   phone: 931-528-6803
   website: https://www.bradfordhealth.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -75,6 +85,22 @@
     lng: -85.46193
   phone: 615-242-7410
   website: https://www.clarvida.com/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -182,6 +208,10 @@
     lng: -85.49755
   phone: 615-234-8615
   website: https://www.cumberlandheights.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -203,6 +233,9 @@
     lng: -85.48058
   phone: 931-528-8593
   website: https://www.generationsgaither.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -223,6 +256,11 @@
     lng: -85.49509
   phone: 888-858-1723
   website: https://www.joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -244,6 +282,17 @@
     lng: -85.49376
   phone: 931-526-6042
   website: https://www.healthconnectamerica.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -398,23 +447,15 @@
   name: Putnam County Health Department Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 701 County Services Dr
-    city: Cookeville
-    state: tn
-    zip: '38501'
+  cost: sliding-scale
+  address: {street: 701 County Services Dr, city: Cookeville, state: tn, zip: '38501'}
   place: '4716920'
-  geo:
-    lat: 36.14945
-    lng: -85.52269
+  geo: {lat: 36.14945, lng: -85.52269}
   phone: 931-528-2531
-  external_ids:
-    bphc: BPS-H80-008967
+  external_ids: {bphc: BPS-H80-008967}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/cookeville/shiloh-head-start
   name: Shiloh Head Start
   categories:
@@ -468,6 +509,22 @@
     lng: -85.52434
   phone: 931-303-0889
   website: https://www.sperohealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -477,56 +534,46 @@
   name: 'UCPCP Mobile Unit #1'
   categories:
   - community-health-center
-  address:
-    street: 1100 England Dr
-    city: Cookeville
-    state: tn
-    zip: '38501'
+  cost: sliding-scale
+  address: {street: 1100 England Dr, city: Cookeville, state: tn, zip: '38501'}
   place: '4716920'
-  geo:
-    lat: 36.13681
-    lng: -85.4837
+  geo: {lat: 36.13681, lng: -85.4837}
   phone: 931-528-7531
-  external_ids:
-    bphc: BPS-H80-039338
+  external_ids: {bphc: BPS-H80-039338}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/cookeville/upper-cumberland-human-resource-agency-putnam
   name: Upper Cumberland Human Resource Agency - Putnam
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Putnam County
-  address: {street: 580 S. Jefferson Ave. Ste. B, city: Cookeville, state: tn, zip: '38501'}
+  address:
+    street: 580 S. Jefferson Ave. Ste. B
+    city: Cookeville
+    state: tn
+    zip: '38501'
   place: '4716920'
   phone: 931-528-1127
   website: https://uchra.org/communityservices/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/cookeville/upper-cumberland-primary-care-project
   name: Upper Cumberland Primary Care Project
   categories:
   - community-health-center
-  address:
-    street: 1100 England Dr
-    city: Cookeville
-    state: tn
-    zip: '38501'
+  cost: sliding-scale
+  address: {street: 1100 England Dr, city: Cookeville, state: tn, zip: '38501'}
   place: '4716920'
-  geo:
-    lat: 36.13681
-    lng: -85.4837
+  geo: {lat: 36.13681, lng: -85.4837}
   phone: 931-528-7531
-  external_ids:
-    bphc: BPS-H80-012756
+  external_ids: {bphc: BPS-H80-012756}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/cookeville/volunteer-behavioral-health-cookeville-campus
   name: Volunteer Behavioral Health Cookeville Campus
   categories:
@@ -543,6 +590,18 @@
     lng: -85.53225
   phone: 931-432-4123
   website: https://volunteerbehavioralhealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

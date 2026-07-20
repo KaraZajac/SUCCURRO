@@ -21,24 +21,16 @@
   name: BURLINGTON HLTH & REHAB CENTER
   categories:
   - community-health-center
-  address:
-    street: 300 Pearl St
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 300 Pearl St, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.48126
-    lng: -73.20673
+  geo: {lat: 44.48126, lng: -73.20673}
   phone: 802-658-4200
   website: https://www.chcb.org
-  external_ids:
-    bphc: BPS-H80-007479
+  external_ids: {bphc: BPS-H80-007479}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/burlington-lakeside-cboc-va-mental-health-servic
   name: Burlington Lakeside CBOC VA Mental Health Services
   categories:
@@ -55,6 +47,13 @@
     lng: -73.21831
   phone: 802-657-7090
   website: https://www.va.gov/white-river-junction-health-care/locations/burlington-lakeside-va-clinic/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -119,13 +118,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Grand Isle County
-  address: {street: 255 South Champlain Street (P. O. Box 1603), city: Burlington, state: vt, zip: '05401'}
+  address:
+    street: 255 South Champlain Street (P. O. Box 1603)
+    city: Burlington
+    state: vt
+    zip: '05401'
   place: '5010675'
   phone: 802-862-2771
   website: https://www.cvoeo.org/get-help/home-heating-fuel-and-utilities
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: vt/burlington/college-street-early-learning-center
   name: College Street Early Learning Center
   categories:
@@ -149,89 +154,57 @@
   name: Community Health Centers - Pearl Street
   categories:
   - community-health-center
-  address:
-    street: 179 Pearl St
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 179 Pearl St, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.48033
-    lng: -73.21189
+  geo: {lat: 44.48033, lng: -73.21189}
   phone: 802-652-1080
   website: https://www.chcb.org
-  external_ids:
-    bphc: BPS-H80-006190
+  external_ids: {bphc: BPS-H80-006190}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/community-health-centers-riverside
   name: Community Health Centers - Riverside
   categories:
   - community-health-center
-  address:
-    street: 617 Riverside Ave
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 617 Riverside Ave, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.49013
-    lng: -73.20605
+  geo: {lat: 44.49013, lng: -73.20605}
   phone: 802-864-6309
   website: https://www.chcb.org
-  external_ids:
-    bphc: BPS-H80-011088
+  external_ids: {bphc: BPS-H80-011088}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/community-health-centers-safe-harbor
   name: Community Health Centers - Safe Harbor
   categories:
   - community-health-center
-  address:
-    street: 184 S Winooski Ave
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 184 S Winooski Ave, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.47498
-    lng: -73.21059
+  geo: {lat: 44.47498, lng: -73.21059}
   phone: 802-860-4310
   website: https://www.chcb.org
-  external_ids:
-    bphc: BPS-H80-004299
+  external_ids: {bphc: BPS-H80-004299}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/community-health-centers-south-end
   name: Community Health Centers - South End
   categories:
   - community-health-center
-  address:
-    street: 789 Pine St
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 789 Pine St, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.45749
-    lng: -73.21502
+  geo: {lat: 44.45749, lng: -73.21502}
   phone: 802-864-0693
-  external_ids:
-    bphc: BPS-H80-017252
+  external_ids: {bphc: BPS-H80-017252}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/edmunds-middle-school
   name: Edmunds Middle School
   categories:
@@ -289,6 +262,15 @@
     lng: -73.21528
   phone: 802-488-6412
   website: https://www.howardcenter.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -310,6 +292,17 @@
     lng: -73.21505
   phone: 802-488-6100
   website: https://www.howardcenter.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -372,6 +365,14 @@
     lng: -73.20654
   phone: 802-864-7467
   website: https://www.lundvt.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -381,23 +382,15 @@
   name: LUND Family Center
   categories:
   - community-health-center
-  address:
-    street: 76 Glen Rd
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 76 Glen Rd, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.45562
-    lng: -73.20652
+  geo: {lat: 44.45562, lng: -73.20652}
   phone: 802-864-7467
-  external_ids:
-    bphc: BPS-H80-028339
+  external_ids: {bphc: BPS-H80-028339}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/riverside-early-learning-center
   name: Riverside Early Learning Center
   categories:
@@ -421,23 +414,15 @@
   name: Riverstone Counseling
   categories:
   - community-health-center
-  address:
-    street: 84 Pine St
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 84 Pine St, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.47753
-    lng: -73.21543
+  geo: {lat: 44.47753, lng: -73.21543}
   phone: 802-864-7423
-  external_ids:
-    bphc: BPS-H80-039862
+  external_ids: {bphc: BPS-H80-039862}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/roosevelt-park
   name: Roosevelt Park
   categories:
@@ -464,24 +449,16 @@
   name: School-Based Dental Center at the Integrated Arts Academy (IAA)
   categories:
   - community-health-center
-  address:
-    street: 6 Archibald St
-    city: Burlington
-    state: vt
-    zip: '05401'
+  cost: sliding-scale
+  address: {street: 6 Archibald St, city: Burlington, state: vt, zip: '05401'}
   place: '5010675'
-  geo:
-    lat: 44.488
-    lng: -73.2139
+  geo: {lat: 44.488, lng: -73.2139}
   phone: 802-658-4869
   website: https://www.chcb.org
-  external_ids:
-    bphc: BPS-H80-005682
+  external_ids: {bphc: BPS-H80-005682}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/burlington/spectrum-youth-and-family-services
   name: Spectrum Youth and Family Services
   categories:
@@ -498,6 +475,13 @@
     lng: -73.21536
   phone: 802-864-7423 x310
   website: https://www.spectrumvt.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -519,6 +503,11 @@
     lng: -73.20143
   phone: 802-847-3333
   website: https://www.uvmhealth.org/medcenter/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -540,6 +529,9 @@
     lng: -73.19575
   phone: 802-847-3333
   website: https://www.uvmhealth.org/medcenter/Pages/default.aspx
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -561,6 +553,9 @@
     lng: -73.20143
   phone: 802-847-4563
   website: https://
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

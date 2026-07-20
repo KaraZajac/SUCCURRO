@@ -2,24 +2,16 @@
   name: Community Health Center of the North Country
   categories:
   - community-health-center
-  address:
-    street: 77 W Barney St
-    city: Gouverneur
-    state: ny
-    zip: '13642'
+  cost: sliding-scale
+  address: {street: 77 W Barney St, city: Gouverneur, state: ny, zip: '13642'}
   place: '3629597'
-  geo:
-    lat: 44.33764
-    lng: -75.47425
+  geo: {lat: 44.33764, lng: -75.47425}
   phone: 315-535-1300
   website: https://www.chcnorthcountry.org
-  external_ids:
-    bphc: BPS-H80-012895
+  external_ids: {bphc: BPS-H80-012895}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/gouverneur/gouverneur-elementary-school
   name: Gouverneur Elementary School
   categories:
@@ -78,6 +70,9 @@
     lng: -75.4745
   phone: 315-287-1000
   website: https://www.rochesterregional.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -120,6 +115,13 @@
     lng: -75.4745
   phone: 315-261-6333
   website: https://www.rochesterregional.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -137,6 +139,10 @@
   place: '3629597'
   phone: 315-287-4186
   website: https://www.thrivenny.com
+  services:
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

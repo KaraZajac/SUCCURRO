@@ -63,13 +63,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Moffat County
-  address: {street: '1198 W. Victory Way, Ste. 204', city: Craig, state: co, zip: '81625'}
+  address:
+    street: 1198 W. Victory Way, Ste. 204
+    city: Craig
+    state: co
+    zip: '81625'
   place: 0817760
   phone: 970-824-8282
   website: https://www.colorado.gov/pacific/moffatcounty/department-human-services-0
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/craig/moffat-county-high-school
   name: Moffat County High School
   categories:
@@ -96,46 +102,30 @@
   name: Northwest Colorado Health Community Health Center  -  Moffat County
   categories:
   - community-health-center
-  address:
-    street: 745 Russell St
-    city: Craig
-    state: co
-    zip: '81625'
+  cost: sliding-scale
+  address: {street: 745 Russell St, city: Craig, state: co, zip: '81625'}
   place: 0817760
-  geo:
-    lat: 40.51874
-    lng: -107.54522
+  geo: {lat: 40.51874, lng: -107.54522}
   phone: 970-824-8233
   website: https://www.northwestcoloradohealth.org
-  external_ids:
-    bphc: BPS-H80-007679
+  external_ids: {bphc: BPS-H80-007679}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/craig/northwest-colorado-health-dental-clinic-craig
   name: Northwest Colorado Health Dental Clinic  -  Craig
   categories:
   - community-health-center
-  address:
-    street: 485 Yampa Ave
-    city: Craig
-    state: co
-    zip: '81625'
+  cost: sliding-scale
+  address: {street: 485 Yampa Ave, city: Craig, state: co, zip: '81625'}
   place: 0817760
-  geo:
-    lat: 40.51401
-    lng: -107.54718
+  geo: {lat: 40.51401, lng: -107.54718}
   phone: 970-824-8000
   website: https://www.northwestcoloradohealth.org
-  external_ids:
-    bphc: BPS-H80-019042
+  external_ids: {bphc: BPS-H80-019042}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/craig/sandrock-elementary
   name: Sandrock Elementary
   categories:
@@ -174,6 +164,22 @@
     lng: -107.57079
   phone: 970-824-2557
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

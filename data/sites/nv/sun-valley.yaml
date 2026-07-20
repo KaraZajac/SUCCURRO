@@ -68,31 +68,29 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 115 West 6th Avenue, city: Sun Valley, state: nv, zip: '89433'}
-  place: '3271600'
-  phone: 775-674-4411
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nv/sun-valley/sun-valley-health-center-new
-  name: Sun Valley Health Center (New)
-  categories:
-  - community-health-center
   address:
-    street: 5055 Sun Valley Blvd, Suite 100
+    street: 115 West 6th Avenue
     city: Sun Valley
     state: nv
     zip: '89433'
   place: '3271600'
-  geo:
-    lat: 39.57558
-    lng: -119.78167
-  phone: 775-329-6300
-  website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-033486
+  phone: 775-674-4411
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nv/sun-valley/sun-valley-health-center-new
+  name: Sun Valley Health Center (New)
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: '5055 Sun Valley Blvd, Suite 100', city: Sun Valley, state: nv, zip: '89433'}
+  place: '3271600'
+  geo: {lat: 39.57558, lng: -119.78167}
+  phone: 775-329-6300
+  website: https://www.chanevada.org
+  external_ids: {bphc: BPS-H80-033486}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}

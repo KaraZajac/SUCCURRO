@@ -37,6 +37,18 @@
     lng: -85.52295
   phone: 231-832-2247
   website: https://www.cmhcm.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -70,14 +82,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Osceola County
-  address: {street: 240 E. Church Street, city: Reed City, state: mi, zip: '49677'}
+  address:
+    street: 240 E. Church Street
+    city: Reed City
+    state: mi
+    zip: '49677'
   place: '2667820'
   phone: 231-791-7078
   email: contactus@mmcaa.org
   website: https://www.mmcaa.org/economicsecurity.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/reed-city/osceola-county-early-head-start
   name: Osceola County Early Head Start
   categories:
@@ -183,20 +201,12 @@
   name: Reed City Schools CAHC
   categories:
   - community-health-center
-  address:
-    street: 225 W Church Ave
-    city: Reed City
-    state: mi
-    zip: '49677'
+  cost: sliding-scale
+  address: {street: 225 W Church Ave, city: Reed City, state: mi, zip: '49677'}
   place: '2667820'
-  geo:
-    lat: 43.86949
-    lng: -85.51239
+  geo: {lat: 43.86949, lng: -85.51239}
   phone: 231-832-6194
-  external_ids:
-    bphc: BPS-H80-037901
+  external_ids: {bphc: BPS-H80-037901}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

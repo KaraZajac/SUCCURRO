@@ -2,24 +2,16 @@
   name: 1st Choice Healthcare Walnut Ridge
   categories:
   - community-health-center
-  address:
-    street: 201 Colonial Dr
-    city: Walnut Ridge
-    state: ar
-    zip: '72476'
+  cost: sliding-scale
+  address: {street: 201 Colonial Dr, city: Walnut Ridge, state: ar, zip: '72476'}
   place: 0572890
-  geo:
-    lat: 36.07645
-    lng: -90.9717
+  geo: {lat: 36.07645, lng: -90.9717}
   phone: 870-886-5507
   website: https://www.1stchoice-ar.org
-  external_ids:
-    bphc: BPS-H80-012460
+  external_ids: {bphc: BPS-H80-012460}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/walnut-ridge/arisa-health-inc-walnut-ridge-clinic
   name: Arisa Health Inc Walnut Ridge Clinic
   categories:
@@ -36,6 +28,12 @@
     lng: -90.96993
   phone: 870-919-8432
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,13 +44,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lawrence County
-  address: {street: 115 W. Walnut St., city: Walnut Ridge, state: ar, zip: '72476'}
+  address:
+    street: 115 W. Walnut St.
+    city: Walnut Ridge
+    state: ar
+    zip: '72476'
   place: 0572890
   phone: 870-378-5170
   website: http://www.blackriverareadevelopment.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/walnut-ridge/lawrence-county-public-housing-agency
   name: Lawrence County Public Housing Agency
   categories:

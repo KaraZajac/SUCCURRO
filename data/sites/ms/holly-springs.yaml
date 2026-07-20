@@ -33,6 +33,22 @@
     lng: -89.42771
   phone: 662-252-4140
   website: https://www.communicarems.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -183,57 +199,47 @@
   name: MT. PLEASANT FAMILY HLTH CLINIC
   categories:
   - community-health-center
-  address:
-    street: 154 Old Mt Pleasant Rd
-    city: Holly Springs
-    state: ms
-    zip: '38635'
+  cost: sliding-scale
+  address: {street: 154 Old Mt Pleasant Rd, city: Holly Springs, state: ms, zip: '38635'}
   place: '2833100'
-  geo:
-    lat: 34.94929
-    lng: -89.47446
+  geo: {lat: 34.94929, lng: -89.47446}
   phone: 662-851-7939
   website: https://www.byhaliafamilyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-000358
+  external_ids: {bphc: BPS-H80-000358}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/holly-springs/nmphc-holly-springs
   name: NMPHC Holly Springs
   categories:
   - community-health-center
-  address:
-    street: 1705 Crescent Meadows Dr
-    city: Holly Springs
-    state: ms
-    zip: '38635'
+  cost: sliding-scale
+  address: {street: 1705 Crescent Meadows Dr, city: Holly Springs, state: ms, zip: '38635'}
   place: '2833100'
-  geo:
-    lat: 34.75077
-    lng: -89.45672
+  geo: {lat: 34.75077, lng: -89.45672}
   phone: 662-484-2337
   website: https://www.nmphc.org
-  external_ids:
-    bphc: BPS-H80-039231
+  external_ids: {bphc: BPS-H80-039231}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/holly-springs/northeast-ms-community-services
   name: Northeast MS Community Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marshall County
-  address: {street: 156 Old Highway 78 E, city: Holly Springs, state: ms, zip: '38635'}
+  address:
+    street: 156 Old Highway 78 E
+    city: Holly Springs
+    state: ms
+    zip: '38635'
   place: '2833100'
   phone: 662-252-2713
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/holly-springs/the-housing-authority-of-the-city-of-holly-sprin
   name: The Housing Authority Of The City Of Holly Springs
   categories:

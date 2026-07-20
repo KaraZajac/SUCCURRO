@@ -109,58 +109,48 @@
   name: Coastal Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 2275 Commercial St
-    city: Astoria
-    state: or
-    zip: '97103'
+  cost: sliding-scale
+  address: {street: 2275 Commercial St, city: Astoria, state: or, zip: '97103'}
   place: '4103150'
-  geo:
-    lat: 46.1893
-    lng: -123.81638
+  geo: {lat: 46.1893, lng: -123.81638}
   phone: 503-325-8315
-  external_ids:
-    bphc: BPS-H80-041315
+  external_ids: {bphc: BPS-H80-041315}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/astoria/coastal-family-health-center-admin-office
   name: Coastal Family Health Center Admin Office
   categories:
   - community-health-center
-  address:
-    street: 3990 Abbey Ln STE 103
-    city: Astoria
-    state: or
-    zip: '97103'
+  cost: sliding-scale
+  address: {street: 3990 Abbey Ln STE 103, city: Astoria, state: or, zip: '97103'}
   place: '4103150'
-  geo:
-    lat: 46.19464
-    lng: -123.79723
+  geo: {lat: 46.19464, lng: -123.79723}
   phone: 503-325-8315
   website: https://www.yfvwc.com
-  external_ids:
-    bphc: BPS-H80-019302
+  external_ids: {bphc: BPS-H80-019302}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/astoria/community-action-team
   name: Community Action Team
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clatsop County
-  address: {street: 364 9th St., city: Astoria, state: or, zip: '97103'}
+  address:
+    street: 364 9th St.
+    city: Astoria
+    state: or
+    zip: '97103'
   place: '4103150'
   phone: 503-325-1400
   email: energy@cat-team.org
   website: https://cat-team.org/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: or/astoria/emerald-heights
   name: Emerald Heights
   categories:
@@ -220,6 +210,15 @@
     lng: -123.79771
   phone: 503-325-2398
   website: https://www.potentialsllc.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -262,6 +261,20 @@
     lng: -123.84823
   phone: 866-649-0788
   website: https://www.Virtueatthepointe.Com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

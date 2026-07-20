@@ -2,24 +2,16 @@
   name: Bakersville Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 86 N Mitchell Ave
-    city: Bakersville
-    state: nc
-    zip: '28705'
+  cost: sliding-scale
+  address: {street: 86 N Mitchell Ave, city: Bakersville, state: nc, zip: '28705'}
   place: '3703100'
-  geo:
-    lat: 36.01588
-    lng: -82.15721
+  geo: {lat: 36.01588, lng: -82.15721}
   phone: 828-688-2104
   website: http://mchp.care
-  external_ids:
-    bphc: BPS-H80-011576
+  external_ids: {bphc: BPS-H80-011576}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/bakersville/intermountain-children-s-place-ehs-hs
   name: Intermountain Children's Place EHS & HS
   categories:
@@ -43,36 +35,34 @@
   name: MCHP Dental Center
   categories:
   - community-health-center
-  address:
-    street: 89 N Mitchell Ave
-    city: Bakersville
-    state: nc
-    zip: '28705'
+  cost: sliding-scale
+  address: {street: 89 N Mitchell Ave, city: Bakersville, state: nc, zip: '28705'}
   place: '3703100'
-  geo:
-    lat: 36.01627
-    lng: -82.15719
+  geo: {lat: 36.01627, lng: -82.15719}
   phone: 828-537-5991
   website: https://MCHP.care
-  external_ids:
-    bphc: BPS-H80-024894
+  external_ids: {bphc: BPS-H80-024894}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/bakersville/mitchell-county-department-of-social-services
   name: Mitchell County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Mitchell County
-  address: {street: 347 Long View Dr., city: Bakersville, state: nc, zip: '28705'}
+  address:
+    street: 347 Long View Dr.
+    city: Bakersville
+    state: nc
+    zip: '28705'
   place: '3703100'
   phone: 828-688-2175
   website: https://www.mitchellcountync.gov/departments/social-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/bakersville/mitchell-elementary
   name: Mitchell Elementary
   categories:
@@ -133,6 +123,14 @@
     lng: -82.11951
   phone: 828-765-0894
   website: https://rhahealthservices.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

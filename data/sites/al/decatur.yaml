@@ -141,13 +141,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Morgan County
-  address: {street: '1909 Central Parkway, SW', city: Decatur, state: al, zip: '35601'}
+  address:
+    street: 1909 Central Parkway, SW
+    city: Decatur
+    state: al
+    zip: '35601'
   place: '0120104'
   phone: 256-355-7843
   website: https://www.capna.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/decatur/danville-neel-elem-sch
   name: Danville-Neel Elem Sch
   categories:
@@ -282,24 +288,16 @@
   name: Family Health Care Clinic, Inc., --Decatur
   categories:
   - community-health-center
-  address:
-    street: 1304 13th Ave SE, Suite A
-    city: Decatur
-    state: al
-    zip: '35601'
+  cost: sliding-scale
+  address: {street: '1304 13th Ave SE, Suite A', city: Decatur, state: al, zip: '35601'}
   place: '0120104'
-  geo:
-    lat: 34.5874
-    lng: -86.97088
+  geo: {lat: 34.5874, lng: -86.97088}
   phone: 256-340-1251
   website: https://www.familyhealthcareclinic.com
-  external_ids:
-    bphc: BPS-H80-009353
+  external_ids: {bphc: BPS-H80-009353}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/decatur/family-life-center-inc
   name: Family Life Center Inc
   categories:
@@ -315,6 +313,10 @@
     lng: -86.98084
   phone: 256-355-3703
   website: https://www.familylifecenter.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -347,24 +349,16 @@
   name: HAPPI Health-Decatur
   categories:
   - community-health-center
-  address:
-    street: 1802 Presbyterian Dr SW
-    city: Decatur
-    state: al
-    zip: '35603'
+  cost: sliding-scale
+  address: {street: 1802 Presbyterian Dr SW, city: Decatur, state: al, zip: '35603'}
   place: '0120104'
-  geo:
-    lat: 34.56832
-    lng: -87.01797
+  geo: {lat: 34.56832, lng: -87.01797}
   phone: 256-301-5405
   website: https://www.HAPPIHealth.org
-  external_ids:
-    bphc: BPS-LAL-041248
+  external_ids: {bphc: BPS-LAL-041248}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/decatur/harvest-moon-little-free-pantry
   name: Harvest Moon Little Free Pantry
   categories:
@@ -395,6 +389,22 @@
     lng: -86.97682
   phone: 256-274-8222
   website: https://www.healthconnectamerica.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -416,6 +426,10 @@
     lng: -86.97682
   phone: 256-274-8222
   website: https://www.healthconnectamerica.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -502,6 +516,15 @@
     lng: -86.99493
   phone: 256-260-1691
   website: https://www.mhcnca.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -523,6 +546,12 @@
     lng: -86.97169
   phone: 256-260-7306
   website: https://www.mhcnca.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

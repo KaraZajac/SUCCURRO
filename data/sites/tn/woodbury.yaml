@@ -2,23 +2,15 @@
   name: Cannon County Health Department Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 106 Alexander Dr
-    city: Woodbury
-    state: tn
-    zip: '37190'
+  cost: sliding-scale
+  address: {street: 106 Alexander Dr, city: Woodbury, state: tn, zip: '37190'}
   place: '4781560'
-  geo:
-    lat: 35.8314
-    lng: -86.07145
+  geo: {lat: 35.8314, lng: -86.07145}
   phone: 615-563-4243
-  external_ids:
-    bphc: BPS-H80-021811
+  external_ids: {bphc: BPS-H80-021811}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/woodbury/cannon-elem-middle-summer
   name: Cannon Elem/Middle Summer
   categories:
@@ -101,6 +93,22 @@
     lng: -86.07176
   phone: 615-563-7301 x7270
   website: https://www.sthealth.com/locations/saint-thomas-stones-river-hospital
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -155,13 +163,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cannon County
-  address: {street: 301 W. Main St. Bldg. Room 302, city: Woodbury, state: tn, zip: '37190'}
+  address:
+    street: 301 W. Main St. Bldg. Room 302
+    city: Woodbury
+    state: tn
+    zip: '37190'
   place: '4781560'
   phone: 615-563-2916
   website: https://uchra.org/uchra-locations/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/woodbury/woodbury-head-start
   name: Woodbury Head Start
   categories:

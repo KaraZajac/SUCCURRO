@@ -22,13 +22,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbia County
-  address: {street: 25 Railroad Avenue (P. O. Box 458), city: Hudson, state: ny, zip: '12534'}
+  address:
+    street: 25 Railroad Avenue (P. O. Box 458)
+    city: Hudson
+    state: ny
+    zip: '12534'
   place: '3635969'
   phone: 518-828-9411
   email: ColumbiaCountyDSS@dfa.state.ny.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/hudson/columbia-memorial-hospital-department-of-psychia
   name: Columbia Memorial Hospital Department of Psychiatry
   categories:
@@ -45,6 +51,15 @@
     lng: -73.77785
   phone: 518-828-7601 x8137
   website: https://www.columbiamemorialhealth.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -55,12 +70,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbia County
-  address: {street: '325 Columbia Street, Suite 231', city: Hudson, state: ny, zip: '12534'}
+  address:
+    street: 325 Columbia Street, Suite 231
+    city: Hudson
+    state: ny
+    zip: '12534'
   place: '3635969'
   phone: 518-828-4258
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/hudson/mental-health-association-of-columbia-greene-cou
   name: Mental Health Association of Columbia Greene Counties Inc
   categories:
@@ -77,6 +98,9 @@
     lng: -73.78366
   phone: 518-828-4619 x317
   website: https://www.mhacg.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -94,6 +118,11 @@
   place: '3635969'
   phone: 518-822-0090
   website: https://Twincountyrecoveryservices.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -103,23 +132,15 @@
   name: Sun River Health Hudson
   categories:
   - community-health-center
-  address:
-    street: 750 Union St
-    city: Hudson
-    state: ny
-    zip: '12534'
+  cost: sliding-scale
+  address: {street: 750 Union St, city: Hudson, state: ny, zip: '12534'}
   place: '3635969'
-  geo:
-    lat: 42.24558
-    lng: -73.78254
+  geo: {lat: 42.24558, lng: -73.78254}
   phone: 518-751-3060
-  external_ids:
-    bphc: BPS-H80-013534
+  external_ids: {bphc: BPS-H80-013534}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/hudson/twin-county-recovery-services-inc
   name: Twin County Recovery Services Inc
   categories:
@@ -135,6 +156,16 @@
     lng: -73.79292
   phone: 518-828-9300
   website: https://www.twincountyrecoveryservices.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

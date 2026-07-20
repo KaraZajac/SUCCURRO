@@ -46,24 +46,16 @@
   name: DRY CREEK MEDICAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 1826 N Main Ave
-    city: Erwin
-    state: tn
-    zip: '37650'
+  cost: sliding-scale
+  address: {street: 1826 N Main Ave, city: Erwin, state: tn, zip: '37650'}
   place: '4724360'
-  geo:
-    lat: 36.17141
-    lng: -82.37838
+  geo: {lat: 36.17141, lng: -82.37838}
   phone: 423-743-6135
   website: https://www.rhsctn.com
-  external_ids:
-    bphc: BPS-H80-003447
+  external_ids: {bphc: BPS-H80-003447}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/erwin/erwin-housing-authority
   name: Erwin Housing Authority
   categories:
@@ -257,6 +249,14 @@
     lng: -82.41498
   phone: 423-743-1470
   website: https://www.frontierhealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -463,13 +463,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Unicoi County
-  address: {street: 1413 N. Main Avenue, city: Erwin, state: tn, zip: '37650'}
+  address:
+    street: 1413 N. Main Avenue
+    city: Erwin
+    state: tn
+    zip: '37650'
   place: '4724360'
   phone: 423-246-6180
   website: https://uethda.org/energy-2/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/erwin/whispering-meadows
   name: Whispering Meadows
   categories:

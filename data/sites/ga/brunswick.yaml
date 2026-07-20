@@ -153,90 +153,58 @@
   name: CCH  -  Glynn County Employee Health
   categories:
   - community-health-center
-  address:
-    street: 2747 4th St
-    city: Brunswick
-    state: ga
-    zip: '31520'
+  cost: sliding-scale
+  address: {street: 2747 4th St, city: Brunswick, state: ga, zip: '31520'}
   place: '1311560'
-  geo:
-    lat: 31.18176
-    lng: -81.4797
+  geo: {lat: 31.18176, lng: -81.4797}
   phone: 912-289-2617
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-039610
+  external_ids: {bphc: BPS-H80-039610}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/brunswick/cchs-administration
   name: CCHS Administration
   categories:
   - community-health-center
-  address:
-    street: 100 Professional Center Dr
-    city: Brunswick
-    state: ga
-    zip: '31525'
+  cost: sliding-scale
+  address: {street: 100 Professional Center Dr, city: Brunswick, state: ga, zip: '31525'}
   place: '1311560'
-  geo:
-    lat: 31.2378
-    lng: -81.4986
+  geo: {lat: 31.2378, lng: -81.4986}
   phone: 912-275-8028
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-036191
+  external_ids: {bphc: BPS-H80-036191}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/brunswick/cchs-downtown-brunswick
   name: CCHS Downtown Brunswick
   categories:
   - community-health-center
-  address:
-    street: 1600 Ellis St
-    city: Brunswick
-    state: ga
-    zip: '31520'
+  cost: sliding-scale
+  address: {street: 1600 Ellis St, city: Brunswick, state: ga, zip: '31520'}
   place: '1311560'
-  geo:
-    lat: 31.15139
-    lng: -81.49314
+  geo: {lat: 31.15139, lng: -81.49314}
   phone: 912-289-2006
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-035210
+  external_ids: {bphc: BPS-H80-035210}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/brunswick/cchs-mobile-clinic
   name: CCHS Mobile Clinic
   categories:
   - community-health-center
-  address:
-    street: 106 Shoppers Way
-    city: Brunswick
-    state: ga
-    zip: '31525'
+  cost: sliding-scale
+  address: {street: 106 Shoppers Way, city: Brunswick, state: ga, zip: '31525'}
   place: '1311560'
-  geo:
-    lat: 31.21926
-    lng: -81.48713
+  geo: {lat: 31.21926, lng: -81.48713}
   phone: 912-275-8028
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-031536
+  external_ids: {bphc: BPS-H80-031536}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/brunswick/coastal-community-behavioral-health
   name: Coastal Community Behavioral Health
   categories:
@@ -252,6 +220,12 @@
     lng: -81.53949
   phone: 912-262-0311 x1
   website: https://www.ccbhrecovery.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -261,36 +235,34 @@
   name: Coastal Community Health Services
   categories:
   - community-health-center
-  address:
-    street: 106 Shoppers Way
-    city: Brunswick
-    state: ga
-    zip: '31525'
+  cost: sliding-scale
+  address: {street: 106 Shoppers Way, city: Brunswick, state: ga, zip: '31525'}
   place: '1311560'
-  geo:
-    lat: 31.21926
-    lng: -81.48713
+  geo: {lat: 31.21926, lng: -81.48713}
   phone: 912-275-8028
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-013664
+  external_ids: {bphc: BPS-H80-013664}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/brunswick/coastal-georgia-area-community-action-authority
   name: Coastal Georgia Area Community Action Authority Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Glynn County
-  address: {street: One Community Action Drive, city: Brunswick, state: ga, zip: '31521'}
+  address:
+    street: One Community Action Drive
+    city: Brunswick
+    state: ga
+    zip: '31521'
   place: '1311560'
   phone: 912-264-3281
   website: http://www.cgacaa.org/working/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/brunswick/coastal-outreach-soccer
   name: Coastal Outreach Soccer
   categories:
@@ -374,6 +346,21 @@
     lng: -81.49618
   phone: 912-554-8499
   website: https://www.gatewaycsb.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -395,6 +382,14 @@
     lng: -81.49618
   phone: 912-554-8500
   website: https://www.gatewaycsb.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

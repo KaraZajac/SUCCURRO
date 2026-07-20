@@ -14,6 +14,11 @@
     lng: -92.10351
   phone: 218-390-0929
   website: https://www.arsduluth.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,14 +29,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Saint Louis County
-  address: {street: 702 3rd Avenue South, city: Duluth, state: mn, zip: '55792'}
+  address:
+    street: 702 3rd Avenue South
+    city: Duluth
+    state: mn
+    zip: '55792'
   place: '2717000'
   phone: 218-623-3011
   email: eap.document@aeoa.org
   website: https://www.aeoa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mn/duluth/bay-view-elementary
   name: Bay View Elementary
   categories:
@@ -69,6 +80,14 @@
     lng: -92.10897
   phone: 218-727-7415
   website: https://www.duluthbethel.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -90,6 +109,10 @@
     lng: -92.08027
   phone: 218-723-8444
   website: https://www.cadt.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -110,6 +133,11 @@
     lng: -92.06927
   phone: 218-723-8444
   website: https://www.cadt.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -130,6 +158,11 @@
     lng: -92.08082
   phone: 218-723-8444
   website: https://www.cadt.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -150,6 +183,11 @@
     lng: -92.09236
   phone: 218-723-8444
   website: https://www.cadt.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -170,6 +208,11 @@
     lng: -92.1022
   phone: 218-723-8444
   website: https://www.cadt.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -179,23 +222,15 @@
   name: Chum Warming Center
   categories:
   - community-health-center
-  address:
-    street: 2014 W 3rd St
-    city: Duluth
-    state: mn
-    zip: '55806'
+  cost: sliding-scale
+  address: {street: 2014 W 3rd St, city: Duluth, state: mn, zip: '55806'}
   place: '2717000'
-  geo:
-    lat: 46.76916
-    lng: -92.12652
+  geo: {lat: 46.76916, lng: -92.12652}
   phone: 907-978-0013
-  external_ids:
-    bphc: BPS-H80-036284
+  external_ids: {bphc: BPS-H80-036284}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/duluth/congdon
   name: Congdon
   categories:
@@ -328,6 +363,12 @@
     lng: -92.09374
   phone: 218-786-1186
   website: https://www.essentiahealth.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -349,6 +390,22 @@
     lng: -92.10614
   phone: 218-878-3858
   website: https://www.fdlband.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -369,6 +426,22 @@
     lng: -92.10235
   phone: 218-722-2368
   website: https://www.grsduluth.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -451,6 +524,10 @@
     lng: -92.08186
   phone: 218-728-4491
   website: https://www.hdcnorth.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -460,24 +537,16 @@
   name: LAKE SUPERIOR COMMUNITY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 4325 Grand Ave
-    city: Duluth
-    state: mn
-    zip: '55807'
+  cost: sliding-scale
+  address: {street: 4325 Grand Ave, city: Duluth, state: mn, zip: '55807'}
   place: '2717000'
-  geo:
-    lat: 46.74831
-    lng: -92.15656
+  geo: {lat: 46.74831, lng: -92.15656}
   phone: 218-722-1497
   website: https://WWW.LSCHC.ORG
-  external_ids:
-    bphc: BPS-H80-002602
+  external_ids: {bphc: BPS-H80-002602}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/duluth/lakeview-behavioral-health
   name: Lakeview Behavioral Health
   categories:
@@ -494,6 +563,10 @@
     lng: -92.09069
   phone: 218-327-2001
   website: https://www.lakeviewbh.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -626,23 +699,15 @@
   name: LSCHC Denfeld Retail Center
   categories:
   - community-health-center
-  address:
-    street: 4602 Grand Ave
-    city: Duluth
-    state: mn
-    zip: '55807'
+  cost: sliding-scale
+  address: {street: 4602 Grand Ave, city: Duluth, state: mn, zip: '55807'}
   place: '2717000'
-  geo:
-    lat: 46.74526
-    lng: -92.15918
+  geo: {lat: 46.74526, lng: -92.15918}
   phone: 218-722-1497
-  external_ids:
-    bphc: BPS-H80-030116
+  external_ids: {bphc: BPS-H80-030116}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/duluth/mn-adult-and-teen-challenge
   name: MN Adult and Teen Challenge
   categories:
@@ -659,6 +724,18 @@
     lng: -92.10003
   phone: 218-740-5500
   website: https://www.mntc.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -709,23 +786,15 @@
   name: Northwood Children's Services
   categories:
   - community-health-center
-  address:
-    street: 4000 W 9th St
-    city: Duluth
-    state: mn
-    zip: '55807'
+  cost: sliding-scale
+  address: {street: 4000 W 9th St, city: Duluth, state: mn, zip: '55807'}
   place: '2717000'
-  geo:
-    lat: 46.75762
-    lng: -92.15535
+  geo: {lat: 46.75762, lng: -92.15535}
   phone: 218-628-0237
-  external_ids:
-    bphc: BPS-H80-041359
+  external_ids: {bphc: BPS-H80-041359}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/duluth/northwood-childrens-services-diagnostic-and-asse
   name: Northwood Childrens Services Diagnostic and Assessment Center
   categories:
@@ -741,6 +810,15 @@
     lng: -92.15525
   phone: 218-724-3472
   website: https://www.northwoodchildren.org
+  services:
+  - Residential/24-hour residential
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -759,6 +837,15 @@
   place: '2717000'
   phone: 218-336-8900 x3135
   website: https://northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -777,6 +864,15 @@
   place: '2717000'
   phone: 218-336-8800 x3343
   website: https://northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -798,6 +894,15 @@
     lng: -92.0936
   phone: 218-724-8815
   website: https://www.northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -818,6 +923,16 @@
     lng: -92.0936
   phone: 218-724-8815
   website: https://www.northwoodchildren.org
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -839,6 +954,15 @@
     lng: -92.15747
   phone: 218-625-2669
   website: https://www.northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -857,6 +981,15 @@
   place: '2717000'
   phone: 218-724-8815 x2497
   website: https://northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -875,6 +1008,15 @@
   place: '2717000'
   phone: 218-336-8950
   website: https://northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -895,6 +1037,16 @@
     lng: -92.15545
   phone: 218-628-0237
   website: https://www.northwoodchildren.org
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -913,6 +1065,15 @@
   place: '2717000'
   phone: 218-728-7418
   website: https://northwoodchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -934,6 +1095,9 @@
     lng: -92.16034
   phone: 888-648-7652
   website: https://pbhmn.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -996,6 +1160,10 @@
     lng: -92.16356
   phone: 218-524-8889
   website: https://www.sagentbh.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1017,6 +1185,11 @@
     lng: -92.10273
   phone: 218-722-4379
   website: https://www.sagentbh.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1056,6 +1229,12 @@
     lng: -92.10246
   phone: 715-392-9300
   website: https://rainierrehab.org/facilities/superior-treatment-center-8654876
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1076,6 +1255,10 @@
     lng: -92.21782
   phone: 218-727-7699
   website: https://www.mashkawisen.com
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1097,6 +1280,22 @@
     lng: -92.08838
   phone: 218-310-8896
   website: https://www.webmedmn.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

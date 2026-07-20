@@ -42,44 +42,47 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Montgomery County
-  address: {street: 135 Guy Park Ave, city: Amsterdam, state: ny, zip: '12010'}
-  place: '3602066'
-  phone: 518-843-2300
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ny/amsterdam/hometown-health-centers-at-amsterdam
-  name: Hometown Health Centers at Amsterdam
-  categories:
-  - community-health-center
   address:
-    street: 67 Division St
+    street: 135 Guy Park Ave
     city: Amsterdam
     state: ny
     zip: '12010'
   place: '3602066'
-  geo:
-    lat: 42.94127
-    lng: -74.19551
-  phone: 518-370-1441
-  external_ids:
-    bphc: BPS-H80-014177
+  phone: 518-843-2300
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ny/amsterdam/hometown-health-centers-at-amsterdam
+  name: Hometown Health Centers at Amsterdam
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 67 Division St, city: Amsterdam, state: ny, zip: '12010'}
+  place: '3602066'
+  geo: {lat: 42.94127, lng: -74.19551}
+  phone: 518-370-1441
+  external_ids: {bphc: BPS-H80-014177}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/amsterdam/montgomery-county-department-of-social-services
   name: Montgomery County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Montgomery County
-  address: {street: 1 Venner Road, city: Amsterdam, state: ny}
+  address:
+    street: 1 Venner Road
+    city: Amsterdam
+    state: ny
   place: '3602066'
   phone: 518-212-5778
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/amsterdam/saint-marys-healthcare-act-team
   name: Saint Marys Healthcare ACT Team
   categories:
@@ -96,6 +99,10 @@
     lng: -74.21805
   phone: 518-770-7827
   website: https://
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -116,6 +123,9 @@
     lng: -74.2166
   phone: 518-842-1900
   website: https://www.smha.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -136,6 +146,15 @@
     lng: -74.18727
   phone: 518-843-4410
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Hospital inpatient treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -157,6 +176,12 @@
     lng: -74.18727
   phone: 518-841-7341
   website: https://www.smha.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -178,6 +203,10 @@
     lng: -74.21805
   phone: 518-842-1900
   website: https://
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

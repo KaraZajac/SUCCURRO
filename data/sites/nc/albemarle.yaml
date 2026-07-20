@@ -53,6 +53,19 @@
     lng: -80.19803
   phone: 704-983-2117
   website: https://www.daymarkrecovery.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,45 +90,29 @@
   name: GOSHEN MEDICAL CENTER -  ALBEMARLE
   categories:
   - community-health-center
-  address:
-    street: 1000 N 5th St
-    city: Albemarle
-    state: nc
-    zip: '28001'
+  cost: sliding-scale
+  address: {street: 1000 N 5th St, city: Albemarle, state: nc, zip: '28001'}
   place: '3700680'
-  geo:
-    lat: 35.36448
-    lng: -80.1923
+  geo: {lat: 35.36448, lng: -80.1923}
   phone: 980-581-2448
-  external_ids:
-    bphc: BPS-H80-034902
+  external_ids: {bphc: BPS-H80-034902}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/albemarle/kintegra-at-atrium-women-s-center-albemarle
   name: Kintegra at Atrium Women's Center - Albemarle
   categories:
   - community-health-center
-  address:
-    street: 105 Yadkin St, Suite 102
-    city: Albemarle
-    state: nc
-    zip: '28001'
+  cost: sliding-scale
+  address: {street: '105 Yadkin St, Suite 102', city: Albemarle, state: nc, zip: '28001'}
   place: '3700680'
-  geo:
-    lat: 35.36298
-    lng: -80.19634
+  geo: {lat: 35.36298, lng: -80.19634}
   phone: 980-323-5330
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-038735
+  external_ids: {bphc: BPS-H80-038735}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/albemarle/monarch-bh-stanly
   name: Monarch BH Stanly
   categories:
@@ -132,6 +129,9 @@
     lng: -80.19372
   phone: 866-272-7826
   website: https://www.monarchnc.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -164,13 +164,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Stanly County
-  address: {street: '1000 North First Street, Suite 2', city: Albemarle, state: nc, zip: '28001'}
+  address:
+    street: 1000 North First Street, Suite 2
+    city: Albemarle
+    state: nc
+    zip: '28001'
   place: '3700680'
   phone: 704-982-6100
   website: https://stanlydss.com/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/albemarle/the-gathering-free-pantry
   name: The gathering free pantry
   categories:

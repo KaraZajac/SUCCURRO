@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lincoln County
-  address: {street: 127 North First St., city: Brookhaven, state: ms, zip: '39601'}
+  address:
+    street: 127 North First St.
+    city: Brookhaven
+    state: ms
+    zip: '39601'
   place: '2808820'
   phone: 601-833-6349
   website: https://ajfccaa.org/community-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/brookhaven/family-health-care-clinic-brookhaven
   name: Family Health Care Clinic, Brookhaven
   categories:
   - community-health-center
-  address:
-    street: 215 Highway 51 S
-    city: Brookhaven
-    state: ms
-    zip: '39601'
+  cost: sliding-scale
+  address: {street: 215 Highway 51 S, city: Brookhaven, state: ms, zip: '39601'}
   place: '2808820'
-  geo:
-    lat: 31.57818
-    lng: -90.45707
+  geo: {lat: 31.57818, lng: -90.45707}
   phone: 601-825-7280
   website: https://www.familyhealthcareclinic.com
-  external_ids:
-    bphc: BPS-H80-022068
+  external_ids: {bphc: BPS-H80-022068}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/brookhaven/lincoln-county-early-head-start
   name: Lincoln County Early Head Start
   categories:
@@ -108,6 +106,22 @@
     lng: -90.45665
   phone: 601-823-2345
   website: https://www.region8mhs.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -129,6 +143,11 @@
     lng: -90.45986
   phone: 601-823-2300
   website: https://region8mhs.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

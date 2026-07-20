@@ -14,6 +14,20 @@
     lng: -80.89056
   phone: 866-530-7422
   website: https://www.abhsm.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -72,6 +86,11 @@
     lng: -80.89342
   phone: 304-466-3899
   website: https://www.fmrs.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -81,23 +100,15 @@
   name: Hinton Area Elementary School Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 121 Park Ave
-    city: Hinton
-    state: wv
-    zip: '25951'
+  cost: sliding-scale
+  address: {street: 121 Park Ave, city: Hinton, state: wv, zip: '25951'}
   place: '5437636'
-  geo:
-    lat: 37.67032
-    lng: -80.89186
+  geo: {lat: 37.67032, lng: -80.89186}
   phone: 304-466-6024
-  external_ids:
-    bphc: BPS-H80-021892
+  external_ids: {bphc: BPS-H80-021892}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/hinton/nc-bellepoint-park
   name: Nc - Bellepoint Park
   categories:
@@ -147,30 +158,28 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Summers County
-  address: {street: '320 Summers Street, Suite A', city: Hinton, state: wv, zip: '25951'}
-  place: '5437636'
-  phone: 304-466-2807
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: wv/hinton/summers-county-wellness-center
-  name: Summers County Wellness Center
-  categories:
-  - community-health-center
   address:
-    street: 181 Bobcat Dr
+    street: 320 Summers Street, Suite A
     city: Hinton
     state: wv
     zip: '25951'
   place: '5437636'
-  geo:
-    lat: 37.70769
-    lng: -80.88901
-  phone: 304-438-6188
-  external_ids:
-    bphc: BPS-H80-035488
+  phone: 304-466-2807
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: wv/hinton/summers-county-wellness-center
+  name: Summers County Wellness Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 181 Bobcat Dr, city: Hinton, state: wv, zip: '25951'}
+  place: '5437636'
+  geo: {lat: 37.70769, lng: -80.88901}
+  phone: 304-438-6188
+  external_ids: {bphc: BPS-H80-035488}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}

@@ -45,34 +45,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Choctaw County
-  address: {street: 129 North Mullberry Ave, city: Butler, state: al, zip: '36904'}
+  address:
+    street: 129 North Mullberry Ave
+    city: Butler
+    state: al
+    zip: '36904'
   place: '0111032'
   phone: 205-708-7000
   website: https://www.cspwal.com/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/butler/physicians-care-of-butler
   name: Physicians Care of Butler
   categories:
   - community-health-center
-  address:
-    street: 315 E Pushmataha St
-    city: Butler
-    state: al
-    zip: '36904'
+  cost: sliding-scale
+  address: {street: 315 E Pushmataha St, city: Butler, state: al, zip: '36904'}
   place: '0111032'
-  geo:
-    lat: 32.09024
-    lng: -88.21822
+  geo: {lat: 32.09024, lng: -88.21822}
   phone: 205-278-4315
-  external_ids:
-    bphc: BPS-LAL-036139
+  external_ids: {bphc: BPS-LAL-036139}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/butler/southern-choctaw-elem-sch
   name: Southern Choctaw Elem Sch
   categories:
@@ -112,6 +110,13 @@
     lng: -88.21644
   phone: 205-459-2612
   website: https://www.wamhc.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

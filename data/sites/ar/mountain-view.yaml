@@ -14,6 +14,13 @@
     lng: -92.08919
   phone: 870-359-4193
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +41,13 @@
     lng: -92.1046
   phone: 501-315-3344
   website: https://birchtree.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -43,44 +57,28 @@
   name: Boston Mountain Rural Health Center Inc. -  Mountain View
   categories:
   - community-health-center
-  address:
-    street: 316 E Main St
-    city: Mountain View
-    state: ar
-    zip: '72560'
+  cost: sliding-scale
+  address: {street: 316 E Main St, city: Mountain View, state: ar, zip: '72560'}
   place: '0547540'
-  geo:
-    lat: 35.8671
-    lng: -92.11361
+  geo: {lat: 35.8671, lng: -92.11361}
   phone: 870-269-2995
-  external_ids:
-    bphc: BPS-H80-040912
+  external_ids: {bphc: BPS-H80-040912}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/mountain-view/boston-mountain-rural-health-center-specialty-cl
   name: Boston Mountain Rural Health Center Specialty Clinic
   categories:
   - community-health-center
-  address:
-    street: 308 E Main St
-    city: Mountain View
-    state: ar
-    zip: '72560'
+  cost: sliding-scale
+  address: {street: 308 E Main St, city: Mountain View, state: ar, zip: '72560'}
   place: '0547540'
-  geo:
-    lat: 35.86725
-    lng: -92.11394
+  geo: {lat: 35.86725, lng: -92.11394}
   phone: 870-269-2995
-  external_ids:
-    bphc: BPS-H80-041616
+  external_ids: {bphc: BPS-H80-041616}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/mountain-view/mountain-view-head-start-early-head-start
   name: Mountain View Head Start/Early Head Start
   categories:
@@ -105,10 +103,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Stone County
-  address: {street: 210 School Ave. (P. O. Box 797), city: Mountain View, state: ar, zip: '72560'}
+  address:
+    street: 210 School Ave. (P. O. Box 797)
+    city: Mountain View
+    state: ar
+    zip: '72560'
   place: '0547540'
   phone: 870-269-4381
   website: http://www.nadcinc.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

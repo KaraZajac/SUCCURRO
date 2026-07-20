@@ -14,6 +14,15 @@
     lng: -90.32995
   phone: 715-223-0480
   website: https://www.facebook.com/CourageToChangeRecovery/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,24 +32,16 @@
   name: Family Health Center - Medford Dental Center
   categories:
   - community-health-center
-  address:
-    street: 843 W Broadway Ave
-    city: Medford
-    state: wi
-    zip: '54451'
+  cost: sliding-scale
+  address: {street: 843 W Broadway Ave, city: Medford, state: wi, zip: '54451'}
   place: '5550425'
-  geo:
-    lat: 45.14183
-    lng: -90.36117
+  geo: {lat: 45.14183, lng: -90.36117}
   phone: 715-785-8100
   website: https://familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-009091
+  external_ids: {bphc: BPS-H80-009091}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/medford/little-angels-daycare
   name: Little Angels Daycare
   categories:
@@ -131,13 +132,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Taylor County
-  address: {street: 540 E College St., city: Medford, state: wi, zip: '54451'}
+  address:
+    street: 540 E College St.
+    city: Medford
+    state: wi
+    zip: '54451'
   place: '5550425'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/medford/taylor-county-human-services-department
   name: Taylor County Human Services Department
   categories:
@@ -154,6 +161,9 @@
     lng: -90.33685
   phone: 715-748-3332
   website: https://www.co.taylor.wi.us/hs/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

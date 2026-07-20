@@ -13,6 +13,11 @@
     lng: -117.90393
   phone: 509-684-5867
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -82,77 +87,59 @@
   name: NEW Health Colville Dental
   categories:
   - community-health-center
-  address:
-    street: 161 E 3rd Ave
-    city: Colville
-    state: wa
-    zip: '99114'
+  cost: sliding-scale
+  address: {street: 161 E 3rd Ave, city: Colville, state: wa, zip: '99114'}
   place: '5314170'
-  geo:
-    lat: 48.54695
-    lng: -117.90477
+  geo: {lat: 48.54695, lng: -117.90477}
   phone: 509-684-1440
   website: https://www.newhealth.org
-  external_ids:
-    bphc: BPS-H80-029775
+  external_ids: {bphc: BPS-H80-029775}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/colville/new-health-colville-medical
   name: NEW Health Colville Medical
   categories:
   - community-health-center
-  address:
-    street: 358 N Main St
-    city: Colville
-    state: wa
-    zip: '99114'
+  cost: sliding-scale
+  address: {street: 358 N Main St, city: Colville, state: wa, zip: '99114'}
   place: '5314170'
-  geo:
-    lat: 48.54717
-    lng: -117.90554
+  geo: {lat: 48.54717, lng: -117.90554}
   phone: 509-684-1440
   website: https://www.newhealth.org
-  external_ids:
-    bphc: BPS-H80-015088
+  external_ids: {bphc: BPS-H80-015088}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/colville/new-health-mobile
   name: NEW Health Mobile
   categories:
   - community-health-center
-  address:
-    street: 358 N Main St
-    city: Colville
-    state: wa
-    zip: '99114'
+  cost: sliding-scale
+  address: {street: 358 N Main St, city: Colville, state: wa, zip: '99114'}
   place: '5314170'
-  geo:
-    lat: 48.54717
-    lng: -117.90554
+  geo: {lat: 48.54717, lng: -117.90554}
   phone: 509-935-6004
   website: https://newhealth.org
-  external_ids:
-    bphc: BPS-H80-037310
+  external_ids: {bphc: BPS-H80-037310}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/colville/rural-resources-community-action
   name: Rural Resources Community Action
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ferry, Lincoln, Pend Oreille, Stevens Counties
-  address: {street: '956 S Main St., Suite A', city: Colville, state: wa, zip: '99114'}
+  address:
+    street: 956 S Main St., Suite A
+    city: Colville
+    state: wa
+    zip: '99114'
   place: '5314170'
   phone: 509-685-6161
   website: https://ruralresources.org/program/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

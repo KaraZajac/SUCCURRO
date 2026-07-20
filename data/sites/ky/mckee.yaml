@@ -14,6 +14,17 @@
     lng: -84.01488
   phone: 606-287-7137
   website: https://www.crbhky.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,13 +35,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jackson County
-  address: {street: 5748 KY Hwy 290, city: McKee, state: ky, zip: '40447'}
+  address:
+    street: 5748 KY Hwy 290
+    city: McKee
+    state: ky
+    zip: '40447'
   place: '2149116'
   phone: 606-364-4484
   website: http://danielboonecaa.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/mckee/housing-authority-of-mckee
   name: Housing Authority Of Mckee
   categories:
@@ -181,24 +198,16 @@
   name: White House Clinic - McKee
   categories:
   - community-health-center
-  address:
-    street: 1010 Main St S
-    city: Mc Kee
-    state: ky
-    zip: '40447'
+  cost: sliding-scale
+  address: {street: 1010 Main St S, city: Mc Kee, state: ky, zip: '40447'}
   place: '2149116'
-  geo:
-    lat: 37.43213
-    lng: -83.98085
+  geo: {lat: 37.43213, lng: -83.98085}
   phone: 606-287-3228
   website: https://www.whitehouseclinics.com
-  external_ids:
-    bphc: BPS-H80-004365
+  external_ids: {bphc: BPS-H80-004365}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/mckee/white-house-clinic-mckee-2
   name: White House Clinic Mckee
   categories:

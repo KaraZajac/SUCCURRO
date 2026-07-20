@@ -59,36 +59,34 @@
   name: Clay County School-Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 200 Hobbs Ln
-    city: Fort Gaines
-    state: ga
-    zip: '39851'
+  cost: sliding-scale
+  address: {street: 200 Hobbs Ln, city: Fort Gaines, state: ga, zip: '39851'}
   place: '1330816'
-  geo:
-    lat: 31.62045
-    lng: -85.04286
+  geo: {lat: 31.62045, lng: -85.04286}
   phone: 229-888-6559
   website: https://www.aaphc.org
-  external_ids:
-    bphc: BPS-H80-036905
+  external_ids: {bphc: BPS-H80-036905}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/fort-gaines/enrichment-services-program-inc
   name: Enrichment Services Program Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clay County
-  address: {street: 155 Wilson St., city: Fort Gaines, state: ga, zip: '39851'}
+  address:
+    street: 155 Wilson St.
+    city: Fort Gaines
+    state: ga
+    zip: '39851'
   place: '1330816'
   phone: 229-477-8212
   website: https://enrichmentservices.org/liheap-psa/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/fort-gaines/ryf-clay-route
   name: Ryf- Clay Route
   categories:

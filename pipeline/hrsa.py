@@ -76,6 +76,7 @@ def main(argv):
         rec = {
             "_state": st, "_place_slug": place_slug, "_name": name,
             "categories": ["community-health-center"],
+            "cost": "sliding-scale",  # FQHCs must offer a sliding fee scale (42 USC 254b)
             "address": Flow({k: v for k, v in {
                 "street": street or None, "city": city,
                 "state": st, "zip": zip5.group() if zip5 else None,

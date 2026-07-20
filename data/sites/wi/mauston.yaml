@@ -10,6 +10,15 @@
   place: '5550025'
   phone: 608-477-9858
   website: https://www.innervisionscounseling.com
+  services:
+  - Outpatient
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -20,13 +29,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Juneau County
-  address: {street: 534B La Crosse St., city: Mauston, state: wi, zip: '53948'}
+  address:
+    street: 534B La Crosse St.
+    city: Mauston
+    state: wi
+    zip: '53948'
   place: '5550025'
   phone: 608-847-5988
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/mauston/juneau-county-family-resource-center
   name: Juneau County Family Resource Center
   categories:
@@ -131,24 +146,16 @@
   name: Noble Community Clinics - Mauston
   categories:
   - community-health-center
-  address:
-    street: 880 Herriot Dr
-    city: Mauston
-    state: wi
-    zip: '53948'
+  cost: sliding-scale
+  address: {street: 880 Herriot Dr, city: Mauston, state: wi, zip: '53948'}
   place: '5550025'
-  geo:
-    lat: 43.80079
-    lng: -90.0594
+  geo: {lat: 43.80079, lng: -90.0594}
   phone: 800-942-5330
   website: https://nobleclinics.org/
-  external_ids:
-    bphc: BPS-H80-008667
+  external_ids: {bphc: BPS-H80-008667}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/mauston/riverside-park
   name: Riverside Park
   categories:

@@ -65,44 +65,28 @@
   name: Clarity Healthcare
   categories:
   - community-health-center
-  address:
-    street: 1 Healthcare Pl
-    city: Bowling Green
-    state: mo
-    zip: '63334'
+  cost: sliding-scale
+  address: {street: 1 Healthcare Pl, city: Bowling Green, state: mo, zip: '63334'}
   place: '2907660'
-  geo:
-    lat: 39.33305
-    lng: -91.14497
+  geo: {lat: 39.33305, lng: -91.14497}
   phone: 573-324-2200
-  external_ids:
-    bphc: BPS-H80-022117
+  external_ids: {bphc: BPS-H80-022117}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/bowling-green/clarity-healthcare-2
   name: Clarity Healthcare
   categories:
   - community-health-center
-  address:
-    street: 700 W Adams St
-    city: Bowling Green
-    state: mo
-    zip: '63334'
+  cost: sliding-scale
+  address: {street: 700 W Adams St, city: Bowling Green, state: mo, zip: '63334'}
   place: '2907660'
-  geo:
-    lat: 39.33909
-    lng: -91.20152
+  geo: {lat: 39.33909, lng: -91.20152}
   phone: 573-603-1460
-  external_ids:
-    bphc: BPS-H80-027424
+  external_ids: {bphc: BPS-H80-027424}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/bowling-green/housing-authority-of-the-city-of-bowling-green
   name: Housing Authority Of The City Of Bowling Green
   categories:
@@ -158,6 +142,13 @@
     lng: -91.17795
   phone: 573-248-1196
   website: https://www.mtbh.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -169,10 +160,16 @@
   - utility-assistance
   description: LIHEAP intake office serving Lewis, Lincoln, Macon, Marion, Monroe, Montgomery, Pike, Ralls,
     Randolph, Saint Charles, Shelby, Warren Counties
-  address: {street: 805 Buisness Hwy 61 N., city: Bowling Green, state: mo, zip: '63334'}
+  address:
+    street: 805 Buisness Hwy 61 N.
+    city: Bowling Green
+    state: mo
+    zip: '63334'
   place: '2907660'
   phone: 573-564-4002
   website: https://www.necac.org/services/community-services/energy-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

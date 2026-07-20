@@ -14,6 +14,15 @@
     lng: -80.73336
   phone: 330-424-9573
   website: https://www.colmhc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,35 +33,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbiana County
-  address: {street: 7880 Lincole Pl, city: Lisbon, state: oh, zip: '44432'}
-  place: '3944030'
-  phone: 330-424-4013
-  website: https://caaofcc.org/communityservices/utility-assistance/
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: oh/lisbon/dba-lisbon-community-health-center
-  name: DBA LISBON COMMUNITY HEALTH CENTER
-  categories:
-  - community-health-center
   address:
     street: 7880 Lincole Pl
     city: Lisbon
     state: oh
     zip: '44432'
   place: '3944030'
-  geo:
-    lat: 40.78613
-    lng: -80.77173
-  phone: 330-424-5686
-  website: https://www.caaofcc.org
-  external_ids:
-    bphc: BPS-H80-035781
+  phone: 330-424-4013
+  website: https://caaofcc.org/communityservices/utility-assistance/
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: oh/lisbon/dba-lisbon-community-health-center
+  name: DBA LISBON COMMUNITY HEALTH CENTER
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 7880 Lincole Pl, city: Lisbon, state: oh, zip: '44432'}
+  place: '3944030'
+  geo: {lat: 40.78613, lng: -80.77173}
+  phone: 330-424-5686
+  website: https://www.caaofcc.org
+  external_ids: {bphc: BPS-H80-035781}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/lisbon/family-recovery-center-outpatient-program
   name: Family Recovery Center Outpatient Program
   categories:
@@ -69,6 +76,22 @@
     lng: -80.77273
   phone: 330-424-1468 x113
   website: https://www.familyrecovery.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -109,6 +132,9 @@
     lng: -80.77162
   phone: 330-424-5686
   website: https://www.caaofcc.org/health/health-behavioral-health-center-at-lisbon/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -118,21 +144,13 @@
   name: THE COMMUNITY DENTAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 38722 Saltwell Rd
-    city: Lisbon
-    state: oh
-    zip: '44432'
+  cost: sliding-scale
+  address: {street: 38722 Saltwell Rd, city: Lisbon, state: oh, zip: '44432'}
   place: '3944030'
-  geo:
-    lat: 40.78581
-    lng: -80.77202
+  geo: {lat: 40.78581, lng: -80.77202}
   phone: 330-424-4192
   website: https://www.caaofcc.org
-  external_ids:
-    bphc: BPS-H80-001332
+  external_ids: {bphc: BPS-H80-001332}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

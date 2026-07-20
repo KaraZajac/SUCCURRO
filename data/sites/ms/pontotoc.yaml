@@ -2,45 +2,29 @@
   name: Access School Health - Pontotoc Main
   categories:
   - community-health-center
-  address:
-    street: 135 E Oxford St
-    city: Pontotoc
-    state: ms
-    zip: '38863'
+  cost: sliding-scale
+  address: {street: 135 E Oxford St, city: Pontotoc, state: ms, zip: '38863'}
   place: '2859160'
-  geo:
-    lat: 34.25281
-    lng: -88.99742
+  geo: {lat: 34.25281, lng: -88.99742}
   phone: 662-489-3382
   website: https://www.accessfamilyhealth.com
-  external_ids:
-    bphc: BPS-H80-028093
+  external_ids: {bphc: BPS-H80-028093}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/pontotoc/access-school-health-south-pontotoc
   name: Access School Health-South Pontotoc
   categories:
   - community-health-center
-  address:
-    street: 1523 S Pontotoc Rd
-    city: Pontotoc
-    state: ms
-    zip: '38863'
+  cost: sliding-scale
+  address: {street: 1523 S Pontotoc Rd, city: Pontotoc, state: ms, zip: '38863'}
   place: '2859160'
-  geo:
-    lat: 34.21991
-    lng: -89.08633
+  geo: {lat: 34.21991, lng: -89.08633}
   phone: 662-488-2960
-  external_ids:
-    bphc: BPS-H80-022328
+  external_ids: {bphc: BPS-H80-022328}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/pontotoc/arcare
   name: Arcare
   categories:
@@ -57,6 +41,9 @@
     lng: -89.02111
   phone: 662-490-1985
   website: https://arcare.net
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,6 +65,14 @@
     lng: -89.02157
   phone: 662-640-4595 x475
   website: https://www.lifecorehealthgroup.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -88,12 +83,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pontotoc County
-  address: {street: 1597 Hwy 15 North, city: Pontotoc, state: ms, zip: '38863'}
+  address:
+    street: 1597 Hwy 15 North
+    city: Pontotoc
+    state: ms
+    zip: '38863'
   place: '2859160'
   phone: 662-489-7329
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/pontotoc/millcreek-of-pontotoc
   name: Millcreek of Pontotoc
   categories:
@@ -106,6 +107,18 @@
   place: '2859160'
   phone: 662-488-8878 x223
   website: https://www.millcreekofpontotoc.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -115,24 +128,16 @@
   name: MississippiCare - 113
   categories:
   - community-health-center
-  address:
-    street: 353 Highway 15 N
-    city: Pontotoc
-    state: ms
-    zip: '38863'
+  cost: sliding-scale
+  address: {street: 353 Highway 15 N, city: Pontotoc, state: ms, zip: '38863'}
   place: '2859160'
-  geo:
-    lat: 34.26766
-    lng: -89.02111
+  geo: {lat: 34.26766, lng: -89.02111}
   phone: 870-347-2534
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-021032
+  external_ids: {bphc: BPS-H80-021032}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/pontotoc/pontotoc-head-start-center
   name: Pontotoc Head Start Center
   categories:

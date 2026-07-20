@@ -2,24 +2,16 @@
   name: Matthew W. Stahl Memorial Health Center
   categories:
   - community-health-center
-  address:
-    street: 498 S Main St, Suite D
-    city: Montrose
-    state: pa
-    zip: '18801'
+  cost: sliding-scale
+  address: {street: '498 S Main St, Suite D', city: Montrose, state: pa, zip: '18801'}
   place: '4250736'
-  geo:
-    lat: 41.83242
-    lng: -75.87892
+  geo: {lat: 41.83242, lng: -75.87892}
   phone: 570-278-5161
   website: https://www.nepachc.org
-  external_ids:
-    bphc: BPS-H80-017359
+  external_ids: {bphc: BPS-H80-017359}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/montrose/st-paul-s-little-free-pantry
   name: St. Paul's Little Free Pantry
   categories:
@@ -60,12 +52,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Susquehanna County
-  address: {street: 33 Spruce Street (P. O. Box 128), city: Montrose, state: pa, zip: '18801'}
+  address:
+    street: 33 Spruce Street (P. O. Box 128)
+    city: Montrose
+    state: pa
+    zip: '18801'
   place: '4250736'
   phone: 866-410-2093
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/montrose/trehab-center-inc
   name: Trehab Center Inc
   categories:
@@ -81,6 +79,11 @@
     lng: -75.87759
   phone: 570-278-5221
   website: https://www.trehab.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

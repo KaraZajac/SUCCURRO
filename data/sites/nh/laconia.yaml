@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Belknap County
-  address: {street: 121 Belmont Rd, city: Laconia, state: nh, zip: '03246'}
+  address:
+    street: 121 Belmont Rd
+    city: Laconia
+    state: nh
+    zip: '03246'
   place: '3340180'
   phone: 603-223-0043
   website: https://capbm.org/Fuel-Assistance-Program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nh/laconia/elm-street-school
   name: Elm Street School
   categories:
@@ -37,66 +43,42 @@
   name: HealthFirst at Isaiah 61 Cafe
   categories:
   - community-health-center
-  address:
-    street: 100 New Salem St
-    city: Laconia
-    state: nh
-    zip: '03246'
+  cost: sliding-scale
+  address: {street: 100 New Salem St, city: Laconia, state: nh, zip: '03246'}
   place: '3340180'
-  geo:
-    lat: 43.5272
-    lng: -71.47367
+  geo: {lat: 43.5272, lng: -71.47367}
   phone: 603-366-1070
-  external_ids:
-    bphc: BPS-H80-036592
+  external_ids: {bphc: BPS-H80-036592}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/laconia/healthfirst-church-st
   name: HealthFirst - Church St
   categories:
   - community-health-center
-  address:
-    street: 17 Church St
-    city: Laconia
-    state: nh
-    zip: '03246'
+  cost: sliding-scale
+  address: {street: 17 Church St, city: Laconia, state: nh, zip: '03246'}
   place: '3340180'
-  geo:
-    lat: 43.52927
-    lng: -71.4704
+  geo: {lat: 43.52927, lng: -71.4704}
   phone: 603-366-1070
-  external_ids:
-    bphc: BPS-H80-036361
+  external_ids: {bphc: BPS-H80-036361}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/laconia/healthfirst-laconia
   name: HealthFirst - Laconia
   categories:
   - community-health-center
-  address:
-    street: 22 Strafford St
-    city: Laconia
-    state: nh
-    zip: '03246'
+  cost: sliding-scale
+  address: {street: 22 Strafford St, city: Laconia, state: nh, zip: '03246'}
   place: '3340180'
-  geo:
-    lat: 43.53262
-    lng: -71.46488
+  geo: {lat: 43.53262, lng: -71.46488}
   phone: 603-366-1070
   website: https://www.healthfirstfamily.org
-  external_ids:
-    bphc: BPS-H80-000693
+  external_ids: {bphc: BPS-H80-000693}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/laconia/horizons-counseling-center
   name: Horizons Counseling Center
   categories:
@@ -113,6 +95,12 @@
     lng: -71.47235
   phone: 603-524-4664
   website: https://horizonsnh.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -242,6 +230,22 @@
     lng: -71.46951
   phone: 603-524-1100
   website: https://www.lrmhc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -263,6 +267,22 @@
     lng: -71.46259
   phone: 603-524-1100
   website: https://www.lrmhc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -322,6 +342,10 @@
     lng: -71.47208
   phone: 603-619-1132
   website: https://www.paugusbaybh.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

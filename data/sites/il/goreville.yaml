@@ -2,23 +2,15 @@
   name: Goreville Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 211 S Broadway
-    city: Goreville
-    state: il
-    zip: '62939'
+  cost: sliding-scale
+  address: {street: 211 S Broadway, city: Goreville, state: il, zip: '62939'}
   place: '1730575'
-  geo:
-    lat: 37.55421
-    lng: -88.97209
+  geo: {lat: 37.55421, lng: -88.97209}
   phone: 618-995-1002
-  external_ids:
-    bphc: BPS-H80-035171
+  external_ids: {bphc: BPS-H80-035171}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/goreville/rural-health-inc
   name: Rural Health Inc
   categories:
@@ -35,6 +27,9 @@
     lng: -88.97197
   phone: 618-995-1002
   website: https://www.ruralhealthinc.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

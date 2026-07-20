@@ -43,86 +43,54 @@
   name: Juniper Health Lee County
   categories:
   - community-health-center
-  address:
-    street: 1025 Grand Ave
-    city: Beattyville
-    state: ky
-    zip: '41311'
+  cost: sliding-scale
+  address: {street: 1025 Grand Ave, city: Beattyville, state: ky, zip: '41311'}
   place: '2104546'
-  geo:
-    lat: 37.58383
-    lng: -83.69831
+  geo: {lat: 37.58383, lng: -83.69831}
   phone: 606-464-2401
-  external_ids:
-    bphc: BPS-H80-034050
+  external_ids: {bphc: BPS-H80-034050}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/beattyville/juniper-health-lee-county-dental
   name: Juniper Health Lee County Dental
   categories:
   - community-health-center
-  address:
-    street: 60 Center St
-    city: Beattyville
-    state: ky
-    zip: '41311'
+  cost: sliding-scale
+  address: {street: 60 Center St, city: Beattyville, state: ky, zip: '41311'}
   place: '2104546'
-  geo:
-    lat: 37.57297
-    lng: -83.70989
+  geo: {lat: 37.57297, lng: -83.70989}
   phone: 606-464-9262
-  external_ids:
-    bphc: BPS-H80-018523
+  external_ids: {bphc: BPS-H80-018523}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/beattyville/juniper-health-lee-county-elementary
   name: Juniper Health Lee County Elementary
   categories:
   - community-health-center
-  address:
-    street: 1665 Hwy 11 S
-    city: Beattyville
-    state: ky
-    zip: '41311'
+  cost: sliding-scale
+  address: {street: 1665 Hwy 11 S, city: Beattyville, state: ky, zip: '41311'}
   place: '2104546'
-  geo:
-    lat: 37.55071
-    lng: -83.71783
+  geo: {lat: 37.55071, lng: -83.71783}
   phone: 606-464-2401
-  external_ids:
-    bphc: BPS-H80-037467
+  external_ids: {bphc: BPS-H80-037467}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/beattyville/juniper-health-lee-county-middle-high-school
   name: Juniper Health Lee County Middle High School
   categories:
   - community-health-center
-  address:
-    street: 599 Lee Ave
-    city: Beattyville
-    state: ky
-    zip: '41311'
+  cost: sliding-scale
+  address: {street: 599 Lee Ave, city: Beattyville, state: ky, zip: '41311'}
   place: '2104546'
-  geo:
-    lat: 37.58161
-    lng: -83.70818
+  geo: {lat: 37.58161, lng: -83.70818}
   phone: 606-464-2401
-  external_ids:
-    bphc: BPS-H80-037466
+  external_ids: {bphc: BPS-H80-037466}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/beattyville/kentucky-river-community-care-inc-drug-court-ser
   name: Kentucky River Community Care Inc Drug Court Services
   categories:
@@ -139,6 +107,15 @@
     lng: -83.69734
   phone: 606-464-3212
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -160,6 +137,13 @@
     lng: -83.69734
   phone: 606-464-3212 x3000
   website: https://krccnet.com
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -181,6 +165,12 @@
     lng: -83.69734
   phone: 606-464-3212
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,6 +191,12 @@
     lng: -83.69734
   phone: 606-464-3212
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -222,6 +218,15 @@
     lng: -83.69734
   phone: 606-464-3212
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -272,11 +277,17 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lee County
-  address: {street: 61 Main St., city: Beattyville, state: ky, zip: '41311'}
+  address:
+    street: 61 Main St.
+    city: Beattyville
+    state: ky
+    zip: '41311'
   place: '2104546'
   phone: 606-464-2259
   email: mkleecaa@mkcap.org
   website: http://www.mkcap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

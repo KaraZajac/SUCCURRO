@@ -59,23 +59,15 @@
   name: GREENVILLE SATELLITE CLINIC
   categories:
   - community-health-center
-  address:
-    street: 1414 Hospital St
-    city: Greenville
-    state: ms
-    zip: '38703'
+  cost: sliding-scale
+  address: {street: 1414 Hospital St, city: Greenville, state: ms, zip: '38703'}
   place: '2829180'
-  geo:
-    lat: 33.41211
-    lng: -91.03476
+  geo: {lat: 33.41211, lng: -91.03476}
   phone: 662-335-3991
-  external_ids:
-    bphc: BPS-H80-003125
+  external_ids: {bphc: BPS-H80-003125}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/greenville/greenville-va-clinic
   name: Greenville VA Clinic
   categories:
@@ -128,6 +120,16 @@
     lng: -91.03308
   phone: 662-335-5274
   website: https://www.region6-lifehelp.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -235,23 +237,15 @@
   name: South Greenville Satellite
   categories:
   - community-health-center
-  address:
-    street: 2363 Highway 1 S
-    city: Greenville
-    state: ms
-    zip: '38701'
+  cost: sliding-scale
+  address: {street: 2363 Highway 1 S, city: Greenville, state: ms, zip: '38701'}
   place: '2829180'
-  geo:
-    lat: 33.35478
-    lng: -91.04136
+  geo: {lat: 33.35478, lng: -91.04136}
   phone: 662-334-1253
-  external_ids:
-    bphc: BPS-H80-013662
+  external_ids: {bphc: BPS-H80-013662}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/greenville/t-l-weston-middle-school
   name: T.L. Weston Middle School
   categories:
@@ -348,10 +342,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: 1165 South Raceway Road, city: Greenville, state: ms, zip: '38701'}
+  address:
+    street: 1165 South Raceway Road
+    city: Greenville
+    state: ms
+    zip: '38701'
   place: '2829180'
   phone: 662-378-8663
   website: https://www.wwiscaa.net/copy-of-homemaker-services-2
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

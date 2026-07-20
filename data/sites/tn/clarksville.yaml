@@ -14,6 +14,9 @@
     lng: -87.28957
   phone: 615-320-1155
   website: https://www.athenacare.health
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -115,6 +118,13 @@
     lng: -87.34984
   phone: 931-920-7200
   website: https://www.centerstone.org/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -171,13 +181,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Montgomery County
-  address: {street: '150 Lafayette Rd, (P. O. Box 487)', city: Clarksville, state: tn, zip: '37041'}
+  address:
+    street: 150 Lafayette Rd, (P. O. Box 487)
+    city: Clarksville
+    state: tn
+    zip: '37041'
   place: '4715160'
   phone: 931-896-1800
   website: https://cmccaa.com/community-programs/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/clarksville/clarksville-montgomery-county-public-library
   name: Clarksville-Montgomery County Public Library
   categories:
@@ -336,6 +352,22 @@
     lng: -87.29283
   phone: 615-242-7410
   website: https://www.clarvida.com/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -402,6 +434,10 @@
     lng: -87.32128
   phone: 615-234-8615
   website: https://www.cumberlandheights.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -540,6 +576,22 @@
     lng: -87.30757
   phone: 931-933-7200
   website: https://www.healthconnectamerica.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -629,24 +681,16 @@
   name: Matthew Walker Health Center - Clarksville
   categories:
   - community-health-center
-  address:
-    street: 230 Dover Rd
-    city: Clarksville
-    state: tn
-    zip: '37042'
+  cost: sliding-scale
+  address: {street: 230 Dover Rd, city: Clarksville, state: tn, zip: '37042'}
   place: '4715160'
-  geo:
-    lat: 36.55009
-    lng: -87.40032
+  geo: {lat: 36.55009, lng: -87.40032}
   phone: 931-920-5000
   website: https://www.mwchc.org
-  external_ids:
-    bphc: BPS-H80-001435
+  external_ids: {bphc: BPS-H80-001435}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/clarksville/miller-town
   name: Miller Town
   categories:
@@ -674,23 +718,15 @@
   name: Mobile Primary Care, Behavioral Health and Oral Health Unit
   categories:
   - community-health-center
-  address:
-    street: 230 Dover Rd
-    city: Clarksville
-    state: tn
-    zip: '37042'
+  cost: sliding-scale
+  address: {street: 230 Dover Rd, city: Clarksville, state: tn, zip: '37042'}
   place: '4715160'
-  geo:
-    lat: 36.55009
-    lng: -87.40032
+  geo: {lat: 36.55009, lng: -87.40032}
   phone: 615-920-5004
-  external_ids:
-    bphc: BPS-H80-028058
+  external_ids: {bphc: BPS-H80-028058}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/clarksville/montgomery-commons
   name: Montgomery Commons
   categories:
@@ -845,6 +881,22 @@
     lng: -87.31354
   phone: 931-266-0722
   website: https://www.sperohealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -947,6 +999,15 @@
     lng: -87.27321
   phone: 931-538-6420
   website: https://thmgt.com/locations/behavioral-healthcare-center-a
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Clients with HIV or AIDS
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

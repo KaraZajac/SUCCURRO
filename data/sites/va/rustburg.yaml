@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Campbell County
-  address: {street: 69 Kabler Lane / P.O. Box 860, city: Rustburg, state: va, zip: 24588-0860}
+  address:
+    street: 69 Kabler Lane / P.O. Box 860
+    city: Rustburg
+    state: va
+    zip: 24588-0860
   place: '5169536'
   phone: 434-332-9585
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/rustburg/horizon-behavioral-health-campbell-county-wellne
   name: Horizon Behavioral Health Campbell County Wellness
   categories:
@@ -20,6 +26,19 @@
   place: '5169536'
   phone: 434-477-5000
   website: https://www.horizonbh.org
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -29,23 +48,15 @@
   name: Rustburg Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 925 Village Hwy
-    city: Rustburg
-    state: va
-    zip: '24588'
+  cost: sliding-scale
+  address: {street: 925 Village Hwy, city: Rustburg, state: va, zip: '24588'}
   place: '5169536'
-  geo:
-    lat: 37.27744
-    lng: -79.09848
+  geo: {lat: 37.27744, lng: -79.09848}
   phone: 434-528-0005
-  external_ids:
-    bphc: BPS-H80-021616
+  external_ids: {bphc: BPS-H80-021616}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/rustburg/rustburg-elem
   name: Rustburg Elem
   categories:

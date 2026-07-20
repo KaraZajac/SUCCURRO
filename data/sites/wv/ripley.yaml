@@ -61,33 +61,31 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jackson County
-  address: {street: 4285 Cedar Lakes Road, city: Ripley, state: wv, zip: '25271'}
-  place: '5468596'
-  phone: 304-373-2560
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: wv/ripley/jackson-county-school-based-wellness-center
-  name: Jackson County School Based Wellness Center
-  categories:
-  - community-health-center
   address:
-    street: 562 Charleston Dr
+    street: 4285 Cedar Lakes Road
     city: Ripley
     state: wv
     zip: '25271'
   place: '5468596'
-  geo:
-    lat: 38.81015
-    lng: -81.70261
-  phone: 304-372-7341
-  external_ids:
-    bphc: BPS-H80-001609
+  phone: 304-373-2560
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: wv/ripley/jackson-county-school-based-wellness-center
+  name: Jackson County School Based Wellness Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 562 Charleston Dr, city: Ripley, state: wv, zip: '25271'}
+  place: '5468596'
+  geo: {lat: 38.81015, lng: -81.70261}
+  phone: 304-372-7341
+  external_ids: {bphc: BPS-H80-001609}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/ripley/kiddy-korner-child-care-center-jackson-county-bo
   name: Kiddy Korner Child Care Center (Jackson County BOE)
   categories:
@@ -123,6 +121,13 @@
     lng: -81.71047
   phone: 304-373-1108
   website: https://www.kvc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -192,23 +197,15 @@
   name: Ripley Family Care
   categories:
   - community-health-center
-  address:
-    street: 512A Church St S
-    city: Ripley
-    state: wv
-    zip: '25271'
+  cost: sliding-scale
+  address: {street: 512A Church St S, city: Ripley, state: wv, zip: '25271'}
   place: '5468596'
-  geo:
-    lat: 38.80349
-    lng: -81.6986
+  geo: {lat: 38.80349, lng: -81.6986}
   phone: 304-372-1033
-  external_ids:
-    bphc: BPS-H80-009166
+  external_ids: {bphc: BPS-H80-009166}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/ripley/westbrook-health-services-jackson-county-office
   name: Westbrook Health Services Jackson County Office
   categories:
@@ -225,6 +222,20 @@
     lng: -81.69623
   phone: 304-372-6833 x317
   website: https://www.westbrookhealth.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

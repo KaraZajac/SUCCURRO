@@ -22,12 +22,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bedford County
-  address: {street: 150 North Street, city: Bedford, state: pa, zip: '15522'}
+  address:
+    street: 150 North Street
+    city: Bedford
+    state: pa
+    zip: '15522'
   place: '4204944'
   phone: 814-624-4072
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/bedford/bedford-elementary
   name: Bedford Elementary
   categories:
@@ -88,6 +94,9 @@
     lng: -78.48678
   phone: 814-623-5166
   website: https://ccsprovider.co
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -117,42 +126,26 @@
   name: Hyndman Area Health Center
   categories:
   - community-health-center
-  address:
-    street: 1 Corporate Dr, Ste 107
-    city: Bedford
-    state: pa
-    zip: '15522'
+  cost: sliding-scale
+  address: {street: '1 Corporate Dr, Ste 107', city: Bedford, state: pa, zip: '15522'}
   place: '4204944'
-  geo:
-    lat: 40.08165
-    lng: -78.51842
+  geo: {lat: 40.08165, lng: -78.51842}
   phone: 814-709-9803
-  external_ids:
-    bphc: BPS-H80-038775
+  external_ids: {bphc: BPS-H80-038775}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/bedford/hyndman-area-health-center-bedford-clinic
   name: Hyndman Area Health Center-Bedford Clinic
   categories:
   - community-health-center
-  address:
-    street: 104 Railroad St
-    city: Bedford
-    state: pa
-    zip: '15522'
+  cost: sliding-scale
+  address: {street: 104 Railroad St, city: Bedford, state: pa, zip: '15522'}
   place: '4204944'
-  geo:
-    lat: 40.02171
-    lng: -78.50321
+  geo: {lat: 40.02171, lng: -78.50321}
   phone: 814-263-5804
   website: https://www.hyndmanhealth.org
-  external_ids:
-    bphc: BPS-H80-018508
+  external_ids: {bphc: BPS-H80-018508}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

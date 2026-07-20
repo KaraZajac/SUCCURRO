@@ -14,6 +14,22 @@
     lng: -87.52872
   phone: 812-421-9900
   website: https://www.adaptcounselingservices.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +51,11 @@
     lng: -87.50512
   phone: 812-485-1473
   website: https://healthcare.ascension.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -156,6 +177,10 @@
     lng: -87.49653
   phone: 812-213-0304
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -166,13 +191,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Vanderburgh County
-  address: {street: '401 SE 6th St., Suite 001', city: Evansville, state: in, zip: '47713'}
+  address:
+    street: 401 SE 6th St., Suite 001
+    city: Evansville
+    state: in
+    zip: '47713'
   place: '1822000'
   phone: 812-428-2189
   website: http://www.capeevansville.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/evansville/counseling-for-change-inc
   name: Counseling for Change Inc
   categories:
@@ -188,6 +219,15 @@
     lng: -87.54434
   phone: 812-491-2615
   website: https://www.counselingforchangeinc.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -209,6 +249,16 @@
     lng: -87.46589
   phone: 812-476-7200
   website: https://www.deaconess.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -240,109 +290,69 @@
   name: ECHO Community Health Care, Inc. Administrative Office
   categories:
   - community-health-center
-  address:
-    street: 401 SE 6th St, Ste 202
-    city: Evansville
-    state: in
-    zip: '47713'
+  cost: sliding-scale
+  address: {street: '401 SE 6th St, Ste 202', city: Evansville, state: in, zip: '47713'}
   place: '1822000'
-  geo:
-    lat: 37.96897
-    lng: -87.56602
+  geo: {lat: 37.96897, lng: -87.56602}
   phone: 812-421-7489
-  external_ids:
-    bphc: BPS-H80-021951
+  external_ids: {bphc: BPS-H80-021951}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/evansville/echo-community-health-care-inc-mulberry-street-c
   name: ECHO Community Health Care, Inc. Mulberry Street Clinic
   categories:
   - community-health-center
-  address:
-    street: 315 Mulberry St
-    city: Evansville
-    state: in
-    zip: '47713'
+  cost: sliding-scale
+  address: {street: 315 Mulberry St, city: Evansville, state: in, zip: '47713'}
   place: '1822000'
-  geo:
-    lat: 37.96596
-    lng: -87.56739
+  geo: {lat: 37.96596, lng: -87.56739}
   phone: 812-421-7489
   website: https://www.echochc.org
-  external_ids:
-    bphc: BPS-H80-008131
+  external_ids: {bphc: BPS-H80-008131}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/evansville/echo-division-street-family-clinic
   name: ECHO Division Street Family Clinic
   categories:
   - community-health-center
-  address:
-    street: 25 W Division St
-    city: Evansville
-    state: in
-    zip: '47710'
+  cost: sliding-scale
+  address: {street: 25 W Division St, city: Evansville, state: in, zip: '47710'}
   place: '1822000'
-  geo:
-    lat: 37.97769
-    lng: -87.56509
+  geo: {lat: 37.97769, lng: -87.56509}
   phone: 812-436-4501
   website: https://www.echochc.org
-  external_ids:
-    bphc: BPS-H80-000016
+  external_ids: {bphc: BPS-H80-000016}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/evansville/echo-john-street-woodson-homeless-health-clinic
   name: ECHO John Street Woodson Homeless Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 401 John St
-    city: Evansville
-    state: in
-    zip: '47713'
+  cost: sliding-scale
+  address: {street: 401 John St, city: Evansville, state: in, zip: '47713'}
   place: '1822000'
-  geo:
-    lat: 37.97609
-    lng: -87.5583
+  geo: {lat: 37.97609, lng: -87.5583}
   phone: 812-436-0224
-  external_ids:
-    bphc: BPS-H80-032224
+  external_ids: {bphc: BPS-H80-032224}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/evansville/echo-pediatric-and-prenatal-clinic
   name: ECHO Pediatric and Prenatal Clinic
   categories:
   - community-health-center
-  address:
-    street: 316 Chandler Ave
-    city: Evansville
-    state: in
-    zip: '47713'
+  cost: sliding-scale
+  address: {street: 316 Chandler Ave, city: Evansville, state: in, zip: '47713'}
   place: '1822000'
-  geo:
-    lat: 37.96575
-    lng: -87.56695
+  geo: {lat: 37.96575, lng: -87.56695}
   phone: 812-436-4501
-  external_ids:
-    bphc: BPS-H80-014455
+  external_ids: {bphc: BPS-H80-014455}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/evansville/enterprise-zone
   name: ENTERPRISE ZONE
   categories:
@@ -400,6 +410,9 @@
     lng: -87.58628
   phone: 812-512-9175
   website: https://www.ctcprograms.com/location/evansville-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -420,6 +433,22 @@
     lng: -87.58628
   phone: 812-512-9175
   website: https://www.ctcprograms.com/location/evansville-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -459,6 +488,13 @@
   place: '1822000'
   phone: 812-477-6436 x233
   website: https://www.in.gov/fssa/dmha/state-psychiatric-hospitals/evansville-psychiatric-childrens-center/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -678,6 +714,10 @@
     lng: -87.60717
   phone: 812-429-9654
   website: https://www.hillcrestyouthservices.org
+  services:
+  - Outpatient
+  - Young adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -804,6 +844,22 @@
     lng: -87.57598
   phone: 812-602-5170
   website: https://www.nowcounseling.us
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -825,6 +881,22 @@
     lng: -87.52944
   phone: 812-602-4022
   website: https://www.nowcounseling.us
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -846,6 +918,22 @@
     lng: -87.57063
   phone: 812-602-4022
   website: https://www.nowcounseling.us
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -867,6 +955,22 @@
     lng: -87.56277
   phone: 812-602-4022
   website: https://nowcounseling.us
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -888,6 +992,22 @@
     lng: -87.56227
   phone: 812-602-4022
   website: https://www.nowcounseling.us
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -947,6 +1067,14 @@
     lng: -87.56655
   phone: 812-436-4243
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -968,6 +1096,14 @@
     lng: -87.49995
   phone: 812-476-5437
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -989,6 +1125,13 @@
     lng: -87.56542
   phone: 812-425-8190
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1010,6 +1153,15 @@
     lng: -87.56596
   phone: 812-423-7791
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1031,6 +1183,14 @@
     lng: -87.60931
   phone: 812-423-4418
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1051,6 +1211,22 @@
     lng: -87.50082
   phone: 812-473-3144
   website: https://www.southwestern.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1083,14 +1259,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Vanderburgh County
-  address: {street: 727 John St., city: Evansville, state: in, zip: '47713'}
+  address:
+    street: 727 John St.
+    city: Evansville
+    state: in
+    zip: '47713'
   place: '1822000'
   phone: 812-428-2189
   email: EAP@tri-cap.net
   website: http://www.tri-cap.net/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/evansville/um-pantry
   name: Um, pantry?
   categories:
@@ -1136,6 +1318,22 @@
     lng: -87.58343
   phone: 833-659-4357
   website: https://www.voaohin.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

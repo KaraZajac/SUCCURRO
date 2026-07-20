@@ -2,23 +2,15 @@
   name: ARcare - 45
   categories:
   - community-health-center
-  address:
-    street: 114 Ray St
-    city: Newport
-    state: ar
-    zip: '72112'
+  cost: sliding-scale
+  address: {street: 114 Ray St, city: Newport, state: ar, zip: '72112'}
   place: 0549580
-  geo:
-    lat: 35.60706
-    lng: -91.25613
+  geo: {lat: 35.60706, lng: -91.25613}
   phone: 870-523-2944
-  external_ids:
-    bphc: BPS-H80-024561
+  external_ids: {bphc: BPS-H80-024561}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/newport/arisa-health-inc-newport-clinic
   name: Arisa Health Inc Newport Clinic
   categories:
@@ -35,6 +27,13 @@
     lng: -91.26542
   phone: 870-919-8432
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -55,6 +54,13 @@
     lng: -91.27923
   phone: 501-315-3344
   website: https://birchtree.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,14 +90,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jackson County
-  address: {street: '2000 McLain, Suite C', city: Newport, state: ar, zip: '72112'}
+  address:
+    street: 2000 McLain, Suite C
+    city: Newport
+    state: ar
+    zip: '72112'
   place: 0549580
   phone: 870-523-5474
   email: crdc@crdcnea.org
   website: http://www.crdcnea.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/newport/housing-authority-of-the-city-of-newport
   name: Housing Authority Of The City Of Newport
   categories:
@@ -128,6 +140,22 @@
     lng: -91.26486
   phone: 870-512-3354
   website: https://www.unity-health.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

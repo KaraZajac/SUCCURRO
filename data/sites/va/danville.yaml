@@ -58,6 +58,11 @@
     lng: -79.52674
   phone: 877-654-6396
   website: https://www.crossroadstreatmentcenters.com/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,6 +83,11 @@
     lng: -79.52674
   phone: 877-654-6396
   website: https://www.crossroadstreatmentcenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -88,13 +98,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Danville City County
-  address: {street: '510 Patton St., (P. O. Box 3300)', city: Danville, state: va, zip: '24541'}
+  address:
+    street: 510 Patton St., (P. O. Box 3300)
+    city: Danville
+    state: va
+    zip: '24541'
   place: '5121344'
   phone: 434-799-6543
   website: http://www.danville-va.gov/304/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/danville/danville-pittsylvania-community-servs-dpcs
   name: Danville Pittsylvania Community Servs (DPCS)
   categories:
@@ -111,6 +127,13 @@
     lng: -79.41628
   phone: 434-793-4931
   website: https://www.dpcs.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -129,6 +152,19 @@
   place: '5121344'
   phone: 434-799-0456
   website: https://www.dpcs.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -236,6 +272,13 @@
     lng: -79.40823
   phone: 434-835-4601
   website: https://www.epichealthpartners.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -257,6 +300,21 @@
     lng: -79.40779
   phone: 434-483-5070
   website: https://www.focuspointmentalhealth.com/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -604,6 +662,15 @@
     lng: -79.40457
   phone: 434-836-8500 x1005
   website: https://thehughescenter.com
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -702,132 +769,84 @@
   name: PATHS Community Dental Center - Danville
   categories:
   - community-health-center
-  address:
-    street: 501 Rison St, Ste 110
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: '501 Rison St, Ste 110', city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.5786
-    lng: -79.40142
+  geo: {lat: 36.5786, lng: -79.40142}
   phone: 434-791-0214
-  external_ids:
-    bphc: BPS-H80-031425
+  external_ids: {bphc: BPS-H80-031425}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/paths-community-medical-center-danville
   name: PATHS Community Medical Center - Danville
   categories:
   - community-health-center
-  address:
-    street: 705 Main St
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 705 Main St, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.5858
-    lng: -79.39516
+  geo: {lat: 36.5858, lng: -79.39516}
   phone: 434-791-4122
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-007929
+  external_ids: {bphc: BPS-H80-007929}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/paths-community-medical-center-danville-riversid
   name: PATHS Community Medical Center  -  Danville Riverside
   categories:
   - community-health-center
-  address:
-    street: 336 Old Riverside Dr
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 336 Old Riverside Dr, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.58862
-    lng: -79.42279
+  geo: {lat: 36.58862, lng: -79.42279}
   phone: 434-791-3630
   website: https://pathsinc.org
-  external_ids:
-    bphc: BPS-H80-036085
+  external_ids: {bphc: BPS-H80-036085}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/paths-community-pharmacy-danville
   name: PATHS Community Pharmacy - Danville
   categories:
   - community-health-center
-  address:
-    street: 133 S Ridge St
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 133 S Ridge St, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.58568
-    lng: -79.39394
+  geo: {lat: 36.58568, lng: -79.39394}
   phone: 434-791-4880
-  external_ids:
-    bphc: BPS-H80-031280
+  external_ids: {bphc: BPS-H80-031280}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/paths-george-washington-high-school-based-health
   name: PATHS George Washington High School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 701 Broad St
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 701 Broad St, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.58739
-    lng: -79.41189
+  geo: {lat: 36.58739, lng: -79.41189}
   phone: 434-791-3630
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-035073
+  external_ids: {bphc: BPS-H80-035073}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/paths-sbss-mobile-unit
   name: PATHS SBSS Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 705 Main St
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 705 Main St, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.5858
-    lng: -79.39516
+  geo: {lat: 36.5858, lng: -79.39516}
   phone: 434-791-4122
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-034925
+  external_ids: {bphc: BPS-H80-034925}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/pcca-bethel-head-start-c-18-bethel-baptist-churc
   name: PCCA Bethel Head Start C#18 (Bethel Baptist Church)
   categories:
@@ -896,24 +915,16 @@
   name: Piedmont Access To Health Services, Inc. Administrative  Office
   categories:
   - community-health-center
-  address:
-    street: 116 S Ridge St
-    city: Danville
-    state: va
-    zip: '24541'
+  cost: sliding-scale
+  address: {street: 116 S Ridge St, city: Danville, state: va, zip: '24541'}
   place: '5121344'
-  geo:
-    lat: 36.58581
-    lng: -79.3947
+  geo: {lat: 36.58581, lng: -79.3947}
   phone: 434-791-3630
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-027697
+  external_ids: {bphc: BPS-H80-027697}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/danville/schoolfield-elem
   name: Schoolfield Elem
   categories:
@@ -948,6 +959,18 @@
   place: '5121344'
   phone: 434-799-6220
   website: https://www.svmhi.dbhds.virginia.gov
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -992,6 +1015,9 @@
     lng: -79.4055
   phone: 434-799-2100
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

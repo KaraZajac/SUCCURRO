@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jefferson County
-  address: {street: 239 Willow Spring Drive (P.O. Box 984), city: Charles Town, state: wv, zip: '25414'}
+  address:
+    street: 239 Willow Spring Drive (P.O. Box 984)
+    city: Charles Town
+    state: wv
+    zip: '25414'
   place: '5414610'
   phone: 304-724-2600
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/charles-town/nc-washington-high-school
   name: Nc - Washington High School
   categories:
@@ -35,24 +41,16 @@
   name: SCH Behavioral Health
   categories:
   - community-health-center
-  address:
-    street: 44 Trifecta Pl
-    city: Charles Town
-    state: wv
-    zip: '25414'
+  cost: sliding-scale
+  address: {street: 44 Trifecta Pl, city: Charles Town, state: wv, zip: '25414'}
   place: '5414610'
-  geo:
-    lat: 39.30279
-    lng: -77.84198
+  geo: {lat: 39.30279, lng: -77.84198}
   phone: 304-728-3716
   website: https://www.shencommhealth.com
-  external_ids:
-    bphc: BPS-H80-013609
+  external_ids: {bphc: BPS-H80-013609}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/charles-town/shenandoah-community-health
   name: Shenandoah Community Health
   categories:
@@ -69,6 +67,22 @@
     lng: -77.84236
   phone: 304-263-7023
   website: https://www.shencommhealth.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

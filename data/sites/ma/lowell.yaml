@@ -14,6 +14,10 @@
     lng: -71.30677
   phone: 978-453-5736
   website: https://arbourhealth.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +39,14 @@
     lng: -71.30918
   phone: 978-459-0389
   website: https://www.bridgewell.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -107,13 +119,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Middlesex County
-  address: {street: 45 Kirk St., city: Lowell, state: ma, zip: 01854}
+  address:
+    street: 45 Kirk St.
+    city: Lowell
+    state: ma
+    zip: 01854
   place: '2537000'
   phone: 978-459-6161
   website: http://www.commteam.org/how-we-help/housing-utilities/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/lowell/elm-tree-clinic
   name: Elm Tree Clinic
   categories:
@@ -130,6 +148,11 @@
     lng: -71.35528
   phone: 833-356-8733
   website: https://www.elmtreeclinic.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -139,23 +162,15 @@
   name: Health on Wheels
   categories:
   - community-health-center
-  address:
-    street: 161 Jackson St
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 161 Jackson St, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.64224
-    lng: -71.31038
+  geo: {lat: 42.64224, lng: -71.31038}
   phone: 978-937-9700
-  external_ids:
-    bphc: BPS-H80-040106
+  external_ids: {bphc: BPS-H80-040106}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/highland-parkway-sf-171-039
   name: Highland Parkway (Sf-171-039)
   categories:
@@ -202,89 +217,57 @@
   name: Kathyrn P. Stoklosa Middle School
   categories:
   - community-health-center
-  address:
-    street: 560 Broadway St
-    city: Lowell
-    state: ma
-    zip: 01854
+  cost: sliding-scale
+  address: {street: 560 Broadway St, city: Lowell, state: ma, zip: 01854}
   place: '2537000'
-  geo:
-    lat: 42.64308
-    lng: -71.32472
+  geo: {lat: 42.64308, lng: -71.32472}
   phone: 978-970-3346
   website: https://www.lchealth.org
-  external_ids:
-    bphc: BPS-H80-005959
+  external_ids: {bphc: BPS-H80-005959}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/kraft-care-in-reach-mobile-van
   name: Kraft Care in Reach Mobile Van
   categories:
   - community-health-center
-  address:
-    street: 161 Jackson St
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 161 Jackson St, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.64224
-    lng: -71.31038
+  geo: {lat: 42.64224, lng: -71.31038}
   phone: 978-937-9700
-  external_ids:
-    bphc: BPS-H80-040107
+  external_ids: {bphc: BPS-H80-040107}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lchc-consolidated-site
   name: LCHC Consolidated Site
   categories:
   - community-health-center
-  address:
-    street: 161 Jackson St
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 161 Jackson St, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.64224
-    lng: -71.31038
+  geo: {lat: 42.64224, lng: -71.31038}
   phone: 978-937-9700
   website: https://www.lchealth.org
-  external_ids:
-    bphc: BPS-H80-009242
+  external_ids: {bphc: BPS-H80-009242}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lowell-chc-101-jackson-street
   name: Lowell CHC - 101 Jackson Street
   categories:
   - community-health-center
-  address:
-    street: 101 Jackson St
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 101 Jackson St, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.6423
-    lng: -71.3113
+  geo: {lat: 42.6423, lng: -71.3113}
   phone: 978-937-9700
   website: https://www.lchealth.org
-  external_ids:
-    bphc: BPS-H80-017910
+  external_ids: {bphc: BPS-H80-017910}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lowell-collaborative-preschool-academy
   name: Lowell Collaborative Preschool Academy
   categories:
@@ -320,6 +303,22 @@
     lng: -71.31152
   phone: 978-937-9700 x6730
   website: https://www.lchealth.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -340,6 +339,22 @@
     lng: -71.35096
   phone: 978-452-5155 x205
   website: https://www.ctcprograms.com/location/lowell-comprehensive-
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -349,24 +364,16 @@
   name: LOWELL HIGH SCHOOL HEALTH CTR
   categories:
   - community-health-center
-  address:
-    street: 50 Father Morissette Blvd
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 50 Father Morissette Blvd, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.64762
-    lng: -71.31151
+  geo: {lat: 42.64762, lng: -71.31151}
   phone: 978-458-6642
   website: https://www.lchealth.org
-  external_ids:
-    bphc: BPS-H80-003896
+  external_ids: {bphc: BPS-H80-003896}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lowell-housing-authority
   name: Lowell Housing Authority
   categories:
@@ -391,24 +398,16 @@
   name: Lowell Transitional Living Center
   categories:
   - community-health-center
-  address:
-    street: 205 Middlesex St
-    city: Lowell
-    state: ma
-    zip: 01852
+  cost: sliding-scale
+  address: {street: 205 Middlesex St, city: Lowell, state: ma, zip: 01852}
   place: '2537000'
-  geo:
-    lat: 42.64096
-    lng: -71.31238
+  geo: {lat: 42.64096, lng: -71.31238}
   phone: 978-458-9888
   website: http://www.ltlc.org/
-  external_ids:
-    bphc: BPS-H80-015157
+  external_ids: {bphc: BPS-H80-015157}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lowell-va-clinic
   name: Lowell VA Clinic
   categories:
@@ -551,6 +550,15 @@
     lng: -71.34492
   phone: 978-455-6973
   website: https://www.themeganhouse.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -572,6 +580,11 @@
     lng: -71.35096
   phone: 978-453-6800
   website: https://mentorsouthbay.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -639,6 +652,21 @@
     lng: -71.3106
   phone: 978-459-8656 x138
   website: https://www.riverbendmv.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -699,6 +727,11 @@
     lng: -71.34493
   phone: 978-674-6744
   website: https://vinfen.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -720,6 +753,9 @@
     lng: -71.30731
   phone: 978-674-6744
   website: https://vinfen.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -14,6 +14,13 @@
     lng: -93.72437
   phone: 660-442-1054
   website: https://www.compasshealthnetwork.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,23 +30,15 @@
   name: Compass Health, Inc.
   categories:
   - community-health-center
-  address:
-    street: 1810 Spruce St
-    city: Higginsville
-    state: mo
-    zip: '64037'
+  cost: sliding-scale
+  address: {street: 1810 Spruce St, city: Higginsville, state: mo, zip: '64037'}
   place: '2931960'
-  geo:
-    lat: 39.07758
-    lng: -93.72438
+  geo: {lat: 39.07758, lng: -93.72438}
   phone: 844-853-8937
-  external_ids:
-    bphc: BPS-H80-033146
+  external_ids: {bphc: BPS-H80-033146}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/higginsville/grandview-elementary
   name: Grandview Elementary
   categories:
@@ -145,11 +144,17 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lafayette County
-  address: {street: 1712 N. Main, city: Higginsville, state: mo, zip: '64037'}
+  address:
+    street: 1712 N. Main
+    city: Higginsville
+    state: mo
+    zip: '64037'
   place: '2931960'
   phone: 660-242-5594
   email: info@mvcaa.net
   website: https://mvcaa.net/programs-services/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

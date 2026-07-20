@@ -47,13 +47,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chester County
-  address: {street: '129 A W. Wylie Street,', city: Chester, state: sc, zip: '29706'}
+  address:
+    street: 129 A W. Wylie Street,
+    city: Chester
+    state: sc
+    zip: '29706'
   place: '4514095'
   phone: 803-385-5205
   website: https://www.carolinacommunityactions.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/chester/catawba-community-mental-health-center-chester-c
   name: Catawba Community Mental Health Center Chester County Clinic
   categories:
@@ -70,6 +76,21 @@
     lng: -81.19164
   phone: 803-581-8311
   website: https://www.catawbamentalhealth.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -156,6 +177,14 @@
     lng: -81.21087
   phone: 803-377-8111
   website: https://www.hazelpittman.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -538,45 +567,29 @@
   name: North Central Family Medical Center-Chester Site
   categories:
   - community-health-center
-  address:
-    street: 121 Saluda St
-    city: Chester
-    state: sc
-    zip: '29706'
+  cost: sliding-scale
+  address: {street: 121 Saluda St, city: Chester, state: sc, zip: '29706'}
   place: '4514095'
-  geo:
-    lat: 34.70811
-    lng: -81.20972
+  geo: {lat: 34.70811, lng: -81.20972}
   phone: 803-581-0574
   website: https://www.ncfmc.net
-  external_ids:
-    bphc: BPS-H80-033476
+  external_ids: {bphc: BPS-H80-033476}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/chester/north-central-family-medical-mobile-site-1
   name: 'North Central Family Medical Mobile Site #1'
   categories:
   - community-health-center
-  address:
-    street: 121 Saluda St
-    city: Chester
-    state: sc
-    zip: '29706'
+  cost: sliding-scale
+  address: {street: 121 Saluda St, city: Chester, state: sc, zip: '29706'}
   place: '4514095'
-  geo:
-    lat: 34.70811
-    lng: -81.20972
+  geo: {lat: 34.70811, lng: -81.20972}
   phone: 803-581-0574
-  external_ids:
-    bphc: BPS-H80-038017
+  external_ids: {bphc: BPS-H80-038017}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/chester/north-chester-head-start
   name: North Chester Head Start
   categories:

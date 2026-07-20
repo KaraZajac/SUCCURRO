@@ -54,6 +54,22 @@
     lng: -107.78355
   phone: 970-379-5790
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -108,13 +124,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Garfield County
-  address: {street: 195 W. 14th St., city: Rifle, state: co, zip: '81650'}
+  address:
+    street: 195 W. 14th St.
+    city: Rifle
+    state: co
+    zip: '81650'
   place: 0864255
   phone: 970-625-5282
   website: https://www.garfield-county.com/human-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/rifle/garfield-county-housing-authority
   name: Garfield County Housing Authority
   categories:
@@ -205,24 +227,16 @@
   name: MOUNTAIN FAMILY HEALTH CENTERS RIFLE
   categories:
   - community-health-center
-  address:
-    street: 195 W 14th, Ste C
-    city: Rifle
-    state: co
-    zip: '81650'
+  cost: sliding-scale
+  address: {street: '195 W 14th, Ste C', city: Rifle, state: co, zip: '81650'}
   place: 0864255
-  geo:
-    lat: 39.54217
-    lng: -107.78508
+  geo: {lat: 39.54217, lng: -107.78508}
   phone: 970-945-2840
   website: https://www.mountainfamily.org
-  external_ids:
-    bphc: BPS-H80-008779
+  external_ids: {bphc: BPS-H80-008779}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/rifle/rifle-head-start
   name: Rifle Head Start
   categories:

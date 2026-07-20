@@ -135,6 +135,22 @@
     lng: -119.7718
   phone: 775-499-5534
   website: https://www.thelifechangecenter.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -214,34 +230,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 921 12th Street, city: Sparks, state: nv, zip: '89431'}
-  place: '3268400'
-  phone: 775-353-5733
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nv/sparks/sparks-health-center
-  name: Sparks Health Center
-  categories:
-  - community-health-center
   address:
-    street: 2244 Oddie Blvd
+    street: 921 12th Street
     city: Sparks
     state: nv
     zip: '89431'
   place: '3268400'
-  geo:
-    lat: 39.54658
-    lng: -119.77329
-  phone: 775-329-6300
-  website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-018260
+  phone: 775-353-5733
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nv/sparks/sparks-health-center
+  name: Sparks Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 2244 Oddie Blvd, city: Sparks, state: nv, zip: '89431'}
+  place: '3268400'
+  geo: {lat: 39.54658, lng: -119.77329}
+  phone: 775-329-6300
+  website: https://www.chanevada.org
+  external_ids: {bphc: BPS-H80-018260}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/sparks/sparks-library
   name: Sparks Library
   categories:

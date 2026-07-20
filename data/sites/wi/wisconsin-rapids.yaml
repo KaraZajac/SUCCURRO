@@ -14,6 +14,9 @@
     lng: -89.82935
   phone: 715-422-7750
   website: https://aspirus.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,24 +26,16 @@
   name: Family Health Center  -  Wisconsin Rapids Alcohol & Drug Recovery Center
   categories:
   - community-health-center
-  address:
-    street: 3930 8th St S, Suite 201
-    city: Wisconsin Rapids
-    state: wi
-    zip: '54494'
+  cost: sliding-scale
+  address: {street: '3930 8th St S, Suite 201', city: Wisconsin Rapids, state: wi, zip: '54494'}
   place: '5588200'
-  geo:
-    lat: 44.35919
-    lng: -89.81758
+  geo: {lat: 44.35919, lng: -89.81758}
   phone: 608-716-7870
   website: https://www.familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-041260
+  external_ids: {bphc: BPS-H80-041260}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/wisconsin-rapids/helen-s-zoo-house
   name: Helen'S Zoo House
   categories:
@@ -103,6 +98,19 @@
     lng: -89.79762
   phone: 715-424-5040
   website: https://www.nwcgc.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -124,6 +132,10 @@
     lng: -89.81304
   phone: 715-818-6443
   website: https://www.odcinc.com/opportunity-for-hope
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -145,6 +157,21 @@
     lng: -89.83131
   phone: 800-872-8662
   website: https://www.va.gov/tomah-health-care/locations/wisconsin-rapids-va-clinic/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -304,13 +331,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wood County
-  address: {street: '111 W. Jackson St., 2nd Floor', city: Wisconsin Rapids, state: wi, zip: '54495'}
+  address:
+    street: 111 W. Jackson St., 2nd Floor
+    city: Wisconsin Rapids
+    state: wi
+    zip: '54495'
   place: '5588200'
   phone: 715-421-8654
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/wisconsin-rapids/wood-county-human-services-department-outpatient
   name: Wood County Human Services Department Outpatient
   categories:
@@ -326,6 +359,14 @@
     lng: -89.82702
   phone: 715-421-8800
   website: https://www.woodcountywi.gov
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

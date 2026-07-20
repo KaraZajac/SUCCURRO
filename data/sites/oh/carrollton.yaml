@@ -25,14 +25,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Carroll County
-  address: {street: 276 2nd Street, city: Carrollton, state: oh, zip: '44615'}
+  address:
+    street: 276 2nd Street
+    city: Carrollton
+    state: oh
+    zip: '44615'
   place: '3912280'
   phone: 330-627-4101
   email: carrfrontdesk@harcatus.org
   website: https://www.harcatus.org/HEAP
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/carrollton/southeast-healthcare
   name: Southeast Healthcare
   categories:
@@ -49,6 +55,11 @@
     lng: -81.0899
   phone: 330-627-3954
   website: https://www.southeasthc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -58,20 +69,12 @@
   name: Southeast Healthcare - Carrollton Health Center Site
   categories:
   - community-health-center
-  address:
-    street: 611 High St NW
-    city: Carrollton
-    state: oh
-    zip: '44615'
+  cost: sliding-scale
+  address: {street: 611 High St NW, city: Carrollton, state: oh, zip: '44615'}
   place: '3912280'
-  geo:
-    lat: 40.57766
-    lng: -81.08409
+  geo: {lat: 40.57766, lng: -81.08409}
   phone: 330-627-3954
-  external_ids:
-    bphc: BPS-H80-039551
+  external_ids: {bphc: BPS-H80-039551}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

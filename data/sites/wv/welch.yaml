@@ -25,55 +25,45 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving McDowell County
-  address: {street: 840 Virginia Avenue, city: Welch, state: wv, zip: '24801'}
+  address:
+    street: 840 Virginia Avenue
+    city: Welch
+    state: wv
+    zip: '24801'
   place: '5485228'
   phone: 304-436-8302
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/welch/mount-view-middle-high-school-hc
   name: MOUNT VIEW MIDDLE HIGH SCHOOL HC
   categories:
   - community-health-center
-  address:
-    street: 950 Mt View High School Rd
-    city: Welch
-    state: wv
-    zip: '24801'
+  cost: sliding-scale
+  address: {street: 950 Mt View High School Rd, city: Welch, state: wv, zip: '24801'}
   place: '5485228'
-  geo:
-    lat: 37.41145
-    lng: -81.55529
+  geo: {lat: 37.41145, lng: -81.55529}
   phone: 304-436-4798
   website: https://www.tugrivermedical.org
-  external_ids:
-    bphc: BPS-H80-005480
+  external_ids: {bphc: BPS-H80-005480}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/welch/new-river-health-association-welch
   name: New River Health Association - Welch
   categories:
   - community-health-center
-  address:
-    street: 454 McDowell St
-    city: Welch
-    state: wv
-    zip: '24801'
+  cost: sliding-scale
+  address: {street: 454 McDowell St, city: Welch, state: wv, zip: '24801'}
   place: '5485228'
-  geo:
-    lat: 37.43912
-    lng: -81.58784
+  geo: {lat: 37.43912, lng: -81.58784}
   phone: 304-469-2905
-  external_ids:
-    bphc: BPS-H80-038429
+  external_ids: {bphc: BPS-H80-038429}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/welch/southern-highlands-cmhc-inc-welch-clinic
   name: Southern Highlands CMHC Inc Welch Clinic
   categories:
@@ -90,6 +80,11 @@
     lng: -81.56943
   phone: 304-436-2106
   website: https://shcmhc.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

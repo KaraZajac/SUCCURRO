@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Benton, Franklin Counties
-  address: {street: 720 West Court St. (Main Office), city: Pasco, state: wa, zip: '99301'}
+  address:
+    street: 720 West Court St. (Main Office)
+    city: Pasco
+    state: wa
+    zip: '99301'
   place: '5353545'
   phone: 509-545-4042
   website: http://www.bfcac.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/pasco/chiawana-high-school
   name: Chiawana High School
   categories:
@@ -112,6 +118,10 @@
     lng: -119.21812
   phone: 509-735-6446
   website: https://lcsnw.org/
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -173,6 +183,15 @@
     lng: -119.11771
   phone: 509-792-1041
   website: https://www.meritresources.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -182,24 +201,16 @@
   name: MIRAMAR HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 1608 Road 44
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 1608 Road 44, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24278
-    lng: -119.14919
+  geo: {lat: 46.24278, lng: -119.14919}
   phone: 509-543-9280
   website: https://www.yvfwc.com
-  external_ids:
-    bphc: BPS-H80-003344
+  external_ids: {bphc: BPS-H80-003344}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/ochoa-middle-school
   name: Ochoa Middle School
   categories:
@@ -387,131 +398,83 @@
   name: TCCH - Administration
   categories:
   - community-health-center
-  address:
-    street: 800 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 800 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24113
-    lng: -119.09997
+  geo: {lat: 46.24113, lng: -119.09997}
   phone: 509-543-2204
-  external_ids:
-    bphc: BPS-H80-020908
+  external_ids: {bphc: BPS-H80-020908}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/tcch-mobile-dental-clinic
   name: TCCH Mobile Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 715 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 715 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24149
-    lng: -119.09755
+  geo: {lat: 46.24149, lng: -119.09755}
   phone: 509-547-2204
   website: https://www.mytcch.org
-  external_ids:
-    bphc: BPS-H80-034806
+  external_ids: {bphc: BPS-H80-034806}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/tcch-mobile-unit-1
   name: 'TCCH - Mobile Unit #1'
   categories:
   - community-health-center
-  address:
-    street: 515 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 515 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24156
-    lng: -119.09613
+  geo: {lat: 46.24156, lng: -119.09613}
   phone: 509-547-2204
-  external_ids:
-    bphc: BPS-H80-032317
+  external_ids: {bphc: BPS-H80-032317}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/tcch-mobile-unit-2
   name: 'TCCH - Mobile Unit #2'
   categories:
   - community-health-center
-  address:
-    street: 515 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 515 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24156
-    lng: -119.09613
+  geo: {lat: 46.24156, lng: -119.09613}
   phone: 509-547-2204
-  external_ids:
-    bphc: BPS-H80-032318
+  external_ids: {bphc: BPS-H80-032318}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/tcch-pasco-dental-behavioral-health-wic
   name: TCCH Pasco  -  Dental, Behavioral Health & WIC
   categories:
   - community-health-center
-  address:
-    street: 715 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 715 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24149
-    lng: -119.09755
+  geo: {lat: 46.24149, lng: -119.09755}
   phone: 509-547-2204
   website: https://www.mytcch.org
-  external_ids:
-    bphc: BPS-H80-009243
+  external_ids: {bphc: BPS-H80-009243}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/tcch-pasco-medical-pharmacy-optometry
   name: TCCH Pasco  -  Medical, Pharmacy & Optometry
   categories:
   - community-health-center
-  address:
-    street: 515 W Court St
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 515 W Court St, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.24156
-    lng: -119.09613
+  geo: {lat: 46.24156, lng: -119.09613}
   phone: 509-547-2204
   website: http://www.mytcch.org/
-  external_ids:
-    bphc: BPS-H80-001690
+  external_ids: {bphc: BPS-H80-001690}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/pasco/the-center-for-sharing
   name: The Center For Sharing
   categories:
@@ -560,21 +523,13 @@
   name: West Pasco Clinic
   categories:
   - community-health-center
-  address:
-    street: 7405 Three Rivers Dr
-    city: Pasco
-    state: wa
-    zip: '99301'
+  cost: sliding-scale
+  address: {street: 7405 Three Rivers Dr, city: Pasco, state: wa, zip: '99301'}
   place: '5353545'
-  geo:
-    lat: 46.28189
-    lng: -119.18664
+  geo: {lat: 46.28189, lng: -119.18664}
   phone: 509-488-5256
   website: https://www.cbha.org
-  external_ids:
-    bphc: BPS-H80-040308
+  external_ids: {bphc: BPS-H80-040308}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

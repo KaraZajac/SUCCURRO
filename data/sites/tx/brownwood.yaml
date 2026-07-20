@@ -2,24 +2,16 @@
   name: AccelHealth - Brownwood Main
   categories:
   - community-health-center
-  address:
-    street: 2100 Crockett Dr
-    city: Brownwood
-    state: tx
-    zip: '76801'
+  cost: sliding-scale
+  address: {street: 2100 Crockett Dr, city: Brownwood, state: tx, zip: '76801'}
   place: '4810780'
-  geo:
-    lat: 31.68648
-    lng: -98.99775
+  geo: {lat: 31.68648, lng: -98.99775}
   phone: 325-646-3900
   website: https://www.accelhealthcare.org
-  external_ids:
-    bphc: BPS-H80-036044
+  external_ids: {bphc: BPS-H80-036044}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/brownwood/boys-and-girls-club-old-south-elementary
   name: Boys And Girls Club - Old South Elementary
   categories:
@@ -142,6 +134,16 @@
     lng: -98.99125
   phone: 254-294-5284 x58614
   website: https://
+  services:
+  - Outpatient
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -173,14 +175,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brown County
-  address: {street: 1500 Dublin St., city: Brownwood, state: tx, zip: '76801'}
+  address:
+    street: 1500 Dublin St.
+    city: Brownwood
+    state: tx
+    zip: '76801'
   place: '4810780'
   phone: 325-625-4167
   email: mail@cornerstonecaa.org
   website: https://www.cornerstonecaa.org/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/brownwood/ethos-pet-brands-blessings-box
   name: Ethos Pet Brands Blessings Box
   categories:

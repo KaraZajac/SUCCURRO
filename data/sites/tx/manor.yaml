@@ -100,23 +100,15 @@
   name: Manor Health Center
   categories:
   - community-health-center
-  address:
-    street: 14008 Shadowglen Blvd, Ste 302
-    city: Manor
-    state: tx
-    zip: '78653'
+  cost: sliding-scale
+  address: {street: '14008 Shadowglen Blvd, Ste 302', city: Manor, state: tx, zip: '78653'}
   place: '4846440'
-  geo:
-    lat: 30.35023
-    lng: -97.54651
+  geo: {lat: 30.35023, lng: -97.54651}
   phone: 512-978-9015
-  external_ids:
-    bphc: BPS-H80-022015
+  external_ids: {bphc: BPS-H80-022015}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/manor/manor-middle
   name: Manor Middle
   categories:
@@ -142,23 +134,15 @@
   name: Manor Mustang Health Center
   categories:
   - community-health-center
-  address:
-    street: 10335 US Highway 290 E
-    city: Manor
-    state: tx
-    zip: '78653'
+  cost: sliding-scale
+  address: {street: 10335 US Highway 290 E, city: Manor, state: tx, zip: '78653'}
   place: '4846440'
-  geo:
-    lat: 30.34469
-    lng: -97.57233
+  geo: {lat: 30.34469, lng: -97.57233}
   phone: 512-278-4462
-  external_ids:
-    bphc: BPS-H80-014855
+  external_ids: {bphc: BPS-H80-014855}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/manor/manor-new-technology-middle
   name: Manor New Technology Middle
   categories:
@@ -195,6 +179,22 @@
     lng: -97.51116
   phone: 714-828-1800
   website: https://newhoperanch.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -252,6 +252,10 @@
     lng: -97.57733
   phone: 512-306-1394
   website: https://sagerecoveryaustin.com
+  services:
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

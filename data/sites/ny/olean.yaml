@@ -13,6 +13,13 @@
     lng: -78.42947
   phone: 716-373-4303
   website: https://www.casa-trinity.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -30,6 +37,12 @@
   place: '3654716'
   phone: 716-373-4303
   website: https://www.casa-trinity.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -51,6 +64,18 @@
     lng: -78.43163
   phone: 716-373-8080 x5208
   website: https://www.cattco.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -72,6 +97,20 @@
     lng: -78.45
   phone: 716-373-8040
   website: https://www.cattco.gov/community-services
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -82,24 +121,36 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cattaraugus County
-  address: {street: 1 Leo Moss Drive Suite 6010, city: Olean, state: ny, zip: '14760'}
+  address:
+    street: 1 Leo Moss Drive Suite 6010
+    city: Olean
+    state: ny
+    zip: '14760'
   place: '3654716'
   phone: 716-373-8065
   email: cattheap@dfa.state.ny.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/olean/county-office-for-the-aging
   name: County Office for the Aging
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cattaraugus County
-  address: {street: One Leo Moss Drive, city: Olean, state: ny, zip: '14760'}
+  address:
+    street: One Leo Moss Drive
+    city: Olean
+    state: ny
+    zip: '14760'
   place: '3654716'
   phone: 716-373-8032
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/olean/intandem-moss-residence
   name: Intandem Moss Residence
   categories:
@@ -112,6 +163,11 @@
   place: '3654716'
   phone: 716-375-4730 x1168
   website: https://www.Intandem.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -130,6 +186,12 @@
   place: '3654716'
   phone: 716-375-4730 x1168
   website: https://www.intandem.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -147,6 +209,11 @@
   place: '3654716'
   phone: 716-375-4730 x1168
   website: https://www.Intandem.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -168,6 +235,9 @@
     lng: -78.43063
   phone: 716-662-2040
   website: https://shswny.org/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -208,6 +278,10 @@
     lng: -78.4278
   phone: 716-373-2600 x7323
   website: https://www.ogh.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -317,45 +391,29 @@
   name: Southern Tier Community Health Center Network, Olean site
   categories:
   - community-health-center
-  address:
-    street: 135 N Union St
-    city: Olean
-    state: ny
-    zip: '14760'
+  cost: sliding-scale
+  address: {street: 135 N Union St, city: Olean, state: ny, zip: '14760'}
   place: '3654716'
-  geo:
-    lat: 42.07866
-    lng: -78.43075
+  geo: {lat: 42.07866, lng: -78.43075}
   phone: 716-375-7500
   website: https://www.upc-health.net
-  external_ids:
-    bphc: BPS-H80-012224
+  external_ids: {bphc: BPS-H80-012224}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/olean/tcc-olean-dermatology
   name: TCC - Olean Dermatology
   categories:
   - community-health-center
-  address:
-    street: 2646 W State St
-    city: Olean
-    state: ny
-    zip: '14760'
+  cost: sliding-scale
+  address: {street: 2646 W State St, city: Olean, state: ny, zip: '14760'}
   place: '3654716'
-  geo:
-    lat: 42.0784
-    lng: -78.46151
+  geo: {lat: 42.0784, lng: -78.46151}
   phone: 716-373-8870
-  external_ids:
-    bphc: BPS-H80-040504
+  external_ids: {bphc: BPS-H80-040504}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/olean/willow-house-820-residential-820-stabil-rehab-re
   name: Willow House 820 Residential 820 Stabil Rehab Reintegration
   categories:
@@ -368,6 +426,12 @@
   place: '3654716'
   phone: 716-373-0021
   website: https://www.casa-trinity.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

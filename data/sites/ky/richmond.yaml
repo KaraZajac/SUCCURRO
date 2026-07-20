@@ -124,6 +124,9 @@
     lng: -84.26973
   phone: 844-782-6963
   website: https://www.careclinicmd.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -275,6 +278,11 @@
     lng: -84.31416
   phone: 859-625-5235
   website: https://ethanhealth.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -362,6 +370,11 @@
     lng: -84.29567
   phone: 502-783-7573
   website: https://gandacounseling.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -414,57 +427,47 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Madison County
-  address: {street: 311 Spangler Drive, city: Richmond, state: ky, zip: '40475'}
+  address:
+    street: 311 Spangler Drive
+    city: Richmond
+    state: ky
+    zip: '40475'
   place: '2165226'
   phone: 859-623-6514
   website: https://foothillscap.itfrontdesk.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/richmond/kentucky-river-foothills-development-council-inc
   name: KENTUCKY RIVER FOOTHILLS DEVELOPMENT COUNCIL, INC.
   categories:
   - community-health-center
-  address:
-    street: 309 Spangler Dr
-    city: Richmond
-    state: ky
-    zip: '40475'
+  cost: sliding-scale
+  address: {street: 309 Spangler Dr, city: Richmond, state: ky, zip: '40475'}
   place: '2165226'
-  geo:
-    lat: 37.73506
-    lng: -84.31584
+  geo: {lat: 37.73506, lng: -84.31584}
   phone: 859-624-2046
   website: https://www.foothillscap.org
-  external_ids:
-    bphc: BPS-H80-000825
+  external_ids: {bphc: BPS-H80-000825}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/richmond/kentucky-river-foothills-development-council-inc-2
   name: Kentucky River Foothills Development Council, Inc.
   categories:
   - community-health-center
-  address:
-    street: 6021 Atwood Dr
-    city: Richmond
-    state: ky
-    zip: '40475'
+  cost: sliding-scale
+  address: {street: 6021 Atwood Dr, city: Richmond, state: ky, zip: '40475'}
   place: '2165226'
-  geo:
-    lat: 37.75014
-    lng: -84.26444
+  geo: {lat: 37.75014, lng: -84.26444}
   phone: 859-624-2046
   website: https://www.foothillscap.org
-  external_ids:
-    bphc: BPS-H80-038925
+  external_ids: {bphc: BPS-H80-038925}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/richmond/kids-first-day-care
   name: Kids First Day Care
   categories:
@@ -590,6 +593,12 @@
     lng: -84.2674
   phone: 859-575-1692
   website: https://www.mtcomp.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -655,6 +664,13 @@
     lng: -84.28664
   phone: 859-626-5030
   website: https://www.newvista.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -919,42 +935,26 @@
   name: White House Clinic - Richmond
   categories:
   - community-health-center
-  address:
-    street: 401 Highland Park Dr
-    city: Richmond
-    state: ky
-    zip: '40475'
+  cost: sliding-scale
+  address: {street: 401 Highland Park Dr, city: Richmond, state: ky, zip: '40475'}
   place: '2165226'
-  geo:
-    lat: 37.73992
-    lng: -84.26546
+  geo: {lat: 37.73992, lng: -84.26546}
   phone: 859-626-7700
   website: https://www.whitehouseclinics.com
-  external_ids:
-    bphc: BPS-H80-004236
+  external_ids: {bphc: BPS-H80-004236}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/richmond/white-house-clinics-leadership-suite
   name: White House Clinics Leadership Suite
   categories:
   - community-health-center
-  address:
-    street: 311 Radio Park Dr, Ste A
-    city: Richmond
-    state: ky
-    zip: '40475'
+  cost: sliding-scale
+  address: {street: '311 Radio Park Dr, Ste A', city: Richmond, state: ky, zip: '40475'}
   place: '2165226'
-  geo:
-    lat: 37.733
-    lng: -84.30781
+  geo: {lat: 37.733, lng: -84.30781}
   phone: 859-626-7700
-  external_ids:
-    bphc: BPS-H80-039280
+  external_ids: {bphc: BPS-H80-039280}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

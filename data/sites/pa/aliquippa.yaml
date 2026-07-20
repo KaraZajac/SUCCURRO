@@ -162,24 +162,16 @@
   name: Autumn Street Health Center
   categories:
   - community-health-center
-  address:
-    street: 99 Autumn St
-    city: Aliquippa
-    state: pa
-    zip: '15001'
+  cost: sliding-scale
+  address: {street: 99 Autumn St, city: Aliquippa, state: pa, zip: '15001'}
   place: '4200820'
-  geo:
-    lat: 40.63608
-    lng: -80.31784
+  geo: {lat: 40.63608, lng: -80.31784}
   phone: 724-375-5754
   website: http://www.primary-health.net
-  external_ids:
-    bphc: BPS-H80-010877
+  external_ids: {bphc: BPS-H80-010877}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/aliquippa/hopewell-elementary
   name: Hopewell Elementary
   categories:
@@ -259,6 +251,10 @@
     lng: -80.28671
   phone: 724-912-6277 x1
   website: https://oarsmat.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -279,6 +275,22 @@
     lng: -80.28487
   phone: 724-857-9640
   website: https://pinnacletreatment.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

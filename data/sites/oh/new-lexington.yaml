@@ -14,6 +14,9 @@
     lng: -82.18649
   phone: 840-454-9766
   website: https://www.allwell.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -68,35 +71,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Perry County
-  address: {street: '399 Lincoln Park Drive, Suite B', city: New Lexington, state: oh, zip: '43764'}
+  address:
+    street: 399 Lincoln Park Drive, Suite B
+    city: New Lexington
+    state: oh
+    zip: '43764'
   place: '3954866'
   phone: 740-767-4500
   website: https://hapcap.org/utility-services/energyassistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/new-lexington/hopewell-health-centers-new-lexington
   name: Hopewell Health Centers - New Lexington
   categories:
   - community-health-center
-  address:
-    street: 2541 Panther Dr NE
-    city: New Lexington
-    state: oh
-    zip: '43764'
+  cost: sliding-scale
+  address: {street: 2541 Panther Dr NE, city: New Lexington, state: oh, zip: '43764'}
   place: '3954866'
-  geo:
-    lat: 39.72595
-    lng: -82.20923
+  geo: {lat: 39.72595, lng: -82.20923}
   phone: 740-342-4192
   website: https://www.hopewellhealth.org
-  external_ids:
-    bphc: BPS-H80-012505
+  external_ids: {bphc: BPS-H80-012505}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/new-lexington/new-lexington-head-start
   name: New Lexington Head Start
   categories:
@@ -176,6 +177,22 @@
     lng: -82.20854
   phone: 740-342-1991
   website: https://www.perrybhc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

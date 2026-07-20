@@ -79,6 +79,16 @@
     lng: -97.4249
   phone: 405-573-3819
   website: https://www.ok.gov/odmhsas/Mental_Health/Childrens_Recove
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -124,13 +134,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cleveland County
-  address: {street: 2631 E. Robinson St., city: Norman, state: ok, zip: '73071'}
+  address:
+    street: 2631 E. Robinson St.
+    city: Norman
+    state: ok
+    zip: '73071'
   place: '4052500'
   phone: 405-573-8300
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/norman/irving-community-pantry
   name: Irving Community Pantry
   categories:
@@ -346,6 +362,13 @@
     lng: -97.43202
   phone: 405-307-4800
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -367,6 +390,13 @@
     lng: -97.44182
   phone: 405-914-4850
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -432,6 +462,22 @@
     lng: -97.46978
   phone: 405-310-0150
   website: https://oksafe.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -453,6 +499,9 @@
     lng: -97.47911
   phone: 405-321-0022
   website: https://www.thevirtuecenter.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -484,45 +533,29 @@
   name: Variety Care Norman
   categories:
   - community-health-center
-  address:
-    street: 317 E Himes St
-    city: Norman
-    state: ok
-    zip: '73069'
+  cost: sliding-scale
+  address: {street: 317 E Himes St, city: Norman, state: ok, zip: '73069'}
   place: '4052500'
-  geo:
-    lat: 35.23075
-    lng: -97.44199
+  geo: {lat: 35.23075, lng: -97.44199}
   phone: 405-632-6688
   website: https://www.varietycare.org
-  external_ids:
-    bphc: BPS-H80-012834
+  external_ids: {bphc: BPS-H80-012834}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/norman/variety-care-women-and-children-norman
   name: Variety Care Women and Children Norman
   categories:
   - community-health-center
-  address:
-    street: 1237 Alameda St
-    city: Norman
-    state: ok
-    zip: '73071'
+  cost: sliding-scale
+  address: {street: 1237 Alameda St, city: Norman, state: ok, zip: '73071'}
   place: '4052500'
-  geo:
-    lat: 35.21958
-    lng: -97.42135
+  geo: {lat: 35.21958, lng: -97.42135}
   phone: 405-632-6688
-  external_ids:
-    bphc: BPS-H80-017945
+  external_ids: {bphc: BPS-H80-017945}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/norman/wilson-es-145
   name: Wilson Es(145)
   categories:

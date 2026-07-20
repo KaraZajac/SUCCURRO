@@ -153,13 +153,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clark County
-  address: {street: 1200 Fort Vancouver Way, city: Vancouver, state: wa, zip: '98663'}
+  address:
+    street: 1200 Fort Vancouver Way
+    city: Vancouver
+    state: wa
+    zip: '98663'
   place: '5374060'
   phone: 360-992-3000
   website: http://www.clarkpublicutilities.com
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/vancouver/columbia-heights-apartments
   name: Columbia Heights Apartments
   categories:
@@ -198,6 +204,9 @@
     lng: -122.60298
   phone: 360-993-3000
   website: https://www.crmhs.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -218,6 +227,17 @@
     lng: -122.662
   phone: 360-694-7484
   website: https://www.columbiatreatmentservices.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -342,6 +362,13 @@
     lng: -122.56259
   phone: 360-695-1014
   website: https://www.family-solutions.net
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -536,6 +563,12 @@
     lng: -122.63557
   phone: 360-687-0693
   website: https://hpwellnesscenter.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -708,6 +741,22 @@
     lng: -122.54183
   phone: 800-813-2000
   website: https://www.kp.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -748,6 +797,20 @@
     lng: -122.72504
   phone: 360-205-1222
   website: https://www.lifelineconnections.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -769,6 +832,20 @@
     lng: -122.65524
   phone: 360-397-8246
   website: https://www.lifelineconnections.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -971,6 +1048,22 @@
     lng: -122.57761
   phone: 855-337-7566
   website: https://www.ridgefieldrecovery.com/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1085,256 +1178,160 @@
   name: Sea Mar CHC - 2502 E. Fourth Plain Blvd.
   categories:
   - community-health-center
-  address:
-    street: 2502 E Fourth Plain Blvd
-    city: Vancouver
-    state: wa
-    zip: '98661'
+  cost: sliding-scale
+  address: {street: 2502 E Fourth Plain Blvd, city: Vancouver, state: wa, zip: '98661'}
   place: '5374060'
-  geo:
-    lat: 45.63864
-    lng: -122.64497
+  geo: {lat: 45.63864, lng: -122.64497}
   phone: 360-831-0904
-  external_ids:
-    bphc: BPS-H80-035153
+  external_ids: {bphc: BPS-H80-035153}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-1601-e-fourth-plain-blvd
   name: Sea Mar CHC - Vancouver 1601 E Fourth Plain Blvd
   categories:
   - community-health-center
-  address:
-    street: 1601 E Fourth Plain Blvd, Building 17
-    city: Vancouver
-    state: wa
-    zip: '98661'
+  cost: sliding-scale
+  address: {street: '1601 E Fourth Plain Blvd, Building 17', city: Vancouver, state: wa, zip: '98661'}
   place: '5374060'
-  geo:
-    lat: 45.63885
-    lng: -122.65759
+  geo: {lat: 45.63885, lng: -122.65759}
   phone: 360-397-8484
-  external_ids:
-    bphc: BPS-H80-027109
+  external_ids: {bphc: BPS-H80-027109}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-317-e-39th-st
   name: Sea Mar CHC - Vancouver 317 E 39th St
   categories:
   - community-health-center
-  address:
-    street: 317 E 39th St
-    city: Vancouver
-    state: wa
-    zip: '98663'
+  cost: sliding-scale
+  address: {street: 317 E 39th St, city: Vancouver, state: wa, zip: '98663'}
   place: '5374060'
-  geo:
-    lat: 45.64972
-    lng: -122.66817
+  geo: {lat: 45.64972, lng: -122.66817}
   phone: 360-546-1722
-  external_ids:
-    bphc: BPS-H80-027107
+  external_ids: {bphc: BPS-H80-027107}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-34th-st
   name: Sea Mar CHC - Vancouver 34th St.
   categories:
   - community-health-center
-  address:
-    street: 19005 SE 34th St
-    city: Vancouver
-    state: wa
-    zip: '98683'
+  cost: sliding-scale
+  address: {street: 19005 SE 34th St, city: Vancouver, state: wa, zip: '98683'}
   place: '5374060'
-  geo:
-    lat: 45.59597
-    lng: -122.47972
+  geo: {lat: 45.59597, lng: -122.47972}
   phone: 360-726-6720
-  external_ids:
-    bphc: BPS-H80-018604
+  external_ids: {bphc: BPS-H80-018604}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-7803-ne-fourth-plain-rd
   name: Sea Mar CHC - Vancouver 7803 NE Fourth Plain Rd.
   categories:
   - community-health-center
-  address:
-    street: 7803 NE Fourth Plain Blvd
-    city: Vancouver
-    state: wa
-    zip: '98662'
+  cost: sliding-scale
+  address: {street: 7803 NE Fourth Plain Blvd, city: Vancouver, state: wa, zip: '98662'}
   place: '5374060'
-  geo:
-    lat: 45.64652
-    lng: -122.59248
+  geo: {lat: 45.64652, lng: -122.59248}
   phone: 360-397-9211
-  external_ids:
-    bphc: BPS-H80-011245
+  external_ids: {bphc: BPS-H80-011245}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-delaware-lane
   name: Sea Mar CHC - Vancouver Delaware Lane
   categories:
   - community-health-center
-  address:
-    street: 7410 Delaware Ln
-    city: Vancouver
-    state: wa
-    zip: '98664'
+  cost: sliding-scale
+  address: {street: 7410 Delaware Ln, city: Vancouver, state: wa, zip: '98664'}
   place: '5374060'
-  geo:
-    lat: 45.62446
-    lng: -122.59468
+  geo: {lat: 45.62446, lng: -122.59468}
   phone: 360-566-4402
   website: https://www.seamar.org
-  external_ids:
-    bphc: BPS-H80-000685
+  external_ids: {bphc: BPS-H80-000685}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-evergreen-high-school
   name: Sea Mar CHC - Vancouver Evergreen High School
   categories:
   - community-health-center
-  address:
-    street: 14300 NE 18th St
-    city: Vancouver
-    state: wa
-    zip: '98684'
+  cost: sliding-scale
+  address: {street: 14300 NE 18th St, city: Vancouver, state: wa, zip: '98684'}
   place: '5374060'
-  geo:
-    lat: 45.6357
-    lng: -122.526
+  geo: {lat: 45.6357, lng: -122.526}
   phone: 360-123-4567
-  external_ids:
-    bphc: BPS-H80-030441
+  external_ids: {bphc: BPS-H80-030441}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-fourth-plain
   name: Sea Mar CHC - Vancouver Fourth Plain
   categories:
   - community-health-center
-  address:
-    street: 6100 NE Fourth Plain Blvd
-    city: Vancouver
-    state: wa
-    zip: '98661'
+  cost: sliding-scale
+  address: {street: 6100 NE Fourth Plain Blvd, city: Vancouver, state: wa, zip: '98661'}
   place: '5374060'
-  geo:
-    lat: 45.64369
-    lng: -122.60944
+  geo: {lat: 45.64369, lng: -122.60944}
   phone: 206-763-5277
-  external_ids:
-    bphc: BPS-H80-016965
+  external_ids: {bphc: BPS-H80-016965}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-ne-20th-ave
   name: Sea Mar CHC - Vancouver NE 20th Ave.
   categories:
   - community-health-center
-  address:
-    street: 14508 NE 20th Ave
-    city: Vancouver
-    state: wa
-    zip: '98686'
+  cost: sliding-scale
+  address: {street: 14508 NE 20th Ave, city: Vancouver, state: wa, zip: '98686'}
   place: '5374060'
-  geo:
-    lat: 45.72641
-    lng: -122.65272
+  geo: {lat: 45.72641, lng: -122.65272}
   phone: 360-852-9070
-  external_ids:
-    bphc: BPS-H80-015199
+  external_ids: {bphc: BPS-H80-015199}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-ne-65th-st
   name: Sea Mar CHC - Vancouver NE 65th St.
   categories:
   - community-health-center
-  address:
-    street: 11801 NE 65th St
-    city: Vancouver
-    state: wa
-    zip: '98662'
+  cost: sliding-scale
+  address: {street: 11801 NE 65th St, city: Vancouver, state: wa, zip: '98662'}
   place: '5374060'
-  geo:
-    lat: 45.66963
-    lng: -122.55137
+  geo: {lat: 45.66963, lng: -122.55137}
   phone: 360-892-0208
-  external_ids:
-    bphc: BPS-H80-013881
+  external_ids: {bphc: BPS-H80-013881}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-ne-87th-ave
   name: Sea Mar CHC - Vancouver NE 87th Ave.
   categories:
   - community-health-center
-  address:
-    street: 816 NE 87th Ave
-    city: Vancouver
-    state: wa
-    zip: '98664'
+  cost: sliding-scale
+  address: {street: 816 NE 87th Ave, city: Vancouver, state: wa, zip: '98664'}
   place: '5374060'
-  geo:
-    lat: 45.62747
-    lng: -122.58395
+  geo: {lat: 45.62747, lng: -122.58395}
   phone: 360-558-5795
-  external_ids:
-    bphc: BPS-H80-038914
+  external_ids: {bphc: BPS-H80-038914}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/sea-mar-chc-vancouver-ne-88th-st
   name: Sea Mar CHC - Vancouver NE 88th St.
   categories:
   - community-health-center
-  address:
-    street: 1412 NE 88th St
-    city: Vancouver
-    state: wa
-    zip: '98665'
+  cost: sliding-scale
+  address: {street: 1412 NE 88th St, city: Vancouver, state: wa, zip: '98665'}
   place: '5374060'
-  geo:
-    lat: 45.68627
-    lng: -122.65708
+  geo: {lat: 45.68627, lng: -122.65708}
   phone: 360-574-4074
   website: https://www.seamar.org
-  external_ids:
-    bphc: BPS-H80-002641
+  external_ids: {bphc: BPS-H80-002641}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/vancouver/starcrest
   name: STARCREST
   categories:
@@ -1369,6 +1366,11 @@
     lng: -122.63974
   phone: 360-696-2010
   website: https://startingpointinc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1389,6 +1391,19 @@
     lng: -122.65524
   phone: 360-690-1841 x32223
   website: https://www.va.gov/portland-health-care/locations/vancouver-va-medical-center/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1431,6 +1446,13 @@
     lng: -122.65084
   phone: 360-566-9112 x105
   website: https://www.ctcprograms.com/location/vancouver-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -14,6 +14,14 @@
     lng: -91.89267
   phone: 715-235-4537
   website: https://www.arborplaceinc.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +43,10 @@
     lng: -91.89274
   phone: 715-235-4696
   website: https://www.auroraservices.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,13 +57,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dunn County
-  address: {street: '3001 US Hwy 12 East, Suite 160', city: Menomonie, state: wi, zip: '54751'}
+  address:
+    street: 3001 US Hwy 12 East, Suite 160
+    city: Menomonie
+    state: wi
+    zip: '54751'
   place: '5551025'
   phone: 715-589-4750
   website: http://homeenergyplus.wi.gov/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/menomonie/dunn-county-dept-of-human-services-behavioral-he
   name: Dunn County Dept of Human Services Behavioral Health Services
   categories:
@@ -68,6 +86,9 @@
     lng: -91.88686
   phone: 715-232-1116
   website: https://www.co.dunn.wi.us
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -97,24 +118,16 @@
   name: Family Health Center - Menomonie Dental Center
   categories:
   - community-health-center
-  address:
-    street: 404 Red Cedar St
-    city: Menomonie
-    state: wi
-    zip: '54751'
+  cost: sliding-scale
+  address: {street: 404 Red Cedar St, city: Menomonie, state: wi, zip: '54751'}
   place: '5551025'
-  geo:
-    lat: 44.88128
-    lng: -91.8958
+  geo: {lat: 44.88128, lng: -91.8958}
   phone: 715-233-6800
   website: https://familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-018124
+  external_ids: {bphc: BPS-H80-018124}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/menomonie/family-therapy-associates
   name: Family Therapy Associates
   categories:
@@ -131,6 +144,11 @@
     lng: -91.92972
   phone: 715-246-4840
   website: https://www.ftacounseling.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

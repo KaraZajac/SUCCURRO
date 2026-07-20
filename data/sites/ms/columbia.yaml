@@ -62,45 +62,29 @@
   name: Family Health Care Clinic, Columbia--Head Start
   categories:
   - community-health-center
-  address:
-    street: 431 Old Highway 13 S
-    city: Columbia
-    state: ms
-    zip: '39429'
+  cost: sliding-scale
+  address: {street: 431 Old Highway 13 S, city: Columbia, state: ms, zip: '39429'}
   place: '2815340'
-  geo:
-    lat: 31.14778
-    lng: -89.75075
+  geo: {lat: 31.14778, lng: -89.75075}
   phone: 601-736-6877
-  external_ids:
-    bphc: BPS-H80-009025
+  external_ids: {bphc: BPS-H80-009025}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/columbia/family-health-care-clinic-inc-columbia
   name: Family Health Care Clinic, Inc., --Columbia
   categories:
   - community-health-center
-  address:
-    street: 628 Main St
-    city: Columbia
-    state: ms
-    zip: '39429'
+  cost: sliding-scale
+  address: {street: 628 Main St, city: Columbia, state: ms, zip: '39429'}
   place: '2815340'
-  geo:
-    lat: 31.25481
-    lng: -89.8351
+  geo: {lat: 31.25481, lng: -89.8351}
   phone: 601-823-1710
   website: https://www.familyhealthcareclinic.com
-  external_ids:
-    bphc: BPS-H80-009352
+  external_ids: {bphc: BPS-H80-009352}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/columbia/jefferson-middle-school
   name: Jefferson Middle School
   categories:
@@ -157,6 +141,12 @@
     lng: -89.83673
   phone: 601-736-6799
   website: https://www.pbmhr.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -167,10 +157,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jefferson Davis, Marion Counties
-  address: {street: 756 Hwy 98 Bypass (P. O. Box 188), city: Columbia, state: ms, zip: '39429'}
+  address:
+    street: 756 Hwy 98 Bypass (P. O. Box 188)
+    city: Columbia
+    state: ms
+    zip: '39429'
   place: '2815340'
   phone: 601-792-5356
   website: https://prvohs.org/family/liheap-family/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

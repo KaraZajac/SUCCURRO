@@ -376,102 +376,76 @@
   name: HealthSource Hillsboro
   categories:
   - community-health-center
-  address:
-    street: 1108 Northview Dr
-    city: Hillsboro
-    state: oh
-    zip: '45133'
+  cost: sliding-scale
+  address: {street: 1108 Northview Dr, city: Hillsboro, state: oh, zip: '45133'}
   place: '3935560'
-  geo:
-    lat: 39.21962
-    lng: -83.60672
+  geo: {lat: 39.21962, lng: -83.60672}
   phone: 937-393-5781
   website: https://www.healthsourceofohio.com
-  external_ids:
-    bphc: BPS-H80-011924
+  external_ids: {bphc: BPS-H80-011924}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/hillsboro/highland-county-community-action-organization
   name: Highland County Community Action Organization
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Highland County
-  address: {street: '1487 North High St., Suite 500', city: Hillsboro, state: oh, zip: '45133'}
+  address:
+    street: 1487 North High St., Suite 500
+    city: Hillsboro
+    state: oh
+    zip: '45133'
   place: '3935560'
   phone: 937-393-3458
   website: http://hccao.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/hillsboro/highland-health-providers
   name: Highland Health Providers
   categories:
   - community-health-center
-  address:
-    street: 1487 N High St, Ste 102
-    city: Hillsboro
-    state: oh
-    zip: '45133'
+  cost: sliding-scale
+  address: {street: '1487 N High St, Ste 102', city: Hillsboro, state: oh, zip: '45133'}
   place: '3935560'
-  geo:
-    lat: 39.23133
-    lng: -83.61064
+  geo: {lat: 39.23133, lng: -83.61064}
   phone: 937-840-9150
   website: http://www.hhproviders.org
-  external_ids:
-    bphc: BPS-H80-029551
+  external_ids: {bphc: BPS-H80-029551}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/hillsboro/highland-health-providers-hfh
   name: Highland Health Providers - HFH
   categories:
   - community-health-center
-  address:
-    street: 1402 N High St
-    city: Hillsboro
-    state: oh
-    zip: '45133'
+  cost: sliding-scale
+  address: {street: 1402 N High St, city: Hillsboro, state: oh, zip: '45133'}
   place: '3935560'
-  geo:
-    lat: 39.22183
-    lng: -83.60724
+  geo: {lat: 39.22183, lng: -83.60724}
   phone: 937-393-4899
   website: http://www.hhproviders.org
-  external_ids:
-    bphc: BPS-H80-029543
+  external_ids: {bphc: BPS-H80-029543}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/hillsboro/highland-health-providers-rocky-fork-medical-cen
   name: Highland Health Providers - Rocky Fork Medical Center
   categories:
   - community-health-center
-  address:
-    street: 11130 N Shore Dr
-    city: Hillsboro
-    state: oh
-    zip: '45133'
+  cost: sliding-scale
+  address: {street: 11130 N Shore Dr, city: Hillsboro, state: oh, zip: '45133'}
   place: '3935560'
-  geo:
-    lat: 39.19852
-    lng: -83.4827
+  geo: {lat: 39.19852, lng: -83.4827}
   phone: 937-402-5491
   website: http://www.hhproviders.org
-  external_ids:
-    bphc: BPS-H80-029547
+  external_ids: {bphc: BPS-H80-029547}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/hillsboro/hillsboro-head-start-early-head-start
   name: Hillsboro Head Start/ Early Head Start
   categories:
@@ -508,6 +482,11 @@
     lng: -83.61094
   phone: 937-393-9720
   website: https://www.therecoverycouncil.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -529,6 +508,12 @@
     lng: -83.60169
   phone: 937-393-9662
   website: https://www.therecoverycouncil.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,67 +2,43 @@
   name: Bryan Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 228 S Main St
-    city: Bryan
-    state: oh
-    zip: '43506'
+  cost: sliding-scale
+  address: {street: 228 S Main St, city: Bryan, state: oh, zip: '43506'}
   place: '3909792'
-  geo:
-    lat: 41.47241
-    lng: -84.55142
+  geo: {lat: 41.47241, lng: -84.55142}
   phone: 567-239-4562
   website: https://www.hpwohio.org
-  external_ids:
-    bphc: BPS-H80-017283
+  external_ids: {bphc: BPS-H80-017283}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/bryan/bryan-mobile-health-van
   name: Bryan - Mobile Health Van
   categories:
   - community-health-center
-  address:
-    street: 228 S Main St
-    city: Bryan
-    state: oh
-    zip: '43506'
+  cost: sliding-scale
+  address: {street: 228 S Main St, city: Bryan, state: oh, zip: '43506'}
   place: '3909792'
-  geo:
-    lat: 41.47241
-    lng: -84.55142
+  geo: {lat: 41.47241, lng: -84.55142}
   phone: 567-239-4562
   website: https://www.hpwohio.org
-  external_ids:
-    bphc: BPS-H80-027147
+  external_ids: {bphc: BPS-H80-027147}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/bryan/bryan-outreach-admin-site
   name: Bryan Outreach Admin Site
   categories:
   - community-health-center
-  address:
-    street: 1206 E High St
-    city: Bryan
-    state: oh
-    zip: '43506'
+  cost: sliding-scale
+  address: {street: 1206 E High St, city: Bryan, state: oh, zip: '43506'}
   place: '3909792'
-  geo:
-    lat: 41.47483
-    lng: -84.53351
+  geo: {lat: 41.47483, lng: -84.53351}
   phone: 419-221-3072
-  external_ids:
-    bphc: BPS-H80-039700
+  external_ids: {bphc: BPS-H80-039700}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/bryan/mattie-marsh-park
   name: Mattie Marsh Park
   categories:
@@ -91,13 +67,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Williams County
-  address: {street: 1425 E. High Street Suite 113, city: Bryan, state: oh, zip: '43506'}
+  address:
+    street: 1425 E. High Street Suite 113
+    city: Bryan
+    state: oh
+    zip: '43506'
   place: '3909792'
   phone: 419-636-4924
   website: https://nocac.org/emergency-services/heap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/bryan/pulaski-head-start
   name: Pulaski Head Start
   categories:
@@ -133,6 +115,9 @@
     lng: -84.571
   phone: 419-636-0410
   website: https://www.rsnwo.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

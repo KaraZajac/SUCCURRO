@@ -2,24 +2,16 @@
   name: CCHS St. Mary's
   categories:
   - community-health-center
-  address:
-    street: 202 Lakeshore Dr
-    city: Saint Marys
-    state: ga
-    zip: '31558'
+  cost: sliding-scale
+  address: {street: 202 Lakeshore Dr, city: Saint Marys, state: ga, zip: '31558'}
   place: '1367984'
-  geo:
-    lat: 30.77911
-    lng: -81.61566
+  geo: {lat: 30.77911, lng: -81.61566}
   phone: 912-574-5084
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-036259
+  external_ids: {bphc: BPS-H80-036259}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/st-marys/coastal-community-behav-health-llc
   name: Coastal Community Behav Health LLC
   categories:
@@ -35,6 +27,12 @@
     lng: -81.60652
   phone: 912-434-1794 x1
   website: https://www.ccbhrecovery.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,13 +43,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Camden County
-  address: {street: 106 Hall St. East, city: St. Marys, state: ga, zip: '31558'}
+  address:
+    street: 106 Hall St. East
+    city: St. Marys
+    state: ga
+    zip: '31558'
   place: '1367984'
   phone: 912-729-2580
   website: http://www.coastalgacaa.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/st-marys/non-congregate-smms-bus-2
   name: Non-Congregate Smms Bus 2
   categories:

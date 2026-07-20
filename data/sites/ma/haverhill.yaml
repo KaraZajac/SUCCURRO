@@ -25,57 +25,47 @@
   name: Community Action Drop-In Center
   categories:
   - community-health-center
-  address:
-    street: 16 Ashland St
-    city: Haverhill
-    state: ma
-    zip: 01830
+  cost: sliding-scale
+  address: {street: 16 Ashland St, city: Haverhill, state: ma, zip: 01830}
   place: '2529405'
-  geo:
-    lat: 42.78138
-    lng: -71.07612
+  geo: {lat: 42.78138, lng: -71.07612}
   phone: 978-725-7400
-  external_ids:
-    bphc: BPS-H80-017428
+  external_ids: {bphc: BPS-H80-017428}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/haverhill/community-action-inc
   name: Community Action, Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Essex County
-  address: {street: 3 Washington Square, city: Haverhill, state: ma, zip: 01830}
+  address:
+    street: 3 Washington Square
+    city: Haverhill
+    state: ma
+    zip: 01830
   place: '2529405'
   phone: 978-373-1971
   website: https://www.communityactioninc.org/fuel-and-energy-programs/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/haverhill/emmaus-house
   name: EMMAUS HOUSE
   categories:
   - community-health-center
-  address:
-    street: 150 How St
-    city: Haverhill
-    state: ma
-    zip: 01830
+  cost: sliding-scale
+  address: {street: 150 How St, city: Haverhill, state: ma, zip: 01830}
   place: '2529405'
-  geo:
-    lat: 42.77727
-    lng: -71.08166
+  geo: {lat: 42.77727, lng: -71.08166}
   phone: 978-725-7400
   website: https://www.glfhc.org
-  external_ids:
-    bphc: BPS-H80-005662
+  external_ids: {bphc: BPS-H80-005662}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/haverhill/fox-center
   name: Fox Center
   categories:
@@ -99,23 +89,15 @@
   name: Haverhill Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 755 Main St
-    city: Haverhill
-    state: ma
-    zip: 01830
+  cost: sliding-scale
+  address: {street: 755 Main St, city: Haverhill, state: ma, zip: 01830}
   place: '2529405'
-  geo:
-    lat: 42.79782
-    lng: -71.08753
+  geo: {lat: 42.79782, lng: -71.08753}
   phone: 978-686-0900
-  external_ids:
-    bphc: BPS-H80-030884
+  external_ids: {bphc: BPS-H80-030884}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/haverhill/haverhill-housing-authority
   name: Haverhill Housing Authority
   categories:
@@ -152,6 +134,10 @@
     lng: -71.07288
   phone: 978-373-8222
   website: https://www.haverhillpavilion.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -220,6 +206,11 @@
   place: '2529405'
   phone: 978-687-0156 x2947
   website: https://www.holyfamilyhospital.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -260,6 +251,22 @@
     lng: -71.08557
   phone: 844-909-2560
   website: https://www.metaaddictiontreatment.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -269,24 +276,16 @@
   name: MITCH'S PLACE
   categories:
   - community-health-center
-  address:
-    street: 127 How St
-    city: Haverhill
-    state: ma
-    zip: 01830
+  cost: sliding-scale
+  address: {street: 127 How St, city: Haverhill, state: ma, zip: 01830}
   place: '2529405'
-  geo:
-    lat: 42.77703
-    lng: -71.08093
+  geo: {lat: 42.77703, lng: -71.08093}
   phone: 978-725-7400
   website: https://www.glfhc.org
-  external_ids:
-    bphc: BPS-H80-007492
+  external_ids: {bphc: BPS-H80-007492}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/haverhill/new-horizons-medical
   name: New Horizons Medical
   categories:
@@ -303,6 +302,22 @@
     lng: -71.04495
   phone: 978-361-9993
   website: https://www.newhorizonsmedical.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -324,6 +339,9 @@
     lng: -71.04634
   phone: 978-641-3001
   website: https://www.serenityatsummit.com
+  services:
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -344,6 +362,17 @@
     lng: -71.10447
   phone: 978-373-4985
   website: https://www.spectrumhealthsystems.org/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

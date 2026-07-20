@@ -14,6 +14,22 @@
     lng: -77.51592
   phone: 434-348-8900
   website: https://www.grcsb.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -47,33 +63,31 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Emporia City County
-  address: {street: 1748 East Atlantic Street, city: Emporia, state: va, zip: '23847'}
-  place: '5125808'
-  phone: 434-634-6576
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: va/emporia/emporia-medical-center
-  name: EMPORIA MEDICAL CENTER
-  categories:
-  - community-health-center
   address:
-    street: 510 N Main St
+    street: 1748 East Atlantic Street
     city: Emporia
     state: va
     zip: '23847'
   place: '5125808'
-  geo:
-    lat: 36.69557
-    lng: -77.53688
-  phone: 434-634-7723
-  external_ids:
-    bphc: BPS-H80-019253
+  phone: 434-634-6576
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: va/emporia/emporia-medical-center
+  name: EMPORIA MEDICAL CENTER
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 510 N Main St, city: Emporia, state: va, zip: '23847'}
+  place: '5125808'
+  geo: {lat: 36.69557, lng: -77.53688}
+  phone: 434-634-7723
+  external_ids: {bphc: BPS-H80-019253}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: va/emporia/emporia-va-clinic
   name: Emporia VA Clinic
   categories:
@@ -165,12 +179,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Greensville County
-  address: {street: '1748 E. Atlantic St., P.O. Box 1136', city: Emporia, state: va, zip: 23847-1136}
+  address:
+    street: 1748 E. Atlantic St., P.O. Box 1136
+    city: Emporia
+    state: va
+    zip: 23847-1136
   place: '5125808'
   phone: 434-634-6576
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/emporia/greensville-head-start
   name: Greensville Head Start
   categories:

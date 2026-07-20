@@ -14,6 +14,10 @@
     lng: -84.03373
   phone: 678-513-5700
   website: https://www.avitapartners.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -86,35 +90,33 @@
   name: GHMS Dawsonville Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 5959 Highway 53 E, Suite 100
-    city: Dawsonville
-    state: ga
-    zip: '30534'
+  cost: sliding-scale
+  address: {street: '5959 Highway 53 E, Suite 100', city: Dawsonville, state: ga, zip: '30534'}
   place: '1321940'
-  geo:
-    lat: 34.36954
-    lng: -84.04139
+  geo: {lat: 34.36954, lng: -84.04139}
   phone: 770-887-1668
-  external_ids:
-    bphc: BPS-H80-019133
+  external_ids: {bphc: BPS-H80-019133}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/dawsonville/ninth-district-opportunity-inc-dawson-county-com
   name: Ninth District Opportunity Inc. (Dawson County Community Resource Center)
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dawson County
-  address: {street: 407 Allen St. (P. O. Box 453), city: Dawsonville, state: ga, zip: '30534'}
+  address:
+    street: 407 Allen St. (P. O. Box 453)
+    city: Dawsonville
+    state: ga
+    zip: '30534'
   place: '1321940'
   phone: 706-265-3744
   website: https://www.ndo.org/services/heating-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/dawsonville/riverview-elementary-school
   name: Riverview Elementary School
   categories:

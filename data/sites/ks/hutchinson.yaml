@@ -99,6 +99,13 @@
     lng: -97.90125
   phone: 620-663-7595
   website: https://hutchregional.com/locations-services/horizons-mental-health-center
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -230,46 +237,30 @@
   name: PrairieStar Health Center
   categories:
   - community-health-center
-  address:
-    street: 2700 E 30th Ave
-    city: Hutchinson
-    state: ks
-    zip: '67502'
+  cost: sliding-scale
+  address: {street: 2700 E 30th Ave, city: Hutchinson, state: ks, zip: '67502'}
   place: '2033625'
-  geo:
-    lat: 38.08773
-    lng: -97.88172
+  geo: {lat: 38.08773, lng: -97.88172}
   phone: 620-663-8484
   website: https://www.prairiestarhealth.org
-  external_ids:
-    bphc: BPS-H80-014666
+  external_ids: {bphc: BPS-H80-014666}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/hutchinson/prairiestar-health-center-mobile
   name: PrairieStar Health Center - Mobile
   categories:
   - community-health-center
-  address:
-    street: 2700 E 30th Ave
-    city: Hutchinson
-    state: ks
-    zip: '67502'
+  cost: sliding-scale
+  address: {street: 2700 E 30th Ave, city: Hutchinson, state: ks, zip: '67502'}
   place: '2033625'
-  geo:
-    lat: 38.08773
-    lng: -97.88172
+  geo: {lat: 38.08773, lng: -97.88172}
   phone: 620-663-8484
   website: https://www.prairiestarhealth.org
-  external_ids:
-    bphc: BPS-H80-032929
+  external_ids: {bphc: BPS-H80-032929}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/hutchinson/reno-alcohol-drug-services
   name: Reno Alcohol Drug Services
   categories:
@@ -285,6 +276,11 @@
     lng: -97.9332
   phone: 620-665-6446
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -295,12 +291,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Reno County
-  address: {street: '1700 E. 11th Ave.,', city: Hutchinson, state: ks, zip: '67501'}
+  address:
+    street: 1700 E. 11th Ave.,
+    city: Hutchinson
+    state: ks
+    zip: '67501'
   place: '2033625'
   phone: 620-663-5731
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/hutchinson/sjh
   name: SJH
   categories:
@@ -335,6 +337,11 @@
     lng: -97.93967
   phone: 620-669-9024 x4001
   website: https://www.sackansas.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

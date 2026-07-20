@@ -66,35 +66,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Charles City County
-  address: {street: '10900 Courthouse Road, (P. O. Box 98)', city: Charles City, state: va, zip: 23030-0098}
+  address:
+    street: 10900 Courthouse Road, (P. O. Box 98)
+    city: Charles City
+    state: va
+    zip: 23030-0098
   place: '5114904'
   phone: 804-652-1708
   website: https://www.charlescityva.us/177/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/charles-city/cvhs-charles-city
   name: CVHS Charles City
   categories:
   - community-health-center
-  address:
-    street: 9950 Courthouse Rd
-    city: Charles City
-    state: va
-    zip: '23030'
+  cost: sliding-scale
+  address: {street: 9950 Courthouse Rd, city: Charles City, state: va, zip: '23030'}
   place: '5114904'
-  geo:
-    lat: 37.35271
-    lng: -77.07445
+  geo: {lat: 37.35271, lng: -77.07445}
   phone: 804-829-6600
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-003730
+  external_ids: {bphc: BPS-H80-003730}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/charles-city/tiny-little-children-day-care
   name: Tiny Little Children Day Care
   categories:

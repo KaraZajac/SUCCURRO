@@ -210,24 +210,16 @@
   name: HEALTH WEST - EVANSTON CHC
   categories:
   - community-health-center
-  address:
-    street: 75 Yellow Creek Rd, Suite 102
-    city: Evanston
-    state: wy
-    zip: '82930'
+  cost: sliding-scale
+  address: {street: '75 Yellow Creek Rd, Suite 102', city: Evanston, state: wy, zip: '82930'}
   place: '5625620'
-  geo:
-    lat: 41.25492
-    lng: -110.96785
+  geo: {lat: 41.25492, lng: -110.96785}
   phone: 307-789-8290
   website: https://www.healthwestinc.org
-  external_ids:
-    bphc: BPS-H80-038300
+  external_ids: {bphc: BPS-H80-038300}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wy/evanston/high-country-behavioral-health-evanston-office
   name: High Country Behavioral Health Evanston Office
   categories:
@@ -244,6 +236,10 @@
     lng: -110.98456
   phone: 307-789-4224
   website: https://www.hcbh.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -340,10 +336,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Uinta County
-  address: {street: '350 City View Drive, Suite 302', city: Evanston, state: wy, zip: '82930'}
+  address:
+    street: 350 City View Drive, Suite 302
+    city: Evanston
+    state: wy
+    zip: '82930'
   place: '5625620'
   phone: 307-789-2756
   website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

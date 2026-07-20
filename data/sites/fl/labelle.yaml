@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hendry County
-  address: {street: 165 Lee St., city: LaBelle, state: fl, zip: '33935'}
+  address:
+    street: 165 Lee St.
+    city: LaBelle
+    state: fl
+    zip: '33935'
   place: '1237225'
   phone: 863-675-0114
   website: https://alpi.org/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/labelle/carlson-memorial-united-methodist-church
   name: Carlson Memorial United Methodist Church
   categories:
@@ -49,6 +55,14 @@
     lng: -81.42528
   phone: 863-342-4221
   website: https://www.centerstone.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -285,24 +299,16 @@
   name: LaBelle Health Center
   categories:
   - community-health-center
-  address:
-    street: 169 W Hickpochee Ave
-    city: Labelle
-    state: fl
-    zip: '33935'
+  cost: sliding-scale
+  address: {street: 169 W Hickpochee Ave, city: Labelle, state: fl, zip: '33935'}
   place: '1237225'
-  geo:
-    lat: 26.76131
-    lng: -81.44063
+  geo: {lat: 26.76131, lng: -81.44063}
   phone: 239-278-3600
   website: http://www.fhcswfl.org
-  external_ids:
-    bphc: BPS-H80-041478
+  external_ids: {bphc: BPS-H80-041478}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/labelle/labelle-high-school
   name: Labelle High School
   categories:

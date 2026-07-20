@@ -110,13 +110,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Henry, Martinsville City Counties
-  address: {street: 20 Progress Drive (P.O. Box 4946), city: Martinsville, state: va, zip: '24115'}
+  address:
+    street: 20 Progress Drive (P.O. Box 4946)
+    city: Martinsville
+    state: va
+    zip: '24115'
   place: '5149784'
   phone: 276-656-4300
   website: https://www.henrycountyva.gov/248/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/martinsville/laurel-park-middle
   name: Laurel Park Middle
   categories:
@@ -231,44 +237,28 @@
   name: MHC Coalition Admin
   categories:
   - community-health-center
-  address:
-    street: 29 Jones St
-    city: Martinsville
-    state: va
-    zip: '24112'
+  cost: sliding-scale
+  address: {street: 29 Jones St, city: Martinsville, state: va, zip: '24112'}
   place: '5149784'
-  geo:
-    lat: 36.692
-    lng: -79.87346
+  geo: {lat: 36.692, lng: -79.87346}
   phone: 276-403-5099
-  external_ids:
-    bphc: BPS-H80-035456
+  external_ids: {bphc: BPS-H80-035456}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/martinsville/mhc-dental-clinic
   name: MHC Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 23 Fayette St
-    city: Martinsville
-    state: va
-    zip: '24112'
+  cost: sliding-scale
+  address: {street: 23 Fayette St, city: Martinsville, state: va, zip: '24112'}
   place: '5149784'
-  geo:
-    lat: 36.69228
-    lng: -79.87361
+  geo: {lat: 36.69228, lng: -79.87361}
   phone: 276-403-5099
-  external_ids:
-    bphc: BPS-H80-032765
+  external_ids: {bphc: BPS-H80-032765}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/martinsville/mount-olivet-elem
   name: Mount Olivet Elem
   categories:
@@ -294,45 +284,29 @@
   name: PATHS Community Medical Center - Martinsville
   categories:
   - community-health-center
-  address:
-    street: 315 Hospital Dr
-    city: Martinsville
-    state: va
-    zip: '24112'
+  cost: sliding-scale
+  address: {street: 315 Hospital Dr, city: Martinsville, state: va, zip: '24112'}
   place: '5149784'
-  geo:
-    lat: 36.69734
-    lng: -79.86588
+  geo: {lat: 36.69734, lng: -79.86588}
   phone: 276-632-2966
-  external_ids:
-    bphc: BPS-H80-037826
+  external_ids: {bphc: BPS-H80-037826}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/martinsville/paths-community-pharmacy
   name: PATHS Community Pharmacy
   categories:
   - community-health-center
-  address:
-    street: 1049 Brookdale St STE A
-    city: Martinsville
-    state: va
-    zip: '24112'
+  cost: sliding-scale
+  address: {street: 1049 Brookdale St STE A, city: Martinsville, state: va, zip: '24112'}
   place: '5149784'
-  geo:
-    lat: 36.67953
-    lng: -79.85088
+  geo: {lat: 36.67953, lng: -79.85088}
   phone: 276-670-2207
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-027666
+  external_ids: {bphc: BPS-H80-027666}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/martinsville/patrick-henry-community-college
   name: Patrick Henry Community College
   categories:
@@ -408,6 +382,10 @@
   place: '5149784'
   phone: 540-483-7818
   website: https://www.piedmontcsb.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -429,6 +407,15 @@
     lng: -79.86735
   phone: 276-632-7128
   website: https://www.piedmontcsb.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -450,6 +437,17 @@
     lng: -79.89345
   phone: 276-638-0438
   website: https://www.piedmontcsb.org
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -471,6 +469,10 @@
     lng: -79.87374
   phone: 276-226-9150
   website: https://www.savidahealth.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -492,6 +494,9 @@
     lng: -79.86661
   phone: 276-666-7200
   website: https://www.martinsvillehospital.com/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -512,6 +517,16 @@
     lng: -79.85843
   phone: 276-201-1647
   website: https://www.sperohealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

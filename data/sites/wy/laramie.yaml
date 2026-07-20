@@ -2,36 +2,34 @@
   name: Albany Community Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 2710 Harney St STE 202-204
-    city: Laramie
-    state: wy
-    zip: '82072'
+  cost: sliding-scale
+  address: {street: 2710 Harney St STE 202-204, city: Laramie, state: wy, zip: '82072'}
   place: '5645050'
-  geo:
-    lat: 41.32073
-    lng: -105.5615
+  geo: {lat: 41.32073, lng: -105.5615}
   phone: 307-766-3313
   website: https://www.albanycommunityhealthclinic.com
-  external_ids:
-    bphc: BPS-H80-037249
+  external_ids: {bphc: BPS-H80-037249}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wy/laramie/albany-county-department-of-family-services
   name: Albany County Department of Family Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Albany County
-  address: {street: '3817 Beech St., Suite 200', city: Laramie, state: wy, zip: '82070'}
+  address:
+    street: 3817 Beech St., Suite 200
+    city: Laramie
+    state: wy
+    zip: '82070'
   place: '5645050'
   phone: 307-745-7324
   website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wy/laramie/cathedral-home-for-children
   name: Cathedral Home for Children
   categories:
@@ -48,6 +46,17 @@
     lng: -105.58904
   phone: 307-745-8997
   website: https://www.cathedralhome.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -178,6 +187,16 @@
     lng: -105.57504
   phone: 307-745-8915
   website: https://www.voanr.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

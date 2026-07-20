@@ -2,23 +2,15 @@
   name: 4080 Centre Administration
   categories:
   - community-health-center
-  address:
-    street: 4080 Centre St
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 4080 Centre St, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.75214
-    lng: -117.14693
+  geo: {lat: 32.75214, lng: -117.14693}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-036038
+  external_ids: {bphc: BPS-H80-036038}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/access-youth-academy
   name: Access Youth Academy
   categories:
@@ -122,6 +114,12 @@
     lng: -117.07666
   phone: 619-667-6106
   website: https://apibhs.com/
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -188,6 +186,22 @@
     lng: -117.13209
   phone: 619-756-6424
   website: https://apexrecoveryca.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -898,46 +912,30 @@
   name: Beach Area Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 3705 Mission Blvd
-    city: San Diego
-    state: ca
-    zip: '92109'
+  cost: sliding-scale
+  address: {street: 3705 Mission Blvd, city: San Diego, state: ca, zip: '92109'}
   place: '0666000'
-  geo:
-    lat: 32.78274
-    lng: -117.25226
+  geo: {lat: 32.78274, lng: -117.25226}
   phone: 619-515-2444
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-003185
+  external_ids: {bphc: BPS-H80-003185}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/beach-area-women-s-health-center
   name: Beach Area Women's Health Center
   categories:
   - community-health-center
-  address:
-    street: 3690 Mission Blvd
-    city: San Diego
-    state: ca
-    zip: '92109'
+  cost: sliding-scale
+  address: {street: 3690 Mission Blvd, city: San Diego, state: ca, zip: '92109'}
   place: '0666000'
-  geo:
-    lat: 32.78239
-    lng: -117.2527
+  geo: {lat: 32.78239, lng: -117.2527}
   phone: 619-515-2444
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-005504
+  external_ids: {bphc: BPS-H80-005504}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/bell-middle
   name: Bell Middle
   categories:
@@ -977,6 +975,13 @@
     lng: -117.23792
   phone: 858-766-9685
   website: https://hazeldenbettyford.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -997,6 +1002,16 @@
     lng: -117.2344
   phone: 858-888-0101
   website: https://www.boardwalkrecoverycenter.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1007,25 +1022,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving San Diego County
-  address: {street: '885 Gateway Center Way, Suite 103', city: San Diego, state: ca, zip: '92102'}
+  address:
+    street: 885 Gateway Center Way, Suite 103
+    city: San Diego
+    state: ca
+    zip: '92102'
   place: '0666000'
   phone: 619-391-9790
   website: https://campesinosunidos.org/energy-department/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ca/san-diego/campesinos-unidos-inc-san-diego-office
   name: Campesinos Unidos, Inc. San Diego Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving San Diego County
-  address: {street: '885 Gateway Center Way, Suite 103', city: San Diego, state: ca, zip: '92102'}
+  address:
+    street: 885 Gateway Center Way, Suite 103
+    city: San Diego
+    state: ca
+    zip: '92102'
   place: '0666000'
   phone: 619-391-9790
   website: https://campesinosunidos.org/energy-department/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ca/san-diego/carson-elementary
   name: Carson Elementary
   categories:
@@ -1065,6 +1092,18 @@
     lng: -117.19757
   phone: 714-828-1800
   website: https://centerfordiscovery.com/locations/del-mar/
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1097,24 +1136,16 @@
   name: Central Elementary School
   categories:
   - community-health-center
-  address:
-    street: 3878 Orange Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 3878 Orange Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75331
-    lng: -117.11076
+  geo: {lat: 32.75331, lng: -117.11076}
   phone: 619-280-2058
   website: https://www.sdfamilycare.org
-  external_ids:
-    bphc: BPS-H80-037960
+  external_ids: {bphc: BPS-H80-037960}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/chesterton-cyp
   name: Chesterton Cyp
   categories:
@@ -1185,45 +1216,29 @@
   name: City Heights East
   categories:
   - community-health-center
-  address:
-    street: 5526 El Cajon Blvd
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 5526 El Cajon Blvd, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.75844
-    lng: -117.07561
+  geo: {lat: 32.75844, lng: -117.07561}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-034466
+  external_ids: {bphc: BPS-H80-034466}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/city-heights-family-health-center
   name: City Heights Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 5454 El Cajon Blvd
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 5454 El Cajon Blvd, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.75841
-    lng: -117.07763
+  geo: {lat: 32.75841, lng: -117.07763}
   phone: 619-515-2400
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-008734
+  external_ids: {bphc: BPS-H80-008734}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/city-heights-rec-center
   name: City Heights Rec Center
   categories:
@@ -1327,6 +1342,9 @@
   place: '0666000'
   phone: 619-386-7740
   website: https://coastaldetoxsc.com
+  services:
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1344,6 +1362,12 @@
   place: '0666000'
   phone: 619-232-4357
   website: https://www.crfbehavioralhealthcare.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1365,6 +1389,12 @@
     lng: -117.06605
   phone: 619-428-1000
   website: https://www.comresearch.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1386,6 +1416,12 @@
     lng: -117.10044
   phone: 619-285-7097
   website: https://lamaestra.org/index.php/ccbhwc/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1406,6 +1442,22 @@
     lng: -117.17459
   phone: 619-452-1200 x3
   website: https://www.confidentialrecovery.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1450,6 +1502,9 @@
     lng: -117.13985
   phone: 619-239-9691 x304
   website: https://www.crashinc.org
+  services:
+  - Residential/24-hour residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1470,6 +1525,10 @@
     lng: -117.10538
   phone: 619-282-7274
   website: https://www.crashinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1537,6 +1596,21 @@
     lng: -117.07567
   phone: 619-575-4687
   website: https://www.comresearch.org
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1558,6 +1632,13 @@
     lng: -117.15462
   phone: 858-300-8282
   website: https://www.crfbehavioralhealthcare.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1601,6 +1682,22 @@
     lng: -117.16184
   phone: 619-296-1151
   website: https://www.crossroads4recovery.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -1628,45 +1725,29 @@
   name: Diamond Neighborhoods Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 4725 Market St
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 4725 Market St, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71102
-    lng: -117.09309
+  geo: {lat: 32.71102, lng: -117.09309}
   phone: 619-515-2560
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-010116
+  external_ids: {bphc: BPS-H80-010116}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/diamond-neighborhoods-family-health-center-build
   name: Diamond Neighborhoods Family Health Center Building A
   categories:
   - community-health-center
-  address:
-    street: 4725 Market St
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 4725 Market St, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71102
-    lng: -117.09309
+  geo: {lat: 32.71102, lng: -117.09309}
   phone: 619-515-2560
-  external_ids:
-    bphc: BPS-H80-040561
+  external_ids: {bphc: BPS-H80-040561}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/discovery-mood-and-anxiety-program-san-diego
   name: Discovery Mood and Anxiety Program San Diego
   categories:
@@ -1683,6 +1764,18 @@
     lng: -117.20096
   phone: 877-514-4723
   website: https://discoverymood.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1715,23 +1808,15 @@
   name: Downtown Family Health Center at Connections
   categories:
   - community-health-center
-  address:
-    street: 1250 6th Ave, Ste 100
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: '1250 6th Ave, Ste 100', city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.71855
-    lng: -117.15932
+  geo: {lat: 32.71855, lng: -117.15932}
   phone: 619-515-2525
-  external_ids:
-    bphc: BPS-H80-012417
+  external_ids: {bphc: BPS-H80-012417}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/ecs-hs-homebase-caseload-1-hs-jsn
   name: ECS -- HS Homebase -- Caseload-1-HS-Jsn
   categories:
@@ -1834,23 +1919,15 @@
   name: El Cerrito Family Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 5472 El Cajon Blvd STE 101
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 5472 El Cajon Blvd STE 101, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.75826
-    lng: -117.07689
+  geo: {lat: 32.75826, lng: -117.07689}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-038401
+  external_ids: {bphc: BPS-H80-038401}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/el-dorado-community-service-center
   name: El Dorado Community Service Center
   categories:
@@ -1866,6 +1943,13 @@
     lng: -117.08325
   phone: 619-263-0433
   website: https://www.americanhealthservices.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1875,24 +1959,16 @@
   name: Elm Street Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 140 Elm St
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: 140 Elm St, city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.72426
-    lng: -117.16351
+  geo: {lat: 32.72426, lng: -117.16351}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-010752
+  external_ids: {bphc: BPS-H80-010752}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/emory-elementary
   name: Emory Elementary
   categories:
@@ -2046,6 +2122,10 @@
     lng: -117.08552
   phone: 619-662-4100
   website: https://www.syhealth.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -2055,24 +2135,16 @@
   name: Family Health Centers of San Diego
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-001857
+  external_ids: {bphc: BPS-H80-001857}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/family-health-centers-of-san-diego-inc-solutions
   name: Family Health Centers of San Diego Inc Solutions for Recovery
   categories:
@@ -2088,6 +2160,12 @@
     lng: -117.16071
   phone: 619-255-7612
   website: https://www.fhcsd.org/substance-use-disorder-services
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2109,6 +2187,15 @@
     lng: -117.06024
   phone: 619-668-6200
   website: https://www.centerforchildren.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2118,86 +2205,54 @@
   name: FamilyHealth at City College
   categories:
   - community-health-center
-  address:
-    street: 1550 Broadway STE 2
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: 1550 Broadway STE 2, city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.7158
-    lng: -117.14992
+  geo: {lat: 32.7158, lng: -117.14992}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-013966
+  external_ids: {bphc: BPS-H80-013966}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/familyhealth-center-for-older-adults
   name: FamilyHealth - Center for Older Adults
   categories:
   - community-health-center
-  address:
-    street: 3420 College Ave
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 3420 College Ave, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.74395
-    lng: -117.05364
+  geo: {lat: 32.74395, lng: -117.05364}
   phone: 619-515-2445
-  external_ids:
-    bphc: BPS-H80-024898
+  external_ids: {bphc: BPS-H80-024898}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/familyhealth-on-commercial
   name: FamilyHealth on Commercial
   categories:
   - community-health-center
-  address:
-    street: 2325 Commercial St, Apartment 1400
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: '2325 Commercial St, Apartment 1400', city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70495
-    lng: -117.1421
+  geo: {lat: 32.70495, lng: -117.1421}
   phone: 619-515-2422
-  external_ids:
-    bphc: BPS-H80-014820
+  external_ids: {bphc: BPS-H80-014820}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/familyhealth-youth-counseling-center
   name: FamilyHealth - Youth Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 2130 National Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 2130 National Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.69822
-    lng: -117.14098
+  geo: {lat: 32.69822, lng: -117.14098}
   phone: 619-515-2382
-  external_ids:
-    bphc: BPS-H80-021401
+  external_ids: {bphc: BPS-H80-021401}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/fashion-valley-comprehensive-treatment-center
   name: Fashion Valley Comprehensive Treatment Center
   categories:
@@ -2213,6 +2268,14 @@
     lng: -117.15851
   phone: 619-430-4336
   website: https://www.ctcprograms.com/location/fashion-valley-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2245,67 +2308,43 @@
   name: FHCSD Facility Services
   categories:
   - community-health-center
-  address:
-    street: 3959 Lockridge St
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 3959 Lockridge St, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71003
-    lng: -117.10917
+  geo: {lat: 32.71003, lng: -117.10917}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-018679
+  external_ids: {bphc: BPS-H80-018679}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/fhcsd-mobile-medical-unit-ii
   name: FHCSD Mobile Medical Unit II
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-004452
+  external_ids: {bphc: BPS-H80-004452}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/fhcsd-mobile-medical-unit-iii
   name: FHCSD Mobile Medical Unit III
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-002013
+  external_ids: {bphc: BPS-H80-002013}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/field-elementary
   name: Field Elementary
   categories:
@@ -2333,23 +2372,15 @@
   name: Fifth Avenue Behavioral Health Center
   categories:
   - community-health-center
-  address:
-    street: 1750 5th Ave
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: 1750 5th Ave, city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.72357
-    lng: -117.16074
+  geo: {lat: 32.72357, lng: -117.16074}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-033903
+  external_ids: {bphc: BPS-H80-033903}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/franklin-elementary
   name: Franklin Elementary
   categories:
@@ -2389,6 +2420,14 @@
     lng: -117.1917
   phone: 619-363-1920
   website: https://www.freedomwithincenter.com
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2478,6 +2517,22 @@
     lng: -117.14215
   phone: 619-234-3346
   website: https://www.crashinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -2602,44 +2657,28 @@
   name: HCHC-San Diego
   categories:
   - community-health-center
-  address:
-    street: 7808 Clairemont Mesa Blvd
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 7808 Clairemont Mesa Blvd, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.83306
-    lng: -117.15288
+  geo: {lat: 32.83306, lng: -117.15288}
   phone: 626-286-8700
-  external_ids:
-    bphc: BPS-H80-038404
+  external_ids: {bphc: BPS-H80-038404}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/healthy-development-services-center-central-regi
   name: Healthy Development Services Center - Central Region
   categories:
   - community-health-center
-  address:
-    street: 2044 1st Ave, Ste 200
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: '2044 1st Ave, Ste 200', city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.72665
-    lng: -117.1639
+  geo: {lat: 32.72665, lng: -117.1639}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-038132
+  external_ids: {bphc: BPS-H80-038132}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/healthy-life-recovery
   name: Healthy Life Recovery
   categories:
@@ -2656,6 +2695,16 @@
     lng: -117.25526
   phone: 858-888-5332
   website: https://www.healthyliferecovery.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2665,66 +2714,42 @@
   name: Hillcrest Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 4094 4th Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 4094 4th Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.75155
-    lng: -117.16261
+  geo: {lat: 32.75155, lng: -117.16261}
   phone: 619-515-2545
-  external_ids:
-    bphc: BPS-H80-015145
+  external_ids: {bphc: BPS-H80-015145}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/hillcrest-family-health-center-annex
   name: Hillcrest Family Health Center - Annex
   categories:
   - community-health-center
-  address:
-    street: 4065 3rd Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 4065 3rd Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.75123
-    lng: -117.16246
+  geo: {lat: 32.75123, lng: -117.16246}
   phone: 619-515-2545
-  external_ids:
-    bphc: BPS-H80-018187
+  external_ids: {bphc: BPS-H80-018187}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/hiv-prevention-center
   name: HIV Prevention Center
   categories:
   - community-health-center
-  address:
-    street: 4040 30th St
-    city: San Diego
-    state: ca
-    zip: '92104'
+  cost: sliding-scale
+  address: {street: 4040 30th St, city: San Diego, state: ca, zip: '92104'}
   place: '0666000'
-  geo:
-    lat: 32.75113
-    lng: -117.13034
+  geo: {lat: 32.75113, lng: -117.13034}
   phone: 619-515-2449
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-012448
+  external_ids: {bphc: BPS-H80-012448}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/hope-family-therapy-group-inc-clairemont
   name: Hope Family Therapy Group Inc Clairemont
   categories:
@@ -2737,6 +2762,19 @@
   place: '0666000'
   phone: 858-333-6856
   website: https://www.hopetherapygroup.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2758,6 +2796,11 @@
     lng: -117.10416
   phone: 619-236-9492
   website: https://houseofmetamorphosis.org/
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -2825,44 +2868,28 @@
   name: Ibarra Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 4874 Polk Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4874 Polk Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75217
-    lng: -117.08904
+  geo: {lat: 32.75217, lng: -117.08904}
   phone: 619-515-2426
-  external_ids:
-    bphc: BPS-H80-014590
+  external_ids: {bphc: BPS-H80-014590}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/ibcc-admin-site-2015
   name: IBCC Admin Site 2015
   categories:
   - community-health-center
-  address:
-    street: 2232 Verus St, Suite I
-    city: San Diego
-    state: ca
-    zip: '92154'
+  cost: sliding-scale
+  address: {street: '2232 Verus St, Suite I', city: San Diego, state: ca, zip: '92154'}
   place: '0666000'
-  geo:
-    lat: 32.59446
-    lng: -117.08747
+  geo: {lat: 32.59446, lng: -117.08747}
   phone: 619-429-5387
-  external_ids:
-    bphc: BPS-H80-015300
+  external_ids: {bphc: BPS-H80-015300}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/iftin-charter
   name: Iftin Charter
   categories:
@@ -2901,6 +2928,14 @@
     lng: -117.12029
   phone: 858-967-4140
   website: https://infinityrecoverygroup.com
+  services:
+  - Residential/24-hour residential
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -3231,24 +3266,16 @@
   name: KidCare Express Mobile Medical Unit
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-005071
+  external_ids: {bphc: BPS-H80-005071}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/kimbrough-elementary
   name: Kimbrough Elementary
   categories:
@@ -3311,6 +3338,10 @@
     lng: -117.08532
   phone: 619-662-4100
   website: https://www.syhealth.org
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -3342,471 +3373,295 @@
   name: La Maestra Behavioral Health Services
   categories:
   - community-health-center
-  address:
-    street: 4167 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4167 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.7526
-    lng: -117.10064
+  geo: {lat: 32.7526, lng: -117.10064}
   phone: 619-779-7900
-  external_ids:
-    bphc: BPS-H80-036350
+  external_ids: {bphc: BPS-H80-036350}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-central-elementary-school-clinic
   name: La Maestra Central Elementary School Clinic
   categories:
   - community-health-center
-  address:
-    street: 3878 Orange Ave BLDG 100
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 3878 Orange Ave BLDG 100, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.7533
-    lng: -117.11079
+  geo: {lat: 32.7533, lng: -117.11079}
   phone: 619-281-6644
-  external_ids:
-    bphc: BPS-H80-037442
+  external_ids: {bphc: BPS-H80-037442}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-city-heights-clinic
   name: La Maestra City Heights Clinic
   categories:
   - community-health-center
-  address:
-    street: 4074 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4074 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75098
-    lng: -117.10094
+  geo: {lat: 32.75098, lng: -117.10094}
   phone: 619-255-9155
-  external_ids:
-    bphc: BPS-H80-030578
+  external_ids: {bphc: BPS-H80-030578}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-dental-clinic
   name: La Maestra Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 4305 University Ave, Suite 120
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: '4305 University Ave, Suite 120', city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74918
-    lng: -117.10144
+  geo: {lat: 32.74918, lng: -117.10144}
   phone: 619-269-1267
-  external_ids:
-    bphc: BPS-H80-035738
+  external_ids: {bphc: BPS-H80-035738}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-dental-clinic-2
   name: La Maestra Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 4305 University Ave, Suite 150
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: '4305 University Ave, Suite 150', city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74937
-    lng: -117.1015
+  geo: {lat: 32.74937, lng: -117.1015}
   phone: 619-501-1235
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-004899
+  external_ids: {bphc: BPS-H80-004899}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic
   name: La Maestra Family Clinic
   categories:
   - community-health-center
-  address:
-    street: 4060 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4060 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75048
-    lng: -117.10106
+  geo: {lat: 32.75048, lng: -117.10106}
   phone: 619-280-4213
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-008640
+  external_ids: {bphc: BPS-H80-008640}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4187 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4187 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75291
-    lng: -117.10086
+  geo: {lat: 32.75291, lng: -117.10086}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031789
+  external_ids: {bphc: BPS-H80-031789}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-2
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4177 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4177 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75279
-    lng: -117.10086
+  geo: {lat: 32.75279, lng: -117.10086}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031787
+  external_ids: {bphc: BPS-H80-031787}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-3
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4159 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4159 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75246
-    lng: -117.10087
+  geo: {lat: 32.75246, lng: -117.10087}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031786
+  external_ids: {bphc: BPS-H80-031786}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-4
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4179 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4179 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75284
-    lng: -117.10082
+  geo: {lat: 32.75284, lng: -117.10082}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031784
+  external_ids: {bphc: BPS-H80-031784}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-5
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4189 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4189 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.753
-    lng: -117.10082
+  geo: {lat: 32.753, lng: -117.10082}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031785
+  external_ids: {bphc: BPS-H80-031785}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-6
   name: La Maestra Family Clinic Inc.
   categories:
   - community-health-center
-  address:
-    street: 4305 University Ave, Ste 300
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: '4305 University Ave, Ste 300', city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74959
-    lng: -117.10144
+  geo: {lat: 32.74959, lng: -117.10144}
   phone: 619-269-1267
-  external_ids:
-    bphc: BPS-H80-032365
+  external_ids: {bphc: BPS-H80-032365}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-7
   name: La Maestra Family Clinic, Inc
   categories:
   - community-health-center
-  address:
-    street: 4185 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4185 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75291
-    lng: -117.10059
+  geo: {lat: 32.75291, lng: -117.10059}
   phone: 619-280-4213
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-000769
+  external_ids: {bphc: BPS-H80-000769}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-8
   name: La Maestra Family Clinic, Inc.
   categories:
   - community-health-center
-  address:
-    street: 4159 1/2 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4159 1/2 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75245
-    lng: -117.10087
+  geo: {lat: 32.75245, lng: -117.10087}
   phone: 619-269-1267
-  external_ids:
-    bphc: BPS-H80-031788
+  external_ids: {bphc: BPS-H80-031788}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-ccbhc
   name: La Maestra Family Clinic Inc. CCBHC
   categories:
   - community-health-center
-  address:
-    street: 4157 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4157 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75246
-    lng: -117.10063
+  geo: {lat: 32.75246, lng: -117.10063}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031782
+  external_ids: {bphc: BPS-H80-031782}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-family-clinic-inc-wellness-supportive
   name: La Maestra Family Clinic Inc. Wellness Supportive Services
   categories:
   - community-health-center
-  address:
-    street: 4175 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4175 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75279
-    lng: -117.10056
+  geo: {lat: 32.75279, lng: -117.10056}
   phone: 619-280-4213
-  external_ids:
-    bphc: BPS-H80-031783
+  external_ids: {bphc: BPS-H80-031783}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-hoover-high-school-medical-and-dental
   name: La Maestra Hoover High School Medical and Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 4474 El Cajon Blvd BLDG 600
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 4474 El Cajon Blvd BLDG 600, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.75529
-    lng: -117.09788
+  geo: {lat: 32.75529, lng: -117.09788}
   phone: 619-584-9285
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-010376
+  external_ids: {bphc: BPS-H80-010376}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-hope-clinic
   name: La Maestra Hope Clinic
   categories:
   - community-health-center
-  address:
-    street: 4171 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4171 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.7527
-    lng: -117.10064
+  geo: {lat: 32.7527, lng: -117.10064}
   phone: 619-584-1612
-  external_ids:
-    bphc: BPS-H80-013175
+  external_ids: {bphc: BPS-H80-013175}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-mobile-dental-unit
   name: La Maestra Mobile Dental Unit
   categories:
   - community-health-center
-  address:
-    street: 4060 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4060 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75048
-    lng: -117.10106
+  geo: {lat: 32.75048, lng: -117.10106}
   phone: 619-280-4213
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-029782
+  external_ids: {bphc: BPS-H80-029782}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-mobile-medical-and-dental-van
   name: La Maestra Mobile Medical and Dental Van
   categories:
   - community-health-center
-  address:
-    street: 4060 Fairmount Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4060 Fairmount Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75048
-    lng: -117.10106
+  geo: {lat: 32.75048, lng: -117.10106}
   phone: 619-280-4213
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-012639
+  external_ids: {bphc: BPS-H80-012639}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-maestra-monroe-clark-middle-school-clinic
   name: La Maestra Monroe Clark Middle School Clinic
   categories:
   - community-health-center
-  address:
-    street: 4388 Thorn St BLDG 300
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4388 Thorn St BLDG 300, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74025
-    lng: -117.10066
+  geo: {lat: 32.74025, lng: -117.10066}
   phone: 619-563-6801
   website: https://www.lamaestra.org
-  external_ids:
-    bphc: BPS-H80-010956
+  external_ids: {bphc: BPS-H80-010956}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/la-mesa-family-counseling-center
   name: La Mesa Family Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 7290 El Cajon Blvd
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 7290 El Cajon Blvd, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.76905
-    lng: -117.04069
+  geo: {lat: 32.76905, lng: -117.04069}
   phone: 619-906-5347
-  external_ids:
-    bphc: BPS-H80-033982
+  external_ids: {bphc: BPS-H80-033982}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/language-academy
   name: Language Academy
   categories:
@@ -3856,23 +3711,15 @@
   name: Laura's Place
   categories:
   - community-health-center
-  address:
-    street: 1861 Newton Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1861 Newton Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70029
-    lng: -117.14654
+  geo: {lat: 32.70029, lng: -117.14654}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-019427
+  external_ids: {bphc: BPS-H80-019427}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/lincoln-high
   name: Lincoln High
   categories:
@@ -3923,66 +3770,42 @@
   name: LINDA VISTA HEALTH CARE CENTER
   categories:
   - community-health-center
-  address:
-    street: 6973 Linda Vista Rd
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 6973 Linda Vista Rd, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.78715
-    lng: -117.16954
+  geo: {lat: 32.78715, lng: -117.16954}
   phone: 858-279-0925
   website: https://sdfamilycare.org
-  external_ids:
-    bphc: BPS-H80-001228
+  external_ids: {bphc: BPS-H80-001228}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/linda-vista-health-care-center-2
   name: Linda Vista Health Care Center
   categories:
   - community-health-center
-  address:
-    street: 6985 Linda Vista Rd
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 6985 Linda Vista Rd, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.78756
-    lng: -117.16941
+  geo: {lat: 32.78756, lng: -117.16941}
   phone: 858-279-0925
-  external_ids:
-    bphc: BPS-H80-021395
+  external_ids: {bphc: BPS-H80-021395}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/linda-vista-health-care-center-3
   name: Linda Vista Health Care Center
   categories:
   - community-health-center
-  address:
-    street: 6979 Linda Vista Rd
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 6979 Linda Vista Rd, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.7874
-    lng: -117.1697
+  geo: {lat: 32.7874, lng: -117.1697}
   phone: 858-279-0925
-  external_ids:
-    bphc: BPS-H80-021394
+  external_ids: {bphc: BPS-H80-021394}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/linda-vista-rec-center
   name: Linda Vista Rec Center
   categories:
@@ -4032,67 +3855,43 @@
   name: Logan Heights Family Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 2204 National Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 2204 National Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.6973
-    lng: -117.13981
+  geo: {lat: 32.6973, lng: -117.13981}
   phone: 619-515-2355
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-005018
+  external_ids: {bphc: BPS-H80-005018}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/logan-heights-family-health-center
   name: Logan Heights Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1809 National Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1809 National Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70145
-    lng: -117.1467
+  geo: {lat: 32.70145, lng: -117.1467}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-001706
+  external_ids: {bphc: BPS-H80-001706}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/logan-heights-patient-care-support-services
   name: Logan Heights Patient Care Support Services
   categories:
   - community-health-center
-  address:
-    street: 1827 Logan Ave STE 2
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1827 Logan Ave STE 2, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70228
-    lng: -117.14552
+  geo: {lat: 32.70228, lng: -117.14552}
   phone: 619-906-4621
-  external_ids:
-    bphc: BPS-H80-012414
+  external_ids: {bphc: BPS-H80-012414}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/logan-memorial-educational-campus
   name: Logan Memorial Educational Campus
   categories:
@@ -4120,23 +3919,15 @@
   name: Logan Memorial Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 2875 Ocean View Blvd STE E128
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 2875 Ocean View Blvd STE E128, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70113
-    lng: -117.13208
+  geo: {lat: 32.70113, lng: -117.13208}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-037109
+  external_ids: {bphc: BPS-H80-037109}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/los-penasquitos-head-start
   name: Los Penasquitos Head Start
   categories:
@@ -4172,6 +3963,20 @@
     lng: -117.11229
   phone: 619-262-4002 x0
   website: https://www.maacproject.org
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -4238,6 +4043,22 @@
     lng: -117.14189
   phone: 858-384-6284
   website: https://www.mcalisterinc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -4327,6 +4148,11 @@
     lng: -117.15439
   phone: 619-287-8225
   website: https://turnbhs.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -4347,6 +4173,19 @@
     lng: -117.1216
   phone: 760-227-1354
   website: https://turnbhs.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -4367,6 +4206,20 @@
     lng: -117.06683
   phone: 760-744-3672
   website: https://www.turnbhs.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -4387,6 +4240,19 @@
     lng: -117.16035
   phone: 760-227-1354
   website: https://turnbhs.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -4396,46 +4262,30 @@
   name: MID-CITY COMMUNITY CLINIC
   categories:
   - community-health-center
-  address:
-    street: 4290 Polk Ave
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4290 Polk Ave, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.75173
-    lng: -117.10233
+  geo: {lat: 32.75173, lng: -117.10233}
   phone: 619-563-0250
   website: https://sdfamilycare.org
-  external_ids:
-    bphc: BPS-H80-000368
+  external_ids: {bphc: BPS-H80-000368}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mid-city-community-clinic-pediatrics
   name: MID-CITY COMMUNITY CLINIC-PEDIATRICS
   categories:
   - community-health-center
-  address:
-    street: 4305 University Ave, Suite 150
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: '4305 University Ave, Suite 150', city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74937
-    lng: -117.1015
+  geo: {lat: 32.74937, lng: -117.1015}
   phone: 619-280-2058
   website: https://sdfamilycare.org
-  external_ids:
-    bphc: BPS-H80-004528
+  external_ids: {bphc: BPS-H80-004528}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/miramar-airstation-child-youth-teen-center
   name: Miramar Airstation Child Youth & Teen Center
   categories:
@@ -4486,130 +4336,82 @@
   name: Mobile Counseling Center I
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-027875
+  external_ids: {bphc: BPS-H80-027875}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mobile-counseling-center-ii
   name: Mobile Counseling Center II
   categories:
   - community-health-center
-  address:
-    street: 823 Gateway Center Way
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 823 Gateway Center Way, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71541
-    lng: -117.1135
+  geo: {lat: 32.71541, lng: -117.1135}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-028125
+  external_ids: {bphc: BPS-H80-028125}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mobile-screening-unit
   name: Mobile Screening Unit
   categories:
   - community-health-center
-  address:
-    street: 4094 4th Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 4094 4th Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.75155
-    lng: -117.16261
+  geo: {lat: 32.75155, lng: -117.16261}
   phone: 619-515-2300
-  external_ids:
-    bphc: BPS-H80-038402
+  external_ids: {bphc: BPS-H80-038402}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mobile-screening-unit-ii
   name: Mobile Screening Unit II
   categories:
   - community-health-center
-  address:
-    street: 4094 4th Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 4094 4th Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.75155
-    lng: -117.16261
+  geo: {lat: 32.75155, lng: -117.16261}
   phone: 619-515-2410
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-038762
+  external_ids: {bphc: BPS-H80-038762}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mobile-van-1
   name: 'Mobile Van #1'
   categories:
   - community-health-center
-  address:
-    street: 2602 1st Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 2602 1st Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.73271
-    lng: -117.1642
+  geo: {lat: 32.73271, lng: -117.1642}
   phone: 619-234-2158
   website: https://www.sdaihc.org
-  external_ids:
-    bphc: BPS-H80-031147
+  external_ids: {bphc: BPS-H80-031147}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/mobile-van-2
   name: 'Mobile Van #2'
   categories:
   - community-health-center
-  address:
-    street: 2602 1st Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 2602 1st Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.73271
-    lng: -117.1642
+  geo: {lat: 32.73271, lng: -117.1642}
   phone: 619-234-2158
-  external_ids:
-    bphc: BPS-H80-031146
+  external_ids: {bphc: BPS-H80-031146}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/montgomery-middle
   name: Montgomery Middle
   categories:
@@ -4774,24 +4576,16 @@
   name: Nestor Community Heath Center
   categories:
   - community-health-center
-  address:
-    street: 1016 Outer Road
-    city: San Diego
-    state: ca
-    zip: '92154'
+  cost: sliding-scale
+  address: {street: 1016 Outer Road, city: San Diego, state: ca, zip: '92154'}
   place: '0666000'
-  geo:
-    lat: 32.57797
-    lng: -117.08257
+  geo: {lat: 32.57797, lng: -117.08257}
   phone: 619-429-3733
   website: https://ww.ibclinic.org
-  external_ids:
-    bphc: BPS-H80-008870
+  external_ids: {bphc: BPS-H80-008870}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/nipaquay-elementary
   name: Nipaquay Elementary
   categories:
@@ -4819,23 +4613,15 @@
   name: North Central Behavioral Health Center
   categories:
   - community-health-center
-  address:
-    street: 4930 Naples St
-    city: San Diego
-    state: ca
-    zip: '92110'
+  cost: sliding-scale
+  address: {street: 4930 Naples St, city: San Diego, state: ca, zip: '92110'}
   place: '0666000'
-  geo:
-    lat: 32.77021
-    lng: -117.20304
+  geo: {lat: 32.77021, lng: -117.20304}
   phone: 619-269-8969
-  external_ids:
-    bphc: BPS-H80-038542
+  external_ids: {bphc: BPS-H80-038542}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/north-clairemont-park-rec-center
   name: North Clairemont Park & Rec Center
   categories:
@@ -4863,66 +4649,42 @@
   name: North Park Family Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 2136 El Cajon Blvd
-    city: San Diego
-    state: ca
-    zip: '92104'
+  cost: sliding-scale
+  address: {street: 2136 El Cajon Blvd, city: San Diego, state: ca, zip: '92104'}
   place: '0666000'
-  geo:
-    lat: 32.75553
-    lng: -117.14166
+  geo: {lat: 32.75553, lng: -117.14166}
   phone: 619-515-2588
-  external_ids:
-    bphc: BPS-H80-019057
+  external_ids: {bphc: BPS-H80-019057}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/north-park-family-health-center
   name: North Park Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 3544 30th St
-    city: San Diego
-    state: ca
-    zip: '92104'
+  cost: sliding-scale
+  address: {street: 3544 30th St, city: San Diego, state: ca, zip: '92104'}
   place: '0666000'
-  geo:
-    lat: 32.74286
-    lng: -117.13037
+  geo: {lat: 32.74286, lng: -117.13037}
   phone: 619-515-2424
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-001136
+  external_ids: {bphc: BPS-H80-001136}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/north-park-family-health-center-ii
   name: North Park Family Health Center II
   categories:
   - community-health-center
-  address:
-    street: 3514 30th St
-    city: San Diego
-    state: ca
-    zip: '92104'
+  cost: sliding-scale
+  address: {street: 3514 30th St, city: San Diego, state: ca, zip: '92104'}
   place: '0666000'
-  geo:
-    lat: 32.74246
-    lng: -117.13035
+  geo: {lat: 32.74246, lng: -117.13035}
   phone: 619-515-2424
-  external_ids:
-    bphc: BPS-H80-007703
+  external_ids: {bphc: BPS-H80-007703}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/north-park-rec-center
   name: North Park Rec Center
   categories:
@@ -4996,24 +4758,16 @@
   name: Oak Park Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 5160 Federal Blvd
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 5160 Federal Blvd, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.72187
-    lng: -117.0836
+  geo: {lat: 32.72187, lng: -117.0836}
   phone: 619-515-2454
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-012026
+  external_ids: {bphc: BPS-H80-012026}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/ocean-discovery-instititute
   name: Ocean Discovery Instititute
   categories:
@@ -5064,133 +4818,85 @@
   name: 'OPSAM HEALTH: 10737 Camino Ruiz Ste. 140'
   categories:
   - community-health-center
-  address:
-    street: 10737 Camino Ruiz, Ste 140
-    city: San Diego
-    state: ca
-    zip: '92126'
+  cost: sliding-scale
+  address: {street: '10737 Camino Ruiz, Ste 140', city: San Diego, state: ca, zip: '92126'}
   place: '0666000'
-  geo:
-    lat: 32.91417
-    lng: -117.14379
+  geo: {lat: 32.91417, lng: -117.14379}
   phone: 844-200-2426
   website: https://www.opsam.org
-  external_ids:
-    bphc: BPS-H80-032988
+  external_ids: {bphc: BPS-H80-032988}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/opsam-health-10737-camino-ruiz-ste-235
   name: 'OPSAM HEALTH: 10737 Camino Ruiz Ste. 235'
   categories:
   - community-health-center
-  address:
-    street: 10737 Camino Ruiz, Ste 235
-    city: San Diego
-    state: ca
-    zip: '92126'
+  cost: sliding-scale
+  address: {street: '10737 Camino Ruiz, Ste 235', city: San Diego, state: ca, zip: '92126'}
   place: '0666000'
-  geo:
-    lat: 32.91417
-    lng: -117.14379
+  geo: {lat: 32.91417, lng: -117.14379}
   phone: 858-578-4220
   website: https://www.opsam.org
-  external_ids:
-    bphc: BPS-H80-013246
+  external_ids: {bphc: BPS-H80-013246}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/opsam-health-9855-erma-road
   name: 'OPSAM HEALTH: 9855 Erma Road'
   categories:
   - community-health-center
-  address:
-    street: 9855 Erma Rd STE 105-106
-    city: San Diego
-    state: ca
-    zip: '92131'
+  cost: sliding-scale
+  address: {street: 9855 Erma Rd STE 105-106, city: San Diego, state: ca, zip: '92131'}
   place: '0666000'
-  geo:
-    lat: 32.91967
-    lng: -117.11427
+  geo: {lat: 32.91967, lng: -117.11427}
   phone: 844-200-2426
   website: https://www.opsam.org
-  external_ids:
-    bphc: BPS-H80-018226
+  external_ids: {bphc: BPS-H80-018226}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/opsam-health-mid-city-health-center
   name: Opsam Health Mid-City Health Center
   categories:
   - community-health-center
-  address:
-    street: 5296 University Ave, Suite F1
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: '5296 University Ave, Suite F1', city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74918
-    lng: -117.08333
+  geo: {lat: 32.74918, lng: -117.08333}
   phone: 844-200-2426
-  external_ids:
-    bphc: BPS-H80-039621
+  external_ids: {bphc: BPS-H80-039621}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/opsam-health-mira-mesa-boulevard
   name: Opsam Health Mira Mesa Boulevard
   categories:
   - community-health-center
-  address:
-    street: 8977 Mira Mesa Blvd
-    city: San Diego
-    state: ca
-    zip: '92126'
+  cost: sliding-scale
+  address: {street: 8977 Mira Mesa Blvd, city: San Diego, state: ca, zip: '92126'}
   place: '0666000'
-  geo:
-    lat: 32.9137
-    lng: -117.13055
+  geo: {lat: 32.9137, lng: -117.13055}
   phone: 844-200-2426
   website: https://www.opsam.org
-  external_ids:
-    bphc: BPS-H80-040009
+  external_ids: {bphc: BPS-H80-040009}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/opsam-health-rancho-penasquitos
   name: 'OPSAM HEALTH: Rancho Penasquitos'
   categories:
   - community-health-center
-  address:
-    street: 9995 Carmel Mountain Rd, Suite B10
-    city: San Diego
-    state: ca
-    zip: '92129'
+  cost: sliding-scale
+  address: {street: '9995 Carmel Mountain Rd, Suite B10', city: San Diego, state: ca, zip: '92129'}
   place: '0666000'
-  geo:
-    lat: 32.95996
-    lng: -117.11263
+  geo: {lat: 32.95996, lng: -117.11263}
   phone: 844-200-2426
   website: https://www.opsam.org
-  external_ids:
-    bphc: BPS-H80-019611
+  external_ids: {bphc: BPS-H80-019611}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/otay-mesa-community-fridge-and-garden
   name: Otay Mesa Community Fridge and Garden
   place: '0666000'
@@ -5245,6 +4951,14 @@
     lng: -117.13229
   phone: 866-420-2524
   website: https://mentalhealthtreatmentsandiego.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -5265,6 +4979,12 @@
     lng: -117.13146
   phone: 619-915-5710
   website: https://www.pathfindersofsd.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -5285,6 +5005,12 @@
     lng: -117.13087
   phone: 619-239-7370
   website: https://www.pathfindersofsd.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -5535,24 +5261,16 @@
   name: Rosa Parks Elementrary School
   categories:
   - community-health-center
-  address:
-    street: 4510 Landis St
-    city: San Diego
-    state: ca
-    zip: '92105'
+  cost: sliding-scale
+  address: {street: 4510 Landis St, city: San Diego, state: ca, zip: '92105'}
   place: '0666000'
-  geo:
-    lat: 32.74699
-    lng: -117.0971
+  geo: {lat: 32.74699, lng: -117.0971}
   phone: 619-282-6803
   website: https://sdfamilycare.org
-  external_ids:
-    bphc: BPS-H80-012106
+  external_ids: {bphc: BPS-H80-012106}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/salvation-army-kroc-center
   name: Salvation Army Kroc Center
   categories:
@@ -5592,6 +5310,9 @@
     lng: -117.16423
   phone: 619-234-2158
   website: https://www.sdaihc.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -5636,6 +5357,14 @@
     lng: -117.16668
   phone: 858-277-9550
   website: https://www.centerforchildren.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -5645,68 +5374,44 @@
   name: San Diego Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 2630 1st Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 2630 1st Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.73288
-    lng: -117.16419
+  geo: {lat: 32.73288, lng: -117.16419}
   phone: 619-234-2158
   website: https://www.sdaihc.com
-  external_ids:
-    bphc: BPS-H80-015525
+  external_ids: {bphc: BPS-H80-015525}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-diego-community-health-center-2
   name: San Diego Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 2602 1st Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 2602 1st Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.73271
-    lng: -117.1642
+  geo: {lat: 32.73271, lng: -117.1642}
   phone: 619-234-2158
   website: https://www.sdaihc.org
-  external_ids:
-    bphc: BPS-H80-015524
+  external_ids: {bphc: BPS-H80-015524}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-diego-community-health-center-mobile-unit-3
   name: 'San Diego Community Health Center - Mobile Unit #3'
   categories:
   - community-health-center
-  address:
-    street: 2630 1st Ave
-    city: San Diego
-    state: ca
-    zip: '92103'
+  cost: sliding-scale
+  address: {street: 2630 1st Ave, city: San Diego, state: ca, zip: '92103'}
   place: '0666000'
-  geo:
-    lat: 32.73288
-    lng: -117.16419
+  geo: {lat: 32.73288, lng: -117.16419}
   phone: 619-234-2158
   website: https://www.sdaihc.org
-  external_ids:
-    bphc: BPS-H80-039142
+  external_ids: {bphc: BPS-H80-039142}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-diego-comprehensive-treatment-center
   name: San Diego Comprehensive Treatment Center
   categories:
@@ -5722,6 +5427,22 @@
     lng: -117.137
   phone: 858-715-1211
   website: https://www.ctcprograms.com/location/san-diego-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -5731,23 +5452,15 @@
   name: San Diego Family Care
   categories:
   - community-health-center
-  address:
-    street: 7011 Linda Vista Rd
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 7011 Linda Vista Rd, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.78774
-    lng: -117.16905
+  geo: {lat: 32.78774, lng: -117.16905}
   phone: 858-279-9676
-  external_ids:
-    bphc: BPS-H80-017377
+  external_ids: {bphc: BPS-H80-017377}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-diego-housing-commission
   name: San Diego Housing Commission
   categories:
@@ -5898,256 +5611,160 @@
   name: San Ysidro Health Care View Health Center
   categories:
   - community-health-center
-  address:
-    street: '292 Euclid Ave, #210'
-    city: San Diego
-    state: ca
-    zip: '92114'
+  cost: sliding-scale
+  address: {street: '292 Euclid Ave, #210', city: San Diego, state: ca, zip: '92114'}
   place: '0666000'
-  geo:
-    lat: 32.70721
-    lng: -117.08581
+  geo: {lat: 32.70721, lng: -117.08581}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-029991
+  external_ids: {bphc: BPS-H80-029991}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-casa
   name: San Ysidro Health CASA
   categories:
   - community-health-center
-  address:
-    street: 3045 Beyer Blvd
-    city: San Diego
-    state: ca
-    zip: '92154'
+  cost: sliding-scale
+  address: {street: 3045 Beyer Blvd, city: San Diego, state: ca, zip: '92154'}
   place: '0666000'
-  geo:
-    lat: 32.57219
-    lng: -117.06563
+  geo: {lat: 32.57219, lng: -117.06563}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-036189
+  external_ids: {bphc: BPS-H80-036189}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-chc-ocean-view
   name: San Ysidro Health CHC - Ocean View
   categories:
   - community-health-center
-  address:
-    street: 3177 Ocean View Blvd
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 3177 Ocean View Blvd, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70092
-    lng: -117.12587
+  geo: {lat: 32.70092, lng: -117.12587}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-004686
+  external_ids: {bphc: BPS-H80-004686}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-community-heights-family-medic
   name: San Ysidro Health Community Heights Family Medicine
   categories:
   - community-health-center
-  address:
-    street: 4690 El Cajon Blvd
-    city: San Diego
-    state: ca
-    zip: '92115'
+  cost: sliding-scale
+  address: {street: 4690 El Cajon Blvd, city: San Diego, state: ca, zip: '92115'}
   place: '0666000'
-  geo:
-    lat: 32.75626
-    lng: -117.09325
+  geo: {lat: 32.75626, lng: -117.09325}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-030968
+  external_ids: {bphc: BPS-H80-030968}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-dagget
   name: San Ysidro Health Dagget
   categories:
   - community-health-center
-  address:
-    street: 8080 Dagget St
-    city: San Diego
-    state: ca
-    zip: '92111'
+  cost: sliding-scale
+  address: {street: 8080 Dagget St, city: San Diego, state: ca, zip: '92111'}
   place: '0666000'
-  geo:
-    lat: 32.82388
-    lng: -117.15007
+  geo: {lat: 32.82388, lng: -117.15007}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-037559
+  external_ids: {bphc: BPS-H80-037559}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-euclid
   name: San Ysidro Health Euclid
   categories:
   - community-health-center
-  address:
-    street: 286 Euclid Ave, Ste 302
-    city: San Diego
-    state: ca
-    zip: '92114'
+  cost: sliding-scale
+  address: {street: '286 Euclid Ave, Ste 302', city: San Diego, state: ca, zip: '92114'}
   place: '0666000'
-  geo:
-    lat: 32.70709
-    lng: -117.08512
+  geo: {lat: 32.70709, lng: -117.08512}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-013440
+  external_ids: {bphc: BPS-H80-013440}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-king-huerta-itliong-health-cen
   name: San Ysidro Health King-Huerta-Itliong Health Center
   categories:
   - community-health-center
-  address:
-    street: 950 S Euclid Ave
-    city: San Diego
-    state: ca
-    zip: '92114'
+  cost: sliding-scale
+  address: {street: 950 S Euclid Ave, city: San Diego, state: ca, zip: '92114'}
   place: '0666000'
-  geo:
-    lat: 32.69613
-    lng: -117.08555
+  geo: {lat: 32.69613, lng: -117.08555}
   phone: 619-662-4100
   website: https://www.syhc.org
-  external_ids:
-    bphc: BPS-H80-009280
+  external_ids: {bphc: BPS-H80-009280}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-lincoln-high-school
   name: San Ysidro Health Lincoln High School
   categories:
   - community-health-center
-  address:
-    street: 4777 Imperial Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 4777 Imperial Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70288
-    lng: -117.0896
+  geo: {lat: 32.70288, lng: -117.0896}
   phone: 619-266-6500
-  external_ids:
-    bphc: BPS-H80-010000
+  external_ids: {bphc: BPS-H80-010000}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-our-place
   name: San Ysidro Health Our Place
   categories:
   - community-health-center
-  address:
-    street: 286 Euclid Ave
-    city: San Diego
-    state: ca
-    zip: '92114'
+  cost: sliding-scale
+  address: {street: 286 Euclid Ave, city: San Diego, state: ca, zip: '92114'}
   place: '0666000'
-  geo:
-    lat: 32.70723
-    lng: -117.08569
+  geo: {lat: 32.70723, lng: -117.08569}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-036190
+  external_ids: {bphc: BPS-H80-036190}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-senior-dental-center
   name: San Ysidro Health Senior Dental Center
   categories:
   - community-health-center
-  address:
-    street: 1525 4th Ave STE 201
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: 1525 4th Ave STE 201, city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.72169
-    lng: -117.16112
+  geo: {lat: 32.72169, lng: -117.16112}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-037110
+  external_ids: {bphc: BPS-H80-037110}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-sherman-heights
   name: San Ysidro Health Sherman Heights
   categories:
   - community-health-center
-  address:
-    street: 316 25th St
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 316 25th St, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.70874
-    lng: -117.14031
+  geo: {lat: 32.70874, lng: -117.14031}
   phone: 619-662-4100
-  external_ids:
-    bphc: BPS-H80-030978
+  external_ids: {bphc: BPS-H80-030978}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/san-ysidro-health-southwest-high-school
   name: San Ysidro Health Southwest High School
   categories:
   - community-health-center
-  address:
-    street: 1685 Hollister St
-    city: San Diego
-    state: ca
-    zip: '92154'
+  cost: sliding-scale
+  address: {street: 1685 Hollister St, city: San Diego, state: ca, zip: '92154'}
   place: '0666000'
-  geo:
-    lat: 32.56764
-    lng: -117.08314
+  geo: {lat: 32.56764, lng: -117.08314}
   phone: 619-662-4100
   website: https://www.syhc.org
-  external_ids:
-    bphc: BPS-H80-009304
+  external_ids: {bphc: BPS-H80-009304}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/scripps-mercy-hospital
   name: Scripps Mercy Hospital
   categories:
@@ -6164,6 +5781,14 @@
     lng: -117.16114
   phone: 619-294-8111
   website: https://www.scripps.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6208,6 +5833,20 @@
     lng: -117.15575
   phone: 858-836-8434
   website: https://www.sharp.com/hospitals/mesa-vista/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6229,6 +5868,15 @@
     lng: -117.10262
   phone: 858-836-8434
   website: https://www.sharp.com/hospitals/mesa-vista/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6261,24 +5909,16 @@
   name: Sherman Heights Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 2391 Island Ave
-    city: San Diego
-    state: ca
-    zip: '92102'
+  cost: sliding-scale
+  address: {street: 2391 Island Ave, city: San Diego, state: ca, zip: '92102'}
   place: '0666000'
-  geo:
-    lat: 32.71024
-    lng: -117.14269
+  geo: {lat: 32.71024, lng: -117.14269}
   phone: 619-515-2435
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-000793
+  external_ids: {bphc: BPS-H80-000793}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/silver-wing-park
   name: Silver Wing Park
   categories:
@@ -6406,6 +6046,22 @@
     lng: -117.05732
   phone: 760-983-2222
   website: https://www.soapmat.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6427,6 +6083,22 @@
     lng: -117.162
   phone: 619-542-9542
   website: https://www.healthyusd.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6542,24 +6214,16 @@
   name: St Vincent de Paul Village Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 16 15th St
-    city: San Diego
-    state: ca
-    zip: '92101'
+  cost: sliding-scale
+  address: {street: 16 15th St, city: San Diego, state: ca, zip: '92101'}
   place: '0666000'
-  geo:
-    lat: 32.70555
-    lng: -117.15081
+  geo: {lat: 32.70555, lng: -117.15081}
   phone: 619-645-6405
   website: https://my.neighbor.org/clinic
-  external_ids:
-    bphc: BPS-H80-007683
+  external_ids: {bphc: BPS-H80-007683}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/stepping-stone-of-san-diego-inc-stepping-stone-r
   name: Stepping Stone of San Diego Inc Stepping Stone Residential
   categories:
@@ -6576,6 +6240,11 @@
     lng: -117.10792
   phone: 619-278-0777 x100
   website: https://www.steppingstonesd.org
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6619,6 +6288,22 @@
     lng: -117.11829
   phone: 619-206-5503
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6681,6 +6366,20 @@
     lng: -117.07842
   phone: 619-265-0337
   website: https://www.teenchallenge.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  - Long-term residential
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -6690,68 +6389,44 @@
   name: The Hub
   categories:
   - community-health-center
-  address:
-    street: 1643 Logan Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1643 Logan Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70407
-    lng: -117.14879
+  geo: {lat: 32.70407, lng: -117.14879}
   phone: 619-515-2333
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-007176
+  external_ids: {bphc: BPS-H80-007176}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/the-hub-cap
   name: The Hub Cap
   categories:
   - community-health-center
-  address:
-    street: 1659 Logan Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1659 Logan Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70397
-    lng: -117.14862
+  geo: {lat: 32.70397, lng: -117.14862}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-035152
+  external_ids: {bphc: BPS-H80-035152}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/the-hubito
   name: The Hubito
   categories:
   - community-health-center
-  address:
-    street: 1645 Logan Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1645 Logan Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70434
-    lng: -117.14853
+  geo: {lat: 32.70434, lng: -117.14853}
   phone: 619-906-4508
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-031865
+  external_ids: {bphc: BPS-H80-031865}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/the-o-farrell-charter
   name: The O'Farrell Charter
   categories:
@@ -6791,6 +6466,9 @@
     lng: -117.13847
   phone: 619-293-3741
   website: https://www.therapy-connection.com/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6831,6 +6509,16 @@
   place: '0666000'
   phone: 619-287-5460 x0
   website: https://www.heartlandhouse.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -6851,6 +6539,20 @@
     lng: -117.05638
   phone: 619-818-3788
   website: https://www.upacsd.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6868,6 +6570,16 @@
   place: '0666000'
   phone: 619-521-5720
   website: https://www.upacsd.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6885,6 +6597,16 @@
   place: '0666000'
   phone: 619-521-5720
   website: https://www.upacsd.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6902,6 +6624,16 @@
   place: '0666000'
   phone: 619-521-5720
   website: https://www.upacsd.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -6922,6 +6654,22 @@
     lng: -117.12292
   phone: 619-521-5720
   website: https://www.upacsd.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -7111,6 +6859,22 @@
     lng: -117.13977
   phone: 619-235-0592
   website: https://thewaybacksd.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -7212,24 +6976,16 @@
   name: Women's Services Administration
   categories:
   - community-health-center
-  address:
-    street: 1835 Logan Ave
-    city: San Diego
-    state: ca
-    zip: '92113'
+  cost: sliding-scale
+  address: {street: 1835 Logan Ave, city: San Diego, state: ca, zip: '92113'}
   place: '0666000'
-  geo:
-    lat: 32.70209
-    lng: -117.14558
+  geo: {lat: 32.70209, lng: -117.14558}
   phone: 619-515-2300
   website: https://www.fhcsd.org
-  external_ids:
-    bphc: BPS-H80-035151
+  external_ids: {bphc: BPS-H80-035151}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/san-diego/zamorano-elementary
   name: Zamorano Elementary
   categories:

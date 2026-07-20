@@ -58,6 +58,14 @@
     lng: -81.75059
   phone: 904-385-2135
   website: https://www.ccbhc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,23 +75,15 @@
   name: Coastal Community Health - Jacksonville (Westside)
   categories:
   - community-health-center
-  address:
-    street: 1605 Kingsley Ave
-    city: Orange Park
-    state: fl
-    zip: '32073'
+  cost: sliding-scale
+  address: {street: 1605 Kingsley Ave, city: Orange Park, state: fl, zip: '32073'}
   place: '1252125'
-  geo:
-    lat: 30.16509
-    lng: -81.73047
+  geo: {lat: 30.16509, lng: -81.73047}
   phone: 912-275-8028
-  external_ids:
-    bphc: BPS-H80-040027
+  external_ids: {bphc: BPS-H80-040027}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/orange-park/florida-counseling-and-eval-services-orange-park
   name: Florida Counseling and Eval Services Orange Park
   categories:
@@ -100,6 +100,19 @@
     lng: -81.72772
   phone: 904-563-6670
   website: https://www.flces.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -120,6 +133,11 @@
     lng: -81.7391
   phone: 904-602-6095
   website: https://www.joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -176,13 +194,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clay County
-  address: {street: '1543 Kingsley Avenue, Suite 10', city: Orange Park, state: fl, zip: '32073'}
+  address:
+    street: 1543 Kingsley Avenue, Suite 10
+    city: Orange Park
+    state: fl
+    zip: '32073'
   place: '1252125'
   phone: 904-592-4838
   website: https://nfcaa.net/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/orange-park/orange-park-hs-ehs
   name: Orange Park HS/EHS
   categories:

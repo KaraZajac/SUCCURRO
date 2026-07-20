@@ -40,23 +40,15 @@
   name: Centerstone Health Services - Richmond
   categories:
   - community-health-center
-  address:
-    street: 831 Dillon Dr STE A
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 831 Dillon Dr STE A, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.86562
-    lng: -84.89023
+  geo: {lat: 39.86562, lng: -84.89023}
   phone: 765-983-8000
-  external_ids:
-    bphc: BPS-LAL-036807
+  external_ids: {bphc: BPS-LAL-036807}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/centerstone-of-indiana-inc-cenerstone-wayne-coun
   name: Centerstone of Indiana Inc Cenerstone Wayne County/Outpatient
   categories:
@@ -72,6 +64,14 @@
     lng: -84.89023
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -92,6 +92,18 @@
     lng: -84.88928
   phone: 765-983-8675
   website: https://centerstone.org
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -112,6 +124,14 @@
     lng: -84.90516
   phone: 812-200-0053
   website: https://centerstone.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -132,6 +152,9 @@
     lng: -84.89081
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -153,6 +176,12 @@
     lng: -84.88228
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -174,6 +203,12 @@
     lng: -84.89106
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -194,6 +229,10 @@
     lng: -84.88908
   phone: 765-488-0345
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -203,24 +242,16 @@
   name: Damar Health Services- Richmond
   categories:
   - community-health-center
-  address:
-    street: 2000 Wernle Rd
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 2000 Wernle Rd, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.80716
-    lng: -84.87644
+  geo: {lat: 39.80716, lng: -84.87644}
   phone: 317-856-5201
   website: https://www.damarhealth.org
-  external_ids:
-    bphc: BPS-LAL-041818
+  external_ids: {bphc: BPS-LAL-041818}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/groups-recover-together
   name: Groups Recover Together
   categories:
@@ -236,6 +267,11 @@
     lng: -84.90914
   phone: 765-200-6803
   website: https://www.joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -266,14 +302,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wayne County
-  address: {street: 2519 E. Main St. Suite 101, city: Richmond, state: in, zip: '47374'}
+  address:
+    street: 2519 E. Main St. Suite 101
+    city: Richmond
+    state: in
+    zip: '47374'
   place: '1864260'
   phone: 765-488-2416
   email: icap@icapcaa.org
   website: https://www.icapcaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/richmond/jack-elstro-plaza
   name: Jack Elstro Plaza
   categories:
@@ -318,130 +360,82 @@
   name: Meridian Health Services Corp
   categories:
   - community-health-center
-  address:
-    street: 501 1/2 South 7th Street
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 501 1/2 South 7th Street, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82121
-    lng: -84.89248
+  geo: {lat: 39.82121, lng: -84.89248}
   phone: 765-288-1928
-  external_ids:
-    bphc: BPS-H80-035787
+  external_ids: {bphc: BPS-H80-035787}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/meridian-health-services-corp-2
   name: Meridian Health Services Corp
   categories:
   - community-health-center
-  address:
-    street: 520 S 9th St
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 520 S 9th St, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82092
-    lng: -84.89048
+  geo: {lat: 39.82092, lng: -84.89048}
   phone: 765-935-5390
-  external_ids:
-    bphc: BPS-H80-030283
+  external_ids: {bphc: BPS-H80-030283}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/meridian-health-services-corp-3
   name: Meridian Health Services Corp
   categories:
   - community-health-center
-  address:
-    street: 380 Hub Etchison Pkwy
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 380 Hub Etchison Pkwy, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82261
-    lng: -84.90151
+  geo: {lat: 39.82261, lng: -84.90151}
   phone: 765-288-1928
-  external_ids:
-    bphc: BPS-H80-035769
+  external_ids: {bphc: BPS-H80-035769}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/meridian-health-services-richmond
   name: Meridian Health Services - Richmond
   categories:
   - community-health-center
-  address:
-    street: 2300 Chester Blvd
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 2300 Chester Blvd, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.86589
-    lng: -84.88902
+  geo: {lat: 39.86589, lng: -84.88902}
   phone: 765-939-2395
-  external_ids:
-    bphc: BPS-H80-017040
+  external_ids: {bphc: BPS-H80-017040}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/neighborhood-health-center-inc
   name: Neighborhood Health Center, Inc.
   categories:
   - community-health-center
-  address:
-    street: 101 S 10th St
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 101 S 10th St, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82702
-    lng: -84.88891
+  geo: {lat: 39.82702, lng: -84.88891}
   phone: 765-965-4299
   website: https://www.neighborhoodhc.org
-  external_ids:
-    bphc: BPS-LAL-027366
+  external_ids: {bphc: BPS-LAL-027366}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/nhc-administration-office
   name: NHC Administration Office
   categories:
   - community-health-center
-  address:
-    street: 808 S A St
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 808 S A St, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82758
-    lng: -84.89132
+  geo: {lat: 39.82758, lng: -84.89132}
   phone: 765-598-4300
   website: https://neighborhoodhc.org
-  external_ids:
-    bphc: BPS-LAL-035130
+  external_ids: {bphc: BPS-LAL-035130}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/richmond/peace-community-services-llc
   name: PEACE Community Services LLC
   categories:
@@ -457,6 +451,22 @@
     lng: -84.89108
   phone: 317-379-7358
   website: https://peaceinourcommunit.wixsite.com/website
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -477,6 +487,21 @@
     lng: -84.88405
   phone: 765-983-3000 x0
   website: https://Reidhealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -497,6 +522,21 @@
     lng: -84.88615
   phone: 765-983-3298
   website: https://www.reidhealth.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -517,6 +557,11 @@
     lng: -84.84296
   phone: 765-200-6309
   website: https://www.ctcprograms.com/location/richmond-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -559,6 +604,14 @@
     lng: -84.92647
   phone: 765-966-0511
   website: https://www.in.gov/fssa/dmha/state-psychiatric-hospitals/richmond-state-hospital/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -631,21 +684,13 @@
   name: Well Care Community Health
   categories:
   - community-health-center
-  address:
-    street: 2200 W Main St
-    city: Richmond
-    state: in
-    zip: '47374'
+  cost: sliding-scale
+  address: {street: 2200 W Main St, city: Richmond, state: in, zip: '47374'}
   place: '1864260'
-  geo:
-    lat: 39.82928
-    lng: -84.93266
+  geo: {lat: 39.82928, lng: -84.93266}
   phone: 765-973-9294
   website: https://www.mywellcare.org
-  external_ids:
-    bphc: BPS-H80-041426
+  external_ids: {bphc: BPS-H80-041426}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

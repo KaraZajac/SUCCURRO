@@ -2,24 +2,16 @@
   name: Agape Community Health Clinic - Williamston
   categories:
   - community-health-center
-  address:
-    street: 1130 Godwin Dr
-    city: Williamston
-    state: nc
-    zip: '27892'
+  cost: sliding-scale
+  address: {street: 1130 Godwin Dr, city: Williamston, state: nc, zip: '27892'}
   place: '3774220'
-  geo:
-    lat: 35.83807
-    lng: -77.06873
+  geo: {lat: 35.83807, lng: -77.06873}
   phone: 252-945-2011
   website: https://www.metropolitancommunity.org
-  external_ids:
-    bphc: BPS-H80-010150
+  external_ids: {bphc: BPS-H80-010150}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/williamston/amani-residential
   name: Amani Residential
   categories:
@@ -36,6 +28,14 @@
     lng: -77.09195
   phone: 252-508-6581
   website: https://www.amaniresidential.com
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +57,22 @@
     lng: -77.04863
   phone: 252-946-0585
   website: https://www.dreamprovidercare.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -104,34 +120,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Martin County
-  address: {street: 305 E. Main Street (P. O. Box 809), city: Williamston, state: nc, zip: '27892'}
-  place: '3774220'
-  phone: 252-789-4400
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nc/williamston/roanoke-river-orthopedics
-  name: Roanoke River Orthopedics
-  categories:
-  - community-health-center
   address:
-    street: 220 Green St
+    street: 305 E. Main Street (P. O. Box 809)
     city: Williamston
     state: nc
     zip: '27892'
   place: '3774220'
-  geo:
-    lat: 35.84651
-    lng: -77.04882
-  phone: 252-792-0305
-  website: https://www.agapechc.org
-  external_ids:
-    bphc: BPS-H80-039262
+  phone: 252-789-4400
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nc/williamston/roanoke-river-orthopedics
+  name: Roanoke River Orthopedics
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 220 Green St, city: Williamston, state: nc, zip: '27892'}
+  place: '3774220'
+  geo: {lat: 35.84651, lng: -77.04882}
+  phone: 252-792-0305
+  website: https://www.agapechc.org
+  external_ids: {bphc: BPS-H80-039262}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/williamston/wiliamston-community-garden-blessing-box-and-far
   name: Wiliamston Community Garden Blessing Box and Farm Stand
   categories:

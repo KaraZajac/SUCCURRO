@@ -32,6 +32,11 @@
     lng: -87.55184
   phone: 205-752-5857
   website: https://www.bhgrecovery.com/locations/tuscaloosa
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -52,6 +57,16 @@
     lng: -87.52188
   phone: 205-344-6483
   website: https://www.bridgeinc.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -108,13 +123,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fayette, Tuscaloosa Counties
-  address: {street: 1600 Temple Ave. North Suite 7, city: Tuscaloosa, state: al, zip: '35555'}
+  address:
+    street: 1600 Temple Ave. North Suite 7
+    city: Tuscaloosa
+    state: al
+    zip: '35555'
   place: '0177256'
   phone: 205-932-3218
   website: https://www.cspwal.com/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/tuscaloosa/csp-west-al-tender-loving-care
   name: CSP WEST AL - Tender Loving Care
   categories:
@@ -150,6 +171,9 @@
     lng: -87.5621
   phone: 205-752-2504
   website: https://www.counselingservice.org/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -214,6 +238,15 @@
     lng: -87.56443
   phone: 205-391-3131 x1206
   website: https://www.irbh.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -246,46 +279,30 @@
   name: Maude L. Whatley Health Center
   categories:
   - community-health-center
-  address:
-    street: 2731 Ml King Jr Blvd
-    city: Tuscaloosa
-    state: al
-    zip: '35401'
+  cost: sliding-scale
+  address: {street: 2731 Ml King Jr Blvd, city: Tuscaloosa, state: al, zip: '35401'}
   place: '0177256'
-  geo:
-    lat: 33.1871
-    lng: -87.57688
+  geo: {lat: 33.1871, lng: -87.57688}
   phone: 205-758-6647
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-000345
+  external_ids: {bphc: BPS-H80-000345}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/tuscaloosa/mobile-health-unit
   name: Mobile Health Unit
   categories:
   - community-health-center
-  address:
-    street: 2731 Ml King Jr Blvd
-    city: Tuscaloosa
-    state: al
-    zip: '35401'
+  cost: sliding-scale
+  address: {street: 2731 Ml King Jr Blvd, city: Tuscaloosa, state: al, zip: '35401'}
   place: '0177256'
-  geo:
-    lat: 33.1871
-    lng: -87.57688
+  geo: {lat: 33.1871, lng: -87.57688}
   phone: 205-349-3250
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-000373
+  external_ids: {bphc: BPS-H80-000373}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/tuscaloosa/phoenix-house-inc
   name: Phoenix House Inc
   categories:
@@ -301,6 +318,10 @@
     lng: -87.58175
   phone: 205-758-3867
   website: https://phtcl.org/
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -379,24 +400,16 @@
   name: Theodore Hendrix Dental Center
   categories:
   - community-health-center
-  address:
-    street: 2731 Ml King Jr Blvd
-    city: Tuscaloosa
-    state: al
-    zip: '35401'
+  cost: sliding-scale
+  address: {street: 2731 Ml King Jr Blvd, city: Tuscaloosa, state: al, zip: '35401'}
   place: '0177256'
-  geo:
-    lat: 33.1871
-    lng: -87.57688
+  geo: {lat: 33.1871, lng: -87.57688}
   phone: 205-758-6647
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-000107
+  external_ids: {bphc: BPS-H80-000107}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/tuscaloosa/tuscaloosa-elementary-magnet-school
   name: Tuscaloosa Elementary Magnet School
   categories:
@@ -490,6 +503,22 @@
     lng: -87.4864
   phone: 205-554-2000 x2737
   website: https://www.va.gov/tuscaloosa-health-care/locations/tuscaloosa-va-medical-center/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -499,42 +528,26 @@
   name: Whatley Health Services, Inc. Annex
   categories:
   - community-health-center
-  address:
-    street: 429 Skyland Blvd, Suite B 8
-    city: Tuscaloosa
-    state: al
-    zip: '35405'
+  cost: sliding-scale
+  address: {street: '429 Skyland Blvd, Suite B 8', city: Tuscaloosa, state: al, zip: '35405'}
   place: '0177256'
-  geo:
-    lat: 33.16522
-    lng: -87.54273
+  geo: {lat: 33.16522, lng: -87.54273}
   phone: 205-614-6125
-  external_ids:
-    bphc: BPS-H80-036609
+  external_ids: {bphc: BPS-H80-036609}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/tuscaloosa/whsi-network-support-services-center
   name: WHSI Network Support Services Center
   categories:
   - community-health-center
-  address:
-    street: 2731C Martin Luther King Jr Blvd
-    city: Tuscaloosa
-    state: al
-    zip: '35401'
+  cost: sliding-scale
+  address: {street: 2731C Martin Luther King Jr Blvd, city: Tuscaloosa, state: al, zip: '35401'}
   place: '0177256'
-  geo:
-    lat: 33.18714
-    lng: -87.57737
+  geo: {lat: 33.18714, lng: -87.57737}
   phone: 205-349-3250
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-010083
+  external_ids: {bphc: BPS-H80-010083}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

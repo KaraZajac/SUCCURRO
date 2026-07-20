@@ -14,6 +14,22 @@
     lng: -74.33672
   phone: 845-692-4454
   website: https://www.accesssupports.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -58,12 +74,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Orange County
-  address: {street: '40 Matthews Street, Suite 305', city: Goshen, state: ny, zip: '10924'}
+  address:
+    street: 40 Matthews Street, Suite 305
+    city: Goshen
+    state: ny
+    zip: '10924'
   place: '3629542'
   phone: 845-615-3700
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/goshen/goshen-va-clinic
   name: Goshen VA Clinic
   categories:
@@ -118,13 +140,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Orange County
-  address: {street: 11 Quarry Rd, city: Goshen, state: ny, zip: '10924'}
+  address:
+    street: 11 Quarry Rd
+    city: Goshen
+    state: ny
+    zip: '10924'
   place: '3629542'
   phone: 845-291-2002
   email: dfa5a33.sm.HEAP@dfa.state.ny.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/goshen/rockland-childrens-psychiatric-center-orange-cli
   name: Rockland Childrens Psychiatric Center Orange Clinic
   categories:
@@ -136,6 +164,10 @@
   place: '3629542'
   phone: 845-294-7334
   website: https://omh.ny.gov
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -152,6 +184,13 @@
   place: '3629542'
   phone: 845-294-7334 x10955
   website: https://omh.ny.gov
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -161,21 +200,13 @@
   name: Sun River Health William J. Thayer Alamo
   categories:
   - community-health-center
-  address:
-    street: 888 Pulaski Hwy
-    city: Goshen
-    state: ny
-    zip: '10924'
+  cost: sliding-scale
+  address: {street: 888 Pulaski Hwy, city: Goshen, state: ny, zip: '10924'}
   place: '3629542'
-  geo:
-    lat: 41.33988
-    lng: -74.39851
+  geo: {lat: 41.33988, lng: -74.39851}
   phone: 845-651-2298
   website: https://www.hrhcare.org
-  external_ids:
-    bphc: BPS-H80-004115
+  external_ids: {bphc: BPS-H80-004115}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -43,23 +43,15 @@
   name: Cass County Health Clinic Beardstown
   categories:
   - community-health-center
-  address:
-    street: 1501 Wall St
-    city: Beardstown
-    state: il
-    zip: '62618'
+  cost: sliding-scale
+  address: {street: 1501 Wall St, city: Beardstown, state: il, zip: '62618'}
   place: '1704351'
-  geo:
-    lat: 40.00598
-    lng: -90.41
+  geo: {lat: 40.00598, lng: -90.41}
   phone: 217-323-2242
-  external_ids:
-    bphc: BPS-H80-036656
+  external_ids: {bphc: BPS-H80-036656}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/beardstown/cass-county-health-department
   name: Cass County Health Department
   categories:
@@ -76,6 +68,9 @@
     lng: -90.41895
   phone: 217-323-2182
   website: https://www.casscohealth.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -97,6 +92,9 @@
     lng: -90.43421
   phone: 217-323-2980
   website: https://www.yourchrc.org/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

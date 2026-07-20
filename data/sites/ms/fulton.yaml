@@ -2,23 +2,15 @@
   name: Dorsey Family Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 905 Bethel Church Rd
-    city: Fulton
-    state: ms
-    zip: '38843'
+  cost: sliding-scale
+  address: {street: 905 Bethel Church Rd, city: Fulton, state: ms, zip: '38843'}
   place: '2826300'
-  geo:
-    lat: 34.25505
-    lng: -88.48917
+  geo: {lat: 34.25505, lng: -88.48917}
   phone: 662-282-4226
-  external_ids:
-    bphc: BPS-H80-040688
+  external_ids: {bphc: BPS-H80-040688}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/fulton/fulton-center
   name: Fulton Center
   categories:
@@ -73,6 +65,14 @@
     lng: -88.41544
   phone: 662-640-4595
   website: https://www.lifecorehealthgroup.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -83,31 +83,29 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Itawamba County
-  address: {street: 602 Access Rd., city: Fulton, state: ms, zip: '38843'}
-  place: '2826300'
-  phone: 662-862-4894
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ms/fulton/mantachie-rural-health-care-inc-dorsey-school-ba
-  name: Mantachie Rural Health Care, Inc. Dorsey School Based Clinic
-  categories:
-  - community-health-center
   address:
-    street: 1 Dorsey School Rd
+    street: 602 Access Rd.
     city: Fulton
     state: ms
     zip: '38843'
   place: '2826300'
-  geo:
-    lat: 34.25214
-    lng: -88.50979
-  phone: 662-282-4226
-  website: https://www.mantachieclinic.org
-  external_ids:
-    bphc: BPS-H80-038171
+  phone: 662-862-4894
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ms/fulton/mantachie-rural-health-care-inc-dorsey-school-ba
+  name: Mantachie Rural Health Care, Inc. Dorsey School Based Clinic
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 1 Dorsey School Rd, city: Fulton, state: ms, zip: '38843'}
+  place: '2826300'
+  geo: {lat: 34.25214, lng: -88.50979}
+  phone: 662-282-4226
+  website: https://www.mantachieclinic.org
+  external_ids: {bphc: BPS-H80-038171}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}

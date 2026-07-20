@@ -24,36 +24,34 @@
   name: COMMUNITY HEALTH CENTER - LEESBURG Family Medical and Dental
   categories:
   - community-health-center
-  address:
-    street: 225 N 1st St
-    city: Leesburg
-    state: fl
-    zip: '34748'
+  cost: sliding-scale
+  address: {street: 225 N 1st St, city: Leesburg, state: fl, zip: '34748'}
   place: '1239875'
-  geo:
-    lat: 28.81254
-    lng: -81.87581
+  geo: {lat: 28.81254, lng: -81.87581}
   phone: 352-314-7400
   website: https://WWW.CHCFL.ORG
-  external_ids:
-    bphc: BPS-H80-001417
+  external_ids: {bphc: BPS-H80-001417}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/leesburg/lake-community-action-agency
   name: Lake Community Action Agency
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lake County
-  address: {street: 920 CO RD. 468, city: Leesburg, state: fl, zip: '34748'}
+  address:
+    street: 920 CO RD. 468
+    city: Leesburg
+    state: fl
+    zip: '34748'
   place: '1239875'
   phone: 352-357-3497
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/leesburg/leesburg-branch
   name: Leesburg Branch
   categories:
@@ -156,6 +154,9 @@
     lng: -81.89529
   phone: 352-315-7802
   website: https://www.lsbc.net
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -174,6 +175,11 @@
   place: '1239875'
   phone: 352-360-6625 x7632
   website: https://www.lsbc.net
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -192,6 +198,11 @@
   place: '1239875'
   phone: 352-848-3924
   website: https://www.lsbc.net
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -213,6 +224,17 @@
     lng: -81.89446
   phone: 352-842-9542
   website: https://www.lsbc.net
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -231,6 +253,13 @@
   place: '1239875'
   phone: 352-315-7500
   website: https://www.lsbc.net
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -249,6 +278,16 @@
   place: '1239875'
   phone: 352-315-7500
   website: https://www.lsbc.net
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -267,6 +306,13 @@
   place: '1239875'
   phone: 352-315-7500
   website: https://www.lsbc.net
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -285,6 +331,12 @@
   place: '1239875'
   phone: 352-315-7500
   website: https://www.lsbc.net
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -306,6 +358,14 @@
     lng: -81.89529
   phone: 352-315-7802
   website: https://www.lsbc.net
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -326,6 +386,22 @@
     lng: -81.86832
   phone: 352-327-4417 x18205
   website: https://www.newseason.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -387,6 +463,18 @@
   place: '1239875'
   phone: 352-315-7500
   website: https://www.LSBC.net
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

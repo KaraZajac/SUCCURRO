@@ -14,6 +14,22 @@
     lng: -111.64649
   phone: 928-774-7997
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -43,118 +59,84 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Coconino County
-  address: {street: 2625 N. King St., city: Flagstaff, state: az, zip: '86001'}
+  address:
+    street: 2625 N. King St.
+    city: Flagstaff
+    state: az
+    zip: '86001'
   place: '0423620'
   phone: 928-679-7455
   website: http://www.coconino.az.gov/index.aspx?nid=143
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: az/flagstaff/elk-ridge-flagstaff-clinic
   name: ELK RIDGE - FLAGSTAFF CLINIC
   categories:
   - community-health-center
-  address:
-    street: 2920 N 4th St
-    city: Flagstaff
-    state: az
-    zip: '86004'
+  cost: sliding-scale
+  address: {street: 2920 N 4th St, city: Flagstaff, state: az, zip: '86004'}
   place: '0423620'
-  geo:
-    lat: 35.21692
-    lng: -111.61285
+  geo: {lat: 35.21692, lng: -111.61285}
   phone: 928-213-6100
-  external_ids:
-    bphc: BPS-H80-041644
+  external_ids: {bphc: BPS-H80-041644}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/flagstaff/elk-ridge-flagstaff-pediatrics
   name: ELK RIDGE - FLAGSTAFF PEDIATRICS
   categories:
   - community-health-center
-  address:
-    street: 1501 S Yale St, Suite 252
-    city: Flagstaff
-    state: az
-    zip: '86001'
+  cost: sliding-scale
+  address: {street: '1501 S Yale St, Suite 252', city: Flagstaff, state: az, zip: '86001'}
   place: '0423620'
-  geo:
-    lat: 35.18704
-    lng: -111.66413
+  geo: {lat: 35.18704, lng: -111.66413}
   phone: 928-774-1811
-  external_ids:
-    bphc: BPS-H80-041635
+  external_ids: {bphc: BPS-H80-041635}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/flagstaff/elk-ridge-mobile-unit
   name: Elk Ridge -- Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 1120 W University Ave, Suite 101
-    city: Flagstaff
-    state: az
-    zip: '86001'
+  cost: sliding-scale
+  address: {street: '1120 W University Ave, Suite 101', city: Flagstaff, state: az, zip: '86001'}
   place: '0423620'
-  geo:
-    lat: 35.18456
-    lng: -111.66949
+  geo: {lat: 35.18456, lng: -111.66949}
   phone: 928-699-2515
-  external_ids:
-    bphc: BPS-H80-041641
+  external_ids: {bphc: BPS-H80-041641}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/flagstaff/elk-ridge-mobile-west
   name: Elk Ridge Mobile West
   categories:
   - community-health-center
-  address:
-    street: 1120 W University Ave, Suite 101
-    city: Flagstaff
-    state: az
-    zip: '86001'
+  cost: sliding-scale
+  address: {street: '1120 W University Ave, Suite 101', city: Flagstaff, state: az, zip: '86001'}
   place: '0423620'
-  geo:
-    lat: 35.18456
-    lng: -111.66949
+  geo: {lat: 35.18456, lng: -111.66949}
   phone: 928-753-1177
-  external_ids:
-    bphc: BPS-H80-041640
+  external_ids: {bphc: BPS-H80-041640}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/flagstaff/elk-ridge-unincorporated-flagstaff
   name: ELK RIDGE - UNINCORPORATED FLAGSTAFF
   categories:
   - community-health-center
-  address:
-    street: 1120 W University Ave, Suite 101
-    city: Flagstaff
-    state: az
-    zip: '86001'
+  cost: sliding-scale
+  address: {street: '1120 W University Ave, Suite 101', city: Flagstaff, state: az, zip: '86001'}
   place: '0423620'
-  geo:
-    lat: 35.18456
-    lng: -111.66949
+  geo: {lat: 35.18456, lng: -111.66949}
   phone: 928-522-1300
-  external_ids:
-    bphc: BPS-H80-041638
+  external_ids: {bphc: BPS-H80-041638}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/flagstaff/eva-marshall-elementary-school
   name: Eva Marshall Elementary School
   categories:
@@ -282,6 +264,10 @@
     lng: -111.64418
   phone: 928-214-3937
   website: https://www.nahealth.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -344,6 +330,22 @@
   place: '0423620'
   phone: 928-527-1899
   website: https://www.tgcaz.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -361,6 +363,22 @@
   place: '0423620'
   phone: 928-527-1899
   website: https://www.tgcaz.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -379,6 +397,22 @@
   place: '0423620'
   phone: 928-527-1899
   website: https://www.tgcaz.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -452,6 +486,11 @@
     lng: -111.6201
   phone: 928-773-1245 x260
   website: https://www.nacainc.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -481,13 +520,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Apache, Navajo, Yavapai Counties
-  address: {street: 119 E. Aspen Avenue, city: Flagstaff, state: az, zip: '86001'}
+  address:
+    street: 119 E. Aspen Avenue
+    city: Flagstaff
+    state: az
+    zip: '86001'
   place: '0423620'
   phone: 928-774-1895
   website: http://nacog.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: az/flagstaff/ponderosa
   name: Ponderosa
   categories:
@@ -561,6 +606,22 @@
     lng: -111.6216
   phone: 928-779-4550
   website: https://www.sbhservices.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

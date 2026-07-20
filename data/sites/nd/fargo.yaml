@@ -14,6 +14,10 @@
     lng: -96.79143
   phone: 701-248-8027
   website: https://www.adaptaddictionandbehavioralhealthinc.net
+  services:
+  - Outpatient
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,35 +50,33 @@
   name: CASS COUNTY JAIL
   categories:
   - community-health-center
-  address:
-    street: 450 34th St S
-    city: Fargo
-    state: nd
-    zip: '58103'
+  cost: sliding-scale
+  address: {street: 450 34th St S, city: Fargo, state: nd, zip: '58103'}
   place: '3825700'
-  geo:
-    lat: 46.86959
-    lng: -96.83314
+  geo: {lat: 46.86959, lng: -96.83314}
   phone: 701-271-2937
   website: https://www.famhealthcare.org
-  external_ids:
-    bphc: BPS-H80-007400
+  external_ids: {bphc: BPS-H80-007400}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/cass-county-social-services-board
   name: Cass County Social Services Board
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cass County
-  address: {street: 1010 2nd Avenue South (P. O. Box 2986), city: Fargo, state: nd, zip: '58108'}
+  address:
+    street: 1010 2nd Avenue South (P. O. Box 2986)
+    city: Fargo
+    state: nd
+    zip: '58108'
   place: '3825700'
   phone: 701-241-5761
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nd/fargo/central-head-start
   name: Central Head Start
   categories:
@@ -110,6 +112,13 @@
     lng: -96.83842
   phone: 701-365-4199
   website: https://www.centreinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -131,6 +140,13 @@
     lng: -96.80327
   phone: 701-237-9340
   website: https://www.centreinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -151,6 +167,16 @@
     lng: -96.8254
   phone: 701-404-1100
   website: https://www.communitymedicalservices.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -172,6 +198,11 @@
     lng: -96.86313
   phone: 701-298-7877
   website: https://www.dacotahfoundation.org
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -190,6 +221,15 @@
   place: '3825700'
   phone: 701-551-6830
   website: https://www.dakotaranch.org
+  services:
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -218,44 +258,28 @@
   name: 'Family HealthCare Mobile Clinic #1'
   categories:
   - community-health-center
-  address:
-    street: 301 Np Ave N
-    city: Fargo
-    state: nd
-    zip: '58102'
+  cost: sliding-scale
+  address: {street: 301 Np Ave N, city: Fargo, state: nd, zip: '58102'}
   place: '3825700'
-  geo:
-    lat: 46.87623
-    lng: -96.78343
+  geo: {lat: 46.87623, lng: -96.78343}
   phone: 701-271-3344
-  external_ids:
-    bphc: BPS-H80-033489
+  external_ids: {bphc: BPS-H80-033489}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/family-healthcare-south-fargo
   name: Family HealthCare South Fargo
   categories:
   - community-health-center
-  address:
-    street: 4025 9th Ave S
-    city: Fargo
-    state: nd
-    zip: '58103'
+  cost: sliding-scale
+  address: {street: 4025 9th Ave S, city: Fargo, state: nd, zip: '58103'}
   place: '3825700'
-  geo:
-    lat: 46.86724
-    lng: -96.84982
+  geo: {lat: 46.86724, lng: -96.84982}
   phone: 701-271-3344
-  external_ids:
-    bphc: BPS-H80-019695
+  external_ids: {bphc: BPS-H80-019695}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/fargo-housing-and-redevelopment-authority
   name: Fargo Housing And Redevelopment Authority
   categories:
@@ -314,6 +338,22 @@
     lng: -96.77465
   phone: 701-451-7887 x3150
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Hospital inpatient detoxification
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -494,24 +534,16 @@
   name: FHC Medical, Dental, Homeless Services, and Administrative Site in Fargo
   categories:
   - community-health-center
-  address:
-    street: 301 Np Ave N
-    city: Fargo
-    state: nd
-    zip: '58102'
+  cost: sliding-scale
+  address: {street: 301 Np Ave N, city: Fargo, state: nd, zip: '58102'}
   place: '3825700'
-  geo:
-    lat: 46.87623
-    lng: -96.78343
+  geo: {lat: 46.87623, lng: -96.78343}
   phone: 701-271-3344
   website: https://www.famhealthcare.org
-  external_ids:
-    bphc: BPS-H80-009250
+  external_ids: {bphc: BPS-H80-009250}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/first-step-recovery-the-village-family
   name: First Step Recovery The Village Family
   categories:
@@ -528,6 +560,10 @@
     lng: -96.82281
   phone: 701-451-4900
   website: https://www.thevillagefamily.org/content/fargo
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -548,6 +584,22 @@
     lng: -96.86367
   phone: 701-532-1447
   website: https://www.thehealingcentercity.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -557,23 +609,15 @@
   name: Homeless Health Services - Resource & Recovery Center
   categories:
   - community-health-center
-  address:
-    street: 2001 1st Ave N
-    city: Fargo
-    state: nd
-    zip: '58102'
+  cost: sliding-scale
+  address: {street: 2001 1st Ave N, city: Fargo, state: nd, zip: '58102'}
   place: '3825700'
-  geo:
-    lat: 46.87777
-    lng: -96.81326
+  geo: {lat: 46.87777, lng: -96.81326}
   phone: 701-551-2449
-  external_ids:
-    bphc: BPS-H80-041791
+  external_ids: {bphc: BPS-H80-041791}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/fargo/jefferson-elementary-school
   name: Jefferson Elementary School
   categories:
@@ -668,6 +712,12 @@
     lng: -96.80465
   phone: 701-232-8905
   website: https://www.nexusfamilyhealing.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -724,6 +774,20 @@
     lng: -96.84929
   phone: 701-941-4503
   website: https://www.sagentbh.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -745,6 +809,17 @@
     lng: -96.79749
   phone: 701-417-5346
   website: https://www.sanfordhealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -765,6 +840,9 @@
     lng: -96.86875
   phone: 701-417-6999
   website: https://www.sanfordhealth.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -785,6 +863,9 @@
     lng: -96.81817
   phone: 701-234-4141
   website: https://www.sanfordhealth.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -844,6 +925,12 @@
     lng: -96.84785
   phone: 701-282-6561
   website: https://www.sharehouse.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -862,6 +949,11 @@
   place: '3825700'
   phone: 701-282-6561 x354
   website: https://www.sharehouse.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -883,6 +975,11 @@
     lng: -96.85374
   phone: 701-282-6561 x354
   website: https://www.sharehouse.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -904,6 +1001,12 @@
     lng: -96.85531
   phone: 701-412-2973
   website: https://www.solutionsinpractice.org/
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -924,6 +1027,12 @@
     lng: -96.8423
   phone: 701-356-7772
   website: https://www.soulsolutions.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -986,6 +1095,17 @@
     lng: -96.82318
   phone: 701-298-4500
   website: https://www.hhs.nd.gov/HSC/region-5
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1075,6 +1195,19 @@
     lng: -96.80502
   phone: 701-476-4177
   website: https://fargond.gov/city-government/departments/fargo-cass-public-health/harm-reduction-programs
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Adult women
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:

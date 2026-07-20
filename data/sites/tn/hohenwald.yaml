@@ -10,6 +10,22 @@
   place: '4735160'
   phone: 800-447-2766 x9
   website: https://www.buffalovalley.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -31,6 +47,19 @@
     lng: -87.53078
   phone: 931-796-5916
   website: https://www.centerstone.org/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -102,24 +131,16 @@
   name: Lewis Health Center
   categories:
   - community-health-center
-  address:
-    street: 617 W Main St
-    city: Hohenwald
-    state: tn
-    zip: '38462'
+  cost: sliding-scale
+  address: {street: 617 W Main St, city: Hohenwald, state: tn, zip: '38462'}
   place: '4735160'
-  geo:
-    lat: 35.55095
-    lng: -87.56166
+  geo: {lat: 35.55095, lng: -87.56166}
   phone: 931-796-4901
   website: http://www.mauryregional.com/lacc.htm
-  external_ids:
-    bphc: BPS-H80-013313
+  external_ids: {bphc: BPS-H80-013313}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/hohenwald/nc-lewis-county-elementary-caferteia
   name: Nc Lewis County Elementary Caferteia
   categories:
@@ -170,10 +191,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lewis County
-  address: {street: 43 Smith Street, city: Hohenwald, state: tn, zip: '38462'}
+  address:
+    street: 43 Smith Street
+    city: Hohenwald
+    state: tn
+    zip: '38462'
   place: '4735160'
   phone: 931-796-4825
   website: https://www.schra.us/services/community-block-grant#emergency-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

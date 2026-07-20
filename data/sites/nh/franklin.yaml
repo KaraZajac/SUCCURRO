@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Merrimack County
-  address: {street: 'TRIP Center, 12 Rowell Dr.', city: Franklin, state: nh, zip: '03235'}
+  address:
+    street: TRIP Center, 12 Rowell Dr.
+    city: Franklin
+    state: nh
+    zip: '03235'
   place: '3327380'
   phone: 603-223-0043
   website: https://capbm.org/Fuel-Assistance-Program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nh/franklin/concord-hospital-franklin
   name: Concord Hospital Franklin
   categories:
@@ -26,6 +32,14 @@
     lng: -71.64607
   phone: 603-227-7000
   website: https://www.concordhospital.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -142,45 +156,29 @@
   name: HealthFirst at Archways
   categories:
   - community-health-center
-  address:
-    street: 175 Central St
-    city: Franklin
-    state: nh
-    zip: '03235'
+  cost: sliding-scale
+  address: {street: 175 Central St, city: Franklin, state: nh, zip: '03235'}
   place: '3327380'
-  geo:
-    lat: 43.4423
-    lng: -71.65047
+  geo: {lat: 43.4423, lng: -71.65047}
   phone: 603-934-1464
-  external_ids:
-    bphc: BPS-H80-031799
+  external_ids: {bphc: BPS-H80-031799}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/franklin/healthfirst-franklin-hq
   name: HealthFirst - Franklin HQ
   categories:
   - community-health-center
-  address:
-    street: 841 Central St
-    city: Franklin
-    state: nh
-    zip: '03235'
+  cost: sliding-scale
+  address: {street: 841 Central St, city: Franklin, state: nh, zip: '03235'}
   place: '3327380'
-  geo:
-    lat: 43.44695
-    lng: -71.62828
+  geo: {lat: 43.44695, lng: -71.62828}
   phone: 603-934-1464
   website: https://www.healthfirstfamily.org
-  external_ids:
-    bphc: BPS-H80-003259
+  external_ids: {bphc: BPS-H80-003259}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/franklin/new-season-franklin-treatment-ctr-metro-treatmen
   name: New Season Franklin Treatment Ctr Metro Treatment of New Hampshire LP
   categories:
@@ -196,6 +194,14 @@
     lng: -71.62682
   phone: 603-671-3215 x28105
   website: https://www.newseason.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

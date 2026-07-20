@@ -60,6 +60,12 @@
     lng: -85.5998
   phone: 269-387-7000
   website: https://www.wmich.edu/unifiedclinics
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -116,13 +122,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kalamazoo County
-  address: {street: 4239 South Westnedge Ave., city: Kalamazoo, state: mi, zip: '49008'}
+  address:
+    street: 4239 South Westnedge Ave.
+    city: Kalamazoo
+    state: mi
+    zip: '49008'
   place: '2642160'
   phone: 877-422-2726
   website: https://caascm.org/emergency-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/kalamazoo/community-education-center-cec-39m000102
   name: Community Education Center(Cec) - 39M000102
   categories:
@@ -296,6 +308,12 @@
     lng: -85.62202
   phone: 269-343-1651 x156
   website: https://www.communityhealingcenter.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -316,6 +334,17 @@
     lng: -85.60554
   phone: 269-390-6700
   website: https://www.enlightenedrecovery.com/locations/rehab-kalamazoo/
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -325,155 +354,99 @@
   name: FAMILY HEALTH CENTER ALCOTT
   categories:
   - community-health-center
-  address:
-    street: 505 E Alcott St
-    city: Kalamazoo
-    state: mi
-    zip: '49001'
+  cost: sliding-scale
+  address: {street: 505 E Alcott St, city: Kalamazoo, state: mi, zip: '49001'}
   place: '2642160'
-  geo:
-    lat: 42.27074
-    lng: -85.5749
+  geo: {lat: 42.27074, lng: -85.5749}
   phone: 269-349-2641
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-019312
+  external_ids: {bphc: BPS-H80-019312}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-burdick
   name: FAMILY HEALTH CENTER BURDICK
   categories:
   - community-health-center
-  address:
-    street: 1308 N Burdick St
-    city: Kalamazoo
-    state: mi
-    zip: '49007'
+  cost: sliding-scale
+  address: {street: 1308 N Burdick St, city: Kalamazoo, state: mi, zip: '49007'}
   place: '2642160'
-  geo:
-    lat: 42.30359
-    lng: -85.58316
+  geo: {lat: 42.30359, lng: -85.58316}
   phone: 269-349-2641
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-008719
+  external_ids: {bphc: BPS-H80-008719}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-inc
   name: FAMILY HEALTH CENTER, INC.
   categories:
   - community-health-center
-  address:
-    street: 117 W Paterson St
-    city: Kalamazoo
-    state: mi
-    zip: '49007'
+  cost: sliding-scale
+  address: {street: 117 W Paterson St, city: Kalamazoo, state: mi, zip: '49007'}
   place: '2642160'
-  geo:
-    lat: 42.30296
-    lng: -85.58461
+  geo: {lat: 42.30296, lng: -85.58461}
   phone: 269-349-4257
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-005642
+  external_ids: {bphc: BPS-H80-005642}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-millcork
   name: FAMILY HEALTH CENTER MILLCORK
   categories:
   - community-health-center
-  address:
-    street: 2501 Millcork St
-    city: Kalamazoo
-    state: mi
-    zip: '49001'
+  cost: sliding-scale
+  address: {street: 2501 Millcork St, city: Kalamazoo, state: mi, zip: '49001'}
   place: '2642160'
-  geo:
-    lat: 42.26384
-    lng: -85.53961
+  geo: {lat: 42.26384, lng: -85.53961}
   phone: 269-385-6279
-  external_ids:
-    bphc: BPS-H80-038625
+  external_ids: {bphc: BPS-H80-038625}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-mobile-dental
   name: FAMILY HEALTH CENTER MOBILE DENTAL
   categories:
   - community-health-center
-  address:
-    street: 117 W Paterson St
-    city: Kalamazoo
-    state: mi
-    zip: '49007'
+  cost: sliding-scale
+  address: {street: 117 W Paterson St, city: Kalamazoo, state: mi, zip: '49007'}
   place: '2642160'
-  geo:
-    lat: 42.30296
-    lng: -85.58461
+  geo: {lat: 42.30296, lng: -85.58461}
   phone: 269-349-2641
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-018866
+  external_ids: {bphc: BPS-H80-018866}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-mobile-medical
   name: FAMILY HEALTH CENTER MOBILE MEDICAL
   categories:
   - community-health-center
-  address:
-    street: 117 W Paterson St
-    city: Kalamazoo
-    state: mi
-    zip: '49007'
+  cost: sliding-scale
+  address: {street: 117 W Paterson St, city: Kalamazoo, state: mi, zip: '49007'}
   place: '2642160'
-  geo:
-    lat: 42.30296
-    lng: -85.58461
+  geo: {lat: 42.30296, lng: -85.58461}
   phone: 269-349-2641
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-017479
+  external_ids: {bphc: BPS-H80-017479}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/family-health-center-sheridan
   name: FAMILY HEALTH CENTER SHERIDAN
   categories:
   - community-health-center
-  address:
-    street: 2918 Portage St
-    city: Kalamazoo
-    state: mi
-    zip: '49001'
+  cost: sliding-scale
+  address: {street: 2918 Portage St, city: Kalamazoo, state: mi, zip: '49001'}
   place: '2642160'
-  geo:
-    lat: 42.26166
-    lng: -85.56831
+  geo: {lat: 42.26166, lng: -85.56831}
   phone: 269-349-2641
   website: https://www.fhckzoo.com
-  external_ids:
-    bphc: BPS-H80-010513
+  external_ids: {bphc: BPS-H80-010513}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/kalamazoo/first-umc-head-start
   name: FIRST UMC HEAD START
   categories:
@@ -531,6 +504,12 @@
     lng: -85.55823
   phone: 269-382-9820
   website: https://www.communityhealingcenter.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -662,6 +641,12 @@
     lng: -85.57333
   phone: 269-373-6000
   website: https://iskzoo.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -729,6 +714,21 @@
     lng: -85.55351
   phone: 269-383-0450
   website: https://www.KPEP.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1036,6 +1036,21 @@
     lng: -85.58993
   phone: 269-552-9134
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1277,6 +1292,14 @@
     lng: -85.6277
   phone: 269-343-6700
   website: https://www.pinerest.org/kalamazoo
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1484,6 +1507,13 @@
     lng: -85.58797
   phone: 269-344-4458
   website: https://www.victoryclinic.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

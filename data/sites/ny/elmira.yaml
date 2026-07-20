@@ -93,6 +93,9 @@
     lng: -76.81133
   phone: 607-737-5215
   website: https://www.casa-trinity.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -103,12 +106,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chemung County
-  address: {street: 425 Pennsylvania Avenue, city: Elmira, state: ny, zip: '14904'}
+  address:
+    street: 425 Pennsylvania Avenue
+    city: Elmira
+    state: ny
+    zip: '14904'
   place: '3624229'
   phone: 607-737-5368
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/elmira/elmira-housing-authority
   name: Elmira Housing Authority
   categories:
@@ -145,6 +154,13 @@
     lng: -76.79451
   phone: 607-737-4739
   website: https://omh.ny.gov/omhweb/facilities/elpc
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -277,6 +293,15 @@
     lng: -76.80114
   phone: 607-737-2490
   website: https://www.familyservicesofchemung.com
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -294,6 +319,15 @@
   place: '3624229'
   phone: 607-442-6900
   website: https://www.familyservicesofchemung.com
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -315,6 +349,12 @@
     lng: -76.82253
   phone: 607-737-8449
   website: https://www.familyservicesofchemung.com/
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -336,6 +376,14 @@
     lng: -76.80308
   phone: 607-733-7661
   website: https://familyservicesofchemung.com
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -432,24 +480,16 @@
   name: Mosaic Health Elmira Administration
   categories:
   - community-health-center
-  address:
-    street: 100 N Main St STE L24
-    city: Elmira
-    state: ny
-    zip: '14901'
+  cost: sliding-scale
+  address: {street: 100 N Main St STE L24, city: Elmira, state: ny, zip: '14901'}
   place: '3624229'
-  geo:
-    lat: 42.08804
-    lng: -76.8069
+  geo: {lat: 42.08804, lng: -76.8069}
   phone: 607-873-7308
   website: https://www.rpcn.org
-  external_ids:
-    bphc: BPS-H80-021180
+  external_ids: {bphc: BPS-H80-021180}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/elmira/new-dawn-inpatient-rehabilitation
   name: New Dawn Inpatient Rehabilitation
   categories:
@@ -465,6 +505,15 @@
     lng: -76.79685
   phone: 607-737-7801
   website: https://www.arnothealth.org/services/addiction-treatment
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -519,44 +568,28 @@
   name: TCC - Elmira Able2
   categories:
   - community-health-center
-  address:
-    street: 1118 Charles St
-    city: Elmira
-    state: ny
-    zip: '14904'
+  cost: sliding-scale
+  address: {street: 1118 Charles St, city: Elmira, state: ny, zip: '14904'}
   place: '3624229'
-  geo:
-    lat: 42.06309
-    lng: -76.79612
+  geo: {lat: 42.06309, lng: -76.79612}
   phone: 607-734-3968
-  external_ids:
-    bphc: BPS-H80-039978
+  external_ids: {bphc: BPS-H80-039978}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/elmira/the-chautauqua-center-elmira
   name: The Chautauqua Center - Elmira
   categories:
   - community-health-center
-  address:
-    street: 1005 Walnut St
-    city: Elmira
-    state: ny
-    zip: '14901'
+  cost: sliding-scale
+  address: {street: 1005 Walnut St, city: Elmira, state: ny, zip: '14901'}
   place: '3624229'
-  geo:
-    lat: 42.1003
-    lng: -76.82503
+  geo: {lat: 42.1003, lng: -76.82503}
   phone: 607-734-3968
-  external_ids:
-    bphc: BPS-H80-040472
+  external_ids: {bphc: BPS-H80-040472}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/elmira/ywca-elmira-the-twin-tiers
   name: Ywca Elmira & The Twin Tiers
   categories:

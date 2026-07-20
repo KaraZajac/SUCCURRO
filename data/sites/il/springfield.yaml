@@ -21,44 +21,28 @@
   name: Capitol Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 2239 E Cook St
-    city: Springfield
-    state: il
-    zip: '62703'
+  cost: sliding-scale
+  address: {street: 2239 E Cook St, city: Springfield, state: il, zip: '62703'}
   place: '1772000'
-  geo:
-    lat: 39.79575
-    lng: -89.62243
+  geo: {lat: 39.79575, lng: -89.62243}
   phone: 217-788-2300
-  external_ids:
-    bphc: BPS-H80-001119
+  external_ids: {bphc: BPS-H80-001119}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/cchc-helping-hands-hch-site
   name: CCHC Helping Hands HCH Site
   categories:
   - community-health-center
-  address:
-    street: 2200 Shale St
-    city: Springfield
-    state: il
-    zip: '62703'
+  cost: sliding-scale
+  address: {street: 2200 Shale St, city: Springfield, state: il, zip: '62703'}
   place: '1772000'
-  geo:
-    lat: 39.77856
-    lng: -89.61073
+  geo: {lat: 39.77856, lng: -89.61073}
   phone: 217-788-2300
-  external_ids:
-    bphc: BPS-H80-038094
+  external_ids: {bphc: BPS-H80-038094}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/clinical-counseling-group-and-dui-providers-llc
   name: Clinical Counseling Group and DUI Providers LLC
   categories:
@@ -74,6 +58,22 @@
     lng: -89.70521
   phone: 217-726-7575
   website: https://
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -113,6 +113,10 @@
     lng: -89.68931
   phone: 217-891-6063
   website: https://www.duieats.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -166,23 +170,15 @@
   name: Family Guidance Center
   categories:
   - community-health-center
-  address:
-    street: 120 N 11th St
-    city: Springfield
-    state: il
-    zip: '62703'
+  cost: sliding-scale
+  address: {street: 120 N 11th St, city: Springfield, state: il, zip: '62703'}
   place: '1772000'
-  geo:
-    lat: 39.80236
-    lng: -89.64004
+  geo: {lat: 39.80236, lng: -89.64004}
   phone: 217-788-2300
-  external_ids:
-    bphc: BPS-H80-019665
+  external_ids: {bphc: BPS-H80-019665}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/family-guidance-centers-inc
   name: Family Guidance Centers Inc
   categories:
@@ -198,6 +194,18 @@
     lng: -89.63991
   phone: 217-544-9858
   website: https://www.fgcinc.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -241,6 +249,19 @@
     lng: -89.62255
   phone: 217-529-9266 x2670
   website: https://www.gatewayfoundation.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -262,6 +283,16 @@
     lng: -89.62121
   phone: 217-529-9266
   website: https://www.gatewayfoundation.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -282,6 +313,16 @@
     lng: -89.64495
   phone: 217-223-0170
   website: https://www.hopewellclinical.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -431,6 +472,9 @@
     lng: -89.65484
   phone: 217-788-4051
   website: https://www.memorialbehavioralhealth.org
+  services:
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -451,6 +495,12 @@
     lng: -89.65676
   phone: 217-788-3000
   website: https://memorial.health/springfield-memorial-hospital
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -471,6 +521,22 @@
     lng: -89.64434
   phone: 217-679-1406 x1587
   website: https://medmark.com/medmark-treatment-centers-springfield/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -491,6 +557,22 @@
     lng: -89.71829
   phone: 217-670-0654
   website: https://rosemedical.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -523,119 +605,85 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Sangamon County
-  address: {street: 2833 South Grand Ave. Suite C100, city: Springfield, state: il, zip: '62703'}
+  address:
+    street: 2833 South Grand Ave. Suite C100
+    city: Springfield
+    state: il
+    zip: '62703'
   place: '1772000'
   phone: 217-535-3120
   website: http://www.co.sangamon.il.us/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/springfield/siu-center-for-family-medicine-general-internal
   name: SIU Center for Family Medicine - General Internal Medicine Clinic
   categories:
   - community-health-center
-  address:
-    street: 751 N Rutledge St
-    city: Springfield
-    state: il
-    zip: '62702'
+  cost: sliding-scale
+  address: {street: 751 N Rutledge St, city: Springfield, state: il, zip: '62702'}
   place: '1772000'
-  geo:
-    lat: 39.80963
-    lng: -89.65807
+  geo: {lat: 39.80963, lng: -89.65807}
   phone: 217-545-8000
-  external_ids:
-    bphc: BPS-H80-031872
+  external_ids: {bphc: BPS-H80-031872}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-center-for-family-medicine-gim-salvation-arm
   name: SIU Center for Family Medicine-GIM Salvation Army
   categories:
   - community-health-center
-  address:
-    street: 1600 E Clear Lake Ave
-    city: Springfield
-    state: il
-    zip: '62703'
+  cost: sliding-scale
+  address: {street: 1600 E Clear Lake Ave, city: Springfield, state: il, zip: '62703'}
   place: '1772000'
-  geo:
-    lat: 39.80197
-    lng: -89.63202
+  geo: {lat: 39.80197, lng: -89.63202}
   phone: 217-545-8000
-  external_ids:
-    bphc: BPS-H80-032784
+  external_ids: {bphc: BPS-H80-032784}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-center-for-family-medicine-integrated-wellne
   name: SIU Center for Family Medicine-Integrated Wellness Clinic
   categories:
   - community-health-center
-  address:
-    street: 710 N 8th St
-    city: Springfield
-    state: il
-    zip: '62702'
+  cost: sliding-scale
+  address: {street: 710 N 8th St, city: Springfield, state: il, zip: '62702'}
   place: '1772000'
-  geo:
-    lat: 39.80894
-    lng: -89.64454
+  geo: {lat: 39.80894, lng: -89.64454}
   phone: 217-545-8000
-  external_ids:
-    bphc: BPS-H80-019700
+  external_ids: {bphc: BPS-H80-019700}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-center-for-family-medicine-sangamon-county-h
   name: SIU Center for Family Medicine-Sangamon County Health
   categories:
   - community-health-center
-  address:
-    street: 2833 South Grand Ave E STE 100
-    city: Springfield
-    state: il
-    zip: '62703'
+  cost: sliding-scale
+  address: {street: 2833 South Grand Ave E STE 100, city: Springfield, state: il, zip: '62703'}
   place: '1772000'
-  geo:
-    lat: 39.78883
-    lng: -89.61241
+  geo: {lat: 39.78883, lng: -89.61241}
   phone: 217-535-3102
-  external_ids:
-    bphc: BPS-H80-022282
+  external_ids: {bphc: BPS-H80-022282}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-center-for-family-medicine-springfield
   name: SIU Center for Family Medicine-Springfield
   categories:
   - community-health-center
-  address:
-    street: 520 N 4th St
-    city: Springfield
-    state: il
-    zip: '62702'
+  cost: sliding-scale
+  address: {street: 520 N 4th St, city: Springfield, state: il, zip: '62702'}
   place: '1772000'
-  geo:
-    lat: 39.80701
-    lng: -89.65003
+  geo: {lat: 39.80701, lng: -89.65003}
   phone: 217-757-8100
   website: https://siucenterforfamilymedicine.org
-  external_ids:
-    bphc: BPS-H80-011680
+  external_ids: {bphc: BPS-H80-011680}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-center-for-healthy-aging-and-wellness
   name: SIU Center for Healthy Aging and Wellness
   categories:
@@ -652,6 +700,9 @@
     lng: -89.65127
   phone: 217-545-4781
   website: https://www.siumed.org/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -661,44 +712,28 @@
   name: SIU Center for Healthy Aging and Wellness
   categories:
   - community-health-center
-  address:
-    street: 319 E Madison St
-    city: Springfield
-    state: il
-    zip: '62701'
+  cost: sliding-scale
+  address: {street: 319 E Madison St, city: Springfield, state: il, zip: '62701'}
   place: '1772000'
-  geo:
-    lat: 39.80462
-    lng: -89.65114
+  geo: {lat: 39.80462, lng: -89.65114}
   phone: 217-545-8000
-  external_ids:
-    bphc: BPS-H80-035939
+  external_ids: {bphc: BPS-H80-035939}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/siu-medicine-north-dirksen-express-care
   name: SIU Medicine North Dirksen Express Care
   categories:
   - community-health-center
-  address:
-    street: 3220 Atlanta St
-    city: Springfield
-    state: il
-    zip: '62707'
+  cost: sliding-scale
+  address: {street: 3220 Atlanta St, city: Springfield, state: il, zip: '62707'}
   place: '1772000'
-  geo:
-    lat: 39.83624
-    lng: -89.60135
+  geo: {lat: 39.83624, lng: -89.60135}
   phone: 217-545-8000
-  external_ids:
-    bphc: BPS-H80-038067
+  external_ids: {bphc: BPS-H80-038067}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/springfield-il-vet-center
   name: Springfield, IL Vet Center
   categories: &id001
@@ -810,23 +845,15 @@
   name: St. John's Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 700 N 7th St
-    city: Springfield
-    state: il
-    zip: '62702'
+  cost: sliding-scale
+  address: {street: 700 N 7th St, city: Springfield, state: il, zip: '62702'}
   place: '1772000'
-  geo:
-    lat: 39.80869
-    lng: -89.64619
+  geo: {lat: 39.80869, lng: -89.64619}
   phone: 217-788-2300
-  external_ids:
-    bphc: BPS-H80-030723
+  external_ids: {bphc: BPS-H80-030723}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/springfield/u-s-grant-middle
   name: U.S. Grant Middle
   categories:

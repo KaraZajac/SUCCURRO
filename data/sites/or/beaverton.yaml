@@ -81,13 +81,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: '17933 NW Evergreen Place, Ste 315', city: Beaverton, state: or, zip: '97006'}
+  address:
+    street: 17933 NW Evergreen Place, Ste 315
+    city: Beaverton
+    state: or
+    zip: '97006'
   place: '4105350'
   phone: 503-615-0771
   website: https://caowash.org/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: or/beaverton/community-pantry
   name: Community Pantry
   categories:
@@ -222,6 +228,11 @@
     lng: -122.78503
   phone: 971-245-1342
   website: https://www.hazeldenbettyford.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -280,6 +291,20 @@
     lng: -122.78663
   phone: 503-641-1475
   website: https://www.lifeworksnw.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -333,24 +358,16 @@
   name: NHC Merlo Station SBHC
   categories:
   - community-health-center
-  address:
-    street: 1841 SW Merlo Dr
-    city: Beaverton
-    state: or
-    zip: '97003'
+  cost: sliding-scale
+  address: {street: 1841 SW Merlo Dr, city: Beaverton, state: or, zip: '97003'}
   place: '4105350'
-  geo:
-    lat: 45.50609
-    lng: -122.84769
+  geo: {lat: 45.50609, lng: -122.84769}
   phone: 503-941-3210
   website: https://www.nhcoregon.org/providers/nhc-merlo-station-school-based-health-center/
-  external_ids:
-    bphc: BPS-H80-031208
+  external_ids: {bphc: BPS-H80-031208}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/beaverton/rosedale-elementary-school
   name: Rosedale Elementary School
   categories:
@@ -386,6 +403,13 @@
     lng: -122.86773
   phone: 503-591-9280
   website: https://www.sequoiamhs.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -474,6 +498,20 @@
   place: '4105350'
   phone: 509-712-7077
   website: https://
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -483,88 +521,56 @@
   name: Virginia Garcia Beaverton Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 12600 SW Crescent St
-    city: Beaverton
-    state: or
-    zip: '97005'
+  cost: sliding-scale
+  address: {street: 12600 SW Crescent St, city: Beaverton, state: or, zip: '97005'}
   place: '4105350'
-  geo:
-    lat: 45.49086
-    lng: -122.80675
+  geo: {lat: 45.49086, lng: -122.80675}
   phone: 503-352-2354
   website: http://www.virginiagarcia.org
-  external_ids:
-    bphc: BPS-H80-013746
+  external_ids: {bphc: BPS-H80-013746}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/beaverton/virginia-garcia-beaverton-school-based-health-ce
   name: Virginia Garcia Beaverton School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 13000 SW 2nd St
-    city: Beaverton
-    state: or
-    zip: '97005'
+  cost: sliding-scale
+  address: {street: 13000 SW 2nd St, city: Beaverton, state: or, zip: '97005'}
   place: '4105350'
-  geo:
-    lat: 45.48572
-    lng: -122.81073
+  geo: {lat: 45.48572, lng: -122.81073}
   phone: 503-259-5000
-  external_ids:
-    bphc: BPS-H80-014453
+  external_ids: {bphc: BPS-H80-014453}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/beaverton/virginia-garcia-beaverton-wellness-center
   name: Virginia Garcia Beaverton Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 2725 SW Cedar Hills Blvd STE 200
-    city: Beaverton
-    state: or
-    zip: '97005'
+  cost: sliding-scale
+  address: {street: 2725 SW Cedar Hills Blvd STE 200, city: Beaverton, state: or, zip: '97005'}
   place: '4105350'
-  geo:
-    lat: 45.50056
-    lng: -122.80925
+  geo: {lat: 45.50056, lng: -122.80925}
   phone: 503-352-6013
   website: https://www.virginiagarcia.org
-  external_ids:
-    bphc: BPS-H80-018305
+  external_ids: {bphc: BPS-H80-018305}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/beaverton/virginia-garcia-lifeworks-nw-beaverton
   name: Virginia Garcia/LifeWorks NW Beaverton
   categories:
   - community-health-center
-  address:
-    street: 10700 SW Beaverton Hillsdale Hwy BLDG 1
-    city: Beaverton
-    state: or
-    zip: '97005'
+  cost: sliding-scale
+  address: {street: 10700 SW Beaverton Hillsdale Hwy BLDG 1, city: Beaverton, state: or, zip: '97005'}
   place: '4105350'
-  geo:
-    lat: 45.48649
-    lng: -122.78662
+  geo: {lat: 45.48649, lng: -122.78662}
   phone: 503-644-2545
-  external_ids:
-    bphc: BPS-H80-022054
+  external_ids: {bphc: BPS-H80-022054}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/beaverton/vose-elem
   name: Vose Elem
   categories:

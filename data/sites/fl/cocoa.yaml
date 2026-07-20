@@ -37,6 +37,10 @@
     lng: -80.75466
   phone: 321-636-4357
   website: https://www.bellevetreatment.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,93 +50,81 @@
   name: BHA Firehouse Clinic
   categories:
   - community-health-center
-  address:
-    street: 114 1st St OFC 137
-    city: Cocoa
-    state: fl
-    zip: '32922'
+  cost: sliding-scale
+  address: {street: 114 1st St OFC 137, city: Cocoa, state: fl, zip: '32922'}
   place: '1213150'
-  geo:
-    lat: 28.35849
-    lng: -80.73151
+  geo: {lat: 28.35849, lng: -80.73151}
   phone: 321-241-6800
   website: https://www.brevardhealth.org
-  external_ids:
-    bphc: BPS-H80-037809
+  external_ids: {bphc: BPS-H80-037809}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/cocoa/bha-port-st-john
   name: BHA Port St. John
   categories:
   - community-health-center
-  address:
-    street: 7227 N Highway 1 STE 300
-    city: Cocoa
-    state: fl
-    zip: '32927'
+  cost: sliding-scale
+  address: {street: 7227 N Highway 1 STE 300, city: Cocoa, state: fl, zip: '32927'}
   place: '1213150'
-  geo:
-    lat: 28.48544
-    lng: -80.77273
+  geo: {lat: 28.48544, lng: -80.77273}
   phone: 321-241-6868
   website: https://www.bhachc.org
-  external_ids:
-    bphc: BPS-H80-015461
+  external_ids: {bphc: BPS-H80-015461}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/cocoa/bha-school-based-service-site-endeavour
   name: BHA School Based Service Site Endeavour
   categories:
   - community-health-center
-  address:
-    street: 905 Pineda St
-    city: Cocoa
-    state: fl
-    zip: '32922'
+  cost: sliding-scale
+  address: {street: 905 Pineda St, city: Cocoa, state: fl, zip: '32922'}
   place: '1213150'
-  geo:
-    lat: 28.36855
-    lng: -80.74675
+  geo: {lat: 28.36855, lng: -80.74675}
   phone: 321-241-6800
   website: https://www.bhachc.org
-  external_ids:
-    bphc: BPS-H80-034997
+  external_ids: {bphc: BPS-H80-034997}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/cocoa/brevard-county-department-of-housing-human-servi
   name: Brevard County Department Of Housing & Human Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brevard County
-  address: {street: Dr. Joe Lee Smith Community Center 415 Stone St., city: Cocoa, state: fl, zip: '32922'}
+  address:
+    street: Dr. Joe Lee Smith Community Center 415 Stone St.
+    city: Cocoa
+    state: fl
+    zip: '32922'
   place: '1213150'
   phone: 321-633-1951
   email: stephanie.bryant@brevardcounty.us
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/cocoa/brevard-county-department-of-housing-human-servi-2
   name: Brevard County Department Of Housing & Human Services (Main Line)
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brevard County
-  address: {street: Dr. Joe Lee Smith Community Center 415 Stone St., city: Cocoa, state: fl, zip: '32922'}
+  address:
+    street: Dr. Joe Lee Smith Community Center 415 Stone St.
+    city: Cocoa
+    state: fl
+    zip: '32922'
   place: '1213150'
   phone: 321-633-1951
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/cocoa/cambridge-elementary
   name: Cambridge Elementary
   categories:
@@ -167,6 +159,13 @@
     lng: -80.73303
   phone: 321-631-4578
   website: https://www.cfltreatmentcenters.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -407,6 +406,20 @@
     lng: -80.7266
   phone: 321-632-5792
   website: https://www.lccbrevard.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -477,24 +490,16 @@
   name: Space Coast Health Centers Primary Care - Port St. John
   categories:
   - community-health-center
-  address:
-    street: 5005 Port St John Pkwy
-    city: Cocoa
-    state: fl
-    zip: '32927'
+  cost: sliding-scale
+  address: {street: 5005 Port St John Pkwy, city: Cocoa, state: fl, zip: '32927'}
   place: '1213150'
-  geo:
-    lat: 28.45279
-    lng: -80.80685
+  geo: {lat: 28.45279, lng: -80.80685}
   phone: 321-268-6836
   website: https://www.spacecoasthealthcenters.org
-  external_ids:
-    bphc: BPS-LAL-034892
+  external_ids: {bphc: BPS-LAL-034892}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/cocoa/space-coast-recovery-inc
   name: Space Coast Recovery Inc
   categories:
@@ -510,6 +515,22 @@
     lng: -80.7479
   phone: 321-632-5958
   website: https://www.spacecoastrecovery.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -531,6 +552,22 @@
     lng: -80.74296
   phone: 321-637-7730
   website: https://www.flsteps.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,24 +2,16 @@
   name: 1st Choice Healthcare Salem
   categories:
   - community-health-center
-  address:
-    street: 172 Highway 62
-    city: Salem
-    state: ar
-    zip: '72576'
+  cost: sliding-scale
+  address: {street: 172 Highway 62, city: Salem, state: ar, zip: '72576'}
   place: '0562150'
-  geo:
-    lat: 36.36978
-    lng: -91.8317
+  geo: {lat: 36.36978, lng: -91.8317}
   phone: 870-895-2735
   website: https://www.1stchoice-ar.org
-  external_ids:
-    bphc: BPS-H80-019515
+  external_ids: {bphc: BPS-H80-019515}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/salem-2150/arisa-health-inc-salem-clinic
   name: Arisa Health Inc Salem Clinic
   categories:
@@ -36,6 +28,13 @@
     lng: -91.8128
   phone: 870-972-4000
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,13 +45,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fulton County
-  address: {street: 146 N. Pickern St. (P. O. Box 54), city: Salem, state: ar, zip: '72576'}
+  address:
+    street: 146 N. Pickern St. (P. O. Box 54)
+    city: Salem
+    state: ar
+    zip: '72576'
   place: '0562150'
   phone: 870-895-3628
   website: http://www.nadcinc.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/salem-2150/salem-head-start
   name: Salem Head Start
   categories:

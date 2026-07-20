@@ -36,6 +36,14 @@
     lng: -93.75942
   phone: 641-782-8457
   website: https://www.crossroadsbhs.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +65,11 @@
     lng: -93.7687
   phone: 641-856-6471
   website: https://www.weareinfinityhealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -66,23 +79,15 @@
   name: Osceola Dental
   categories:
   - community-health-center
-  address:
-    street: 131 W Washington St
-    city: Osceola
-    state: ia
-    zip: '50213'
+  cost: sliding-scale
+  address: {street: 131 W Washington St, city: Osceola, state: ia, zip: '50213'}
   place: '1959835'
-  geo:
-    lat: 41.03503
-    lng: -93.76694
+  geo: {lat: 41.03503, lng: -93.76694}
   phone: 641-342-1488
-  external_ids:
-    bphc: BPS-H80-038972
+  external_ids: {bphc: BPS-H80-038972}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/osceola/osceola-early-childhood-center
   name: Osceola Early Childhood Center
   categories:
@@ -106,34 +111,32 @@
   name: Osceola Office
   categories:
   - community-health-center
-  address:
-    street: 219 W Washington St
-    city: Osceola
-    state: ia
-    zip: '50213'
+  cost: sliding-scale
+  address: {street: 219 W Washington St, city: Osceola, state: ia, zip: '50213'}
   place: '1959835'
-  geo:
-    lat: 41.03509
-    lng: -93.76868
+  geo: {lat: 41.03509, lng: -93.76868}
   phone: 641-342-9000
   website: https://www.chcsi.org
-  external_ids:
-    bphc: BPS-H80-030312
+  external_ids: {bphc: BPS-H80-030312}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/osceola/south-central-iowa-community-action-program
   name: South Central Iowa Community Action Program
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clarke County
-  address: {street: '114 South Filmore, Ste 2', city: Osceola, state: ia, zip: '50213'}
+  address:
+    street: 114 South Filmore, Ste 2
+    city: Osceola
+    state: ia
+    zip: '50213'
   place: '1959835'
   phone: 641-342-2101
   email: decatur@scicap.org
   website: https://scicap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

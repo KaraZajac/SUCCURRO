@@ -14,6 +14,12 @@
     lng: -87.24495
   phone: 205-933-8101
   website: https://www.va.gov/birmingham-health-care/locations/jasper-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,46 +29,30 @@
   name: Capstone-Summit
   categories:
   - community-health-center
-  address:
-    street: 1351 Summitt
-    city: Jasper
-    state: al
-    zip: '35501'
+  cost: sliding-scale
+  address: {street: 1351 Summitt, city: Jasper, state: al, zip: '35501'}
   place: 0138416
-  geo:
-    lat: 33.83778
-    lng: -87.23689
+  geo: {lat: 33.83778, lng: -87.23689}
   phone: 205-686-5113
   website: https://capstoneclinic.org
-  external_ids:
-    bphc: BPS-H80-033779
+  external_ids: {bphc: BPS-H80-033779}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/jasper/capstone-viking-health
   name: Capstone Viking Health
   categories:
   - community-health-center
-  address:
-    street: 1501 Viking Dr
-    city: Jasper
-    state: al
-    zip: '35501'
+  cost: sliding-scale
+  address: {street: 1501 Viking Dr, city: Jasper, state: al, zip: '35501'}
   place: 0138416
-  geo:
-    lat: 33.83393
-    lng: -87.25785
+  geo: {lat: 33.83393, lng: -87.25785}
   phone: 205-832-3489
   website: https://capstoneclinic.org
-  external_ids:
-    bphc: BPS-H80-032481
+  external_ids: {bphc: BPS-H80-032481}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/jasper/carbon-hill-elemjr-high-high-school
   name: Carbon Hill Elemjr High/High School
   categories:
@@ -253,6 +243,10 @@
     lng: -87.25641
   phone: 205-295-5237
   website: https://www.medplexinc.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -316,6 +310,21 @@
     lng: -87.28242
   phone: 205-302-9004 x0
   website: https://nwamhc.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -333,6 +342,11 @@
   place: 0138416
   phone: 205-487-2124
   website: https://www.nwamhc.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -408,14 +422,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Walker County
-  address: {street: 224 Highway 195 S., city: Jasper, state: al, zip: '35501'}
+  address:
+    street: 224 Highway 195 S.
+    city: Jasper
+    state: al
+    zip: '35501'
   place: 0138416
   phone: 205-221-4010
   email: dtatwccaa@bellsouth.net
   website: https://caawalker.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/jasper/walker-county-early-head-start-center
   name: Walker County Early Head Start Center
   categories:
@@ -451,6 +471,11 @@
     lng: -87.26672
   phone: 205-221-1799
   website: https://www.methadonesouth.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   sources:
   - samhsa/findtreatment
   verified:

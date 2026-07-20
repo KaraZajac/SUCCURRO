@@ -24,35 +24,33 @@
   name: CareArc, Inc.
   categories:
   - community-health-center
-  address:
-    street: 420 W 15th Ave
-    city: Emporia
-    state: ks
-    zip: '66801'
+  cost: sliding-scale
+  address: {street: 420 W 15th Ave, city: Emporia, state: ks, zip: '66801'}
   place: '2021275'
-  geo:
-    lat: 38.41653
-    lng: -96.18581
+  geo: {lat: 38.41653, lng: -96.18581}
   phone: 620-342-4864
   website: https://carearc.org
-  external_ids:
-    bphc: BPS-H80-005075
+  external_ids: {bphc: BPS-H80-005075}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/emporia/chase-county-dcf
   name: Chase County DCF
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chase County
-  address: {street: 1701 Wheeler, city: Emporia, state: ks, zip: '66801'}
+  address:
+    street: 1701 Wheeler
+    city: Emporia
+    state: ks
+    zip: '66801'
   place: '2021275'
   phone: 620-342-2505
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/emporia/crosswinds-corner-house
   name: CrossWinds Corner House
   categories:
@@ -68,6 +66,14 @@
     lng: -96.17725
   phone: 620-343-2211
   website: https://www.crosswindsks.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -139,12 +145,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lyon County
-  address: {street: 1701 Wheeler, city: Emporia, state: ks, zip: '66801'}
+  address:
+    street: 1701 Wheeler
+    city: Emporia
+    state: ks
+    zip: '66801'
   place: '2021275'
   phone: 620-342-2505
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/emporia/lyon-county-early-head-start-home-based-office
   name: Lyon County Early Head Start Home Based Office
   categories:
@@ -179,6 +191,16 @@
     lng: -96.22515
   phone: 620-208-6480
   website: https://www.therapyservicesonline.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

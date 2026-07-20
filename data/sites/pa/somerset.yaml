@@ -14,6 +14,13 @@
     lng: -79.10566
   phone: 814-444-9696
   website: https://www.bealcounseling.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +42,10 @@
     lng: -79.08207
   phone: 814-443-4891
   website: https://ccsprovider.co
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -63,24 +74,16 @@
   name: Highlands Health Somerset
   categories:
   - community-health-center
-  address:
-    street: 225 S Center Ave
-    city: Somerset
-    state: pa
-    zip: '15501'
+  cost: sliding-scale
+  address: {street: 225 S Center Ave, city: Somerset, state: pa, zip: '15501'}
   place: '4271776'
-  geo:
-    lat: 40.00685
-    lng: -79.07734
+  geo: {lat: 40.00685, lng: -79.07734}
   phone: 814-443-5867
   website: https://www.highlandshealthclinic.com
-  external_ids:
-    bphc: BPS-LAL-040321
+  external_ids: {bphc: BPS-LAL-040321}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/somerset/mary-s-biesecker-public-library
   name: Mary S. Biesecker Public Library
   categories:
@@ -212,12 +215,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Somerset County
-  address: {street: 165 Stayrook Street, city: Somerset, state: pa, zip: '19132'}
+  address:
+    street: 165 Stayrook Street
+    city: Somerset
+    state: pa
+    zip: '19132'
   place: '4271776'
   phone: 814-443-3683
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/somerset/somerset-county-library
   name: Somerset County Library
   categories:
@@ -313,6 +322,11 @@
     lng: -79.07775
   phone: 814-443-5170 x5170
   website: https://www.somersethospital.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -333,6 +347,22 @@
     lng: -79.09169
   phone: 814-443-3639
   website: https://upmc.com/twinlakes
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -354,6 +384,12 @@
     lng: -79.07389
   phone: 814-443-1754
   website: https://upmc.com/twinlakes
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

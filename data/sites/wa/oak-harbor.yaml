@@ -36,6 +36,9 @@
     lng: -122.65402
   phone: 425-349-6200
   website: https://www.compasshealth.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -142,13 +145,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Island County
-  address: {street: '231 SE Barrington Ave., Suite 10, (P. O.Box 922)', city: Oak Harbor, state: wa, zip: '98225'}
+  address:
+    street: 231 SE Barrington Ave., Suite 10, (P. O.Box 922)
+    city: Oak Harbor
+    state: wa
+    zip: '98225'
   place: '5350360'
   phone: 360-679-6577
   website: https://www.oppco.org/utilities/#how-to-apply
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/oak-harbor/pioneer-human-services-ituha
   name: Pioneer Human Services ITUHA
   categories:
@@ -165,6 +174,11 @@
     lng: -122.65505
   phone: 360-499-7011
   website: https://www.PioneerHumanServices.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -186,6 +200,16 @@
     lng: -122.64611
   phone: 360-679-7676
   website: https://www.seamarchc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -195,44 +219,28 @@
   name: Sea Mar CHC - Oak Harbor E. Whidbey Ave.
   categories:
   - community-health-center
-  address:
-    street: 926 E Whidbey Ave
-    city: Oak Harbor
-    state: wa
-    zip: '98277'
+  cost: sliding-scale
+  address: {street: 926 E Whidbey Ave, city: Oak Harbor, state: wa, zip: '98277'}
   place: '5350360'
-  geo:
-    lat: 48.2985
-    lng: -122.64662
+  geo: {lat: 48.2985, lng: -122.64662}
   phone: 360-679-9216
-  external_ids:
-    bphc: BPS-H80-037200
+  external_ids: {bphc: BPS-H80-037200}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/oak-harbor/sea-mar-chc-oak-harbor-se-ireland-st
   name: Sea Mar CHC - Oak Harbor SE Ireland St.
   categories:
   - community-health-center
-  address:
-    street: 830 SE Ireland St
-    city: Oak Harbor
-    state: wa
-    zip: '98277'
+  cost: sliding-scale
+  address: {street: 830 SE Ireland St, city: Oak Harbor, state: wa, zip: '98277'}
   place: '5350360'
-  geo:
-    lat: 48.29158
-    lng: -122.64612
+  geo: {lat: 48.29158, lng: -122.64612}
   phone: 360-679-7676
-  external_ids:
-    bphc: BPS-H80-034879
+  external_ids: {bphc: BPS-H80-034879}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/oak-harbor/sunrise-services-inc
   name: Sunrise Services Inc
   categories:
@@ -249,6 +257,22 @@
     lng: -122.64277
   phone: 360-544-3800
   website: https://sunriseservicesinc.com
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

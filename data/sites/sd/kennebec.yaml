@@ -2,32 +2,28 @@
   name: Access Health - Kennebec
   categories:
   - community-health-center
-  address:
-    street: 120 S Main St
-    city: Kennebec
-    state: sd
-    zip: '57544'
+  cost: sliding-scale
+  address: {street: 120 S Main St, city: Kennebec, state: sd, zip: '57544'}
   place: '4633580'
-  geo:
-    lat: 43.90379
-    lng: -99.86157
+  geo: {lat: 43.90379, lng: -99.86157}
   phone: 605-869-2872
   website: https://www.ruralhc.net
-  external_ids:
-    bphc: BPS-H80-014799
+  external_ids: {bphc: BPS-H80-014799}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/kennebec/lyman-county-liheap
   name: Lyman County Liheap
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lyman County
-  address: {city: Kennebec, state: sd}
+  address:
+    city: Kennebec
+    state: sd
   place: '4633580'
   phone: 800-233-8503
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

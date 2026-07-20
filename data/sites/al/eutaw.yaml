@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Greene County
-  address: {street: 116 Prairie Ave, city: Eutaw, state: al, zip: '35462'}
+  address:
+    street: 116 Prairie Ave
+    city: Eutaw
+    state: al
+    zip: '35462'
   place: '0124664'
   phone: 205-372-4562
   website: https://www.cspwal.com/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/eutaw/eutaw-primary
   name: Eutaw Primary
   categories:
@@ -134,6 +140,11 @@
     lng: -87.88807
   phone: 205-372-3106
   website: https://www.wamhc.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -143,21 +154,13 @@
   name: WHATLEY HEALTH SERVICES @ EUTAW
   categories:
   - community-health-center
-  address:
-    street: 200 Morrow Ave
-    city: Eutaw
-    state: al
-    zip: '35462'
+  cost: sliding-scale
+  address: {street: 200 Morrow Ave, city: Eutaw, state: al, zip: '35462'}
   place: '0124664'
-  geo:
-    lat: 32.83991
-    lng: -87.88681
+  geo: {lat: 32.83991, lng: -87.88681}
   phone: 205-372-0011
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-001729
+  external_ids: {bphc: BPS-H80-001729}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

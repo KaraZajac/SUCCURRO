@@ -13,6 +13,22 @@
     lng: -90.18334
   phone: 319-390-4611
   website: https://www.asac.us
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -33,6 +49,17 @@
     lng: -90.23081
   phone: 319-390-4611
   website: https://www.asac.us
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -53,6 +80,17 @@
     lng: -90.17769
   phone: 319-390-4611
   website: https://www.asac.us
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -104,35 +142,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clinton County
-  address: {street: 350 5th Ave. N., city: Clinton, state: ia, zip: '52732'}
+  address:
+    street: 350 5th Ave. N.
+    city: Clinton
+    state: ia
+    zip: '52732'
   place: '1914430'
   phone: 563-324-3236
   website: https://www.caeiowa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/clinton/community-health-care-inc-clinton-clinic
   name: Community Health Care Inc. Clinton Clinic
   categories:
   - community-health-center
-  address:
-    street: 925 S 4th St
-    city: Clinton
-    state: ia
-    zip: '52732'
+  cost: sliding-scale
+  address: {street: 925 S 4th St, city: Clinton, state: ia, zip: '52732'}
   place: '1914430'
-  geo:
-    lat: 41.83557
-    lng: -90.1914
+  geo: {lat: 41.83557, lng: -90.1914}
   phone: 563-336-3000
   website: https://www.chcqca.org
-  external_ids:
-    bphc: BPS-H80-015375
+  external_ids: {bphc: BPS-H80-015375}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/clinton/jefferson-elementary-school
   name: Jefferson Elementary School
   categories:

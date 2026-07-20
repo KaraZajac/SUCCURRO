@@ -43,35 +43,33 @@
   name: Centennial School District
   categories:
   - community-health-center
-  address:
-    street: 14644 Highway 159
-    city: San Luis
-    state: co
-    zip: '81152'
+  cost: sliding-scale
+  address: {street: 14644 Highway 159, city: San Luis, state: co, zip: '81152'}
   place: 0868105
-  geo:
-    lat: 37.20876
-    lng: -105.42374
+  geo: {lat: 37.20876, lng: -105.42374}
   phone: 719-672-3322
-  external_ids:
-    bphc: BPS-H80-036292
+  external_ids: {bphc: BPS-H80-036292}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/san-luis/costilla-county-department-of-social-services-sa
   name: Costilla County Department of Social Services - San Luis
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Costilla County
-  address: {street: '233 Main St., Suite A', city: San Luis, state: co, zip: '81152'}
+  address:
+    street: 233 Main St., Suite A
+    city: San Luis
+    state: co
+    zip: '81152'
   place: 0868105
   phone: 719-672-4131
   website: https://www.colorado.gov/pacific/costillacounty/social-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/san-luis/costilla-county-housing-authority
   name: Costilla County Housing Authority
   categories:
@@ -96,24 +94,16 @@
   name: San Luis Health Center, Ernesto Pacheco Dental Clinic, or San Luis Physical Therapy and Rehabilitation
   categories:
   - community-health-center
-  address:
-    street: 233 Main St STE B
-    city: San Luis
-    state: co
-    zip: '81152'
+  cost: sliding-scale
+  address: {street: 233 Main St STE B, city: San Luis, state: co, zip: '81152'}
   place: 0868105
-  geo:
-    lat: 37.19723
-    lng: -105.42744
+  geo: {lat: 37.19723, lng: -105.42744}
   phone: 719-672-3352
   website: https://www.vwhs.org
-  external_ids:
-    bphc: BPS-H80-007581
+  external_ids: {bphc: BPS-H80-007581}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/san-luis/san-luis-valley-behavioral-health-group
   name: San Luis Valley Behavioral Health Group
   categories:
@@ -130,6 +120,13 @@
     lng: -105.42345
   phone: 719-589-3671
   website: https://www.slvbhg.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

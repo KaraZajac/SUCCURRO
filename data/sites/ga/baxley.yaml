@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Appling County
-  address: {street: '22 Jr. High Drive, Ste A', city: Baxley, state: ga, zip: '31061'}
+  address:
+    street: 22 Jr. High Drive, Ste A
+    city: Baxley
+    state: ga
+    zip: '31061'
   place: '1306016'
   phone: 912-367-6127
   website: https://myactionpact.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/baxley/appling-county-head-start
   name: Appling County Head Start
   categories:
@@ -67,6 +73,18 @@
     lng: -82.349
   phone: 912-367-9841 x1401
   website: https://www.ahcs.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -120,23 +138,15 @@
   name: East Georgia Healthcare Center, Inc.
   categories:
   - community-health-center
-  address:
-    street: 1636 Hatch Pkwy S
-    city: Baxley
-    state: ga
-    zip: '31513'
+  cost: sliding-scale
+  address: {street: 1636 Hatch Pkwy S, city: Baxley, state: ga, zip: '31513'}
   place: '1306016'
-  geo:
-    lat: 31.75714
-    lng: -82.35956
+  geo: {lat: 31.75714, lng: -82.35956}
   phone: 912-705-5656
-  external_ids:
-    bphc: BPS-H80-017144
+  external_ids: {bphc: BPS-H80-017144}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/baxley/ernest-parker-non-congregate
   name: Ernest Parker - Non-Congregate
   categories:
@@ -217,6 +227,17 @@
     lng: -82.35271
   phone: 912-367-4614
   website: https://www.pinelandcsb.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

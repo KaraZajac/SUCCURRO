@@ -154,13 +154,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Morgan County
-  address: {street: 1111 Knoxville Highway (P. O. Box 406), city: Wartburg, state: tn, zip: '37887'}
+  address:
+    street: 1111 Knoxville Highway (P. O. Box 406)
+    city: Wartburg
+    state: tn
+    zip: '37887'
   place: '4778100'
   phone: 865-691-2551
   website: https://www.ethra.org/services/3/housing-utilities/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/wartburg/first-baptist-church-of-wartburg
   name: First Baptist Church Of Wartburg
   categories:
@@ -363,24 +369,16 @@
   name: MORGAN COUNTY HEALTH COUNCIL, INC.
   categories:
   - community-health-center
-  address:
-    street: 224 Old Mill Rd
-    city: Wartburg
-    state: tn
-    zip: '37887'
+  cost: sliding-scale
+  address: {street: 224 Old Mill Rd, city: Wartburg, state: tn, zip: '37887'}
   place: '4778100'
-  geo:
-    lat: 36.10107
-    lng: -84.59292
+  geo: {lat: 36.10107, lng: -84.59292}
   phone: 423-346-6221
   website: https://www.morgancountymedical.com
-  external_ids:
-    bphc: BPS-H80-004602
+  external_ids: {bphc: BPS-H80-004602}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/wartburg/morgan-county-medical-center-behavioral-health
   name: Morgan County Medical Center Behavioral Health
   categories:
@@ -397,6 +395,10 @@
     lng: -84.59294
   phone: 423-346-6221 x224
   website: https://www.morgancountymedical.com/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -440,6 +442,16 @@
     lng: -84.59317
   phone: 423-346-2955
   website: https://www.ridgeview.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -743,6 +755,21 @@
     lng: -84.597
   phone: 865-396-6418
   website: https://www.westcare.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

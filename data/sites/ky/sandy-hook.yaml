@@ -68,23 +68,15 @@
   name: Juniper Health Elliott County
   categories:
   - community-health-center
-  address:
-    street: 308 N KY 7
-    city: Sandy Hook
-    state: ky
-    zip: '41171'
+  cost: sliding-scale
+  address: {street: 308 N KY 7, city: Sandy Hook, state: ky, zip: '41171'}
   place: '2168556'
-  geo:
-    lat: 38.09093
-    lng: -83.12547
+  geo: {lat: 38.09093, lng: -83.12547}
   phone: 606-738-9785
-  external_ids:
-    bphc: BPS-H80-031302
+  external_ids: {bphc: BPS-H80-031302}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/sandy-hook/lakeside-head-start
   name: LAKESIDE HEAD START
   categories:
@@ -109,13 +101,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Elliott County
-  address: {street: 103 Gee St., city: Sandy Hook, state: ky, zip: '41171'}
+  address:
+    street: 103 Gee St.
+    city: Sandy Hook
+    state: ky
+    zip: '41171'
   place: '2168556'
   phone: 606-738-6577
   website: http://www.nkcaa.net/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/sandy-hook/pathways-inc-elliott-county-outpatient
   name: Pathways Inc Elliott County Outpatient
   categories:
@@ -132,6 +130,13 @@
     lng: -83.12493
   phone: 606-738-6163 x4074
   website: https://www.pathways-ky.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

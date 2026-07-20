@@ -125,33 +125,31 @@
   name: RHSC Medical Center at Jonesborough
   categories:
   - community-health-center
-  address:
-    street: 600 Boones Creek Rd
-    city: Jonesborough
-    state: tn
-    zip: '37659'
+  cost: sliding-scale
+  address: {street: 600 Boones Creek Rd, city: Jonesborough, state: tn, zip: '37659'}
   place: '4738540'
-  geo:
-    lat: 36.30202
-    lng: -82.46653
+  geo: {lat: 36.30202, lng: -82.46653}
   phone: 423-788-9374
   website: https://rhsctn.com
-  external_ids:
-    bphc: BPS-H80-035807
+  external_ids: {bphc: BPS-H80-035807}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/jonesborough/upper-east-tennessee-human-development-agency-in
   name: Upper East Tennessee Human Development Agency Inc. - Washington
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: '125 E. Jackson Boulevard, Suite 11A', city: Jonesborough, state: tn, zip: '37659'}
+  address:
+    street: 125 E. Jackson Boulevard, Suite 11A
+    city: Jonesborough
+    state: tn
+    zip: '37659'
   place: '4738540'
   phone: 423-246-6180
   website: https://uethda.org/energy-2/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

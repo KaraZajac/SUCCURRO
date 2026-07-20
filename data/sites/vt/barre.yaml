@@ -48,23 +48,15 @@
   name: Barre Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 248 S Main St
-    city: Barre
-    state: vt
-    zip: '05641'
+  cost: sliding-scale
+  address: {street: 248 S Main St, city: Barre, state: vt, zip: '05641'}
   place: '5003175'
-  geo:
-    lat: 44.18283
-    lng: -72.49961
+  geo: {lat: 44.18283, lng: -72.49961}
   phone: 802-476-6785
-  external_ids:
-    bphc: BPS-H80-038858
+  external_ids: {bphc: BPS-H80-038858}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/barre/barre-housing-authority
   name: Barre Housing Authority
   categories:
@@ -136,13 +128,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: 20 Gable Place, city: Barre, state: vt, zip: '05641'}
+  address:
+    street: 20 Gable Place
+    city: Barre
+    state: vt
+    zip: '05641'
   place: '5003175'
   phone: 802-479-1053
   website: https://capstonevt.org/heat-and-utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: vt/barre/elevate-youth-services
   name: Elevate Youth Services
   categories:
@@ -159,6 +157,13 @@
     lng: -72.5595
   phone: 802-229-9151
   website: https://www.elevateyouthvt.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -183,24 +188,16 @@
   name: Gifford Health Center at Berlin
   categories:
   - community-health-center
-  address:
-    street: 2418 Airport Rd, Ste 1
-    city: Barre
-    state: vt
-    zip: '05641'
+  cost: sliding-scale
+  address: {street: '2418 Airport Rd, Ste 1', city: Barre, state: vt, zip: '05641'}
   place: '5003175'
-  geo:
-    lat: 44.206
-    lng: -72.56089
+  geo: {lat: 44.206, lng: -72.56089}
   phone: 802-224-3200
   website: https://giffordhealthcare.org/
-  external_ids:
-    bphc: BPS-H80-017749
+  external_ids: {bphc: BPS-H80-017749}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/barre/green-acres-open-non-congregate
   name: Green Acres Open, Non-Congregate
   categories:
@@ -299,6 +296,11 @@
   place: '5003175'
   phone: 802-479-1339
   website: https://www.wcmhs.org/
+  services:
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -320,6 +322,9 @@
     lng: -72.50126
   phone: 802-229-0591
   website: https://www.wcmhs.org/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

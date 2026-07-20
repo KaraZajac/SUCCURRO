@@ -36,6 +36,13 @@
     lng: -89.88354
   phone: 870-886-7924
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -152,24 +159,16 @@
   name: Healthy Partners
   categories:
   - community-health-center
-  address:
-    street: 605 N 2nd St
-    city: Blytheville
-    state: ar
-    zip: '72315'
+  cost: sliding-scale
+  address: {street: 605 N 2nd St, city: Blytheville, state: ar, zip: '72315'}
   place: '0507330'
-  geo:
-    lat: 35.93307
-    lng: -89.90468
+  geo: {lat: 35.93307, lng: -89.90468}
   phone: 870-532-6001
   website: https://eafhc.org
-  external_ids:
-    bphc: BPS-H80-015328
+  external_ids: {bphc: BPS-H80-015328}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/blytheville/holy-tabernacle
   name: Holy Tabernacle
   categories:
@@ -240,13 +239,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Mississippi County
-  address: {street: 1400 North Division, city: Blytheville, state: ar, zip: '72315'}
+  address:
+    street: 1400 North Division
+    city: Blytheville
+    state: ar
+    zip: '72315'
   place: '0507330'
   phone: 870-776-1054
   website: http://www.mcaeoc.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/blytheville/mylas-c-jeffers-head-start-center
   name: Mylas C. Jeffers Head Start Center
   categories:

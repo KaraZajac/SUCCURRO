@@ -57,6 +57,12 @@
     lng: -95.19996
   phone: 800-325-1192
   website: https://www.plainsareamentalhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,6 +84,21 @@
     lng: -95.20514
   phone: 712-262-2922
   website: https://www.seasonscenter.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -225,36 +246,34 @@
   name: United Community Health Center of Storm Lake - Replacement
   categories:
   - community-health-center
-  address:
-    street: 715 W Milwaukee Ave
-    city: Storm Lake
-    state: ia
-    zip: '50588'
+  cost: sliding-scale
+  address: {street: 715 W Milwaukee Ave, city: Storm Lake, state: ia, zip: '50588'}
   place: '1975630'
-  geo:
-    lat: 42.64793
-    lng: -95.2098
+  geo: {lat: 42.64793, lng: -95.2098}
   phone: 712-213-0109
   website: https://www.uchcsl.com
-  external_ids:
-    bphc: BPS-H80-008447
+  external_ids: {bphc: BPS-H80-008447}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/storm-lake/upper-des-moines-opportunity-inc
   name: Upper Des Moines Opportunity, Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Buena Vista County
-  address: {street: 620 Michigan St., city: Storm Lake, state: ia, zip: '50588'}
+  address:
+    street: 620 Michigan St.
+    city: Storm Lake
+    state: ia
+    zip: '50588'
   place: '1975630'
   phone: 712-732-1757
   website: http://www.udmo.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/storm-lake/west-ninth-street-park
   name: West Ninth Street Park
   categories:

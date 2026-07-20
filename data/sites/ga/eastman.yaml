@@ -2,24 +2,16 @@
   name: CareConnect Convenient Care and Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 817 Griffin Ave
-    city: Eastman
-    state: ga
-    zip: '31023'
+  cost: sliding-scale
+  address: {street: 817 Griffin Ave, city: Eastman, state: ga, zip: '31023'}
   place: '1325552'
-  geo:
-    lat: 32.18709
-    lng: -83.17814
+  geo: {lat: 32.18709, lng: -83.17814}
   phone: 478-374-1801
   website: https://www.ccthealth.org
-  external_ids:
-    bphc: BPS-H80-012759
+  external_ids: {bphc: BPS-H80-012759}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/eastman/csb-of-middle-georgia-eastman-annex
   name: CSB of Middle Georgia Eastman Annex
   categories:
@@ -32,6 +24,22 @@
   place: '1325552'
   phone: 478-448-1040
   website: https://www.csbmg.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -217,24 +225,36 @@
   - utility-assistance
   description: LIHEAP intake office serving Bleckley, Dodge, Laurens, Montgomery, Pulaski, Telfair, Wheeler,
     Wilcox Counties
-  address: {street: 324 Pine Street, city: Eastman, state: ga, zip: '31023'}
+  address:
+    street: 324 Pine Street
+    city: Eastman
+    state: ga
+    zip: '31023'
   place: '1325552'
   phone: 478-374-4301
   website: https://www.mgcaa.org/programs/community-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/eastman/heart-of-georgia-community-action-council-inc-2
   name: Heart of Georgia Community Action Council, Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Treutlen County
-  address: {street: 324 Pine Street, city: Eastman, state: ga, zip: '31023'}
+  address:
+    street: 324 Pine Street
+    city: Eastman
+    state: ga
+    zip: '31023'
   place: '1325552'
   phone: 478-374-4301
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/eastman/housing-authority-of-the-city-of-eastman
   name: Housing Authority Of The City Of Eastman
   categories:
@@ -314,6 +334,13 @@
     lng: -83.17907
   phone: 478-374-0390
   website: https://
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

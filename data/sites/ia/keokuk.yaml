@@ -13,6 +13,10 @@
     lng: -91.38757
   phone: 319-524-4397
   website: https://www.addsiowa.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -22,35 +26,33 @@
   name: CHC/SEIA Keokuk Clinic
   categories:
   - community-health-center
-  address:
-    street: 1618 Main St
-    city: Keokuk
-    state: ia
-    zip: '52632'
+  cost: sliding-scale
+  address: {street: 1618 Main St, city: Keokuk, state: ia, zip: '52632'}
   place: '1940845'
-  geo:
-    lat: 40.40456
-    lng: -91.39371
+  geo: {lat: 40.40456, lng: -91.39371}
   phone: 319-524-5734
-  external_ids:
-    bphc: BPS-H80-022131
+  external_ids: {bphc: BPS-H80-022131}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/keokuk/community-action-of-southeast-iowa-marie-tallari
   name: Community Action of Southeast Iowa - Marie Tallarico Neighborhood Center
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lee County
-  address: {street: 220 S. 22nd St., city: Keokuk, state: ia, zip: '52632'}
+  address:
+    street: 220 S. 22nd St.
+    city: Keokuk
+    state: ia
+    zip: '52632'
   place: '1940845'
   phone: 319-524-6383
   website: http://www.caofseia.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/keokuk/community-health-centers-of-se-ia-keokuk
   name: Community Health Centers of SE IA Keokuk
   categories:
@@ -67,6 +69,10 @@
     lng: -91.39359
   phone: 319-768-5858
   website: https://www.chcseia.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

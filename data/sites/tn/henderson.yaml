@@ -132,24 +132,16 @@
   name: Henderson Health Center
   categories:
   - community-health-center
-  address:
-    street: 1132 Industrial Dr
-    city: Henderson
-    state: tn
-    zip: '38340'
+  cost: sliding-scale
+  address: {street: 1132 Industrial Dr, city: Henderson, state: tn, zip: '38340'}
   place: '4733260'
-  geo:
-    lat: 35.45889
-    lng: -88.66697
+  geo: {lat: 35.45889, lng: -88.66697}
   phone: 731-983-3175
   website: https://www.hardemanhealth.org
-  external_ids:
-    bphc: BPS-H80-008674
+  external_ids: {bphc: BPS-H80-008674}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/henderson/jacks-creek-elementary
   name: Jacks Creek Elementary
   categories:
@@ -234,6 +226,9 @@
     lng: -88.61739
   phone: 731-989-3401
   website: https://QuincoTN.gov
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -244,13 +239,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chester County
-  address: {street: 269 North Church Street, city: Henderson, state: tn, zip: '38340'}
+  address:
+    street: 269 North Church Street
+    city: Henderson
+    state: tn
+    zip: '38340'
   place: '4733260'
   phone: 731-989-3879
   website: https://www.swhra.org/low-income-energy-assistance-program/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/henderson/west-chester-county-elementary
   name: West Chester County Elementary
   categories:

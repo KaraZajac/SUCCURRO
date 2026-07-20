@@ -89,12 +89,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cabell County
-  address: {street: '2699 Park Avenue, Suite 100', city: Huntington, state: wv, zip: '25704'}
+  address:
+    street: 2699 Park Avenue, Suite 100
+    city: Huntington
+    state: wv
+    zip: '25704'
   place: '5439460'
   phone: 304-528-5800
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/huntington/cabell-county-public-library
   name: Cabell County Public Library
   categories:
@@ -129,6 +135,11 @@
   place: '5439460'
   phone: 304-523-3497
   website: https://cammack.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -383,6 +394,22 @@
     lng: -82.51655
   phone: 304-429-6741 x3136
   website: https://www.va.gov/huntington-health-care/locations/hershel-woody-williams-va-medical-center/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -461,6 +488,20 @@
     lng: -82.45637
   phone: 304-525-5691
   website: https://www.ctcprograms.com/location/huntington-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -522,6 +563,13 @@
     lng: -82.359
   phone: 304-525-7111 x2
   website: https://hhghealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -755,6 +803,16 @@
     lng: -82.42066
   phone: 304-696-8700
   website: https://www.proactwv.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -824,45 +882,29 @@
   name: OVP Huntington
   categories:
   - community-health-center
-  address:
-    street: 601 20th St
-    city: Huntington
-    state: wv
-    zip: '25703'
+  cost: sliding-scale
+  address: {street: 601 20th St, city: Huntington, state: wv, zip: '25703'}
   place: '5439460'
-  geo:
-    lat: 38.42143
-    lng: -82.42236
+  geo: {lat: 38.42143, lng: -82.42236}
   phone: 740-451-4000
-  external_ids:
-    bphc: BPS-LAL-041072
+  external_ids: {bphc: BPS-LAL-041072}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/ovp-huntington-dentistry
   name: OVP - Huntington Dentistry
   categories:
   - community-health-center
-  address:
-    street: 1423 3rd Ave
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 1423 3rd Ave, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.42332
-    lng: -82.43488
+  geo: {lat: 38.42332, lng: -82.43488}
   phone: 304-691-0700
   website: https://ovphealthcare.org
-  external_ids:
-    bphc: BPS-LAL-037005
+  external_ids: {bphc: BPS-LAL-037005}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/pea-ridge-baptist-church
   name: Pea Ridge Baptist Church
   categories:
@@ -988,6 +1030,15 @@
     lng: -82.37366
   phone: 304-525-7851
   website: https://www.prestera.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1009,6 +1060,13 @@
     lng: -82.37473
   phone: 304-525-7851
   website: https://www.prestera.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1025,6 +1083,22 @@
   place: '5439460'
   phone: 304-525-7851 x1241
   website: https://www.prestera.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1045,6 +1119,22 @@
     lng: -82.29629
   phone: 304-525-7851 x1241
   website: https://www.prestera.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1066,6 +1156,11 @@
     lng: -82.44079
   phone: 304-696-4673
   website: https://www.marshallhealth.org/services/addiction-medicine/project-hope-for-women-children/
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1086,6 +1181,16 @@
     lng: -82.43659
   phone: 866-744-1930
   website: https://www.pursuecare.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1106,6 +1211,19 @@
     lng: -82.41301
   phone: 304-523-4673
   website: https://www.recoverypointwv.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -1194,371 +1312,235 @@
   name: VALLEY HEALTH - 10TH STREET
   categories:
   - community-health-center
-  address:
-    street: 540 10th St
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 540 10th St, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41866
-    lng: -82.44116
+  geo: {lat: 38.41866, lng: -82.44116}
   phone: 304-399-3366
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-017534
+  external_ids: {bphc: BPS-H80-017534}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-a-woman-s-place
   name: VALLEY HEALTH - A WOMAN'S PLACE
   categories:
   - community-health-center
-  address:
-    street: 1630 13th Ave
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 1630 13th Ave, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41106
-    lng: -82.42701
+  geo: {lat: 38.41106, lng: -82.42701}
   phone: 304-697-2014
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-001266
+  external_ids: {bphc: BPS-H80-001266}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-carl-johnson
   name: VALLEY HEALTH - CARL JOHNSON
   categories:
   - community-health-center
-  address:
-    street: 307 5th Ave
-    city: Huntington
-    state: wv
-    zip: '25702'
+  cost: sliding-scale
+  address: {street: 307 5th Ave, city: Huntington, state: wv, zip: '25702'}
   place: '5439460'
-  geo:
-    lat: 38.42748
-    lng: -82.38721
+  geo: {lat: 38.42748, lng: -82.38721}
   phone: 304-529-4734
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-005532
+  external_ids: {bphc: BPS-H80-005532}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-east-huntington
   name: VALLEY HEALTH - EAST HUNTINGTON
   categories:
   - community-health-center
-  address:
-    street: 85 Donohoe Dr
-    city: Huntington
-    state: wv
-    zip: '25705'
+  cost: sliding-scale
+  address: {street: 85 Donohoe Dr, city: Huntington, state: wv, zip: '25705'}
   place: '5439460'
-  geo:
-    lat: 38.41056
-    lng: -82.37266
+  geo: {lat: 38.41056, lng: -82.37266}
   phone: 304-525-3334
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-010137
+  external_ids: {bphc: BPS-H80-010137}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-ent
   name: VALLEY HEALTH - ENT
   categories:
   - community-health-center
-  address:
-    street: 3 Stonecrest Dr
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 3 Stonecrest Dr, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.39601
-    lng: -82.45196
+  geo: {lat: 38.39601, lng: -82.45196}
   phone: 304-522-6388
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-017742
+  external_ids: {bphc: BPS-H80-017742}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-harmony-house
   name: VALLEY HEALTH - HARMONY HOUSE
   categories:
   - community-health-center
-  address:
-    street: 627 4th Ave
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 627 4th Ave, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.4198
-    lng: -82.44777
+  geo: {lat: 38.4198, lng: -82.44777}
   phone: 304-523-2764
-  external_ids:
-    bphc: BPS-H80-039727
+  external_ids: {bphc: BPS-H80-039727}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-highlawn
   name: VALLEY HEALTH - HIGHLAWN
   categories:
   - community-health-center
-  address:
-    street: 2585 3rd Ave
-    city: Huntington
-    state: wv
-    zip: '25703'
+  cost: sliding-scale
+  address: {street: 2585 3rd Ave, city: Huntington, state: wv, zip: '25703'}
   place: '5439460'
-  geo:
-    lat: 38.42767
-    lng: -82.40989
+  geo: {lat: 38.42767, lng: -82.40989}
   phone: 304-525-3334
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-002366
+  external_ids: {bphc: BPS-H80-002366}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-huntington
   name: VALLEY HEALTH - HUNTINGTON
   categories:
   - community-health-center
-  address:
-    street: 1301 Hal Greer Blvd
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 1301 Hal Greer Blvd, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41045
-    lng: -82.42889
+  geo: {lat: 38.41045, lng: -82.42889}
   phone: 304-525-0572
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-004113
+  external_ids: {bphc: BPS-H80-004113}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-huntington-dental
   name: Valley Health- Huntington Dental
   categories:
   - community-health-center
-  address:
-    street: 1319 Hal Greer Blvd
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 1319 Hal Greer Blvd, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41006
-    lng: -82.42881
+  geo: {lat: 38.41006, lng: -82.42881}
   phone: 304-529-6060
-  external_ids:
-    bphc: BPS-H80-033015
+  external_ids: {bphc: BPS-H80-033015}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-huntington-high-school
   name: VALLEY HEALTH - HUNTINGTON HIGH SCHOOL
   categories:
   - community-health-center
-  address:
-    street: 1 Highlander Way
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 1 Highlander Way, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.39398
-    lng: -82.39944
+  geo: {lat: 38.39398, lng: -82.39944}
   phone: 304-528-6445
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-000719
+  external_ids: {bphc: BPS-H80-000719}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-mobile-unit
   name: Valley Health Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 4270 US Route 60
-    city: Huntington
-    state: wv
-    zip: '25705'
+  cost: sliding-scale
+  address: {street: 4270 US Route 60, city: Huntington, state: wv, zip: '25705'}
   place: '5439460'
-  geo:
-    lat: 38.41205
-    lng: -82.36544
+  geo: {lat: 38.41205, lng: -82.36544}
   phone: 304-675-5725
-  external_ids:
-    bphc: BPS-H80-036896
+  external_ids: {bphc: BPS-H80-036896}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-pea-ridge
   name: Valley Health Pea Ridge
   categories:
   - community-health-center
-  address:
-    street: 4270 US Route 60
-    city: Huntington
-    state: wv
-    zip: '25705'
+  cost: sliding-scale
+  address: {street: 4270 US Route 60, city: Huntington, state: wv, zip: '25705'}
   place: '5439460'
-  geo:
-    lat: 38.41205
-    lng: -82.36544
+  geo: {lat: 38.41205, lng: -82.36544}
   phone: 304-525-3334
-  external_ids:
-    bphc: BPS-H80-036002
+  external_ids: {bphc: BPS-H80-036002}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-seventh-avenue
   name: Valley Health Seventh Avenue
   categories:
   - community-health-center
-  address:
-    street: 703 7th Ave
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 703 7th Ave, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41562
-    lng: -82.44572
+  geo: {lat: 38.41562, lng: -82.44572}
   phone: 304-526-3387
-  external_ids:
-    bphc: BPS-H80-041423
+  external_ids: {bphc: BPS-H80-041423}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-southside
   name: VALLEY HEALTH - SOUTHSIDE
   categories:
   - community-health-center
-  address:
-    street: 723 9th Ave
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 723 9th Ave, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41282
-    lng: -82.44439
+  geo: {lat: 38.41282, lng: -82.44439}
   phone: 304-529-0645
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-004213
+  external_ids: {bphc: BPS-H80-004213}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-southside-elementary-huntington-mi
   name: VALLEY HEALTH - SOUTHSIDE ELEMENTARY/HUNTINGTON MIDDLE SCHOOL
   categories:
   - community-health-center
-  address:
-    street: 10th Ave & 3rd St
-    city: Huntington
-    state: wv
-    zip: '25701'
+  cost: sliding-scale
+  address: {street: 10th Ave & 3rd St, city: Huntington, state: wv, zip: '25701'}
   place: '5439460'
-  geo:
-    lat: 38.41056
-    lng: -82.45178
+  geo: {lat: 38.41056, lng: -82.45178}
   phone: 304-528-2070
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-009943
+  external_ids: {bphc: BPS-H80-009943}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-spring-valley-high-school
   name: VALLEY HEALTH - SPRING VALLEY HIGH SCHOOL
   categories:
   - community-health-center
-  address:
-    street: 1 Timberwolf Ln
-    city: Huntington
-    state: wv
-    zip: '25704'
+  cost: sliding-scale
+  address: {street: 1 Timberwolf Ln, city: Huntington, state: wv, zip: '25704'}
   place: '5439460'
-  geo:
-    lat: 38.37862
-    lng: -82.52741
+  geo: {lat: 38.37862, lng: -82.52741}
   phone: 304-429-1699
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-005268
+  external_ids: {bphc: BPS-H80-005268}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/valley-health-westmoreland
   name: VALLEY HEALTH - WESTMORELAND
   categories:
   - community-health-center
-  address:
-    street: 2908 Auburn Rd
-    city: Huntington
-    state: wv
-    zip: '25704'
+  cost: sliding-scale
+  address: {street: 2908 Auburn Rd, city: Huntington, state: wv, zip: '25704'}
   place: '5439460'
-  geo:
-    lat: 38.40645
-    lng: -82.50123
+  geo: {lat: 38.40645, lng: -82.50123}
   phone: 304-781-5800
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-005020
+  external_ids: {bphc: BPS-H80-005020}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/huntington/west-public-library
   name: West Public Library
   categories:

@@ -2,79 +2,61 @@
   name: Appalachian District Health Department Dental Center
   categories:
   - community-health-center
-  address:
-    street: 225 Court St
-    city: Jefferson
-    state: nc
-    zip: '28640'
+  cost: sliding-scale
+  address: {street: 225 Court St, city: Jefferson, state: nc, zip: '28640'}
   place: '3734440'
-  geo:
-    lat: 36.4221
-    lng: -81.47101
+  geo: {lat: 36.4221, lng: -81.47101}
   phone: 336-264-9449
   website: https://www.apphealthcare.com
-  external_ids:
-    bphc: BPS-H80-019195
+  external_ids: {bphc: BPS-H80-019195}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/jefferson/apphealthcare-ashe-health-center
   name: AppHealthCare -Ashe Health Center
   categories:
   - community-health-center
-  address:
-    street: 413 McConnell St
-    city: Jefferson
-    state: nc
-    zip: '28640'
+  cost: sliding-scale
+  address: {street: 413 McConnell St, city: Jefferson, state: nc, zip: '28640'}
   place: '3734440'
-  geo:
-    lat: 36.41708
-    lng: -81.47881
+  geo: {lat: 36.41708, lng: -81.47881}
   phone: 336-246-9449
   website: https://www.apphealthcare.com
-  external_ids:
-    bphc: BPS-H80-015746
+  external_ids: {bphc: BPS-H80-015746}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/jefferson/apphealthcare-portable-dental-clinic
   name: AppHealthCare Portable Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 225 Court St
-    city: Jefferson
-    state: nc
-    zip: '28640'
+  cost: sliding-scale
+  address: {street: 225 Court St, city: Jefferson, state: nc, zip: '28640'}
   place: '3734440'
-  geo:
-    lat: 36.4221
-    lng: -81.47101
+  geo: {lat: 36.4221, lng: -81.47101}
   phone: 336-246-9449
-  external_ids:
-    bphc: BPS-H80-041899
+  external_ids: {bphc: BPS-H80-041899}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/jefferson/ashe-county-department-of-social-services
   name: Ashe County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ashe County
-  address: {street: 150 Government Circle Suite 1400, city: Jefferson, state: nc, zip: '28640'}
+  address:
+    street: 150 Government Circle Suite 1400
+    city: Jefferson
+    state: nc
+    zip: '28640'
   place: '3734440'
   phone: 336-846-5719
   website: https://www.ashecountygov.com/departments/social-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/jefferson/ashe-county-head-start-sizemore-center
   name: Ashe County Head Start Sizemore Center
   categories:
@@ -110,6 +92,16 @@
     lng: -81.47751
   phone: 336-246-4542
   website: https://www.daymarkrecovery.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

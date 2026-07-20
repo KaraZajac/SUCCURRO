@@ -13,6 +13,9 @@
     lng: -93.50748
   phone: 651-769-6500
   website: https://www.bhsimn.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -33,6 +36,10 @@
     lng: -93.52489
   phone: 651-734-9633
   website: https://www.havensmn.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -54,6 +61,10 @@
     lng: -93.50895
   phone: 952-448-6557
   website: https://www.northstarregional.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -75,6 +86,10 @@
     lng: -93.55691
   phone: 952-208-1109
   website: https://www.northstarregional.com
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,24 +99,16 @@
   name: ODHC Shakopee
   categories:
   - community-health-center
-  address:
-    street: 1617 Weston Court, Suite 200
-    city: Shakopee
-    state: mn
-    zip: '55379'
+  cost: sliding-scale
+  address: {street: '1617 Weston Court, Suite 200', city: Shakopee, state: mn, zip: '55379'}
   place: '2759350'
-  geo:
-    lat: 44.7757
-    lng: -93.50687
+  geo: {lat: 44.7757, lng: -93.50687}
   phone: 507-388-2120
   website: https://www.odhc.org
-  external_ids:
-    bphc: BPS-H80-041447
+  external_ids: {bphc: BPS-H80-041447}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/shakopee/pearson-early-learning-center
   name: Pearson Early Learning Center
   categories:
@@ -129,14 +136,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Carver, Scott Counties
-  address: {street: 738 1st Ave East, city: Shakopee, state: mn, zip: '55379'}
+  address:
+    street: 738 1st Ave East
+    city: Shakopee
+    state: mn
+    zip: '55379'
   place: '2759350'
   phone: 952-496-2125
   email: eap-info@capagency.org
   website: https://capagency.org/housing-services/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mn/shakopee/scott-county-community-development-agency
   name: Scott County Community Development Agency
   categories:
@@ -192,6 +205,17 @@
     lng: -93.54058
   phone: 612-629-7109
   website: https://www.va.gov/minneapolis-health-care/locations/shakopee-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

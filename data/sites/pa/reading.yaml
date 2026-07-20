@@ -87,112 +87,72 @@
   name: Berks Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 838 Penn St
-    city: Reading
-    state: pa
-    zip: '19602'
+  cost: sliding-scale
+  address: {street: 838 Penn St, city: Reading, state: pa, zip: '19602'}
   place: '4263624'
-  geo:
-    lat: 40.33487
-    lng: -75.92108
+  geo: {lat: 40.33487, lng: -75.92108}
   phone: 610-988-4838
   website: https://www.berkschc.org
-  external_ids:
-    bphc: BPS-H80-011998
+  external_ids: {bphc: BPS-H80-011998}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/berks-community-health-center-administrative
   name: Berks Community Health Center Administrative
   categories:
   - community-health-center
-  address:
-    street: 645 Penn St
-    city: Reading
-    state: pa
-    zip: '19601'
+  cost: sliding-scale
+  address: {street: 645 Penn St, city: Reading, state: pa, zip: '19601'}
   place: '4263624'
-  geo:
-    lat: 40.33556
-    lng: -75.92455
+  geo: {lat: 40.33556, lng: -75.92455}
   phone: 484-772-4091
   website: https://www.berkschc.net
-  external_ids:
-    bphc: BPS-H80-019657
+  external_ids: {bphc: BPS-H80-019657}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/berks-community-health-center-at-oakbrook
   name: Berks Community Health Center at Oakbrook
   categories:
   - community-health-center
-  address:
-    street: 1040 Liggett Ave
-    city: Reading
-    state: pa
-    zip: '19611'
+  cost: sliding-scale
+  address: {street: 1040 Liggett Ave, city: Reading, state: pa, zip: '19611'}
   place: '4263624'
-  geo:
-    lat: 40.31831
-    lng: -75.94559
+  geo: {lat: 40.31831, lng: -75.94559}
   phone: 610-988-4838
   website: https://www.berkschc.org
-  external_ids:
-    bphc: BPS-H80-015028
+  external_ids: {bphc: BPS-H80-015028}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/berks-community-health-center-at-rockland
   name: Berks Community Health Center at Rockland
   categories:
   - community-health-center
-  address:
-    street: 1110 Rockland St
-    city: Reading
-    state: pa
-    zip: '19604'
+  cost: sliding-scale
+  address: {street: 1110 Rockland St, city: Reading, state: pa, zip: '19604'}
   place: '4263624'
-  geo:
-    lat: 40.3643
-    lng: -75.91468
+  geo: {lat: 40.3643, lng: -75.91468}
   phone: 610-988-4838
   website: https://www.berkschc.net
-  external_ids:
-    bphc: BPS-H80-024665
+  external_ids: {bphc: BPS-H80-024665}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/berks-community-health-center-mobile-unit
   name: Berks Community Health Center - Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 1110 Rockland St
-    city: Reading
-    state: pa
-    zip: '19604'
+  cost: sliding-scale
+  address: {street: 1110 Rockland St, city: Reading, state: pa, zip: '19604'}
   place: '4263624'
-  geo:
-    lat: 40.3643
-    lng: -75.91468
+  geo: {lat: 40.3643, lng: -75.91468}
   phone: 610-988-4838
   website: https://www.berkschc.net
-  external_ids:
-    bphc: BPS-H80-035086
+  external_ids: {bphc: BPS-H80-035086}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/berks-counseling-center
   name: Berks Counseling Center
   categories:
@@ -209,6 +169,22 @@
     lng: -75.92446
   phone: 610-373-4281
   website: https://www.berkscounselingcenter.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -219,12 +195,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Berks County
-  address: {street: 'Reading State Office Building, 625 Cherry Street', city: Reading, state: pa, zip: 19602-1188}
+  address:
+    street: Reading State Office Building, 625 Cherry Street
+    city: Reading
+    state: pa
+    zip: 19602-1188
   place: '4263624'
   phone: 610-736-4228
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/reading/c-e-cole-intrmd-school
   name: C E Cole Intrmd School
   categories:
@@ -262,6 +244,15 @@
     lng: -75.95878
   phone: 484-345-4670
   website: https://www.caron.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -305,6 +296,9 @@
     lng: -75.95409
   phone: 610-376-8558
   website: https://www.cfss-pa.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -326,6 +320,12 @@
     lng: -75.93355
   phone: 610-478-8266
   website: https://www.buildingkidslives.org
+  services:
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -347,6 +347,11 @@
     lng: -75.92066
   phone: 610-478-8266
   website: https://www.buildingkidslives.org
+  services:
+  - Partial hospitalization/day treatment
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -412,6 +417,22 @@
     lng: -75.92841
   phone: 610-372-5645 x302
   website: https://www.ccgtherapy.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -433,6 +454,10 @@
     lng: -75.96307
   phone: 610-541-2309
   website: https://www.concern4kids.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -473,6 +498,14 @@
     lng: -75.97634
   phone: 267-669-0300
   website: https://www.ethostreatment.com/locations/wyomissing/
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with traumatic brain injury (TBI)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -493,6 +526,12 @@
     lng: -75.97539
   phone: 610-374-4963
   website: https://www.familyguidancecenter.com
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -557,6 +596,12 @@
     lng: -75.92546
   phone: 610-406-4340
   website: https://www.havenreading.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -577,6 +622,9 @@
     lng: -75.96184
   phone: 610-947-1987
   website: https://www.chimes.org/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -666,23 +714,15 @@
   name: Keystone Agricultural Worker Program - Berks Co.
   categories:
   - community-health-center
-  address:
-    street: 1981 State Hill Rd
-    city: Reading
-    state: pa
-    zip: '19610'
+  cost: sliding-scale
+  address: {street: 1981 State Hill Rd, city: Reading, state: pa, zip: '19610'}
   place: '4263624'
-  geo:
-    lat: 40.33879
-    lng: -75.97537
+  geo: {lat: 40.33879, lng: -75.97537}
   phone: 610-372-5001
-  external_ids:
-    bphc: BPS-H80-034066
+  external_ids: {bphc: BPS-H80-034066}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/reading/lebanon-vamc-berks-va-outpatient-clinic
   name: Lebanon VAMC Berks VA Outpatient Clinic
   categories:
@@ -699,6 +739,22 @@
     lng: -75.9892
   phone: 610-208-4717
   website: https://www.va.gov/lebanon-health-care/locations/berks-county-va-clinic/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -716,6 +772,11 @@
   place: '4263624'
   phone: 484-345-5765
   website: https://www.lgbtcenterofreading.com/
+  services:
+  - Outpatient
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -871,6 +932,15 @@
     lng: -75.95868
   phone: 610-750-6130 x101
   website: https://www.ndts.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -999,6 +1069,17 @@
     lng: -75.97634
   phone: 610-750-6015
   website: https://www.peaceandharmonyhouse.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1020,6 +1101,17 @@
     lng: -75.92724
   phone: 610-750-6015
   website: https://peaceandharmonyhouse.com/
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1250,6 +1342,11 @@
     lng: -75.94298
   phone: 610-777-7691 x151
   website: https://www.trsinc.org
+  services:
+  - Partial hospitalization/day treatment
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1271,6 +1368,22 @@
     lng: -75.97244
   phone: 484-659-2332
   website: https://www.towerbehavioralhealth.com/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

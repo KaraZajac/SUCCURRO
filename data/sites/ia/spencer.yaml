@@ -14,6 +14,9 @@
     lng: -95.14649
   phone: 712-580-4320
   website: https://www.cathchar.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,24 +26,16 @@
   name: Community Health Center of Spencer
   categories:
   - community-health-center
-  address:
-    street: 223 W 7th St
-    city: Spencer
-    state: ia
-    zip: '51301'
+  cost: sliding-scale
+  address: {street: 223 W 7th St, city: Spencer, state: ia, zip: '51301'}
   place: '1974280'
-  geo:
-    lat: 43.14431
-    lng: -95.14889
+  geo: {lat: 43.14431, lng: -95.14889}
   phone: 515-576-6500
   website: https://www.chcfd.com
-  external_ids:
-    bphc: BPS-H80-039614
+  external_ids: {bphc: BPS-H80-039614}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/spencer/fairview-park-elementary-school
   name: Fairview Park Elementary School
   categories:
@@ -79,6 +74,20 @@
     lng: -95.17793
   phone: 712-580-3030
   website: https://www.familyaccesscenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -136,6 +145,16 @@
   place: '1974280'
   phone: 712-377-3159
   website: https://www.rosecrance.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -157,6 +176,22 @@
     lng: -95.14203
   phone: 712-262-2922
   website: https://www.seasonscenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -244,6 +279,11 @@
     lng: -95.14337
   phone: 712-264-6228 x6230
   website: https://www.spencerhospital.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -264,6 +304,10 @@
     lng: -95.14335
   phone: 712-264-8473 x8473
   website: https://www.spencerhospital.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -274,10 +318,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clay County
-  address: {street: 2512 Hwy Blvd., city: Spencer, state: ia, zip: '51301'}
+  address:
+    street: 2512 Hwy Blvd.
+    city: Spencer
+    state: ia
+    zip: '51301'
   place: '1974280'
   phone: 712-262-7409
   website: http://www.udmo.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

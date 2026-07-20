@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Calhoun, Randolph, Talladega Counties
-  address: {street: 136 North Court St., city: Talladega, state: al, zip: '35160'}
+  address:
+    street: 136 North Court St.
+    city: Talladega
+    state: al
+    zip: '35160'
   place: 0174592
   phone: 256-645-4999 ext 1
   website: https://www.communityactiontcrcc.com/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/talladega/curry-court-rec-center
   name: Curry Court Rec Center
   categories:
@@ -130,6 +136,12 @@
     lng: -86.14658
   phone: 256-362-3300
   website: https://newbeginningsrecoverycenter.com
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -224,24 +236,16 @@
   name: TALLADEGA QUALITY HEALTH CARE
   categories:
   - community-health-center
-  address:
-    street: 110 Spring St N
-    city: Talladega
-    state: al
-    zip: '35160'
+  cost: sliding-scale
+  address: {street: 110 Spring St N, city: Talladega, state: al, zip: '35160'}
   place: 0174592
-  geo:
-    lat: 33.43572
-    lng: -86.10543
+  geo: {lat: 33.43572, lng: -86.10543}
   phone: 256-315-1697
   website: https://www.qolhs.org
-  external_ids:
-    bphc: BPS-H80-004074
+  external_ids: {bphc: BPS-H80-004074}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/talladega/westgate-community-center
   name: Westgate Community Center
   categories:

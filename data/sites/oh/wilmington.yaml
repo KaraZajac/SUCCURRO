@@ -14,6 +14,19 @@
     lng: -83.8212
   phone: 937-382-3949
   website: https://
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,13 +37,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clinton County
-  address: {street: 789 N. Nelson Ave. (P. O. Box 32), city: Wilmington, state: oh, zip: '45177'}
+  address:
+    street: 789 N. Nelson Ave. (P. O. Box 32)
+    city: Wilmington
+    state: oh
+    zip: '45177'
   place: '3985792'
   phone: 937-382-8365
   website: https://clintoncap.org/heating-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/wilmington/clinton-county-early-learning-center
   name: Clinton County Early Learning Center
   categories:
@@ -157,24 +176,16 @@
   name: HealthSource Wilmington
   categories:
   - community-health-center
-  address:
-    street: 140 W Main St
-    city: Wilmington
-    state: oh
-    zip: '45177'
+  cost: sliding-scale
+  address: {street: 140 W Main St, city: Wilmington, state: oh, zip: '45177'}
   place: '3985792'
-  geo:
-    lat: 39.44537
-    lng: -83.83109
+  geo: {lat: 39.44537, lng: -83.83109}
   phone: 937-481-2930
   website: https://www.healthsourceofohio.com
-  external_ids:
-    bphc: BPS-H80-012998
+  external_ids: {bphc: BPS-H80-012998}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/wilmington/hybrid-rodger-o-borror-middle-school
   name: Hybrid Rodger O. Borror Middle School
   categories:
@@ -213,6 +224,13 @@
     lng: -83.82822
   phone: 937-481-5645
   website: https://www.tpcwellness.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -234,6 +252,12 @@
     lng: -83.82854
   phone: 937-764-1134
   website: https://www.therecoverycouncil.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

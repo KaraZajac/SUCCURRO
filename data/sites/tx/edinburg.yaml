@@ -311,13 +311,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hidalgo County
-  address: {street: 2524 N. Closner, city: Edinburg, state: tx, zip: '78540'}
+  address:
+    street: 2524 N. Closner
+    city: Edinburg
+    state: tx
+    zip: '78540'
   place: '4822660'
   phone: 956-383-6240
   website: https://hidalgocsa.org/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/edinburg/idea-edinburg-academy
   name: Idea Edinburg Academy.
   categories:
@@ -569,6 +575,12 @@
     lng: -98.1674
   phone: 956-777-0483
   website: https://www.noveltybehavioralhealth.com
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -578,24 +590,16 @@
   name: NUESTRA CLINICA DEL VALLE - SAN CARLOS
   categories:
   - community-health-center
-  address:
-    street: 300 N 86th St
-    city: Edinburg
-    state: tx
-    zip: '78542'
+  cost: sliding-scale
+  address: {street: 300 N 86th St, city: Edinburg, state: tx, zip: '78542'}
   place: '4822660'
-  geo:
-    lat: 26.29654
-    lng: -98.06865
+  geo: {lat: 26.29654, lng: -98.06865}
   phone: 956-287-8850
   website: https://www.nuestraclinicadelvalle.org
-  external_ids:
-    bphc: BPS-H80-004841
+  external_ids: {bphc: BPS-H80-004841}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/edinburg/r-c-flores-mark-a-zapapta-elementary
   name: R C Flores-Mark A Zapapta Elementary
   categories:
@@ -675,6 +679,22 @@
     lng: -98.15204
   phone: 956-289-7000
   website: https://www.ttbh.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

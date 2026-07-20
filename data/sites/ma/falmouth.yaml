@@ -2,24 +2,16 @@
   name: 95 Spring Bars Rd
   categories:
   - community-health-center
-  address:
-    street: 95 Spring Bars Road
-    city: Falmouth
-    state: ma
-    zip: '02540'
+  cost: sliding-scale
+  address: {street: 95 Spring Bars Road, city: Falmouth, state: ma, zip: '02540'}
   place: '2523070'
-  geo:
-    lat: 41.55966
-    lng: -70.59327
+  geo: {lat: 41.55966, lng: -70.59327}
   phone: 508-771-7417
   website: https://duffyhealthcenter.org/
-  external_ids:
-    bphc: BPS-H80-038518
+  external_ids: {bphc: BPS-H80-038518}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/falmouth/christ-lutheran-church-sf-215-073
   name: Christ Lutheran Church (Sf-215-073)
   categories:
@@ -57,6 +49,10 @@
     lng: -70.62021
   phone: 774-255-1739
   website: https://www.cleanslatecenters.com/falmouth-massachusetts
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -66,68 +62,44 @@
   name: Community Health Center of Cape Cod - Falmouth
   categories:
   - community-health-center
-  address:
-    street: 210 Jones Rd
-    city: Falmouth
-    state: ma
-    zip: '02540'
+  cost: sliding-scale
+  address: {street: 210 Jones Rd, city: Falmouth, state: ma, zip: '02540'}
   place: '2523070'
-  geo:
-    lat: 41.56143
-    lng: -70.61148
+  geo: {lat: 41.56143, lng: -70.61148}
   phone: 508-540-2949
   website: https://chcofcapecod.org
-  external_ids:
-    bphc: BPS-H80-004371
+  external_ids: {bphc: BPS-H80-004371}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/falmouth/community-health-center-of-cape-cod-falmouth-hou
   name: Community Health Center of Cape Cod - Falmouth Housing Outreach
   categories:
   - community-health-center
-  address:
-    street: 115 Scranton Avenue
-    city: Falmouth
-    state: ma
-    zip: '02540'
+  cost: sliding-scale
+  address: {street: 115 Scranton Avenue, city: Falmouth, state: ma, zip: '02540'}
   place: '2523070'
-  geo:
-    lat: 41.5513
-    lng: -70.60464
+  geo: {lat: 41.5513, lng: -70.60464}
   phone: 508-477-7090
   website: https://www.chcofcapecod.org
-  external_ids:
-    bphc: BPS-H80-034802
+  external_ids: {bphc: BPS-H80-034802}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/falmouth/community-health-center-of-cape-cod-falmouth-pha
   name: Community Health Center of Cape Cod, Falmouth Pharmacy
   categories:
   - community-health-center
-  address:
-    street: 200 Jones Road
-    city: Falmouth
-    state: ma
-    zip: '02540'
+  cost: sliding-scale
+  address: {street: 200 Jones Road, city: Falmouth, state: ma, zip: '02540'}
   place: '2523070'
-  geo:
-    lat: 41.56137
-    lng: -70.61208
+  geo: {lat: 41.56137, lng: -70.61208}
   phone: 508-477-7090
   website: https://www.chcofcapecod.org
-  external_ids:
-    bphc: BPS-H80-034347
+  external_ids: {bphc: BPS-H80-034347}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/falmouth/falmouth-housing-authority
   name: Falmouth Housing Authority
   categories:
@@ -164,6 +136,16 @@
     lng: -70.62593
   phone: 508-548-7118
   website: https://www.gosnold.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -184,6 +166,16 @@
     lng: -70.63685
   phone: 508-540-6550
   website: https://www.gosnold.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient treatment
+  - Short-term residential
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -204,6 +196,14 @@
     lng: -70.62665
   phone: 508-540-6550
   website: https://www.gosnold.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -222,6 +222,22 @@
   place: '2523070'
   phone: 508-388-6212
   website: https://www.wewantrelief.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

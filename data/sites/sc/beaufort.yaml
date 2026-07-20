@@ -44,13 +44,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Beaufort County
-  address: {street: 60 Robert Smalls Parkway (Post Office Drawer 9), city: Beaufort, state: sc, zip: '29902'}
+  address:
+    street: 60 Robert Smalls Parkway (Post Office Drawer 9)
+    city: Beaufort
+    state: sc
+    zip: '29902'
   place: '4504690'
   phone: 843-255-7220
   email: beaufortjaspereoc@yahoo.com
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/beaufort/beaufort-memorial-hospital-mental-health-service
   name: Beaufort Memorial Hospital Mental Health Services
   categories:
@@ -67,6 +73,10 @@
     lng: -80.68783
   phone: 843-522-5200 x5269
   website: https://www.bmhsc.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -118,24 +128,16 @@
   name: BROAD RIVER ELEM SCHOOL HLTH CTR
   categories:
   - community-health-center
-  address:
-    street: 474 Broad River Blvd
-    city: Beaufort
-    state: sc
-    zip: '29906'
+  cost: sliding-scale
+  address: {street: 474 Broad River Blvd, city: Beaufort, state: sc, zip: '29906'}
   place: '4504690'
-  geo:
-    lat: 32.42138
-    lng: -80.75587
+  geo: {lat: 32.42138, lng: -80.75587}
   phone: 843-322-8320
   website: https://www.bjhchs.org
-  external_ids:
-    bphc: BPS-H80-005025
+  external_ids: {bphc: BPS-H80-005025}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/beaufort/broad-river-village-apartment
   name: Broad River Village Apartment
   categories:
@@ -175,6 +177,21 @@
     lng: -80.68796
   phone: 843-524-3378
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -409,24 +426,16 @@
   name: Port Royal OB/GYN
   categories:
   - community-health-center
-  address:
-    street: 1264 Ribaut Rd, Suite 200
-    city: Beaufort
-    state: sc
-    zip: '29902'
+  cost: sliding-scale
+  address: {street: '1264 Ribaut Rd, Suite 200', city: Beaufort, state: sc, zip: '29902'}
   place: '4504690'
-  geo:
-    lat: 32.40243
-    lng: -80.68523
+  geo: {lat: 32.40243, lng: -80.68523}
   phone: 843-322-1806
   website: https://www.bjhchs.org
-  external_ids:
-    bphc: BPS-H80-033411
+  external_ids: {bphc: BPS-H80-033411}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/beaufort/riverview-charter-school
   name: Riverview Charter School
   categories:

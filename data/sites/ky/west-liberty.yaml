@@ -88,98 +88,72 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Morgan County
-  address: {street: 151 University Drive, city: West Liberty, state: ky, zip: '41472'}
+  address:
+    street: 151 University Drive
+    city: West Liberty
+    state: ky
+    zip: '41472'
   place: '2181858'
   phone: 606-743-3133
   website: http://gatewaycaa.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/west-liberty/juniper-health-administration-4
   name: 'Juniper Health Administration #4'
   categories:
   - community-health-center
-  address:
-    street: 1217 W Main St
-    city: West Liberty
-    state: ky
-    zip: '41472'
+  cost: sliding-scale
+  address: {street: 1217 W Main St, city: West Liberty, state: ky, zip: '41472'}
   place: '2181858'
-  geo:
-    lat: 37.90233
-    lng: -83.28033
+  geo: {lat: 37.90233, lng: -83.28033}
   phone: 606-743-4808
   website: https://www.juniperhealth.org
-  external_ids:
-    bphc: BPS-H80-033382
+  external_ids: {bphc: BPS-H80-033382}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/west-liberty/juniper-health-morgan-county
   name: Juniper Health Morgan County
   categories:
   - community-health-center
-  address:
-    street: 1219 W Main St
-    city: West Liberty
-    state: ky
-    zip: '41472'
+  cost: sliding-scale
+  address: {street: 1219 W Main St, city: West Liberty, state: ky, zip: '41472'}
   place: '2181858'
-  geo:
-    lat: 37.91345
-    lng: -83.26406
+  geo: {lat: 37.91345, lng: -83.26406}
   phone: 606-743-4808
-  external_ids:
-    bphc: BPS-H80-033487
+  external_ids: {bphc: BPS-H80-033487}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/west-liberty/juniper-health-morgan-county-2
   name: Juniper Health Morgan County
   categories:
   - community-health-center
-  address:
-    street: 905 Main St
-    city: West Liberty
-    state: ky
-    zip: '41472'
+  cost: sliding-scale
+  address: {street: 905 Main St, city: West Liberty, state: ky, zip: '41472'}
   place: '2181858'
-  geo:
-    lat: 37.92693
-    lng: -83.25793
+  geo: {lat: 37.92693, lng: -83.25793}
   phone: 606-743-4808
-  external_ids:
-    bphc: BPS-H80-019437
+  external_ids: {bphc: BPS-H80-019437}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/west-liberty/juniper-health-morgan-county-dental
   name: Juniper Health Morgan County Dental
   categories:
   - community-health-center
-  address:
-    street: 672 Main St
-    city: West Liberty
-    state: ky
-    zip: '41472'
+  cost: sliding-scale
+  address: {street: 672 Main St, city: West Liberty, state: ky, zip: '41472'}
   place: '2181858'
-  geo:
-    lat: 37.92321
-    lng: -83.2591
+  geo: {lat: 37.92321, lng: -83.2591}
   phone: 606-743-3030
-  external_ids:
-    bphc: BPS-H80-024793
+  external_ids: {bphc: BPS-H80-024793}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/west-liberty/licking-riverview-trailer-park
   name: Licking Riverview Trailer Park
   categories:
@@ -322,6 +296,10 @@
     lng: -83.28595
   phone: 606-743-4184
   website: https://www.mtcomp.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -387,6 +365,13 @@
     lng: -83.25898
   phone: 606-743-3139 x4074
   website: https://www.pathways-ky.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

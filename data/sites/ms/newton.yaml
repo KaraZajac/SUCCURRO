@@ -41,23 +41,15 @@
   name: Newton Health Care
   categories:
   - community-health-center
-  address:
-    street: 9431 Eastside Drive Ext
-    city: Newton
-    state: ms
-    zip: '39345'
+  cost: sliding-scale
+  address: {street: 9431 Eastside Drive Ext, city: Newton, state: ms, zip: '39345'}
   place: '2851720'
-  geo:
-    lat: 32.35664
-    lng: -89.12916
+  geo: {lat: 32.35664, lng: -89.12916}
   phone: 601-635-3435
-  external_ids:
-    bphc: BPS-H80-017712
+  external_ids: {bphc: BPS-H80-017712}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/newton/newton-high-school
   name: Newton High School
   categories:
@@ -93,6 +85,11 @@
   place: '2851720'
   phone: 601-683-4300
   website: https://www.weemsmh.com
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

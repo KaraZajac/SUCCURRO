@@ -14,6 +14,16 @@
     lng: -82.80952
   phone: 352-374-5600
   website: https://www.mbhci.org
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,36 +33,34 @@
   name: Palms Medical Group - Trenton
   categories:
   - community-health-center
-  address:
-    street: 911 S Main St
-    city: Trenton
-    state: fl
-    zip: '32693'
+  cost: sliding-scale
+  address: {street: 911 S Main St, city: Trenton, state: fl, zip: '32693'}
   place: '1272350'
-  geo:
-    lat: 29.60757
-    lng: -82.81885
+  geo: {lat: 29.60757, lng: -82.81885}
   phone: 352-463-2374
   website: https://palmsmg.org
-  external_ids:
-    bphc: BPS-H80-007810
+  external_ids: {bphc: BPS-H80-007810}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/trenton/suwannee-river-economic-council-inc
   name: Suwannee River Economic Council Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Gilchrist County
-  address: {street: 1439 SW CR 307A, city: Trenton, state: fl, zip: '32693'}
+  address:
+    street: 1439 SW CR 307A
+    city: Trenton
+    state: fl
+    zip: '32693'
   place: '1272350'
   phone: 352-463-2940
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/trenton/trenton-elementary-school
   name: Trenton Elementary School
   categories:

@@ -2,35 +2,33 @@
   name: HealthPoint Redmond
   categories:
   - community-health-center
-  address:
-    street: 16255 NE 87th St APT 150
-    city: Redmond
-    state: wa
-    zip: '98052'
+  cost: sliding-scale
+  address: {street: 16255 NE 87th St APT 150, city: Redmond, state: wa, zip: '98052'}
   place: '5357535'
-  geo:
-    lat: 47.67972
-    lng: -122.1231
+  geo: {lat: 47.67972, lng: -122.1231}
   phone: 425-277-1311
-  external_ids:
-    bphc: BPS-H80-036996
+  external_ids: {bphc: BPS-H80-036996}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/redmond/hopelink
   name: Hopelink
   categories:
   - utility-assistance
   description: LIHEAP intake office serving King County
-  address: {street: 8990 154th Avenue Northest, city: Redmond, state: wa, zip: '98052'}
+  address:
+    street: 8990 154th Avenue Northest
+    city: Redmond
+    state: wa
+    zip: '98052'
   place: '5357535'
   phone: 425-658-2592
   website: https://www.hopelink.org/programs/energy/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/redmond/ikron-corporation-of-greater-seattle-redmond-off
   name: IKRON Corporation of Greater Seattle Redmond Office
   categories:
@@ -47,6 +45,13 @@
     lng: -122.12217
   phone: 425-968-5921
   website: https://www.seattle.ikron.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -108,6 +113,14 @@
     lng: -122.12007
   phone: 425-589-9900
   website: https://redmondtherapygroup.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -129,6 +142,12 @@
     lng: -122.12362
   phone: 206-901-2000
   website: https://www.sound.health
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -165,6 +184,16 @@
     lng: -122.13139
   phone: 425-747-4937
   website: https://www.youtheastsideservices.org
+  services:
+  - Outpatient
+  - Young adults
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

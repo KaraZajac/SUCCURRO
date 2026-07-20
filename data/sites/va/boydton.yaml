@@ -45,35 +45,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Mecklenburg County
-  address: {street: '911 Madison St., (P.O. Box 400)', city: Boydton, state: va, zip: '23917'}
+  address:
+    street: 911 Madison St., (P.O. Box 400)
+    city: Boydton
+    state: va
+    zip: '23917'
   place: '5109016'
   phone: 434-738-6138
   website: https://va-mecklenburgcounty.civicplus.com/206/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/boydton/paths-community-medical-center-boydton
   name: PATHS Community Medical Center - Boydton
   categories:
   - community-health-center
-  address:
-    street: 380 Washington St
-    city: Boydton
-    state: va
-    zip: '23917'
+  cost: sliding-scale
+  address: {street: 380 Washington St, city: Boydton, state: va, zip: '23917'}
   place: '5109016'
-  geo:
-    lat: 36.66671
-    lng: -78.38775
+  geo: {lat: 36.66671, lng: -78.38775}
   phone: 434-738-6420
   website: https://www.pathsinc.org
-  external_ids:
-    bphc: BPS-H80-012566
+  external_ids: {bphc: BPS-H80-012566}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/boydton/southside-behavioral-health-children-and-family
   name: Southside Behavioral Health Children and Family Mecklenburg
   categories:
@@ -90,6 +88,12 @@
     lng: -78.38739
   phone: 434-738-0406
   website: https://www.southsidebh.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

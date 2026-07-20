@@ -68,6 +68,9 @@
     lng: -96.4894
   phone: 402-721-0951
   website: https://goodneighborcommunityhealthcenter.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,23 +80,15 @@
   name: Good Neighbor Fremont Clinic Permanent Site
   categories:
   - community-health-center
-  address:
-    street: 2740 N Clarkson St
-    city: Fremont
-    state: ne
-    zip: '68025'
+  cost: sliding-scale
+  address: {street: 2740 N Clarkson St, city: Fremont, state: ne, zip: '68025'}
   place: '3117670'
-  geo:
-    lat: 41.45589
-    lng: -96.4894
+  geo: {lat: 41.45589, lng: -96.4894}
   phone: 402-721-0951
-  external_ids:
-    bphc: BPS-H80-019429
+  external_ids: {bphc: BPS-H80-019429}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/fremont/grant-elementary-school
   name: Grant Elementary School
   categories:
@@ -132,6 +127,13 @@
     lng: -96.48019
   phone: 402-441-7940
   website: https://www.onelfs.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -152,6 +154,15 @@
     lng: -96.4915
   phone: 402-941-7850
   website: https://www.methodisthealthcare.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -162,12 +173,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Burt, Butler, Cuming, Dodge Counties
-  address: {street: 1959 E. Military Ave., city: Fremont, state: ne, zip: '68061'}
+  address:
+    street: 1959 E. Military Ave.
+    city: Fremont
+    state: ne
+    zip: '68061'
   place: '3117670'
   phone: 800-383-4275
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/fremont/salvation-army-fremont
   name: Salvation Army Fremont
   categories:

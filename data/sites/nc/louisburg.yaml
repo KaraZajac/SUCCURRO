@@ -2,23 +2,15 @@
   name: Advance Community Health-Franklin County CarePlex
   categories:
   - community-health-center
-  address:
-    street: 205 Sandalwood Ave
-    city: Louisburg
-    state: nc
-    zip: '27549'
+  cost: sliding-scale
+  address: {street: 205 Sandalwood Ave, city: Louisburg, state: nc, zip: '27549'}
   place: '3739360'
-  geo:
-    lat: 36.09682
-    lng: -78.29406
+  geo: {lat: 36.09682, lng: -78.29406}
   phone: 919-833-3111
-  external_ids:
-    bphc: BPS-H80-038817
+  external_ids: {bphc: BPS-H80-038817}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/louisburg/boys-and-girls-club
   name: Boys And Girls Club
   categories:
@@ -156,13 +148,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Franklin County
-  address: {street: 107 Industrial Dr. (P. O. Box 669), city: Louisburg, state: nc, zip: '27549'}
+  address:
+    street: 107 Industrial Dr. (P. O. Box 669)
+    city: Louisburg
+    state: nc
+    zip: '27549'
   place: '3739360'
   phone: 919-496-5721
   website: http://www.fcdss.org/index.htm
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/louisburg/louisburg-elementary
   name: Louisburg Elementary
   categories:
@@ -242,6 +240,22 @@
     lng: -78.30066
   phone: 919-496-7781 x102
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

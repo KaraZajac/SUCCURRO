@@ -2,24 +2,16 @@
   name: Centerstone Health Services - Connersville
   categories:
   - community-health-center
-  address:
-    street: 390 Erie Ave
-    city: Connersville
-    state: in
-    zip: '47331'
+  cost: sliding-scale
+  address: {street: 390 Erie Ave, city: Connersville, state: in, zip: '47331'}
   place: '1814932'
-  geo:
-    lat: 39.67965
-    lng: -85.12654
+  geo: {lat: 39.67965, lng: -85.12654}
   phone: 765-377-1205
   website: https://www.centerstonehealthservices.org
-  external_ids:
-    bphc: BPS-LAL-031791
+  external_ids: {bphc: BPS-LAL-031791}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/connersville/centerstone-of-indiana-inc-centerstone-fayette-c
   name: Centerstone of Indiana Inc Centerstone Fayette County
   categories:
@@ -36,6 +28,12 @@
     lng: -85.12654
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  - Veterans
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,45 +43,29 @@
   name: Fayette County Medical Center
   categories:
   - community-health-center
-  address:
-    street: 2025 Virginia Ave
-    city: Connersville
-    state: in
-    zip: '47331'
+  cost: sliding-scale
+  address: {street: 2025 Virginia Ave, city: Connersville, state: in, zip: '47331'}
   place: '1814932'
-  geo:
-    lat: 39.65799
-    lng: -85.13225
+  geo: {lat: 39.65799, lng: -85.13225}
   phone: 765-827-8064
   website: https://www.neighborhoodhc.org
-  external_ids:
-    bphc: BPS-LAL-034238
+  external_ids: {bphc: BPS-LAL-034238}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/connersville/grogan-family-medicine-centerstone-health-servic
   name: Grogan Family Medicine - Centerstone Health Services
   categories:
   - community-health-center
-  address:
-    street: 1550 E State Road 44
-    city: Connersville
-    state: in
-    zip: '47331'
+  cost: sliding-scale
+  address: {street: 1550 E State Road 44, city: Connersville, state: in, zip: '47331'}
   place: '1814932'
-  geo:
-    lat: 39.63908
-    lng: -85.10926
+  geo: {lat: 39.63908, lng: -85.10926}
   phone: 765-222-1400
-  external_ids:
-    bphc: BPS-LAL-038070
+  external_ids: {bphc: BPS-LAL-038070}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/connersville/groups-recover-together
   name: Groups Recover Together
   categories:
@@ -99,6 +81,11 @@
     lng: -85.13795
   phone: 888-858-1723
   website: https://www.joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -109,14 +96,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fayette County
-  address: {street: 420 W. 24th St. Box 1140, city: Connersville, state: in, zip: '47331'}
+  address:
+    street: 420 W. 24th St. Box 1140
+    city: Connersville
+    state: in
+    zip: '47331'
   place: '1814932'
   phone: 765-692-0236
   email: icap@icapcaa.org
   website: https://www.icapcaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/connersville/maplewood-head-start
   name: Maplewood Head Start
   categories:
@@ -140,23 +133,15 @@
   name: Meridian Health Services Corp
   categories:
   - community-health-center
-  address:
-    street: 707 W 3rd St
-    city: Connersville
-    state: in
-    zip: '47331'
+  cost: sliding-scale
+  address: {street: 707 W 3rd St, city: Connersville, state: in, zip: '47331'}
   place: '1814932'
-  geo:
-    lat: 39.63948
-    lng: -85.15221
+  geo: {lat: 39.63948, lng: -85.15221}
   phone: 765-827-1164
-  external_ids:
-    bphc: BPS-H80-024663
+  external_ids: {bphc: BPS-H80-024663}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/connersville/nc-everton-elementary-school
   name: Nc Everton Elementary School
   categories:
@@ -217,6 +202,20 @@
     lng: -85.12859
   phone: 765-222-1079
   website: https://www.reidhealth.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

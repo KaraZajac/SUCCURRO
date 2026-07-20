@@ -14,6 +14,10 @@
     lng: -105.22812
   phone: 844-654-3700
   website: https://www.acquarecovery.com/locations-we-serve/boulder/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +39,14 @@
     lng: -105.28193
   phone: 303-578-2391
   website: https://www.AntelopeRecovery.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,14 +57,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Boulder County
-  address: {street: 3460 North Broadway, city: Boulder, state: co, zip: '80304'}
+  address:
+    street: 3460 North Broadway
+    city: Boulder
+    state: co
+    zip: '80304'
   place: 0807850
   phone: 303-441-1000
   email: hhscallcenter@bouldercounty.org
   website: https://www.bouldercounty.org/departments/housing-and-human-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/boulder/boulder-county-housing-authority
   name: Boulder County Housing Authority
   categories:
@@ -106,6 +124,22 @@
   place: 0807850
   phone: 720-739-6500 x1
   website: https://www.boulderintegratedhealth.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -115,24 +149,16 @@
   name: Boulder Shelter For The Homeless
   categories:
   - community-health-center
-  address:
-    street: 4869 Broadway St
-    city: Boulder
-    state: co
-    zip: '80304'
+  cost: sliding-scale
+  address: {street: 4869 Broadway St, city: Boulder, state: co, zip: '80304'}
   place: 0807850
-  geo:
-    lat: 40.06262
-    lng: -105.28277
+  geo: {lat: 40.06262, lng: -105.28277}
   phone: 303-442-4646
   website: https://www.clinica.org
-  external_ids:
-    bphc: BPS-H80-008061
+  external_ids: {bphc: BPS-H80-008061}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/boulder-vet-center
   name: Boulder Vet Center
   categories:
@@ -193,6 +219,14 @@
     lng: -105.28394
   phone: 303-443-8500
   website: https://www.mhpcolorado.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -202,110 +236,70 @@
   name: Clinica Family Health - MHP Alpine
   categories:
   - community-health-center
-  address:
-    street: 1000 Alpine Ave
-    city: Boulder
-    state: co
-    zip: '80304'
+  cost: sliding-scale
+  address: {street: 1000 Alpine Ave, city: Boulder, state: co, zip: '80304'}
   place: 0807850
-  geo:
-    lat: 40.02522
-    lng: -105.28425
+  geo: {lat: 40.02522, lng: -105.28425}
   phone: 303-443-8500
   website: https://clinica.org
-  external_ids:
-    bphc: BPS-H80-014347
+  external_ids: {bphc: BPS-H80-014347}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/clinica-family-health-people-s
   name: Clinica Family Health - People's
   categories:
   - community-health-center
-  address:
-    street: 2525 13th St
-    city: Boulder
-    state: co
-    zip: '80304'
+  cost: sliding-scale
+  address: {street: 2525 13th St, city: Boulder, state: co, zip: '80304'}
   place: 0807850
-  geo:
-    lat: 40.02396
-    lng: -105.28104
+  geo: {lat: 40.02396, lng: -105.28104}
   phone: 303-449-6050
   website: https://clinica.org
-  external_ids:
-    bphc: BPS-H80-008441
+  external_ids: {bphc: BPS-H80-008441}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/clinica-family-health-wellness-halcyon-school
   name: Clinica Family Health & Wellness -- Halcyon School
   categories:
   - community-health-center
-  address:
-    street: 3100 Bucknell Ct
-    city: Boulder
-    state: co
-    zip: '80305'
+  cost: sliding-scale
+  address: {street: 3100 Bucknell Ct, city: Boulder, state: co, zip: '80305'}
   place: 0807850
-  geo:
-    lat: 39.99204
-    lng: -105.25666
+  geo: {lat: 39.99204, lng: -105.25666}
   phone: 303-650-4460
-  external_ids:
-    bphc: BPS-H80-039437
+  external_ids: {bphc: BPS-H80-039437}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/clinica-family-health-wellness-norton-center-for
   name: Clinica Family Health & Wellness -- Norton Center for Behavioral Medicine
   categories:
   - community-health-center
-  address:
-    street: 975 North St
-    city: Boulder
-    state: co
-    zip: '80304'
+  cost: sliding-scale
+  address: {street: 975 North St, city: Boulder, state: co, zip: '80304'}
   place: 0807850
-  geo:
-    lat: 40.02472
-    lng: -105.28414
+  geo: {lat: 40.02472, lng: -105.28414}
   phone: 303-650-4460
-  external_ids:
-    bphc: BPS-H80-039441
+  external_ids: {bphc: BPS-H80-039441}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/columbine-elementary-school
   name: Columbine Elementary School
   categories:
   - community-health-center
-  address:
-    street: 3130 Repplier St
-    city: Boulder
-    state: co
-    zip: '80304'
+  cost: sliding-scale
+  address: {street: 3130 Repplier St, city: Boulder, state: co, zip: '80304'}
   place: 0807850
-  geo:
-    lat: 40.03197
-    lng: -105.27069
+  geo: {lat: 40.03197, lng: -105.27069}
   phone: 303-650-4460
   website: https://clinica.org
-  external_ids:
-    bphc: BPS-H80-034977
+  external_ids: {bphc: BPS-H80-034977}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/denver-recovery-group-boulder
   name: Denver Recovery Group Boulder
   categories:
@@ -321,6 +315,11 @@
     lng: -105.2278
   phone: 720-536-5571
   website: https://www.denverrecoverygroup.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -383,6 +382,22 @@
     lng: -105.26272
   phone: 888-509-3153
   website: https://www.theredpointcenter.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -404,6 +419,12 @@
     lng: -105.32514
   phone: 720-907-0742
   website: https://www.sandstonecare.com/locations/residential-treatment-center-colorado/
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -413,24 +434,16 @@
   name: University Hill Elementary School
   categories:
   - community-health-center
-  address:
-    street: 956 16th St
-    city: Boulder
-    state: co
-    zip: '80302'
+  cost: sliding-scale
+  address: {street: 956 16th St, city: Boulder, state: co, zip: '80302'}
   place: 0807850
-  geo:
-    lat: 40.00437
-    lng: -105.2725
+  geo: {lat: 40.00437, lng: -105.2725}
   phone: 303-650-4460
   website: https://www.clinica.org
-  external_ids:
-    bphc: BPS-H80-035043
+  external_ids: {bphc: BPS-H80-035043}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/boulder/woodlands
   name: Woodlands
   categories:

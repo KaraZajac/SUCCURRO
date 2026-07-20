@@ -108,44 +108,28 @@
   name: HopeHealth Kingstree
   categories:
   - community-health-center
-  address:
-    street: 520 Thurgood Marshall Hwy
-    city: Kingstree
-    state: sc
-    zip: '29556'
+  cost: sliding-scale
+  address: {street: 520 Thurgood Marshall Hwy, city: Kingstree, state: sc, zip: '29556'}
   place: '4538590'
-  geo:
-    lat: 33.65951
-    lng: -79.81653
+  geo: {lat: 33.65951, lng: -79.81653}
   phone: 843-355-5628
-  external_ids:
-    bphc: BPS-H80-012459
+  external_ids: {bphc: BPS-H80-012459}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/kingstree/hopehealth-williamsburg
   name: HopeHealth Williamsburg
   categories:
   - community-health-center
-  address:
-    street: 411 Thurgood Marshall Hwy
-    city: Kingstree
-    state: sc
-    zip: '29556'
+  cost: sliding-scale
+  address: {street: 411 Thurgood Marshall Hwy, city: Kingstree, state: sc, zip: '29556'}
   place: '4538590'
-  geo:
-    lat: 33.66259
-    lng: -79.81885
+  geo: {lat: 33.66259, lng: -79.81885}
   phone: 843-355-3300
-  external_ids:
-    bphc: BPS-H80-038841
+  external_ids: {bphc: BPS-H80-038841}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/kingstree/housing-authority-of-kingstree
   name: Housing Authority Of Kingstree
   categories:
@@ -451,6 +435,19 @@
     lng: -79.82018
   phone: 843-354-5453
   website: https://www.scdmh.org/waccamaw-center-for-mental-health
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -461,10 +458,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Williamsburg County
-  address: {street: '128 E. Mill St., Suite B', city: Kingstree, state: sc, zip: '29556'}
+  address:
+    street: 128 E. Mill St., Suite B
+    city: Kingstree
+    state: sc
+    zip: '29556'
   place: '4538590'
   phone: 843-355-9922
   website: http://www.weoc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

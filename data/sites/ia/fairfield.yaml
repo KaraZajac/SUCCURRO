@@ -205,108 +205,68 @@
   name: RHCHC Fairfield High School
   categories:
   - community-health-center
-  address:
-    street: 605 E Broadway Ave
-    city: Fairfield
-    state: ia
-    zip: '52556'
+  cost: sliding-scale
+  address: {street: 605 E Broadway Ave, city: Fairfield, state: ia, zip: '52556'}
   place: '1926445'
-  geo:
-    lat: 41.00835
-    lng: -91.95537
+  geo: {lat: 41.00835, lng: -91.95537}
   phone: 641-472-2059
-  external_ids:
-    bphc: BPS-H80-028066
+  external_ids: {bphc: BPS-H80-028066}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fairfield/rhchc-fairfield-middle-school
   name: RHCHC Fairfield Middle School
   categories:
   - community-health-center
-  address:
-    street: 404 W Fillmore Ave
-    city: Fairfield
-    state: ia
-    zip: '52556'
+  cost: sliding-scale
+  address: {street: 404 W Fillmore Ave, city: Fairfield, state: ia, zip: '52556'}
   place: '1926445'
-  geo:
-    lat: 40.99427
-    lng: -91.96977
+  geo: {lat: 40.99427, lng: -91.96977}
   phone: 641-472-5019
-  external_ids:
-    bphc: BPS-H80-028063
+  external_ids: {bphc: BPS-H80-028063}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fairfield/rhchc-jefferson-county-clinic
   name: RHCHC - Jefferson County Clinic
   categories:
   - community-health-center
-  address:
-    street: 2000 S Main St
-    city: Fairfield
-    state: ia
-    zip: '52556'
+  cost: sliding-scale
+  address: {street: 2000 S Main St, city: Fairfield, state: ia, zip: '52556'}
   place: '1926445'
-  geo:
-    lat: 40.98646
-    lng: -91.96555
+  geo: {lat: 40.98646, lng: -91.96555}
   phone: 641-954-9971
   website: https://www.riverhillshealth.org
-  external_ids:
-    bphc: BPS-H80-032526
+  external_ids: {bphc: BPS-H80-032526}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fairfield/rhchc-pence-elementary
   name: RHCHC Pence Elementary
   categories:
   - community-health-center
-  address:
-    street: 1000 S 6th St
-    city: Fairfield
-    state: ia
-    zip: '52556'
+  cost: sliding-scale
+  address: {street: 1000 S 6th St, city: Fairfield, state: ia, zip: '52556'}
   place: '1926445'
-  geo:
-    lat: 40.99705
-    lng: -91.97094
+  geo: {lat: 40.99705, lng: -91.97094}
   phone: 641-472-2957
-  external_ids:
-    bphc: BPS-H80-028061
+  external_ids: {bphc: BPS-H80-028061}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fairfield/rhchc-washington-elementary
   name: RHCHC Washington Elementary
   categories:
   - community-health-center
-  address:
-    street: 406 E Madison Ave
-    city: Fairfield
-    state: ia
-    zip: '52556'
+  cost: sliding-scale
+  address: {street: 406 E Madison Ave, city: Fairfield, state: ia, zip: '52556'}
   place: '1926445'
-  geo:
-    lat: 41.00241
-    lng: -91.9574
+  geo: {lat: 41.00241, lng: -91.9574}
   phone: 563-723-6150
-  external_ids:
-    bphc: BPS-H80-028064
+  external_ids: {bphc: BPS-H80-028064}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/fairfield/river-hills-chc-behavioral-hlth-clinic-jefferson
   name: River Hills CHC/Behavioral Hlth Clinic Jefferson
   categories:
@@ -323,6 +283,11 @@
     lng: -91.96491
   phone: 641-451-6380
   website: https://www.riverhillshealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -333,13 +298,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jefferson County
-  address: {street: 2200 W. Jefferson, city: Fairfield, state: ia, zip: '52556'}
+  address:
+    street: 2200 W. Jefferson
+    city: Fairfield
+    state: ia
+    zip: '52556'
   place: '1926445'
   phone: 641-472-6140
   website: http://www.sieda.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/fairfield/sieda-head-start-jefferson-co-center
   name: Sieda Head Start Jefferson Co. Center
   categories:
@@ -374,6 +345,13 @@
     lng: -91.98693
   phone: 641-683-6747
   website: https://www.sieda.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

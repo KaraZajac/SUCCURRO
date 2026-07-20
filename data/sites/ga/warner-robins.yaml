@@ -131,23 +131,15 @@
   name: FCPC Warner Robins Annex
   categories:
   - community-health-center
-  address:
-    street: 213 Green St
-    city: Warner Robins
-    state: ga
-    zip: '31093'
+  cost: sliding-scale
+  address: {street: 213 Green St, city: Warner Robins, state: ga, zip: '31093'}
   place: '1380508'
-  geo:
-    lat: 32.6278
-    lng: -83.61639
+  geo: {lat: 32.6278, lng: -83.61639}
   phone: 478-449-3003
-  external_ids:
-    bphc: BPS-H80-038041
+  external_ids: {bphc: BPS-H80-038041}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/warner-robins/feagin-mill-middle-sla
   name: Feagin Mill Middle Sla
   categories:
@@ -174,45 +166,29 @@
   name: First Choice Emory HHC Transitional Care
   categories:
   - community-health-center
-  address:
-    street: 1601 Watson Blvd
-    city: Warner Robins
-    state: ga
-    zip: '31093'
+  cost: sliding-scale
+  address: {street: 1601 Watson Blvd, city: Warner Robins, state: ga, zip: '31093'}
   place: '1380508'
-  geo:
-    lat: 32.61759
-    lng: -83.63093
+  geo: {lat: 32.61759, lng: -83.63093}
   phone: 478-765-2345
-  external_ids:
-    bphc: BPS-H80-024818
+  external_ids: {bphc: BPS-H80-024818}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/warner-robins/first-choice-primary-care-warner-robins
   name: First Choice Primary Care Warner Robins
   categories:
   - community-health-center
-  address:
-    street: 207 Green St
-    city: Warner Robins
-    state: ga
-    zip: '31093'
+  cost: sliding-scale
+  address: {street: 207 Green St, city: Warner Robins, state: ga, zip: '31093'}
   place: '1380508'
-  geo:
-    lat: 32.62789
-    lng: -83.61592
+  geo: {lat: 32.62789, lng: -83.61592}
   phone: 478-225-9449
   website: https://www.firstchoiceprimarycare.org
-  external_ids:
-    bphc: BPS-H80-013543
+  external_ids: {bphc: BPS-H80-013543}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/warner-robins/friendship-baptist-church
   name: Friendship Baptist Church
   categories:
@@ -250,6 +226,12 @@
     lng: -83.63314
   phone: 478-225-9860
   website: https://pinnacletreatment.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -421,6 +403,17 @@
     lng: -83.68042
   phone: 478-988-1222
   website: https://www.middleflinthw.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -432,13 +425,19 @@
   - utility-assistance
   description: LIHEAP intake office serving Butts, Crawford, Houston, Jones, Lamar, Monroe, Peach, Pike,
     Twiggs, Upson Counties
-  address: {street: 121 Prince Street, city: Warner Robins, state: ga, zip: '30223'}
+  address:
+    street: 121 Prince Street
+    city: Warner Robins
+    state: ga
+    zip: '30223'
   place: '1380508'
   phone: 478-922-4464
   website: http://www.mgcaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/warner-robins/moms-club-of-warner-robins-community-pantry
   name: MOMS Club of Warner Robins Community Pantry
   categories:

@@ -41,13 +41,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alamosa County
-  address: {street: 8900 C Independence Way, city: Alamosa, state: co, zip: '81101'}
+  address:
+    street: 8900 C Independence Way
+    city: Alamosa
+    state: co
+    zip: '81101'
   place: 0801090
   phone: 719-589-2581
   website: https://alamosacounty.colorado.gov/departments/human-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/alamosa/alamosa-elementary-school-k-2
   name: Alamosa Elementary School K-2
   categories:
@@ -75,24 +81,16 @@
   name: Alamosa Family Medical Center, Valley-Wide Pharmacy, or Anti-Coagulation Clinic
   categories:
   - community-health-center
-  address:
-    street: 1710 1st St
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 1710 1st St, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.47246
-    lng: -105.88209
+  geo: {lat: 37.47246, lng: -105.88209}
   phone: 719-589-3658
   website: https://www.vwhs.org
-  external_ids:
-    bphc: BPS-H80-001418
+  external_ids: {bphc: BPS-H80-001418}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/alamosa-high-school
   name: Alamosa High School
   categories:
@@ -171,6 +169,21 @@
     lng: -105.86939
   phone: 719-589-6438
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -222,24 +235,16 @@
   name: Convenient Care Community Clinic
   categories:
   - community-health-center
-  address:
-    street: 1131 Main St
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 1131 Main St, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.4684
-    lng: -105.87399
+  geo: {lat: 37.4684, lng: -105.87399}
   phone: 719-589-2562
   website: https://www.vwhs.org
-  external_ids:
-    bphc: BPS-H80-007659
+  external_ids: {bphc: BPS-H80-007659}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/crossroads-turning-points-inc
   name: Crossroads Turning Points Inc
   categories:
@@ -255,6 +260,22 @@
     lng: -105.86963
   phone: 719-589-5716
   website: https://www.crossroadstp.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -313,6 +334,11 @@
     lng: -105.86575
   phone: 719-588-6807
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -342,23 +368,15 @@
   name: Mini MERV
   categories:
   - community-health-center
-  address:
-    street: 602 Hunt Ave
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 602 Hunt Ave, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.46675
-    lng: -105.86377
+  geo: {lat: 37.46675, lng: -105.86377}
   phone: 719-589-5161
-  external_ids:
-    bphc: BPS-H80-038327
+  external_ids: {bphc: BPS-H80-038327}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/ortega-middle-school
   name: Ortega Middle School
   categories:
@@ -398,6 +416,22 @@
     lng: -105.87958
   phone: 719-589-3671
   website: https://www.slvbhg.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -426,67 +460,43 @@
   name: Valley-Wide Health and Wellness Campus
   categories:
   - community-health-center
-  address:
-    street: 702 4th St
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 702 4th St, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.46912
-    lng: -105.86736
+  geo: {lat: 37.46912, lng: -105.86736}
   phone: 719-589-3658
-  external_ids:
-    bphc: BPS-H80-040607
+  external_ids: {bphc: BPS-H80-040607}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/valley-wide-health-systems-inc-administrative-se
   name: Valley-Wide Health Systems, Inc., Administrative Services Building, Alamosa Dental Clinic, Counseling
     and Support Center
   categories:
   - community-health-center
-  address:
-    street: 128 Market St
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 128 Market St, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.47472
-    lng: -105.89046
+  geo: {lat: 37.47472, lng: -105.89046}
   phone: 719-587-1000
   website: https://www.vwhs.org
-  external_ids:
-    bphc: BPS-H80-001182
+  external_ids: {bphc: BPS-H80-001182}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/valley-wide-hunt-street-alamosa
   name: Valley-Wide Hunt Street Alamosa
   categories:
   - community-health-center
-  address:
-    street: 602 Hunt Ave
-    city: Alamosa
-    state: co
-    zip: '81101'
+  cost: sliding-scale
+  address: {street: 602 Hunt Ave, city: Alamosa, state: co, zip: '81101'}
   place: 0801090
-  geo:
-    lat: 37.46675
-    lng: -105.86377
+  geo: {lat: 37.46675, lng: -105.86377}
   phone: 719-589-3658
-  external_ids:
-    bphc: BPS-H80-027328
+  external_ids: {bphc: BPS-H80-027328}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/alamosa/zapata-park
   name: Zapata Park
   categories:

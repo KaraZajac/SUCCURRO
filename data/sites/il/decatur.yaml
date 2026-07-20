@@ -43,87 +43,55 @@
   name: Crossing Drive-Thru Clinic at 990 N. Water
   categories:
   - community-health-center
-  address:
-    street: 990 N Water St
-    city: Decatur
-    state: il
-    zip: '62523'
+  cost: sliding-scale
+  address: {street: 990 N Water St, city: Decatur, state: il, zip: '62523'}
   place: '1718823'
-  geo:
-    lat: 39.851
-    lng: -88.95448
+  geo: {lat: 39.851, lng: -88.95448}
   phone: 217-877-9117
-  external_ids:
-    bphc: BPS-H80-032747
+  external_ids: {bphc: BPS-H80-032747}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/crossing-healthcare-mobile-unit-one
   name: Crossing Healthcare Mobile Unit One
   categories:
   - community-health-center
-  address:
-    street: 320 Central Ave
-    city: Decatur
-    state: il
-    zip: '62521'
+  cost: sliding-scale
+  address: {street: 320 Central Ave, city: Decatur, state: il, zip: '62521'}
   place: '1718823'
-  geo:
-    lat: 39.84915
-    lng: -88.9538
+  geo: {lat: 39.84915, lng: -88.9538}
   phone: 217-877-9117
-  external_ids:
-    bphc: BPS-H80-027805
+  external_ids: {bphc: BPS-H80-027805}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/crossing-healthcare-on-hay-street
   name: Crossing Healthcare on Hay Street
   categories:
   - community-health-center
-  address:
-    street: 575 W Hay St
-    city: Decatur
-    state: il
-    zip: '62526'
+  cost: sliding-scale
+  address: {street: 575 W Hay St, city: Decatur, state: il, zip: '62526'}
   place: '1718823'
-  geo:
-    lat: 39.86579
-    lng: -88.96234
+  geo: {lat: 39.86579, lng: -88.96234}
   phone: 217-877-9117
-  external_ids:
-    bphc: BPS-H80-040359
+  external_ids: {bphc: BPS-H80-040359}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/crossing-healthcare-schrodt-community-health-cen
   name: Crossing Healthcare Schrodt Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 320 E Central Ave
-    city: Decatur
-    state: il
-    zip: '62521'
+  cost: sliding-scale
+  address: {street: 320 E Central Ave, city: Decatur, state: il, zip: '62521'}
   place: '1718823'
-  geo:
-    lat: 39.84965
-    lng: -88.95306
+  geo: {lat: 39.84965, lng: -88.95306}
   phone: 217-877-9117
   website: https://www.crossinghealthcare.org
-  external_ids:
-    bphc: BPS-H80-017030
+  external_ids: {bphc: BPS-H80-017030}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/decatur-housing-authority
   name: Decatur Housing Authority
   categories:
@@ -226,6 +194,14 @@
     lng: -88.95915
   phone: 217-428-3843
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -246,6 +222,19 @@
     lng: -88.95158
   phone: 217-877-9117
   website: https://www.recoveryatcrossing.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -255,24 +244,16 @@
   name: Elements at Crossing Healthcare
   categories:
   - community-health-center
-  address:
-    street: 420 E Central Ave
-    city: Decatur
-    state: il
-    zip: '62521'
+  cost: sliding-scale
+  address: {street: 420 E Central Ave, city: Decatur, state: il, zip: '62521'}
   place: '1718823'
-  geo:
-    lat: 39.84972
-    lng: -88.95158
+  geo: {lat: 39.84972, lng: -88.95158}
   phone: 217-877-9117
   website: https://www.crossinghealthcare.org
-  external_ids:
-    bphc: BPS-H80-031655
+  external_ids: {bphc: BPS-H80-031655}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/empowerment-opportunity-center
   name: Empowerment Opportunity Center
   categories:
@@ -297,13 +278,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Macon County
-  address: {street: 360 E Marietta St., city: Decatur, state: il, zip: '62521'}
+  address:
+    street: 360 E Marietta St.
+    city: Decatur
+    state: il
+    zip: '62521'
   place: '1718823'
   phone: 217-428-0155
   website: https://www.dmcoc.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/decatur/garfield-park
   name: Garfield Park
   categories:
@@ -342,6 +329,16 @@
     lng: -88.95631
   phone: 217-362-6262
   website: https://www.heritagenet.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -363,6 +360,11 @@
     lng: -88.95763
   phone: 217-362-6262
   website: https://www.heritagenet.org
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -516,6 +518,14 @@
     lng: -88.95205
   phone: 217-422-6908
   website: https://www.pleasantcounseling.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -525,23 +535,15 @@
   name: SIU Center for Family Medicine-Decatur
   categories:
   - community-health-center
-  address:
-    street: 102 W Kenwood Ave
-    city: Decatur
-    state: il
-    zip: '62526'
+  cost: sliding-scale
+  address: {street: 102 W Kenwood Ave, city: Decatur, state: il, zip: '62526'}
   place: '1718823'
-  geo:
-    lat: 39.86823
-    lng: -88.9573
+  geo: {lat: 39.86823, lng: -88.9573}
   phone: 217-872-0855
-  external_ids:
-    bphc: BPS-H80-019741
+  external_ids: {bphc: BPS-H80-019741}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/decatur/south-shores-park
   name: South Shores Park
   categories:

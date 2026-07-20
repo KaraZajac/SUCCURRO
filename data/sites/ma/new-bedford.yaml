@@ -25,23 +25,15 @@
   name: Acushnet Ave
   categories:
   - community-health-center
-  address:
-    street: 401 Acushnet Ave
-    city: New Bedford
-    state: ma
-    zip: '02740'
+  cost: sliding-scale
+  address: {street: 401 Acushnet Ave, city: New Bedford, state: ma, zip: '02740'}
   place: '2545000'
-  geo:
-    lat: 41.63644
-    lng: -70.92538
+  geo: {lat: 41.63644, lng: -70.92538}
   phone: 508-992-6553
-  external_ids:
-    bphc: BPS-H80-024602
+  external_ids: {bphc: BPS-H80-024602}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/new-bedford/ashley-elementary-school-community-site-sf-318-0
   name: Ashley Elementary School Community Site (Sf-318-089)
   categories:
@@ -127,6 +119,9 @@
     lng: -70.93764
   phone: 508-979-5557
   website: https://www.bostonneurobehavioral.com/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -239,6 +234,9 @@
     lng: -70.92651
   phone: 508-563-5767
   website: https://www.cmsaba.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -259,6 +257,10 @@
     lng: -70.93847
   phone: 774-202-2264
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -366,6 +368,14 @@
     lng: -70.91897
   phone: 508-999-3126 x868
   website: https://www.ctcprograms.com/location/gifford-street-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -398,66 +408,42 @@
   name: GREATER NEW BEDFORD COMMUNITY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 874 Purchase St
-    city: New Bedford
-    state: ma
-    zip: '02740'
+  cost: sliding-scale
+  address: {street: 874 Purchase St, city: New Bedford, state: ma, zip: '02740'}
   place: '2545000'
-  geo:
-    lat: 41.6362
-    lng: -70.92564
+  geo: {lat: 41.6362, lng: -70.92564}
   phone: 508-992-6553
   website: https://www.gnbchc.org
-  external_ids:
-    bphc: BPS-H80-000963
+  external_ids: {bphc: BPS-H80-000963}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/new-bedford/greater-new-bedford-community-health-center-admi
   name: Greater New Bedford Community Health Center ADMIN
   categories:
   - community-health-center
-  address:
-    street: 384 Acushnet Ave
-    city: New Bedford
-    state: ma
-    zip: '02740'
+  cost: sliding-scale
+  address: {street: 384 Acushnet Ave, city: New Bedford, state: ma, zip: '02740'}
   place: '2545000'
-  geo:
-    lat: 41.63582
-    lng: -70.92496
+  geo: {lat: 41.63582, lng: -70.92496}
   phone: 508-992-6553
-  external_ids:
-    bphc: BPS-H80-035458
+  external_ids: {bphc: BPS-H80-035458}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/new-bedford/greater-new-bedford-community-health-center-bh-s
   name: Greater New Bedford Community Health Center BH Site
   categories:
   - community-health-center
-  address:
-    street: 836 Purchase St
-    city: New Bedford
-    state: ma
-    zip: '02740'
+  cost: sliding-scale
+  address: {street: 836 Purchase St, city: New Bedford, state: ma, zip: '02740'}
   place: '2545000'
-  geo:
-    lat: 41.63569
-    lng: -70.92578
+  geo: {lat: 41.63569, lng: -70.92578}
   phone: 508-992-6553
-  external_ids:
-    bphc: BPS-H80-041316
+  external_ids: {bphc: BPS-H80-041316}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/new-bedford/harmony-house
   name: Harmony House
   categories:
@@ -473,6 +459,20 @@
     lng: -70.92926
   phone: 508-992-8948
   website: https://www.hptc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -585,6 +585,14 @@
     lng: -70.92134
   phone: 508-979-1122
   website: https://www.hcrcenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -605,6 +613,22 @@
     lng: -70.92395
   phone: 508-717-0550 x68145
   website: https://www.hptc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -714,6 +738,10 @@
     lng: -70.942
   phone: 508-742-1040
   website: https://cfservices.org
+  services:
+  - Outpatient
+  - Young adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -734,6 +762,19 @@
     lng: -70.9275
   phone: 508-992-0800 x106
   website: https://www.hptc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -920,13 +961,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bristol County
-  address: {street: 166 Williams St., city: New Bedford, state: ma, zip: '02740'}
+  address:
+    street: 166 Williams St.
+    city: New Bedford
+    state: ma
+    zip: '02740'
   place: '2545000'
   phone: 508-999-9920
   website: https://paceinfo.org/programs/fuel-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/new-bedford/pulaski-elementary-school-community-site-sf-318
   name: Pulaski Elementary School Community Site (Sf-318-030)
   categories:
@@ -1077,6 +1124,22 @@
     lng: -70.92597
   phone: 508-984-4155
   website: https://www.steppingstoneinc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1097,6 +1160,22 @@
     lng: -70.92816
   phone: 508-984-1880
   website: https://www.steppingstoneinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

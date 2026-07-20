@@ -168,32 +168,30 @@
   name: KentuckyCare - 058
   categories:
   - community-health-center
-  address:
-    street: 2006 Holiday Ln
-    city: Fulton
-    state: ky
-    zip: '42041'
+  cost: sliding-scale
+  address: {street: 2006 Holiday Ln, city: Fulton, state: ky, zip: '42041'}
   place: '2129566'
-  geo:
-    lat: 36.51793
-    lng: -88.89639
+  geo: {lat: 36.51793, lng: -88.89639}
   phone: 870-347-2534
-  external_ids:
-    bphc: BPS-H80-037854
+  external_ids: {bphc: BPS-H80-037854}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/fulton/west-kentucky-allied-services
   name: West Kentucky Allied Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fulton County
-  address: {street: 201 North Highland Drive (P. O. Box 1542), city: Fulton, state: ky, zip: '42041'}
+  address:
+    street: 201 North Highland Drive (P. O. Box 1542)
+    city: Fulton
+    state: ky
+    zip: '42041'
   place: '2129566'
   phone: 270-472-0002
   website: http://wkas.info/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

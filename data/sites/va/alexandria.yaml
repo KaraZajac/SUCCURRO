@@ -37,6 +37,22 @@
     lng: -77.11912
   phone: 703-746-3400
   website: https://www.alexandriava.gov/DCHS
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -47,13 +63,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alexandria City, Fairfax Counties
-  address: {street: 4850 Mark Center Dr., city: Alexandria, state: va, zip: '22311'}
+  address:
+    street: 4850 Mark Center Dr.
+    city: Alexandria
+    state: va
+    zip: '22311'
   place: '5101000'
   phone: 703-746-5700
   website: http://www.alexandriava.gov/DCHS
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/alexandria/alexandria-little-free-pantry
   name: Alexandria Little Free Pantry
   categories:
@@ -169,6 +191,10 @@
     lng: -77.13762
   phone: 571-440-7122
   website: https://www.bloomhealthcenters.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -271,6 +297,13 @@
     lng: -77.04042
   phone: 855-818-2029
   website: https://centerfordiscovery.com/locations/alexandria-outpatient/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -378,6 +411,14 @@
     lng: -77.07709
   phone: 571-489-4879
   website: https://www.embarkbh.com/locations/virginia/alexandria/
+  services:
+  - Residential/24-hour residential
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -398,6 +439,14 @@
     lng: -77.1295
   phone: 703-313-6300
   website: https://www.fairfaxcounty.gov/community-services-board/
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -753,6 +802,18 @@
     lng: -77.1539
   phone: 703-955-3703
   website: https://www.lifebulb.com/alexandria
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -915,6 +976,15 @@
     lng: -77.05343
   phone: 703-841-0703
   website: https://natcaptreatment.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -924,216 +994,136 @@
   name: Neighborhood Health at 2 East
   categories:
   - community-health-center
-  address:
-    street: 2 E Glebe Rd
-    city: Alexandria
-    state: va
-    zip: '22305'
+  cost: sliding-scale
+  address: {street: 2 E Glebe Rd, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83554
-    lng: -77.05744
+  geo: {lat: 38.83554, lng: -77.05744}
   phone: 703-535-5568
   website: https://www.neighborhoodhealth.org
-  external_ids:
-    bphc: BPS-H80-001589
+  external_ids: {bphc: BPS-H80-001589}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-martha-custis-drive
   name: Neighborhood Health at Martha Custis Drive
   categories:
   - community-health-center
-  address:
-    street: 1225 Martha Custis Dr, Apartment C-1
-    city: Alexandria
-    state: va
-    zip: '22302'
+  cost: sliding-scale
+  address: {street: '1225 Martha Custis Dr, Apartment C-1', city: Alexandria, state: va, zip: '22302'}
   place: '5101000'
-  geo:
-    lat: 38.84223
-    lng: -77.0801
+  geo: {lat: 38.84223, lng: -77.0801}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-034341
+  external_ids: {bphc: BPS-H80-034341}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-richmond-highway
   name: Neighborhood Health at Richmond Highway
   categories:
   - community-health-center
-  address:
-    street: 6677 Richmond Hwy
-    city: Alexandria
-    state: va
-    zip: '22306'
+  cost: sliding-scale
+  address: {street: 6677 Richmond Hwy, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.77349
-    lng: -77.08046
+  geo: {lat: 38.77349, lng: -77.08046}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-013594
+  external_ids: {bphc: BPS-H80-013594}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-sherwood-hall-lane
   name: Neighborhood Health at Sherwood Hall Lane
   categories:
   - community-health-center
-  address:
-    street: 2616 Sherwood Hall Ln, Ste 106
-    city: Alexandria
-    state: va
-    zip: '22306'
+  cost: sliding-scale
+  address: {street: '2616 Sherwood Hall Ln, Ste 106', city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.74318
-    lng: -77.07715
+  geo: {lat: 38.74318, lng: -77.07715}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-021467
+  external_ids: {bphc: BPS-H80-021467}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-south-county-center
   name: Neighborhood Health at South County Center
   categories:
   - community-health-center
-  address:
-    street: 8350 Richmond Hwy, Suite 301
-    city: Alexandria
-    state: va
-    zip: '22309'
+  cost: sliding-scale
+  address: {street: '8350 Richmond Hwy, Suite 301', city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.7315
-    lng: -77.10412
+  geo: {lat: 38.7315, lng: -77.10412}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-027764
+  external_ids: {bphc: BPS-H80-027764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-the-casey-clinic
   name: Neighborhood Health at the Casey Clinic
   categories:
   - community-health-center
-  address:
-    street: 1200 N Howard St
-    city: Alexandria
-    state: va
-    zip: '22304'
+  cost: sliding-scale
+  address: {street: 1200 N Howard St, city: Alexandria, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.8215
-    lng: -77.10504
+  geo: {lat: 38.8215, lng: -77.10504}
   phone: 703-778-0340
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-008867
+  external_ids: {bphc: BPS-H80-008867}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-the-gartlan-mental-health
   name: Neighborhood Health at the Gartlan Mental Health Center
   categories:
   - community-health-center
-  address:
-    street: 8119 Holland Rd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  cost: sliding-scale
+  address: {street: 8119 Holland Rd, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.73729
-    lng: -77.07912
+  geo: {lat: 38.73729, lng: -77.07912}
   phone: 703-535-5568
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-013829
+  external_ids: {bphc: BPS-H80-013829}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-at-the-wow-bus
   name: Neighborhood Health at the WOW Bus
   categories:
   - community-health-center
-  address:
-    street: 2 E Glebe Rd
-    city: Alexandria
-    state: va
-    zip: '22305'
+  cost: sliding-scale
+  address: {street: 2 E Glebe Rd, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83554
-    lng: -77.05744
+  geo: {lat: 38.83554, lng: -77.05744}
   phone: 703-535-5568
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-013799
+  external_ids: {bphc: BPS-H80-013799}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-mark-center-drive
   name: Neighborhood Health Mark Center Drive
   categories:
   - community-health-center
-  address:
-    street: 4850 Mark Center Dr
-    city: Alexandria
-    state: va
-    zip: '22311'
+  cost: sliding-scale
+  address: {street: 4850 Mark Center Dr, city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
-  geo:
-    lat: 38.83009
-    lng: -77.11905
+  geo: {lat: 38.83009, lng: -77.11905}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-036570
+  external_ids: {bphc: BPS-H80-036570}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/neighborhood-health-south-county-dental
   name: Neighborhood Health South County Dental
   categories:
   - community-health-center
-  address:
-    street: 8350 Richmond Hwy, Suite 233
-    city: Alexandria
-    state: va
-    zip: '22309'
+  cost: sliding-scale
+  address: {street: '8350 Richmond Hwy, Suite 233', city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.7315
-    lng: -77.10412
+  geo: {lat: 38.7315, lng: -77.10412}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-036123
+  external_ids: {bphc: BPS-H80-036123}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/oakies-pantry
   name: Oakies Pantry
   categories:
@@ -1228,6 +1218,15 @@
     lng: -77.16765
   phone: 571-556-7505
   website: https://www.sandstonecare.com/locations/alexandria-treatment-center/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1249,6 +1248,15 @@
     lng: -77.10445
   phone: 703-704-6707
   website: https://www.fairfaxcounty.gov/csb
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

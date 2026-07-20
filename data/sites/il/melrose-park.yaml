@@ -2,24 +2,16 @@
   name: ACCESS Melrose Park Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 8321 W North Ave
-    city: Melrose Park
-    state: il
-    zip: '60160'
+  cost: sliding-scale
+  address: {street: 8321 W North Ave, city: Melrose Park, state: il, zip: '60160'}
   place: '1748242'
-  geo:
-    lat: 41.90569
-    lng: -87.83168
+  geo: {lat: 41.90569, lng: -87.83168}
   phone: 708-681-2298
   website: https://www.accesscommunityhealth.net
-  external_ids:
-    bphc: BPS-H80-004608
+  external_ids: {bphc: BPS-H80-004608}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/melrose-park/ascension-illinois-procare-centers
   name: Ascension Illinois/ProCare Centers
   categories:
@@ -36,6 +28,9 @@
     lng: -87.85122
   phone: 708-681-0073 x5
   website: https://healthcare.ascension.org/locations/illinois
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,6 +73,11 @@
     lng: -87.86117
   phone: 708-498-0200
   website: https://www.hascares.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -128,23 +128,15 @@
   name: PCC Melrose Park Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1111 Superior St, Suite 101
-    city: Melrose Park
-    state: il
-    zip: '60160'
+  cost: sliding-scale
+  address: {street: '1111 Superior St, Suite 101', city: Melrose Park, state: il, zip: '60160'}
   place: '1748242'
-  geo:
-    lat: 41.89269
-    lng: -87.84767
+  geo: {lat: 41.89269, lng: -87.84767}
   phone: 708-406-3040
-  external_ids:
-    bphc: BPS-H80-011987
+  external_ids: {bphc: BPS-H80-011987}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/melrose-park/pilsen-wellness-center-inc-melrose-park
   name: Pilsen Wellness Center Inc Melrose Park
   categories:
@@ -161,6 +153,11 @@
     lng: -87.87851
   phone: 708-343-7860
   website: https://www.pilsenwellnesscenter.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,6 +198,19 @@
     lng: -87.88685
   phone: 773-777-7112
   website: https://www.yos.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Pregnant/postpartum women
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

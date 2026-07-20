@@ -79,6 +79,9 @@
     lng: -86.57062
   phone: 850-833-7500
   website: https://www.bridgewaycenter.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -103,23 +106,15 @@
   name: Crestview Health and Dental Center
   categories:
   - community-health-center
-  address:
-    street: 800 Hospital Dr
-    city: Crestview
-    state: fl
-    zip: '32539'
+  cost: sliding-scale
+  address: {street: 800 Hospital Dr, city: Crestview, state: fl, zip: '32539'}
   place: '1215475'
-  geo:
-    lat: 30.73305
-    lng: -86.56055
+  geo: {lat: 30.73305, lng: -86.56055}
   phone: 850-682-1194
-  external_ids:
-    bphc: BPS-H80-013778
+  external_ids: {bphc: BPS-H80-013778}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/crestview/crestview-housing-authority
   name: Crestview Housing Authority
   categories:
@@ -344,13 +339,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Okaloosa County
-  address: {street: PO Box 1210, city: Crestview, state: fl, zip: '32425'}
+  address:
+    street: PO Box 1210
+    city: Crestview
+    state: fl
+    zip: '32425'
   place: '1215475'
   phone: 850-306-1134
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/crestview/walker-elementary-school
   name: Walker Elementary School
   categories:

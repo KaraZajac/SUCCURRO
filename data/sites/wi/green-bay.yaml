@@ -2,23 +2,15 @@
   name: 622 Bodart - Admin Only
   categories:
   - community-health-center
-  address:
-    street: 622 Bodart St
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: 622 Bodart St, city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.51462
-    lng: -88.00744
+  geo: {lat: 44.51462, lng: -88.00744}
   phone: 920-437-7206
-  external_ids:
-    bphc: BPS-H80-037670
+  external_ids: {bphc: BPS-H80-037670}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/art-garage
   name: Art Garage
   categories:
@@ -152,24 +144,16 @@
   name: BH at South Monroe
   categories:
   - community-health-center
-  address:
-    street: 424 S Monroe Ave, Ste 104
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: '424 S Monroe Ave, Ste 104', city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.5079
-    lng: -88.01365
+  geo: {lat: 44.5079, lng: -88.01365}
   phone: 920-437-7206
   website: https://www.newcc.health
-  external_ids:
-    bphc: BPS-H80-040237
+  external_ids: {bphc: BPS-H80-040237}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/brown-county-housing-authority
   name: Brown County Housing Authority
   categories:
@@ -195,12 +179,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brown County
-  address: {street: 111 N. Jefferson St., city: Green Bay, state: wi, zip: '54301'}
+  address:
+    street: 111 N. Jefferson St.
+    city: Green Bay
+    state: wi
+    zip: '54301'
   place: '5531000'
   phone: 920-448-6460
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/green-bay/brown-county-human-services-department
   name: Brown County Human Services Department
   categories:
@@ -217,6 +207,11 @@
     lng: -87.92475
   phone: 920-391-6940
   website: https://www.co.brown.wi.us
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -303,6 +298,10 @@
     lng: -88.08389
   phone: 920-351-1675
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -324,6 +323,13 @@
     lng: -87.94201
   phone: 414-384-2000
   website: https://
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Active duty military
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -400,24 +406,16 @@
   name: Dental at South Monroe
   categories:
   - community-health-center
-  address:
-    street: 424 S Monroe Ave, Ste 106
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: '424 S Monroe Ave, Ste 106', city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.5079
-    lng: -88.01365
+  geo: {lat: 44.5079, lng: -88.01365}
   phone: 920-437-7206
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-038233
+  external_ids: {bphc: BPS-H80-038233}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/duck-creek-quarry-park
   name: Duck Creek Quarry Park
   categories:
@@ -631,6 +629,18 @@
     lng: -88.01759
   phone: 920-433-6073
   website: https://www.bellin.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -652,6 +662,18 @@
     lng: -88.01759
   phone: 920-433-3630
   website: https://www.bellin.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -670,6 +692,9 @@
   place: '5531000'
   phone: 920-739-4226
   website: https://www.familyservicesnew.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -687,6 +712,10 @@
   place: '5531000'
   phone: 920-739-4226
   website: https://www.familyservicesnew.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -708,6 +737,12 @@
     lng: -88.01706
   phone: 920-436-6800
   website: https://www.familyservicesnew.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -725,6 +760,12 @@
   place: '5531000'
   phone: 920-433-3372
   website: https://www.familyservicesnew.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -742,6 +783,13 @@
   place: '5531000'
   phone: 920-436-6800
   website: https://www.familyservicesnew.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -829,6 +877,22 @@
     lng: -88.04214
   phone: 920-437-8256
   website: https://www.wearefoundations.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -838,24 +902,16 @@
   name: FREEDOM HOUSE
   categories:
   - community-health-center
-  address:
-    street: 2997 Saint Anthony Dr
-    city: Green Bay
-    state: wi
-    zip: '54311'
+  cost: sliding-scale
+  address: {street: 2997 Saint Anthony Dr, city: Green Bay, state: wi, zip: '54311'}
   place: '5531000'
-  geo:
-    lat: 44.52317
-    lng: -87.93752
+  geo: {lat: 44.52317, lng: -87.93752}
   phone: 920-406-2956
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-006464
+  external_ids: {bphc: BPS-H80-006464}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/fritsch-park
   name: Fritsch Park
   categories:
@@ -916,6 +972,16 @@
     lng: -88.08838
   phone: 920-337-6740 x217
   website: https://www.ctcprograms.com/location/green-bay-comprehensi
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1049,24 +1115,16 @@
   name: HOUSE OF HOPE
   categories:
   - community-health-center
-  address:
-    street: 1660 Christiana St
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 1660 Christiana St, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.53081
-    lng: -88.06382
+  geo: {lat: 44.53081, lng: -88.06382}
   phone: 920-884-6740
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-006115
+  external_ids: {bphc: BPS-H80-006115}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/howard-dog-park-rnc
   name: Howard Dog Park Rnc
   categories:
@@ -1125,6 +1183,22 @@
   place: '5531000'
   phone: 920-435-2093
   website: https://www.jackienitschkecenter.org
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1320,6 +1394,22 @@
     lng: -88.06418
   phone: 920-498-8600
   website: https://www.hshs.org/libertas
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1373,23 +1463,15 @@
   name: Micah Center
   categories:
   - community-health-center
-  address:
-    street: 612 Stuart St
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: 612 Stuart St, city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.5098
-    lng: -88.01184
+  geo: {lat: 44.5098, lng: -88.01184}
   phone: 920-617-8700
-  external_ids:
-    bphc: BPS-H80-032810
+  external_ids: {bphc: BPS-H80-032810}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/milo-c-huempfner-department-of-veterans-affairs
   name: Milo C. Huempfner Department of Veterans Affairs Outpatient Clinic
   categories:
@@ -1492,89 +1574,57 @@
   name: N.E.W.C.C. Mobile RV
   categories:
   - community-health-center
-  address:
-    street: 610 N Broadway
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 610 N Broadway, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.52375
-    lng: -88.01639
+  geo: {lat: 44.52375, lng: -88.01639}
   phone: 920-437-7206
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-038351
+  external_ids: {bphc: BPS-H80-038351}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/n-e-w-community-clinic-at-nwtc
   name: N.E.W. Community Clinic at NWTC
   categories:
   - community-health-center
-  address:
-    street: 2740 W Mason St
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 2740 W Mason St, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.52593
-    lng: -88.10647
+  geo: {lat: 44.52593, lng: -88.10647}
   phone: 920-498-5436
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-011585
+  external_ids: {bphc: BPS-H80-011585}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/n-e-w-dental-clinic-at-nwtc
   name: N.E.W. Dental Clinic at NWTC
   categories:
   - community-health-center
-  address:
-    street: 2740 W Mason St
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 2740 W Mason St, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.52593
-    lng: -88.10647
+  geo: {lat: 44.52593, lng: -88.10647}
   phone: 920-272-9435
-  external_ids:
-    bphc: BPS-H80-021642
+  external_ids: {bphc: BPS-H80-021642}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/n-e-w-headquarters
   name: N.E.W. Headquarters
   categories:
   - community-health-center
-  address:
-    street: 610 N Broadway
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 610 N Broadway, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.52375
-    lng: -88.01639
+  geo: {lat: 44.52375, lng: -88.01639}
   phone: 920-437-9773
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-034401
+  external_ids: {bphc: BPS-H80-034401}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/national-railroad-museum
   name: National Railroad Museum
   categories:
@@ -1601,151 +1651,95 @@
   name: NEW @ Encompass Cornerstone Center
   categories:
   - community-health-center
-  address:
-    street: 345 N Broadway
-    city: Green Bay
-    state: wi
-    zip: '54303'
+  cost: sliding-scale
+  address: {street: 345 N Broadway, city: Green Bay, state: wi, zip: '54303'}
   place: '5531000'
-  geo:
-    lat: 44.52073
-    lng: -88.01913
+  geo: {lat: 44.52073, lng: -88.01913}
   phone: 920-436-7554
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-041059
+  external_ids: {bphc: BPS-H80-041059}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/new-encompass-rosebush-center
   name: NEW @ Encompass Rosebush Center
   categories:
   - community-health-center
-  address:
-    street: 1275 University Ave
-    city: Green Bay
-    state: wi
-    zip: '54302'
+  cost: sliding-scale
+  address: {street: 1275 University Ave, city: Green Bay, state: wi, zip: '54302'}
   place: '5531000'
-  geo:
-    lat: 44.51454
-    lng: -87.99421
+  geo: {lat: 44.51454, lng: -87.99421}
   phone: 920-436-7549
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-041058
+  external_ids: {bphc: BPS-H80-041058}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/newcc-at-wilder-elementary
   name: NEWCC at Wilder Elementary
   categories:
   - community-health-center
-  address:
-    street: 2590 Robinson Ave
-    city: Green Bay
-    state: wi
-    zip: '54311'
+  cost: sliding-scale
+  address: {street: 2590 Robinson Ave, city: Green Bay, state: wi, zip: '54311'}
   place: '5531000'
-  geo:
-    lat: 44.47873
-    lng: -87.95488
+  geo: {lat: 44.47873, lng: -87.95488}
   phone: 920-391-2460
-  external_ids:
-    bphc: BPS-H80-040743
+  external_ids: {bphc: BPS-H80-040743}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/newcc-jackson-elementary
   name: NEWCC @ Jackson Elementary
   categories:
   - community-health-center
-  address:
-    street: 1306 S Ridge Rd
-    city: Green Bay
-    state: wi
-    zip: '54304'
+  cost: sliding-scale
+  address: {street: 1306 S Ridge Rd, city: Green Bay, state: wi, zip: '54304'}
   place: '5531000'
-  geo:
-    lat: 44.51127
-    lng: -88.05862
+  geo: {lat: 44.51127, lng: -88.05862}
   phone: 920-492-2620
-  external_ids:
-    bphc: BPS-H80-040742
+  external_ids: {bphc: BPS-H80-040742}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/newcc-john-dewey-academy-of-learning
   name: NEWCC @ John Dewey Academy of Learning
   categories:
   - community-health-center
-  address:
-    street: 701 Cherry St
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: 701 Cherry St, city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.51287
-    lng: -88.00796
+  geo: {lat: 44.51287, lng: -88.00796}
   phone: 920-272-7074
-  external_ids:
-    bphc: BPS-H80-040729
+  external_ids: {bphc: BPS-H80-040729}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/newcc-lombardi-middle-school
   name: NEWCC @ Lombardi Middle School
   categories:
   - community-health-center
-  address:
-    street: 1520 S Point Rd
-    city: Green Bay
-    state: wi
-    zip: '54313'
+  cost: sliding-scale
+  address: {street: 1520 S Point Rd, city: Green Bay, state: wi, zip: '54313'}
   place: '5531000'
-  geo:
-    lat: 44.51576
-    lng: -88.1102
+  geo: {lat: 44.51576, lng: -88.1102}
   phone: 920-492-2625
-  external_ids:
-    bphc: BPS-H80-040897
+  external_ids: {bphc: BPS-H80-040897}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/newcc-webster-elementary
   name: NEWCC @ Webster Elementary
   categories:
   - community-health-center
-  address:
-    street: 2101 S Webster Ave
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: 2101 S Webster Ave, city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.48318
-    lng: -88.0221
+  geo: {lat: 44.48318, lng: -88.0221}
   phone: 920-448-2143
-  external_ids:
-    bphc: BPS-H80-040745
+  external_ids: {bphc: BPS-H80-040745}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/northeast-wi-wellness-associates
   name: Northeast WI Wellness Associates
   categories:
@@ -1761,6 +1755,22 @@
     lng: -88.07837
   phone: 920-497-6200
   website: https://
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1782,6 +1792,10 @@
     lng: -88.05267
   phone: 920-640-5119
   website: https://www.nystromcounseling.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2003,6 +2017,12 @@
     lng: -88.01747
   phone: 920-437-7400
   website: https://www.viventhealth.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -2100,24 +2120,16 @@
   name: WIC at South Monroe
   categories:
   - community-health-center
-  address:
-    street: 424 S Monroe Ave, Ste 100
-    city: Green Bay
-    state: wi
-    zip: '54301'
+  cost: sliding-scale
+  address: {street: '424 S Monroe Ave, Ste 100', city: Green Bay, state: wi, zip: '54301'}
   place: '5531000'
-  geo:
-    lat: 44.5079
-    lng: -88.01365
+  geo: {lat: 44.5079, lng: -88.01365}
   phone: 920-437-7206
   website: https://www.newcommunityclinic.org
-  external_ids:
-    bphc: BPS-H80-038268
+  external_ids: {bphc: BPS-H80-038268}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/green-bay/wilder-elementary
   name: Wilder Elementary
   categories:
@@ -2178,6 +2190,19 @@
     lng: -87.92757
   phone: 920-328-1220
   website: https://www.willowcreekbh.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -24,13 +24,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washington County
-  address: {street: 902 Aspen Dr., city: Salem, state: in, zip: '47167'}
+  address:
+    street: 902 Aspen Dr.
+    city: Salem
+    state: in
+    zip: '47167'
   place: '1867464'
   phone: 812-883-5368
   website: http://www.hoosieruplands.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/salem/lifespring-health-systems-washington-county-offi
   name: Lifespring Health Systems Washington County Office
   categories:
@@ -47,6 +53,11 @@
     lng: -86.08114
   phone: 812-206-1200
   website: https://www.lifespringhealthsystems.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,45 +67,29 @@
   name: SALEM COMMUNITY MEDICAL SERVICES
   categories:
   - community-health-center
-  address:
-    street: 1321 S Jackson St
-    city: Salem
-    state: in
-    zip: '47167'
+  cost: sliding-scale
+  address: {street: 1321 S Jackson St, city: Salem, state: in, zip: '47167'}
   place: '1867464'
-  geo:
-    lat: 38.59671
-    lng: -86.08113
+  geo: {lat: 38.59671, lng: -86.08113}
   phone: 812-280-2080
   website: http://www.lifespringhealthsystems.org/
-  external_ids:
-    bphc: BPS-H80-019003
+  external_ids: {bphc: BPS-H80-019003}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/salem/salem-community-schools-health-center
   name: Salem Community Schools Health Center
   categories:
   - community-health-center
-  address:
-    street: 1101 N Shelby St
-    city: Salem
-    state: in
-    zip: '47167'
+  cost: sliding-scale
+  address: {street: 1101 N Shelby St, city: Salem, state: in, zip: '47167'}
   place: '1867464'
-  geo:
-    lat: 38.61562
-    lng: -86.10601
+  geo: {lat: 38.61562, lng: -86.10601}
   phone: 812-280-2080
-  external_ids:
-    bphc: BPS-H80-032736
+  external_ids: {bphc: BPS-H80-032736}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/salem/salem-head-start
   name: SALEM HEAD START
   categories:

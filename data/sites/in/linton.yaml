@@ -2,23 +2,15 @@
   name: Greene County Health Linton
   categories:
   - community-health-center
-  address:
-    street: 1600 A St NE, Suite 9
-    city: Linton
-    state: in
-    zip: '47441'
+  cost: sliding-scale
+  address: {street: '1600 A St NE, Suite 9', city: Linton, state: in, zip: '47441'}
   place: '1844190'
-  geo:
-    lat: 39.03946
-    lng: -87.14478
+  geo: {lat: 39.03946, lng: -87.14478}
   phone: 812-847-7005
-  external_ids:
-    bphc: BPS-LAL-027028
+  external_ids: {bphc: BPS-LAL-027028}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/linton/hamilton-center-inc
   name: Hamilton Center Inc
   categories:
@@ -35,6 +27,16 @@
     lng: -87.12881
   phone: 812-847-4435
   website: https://www.hamiltoncenter.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,6 +58,15 @@
     lng: -87.14621
   phone: 812-952-9472
   website: https://www.hickorytreatmentcenters.com
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -127,11 +138,17 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Greene County
-  address: {street: 'Linton Center 2, 11 NW 7th St.', city: Linton, state: in, zip: '47441'}
+  address:
+    street: Linton Center 2, 11 NW 7th St.
+    city: Linton
+    state: in
+    zip: '47441'
   place: '1844190'
   phone: 812-699-4429
   email: energyassistance@pacecaa.org
   website: https://www.pacecaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

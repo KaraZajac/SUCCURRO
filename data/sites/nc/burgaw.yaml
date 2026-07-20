@@ -2,45 +2,29 @@
   name: Black River Family Practice
   categories:
   - community-health-center
-  address:
-    street: 301 S Campbell St
-    city: Burgaw
-    state: nc
-    zip: '28425'
+  cost: sliding-scale
+  address: {street: 301 S Campbell St, city: Burgaw, state: nc, zip: '28425'}
   place: '3708960'
-  geo:
-    lat: 34.5496
-    lng: -77.92099
+  geo: {lat: 34.5496, lng: -77.92099}
   phone: 910-259-5721
   website: https://www.blackriverhealth.org
-  external_ids:
-    bphc: BPS-LAL-021687
+  external_ids: {bphc: BPS-LAL-021687}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burgaw/black-river-health-services-inc
   name: Black River Health Services, Inc.
   categories:
   - community-health-center
-  address:
-    street: 301 S Campbell St
-    city: Burgaw
-    state: nc
-    zip: '28425'
+  cost: sliding-scale
+  address: {street: 301 S Campbell St, city: Burgaw, state: nc, zip: '28425'}
   place: '3708960'
-  geo:
-    lat: 34.5496
-    lng: -77.92099
+  geo: {lat: 34.5496, lng: -77.92099}
   phone: 910-259-6975
-  external_ids:
-    bphc: BPS-H80-024429
+  external_ids: {bphc: BPS-H80-024429}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burgaw/burgaw-middle
   name: Burgaw Middle
   categories:
@@ -98,6 +82,16 @@
     lng: -77.91723
   phone: 910-259-0668
   website: https://www.coastalhorizons.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -194,13 +188,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pender County
-  address: {street: 810 S. Walker St. (P. O Drawer 1207), city: Burgaw, state: nc, zip: '28425'}
+  address:
+    street: 810 S. Walker St. (P. O Drawer 1207)
+    city: Burgaw
+    state: nc
+    zip: '28425'
   place: '3708960'
   phone: 910-259-1240
   website: https://pendercountync.gov/hhs/health-human-services/department-of-social-services/#1690550771799-685a640a-2bb9
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/burgaw/pender-county-housing-department
   name: Pender County Housing Department
   categories:

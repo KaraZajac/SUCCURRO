@@ -21,24 +21,16 @@
   name: Ellwood City Health Center
   categories:
   - community-health-center
-  address:
-    street: 304 Evans Dr, Ste 401
-    city: Ellwood City
-    state: pa
-    zip: '16117'
+  cost: sliding-scale
+  address: {street: '304 Evans Dr, Ste 401', city: Ellwood City, state: pa, zip: '16117'}
   place: '4223304'
-  geo:
-    lat: 40.86823
-    lng: -80.27582
+  geo: {lat: 40.86823, lng: -80.27582}
   phone: 724-824-8185
   website: https://primary-health.net
-  external_ids:
-    bphc: BPS-H80-038621
+  external_ids: {bphc: BPS-H80-038621}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/ellwood-city/ellwood-pool
   name: Ellwood Pool
   categories:
@@ -75,6 +67,12 @@
     lng: -80.27423
   phone: 412-221-1091
   website: https://freedomtreatment.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

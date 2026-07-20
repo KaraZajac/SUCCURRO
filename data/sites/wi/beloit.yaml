@@ -2,45 +2,29 @@
   name: Beloit Area Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 74 Eclipse Ctr
-    city: Beloit
-    state: wi
-    zip: '53511'
+  cost: sliding-scale
+  address: {street: 74 Eclipse Ctr, city: Beloit, state: wi, zip: '53511'}
   place: '5506500'
-  geo:
-    lat: 42.52138
-    lng: -89.03205
+  geo: {lat: 42.52138, lng: -89.03205}
   phone: 608-361-0311
   website: https://www.chsofwi.org
-  external_ids:
-    bphc: BPS-H80-001353
+  external_ids: {bphc: BPS-H80-001353}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/beloit/beloit-area-community-health-center-behavioral-h
   name: Beloit Area Community Health Center Behavioral Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 55 Eclipse Ctr
-    city: Beloit
-    state: wi
-    zip: '53511'
+  cost: sliding-scale
+  address: {street: 55 Eclipse Ctr, city: Beloit, state: wi, zip: '53511'}
   place: '5506500'
-  geo:
-    lat: 42.52104
-    lng: -89.03173
+  geo: {lat: 42.52104, lng: -89.03173}
   phone: 608-361-0311
-  external_ids:
-    bphc: BPS-H80-034319
+  external_ids: {bphc: BPS-H80-034319}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/beloit/beloit-comprehensive-treatment-center-quality-ad
   name: Beloit Comprehensive Treatment Center Quality Addiction Management Inc
   categories:
@@ -56,6 +40,22 @@
     lng: -89.01308
   phone: 608-361-7200
   website: https://www.ctcprograms.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -96,6 +96,11 @@
     lng: -89.00881
   phone: 608-364-5686
   website: https://www.beloithealthsystem.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -288,6 +293,9 @@
     lng: -89.01286
   phone: 833-420-1103
   website: https://www.lsswis.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -317,13 +325,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Rock County
-  address: {street: '600 Henry Ave., Suite 25A', city: Beloit, state: wi, zip: '53511'}
+  address:
+    street: 600 Henry Ave., Suite 25A
+    city: Beloit
+    state: wi
+    zip: '53511'
   place: '5506500'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/beloit/todd-elementary
   name: Todd Elementary
   categories:

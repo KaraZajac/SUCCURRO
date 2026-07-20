@@ -23,43 +23,27 @@
   name: Newhall Behavioral Health
   categories:
   - community-health-center
-  address:
-    street: 23206 Lyons Ave, Suite 202
-    city: Newhall
-    state: ca
-    zip: '91321'
-  geo:
-    lat: 34.37904
-    lng: -118.53853
+  cost: sliding-scale
+  address: {street: '23206 Lyons Ave, Suite 202', city: Newhall, state: ca, zip: '91321'}
+  geo: {lat: 34.37904, lng: -118.53853}
   phone: 661-468-7405
-  external_ids:
-    bphc: BPS-H80-041539
+  external_ids: {bphc: BPS-H80-041539}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/newhall/newhall-health-center
   name: Newhall Health Center
   categories:
   - community-health-center
-  address:
-    street: 23772 Newhall Ave
-    city: Newhall
-    state: ca
-    zip: '91321'
-  geo:
-    lat: 34.37257
-    lng: -118.51521
+  cost: sliding-scale
+  address: {street: 23772 Newhall Ave, city: Newhall, state: ca, zip: '91321'}
+  geo: {lat: 34.37257, lng: -118.51521}
   phone: 661-291-1777
   website: https://www.sdfhc.org
-  external_ids:
-    bphc: BPS-H80-011534
+  external_ids: {bphc: BPS-H80-011534}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/newhall/north-walnut
   name: North Walnut
   categories:
@@ -114,6 +98,12 @@
     lng: -118.54568
   phone: 661-255-7720
   website: https://safetyconsultantservicesinc.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

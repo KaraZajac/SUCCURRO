@@ -10,6 +10,9 @@
   place: '5575325'
   phone: 608-269-6731
   website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -31,6 +34,12 @@
     lng: -90.81415
   phone: 608-392-9555
   website: https://www.mayoclinichealthsystem.org/locations/sparta
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -96,6 +105,9 @@
     lng: -90.81312
   phone: 608-269-8600
   website: https://www.co.monroe.wi.us
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -106,13 +118,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Monroe County
-  address: {street: 606 Cap St., city: Sparta, state: wi, zip: '54656'}
+  address:
+    street: 606 Cap St.
+    city: Sparta
+    state: wi
+    zip: '54656'
   place: '5575325'
   phone: 608-487-9356
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/sparta/monroe-county-housing-authority
   name: Monroe County Housing Authority
   categories:
@@ -137,23 +155,15 @@
   name: Scenic Bluffs Health Center Inc - Sparta Hermann School
   categories:
   - community-health-center
-  address:
-    street: 925 N Black River St
-    city: Sparta
-    state: wi
-    zip: '54656'
+  cost: sliding-scale
+  address: {street: 925 N Black River St, city: Sparta, state: wi, zip: '54656'}
   place: '5575325'
-  geo:
-    lat: 43.95544
-    lng: -90.82009
+  geo: {lat: 43.95544, lng: -90.82009}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-039134
+  external_ids: {bphc: BPS-H80-039134}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/sparta/sparta-head-start-and-early-head-start
   name: Sparta Head Start and Early Head Start
   categories:

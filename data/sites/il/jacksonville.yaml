@@ -14,6 +14,11 @@
     lng: -90.24708
   phone: 217-243-8849
   website: https://www.gatewayfoundation.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -65,13 +70,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cass, Morgan, Scott Counties
-  address: {street: 345 West State Street, city: Jacksonville, state: il, zip: '62650'}
+  address:
+    street: 345 West State Street
+    city: Jacksonville
+    state: il
+    zip: '62650'
   place: '1738115'
   phone: 217-243-9404
   website: http://www.morgancounty-il.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/jacksonville/morgan-county-housing-authority
   name: Morgan County Housing Authority
   categories:
@@ -108,6 +119,12 @@
     lng: -90.22389
   phone: 217-757-8137
   website: https://www.siumed.org/treatment/support-team-addi
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -117,20 +134,12 @@
   name: SIU Center for Family Medicine-Jacksonville
   categories:
   - community-health-center
-  address:
-    street: 425 E State St
-    city: Jacksonville
-    state: il
-    zip: '62650'
+  cost: sliding-scale
+  address: {street: 425 E State St, city: Jacksonville, state: il, zip: '62650'}
   place: '1738115'
-  geo:
-    lat: 39.73376
-    lng: -90.22385
+  geo: {lat: 39.73376, lng: -90.22385}
   phone: 217-245-5111
-  external_ids:
-    bphc: BPS-H80-034286
+  external_ids: {bphc: BPS-H80-034286}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

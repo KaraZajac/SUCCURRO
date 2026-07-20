@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Highlands County
-  address: {street: 1306 S. Tulane Ave., city: Avon Park, state: fl, zip: '33825'}
+  address:
+    street: 1306 S. Tulane Ave.
+    city: Avon Park
+    state: fl
+    zip: '33825'
   place: '1202750'
   phone: 863-657-2076
   website: https://alpi.org/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/avon-park/avon-park-community-cdc-inc
   name: Avon Park Community CDC Inc
   categories:
@@ -102,46 +108,30 @@
   name: CFHC Avon Park Primary Care
   categories:
   - community-health-center
-  address:
-    street: 950 County Road 17a W
-    city: Avon Park
-    state: fl
-    zip: '33825'
+  cost: sliding-scale
+  address: {street: 950 County Road 17a W, city: Avon Park, state: fl, zip: '33825'}
   place: '1202750'
-  geo:
-    lat: 27.61825
-    lng: -81.51177
+  geo: {lat: 27.61825, lng: -81.51177}
   phone: 863-452-3000
   website: http://www.cfhconline.org/
-  external_ids:
-    bphc: BPS-H80-004632
+  external_ids: {bphc: BPS-H80-004632}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/avon-park/cfhc-mobile-unit-1
   name: CFHC Mobile Unit 1
   categories:
   - community-health-center
-  address:
-    street: 950 County Road 17a W
-    city: Avon Park
-    state: fl
-    zip: '33825'
+  cost: sliding-scale
+  address: {street: 950 County Road 17a W, city: Avon Park, state: fl, zip: '33825'}
   place: '1202750'
-  geo:
-    lat: 27.61825
-    lng: -81.51177
+  geo: {lat: 27.61825, lng: -81.51177}
   phone: 866-234-8534
   website: https://Www.cfhconline.org
-  external_ids:
-    bphc: BPS-H80-030162
+  external_ids: {bphc: BPS-H80-030162}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/avon-park/cornerstone-christian-academy
   name: Cornerstone Christian Academy
   categories:
@@ -265,6 +255,21 @@
     lng: -81.50127
   phone: 863-709-9392
   website: https://www.tchsonline.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

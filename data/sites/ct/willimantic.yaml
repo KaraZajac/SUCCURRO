@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Windham County
-  address: {street: 1315 Main Street, city: Willimantic, state: ct, zip: '06226'}
+  address:
+    street: 1315 Main Street
+    city: Willimantic
+    state: ct
+    zip: '06226'
   place: 0985810
   phone: 860-450-7400
   email: access@accessagency.org
   website: http://www.accessagency.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ct/willimantic/arts-at-the-capitol-theater-sbhc
   name: Arts at the Capitol Theater SBHC
   categories:
   - community-health-center
-  address:
-    street: 896 Main St
-    city: Willimantic
-    state: ct
-    zip: '06226'
+  cost: sliding-scale
+  address: {street: 896 Main St, city: Willimantic, state: ct, zip: '06226'}
   place: 0985810
-  geo:
-    lat: 41.71233
-    lng: -72.21612
+  geo: {lat: 41.71233, lng: -72.21612}
   phone: 860-465-5636
-  external_ids:
-    bphc: BPS-H80-034403
+  external_ids: {bphc: BPS-H80-034403}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ct/willimantic/community-health-resources-roots-to-recovery
   name: Community Health Resources Roots to Recovery
   categories:
@@ -44,6 +42,14 @@
   place: 0985810
   phone: 860-771-4895
   website: https://www.chrhealth.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -53,24 +59,16 @@
   name: Generations Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1315 Main St
-    city: Willimantic
-    state: ct
-    zip: '06226'
+  cost: sliding-scale
+  address: {street: 1315 Main St, city: Willimantic, state: ct, zip: '06226'}
   place: 0985810
-  geo:
-    lat: 41.71612
-    lng: -72.22801
+  geo: {lat: 41.71612, lng: -72.22801}
   phone: 860-450-7471
   website: http://www.genhealth.org
-  external_ids:
-    bphc: BPS-H80-002007
+  external_ids: {bphc: BPS-H80-002007}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ct/willimantic/generations-family-health-center-inc
   name: Generations Family Health Center Inc
   categories:
@@ -87,6 +85,12 @@
     lng: -72.22562
   phone: 860-450-0585 x6291
   website: https://www.genhealth.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -96,46 +100,30 @@
   name: Generations Family Health Center, Inc.
   categories:
   - community-health-center
-  address:
-    street: 40 Mansfield Ave
-    city: Willimantic
-    state: ct
-    zip: '06226'
+  cost: sliding-scale
+  address: {street: 40 Mansfield Ave, city: Willimantic, state: ct, zip: '06226'}
   place: 0985810
-  geo:
-    lat: 41.71539
-    lng: -72.22564
+  geo: {lat: 41.71539, lng: -72.22564}
   phone: 860-450-7471
   website: https://www.genhealth.org
-  external_ids:
-    bphc: BPS-H80-011494
+  external_ids: {bphc: BPS-H80-011494}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ct/willimantic/gfhc-mobile-health-unit
   name: GFHC Mobile Health Unit
   categories:
   - community-health-center
-  address:
-    street: 40 Mansfield Ave
-    city: Willimantic
-    state: ct
-    zip: '06226'
+  cost: sliding-scale
+  address: {street: 40 Mansfield Ave, city: Willimantic, state: ct, zip: '06226'}
   place: 0985810
-  geo:
-    lat: 41.71539
-    lng: -72.22564
+  geo: {lat: 41.71539, lng: -72.22564}
   phone: 860-450-7471
   website: https://www.genhealth.org
-  external_ids:
-    bphc: BPS-H80-037860
+  external_ids: {bphc: BPS-H80-037860}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ct/willimantic/hartford-dispensary-root-center-for-advanced-rec
   name: Hartford Dispensary Root Center for Advanced Recovery
   categories:
@@ -152,6 +140,22 @@
     lng: -72.196
   phone: 860-456-7990
   website: https://www.rootcenter.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -216,6 +220,14 @@
     lng: -72.20212
   phone: 877-577-3233
   website: https://
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

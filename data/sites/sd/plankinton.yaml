@@ -3,12 +3,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Aurora County
-  address: {city: Plankinton, state: sd}
+  address:
+    city: Plankinton
+    state: sd
   place: '4650020'
   phone: 800-233-8503
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sd/plankinton/home-based-wolbrink
   name: Home-based Wolbrink
   categories:
@@ -32,21 +36,13 @@
   name: Horizon Health - Plankinton Medical and Dental
   categories:
   - community-health-center
-  address:
-    street: 106 S Main St
-    city: Plankinton
-    state: sd
-    zip: '57368'
+  cost: sliding-scale
+  address: {street: 106 S Main St, city: Plankinton, state: sd, zip: '57368'}
   place: '4650020'
-  geo:
-    lat: 43.71383
-    lng: -98.48513
+  geo: {lat: 43.71383, lng: -98.48513}
   phone: 605-942-7711
   website: https://www.horizonhealthcare.org
-  external_ids:
-    bphc: BPS-H80-003372
+  external_ids: {bphc: BPS-H80-003372}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

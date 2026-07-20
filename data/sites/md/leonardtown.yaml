@@ -2,24 +2,16 @@
   name: Greater Baden Medical Service at Leonardtown
   categories:
   - community-health-center
-  address:
-    street: 23140 Moakley St, Ste 4
-    city: Leonardtown
-    state: md
-    zip: '20650'
+  cost: sliding-scale
+  address: {street: '23140 Moakley St, Ste 4', city: Leonardtown, state: md, zip: '20650'}
   place: '2446475'
-  geo:
-    lat: 38.30395
-    lng: -76.64122
+  geo: {lat: 38.30395, lng: -76.64122}
   phone: 301-997-1029
   website: https://www.gbms.org
-  external_ids:
-    bphc: BPS-H80-007098
+  external_ids: {bphc: BPS-H80-007098}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/leonardtown/medstar-saint-marys-hospital-psych-unit
   name: MedStar Saint Marys Hospital Psych Unit
   categories:
@@ -36,6 +28,10 @@
     lng: -76.63766
   phone: 301-475-6227
   website: https://www.medstarstmarys.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

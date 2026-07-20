@@ -63,23 +63,15 @@
   name: Heartland Health Center - Hastings
   categories:
   - community-health-center
-  address:
-    street: 223 E 14th St, Suite 100
-    city: Hastings
-    state: ne
-    zip: '68901'
+  cost: sliding-scale
+  address: {street: '223 E 14th St, Suite 100', city: Hastings, state: ne, zip: '68901'}
   place: '3121415'
-  geo:
-    lat: 40.60148
-    lng: -98.37861
+  geo: {lat: 40.60148, lng: -98.37861}
   phone: 308-382-4297
-  external_ids:
-    bphc: BPS-H80-038584
+  external_ids: {bphc: BPS-H80-038584}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/hastings/longfellow-elementary-school
   name: Longfellow Elementary School
   categories:
@@ -118,6 +110,9 @@
     lng: -98.39192
   phone: 402-463-7711
   website: https://marylanning.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -139,6 +134,12 @@
     lng: -98.38747
   phone: 402-463-5973
   website: https://www.marylanning.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -149,12 +150,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Adams, Webster Counties
-  address: {street: 4200 W. 2nd Street, city: Hastings, state: ne, zip: '68902'}
+  address:
+    street: 4200 W. 2nd Street
+    city: Hastings
+    state: ne
+    zip: '68902'
   place: '3121415'
   phone: 402-462-1800
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/hastings/south-central-behavioral-services-inc-assertive
   name: South Central Behavioral Services Inc Assertive Community Treatment
   categories:
@@ -171,6 +178,10 @@
     lng: -98.39215
   phone: 402-462-4200
   website: https://www.scbsne.com
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -192,6 +203,11 @@
     lng: -98.38926
   phone: 402-463-5684
   website: https://www.scbsne.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -213,6 +229,10 @@
     lng: -98.39288
   phone: 402-463-7435
   website: https://www.scbsne.com
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -22,44 +22,28 @@
   name: Community Eyecare
   categories:
   - community-health-center
-  address:
-    street: 216 Lincoln St
-    city: Grafton
-    state: wv
-    zip: '26354'
+  cost: sliding-scale
+  address: {street: 216 Lincoln St, city: Grafton, state: wv, zip: '26354'}
   place: '5432716'
-  geo:
-    lat: 39.34552
-    lng: -80.00425
+  geo: {lat: 39.34552, lng: -80.00425}
   phone: 304-265-1851
-  external_ids:
-    bphc: BPS-H80-037034
+  external_ids: {bphc: BPS-H80-037034}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/grafton/dental-center-of-taylor-county
   name: DENTAL CENTER OF TAYLOR COUNTY
   categories:
   - community-health-center
-  address:
-    street: 711 N Pike St
-    city: Grafton
-    state: wv
-    zip: '26354'
+  cost: sliding-scale
+  address: {street: 711 N Pike St, city: Grafton, state: wv, zip: '26354'}
   place: '5432716'
-  geo:
-    lat: 39.34548
-    lng: -80.01821
+  geo: {lat: 39.34548, lng: -80.01821}
   phone: 304-265-4600
-  external_ids:
-    bphc: BPS-H80-003532
+  external_ids: {bphc: BPS-H80-003532}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/grafton/grafton-high-school
   name: Grafton High School
   categories:
@@ -147,55 +131,45 @@
   name: PRESTON-TAYLOR COMMUNITY HEALTH
   categories:
   - community-health-center
-  address:
-    street: 725 N Pike St
-    city: Grafton
-    state: wv
-    zip: '26354'
+  cost: sliding-scale
+  address: {street: 725 N Pike St, city: Grafton, state: wv, zip: '26354'}
   place: '5432716'
-  geo:
-    lat: 39.34538
-    lng: -80.0189
+  geo: {lat: 39.34538, lng: -80.0189}
   phone: 304-265-4909
-  external_ids:
-    bphc: BPS-H80-000768
+  external_ids: {bphc: BPS-H80-000768}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/grafton/preston-taylor-pharmacy
   name: Preston-Taylor Pharmacy
   categories:
   - community-health-center
-  address:
-    street: 25 W Bluemont St
-    city: Grafton
-    state: wv
-    zip: '26354'
+  cost: sliding-scale
+  address: {street: 25 W Bluemont St, city: Grafton, state: wv, zip: '26354'}
   place: '5432716'
-  geo:
-    lat: 39.34506
-    lng: -80.01847
+  geo: {lat: 39.34506, lng: -80.01847}
   phone: 304-265-0312
-  external_ids:
-    bphc: BPS-H80-032434
+  external_ids: {bphc: BPS-H80-032434}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/grafton/taylor-county-dhhr-office
   name: Taylor County DHHR Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Taylor County
-  address: {street: 235 Barrett Street (P. O. Box 29), city: Grafton, state: wv, zip: '26354'}
+  address:
+    street: 235 Barrett Street (P. O. Box 29)
+    city: Grafton
+    state: wv
+    zip: '26354'
   place: '5432716'
   phone: 304-265-6103
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/grafton/taylor-county-middle
   name: Taylor County Middle
   categories:
@@ -244,23 +218,15 @@
   name: Taylor County Middle School - SBHC
   categories:
   - community-health-center
-  address:
-    street: 670 Spring Hills Rd
-    city: Grafton
-    state: wv
-    zip: '26354'
+  cost: sliding-scale
+  address: {street: 670 Spring Hills Rd, city: Grafton, state: wv, zip: '26354'}
   place: '5432716'
-  geo:
-    lat: 39.3396
-    lng: -80.07601
+  geo: {lat: 39.3396, lng: -80.07601}
   phone: 304-265-0722
-  external_ids:
-    bphc: BPS-H80-037667
+  external_ids: {bphc: BPS-H80-037667}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/grafton/valley-healthcare-system
   name: Valley HealthCare System
   categories:
@@ -277,6 +243,12 @@
     lng: -80.01384
   phone: 304-265-3947 x4000
   website: https://www.valleyhealthcare.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

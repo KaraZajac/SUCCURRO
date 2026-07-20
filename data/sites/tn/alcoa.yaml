@@ -2,23 +2,15 @@
   name: CHS Alcoa (Blount Co)
   categories:
   - community-health-center
-  address:
-    street: 255 E Watt St
-    city: Alcoa
-    state: tn
-    zip: '37701'
+  cost: sliding-scale
+  address: {street: 255 E Watt St, city: Alcoa, state: tn, zip: '37701'}
   place: '4700540'
-  geo:
-    lat: 35.77988
-    lng: -83.97891
+  geo: {lat: 35.77988, lng: -83.97891}
   phone: 865-380-4390
-  external_ids:
-    bphc: BPS-H80-010635
+  external_ids: {bphc: BPS-H80-010635}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/alcoa/peninsula-behavioral-health-peninsula-outpatient
   name: Peninsula Behavioral Health Peninsula Outpatient Center
   categories:
@@ -35,6 +27,9 @@
     lng: -83.98614
   phone: 865-970-9800
   website: https://covenanthealth.com/peninsula
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,6 +51,12 @@
     lng: -83.97857
   phone: 865-273-1616
   website: https://www.rvh.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

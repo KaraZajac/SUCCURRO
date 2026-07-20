@@ -21,35 +21,33 @@
   name: Booneville Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 208 N 1st St
-    city: Booneville
-    state: ms
-    zip: '38829'
+  cost: sliding-scale
+  address: {street: 208 N 1st St, city: Booneville, state: ms, zip: '38829'}
   place: '2807780'
-  geo:
-    lat: 34.65896
-    lng: -88.56427
+  geo: {lat: 34.65896, lng: -88.56427}
   phone: 662-728-3313
   website: https://www.nmphc.org
-  external_ids:
-    bphc: BPS-H80-001265
+  external_ids: {bphc: BPS-H80-001265}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/booneville/northeast-ms-community-services
   name: Northeast MS Community Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Prentiss County
-  address: {street: 613D E. Shurch St., city: Booneville, state: ms, zip: '38829'}
+  address:
+    street: 613D E. Shurch St.
+    city: Booneville
+    state: ms
+    zip: '38829'
   place: '2807780'
   phone: 662-728-8141
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/booneville/region-iv-mhs-booneville-extension-office
   name: Region IV MHS Booneville Extension Office
   categories:
@@ -66,6 +64,17 @@
     lng: -88.53239
   phone: 662-286-7199
   website: https://www.regionivmhs.com/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

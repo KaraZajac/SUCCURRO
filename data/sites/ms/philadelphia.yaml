@@ -85,12 +85,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Neshoba County
-  address: {street: 268 Atkins St., city: Philadelphia, state: ms, zip: '39350'}
+  address:
+    street: 268 Atkins St.
+    city: Philadelphia
+    state: ms
+    zip: '39350'
   place: '2856960'
   phone: 601-656-7261
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/philadelphia/neshoba-central-high-school
   name: Neshoba Central High School
   categories:
@@ -185,23 +191,15 @@
   name: PHILADELPHIA HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 10330 Road 375
-    city: Philadelphia
-    state: ms
-    zip: '39350'
+  cost: sliding-scale
+  address: {street: 10330 Road 375, city: Philadelphia, state: ms, zip: '39350'}
   place: '2856960'
-  geo:
-    lat: 32.76405
-    lng: -89.13851
+  geo: {lat: 32.76405, lng: -89.13851}
   phone: 601-656-0226
-  external_ids:
-    bphc: BPS-H80-000810
+  external_ids: {bphc: BPS-H80-000810}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/philadelphia/reunion-court-apartments
   name: Reunion Court Apartments
   categories:
@@ -281,6 +279,17 @@
     lng: -89.10285
   phone: 601-483-4821
   website: https://www.weemsmh.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

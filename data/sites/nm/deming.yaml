@@ -2,24 +2,16 @@
   name: Ben Archer Health Center - Deming
   categories:
   - community-health-center
-  address:
-    street: 125 Chaparral Blvd NW
-    city: Deming
-    state: nm
-    zip: '88030'
+  cost: sliding-scale
+  address: {street: 125 Chaparral Blvd NW, city: Deming, state: nm, zip: '88030'}
   place: '3520270'
-  geo:
-    lat: 32.28095
-    lng: -107.76309
+  geo: {lat: 32.28095, lng: -107.76309}
   phone: 575-546-4800
   website: https://www.bahcnm.org
-  external_ids:
-    bphc: BPS-H80-001218
+  external_ids: {bphc: BPS-H80-001218}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/deming/deming-cesar-chavez-charter-ehs-center
   name: Deming Cesar Chavez Charter EHS Center
   categories:
@@ -62,24 +54,16 @@
   name: Deming High School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 1300 S Iron St
-    city: Deming
-    state: nm
-    zip: '88030'
+  cost: sliding-scale
+  address: {street: 1300 S Iron St, city: Deming, state: nm, zip: '88030'}
   place: '3520270'
-  geo:
-    lat: 32.25608
-    lng: -107.76075
+  geo: {lat: 32.25608, lng: -107.76075}
   phone: 575-267-3280
   website: https://www.bahcnm.org
-  external_ids:
-    bphc: BPS-H80-034976
+  external_ids: {bphc: BPS-H80-034976}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/deming/family-resource-center
   name: Family Resource Center
   categories:
@@ -104,12 +88,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Luna County
-  address: {street: 910 E. Pear, city: Deming, state: nm, zip: '88030'}
+  address:
+    street: 910 E. Pear
+    city: Deming
+    state: nm
+    zip: '88030'
   place: '3520270'
   phone: 800-283-4465
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nm/deming/mcpherson-ehs-center
   name: McPherson EHS Center
   categories:
@@ -152,45 +142,29 @@
   name: PMS - Deming Behavioral Health Health Center
   categories:
   - community-health-center
-  address:
-    street: 901 W Hickory St
-    city: Deming
-    state: nm
-    zip: '88030'
+  cost: sliding-scale
+  address: {street: 901 W Hickory St, city: Deming, state: nm, zip: '88030'}
   place: '3520270'
-  geo:
-    lat: 32.25952
-    lng: -107.7691
+  geo: {lat: 32.25952, lng: -107.7691}
   phone: 575-546-4663
-  external_ids:
-    bphc: BPS-H80-015218
+  external_ids: {bphc: BPS-H80-015218}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/deming/pms-deming-health-center
   name: PMS - Deming Health Center
   categories:
   - community-health-center
-  address:
-    street: 300 S Diamond Ave
-    city: Deming
-    state: nm
-    zip: '88030'
+  cost: sliding-scale
+  address: {street: 300 S Diamond Ave, city: Deming, state: nm, zip: '88030'}
   place: '3520270'
-  geo:
-    lat: 32.26694
-    lng: -107.75485
+  geo: {lat: 32.26694, lng: -107.75485}
   phone: 575-546-4663
   website: https://www.pms-inc.org
-  external_ids:
-    bphc: BPS-H80-010386
+  external_ids: {bphc: BPS-H80-010386}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/deming/presbyterian-medical-services
   name: Presbyterian Medical Services
   categories:
@@ -207,6 +181,10 @@
     lng: -107.7691
   phone: 575-546-2174
   website: https://www.pmsnm.org/locations/deming-health-center-behav
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -247,6 +225,20 @@
     lng: -107.7598
   phone: 575-590-8886
   website: https://recoverymanagement.wixsite.com/treatment
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

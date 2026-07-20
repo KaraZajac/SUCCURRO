@@ -2,45 +2,29 @@
   name: ARcare-074
   categories:
   - community-health-center
-  address:
-    street: 305 Falls Blvd S
-    city: Wynne
-    state: ar
-    zip: '72396'
+  cost: sliding-scale
+  address: {street: 305 Falls Blvd S, city: Wynne, state: ar, zip: '72396'}
   place: 0577090
-  geo:
-    lat: 35.22105
-    lng: -90.78773
+  geo: {lat: 35.22105, lng: -90.78773}
   phone: 870-347-2534
-  external_ids:
-    bphc: BPS-H80-036764
+  external_ids: {bphc: BPS-H80-036764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/wynne/arcare-60
   name: ARcare - 60
   categories:
   - community-health-center
-  address:
-    street: 601 Julia Ave E
-    city: Wynne
-    state: ar
-    zip: '72396'
+  cost: sliding-scale
+  address: {street: 601 Julia Ave E, city: Wynne, state: ar, zip: '72396'}
   place: 0577090
-  geo:
-    lat: 35.21815
-    lng: -90.78692
+  geo: {lat: 35.21815, lng: -90.78692}
   phone: 870-238-0377
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-013676
+  external_ids: {bphc: BPS-H80-013676}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/wynne/arisa-health-inc-wynne-clinic
   name: Arisa Health Inc Wynne Clinic
   categories:
@@ -57,6 +41,13 @@
     lng: -90.78654
   phone: 870-238-1135
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,14 +58,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cross County
-  address: {street: 325 Magnolia Street, city: Wynne, state: ar, zip: '72396'}
+  address:
+    street: 325 Magnolia Street
+    city: Wynne
+    state: ar
+    zip: '72396'
   place: 0577090
   phone: 870-238-2726
   email: crdc@crdcnea.org
   website: http://www.crdcnea.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/wynne/logan-centers-inc
   name: Logan Centers Inc
   categories:
@@ -91,6 +88,9 @@
     lng: -90.78184
   phone: 870-520-5014
   website: https://www.thelogancenters.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

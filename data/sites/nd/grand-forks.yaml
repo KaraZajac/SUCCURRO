@@ -33,6 +33,9 @@
     lng: -97.06191
   phone: 701-746-6336
   website: https://www.agassizassociates.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -76,6 +79,13 @@
     lng: -97.02803
   phone: 701-746-6303
   website: https://www.centreinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -115,6 +125,18 @@
     lng: -97.06175
   phone: 701-792-6700
   website: https://communitymedicalservices.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -148,12 +170,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Grand Forks County
-  address: {street: '151 S 4th Street, Ste 200 (P. O. Box 5196)', city: Grand Forks, state: nd, zip: '58206'}
+  address:
+    street: 151 S 4th Street, Ste 200 (P. O. Box 5196)
+    city: Grand Forks
+    state: nd
+    zip: '58206'
   place: '3832060'
   phone: 701-787-8500
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nd/grand-forks/grand-forks-head-start
   name: Grand Forks Head Start
   categories:
@@ -434,6 +462,15 @@
     lng: -97.02882
   phone: 701-795-3000
   website: https://www.hhs.nd.gov/HSC/region-4
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -455,6 +492,10 @@
     lng: -97.04719
   phone: 701-795-3870
   website: https://www.hhs.nd.gov/HSC/region-4
+  services:
+  - Residential/24-hour residential
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -536,6 +577,15 @@
     lng: -97.08988
   phone: 701-670-1122
   website: https://www.sharehouse.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -557,6 +607,11 @@
     lng: -97.0282
   phone: 701-757-2100
   website: https://www.spectrahealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -566,68 +621,44 @@
   name: Spectra Health Admin Office
   categories:
   - community-health-center
-  address:
-    street: 212 S 4th St, Suite 200
-    city: Grand Forks
-    state: nd
-    zip: '58201'
+  cost: sliding-scale
+  address: {street: '212 S 4th St, Suite 200', city: Grand Forks, state: nd, zip: '58201'}
   place: '3832060'
-  geo:
-    lat: 47.92223
-    lng: -97.02832
+  geo: {lat: 47.92223, lng: -97.02832}
   phone: 701-757-2100
   website: https://www.spectrahealth.org
-  external_ids:
-    bphc: BPS-H80-017637
+  external_ids: {bphc: BPS-H80-017637}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/grand-forks/spectra-health-dental-clinic
   name: Spectra Health Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 212 S 4th St STE 101
-    city: Grand Forks
-    state: nd
-    zip: '58201'
+  cost: sliding-scale
+  address: {street: 212 S 4th St STE 101, city: Grand Forks, state: nd, zip: '58201'}
   place: '3832060'
-  geo:
-    lat: 47.92247
-    lng: -97.02805
+  geo: {lat: 47.92247, lng: -97.02805}
   phone: 701-757-2100
   website: https://www.spectrahealth.org
-  external_ids:
-    bphc: BPS-H80-003172
+  external_ids: {bphc: BPS-H80-003172}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/grand-forks/spectra-health-grand-forks-medical
   name: Spectra Health Grand Forks Medical
   categories:
   - community-health-center
-  address:
-    street: 212 S 4th St STE 301
-    city: Grand Forks
-    state: nd
-    zip: '58201'
+  cost: sliding-scale
+  address: {street: 212 S 4th St STE 301, city: Grand Forks, state: nd, zip: '58201'}
   place: '3832060'
-  geo:
-    lat: 47.92255
-    lng: -97.02817
+  geo: {lat: 47.92255, lng: -97.02817}
   phone: 701-757-2100
   website: https://www.spectrahealth.org
-  external_ids:
-    bphc: BPS-H80-013645
+  external_ids: {bphc: BPS-H80-013645}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/grand-forks/st-vincent-de-paul-university-park
   name: St Vincent De Paul-University Park
   categories:

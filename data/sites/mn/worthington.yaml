@@ -2,24 +2,16 @@
   name: Access Health - Worthington
   categories:
   - community-health-center
-  address:
-    street: 1216 Ryans Rd, Suite 3
-    city: Worthington
-    state: mn
-    zip: '56187'
+  cost: sliding-scale
+  address: {street: '1216 Ryans Rd, Suite 3', city: Worthington, state: mn, zip: '56187'}
   place: '2771734'
-  geo:
-    lat: 43.63481
-    lng: -95.59726
+  geo: {lat: 43.63481, lng: -95.59726}
   phone: 507-372-2921
   website: https://www.ruralhc.net
-  external_ids:
-    bphc: BPS-H80-015016
+  external_ids: {bphc: BPS-H80-015016}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/worthington/elevacare-unity-house
   name: Elevacare Unity House
   categories:
@@ -36,6 +28,11 @@
     lng: -95.59458
   phone: 507-372-7671
   website: https://www.elevacare.org
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -121,6 +118,10 @@
     lng: -95.59533
   phone: 507-376-4141
   website: https://www.elevacare.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -131,13 +132,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Murray, Nobles, Pipestone, Rock Counties
-  address: {street: 1106 3rd Avenue (P. O Box 787), city: Worthington, state: mn, zip: '56187'}
+  address:
+    street: 1106 3rd Avenue (P. O Box 787)
+    city: Worthington
+    state: mn
+    zip: '56187'
   place: '2771734'
   phone: 507-376-4195
   website: http://www.smoc.us/eap.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mn/worthington/watland-park
   name: Watland Park
   categories:

@@ -14,6 +14,16 @@
     lng: -79.99153
   phone: 843-761-8282 x370
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -98,6 +108,22 @@
     lng: -80.03068
   phone: 843-761-8272
   website: https://www.ekcenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -225,35 +251,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Berkeley County
-  address: {street: 325 East Main Street, city: Moncks Corner, state: sc, zip: '29461'}
+  address:
+    street: 325 East Main Street
+    city: Moncks Corner
+    state: sc
+    zip: '29461'
   place: '4547275'
   phone: 843-761-6935
   website: https://www.palmettocap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/moncks-corner/rose-d-gibbs-md-family-health-center
   name: Rose D. Gibbs, MD Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 106 W Main St
-    city: Moncks Corner
-    state: sc
-    zip: '29461'
+  cost: sliding-scale
+  address: {street: 106 W Main St, city: Moncks Corner, state: sc, zip: '29461'}
   place: '4547275'
-  geo:
-    lat: 33.19709
-    lng: -80.01425
+  geo: {lat: 33.19709, lng: -80.01425}
   phone: 843-761-1995
   website: https://www.fetterhealthcare.org
-  external_ids:
-    bphc: BPS-H80-022064
+  external_ids: {bphc: BPS-H80-022064}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/moncks-corner/whitesville-elementary
   name: Whitesville Elementary
   categories:

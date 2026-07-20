@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alamance County
-  address: {street: 319 N. Graham-Hopedale Road Suite C, city: Burlington, state: nc, zip: '27217'}
+  address:
+    street: 319 N. Graham-Hopedale Road Suite C
+    city: Burlington
+    state: nc
+    zip: '27217'
   place: '3709060'
   phone: 336-570-6532
   email: askdss@alamance-nc.com
   website: https://www.alamance-nc.com/dss/contact-us/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/burlington/alamance-regional-psychiatric-assoc
   name: Alamance Regional Psychiatric Assoc
   categories:
@@ -27,6 +33,18 @@
     lng: -79.50123
   phone: 336-586-3795
   website: https://www.conehealth.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -58,24 +76,16 @@
   name: Charles Drew Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 221 N Graham Hopedale Rd
-    city: Burlington
-    state: nc
-    zip: '27217'
+  cost: sliding-scale
+  address: {street: 221 N Graham Hopedale Rd, city: Burlington, state: nc, zip: '27217'}
   place: '3709060'
-  geo:
-    lat: 36.09871
-    lng: -79.40544
+  geo: {lat: 36.09871, lng: -79.40544}
   phone: 336-570-3739
   website: https://www.piedmonthealth.org
-  external_ids:
-    bphc: BPS-H80-005241
+  external_ids: {bphc: BPS-H80-005241}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burlington/fruit-tree-ministries
   name: Fruit Tree Ministries
   categories:
@@ -140,24 +150,16 @@
   name: Kintegra at Clover Garden School
   categories:
   - community-health-center
-  address:
-    street: 5806 Pagetown Rd
-    city: Burlington
-    state: nc
-    zip: '27217'
+  cost: sliding-scale
+  address: {street: 5806 Pagetown Rd, city: Burlington, state: nc, zip: '27217'}
   place: '3709060'
-  geo:
-    lat: 36.21522
-    lng: -79.45468
+  geo: {lat: 36.21522, lng: -79.45468}
   phone: 336-586-9440
   website: https://www.kintegra.org
-  external_ids:
-    bphc: BPS-H80-038516
+  external_ids: {bphc: BPS-H80-038516}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burlington/kool-kidz-place
   name: Kool Kidz Place
   categories:
@@ -228,45 +230,29 @@
   name: 'Piedmont Health Mobile Unit # 2'
   categories:
   - community-health-center
-  address:
-    street: 1214 Vaughn Rd
-    city: Burlington
-    state: nc
-    zip: '27217'
+  cost: sliding-scale
+  address: {street: 1214 Vaughn Rd, city: Burlington, state: nc, zip: '27217'}
   place: '3709060'
-  geo:
-    lat: 36.10073
-    lng: -79.41744
+  geo: {lat: 36.10073, lng: -79.41744}
   phone: 336-506-0631
-  external_ids:
-    bphc: BPS-H80-039703
+  external_ids: {bphc: BPS-H80-039703}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burlington/piedmont-health-seniorcare-burlington-community
   name: Piedmont Health SeniorCare Burlington Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 1214 Vaughn Rd
-    city: Burlington
-    state: nc
-    zip: '27217'
+  cost: sliding-scale
+  address: {street: 1214 Vaughn Rd, city: Burlington, state: nc, zip: '27217'}
   place: '3709060'
-  geo:
-    lat: 36.10073
-    lng: -79.41744
+  geo: {lat: 36.10073, lng: -79.41744}
   phone: 336-506-5840
   website: https://www.piedmonthealth.org
-  external_ids:
-    bphc: BPS-H80-007710
+  external_ids: {bphc: BPS-H80-007710}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/burlington/psychotherapeutic-services-inc
   name: Psychotherapeutic Services Inc
   categories:
@@ -282,6 +268,9 @@
     lng: -79.47204
   phone: 336-513-4229
   website: https://www.psychotherapeuticservices.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -302,6 +291,22 @@
     lng: -79.43843
   phone: 226-227-7417
   website: https://www.rtsalamance.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Young adults
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -311,21 +316,13 @@
   name: Scott Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 5270 Union Ridge Rd
-    city: Burlington
-    state: nc
-    zip: '27217'
+  cost: sliding-scale
+  address: {street: 5270 Union Ridge Rd, city: Burlington, state: nc, zip: '27217'}
   place: '3709060'
-  geo:
-    lat: 36.21299
-    lng: -79.39698
+  geo: {lat: 36.21299, lng: -79.39698}
   phone: 336-421-3247
   website: https://www.piedmonthealth.org
-  external_ids:
-    bphc: BPS-H80-001819
+  external_ids: {bphc: BPS-H80-001819}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

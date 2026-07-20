@@ -62,55 +62,45 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Eddy County
-  address: {street: 108 N. 16th, city: Artesia, state: nm, zip: '88210'}
+  address:
+    street: 108 N. 16th
+    city: Artesia
+    state: nm
+    zip: '88210'
   place: '3505220'
   phone: 575-748-3361
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nm/artesia/pms-artesia-family-health-center
   name: PMS - Artesia Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1105 Memorial Dr
-    city: Artesia
-    state: nm
-    zip: '88210'
+  cost: sliding-scale
+  address: {street: 1105 Memorial Dr, city: Artesia, state: nm, zip: '88210'}
   place: '3505220'
-  geo:
-    lat: 32.84793
-    lng: -104.4106
+  geo: {lat: 32.84793, lng: -104.4106}
   phone: 505-746-9848
   website: https://www.pms-inc.org
-  external_ids:
-    bphc: BPS-H80-000538
+  external_ids: {bphc: BPS-H80-000538}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/artesia/pms-artesia-family-health-center-psr
   name: PMS - Artesia Family Health Center PSR
   categories:
   - community-health-center
-  address:
-    street: 1103 Memorial Dr
-    city: Artesia
-    state: nm
-    zip: '88210'
+  cost: sliding-scale
+  address: {street: 1103 Memorial Dr, city: Artesia, state: nm, zip: '88210'}
   place: '3505220'
-  geo:
-    lat: 32.8485
-    lng: -104.41108
+  geo: {lat: 32.8485, lng: -104.41108}
   phone: 575-746-9848
-  external_ids:
-    bphc: BPS-H80-021556
+  external_ids: {bphc: BPS-H80-021556}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/artesia/presbyterian-medical-services-artesia-family-hea
   name: Presbyterian Medical Services Artesia Family Health Center
   categories:
@@ -127,6 +117,11 @@
     lng: -104.4107
   phone: 575-746-9848 x5224
   website: https://www.pmsnm.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

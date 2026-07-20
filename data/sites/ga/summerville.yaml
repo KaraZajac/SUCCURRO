@@ -14,6 +14,9 @@
     lng: -85.33198
   phone: 706-857-5441
   website: https://www.bridgecsb.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -173,35 +176,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chattooga County
-  address: {street: 152 Senior Dr., city: Summerville, state: ga, zip: '30747'}
+  address:
+    street: 152 Senior Dr.
+    city: Summerville
+    state: ga
+    zip: '30747'
   place: '1374376'
   phone: 706-857-0729
   website: http://www.ngcainc.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/summerville/primary-health-care-center-summerville
   name: Primary Health Care Center Summerville
   categories:
   - community-health-center
-  address:
-    street: 11638 Highway 27
-    city: Summerville
-    state: ga
-    zip: '30747'
+  cost: sliding-scale
+  address: {street: 11638 Highway 27, city: Summerville, state: ga, zip: '30747'}
   place: '1374376'
-  geo:
-    lat: 34.49836
-    lng: -85.33214
+  geo: {lat: 34.49836, lng: -85.33214}
   phone: 706-996-8251
   website: https://www.primaryhealthcarecenter.org
-  external_ids:
-    bphc: BPS-H80-014172
+  external_ids: {bphc: BPS-H80-014172}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/summerville/summerville-middle-school
   name: Summerville Middle School
   categories:

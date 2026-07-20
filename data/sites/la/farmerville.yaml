@@ -2,24 +2,16 @@
   name: CommuniHealth Services Union Parish High School-Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 1126 Marion Hwy
-    city: Farmerville
-    state: la
-    zip: '71241'
+  cost: sliding-scale
+  address: {street: 1126 Marion Hwy, city: Farmerville, state: la, zip: '71241'}
   place: '2225160'
-  geo:
-    lat: 32.79281
-    lng: -92.38934
+  geo: {lat: 32.79281, lng: -92.38934}
   phone: 318-974-7525
   website: https://www.communihealth.org
-  external_ids:
-    bphc: BPS-H80-027606
+  external_ids: {bphc: BPS-H80-027606}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/farmerville/farmerville-head-start-center-union-ii
   name: Farmerville Head Start Center (Union II)
   categories:
@@ -64,25 +56,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Morehouse County
-  address: {street: 100 East Bayou St. Suite 107, city: Farmerville, state: la, zip: '71241'}
+  address:
+    street: 100 East Bayou St. Suite 107
+    city: Farmerville
+    state: la
+    zip: '71241'
   place: '2225160'
   phone: 318-368-9606
   website: https://www.ucaa.us/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: la/farmerville/union-community-action-agency-inc-2
   name: Union Community Action Agency, Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Union County
-  address: {street: '100 East Bayou St., Suite 107', city: Farmerville, state: la, zip: '71241'}
+  address:
+    street: 100 East Bayou St., Suite 107
+    city: Farmerville
+    state: la
+    zip: '71241'
   place: '2225160'
   phone: 318-368-9606
   website: https://www.ucaa.us/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: la/farmerville/union-elementary-school
   name: Union Elementary School
   categories:
@@ -120,6 +124,10 @@
     lng: -92.39193
   phone: 318-368-4748
   website: https://www.uniongen.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

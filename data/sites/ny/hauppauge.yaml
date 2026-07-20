@@ -2,44 +2,28 @@
   name: Charles Evans Center, Inc - Hauppauge
   categories:
   - community-health-center
-  address:
-    street: 305 Oser Ave
-    city: Hauppauge
-    state: ny
-    zip: '11788'
+  cost: sliding-scale
+  address: {street: 305 Oser Ave, city: Hauppauge, state: ny, zip: '11788'}
   place: '3632732'
-  geo:
-    lat: 40.81656
-    lng: -73.25971
+  geo: {lat: 40.81656, lng: -73.25971}
   phone: 516-622-8888
-  external_ids:
-    bphc: BPS-H80-019443
+  external_ids: {bphc: BPS-H80-019443}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/hauppauge/lish-at-the-family-wellness-center
   name: LISH at the Family Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 120 Plant Ave
-    city: Hauppauge
-    state: ny
-    zip: '11788'
+  cost: sliding-scale
+  address: {street: 120 Plant Ave, city: Hauppauge, state: ny, zip: '11788'}
   place: '3632732'
-  geo:
-    lat: 40.81633
-    lng: -73.24372
+  geo: {lat: 40.81633, lng: -73.24372}
   phone: 631-273-1300
-  external_ids:
-    bphc: BPS-H80-018482
+  external_ids: {bphc: BPS-H80-018482}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/hauppauge/mindful-care
   name: Mindful Care
   categories:
@@ -56,6 +40,22 @@
     lng: -73.25969
   phone: 516-505-7200
   website: https://www.mindful.care
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -66,12 +66,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Suffolk County
-  address: {street: 200 Wireless Boulevard (P. O. Box 18100), city: Hauppauge, state: ny, zip: '11788'}
+  address:
+    street: 200 Wireless Boulevard (P. O. Box 18100)
+    city: Hauppauge
+    state: ny
+    zip: '11788'
   place: '3632732'
   phone: 631-853-8825
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/hauppauge/suffolk-county-dept-of-health-service-division-o
   name: Suffolk County Dept of Health Service Division of Community Mental Hygiene
   categories:
@@ -87,6 +93,22 @@
     lng: -73.26639
   phone: 631-853-7373
   website: https://www.suffolkcountyny.gov
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

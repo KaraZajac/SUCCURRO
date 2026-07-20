@@ -14,6 +14,22 @@
     lng: -95.48128
   phone: 580-298-2830
   website: https://bh-oklahoma.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -54,6 +70,15 @@
     lng: -95.50609
   phone: 580-326-7531
   website: https://oklahoma.gov/odmhsas.html
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -266,31 +291,29 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Choctaw County
-  address: {street: 1603 E. Kirk, city: Hugo, state: ok, zip: '74743'}
+  address:
+    street: 1603 E. Kirk
+    city: Hugo
+    state: ok
+    zip: '74743'
   place: '4036300'
   phone: 580-317-2900
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/hugo/kiamichi-family-medical-center-hugo
   name: Kiamichi Family Medical Center - Hugo
   categories:
   - community-health-center
-  address:
-    street: 3004 E Jackson St
-    city: Hugo
-    state: ok
-    zip: '74743'
+  cost: sliding-scale
+  address: {street: 3004 E Jackson St, city: Hugo, state: ok, zip: '74743'}
   place: '4036300'
-  geo:
-    lat: 33.99822
-    lng: -95.47933
+  geo: {lat: 33.99822, lng: -95.47933}
   phone: 580-326-9555
-  external_ids:
-    bphc: BPS-H80-037079
+  external_ids: {bphc: BPS-H80-037079}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

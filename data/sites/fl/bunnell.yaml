@@ -13,6 +13,12 @@
     lng: -81.25507
   phone: 386-437-0026
   website: https://Breakthecycle12.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +63,22 @@
     lng: -81.26746
   phone: 904-829-2273
   website: https://www.epicbh.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -101,6 +123,10 @@
     lng: -81.24294
   phone: 386-238-1348
   website: https://www.hearthstonefoundation.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -131,13 +157,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Flagler County
-  address: {street: '703 East Moody Blvd, Suite 4', city: Bunnell, state: fl, zip: '32110'}
+  address:
+    street: 703 East Moody Blvd, Suite 4
+    city: Bunnell
+    state: fl
+    zip: '32110'
   place: '1209550'
   phone: 904-398-7472
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/bunnell/our-house-resource-center
   name: Our House Resource Center
   categories:
@@ -184,46 +216,30 @@
   name: SMA Flagler Primary Care
   categories:
   - community-health-center
-  address:
-    street: 301 Dr Carter Blvd
-    city: Bunnell
-    state: fl
-    zip: '32110'
+  cost: sliding-scale
+  address: {street: 301 Dr Carter Blvd, city: Bunnell, state: fl, zip: '32110'}
   place: '1209550'
-  geo:
-    lat: 29.46896
-    lng: -81.25013
+  geo: {lat: 29.46896, lng: -81.25013}
   phone: 386-282-7195
   website: https://www.smahealthcare.org
-  external_ids:
-    bphc: BPS-LAL-040375
+  external_ids: {bphc: BPS-LAL-040375}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/bunnell/sma-justice
   name: SMA Justice
   categories:
   - community-health-center
-  address:
-    street: 301 Justice Ln
-    city: Bunnell
-    state: fl
-    zip: '32110'
+  cost: sliding-scale
+  address: {street: 301 Justice Ln, city: Bunnell, state: fl, zip: '32110'}
   place: '1209550'
-  geo:
-    lat: 29.45896
-    lng: -81.26161
+  geo: {lat: 29.45896, lng: -81.26161}
   phone: 386-254-1163
   website: https://www.smahealthcare.org
-  external_ids:
-    bphc: BPS-LAL-041553
+  external_ids: {bphc: BPS-LAL-041553}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/bunnell/sma-outpatient-and-womens-residential-bunnell
   name: SMA Outpatient and Womens Residential Bunnell
   categories:
@@ -240,6 +256,9 @@
     lng: -81.2618
   phone: 800-539-4228
   website: https://www.smahealthcare.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

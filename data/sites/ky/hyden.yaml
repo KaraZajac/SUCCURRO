@@ -44,65 +44,41 @@
   name: Grace CHC Mountain View Elementary School
   categories:
   - community-health-center
-  address:
-    street: 170 Bear Trail Rd
-    city: Hyden
-    state: ky
-    zip: '41749'
+  cost: sliding-scale
+  address: {street: 170 Bear Trail Rd, city: Hyden, state: ky, zip: '41749'}
   place: '2138908'
-  geo:
-    lat: 37.16439
-    lng: -83.40009
+  geo: {lat: 37.16439, lng: -83.40009}
   phone: 606-672-1606
-  external_ids:
-    bphc: BPS-H80-017260
+  external_ids: {bphc: BPS-H80-017260}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/hyden/grace-community-health-center-inc-hyden
   name: Grace Community Health Center, Inc. - Hyden
   categories:
   - community-health-center
-  address:
-    street: 21154 United States Highway 421
-    city: Hyden
-    state: ky
-    zip: '41749'
+  cost: sliding-scale
+  address: {street: 21154 United States Highway 421, city: Hyden, state: ky, zip: '41749'}
   place: '2138908'
-  geo:
-    lat: 37.15157
-    lng: -83.37303
+  geo: {lat: 37.15157, lng: -83.37303}
   phone: 606-672-1208
-  external_ids:
-    bphc: BPS-H80-018611
+  external_ids: {bphc: BPS-H80-018611}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/hyden/grace-sbhc-leslie-co-high-school
   name: Grace SBHC Leslie Co High School
   categories:
   - community-health-center
-  address:
-    street: 25 Eagle Ln
-    city: Hyden
-    state: ky
-    zip: '41749'
+  cost: sliding-scale
+  address: {street: 25 Eagle Ln, city: Hyden, state: ky, zip: '41749'}
   place: '2138908'
-  geo:
-    lat: 37.14578
-    lng: -83.37975
+  geo: {lat: 37.14578, lng: -83.37975}
   phone: 606-672-2337
-  external_ids:
-    bphc: BPS-H80-028278
+  external_ids: {bphc: BPS-H80-028278}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/hyden/kentucky-river-community-care-inc-drug-court-ser
   name: Kentucky River Community Care Inc Drug Court Services
   categories:
@@ -119,6 +95,11 @@
     lng: -83.36849
   phone: 606-672-4215
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -140,6 +121,16 @@
     lng: -83.36827
   phone: 606-672-4215 x4000
   website: https://krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -160,6 +151,13 @@
     lng: -83.36849
   phone: 606-672-4215
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -181,6 +179,11 @@
     lng: -83.36698
   phone: 606-672-4215
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,6 +204,12 @@
     lng: -83.36816
   phone: 606-672-4215
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -222,6 +231,15 @@
     lng: -83.36816
   phone: 606-672-4215
   website: https://www.krccnet.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -273,13 +291,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Leslie County
-  address: {street: 121 Maple St., city: Hyden, state: ky, zip: '41749'}
+  address:
+    street: 121 Maple St.
+    city: Hyden
+    state: ky
+    zip: '41749'
   place: '2138908'
   phone: 606-672-2155
   website: http://www.lklp.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/hyden/mountain-view-elementary
   name: Mountain View Elementary
   categories:

@@ -14,6 +14,11 @@
     lng: -89.06977
   phone: 920-663-1035
   website: https://www.coretreatmentservices.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,23 +28,15 @@
   name: Partnership Community Health Center - Waupaca Dental
   categories:
   - community-health-center
-  address:
-    street: 825 W Fulton St
-    city: Waupaca
-    state: wi
-    zip: '54981'
+  cost: sliding-scale
+  address: {street: 825 W Fulton St, city: Waupaca, state: wi, zip: '54981'}
   place: '5584375'
-  geo:
-    lat: 44.35635
-    lng: -89.10211
+  geo: {lat: 44.35635, lng: -89.10211}
   phone: 920-731-7445
-  external_ids:
-    bphc: BPS-H80-024799
+  external_ids: {bphc: BPS-H80-024799}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/waupaca/thedacare-behavioral-health
   name: ThedaCare Behavioral Health
   categories:
@@ -56,6 +53,9 @@
     lng: -89.07797
   phone: 920-720-2300
   website: https://www.thedacare.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -73,6 +73,13 @@
   place: '5584375'
   phone: 715-258-1440
   website: https://www.tomorrowschildrenwi.org
+  services:
+  - Residential/24-hour residential
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -114,6 +121,11 @@
     lng: -89.06677
   phone: 715-258-6300
   website: https://www.waupacacounty-wi.gov/departments/health_and_human_services
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -124,13 +136,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Waupaca County
-  address: {street: 1300 Royalton St., city: Waupaca, state: wi, zip: '54981'}
+  address:
+    street: 1300 Royalton St.
+    city: Waupaca
+    state: wi
+    zip: '54981'
   place: '5584375'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/waupaca/waupaca-learning-center
   name: Waupaca Learning Center
   categories:

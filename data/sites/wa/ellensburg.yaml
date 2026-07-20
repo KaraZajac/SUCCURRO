@@ -17,46 +17,30 @@
   name: CHCW - Ellensburg Medical and Dental Services
   categories:
   - community-health-center
-  address:
-    street: 521 E Mountain View Ave
-    city: Ellensburg
-    state: wa
-    zip: '98926'
+  cost: sliding-scale
+  address: {street: 521 E Mountain View Ave, city: Ellensburg, state: wa, zip: '98926'}
   place: '5321240'
-  geo:
-    lat: 46.98494
-    lng: -120.54036
+  geo: {lat: 46.98494, lng: -120.54036}
   phone: 509-962-1414
   website: https://www.chcw.org
-  external_ids:
-    bphc: BPS-H80-008565
+  external_ids: {bphc: BPS-H80-008565}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/ellensburg/chcw-ellensburg-services
   name: CHCW - Ellensburg Services
   categories:
   - community-health-center
-  address:
-    street: 607 E Mountain View Ave
-    city: Ellensburg
-    state: wa
-    zip: '98926'
+  cost: sliding-scale
+  address: {street: 607 E Mountain View Ave, city: Ellensburg, state: wa, zip: '98926'}
   place: '5321240'
-  geo:
-    lat: 46.98462
-    lng: -120.5396
+  geo: {lat: 46.98462, lng: -120.5396}
   phone: 509-962-7077
   website: https://www.chcw.org
-  external_ids:
-    bphc: BPS-H80-017555
+  external_ids: {bphc: BPS-H80-017555}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/ellensburg/cwu-parking-lot
   name: Cwu Parking Lot
   categories:
@@ -99,13 +83,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kittitas County
-  address: {street: 606 W 3rd Ave., city: Ellensburg, state: wa, zip: '98926'}
+  address:
+    street: 606 W 3rd Ave.
+    city: Ellensburg
+    state: wa
+    zip: '98926'
   place: '5321240'
   phone: 509-925-1448
   website: http://www.hopesource.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/ellensburg/ida-nason-aronica-elementary-school
   name: Ida Nason Aronica Elementary School
   categories:
@@ -181,6 +171,15 @@
     lng: -120.5454
   phone: 509-925-9821
   website: https://www.meritresources.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

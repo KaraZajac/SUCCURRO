@@ -105,66 +105,42 @@
   name: One Health - CMHD
   categories:
   - community-health-center
-  address:
-    street: 333 2nd Ave N
-    city: Lewistown
-    state: mt
-    zip: '59457'
+  cost: sliding-scale
+  address: {street: 333 2nd Ave N, city: Lewistown, state: mt, zip: '59457'}
   place: '3043375'
-  geo:
-    lat: 47.06738
-    lng: -109.42659
+  geo: {lat: 47.06738, lng: -109.42659}
   phone: 406-535-7433
-  external_ids:
-    bphc: BPS-H80-036027
+  external_ids: {bphc: BPS-H80-036027}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/lewistown/one-health-lewistown
   name: One Health - Lewistown
   categories:
   - community-health-center
-  address:
-    street: 311 W Main St
-    city: Lewistown
-    state: mt
-    zip: '59457'
+  cost: sliding-scale
+  address: {street: 311 W Main St, city: Lewistown, state: mt, zip: '59457'}
   place: '3043375'
-  geo:
-    lat: 47.06505
-    lng: -109.42643
+  geo: {lat: 47.06505, lng: -109.42643}
   phone: 406-535-6545
   website: https://www.onechc.org
-  external_ids:
-    bphc: BPS-H80-035815
+  external_ids: {bphc: BPS-H80-035815}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/lewistown/one-health-lewistown-annex
   name: One Health - Lewistown Annex
   categories:
   - community-health-center
-  address:
-    street: 207 W Main St, Suite 5
-    city: Lewistown
-    state: mt
-    zip: '59457'
+  cost: sliding-scale
+  address: {street: '207 W Main St, Suite 5', city: Lewistown, state: mt, zip: '59457'}
   place: '3043375'
-  geo:
-    lat: 47.06594
-    lng: -109.42516
+  geo: {lat: 47.06594, lng: -109.42516}
   phone: 406-350-4338
-  external_ids:
-    bphc: BPS-H80-036024
+  external_ids: {bphc: BPS-H80-036024}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/lewistown/south-central-montana-regional-lewistown-mental
   name: South Central Montana Regional Lewistown Mental Health and Addiction
   categories:
@@ -181,6 +157,12 @@
     lng: -109.44201
   phone: 406-538-7483
   website: https://mhcbillings.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -202,6 +184,13 @@
     lng: -109.4392
   phone: 406-655-2100
   website: https://www.ybgr.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

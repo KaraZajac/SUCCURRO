@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Boone County
-  address: {street: 1600 W. Main, city: Lebanon, state: in, zip: '46052'}
+  address:
+    street: 1600 W. Main
+    city: Lebanon
+    state: in
+    zip: '46052'
   place: '1842624'
   phone: 765-447-7683 x 1
   email: eap@areaivagency.org
   website: https://www.areaivagency.org/eap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/lebanon/aspire-indiana-health-lebanon
   name: Aspire Indiana Health - Lebanon
   categories:
   - community-health-center
-  address:
-    street: 1600 W Main St
-    city: Lebanon
-    state: in
-    zip: '46052'
+  cost: sliding-scale
+  address: {street: 1600 W Main St, city: Lebanon, state: in, zip: '46052'}
   place: '1842624'
-  geo:
-    lat: 40.04797
-    lng: -86.48728
+  geo: {lat: 40.04797, lng: -86.48728}
   phone: 877-574-1254
-  external_ids:
-    bphc: BPS-LAL-021705
+  external_ids: {bphc: BPS-LAL-021705}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/lebanon/aspire-indiana-health-lebanon-outpatient-office
   name: Aspire Indiana Health Lebanon Outpatient Office
   categories:
@@ -48,6 +46,13 @@
     lng: -86.48694
   phone: 877-574-1254
   website: https://www.aspireindiana.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,24 +62,16 @@
   name: Boone County Community Clinic
   categories:
   - community-health-center
-  address:
-    street: 416 W Camp St
-    city: Lebanon
-    state: in
-    zip: '46052'
+  cost: sliding-scale
+  address: {street: 416 W Camp St, city: Lebanon, state: in, zip: '46052'}
   place: '1842624'
-  geo:
-    lat: 40.05768
-    lng: -86.47212
+  geo: {lat: 40.05768, lng: -86.47212}
   phone: 765-483-4469
   website: https://boonecountyclinic.org
-  external_ids:
-    bphc: BPS-H80-017610
+  external_ids: {bphc: BPS-H80-017610}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/lebanon/boone-county-head-start
   name: Boone County Head Start
   categories:
@@ -110,6 +107,16 @@
     lng: -86.45235
   phone: 888-714-1927 x1500
   website: https://www.cumminsbhs.org
+  services:
+  - Outpatient
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

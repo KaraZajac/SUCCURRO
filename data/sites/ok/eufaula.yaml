@@ -67,56 +67,46 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Haskell County
-  address: {street: '25 Hospital Rd,', city: Eufaula, state: ok, zip: '74432'}
+  address:
+    street: 25 Hospital Rd,
+    city: Eufaula
+    state: ok
+    zip: '74432'
   place: '4024650'
   phone: 918-689-1200
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/eufaula/hwc-eufaula
   name: HWC - Eufaula
   categories:
   - community-health-center
-  address:
-    street: 111 W Forrest Ave STE A
-    city: Eufaula
-    state: ok
-    zip: '74432'
+  cost: sliding-scale
+  address: {street: 111 W Forrest Ave STE A, city: Eufaula, state: ok, zip: '74432'}
   place: '4024650'
-  geo:
-    lat: 35.28246
-    lng: -95.58327
+  geo: {lat: 35.28246, lng: -95.58327}
   phone: 918-689-3333
   website: https://www.thwcinc.com
-  external_ids:
-    bphc: BPS-H80-021228
+  external_ids: {bphc: BPS-H80-021228}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/eufaula/hwc-eufaula-pharmacy
   name: HWC - Eufaula Pharmacy
   categories:
   - community-health-center
-  address:
-    street: 401 S Main St
-    city: Eufaula
-    state: ok
-    zip: '74432'
+  cost: sliding-scale
+  address: {street: 401 S Main St, city: Eufaula, state: ok, zip: '74432'}
   place: '4024650'
-  geo:
-    lat: 35.28324
-    lng: -95.58219
+  geo: {lat: 35.28324, lng: -95.58219}
   phone: 918-689-7701
-  external_ids:
-    bphc: BPS-H80-031169
+  external_ids: {bphc: BPS-H80-031169}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/eufaula/muscogee-creek-nation-behav-health-substance-abu
   name: Muscogee Creek Nation Behav Health Substance Abuse Services
   categories:
@@ -133,6 +123,10 @@
     lng: -95.59503
   phone: 918-618-2168
   website: https://www.creekhealth.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -154,6 +148,9 @@
     lng: -95.59233
   phone: 918-689-3333
   website: https://www.healthwellnessok.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

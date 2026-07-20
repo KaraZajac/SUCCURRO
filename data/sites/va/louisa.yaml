@@ -48,24 +48,16 @@
   name: CVHS-Louisa
   categories:
   - community-health-center
-  address:
-    street: 410 Industrial Dr
-    city: Louisa
-    state: va
-    zip: '23093'
+  cost: sliding-scale
+  address: {street: 410 Industrial Dr, city: Louisa, state: va, zip: '23093'}
   place: '5147144'
-  geo:
-    lat: 38.01297
-    lng: -77.96992
+  geo: {lat: 38.01297, lng: -77.96992}
   phone: 540-967-9401
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-037636
+  external_ids: {bphc: BPS-H80-037636}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/louisa/girl-scout-troop-44-lizzie
   name: Girl Scout Troop 44-Lizzie
   categories:
@@ -132,13 +124,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Louisa County
-  address: {street: 114 Industrial Dr. (P.O. Box 425), city: Louisa, state: va, zip: '23093'}
+  address:
+    street: 114 Industrial Dr. (P.O. Box 425)
+    city: Louisa
+    state: va
+    zip: '23093'
   place: '5147144'
   phone: 540-967-1320
   website: https://www.louisacounty.gov/238/Human-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/louisa/moss-nuckols-elem
   name: Moss-Nuckols Elem
   categories:

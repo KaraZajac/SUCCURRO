@@ -2,46 +2,30 @@
   name: ARcare - 125
   categories:
   - community-health-center
-  address:
-    street: 719 N Center St
-    city: Lonoke
-    state: ar
-    zip: '72086'
+  cost: sliding-scale
+  address: {street: 719 N Center St, city: Lonoke, state: ar, zip: '72086'}
   place: '0541420'
-  geo:
-    lat: 34.78999
-    lng: -91.89966
+  geo: {lat: 34.78999, lng: -91.89966}
   phone: 501-676-6566
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-038476
+  external_ids: {bphc: BPS-H80-038476}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/lonoke/arcare-47
   name: ARcare-47
   categories:
   - community-health-center
-  address:
-    street: 1310 N Center St
-    city: Lonoke
-    state: ar
-    zip: '72086'
+  cost: sliding-scale
+  address: {street: 1310 N Center St, city: Lonoke, state: ar, zip: '72086'}
   place: '0541420'
-  geo:
-    lat: 34.79542
-    lng: -91.89825
+  geo: {lat: 34.79542, lng: -91.89825}
   phone: 870-347-2534
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-013464
+  external_ids: {bphc: BPS-H80-013464}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/lonoke/arisa-health-inc-lonoke-clinic
   name: Arisa Health Inc Lonoke Clinic
   categories:
@@ -58,6 +42,13 @@
     lng: -91.90128
   phone: 501-676-3151
   website: https://www.arisahealth.org/locations/lonoke
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -87,11 +78,17 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lonoke County
-  address: {street: 616 N. Center Street, city: Lonoke, state: ar, zip: '72086'}
+  address:
+    street: 616 N. Center Street
+    city: Lonoke
+    state: ar
+    zip: '72086'
   place: '0541420'
   phone: 501-676-0019
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

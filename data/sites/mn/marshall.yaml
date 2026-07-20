@@ -2,23 +2,15 @@
   name: Access Health - Marshall
   categories:
   - community-health-center
-  address:
-    street: 1521 Carlson St
-    city: Marshall
-    state: mn
-    zip: '56258'
+  cost: sliding-scale
+  address: {street: 1521 Carlson St, city: Marshall, state: mn, zip: '56258'}
   place: '2740688'
-  geo:
-    lat: 44.44485
-    lng: -95.76188
+  geo: {lat: 44.44485, lng: -95.76188}
   phone: 507-476-4800
-  external_ids:
-    bphc: BPS-H80-033502
+  external_ids: {bphc: BPS-H80-033502}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/marshall/avera-marshall-regional-medical-center-behaviora
   name: Avera Marshall Regional Medical Center Behavioral Health Center
   categories:
@@ -34,6 +26,22 @@
     lng: -95.77714
   phone: 507-537-9318
   website: https://averabehavioralhealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -73,6 +81,22 @@
     lng: -95.77117
   phone: 507-532-3008 x2103
   website: https://www.projectturnabout.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient treatment
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -125,13 +149,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cottonwood, Lincoln, Lyon Counties
-  address: {street: 1400 South Saratoga Street, city: Marshall, state: mn, zip: '56258'}
+  address:
+    street: 1400 South Saratoga Street
+    city: Marshall
+    state: mn
+    zip: '56258'
   place: '2740688'
   phone: 507-537-1416
   website: https://unitedcapmn.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mn/marshall/western-mental-health-center
   name: Western Mental Health Center
   categories:
@@ -148,6 +178,14 @@
     lng: -95.77031
   phone: 507-532-3236
   website: https://www.wmhcinc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

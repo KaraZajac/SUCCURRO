@@ -131,23 +131,15 @@
   name: Pickett County Health Department Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 1013 Woodlawn Dr
-    city: Byrdstown
-    state: tn
-    zip: '38549'
+  cost: sliding-scale
+  address: {street: 1013 Woodlawn Dr, city: Byrdstown, state: tn, zip: '38549'}
   place: '4710180'
-  geo:
-    lat: 36.57522
-    lng: -85.13695
+  geo: {lat: 36.57522, lng: -85.13695}
   phone: 931-864-3178
-  external_ids:
-    bphc: BPS-H80-004607
+  external_ids: {bphc: BPS-H80-004607}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/byrdstown/pickett-county-k-8
   name: Pickett County K-8
   categories:
@@ -175,13 +167,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pickett County
-  address: {street: '105 S. Main St., Room #6', city: Byrdstown, state: tn, zip: '38549'}
+  address:
+    street: '105 S. Main St., Room #6'
+    city: Byrdstown
+    state: tn
+    zip: '38549'
   place: '4710180'
   phone: 931-864-6540
   website: https://uchra.org/communityservices/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/byrdstown/williams-chapel-church
   name: Williams Chapel Church
   categories:

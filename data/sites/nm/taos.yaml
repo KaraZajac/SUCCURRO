@@ -14,6 +14,9 @@
     lng: -105.58988
   phone: 800-284-7284
   website: https://www.ecfh.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -109,12 +112,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Taos County
-  address: {street: 145 Roy Road, city: Taos, state: nm, zip: '87571'}
+  address:
+    street: 145 Roy Road
+    city: Taos
+    state: nm
+    zip: '87571'
   place: '3576200'
   phone: 800-283-4465
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nm/taos/luna-vista-behavioral-health
   name: Luna Vista Behavioral Health
   categories:
@@ -194,6 +203,22 @@
     lng: -105.59081
   phone: 575-737-5533
   website: https://www.riograndeatp.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -225,46 +250,30 @@
   name: Taos Clinic
   categories:
   - community-health-center
-  address:
-    street: 1331 Gusdorf Rd
-    city: Taos
-    state: nm
-    zip: '87571'
+  cost: sliding-scale
+  address: {street: 1331 Gusdorf Rd, city: Taos, state: nm, zip: '87571'}
   place: '3576200'
-  geo:
-    lat: 36.37302
-    lng: -105.58988
+  geo: {lat: 36.37302, lng: -105.58988}
   phone: 757-758-3601
   website: https://www.ecfh.org
-  external_ids:
-    bphc: BPS-H80-011175
+  external_ids: {bphc: BPS-H80-011175}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/taos/taos-high-school-clinic
   name: Taos High School Clinic
   categories:
   - community-health-center
-  address:
-    street: 134 Cervantes St
-    city: Taos
-    state: nm
-    zip: '87571'
+  cost: sliding-scale
+  address: {street: 134 Cervantes St, city: Taos, state: nm, zip: '87571'}
   place: '3576200'
-  geo:
-    lat: 36.39167
-    lng: -105.57696
+  geo: {lat: 36.39167, lng: -105.57696}
   phone: 575-751-8032
   website: https://www.ecfh.org
-  external_ids:
-    bphc: BPS-H80-011177
+  external_ids: {bphc: BPS-H80-011177}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/taos/taos-high-school-summer-school
   name: Taos High School Summer School
   categories:
@@ -291,24 +300,16 @@
   name: Taos Middle School Clinic
   categories:
   - community-health-center
-  address:
-    street: 235 Paseo del Canon E
-    city: Taos
-    state: nm
-    zip: '87571'
+  cost: sliding-scale
+  address: {street: 235 Paseo del Canon E, city: Taos, state: nm, zip: '87571'}
   place: '3576200'
-  geo:
-    lat: 36.37969
-    lng: -105.58471
+  geo: {lat: 36.37969, lng: -105.58471}
   phone: 575-751-8032
   website: https://www.ecfh.org
-  external_ids:
-    bphc: BPS-H80-011181
+  external_ids: {bphc: BPS-H80-011181}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/taos/taos-pueblo-head-start
   name: Taos Pueblo Head Start
   categories:
@@ -381,6 +382,10 @@
     lng: -105.58142
   phone: 575-224-2110
   website: https://www.taoswholecommunityhealth.org/
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:

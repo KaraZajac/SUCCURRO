@@ -75,6 +75,9 @@
     lng: -90.18398
   phone: 715-561-3636
   website: https://www.co.iron.wi.gov
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -85,13 +88,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Iron County
-  address: {street: '300 Taconite St., Suite 201', city: Hurley, state: wi, zip: '54534'}
+  address:
+    street: 300 Taconite St., Suite 201
+    city: Hurley
+    state: wi
+    zip: '54534'
   place: '5536525'
   phone: 715-561-3636
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/hurley/northlakes-community-clinic-hurley
   name: NorthLakes Community Clinic Hurley
   categories:
@@ -108,6 +117,9 @@
     lng: -90.18567
   phone: 715-329-1288
   website: https://www.nlccwi.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -117,42 +129,26 @@
   name: NorthLakes - Hurley
   categories:
   - community-health-center
-  address:
-    street: 115 5th Ave N
-    city: Hurley
-    state: wi
-    zip: '54534'
+  cost: sliding-scale
+  address: {street: 115 5th Ave N, city: Hurley, state: wi, zip: '54534'}
   place: '5536525'
-  geo:
-    lat: 46.45078
-    lng: -90.18572
+  geo: {lat: 46.45078, lng: -90.18572}
   phone: 888-834-4551
-  external_ids:
-    bphc: BPS-H80-030438
+  external_ids: {bphc: BPS-H80-030438}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/hurley/school-district-of-hurley
   name: School District of Hurley
   categories:
   - community-health-center
-  address:
-    street: 5503 W Rangeview Dr
-    city: Hurley
-    state: wi
-    zip: '54534'
+  cost: sliding-scale
+  address: {street: 5503 W Rangeview Dr, city: Hurley, state: wi, zip: '54534'}
   place: '5536525'
-  geo:
-    lat: 46.45576
-    lng: -90.20342
+  geo: {lat: 46.45576, lng: -90.20342}
   phone: 888-834-4551
   website: https://www.nlccwi.org
-  external_ids:
-    bphc: BPS-H80-027413
+  external_ids: {bphc: BPS-H80-027413}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

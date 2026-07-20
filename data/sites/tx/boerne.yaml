@@ -22,35 +22,33 @@
   name: CommuniCare Health Centers - Boerne
   categories:
   - community-health-center
-  address:
-    street: 430 W Bandera Rd, Suite 9
-    city: Boerne
-    state: tx
-    zip: '78006'
+  cost: sliding-scale
+  address: {street: '430 W Bandera Rd, Suite 9', city: Boerne, state: tx, zip: '78006'}
   place: '4809160'
-  geo:
-    lat: 29.78095
-    lng: -98.73576
+  geo: {lat: 29.78095, lng: -98.73576}
   phone: 210-233-7000
-  external_ids:
-    bphc: BPS-H80-015210
+  external_ids: {bphc: BPS-H80-015210}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/boerne/community-council-of-south-central-texas-inc-ken
   name: Community Council of South Central Texas, Inc. - Kendall County
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kendall County
-  address: {street: '118 W. Advogt St.,', city: Boerne, state: tx, zip: '78006'}
+  address:
+    street: 118 W. Advogt St.,
+    city: Boerne
+    state: tx
+    zip: '78006'
   place: '4809160'
   phone: 830-625-6268
   website: https://www.ccsct.org/utility-assistance-apply-for-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/boerne/fumc-boerne-pantry
   name: FUMC Boerne Pantry
   categories:

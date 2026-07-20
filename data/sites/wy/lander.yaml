@@ -55,6 +55,13 @@
     lng: -108.74029
   phone: 307-332-2231
   website: https://www.fremontcounseling.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -65,35 +72,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fremont County
-  address: {street: 406 Center Street, city: Lander, state: wy, zip: '82520'}
+  address:
+    street: 406 Center Street
+    city: Lander
+    state: wy
+    zip: '82520'
   place: '5644760'
   phone: 307-332-4038
   website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wy/lander/fremont-county-pediatrics-and-community-health
   name: Fremont County Pediatrics and Community Health
   categories:
   - community-health-center
-  address:
-    street: 8185 State Highway 789
-    city: Lander
-    state: wy
-    zip: '82520'
+  cost: sliding-scale
+  address: {street: 8185 State Highway 789, city: Lander, state: wy, zip: '82520'}
   place: '5644760'
-  geo:
-    lat: 42.83468
-    lng: -108.72182
+  geo: {lat: 42.83468, lng: -108.72182}
   phone: 307-332-2185
   website: https://www.chccw.org
-  external_ids:
-    bphc: BPS-H80-037306
+  external_ids: {bphc: BPS-H80-037306}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wy/lander/lander
   name: Lander
   categories:

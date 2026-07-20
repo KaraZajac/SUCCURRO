@@ -93,12 +93,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Saluda County
-  address: {street: 407 W. Butler Avenue, city: Saluda, state: sc, zip: '29138'}
+  address:
+    street: 407 W. Butler Avenue
+    city: Saluda
+    state: sc
+    zip: '29138'
   place: '4563250'
   phone: 864-445-2035 x 29
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/saluda/saluda-county-library
   name: Saluda County Library
   categories:
@@ -126,24 +132,16 @@
   name: SALUDA FAMILY PRACTICE
   categories:
   - community-health-center
-  address:
-    street: 219 Greenwood Hwy
-    city: Saluda
-    state: sc
-    zip: '29138'
+  cost: sliding-scale
+  address: {street: 219 Greenwood Hwy, city: Saluda, state: sc, zip: '29138'}
   place: '4563250'
-  geo:
-    lat: 34.0068
-    lng: -81.77892
+  geo: {lat: 34.0068, lng: -81.77892}
   phone: 864-445-2181
   website: https://www.carolinahealthcenters.org
-  external_ids:
-    bphc: BPS-H80-002111
+  external_ids: {bphc: BPS-H80-002111}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/saluda/saluda-head-start-center
   name: Saluda Head Start Center
   categories:
@@ -219,6 +217,14 @@
     lng: -81.77756
   phone: 864-445-2968
   website: https://www.westviewbehavioral.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

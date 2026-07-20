@@ -2,23 +2,15 @@
   name: Jasper Community Medical Services
   categories:
   - community-health-center
-  address:
-    street: 480 Eversman Dr
-    city: Jasper
-    state: in
-    zip: '47546'
+  cost: sliding-scale
+  address: {street: 480 Eversman Dr, city: Jasper, state: in, zip: '47546'}
   place: '1837782'
-  geo:
-    lat: 38.38221
-    lng: -86.91685
+  geo: {lat: 38.38221, lng: -86.91685}
   phone: 812-482-3020
-  external_ids:
-    bphc: BPS-H80-032738
+  external_ids: {bphc: BPS-H80-032738}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/jasper/jasper-elementary
   name: Jasper Elementary
   categories:
@@ -56,6 +48,11 @@
     lng: -86.91664
   phone: 812-206-1200
   website: https://www.lifespringhealthsystems.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,6 +74,9 @@
     lng: -86.94125
   phone: 812-996-5780
   website: https://www.mhhcc.org/programs.aspx?id=92
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -98,6 +98,9 @@
     lng: -86.94008
   phone: 812-996-6000
   website: https://www.mhhcc.org/default.aspx
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -108,14 +111,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dubois County
-  address: {street: 607 Third Avenue, city: Jasper, state: in, zip: '47547'}
+  address:
+    street: 607 Third Avenue
+    city: Jasper
+    state: in
+    zip: '47547'
   place: '1837782'
   phone: 812-482-2233
   email: EAP@tri-cap.net
   website: http://www.tri-cap.net/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/jasper/tri-cap-head-start-jasper
   name: TRI-CAP Head Start Jasper
   categories:

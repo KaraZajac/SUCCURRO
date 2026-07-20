@@ -53,14 +53,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Champaign County
-  address: {street: 1776 E. Washington Street (P. O. Box 17760), city: Urbana, state: il, zip: '61802'}
+  address:
+    street: 1776 E. Washington Street (P. O. Box 17760)
+    city: Urbana
+    state: il
+    zip: '61802'
   place: '1777005'
   phone: 217-328-3313
   email: info@ccrpc.org
   website: http://www.ccrpc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/urbana/colorado-ave-free-pantry
   name: Colorado Ave Free Pantry
   categories:
@@ -89,6 +95,11 @@
   place: '1777005'
   phone: 217-367-3728
   website: https://www.cunningham.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -109,6 +120,22 @@
     lng: -88.20703
   phone: 217-954-1128
   website: https://www.patsurbana.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -140,6 +167,11 @@
   place: '1777005'
   phone: 217-337-2130 x3751
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -164,23 +196,15 @@
   name: Promise Healthcare - Urbana School Clinic
   categories:
   - community-health-center
-  address:
-    street: 1002 S Race St
-    city: Urbana
-    state: il
-    zip: '61801'
+  cost: sliding-scale
+  address: {street: 1002 S Race St, city: Urbana, state: il, zip: '61801'}
   place: '1777005'
-  geo:
-    lat: 40.10373
-    lng: -88.20891
+  geo: {lat: 40.10373, lng: -88.20891}
   phone: 217-356-1558
-  external_ids:
-    bphc: BPS-H80-022072
+  external_ids: {bphc: BPS-H80-022072}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/urbana/rosecrance-therapies-urbana
   name: Rosecrance Therapies Urbana
   categories:
@@ -196,6 +220,12 @@
     lng: -88.22121
   phone: 815-391-1000
   website: https://rosecrance.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

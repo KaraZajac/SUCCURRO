@@ -23,23 +23,15 @@
   name: Guyan Valley Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 5322 Mcclellan Hwy
-    city: Branchland
-    state: wv
-    zip: '25506'
-  geo:
-    lat: 38.24962
-    lng: -82.19029
+  cost: sliding-scale
+  address: {street: 5322 Mcclellan Hwy, city: Branchland, state: wv, zip: '25506'}
+  geo: {lat: 38.24962, lng: -82.19029}
   phone: 304-824-5707
   website: https://swvhs.org
-  external_ids:
-    bphc: BPS-H80-007697
+  external_ids: {bphc: BPS-H80-007697}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/branchland/kvc-west-virginia
   name: KVC West Virginia
   categories:
@@ -55,6 +47,13 @@
     lng: -82.1996
   phone: 304-824-3244
   website: https://www.kvc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -75,6 +74,12 @@
     lng: -82.1986
   phone: 304-525-7851
   website: https://www.prestera.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

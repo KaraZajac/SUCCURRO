@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hale County
-  address: {street: 800 Hall St., city: Greensboro, state: al, zip: '36744'}
+  address:
+    street: 800 Hall St.
+    city: Greensboro
+    state: al
+    zip: '36744'
   place: '0131720'
   phone: 334-624-4455
   website: https://www.cspwal.com/liheap
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/greensboro/greensboro-elementary-school
   name: Greensboro Elementary School
   categories:
@@ -37,24 +43,16 @@
   name: LaBridgette R. Ellis Medical and Dental Center
   categories:
   - community-health-center
-  address:
-    street: 800 Hall St
-    city: Greensboro
-    state: al
-    zip: '36744'
+  cost: sliding-scale
+  address: {street: 800 Hall St, city: Greensboro, state: al, zip: '36744'}
   place: '0131720'
-  geo:
-    lat: 32.6928
-    lng: -87.59086
+  geo: {lat: 32.6928, lng: -87.59086}
   phone: 334-624-7270
   website: https://www.whatleyhealth.org
-  external_ids:
-    bphc: BPS-H80-008800
+  external_ids: {bphc: BPS-H80-008800}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/greensboro/west-alabama-mental-health-center-hale-county-of
   name: West Alabama Mental Health Center Hale County Office
   categories:
@@ -71,6 +69,11 @@
     lng: -87.58755
   phone: 334-624-4905
   website: https://www.wamhc.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

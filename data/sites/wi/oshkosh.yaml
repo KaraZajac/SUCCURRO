@@ -13,6 +13,22 @@
     lng: -88.58329
   phone: 920-232-2332
   website: https://amsoshkosh.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +50,11 @@
     lng: -88.5343
   phone: 920-236-4700
   website: https://www.winnebagocountywi.gov/159/Human-Services
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -183,6 +204,11 @@
     lng: -88.54115
   phone: 920-231-0143 x306
   website: https://rainierrehab.org/facilities/nova-counseling-services-inc-7324659
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -204,6 +230,9 @@
     lng: -88.58971
   phone: 920-718-7223
   website: https://www.nystromcounseling.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -250,23 +279,15 @@
   name: Partnership Dental City Center  Oshkosh
   categories:
   - community-health-center
-  address:
-    street: 550 City Ctr
-    city: Oshkosh
-    state: wi
-    zip: '54901'
+  cost: sliding-scale
+  address: {street: 550 City Ctr, city: Oshkosh, state: wi, zip: '54901'}
   place: '5560500'
-  geo:
-    lat: 44.01531
-    lng: -88.54178
+  geo: {lat: 44.01531, lng: -88.54178}
   phone: 920-731-7445
-  external_ids:
-    bphc: BPS-H80-037311
+  external_ids: {bphc: BPS-H80-037311}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/oshkosh/peace-head-start
   name: Peace Head Start
   categories:
@@ -325,6 +346,16 @@
     lng: -88.53099
   phone: 877-300-9101
   website: https://www.rawhide.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -450,10 +481,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Winnebago County
-  address: {street: '303 Pearl Ave., Suite D', city: Oshkosh, state: wi, zip: '54901'}
+  address:
+    street: 303 Pearl Ave., Suite D
+    city: Oshkosh
+    state: wi
+    zip: '54901'
   place: '5560500'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

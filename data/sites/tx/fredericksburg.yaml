@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Gillespie County
-  address: {street: '607 N. Milam St.,', city: Fredericksburg, state: tx, zip: '78624'}
+  address:
+    street: 607 N. Milam St.,
+    city: Fredericksburg
+    state: tx
+    zip: '78624'
   place: '4827348'
   phone: 830-896-2124
   website: https://www.ccsct.org/utility-assistance-apply-for-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/fredericksburg/fredericksburg-isd
   name: Fredericksburg ISD
   categories:
@@ -54,65 +60,41 @@
   name: Frontera Healthcare Fredericksburg Behavioral Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 808 Reuben St
-    city: Fredericksburg
-    state: tx
-    zip: '78624'
+  cost: sliding-scale
+  address: {street: 808 Reuben St, city: Fredericksburg, state: tx, zip: '78624'}
   place: '4827348'
-  geo:
-    lat: 30.26645
-    lng: -98.88068
+  geo: {lat: 30.26645, lng: -98.88068}
   phone: 325-240-4598
-  external_ids:
-    bphc: BPS-H80-040057
+  external_ids: {bphc: BPS-H80-040057}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fredericksburg/frontera-healthcare-fredericksburg-clinic
   name: Frontera Healthcare Fredericksburg Clinic
   categories:
   - community-health-center
-  address:
-    street: 200 W Windcrest St, Suite 100
-    city: Fredericksburg
-    state: tx
-    zip: '78624'
+  cost: sliding-scale
+  address: {street: '200 W Windcrest St, Suite 100', city: Fredericksburg, state: tx, zip: '78624'}
   place: '4827348'
-  geo:
-    lat: 30.26402
-    lng: -98.88067
+  geo: {lat: 30.26402, lng: -98.88067}
   phone: 830-992-3725
-  external_ids:
-    bphc: BPS-H80-039961
+  external_ids: {bphc: BPS-H80-039961}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fredericksburg/frontera-healthcare-network-fredericksburg-clini
   name: Frontera Healthcare Network - Fredericksburg Clinic
   categories:
   - community-health-center
-  address:
-    street: 1426 E Main St, Ste 300
-    city: Fredericksburg
-    state: tx
-    zip: '78624'
+  cost: sliding-scale
+  address: {street: '1426 E Main St, Ste 300', city: Fredericksburg, state: tx, zip: '78624'}
   place: '4827348'
-  geo:
-    lat: 30.25731
-    lng: -98.85176
+  geo: {lat: 30.25731, lng: -98.85176}
   phone: 325-869-5500
-  external_ids:
-    bphc: BPS-H80-031980
+  external_ids: {bphc: BPS-H80-031980}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fredericksburg/hcm-thrift
   name: HCM Thrift
   categories:
@@ -144,6 +126,21 @@
     lng: -98.85174
   phone: 830-997-8023
   website: https://hillcountry.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -184,6 +181,12 @@
     lng: -98.89929
   phone: 866-795-4673
   website: https://serenitytexas.com
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  - Adult men
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

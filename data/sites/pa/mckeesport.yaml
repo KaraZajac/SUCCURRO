@@ -147,44 +147,28 @@
   name: McKeesport Downtown Housing
   categories:
   - community-health-center
-  address:
-    street: 523 Sinclair St
-    city: Mckeesport
-    state: pa
-    zip: '15132'
+  cost: sliding-scale
+  address: {street: 523 Sinclair St, city: Mckeesport, state: pa, zip: '15132'}
   place: '4246256'
-  geo:
-    lat: 40.35037
-    lng: -79.8619
+  geo: {lat: 40.35037, lng: -79.8619}
   phone: 412-678-6948
-  external_ids:
-    bphc: BPS-H80-019616
+  external_ids: {bphc: BPS-H80-019616}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/mckeesport/mckeesport-family-health-center
   name: MCKEESPORT FAMILY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 627 Lysle Blvd
-    city: Mckeesport
-    state: pa
-    zip: '15132'
+  cost: sliding-scale
+  address: {street: 627 Lysle Blvd, city: Mckeesport, state: pa, zip: '15132'}
   place: '4246256'
-  geo:
-    lat: 40.3522
-    lng: -79.85847
+  geo: {lat: 40.3522, lng: -79.85847}
   phone: 412-644-4112
-  external_ids:
-    bphc: BPS-H80-002231
+  external_ids: {bphc: BPS-H80-002231}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/mckeesport/mckeesport-wander-1-2
   name: McKeesport Wander 1,2
   categories:
@@ -276,12 +260,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Allegheny County
-  address: {street: 220 Sixth Street, city: McKeesport, state: pa, zip: '15132'}
+  address:
+    street: 220 Sixth Street
+    city: McKeesport
+    state: pa
+    zip: '15132'
   place: '4246256'
   phone: 412-664-6800
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/mckeesport/twin-rivers-el-sch
   name: Twin Rivers El Sch
   categories:
@@ -320,6 +310,22 @@
     lng: -79.84902
   phone: 412-664-2000
   website: https://www.upmc.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -340,6 +346,12 @@
     lng: -79.86309
   phone: 412-675-8516
   website: https://www.upmc.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -361,6 +373,10 @@
     lng: -79.86309
   phone: 412-675-6927
   website: https://www.upmc.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -382,6 +398,10 @@
     lng: -79.86309
   phone: 412-675-6927
   website: https://www.upmc.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -14,6 +14,9 @@
     lng: -89.37906
   phone: 715-361-2805
   website: https://aspirus.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -64,46 +67,30 @@
   name: Family Health Center  -  Rhinelander Alcohol & Drug Recovery Center
   categories:
   - community-health-center
-  address:
-    street: 2268 N Shore Dr, Suite B
-    city: Rhinelander
-    state: wi
-    zip: '54501'
+  cost: sliding-scale
+  address: {street: '2268 N Shore Dr, Suite B', city: Rhinelander, state: wi, zip: '54501'}
   place: '5567200'
-  geo:
-    lat: 45.63654
-    lng: -89.37278
+  geo: {lat: 45.63654, lng: -89.37278}
   phone: 715-420-1480
   website: https://www.familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-041259
+  external_ids: {bphc: BPS-H80-041259}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/rhinelander/family-health-center-rhinelander-dental-center
   name: Family Health Center - Rhinelander Dental Center
   categories:
   - community-health-center
-  address:
-    street: 2268 N Shore Dr, Suite A
-    city: Rhinelander
-    state: wi
-    zip: '54501'
+  cost: sliding-scale
+  address: {street: '2268 N Shore Dr, Suite A', city: Rhinelander, state: wi, zip: '54501'}
   place: '5567200'
-  geo:
-    lat: 45.63654
-    lng: -89.37278
+  geo: {lat: 45.63654, lng: -89.37278}
   phone: 715-420-1400
   website: https://familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-011827
+  external_ids: {bphc: BPS-H80-011827}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/rhinelander/james-williams-middle-school
   name: James Williams Middle School
   categories:
@@ -131,13 +118,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Oneida County
-  address: {street: 1 S Oneida Ave., city: Rhinelander, state: wi, zip: '54501'}
+  address:
+    street: 1 S Oneida Ave.
+    city: Rhinelander
+    state: wi
+    zip: '54501'
   place: '5567200'
   phone: 715-362-5695
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/rhinelander/oneida-county-human-services-forest-oneida-and-v
   name: Oneida County Human Services Forest, Oneida and Vilas Counties
   categories:
@@ -154,6 +147,14 @@
     lng: -89.39703
   phone: 715-369-2215
   website: https://thehumanservicecenter.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -174,6 +175,13 @@
     lng: -89.38279
   phone: 715-362-5745
   website: https://www.koinoniaocs.net
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

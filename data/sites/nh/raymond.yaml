@@ -2,24 +2,16 @@
   name: Lamprey Health Care Mobile Health Unit
   categories:
   - community-health-center
-  address:
-    street: 128 Route 27
-    city: Raymond
-    state: nh
-    zip: '03077'
+  cost: sliding-scale
+  address: {street: 128 Route 27, city: Raymond, state: nh, zip: '03077'}
   place: '3363940'
-  geo:
-    lat: 43.04066
-    lng: -71.18825
+  geo: {lat: 43.04066, lng: -71.18825}
   phone: 603-402-1501
   website: https://www.lampreyhealth.org
-  external_ids:
-    bphc: BPS-H80-031429
+  external_ids: {bphc: BPS-H80-031429}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/raymond/lamprey-health-care-raymond-center
   name: Lamprey Health Care Raymond Center
   categories:
@@ -36,6 +28,15 @@
     lng: -71.18825
   phone: 603-895-3351
   website: https://www.lampreyhealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,24 +46,16 @@
   name: Lamprey Health Care - Raymond Center
   categories:
   - community-health-center
-  address:
-    street: 128 Route 27
-    city: Raymond
-    state: nh
-    zip: '03077'
+  cost: sliding-scale
+  address: {street: 128 Route 27, city: Raymond, state: nh, zip: '03077'}
   place: '3363940'
-  geo:
-    lat: 43.04066
-    lng: -71.18825
+  geo: {lat: 43.04066, lng: -71.18825}
   phone: 603-659-2494
   website: https://WWW.LAMPREYHEALTH.ORG
-  external_ids:
-    bphc: BPS-H80-001394
+  external_ids: {bphc: BPS-H80-001394}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/raymond/raymond-head-start
   name: Raymond Head Start
   categories:
@@ -87,10 +80,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Rockingham County
-  address: {street: 55 Prescott Rd, city: Raymond, state: nh, zip: '03077'}
+  address:
+    street: 55 Prescott Rd
+    city: Raymond
+    state: nh
+    zip: '03077'
   place: '3363940'
   phone: 603-895-2303
   website: https://www.snhs.org/services/fuel-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

@@ -24,36 +24,34 @@
   name: CVHS Westmoreland
   categories:
   - community-health-center
-  address:
-    street: 18849 Kings Hwy
-    city: Montross
-    state: va
-    zip: '22520'
+  cost: sliding-scale
+  address: {street: 18849 Kings Hwy, city: Montross, state: va, zip: '22520'}
   place: '5152952'
-  geo:
-    lat: 38.07757
-    lng: -76.78171
+  geo: {lat: 38.07757, lng: -76.78171}
   phone: 804-493-9999
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-003071
+  external_ids: {bphc: BPS-H80-003071}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/montross/westmoreland-department-of-social-services
   name: Westmoreland Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Westmoreland County
-  address: {street: '18849 Kings Highway, (P.O. Box 302)', city: Montross, state: va, zip: 22520-0302}
+  address:
+    street: 18849 Kings Highway, (P.O. Box 302)
+    city: Montross
+    state: va
+    zip: 22520-0302
   place: '5152952'
   phone: 804-493-9305
   website: http://www.westmoreland-county.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/montross/westmoreland-high
   name: Westmoreland High
   categories:

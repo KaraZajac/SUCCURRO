@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving McLean County
-  address: {street: '200 Highway 81 North, Suite 101', city: Calhoun, state: ky, zip: '42327'}
+  address:
+    street: 200 Highway 81 North, Suite 101
+    city: Calhoun
+    state: ky
+    zip: '42327'
   place: '2111854'
   phone: 270-273-3355
   email: info@audubon-area.com
   website: https://www.audubon-area.com/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/calhoun/calhoun-baptist-church
   name: Calhoun Baptist Church
   categories:
@@ -90,6 +96,11 @@
     lng: -87.25877
   phone: 270-338-2280
   website: https://www.cindybairddui.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -140,21 +151,13 @@
   name: Regional Health Care Affiliates, Inc.  dba. Health First Community Health Center - Calhoun
   categories:
   - community-health-center
-  address:
-    street: 295 Main St
-    city: Calhoun
-    state: ky
-    zip: '42327'
+  cost: sliding-scale
+  address: {street: 295 Main St, city: Calhoun, state: ky, zip: '42327'}
   place: '2111854'
-  geo:
-    lat: 37.53816
-    lng: -87.25851
+  geo: {lat: 37.53816, lng: -87.25851}
   phone: 270-273-9310
   website: http://healthfirstchc.net/
-  external_ids:
-    bphc: BPS-H80-009519
+  external_ids: {bphc: BPS-H80-009519}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

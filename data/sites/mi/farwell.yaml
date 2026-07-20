@@ -40,23 +40,15 @@
   name: Farwell Health Center
   categories:
   - community-health-center
-  address:
-    street: 522 E Main St
-    city: Farwell
-    state: mi
-    zip: '48622'
+  cost: sliding-scale
+  address: {street: 522 E Main St, city: Farwell, state: mi, zip: '48622'}
   place: '2627500'
-  geo:
-    lat: 43.83411
-    lng: -84.85972
+  geo: {lat: 43.83411, lng: -84.85972}
   phone: 989-953-5191
-  external_ids:
-    bphc: BPS-H80-038887
+  external_ids: {bphc: BPS-H80-038887}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/farwell/farwell-high-school-180201210
   name: Farwell High School - 180201210
   categories:
@@ -85,14 +77,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clare County
-  address: {street: 1574 E. Washington Road (P. O Box 768), city: Farwell, state: mi, zip: '48622'}
+  address:
+    street: 1574 E. Washington Road (P. O Box 768)
+    city: Farwell
+    state: mi
+    zip: '48622'
   place: '2627500'
   phone: 989-386-3805
   email: contactus@mmcaa.org
   website: https://www.mmcaa.org/economicsecurity.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/farwell/mmcaa-farwell-preschool-delegate
   name: MMCAA Farwell Preschool - Delegate
   categories:

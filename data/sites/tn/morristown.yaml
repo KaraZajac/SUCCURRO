@@ -32,44 +32,28 @@
   name: CHS 5th Street Clinic
   categories:
   - community-health-center
-  address:
-    street: 815 W 5th North St
-    city: Morristown
-    state: tn
-    zip: '37814'
+  cost: sliding-scale
+  address: {street: 815 W 5th North St, city: Morristown, state: tn, zip: '37814'}
   place: '4750280'
-  geo:
-    lat: 36.213
-    lng: -83.3041
+  geo: {lat: 36.213, lng: -83.3041}
   phone: 423-586-5032
-  external_ids:
-    bphc: BPS-H80-005282
+  external_ids: {bphc: BPS-H80-005282}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/morristown/chs-sulphur-springs-office
   name: CHS Sulphur Springs Office
   categories:
   - community-health-center
-  address:
-    street: 1923 Sulphur Springs Rd
-    city: Morristown
-    state: tn
-    zip: '37813'
+  cost: sliding-scale
+  address: {street: 1923 Sulphur Springs Rd, city: Morristown, state: tn, zip: '37813'}
   place: '4750280'
-  geo:
-    lat: 36.18957
-    lng: -83.29553
+  geo: {lat: 36.18957, lng: -83.29553}
   phone: 423-317-9344
-  external_ids:
-    bphc: BPS-H80-008663
+  external_ids: {bphc: BPS-H80-008663}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/morristown/community-cupboard
   name: Community Cupboard
   categories:
@@ -90,13 +74,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cocke, Grainger, Hamblen, Jefferson, Monroe, Sevier Counties
-  address: {street: 534 E. First North Street (P. O. Box 1218), city: Morristown, state: tn, zip: '37816'}
+  address:
+    street: 534 E. First North Street (P. O. Box 1218)
+    city: Morristown
+    state: tn
+    zip: '37816'
   place: '4750280'
   phone: 423-587-4500
   website: https://www.dcea-liheap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/morristown/early-head-start-west
   name: EARLY HEAD START WEST
   categories:
@@ -147,6 +137,12 @@
     lng: -83.29446
   phone: 423-839-2550
   website: https://healthconnectamerica.com
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -168,6 +164,16 @@
     lng: -83.2973
   phone: 800-255-9711
   website: https://www.mcnabbcenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -189,6 +195,17 @@
     lng: -83.29724
   phone: 800-255-9711
   website: https://www.mcnabbcenter.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -303,6 +320,17 @@
   place: '4750280'
   phone: 423-586-9100
   website: https://
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -412,6 +440,12 @@
     lng: -83.31442
   phone: 877-654-6396 x2
   website: https://www.crossroadstreatmentcenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -433,6 +467,12 @@
     lng: -83.30418
   phone: 423-586-5032
   website: https://www.rvh.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

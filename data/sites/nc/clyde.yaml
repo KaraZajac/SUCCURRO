@@ -13,6 +13,22 @@
     lng: -82.95089
   phone: 828-454-0560
   website: https://www.bhgrecovery.com/locations/clyde
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,30 +73,28 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Haywood County
-  address: {street: '157 Paragon Parkway, Suite 300', city: Clyde, state: nc, zip: '28721'}
-  place: '3713280'
-  phone: 828-452-6620
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nc/clyde/haywood-health-center
-  name: Haywood Health Center
-  categories:
-  - community-health-center
   address:
-    street: 490 Hospital Dr
+    street: 157 Paragon Parkway, Suite 300
     city: Clyde
     state: nc
     zip: '28721'
   place: '3713280'
-  geo:
-    lat: 35.52608
-    lng: -82.94986
-  phone: 828-246-6372
-  external_ids:
-    bphc: BPS-H80-021592
+  phone: 828-452-6620
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nc/clyde/haywood-health-center
+  name: Haywood Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 490 Hospital Dr, city: Clyde, state: nc, zip: '28721'}
+  place: '3713280'
+  geo: {lat: 35.52608, lng: -82.94986}
+  phone: 828-246-6372
+  external_ids: {bphc: BPS-H80-021592}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}

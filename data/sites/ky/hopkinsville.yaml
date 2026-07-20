@@ -106,23 +106,15 @@
   name: Community Medical Clinic, Hopkinsville
   categories:
   - community-health-center
-  address:
-    street: 1102 S Virginia St
-    city: Hopkinsville
-    state: ky
-    zip: '42240'
+  cost: sliding-scale
+  address: {street: 1102 S Virginia St, city: Hopkinsville, state: ky, zip: '42240'}
   place: '2137918'
-  geo:
-    lat: 36.86394
-    lng: -87.48862
+  geo: {lat: 36.86394, lng: -87.48862}
   phone: 270-632-6741
-  external_ids:
-    bphc: BPS-H80-019523
+  external_ids: {bphc: BPS-H80-019523}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/hopkinsville/cumberland-hall-hospital-dba-cumberland-hall
   name: Cumberland Hall Hospital DBA Cumberland Hall
   categories:
@@ -139,6 +131,22 @@
     lng: -87.46802
   phone: 270-886-1919
   website: https://www.cumberlandhallhospital.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -425,13 +433,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Caldwell, Christian, Livingston, Lyon, Todd Counties
-  address: {street: 1100 South Liberty Street (P. O Box 549), city: Hopkinsville, state: ky, zip: 42241-0549}
+  address:
+    street: 1100 South Liberty Street (P. O Box 549)
+    city: Hopkinsville
+    state: ky
+    zip: 42241-0549
   place: '2137918'
   phone: 270-365-5097
   website: http://www.pacs-ky.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/hopkinsville/pennyroyal-center-genesis-east
   name: Pennyroyal Center Genesis East
   categories:
@@ -448,6 +462,10 @@
     lng: -87.45097
   phone: 270-886-2205
   website: https://www.pennyroyalcenter.org
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -469,6 +487,14 @@
     lng: -87.50946
   phone: 270-886-2205
   website: https://www.pennyroyalcenter.org
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -490,6 +516,12 @@
     lng: -87.47653
   phone: 270-886-2205
   website: https://www.pennyroyalcenter.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -511,6 +543,13 @@
     lng: -87.49154
   phone: 270-886-5163
   website: https://www.pennyroyalcenter.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -531,6 +570,18 @@
     lng: -87.51276
   phone: 270-874-4016
   website: https://www.redeemedandrestoredinc.org/
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -595,6 +646,22 @@
     lng: -87.48187
   phone: 270-962-2255
   website: https://www.sperohealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -615,6 +682,10 @@
     lng: -87.44713
   phone: 270-885-2902
   website: https://www.pennyroyalcenter.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -636,6 +707,11 @@
     lng: -87.45121
   phone: 270-889-6025 x2882
   website: https://westernstatehospital.ky.gov
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

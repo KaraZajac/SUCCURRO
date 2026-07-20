@@ -14,6 +14,10 @@
     lng: -70.98008
   phone: 617-847-1950
   website: https://www.aspirehealthalliance.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +39,12 @@
     lng: -71.00553
   phone: 617-471-8400
   website: https://www.baystatecs.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,6 +66,11 @@
     lng: -71.00119
   phone: 833-356-8733
   website: https://www.elmtreeclinic.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,111 +99,71 @@
   name: HOLMES STREET CLINIC
   categories:
   - community-health-center
-  address:
-    street: 88 Holmes St
-    city: Quincy
-    state: ma
-    zip: '02171'
+  cost: sliding-scale
+  address: {street: 88 Holmes St, city: Quincy, state: ma, zip: '02171'}
   place: '2555745'
-  geo:
-    lat: 42.27242
-    lng: -71.02545
+  geo: {lat: 42.27242, lng: -71.02545}
   phone: 617-318-3200
-  external_ids:
-    bphc: BPS-H80-011517
+  external_ids: {bphc: BPS-H80-011517}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/manet-at-father-bill-s-housing-resource-center
   name: Manet at Father Bill's Housing Resource Center
   categories:
   - community-health-center
-  address:
-    street: 39 Broad St
-    city: Quincy
-    state: ma
-    zip: 02169
+  cost: sliding-scale
+  address: {street: 39 Broad St, city: Quincy, state: ma, zip: 02169}
   place: '2555745'
-  geo:
-    lat: 42.25519
-    lng: -70.99444
+  geo: {lat: 42.25519, lng: -70.99444}
   phone: 617-376-3000
   website: https://www.manetchc.org
-  external_ids:
-    bphc: BPS-H80-037530
+  external_ids: {bphc: BPS-H80-037530}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/manet-chc-at-hough-s-neck
   name: MANET CHC AT HOUGH'S NECK
   categories:
   - community-health-center
-  address:
-    street: 1193 Sea St
-    city: Quincy
-    state: ma
-    zip: 02169
+  cost: sliding-scale
+  address: {street: 1193 Sea St, city: Quincy, state: ma, zip: 02169}
   place: '2555745'
-  geo:
-    lat: 42.26882
-    lng: -70.95263
+  geo: {lat: 42.26882, lng: -70.95263}
   phone: 617-471-8683
   website: https://www.manetchc.org
-  external_ids:
-    bphc: BPS-H80-001583
+  external_ids: {bphc: BPS-H80-001583}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/manet-chc-at-snug-harbor
   name: MANET CHC AT SNUG HARBOR
   categories:
   - community-health-center
-  address:
-    street: 9 Bicknell St
-    city: Quincy
-    state: ma
-    zip: 02169
+  cost: sliding-scale
+  address: {street: 9 Bicknell St, city: Quincy, state: ma, zip: 02169}
   place: '2555745'
-  geo:
-    lat: 42.25222
-    lng: -70.96587
+  geo: {lat: 42.25222, lng: -70.96587}
   phone: 617-471-4715
   website: https://www.manetchc.org
-  external_ids:
-    bphc: BPS-H80-003985
+  external_ids: {bphc: BPS-H80-003985}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/manet-north-quincy
   name: MANET North Quincy
   categories:
   - community-health-center
-  address:
-    street: 110 W Squantum St
-    city: Quincy
-    state: ma
-    zip: '02171'
+  cost: sliding-scale
+  address: {street: 110 W Squantum St, city: Quincy, state: ma, zip: '02171'}
   place: '2555745'
-  geo:
-    lat: 42.27255
-    lng: -71.03081
+  geo: {lat: 42.27255, lng: -71.03081}
   phone: 617-376-3000
   website: https://www.manetchc.org
-  external_ids:
-    bphc: BPS-H80-003196
+  external_ids: {bphc: BPS-H80-003196}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/new-horizons-medical
   name: New Horizons Medical
   categories:
@@ -205,6 +180,22 @@
     lng: -71.01622
   phone: 617-481-6949
   website: https://www.newhorizonsmedical.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -215,14 +206,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Norfolk County
-  address: {street: '1509 Hancock St., 3th floor', city: Quincy, state: ma, zip: 02169}
+  address:
+    street: 1509 Hancock St., 3th floor
+    city: Quincy
+    state: ma
+    zip: 02169
   place: '2555745'
   phone: 617-479-8181
   email: fuelassistance@qcap.org
   website: https://www.qcap.org/our-programs/energy-programs/#heating
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/quincy/quincy-comprehensive-treatment-center-arbour-hos
   name: Quincy Comprehensive Treatment Center Arbour Hospital
   categories:
@@ -239,6 +236,13 @@
     lng: -70.98008
   phone: 617-801-5120
   website: https://www.ctcprograms.com/location/quincy-mobile
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -337,6 +341,22 @@
     lng: -71.00274
   phone: 617-770-9690
   website: https://www.voamass.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

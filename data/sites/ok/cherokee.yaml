@@ -25,32 +25,30 @@
   name: GSP Health Cherokee
   categories:
   - community-health-center
-  address:
-    street: 405 S Oklahoma Ave
-    city: Cherokee
-    state: ok
-    zip: '73728'
+  cost: sliding-scale
+  address: {street: 405 S Oklahoma Ave, city: Cherokee, state: ok, zip: '73728'}
   place: '4013750'
-  geo:
-    lat: 36.75421
-    lng: -98.35922
+  geo: {lat: 36.75421, lng: -98.35922}
   phone: 580-596-2800
-  external_ids:
-    bphc: BPS-H80-010483
+  external_ids: {bphc: BPS-H80-010483}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/cherokee/human-services-centers-alfalfa
   name: 'Human Services Centers: Alfalfa'
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alfalfa County
-  address: {street: 400 S. Ohio St, city: Cherokee, state: ok, zip: '73728'}
+  address:
+    street: 400 S. Ohio St
+    city: Cherokee
+    state: ok
+    zip: '73728'
   place: '4013750'
   phone: 580-596-3335
   website: http://www.okdhslive.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

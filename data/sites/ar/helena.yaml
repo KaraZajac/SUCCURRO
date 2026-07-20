@@ -13,6 +13,13 @@
     lng: -90.62363
   phone: 870-338-3900
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -41,23 +48,15 @@
   name: Helena Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 513 Porter St
-    city: Helena
-    state: ar
-    zip: '72342'
-  geo:
-    lat: 34.52791
-    lng: -90.58939
+  cost: sliding-scale
+  address: {street: 513 Porter St, city: Helena, state: ar, zip: '72342'}
+  geo: {lat: 34.52791, lng: -90.58939}
   phone: 870-817-0122
   website: https://eafhc.org
-  external_ids:
-    bphc: BPS-H80-012338
+  external_ids: {bphc: BPS-H80-012338}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/helena/kipp-delta-college
   name: Kipp Delta College
   categories:
@@ -84,34 +83,32 @@
   name: LAKEVIEW AREA CLINIC
   categories:
   - community-health-center
-  address:
-    street: 14066 AR-44
-    city: Helena
-    state: ar
-    zip: '72342'
-  geo:
-    lat: 34.41643
-    lng: -90.79526
+  cost: sliding-scale
+  address: {street: 14066 AR-44, city: Helena, state: ar, zip: '72342'}
+  geo: {lat: 34.41643, lng: -90.79526}
   phone: 870-827-3201
-  external_ids:
-    bphc: BPS-H80-006166
+  external_ids: {bphc: BPS-H80-006166}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/helena/mid-delta-community-services-inc-mdcs
   name: Mid-Delta Community Services Inc. (MDCS)
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Phillips County
-  address: {street: 1125 Springdale Rd., city: Helena, state: ar, zip: '72342'}
+  address:
+    street: 1125 Springdale Rd.
+    city: Helena
+    state: ar
+    zip: '72342'
   phone: 870-338-3411
   email: info@middeltacommunityservices.org
   website: http://www.middeltacommunityservices.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/helena/north-end-head-start
   name: North End Head Start
   categories:

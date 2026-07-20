@@ -2,23 +2,15 @@
   name: 'Gillespie Community Unit School District #7'
   categories:
   - community-health-center
-  address:
-    street: 510 W Elm St
-    city: Gillespie
-    state: il
-    zip: '62033'
+  cost: sliding-scale
+  address: {street: 510 W Elm St, city: Gillespie, state: il, zip: '62033'}
   place: '1729236'
-  geo:
-    lat: 39.12778
-    lng: -89.82786
+  geo: {lat: 39.12778, lng: -89.82786}
   phone: 217-839-2464
-  external_ids:
-    bphc: BPS-H80-019679
+  external_ids: {bphc: BPS-H80-019679}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/gillespie/gillespie-high-school
   name: Gillespie High School
   categories:
@@ -46,77 +38,59 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Calhoun, Greene, Jersey, Macoupin Counties
-  address: {street: 223 South Macoupin Street (P. O. Box 88), city: Gillespie, state: il, zip: '62033'}
+  address:
+    street: 223 South Macoupin Street (P. O. Box 88)
+    city: Gillespie
+    state: il
+    zip: '62033'
   place: '1729236'
   phone: 217-839-4431
   website: http://ilvalley-edc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/gillespie/macoupin-county-maple-street-clinic
   name: Macoupin County Maple Street Clinic
   categories:
   - community-health-center
-  address:
-    street: 109 E Maple St
-    city: Gillespie
-    state: il
-    zip: '62033'
+  cost: sliding-scale
+  address: {street: 109 E Maple St, city: Gillespie, state: il, zip: '62033'}
   place: '1729236'
-  geo:
-    lat: 39.12973
-    lng: -89.81813
+  geo: {lat: 39.12973, lng: -89.81813}
   phone: 217-839-1526
   website: https://www.mcphd.net
-  external_ids:
-    bphc: BPS-H80-010784
+  external_ids: {bphc: BPS-H80-010784}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/gillespie/macoupin-county-mobile-behavioral-and-medical-cl
   name: Macoupin County Mobile Behavioral and Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 109 E Maple St
-    city: Gillespie
-    state: il
-    zip: '62033'
+  cost: sliding-scale
+  address: {street: 109 E Maple St, city: Gillespie, state: il, zip: '62033'}
   place: '1729236'
-  geo:
-    lat: 39.12973
-    lng: -89.81813
+  geo: {lat: 39.12973, lng: -89.81813}
   phone: 217-839-1526
-  external_ids:
-    bphc: BPS-H80-032356
+  external_ids: {bphc: BPS-H80-032356}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/gillespie/macoupin-county-mobile-dental-clinic
   name: Macoupin County Mobile Dental Clinic
   categories:
   - community-health-center
-  address:
-    street: 109 E Maple St
-    city: Gillespie
-    state: il
-    zip: '62033'
+  cost: sliding-scale
+  address: {street: 109 E Maple St, city: Gillespie, state: il, zip: '62033'}
   place: '1729236'
-  geo:
-    lat: 39.12973
-    lng: -89.81813
+  geo: {lat: 39.12973, lng: -89.81813}
   phone: 217-839-4165
-  external_ids:
-    bphc: BPS-H80-032263
+  external_ids: {bphc: BPS-H80-032263}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/gillespie/macoupin-county-public-health-departme-maple-str
   name: Macoupin County Public Health Departme Maple Street Clinic
   categories:
@@ -133,6 +107,11 @@
     lng: -89.81812
   phone: 217-854-3223
   website: https://www.mcphd.net
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

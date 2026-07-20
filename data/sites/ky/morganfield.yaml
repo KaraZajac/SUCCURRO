@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Union County
-  address: {street: 217 North Court, city: Morganfield, state: ky, zip: '42437'}
+  address:
+    street: 217 North Court
+    city: Morganfield
+    state: ky
+    zip: '42437'
   place: '2153472'
   phone: 270-389-3742
   email: info@audubon-area.com
   website: https://www.audubon-area.com/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/morganfield/housing-authority-of-morganfield
   name: Housing Authority Of Morganfield
   categories:
@@ -79,24 +85,16 @@
   name: Regional Health Care Affiliates, Inc. dba Health First Community Health Center- Union County
   categories:
   - community-health-center
-  address:
-    street: 220 N Morgan St
-    city: Morganfield
-    state: ky
-    zip: '42437'
+  cost: sliding-scale
+  address: {street: 220 N Morgan St, city: Morganfield, state: ky, zip: '42437'}
   place: '2153472'
-  geo:
-    lat: 37.68567
-    lng: -87.91525
+  geo: {lat: 37.68567, lng: -87.91525}
   phone: 270-285-1318
   website: http://healthfirstchc.net/
-  external_ids:
-    bphc: BPS-H80-029701
+  external_ids: {bphc: BPS-H80-029701}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/morganfield/rivervalley-behavioral-health-union-county-outpa
   name: RiverValley Behavioral Health Union County Outpatient Clinic
   categories:
@@ -113,6 +111,9 @@
     lng: -87.91706
   phone: 270-389-3240
   website: https://www.rvbh.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

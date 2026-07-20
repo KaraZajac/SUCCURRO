@@ -14,6 +14,11 @@
     lng: -91.54233
   phone: 573-729-4103
   website: https://www.semobh.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +40,11 @@
     lng: -91.53119
   phone: 660-442-1054
   website: https://www.compasshealthnetwork.org/
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -63,45 +73,29 @@
   name: Four Rivers Community Health Center - Salem
   categories:
   - community-health-center
-  address:
-    street: 703 S Grand St
-    city: Salem
-    state: mo
-    zip: '65560'
+  cost: sliding-scale
+  address: {street: 703 S Grand St, city: Salem, state: mo, zip: '65560'}
   place: '2965234'
-  geo:
-    lat: 37.63788
-    lng: -91.54352
+  geo: {lat: 37.63788, lng: -91.54352}
   phone: 573-426-4455
   website: https://fourrivers.org/
-  external_ids:
-    bphc: BPS-H80-040199
+  external_ids: {bphc: BPS-H80-040199}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/salem/four-rivers-community-health-center-salem-2
   name: Four Rivers Community Health Center Salem
   categories:
   - community-health-center
-  address:
-    street: 601 S McArthur St
-    city: Salem
-    state: mo
-    zip: '65560'
+  cost: sliding-scale
+  address: {street: 601 S McArthur St, city: Salem, state: mo, zip: '65560'}
   place: '2965234'
-  geo:
-    lat: 37.63927
-    lng: -91.54078
+  geo: {lat: 37.63927, lng: -91.54078}
   phone: 573-426-4455
-  external_ids:
-    bphc: BPS-H80-033145
+  external_ids: {bphc: BPS-H80-033145}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/salem/housing-authority-of-the-city-of-salem
   name: Housing Authority Of The City Of Salem
   categories:
@@ -219,13 +213,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dent County
-  address: {street: 1405 S. Wines Street, city: Salem, state: mo, zip: '65560'}
+  address:
+    street: 1405 S. Wines Street
+    city: Salem
+    state: mo
+    zip: '65560'
   place: '2965234'
   phone: 573-729-3500
   website: https://scmcaa.org/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mo/salem/william-lynch-elementary
   name: William Lynch Elementary
   categories:

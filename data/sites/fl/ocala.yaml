@@ -176,35 +176,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marion County
-  address: {street: 2703 NE 14th Street, city: Ocala, state: fl, zip: '34470'}
+  address:
+    street: 2703 NE 14th Street
+    city: Ocala
+    state: fl
+    zip: '34470'
   place: '1250750'
   phone: 352-732-3008
   email: info@cfcaa.org
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/ocala/college-park-elementary-community-clinic
   name: College Park Elementary Community Clinic
   categories:
   - community-health-center
-  address:
-    street: 1330 SW 33rd Ave
-    city: Ocala
-    state: fl
-    zip: '34474'
+  cost: sliding-scale
+  address: {street: 1330 SW 33rd Ave, city: Ocala, state: fl, zip: '34474'}
   place: '1250750'
-  geo:
-    lat: 29.17492
-    lng: -82.17702
+  geo: {lat: 29.17492, lng: -82.17702}
   phone: 352-291-4057
-  external_ids:
-    bphc: BPS-H80-034463
+  external_ids: {bphc: BPS-H80-034463}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/deluca-ymca-family-center
   name: Deluca-Ymca Family Center
   categories:
@@ -266,6 +264,9 @@
     lng: -82.07786
   phone: 813-290-8560
   website: https://www.familiesfirstfl.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -400,6 +401,11 @@
     lng: -82.17556
   phone: 352-619-4231
   website: https://joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -432,152 +438,96 @@
   name: Heart of Florida at Interfaith
   categories:
   - community-health-center
-  address:
-    street: 108 N Pine Ave
-    city: Ocala
-    state: fl
-    zip: '34475'
+  cost: sliding-scale
+  address: {street: 108 N Pine Ave, city: Ocala, state: fl, zip: '34475'}
   place: '1250750'
-  geo:
-    lat: 29.18808
-    lng: -82.14079
+  geo: {lat: 29.18808, lng: -82.14079}
   phone: 352-732-6599
-  external_ids:
-    bphc: BPS-H80-040628
+  external_ids: {bphc: BPS-H80-040628}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/heart-of-florida-health-center-beacon-point
   name: Heart of Florida Health Center Beacon Point
   categories:
   - community-health-center
-  address:
-    street: 717 SW Martin Luther King Jr Ave
-    city: Ocala
-    state: fl
-    zip: '34471'
+  cost: sliding-scale
+  address: {street: 717 SW Martin Luther King Jr Ave, city: Ocala, state: fl, zip: '34471'}
   place: '1250750'
-  geo:
-    lat: 29.18025
-    lng: -82.15236
+  geo: {lat: 29.18025, lng: -82.15236}
   phone: 352-732-6599
-  external_ids:
-    bphc: BPS-H80-034006
+  external_ids: {bphc: BPS-H80-034006}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/heart-of-florida-health-center-central
   name: Heart of Florida Health Center Central
   categories:
   - community-health-center
-  address:
-    street: 1025 SW 1st Ave
-    city: Ocala
-    state: fl
-    zip: '34471'
+  cost: sliding-scale
+  address: {street: 1025 SW 1st Ave, city: Ocala, state: fl, zip: '34471'}
   place: '1250750'
-  geo:
-    lat: 29.17869
-    lng: -82.13731
+  geo: {lat: 29.17869, lng: -82.13731}
   phone: 352-732-6599
-  external_ids:
-    bphc: BPS-H80-008253
+  external_ids: {bphc: BPS-H80-008253}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/heart-of-florida-health-center-main-location
   name: Heart of Florida Health Center Main Location
   categories:
   - community-health-center
-  address:
-    street: 2553 E Silver Springs Blvd
-    city: Ocala
-    state: fl
-    zip: '34470'
+  cost: sliding-scale
+  address: {street: 2553 E Silver Springs Blvd, city: Ocala, state: fl, zip: '34470'}
   place: '1250750'
-  geo:
-    lat: 29.18934
-    lng: -82.10213
+  geo: {lat: 29.18934, lng: -82.10213}
   phone: 352-732-6599
   website: https://www.myhfhc.org
-  external_ids:
-    bphc: BPS-H80-029787
+  external_ids: {bphc: BPS-H80-029787}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/heart-of-florida-health-center-mobile-care-unit
   name: Heart of Florida Health Center Mobile Care Unit
   categories:
   - community-health-center
-  address:
-    street: 2553 E Silver Springs Blvd
-    city: Ocala
-    state: fl
-    zip: '34470'
+  cost: sliding-scale
+  address: {street: 2553 E Silver Springs Blvd, city: Ocala, state: fl, zip: '34470'}
   place: '1250750'
-  geo:
-    lat: 29.18934
-    lng: -82.10213
+  geo: {lat: 29.18934, lng: -82.10213}
   phone: 352-732-6599
   website: https://www.myhfhc.org
-  external_ids:
-    bphc: BPS-H80-040096
+  external_ids: {bphc: BPS-H80-040096}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/heart-of-florida-health-center-southwest
   name: Heart of Florida Health Center Southwest
   categories:
   - community-health-center
-  address:
-    street: 100 Marion Oaks Blvd
-    city: Ocala
-    state: fl
-    zip: '34473'
+  cost: sliding-scale
+  address: {street: 100 Marion Oaks Blvd, city: Ocala, state: fl, zip: '34473'}
   place: '1250750'
-  geo:
-    lat: 29.02498
-    lng: -82.18366
+  geo: {lat: 29.02498, lng: -82.18366}
   phone: 352-732-6599
   website: https://www.heartoffloridahealthcenter.org
-  external_ids:
-    bphc: BPS-H80-013378
+  external_ids: {bphc: BPS-H80-013378}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/hfhc-west
   name: HFHC West
   categories:
   - community-health-center
-  address:
-    street: 7826 SW 60th Ave
-    city: Ocala
-    state: fl
-    zip: '34476'
+  cost: sliding-scale
+  address: {street: 7826 SW 60th Ave, city: Ocala, state: fl, zip: '34476'}
   place: '1250750'
-  geo:
-    lat: 29.10855
-    lng: -82.21903
+  geo: {lat: 29.10855, lng: -82.21903}
   phone: 352-732-6599
-  external_ids:
-    bphc: BPS-H80-040385
+  external_ids: {bphc: BPS-H80-040385}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/home-based-slots
   name: Home Based Slots
   categories:
@@ -732,23 +682,15 @@
   name: Langley Health Services Ocala
   categories:
   - community-health-center
-  address:
-    street: 7205 SE Maricamp Rd
-    city: Ocala
-    state: fl
-    zip: '34472'
+  cost: sliding-scale
+  address: {street: 7205 SE Maricamp Rd, city: Ocala, state: fl, zip: '34472'}
   place: '1250750'
-  geo:
-    lat: 29.12506
-    lng: -82.03235
+  geo: {lat: 29.12506, lng: -82.03235}
   phone: 352-680-7000
-  external_ids:
-    bphc: BPS-H80-014189
+  external_ids: {bphc: BPS-H80-014189}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/ocala/learning-to-achieve-wellness
   name: Learning to Achieve Wellness
   categories:
@@ -765,6 +707,22 @@
     lng: -82.10367
   phone: 813-999-1516
   website: https://learningtoachievewellness.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -900,6 +858,15 @@
     lng: -82.13247
   phone: 352-374-5600
   website: https://www.mbhci.org
+  services:
+  - Outpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -920,6 +887,12 @@
     lng: -82.13626
   phone: 352-732-6565
   website: https://www.newseason.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -940,6 +913,20 @@
     lng: -82.1013
   phone: 352-600-2080
   website: https://www.newseason.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1030,6 +1017,9 @@
     lng: -82.10641
   phone: 352-622-4488
   website: https://www.ocalaconsulting.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1457,6 +1447,14 @@
     lng: -82.21919
   phone: 800-539-4228
   website: https://www.smahealthcare.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  - Adult men
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1478,6 +1476,16 @@
     lng: -82.21912
   phone: 800-539-4228
   website: https://www.smahealthcare.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1499,6 +1507,19 @@
     lng: -82.21912
   phone: 813-875-1408
   website: https://www.smahealthcare.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1520,6 +1541,22 @@
     lng: -82.15156
   phone: 352-291-5555
   website: https://www.smahealthcare.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1541,6 +1578,12 @@
     lng: -82.21912
   phone: 800-539-4228
   website: https://www.smahealthcare.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1628,6 +1671,22 @@
     lng: -82.17073
   phone: 352-671-3130
   website: https://www.thevineshospital.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1672,6 +1731,22 @@
     lng: -82.11844
   phone: 877-640-7820
   website: https://www.whitesandstreatment.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

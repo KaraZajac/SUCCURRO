@@ -93,13 +93,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Shiawassee County
-  address: {street: 1845 Corunna Avenue, city: Owosso, state: mi, zip: '48867'}
+  address:
+    street: 1845 Corunna Avenue
+    city: Owosso
+    state: mi
+    zip: '48867'
   place: '2661940'
   phone: 989-723-3115
   website: https://cacs-inc.org/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/owosso/catholic-charities-of-shiawassee-and-genesee-cou
   name: Catholic Charities of Shiawassee and Genesee Counties
   categories:
@@ -116,6 +122,10 @@
     lng: -84.11883
   phone: 989-723-8239
   website: https://www.catholiccharitiesflint.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -170,46 +180,30 @@
   name: Great Lakes Bay Health Centers Integrated Care Shiawassee
   categories:
   - community-health-center
-  address:
-    street: 1555 Industrial Dr
-    city: Owosso
-    state: mi
-    zip: '48867'
+  cost: sliding-scale
+  address: {street: 1555 Industrial Dr, city: Owosso, state: mi, zip: '48867'}
   place: '2661940'
-  geo:
-    lat: 42.98242
-    lng: -84.15264
+  geo: {lat: 42.98242, lng: -84.15264}
   phone: 989-759-6400
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-013354
+  external_ids: {bphc: BPS-H80-013354}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/owosso/great-lakes-bay-health-centers-shiawassee-closin
   name: Great Lakes Bay Health Centers Shiawassee (Closing)
   categories:
   - community-health-center
-  address:
-    street: 200 N Caledonia Dr
-    city: Owosso
-    state: mi
-    zip: '48867'
+  cost: sliding-scale
+  address: {street: 200 N Caledonia Dr, city: Owosso, state: mi, zip: '48867'}
   place: '2661940'
-  geo:
-    lat: 43.00048
-    lng: -84.12555
+  geo: {lat: 43.00048, lng: -84.12555}
   phone: 989-729-4848
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-015773
+  external_ids: {bphc: BPS-H80-015773}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/owosso/owosso-high-school
   name: Owosso High School
   categories:
@@ -313,6 +307,16 @@
     lng: -84.15235
   phone: 989-723-6791
   website: https://shiabewell.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -3,14 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Floyd County
-  address: {street: 'Courthouse Building, 120 W. Oxford St. (P. O. Box 314)', city: Floyd, state: va,
-    zip: 24091-2222}
+  address:
+    street: Courthouse Building, 120 W. Oxford St. (P. O. Box 314)
+    city: Floyd
+    state: va
+    zip: 24091-2222
   place: '5128544'
   phone: 540-745-9316
   website: https://www.floydcova.gov/social-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/floyd/floyd-elem
   name: Floyd Elem
   categories:
@@ -108,6 +113,13 @@
     lng: -80.32508
   phone: 540-745-2047
   website: https://www.nrvcs.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -139,20 +151,12 @@
   name: Tri-Area Community Health Center at Floyd
   categories:
   - community-health-center
-  address:
-    street: 140 Christiansburg Pike NE
-    city: Floyd
-    state: va
-    zip: '24091'
+  cost: sliding-scale
+  address: {street: 140 Christiansburg Pike NE, city: Floyd, state: va, zip: '24091'}
   place: '5128544'
-  geo:
-    lat: 36.91815
-    lng: -80.31033
+  geo: {lat: 36.91815, lng: -80.31033}
   phone: 540-745-9290
-  external_ids:
-    bphc: BPS-H80-009396
+  external_ids: {bphc: BPS-H80-009396}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

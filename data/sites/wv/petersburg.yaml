@@ -22,34 +22,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Grant County
-  address: {street: 53 Kiess Dr., city: Petersburg, state: wv, zip: '26847'}
-  place: '5462956'
-  phone: 304-257-4211
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: wv/petersburg/grove-street-health-center
-  name: Grove Street Health Center
-  categories:
-  - community-health-center
   address:
-    street: 111 S Grove St, Ste 1
+    street: 53 Kiess Dr.
     city: Petersburg
     state: wv
     zip: '26847'
   place: '5462956'
-  geo:
-    lat: 38.99008
-    lng: -79.12224
-  phone: 304-257-2451
-  website: https://www.hawsehealth.com
-  external_ids:
-    bphc: BPS-H80-015281
+  phone: 304-257-4211
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: wv/petersburg/grove-street-health-center
+  name: Grove Street Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: '111 S Grove St, Ste 1', city: Petersburg, state: wv, zip: '26847'}
+  place: '5462956'
+  geo: {lat: 38.99008, lng: -79.12224}
+  phone: 304-257-2451
+  website: https://www.hawsehealth.com
+  external_ids: {bphc: BPS-H80-015281}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/petersburg/petersburg-elementary-pre-k
   name: Petersburg Elementary Pre-K
   categories:
@@ -73,23 +71,15 @@
   name: Petersburg Elementary School
   categories:
   - community-health-center
-  address:
-    street: 333 Rig St
-    city: Petersburg
-    state: wv
-    zip: '26847'
+  cost: sliding-scale
+  address: {street: 333 Rig St, city: Petersburg, state: wv, zip: '26847'}
   place: '5462956'
-  geo:
-    lat: 39.00139
-    lng: -79.11642
+  geo: {lat: 39.00139, lng: -79.11642}
   phone: 304-257-1110
-  external_ids:
-    bphc: BPS-H80-021883
+  external_ids: {bphc: BPS-H80-021883}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/petersburg/petersburg-elementary-school-2
   name: Petersburg Elementary School
   categories:
@@ -116,23 +106,15 @@
   name: Petersburg High School
   categories:
   - community-health-center
-  address:
-    street: 207 Viking Dr
-    city: Petersburg
-    state: wv
-    zip: '26847'
+  cost: sliding-scale
+  address: {street: 207 Viking Dr, city: Petersburg, state: wv, zip: '26847'}
   place: '5462956'
-  geo:
-    lat: 38.99964
-    lng: -79.1217
+  geo: {lat: 38.99964, lng: -79.1217}
   phone: 304-257-1444
-  external_ids:
-    bphc: BPS-H80-021884
+  external_ids: {bphc: BPS-H80-021884}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/petersburg/petersburg-va-clinic
   name: Petersburg VA Clinic
   categories:
@@ -196,6 +178,11 @@
     lng: -79.12487
   phone: 304-257-1155
   website: https://www.thephg.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

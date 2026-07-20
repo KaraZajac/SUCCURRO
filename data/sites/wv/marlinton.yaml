@@ -17,23 +17,15 @@
   name: Community Care of Marlinton
   categories:
   - community-health-center
-  address:
-    street: 821 3rd Ave
-    city: Marlinton
-    state: wv
-    zip: '24954'
+  cost: sliding-scale
+  address: {street: 821 3rd Ave, city: Marlinton, state: wv, zip: '24954'}
   place: '5451676'
-  geo:
-    lat: 38.22207
-    lng: -80.09415
+  geo: {lat: 38.22207, lng: -80.09415}
   phone: 304-799-4404
-  external_ids:
-    bphc: BPS-H80-011082
+  external_ids: {bphc: BPS-H80-011082}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/marlinton/marlinton-elementary
   name: Marlinton Elementary
   categories:
@@ -80,34 +72,32 @@
   name: Marlinton Elementary School Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 926 5th Ave
-    city: Marlinton
-    state: wv
-    zip: '24954'
+  cost: sliding-scale
+  address: {street: 926 5th Ave, city: Marlinton, state: wv, zip: '24954'}
   place: '5451676'
-  geo:
-    lat: 38.22073
-    lng: -80.09346
+  geo: {lat: 38.22073, lng: -80.09346}
   phone: 304-799-6551
-  external_ids:
-    bphc: BPS-H80-011880
+  external_ids: {bphc: BPS-H80-011880}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/marlinton/pocahontas-county-dhhr-office
   name: Pocahontas County DHHR Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pocahontas County
-  address: {street: 211 Valhalla Ln., city: Marlinton, state: wv, zip: '24954'}
+  address:
+    street: 211 Valhalla Ln.
+    city: Marlinton
+    state: wv
+    zip: '24954'
   place: '5451676'
   phone: 304-799-2540
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/marlinton/seneca-health-services-inc
   name: Seneca Health Services Inc
   categories:
@@ -124,6 +114,14 @@
     lng: -80.09302
   phone: 888-736-3229
   website: https://www.shsinc.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

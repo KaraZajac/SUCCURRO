@@ -2,59 +2,48 @@
   name: Bedford  Community Dental Center
   categories:
   - community-health-center
-  address:
-    street: 600 Bedford Ave
-    city: Bedford
-    state: va
-    zip: '24523'
+  cost: sliding-scale
+  address: {street: 600 Bedford Ave, city: Bedford, state: va, zip: '24523'}
   place: '5105544'
-  geo:
-    lat: 37.33831
-    lng: -79.52956
+  geo: {lat: 37.33831, lng: -79.52956}
   phone: 434-455-2480
   website: https://www.jhcvirginia.org
-  external_ids:
-    bphc: BPS-H80-012914
+  external_ids: {bphc: BPS-H80-012914}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/bedford/bedford-community-health-center
   name: Bedford  Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 582 Blue Ridge Ave
-    city: Bedford
-    state: va
-    zip: '24523'
+  cost: sliding-scale
+  address: {street: 582 Blue Ridge Ave, city: Bedford, state: va, zip: '24523'}
   place: '5105544'
-  geo:
-    lat: 37.3375
-    lng: -79.53261
+  geo: {lat: 37.3375, lng: -79.53261}
   phone: 540-425-7910
   website: https://www.jhcvirginia.org
-  external_ids:
-    bphc: BPS-H80-012911
+  external_ids: {bphc: BPS-H80-012911}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/bedford/bedford-department-of-social-services
   name: Bedford Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bedford County
-  address: {street: 'Burks-Scott Building, 119 E. Main St. (P. O. Box 1187)', city: Bedford, state: va,
-    zip: 24523-7750}
+  address:
+    street: Burks-Scott Building, 119 E. Main St. (P. O. Box 1187)
+    city: Bedford
+    state: va
+    zip: 24523-7750
   place: '5105544'
   phone: 540-586-7750
   website: http://www.co.bedford.va.us/Res/Social/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/bedford/bedford-primary
   name: Bedford Primary
   categories:
@@ -89,6 +78,11 @@
   place: '5105544'
   phone: 540-586-5429
   website: https://www.horizonbh.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

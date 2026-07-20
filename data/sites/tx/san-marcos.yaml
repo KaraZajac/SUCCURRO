@@ -103,36 +103,34 @@
   name: CommuniCare Health Centers - San Marcos
   categories:
   - community-health-center
-  address:
-    street: 1941 S Interstate 35, Suite 101
-    city: San Marcos
-    state: tx
-    zip: '78666'
+  cost: sliding-scale
+  address: {street: '1941 S Interstate 35, Suite 101', city: San Marcos, state: tx, zip: '78666'}
   place: '4865600'
-  geo:
-    lat: 29.85784
-    lng: -97.95098
+  geo: {lat: 29.85784, lng: -97.95098}
   phone: 512-268-8900
   website: https://www.communicaresa.org
-  external_ids:
-    bphc: BPS-H80-024792
+  external_ids: {bphc: BPS-H80-024792}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/san-marcos/community-action-inc-of-central-texas
   name: Community Action Inc. of Central Texas
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Blanco, Caldwell, Hays Counties
-  address: {street: '215 S. Reimer Ave., Suite 130 (P. O. Box 748)', city: San Marcos, state: tx, zip: 78667-0748}
+  address:
+    street: 215 S. Reimer Ave., Suite 130 (P. O. Box 748)
+    city: San Marcos
+    state: tx
+    zip: 78667-0748
   place: '4865600'
   phone: 512-392-1161
   website: https://www.communityaction.com/utilityassistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/san-marcos/crockett-el
   name: Crockett El
   categories:
@@ -251,6 +249,12 @@
     lng: -97.93592
   phone: 877-697-1383
   website: https://www.positiverecovery.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -281,23 +285,15 @@
   name: San Antonio Specialty Health & Sports Medicine - San Marcos
   categories:
   - community-health-center
-  address:
-    street: 1941 S Interstate 35, Suite 113
-    city: San Marcos
-    state: tx
-    zip: '78666'
+  cost: sliding-scale
+  address: {street: '1941 S Interstate 35, Suite 113', city: San Marcos, state: tx, zip: '78666'}
   place: '4865600'
-  geo:
-    lat: 29.85761
-    lng: -97.95123
+  geo: {lat: 29.85761, lng: -97.95123}
   phone: 210-233-7000
-  external_ids:
-    bphc: BPS-H80-040834
+  external_ids: {bphc: BPS-H80-040834}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/san-marcos/san-marcos-excel-academy
   name: San Marcos Excel Academy
   categories:
@@ -397,6 +393,14 @@
     lng: -97.92747
   phone: 512-396-8500 x3204
   website: https://sanmarcostc.com
+  services:
+  - Residential/24-hour residential
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -418,6 +422,12 @@
     lng: -97.95352
   phone: 512-874-7282
   website: https://www.evokewellnesstx.com
+  services:
+  - Outpatient
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

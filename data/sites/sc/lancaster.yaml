@@ -86,13 +86,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lancaster County
-  address: {street: 101 S. Wylie Street, city: Lancaster, state: sc, zip: '29720'}
+  address:
+    street: 101 S. Wylie Street
+    city: Lancaster
+    state: sc
+    zip: '29720'
   place: '4539895'
   phone: 803-285-2034
   website: https://www.carolinacommunityactions.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/lancaster/catawba-community-mental-health-center-lancaster
   name: Catawba Community Mental Health Center Lancaster County Clinic
   categories:
@@ -109,6 +115,21 @@
     lng: -80.7709
   phone: 803-285-7456
   website: https://www.catawbamentalhealth.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -129,6 +150,15 @@
     lng: -80.77054
   phone: 803-285-6911
   website: https://www.counselingserviceslancaster.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -226,6 +256,13 @@
     lng: -80.77619
   phone: 803-745-7001
   website: https://www.lancastertreatment.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -281,44 +318,28 @@
   name: Plexus | Lancaster | 703 N. White
   categories:
   - community-health-center
-  address:
-    street: 703 N White St
-    city: Lancaster
-    state: sc
-    zip: '29720'
+  cost: sliding-scale
+  address: {street: 703 N White St, city: Lancaster, state: sc, zip: '29720'}
   place: '4539895'
-  geo:
-    lat: 34.7287
-    lng: -80.77271
+  geo: {lat: 34.7287, lng: -80.77271}
   phone: 803-285-2273
-  external_ids:
-    bphc: BPS-H80-036121
+  external_ids: {bphc: BPS-H80-036121}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/lancaster/plexus-lancaster-800-n-white
   name: Plexus | Lancaster | 800 N. White
   categories:
   - community-health-center
-  address:
-    street: 800 N White St
-    city: Lancaster
-    state: sc
-    zip: '29720'
+  cost: sliding-scale
+  address: {street: 800 N White St, city: Lancaster, state: sc, zip: '29720'}
   place: '4539895'
-  geo:
-    lat: 34.7293
-    lng: -80.77389
+  geo: {lat: 34.7293, lng: -80.77389}
   phone: 803-285-2273
-  external_ids:
-    bphc: BPS-H80-036792
+  external_ids: {bphc: BPS-H80-036792}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/lancaster/rebound-behavioral-health-hospital
   name: Rebound Behavioral Health Hospital
   categories:
@@ -335,6 +356,22 @@
     lng: -80.80291
   phone: 803-810-0995
   website: https://www.reboundbehavioralhealth.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

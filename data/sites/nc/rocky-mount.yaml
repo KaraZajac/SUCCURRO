@@ -44,12 +44,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Edgecombe County
-  address: {street: 301 S. Fairview Rd., city: Rocky Mount, state: nc, zip: '27801'}
+  address:
+    street: 301 S. Fairview Rd.
+    city: Rocky Mount
+    state: nc
+    zip: '27801'
   place: '3757500'
   phone: 252-985-4101
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/rocky-mount/englewood-elementary
   name: Englewood Elementary
   categories:
@@ -142,68 +148,44 @@
   name: 'Mobile Area Health Center #2'
   categories:
   - community-health-center
-  address:
-    street: 111 S Fairview Rd
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 111 S Fairview Rd, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.92916
-    lng: -77.77381
+  geo: {lat: 35.92916, lng: -77.77381}
   phone: 252-446-3333
   website: https://oicmedical.com
-  external_ids:
-    bphc: BPS-H80-032586
+  external_ids: {bphc: BPS-H80-032586}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/mobile-area-health-center-3
   name: 'Mobile Area Health Center #3'
   categories:
   - community-health-center
-  address:
-    street: 111 S Fairview Rd
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 111 S Fairview Rd, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.92916
-    lng: -77.77381
+  geo: {lat: 35.92916, lng: -77.77381}
   phone: 252-446-3333
   website: https://oicmedical.com
-  external_ids:
-    bphc: BPS-H80-037464
+  external_ids: {bphc: BPS-H80-037464}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/mobile-area-health-clinic-mahc
   name: Mobile Area Health Clinic (MAHC)
   categories:
   - community-health-center
-  address:
-    street: 111 S Fairview Rd
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 111 S Fairview Rd, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.92916
-    lng: -77.77381
+  geo: {lat: 35.92916, lng: -77.77381}
   phone: 252-446-3333
   website: https://oicmedical.com
-  external_ids:
-    bphc: BPS-H80-013957
+  external_ids: {bphc: BPS-H80-013957}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/monarch-bh-nash
   name: Monarch BH Nash
   categories:
@@ -220,6 +202,9 @@
     lng: -77.80271
   phone: 866-272-7826
   website: https://www.monarchnc.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -327,6 +312,11 @@
     lng: -77.85294
   phone: 252-962-5000
   website: https://www.nashunchealthcare.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -380,154 +370,98 @@
   name: OIC Family Medical Center
   categories:
   - community-health-center
-  address:
-    street: 111 S Fairview Rd
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 111 S Fairview Rd, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.92916
-    lng: -77.77381
+  geo: {lat: 35.92916, lng: -77.77381}
   phone: 252-446-3333
   website: http://www.oicone.org
-  external_ids:
-    bphc: BPS-H80-011640
+  external_ids: {bphc: BPS-H80-011640}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-family-medical-center-at-community-health-pl
   name: OIC Family Medical Center at Community Health Plaza
   categories:
   - community-health-center
-  address:
-    street: 1041 Noell Ln
-    city: Rocky Mount
-    state: nc
-    zip: '27804'
+  cost: sliding-scale
+  address: {street: 1041 Noell Ln, city: Rocky Mount, state: nc, zip: '27804'}
   place: '3757500'
-  geo:
-    lat: 35.97472
-    lng: -77.81948
+  geo: {lat: 35.97472, lng: -77.81948}
   phone: 252-316-8205
   website: http://www.oicone.org
-  external_ids:
-    bphc: BPS-H80-018820
+  external_ids: {bphc: BPS-H80-018820}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-family-medical-center-at-happy-hill
   name: OIC Family Medical Center at Happy Hill
   categories:
   - community-health-center
-  address:
-    street: 300 N Grace St
-    city: Rocky Mount
-    state: nc
-    zip: '27804'
+  cost: sliding-scale
+  address: {street: 300 N Grace St, city: Rocky Mount, state: nc, zip: '27804'}
   place: '3757500'
-  geo:
-    lat: 35.94633
-    lng: -77.80091
+  geo: {lat: 35.94633, lng: -77.80091}
   phone: 252-210-9856
   website: http://www.oicone.org
-  external_ids:
-    bphc: BPS-H80-013958
+  external_ids: {bphc: BPS-H80-013958}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-fmc-guardian-court
   name: OIC FMC Guardian Court
   categories:
   - community-health-center
-  address:
-    street: 90 Guardian Ct
-    city: Rocky Mount
-    state: nc
-    zip: '27804'
+  cost: sliding-scale
+  address: {street: 90 Guardian Ct, city: Rocky Mount, state: nc, zip: '27804'}
   place: '3757500'
-  geo:
-    lat: 35.96312
-    lng: -77.85737
+  geo: {lat: 35.96312, lng: -77.85737}
   phone: 252-212-3350
-  external_ids:
-    bphc: BPS-H80-017999
+  external_ids: {bphc: BPS-H80-017999}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-headquarters
   name: OIC Headquarters
   categories:
   - community-health-center
-  address:
-    street: 402 E Virginia St
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 402 E Virginia St, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.95103
-    lng: -77.78671
+  geo: {lat: 35.95103, lng: -77.78671}
   phone: 252-977-3730
   website: https://www.oicone.org
-  external_ids:
-    bphc: BPS-H80-011698
+  external_ids: {bphc: BPS-H80-011698}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-specialty-care-center
   name: OIC Specialty Care Center
   categories:
   - community-health-center
-  address:
-    street: 260 Albemarle Ave
-    city: Rocky Mount
-    state: nc
-    zip: '27801'
+  cost: sliding-scale
+  address: {street: 260 Albemarle Ave, city: Rocky Mount, state: nc, zip: '27801'}
   place: '3757500'
-  geo:
-    lat: 35.94461
-    lng: -77.79297
+  geo: {lat: 35.94461, lng: -77.79297}
   phone: 252-316-8215
   website: https://www.oicone.org
-  external_ids:
-    bphc: BPS-H80-027527
+  external_ids: {bphc: BPS-H80-027527}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/oic-sunset-avenue
   name: OIC Sunset Avenue
   categories:
   - community-health-center
-  address:
-    street: 2309 Sunset Avenue
-    city: Rocky Mount
-    state: nc
-    zip: '27804'
+  cost: sliding-scale
+  address: {street: 2309 Sunset Avenue, city: Rocky Mount, state: nc, zip: '27804'}
   place: '3757500'
-  geo:
-    lat: 35.95874
-    lng: -77.82508
+  geo: {lat: 35.95874, lng: -77.82508}
   phone: 252-210-9856
-  external_ids:
-    bphc: BPS-H80-032534
+  external_ids: {bphc: BPS-H80-032534}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/rocky-mount/old-carriage-road-head-start
   name: Old Carriage Road Head Start
   categories:
@@ -627,6 +561,22 @@
     lng: -77.83838
   phone: 252-972-4357
   website: https://www.rockymountncdrugrehab.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

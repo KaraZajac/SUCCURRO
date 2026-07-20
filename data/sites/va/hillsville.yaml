@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Carroll County
-  address: {street: 'Carroll Co. Governmental Complex, 605-8 Pine St.', city: Hillsville, state: va, zip: '24343'}
+  address:
+    street: Carroll Co. Governmental Complex, 605-8 Pine St.
+    city: Hillsville
+    state: va
+    zip: '24343'
   place: '5137336'
   phone: 276-730-3130
   website: https://carrollcountyva.gov/residents_and_community_services/department_of_dss_-_carroll_co_social_services.php
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/hillsville/carroll-county-high
   name: Carroll County High
   categories:
@@ -136,6 +142,18 @@
     lng: -80.78859
   phone: 276-266-8251
   website: https://www.galaxrecovery.com/about/hillsville-location/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -145,20 +163,12 @@
   name: Tri-Area Community Health at Carroll County Schools
   categories:
   - community-health-center
-  address:
-    street: 100 Cavs Ln
-    city: Hillsville
-    state: va
-    zip: '24343'
+  cost: sliding-scale
+  address: {street: 100 Cavs Ln, city: Hillsville, state: va, zip: '24343'}
   place: '5137336'
-  geo:
-    lat: 36.76208
-    lng: -80.72345
+  geo: {lat: 36.76208, lng: -80.72345}
   phone: 866-942-0401
-  external_ids:
-    bphc: BPS-H80-038712
+  external_ids: {bphc: BPS-H80-038712}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

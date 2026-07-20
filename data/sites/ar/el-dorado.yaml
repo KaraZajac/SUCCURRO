@@ -48,14 +48,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Union County
-  address: {street: 1426 N West Ave, city: El Dorado, state: ar, zip: '71730'}
+  address:
+    street: 1426 N West Ave
+    city: El Dorado
+    state: ar
+    zip: '71730'
   place: '0521070'
   phone: 870-864-0067
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/el-dorado/el-dorado-high-school
   name: El Dorado High School
   categories:
@@ -82,23 +88,15 @@
   name: El Dorado School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 601 Martin Luther King Blvd
-    city: El Dorado
-    state: ar
-    zip: '71730'
+  cost: sliding-scale
+  address: {street: 601 Martin Luther King Blvd, city: El Dorado, state: ar, zip: '71730'}
   place: '0521070'
-  geo:
-    lat: 33.20633
-    lng: -92.64811
+  geo: {lat: 33.20633, lng: -92.64811}
   phone: 870-798-4299
-  external_ids:
-    bphc: BPS-H80-032931
+  external_ids: {bphc: BPS-H80-032931}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/el-dorado/el-dorado-va-clinic
   name: El Dorado VA Clinic
   categories:
@@ -239,6 +237,13 @@
     lng: -92.67315
   phone: 870-862-7921
   website: https://www.newhavenchs.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

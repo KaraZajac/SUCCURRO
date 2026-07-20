@@ -21,23 +21,15 @@
   name: Community Care of New Martinsville
   categories:
   - community-health-center
-  address:
-    street: 1021 3rd St
-    city: New Martinsville
-    state: wv
-    zip: '26155'
+  cost: sliding-scale
+  address: {street: 1021 3rd St, city: New Martinsville, state: wv, zip: '26155'}
   place: '5458684'
-  geo:
-    lat: 39.65477
-    lng: -80.85663
+  geo: {lat: 39.65477, lng: -80.85663}
   phone: 304-924-6262
-  external_ids:
-    bphc: BPS-H80-040996
+  external_ids: {bphc: BPS-H80-040996}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/new-martinsville/magnolia-head-start-center
   name: Magnolia Head Start Center
   categories:
@@ -136,6 +128,11 @@
     lng: -80.86506
   phone: 304-455-3622
   website: https://www.northwoodhealth.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -157,6 +154,9 @@
     lng: -80.85839
   phone: 304-455-3607
   website: https://www.northwoodhealth.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -178,6 +178,22 @@
     lng: -80.85782
   phone: 304-455-3035
   website: https://www.crittentonwv.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -188,9 +204,15 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wetzel County
-  address: {street: 1236 North State Route 2, city: New Martinsville, state: wv, zip: '26155'}
+  address:
+    street: 1236 North State Route 2
+    city: New Martinsville
+    state: wv
+    zip: '26155'
   place: '5458684'
   phone: 304-455-0920
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

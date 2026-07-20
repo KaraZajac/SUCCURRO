@@ -2,23 +2,15 @@
   name: Fentress County Health Department Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 240 Colonial Cir, Suite A
-    city: Jamestown
-    state: tn
-    zip: '38556'
+  cost: sliding-scale
+  address: {street: '240 Colonial Cir, Suite A', city: Jamestown, state: tn, zip: '38556'}
   place: '4737780'
-  geo:
-    lat: 36.42391
-    lng: -84.93073
+  geo: {lat: 36.42391, lng: -84.93073}
   phone: 931-879-9936
-  external_ids:
-    bphc: BPS-H80-003997
+  external_ids: {bphc: BPS-H80-003997}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/jamestown/jamestown-head-start
   name: Jamestown Head Start
   categories:
@@ -76,6 +68,13 @@
     lng: -84.94436
   phone: 865-482-1076
   website: https://www.ridgeview.com
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -86,13 +85,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fentress County
-  address: {street: '308 Main St. S, Ste. 101', city: Jamestown, state: tn, zip: '38556'}
+  address:
+    street: 308 Main St. S, Ste. 101
+    city: Jamestown
+    state: tn
+    zip: '38556'
   place: '4737780'
   phone: 931-879-8040
   website: https://uchra.org/communityservices/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/jamestown/york-elementary
   name: York Elementary
   categories:

@@ -3,23 +3,35 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dickinson County
-  address: {street: 1010 West 6th, city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 1010 West 6th
+    city: Junction City
+    state: ks
+    zip: '66441'
   place: '2035750'
   phone: 785-762-5445
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/junction-city/geary-county-dcf
   name: Geary County DCF
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Geary County
-  address: {street: 1010 West 6th, city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 1010 West 6th
+    city: Junction City
+    state: ks
+    zip: '66441'
   place: '2035750'
   phone: 785-762-5445
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ks/junction-city/jc-north-washington-blessing-box
   name: JC North Washington Blessing Box
   categories:
@@ -137,24 +149,16 @@
   name: KONZA PRAIRIE COMMUNITY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 361 Grant Ave
-    city: Junction City
-    state: ks
-    zip: '66441'
+  cost: sliding-scale
+  address: {street: 361 Grant Ave, city: Junction City, state: ks, zip: '66441'}
   place: '2035750'
-  geo:
-    lat: 39.04239
-    lng: -96.82322
+  geo: {lat: 39.04239, lng: -96.82322}
   phone: 785-238-4711
   website: https://www.kpchc.org
-  external_ids:
-    bphc: BPS-H80-004821
+  external_ids: {bphc: BPS-H80-004821}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/junction-city/lieutenant-general-richard-j-seitz-community-bas
   name: Lieutenant General Richard J. Seitz Community-Based Outpatient Clinic
   categories: *id001
@@ -233,6 +237,13 @@
     lng: -96.86119
   phone: 785-587-4300
   website: https://www.pawnee.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -254,6 +265,15 @@
     lng: -96.86064
   phone: 785-762-5250
   website: https://www.pawnee.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

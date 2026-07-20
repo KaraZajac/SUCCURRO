@@ -13,6 +13,10 @@
     lng: -69.01408
   phone: 804-312-8202
   website: https://annwardcounseling.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -53,6 +57,11 @@
     lng: -69.01422
   phone: 207-338-8960
   website: https://www.bh-maine.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -154,6 +163,9 @@
     lng: -68.99876
   phone: 844-292-0111
   website: https://mainehealth.org/maine-behavioral-healthcare
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -163,24 +175,16 @@
   name: Seaport Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 29 Schoodic Dr
-    city: Belfast
-    state: me
-    zip: 04915
+  cost: sliding-scale
+  address: {street: 29 Schoodic Dr, city: Belfast, state: me, zip: 04915}
   place: '2303950'
-  geo:
-    lat: 44.41842
-    lng: -69.0291
+  geo: {lat: 44.41842, lng: -69.0291}
   phone: 207-338-6900
   website: https://www.pchc.com
-  external_ids:
-    bphc: BPS-H80-033764
+  external_ids: {bphc: BPS-H80-033764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: me/belfast/searsport-counseling-associates-belfast-center
   name: Searsport Counseling Associates Belfast Center
   categories:
@@ -197,6 +201,9 @@
     lng: -69.01408
   phone: 207-338-9145 x3
   website: https://searsportcounseling.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -207,10 +214,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Waldo County
-  address: {street: 9 Field St. (P. O. Box 130), city: Belfast, state: me, zip: 04915}
+  address:
+    street: 9 Field St. (P. O. Box 130)
+    city: Belfast
+    state: me
+    zip: 04915
   place: '2303950'
   phone: 207-338-3025
   website: https://waldocap.org/WCAP-programs/energy/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

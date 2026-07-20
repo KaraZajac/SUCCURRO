@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Martin County
-  address: {street: 15516 SW Osceola St., city: Indiantown, state: fl, zip: '34956'}
+  address:
+    street: 15516 SW Osceola St.
+    city: Indiantown
+    state: fl
+    zip: '34956'
   place: '1233700'
   phone: 772-286-4673
   website: https://alpi.org/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/indiantown/booker-park
   name: Booker Park
   categories:
@@ -57,24 +63,16 @@
   name: Florida Community Health Centers, Inc. - Indiantown
   categories:
   - community-health-center
-  address:
-    street: 15858 SW Warfield Blvd
-    city: Indiantown
-    state: fl
-    zip: '34956'
+  cost: sliding-scale
+  address: {street: 15858 SW Warfield Blvd, city: Indiantown, state: fl, zip: '34956'}
   place: '1233700'
-  geo:
-    lat: 27.02216
-    lng: -80.4697
+  geo: {lat: 27.02216, lng: -80.4697}
   phone: 772-597-3596
   website: https://www.fchcinc.org
-  external_ids:
-    bphc: BPS-H80-000491
+  external_ids: {bphc: BPS-H80-000491}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/indiantown/indiantown-club
   name: Indiantown Club
   categories:
@@ -114,6 +112,20 @@
     lng: -80.46917
   phone: 772-597-0411
   website: https://www.legacybhc.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

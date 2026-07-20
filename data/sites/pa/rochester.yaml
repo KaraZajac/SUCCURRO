@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Beaver County
-  address: {street: 171 Virginia Avenue (P. O. Box 349), city: Rochester, state: pa, zip: 15074-0349}
+  address:
+    street: 171 Virginia Avenue (P. O. Box 349)
+    city: Rochester
+    state: pa
+    zip: 15074-0349
   place: '4265392'
   phone: 724-773-7495
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/rochester/beaver-county-va-clinic
   name: Beaver County VA Clinic
   categories:
@@ -81,6 +87,18 @@
     lng: -80.2854
   phone: 724-452-4453 x1200
   website: https://www.gladerun.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -187,24 +205,16 @@
   name: Rochester Health Center
   categories:
   - community-health-center
-  address:
-    street: 176 Virginia Ave
-    city: Rochester
-    state: pa
-    zip: '15074'
+  cost: sliding-scale
+  address: {street: 176 Virginia Ave, city: Rochester, state: pa, zip: '15074'}
   place: '4265392'
-  geo:
-    lat: 40.70248
-    lng: -80.27715
+  geo: {lat: 40.70248, lng: -80.27715}
   phone: 724-770-9095
   website: https://primary-health.net
-  external_ids:
-    bphc: BPS-H80-014159
+  external_ids: {bphc: BPS-H80-014159}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/rochester/rochester-high-school-ehs
   name: Rochester High School EHS
   categories:

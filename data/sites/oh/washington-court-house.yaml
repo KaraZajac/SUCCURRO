@@ -22,13 +22,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fayette County
-  address: {street: 1400 US Route 22 NW, city: Washington Courthouse, state: oh, zip: '43160'}
+  address:
+    street: 1400 US Route 22 NW
+    city: Washington Courthouse
+    state: oh
+    zip: '43160'
   place: '3981718'
   phone: 740-335-7282
   website: https://www.cacfayettecounty.org/heap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/washington-court-house/fayette-metropolitan-housing-authority
   name: Fayette Metropolitan Housing Authority
   categories:
@@ -295,24 +301,16 @@
   name: HealthSource Washington Court House
   categories:
   - community-health-center
-  address:
-    street: 308 Highland Ave
-    city: Washington Court House
-    state: oh
-    zip: '43160'
+  cost: sliding-scale
+  address: {street: 308 Highland Ave, city: Washington Court House, state: oh, zip: '43160'}
   place: '3981718'
-  geo:
-    lat: 39.53005
-    lng: -83.44273
+  geo: {lat: 39.53005, lng: -83.44273}
   phone: 740-335-8608
   website: https://www.healthsourceofohio.com
-  external_ids:
-    bphc: BPS-H80-013763
+  external_ids: {bphc: BPS-H80-013763}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/washington-court-house/ranch-of-opportunity
   name: Ranch of Opportunity
   categories:
@@ -329,6 +327,14 @@
     lng: -83.48411
   phone: 740-335-3126
   website: https://ranch.eastway.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

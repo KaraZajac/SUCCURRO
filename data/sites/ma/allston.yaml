@@ -42,23 +42,15 @@
   name: Charles River Community Health at Gardner School
   categories:
   - community-health-center
-  address:
-    street: 30 Athol St
-    city: Allston
-    state: ma
-    zip: '02134'
-  geo:
-    lat: 42.36076
-    lng: -71.13411
+  cost: sliding-scale
+  address: {street: 30 Athol St, city: Allston, state: ma, zip: '02134'}
+  geo: {lat: 42.36076, lng: -71.13411}
   phone: 617-783-0500
   website: https://www.charlesriverhealth.org
-  external_ids:
-    bphc: BPS-H80-007410
+  external_ids: {bphc: BPS-H80-007410}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/allston/community-clinic-programs-inc
   name: Community Clinic Programs Inc
   categories:
@@ -74,6 +66,11 @@
     lng: -71.13413
   phone: 617-482-5292
   website: https://www.communityclinicma.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

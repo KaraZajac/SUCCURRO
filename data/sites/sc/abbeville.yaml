@@ -52,6 +52,16 @@
     lng: -82.38456
   phone: 864-459-9671
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -82,23 +92,15 @@
   name: Carolina Health Centers at Abbeville MHC
   categories:
   - community-health-center
-  address:
-    street: 101 Commercial Dr
-    city: Abbeville
-    state: sc
-    zip: '29620'
+  cost: sliding-scale
+  address: {street: 101 Commercial Dr, city: Abbeville, state: sc, zip: '29620'}
   place: '4500100'
-  geo:
-    lat: 34.16182
-    lng: -82.38454
+  geo: {lat: 34.16182, lng: -82.38454}
   phone: 864-889-0559
-  external_ids:
-    bphc: BPS-H80-037846
+  external_ids: {bphc: BPS-H80-037846}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/abbeville/carver-street-apartment
   name: Carver Street Apartment
   categories:
@@ -156,6 +158,15 @@
     lng: -82.38033
   phone: 864-366-9661
   website: https://www.cornerstonecares.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -172,6 +183,11 @@
   place: '4500100'
   phone: 864-223-0694
   website: https://www.faithhomerecovery.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult women
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -182,13 +198,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Abbeville County
-  address: {street: '706 Carolina Circle,', city: Abbeville, state: sc, zip: '29660'}
+  address:
+    street: 706 Carolina Circle,
+    city: Abbeville
+    state: sc
+    zip: '29660'
   place: '4500100'
   phone: 846-459-2100 x 22
   website: http://www.gleamnshrc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/abbeville/hickory-heights
   name: Hickory Heights
   categories:

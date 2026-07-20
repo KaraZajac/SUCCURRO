@@ -68,23 +68,15 @@
   name: Corinth Health Care Associates
   categories:
   - community-health-center
-  address:
-    street: 1010 S Harper Rd
-    city: Corinth
-    state: ms
-    zip: '38834'
+  cost: sliding-scale
+  address: {street: 1010 S Harper Rd, city: Corinth, state: ms, zip: '38834'}
   place: '2815700'
-  geo:
-    lat: 34.92246
-    lng: -88.49541
+  geo: {lat: 34.92246, lng: -88.49541}
   phone: 662-396-4406
-  external_ids:
-    bphc: BPS-H80-039979
+  external_ids: {bphc: BPS-H80-039979}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/corinth/corinth-high-school
   name: Corinth High School
   categories:
@@ -274,6 +266,22 @@
     lng: -88.55997
   phone: 662-293-1000 x5590
   website: https://www.mrhc.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -284,12 +292,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alcorn County
-  address: {street: '3114 Shiloh Rd, Suite A', city: Corinth, state: ms, zip: '38834'}
+  address:
+    street: 3114 Shiloh Rd, Suite A
+    city: Corinth
+    state: ms
+    zip: '38834'
   place: '2815700'
   phone: 662-286-9263
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/corinth/region-iv-chemical-dependency-complex
   name: Region IV Chemical Dependency Complex
   categories:
@@ -306,6 +320,11 @@
     lng: -88.56364
   phone: 662-286-7199
   website: https://
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -327,6 +346,14 @@
     lng: -88.53268
   phone: 662-287-4424
   website: https://www.regionivmhs.com/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -348,6 +375,21 @@
     lng: -88.53268
   phone: 662-287-4055
   website: https://www.regionivmhs.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -368,6 +410,16 @@
     lng: -88.56364
   phone: 662-286-7199
   website: https://www.regionivmhs.com/
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

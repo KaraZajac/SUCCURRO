@@ -45,12 +45,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Fulton County
-  address: {street: 539 Fulton Drive, city: McConnellsburg, state: pa, zip: '17233'}
+  address:
+    street: 539 Fulton Drive
+    city: McConnellsburg
+    state: pa
+    zip: '17233'
   place: '4246000'
   phone: 717-485-3151
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/mcconnellsburg/gaudenzia-inc-fulton-county-outpatient
   name: Gaudenzia Inc Fulton County Outpatient
   categories:
@@ -66,6 +72,12 @@
     lng: -78.00129
   phone: 717-325-4855
   website: https://www.gaudenzia.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -94,21 +106,13 @@
   name: Tri-State Community Health Center - Fulton Site
   categories:
   - community-health-center
-  address:
-    street: 525 Fulton Dr
-    city: Mc Connellsburg
-    state: pa
-    zip: '17233'
+  cost: sliding-scale
+  address: {street: 525 Fulton Dr, city: Mc Connellsburg, state: pa, zip: '17233'}
   place: '4246000'
-  geo:
-    lat: 39.92344
-    lng: -77.99511
+  geo: {lat: 39.92344, lng: -77.99511}
   phone: 717-485-3850
   website: https://www.tschc.com
-  external_ids:
-    bphc: BPS-H80-000678
+  external_ids: {bphc: BPS-H80-000678}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

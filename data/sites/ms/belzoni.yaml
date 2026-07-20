@@ -43,44 +43,28 @@
   name: G.A. Carmichael Family Health Center, Inc. Belzoni Site
   categories:
   - community-health-center
-  address:
-    street: 1301 E 1st St
-    city: Belzoni
-    state: ms
-    zip: '39038'
+  cost: sliding-scale
+  address: {street: 1301 E 1st St, city: Belzoni, state: ms, zip: '39038'}
   place: '2805140'
-  geo:
-    lat: 33.1837
-    lng: -90.46824
+  geo: {lat: 33.1837, lng: -90.46824}
   phone: 662-247-1252
-  external_ids:
-    bphc: BPS-H80-024821
+  external_ids: {bphc: BPS-H80-024821}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/belzoni/g-a-carmichael-family-health-centers-inc
   name: G. A. Carmichael Family Health Centers, Inc
   categories:
   - community-health-center
-  address:
-    street: 16463 US Highway 49
-    city: Belzoni
-    state: ms
-    zip: '39038'
+  cost: sliding-scale
+  address: {street: 16463 US Highway 49, city: Belzoni, state: ms, zip: '39038'}
   place: '2805140'
-  geo:
-    lat: 33.18709
-    lng: -90.49835
+  geo: {lat: 33.18709, lng: -90.49835}
   phone: 662-247-1252
-  external_ids:
-    bphc: BPS-H80-031556
+  external_ids: {bphc: BPS-H80-031556}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/belzoni/ida-greene-elementary-school
   name: Ida Greene Elementary School
   categories:
@@ -120,6 +104,20 @@
     lng: -90.48822
   phone: 662-247-3256
   website: https://www.region6-lifehelp.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -149,10 +147,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Humphreys County
-  address: {street: 501 N. Hayden, city: Belzoni, state: ms, zip: '39038'}
+  address:
+    street: 501 N. Hayden
+    city: Belzoni
+    state: ms
+    zip: '39038'
   place: '2805140'
   phone: 662-247-1961
   website: https://www.shcpi.org/community-action-agency-contact-us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

@@ -109,24 +109,16 @@
   name: Community Health Center of Central Wyoming - Riverton
   categories:
   - community-health-center
-  address:
-    street: 1035 Rose Ln BLDG
-    city: Riverton
-    state: wy
-    zip: '82501'
+  cost: sliding-scale
+  address: {street: 1035 Rose Ln BLDG, city: Riverton, state: wy, zip: '82501'}
   place: '5666220'
-  geo:
-    lat: 43.03473
-    lng: -108.4187
+  geo: {lat: 43.03473, lng: -108.4187}
   phone: 307-463-7160
   website: https://www.chccw.org
-  external_ids:
-    bphc: BPS-H80-031052
+  external_ids: {bphc: BPS-H80-031052}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wy/riverton/fremont-counseling-service
   name: Fremont Counseling Service
   categories:
@@ -143,6 +135,9 @@
     lng: -108.41111
   phone: 307-856-6587
   website: https://www.fremontcounseling.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -299,6 +294,12 @@
     lng: -108.39327
   phone: 307-856-9006 x5
   website: https://www.voanr.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

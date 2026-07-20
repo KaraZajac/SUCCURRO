@@ -25,24 +25,16 @@
   name: CFHC Wauchula Primary Care
   categories:
   - community-health-center
-  address:
-    street: 807 Cobb Ct
-    city: Wauchula
-    state: fl
-    zip: '33873'
+  cost: sliding-scale
+  address: {street: 807 Cobb Ct, city: Wauchula, state: fl, zip: '33873'}
   place: '1275375'
-  geo:
-    lat: 27.53831
-    lng: -81.80663
+  geo: {lat: 27.53831, lng: -81.80663}
   phone: 863-767-0696
   website: https://www.cfhconline.org
-  external_ids:
-    bphc: BPS-H80-034162
+  external_ids: {bphc: BPS-H80-034162}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/wauchula/first-baptist-children-center
   name: First Baptist Children Center
   categories:
@@ -239,6 +231,15 @@
     lng: -81.80952
   phone: 863-519-0575
   website: https://www.peacerivercenter.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -287,13 +288,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving De Soto, Hardee Counties
-  address: {street: 225 E. Main St., city: Wauchula, state: fl, zip: '33873'}
+  address:
+    street: 225 E. Main St.
+    city: Wauchula
+    state: fl
+    zip: '33873'
   place: '1275375'
   phone: 863-993-4858
   website: https://stepupsuncoast.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/wauchula/tri-county-human-services-inc-wauchula-outpatien
   name: Tri County Human Services Inc Wauchula Outpatient Clinic
   categories:
@@ -310,6 +317,21 @@
     lng: -81.81193
   phone: 863-370-5038
   website: https://www.tchsonline.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

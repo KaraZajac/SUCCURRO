@@ -117,23 +117,15 @@
   name: Florida Department of Health in Bradford County - New River Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 1801 N Temple Ave
-    city: Starke
-    state: fl
-    zip: '32091'
+  cost: sliding-scale
+  address: {street: 1801 N Temple Ave, city: Starke, state: fl, zip: '32091'}
   place: '1268525'
-  geo:
-    lat: 29.96397
-    lng: -82.10616
+  geo: {lat: 29.96397, lng: -82.10616}
   phone: 904-964-7732
-  external_ids:
-    bphc: BPS-H80-013403
+  external_ids: {bphc: BPS-H80-013403}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/starke/meridian-behavioral-healthcare-inc-bradford-coun
   name: Meridian Behavioral Healthcare Inc Bradford County Clinic
   categories:
@@ -150,6 +142,16 @@
     lng: -82.11079
   phone: 904-964-8382
   website: https://www.mbhci.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -159,24 +161,16 @@
   name: Palms Medical Group - Starke
   categories:
   - community-health-center
-  address:
-    street: 922 E Call St
-    city: Starke
-    state: fl
-    zip: '32091'
+  cost: sliding-scale
+  address: {street: 922 E Call St, city: Starke, state: fl, zip: '32091'}
   place: '1268525'
-  geo:
-    lat: 29.94028
-    lng: -82.1017
+  geo: {lat: 29.94028, lng: -82.1017}
   phone: 904-364-2900
   website: https://www.palmsmg.org
-  external_ids:
-    bphc: BPS-H80-040339
+  external_ids: {bphc: BPS-H80-040339}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/starke/starke-elementary-school
   name: Starke Elementary School
   categories:
@@ -224,10 +218,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bradford County
-  address: {street: 1210 Andrews Circle, city: Starke, state: fl, zip: '32091'}
+  address:
+    street: 1210 Andrews Circle
+    city: Starke
+    state: fl
+    zip: '32091'
   place: '1268525'
   phone: 904-964-6696 X 22
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

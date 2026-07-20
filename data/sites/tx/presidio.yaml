@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Culberson County
-  address: {street: 102 W. Center St., city: Presidio, state: tx, zip: '79845'}
+  address:
+    street: 102 W. Center St.
+    city: Presidio
+    state: tx
+    zip: '79845'
   place: '4859396'
   phone: 830-303-4376
   website: https://www.ccsct.org/utility-assistance-apply-for-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/presidio/permian-basin-community-ctrs-for-mh-mr
   name: Permian Basin Community Ctrs for MH/MR
   categories:
@@ -26,6 +32,17 @@
     lng: -104.37042
   phone: 432-229-4219
   website: https://www.permiacare.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,20 +73,12 @@
   name: Preventative Care Health Services, INC.
   categories:
   - community-health-center
-  address:
-    street: 1501 N Erma Ave
-    city: Presidio
-    state: tx
-    zip: '79845'
+  cost: sliding-scale
+  address: {street: 1501 N Erma Ave, city: Presidio, state: tx, zip: '79845'}
   place: '4859396'
-  geo:
-    lat: 29.57563
-    lng: -104.36739
+  geo: {lat: 29.57563, lng: -104.36739}
   phone: 432-229-3030
-  external_ids:
-    bphc: BPS-H80-015150
+  external_ids: {bphc: BPS-H80-015150}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -71,6 +71,9 @@
     lng: -87.80451
   phone: 262-638-6744
   website: https://www.racinecounty.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -114,6 +117,16 @@
     lng: -87.89332
   phone: 262-633-3591
   website: https://www.chw.org
+  services:
+  - Outpatient
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -296,6 +309,19 @@
     lng: -87.78456
   phone: 262-687-2222
   website: https://www.myascension.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -429,6 +455,21 @@
     lng: -87.83867
   phone: 262-637-9984
   website: https://www.lakesidefamilytherapy.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -522,24 +563,16 @@
   name: Pillar Health Racine Clinic
   categories:
   - community-health-center
-  address:
-    street: 930 Dr Martin Luther King Dr
-    city: Racine
-    state: wi
-    zip: '53404'
+  cost: sliding-scale
+  address: {street: 930 Dr Martin Luther King Dr, city: Racine, state: wi, zip: '53404'}
   place: '5566000'
-  geo:
-    lat: 42.73237
-    lng: -87.79555
+  geo: {lat: 42.73237, lng: -87.79555}
   phone: 262-656-0044
   website: https://www.pillarhealthcare.org/
-  external_ids:
-    bphc: BPS-H80-040006
+  external_ids: {bphc: BPS-H80-040006}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/racine/racine-comprehensive-treatment-center-quality-ad
   name: Racine Comprehensive Treatment Center Quality Addiction Management Inc
   categories:
@@ -555,6 +588,12 @@
     lng: -87.84977
   phone: 262-355-4579
   website: https://www.ctcprograms.com/location/racine-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -565,13 +604,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Racine County
-  address: {street: 1717 Taylor Ave., city: Racine, state: wi, zip: '53403'}
+  address:
+    street: 1717 Taylor Ave.
+    city: Racine
+    state: wi
+    zip: '53403'
   place: '5566000'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/racine/richard-polzin-cop-house-16th
   name: Richard Polzin Cop House 16Th
   categories:

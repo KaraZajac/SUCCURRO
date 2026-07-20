@@ -21,24 +21,16 @@
   name: Ice Lake Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1500 W Ice Lake Rd
-    city: Iron River
-    state: mi
-    zip: '49935'
+  cost: sliding-scale
+  address: {street: 1500 W Ice Lake Rd, city: Iron River, state: mi, zip: '49935'}
   place: '2640980'
-  geo:
-    lat: 46.10064
-    lng: -88.61964
+  geo: {lat: 46.10064, lng: -88.61964}
   phone: 906-265-5378
   website: https://www.uglhealth.org
-  external_ids:
-    bphc: BPS-H80-013602
+  external_ids: {bphc: BPS-H80-013602}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/iron-river/iron-river-housing-commission
   name: Iron River Housing Commission
   categories:
@@ -75,6 +67,9 @@
     lng: -88.64081
   phone: 906-265-5126
   website: https://www.nbhs.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

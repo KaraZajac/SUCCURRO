@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Broomfield County
-  address: {street: 100 Spader Way, city: Broomfield, state: co, zip: '80020'}
+  address:
+    street: 100 Spader Way
+    city: Broomfield
+    state: co
+    zip: '80020'
   place: 0809280
   phone: 720-887-2200
   website: https://www.broomfield.org/Index.aspx?NID=260
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/broomfield/cfhw-specialty-behavioral-health-servs-broomfiel
   name: CFHW Specialty Behavioral Health Servs Broomfield Clinical Services
   categories:
@@ -26,6 +32,15 @@
     lng: -105.09268
   phone: 303-443-8500
   website: https://www.mhpcolorado.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -50,23 +65,15 @@
   name: Clinica Family Health & Wellness -- Broomfield Clinic
   categories:
   - community-health-center
-  address:
-    street: 897 US Highway 287
-    city: Broomfield
-    state: co
-    zip: '80020'
+  cost: sliding-scale
+  address: {street: 897 US Highway 287, city: Broomfield, state: co, zip: '80020'}
   place: 0809280
-  geo:
-    lat: 39.92774
-    lng: -105.09089
+  geo: {lat: 39.92774, lng: -105.09089}
   phone: 303-650-4460
-  external_ids:
-    bphc: BPS-H80-039440
+  external_ids: {bphc: BPS-H80-039440}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/broomfield/countryside-pool-public
   name: Countryside Pool - Public
   categories:
@@ -93,24 +100,16 @@
   name: Emerald Elementary School
   categories:
   - community-health-center
-  address:
-    street: 275 Emerald St
-    city: Broomfield
-    state: co
-    zip: '80020'
+  cost: sliding-scale
+  address: {street: 275 Emerald St, city: Broomfield, state: co, zip: '80020'}
   place: 0809280
-  geo:
-    lat: 39.9209
-    lng: -105.07848
+  geo: {lat: 39.9209, lng: -105.07848}
   phone: 303-650-4460
   website: https://clinica.org
-  external_ids:
-    bphc: BPS-H80-034993
+  external_ids: {bphc: BPS-H80-034993}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/broomfield/emerald-elementary-school-2
   name: Emerald Elementary School
   categories:
@@ -171,6 +170,18 @@
     lng: -105.10902
   phone: 720-773-8727
   website: https://www.sandstonecare.com/locations/boulder-rehab-cent
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -222,6 +233,12 @@
     lng: -105.10658
   phone: 720-692-7918
   website: https://www.whatsnextcounseling.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

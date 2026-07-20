@@ -14,6 +14,16 @@
     lng: -82.29723
   phone: 864-465-2412
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -124,6 +134,15 @@
     lng: -82.30068
   phone: 864-852-3306
   website: https://www.cornerstonecares.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -134,35 +153,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving McCormick County
-  address: {street: 109 West Augusta Street, city: McCormick, state: sc, zip: '29835'}
+  address:
+    street: 109 West Augusta Street
+    city: McCormick
+    state: sc
+    zip: '29835'
   place: '4543720'
   phone: 864-852-2662
   website: https://www.gleamnshrc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sc/mccormick/mccormick-family-practice
   name: McCormick Family Practice
   categories:
   - community-health-center
-  address:
-    street: 1319 S Main St
-    city: Mc Cormick
-    state: sc
-    zip: '29835'
+  cost: sliding-scale
+  address: {street: 1319 S Main St, city: Mc Cormick, state: sc, zip: '29835'}
   place: '4543720'
-  geo:
-    lat: 33.90228
-    lng: -82.2802
+  geo: {lat: 33.90228, lng: -82.2802}
   phone: 864-852-3336
   website: https://www.carolinahealthcenters.org
-  external_ids:
-    bphc: BPS-H80-015233
+  external_ids: {bphc: BPS-H80-015233}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sc/mccormick/mccormick-head-start-center
   name: McCormick Head Start Center
   categories:

@@ -40,68 +40,44 @@
   name: Community Health Services - East
   categories:
   - community-health-center
-  address:
-    street: 1220 E State St
-    city: Fremont
-    state: oh
-    zip: '43420'
+  cost: sliding-scale
+  address: {street: 1220 E State St, city: Fremont, state: oh, zip: '43420'}
   place: '3928826'
-  geo:
-    lat: 41.34288
-    lng: -83.09585
+  geo: {lat: 41.34288, lng: -83.09585}
   phone: 419-355-8186
   website: https://www.chsohio.org
-  external_ids:
-    bphc: BPS-H80-001078
+  external_ids: {bphc: BPS-H80-001078}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/fremont/community-health-services-main-site
   name: Community Health Services - Main Site
   categories:
   - community-health-center
-  address:
-    street: 2221 Hayes Ave
-    city: Fremont
-    state: oh
-    zip: '43420'
+  cost: sliding-scale
+  address: {street: 2221 Hayes Ave, city: Fremont, state: oh, zip: '43420'}
   place: '3928826'
-  geo:
-    lat: 41.34045
-    lng: -83.14314
+  geo: {lat: 41.34045, lng: -83.14314}
   phone: 419-334-8943
   website: https://www.chsohio.com
-  external_ids:
-    bphc: BPS-H80-019674
+  external_ids: {bphc: BPS-H80-019674}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/fremont/community-health-services-west
   name: Community Health Services - West
   categories:
   - community-health-center
-  address:
-    street: 2276 W State St
-    city: Fremont
-    state: oh
-    zip: '43420'
+  cost: sliding-scale
+  address: {street: 2276 W State St, city: Fremont, state: oh, zip: '43420'}
   place: '3928826'
-  geo:
-    lat: 41.35996
-    lng: -83.14323
+  geo: {lat: 41.35996, lng: -83.14323}
   phone: 419-334-9137
   website: https://www.chsohio.org
-  external_ids:
-    bphc: BPS-H80-002478
+  external_ids: {bphc: BPS-H80-002478}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/fremont/firelands-counseling-recovery-services
   name: Firelands Counseling/Recovery Services
   categories:
@@ -118,6 +94,10 @@
     lng: -83.15242
   phone: 419-332-5524
   website: https://www.firelands.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -188,13 +168,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ottawa, Sandusky, Seneca, Wood Counties
-  address: {street: 127 S. Front St. (P. O. Box 590), city: Fremont, state: oh, zip: '43420'}
+  address:
+    street: 127 S. Front St. (P. O. Box 590)
+    city: Fremont
+    state: oh
+    zip: '43420'
   place: '3928826'
   phone: 419-273-4212
   website: https://www.glcap.org/programs/utility-payment-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/fremont/home-based
   name: Home-Based
   categories:
@@ -230,6 +216,10 @@
     lng: -83.10518
   phone: 419-422-7917
   website: https://www.lssnwo.org/
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

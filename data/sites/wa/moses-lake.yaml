@@ -395,24 +395,16 @@
   name: MOSES LAKE COMMUNITY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 605 S Coolidge St
-    city: Moses Lake
-    state: wa
-    zip: '98837'
+  cost: sliding-scale
+  address: {street: 605 S Coolidge St, city: Moses Lake, state: wa, zip: '98837'}
   place: '5347245'
-  geo:
-    lat: 47.12917
-    lng: -119.26182
+  geo: {lat: 47.12917, lng: -119.26182}
   phone: 509-765-0674
   website: https://www.mlchc.org
-  external_ids:
-    bphc: BPS-H80-001599
+  external_ids: {bphc: BPS-H80-001599}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/moses-lake/moses-lake-high-school
   name: Moses Lake High School
   categories:
@@ -485,13 +477,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Adams, Grant Counties
-  address: {street: '309 E. 5th Ave., Suite D', city: Moses Lake, state: wa, zip: '98837'}
+  address:
+    street: 309 E. 5th Ave., Suite D
+    city: Moses Lake
+    state: wa
+    zip: '98837'
   place: '5347245'
   phone: 509-955-7100
   website: https://oicofwa.org/pathways/support/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/moses-lake/park-orchard-elementary-school
   name: Park Orchard Elementary School
   categories:
@@ -574,6 +572,14 @@
     lng: -119.26268
   phone: 509-765-9239 x5436
   website: https://www.grantcountywa.gov/761/Renew
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

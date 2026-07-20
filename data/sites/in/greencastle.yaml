@@ -28,6 +28,10 @@
     lng: -86.84646
   phone: 765-301-3680
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -64,6 +68,19 @@
     lng: -86.84877
   phone: 888-714-1927 x1500
   website: https://www.cumminsbhs.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -103,24 +120,16 @@
   name: Grace Clinic - Putnam County
   categories:
   - community-health-center
-  address:
-    street: 239 Hillsdale Ave
-    city: Greencastle
-    state: in
-    zip: '46135'
+  cost: sliding-scale
+  address: {street: 239 Hillsdale Ave, city: Greencastle, state: in, zip: '46135'}
   place: '1829358'
-  geo:
-    lat: 39.64888
-    lng: -86.85875
+  geo: {lat: 39.64888, lng: -86.85875}
   phone: 765-653-1024
   website: http://www.hamiltoncenter.org
-  external_ids:
-    bphc: BPS-LAL-031063
+  external_ids: {bphc: BPS-LAL-031063}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/greencastle/greencastle-christian-church-blessing-box
   name: Greencastle Christian Church Blessing Box
   categories:
@@ -182,6 +191,16 @@
     lng: -86.85875
   phone: 765-653-1024
   website: https://www.hamiltoncenter.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -292,10 +311,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Putnam County
-  address: {street: 103 E. Poplar St., city: Greencastle, state: in, zip: '46135'}
+  address:
+    street: 103 E. Poplar St.
+    city: Greencastle
+    state: in
+    zip: '46135'
   place: '1829358'
   phone: 812-234-3517
   website: https://www.wicaa.org/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

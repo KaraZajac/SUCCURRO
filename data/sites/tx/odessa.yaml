@@ -164,86 +164,54 @@
   name: Ector County Hospital District
   categories:
   - community-health-center
-  address:
-    street: 840 W Clements St
-    city: Odessa
-    state: tx
-    zip: '79763'
+  cost: sliding-scale
+  address: {street: 840 W Clements St, city: Odessa, state: tx, zip: '79763'}
   place: '4853388'
-  geo:
-    lat: 31.83271
-    lng: -102.37201
+  geo: {lat: 31.83271, lng: -102.37201}
   phone: 432-640-4860
-  external_ids:
-    bphc: BPS-LAL-009709
+  external_ids: {bphc: BPS-LAL-009709}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/odessa/ector-county-hospital-district-mch-family-health
   name: Ector County Hospital District/MCH Family Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 6030 W University Blvd
-    city: Odessa
-    state: tx
-    zip: '79764'
+  cost: sliding-scale
+  address: {street: 6030 W University Blvd, city: Odessa, state: tx, zip: '79764'}
   place: '4853388'
-  geo:
-    lat: 31.85367
-    lng: -102.44852
+  geo: {lat: 31.85367, lng: -102.44852}
   phone: 432-640-6600
-  external_ids:
-    bphc: BPS-LAL-014638
+  external_ids: {bphc: BPS-LAL-014638}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/odessa/ector-county-hospital-district-mch-healthy-kids
   name: Ector County Hospital District/MCH Healthy Kids Clinic
   categories:
   - community-health-center
-  address:
-    street: 3001 John Ben Shepperd Pkwy
-    city: Odessa
-    state: tx
-    zip: '79762'
+  cost: sliding-scale
+  address: {street: 3001 John Ben Shepperd Pkwy, city: Odessa, state: tx, zip: '79762'}
   place: '4853388'
-  geo:
-    lat: 31.88437
-    lng: -102.33166
+  geo: {lat: 31.88437, lng: -102.33166}
   phone: 432-640-6772
-  external_ids:
-    bphc: BPS-LAL-032221
+  external_ids: {bphc: BPS-LAL-032221}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/odessa/ector-county-hospital-district-mch-women-s-clini
   name: Ector County Hospital District/ MCH Women's Clinic
   categories:
   - community-health-center
-  address:
-    street: 375 N Sam Houston Ave
-    city: Odessa
-    state: tx
-    zip: '79761'
+  cost: sliding-scale
+  address: {street: 375 N Sam Houston Ave, city: Odessa, state: tx, zip: '79761'}
   place: '4853388'
-  geo:
-    lat: 31.84533
-    lng: -102.37223
+  geo: {lat: 31.84533, lng: -102.37223}
   phone: 432-640-2491
-  external_ids:
-    bphc: BPS-LAL-037792
+  external_ids: {bphc: BPS-LAL-037792}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/odessa/eighty-seventh-apartments
   name: Eighty Seventh Apartments
   categories:
@@ -607,6 +575,22 @@
     lng: -102.3962
   phone: 432-335-9659
   website: https://www.permiacare.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -627,6 +611,22 @@
     lng: -102.38501
   phone: 432-580-2654
   website: https://www.permiacare.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -648,6 +648,18 @@
     lng: -102.37014
   phone: 432-333-3265
   website: https://www.permiacare.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -742,13 +754,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ector County
-  address: {street: 1415 E 2nd St., city: Odessa, state: tx, zip: '79761'}
+  address:
+    street: 1415 E 2nd St.
+    city: Odessa
+    state: tx
+    zip: '79761'
   place: '4853388'
   phone: 432-333-9027
   website: https://www.gowto.org/index.cfm?fuseaction=dep_intro&dept_id=1
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/odessa/whitiker
   name: Whitiker
   categories:
@@ -851,6 +869,12 @@
     lng: -102.37653
   phone: 432-335-8141
   website: https://www.wtcr.net
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

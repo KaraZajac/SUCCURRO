@@ -2,23 +2,15 @@
   name: Charlestown Community Medical Services
   categories:
   - community-health-center
-  address:
-    street: 890 Main St
-    city: Charlestown
-    state: in
-    zip: '47111'
+  cost: sliding-scale
+  address: {street: 890 Main St, city: Charlestown, state: in, zip: '47111'}
   place: '1812124'
-  geo:
-    lat: 38.44317
-    lng: -85.66105
+  geo: {lat: 38.44317, lng: -85.66105}
   phone: 812-280-2080
-  external_ids:
-    bphc: BPS-H80-039052
+  external_ids: {bphc: BPS-H80-039052}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/charlestown/charlestown-elementary
   name: Charlestown Elementary
   categories:
@@ -77,6 +69,11 @@
     lng: -85.66098
   phone: 812-206-1200
   website: https://www.lifespringhealthsystems.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -116,6 +113,12 @@
     lng: -85.68832
   phone: 812-256-4686
   website: https://www.ctcprograms.com/location/southern-indiana-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

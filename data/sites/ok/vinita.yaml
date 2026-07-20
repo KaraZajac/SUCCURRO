@@ -2,24 +2,16 @@
   name: Allensworth Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 228 N Wilson St
-    city: Vinita
-    state: ok
-    zip: '74301'
+  cost: sliding-scale
+  address: {street: 228 N Wilson St, city: Vinita, state: ok, zip: '74301'}
   place: '4077550'
-  geo:
-    lat: 36.64106
-    lng: -95.15273
+  geo: {lat: 36.64106, lng: -95.15273}
   phone: 918-276-2667
   website: https://www.cheneo.com
-  external_ids:
-    bphc: BPS-H80-034789
+  external_ids: {bphc: BPS-H80-034789}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/vinita/boys-girls-club-of-vinita-n3
   name: Boys & Girls Club Of Vinita(N3)
   categories:
@@ -58,6 +50,22 @@
     lng: -95.15472
   phone: 844-458-2100
   website: https://www.grandmh.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -68,13 +76,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Craig County
-  address: {city: Vinita, state: ok, zip: '74301'}
+  address:
+    city: Vinita
+    state: ok
+    zip: '74301'
   place: '4077550'
   phone: 405-522-5050
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/vinita/vinita-es-200
   name: Vinita Es(200)
   categories:

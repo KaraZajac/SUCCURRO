@@ -96,6 +96,13 @@
     lng: -98.47721
   phone: 605-622-5552
   website: https://www.averastlukes.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -106,35 +113,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brown County
-  address: {street: 3401 10th Ave. SE., city: Aberdeen, state: sd, zip: '57401'}
+  address:
+    street: 3401 10th Ave. SE.
+    city: Aberdeen
+    state: sd
+    zip: '57401'
   place: '4600100'
   phone: 605-626-3160
   email: DSSRegion5EA@state.sd.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sd/aberdeen/horizon-health-aberdeen
   name: Horizon Health - Aberdeen
   categories:
   - community-health-center
-  address:
-    street: 506 S Wilson St
-    city: Aberdeen
-    state: sd
-    zip: '57401'
+  cost: sliding-scale
+  address: {street: 506 S Wilson St, city: Aberdeen, state: sd, zip: '57401'}
   place: '4600100'
-  geo:
-    lat: 45.46012
-    lng: -98.46203
+  geo: {lat: 45.46012, lng: -98.46203}
   phone: 605-725-3900
   website: https://www.horizonhealthcare.org
-  external_ids:
-    bphc: BPS-H80-017101
+  external_ids: {bphc: BPS-H80-017101}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/aberdeen/youth-development-center
   name: Youth Development Center
   categories:

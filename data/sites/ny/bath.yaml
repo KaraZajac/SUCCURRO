@@ -2,24 +2,16 @@
   name: Bath Community Health
   categories:
   - community-health-center
-  address:
-    street: 6890 County Route 113
-    city: Bath
-    state: ny
-    zip: '14810'
+  cost: sliding-scale
+  address: {street: 6890 County Route 113, city: Bath, state: ny, zip: '14810'}
   place: '3604759'
-  geo:
-    lat: 42.35401
-    lng: -77.30116
+  geo: {lat: 42.35401, lng: -77.30116}
   phone: 315-776-9700
   website: https://www.LocalCommunityHealth.com
-  external_ids:
-    bphc: BPS-H80-036955
+  external_ids: {bphc: BPS-H80-036955}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/bath/bath-va-medical-center
   name: Bath VA Medical Center
   categories:
@@ -103,12 +95,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Steuben County
-  address: {street: 3 East Pulteney Square, city: Bath, state: ny, zip: '14810'}
+  address:
+    street: 3 East Pulteney Square
+    city: Bath
+    state: ny
+    zip: '14810'
   place: '3604759'
   phone: 607-664-2298
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/bath/eastern-steuben-hs-ehs-home-based
   name: Eastern Steuben HS/EHS Home Based
   categories:
@@ -167,6 +165,12 @@
     lng: -77.31806
   phone: 585-256-7500
   website: https://www.hillside.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -237,13 +241,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Steuben County
-  address: {street: 3 East Pulteney Square, city: Bath, state: ny, zip: '14810'}
+  address:
+    street: 3 East Pulteney Square
+    city: Bath
+    state: ny
+    zip: '14810'
   place: '3604759'
   phone: 607-664-2500
   email: HEAP@steubencountyny.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/bath/vernon-e-wightman-primary-school
   name: Vernon E Wightman Primary School
   categories:

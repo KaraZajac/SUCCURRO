@@ -187,13 +187,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Okeechobee County
-  address: {street: '1798 NW 9th Avenue,', city: Okeechobee, state: fl, zip: '34972'}
+  address:
+    street: 1798 NW 9th Avenue,
+    city: Okeechobee
+    state: fl
+    zip: '34972'
   place: '1251200'
   phone: 863-357-2240
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/okeechobee/everglades-elementary-school
   name: Everglades Elementary School
   categories:
@@ -259,68 +265,44 @@
   name: Florida Community Health Centers, Inc. - Dr. Fred Brown Children's Health Center
   categories:
   - community-health-center
-  address:
-    street: 2015 US Highway 441 N
-    city: Okeechobee
-    state: fl
-    zip: '34972'
+  cost: sliding-scale
+  address: {street: 2015 US Highway 441 N, city: Okeechobee, state: fl, zip: '34972'}
   place: '1251200'
-  geo:
-    lat: 27.26281
-    lng: -80.83159
+  geo: {lat: 27.26281, lng: -80.83159}
   phone: 863-763-1951
   website: https://www.fchcinc.org
-  external_ids:
-    bphc: BPS-H80-010370
+  external_ids: {bphc: BPS-H80-010370}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/okeechobee/florida-community-health-centers-inc-lakeshore-a
   name: Florida Community Health Centers, Inc. - Lakeshore Annex
   categories:
   - community-health-center
-  address:
-    street: 103 NE 19th Dr
-    city: Okeechobee
-    state: fl
-    zip: '34972'
+  cost: sliding-scale
+  address: {street: 103 NE 19th Dr, city: Okeechobee, state: fl, zip: '34972'}
   place: '1251200'
-  geo:
-    lat: 27.26157
-    lng: -80.82902
+  geo: {lat: 27.26157, lng: -80.82902}
   phone: 863-467-6120
   website: https://www.fchcinc.org
-  external_ids:
-    bphc: BPS-H80-002096
+  external_ids: {bphc: BPS-H80-002096}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/okeechobee/florida-community-health-centers-inc-lakeshore-m
   name: Florida Community Health Centers, Inc. - Lakeshore Medical
   categories:
   - community-health-center
-  address:
-    street: 1100 N Parrott Ave
-    city: Okeechobee
-    state: fl
-    zip: '34972'
+  cost: sliding-scale
+  address: {street: 1100 N Parrott Ave, city: Okeechobee, state: fl, zip: '34972'}
   place: '1251200'
-  geo:
-    lat: 27.25543
-    lng: -80.82941
+  geo: {lat: 27.25543, lng: -80.82941}
   phone: 863-763-7481
   website: https://www.fchcinc.org
-  external_ids:
-    bphc: BPS-H80-010371
+  external_ids: {bphc: BPS-H80-010371}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/okeechobee/fort-drum-hitching-post
   name: Fort Drum Hitching Post
   categories:
@@ -406,6 +388,20 @@
     lng: -80.83259
   phone: 863-357-8268
   website: https://www.legacybhc.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -518,6 +514,21 @@
     lng: -80.83159
   phone: 863-462-0040
   website: https://www.nhtcinc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

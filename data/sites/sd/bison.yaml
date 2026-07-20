@@ -2,31 +2,27 @@
   name: Horizon Health - Bison
   categories:
   - community-health-center
-  address:
-    street: 105 W Main St
-    city: Bison
-    state: sd
-    zip: '57620'
+  cost: sliding-scale
+  address: {street: 105 W Main St, city: Bison, state: sd, zip: '57620'}
   place: '4605620'
-  geo:
-    lat: 45.52211
-    lng: -102.46542
+  geo: {lat: 45.52211, lng: -102.46542}
   phone: 605-244-5206
-  external_ids:
-    bphc: BPS-H80-017542
+  external_ids: {bphc: BPS-H80-017542}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/bison/perkins-county-liheap
   name: Perkins County Liheap
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Perkins County
-  address: {city: Bison, state: sd}
+  address:
+    city: Bison
+    state: sd
   place: '4605620'
   phone: 800-233-8503
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

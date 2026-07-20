@@ -29,6 +29,22 @@
   place: '3658574'
   phone: 518-563-8000
   website: https://bhsn.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,6 +62,20 @@
   place: '3658574'
   phone: 518-563-8000
   website: https://BHSN.ORG
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,6 +97,10 @@
     lng: -73.48451
   phone: 518-561-8480
   website: https://www.cvfamilycenter.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -88,6 +122,11 @@
     lng: -73.45919
   phone: 518-565-4060
   website: https://www.clintoncountygov.com/mental_health_addiction_services
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -98,24 +137,35 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clinton County
-  address: {street: 13 Durkee Street, city: Plattsburgh, state: ny, zip: '12901'}
+  address:
+    street: 13 Durkee Street
+    city: Plattsburgh
+    state: ny
+    zip: '12901'
   place: '3658574'
   phone: 518-565-3258
   email: DSS@clintoncountygov.com
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/plattsburgh/county-office-for-the-aging
   name: County Office for the Aging
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clinton County
-  address: {street: 135 Margaret Street, city: Plattsburgh, state: ny}
+  address:
+    street: 135 Margaret Street
+    city: Plattsburgh
+    state: ny
   place: '3658574'
   phone: 518-565-4620
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/plattsburgh/cumberland-head-elementary-school
   name: Cumberland Head Elementary School
   categories:
@@ -172,6 +222,11 @@
     lng: -73.46933
   phone: 518-561-2000
   website: https://www.cvph.org/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Young adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,12 +256,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clinton County
-  address: {street: 54 Margaret Street, city: Plattsburgh, state: ny, zip: '12901'}
+  address:
+    street: 54 Margaret Street
+    city: Plattsburgh
+    state: ny
+    zip: '12901'
   place: '3658574'
   phone: 518-561-6310
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/plattsburgh/peru-and-saranac-hs-ehs
   name: Peru and Saranac HS/EHS
   categories:
@@ -250,24 +311,16 @@
   name: Plattsburgh Family Health
   categories:
   - community-health-center
-  address:
-    street: 87 Plaza Blvd
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  cost: sliding-scale
+  address: {street: 87 Plaza Blvd, city: Plattsburgh, state: ny, zip: '12901'}
   place: '3658574'
-  geo:
-    lat: 44.70201
-    lng: -73.49776
+  geo: {lat: 44.70201, lng: -73.49776}
   phone: 518-536-7060
   website: https://www.hhhn.org
-  external_ids:
-    bphc: BPS-H80-027015
+  external_ids: {bphc: BPS-H80-027015}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/plattsburgh-housing-authority
   name: Plattsburgh Housing Authority
   categories:
@@ -292,24 +345,16 @@
   name: Plattsburgh Pediatric and Adolescent Health
   categories:
   - community-health-center
-  address:
-    street: 25 Degrandpre Way
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  cost: sliding-scale
+  address: {street: 25 Degrandpre Way, city: Plattsburgh, state: ny, zip: '12901'}
   place: '3658574'
-  geo:
-    lat: 44.70138
-    lng: -73.49899
+  geo: {lat: 44.70138, lng: -73.49899}
   phone: 518-824-2563
   website: https://www.hhhn.org
-  external_ids:
-    bphc: BPS-H80-038757
+  external_ids: {bphc: BPS-H80-038757}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/plattsburgh-va-clinic
   name: Plattsburgh VA Clinic
   categories:

@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lewis County
-  address: {street: 5274 Outer Stowe Street (P. O. Box 193), city: Lowville, state: ny, zip: '13367'}
+  address:
+    street: 5274 Outer Stowe Street (P. O. Box 193)
+    city: Lowville
+    state: ny
+    zip: '13367'
   place: '3643720'
   phone: 315-376-5313
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/lowville/early-head-start
   name: Early Head Start
   categories:
@@ -33,13 +39,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lewis County
-  address: {street: 5274 Outer Stowe St. (P. O. Box 193), city: Lowville, state: ny, zip: '13367'}
+  address:
+    street: 5274 Outer Stowe St. (P. O. Box 193)
+    city: Lowville
+    state: ny
+    zip: '13367'
   place: '3643720'
   phone: 315-376-5400
   email: lewisreception@dfa.state.ny.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/lowville/lowville-class-i-head-start
   name: Lowville Class I Head Start
   categories:
@@ -83,45 +95,29 @@
   name: Lowville Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 5402 Dayan St
-    city: Lowville
-    state: ny
-    zip: '13367'
+  cost: sliding-scale
+  address: {street: 5402 Dayan St, city: Lowville, state: ny, zip: '13367'}
   place: '3643720'
-  geo:
-    lat: 43.78634
-    lng: -75.49313
+  geo: {lat: 43.78634, lng: -75.49313}
   phone: 315-376-4600
-  external_ids:
-    bphc: BPS-H80-039990
+  external_ids: {bphc: BPS-H80-039990}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/lowville/north-country-family-health-center-lowville
   name: North Country Family Health Center - Lowville
   categories:
   - community-health-center
-  address:
-    street: 7785 N State St
-    city: Lowville
-    state: ny
-    zip: '13367'
+  cost: sliding-scale
+  address: {street: 7785 N State St, city: Lowville, state: ny, zip: '13367'}
   place: '3643720'
-  geo:
-    lat: 43.79543
-    lng: -75.49912
+  geo: {lat: 43.79543, lng: -75.49912}
   phone: 315-376-4500
   website: https://www.NoCoFamilyHealth.org
-  external_ids:
-    bphc: BPS-H80-014018
+  external_ids: {bphc: BPS-H80-014018}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/lowville/thrive-wellness-and-recovery-inc
   name: THRIVE Wellness and Recovery Inc
   categories:
@@ -138,6 +134,15 @@
     lng: -75.49141
   phone: 315-376-5450
   website: https://www.thrivenny.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -14,6 +14,13 @@
     lng: -76.56392
   phone: 315-255-7011 x7784
   website: https://www.auburnhospital.org/programs-services/behavioral-health/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -170,6 +177,22 @@
     lng: -76.56229
   phone: 315-253-9795
   website: https://www.cayugacounseling.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -191,6 +214,16 @@
     lng: -76.56643
   phone: 315-253-0341
   website: https://www.cayugacounty.gov
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,34 +234,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cayuga County
-  address: {street: 160 Genesee Street 2nd Floor, city: Auburn, state: ny, zip: '13021'}
-  place: '3603078'
-  phone: 315-255-4904
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ny/auburn/cayuga-onondaga-boces
-  name: Cayuga-Onondaga BOCES
-  categories:
-  - community-health-center
   address:
-    street: 1879 W Genesee Street Rd
+    street: 160 Genesee Street 2nd Floor
     city: Auburn
     state: ny
     zip: '13021'
   place: '3603078'
-  geo:
-    lat: 42.91739
-    lng: -76.61593
-  phone: 315-253-8477
-  website: https://www.easthillmedical.com/behavioral
-  external_ids:
-    bphc: BPS-H80-041596
+  phone: 315-255-4904
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ny/auburn/cayuga-onondaga-boces
+  name: Cayuga-Onondaga BOCES
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 1879 W Genesee Street Rd, city: Auburn, state: ny, zip: '13021'}
+  place: '3603078'
+  geo: {lat: 42.91739, lng: -76.61593}
+  phone: 315-253-8477
+  website: https://www.easthillmedical.com/behavioral
+  external_ids: {bphc: BPS-H80-041596}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/cayuga-onondaga-boces-2
   name: Cayuga-Onondaga Boces
   categories:
@@ -333,12 +364,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cayuga County
-  address: {street: '89 York Street, Suite 1', city: Auburn, state: ny, zip: '13021'}
+  address:
+    street: 89 York Street, Suite 1
+    city: Auburn
+    state: ny
+    zip: '13021'
   place: '3603078'
   phone: 315-255-1703
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/auburn/clifford-park
   name: Clifford Park
   categories:
@@ -376,6 +413,21 @@
     lng: -76.56675
   phone: 315-253-9786
   website: https://chadcounseling.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -385,110 +437,70 @@
   name: EHMC Administration
   categories:
   - community-health-center
-  address:
-    street: 144 Genesee St, Suite 500
-    city: Auburn
-    state: ny
-    zip: '13021'
+  cost: sliding-scale
+  address: {street: '144 Genesee St, Suite 500', city: Auburn, state: ny, zip: '13021'}
   place: '3603078'
-  geo:
-    lat: 42.93026
-    lng: -76.5686
+  geo: {lat: 42.93026, lng: -76.5686}
   phone: 315-253-8477
   website: https://www.easthillmedical.com
-  external_ids:
-    bphc: BPS-H80-011636
+  external_ids: {bphc: BPS-H80-011636}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/ehmc-adult-medicine
   name: EHMC Adult Medicine
   categories:
   - community-health-center
-  address:
-    street: 144 Genesee St, Suite 401
-    city: Auburn
-    state: ny
-    zip: '13021'
+  cost: sliding-scale
+  address: {street: '144 Genesee St, Suite 401', city: Auburn, state: ny, zip: '13021'}
   place: '3603078'
-  geo:
-    lat: 42.9302
-    lng: -76.56852
+  geo: {lat: 42.9302, lng: -76.56852}
   phone: 315-253-8477
-  external_ids:
-    bphc: BPS-H80-027829
+  external_ids: {bphc: BPS-H80-027829}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/ehmc-dental
   name: EHMC Dental
   categories:
   - community-health-center
-  address:
-    street: 144 Genesee St, Suite 303
-    city: Auburn
-    state: ny
-    zip: '13021'
+  cost: sliding-scale
+  address: {street: '144 Genesee St, Suite 303', city: Auburn, state: ny, zip: '13021'}
   place: '3603078'
-  geo:
-    lat: 42.9302
-    lng: -76.56852
+  geo: {lat: 42.9302, lng: -76.56852}
   phone: 315-253-8477
-  external_ids:
-    bphc: BPS-H80-027830
+  external_ids: {bphc: BPS-H80-027830}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/ehmc-family-and-pediatric-medicine
   name: EHMC Family and Pediatric Medicine
   categories:
   - community-health-center
-  address:
-    street: 13 N Fulton St
-    city: Auburn
-    state: ny
-    zip: '13021'
+  cost: sliding-scale
+  address: {street: 13 N Fulton St, city: Auburn, state: ny, zip: '13021'}
   place: '3603078'
-  geo:
-    lat: 42.93448
-    lng: -76.5597
+  geo: {lat: 42.93448, lng: -76.5597}
   phone: 315-253-8477
   website: http://www.easthillmedical.com
-  external_ids:
-    bphc: BPS-H80-011590
+  external_ids: {bphc: BPS-H80-011590}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/ehmc-inner-wellness
   name: EHMC Inner Wellness
   categories:
   - community-health-center
-  address:
-    street: 144 Genesee St, Suite 201
-    city: Auburn
-    state: ny
-    zip: '13021'
+  cost: sliding-scale
+  address: {street: '144 Genesee St, Suite 201', city: Auburn, state: ny, zip: '13021'}
   place: '3603078'
-  geo:
-    lat: 42.9302
-    lng: -76.56852
+  geo: {lat: 42.9302, lng: -76.56852}
   phone: 315-253-8477
   website: https://www.easthillmedical.com
-  external_ids:
-    bphc: BPS-H80-036954
+  external_ids: {bphc: BPS-H80-036954}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/auburn/hillside-childrens-center-residential-treatment
   name: Hillside Childrens Center Residential Treatment Facility
   categories:
@@ -505,6 +517,12 @@
     lng: -76.53857
   phone: 585-256-7500
   website: https://www.hillside.com
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -515,12 +533,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cayuga County
-  address: {city: Auburn, state: ny}
+  address:
+    city: Auburn
+    state: ny
   place: '3603078'
   phone: 315-253-6272
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/auburn/liberty-resources-inc-evo-house-cayuga-crisis-re
   name: Liberty Resources Inc Evo House/Cayuga Crisis Residence
   categories:
@@ -532,6 +554,9 @@
   place: '3603078'
   phone: 315-370-5024
   website: https://www.liberty-resources.org
+  services:
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -574,6 +599,16 @@
     lng: -76.5719
   phone: 315-282-5351
   website: https://www.srsrecovery.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -595,6 +630,14 @@
     lng: -76.55961
   phone: 315-294-7300
   website: https://www.va.gov/syracuse-health-care
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
   sources:
   - samhsa/findtreatment
   verified:

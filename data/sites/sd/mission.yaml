@@ -44,24 +44,16 @@
   name: Horizon Health - Mission
   categories:
   - community-health-center
-  address:
-    street: 161 S Main St
-    city: Mission
-    state: sd
-    zip: '57555'
+  cost: sliding-scale
+  address: {street: 161 S Main St, city: Mission, state: sd, zip: '57555'}
   place: '4642940'
-  geo:
-    lat: 43.30498
-    lng: -100.65816
+  geo: {lat: 43.30498, lng: -100.65816}
   phone: 605-856-4703
   website: https://www.horizonhealthcare.org
-  external_ids:
-    bphc: BPS-H80-000952
+  external_ids: {bphc: BPS-H80-000952}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/mission/mission-3-head-start-center
   name: Mission 3 Head Start Center
   categories:
@@ -116,6 +108,13 @@
     lng: -100.65852
   phone: 605-842-1465
   website: https://spbhs.net
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -126,13 +125,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Todd County
-  address: {street: 171 N Marge Lane (P. O. Box 818), city: Mission, state: sd, zip: '57555'}
+  address:
+    street: 171 N Marge Lane (P. O. Box 818)
+    city: Mission
+    state: sd
+    zip: '57555'
   place: '4642940'
   phone: 605-856-4489
   email: DSSRegion4EA@state.sd.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sd/mission/todd-county-middle-school
   name: Todd County Middle School
   categories:

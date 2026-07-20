@@ -3,33 +3,31 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Colfax County
-  address: {street: 1233 Whittier Street, city: Raton, state: nm, zip: '87740'}
-  place: '3562060'
-  phone: 800-283-4465
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nm/raton/raton-clinic
-  name: Raton Clinic
-  categories:
-  - community-health-center
   address:
-    street: 166 Hospital Dr
+    street: 1233 Whittier Street
     city: Raton
     state: nm
     zip: '87740'
   place: '3562060'
-  geo:
-    lat: 36.86423
-    lng: -104.44451
-  phone: 575-445-3626
-  external_ids:
-    bphc: BPS-LAL-037828
+  phone: 800-283-4465
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nm/raton/raton-clinic
+  name: Raton Clinic
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 166 Hospital Dr, city: Raton, state: nm, zip: '87740'}
+  place: '3562060'
+  geo: {lat: 36.86423, lng: -104.44451}
+  phone: 575-445-3626
+  external_ids: {bphc: BPS-LAL-037828}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/raton/raton-early-head-start
   name: Raton Early Head Start
   categories:

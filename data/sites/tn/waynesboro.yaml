@@ -14,6 +14,22 @@
     lng: -87.76376
   phone: 931-722-3644
   website: https://centerstone.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -47,13 +63,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wayne County
-  address: {street: 525 B Hwy. 64 East, city: Waynesboro, state: tn, zip: '38485'}
+  address:
+    street: 525 B Hwy. 64 East
+    city: Waynesboro
+    state: tn
+    zip: '38485'
   place: '4778600'
   phone: 931-722-3717
   website: https://www.schra.us/services/community-block-grant#emergency-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/waynesboro/wayne-county-head-start
   name: Wayne County Head Start
   categories:
@@ -100,20 +122,12 @@
   name: Waynesboro Primary Care
   categories:
   - community-health-center
-  address:
-    street: 321 Dexter L Woods Memorial Blvd
-    city: Waynesboro
-    state: tn
-    zip: '38485'
+  cost: sliding-scale
+  address: {street: 321 Dexter L Woods Memorial Blvd, city: Waynesboro, state: tn, zip: '38485'}
   place: '4778600'
-  geo:
-    lat: 35.3254
-    lng: -87.75439
+  geo: {lat: 35.3254, lng: -87.75439}
   phone: 931-722-5411
-  external_ids:
-    bphc: BPS-H80-038432
+  external_ids: {bphc: BPS-H80-038432}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

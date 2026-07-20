@@ -153,6 +153,10 @@
     lng: -91.24822
   phone: 608-775-2287
   website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -169,6 +173,12 @@
   place: '5540775'
   phone: 608-775-8689
   website: https://www.emplifyhealth.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -185,6 +195,12 @@
   place: '5540775'
   phone: 608-775-8689
   website: https://www.emplifyhealth.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -202,6 +218,10 @@
   place: '5540775'
   phone: 608-775-2287
   website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -331,13 +351,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving La Crosse County
-  address: {street: 300 4th St. N, city: La Crosse, state: wi, zip: '54601'}
+  address:
+    street: 300 4th St. N
+    city: La Crosse
+    state: wi
+    zip: '54601'
   place: '5540775'
   phone: 608-784-4357
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/la-crosse/la-crosse-housing-authority
   name: La Crosse Housing Authority
   categories:
@@ -547,6 +573,14 @@
     lng: -91.24211
   phone: 608-392-9555
   website: https://www.mayoclinichealthsystem.org/
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -613,6 +647,9 @@
     lng: -91.25308
   phone: 608-668-4005
   website: https://www.nystromcounseling.com/our-locations/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -622,65 +659,41 @@
   name: Scenic Bluffs Health Center Inc - LaCrosse
   categories:
   - community-health-center
-  address:
-    street: 2030 7th St S
-    city: La Crosse
-    state: wi
-    zip: '54601'
+  cost: sliding-scale
+  address: {street: 2030 7th St S, city: La Crosse, state: wi, zip: '54601'}
   place: '5540775'
-  geo:
-    lat: 43.79118
-    lng: -91.24957
+  geo: {lat: 43.79118, lng: -91.24957}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-030863
+  external_ids: {bphc: BPS-H80-030863}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/la-crosse/scenic-bluffs-health-center-laxbh
   name: Scenic Bluffs Health Center LAXBH
   categories:
   - community-health-center
-  address:
-    street: 916 Ferry St
-    city: La Crosse
-    state: wi
-    zip: '54601'
+  cost: sliding-scale
+  address: {street: 916 Ferry St, city: La Crosse, state: wi, zip: '54601'}
   place: '5540775'
-  geo:
-    lat: 43.80539
-    lng: -91.2437
+  geo: {lat: 43.80539, lng: -91.2437}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-030109
+  external_ids: {bphc: BPS-H80-030109}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/la-crosse/scenic-bluffs-health-centers-inc-reach-lacrosse
   name: Scenic Bluffs Health Centers Inc- REACH LaCrosse
   categories:
   - community-health-center
-  address:
-    street: 212 11th St S
-    city: La Crosse
-    state: wi
-    zip: '54601'
+  cost: sliding-scale
+  address: {street: 212 11th St S, city: La Crosse, state: wi, zip: '54601'}
   place: '5540775'
-  geo:
-    lat: 43.80944
-    lng: -91.24139
+  geo: {lat: 43.80944, lng: -91.24139}
   phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-037087
+  external_ids: {bphc: BPS-H80-037087}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/la-crosse/schuh-mullen-bgc
   name: Schuh Mullen Bgc
   categories:
@@ -764,6 +777,21 @@
     lng: -91.19568
   phone: 608-787-6411
   website: https://www.va.gov/tomah-health-care/locations/la-crosse-va-clinic/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

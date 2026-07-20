@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Sevier County
-  address: {street: '856 East Collin Raye Dr., Unit 2', city: De Queen, state: ar, zip: '71832'}
+  address:
+    street: 856 East Collin Raye Dr., Unit 2
+    city: De Queen
+    state: ar
+    zip: '71832'
   place: 0518490
   phone: 870-982-9701
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/de-queen/cornerstone-counseling
   name: Cornerstone Counseling
   categories:
@@ -59,23 +65,15 @@
   name: Healthy Connections-DeQueen Clinic
   categories:
   - community-health-center
-  address:
-    street: 1206 W Collin Raye Dr
-    city: De Queen
-    state: ar
-    zip: '71832'
+  cost: sliding-scale
+  address: {street: 1206 W Collin Raye Dr, city: De Queen, state: ar, zip: '71832'}
   place: 0518490
-  geo:
-    lat: 34.04774
-    lng: -94.35153
+  geo: {lat: 34.04774, lng: -94.35153}
   phone: 479-437-3449
-  external_ids:
-    bphc: BPS-H80-028356
+  external_ids: {bphc: BPS-H80-028356}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/de-queen/herman-dierks-park
   name: Herman Dierks Park
   categories:
@@ -197,6 +195,12 @@
     lng: -94.35321
   phone: 870-584-7115
   website: https://swamhc.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -69,12 +69,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbus County
-  address: {street: 40 Government Complex Rd., city: Whiteville, state: nc, zip: '28472'}
+  address:
+    street: 40 Government Complex Rd.
+    city: Whiteville
+    state: nc
+    zip: '28472'
   place: '3773660'
   phone: 910-642-2800
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/whiteville/columbus-county-parks-bees-butterflies-blooming
   name: Columbus County Parks- Bees Butterflies & Blooming Beauties
   categories:
@@ -209,45 +215,29 @@
   name: GOSHEN MEDICAL CENTER - WHITEVILLE
   categories:
   - community-health-center
-  address:
-    street: 5 Whiteville Town Ctr
-    city: Whiteville
-    state: nc
-    zip: '28472'
+  cost: sliding-scale
+  address: {street: 5 Whiteville Town Ctr, city: Whiteville, state: nc, zip: '28472'}
   place: '3773660'
-  geo:
-    lat: 34.30629
-    lng: -78.71764
+  geo: {lat: 34.30629, lng: -78.71764}
   phone: 910-212-6613
   website: https://goshenmedical.org
-  external_ids:
-    bphc: BPS-H80-021392
+  external_ids: {bphc: BPS-H80-021392}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/whiteville/goshen-medical-center-whiteville-mobile-unit
   name: GOSHEN MEDICAL CENTER - WHITEVILLE MOBILE UNIT
   categories:
   - community-health-center
-  address:
-    street: 5 Whiteville Town Ctr
-    city: Whiteville
-    state: nc
-    zip: '28472'
+  cost: sliding-scale
+  address: {street: 5 Whiteville Town Ctr, city: Whiteville, state: nc, zip: '28472'}
   place: '3773660'
-  geo:
-    lat: 34.30629
-    lng: -78.71764
+  geo: {lat: 34.30629, lng: -78.71764}
   phone: 910-499-9500
-  external_ids:
-    bphc: BPS-H80-032835
+  external_ids: {bphc: BPS-H80-032835}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/whiteville/lifebridge-healthcare
   name: LifeBridge Healthcare
   categories:
@@ -264,6 +254,10 @@
     lng: -78.70293
   phone: 910-738-7880
   website: https://www.lifebridgeds.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

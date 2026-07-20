@@ -2,24 +2,16 @@
   name: ARcare-100
   categories:
   - community-health-center
-  address:
-    street: 54 Tate Springs Rd
-    city: Melbourne
-    state: ar
-    zip: '72556'
+  cost: sliding-scale
+  address: {street: 54 Tate Springs Rd, city: Melbourne, state: ar, zip: '72556'}
   place: 0545080
-  geo:
-    lat: 36.05968
-    lng: -91.88781
+  geo: {lat: 36.05968, lng: -91.88781}
   phone: 870-368-5030
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-012984
+  external_ids: {bphc: BPS-H80-012984}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/melbourne/arisa-health-inc-melbourne-clinic
   name: Arisa Health Inc Melbourne Clinic
   categories:
@@ -36,6 +28,13 @@
     lng: -91.9057
   phone: 870-919-8503
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -89,13 +88,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Izard County
-  address: {street: 703 Main St. (P. O. Box 211), city: Melbourne, state: ar, zip: '72556'}
+  address:
+    street: 703 Main St. (P. O. Box 211)
+    city: Melbourne
+    state: ar
+    zip: '72556'
   place: 0545080
   phone: 870-368-4329
   website: http://www.nadcinc.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/melbourne/white-river-regional-housing-authority
   name: White River Regional Housing Authority
   categories:

@@ -33,3 +33,6 @@ site: ## build the static site
 
 site-dev: ## run the site dev server
 	cd site && npm run dev
+
+archive: ## add Wayback archive_url to source records (--save via ARGS)
+	python3 -m pipeline.archive $(ARGS)

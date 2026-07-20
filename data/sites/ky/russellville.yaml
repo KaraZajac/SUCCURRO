@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Logan County
-  address: {street: 201 West 6th St., city: Russellville, state: ky, zip: '42276'}
+  address:
+    street: 201 West 6th St.
+    city: Russellville
+    state: ky
+    zip: '42276'
   place: '2167512'
   phone: 270-726-2459
   website: http://www.casoky.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/russellville/housing-authority-of-russellville
   name: Housing Authority Of Russellville
   categories:
@@ -68,6 +74,11 @@
     lng: -86.90461
   phone: 270-726-3629
   website: https://www.lifeskills.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,23 +88,15 @@
   name: Logan County Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 1497 Nashville St
-    city: Russellville
-    state: ky
-    zip: '42276'
+  cost: sliding-scale
+  address: {street: 1497 Nashville St, city: Russellville, state: ky, zip: '42276'}
   place: '2167512'
-  geo:
-    lat: 36.8198
-    lng: -86.88366
+  geo: {lat: 36.8198, lng: -86.88366}
   phone: 270-726-9568
-  external_ids:
-    bphc: BPS-H80-017091
+  external_ids: {bphc: BPS-H80-017091}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/russellville/logan-county-extension-offfice-pavilion
   name: Logan County Extension Offfice Pavilion
   categories:

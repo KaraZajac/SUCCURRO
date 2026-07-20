@@ -14,6 +14,20 @@
     lng: -85.40782
   phone: 231-775-4401
   website: https://www.va.gov/saginaw-health-care/locations/duane-e-dewey-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -101,6 +115,9 @@
     lng: -85.39603
   phone: 231-775-6581
   website: https://www.catholichumanservices.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -175,45 +192,29 @@
   name: Family Health Care - Cadillac
   categories:
   - community-health-center
-  address:
-    street: 520 Cobb St
-    city: Cadillac
-    state: mi
-    zip: '49601'
+  cost: sliding-scale
+  address: {street: 520 Cobb St, city: Cadillac, state: mi, zip: '49601'}
   place: '2612320'
-  geo:
-    lat: 44.24419
-    lng: -85.38501
+  geo: {lat: 44.24419, lng: -85.38501}
   phone: 231-775-6521
   website: http://www.glfc.us/privacy.html
-  external_ids:
-    bphc: BPS-H80-005031
+  external_ids: {bphc: BPS-H80-005031}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/cadillac/franklin-elementary-behavioral-health-services
   name: Franklin Elementary Behavioral Health Services
   categories:
   - community-health-center
-  address:
-    street: 505 Lester St
-    city: Cadillac
-    state: mi
-    zip: '49601'
+  cost: sliding-scale
+  address: {street: 505 Lester St, city: Cadillac, state: mi, zip: '49601'}
   place: '2612320'
-  geo:
-    lat: 44.2491
-    lng: -85.38881
+  geo: {lat: 44.2491, lng: -85.38881}
   phone: 231-876-5200
-  external_ids:
-    bphc: BPS-H80-038165
+  external_ids: {bphc: BPS-H80-038165}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/cadillac/nmcaa-early-learning-center-north-street
   name: NMCAA Early Learning Center- North Street
   categories:
@@ -287,6 +288,22 @@
     lng: -85.38425
   phone: 231-775-3463
   website: https://www.northernlakescmh.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -297,13 +314,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Missaukee, Roscommon, Wexford Counties
-  address: {street: 1640 Marty Paul, city: Cadillac, state: mi, zip: '49601'}
+  address:
+    street: 1640 Marty Paul
+    city: Cadillac
+    state: mi
+    zip: '49601'
   place: '2612320'
   phone: 231-775-9781
   website: https://www.nmcaa.net/emergency_assist.asp
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/cadillac/viking-learning-center-830103852
   name: Viking Learning Center - 830103852
   categories:

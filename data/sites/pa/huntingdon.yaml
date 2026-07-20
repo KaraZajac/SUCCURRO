@@ -21,107 +21,67 @@
   name: BTAMC FAMILY WELLNESS CENTER
   categories:
   - community-health-center
-  address:
-    street: 419 14th St
-    city: Huntingdon
-    state: pa
-    zip: '16652'
+  cost: sliding-scale
+  address: {street: 419 14th St, city: Huntingdon, state: pa, zip: '16652'}
   place: '4236368'
-  geo:
-    lat: 40.49518
-    lng: -78.01696
+  geo: {lat: 40.49518, lng: -78.01696}
   phone: 814-643-3205
-  external_ids:
-    bphc: BPS-H80-038867
+  external_ids: {bphc: BPS-H80-038867}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/huntingdon/btamc-huntingdon-family-care-center
   name: BTAMC Huntingdon Family Care Center
   categories:
   - community-health-center
-  address:
-    street: 835 Washington St
-    city: Huntingdon
-    state: pa
-    zip: '16652'
+  cost: sliding-scale
+  address: {street: 835 Washington St, city: Huntingdon, state: pa, zip: '16652'}
   place: '4236368'
-  geo:
-    lat: 40.4883
-    lng: -78.01687
+  geo: {lat: 40.4883, lng: -78.01687}
   phone: 814-506-8114
-  external_ids:
-    bphc: BPS-H80-018280
+  external_ids: {bphc: BPS-H80-018280}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/huntingdon/btamc-pediatric-family-healthcare
   name: BTAMC Pediatric & Family Healthcare
   categories:
   - community-health-center
-  address:
-    street: 6311 Margy Dr
-    city: Huntingdon
-    state: pa
-    zip: '16652'
+  cost: sliding-scale
+  address: {street: 6311 Margy Dr, city: Huntingdon, state: pa, zip: '16652'}
   place: '4236368'
-  geo:
-    lat: 40.47574
-    lng: -78.05652
+  geo: {lat: 40.47574, lng: -78.05652}
   phone: 814-506-8490
-  external_ids:
-    bphc: BPS-H80-037057
+  external_ids: {bphc: BPS-H80-037057}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/huntingdon/btamc-primary-care-center
   name: BTAMC Primary Care Center
   categories:
   - community-health-center
-  address:
-    street: '790 Bryan St, #1'
-    city: Huntingdon
-    state: pa
-    zip: '16652'
+  cost: sliding-scale
+  address: {street: '790 Bryan St, #1', city: Huntingdon, state: pa, zip: '16652'}
   place: '4236368'
-  geo:
-    lat: 40.49311
-    lng: -78.01137
+  geo: {lat: 40.49311, lng: -78.01137}
   phone: 814-643-8300
-  external_ids:
-    bphc: BPS-H80-018437
+  external_ids: {bphc: BPS-H80-018437}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/huntingdon/btamc-walk-in-clinic
   name: BTAMC Walk In Clinic
   categories:
   - community-health-center
-  address:
-    street: 6678 Towne Center Blvd
-    city: Huntingdon
-    state: pa
-    zip: '16652'
+  cost: sliding-scale
+  address: {street: 6678 Towne Center Blvd, city: Huntingdon, state: pa, zip: '16652'}
   place: '4236368'
-  geo:
-    lat: 40.49145
-    lng: -78.04526
+  geo: {lat: 40.49145, lng: -78.04526}
   phone: 814-635-7351
-  external_ids:
-    bphc: BPS-H80-027329
+  external_ids: {bphc: BPS-H80-027329}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/huntingdon/cen-clear-child-services-inc-dba-cenclear
   name: Cen Clear Child Services Inc DBA CenClear
   categories:
@@ -138,6 +98,14 @@
     lng: -78.01438
   phone: 814-643-0309
   website: https://www.cenclear.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -148,12 +116,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Huntingdon County
-  address: {street: 7591 Lake Raystown Shopping Center, city: Huntingdon, state: pa, zip: '16652'}
+  address:
+    street: 7591 Lake Raystown Shopping Center
+    city: Huntingdon
+    state: pa
+    zip: '16652'
   place: '4236368'
   phone: 814-643-4098
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/huntingdon/huntingdon-county-va-clinic
   name: Huntingdon County VA Clinic
   categories:
@@ -242,6 +216,13 @@
     lng: -78.01744
   phone: 814-643-1114
   website: https://www.mainstreamcounseling.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

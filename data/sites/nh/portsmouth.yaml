@@ -10,6 +10,9 @@
   place: '3362900'
   phone: 385-432-6747
   website: https://aspire365.com/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -19,23 +22,15 @@
   name: Cross Roads House
   categories:
   - community-health-center
-  address:
-    street: 600 Lafayette Rd
-    city: Portsmouth
-    state: nh
-    zip: 03801
+  cost: sliding-scale
+  address: {street: 600 Lafayette Rd, city: Portsmouth, state: nh, zip: 03801}
   place: '3362900'
-  geo:
-    lat: 43.05555
-    lng: -70.77085
+  geo: {lat: 43.05555, lng: -70.77085}
   phone: 603-766-9220
-  external_ids:
-    bphc: BPS-H80-021628
+  external_ids: {bphc: BPS-H80-021628}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/portsmouth/gossling-meadow-housing
   name: Gossling Meadow Housing
   categories:
@@ -74,6 +69,9 @@
     lng: -70.77531
   phone: 603-422-8208 x3168
   website: https://www.getcommunityhealth.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -83,23 +81,15 @@
   name: Greater Seacoast Health
   categories:
   - community-health-center
-  address:
-    street: 8 Greenleaf Woods Dr
-    city: Portsmouth
-    state: nh
-    zip: 03801
+  cost: sliding-scale
+  address: {street: 8 Greenleaf Woods Dr, city: Portsmouth, state: nh, zip: 03801}
   place: '3362900'
-  geo:
-    lat: 43.05376
-    lng: -70.77134
+  geo: {lat: 43.05376, lng: -70.77134}
   phone: 603-422-8208
-  external_ids:
-    bphc: BPS-H80-034064
+  external_ids: {bphc: BPS-H80-034064}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/portsmouth/health-care-resource-centers-newington
   name: Health Care Resource Centers Newington
   categories:
@@ -115,6 +105,11 @@
     lng: -70.80296
   phone: 603-436-0448
   website: https://www.hcrcenters.com/locations/new-hampshire/newington
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -136,6 +131,11 @@
     lng: -70.81601
   phone: 603-624-4366 x3199
   website: https://www.va.gov/manchester-health-care/locations/portsmouth-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -249,6 +249,18 @@
     lng: -70.74851
   phone: 603-431-6703
   website: https://www.smhc-nh.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -259,10 +271,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Rockingham County
-  address: {street: 4 Cutts Street, city: Portsmouth, state: nh, zip: 03801}
+  address:
+    street: 4 Cutts Street
+    city: Portsmouth
+    state: nh
+    zip: 03801
   place: '3362900'
   phone: 603-436-3896
   website: https://www.snhs.org/services/fuel-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

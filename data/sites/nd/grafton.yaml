@@ -2,23 +2,15 @@
   name: Community Health Service Inc. - Grafton
   categories:
   - community-health-center
-  address:
-    street: 1113 W 11th St
-    city: Grafton
-    state: nd
-    zip: '58237'
+  cost: sliding-scale
+  address: {street: 1113 W 11th St, city: Grafton, state: nd, zip: '58237'}
   place: '3831820'
-  geo:
-    lat: 48.41451
-    lng: -97.42852
+  geo: {lat: 48.41451, lng: -97.42852}
   phone: 701-352-4048
-  external_ids:
-    bphc: BPS-H80-029405
+  external_ids: {bphc: BPS-H80-029405}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nd/grafton/grafton
   name: Grafton
   categories:
@@ -96,6 +88,15 @@
     lng: -97.42662
   phone: 701-795-3000
   website: https://www.hhs.nd.gov/HSC/region-4
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -141,9 +142,15 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Walsh County
-  address: {street: 'Chase Building, 2nd Floor, 516 Cooper Ave', city: Grafton, state: nd, zip: '58237'}
+  address:
+    street: Chase Building, 2nd Floor, 516 Cooper Ave
+    city: Grafton
+    state: nd
+    zip: '58237'
   place: '3831820'
   phone: 701-352-5111
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

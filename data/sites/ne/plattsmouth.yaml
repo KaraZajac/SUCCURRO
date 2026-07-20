@@ -18,34 +18,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Cass County
-  address: {street: 546 Avenue A Suite 2, city: Plattsmouth, state: ne, zip: '68048'}
-  place: '3139345'
-  phone: 402-471-7000
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ne/plattsmouth/oneworld-plattsmouth-aka-cass-family-medicine
-  name: OneWorld Plattsmouth aka Cass Family Medicine
-  categories:
-  - community-health-center
   address:
-    street: 122 S 6th St
+    street: 546 Avenue A Suite 2
     city: Plattsmouth
     state: ne
     zip: '68048'
   place: '3139345'
-  geo:
-    lat: 41.01073
-    lng: -95.88654
-  phone: 402-296-2345
-  website: https://www.oneworldomaha.org
-  external_ids:
-    bphc: BPS-H80-014394
+  phone: 402-471-7000
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ne/plattsmouth/oneworld-plattsmouth-aka-cass-family-medicine
+  name: OneWorld Plattsmouth aka Cass Family Medicine
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 122 S 6th St, city: Plattsmouth, state: ne, zip: '68048'}
+  place: '3139345'
+  geo: {lat: 41.01073, lng: -95.88654}
+  phone: 402-296-2345
+  website: https://www.oneworldomaha.org
+  external_ids: {bphc: BPS-H80-014394}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/plattsmouth/plattsmouth-ecc
   name: Plattsmouth ECC
   categories:

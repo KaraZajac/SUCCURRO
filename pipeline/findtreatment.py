@@ -42,6 +42,32 @@ def categories_for(row):
     return ["su-treatment", "mh-treatment"]
 
 
+SERVICE_GROUPS = ("Service Setting", "Special Programs/Groups Offered")
+
+
+def enrich(rec, row):
+    """Pull help-seeker-relevant detail from the services blocks: settings and
+    special programs into services:, payment terms into cost:."""
+    services, payment_text = [], ""
+    for svc in row.get("services") or []:
+        f1, f3 = (svc.get("f1") or "").strip(), svc.get("f3") or ""
+        if f1 in SERVICE_GROUPS:
+            for item in f3.split(";"):
+                item = item.strip()
+                if item and item not in services:
+                    services.append(item)
+        elif f1 in ("Payment/Insurance/Funding Accepted", "Payment Assistance Available"):
+            payment_text += "; " + f3.lower()
+    if services:
+        rec["services"] = services[:14]
+    if "sliding fee" in payment_text:
+        rec["cost"] = "sliding-scale"
+    elif "no payment accepted" in payment_text:
+        rec["cost"] = "free"
+    elif payment_text.strip("; "):
+        rec["cost"] = "varies"
+
+
 def fetch_all(force):
     rows, page, total_pages = [], 1, 1
     while page <= total_pages:
@@ -106,6 +132,7 @@ def main(argv):
             rec["phone"] = row["phone"]
         if row.get("website"):
             rec["website"] = row["website"]
+        enrich(rec, row)
         rec["sources"] = [source_id]
         rec["verified"] = Flow(on=today(), method="api")
         seen[key] = rec

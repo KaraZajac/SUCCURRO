@@ -33,37 +33,53 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving 48 counties
-  address: {city: Lincoln, state: ne, zip: '85801'}
+  address:
+    city: Lincoln
+    state: ne
+    zip: '85801'
   place: '3128000'
   phone: 800-383-4278
   website: http:///www.accessnebraska.ne.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/lincoln/access-nebrasks
   name: ACCESS Nebrasks
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Garden County
-  address: {city: Lincoln, state: ne, zip: '68501'}
+  address:
+    city: Lincoln
+    state: ne
+    zip: '68501'
   place: '3128000'
   phone: 800-383-4278
   website: http://www.accessnebraska.ne.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/lincoln/accessnebraska
   name: ACCESSNebraska
   categories:
   - utility-assistance
   description: LIHEAP intake office serving 44 counties
-  address: {street: P.O. Box 85801, city: Lincoln, state: ne, zip: '68501'}
+  address:
+    street: P.O. Box 85801
+    city: Lincoln
+    state: ne
+    zip: '68501'
   place: '3128000'
   phone: 800-383-4278
   website: http://www.accessnebraska.ne.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/lincoln/antelope-creek-valley-little-free-pantry
   name: Antelope Creek Valley Little Free Pantry
   categories:
@@ -139,6 +155,12 @@
     lng: -96.64381
   phone: 402-261-6667
   website: https://www.actnebraska.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -159,6 +181,11 @@
     lng: -96.65947
   phone: 402-488-2122
   website: https://baartprograms.com/locations/nebraska/lincoln
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -180,6 +207,22 @@
     lng: -96.6179
   phone: 402-486-1101
   website: https://www.bhr-llc.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -282,6 +325,9 @@
     lng: -96.66409
   phone: 402-367-4216
   website: https://bvbh.net
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -291,109 +337,69 @@
   name: 'Bluestem Health: Central Business Office'
   categories:
   - community-health-center
-  address:
-    street: 1248 O St, Suite 400
-    city: Lincoln
-    state: ne
-    zip: '68508'
+  cost: sliding-scale
+  address: {street: '1248 O St, Suite 400', city: Lincoln, state: ne, zip: '68508'}
   place: '3128000'
-  geo:
-    lat: 40.81394
-    lng: -96.7029
+  geo: {lat: 40.81394, lng: -96.7029}
   phone: 402-470-5424
-  external_ids:
-    bphc: BPS-H80-038480
+  external_ids: {bphc: BPS-H80-038480}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/lincoln/bluestem-health-kreshel-clinic
   name: 'Bluestem Health: Kreshel Clinic'
   categories:
   - community-health-center
-  address:
-    street: 3100 N 14th St
-    city: Lincoln
-    state: ne
-    zip: '68521'
+  cost: sliding-scale
+  address: {street: 3100 N 14th St, city: Lincoln, state: ne, zip: '68521'}
   place: '3128000'
-  geo:
-    lat: 40.8433
-    lng: -96.7008
+  geo: {lat: 40.8433, lng: -96.7008}
   phone: 402-477-6600
-  external_ids:
-    bphc: BPS-H80-027379
+  external_ids: {bphc: BPS-H80-027379}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/lincoln/bluestem-health-main-clinic
   name: 'Bluestem Health: Main Clinic'
   categories:
   - community-health-center
-  address:
-    street: 1021 N 27th St
-    city: Lincoln
-    state: ne
-    zip: '68503'
+  cost: sliding-scale
+  address: {street: 1021 N 27th St, city: Lincoln, state: ne, zip: '68503'}
   place: '3128000'
-  geo:
-    lat: 40.82374
-    lng: -96.68289
+  geo: {lat: 40.82374, lng: -96.68289}
   phone: 402-476-1455
   website: https://bluestemlincoln.com
-  external_ids:
-    bphc: BPS-H80-000414
+  external_ids: {bphc: BPS-H80-000414}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/lincoln/bluestem-health-pediatrics
   name: 'Bluestem Health: Pediatrics'
   categories:
   - community-health-center
-  address:
-    street: 2301 O St, Ste 2
-    city: Lincoln
-    state: ne
-    zip: '68510'
+  cost: sliding-scale
+  address: {street: '2301 O St, Ste 2', city: Lincoln, state: ne, zip: '68510'}
   place: '3128000'
-  geo:
-    lat: 40.81353
-    lng: -96.68765
+  geo: {lat: 40.81353, lng: -96.68765}
   phone: 402-476-1455
-  external_ids:
-    bphc: BPS-H80-017625
+  external_ids: {bphc: BPS-H80-017625}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/lincoln/bluestem-health-thompson-clinic
   name: 'Bluestem Health: Thompson Clinic'
   categories:
   - community-health-center
-  address:
-    street: 2222 S 16th St, Suite 435
-    city: Lincoln
-    state: ne
-    zip: '68502'
+  cost: sliding-scale
+  address: {street: '2222 S 16th St, Suite 435', city: Lincoln, state: ne, zip: '68502'}
   place: '3128000'
-  geo:
-    lat: 40.78985
-    lng: -96.69905
+  geo: {lat: 40.78985, lng: -96.69905}
   phone: 402-476-1455
   website: https://www.bluestemlincoln.com
-  external_ids:
-    bphc: BPS-H80-018702
+  external_ids: {bphc: BPS-H80-018702}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/lincoln/boys-girls-club-pantry-at-cooper-park
   name: Boys & Girls Club Pantry at Cooper Park
   categories:
@@ -422,6 +428,10 @@
   place: '3128000'
   phone: 402-477-3951
   website: https://
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -443,6 +453,15 @@
     lng: -96.69809
   phone: 402-481-5981
   website: https://www.bryanhealth.com/services/counseling-mental-health/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -463,6 +482,19 @@
     lng: -96.69806
   phone: 402-481-5268
   website: https://www.bryanhealth.com/services/alcohol-drug-treatment
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Adolescents
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -569,6 +601,14 @@
   place: '3128000'
   phone: 402-475-8748
   website: https://www.centerpointe.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -590,6 +630,12 @@
     lng: -96.70505
   phone: 402-475-5161
   website: https://www.centerpointe.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -608,6 +654,13 @@
   place: '3128000'
   phone: 402-261-6065
   website: https://www.centerpointe.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -626,6 +679,11 @@
   place: '3128000'
   phone: 402-435-4044
   website: https://www.centerPointe.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -646,6 +704,18 @@
     lng: -96.65773
   phone: 402-476-2300
   website: https://www.choicestreatmentcenter.net
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -901,6 +971,15 @@
     lng: -96.71192
   phone: 402-441-7949
   website: https://www.familyservicelincoln.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1033,6 +1112,10 @@
     lng: -96.63281
   phone: 402-435-3165 x112
   website: https://www.housesofhope.com
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1076,6 +1159,13 @@
     lng: -96.66619
   phone: 208-551-1160
   website: https://lincolnimagine.com
+  services:
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1094,6 +1184,11 @@
   place: '3128000'
   phone: 531-500-4429
   website: https://www.ibhealthservices.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1307,6 +1402,10 @@
     lng: -96.65542
   phone: 402-488-6511
   website: https://steppingstoneslincoln.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1489,6 +1588,12 @@
     lng: -96.68771
   phone: 402-441-7940
   website: https://www.onelfs.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1509,6 +1614,12 @@
     lng: -96.73021
   phone: 402-441-7940
   website: https://www.onelfs.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1563,23 +1674,35 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Saunders County
-  address: {street: 246 S. 14th Street Suite 2, city: Lincoln, state: ne, zip: '68508'}
+  address:
+    street: 246 S. 14th Street Suite 2
+    city: Lincoln
+    state: ne
+    zip: '68508'
   place: '3128000'
   phone: 402-471-7000
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/lincoln/nebraska-department-of-health-and-human-services
   name: Nebraska Department of Health and Human Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lancaster, Saline Counties
-  address: {street: 246 S. 14th Street Suite 2, city: Lincoln, state: ne, zip: '68508'}
+  address:
+    street: 246 S. 14th Street Suite 2
+    city: Lincoln
+    state: ne
+    zip: '68508'
   place: '3128000'
   phone: 402-471-7000
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/lincoln/nebraska-giving-realty-little-free-library
   name: Nebraska Giving Realty Little Free Library
   categories:
@@ -1611,6 +1734,10 @@
     lng: -96.60453
   phone: 402-483-6990
   website: https://www.nebraskamental.health
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1684,6 +1811,12 @@
     lng: -96.66594
   phone: 208-551-1160
   website: https://www.northpointrecovery.com
+  services:
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1793,6 +1926,12 @@
     lng: -96.59315
   phone: 402-434-2730 x1
   website: https://www.pinelakebh.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with eating disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1814,6 +1953,22 @@
     lng: -96.69881
   phone: 531-248-3030
   website: https://www.poncatribe-ne.gov
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1894,6 +2049,11 @@
     lng: -96.6676
   phone: 402-441-4343
   website: https://region5systems.net/
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -2085,6 +2245,9 @@
     lng: -96.63967
   phone: 402-471-6969
   website: https://
+  services:
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

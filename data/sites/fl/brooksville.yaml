@@ -44,24 +44,16 @@
   name: Brooksville Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 300 S Main St
-    city: Brooksville
-    state: fl
-    zip: '34601'
+  cost: sliding-scale
+  address: {street: 300 S Main St, city: Brooksville, state: fl, zip: '34601'}
   place: '1208800'
-  geo:
-    lat: 28.55211
-    lng: -82.3892
+  geo: {lat: 28.55211, lng: -82.3892}
   phone: 352-518-2000
   website: https://www.premierhc.org
-  external_ids:
-    bphc: BPS-H80-019426
+  external_ids: {bphc: BPS-H80-019426}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/brooksville/brooksville-housing-authority
   name: Brooksville Housing Authority
   categories:
@@ -273,6 +265,22 @@
     lng: -82.45619
   phone: 813-999-1516
   website: https://learningtoachievewellness.com/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -398,10 +406,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Sumter County
-  address: {street: 820 Kennedy Blvd., city: Brooksville, state: fl, zip: '34601'}
+  address:
+    street: 820 Kennedy Blvd.
+    city: Brooksville
+    state: fl
+    zip: '34601'
   place: '1208800'
   phone: 888-802-7483
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

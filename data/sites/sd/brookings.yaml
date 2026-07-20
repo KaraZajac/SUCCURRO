@@ -2,23 +2,15 @@
   name: Access Health - Brookings
   categories:
   - community-health-center
-  address:
-    street: 400 22nd Ave
-    city: Brookings
-    state: sd
-    zip: '57006'
+  cost: sliding-scale
+  address: {street: 400 22nd Ave, city: Brookings, state: sd, zip: '57006'}
   place: '4607580'
-  geo:
-    lat: 44.309
-    lng: -96.767
+  geo: {lat: 44.309, lng: -96.767}
   phone: 605-697-9500
-  external_ids:
-    bphc: BPS-H80-031042
+  external_ids: {bphc: BPS-H80-031042}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/brookings/brookings-center
   name: Brookings Center
   categories:
@@ -84,10 +76,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brookings County
-  address: {street: '1310 Main Ave. S., Ste. 101', city: Brookings, state: sd, zip: '57006'}
+  address:
+    street: 1310 Main Ave. S., Ste. 101
+    city: Brookings
+    state: sd
+    zip: '57006'
   place: '4607580'
   phone: 605-688-4330
   email: DSSRegion6EA@state.sd.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

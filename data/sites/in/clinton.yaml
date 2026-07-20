@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Vermillion County
-  address: {street: '312 Blackman St., Suite B', city: Clinton, state: in, zip: '47842'}
+  address:
+    street: 312 Blackman St., Suite B
+    city: Clinton
+    state: in
+    zip: '47842'
   place: '1813780'
   phone: 765-832-7771
   website: https://www.capwi.org/services/housing/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/clinton/hamilton-center-inc
   name: Hamilton Center Inc
   categories:
@@ -48,6 +54,16 @@
     lng: -87.39786
   phone: 765-832-2436
   website: https://www.hamiltoncenter.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -89,6 +105,10 @@
     lng: -87.39914
   phone: 765-828-1003
   website: https://valleyprohealth.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -98,64 +118,40 @@
   name: VPCHC - Clinton
   categories:
   - community-health-center
-  address:
-    street: 777 S Main St, Suite 100
-    city: Clinton
-    state: in
-    zip: '47842'
+  cost: sliding-scale
+  address: {street: '777 S Main St, Suite 100', city: Clinton, state: in, zip: '47842'}
   place: '1813780'
-  geo:
-    lat: 39.65359
-    lng: -87.3991
+  geo: {lat: 39.65359, lng: -87.3991}
   phone: 765-828-1003
   website: https://www.vallyprohealth.org
-  external_ids:
-    bphc: BPS-H80-001239
+  external_ids: {bphc: BPS-H80-001239}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/clinton/vpchc-clinton-dental
   name: VPCHC - Clinton Dental
   categories:
   - community-health-center
-  address:
-    street: 1792 E State Road 163
-    city: Clinton
-    state: in
-    zip: '47842'
+  cost: sliding-scale
+  address: {street: 1792 E State Road 163, city: Clinton, state: in, zip: '47842'}
   place: '1813780'
-  geo:
-    lat: 39.65789
-    lng: -87.43109
+  geo: {lat: 39.65789, lng: -87.43109}
   phone: 765-828-3214
-  external_ids:
-    bphc: BPS-H80-039337
+  external_ids: {bphc: BPS-H80-039337}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/clinton/vpchc-mobile-school-based-health-center
   name: VPCHC - Mobile School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 777 S Main St, Suite 100
-    city: Clinton
-    state: in
-    zip: '47842'
+  cost: sliding-scale
+  address: {street: '777 S Main St, Suite 100', city: Clinton, state: in, zip: '47842'}
   place: '1813780'
-  geo:
-    lat: 39.65359
-    lng: -87.3991
+  geo: {lat: 39.65359, lng: -87.3991}
   phone: 765-828-1003
   website: https://www.valleyprohealth.org
-  external_ids:
-    bphc: BPS-H80-011925
+  external_ids: {bphc: BPS-H80-011925}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

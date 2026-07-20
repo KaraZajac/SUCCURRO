@@ -2,23 +2,15 @@
   name: 2050 Administration
   categories:
   - community-health-center
-  address:
-    street: '2050 Main St, #2B'
-    city: Wailuku
-    state: hi
-    zip: '96793'
+  cost: sliding-scale
+  address: {street: '2050 Main St, #2B', city: Wailuku, state: hi, zip: '96793'}
   place: '1577450'
-  geo:
-    lat: 20.8876
-    lng: -156.50248
+  geo: {lat: 20.8876, lng: -156.50248}
   phone: 808-871-7772
-  external_ids:
-    bphc: BPS-H80-038961
+  external_ids: {bphc: BPS-H80-038961}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: hi/wailuku/care-hawaii-inc-adult-iop
   name: CARE Hawaii Inc Adult IOP
   categories:
@@ -34,6 +26,22 @@
     lng: -156.50214
   phone: 808-479-7956
   website: https://www.carehawaii.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -43,45 +51,29 @@
   name: Community Clinic of Maui
   categories:
   - community-health-center
-  address:
-    street: 1881 Nani St
-    city: Wailuku
-    state: hi
-    zip: '96793'
+  cost: sliding-scale
+  address: {street: 1881 Nani St, city: Wailuku, state: hi, zip: '96793'}
   place: '1577450'
-  geo:
-    lat: 20.88876
-    lng: -156.49985
+  geo: {lat: 20.88876, lng: -156.49985}
   phone: 808-871-7772
   website: https://www.ccmaui.org
-  external_ids:
-    bphc: BPS-H80-008908
+  external_ids: {bphc: BPS-H80-008908}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: hi/wailuku/community-clinic-of-maui-khao-satellite-clinic
   name: Community Clinic of Maui KHAO Satellite Clinic
   categories:
   - community-health-center
-  address:
-    street: 670 Waiale Rd
-    city: Wailuku
-    state: hi
-    zip: '96793'
+  cost: sliding-scale
+  address: {street: 670 Waiale Rd, city: Wailuku, state: hi, zip: '96793'}
   place: '1577450'
-  geo:
-    lat: 20.87544
-    lng: -156.49907
+  geo: {lat: 20.87544, lng: -156.49907}
   phone: 808-244-0220
-  external_ids:
-    bphc: BPS-H80-005024
+  external_ids: {bphc: BPS-H80-005024}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: hi/wailuku/county-of-maui
   name: County Of  Maui
   categories:
@@ -161,6 +153,20 @@
     lng: -156.48321
   phone: 808-426-4515
   website: https://champclinic.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -181,6 +187,12 @@
     lng: -156.49438
   phone: 808-264-6696
   website: https://www.mbhr.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -191,25 +203,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Maui County
-  address: {street: 99 Mahalani St., city: Wailuku, state: hi, zip: '96793'}
+  address:
+    street: 99 Mahalani St.
+    city: Wailuku
+    state: hi
+    zip: '96793'
   place: '1577450'
   phone: 808-249-2970
   website: https://www.meoinc.org/programs-services/community-services/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: hi/wailuku/meo-maui-office
   name: MEO - Maui Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kalawao County
-  address: {street: 99 Mahalani St, city: Wailuku, state: hi, zip: '96793'}
+  address:
+    street: 99 Mahalani St
+    city: Wailuku
+    state: hi
+    zip: '96793'
   place: '1577450'
   phone: 808-249-2970
   website: http://meoinc.charityfinders.org/Employment
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: hi/wailuku/mfss-ehs-main-office-kupukupu-child-development
   name: MFSS EHS Main Office & Kupukupu Child Development Center-Wailuku
   categories:

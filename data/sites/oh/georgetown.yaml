@@ -18,13 +18,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Adams, Brown Counties
-  address: {street: 406 W Plum St, city: Georgetown, state: oh, zip: '45121'}
+  address:
+    street: 406 W Plum St
+    city: Georgetown
+    state: oh
+    zip: '45121'
   place: '3929778'
   phone: 937-378-6041
   website: https://www.abcap.net/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/georgetown/adams-brown-ehs-home-base-units
   name: Adams Brown EHS Home Base Units
   categories:
@@ -80,6 +86,14 @@
     lng: -83.89567
   phone: 844-707-7775
   website: https://www.brightviewhealth.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -171,24 +185,16 @@
   name: HealthSource Georgetown
   categories:
   - community-health-center
-  address:
-    street: 631 E State St
-    city: Georgetown
-    state: oh
-    zip: '45121'
+  cost: sliding-scale
+  address: {street: 631 E State St, city: Georgetown, state: oh, zip: '45121'}
   place: '3929778'
-  geo:
-    lat: 38.86399
-    lng: -83.89483
+  geo: {lat: 38.86399, lng: -83.89483}
   phone: 937-378-6387
   website: https://www.healthsourceofohio.com
-  external_ids:
-    bphc: BPS-H80-017106
+  external_ids: {bphc: BPS-H80-017106}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/georgetown/talbert-house-brown-county-recovery-services
   name: Talbert House Brown County Recovery Services
   categories:
@@ -205,6 +211,9 @@
     lng: -83.8952
   phone: 937-378-4811
   website: https://www.talberthouse.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -226,6 +235,10 @@
     lng: -83.8991
   phone: 937-378-3413
   website: https://www.va.gov/cincinnati-health-care/locations/georgetown-va-clinic/
+  services:
+  - Outpatient
+  - Veterans
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

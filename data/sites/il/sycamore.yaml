@@ -2,24 +2,16 @@
   name: 165 E Plank Rd
   categories:
   - community-health-center
-  address:
-    street: 165 E Plank Rd
-    city: Sycamore
-    state: il
-    zip: '60178'
+  cost: sliding-scale
+  address: {street: 165 E Plank Rd, city: Sycamore, state: il, zip: '60178'}
   place: '1774223'
-  geo:
-    lat: 42.01623
-    lng: -88.67439
+  geo: {lat: 42.01623, lng: -88.67439}
   phone: 844-599-3700
   website: https://www.greaterfamilyhealth.org
-  external_ids:
-    bphc: BPS-H80-012954
+  external_ids: {bphc: BPS-H80-012954}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/sycamore/braden-counseling-center
   name: Braden Counseling Center
   categories:
@@ -36,6 +28,9 @@
     lng: -88.71034
   phone: 815-787-9000
   website: https://www.bradencenter.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +52,11 @@
     lng: -88.67445
   phone: 844-599-3700
   website: https://www.greaterfamilyhealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,6 +77,10 @@
     lng: -88.70268
   phone: 815-748-8334
   website: https://nm.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

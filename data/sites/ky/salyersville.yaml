@@ -25,13 +25,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Magoffin County
-  address: {street: 131 S. Church St., city: Salyersville, state: ky, zip: '41240'}
+  address:
+    street: 131 S. Church St.
+    city: Salyersville
+    state: ky
+    zip: '41240'
   place: '2168232'
   phone: 606-349-2217
   website: https://bsacap.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/salyersville/cole-branch
   name: Cole Branch
   categories:
@@ -102,109 +108,69 @@
   name: HomePlace Clinic - Salyersville
   categories:
   - community-health-center
-  address:
-    street: 540 Parkway Dr
-    city: Salyersville
-    state: ky
-    zip: '41465'
+  cost: sliding-scale
+  address: {street: 540 Parkway Dr, city: Salyersville, state: ky, zip: '41465'}
   place: '2168232'
-  geo:
-    lat: 37.74618
-    lng: -83.05993
+  geo: {lat: 37.74618, lng: -83.05993}
   phone: 606-886-8572
   website: https://www.mtcomp.org/homeplace
-  external_ids:
-    bphc: BPS-H80-040282
+  external_ids: {bphc: BPS-H80-040282}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/salyersville/homeplace-eye-care
   name: HomePlace Eye Care
   categories:
   - community-health-center
-  address:
-    street: 550 Parkway Dr
-    city: Salyersville
-    state: ky
-    zip: '41465'
+  cost: sliding-scale
+  address: {street: 550 Parkway Dr, city: Salyersville, state: ky, zip: '41465'}
   place: '2168232'
-  geo:
-    lat: 37.74646
-    lng: -83.06296
+  geo: {lat: 37.74646, lng: -83.06296}
   phone: 606-349-3115
-  external_ids:
-    bphc: BPS-H80-041242
+  external_ids: {bphc: BPS-H80-041242}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/salyersville/hope-family-health-services-pediatrics
   name: Hope Family Health Services-Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 420 Tom Frazier Way
-    city: Salyersville
-    state: ky
-    zip: '41465'
+  cost: sliding-scale
+  address: {street: 420 Tom Frazier Way, city: Salyersville, state: ky, zip: '41465'}
   place: '2168232'
-  geo:
-    lat: 37.73997
-    lng: -83.04642
+  geo: {lat: 37.73997, lng: -83.04642}
   phone: 606-349-5126
-  external_ids:
-    bphc: BPS-H80-031707
+  external_ids: {bphc: BPS-H80-031707}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/salyersville/hope-family-health-services-podiatry
   name: Hope Family Health Services-Podiatry
   categories:
   - community-health-center
-  address:
-    street: 452 Tom Frazier Way
-    city: Salyersville
-    state: ky
-    zip: '41465'
+  cost: sliding-scale
+  address: {street: 452 Tom Frazier Way, city: Salyersville, state: ky, zip: '41465'}
   place: '2168232'
-  geo:
-    lat: 37.7399
-    lng: -83.04619
+  geo: {lat: 37.7399, lng: -83.04619}
   phone: 606-349-5126
-  external_ids:
-    bphc: BPS-H80-024615
+  external_ids: {bphc: BPS-H80-024615}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/salyersville/hope-family-medical-center
   name: HOPE FAMILY MEDICAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 940 Parkway Dr
-    city: Salyersville
-    state: ky
-    zip: '41465'
+  cost: sliding-scale
+  address: {street: 940 Parkway Dr, city: Salyersville, state: ky, zip: '41465'}
   place: '2168232'
-  geo:
-    lat: 37.74416
-    lng: -83.05647
+  geo: {lat: 37.74416, lng: -83.05647}
   phone: 606-349-5126
   website: https://www.bshc.org
-  external_ids:
-    bphc: BPS-H80-003755
+  external_ids: {bphc: BPS-H80-003755}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/salyersville/housing-authority-of-salyersville-magoffin-co
   name: Housing Authority Of Salyersville/Magoffin Co.
   categories:
@@ -307,6 +273,22 @@
     lng: -83.06043
   phone: 606-349-3115
   website: https://www.mtcomp.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

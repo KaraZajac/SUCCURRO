@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbia, Garfield, Walla Walla Counties
-  address: {street: 8 E. Cherry, city: Walla Walla, state: wa, zip: '99362'}
+  address:
+    street: 8 E. Cherry
+    city: Walla Walla
+    state: wa
+    zip: '99362'
   place: '5375775'
   phone: 509-529-4980
   website: http://www.bmacww.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/walla-walla/college-place-cdc
   name: College Place  CDC
   categories:
@@ -33,24 +39,16 @@
   name: FAMILY MEDICAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 1120 W Rose St
-    city: Walla Walla
-    state: wa
-    zip: '99362'
+  cost: sliding-scale
+  address: {street: 1120 W Rose St, city: Walla Walla, state: wa, zip: '99362'}
   place: '5375775'
-  geo:
-    lat: 46.06194
-    lng: -118.35607
+  geo: {lat: 46.06194, lng: -118.35607}
   phone: 509-525-6695
   website: https://www.yvfwc.com
-  external_ids:
-    bphc: BPS-H80-003694
+  external_ids: {bphc: BPS-H80-003694}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/walla-walla/ha-city-of-walla-walla
   name: Ha City Of Walla Walla
   categories:
@@ -156,6 +154,14 @@
     lng: -118.30492
   phone: 509-529-6036 x105
   website: https://www.serenitypointcounseling.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -214,6 +220,11 @@
     lng: -118.3589
   phone: 509-525-5200 x26288
   website: https://
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Veterans
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

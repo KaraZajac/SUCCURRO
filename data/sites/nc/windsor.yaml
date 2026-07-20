@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bertie County
-  address: {street: '1006 Wayland St, (P. O. Box 627)', city: Windsor, state: nc, zip: '27983'}
+  address:
+    street: 1006 Wayland St, (P. O. Box 627)
+    city: Windsor
+    state: nc
+    zip: '27983'
   place: '3774680'
   phone: 252-794-6307
   website: http://www.co.bertie.nc.us/departments/dss/dss.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/windsor/i-am-me-development-center-llc
   name: I Am Me Development Center Llc
   categories:
@@ -114,6 +120,13 @@
     lng: -76.95372
   phone: 252-794-3834
   website: https://www.upliftnc.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -142,21 +155,13 @@
   name: WINDSOR COMMUNITY HEALTH CTR
   categories:
   - community-health-center
-  address:
-    street: 104 Rhodes Ave
-    city: Windsor
-    state: nc
-    zip: '27983'
+  cost: sliding-scale
+  address: {street: 104 Rhodes Ave, city: Windsor, state: nc, zip: '27983'}
   place: '3774680'
-  geo:
-    lat: 35.9887
-    lng: -76.9303
+  geo: {lat: 35.9887, lng: -76.9303}
   phone: 252-794-1835
   website: https://bcrha.org
-  external_ids:
-    bphc: BPS-H80-004085
+  external_ids: {bphc: BPS-H80-004085}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -180,13 +180,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Harrisonburg City, Rockingham Counties
-  address: {street: 110 North Mason Street (P. O. Box 809), city: Harrisonburg, state: va, zip: '22803'}
+  address:
+    street: 110 North Mason Street (P. O. Box 809)
+    city: Harrisonburg
+    state: va
+    zip: '22803'
   place: '5135624'
   phone: 540-574-5100
   website: https://www.rockinghamcountyva.gov/206/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/harrisonburg/harrisonburg-treatment-center-metro-treatment-of
   name: Harrisonburg Treatment Center Metro Treatment of Virginia LP
   categories:
@@ -202,6 +208,22 @@
     lng: -78.9035
   phone: 540-908-3917 x15605
   website: https://www.newseason.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -260,87 +282,55 @@
   name: HCHC Administrative Office
   categories:
   - community-health-center
-  address:
-    street: 124 Newman Ave
-    city: Harrisonburg
-    state: va
-    zip: '22801'
+  cost: sliding-scale
+  address: {street: 124 Newman Ave, city: Harrisonburg, state: va, zip: '22801'}
   place: '5135624'
-  geo:
-    lat: 38.44771
-    lng: -78.86735
+  geo: {lat: 38.44771, lng: -78.86735}
   phone: 540-433-4913
-  external_ids:
-    bphc: BPS-H80-027077
+  external_ids: {bphc: BPS-H80-027077}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/harrisonburg/hchc-downtown
   name: HCHC Downtown
   categories:
   - community-health-center
-  address:
-    street: 25 W Water St
-    city: Harrisonburg
-    state: va
-    zip: '22801'
+  cost: sliding-scale
+  address: {street: 25 W Water St, city: Harrisonburg, state: va, zip: '22801'}
   place: '5135624'
-  geo:
-    lat: 38.44835
-    lng: -78.86945
+  geo: {lat: 38.44835, lng: -78.86945}
   phone: 540-433-4913
   website: https://hburgchc.org/
-  external_ids:
-    bphc: BPS-H80-039712
+  external_ids: {bphc: BPS-H80-039712}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/harrisonburg/hchc-park-view
   name: HCHC Park View
   categories:
   - community-health-center
-  address:
-    street: 1479 Virginia Ave
-    city: Harrisonburg
-    state: va
-    zip: '22802'
+  cost: sliding-scale
+  address: {street: 1479 Virginia Ave, city: Harrisonburg, state: va, zip: '22802'}
   place: '5135624'
-  geo:
-    lat: 38.47488
-    lng: -78.87326
+  geo: {lat: 38.47488, lng: -78.87326}
   phone: 540-433-4913
-  external_ids:
-    bphc: BPS-H80-035646
+  external_ids: {bphc: BPS-H80-035646}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/harrisonburg/hchc-stone-port
   name: HCHC Stone Port
   categories:
   - community-health-center
-  address:
-    street: 1380 Little Sorrell Dr STE 100
-    city: Harrisonburg
-    state: va
-    zip: '22801'
+  cost: sliding-scale
+  address: {street: 1380 Little Sorrell Dr STE 100, city: Harrisonburg, state: va, zip: '22801'}
   place: '5135624'
-  geo:
-    lat: 38.41398
-    lng: -78.866
+  geo: {lat: 38.41398, lng: -78.866}
   phone: 540-433-4913
-  external_ids:
-    bphc: BPS-H80-011881
+  external_ids: {bphc: BPS-H80-011881}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/harrisonburg/keister-elem
   name: Keister Elem
   categories:
@@ -623,6 +613,22 @@
     lng: -78.87108
   phone: 540-564-5104
   website: https://www.sentara.com/harrisonburg-virginia/medicalservices/services/behavioral-health.aspx
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -641,6 +647,16 @@
   place: '5135624'
   phone: 540-564-5104
   website: https://www.sentara.com/harrisonburg-virginia/medicalservices/services/behavioral-health.aspx
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

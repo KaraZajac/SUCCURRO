@@ -26,35 +26,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lauderdale County
-  address: {street: 198 S. Washington, city: Ripley, state: tn, zip: '38063'}
+  address:
+    street: 198 S. Washington
+    city: Ripley
+    state: tn
+    zip: '38063'
   place: '4763340'
   phone: 731-635-1931
   website: https://deltahumanresourceagency.com/programs/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/ripley/lauderdale-county-medical-clinic
   name: Lauderdale County Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 317 Cleveland St
-    city: Ripley
-    state: tn
-    zip: '38063'
+  cost: sliding-scale
+  address: {street: 317 Cleveland St, city: Ripley, state: tn, zip: '38063'}
   place: '4763340'
-  geo:
-    lat: 35.76147
-    lng: -89.53884
+  geo: {lat: 35.76147, lng: -89.53884}
   phone: 731-221-1804
   website: https://www.clchc.com
-  external_ids:
-    bphc: BPS-H80-012400
+  external_ids: {bphc: BPS-H80-012400}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/ripley/my-con-youth-conference
   name: My Con Youth Conference
   categories:
@@ -94,6 +92,11 @@
     lng: -89.55407
   phone: 901-476-8967
   website: https://www.pcswtn.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

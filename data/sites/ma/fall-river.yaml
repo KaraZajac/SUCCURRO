@@ -72,6 +72,9 @@
     lng: -71.11274
   phone: 508-563-5767
   website: https://www.cmsaba.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -82,25 +85,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bristol County
-  address: {street: 264 Griffin St., city: Fall River, state: ma, zip: '02724'}
+  address:
+    street: 264 Griffin St.
+    city: Fall River
+    state: ma
+    zip: '02724'
   place: '2523000'
   phone: 508-679-0041
   website: http://cfcinc.org/programs/fuel-assistance-program/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/fall-river/citizens-for-citizens-cfc-tauton-office
   name: Citizens for Citizens (CFC) Tauton Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bristol County
-  address: {street: 264 Griffin Street, city: Fall River, state: ma, zip: '02724'}
+  address:
+    street: 264 Griffin Street
+    city: Fall River
+    state: ma
+    zip: '02724'
   place: '2523000'
   phone: 508-823-6346
   website: http://cfcinc.org/programs/fuel-assistance-program/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ma/fall-river/dr-john-c-corrigan-mental-hlth-center
   name: Dr John C Corrigan Mental Hlth Center
   categories:
@@ -117,6 +132,18 @@
     lng: -71.1458
   phone: 508-235-7200 x7400
   website: https://www.mass.gov/service-details/southeast-area
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -137,6 +164,14 @@
     lng: -71.14684
   phone: 508-676-1307
   website: https://www.ctcprograms.com/location/fall-river-comprehensive-treatment-center/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -178,6 +213,9 @@
     lng: -71.15259
   phone: 508-678-7542
   website: https://www.frfsa.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -279,45 +317,29 @@
   name: HealthFirst Family Care Center Inc.
   categories:
   - community-health-center
-  address:
-    street: 387 Quarry St, Suite 100
-    city: Fall River
-    state: ma
-    zip: '02723'
+  cost: sliding-scale
+  address: {street: '387 Quarry St, Suite 100', city: Fall River, state: ma, zip: '02723'}
   place: '2523000'
-  geo:
-    lat: 41.69332
-    lng: -71.14021
+  geo: {lat: 41.69332, lng: -71.14021}
   phone: 508-679-8111
   website: https://www.healthfirstfr.org
-  external_ids:
-    bphc: BPS-H80-009263
+  external_ids: {bphc: BPS-H80-009263}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/healthfirst-family-care-center-school-based-heal
   name: HealthFirst Family Care Center-School-Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 251 Stonehaven Rd
-    city: Fall River
-    state: ma
-    zip: '02723'
+  cost: sliding-scale
+  address: {street: 251 Stonehaven Rd, city: Fall River, state: ma, zip: '02723'}
   place: '2523000'
-  geo:
-    lat: 41.69996
-    lng: -71.1248
+  geo: {lat: 41.69996, lng: -71.1248}
   phone: 508-678-2891
-  external_ids:
-    bphc: BPS-H80-037180
+  external_ids: {bphc: BPS-H80-037180}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/heritage-heights
   name: Heritage Heights
   categories:
@@ -395,6 +417,21 @@
     lng: -71.14313
   phone: 508-296-0523
   website: https://www.ignitemyrecovery.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -481,6 +518,9 @@
     lng: -71.16695
   phone: 508-676-5708
   website: https://cfservices.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -617,6 +657,7 @@
     lng: -71.13617
   phone: 508-324-7763
   website: https://www.sstar.org
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -626,24 +667,16 @@
   name: SSTAR Integrated Health Services Center
   categories:
   - community-health-center
-  address:
-    street: 75 Weaver St
-    city: Fall River
-    state: ma
-    zip: '02720'
+  cost: sliding-scale
+  address: {street: 75 Weaver St, city: Fall River, state: ma, zip: '02720'}
   place: '2523000'
-  geo:
-    lat: 41.7276
-    lng: -71.1444
+  geo: {lat: 41.7276, lng: -71.1444}
   phone: 508-675-1054
   website: https://www.sstar.org
-  external_ids:
-    bphc: BPS-H80-035394
+  external_ids: {bphc: BPS-H80-035394}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/sstar-lifeline-program
   name: SSTAR Lifeline Program
   categories:
@@ -659,6 +692,10 @@
     lng: -71.16516
   phone: 508-235-5010 x4019
   website: https://www.SSTAR.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -668,24 +705,16 @@
   name: SSTAR's South End Services
   categories:
   - community-health-center
-  address:
-    street: 1010 S Main St
-    city: Fall River
-    state: ma
-    zip: '02724'
+  cost: sliding-scale
+  address: {street: 1010 S Main St, city: Fall River, state: ma, zip: '02724'}
   place: '2523000'
-  geo:
-    lat: 41.69079
-    lng: -71.16515
+  geo: {lat: 41.69079, lng: -71.16515}
   phone: 508-675-1054
   website: https://www.sstar.org
-  external_ids:
-    bphc: BPS-H80-027577
+  external_ids: {bphc: BPS-H80-027577}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/sstar-substance-use-disorder-outpatient
   name: SSTAR Substance Use Disorder Outpatient
   categories:
@@ -702,6 +731,16 @@
     lng: -71.13635
   phone: 508-679-5222
   website: https://www.sstar.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -722,6 +761,22 @@
     lng: -71.1547
   phone: 508-674-2788 x11118
   website: https://www.steppingstoneinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -743,6 +798,21 @@
     lng: -71.1547
   phone: 508-674-2788 x11118
   website: https://www.steppingstoneinc.org
+  services:
+  - Residential/24-hour residential
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -764,6 +834,22 @@
     lng: -71.15467
   phone: 508-679-0033
   website: https://www.steppingstoneinc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -784,6 +870,18 @@
     lng: -71.15483
   phone: 508-617-4436
   website: https://www.steppingstoneinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -804,6 +902,22 @@
     lng: -71.15446
   phone: 508-674-2788 x11101
   website: https://www.steppingstoneinc.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -856,21 +970,13 @@
   name: The Family HealthCare Center at SSTAR
   categories:
   - community-health-center
-  address:
-    street: 400 Stanley St
-    city: Fall River
-    state: ma
-    zip: '02720'
+  cost: sliding-scale
+  address: {street: 400 Stanley St, city: Fall River, state: ma, zip: '02720'}
   place: '2523000'
-  geo:
-    lat: 41.71462
-    lng: -71.13546
+  geo: {lat: 41.71462, lng: -71.13546}
   phone: 508-675-1054
   website: https://www.sstar.org
-  external_ids:
-    bphc: BPS-H80-000734
+  external_ids: {bphc: BPS-H80-000734}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -2,36 +2,34 @@
   name: Clinica Family Health - Gilpin County
   categories:
   - community-health-center
-  address:
-    street: 972 Golden Gate Canyon Rd
-    city: Black Hawk
-    state: co
-    zip: '80422'
+  cost: sliding-scale
+  address: {street: 972 Golden Gate Canyon Rd, city: Black Hawk, state: co, zip: '80422'}
   place: 0807025
-  geo:
-    lat: 39.8382
-    lng: -105.47547
+  geo: {lat: 39.8382, lng: -105.47547}
   phone: 303-650-4460
   website: https://clinica.org
-  external_ids:
-    bphc: BPS-H80-034383
+  external_ids: {bphc: BPS-H80-034383}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/black-hawk/gilpin-county-department-of-human-services-black
   name: Gilpin County Department of Human Services - Black Hawk
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Gilpin County
-  address: {street: 15193 Highway 119, city: Black Hawk, state: co, zip: '80422'}
+  address:
+    street: 15193 Highway 119
+    city: Black Hawk
+    state: co
+    zip: '80422'
   place: 0807025
   phone: 303-582-5444
   website: https://gilpincounty.colorado.gov/departments-offices/human-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/black-hawk/jefferson-center-for-mental-health-gilpin-county
   name: Jefferson Center for Mental Health Gilpin County Office
   categories:
@@ -48,6 +46,17 @@
     lng: -105.46622
   phone: 303-425-0300
   website: https://www.jcmh.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -26,12 +26,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Appomattox County
-  address: {street: 318 Court St. (P. O. Box 549), city: Appomattox, state: va, zip: 24522-0549}
+  address:
+    street: 318 Court St. (P. O. Box 549)
+    city: Appomattox
+    state: va
+    zip: 24522-0549
   place: '5102072'
   phone: 434-352-7125
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/appomattox/appomattox-elem
   name: Appomattox Elem
   categories:
@@ -120,23 +126,15 @@
   name: Blue Ridge Medical Center-Appomattox
   categories:
   - community-health-center
-  address:
-    street: 624 Jones St
-    city: Appomattox
-    state: va
-    zip: '24522'
+  cost: sliding-scale
+  address: {street: 624 Jones St, city: Appomattox, state: va, zip: '24522'}
   place: '5102072'
-  geo:
-    lat: 37.36731
-    lng: -78.82675
+  geo: {lat: 37.36731, lng: -78.82675}
   phone: 434-263-4000
-  external_ids:
-    bphc: BPS-H80-033525
+  external_ids: {bphc: BPS-H80-033525}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/appomattox/horizon-behavioral-health-appomattox-counseling
   name: Horizon Behavioral Health Appomattox Counseling Center
   categories:
@@ -149,6 +147,19 @@
   place: '5102072'
   phone: 434-352-8239
   website: https://www.horizonbh.org/
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,24 +2,16 @@
   name: CCH - Fernandina/Yulee
   categories:
   - community-health-center
-  address:
-    street: 22385 Flora Parke Xing
-    city: Fernandina Beach
-    state: fl
-    zip: '32034'
+  cost: sliding-scale
+  address: {street: 22385 Flora Parke Xing, city: Fernandina Beach, state: fl, zip: '32034'}
   place: '1222175'
-  geo:
-    lat: 30.62222
-    lng: -81.53999
+  geo: {lat: 30.62222, lng: -81.53999}
   phone: 912-273-8028
   website: https://www.coastalchs.org
-  external_ids:
-    bphc: BPS-H80-038823
+  external_ids: {bphc: BPS-H80-038823}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/fernandina-beach/fernandina-beach-hs
   name: Fernandina Beach HS
   categories:
@@ -65,13 +57,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Nassau County
-  address: {street: 1303 Jasmine Street, city: Fernandina Beach, state: fl, zip: '32034'}
+  address:
+    street: 1303 Jasmine Street
+    city: Fernandina Beach
+    state: fl
+    zip: '32034'
   place: '1222175'
   phone: 904-362-8052
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: fl/fernandina-beach/starting-point-behavioral-healthcare-our-place
   name: Starting Point Behavioral Healthcare Our Place
   categories:
@@ -88,6 +86,16 @@
     lng: -81.45489
   phone: 904-225-8280
   website: https://www.spbh.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

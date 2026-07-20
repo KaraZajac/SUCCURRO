@@ -35,6 +35,22 @@
     lng: -76.38751
   phone: 757-788-0200
   website: https://www.hnncsb.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -195,6 +211,15 @@
     lng: -76.46397
   phone: 757-838-1960
   website: https://www.kidsandfamilies.com
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -416,13 +441,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hampton City County
-  address: {street: '400 Butler Farm Road, Suite 200', city: Hampton, state: va, zip: '23666'}
+  address:
+    street: 400 Butler Farm Road, Suite 200
+    city: Hampton
+    state: va
+    zip: '23666'
   place: '5135000'
   phone: 757-727-1800
   website: https://hampton.gov/269/Human-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/hampton/hampton-high
   name: Hampton High
   categories:
@@ -477,6 +508,11 @@
   place: '5135000'
   phone: 757-788-0800
   website: https://www.hnncsb.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -498,6 +534,18 @@
     lng: -76.38806
   phone: 757-788-0400 x11437
   website: https://www.hnncsb.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -594,6 +642,16 @@
     lng: -76.33153
   phone: 757-722-9961 x2786
   website: https://www.va.gov/hampton-health-care/locations/hampton-va-medical-center/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -684,6 +742,21 @@
   place: '5135000'
   phone: 757-838-1894
   website: https://www.ihsva.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -905,6 +978,10 @@
     lng: -76.3969
   phone: 804-332-5950
   website: https://www.mastercenter.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1030,6 +1107,9 @@
   place: '5135000'
   phone: 757-960-3121
   website: https://www.wefixbrains.com/hamptonroads
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1081,23 +1161,15 @@
   name: Southeastern Virginia Health System @ Hampton Newport News Community Services Board
   categories:
   - community-health-center
-  address:
-    street: 300 Medical Dr
-    city: Hampton
-    state: va
-    zip: '23666'
+  cost: sliding-scale
+  address: {street: 300 Medical Dr, city: Hampton, state: va, zip: '23666'}
   place: '5135000'
-  geo:
-    lat: 37.05566
-    lng: -76.38741
+  geo: {lat: 37.05566, lng: -76.38741}
   phone: 757-788-0300
-  external_ids:
-    bphc: BPS-H80-014829
+  external_ids: {bphc: BPS-H80-014829}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/hampton/therapeutics-recreation-center
   name: Therapeutics Recreation Center
   categories:

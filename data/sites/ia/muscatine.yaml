@@ -3,55 +3,45 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Muscatine County
-  address: {street: '1903 Park Ave., Suite #18', city: Muscatine, state: ia, zip: '52761'}
+  address:
+    street: '1903 Park Ave., Suite #18'
+    city: Muscatine
+    state: ia
+    zip: '52761'
   place: '1955110'
   phone: 563-324-3236
   website: https://www.caeiowa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/muscatine/community-health-care-inc-mcsa-muscatine
   name: Community Health Care, Inc. MCSA Muscatine
   categories:
   - community-health-center
-  address:
-    street: 312 Iowa Ave
-    city: Muscatine
-    state: ia
-    zip: '52761'
+  cost: sliding-scale
+  address: {street: 312 Iowa Ave, city: Muscatine, state: ia, zip: '52761'}
   place: '1955110'
-  geo:
-    lat: 41.42261
-    lng: -91.04722
+  geo: {lat: 41.42261, lng: -91.04722}
   phone: 563-336-3000
-  external_ids:
-    bphc: BPS-H80-029818
+  external_ids: {bphc: BPS-H80-029818}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/muscatine/community-health-care-inc-muscatine-new-building
   name: Community Health Care, Inc. Muscatine New Building
   categories:
   - community-health-center
-  address:
-    street: 1221 Park Ave
-    city: Muscatine
-    state: ia
-    zip: '52761'
+  cost: sliding-scale
+  address: {street: 1221 Park Ave, city: Muscatine, state: ia, zip: '52761'}
   place: '1955110'
-  geo:
-    lat: 41.4394
-    lng: -91.03011
+  geo: {lat: 41.4394, lng: -91.03011}
   phone: 563-336-3000
-  external_ids:
-    bphc: BPS-H80-041040
+  external_ids: {bphc: BPS-H80-041040}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/muscatine/muscatine-head-start-and-early-head-start
   name: MUSCATINE HEAD START AND EARLY HEAD START
   categories:
@@ -106,6 +96,11 @@
     lng: -91.05584
   phone: 563-264-9409
   website: https://www.unitypoint.org/quadcities/addictionsrecovery.aspx
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

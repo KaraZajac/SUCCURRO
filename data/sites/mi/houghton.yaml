@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Houghton, Keweenaw Counties
-  address: {street: 926 Dodge Street, city: Houghton, state: mi, zip: '49931'}
+  address:
+    street: 926 Dodge Street
+    city: Houghton
+    state: mi
+    zip: '49931'
   place: '2639360'
   phone: 906-482-5528
   website: https://bhkcaa.org/index.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/houghton/copper-country-cmhsp-act-team
   name: Copper Country CMHSP ACT Team
   categories:
@@ -22,6 +28,12 @@
   place: '2639360'
   phone: 906-487-7721
   website: https://www.cccmh.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -54,24 +66,16 @@
   name: Houghton Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 600 Macinnes Dr
-    city: Houghton
-    state: mi
-    zip: '49931'
+  cost: sliding-scale
+  address: {street: 600 Macinnes Dr, city: Houghton, state: mi, zip: '49931'}
   place: '2639360'
-  geo:
-    lat: 47.11358
-    lng: -88.54588
+  geo: {lat: 47.11358, lng: -88.54588}
   phone: 906-483-1860
   website: https://www.uglhealth.org
-  external_ids:
-    bphc: BPS-H80-013514
+  external_ids: {bphc: BPS-H80-013514}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/houghton/houghton-housing-commission
   name: Houghton Housing Commission
   categories:

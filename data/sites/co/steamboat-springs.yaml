@@ -2,78 +2,60 @@
   name: Northwest Colorado Health Administrative Offices
   categories:
   - community-health-center
-  address:
-    street: 1475 Pine Grove Rd, Ste 202
-    city: Steamboat Springs
-    state: co
-    zip: '80487'
+  cost: sliding-scale
+  address: {street: '1475 Pine Grove Rd, Ste 202', city: Steamboat Springs, state: co, zip: '80487'}
   place: 0873825
-  geo:
-    lat: 40.46524
-    lng: -106.82409
+  geo: {lat: 40.46524, lng: -106.82409}
   phone: 970-879-1632
-  external_ids:
-    bphc: BPS-H80-034724
+  external_ids: {bphc: BPS-H80-034724}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/steamboat-springs/northwest-colorado-health-community-health-cente
   name: Northwest Colorado Health Community Health Center  -  Routt County
   categories:
   - community-health-center
-  address:
-    street: 940 Central Park Dr, Suite 101
-    city: Steamboat Springs
-    state: co
-    zip: '80487'
+  cost: sliding-scale
+  address: {street: '940 Central Park Dr, Suite 101', city: Steamboat Springs, state: co, zip: '80487'}
   place: 0873825
-  geo:
-    lat: 40.46282
-    lng: -106.81599
+  geo: {lat: 40.46282, lng: -106.81599}
   phone: 970-879-1632
   website: https://www.northwestcoloradohealth.org
-  external_ids:
-    bphc: BPS-H80-011699
+  external_ids: {bphc: BPS-H80-011699}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/steamboat-springs/routt-county-department-of-human-services-steamb
   name: Routt County Department of Human Services - Steamboat Spring
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Routt County
-  address: {street: 135 6th St., city: Steamboat Springs, state: co, zip: '80477'}
+  address:
+    street: 135 6th St.
+    city: Steamboat Springs
+    state: co
+    zip: '80477'
   place: 0873825
   phone: 970-870-5533
   website: https://www.co.routt.co.us/index.aspx?nid=180
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/steamboat-springs/soda-creek-elementary-school
   name: Soda Creek Elementary School
   categories:
   - community-health-center
-  address:
-    street: 220 Park Ave
-    city: Steamboat Springs
-    state: co
-    zip: '80487'
+  cost: sliding-scale
+  address: {street: 220 Park Ave, city: Steamboat Springs, state: co, zip: '80487'}
   place: 0873825
-  geo:
-    lat: 40.49058
-    lng: -106.82909
+  geo: {lat: 40.49058, lng: -106.82909}
   phone: 970-879-1632
-  external_ids:
-    bphc: BPS-H80-039463
+  external_ids: {bphc: BPS-H80-039463}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/steamboat-springs/yampa-valley-psychotherapist-llc
   name: Yampa Valley Psychotherapist LLC
   categories:
@@ -90,6 +72,20 @@
     lng: -106.83473
   phone: 970-877-7089
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -111,6 +107,10 @@
     lng: -106.83473
   phone: 970-879-7708
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

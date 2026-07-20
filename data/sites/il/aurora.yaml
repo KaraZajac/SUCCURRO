@@ -13,6 +13,12 @@
     lng: -88.32913
   phone: 847-668-8969
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +63,15 @@
     lng: -88.32976
   phone: 630-966-4301
   website: https://www.aidcares.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -75,6 +90,9 @@
   place: '1703012'
   phone: 630-966-4491
   website: https://aidcares.org
+  services:
+  - Residential/24-hour residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,23 +102,15 @@
   name: Association for Individual Development  - New Indian Trail Court
   categories:
   - community-health-center
-  address:
-    street: 309 New Indian Trail Ct
-    city: Aurora
-    state: il
-    zip: '60506'
+  cost: sliding-scale
+  address: {street: 309 New Indian Trail Ct, city: Aurora, state: il, zip: '60506'}
   place: '1703012'
-  geo:
-    lat: 41.78329
-    lng: -88.32231
+  geo: {lat: 41.78329, lng: -88.32231}
   phone: 630-978-2532
-  external_ids:
-    bphc: BPS-H80-021329
+  external_ids: {bphc: BPS-H80-021329}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/at-risk-mentoring-community-center-of-hometown
   name: At Risk Mentoring Community Center Of Hometown
   categories:
@@ -128,24 +138,16 @@
   name: Aunt Martha's Aurora Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 2124 Ogden Ave STE 201
-    city: Aurora
-    state: il
-    zip: '60504'
+  cost: sliding-scale
+  address: {street: 2124 Ogden Ave STE 201, city: Aurora, state: il, zip: '60504'}
   place: '1703012'
-  geo:
-    lat: 41.7314
-    lng: -88.26311
+  geo: {lat: 41.7314, lng: -88.26311}
   phone: 877-692-8686
   website: https://www.auntmarthas.org
-  external_ids:
-    bphc: BPS-H80-018774
+  external_ids: {bphc: BPS-H80-018774}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/aurora-vet-center
   name: Aurora Vet Center
   categories:
@@ -221,6 +223,11 @@
     lng: -88.3134
   phone: 630-896-4650
   website: https://www.careclinicsinc.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -253,57 +260,47 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kane County
-  address: {street: 1700 N. Farnsworth Ave. Suite 13, city: Aurora, state: il, zip: '60505'}
+  address:
+    street: 1700 N. Farnsworth Ave. Suite 13
+    city: Aurora
+    state: il
+    zip: '60505'
   place: '1703012'
   phone: 847-697-4400
   website: http://cci-hci.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: il/aurora/community-health-partnership-of-illinois
   name: COMMUNITY HEALTH PARTNERSHIP OF ILLINOIS
   categories:
   - community-health-center
-  address:
-    street: 157 S Lincoln Ave, Suite C
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: '157 S Lincoln Ave, Suite C', city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.7527
-    lng: -88.31432
+  geo: {lat: 41.7527, lng: -88.31432}
   phone: 630-859-0015
   website: https://www.chpofil.org
-  external_ids:
-    bphc: BPS-H80-007362
+  external_ids: {bphc: BPS-H80-007362}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/community-health-partnership-of-illinois-2
   name: COMMUNITY HEALTH PARTNERSHIP OF ILLINOIS
   categories:
   - community-health-center
-  address:
-    street: 157 S Lincoln Ave, Suite D
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: '157 S Lincoln Ave, Suite D', city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.7527
-    lng: -88.31432
+  geo: {lat: 41.7527, lng: -88.31432}
   phone: 630-859-0015
   website: https://www.chpofil.org
-  external_ids:
-    bphc: BPS-H80-004684
+  external_ids: {bphc: BPS-H80-004684}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/complete-care-behavioral-health
   name: Complete Care Behavioral Health
   categories:
@@ -320,6 +317,22 @@
     lng: -88.26749
   phone: 630-405-7820
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -362,6 +375,12 @@
     lng: -88.3056
   phone: 630-801-0017
   website: https://www.fgcinc.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -393,24 +412,16 @@
   name: Gateway Foundation
   categories:
   - community-health-center
-  address:
-    street: 400 Mercy Ln
-    city: Aurora
-    state: il
-    zip: '60506'
+  cost: sliding-scale
+  address: {street: 400 Mercy Ln, city: Aurora, state: il, zip: '60506'}
   place: '1703012'
-  geo:
-    lat: 41.78415
-    lng: -88.3226
+  geo: {lat: 41.78415, lng: -88.3226}
   phone: 877-692-8686
   website: https://www.auntmarthas.org
-  external_ids:
-    bphc: BPS-H80-005925
+  external_ids: {bphc: BPS-H80-005925}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/gateway-foundation-aurora-alc-and-drug-trt-ctrs
   name: Gateway Foundation Aurora Alc and Drug Trt Ctrs
   categories:
@@ -426,6 +437,19 @@
     lng: -88.32294
   phone: 630-966-7400
   website: https://www.Gatewayfoundation.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Short-term residential
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -672,6 +696,14 @@
     lng: -88.32459
   phone: 630-897-1003
   website: https://mutualground.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -744,46 +776,30 @@
   name: The Health Outreach Center
   categories:
   - community-health-center
-  address:
-    street: 76 S Lasalle St
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: 76 S Lasalle St, city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.75484
-    lng: -88.31358
+  geo: {lat: 41.75484, lng: -88.31358}
   phone: 877-692-8686
   website: https://www.auntmarthas.org
-  external_ids:
-    bphc: BPS-H80-007563
+  external_ids: {bphc: BPS-H80-007563}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/tomcat-health-center
   name: Tomcat Health Center
   categories:
   - community-health-center
-  address:
-    street: 500 Tomcat Ln
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: 500 Tomcat Ln, city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.74484
-    lng: -88.2965
+  geo: {lat: 41.74484, lng: -88.2965}
   phone: 630-299-8023
   website: https://www.vnahealth.com
-  external_ids:
-    bphc: BPS-H80-003047
+  external_ids: {bphc: BPS-H80-003047}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/tools-for-life-ltd
   name: Tools for Life Ltd
   categories:
@@ -800,6 +816,9 @@
     lng: -88.31614
   phone: 630-906-1200
   website: https://www.toolsforlife.info
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -824,88 +843,56 @@
   name: VNA Health Care- West Aurora School Linked Health Center
   categories:
   - community-health-center
-  address:
-    street: 112 Oak Ave
-    city: Aurora
-    state: il
-    zip: '60506'
+  cost: sliding-scale
+  address: {street: 112 Oak Ave, city: Aurora, state: il, zip: '60506'}
   place: '1703012'
-  geo:
-    lat: 41.7617
-    lng: -88.3194
+  geo: {lat: 41.7617, lng: -88.3194}
   phone: 630-892-4355
-  external_ids:
-    bphc: BPS-H80-037314
+  external_ids: {bphc: BPS-H80-037314}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/vna-health-care-weston-avenue-aurora
   name: VNA Health Care - Weston Avenue, Aurora
   categories:
   - community-health-center
-  address:
-    street: 323 Weston Ave STE 100
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: 323 Weston Ave STE 100, city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.7465
-    lng: -88.31715
+  geo: {lat: 41.7465, lng: -88.31715}
   phone: 630-892-4355
-  external_ids:
-    bphc: BPS-H80-039588
+  external_ids: {bphc: BPS-H80-039588}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/vna-health-center-aurora-highland
   name: VNA Health Center - Aurora Highland
   categories:
   - community-health-center
-  address:
-    street: 400 N Highland Ave
-    city: Aurora
-    state: il
-    zip: '60506'
+  cost: sliding-scale
+  address: {street: 400 N Highland Ave, city: Aurora, state: il, zip: '60506'}
   place: '1703012'
-  geo:
-    lat: 41.7658
-    lng: -88.32979
+  geo: {lat: 41.7658, lng: -88.32979}
   phone: 630-978-2532
   website: https://www.vnahealth.com
-  external_ids:
-    bphc: BPS-H80-000899
+  external_ids: {bphc: BPS-H80-000899}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/vna-health-center-aurora-indian
   name: VNA Health Center - Aurora Indian
   categories:
   - community-health-center
-  address:
-    street: 1400 Indian Ave
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: 1400 Indian Ave, city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.76681
-    lng: -88.28068
+  geo: {lat: 41.76681, lng: -88.28068}
   phone: 630-892-4355
   website: https://www.vnahealth.com
-  external_ids:
-    bphc: BPS-H80-012568
+  external_ids: {bphc: BPS-H80-012568}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/aurora/vna-healthcare
   name: VNA Healthcare
   categories:
@@ -922,6 +909,9 @@
     lng: -88.32978
   phone: 630-892-4355
   website: https://www.vnahealth.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -931,21 +921,13 @@
   name: WAYSIDE CROSS MINISTRIES
   categories:
   - community-health-center
-  address:
-    street: 215 E New York St
-    city: Aurora
-    state: il
-    zip: '60505'
+  cost: sliding-scale
+  address: {street: 215 E New York St, city: Aurora, state: il, zip: '60505'}
   place: '1703012'
-  geo:
-    lat: 41.75721
-    lng: -88.31076
+  geo: {lat: 41.75721, lng: -88.31076}
   phone: 877-692-8686
   website: https://www.auntmarthas.org
-  external_ids:
-    bphc: BPS-H80-005743
+  external_ids: {bphc: BPS-H80-005743}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -69,23 +69,15 @@
   name: CHS Maynardville Clinic
   categories:
   - community-health-center
-  address:
-    street: 4330 Maynardville Hwy
-    city: Maynardville
-    state: tn
-    zip: '37807'
+  cost: sliding-scale
+  address: {street: 4330 Maynardville Hwy, city: Maynardville, state: tn, zip: '37807'}
   place: '4746700'
-  geo:
-    lat: 36.252
-    lng: -83.79577
+  geo: {lat: 36.252, lng: -83.79577}
   phone: 865-992-3849
-  external_ids:
-    bphc: BPS-H80-005350
+  external_ids: {bphc: BPS-H80-005350}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/maynardville/cross-creek
   name: CROSS CREEK
   categories:
@@ -110,13 +102,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Union County
-  address: {street: '1401 Main Steet, Suite 1', city: Maynardville, state: tn, zip: '37807'}
+  address:
+    street: 1401 Main Steet, Suite 1
+    city: Maynardville
+    state: tn
+    zip: '37807'
   place: '4746700'
   phone: 865-992-8816
   website: https://www.ethra.org/services/3/housing-utilities/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/maynardville/horace-maynard-middle-school
   name: Horace Maynard Middle School
   categories:
@@ -221,6 +219,10 @@
     lng: -83.79575
   phone: 865-992-3849
   website: https://www.rvh.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

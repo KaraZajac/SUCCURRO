@@ -2,24 +2,16 @@
   name: CAPWN Health Center
   categories:
   - community-health-center
-  address:
-    street: 975 Crescent Dr
-    city: Gering
-    state: ne
-    zip: '69341'
+  cost: sliding-scale
+  address: {street: 975 Crescent Dr, city: Gering, state: ne, zip: '69341'}
   place: '3118580'
-  geo:
-    lat: 41.843
-    lng: -103.65959
+  geo: {lat: 41.843, lng: -103.65959}
   phone: 308-632-2540
   website: https://www.capwn.org
-  external_ids:
-    bphc: BPS-H80-004655
+  external_ids: {bphc: BPS-H80-004655}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/gering/community-action-partnership-of-western-nebraska
   name: Community Action Partnership of Western Nebraska (CAPWN)
   categories:
@@ -36,6 +28,17 @@
     lng: -103.66024
   phone: 308-632-2540
   website: https://www.capwn.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,24 +48,16 @@
   name: Community Action Partnership of Western Nebraska
   categories:
   - community-health-center
-  address:
-    street: 3350 10th St
-    city: Gering
-    state: ne
-    zip: '69341'
+  cost: sliding-scale
+  address: {street: 3350 10th St, city: Gering, state: ne, zip: '69341'}
   place: '3118580'
-  geo:
-    lat: 41.84373
-    lng: -103.66018
+  geo: {lat: 41.84373, lng: -103.66018}
   phone: 308-635-3089
   website: https://www.capwn.org
-  external_ids:
-    bphc: BPS-H80-003149
+  external_ids: {bphc: BPS-H80-003149}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/gering/gering-civic-center
   name: Gering Civic Center
   categories:
@@ -191,12 +186,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Scotts Bluff County
-  address: {street: 503 Broadway Ave., city: Gering, state: ne, zip: '69341'}
+  address:
+    street: 503 Broadway Ave.
+    city: Gering
+    state: ne
+    zip: '69341'
   place: '3118580'
   phone: 308-436-6500
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/gering/scotts-bluff-county-housing-authority
   name: Scotts Bluff County Housing Authority
   categories:

@@ -23,23 +23,15 @@
   name: Cactus Health Services, Inc.
   categories:
   - community-health-center
-  address:
-    street: 700 N Main St
-    city: Fort Stockton
-    state: tx
-    zip: '79735'
+  cost: sliding-scale
+  address: {street: 700 N Main St, city: Fort Stockton, state: tx, zip: '79735'}
   place: '4826808'
-  geo:
-    lat: 30.89142
-    lng: -102.87894
+  geo: {lat: 30.89142, lng: -102.87894}
   phone: 432-336-8110
-  external_ids:
-    bphc: BPS-H80-022204
+  external_ids: {bphc: BPS-H80-022204}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fort-stockton/first-baptist-church-of-ft-stockton
   name: First Baptist Church Of Ft Stockton
   categories:
@@ -184,12 +176,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Crane, Pecos, Terrell Counties
-  address: {street: 101 North Jackson (P. O Box 940), city: Fort Stockton, state: tx, zip: '79735'}
+  address:
+    street: 101 North Jackson (P. O Box 940)
+    city: Fort Stockton
+    state: tx
+    zip: '79735'
   place: '4826808'
   phone: 432-336-7528
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/fort-stockton/permian-basin-community-ctrs-for-mh-mr
   name: Permian Basin Community Ctrs for MH/MR
   categories:
@@ -206,6 +204,17 @@
     lng: -102.87675
   phone: 432-336-3383
   website: https://www.permiacare.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

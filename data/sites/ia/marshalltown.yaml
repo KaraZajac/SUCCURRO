@@ -323,56 +323,46 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marshall County
-  address: {street: 1001 S. 18th Ave., city: Marshalltown, state: ia, zip: '50158'}
+  address:
+    street: 1001 S. 18th Ave.
+    city: Marshalltown
+    state: ia
+    zip: '50158'
   place: '1949755'
   phone: 641-752-7162
   website: http://www.micaonline.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/marshalltown/primary-health-care-marshalltown-clinic
   name: Primary Health Care - Marshalltown Clinic
   categories:
   - community-health-center
-  address:
-    street: 101 Iowa Ave W, Suite 102
-    city: Marshalltown
-    state: ia
-    zip: '50158'
+  cost: sliding-scale
+  address: {street: '101 Iowa Ave W, Suite 102', city: Marshalltown, state: ia, zip: '50158'}
   place: '1949755'
-  geo:
-    lat: 42.00751
-    lng: -92.91587
+  geo: {lat: 42.00751, lng: -92.91587}
   phone: 641-753-4021
-  external_ids:
-    bphc: BPS-H80-034166
+  external_ids: {bphc: BPS-H80-034166}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/marshalltown/primary-health-care-marshalltown-specialty-healt
   name: Primary Health Care - Marshalltown Specialty Health
   categories:
   - community-health-center
-  address:
-    street: 704 May St
-    city: Marshalltown
-    state: ia
-    zip: '50158'
+  cost: sliding-scale
+  address: {street: 704 May St, city: Marshalltown, state: ia, zip: '50158'}
   place: '1949755'
-  geo:
-    lat: 42.03964
-    lng: -92.90101
+  geo: {lat: 42.03964, lng: -92.90101}
   phone: 641-752-4376
   website: https://www.phciowa.org
-  external_ids:
-    bphc: BPS-H80-027274
+  external_ids: {bphc: BPS-H80-027274}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/marshalltown/rogers-elementary-school
   name: Rogers Elementary School
   categories:
@@ -481,6 +471,22 @@
     lng: -92.91344
   phone: 641-752-2300
   website: https://www.yss.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

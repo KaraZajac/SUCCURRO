@@ -57,6 +57,11 @@
     lng: -77.35703
   phone: 877-654-6396
   website: https://www.crossroadstreatmentcenters.com/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -77,6 +82,11 @@
     lng: -77.35662
   phone: 877-654-6396
   website: https://www.crossroadtreamentcenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -86,89 +96,57 @@
   name: CVHS-Crimson Clinic
   categories:
   - community-health-center
-  address:
-    street: 3101 Johnson Rd
-    city: Petersburg
-    state: va
-    zip: '23805'
+  cost: sliding-scale
+  address: {street: 3101 Johnson Rd, city: Petersburg, state: va, zip: '23805'}
   place: '5161832'
-  geo:
-    lat: 37.18579
-    lng: -77.39952
+  geo: {lat: 37.18579, lng: -77.39952}
   phone: 804-972-0068
-  external_ids:
-    bphc: BPS-H80-030830
+  external_ids: {bphc: BPS-H80-030830}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/petersburg/cvhs-downtown-petersburg
   name: CVHS Downtown Petersburg
   categories:
   - community-health-center
-  address:
-    street: 25 S Union St
-    city: Petersburg
-    state: va
-    zip: '23803'
+  cost: sliding-scale
+  address: {street: 25 S Union St, city: Petersburg, state: va, zip: '23803'}
   place: '5161832'
-  geo:
-    lat: 37.22682
-    lng: -77.40447
+  geo: {lat: 37.22682, lng: -77.40447}
   phone: 434-581-4073
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-028160
+  external_ids: {bphc: BPS-H80-028160}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/petersburg/cvhs-petersburg
   name: CVHS Petersburg
   categories:
   - community-health-center
-  address:
-    street: 321 Poplar Dr
-    city: Petersburg
-    state: va
-    zip: '23805'
+  cost: sliding-scale
+  address: {street: 321 Poplar Dr, city: Petersburg, state: va, zip: '23805'}
   place: '5161832'
-  geo:
-    lat: 37.1898
-    lng: -77.36274
+  geo: {lat: 37.1898, lng: -77.36274}
   phone: 804-733-5591
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-000882
+  external_ids: {bphc: BPS-H80-000882}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/petersburg/cvhs-south-sycamore
   name: CVHS - South Sycamore
   categories:
   - community-health-center
-  address:
-    street: 541 S Sycamore St
-    city: Petersburg
-    state: va
-    zip: '23803'
+  cost: sliding-scale
+  address: {street: 541 S Sycamore St, city: Petersburg, state: va, zip: '23803'}
   place: '5161832'
-  geo:
-    lat: 37.21931
-    lng: -77.39969
+  geo: {lat: 37.21931, lng: -77.39969}
   phone: 804-835-6100
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-034431
+  external_ids: {bphc: BPS-H80-034431}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/petersburg/district-19-community-services-board-child-and-a
   name: District 19 Community Services Board Child and Adolescent Division
   categories:
@@ -185,6 +163,16 @@
     lng: -77.40544
   phone: 804-862-8002
   website: https://www.grcsb.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -282,13 +270,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Petersburg City County
-  address: {street: 3811 Corporate Road, city: Petersburg, state: va, zip: '23805'}
+  address:
+    street: 3811 Corporate Road
+    city: Petersburg
+    state: va
+    zip: '23805'
   place: '5161832'
   phone: 804-861-4720
   website: http://www.petersburg-va.org/187/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/petersburg/petersburg-high-school
   name: Petersburg High School
   categories:
@@ -432,6 +426,21 @@
     lng: -77.35945
   phone: 804-733-6874
   website: https://www.poplarsprings.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -473,6 +482,22 @@
     lng: -77.36373
   phone: 804-609-0175
   website: https://www.sperohealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

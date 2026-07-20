@@ -133,14 +133,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brooks County
-  address: {street: 201 Barnes Street, city: Quitman, state: ga, zip: '31643'}
+  address:
+    street: 201 Barnes Street
+    city: Quitman
+    state: ga
+    zip: '31643'
   place: '1363224'
   phone: 229-474-6883
   email: brooks@coastalplain.org
   website: http://www.coastalplain.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/quitman/early-learning-center
   name: Early Learning Center
   categories:
@@ -199,6 +205,13 @@
     lng: -83.56127
   phone: 229-263-7757
   website: https://
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -208,21 +221,13 @@
   name: Primary Care of Southwest Georgia - Quitman
   categories:
   - community-health-center
-  address:
-    street: 907 N Court St
-    city: Quitman
-    state: ga
-    zip: '31643'
+  cost: sliding-scale
+  address: {street: 907 N Court St, city: Quitman, state: ga, zip: '31643'}
   place: '1363224'
-  geo:
-    lat: 30.79545
-    lng: -83.55905
+  geo: {lat: 30.79545, lng: -83.55905}
   phone: 229-263-4531
   website: http://www.pcswga.org/
-  external_ids:
-    bphc: BPS-H80-019518
+  external_ids: {bphc: BPS-H80-019518}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

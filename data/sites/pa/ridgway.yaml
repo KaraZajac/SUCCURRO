@@ -13,6 +13,12 @@
     lng: -78.72942
   phone: 814-788-2080
   website: https://www.adasonline.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +40,17 @@
     lng: -78.70279
   phone: 814-776-2145
   website: https://www.dickinsoncenter.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -44,12 +61,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Elk County
-  address: {street: 145 Race Street (P. O. Box F), city: Ridgway, state: pa, zip: 15853-0327}
+  address:
+    street: 145 Race Street (P. O. Box F)
+    city: Ridgway
+    state: pa
+    zip: 15853-0327
   place: '4264784'
   phone: 814-772-5215
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/ridgway/o-b-grant-park
   name: O. B. Grant Park
   categories:
@@ -117,23 +140,15 @@
   name: Ridgway Area Medical Center
   categories:
   - community-health-center
-  address:
-    street: 49 Ridgmont Dr
-    city: Ridgway
-    state: pa
-    zip: '15853'
+  cost: sliding-scale
+  address: {street: 49 Ridgmont Dr, city: Ridgway, state: pa, zip: '15853'}
   place: '4264784'
-  geo:
-    lat: 41.43468
-    lng: -78.74408
+  geo: {lat: 41.43468, lng: -78.74408}
   phone: 814-245-2119
-  external_ids:
-    bphc: BPS-H80-025000
+  external_ids: {bphc: BPS-H80-025000}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/ridgway/rnc-o-b-grant-park
   name: Rnc - O. B. Grant Park
   categories:

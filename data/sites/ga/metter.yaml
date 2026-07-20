@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Candler County
-  address: {street: 151 S. Register St., city: Metter, state: ga, zip: '30439'}
+  address:
+    street: 151 S. Register St.
+    city: Metter
+    state: ga
+    zip: '30439'
   place: '1351072'
   phone: 912-685-2580
   website: https://myactionpact.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/metter/boys-and-girls-club
   name: Boys And Girls Club
   categories:
@@ -55,45 +61,29 @@
   name: East Georgia Health Care Center - Metter
   categories:
   - community-health-center
-  address:
-    street: 34 NW Broad St
-    city: Metter
-    state: ga
-    zip: '30439'
+  cost: sliding-scale
+  address: {street: 34 NW Broad St, city: Metter, state: ga, zip: '30439'}
   place: '1351072'
-  geo:
-    lat: 32.3982
-    lng: -82.06216
+  geo: {lat: 32.3982, lng: -82.06216}
   phone: 912-537-6565
   website: http://www.eghc.org/Metter
-  external_ids:
-    bphc: BPS-H80-027955
+  external_ids: {bphc: BPS-H80-027955}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/metter/east-georgia-healthcare-center
   name: East Georgia Healthcare Center
   categories:
   - community-health-center
-  address:
-    street: 34 NW Broad St
-    city: Metter
-    state: ga
-    zip: '30439'
+  cost: sliding-scale
+  address: {street: 34 NW Broad St, city: Metter, state: ga, zip: '30439'}
   place: '1351072'
-  geo:
-    lat: 32.3982
-    lng: -82.06216
+  geo: {lat: 32.3982, lng: -82.06216}
   phone: 912-685-4040
-  external_ids:
-    bphc: BPS-H80-019080
+  external_ids: {bphc: BPS-H80-019080}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/metter/housing-authority-of-the-city-of-metter
   name: Housing Authority Of The City Of Metter
   categories:
@@ -196,6 +186,22 @@
     lng: -82.06109
   phone: 912-685-3317
   website: https://www.pinelandcsb.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

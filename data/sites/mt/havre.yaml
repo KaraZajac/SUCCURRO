@@ -2,24 +2,16 @@
   name: Bullhook Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 521 4th St
-    city: Havre
-    state: mt
-    zip: '59501'
+  cost: sliding-scale
+  address: {street: 521 4th St, city: Havre, state: mt, zip: '59501'}
   place: '3035050'
-  geo:
-    lat: 48.55031
-    lng: -109.67481
+  geo: {lat: 48.55031, lng: -109.67481}
   phone: 406-395-4305
   website: https://www.bullhook.com
-  external_ids:
-    bphc: BPS-H80-011997
+  external_ids: {bphc: BPS-H80-011997}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/havre/bullhook-community-health-center-inc
   name: Bullhook Community Health Center Inc
   categories:
@@ -36,6 +28,22 @@
     lng: -109.67485
   phone: 406-395-4305
   website: https://www.bullhook.com
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -46,14 +54,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Blaine, Hill, Liberty Counties
-  address: {street: 2229 Fifth Avenue, city: Havre, state: mt, zip: '59501'}
+  address:
+    street: 2229 Fifth Avenue
+    city: Havre
+    state: mt
+    zip: '59501'
   place: '3035050'
   phone: 406-265-6743
   email: reception@hrdc4.org
   website: http://www.hrdc4.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mt/havre/east-end-colony
   name: East End Colony
   categories:
@@ -203,6 +217,9 @@
     lng: -109.67813
   phone: 406-265-9639
   website: https://www.manyriverswholehealth.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -212,24 +229,16 @@
   name: Medical/Dental Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 521 4th St
-    city: Havre
-    state: mt
-    zip: '59501'
+  cost: sliding-scale
+  address: {street: 521 4th St, city: Havre, state: mt, zip: '59501'}
   place: '3035050'
-  geo:
-    lat: 48.55031
-    lng: -109.67481
+  geo: {lat: 48.55031, lng: -109.67481}
   phone: 406-395-4305
   website: https://www.bullhook.com
-  external_ids:
-    bphc: BPS-H80-040669
+  external_ids: {bphc: BPS-H80-040669}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/havre/merril-lundman-department-of-veterans-affairs-ou
   name: Merril Lundman Department of Veterans Affairs Outpatient Clinic
   categories:
@@ -384,6 +393,13 @@
     lng: -109.68012
   phone: 406-655-2100
   website: https://www.ybgr.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

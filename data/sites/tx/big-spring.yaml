@@ -168,6 +168,14 @@
     lng: -101.5022
   phone: 432-268-7386
   website: https://www.dshs.texas.gov/MHHOSPITALS/BIGSPRINGSH
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -267,24 +275,16 @@
   name: Howard County Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 103 W 11th St
-    city: Big Spring
-    state: tx
-    zip: '79720'
+  cost: sliding-scale
+  address: {street: 103 W 11th St, city: Big Spring, state: tx, zip: '79720'}
   place: '4808236'
-  geo:
-    lat: 32.24416
-    lng: -101.47263
+  geo: {lat: 32.24416, lng: -101.47263}
   phone: 432-517-4557
   website: https://www.sprhs.org
-  external_ids:
-    bphc: BPS-H80-034224
+  external_ids: {bphc: BPS-H80-034224}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/big-spring/washington-el
   name: Washington El
   categories:
@@ -322,6 +322,20 @@
     lng: -101.49104
   phone: 432-263-0027
   website: https://www.wtcmhmr.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -332,10 +346,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Howard County
-  address: {street: 2001 Scurry Street, city: Big Spring, state: tx, zip: '79720'}
+  address:
+    street: 2001 Scurry Street
+    city: Big Spring
+    state: tx
+    zip: '79720'
   place: '4808236'
   phone: 432-267-9536
   website: https://www.gowto.org/index.cfm?fuseaction=contact
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

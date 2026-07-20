@@ -2,24 +2,16 @@
   name: Contentnea Health Pamlico
   categories:
   - community-health-center
-  address:
-    street: 313 Main St
-    city: Bayboro
-    state: nc
-    zip: '28515'
+  cost: sliding-scale
+  address: {street: 313 Main St, city: Bayboro, state: nc, zip: '28515'}
   place: '3703960'
-  geo:
-    lat: 35.14266
-    lng: -76.77281
+  geo: {lat: 35.14266, lng: -76.77281}
   phone: 252-745-2070
   website: https://www.greenecountyhealthcare.com
-  external_ids:
-    bphc: BPS-H80-014333
+  external_ids: {bphc: BPS-H80-014333}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/bayboro/hope-clinic
   name: Hope Clinic
   categories:
@@ -35,6 +27,13 @@
     lng: -76.79131
   phone: 252-745-5760 x503
   website: https://www.hopeclinic.net
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: free
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,13 +44,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pamlico County
-  address: {street: 828 Alliance Main St., city: Bayboro, state: nc, zip: '28515'}
+  address:
+    street: 828 Alliance Main St.
+    city: Bayboro
+    state: nc
+    zip: '28515'
   place: '3703960'
   phone: 252-745-4086
   website: https://www.pamlicocounty.org/social-services.aspx
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/bayboro/pamlico-elementary
   name: Pamlico Elementary
   categories:

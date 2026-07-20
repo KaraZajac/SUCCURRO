@@ -216,23 +216,15 @@
   name: SAC Rialto USD
   categories:
   - community-health-center
-  address:
-    street: 815 S Willow Ave
-    city: Rialto
-    state: ca
-    zip: '92376'
+  cost: sliding-scale
+  address: {street: 815 S Willow Ave, city: Rialto, state: ca, zip: '92376'}
   place: '0660466'
-  geo:
-    lat: 34.08624
-    lng: -117.37461
+  geo: {lat: 34.08624, lng: -117.37461}
   phone: 909-382-7100
-  external_ids:
-    bphc: BPS-H80-030921
+  external_ids: {bphc: BPS-H80-030921}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/rialto/san-bernardino-county-rialto-behav-and-addiction
   name: San Bernardino County Rialto Behav and Addiction Trt Serv
   categories:
@@ -248,6 +240,11 @@
     lng: -117.35431
   phone: 909-421-9465
   website: https://wp.sbcounty.gov/dbh/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

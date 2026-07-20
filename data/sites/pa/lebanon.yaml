@@ -138,56 +138,46 @@
   name: Lebanon Center
   categories:
   - community-health-center
-  address:
-    street: 300 Willow St
-    city: Lebanon
-    state: pa
-    zip: '17046'
+  cost: sliding-scale
+  address: {street: 300 Willow St, city: Lebanon, state: pa, zip: '17046'}
   place: '4242168'
-  geo:
-    lat: 40.34094
-    lng: -76.41735
+  geo: {lat: 40.34094, lng: -76.41735}
   phone: 718-801-4804
-  external_ids:
-    bphc: BPS-H80-030096
+  external_ids: {bphc: BPS-H80-030096}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lebanon/lebanon-county-assistance-office
   name: Lebanon County Assistance Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lebanon County
-  address: {street: 625 South Eighth Street, city: Lebanon, state: pa, zip: '17042'}
-  place: '4242168'
-  phone: 717-273-1641
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: pa/lebanon/lebanon-dental
-  name: Lebanon Dental
-  categories:
-  - community-health-center
   address:
-    street: 101 S 9th St
+    street: 625 South Eighth Street
     city: Lebanon
     state: pa
     zip: '17042'
   place: '4242168'
-  geo:
-    lat: 40.33762
-    lng: -76.42673
-  phone: 717-450-7015
-  website: https://www.welshmountain.org
-  external_ids:
-    bphc: BPS-H80-013550
+  phone: 717-273-1641
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: pa/lebanon/lebanon-dental
+  name: Lebanon Dental
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 101 S 9th St, city: Lebanon, state: pa, zip: '17042'}
+  place: '4242168'
+  geo: {lat: 40.33762, lng: -76.42673}
+  phone: 717-450-7015
+  website: https://www.welshmountain.org
+  external_ids: {bphc: BPS-H80-013550}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lebanon/lebanon-jhs
   name: Lebanon Jhs
   categories:
@@ -214,24 +204,16 @@
   name: Lebanon Medical and Pharmacy
   categories:
   - community-health-center
-  address:
-    street: 920 Church St
-    city: Lebanon
-    state: pa
-    zip: '17046'
+  cost: sliding-scale
+  address: {street: 920 Church St, city: Lebanon, state: pa, zip: '17046'}
   place: '4242168'
-  geo:
-    lat: 40.34442
-    lng: -76.42739
+  geo: {lat: 40.34442, lng: -76.42739}
   phone: 717-272-2700
   website: https://www.welshmountain.org
-  external_ids:
-    bphc: BPS-H80-024605
+  external_ids: {bphc: BPS-H80-024605}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lebanon/lebanon-shs
   name: Lebanon Shs
   categories:
@@ -258,23 +240,15 @@
   name: Lebanon Urgent Care (Behavioral and Physical Health)
   categories:
   - community-health-center
-  address:
-    street: 960 Church St
-    city: Lebanon
-    state: pa
-    zip: '17046'
+  cost: sliding-scale
+  address: {street: 960 Church St, city: Lebanon, state: pa, zip: '17046'}
   place: '4242168'
-  geo:
-    lat: 40.3444
-    lng: -76.42806
+  geo: {lat: 40.3444, lng: -76.42806}
   phone: 717-299-6371
-  external_ids:
-    bphc: BPS-H80-034522
+  external_ids: {bphc: BPS-H80-034522}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lebanon/lebanon-va-medical-center
   name: Lebanon VA Medical Center
   categories:
@@ -366,6 +340,22 @@
     lng: -76.39859
   phone: 717-272-6621
   website: https://www.va.gov/lebanon-health-care/locations/lebanon-va-medical-center/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -416,6 +406,14 @@
     lng: -76.42384
   phone: 717-708-2558
   website: https://www.naamannet.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -436,6 +434,16 @@
     lng: -76.45939
   phone: 717-270-3900 x5005
   website: https://www.whitedeerrun.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -517,6 +525,11 @@
     lng: -76.46376
   phone: 717-270-2422
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -538,6 +551,12 @@
     lng: -76.42653
   phone: 717-273-5992
   website: https://www.ponessa.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -719,23 +738,15 @@
   name: Union Community Care at Lebanon VIM
   categories:
   - community-health-center
-  address:
-    street: 711 S 8th St
-    city: Lebanon
-    state: pa
-    zip: '17042'
+  cost: sliding-scale
+  address: {street: 711 S 8th St, city: Lebanon, state: pa, zip: '17042'}
   place: '4242168'
-  geo:
-    lat: 40.32925
-    lng: -76.42368
+  geo: {lat: 40.32925, lng: -76.42368}
   phone: 717-299-6371
-  external_ids:
-    bphc: BPS-H80-038049
+  external_ids: {bphc: BPS-H80-038049}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lebanon/wellspan-philhaven-isabel-drive
   name: Wellspan Philhaven Isabel Drive
   categories:
@@ -751,6 +762,9 @@
     lng: -76.4222
   phone: 717-274-9777
   website: https://www.wellspanphilhaven.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

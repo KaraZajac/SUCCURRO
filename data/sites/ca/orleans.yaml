@@ -20,22 +20,14 @@
   name: Orleans Karuk Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 325 Asip Rd
-    city: Orleans
-    state: ca
-    zip: '95556'
-  geo:
-    lat: 41.30056
-    lng: -123.54734
+  cost: sliding-scale
+  address: {street: 325 Asip Rd, city: Orleans, state: ca, zip: '95556'}
+  geo: {lat: 41.30056, lng: -123.54734}
   phone: 530-627-3452
-  external_ids:
-    bphc: BPS-H80-017240
+  external_ids: {bphc: BPS-H80-017240}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/orleans/orleans-medical-clinic
   name: Orleans Medical Clinic
   categories:
@@ -51,6 +43,9 @@
     lng: -123.54734
   phone: 530-627-3452
   website: https://www.karuk.us
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

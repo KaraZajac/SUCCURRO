@@ -37,6 +37,10 @@
     lng: -97.38141
   phone: 402-564-9994
   website: https://
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +61,22 @@
     lng: -97.38141
   phone: 402-564-9994
   website: https://www.4bhs.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -182,24 +202,16 @@
   name: East Central District Health Department/Good Neighbor Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 4321 41st Ave
-    city: Columbus
-    state: ne
-    zip: '68601'
+  cost: sliding-scale
+  address: {street: 4321 41st Ave, city: Columbus, state: ne, zip: '68601'}
   place: '3110110'
-  geo:
-    lat: 41.45816
-    lng: -97.37668
+  geo: {lat: 41.45816, lng: -97.37668}
   phone: 402-562-7500
   website: https://www.ecdhd.com
-  external_ids:
-    bphc: BPS-H80-011391
+  external_ids: {bphc: BPS-H80-011391}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/columbus/glc
   name: GLC
   categories:
@@ -216,6 +228,22 @@
     lng: -97.35401
   phone: 402-562-0400
   website: https://www.goodlifecounseling.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -237,6 +265,9 @@
     lng: -97.37677
   phone: 402-562-7500
   website: https://goodneighborcommunityhealthcenter.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -258,6 +289,22 @@
     lng: -97.36567
   phone: 402-942-9007
   website: https://goodwillne.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -290,12 +337,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Colfax, Nance, Platte Counties
-  address: {street: 3737 25th Ave., city: Columbus, state: ne, zip: '68601'}
+  address:
+    street: 3737 25th Ave.
+    city: Columbus
+    state: ne
+    zip: '68601'
   place: '3110110'
   phone: 402-564-1113
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ne/columbus/the-well-columbus
   name: The Well Columbus
   categories:
@@ -312,6 +365,16 @@
     lng: -97.36149
   phone: 402-371-0220
   website: https://thewellne.org/
+  services:
+  - Outpatient
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

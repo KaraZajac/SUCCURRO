@@ -14,6 +14,15 @@
     lng: -103.21378
   phone: 970-522-4392
   website: https://www.centennialmhc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -44,13 +53,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Logan County
-  address: {street: '508 South 10th Ave., Suite 2', city: Sterling, state: co, zip: '80751'}
+  address:
+    street: 508 South 10th Ave., Suite 2
+    city: Sterling
+    state: co
+    zip: '80751'
   place: 0873935
   phone: 970-522-2194
   website: https://www.colorado.gov/pacific/logan/human-services-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/sterling/prairie-park
   name: Prairie Park
   categories:
@@ -77,24 +92,16 @@
   name: Salud Sterling
   categories:
   - community-health-center
-  address:
-    street: 1410 S 7th Ave
-    city: Sterling
-    state: co
-    zip: '80751'
+  cost: sliding-scale
+  address: {street: 1410 S 7th Ave, city: Sterling, state: co, zip: '80751'}
   place: 0873935
-  geo:
-    lat: 40.61171
-    lng: -103.22186
+  geo: {lat: 40.61171, lng: -103.22186}
   phone: 303-697-2583
   website: https://www.saludclinic.org
-  external_ids:
-    bphc: BPS-H80-005325
+  external_ids: {bphc: BPS-H80-005325}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/sterling/sterling-va-clinic
   name: Sterling VA Clinic
   categories:

@@ -36,6 +36,19 @@
     lng: -107.86761
   phone: 970-335-2288
   website: https://www.axishealthsystem.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,6 +69,12 @@
     lng: -107.82737
   phone: 970-259-2162
   website: https://www.axishealthsystem.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient detoxification
+  - Residential detoxification
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -85,23 +104,15 @@
   name: Durango Integrated Healthcare
   categories:
   - community-health-center
-  address:
-    street: 150 Mercury Village Dr
-    city: Durango
-    state: co
-    zip: '81301'
+  cost: sliding-scale
+  address: {street: 150 Mercury Village Dr, city: Durango, state: co, zip: '81301'}
   place: 0822035
-  geo:
-    lat: 37.24014
-    lng: -107.86769
+  geo: {lat: 37.24014, lng: -107.86769}
   phone: 970-335-2288
-  external_ids:
-    bphc: BPS-H80-037702
+  external_ids: {bphc: BPS-H80-037702}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/durango/durango-north-head-start
   name: Durango North Head Start
   categories:
@@ -210,13 +221,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving La Plata County
-  address: {street: 'Tech Center Plaza, 10 Burnett Ct., First Floor', city: Durango, state: co, zip: '81301'}
+  address:
+    street: Tech Center Plaza, 10 Burnett Ct., First Floor
+    city: Durango
+    state: co
+    zip: '81301'
   place: 0822035
   phone: 970-382-6150
   website: https://www.co.laplata.co.us/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/durango/needham-elementary-school
   name: Needham Elementary School
   categories:

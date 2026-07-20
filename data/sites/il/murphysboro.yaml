@@ -64,24 +64,16 @@
   name: Shawnee Health Care, Murphysboro
   categories:
   - community-health-center
-  address:
-    street: 7 S Hospital Dr
-    city: Murphysboro
-    state: il
-    zip: '62966'
+  cost: sliding-scale
+  address: {street: 7 S Hospital Dr, city: Murphysboro, state: il, zip: '62966'}
   place: '1751453'
-  geo:
-    lat: 37.77351
-    lng: -89.32235
+  geo: {lat: 37.77351, lng: -89.32235}
   phone: 618-519-9200
   website: https://www.shawneehealth.com
-  external_ids:
-    bphc: BPS-H80-002679
+  external_ids: {bphc: BPS-H80-002679}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/murphysboro/shawnee-healthcare-murphysboro
   name: Shawnee Healthcare Murphysboro
   categories:
@@ -98,6 +90,13 @@
     lng: -89.32316
   phone: 618-519-9200
   website: https://www.shawneehealth.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

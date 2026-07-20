@@ -13,6 +13,19 @@
     lng: -95.4504
   phone: 888-339-2747
   website: https://ariserecoverycenters.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -55,6 +68,22 @@
     lng: -95.48089
   phone: 936-647-3500
   website: https://aspirehealthcorp.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -137,6 +166,15 @@
     lng: -95.4718
   phone: 936-522-4000
   website: https://
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Veterans
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -219,6 +257,11 @@
     lng: -95.45816
   phone: 281-816-4740
   website: https://www.eatingrecoverycenter.com
+  services:
+  - Partial hospitalization/day treatment
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -309,57 +352,47 @@
   name: Lone Star Family Health Center - Conroe
   categories:
   - community-health-center
-  address:
-    street: 605 S Conroe Medical Dr
-    city: Conroe
-    state: tx
-    zip: '77304'
+  cost: sliding-scale
+  address: {street: 605 S Conroe Medical Dr, city: Conroe, state: tx, zip: '77304'}
   place: '4816432'
-  geo:
-    lat: 30.28537
-    lng: -95.47156
+  geo: {lat: 30.28537, lng: -95.47156}
   phone: 936-539-4004
   website: https://www.lonestarfamily.org
-  external_ids:
-    bphc: BPS-H80-011883
+  external_ids: {bphc: BPS-H80-011883}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/conroe/lone-star-family-health-center-grangerland
   name: Lone Star Family Health Center - Grangerland
   categories:
   - community-health-center
-  address:
-    street: 13905 Grangerland Rd
-    city: Conroe
-    state: tx
-    zip: '77306'
+  cost: sliding-scale
+  address: {street: 13905 Grangerland Rd, city: Conroe, state: tx, zip: '77306'}
   place: '4816432'
-  geo:
-    lat: 30.24898
-    lng: -95.3205
+  geo: {lat: 30.24898, lng: -95.3205}
   phone: 936-539-4004
-  external_ids:
-    bphc: BPS-H80-020853
+  external_ids: {bphc: BPS-H80-020853}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/conroe/montgomery-county-emergency-assistance-inc
   name: Montgomery County Emergency Assistance Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Montgomery County
-  address: {street: 1022 McCall, city: Conroe, state: tx, zip: '77301'}
+  address:
+    street: 1022 McCall
+    city: Conroe
+    state: tx
+    zip: '77301'
   place: '4816432'
   phone: 540-382-6186
   website: https://www.navigatelifetexas.org/en/services-groups-events/services/montgomery-county-emergency-assistance-inc
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/conroe/moorehead-j-h
   name: Moorehead J H
   categories:
@@ -417,6 +450,12 @@
     lng: -95.48831
   phone: 936-828-3908
   website: https://www.positiverecovery.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -426,23 +465,15 @@
   name: St. Hope Community Health Center Clinic
   categories:
   - community-health-center
-  address:
-    street: 1414 S Frazier St, Suite 105
-    city: Conroe
-    state: tx
-    zip: '77301'
+  cost: sliding-scale
+  address: {street: '1414 S Frazier St, Suite 105', city: Conroe, state: tx, zip: '77301'}
   place: '4816432'
-  geo:
-    lat: 30.2854
-    lng: -95.45673
+  geo: {lat: 30.2854, lng: -95.45673}
   phone: 936-441-2440
-  external_ids:
-    bphc: BPS-H80-018081
+  external_ids: {bphc: BPS-H80-018081}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/conroe/stockton-junior-high
   name: Stockton Junior High
   categories:
@@ -501,6 +532,13 @@
     lng: -95.48268
   phone: 936-521-6100
   website: https://www.tcbhc.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

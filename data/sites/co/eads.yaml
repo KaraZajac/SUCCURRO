@@ -3,34 +3,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kiowa County
-  address: {street: 1307 Maine St., city: Eads, state: co, zip: '81036'}
+  address:
+    street: 1307 Maine St.
+    city: Eads
+    state: co
+    zip: '81036'
   place: 0822145
   phone: 719-438-5541
   website: https://www.kiowacounty-colorado.com/kiowa_co_co_dss.htm
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/eads/valley-wide-counseling-support-center-eads
   name: Valley-Wide Counseling & Support Center - Eads
   categories:
   - community-health-center
-  address:
-    street: 14833 S Rittgers St
-    city: Eads
-    state: co
-    zip: '81036'
+  cost: sliding-scale
+  address: {street: 14833 S Rittgers St, city: Eads, state: co, zip: '81036'}
   place: 0822145
-  geo:
-    lat: 38.47558
-    lng: -102.77685
+  geo: {lat: 38.47558, lng: -102.77685}
   phone: 800-511-5446
-  external_ids:
-    bphc: BPS-H80-036392
+  external_ids: {bphc: BPS-H80-036392}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/eads/valley-wide-health-systems
   name: Valley Wide Health Systems
   categories:
@@ -47,6 +45,10 @@
     lng: -102.77644
   phone: 800-511-5446
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

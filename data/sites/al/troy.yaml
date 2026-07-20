@@ -113,97 +113,71 @@
   - utility-assistance
   description: LIHEAP intake office serving Bullock, Butler, Covington, Crenshaw, Dale, Lowndes, Pike
     Counties
-  address: {street: 507 North Three Notch Road, city: Troy, state: al, zip: '36081'}
+  address:
+    street: 507 North Three Notch Road
+    city: Troy
+    state: al
+    zip: '36081'
   place: 0176920
   phone: 334-566-1712
   website: https://ocaptroy.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/troy/sarha-doctors-center
   name: SARHA Doctors Center
   categories:
   - community-health-center
-  address:
-    street: 1412 Elba Hwy
-    city: Troy
-    state: al
-    zip: '36079'
+  cost: sliding-scale
+  address: {street: 1412 Elba Hwy, city: Troy, state: al, zip: '36079'}
   place: 0176920
-  geo:
-    lat: 31.76533
-    lng: -85.96055
+  geo: {lat: 31.76533, lng: -85.96055}
   phone: 334-566-8822
-  external_ids:
-    bphc: BPS-H80-002450
+  external_ids: {bphc: BPS-H80-002450}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/troy/sarha-mobile-health-center
   name: SARHA Mobile Health Center
   categories:
   - community-health-center
-  address:
-    street: 1412 Elba Hwy
-    city: Troy
-    state: al
-    zip: '36079'
+  cost: sliding-scale
+  address: {street: 1412 Elba Hwy, city: Troy, state: al, zip: '36079'}
   place: 0176920
-  geo:
-    lat: 31.76533
-    lng: -85.96055
+  geo: {lat: 31.76533, lng: -85.96055}
   phone: 334-566-8822
-  external_ids:
-    bphc: BPS-H80-037517
+  external_ids: {bphc: BPS-H80-037517}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/troy/sarha-mobile-health-center-2
   name: SARHA Mobile Health Center 2
   categories:
   - community-health-center
-  address:
-    street: 1412 Elba Hwy
-    city: Troy
-    state: al
-    zip: '36079'
+  cost: sliding-scale
+  address: {street: 1412 Elba Hwy, city: Troy, state: al, zip: '36079'}
   place: 0176920
-  geo:
-    lat: 31.76533
-    lng: -85.96055
+  geo: {lat: 31.76533, lng: -85.96055}
   phone: 334-566-8822
-  external_ids:
-    bphc: BPS-H80-038763
+  external_ids: {bphc: BPS-H80-038763}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/troy/se-alabama-rural-health-associates
   name: SE ALABAMA RURAL HEALTH ASSOCIATES
   categories:
   - community-health-center
-  address:
-    street: 1414 Elba Hwy
-    city: Troy
-    state: al
-    zip: '36079'
+  cost: sliding-scale
+  address: {street: 1414 Elba Hwy, city: Troy, state: al, zip: '36079'}
   place: 0176920
-  geo:
-    lat: 31.76464
-    lng: -85.96045
+  geo: {lat: 31.76464, lng: -85.96045}
   phone: 334-670-6726
-  external_ids:
-    bphc: BPS-H80-001474
+  external_ids: {bphc: BPS-H80-001474}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/troy/share-my-world-2
   name: 'Share My World #2'
   categories:
@@ -346,6 +320,11 @@
     lng: -85.96041
   phone: 334-670-5000 x5300
   website: https://www.thejourneydetoxandrecovery.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,23 +2,15 @@
   name: Family Health Care of Northwest Ohio, Inc.
   categories:
   - community-health-center
-  address:
-    street: 1191 Westwood Dr
-    city: Van Wert
-    state: oh
-    zip: '45891'
+  cost: sliding-scale
+  address: {street: 1191 Westwood Dr, city: Van Wert, state: oh, zip: '45891'}
   place: '3979562'
-  geo:
-    lat: 40.85311
-    lng: -84.59544
+  geo: {lat: 40.85311, lng: -84.59544}
   phone: 419-238-6747
-  external_ids:
-    bphc: BPS-H80-019228
+  external_ids: {bphc: BPS-H80-019228}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/van-wert/marsh-foundation
   name: Marsh Foundation
   categories:
@@ -35,6 +27,13 @@
     lng: -84.56472
   phone: 419-238-1695 x360
   website: https://marshfoundation.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,12 +44,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Van Wert County
-  address: {street: 114 E. Main St. Suite 1, city: Van Wert, state: oh, zip: '45891'}
+  address:
+    street: 114 E. Main St. Suite 1
+    city: Van Wert
+    state: oh
+    zip: '45891'
   place: '3979562'
   phone: 419-238-4544
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/van-wert/van-wert-head-start
   name: Van Wert Head Start
   categories:
@@ -86,6 +91,17 @@
     lng: -84.59426
   phone: 419-238-3434
   website: https://www.westwoodbehavioral.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

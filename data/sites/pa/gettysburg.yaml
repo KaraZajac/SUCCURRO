@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Adams County
-  address: {street: 225 South Franklin Street (P. O. Box 4446), city: Gettysburg, state: pa, zip: 17325-4446}
+  address:
+    street: 225 South Franklin Street (P. O. Box 4446)
+    city: Gettysburg
+    state: pa
+    zip: 17325-4446
   place: '4228960'
   phone: 717-334-6241
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/gettysburg/adams-county-housing-authority
   name: Adams County Housing Authority
   categories:
@@ -44,6 +50,12 @@
     lng: -77.22877
   phone: 717-398-2025
   website: https://www.laurellife.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -95,24 +107,16 @@
   name: Gettysburg Center
   categories:
   - community-health-center
-  address:
-    street: 1275 York Rd, Suite 17
-    city: Gettysburg
-    state: pa
-    zip: '17325'
+  cost: sliding-scale
+  address: {street: '1275 York Rd, Suite 17', city: Gettysburg, state: pa, zip: '17325'}
   place: '4228960'
-  geo:
-    lat: 39.84254
-    lng: -77.20091
+  geo: {lat: 39.84254, lng: -77.20091}
   phone: 717-337-9400
   website: https://www.familyfirsthealth.org
-  external_ids:
-    bphc: BPS-H80-008101
+  external_ids: {bphc: BPS-H80-008101}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/gettysburg/lincoln-elementary
   name: Lincoln Elementary
   categories:
@@ -171,6 +175,9 @@
     lng: -77.18204
   phone: 717-339-2710
   website: https://www.wellspan.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

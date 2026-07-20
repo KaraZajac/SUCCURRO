@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Whitley County
-  address: {street: 215 N. 4th St., city: Williamsburg, state: ky, zip: '40769'}
+  address:
+    street: 215 N. 4th St.
+    city: Williamsburg
+    state: ky
+    zip: '40769'
   place: '2183334'
   phone: 606-549-3933
   email: info@bellwhitley.com
   website: http://www.bellwhitley.com
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/williamsburg/boston
   name: Boston
   categories:
@@ -68,6 +74,22 @@
     lng: -84.16031
   phone: 606-825-6011
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -89,6 +111,16 @@
     lng: -84.1639
   phone: 606-549-1440
   website: https://www.crbhky.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -110,6 +142,9 @@
     lng: -84.15966
   phone: 606-549-2656
   website: https://www.dayspringhealth.org/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -119,86 +154,54 @@
   name: Dayspring Mobile Clinic (1)
   categories:
   - community-health-center
-  address:
-    street: 1047 US-25W S
-    city: Williamsburg
-    state: ky
-    zip: '40769'
+  cost: sliding-scale
+  address: {street: 1047 US-25W S, city: Williamsburg, state: ky, zip: '40769'}
   place: '2183334'
-  geo:
-    lat: 36.7315
-    lng: -84.15581
+  geo: {lat: 36.7315, lng: -84.15581}
   phone: 606-549-2656
-  external_ids:
-    bphc: BPS-H80-040570
+  external_ids: {bphc: BPS-H80-040570}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/williamsburg/dayspring-regional-health-center
   name: Dayspring Regional Health Center
   categories:
   - community-health-center
-  address:
-    street: 1047 US-25W S
-    city: Williamsburg
-    state: ky
-    zip: '40769'
+  cost: sliding-scale
+  address: {street: 1047 US-25W S, city: Williamsburg, state: ky, zip: '40769'}
   place: '2183334'
-  geo:
-    lat: 36.7315
-    lng: -84.15581
+  geo: {lat: 36.7315, lng: -84.15581}
   phone: 423-492-8492
-  external_ids:
-    bphc: BPS-H80-035843
+  external_ids: {bphc: BPS-H80-035843}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/williamsburg/dayspring-williamsburg-independent-school
   name: Dayspring Williamsburg Independent School
   categories:
   - community-health-center
-  address:
-    street: 1000 Main St
-    city: Williamsburg
-    state: ky
-    zip: '40769'
+  cost: sliding-scale
+  address: {street: 1000 Main St, city: Williamsburg, state: ky, zip: '40769'}
   place: '2183334'
-  geo:
-    lat: 36.7355
-    lng: -84.16838
+  geo: {lat: 36.7355, lng: -84.16838}
   phone: 606-549-6044
-  external_ids:
-    bphc: BPS-H80-024504
+  external_ids: {bphc: BPS-H80-024504}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/williamsburg/grace-health-uc-clinic
   name: Grace Health UC Clinic
   categories:
   - community-health-center
-  address:
-    street: 49 W Sycamore St
-    city: Williamsburg
-    state: ky
-    zip: '40769'
+  cost: sliding-scale
+  address: {street: 49 W Sycamore St, city: Williamsburg, state: ky, zip: '40769'}
   place: '2183334'
-  geo:
-    lat: 36.74021
-    lng: -84.16346
+  geo: {lat: 36.74021, lng: -84.16346}
   phone: 606-526-9005
-  external_ids:
-    bphc: BPS-H80-032616
+  external_ids: {bphc: BPS-H80-032616}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/williamsburg/horizon-health
   name: Horizon Health
   categories:
@@ -215,6 +218,12 @@
     lng: -84.16053
   phone: 606-657-2030
   website: https://www.horizonhealthky.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

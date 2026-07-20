@@ -47,13 +47,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Spencer County
-  address: {street: 44 Creekside Drive, city: Taylorsville, state: ky, zip: '40071'}
+  address:
+    street: 44 Creekside Drive
+    city: Taylorsville
+    state: ky
+    zip: '40071'
   place: '2175810'
   phone: 502-477-8296
   website: https://www.mpcaa.org/familycommunity-services.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/taylorsville/ridgeview-church-sun-meal-mobile-route-3
   name: 'Ridgeview Church Sun Meal Mobile Route #3'
   categories:
@@ -114,6 +120,12 @@
     lng: -85.34556
   phone: 502-477-2577
   website: https://www.sevencounties.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -186,24 +198,16 @@
   name: Taylorsville Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 501 Taylorsville Rd
-    city: Taylorsville
-    state: ky
-    zip: '40071'
+  cost: sliding-scale
+  address: {street: 501 Taylorsville Rd, city: Taylorsville, state: ky, zip: '40071'}
   place: '2175810'
-  geo:
-    lat: 38.03906
-    lng: -85.34127
+  geo: {lat: 38.03906, lng: -85.34127}
   phone: 502-477-2248
   website: https://www.pdchc.org
-  external_ids:
-    bphc: BPS-H80-024846
+  external_ids: {bphc: BPS-H80-024846}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/taylorsville/taylorsville-elementary
   name: Taylorsville Elementary
   categories:

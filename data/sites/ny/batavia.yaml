@@ -164,12 +164,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Genesee County
-  address: {street: 2 Bank Street, city: Batavia, state: ny, zip: '14020'}
+  address:
+    street: 2 Bank Street
+    city: Batavia
+    state: ny
+    zip: '14020'
   place: '3604715'
   phone: 585-343-1611
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/batavia/genesee-county-community-mh-services-child-and-f
   name: Genesee County Community MH Services Child and Family Center
   categories:
@@ -186,6 +192,9 @@
     lng: -78.14272
   phone: 585-344-1421
   website: https://www.geneseeny.gov/Department-Content/Mental-Health
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -207,6 +216,22 @@
     lng: -78.17973
   phone: 585-815-0247
   website: https://www.horizon-health.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -294,23 +319,15 @@
   name: Oak Orchard Community Health Center - Batavia
   categories:
   - community-health-center
-  address:
-    street: 319 W Main St
-    city: Batavia
-    state: ny
-    zip: '14020'
+  cost: sliding-scale
+  address: {street: 319 W Main St, city: Batavia, state: ny, zip: '14020'}
   place: '3604715'
-  geo:
-    lat: 43.00238
-    lng: -78.19789
+  geo: {lat: 43.00238, lng: -78.19789}
   phone: 585-599-6446
-  external_ids:
-    bphc: BPS-H80-030053
+  external_ids: {bphc: BPS-H80-030053}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/batavia/robert-morris-school
   name: Robert Morris School
   categories:
@@ -349,6 +366,9 @@
     lng: -78.17314
   phone: 585-343-1124
   website: https://www.gcasa.net
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -369,6 +389,12 @@
     lng: -78.17379
   phone: 585-343-8330
   website: https://www.uconnectcare.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -389,6 +415,11 @@
     lng: -78.17377
   phone: 585-815-1860
   website: https://www.uconnectcare.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

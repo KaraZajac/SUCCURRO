@@ -46,24 +46,16 @@
   name: Evans Street Mental Health Integration Site
   categories:
   - community-health-center
-  address:
-    street: 627 NE Evans St
-    city: Mcminnville
-    state: or
-    zip: '97128'
+  cost: sliding-scale
+  address: {street: 627 NE Evans St, city: Mcminnville, state: or, zip: '97128'}
   place: '4145000'
-  geo:
-    lat: 45.21265
-    lng: -123.19481
+  geo: {lat: 45.21265, lng: -123.19481}
   phone: 503-434-7523
   website: http://www.virginiagarcia.org
-  external_ids:
-    bphc: BPS-H80-014152
+  external_ids: {bphc: BPS-H80-014152}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/mcminnville/f-patton-middle
   name: F Patton Middle
   categories:
@@ -336,24 +328,16 @@
   name: VIRGINIA GARCIA MEMORIAL HEALTH CENTER- MCMINNVILLE
   categories:
   - community-health-center
-  address:
-    street: 115 NE May Ln
-    city: Mcminnville
-    state: or
-    zip: '97128'
+  cost: sliding-scale
+  address: {street: 115 NE May Ln, city: Mcminnville, state: or, zip: '97128'}
   place: '4145000'
-  geo:
-    lat: 45.20128
-    lng: -123.16085
+  geo: {lat: 45.20128, lng: -123.16085}
   phone: 503-472-1338
   website: http://www.virginiagarcia.org
-  external_ids:
-    bphc: BPS-H80-000547
+  external_ids: {bphc: BPS-H80-000547}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/mcminnville/willamette-elementary
   name: Willamette Elementary
   categories:
@@ -392,6 +376,19 @@
     lng: -123.19506
   phone: 503-434-7523
   website: https://www.yamhillcounty.gov/204/Health-Human-Ser
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -402,13 +399,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Yamhill County
-  address: {street: 1317 NE Dustin Court (P. O. Box 621), city: McMinnville, state: or, zip: '97128'}
+  address:
+    street: 1317 NE Dustin Court (P. O. Box 621)
+    city: McMinnville
+    state: or
+    zip: '97128'
   place: '4145000'
   phone: 503-687-1480
   website: http://yamhillcap.org/energy
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: or/mcminnville/yamhill-county-chemical-dependency-program
   name: Yamhill County Chemical Dependency Program
   categories:
@@ -425,6 +428,18 @@
     lng: -123.19507
   phone: 503-434-7527
   website: https://osrecovery.org
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -446,6 +461,12 @@
     lng: -123.1953
   phone: 503-434-7462
   website: https://www.yamhillcounty.gov/204/Health-Human-Ser
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

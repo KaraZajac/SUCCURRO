@@ -4,14 +4,20 @@
   - utility-assistance
   description: LIHEAP intake office serving Denali, Fairbanks North Star, North Slope, Southeast Fairbanks
     Counties
-  address: {street: '675 7th Avenue, Station E', city: Fairbanks, state: ak, zip: '99701'}
+  address:
+    street: 675 7th Avenue, Station E
+    city: Fairbanks
+    state: ak
+    zip: '99701'
   place: '0224230'
   phone: 800-478-7778
   email: hss.dpa.offices@alaska.gov
   website: https://health.alaska.gov/dpa/Pages/hap/default.aspx
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ak/fairbanks/barnette-elementary-school
   name: Barnette Elementary School
   categories:
@@ -93,6 +99,22 @@
     lng: -147.71313
   phone: 907-452-6251 x6027
   website: https://www.fairbanksnative.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -159,6 +181,13 @@
     lng: -147.76333
   phone: 907-474-0890
   website: https://www.familycenteredservices.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -179,6 +208,11 @@
     lng: -147.74236
   phone: 907-474-0890
   website: https://www.familycenteredservices.com
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -199,6 +233,15 @@
     lng: -147.72518
   phone: 907-452-4222 x100
   website: https://www.interioraids.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -208,68 +251,44 @@
   name: INTERIOR COMMUNITY HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 1606 23rd Ave
-    city: Fairbanks
-    state: ak
-    zip: '99701'
+  cost: sliding-scale
+  address: {street: 1606 23rd Ave, city: Fairbanks, state: ak, zip: '99701'}
   place: '0224230'
-  geo:
-    lat: 64.8265
-    lng: -147.74236
+  geo: {lat: 64.8265, lng: -147.74236}
   phone: 907-455-4567
   website: https://www.interiorcommunityhealth.org
-  external_ids:
-    bphc: BPS-H80-002014
+  external_ids: {bphc: BPS-H80-002014}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/fairbanks/interiorchc-mobile-clinic
   name: InteriorCHC Mobile Clinic
   categories:
   - community-health-center
-  address:
-    street: 1606 23rd Ave
-    city: Fairbanks
-    state: ak
-    zip: '99701'
+  cost: sliding-scale
+  address: {street: 1606 23rd Ave, city: Fairbanks, state: ak, zip: '99701'}
   place: '0224230'
-  geo:
-    lat: 64.8265
-    lng: -147.74236
+  geo: {lat: 64.8265, lng: -147.74236}
   phone: 907-455-4567
   website: https://www.interiorcommunityhealth.org
-  external_ids:
-    bphc: BPS-H80-038485
+  external_ids: {bphc: BPS-H80-038485}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/fairbanks/tanana-chiefs-conference
   name: TANANA CHIEFS CONFERENCE
   categories:
   - community-health-center
-  address:
-    street: 122 1st Ave
-    city: Fairbanks
-    state: ak
-    zip: '99701'
+  cost: sliding-scale
+  address: {street: 122 1st Ave, city: Fairbanks, state: ak, zip: '99701'}
   place: '0224230'
-  geo:
-    lat: 64.84438
-    lng: -147.70888
+  geo: {lat: 64.84438, lng: -147.70888}
   phone: 907-452-8251
   website: https://www.tananachiefs.org
-  external_ids:
-    bphc: BPS-H80-000119
+  external_ids: {bphc: BPS-H80-000119}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/fairbanks/tanana-chiefs-conference-inc-behavioral-health
   name: Tanana Chiefs Conference Inc Behavioral Health
   categories:
@@ -286,6 +305,19 @@
     lng: -147.7089
   phone: 907-452-8251 x3800
   website: https://www.tananachiefs.org/services/behavioral-health/
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Short-term residential
+  - Adolescents
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -327,6 +359,10 @@
     lng: -147.71325
   phone: 907-374-7776
   website: https://www.turningpointcounselingservices.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

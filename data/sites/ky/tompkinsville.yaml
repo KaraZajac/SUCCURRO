@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Monroe County
-  address: {street: 200 N. Main St. (Courthouse), city: Tompkinsville, state: ky, zip: '42167'}
+  address:
+    street: 200 N. Main St. (Courthouse)
+    city: Tompkinsville
+    state: ky
+    zip: '42167'
   place: '2177160'
   phone: 270-487-5436
   website: http://www.casoky.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/tompkinsville/joe-harrison-carter
   name: Joe Harrison Carter
   categories:
@@ -48,6 +54,20 @@
     lng: -85.69088
   phone: 270-487-5655
   website: https://www.lifeskills.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -120,23 +140,15 @@
   name: Monroe Family Medical Center
   categories:
   - community-health-center
-  address:
-    street: 1515 Edmonton Rd
-    city: Tompkinsville
-    state: ky
-    zip: '42167'
+  cost: sliding-scale
+  address: {street: 1515 Edmonton Rd, city: Tompkinsville, state: ky, zip: '42167'}
   place: '2177160'
-  geo:
-    lat: 36.72206
-    lng: -85.68943
+  geo: {lat: 36.72206, lng: -85.68943}
   phone: 270-487-9272
-  external_ids:
-    bphc: BPS-H80-017045
+  external_ids: {bphc: BPS-H80-017045}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/tompkinsville/tompkinsville-elem
   name: Tompkinsville Elem
   categories:

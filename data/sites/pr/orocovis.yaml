@@ -180,23 +180,15 @@
   name: Centro de Salud Integral en Orocovis
   categories:
   - community-health-center
-  address:
-    street: Avenida Luis Munoz Marin
-    city: Orocovis
-    state: pr
-    zip: '00720'
-  geo:
-    lat: 18.22546
-    lng: -66.39352
+  cost: sliding-scale
+  address: {street: Avenida Luis Munoz Marin, city: Orocovis, state: pr, zip: '00720'}
+  geo: {lat: 18.22546, lng: -66.39352}
   phone: 787-867-6010
   website: https://www.simpr.com
-  external_ids:
-    bphc: BPS-H80-002455
+  external_ids: {bphc: BPS-H80-002455}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pr/orocovis/clinica-ambulatoria-orocovis
   name: Clinica Ambulatoria Orocovis
   categories:
@@ -212,6 +204,19 @@
     lng: -66.39101
   phone: 787-520-7153
   website: https://www.sistemamenonita.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

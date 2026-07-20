@@ -85,23 +85,15 @@
   name: Macon County Health Department Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 601 Highway 52 Byp E
-    city: Lafayette
-    state: tn
-    zip: '37083'
+  cost: sliding-scale
+  address: {street: 601 Highway 52 Byp E, city: Lafayette, state: tn, zip: '37083'}
   place: '4740160'
-  geo:
-    lat: 36.51662
-    lng: -86.01239
+  geo: {lat: 36.51662, lng: -86.01239}
   phone: 615-666-2142
-  external_ids:
-    bphc: BPS-H80-002550
+  external_ids: {bphc: BPS-H80-002550}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/lafayette/macon-county-high
   name: Macon County High
   categories:
@@ -173,13 +165,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Macon County
-  address: {street: 607 Highway 52 By-Pass, city: Lafayette, state: tn, zip: '37083'}
+  address:
+    street: 607 Highway 52 By-Pass
+    city: Lafayette
+    state: tn
+    zip: '37083'
   place: '4740160'
   phone: 615-666-3377
   website: https://uchra.org/communityservices/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/lafayette/volunteer-behavioral-health-lafayette-campus
   name: Volunteer Behavioral Health Lafayette Campus
   categories:
@@ -196,6 +194,13 @@
     lng: -86.02774
   phone: 615-666-8070
   website: https://volunteerbehavioralhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

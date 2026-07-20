@@ -37,6 +37,9 @@
     lng: -79.46647
   phone: 910-506-8474
   website: https://
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -120,6 +123,9 @@
     lng: -79.47642
   phone: 866-272-7826
   website: https://www.monarchnc.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -141,6 +147,22 @@
     lng: -79.46358
   phone: 910-764-4750
   website: https://www.murrayforkclinic.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -185,6 +207,22 @@
     lng: -79.46002
   phone: 910-361-4398
   website: https://www.rainbow66storehouse.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -218,13 +256,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Scotland County
-  address: {street: 1405 West Boulevard (P. O. Box 1647), city: Laurinburg, state: nc, zip: '28353'}
+  address:
+    street: 1405 West Boulevard (P. O. Box 1647)
+    city: Laurinburg
+    state: nc
+    zip: '28353'
   place: '3737220'
   phone: 910-277-2500
   website: https://www.scotlandcounty.org/253/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/laurinburg/scotland-county-high-school
   name: Scotland County High School
   categories:
@@ -251,21 +295,13 @@
   name: Scotland Health Center
   categories:
   - community-health-center
-  address:
-    street: 507 Lauchwood Dr
-    city: Laurinburg
-    state: nc
-    zip: '28352'
+  cost: sliding-scale
+  address: {street: 507 Lauchwood Dr, city: Laurinburg, state: nc, zip: '28352'}
   place: '3737220'
-  geo:
-    lat: 34.75148
-    lng: -79.4709
+  geo: {lat: 34.75148, lng: -79.4709}
   phone: 910-506-4682
   website: https://www.rhcchealth.org
-  external_ids:
-    bphc: BPS-H80-024555
+  external_ids: {bphc: BPS-H80-024555}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

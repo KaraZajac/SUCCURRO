@@ -3,34 +3,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Beauregard County
-  address: {street: '219 West 2ND St., (P. O. Box 573)', city: DeRidder, state: la, zip: '70634'}
+  address:
+    street: 219 West 2ND St., (P. O. Box 573)
+    city: DeRidder
+    state: la
+    zip: '70634'
   place: '2220610'
   phone: 337-463-7895
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: la/deridder/deridder-community-health-center
   name: DeRidder Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 427 N Pine St, Suite A
-    city: Deridder
-    state: la
-    zip: '70634'
+  cost: sliding-scale
+  address: {street: '427 N Pine St, Suite A', city: Deridder, state: la, zip: '70634'}
   place: '2220610'
-  geo:
-    lat: 30.85233
-    lng: -93.28942
+  geo: {lat: 30.85233, lng: -93.28942}
   phone: 337-462-6471
   website: https://www.icchc.org
-  external_ids:
-    bphc: BPS-H80-040812
+  external_ids: {bphc: BPS-H80-040812}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/deridder/deridder-elementary-school-cafeteria-nc
   name: Deridder Elementary School Cafeteria - Nc
   categories:
@@ -113,6 +111,13 @@
     lng: -93.28654
   phone: 337-462-1641
   website: https://imcalhsa.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -157,6 +162,14 @@
     lng: -93.31175
   phone: 337-460-9472
   website: https://oceanshealthcare.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Persons with Alzheimer's or dementia
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -178,6 +191,16 @@
     lng: -93.28676
   phone: 337-463-4020
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

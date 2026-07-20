@@ -88,35 +88,33 @@
   name: Kentucky River Foothills
   categories:
   - community-health-center
-  address:
-    street: 100 Tyler Ln
-    city: Irvine
-    state: ky
-    zip: '40336'
+  cost: sliding-scale
+  address: {street: 100 Tyler Ln, city: Irvine, state: ky, zip: '40336'}
   place: '2139646'
-  geo:
-    lat: 37.7021
-    lng: -84.00821
+  geo: {lat: 37.7021, lng: -84.00821}
   phone: 606-531-2012
-  external_ids:
-    bphc: BPS-H80-024810
+  external_ids: {bphc: BPS-H80-024810}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/irvine/kentucky-river-foothills-development-council
   name: Kentucky River Foothills Development Council
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Estill County
-  address: {street: 100 Tyler Lane, city: Irvine, state: ky, zip: '40336'}
+  address:
+    street: 100 Tyler Lane
+    city: Irvine
+    state: ky
+    zip: '40336'
   place: '2139646'
   phone: 606-723-4492
   website: https://foothillscap.itfrontdesk.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/irvine/new-vista-estill-county-outpatient-clinic
   name: New Vista Estill County Outpatient Clinic
   categories:
@@ -133,6 +131,13 @@
     lng: -83.97949
   phone: 859-723-5128
   website: https://www.newvista.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons experiencing first-episode psychosis
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -205,24 +210,16 @@
   name: White House Clinic - Irvine
   categories:
   - community-health-center
-  address:
-    street: 30 Stacy Lane Rd
-    city: Irvine
-    state: ky
-    zip: '40336'
+  cost: sliding-scale
+  address: {street: 30 Stacy Lane Rd, city: Irvine, state: ky, zip: '40336'}
   place: '2139646'
-  geo:
-    lat: 37.70307
-    lng: -84.00045
+  geo: {lat: 37.70307, lng: -84.00045}
   phone: 606-723-0665
   website: https://www.whitehouseclinics.com
-  external_ids:
-    bphc: BPS-H80-010331
+  external_ids: {bphc: BPS-H80-010331}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/irvine/white-house-clinic-irvine-2
   name: White House Clinic Irvine
   categories:

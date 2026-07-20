@@ -22,34 +22,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving East Carroll County
-  address: {street: '409 Second St., Suite 3 (P. O. Box 486)', city: Lake Providence, state: la, zip: '71254'}
-  place: '2241400'
-  phone: 318-559-0004
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: la/lake-providence/east-carroll-parish-hospital
-  name: East Carroll Parish Hospital
-  categories:
-  - community-health-center
   address:
-    street: 336 N Hood St
+    street: 409 Second St., Suite 3 (P. O. Box 486)
     city: Lake Providence
     state: la
     zip: '71254'
   place: '2241400'
-  geo:
-    lat: 32.81057
-    lng: -91.17235
-  phone: 318-559-4023
-  website: https://www.ecphospital.com/
-  external_ids:
-    bphc: BPS-LAL-036849
+  phone: 318-559-0004
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: la/lake-providence/east-carroll-parish-hospital
+  name: East Carroll Parish Hospital
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 336 N Hood St, city: Lake Providence, state: la, zip: '71254'}
+  place: '2241400'
+  geo: {lat: 32.81057, lng: -91.17235}
+  phone: 318-559-4023
+  website: https://www.ecphospital.com/
+  external_ids: {bphc: BPS-LAL-036849}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: la/lake-providence/east-carroll-parish-housing-authority
   name: East Carroll Parish Housing Authority
   categories:
@@ -94,46 +92,30 @@
   name: Family Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 326 N Hood St
-    city: Lake Providence
-    state: la
-    zip: '71254'
+  cost: sliding-scale
+  address: {street: 326 N Hood St, city: Lake Providence, state: la, zip: '71254'}
   place: '2241400'
-  geo:
-    lat: 32.81009
-    lng: -91.1719
+  geo: {lat: 32.81009, lng: -91.1719}
   phone: 318-559-4024
   website: https://www.ecphospital.com/
-  external_ids:
-    bphc: BPS-LAL-036848
+  external_ids: {bphc: BPS-LAL-036848}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/lake-providence/family-medical-clinic-behavioral-health
   name: Family Medical Clinic-Behavioral Health
   categories:
   - community-health-center
-  address:
-    street: 300 Scarborough St
-    city: Lake Providence
-    state: la
-    zip: '71254'
+  cost: sliding-scale
+  address: {street: 300 Scarborough St, city: Lake Providence, state: la, zip: '71254'}
   place: '2241400'
-  geo:
-    lat: 32.80221
-    lng: -91.17173
+  geo: {lat: 32.80221, lng: -91.17173}
   phone: 318-231-5010
   website: https://www.ecphospital.com
-  external_ids:
-    bphc: BPS-LAL-039291
+  external_ids: {bphc: BPS-LAL-039291}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/lake-providence/general-trass-high-school
   name: General Trass High School
   categories:

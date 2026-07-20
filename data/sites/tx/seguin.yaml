@@ -14,6 +14,19 @@
     lng: -97.98304
   phone: 830-386-2700
   website: https://www.bbtrails.org
+  services:
+  - Outpatient
+  - Young adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,26 +37,38 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Brewster County
-  address: {street: 801 N. State Hwy 123 Bypass, city: Seguin, state: tx, zip: '78155'}
+  address:
+    street: 801 N. State Hwy 123 Bypass
+    city: Seguin
+    state: tx
+    zip: '78155'
   place: '4866644'
   phone: 830-303-4376
   email: info@ccsct.org
   website: https://www.ccsct.org/program/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/seguin/community-council-of-south-central-texas-inc-gua
   name: Community Council of South Central Texas, Inc. - Guadalupe County
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Guadalupe County
-  address: {street: 205 N. King St., city: Seguin, state: tx, zip: '78155'}
+  address:
+    street: 205 N. King St.
+    city: Seguin
+    state: tx
+    zip: '78155'
   place: '4866644'
   phone: 830-379-3022
   website: https://www.ccsct.org/utility-assistance-apply-for-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tx/seguin/guadalupe-regional-medical-center
   name: Guadalupe Regional Medical Center
   categories:
@@ -60,6 +85,11 @@
     lng: -97.9466
   phone: 830-401-1367
   website: https://www.grmedcenter.com/
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -80,6 +110,11 @@
     lng: -97.9466
   phone: 830-401-6158
   website: https://www.grmedcenter.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -243,24 +278,16 @@
   name: Seguin Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1104 Jefferson Ave
-    city: Seguin
-    state: tx
-    zip: '78155'
+  cost: sliding-scale
+  address: {street: 1104 Jefferson Ave, city: Seguin, state: tx, zip: '78155'}
   place: '4866644'
-  geo:
-    lat: 29.56745
-    lng: -97.9829
+  geo: {lat: 29.56745, lng: -97.9829}
   phone: 830-379-9797
   website: https://www.chcsct.com
-  external_ids:
-    bphc: BPS-H80-019659
+  external_ids: {bphc: BPS-H80-019659}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/seguin/seguin-head-start-center
   name: Seguin Head Start Center
   categories:

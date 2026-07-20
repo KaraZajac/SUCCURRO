@@ -17,24 +17,16 @@
   name: Curtis V. Cooper Primary Health Care, Inc.
   categories:
   - community-health-center
-  address:
-    street: 2451 Little Neck Rd
-    city: Bloomingdale
-    state: ga
-    zip: '31302'
+  cost: sliding-scale
+  address: {street: 2451 Little Neck Rd, city: Bloomingdale, state: ga, zip: '31302'}
   place: '1308844'
-  geo:
-    lat: 32.07502
-    lng: -81.31899
+  geo: {lat: 32.07502, lng: -81.31899}
   phone: 912-527-1000
   website: https://www.cvcphc.net
-  external_ids:
-    bphc: BPS-H80-037515
+  external_ids: {bphc: BPS-H80-037515}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/bloomingdale/gateway-behavioral-health-services-lakeside-cris
   name: Gateway Behavioral Health Services Lakeside Crisis Stabilization Unit
   categories:
@@ -51,6 +43,10 @@
     lng: -81.31903
   phone: 912-662-1533
   website: https://www.gatewaycsb.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

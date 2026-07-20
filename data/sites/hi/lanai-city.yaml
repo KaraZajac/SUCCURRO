@@ -2,23 +2,15 @@
   name: Lanai Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 333 6th St
-    city: Lanai City
-    state: hi
-    zip: '96763'
+  cost: sliding-scale
+  address: {street: 333 6th St, city: Lanai City, state: hi, zip: '96763'}
   place: '1543700'
-  geo:
-    lat: 20.82615
-    lng: -156.92099
+  geo: {lat: 20.82615, lng: -156.92099}
   phone: 808-565-6919
-  external_ids:
-    bphc: BPS-H80-014457
+  external_ids: {bphc: BPS-H80-014457}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: hi/lanai-city/lanai-va-clinic
   name: Lanai VA Clinic
   categories:
@@ -57,10 +49,16 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Maui County
-  address: {street: '1144 Ilima Ave. #102', city: Lanai City, state: hi, zip: '96763'}
+  address:
+    street: '1144 Ilima Ave. #102'
+    city: Lanai City
+    state: hi
+    zip: '96763'
   place: '1543700'
   phone: 808-565-6665
   website: https://www.meoinc.org/programs-services/community-services/liheap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

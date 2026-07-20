@@ -111,6 +111,9 @@
     lng: -80.81071
   phone: 866-463-0912
   website: https://www.va.gov/erie-health-care/locations/ashtabula-county-va-clinic/
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -121,13 +124,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ashtabula County
-  address: {street: 6920 Austinburg Rd, city: Ashtabula, state: oh, zip: '44004'}
+  address:
+    street: 6920 Austinburg Rd
+    city: Ashtabula
+    state: oh
+    zip: '44004'
   place: '3902638'
   phone: 440-997-5957
   website: https://accaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/ashtabula/ashtabula-county-va-clinic
   name: Ashtabula County VA Clinic
   categories:
@@ -212,6 +221,11 @@
     lng: -80.79478
   phone: 440-997-6530
   website: https://www.armchealth.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -233,6 +247,11 @@
     lng: -80.77993
   phone: 330-544-8005
   website: https://www.cadencecare.org
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -254,6 +273,16 @@
     lng: -80.7428
   phone: 440-998-4210
   website: https://www.cccohio.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -275,6 +304,20 @@
     lng: -80.80436
   phone: 440-536-5680
   website: https://www.familyprideonline.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -387,6 +430,22 @@
     lng: -80.7428
   phone: 440-998-0722
   website: https://www.lakearearecovery.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -407,6 +466,22 @@
     lng: -80.7437
   phone: 440-998-0722
   website: https://www.lakearearecovery.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -438,44 +513,28 @@
   name: SHI Ashtabula Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 510 W 44th St, Ste 2
-    city: Ashtabula
-    state: oh
-    zip: '44004'
+  cost: sliding-scale
+  address: {street: '510 W 44th St, Ste 2', city: Ashtabula, state: oh, zip: '44004'}
   place: '3902638'
-  geo:
-    lat: 41.86724
-    lng: -80.78624
+  geo: {lat: 41.86724, lng: -80.78624}
   phone: 440-578-8200
-  external_ids:
-    bphc: BPS-H80-032432
+  external_ids: {bphc: BPS-H80-032432}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/ashtabula/signature-health-ashtabula-health-center
   name: Signature Health Ashtabula Health Center
   categories:
   - community-health-center
-  address:
-    street: 4726 Main Ave
-    city: Ashtabula
-    state: oh
-    zip: '44004'
+  cost: sliding-scale
+  address: {street: 4726 Main Ave, city: Ashtabula, state: oh, zip: '44004'}
   place: '3902638'
-  geo:
-    lat: 41.86403
-    lng: -80.78236
+  geo: {lat: 41.86403, lng: -80.78236}
   phone: 440-992-8552
-  external_ids:
-    bphc: BPS-H80-019491
+  external_ids: {bphc: BPS-H80-019491}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/ashtabula/signature-health-inc
   name: Signature Health Inc
   categories:
@@ -492,6 +551,14 @@
     lng: -80.78236
   phone: 440-992-8552
   website: https://www.signaturehealth.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -501,20 +568,12 @@
   name: Signature Health Mobile Clinic
   categories:
   - community-health-center
-  address:
-    street: 4726 Main Ave
-    city: Ashtabula
-    state: oh
-    zip: '44004'
+  cost: sliding-scale
+  address: {street: 4726 Main Ave, city: Ashtabula, state: oh, zip: '44004'}
   place: '3902638'
-  geo:
-    lat: 41.86403
-    lng: -80.78236
+  geo: {lat: 41.86403, lng: -80.78236}
   phone: 440-992-8552
-  external_ids:
-    bphc: BPS-H80-037104
+  external_ids: {bphc: BPS-H80-037104}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

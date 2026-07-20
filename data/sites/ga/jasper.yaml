@@ -2,46 +2,30 @@
   name: 'Dragon Care: A Good Samaritan Health & Wellness Center'
   categories:
   - community-health-center
-  address:
-    street: 1802 Refuge Rd
-    city: Jasper
-    state: ga
-    zip: '30143'
+  cost: sliding-scale
+  address: {street: 1802 Refuge Rd, city: Jasper, state: ga, zip: '30143'}
   place: '1341932'
-  geo:
-    lat: 34.44396
-    lng: -84.42104
+  geo: {lat: 34.44396, lng: -84.42104}
   phone: 706-253-4633
   website: http://www.goodsamhwc.org/
-  external_ids:
-    bphc: BPS-H80-040289
+  external_ids: {bphc: BPS-H80-040289}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/jasper/good-samaritan-health-wellness-center
   name: Good Samaritan Health & Wellness Center
   categories:
   - community-health-center
-  address:
-    street: 175 Samaritan Dr
-    city: Jasper
-    state: ga
-    zip: '30143'
+  cost: sliding-scale
+  address: {street: 175 Samaritan Dr, city: Jasper, state: ga, zip: '30143'}
   place: '1341932'
-  geo:
-    lat: 34.45529
-    lng: -84.41279
+  geo: {lat: 34.45529, lng: -84.41279}
   phone: 706-253-4673
   website: http://www.goodsamhwc.org/
-  external_ids:
-    bphc: BPS-H80-015120
+  external_ids: {bphc: BPS-H80-015120}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/jasper/good-shepherd-recovery-house
   name: Good Shepherd Recovery House
   categories:
@@ -58,6 +42,17 @@
     lng: -84.57985
   phone: 678-459-2346
   website: https://gsrecovery.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -68,13 +63,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pickens County
-  address: {street: 250 W. Church St., city: Jasper, state: ga, zip: '30143'}
+  address:
+    street: 250 W. Church St.
+    city: Jasper
+    state: ga
+    zip: '30143'
   place: '1341932'
   phone: 706-692-6803
   website: http://www.ngcainc.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/jasper/pickens-county-high-school
   name: Pickens County High School
   categories:

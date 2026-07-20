@@ -37,6 +37,15 @@
     lng: -82.92744
   phone: 706-376-4002
   website: https://www.avitapartners.org
+  services:
+  - Outpatient
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -107,57 +116,47 @@
   name: MedLink Hartwell
   categories:
   - community-health-center
-  address:
-    street: 63 W Gibson St
-    city: Hartwell
-    state: ga
-    zip: '30643'
+  cost: sliding-scale
+  address: {street: 63 W Gibson St, city: Hartwell, state: ga, zip: '30643'}
   place: '1337144'
-  geo:
-    lat: 34.34517
-    lng: -82.93878
+  geo: {lat: 34.34517, lng: -82.93878}
   phone: 706-376-6100
   website: https://www.medlinkga.org
-  external_ids:
-    bphc: BPS-H80-002487
+  external_ids: {bphc: BPS-H80-002487}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/hartwell/medlink-hartwell-family-foot-care
   name: MedLink Hartwell Family Foot Care
   categories:
   - community-health-center
-  address:
-    street: 1087 E Franklin St
-    city: Hartwell
-    state: ga
-    zip: '30643'
+  cost: sliding-scale
+  address: {street: 1087 E Franklin St, city: Hartwell, state: ga, zip: '30643'}
   place: '1337144'
-  geo:
-    lat: 34.35494
-    lng: -82.91329
+  geo: {lat: 34.35494, lng: -82.91329}
   phone: 706-376-9973
-  external_ids:
-    bphc: BPS-H80-034727
+  external_ids: {bphc: BPS-H80-034727}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/hartwell/ninth-district-opportunity-inc
   name: Ninth District Opportunity Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Elbert, Hart Counties
-  address: {street: 1071 Elberton Hwy., city: Hartwell, state: ga, zip: '30643'}
+  address:
+    street: 1071 Elberton Hwy.
+    city: Hartwell
+    state: ga
+    zip: '30643'
   place: '1337144'
   phone: 855-636-3108
   website: https://www.ndo.org/services/heating-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/hartwell/route-1
   name: Route 1
   categories:

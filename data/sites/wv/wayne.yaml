@@ -14,6 +14,13 @@
     lng: -82.44125
   phone: 304-272-5517
   website: https://www.kvc.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +64,12 @@
     lng: -82.44138
   phone: 304-525-7851
   website: https://www.prestera.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -66,57 +79,47 @@
   name: Valley Health - Wayne
   categories:
   - community-health-center
-  address:
-    street: 42 McGinnis Dr
-    city: Wayne
-    state: wv
-    zip: '25570'
+  cost: sliding-scale
+  address: {street: 42 McGinnis Dr, city: Wayne, state: wv, zip: '25570'}
   place: '5484940'
-  geo:
-    lat: 38.25283
-    lng: -82.43137
+  geo: {lat: 38.25283, lng: -82.43137}
   phone: 304-272-5136
   website: http://valleyhealth.org/
-  external_ids:
-    bphc: BPS-H80-017935
+  external_ids: {bphc: BPS-H80-017935}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/wayne/valley-health-wayne-high-school
   name: VALLEY HEALTH - WAYNE HIGH SCHOOL
   categories:
   - community-health-center
-  address:
-    street: 100 Pioneer Rd
-    city: Wayne
-    state: wv
-    zip: '25570'
+  cost: sliding-scale
+  address: {street: 100 Pioneer Rd, city: Wayne, state: wv, zip: '25570'}
   place: '5484940'
-  geo:
-    lat: 38.24685
-    lng: -82.43438
+  geo: {lat: 38.24685, lng: -82.43438}
   phone: 304-272-5639
   website: https://www.valleyhealth.org
-  external_ids:
-    bphc: BPS-H80-002541
+  external_ids: {bphc: BPS-H80-002541}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/wayne/wayne-county-dhhr-office
   name: Wayne County DHHR Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wayne County
-  address: {street: 26452 East Lynn Road, city: Wayne, state: wv, zip: '25570'}
+  address:
+    street: 26452 East Lynn Road
+    city: Wayne
+    state: wv
+    zip: '25570'
   place: '5484940'
   phone: 304-272-6311
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wv/wayne/wayne-pre-k
   name: Wayne Pre-K
   categories:

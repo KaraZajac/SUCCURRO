@@ -60,34 +60,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Roane County
-  address: {street: '677 Ripley Road, Suite 3', city: Spencer, state: wv, zip: '25276'}
-  place: '5475820'
-  phone: 304-927-0956
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: wv/spencer/roane-county-family-health-care
-  name: ROANE COUNTY FAMILY HEALTH CARE
-  categories:
-  - community-health-center
   address:
-    street: 146 Williams Dr
+    street: 677 Ripley Road, Suite 3
     city: Spencer
     state: wv
     zip: '25276'
   place: '5475820'
-  geo:
-    lat: 38.79733
-    lng: -81.3521
-  phone: 304-927-2241
-  website: https://www.rcfhc.org
-  external_ids:
-    bphc: BPS-H80-004151
+  phone: 304-927-0956
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: wv/spencer/roane-county-family-health-care
+  name: ROANE COUNTY FAMILY HEALTH CARE
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 146 Williams Dr, city: Spencer, state: wv, zip: '25276'}
+  place: '5475820'
+  geo: {lat: 38.79733, lng: -81.3521}
+  phone: 304-927-2241
+  website: https://www.rcfhc.org
+  external_ids: {bphc: BPS-H80-004151}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/spencer/spencer-elementary-roane-co
   name: Spencer Elementary (Roane Co)
   categories:
@@ -164,6 +162,10 @@
     lng: -81.34841
   phone: 304-927-5200 x410
   website: https://www.westbrookhealth.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -71,23 +71,15 @@
   name: ENTERPRISE CHILDREN'S CENTER AND FAMILY MEDICINE
   categories:
   - community-health-center
-  address:
-    street: 105 E Watts St
-    city: Enterprise
-    state: al
-    zip: '36330'
+  cost: sliding-scale
+  address: {street: 105 E Watts St, city: Enterprise, state: al, zip: '36330'}
   place: 0124184
-  geo:
-    lat: 31.31893
-    lng: -85.85663
+  geo: {lat: 31.31893, lng: -85.85663}
   phone: 334-393-5437
-  external_ids:
-    bphc: BPS-H80-001542
+  external_ids: {bphc: BPS-H80-001542}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/enterprise/enterprise-first-methodist-church
   name: Enterprise First Methodist Church
   categories:
@@ -396,6 +388,12 @@
     lng: -85.8682
   phone: 334-347-0212
   website: https://www.scamhc.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -406,13 +404,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Barbour, Coffee, Geneva, Henry, Houston Counties
-  address: {street: 100 George Wallace Drive, city: Enterprise, state: al, zip: '36331'}
+  address:
+    street: 100 George Wallace Drive
+    city: Enterprise
+    state: al
+    zip: '36331'
   place: 0124184
   phone: 334-347-0881
   website: http://www.southeastalabamacap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: al/enterprise/uska
   name: Uska
   categories:

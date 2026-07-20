@@ -474,24 +474,16 @@
   name: Great Lakes Bay Health Centers Bay City Central
   categories:
   - community-health-center
-  address:
-    street: 1624 Columbus Ave
-    city: Bay City
-    state: mi
-    zip: '48708'
+  cost: sliding-scale
+  address: {street: 1624 Columbus Ave, city: Bay City, state: mi, zip: '48708'}
   place: '2606020'
-  geo:
-    lat: 43.58843
-    lng: -83.874
+  geo: {lat: 43.58843, lng: -83.874}
   phone: 989-893-9541
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-038231
+  external_ids: {bphc: BPS-H80-038231}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bay-city/great-lakes-bay-health-centers-bay-city-south
   name: Great Lakes Bay Health Centers Bay City South
   categories:
@@ -504,6 +496,22 @@
   place: '2606020'
   phone: 989-922-5700
   website: https://www.greatlakesbayhealthcenters.org/
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -513,89 +521,57 @@
   name: Great Lakes Bay Health Centers Bay City South
   categories:
   - community-health-center
-  address:
-    street: 690 S Trumbull St
-    city: Bay City
-    state: mi
-    zip: '48708'
+  cost: sliding-scale
+  address: {street: 690 S Trumbull St, city: Bay City, state: mi, zip: '48708'}
   place: '2606020'
-  geo:
-    lat: 43.58383
-    lng: -83.86763
+  geo: {lat: 43.58383, lng: -83.86763}
   phone: 989-922-4900
-  external_ids:
-    bphc: BPS-H80-029716
+  external_ids: {bphc: BPS-H80-029716}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bay-city/great-lakes-bay-health-centers-bayside
   name: Great Lakes Bay Health Centers Bayside
   categories:
   - community-health-center
-  address:
-    street: 3884 Monitor Rd
-    city: Bay City
-    state: mi
-    zip: '48706'
+  cost: sliding-scale
+  address: {street: 3884 Monitor Rd, city: Bay City, state: mi, zip: '48706'}
   place: '2606020'
-  geo:
-    lat: 43.62732
-    lng: -83.94817
+  geo: {lat: 43.62732, lng: -83.94817}
   phone: 989-671-2000
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-003339
+  external_ids: {bphc: BPS-H80-003339}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bay-city/great-lakes-bay-health-centers-washington-elemen
   name: Great Lakes Bay Health Centers  Washington Elementary
   categories:
   - community-health-center
-  address:
-    street: 1821 Mckinley St RM 214
-    city: Bay City
-    state: mi
-    zip: '48708'
+  cost: sliding-scale
+  address: {street: 1821 Mckinley St RM 214, city: Bay City, state: mi, zip: '48708'}
   place: '2606020'
-  geo:
-    lat: 43.59367
-    lng: -83.87058
+  geo: {lat: 43.59367, lng: -83.87058}
   phone: 989-894-2744
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-027163
+  external_ids: {bphc: BPS-H80-027163}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bay-city/great-lakes-bay-health-centers-women-s-care-bay
   name: Great Lakes Bay Health Centers Women's Care Bay City
   categories:
   - community-health-center
-  address:
-    street: 3175 Professional Ct
-    city: Bay City
-    state: mi
-    zip: '48706'
+  cost: sliding-scale
+  address: {street: 3175 Professional Ct, city: Bay City, state: mi, zip: '48706'}
   place: '2606020'
-  geo:
-    lat: 43.60088
-    lng: -83.92624
+  geo: {lat: 43.60088, lng: -83.92624}
   phone: 989-667-3377
   website: https://greatlakesbayhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-000281
+  external_ids: {bphc: BPS-H80-000281}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/bay-city/great-lakes-bay-vet-center
   name: Great Lakes Bay Vet Center
   categories:
@@ -699,6 +675,10 @@
     lng: -83.88885
   phone: 989-684-7977
   website: https://www.listpsych.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -724,14 +704,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bay County
-  address: {street: 114 South Washington, city: Bay City, state: mi, zip: '48708'}
+  address:
+    street: 114 South Washington
+    city: Bay City
+    state: mi
+    zip: '48708'
   place: '2606020'
   phone: 989-894-9060
   email: contactus@mmcaa.org
   website: https://www.mmcaa.org/economicsecurity.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/bay-city/recovery-pathways-llc
   name: Recovery Pathways LLC
   categories:
@@ -748,6 +734,22 @@
     lng: -83.8878
   phone: 989-928-3566
   website: https://www.recoverypathwaysllc.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -768,6 +770,22 @@
     lng: -83.88693
   phone: 989-894-2991
   website: https://www.sacredheartcenter.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -916,6 +934,9 @@
     lng: -83.93801
   phone: 989-448-8540
   website: https://www.wellspringlutheran.com/behavioral-health.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

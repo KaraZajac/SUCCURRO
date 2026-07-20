@@ -14,6 +14,10 @@
     lng: -92.0299
   phone: 319-472-5226
   website: https://unitypoint.org/abbehealth
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +38,22 @@
     lng: -92.03532
   phone: 319-390-4611
   website: https://www.asac.us
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -43,23 +63,15 @@
   name: Eastern Iowa Womens Health Center
   categories:
   - community-health-center
-  address:
-    street: 502 N 9th Ave
-    city: Vinton
-    state: ia
-    zip: '52349'
+  cost: sliding-scale
+  address: {street: 502 N 9th Ave, city: Vinton, state: ia, zip: '52349'}
   place: '1981210'
-  geo:
-    lat: 42.1736
-    lng: -92.01248
+  geo: {lat: 42.1736, lng: -92.01248}
   phone: 319-730-7300
-  external_ids:
-    bphc: BPS-H80-021511
+  external_ids: {bphc: BPS-H80-021511}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/vinton/hacap-head-start-vinton
   name: HACAP Head Start - Vinton
   categories:
@@ -84,13 +96,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Benton County
-  address: {street: 202 E. 4th St., city: Vinton, state: ia, zip: '52349'}
+  address:
+    street: 202 E. 4th St.
+    city: Vinton
+    state: ia
+    zip: '52349'
   place: '1981210'
   phone: 319-393-7811
   website: http://www.hacap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/vinton/tilford-elementary-school
   name: Tilford Elementary School
   categories:

@@ -46,24 +46,16 @@
   name: CVHS- Blue Devils Health Center
   categories:
   - community-health-center
-  address:
-    street: 400 S Mesa Dr
-    city: Hopewell
-    state: va
-    zip: '23860'
+  cost: sliding-scale
+  address: {street: 400 S Mesa Dr, city: Hopewell, state: va, zip: '23860'}
   place: '5138424'
-  geo:
-    lat: 37.28983
-    lng: -77.314
+  geo: {lat: 37.28983, lng: -77.314}
   phone: 804-972-0068
   website: https://www.cvhsinc.org
-  external_ids:
-    bphc: BPS-H80-034048
+  external_ids: {bphc: BPS-H80-034048}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/hopewell/davisville-bland-ct
   name: Davisville Bland Ct
   categories:
@@ -136,13 +128,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Hopewell City County
-  address: {street: 316 E. Cawson Street, city: Hopewell, state: va, zip: '23860'}
+  address:
+    street: 316 E. Cawson Street
+    city: Hopewell
+    state: va
+    zip: '23860'
   place: '5138424'
   phone: 804-541-2330
   website: https://www.hopewellva.gov/257/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/hopewell/hopewell-high
   name: Hopewell High
   categories:

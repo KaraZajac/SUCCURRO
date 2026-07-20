@@ -13,6 +13,17 @@
     lng: -119.77459
   phone: 775-233-5316
   website: https://www.advanceddui.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -98,6 +109,18 @@
     lng: -119.79739
   phone: 775-829-4472
   website: https://www.bhgrecovery.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -181,12 +204,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 500 E. 4th Street, city: Reno, state: nv, zip: '89512'}
+  address:
+    street: 500 E. 4th Street
+    city: Reno
+    state: nv
+    zip: '89512'
   place: '3260600'
   phone: 775-322-7073 x 450
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nv/reno/cdt-service-corporation-dba-new-dawn-treatment-c
   name: CDT Service Corporation DBA New Dawn Treatment Centers
   categories:
@@ -198,6 +227,13 @@
   place: '3260600'
   phone: 916-784-1149 x103
   website: https://www.newdawntreatmentcenters.com
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -208,34 +244,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 1950 Villanova Drive, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 1950 Villanova Drive
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
   phone: 775-321-5037
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nv/reno/change-point
   name: Change Point
   categories:
   - community-health-center
-  address:
-    street: 445 Ralston St
-    city: Reno
-    state: nv
-    zip: '89503'
+  cost: sliding-scale
+  address: {street: 445 Ralston St, city: Reno, state: nv, zip: '89503'}
   place: '3260600'
-  geo:
-    lat: 39.5293
-    lng: -119.82106
+  geo: {lat: 39.5293, lng: -119.82106}
   phone: 775-348-2882
   website: https://www.nnhopes.org
-  external_ids:
-    bphc: BPS-H80-013055
+  external_ids: {bphc: BPS-H80-013055}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/city-of-reno-housing-authority
   name: City Of Reno Housing Authority
   categories:
@@ -295,6 +329,10 @@
     lng: -119.80371
   phone: 775-329-6300
   website: https://www.chanevada.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -316,6 +354,10 @@
     lng: -119.8041
   phone: 775-329-6300
   website: https://www.chanevada.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -325,145 +367,103 @@
   name: Community Health Alliance Administration
   categories:
   - community-health-center
-  address:
-    street: 680 S Rock Blvd
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 680 S Rock Blvd, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.50236
-    lng: -119.76204
+  geo: {lat: 39.50236, lng: -119.76204}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-015271
+  external_ids: {bphc: BPS-H80-015271}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/community-health-alliance-mobile-dental-restorat
   name: Community Health Alliance Mobile  Dental Restorative Van
   categories:
   - community-health-center
-  address:
-    street: 680 S Rock Blvd
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 680 S Rock Blvd, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.50236
-    lng: -119.76204
+  geo: {lat: 39.50236, lng: -119.76204}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-012372
+  external_ids: {bphc: BPS-H80-012372}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/community-health-alliance-neil-road-health-cente
   name: Community Health Alliance Neil Road Health Center
   categories:
   - community-health-center
-  address:
-    street: 3915 Neil Rd
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 3915 Neil Rd, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.48864
-    lng: -119.78153
+  geo: {lat: 39.48864, lng: -119.78153}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-011764
+  external_ids: {bphc: BPS-H80-011764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/community-health-alliance-north-valleys-health-c
   name: Community Health Alliance North Valleys Health Center
   categories:
   - community-health-center
-  address:
-    street: 280 Vista Knoll Pkwy, Suite 107
-    city: Reno
-    state: nv
-    zip: '89506'
+  cost: sliding-scale
+  address: {street: '280 Vista Knoll Pkwy, Suite 107', city: Reno, state: nv, zip: '89506'}
   place: '3260600'
-  geo:
-    lat: 39.61701
-    lng: -119.85432
+  geo: {lat: 39.61701, lng: -119.85432}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-029961
+  external_ids: {bphc: BPS-H80-029961}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/community-health-alliance-wells-avenue-medical-d
   name: Community Health Alliance Wells Avenue Medical/Dental Center
   categories:
   - community-health-center
-  address:
-    street: 1055 S Wells Ave
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 1055 S Wells Ave, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.51572
-    lng: -119.80386
+  geo: {lat: 39.51572, lng: -119.80386}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-001906
+  external_ids: {bphc: BPS-H80-001906}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/community-services-agency
   name: Community Services Agency
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 1094 East 8th Street, city: Reno, state: nv, zip: '89512'}
+  address:
+    street: 1094 East 8th Street
+    city: Reno
+    state: nv
+    zip: '89512'
   place: '3260600'
   phone: 775-786-6023
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nv/reno/complex-care-center-ccc
   name: Complex Care Center (CCC)
   categories:
   - community-health-center
-  address:
-    street: 330 Crampton St
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 330 Crampton St, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.51611
-    lng: -119.80403
+  geo: {lat: 39.51611, lng: -119.80403}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-017205
+  external_ids: {bphc: BPS-H80-017205}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/desert-heights
   name: Desert Heights
   categories:
@@ -557,6 +557,14 @@
     lng: -119.78041
   phone: 775-853-5441
   website: https://empowermentcenternv.org/
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -589,45 +597,29 @@
   name: First Person Care Clinic Reno
   categories:
   - community-health-center
-  address:
-    street: 890 Mill St, Suite 400
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: '890 Mill St, Suite 400', city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.52546
-    lng: -119.79859
+  geo: {lat: 39.52546, lng: -119.79859}
   phone: 702-380-8118
   website: https://www.firstpersonclinic.org
-  external_ids:
-    bphc: BPS-H80-039611
+  external_ids: {bphc: BPS-H80-039611}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/hope-springs
   name: Hope Springs
   categories:
   - community-health-center
-  address:
-    street: 1920 E 4th St
-    city: Reno
-    state: nv
-    zip: '89512'
+  cost: sliding-scale
+  address: {street: 1920 E 4th St, city: Reno, state: nv, zip: '89512'}
   place: '3260600'
-  geo:
-    lat: 39.53335
-    lng: -119.78962
+  geo: {lat: 39.53335, lng: -119.78962}
   phone: 775-786-4673
-  external_ids:
-    bphc: BPS-H80-031539
+  external_ids: {bphc: BPS-H80-031539}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/ioannis-a-lougaris-veterans-administration-medic
   name: Ioannis A. Lougaris Veterans' Administration Medical Center
   categories: *id001
@@ -721,6 +713,20 @@
     lng: -119.7892
   phone: 775-636-7767
   website: https://www.lifequestnv.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -776,24 +782,16 @@
   name: Mobile Medical Unit
   categories:
   - community-health-center
-  address:
-    street: 680 S Rock Blvd
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 680 S Rock Blvd, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.50236
-    lng: -119.76204
+  geo: {lat: 39.50236, lng: -119.76204}
   phone: 775-329-6300
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-031273
+  external_ids: {bphc: BPS-H80-031273}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/neighborly-care-share
   name: Neighborly Care & Share
   categories:
@@ -824,6 +822,13 @@
     lng: -119.7602
   phone: 775-964-4898
   website: https://www.newdawntreatmentcenters.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -871,12 +876,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 10500 Stead Blvd, city: Reno, state: nv, zip: '89506'}
+  address:
+    street: 10500 Stead Blvd
+    city: Reno
+    state: nv
+    zip: '89506'
   place: '3260600'
   phone: 775-677-5437
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nv/reno/north-valleys-hs
   name: North Valleys Hs
   categories:
@@ -928,77 +939,59 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Washoe County
-  address: {street: 2750 Elementary Drive, city: Reno, state: nv, zip: '89512'}
-  place: '3260600'
-  phone: 775-353-5563
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nv/reno/northern-nevada-hiv-outpatient-program-education
-  name: Northern Nevada HIV Outpatient Program Education and Services
-  categories:
-  - community-health-center
   address:
-    street: 580 W 5th St
-    city: Reno
-    state: nv
-    zip: '89503'
-  place: '3260600'
-  geo:
-    lat: 39.52959
-    lng: -119.82196
-  phone: 775-786-4673
-  website: https://www.nnhopes.org
-  external_ids:
-    bphc: BPS-H80-013134
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: nv/reno/northern-nevada-hiv-outpatient-program-education-2
-  name: Northern Nevada HIV Outpatient Program Education and Services--4th St. Clinic
-  categories:
-  - community-health-center
-  address:
-    street: 1905 E 4th St
+    street: 2750 Elementary Drive
     city: Reno
     state: nv
     zip: '89512'
   place: '3260600'
-  geo:
-    lat: 39.53404
-    lng: -119.78983
-  phone: 775-786-4673
-  website: http://www.nnhopes.org
-  external_ids:
-    bphc: BPS-H80-038290
+  phone: 775-353-5563
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nv/reno/northern-nevada-hiv-outpatient-program-education
+  name: Northern Nevada HIV Outpatient Program Education and Services
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 580 W 5th St, city: Reno, state: nv, zip: '89503'}
+  place: '3260600'
+  geo: {lat: 39.52959, lng: -119.82196}
+  phone: 775-786-4673
+  website: https://www.nnhopes.org
+  external_ids: {bphc: BPS-H80-013134}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
+- id: nv/reno/northern-nevada-hiv-outpatient-program-education-2
+  name: Northern Nevada HIV Outpatient Program Education and Services--4th St. Clinic
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 1905 E 4th St, city: Reno, state: nv, zip: '89512'}
+  place: '3260600'
+  geo: {lat: 39.53404, lng: -119.78983}
+  phone: 775-786-4673
+  website: http://www.nnhopes.org
+  external_ids: {bphc: BPS-H80-038290}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/northern-nevada-hiv-outpatient-program-education-3
   name: Northern Nevada HIV Outpatient Program, Education and Services
   categories:
   - community-health-center
-  address:
-    street: 467 Ralston St
-    city: Reno
-    state: nv
-    zip: '89503'
+  cost: sliding-scale
+  address: {street: 467 Ralston St, city: Reno, state: nv, zip: '89503'}
   place: '3260600'
-  geo:
-    lat: 39.52977
-    lng: -119.82143
+  geo: {lat: 39.52977, lng: -119.82143}
   phone: 775-786-4673
-  external_ids:
-    bphc: BPS-H80-027081
+  external_ids: {bphc: BPS-H80-027081}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/northern-nevada-hopes
   name: Northern Nevada Hopes
   categories:
@@ -1037,6 +1030,12 @@
     lng: -119.81337
   phone: 702-486-6100
   website: https://www.dcfs.nv.gov
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1081,6 +1080,12 @@
     lng: -119.81051
   phone: 775-786-6880
   website: https://www.questreno.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1102,6 +1107,14 @@
     lng: -119.7761
   phone: 775-393-2201
   website: https://renobehavioral.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1272,6 +1285,18 @@
   place: '3260600'
   phone: 775-322-8941
   website: https://www.ridgehouse.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1308,6 +1333,21 @@
   place: '3260600'
   phone: 702-329-7125
   website: https://Sierratransformationcenter.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1463,6 +1503,9 @@
     lng: -119.81748
   phone: 775-657-9991
   website: https://www.Solidaritymentalhealthservices.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1502,6 +1545,22 @@
   place: '3260600'
   phone: 775-787-9411 x222
   website: https://www.step2reno.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1634,6 +1693,22 @@
     lng: -119.77807
   phone: 775-738-4158
   website: https://vitalityunlimited.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -1678,6 +1753,18 @@
     lng: -119.79936
   phone: 775-538-6700 x1414
   website: https://wc-health.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1687,24 +1774,16 @@
   name: Wellness on Wheels
   categories:
   - community-health-center
-  address:
-    street: 680 S Rock Blvd
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 680 S Rock Blvd, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.50236
-    lng: -119.76204
+  geo: {lat: 39.50236, lng: -119.76204}
   phone: 775-870-4343
   website: https://www.chanevada.org
-  external_ids:
-    bphc: BPS-H80-024570
+  external_ids: {bphc: BPS-H80-024570}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/willow-springs-center-willow-springs-llc
   name: Willow Springs Center Willow Springs LLC
   categories:
@@ -1721,6 +1800,17 @@
     lng: -119.7574
   phone: 775-858-3303
   website: https://willowspringscenter.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1730,24 +1820,16 @@
   name: Willow Street Health Center
   categories:
   - community-health-center
-  address:
-    street: 790 Willow St BLDG
-    city: Reno
-    state: nv
-    zip: '89502'
+  cost: sliding-scale
+  address: {street: 790 Willow St BLDG, city: Reno, state: nv, zip: '89502'}
   place: '3260600'
-  geo:
-    lat: 39.52468
-    lng: -119.80195
+  geo: {lat: 39.52468, lng: -119.80195}
   phone: 775-888-6618
   website: https://www.nvhealthcenters.org
-  external_ids:
-    bphc: BPS-H80-037106
+  external_ids: {bphc: BPS-H80-037106}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/reno/wooster-high
   name: Wooster High
   categories:

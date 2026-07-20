@@ -14,6 +14,9 @@
     lng: -77.28108
   phone: 570-724-7142
   website: https://www.concern4kids.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +38,17 @@
     lng: -77.27127
   phone: 570-948-9111
   website: https://www.crossroadscounselinginc.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -55,6 +69,14 @@
     lng: -77.28777
   phone: 570-724-5272 x228
   website: https://www.harbor-counseling.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -65,12 +87,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Tioga County
-  address: {street: 11809 Route 6, city: Wellsboro, state: pa, zip: '16901'}
+  address:
+    street: 11809 Route 6
+    city: Wellsboro
+    state: pa
+    zip: '16901'
   place: '4282160'
   phone: 570-724-4051
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/wellsboro/wellsboro
   name: Wellsboro
   categories:
@@ -94,44 +122,28 @@
   name: Wellsboro Laurel Health Center
   categories:
   - community-health-center
-  address:
-    street: 7 Water St
-    city: Wellsboro
-    state: pa
-    zip: '16901'
+  cost: sliding-scale
+  address: {street: 7 Water St, city: Wellsboro, state: pa, zip: '16901'}
   place: '4282160'
-  geo:
-    lat: 41.74983
-    lng: -77.30163
+  geo: {lat: 41.74983, lng: -77.30163}
   phone: 570-724-1010
-  external_ids:
-    bphc: BPS-H80-012619
+  external_ids: {bphc: BPS-H80-012619}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/wellsboro/wellsboro-laurel-pediatric-center
   name: Wellsboro Laurel Pediatric Center
   categories:
   - community-health-center
-  address:
-    street: 1B Main St
-    city: Wellsboro
-    state: pa
-    zip: '16901'
+  cost: sliding-scale
+  address: {street: 1B Main St, city: Wellsboro, state: pa, zip: '16901'}
   place: '4282160'
-  geo:
-    lat: 41.75051
-    lng: -77.29767
+  geo: {lat: 41.75051, lng: -77.29767}
   phone: 570-724-7100
-  external_ids:
-    bphc: BPS-H80-027690
+  external_ids: {bphc: BPS-H80-027690}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/wellsboro/wellsboro-va-clinic
   name: Wellsboro VA Clinic
   categories:

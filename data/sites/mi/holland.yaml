@@ -14,6 +14,9 @@
     lng: -86.0871
   phone: 616-396-2301
   website: https://www.arborcircle.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -146,6 +149,21 @@
     lng: -86.0853
   phone: 616-392-1873
   website: https://www.miottawa.org/cmh
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -342,6 +360,11 @@
   place: '2638640'
   phone: 855-869-6900
   website: https://www.intercare.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -351,24 +374,16 @@
   name: INTERCARE HOLLAND
   categories:
   - community-health-center
-  address:
-    street: 285 James St
-    city: Holland
-    state: mi
-    zip: '49424'
+  cost: sliding-scale
+  address: {street: 285 James St, city: Holland, state: mi, zip: '49424'}
   place: '2638640'
-  geo:
-    lat: 42.81255
-    lng: -86.11987
+  geo: {lat: 42.81255, lng: -86.11987}
   phone: 855-869-6900
   website: https://www.intercare.org
-  external_ids:
-    bphc: BPS-H80-001227
+  external_ids: {bphc: BPS-H80-001227}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/holland/jefferson-700209965
   name: Jefferson - 700209965
   categories:
@@ -419,23 +434,15 @@
   name: Lakeside Clubhouse
   categories:
   - community-health-center
-  address:
-    street: 490 Century Ln
-    city: Holland
-    state: mi
-    zip: '49423'
+  cost: sliding-scale
+  address: {street: 490 Century Ln, city: Holland, state: mi, zip: '49423'}
   place: '2638640'
-  geo:
-    lat: 42.77956
-    lng: -86.08707
+  geo: {lat: 42.77956, lng: -86.08707}
   phone: 616-965-8380
-  external_ids:
-    bphc: BPS-H80-027242
+  external_ids: {bphc: BPS-H80-027242}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/holland/los-lagos-bilingual-academy-700702732
   name: Los Lagos Bilingual Academy - 700702732
   categories:
@@ -506,14 +513,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ottawa County
-  address: {street: '12185 James St., Ste. 200', city: Holland, state: mi, zip: '49424'}
+  address:
+    street: 12185 James St., Ste. 200
+    city: Holland
+    state: mi
+    zip: '49424'
   place: '2638640'
   phone: 616-393-4433
   email: info.occaa@miottawa.org
   website: http://www.miottawa.org/Community/CAA/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/holland/overisel-christian-reformed-church-micro-pantry
   name: Overisel Christian Reformed Church Micro Pantry
   categories:
@@ -567,6 +580,15 @@
     lng: -86.1779
   phone: 616-820-3780
   website: https://www.pinerest.org/holland
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -588,6 +610,11 @@
     lng: -86.11581
   phone: 616-820-3780
   website: https://www.pinerest.org/holland
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -655,6 +682,16 @@
     lng: -86.08554
   phone: 616-396-5284
   website: https://www.reachforrecovery.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -671,6 +708,14 @@
   place: '2638640'
   phone: 616-396-5284 x18
   website: https://www.reachforrecovery.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -687,6 +732,15 @@
   place: '2638640'
   phone: 616-355-7095
   website: https://www.reachforrecovery.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Pregnant/postpartum women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -750,6 +804,22 @@
     lng: -86.09004
   phone: 888-529-2969
   website: https://www.samaritas.org
+  services:
+  - Outpatient
+  - Outpatient detoxification
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -14,6 +14,22 @@
     lng: -94.82682
   phone: 580-298-2830
   website: https://bh-oklahoma.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -35,6 +51,15 @@
     lng: -94.79428
   phone: 580-286-6639
   website: https://oklahoma.gov/odmhsas.html
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -106,13 +131,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving McCurtain County
-  address: {street: 1300 S.E. Adams, city: Idabel, state: ok, zip: '74745'}
+  address:
+    street: 1300 S.E. Adams
+    city: Idabel
+    state: ok
+    zip: '74745'
   place: '4036750'
   phone: 580-208-3400
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/idabel/idabel-community-center-noncongregate-n72
   name: Idabel Community Center Noncongregate(N72)
   categories:
@@ -243,24 +274,16 @@
   name: Kiamichi Family Medical Center - Idabel
   categories:
   - community-health-center
-  address:
-    street: 403 S Indian Rd
-    city: Idabel
-    state: ok
-    zip: '74745'
+  cost: sliding-scale
+  address: {street: 403 S Indian Rd, city: Idabel, state: ok, zip: '74745'}
   place: '4036750'
-  geo:
-    lat: 33.89206
-    lng: -94.7925
+  geo: {lat: 33.89206, lng: -94.7925}
   phone: 580-286-6688
   website: https://www.kiamichimed.org
-  external_ids:
-    bphc: BPS-H80-018325
+  external_ids: {bphc: BPS-H80-018325}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/idabel/mccurtain-county-community-based-outpatient-clin
   name: McCurtain County Community Based Outpatient Clinic
   categories:
@@ -276,6 +299,14 @@
     lng: -94.81701
   phone: 580-920-7200
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/mccurtain-county-va-clinic/
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

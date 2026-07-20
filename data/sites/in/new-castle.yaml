@@ -14,6 +14,9 @@
     lng: -85.38591
   phone: 877-467-3123
   website: https://centerstone.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -34,6 +37,11 @@
     lng: -85.36625
   phone: 888-858-1723
   website: https://www.joingroups.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -44,36 +52,34 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Henry County
-  address: {street: 615 State Road 38 W. (P. O. Box 449), city: New Castle, state: in, zip: '47362'}
+  address:
+    street: 615 State Road 38 W. (P. O. Box 449)
+    city: New Castle
+    state: in
+    zip: '47362'
   place: '1852740'
   phone: 765-529-4403
   email: icap@icapcaa.org
   website: https://www.icapcaa.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: in/new-castle/meridian-health-services-corp
   name: Meridian Health Services Corp
   categories:
   - community-health-center
-  address:
-    street: 930 N 14th St
-    city: New Castle
-    state: in
-    zip: '47362'
+  cost: sliding-scale
+  address: {street: 930 N 14th St, city: New Castle, state: in, zip: '47362'}
   place: '1852740'
-  geo:
-    lat: 39.94034
-    lng: -85.36648
+  geo: {lat: 39.94034, lng: -85.36648}
   phone: 765-599-2754
   website: https://www.meridianhs.org
-  external_ids:
-    bphc: BPS-H80-015729
+  external_ids: {bphc: BPS-H80-015729}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/new-castle/nc-new-castle-library
   name: Nc New Castle Library
   categories:

@@ -3,34 +3,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Edgecombe County
-  address: {street: 122 E. St. James Street (P. O. Box 370), city: Tarboro, state: nc, zip: '27886'}
-  place: '3766700'
-  phone: 252-641-7611
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: nc/tarboro/freedom-hill-community-health-center
-  name: Freedom Hill Community Health Center
-  categories:
-  - community-health-center
   address:
-    street: 162 NC Highway 33 E
+    street: 122 E. St. James Street (P. O. Box 370)
     city: Tarboro
     state: nc
     zip: '27886'
   place: '3766700'
-  geo:
-    lat: 35.87515
-    lng: -77.52411
-  phone: 252-641-0514
-  website: https://www.cfhcnc.org
-  external_ids:
-    bphc: BPS-H80-004227
+  phone: 252-641-7611
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: nc/tarboro/freedom-hill-community-health-center
+  name: Freedom Hill Community Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 162 NC Highway 33 E, city: Tarboro, state: nc, zip: '27886'}
+  place: '3766700'
+  geo: {lat: 35.87515, lng: -77.52411}
+  phone: 252-641-0514
+  website: https://www.cfhcnc.org
+  external_ids: {bphc: BPS-H80-004227}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/tarboro/ncm-pender-square
   name: Ncm Pender Square
   categories:
@@ -135,6 +133,19 @@
     lng: -77.54154
   phone: 252-641-4522
   website: https://www.pgicinc.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -201,6 +212,14 @@
     lng: -77.54434
   phone: 252-397-8603
   website: https://recoveryjourneyservices.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

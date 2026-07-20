@@ -23,34 +23,31 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Latimer County
-  address: {city: Wilburton, state: ok, zip: '74578'}
+  address:
+    city: Wilburton
+    state: ok
+    zip: '74578'
   place: '4081000'
   phone: 405-522-5050
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/wilburton/hwc-adventure-head-start-early-head-start-wilbur
   name: HWC Adventure Head Start/Early Head Start  -  Wilburton
   categories:
   - community-health-center
-  address:
-    street: 607 SW 8th St
-    city: Wilburton
-    state: ok
-    zip: '74578'
+  cost: sliding-scale
+  address: {street: 607 SW 8th St, city: Wilburton, state: ok, zip: '74578'}
   place: '4081000'
-  geo:
-    lat: 34.91395
-    lng: -95.3213
+  geo: {lat: 34.91395, lng: -95.3213}
   phone: 918-967-0748
-  external_ids:
-    bphc: BPS-H80-035973
+  external_ids: {bphc: BPS-H80-035973}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/wilburton/hwc-adventure-head-start-wilburton
   name: HWC Adventure Head Start - Wilburton
   categories:
@@ -73,24 +70,16 @@
   name: HWC - Wilburton
   categories:
   - community-health-center
-  address:
-    street: 802 Highway 2 N
-    city: Wilburton
-    state: ok
-    zip: '74578'
+  cost: sliding-scale
+  address: {street: 802 Highway 2 N, city: Wilburton, state: ok, zip: '74578'}
   place: '4081000'
-  geo:
-    lat: 34.91981
-    lng: -95.31996
+  geo: {lat: 34.91981, lng: -95.31996}
   phone: 918-465-0005
   website: https://www.thwcinc.com
-  external_ids:
-    bphc: BPS-H80-014587
+  external_ids: {bphc: BPS-H80-014587}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/wilburton/stigler-health-and-wellness-center
   name: Stigler  Health and Wellness Center
   categories:
@@ -106,6 +95,22 @@
     lng: -95.32018
   phone: 918-465-0005
   website: https://www.healthwellnessok.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -127,6 +132,9 @@
     lng: -95.32018
   phone: 918-465-0005
   website: https://www.healthwellnessok.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

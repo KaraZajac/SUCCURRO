@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bolivar County
-  address: {street: '810 East Sunflower Road, Suite 120', city: Cleveland, state: ms, zip: '38732'}
+  address:
+    street: 810 East Sunflower Road, Suite 120
+    city: Cleveland
+    state: ms
+    zip: '38732'
   place: '2814260'
   phone: 662-846-1491
   website: https://bccaainc.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/cleveland/bolivar-medical-center
   name: Bolivar Medical Center
   categories:
@@ -25,6 +31,21 @@
     lng: -90.70845
   phone: 662-846-0061
   website: https://www.bolivarmedical.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -154,23 +175,15 @@
   name: Delta Health Center Searcy Medical Center Satellite
   categories:
   - community-health-center
-  address:
-    street: 548 Rosemary Rd
-    city: Cleveland
-    state: ms
-    zip: '38732'
+  cost: sliding-scale
+  address: {street: 548 Rosemary Rd, city: Cleveland, state: ms, zip: '38732'}
   place: '2814260'
-  geo:
-    lat: 33.7622
-    lng: -90.72778
+  geo: {lat: 33.7622, lng: -90.72778}
   phone: 662-843-7183
-  external_ids:
-    bphc: BPS-H80-011049
+  external_ids: {bphc: BPS-H80-011049}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/cleveland/dsu
   name: DSU
   categories:

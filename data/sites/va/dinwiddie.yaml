@@ -14,6 +14,22 @@
     lng: -77.58508
   phone: 804-469-3746
   website: https://www.grcsb.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,13 +40,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dinwiddie County
-  address: {street: '14012 Boydton Plank Road, (P. O. Box 107)', city: Dinwiddie, state: va, zip: '23841'}
+  address:
+    street: 14012 Boydton Plank Road, (P. O. Box 107)
+    city: Dinwiddie
+    state: va
+    zip: '23841'
   place: '5122576'
   phone: 804-469-4524
   website: http://www.dinwiddieva.us/609/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/dinwiddie/dinwiddie-elem
   name: Dinwiddie Elem
   categories:
@@ -98,23 +120,15 @@
   name: Dinwiddie Medical Center and Counseling Center
   categories:
   - community-health-center
-  address:
-    street: 13855 Courthouse Rd
-    city: Dinwiddie
-    state: va
-    zip: '23841'
+  cost: sliding-scale
+  address: {street: 13855 Courthouse Rd, city: Dinwiddie, state: va, zip: '23841'}
   place: '5122576'
-  geo:
-    lat: 37.08206
-    lng: -77.58348
+  geo: {lat: 37.08206, lng: -77.58348}
   phone: 804-469-3731
-  external_ids:
-    bphc: BPS-H80-010557
+  external_ids: {bphc: BPS-H80-010557}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/dinwiddie/little-free-pantry
   name: Little Free Pantry
   categories:

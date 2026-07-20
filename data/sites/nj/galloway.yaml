@@ -46,23 +46,15 @@
   name: AtlantiCare Health Services-FQHC Galloway
   categories:
   - community-health-center
-  address:
-    street: 54 W Jimmie Leeds Rd STE 8
-    city: Galloway
-    state: nj
-    zip: 08205
-  geo:
-    lat: 39.4762
-    lng: -74.53922
+  cost: sliding-scale
+  address: {street: 54 W Jimmie Leeds Rd STE 8, city: Galloway, state: nj, zip: 08205}
+  geo: {lat: 39.4762, lng: -74.53922}
   phone: 609-404-7300
   website: https://www.atlanticare.org
-  external_ids:
-    bphc: BPS-H80-021926
+  external_ids: {bphc: BPS-H80-021926}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nj/galloway/collaborations-children-academy
   name: Collaborations-Children Academy
   categories:
@@ -149,13 +141,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Atlantic County
-  address: {street: 76 W. Jimmie Leeds Road Suite 103, city: Galloway, state: nj, zip: 08205}
+  address:
+    street: 76 W. Jimmie Leeds Road Suite 103
+    city: Galloway
+    state: nj
+    zip: 08205
   phone: 609-677-6801
   email: atlantichea@oceaninc.org
   website: https://www.oceaninc.org/homeenergyassistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nj/galloway/reeds-road-elementary
   name: Reeds Road Elementary
   categories:

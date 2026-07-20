@@ -3,12 +3,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Carbon County
-  address: {street: 101 Lehigh Drive, city: Lehighton, state: pa, zip: '18235'}
+  address:
+    street: 101 Lehigh Drive
+    city: Lehighton
+    state: pa
+    zip: '18235'
   place: '4242472'
   phone: 610-577-9073
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/lehighton/carbon-county-housing-authority
   name: Carbon County Housing Authority
   categories:
@@ -45,6 +51,14 @@
     lng: -75.6048
   phone: 610-769-4111 x1254
   website: https://www.cliu.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -65,6 +79,11 @@
     lng: -75.71811
   phone: 570-421-1960
   website: https://www.cmpda.cog.pa.us
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -86,6 +105,22 @@
     lng: -75.72498
   phone: 610-392-7777
   website: https://www.pathwaysofpa.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -125,6 +160,14 @@
     lng: -75.72612
   phone: 484-658-0832
   website: https://www.slhn.org/psychiatry-and-behavioral-health
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -134,21 +177,13 @@
   name: Star Community Health Dental Van - Lehighton
   categories:
   - community-health-center
-  address:
-    street: 211 N 12th St
-    city: Lehighton
-    state: pa
-    zip: '18235'
+  cost: sliding-scale
+  address: {street: 211 N 12th St, city: Lehighton, state: pa, zip: '18235'}
   place: '4242472'
-  geo:
-    lat: 40.83308
-    lng: -75.7259
+  geo: {lat: 40.83308, lng: -75.7259}
   phone: 610-377-7635
   website: https://starcommunityhealth.org
-  external_ids:
-    bphc: BPS-LAL-030248
+  external_ids: {bphc: BPS-LAL-030248}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

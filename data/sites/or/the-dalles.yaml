@@ -140,6 +140,18 @@
     lng: -121.20653
   phone: 541-296-5452
   website: https://www.mccfl.org
+  services:
+  - Outpatient
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -150,14 +162,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Sherman, Wasco Counties
-  address: {street: 2505 W 7th Street, city: The Dalles, state: or, zip: '97058'}
+  address:
+    street: 2505 W 7th Street
+    city: The Dalles
+    state: or
+    zip: '97058'
   place: '4172950'
   phone: 541-298-5131
   email: info@mccac.com
   website: https://www.mccac.com/energy-and-utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: or/the-dalles/mid-columbia-housing-authority
   name: Mid-Columbia Housing Authority
   categories:
@@ -182,46 +200,30 @@
   name: One Community Health -- The Dalles
   categories:
   - community-health-center
-  address:
-    street: 1040 Webber St
-    city: The Dalles
-    state: or
-    zip: '97058'
+  cost: sliding-scale
+  address: {street: 1040 Webber St, city: The Dalles, state: or, zip: '97058'}
   place: '4172950'
-  geo:
-    lat: 45.60602
-    lng: -121.20694
+  geo: {lat: 45.60602, lng: -121.20694}
   phone: 541-296-4610
   website: https://www.onecommunityhealth.org
-  external_ids:
-    bphc: BPS-H80-010144
+  external_ids: {bphc: BPS-H80-010144}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/the-dalles/one-community-health-the-dalles-express-clinic
   name: One Community Health -- The Dalles Express Clinic
   categories:
   - community-health-center
-  address:
-    street: 1010 Webber St
-    city: The Dalles
-    state: or
-    zip: '97058'
+  cost: sliding-scale
+  address: {street: 1010 Webber St, city: The Dalles, state: or, zip: '97058'}
   place: '4172950'
-  geo:
-    lat: 45.60752
-    lng: -121.20546
+  geo: {lat: 45.60752, lng: -121.20546}
   phone: 541-386-6380
   website: https://www.onecommunityhealth.org
-  external_ids:
-    bphc: BPS-H80-036939
+  external_ids: {bphc: BPS-H80-036939}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/the-dalles/petersburg
   name: Petersburg
   categories:

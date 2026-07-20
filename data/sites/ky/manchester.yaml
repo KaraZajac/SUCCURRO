@@ -35,6 +35,16 @@
     lng: -83.77658
   phone: 606-598-5172
   website: https://www.crbhky.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Persons experiencing first-episode psychosis
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -45,13 +55,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Clay County
-  address: {street: 1535 Shamrock Road, city: Manchester, state: ky, zip: '40962'}
+  address:
+    street: 1535 Shamrock Road
+    city: Manchester
+    state: ky
+    zip: '40962'
   place: '2149656'
   phone: 606-598-5127
   website: http://danielboonecaa.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ky/manchester/dollar-general-goose-rock
   name: Dollar General Goose Rock
   categories:
@@ -119,23 +135,15 @@
   name: Grace Health Manchester
   categories:
   - community-health-center
-  address:
-    street: 85 Highway 80
-    city: Manchester
-    state: ky
-    zip: '40962'
+  cost: sliding-scale
+  address: {street: 85 Highway 80, city: Manchester, state: ky, zip: '40962'}
   place: '2149656'
-  geo:
-    lat: 37.13749
-    lng: -83.76813
+  geo: {lat: 37.13749, lng: -83.76813}
   phone: 606-596-1410
-  external_ids:
-    bphc: BPS-H80-027205
+  external_ids: {bphc: BPS-H80-027205}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/manchester/greenbrier-presbyterian-church
   name: Greenbrier Presbyterian Church
   categories:

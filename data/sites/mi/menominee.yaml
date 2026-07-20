@@ -67,24 +67,16 @@
   name: Menominee Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 1110 10th Ave
-    city: Menominee
-    state: mi
-    zip: '49858'
+  cost: sliding-scale
+  address: {street: 1110 10th Ave, city: Menominee, state: mi, zip: '49858'}
   place: '2653020'
-  geo:
-    lat: 45.10813
-    lng: -87.61664
+  geo: {lat: 45.10813, lng: -87.61664}
   phone: 906-290-5000
   website: https://www.uglhealth.org
-  external_ids:
-    bphc: BPS-H80-013599
+  external_ids: {bphc: BPS-H80-013599}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/menominee/menominee-housing-commission
   name: Menominee Housing Commission
   categories:
@@ -172,6 +164,9 @@
     lng: -88.07719
   phone: 906-863-7841
   website: https://www.nbhs.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

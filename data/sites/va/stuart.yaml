@@ -2,36 +2,34 @@
   name: Connect Health- Patrick
   categories:
   - community-health-center
-  address:
-    street: 22121 Jeb Stuart Hwy
-    city: Stuart
-    state: va
-    zip: '24171'
+  cost: sliding-scale
+  address: {street: 22121 Jeb Stuart Hwy, city: Stuart, state: va, zip: '24171'}
   place: '5176256'
-  geo:
-    lat: 36.6329
-    lng: -80.19784
+  geo: {lat: 36.6329, lng: -80.19784}
   phone: 276-638-0787
   website: https://www.connecthealthva.org
-  external_ids:
-    bphc: BPS-H80-038540
+  external_ids: {bphc: BPS-H80-038540}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/stuart/patrick-county-department-of-social-services
   name: Patrick County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Patrick County
-  address: {street: '106 Rucker St., Suite 128', city: Stuart, state: va, zip: '24171'}
+  address:
+    street: 106 Rucker St., Suite 128
+    city: Stuart
+    state: va
+    zip: '24171'
   place: '5176256'
   phone: 276-694-3328
   website: https://www.co.patrick.va.us/213/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/stuart/patrick-county-high
   name: Patrick County High
   categories:
@@ -71,6 +69,14 @@
     lng: -80.19377
   phone: 276-694-4361 x104
   website: https://www.piedmontcsb.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -48,13 +48,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Montcalm County
-  address: {street: 906 Oak Drive, city: Greenville, state: mi, zip: '48838'}
+  address:
+    street: 906 Oak Drive
+    city: Greenville
+    state: mi
+    zip: '48838'
   place: '2635100'
   phone: 616-754-9315
   website: https://8cap.org/montcalm-county-cs/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/greenville/greenville-housing-commission
   name: Greenville Housing Commission
   categories:
@@ -124,24 +130,16 @@
   name: Montcalm Area Health Center
   categories:
   - community-health-center
-  address:
-    street: 1003 N Lafayette St
-    city: Greenville
-    state: mi
-    zip: '48838'
+  cost: sliding-scale
+  address: {street: 1003 N Lafayette St, city: Greenville, state: mi, zip: '48838'}
   place: '2635100'
-  geo:
-    lat: 43.19061
-    lng: -85.2547
+  geo: {lat: 43.19061, lng: -85.2547}
   phone: 616-225-9650
   website: https://www.cherryhealth.org
-  external_ids:
-    bphc: BPS-H80-012165
+  external_ids: {bphc: BPS-H80-012165}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/greenville/samaritas-greenville
   name: Samaritas Greenville
   categories:
@@ -158,6 +156,13 @@
     lng: -85.25323
   phone: 888-529-2969
   website: https://www.samaritas.org
+  services:
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

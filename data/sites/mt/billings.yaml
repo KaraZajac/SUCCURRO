@@ -2,24 +2,16 @@
   name: Ag Worker Health & Services
   categories:
   - community-health-center
-  address:
-    street: 3318 3rd Ave N, Suite 200
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: '3318 3rd Ave N, Suite 200', city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.78036
-    lng: -108.5143
+  geo: {lat: 45.78036, lng: -108.5143}
   phone: 406-248-3149
   website: https://www.agworker.org
-  external_ids:
-    bphc: BPS-H80-039100
+  external_ids: {bphc: BPS-H80-039100}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/aware-center-for-early-childhood-services-billin
   name: AWARE Center for Early Childhood Services - Billings
   categories:
@@ -55,6 +47,17 @@
     lng: -108.57775
   phone: 406-656-0928
   website: https://www.aware-inc.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -128,6 +131,14 @@
   place: '3006550'
   phone: 406-860-4499
   website: https://www.billingsaddiction.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -149,6 +160,22 @@
     lng: -108.51474
   phone: 406-657-4000
   website: https://billingsclinic.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -217,23 +244,15 @@
   name: Billings Senior High School - School Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 425 Grand Ave
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 425 Grand Ave, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.78449
-    lng: -108.5268
+  geo: {lat: 45.78449, lng: -108.5268}
   phone: 406-247-3200
-  external_ids:
-    bphc: BPS-H80-039361
+  external_ids: {bphc: BPS-H80-039361}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/billings-urban-indian-health-and-wellness-center
   name: Billings Urban Indian Health and Wellness Center
   categories:
@@ -250,6 +269,22 @@
     lng: -108.54534
   phone: 406-534-4558
   website: https://www.billingsurbanindianhealth.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -377,6 +412,18 @@
     lng: -108.56818
   phone: 406-969-4812
   website: https://www.communitymedicalservices.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -397,6 +444,15 @@
     lng: -108.49954
   phone: 406-256-3501
   website: https://www.altinc.net
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -407,14 +463,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Big Horn, Carbon, Stillwater, Sweet Grass, Yellowstone Counties
-  address: {street: 3116 1st Ave North, city: Billings, state: mt, zip: '59101'}
+  address:
+    street: 3116 1st Ave North
+    city: Billings
+    state: mt
+    zip: '59101'
   place: '3006550'
   phone: 406-247-4778
   email: info@hrdc7.org
   website: https://hrdc7.org/how-we-help/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mt/billings/dr-joseph-medicine-crow-va-clinic
   name: Dr. Joseph Medicine Crow VA Clinic
   categories: *id002
@@ -547,24 +609,16 @@
   name: Health Care for the Homeless - MRM
   categories:
   - community-health-center
-  address:
-    street: 21 S 29th St
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 21 S 29th St, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.77927
-    lng: -108.50452
+  geo: {lat: 45.77927, lng: -108.50452}
   phone: 406-247-3200
   website: https://riverstonehealth.org/
-  external_ids:
-    bphc: BPS-H80-041465
+  external_ids: {bphc: BPS-H80-041465}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/homefront
   name: Homefront
   categories:
@@ -589,23 +643,15 @@
   name: Lil Anderson Center
   categories:
   - community-health-center
-  address:
-    street: 2626 1st Ave S
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 2626 1st Ave S, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.78049
-    lng: -108.50095
+  geo: {lat: 45.78049, lng: -108.50095}
   phone: 406-247-3200
-  external_ids:
-    bphc: BPS-H80-012487
+  external_ids: {bphc: BPS-H80-012487}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/lockwood-primary
   name: Lockwood Primary
   categories:
@@ -632,45 +678,29 @@
   name: Medicine Crow Middle School - School-based Health Center
   categories:
   - community-health-center
-  address:
-    street: 900 Barrett Rd
-    city: Billings
-    state: mt
-    zip: '59105'
+  cost: sliding-scale
+  address: {street: 900 Barrett Rd, city: Billings, state: mt, zip: '59105'}
   place: '3006550'
-  geo:
-    lat: 45.83402
-    lng: -108.46396
+  geo: {lat: 45.83402, lng: -108.46396}
   phone: 406-247-3210
-  external_ids:
-    bphc: BPS-H80-021303
+  external_ids: {bphc: BPS-H80-021303}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/mobile-dental-unit
   name: Mobile Dental Unit
   categories:
   - community-health-center
-  address:
-    street: 3450 Duck Creek Road
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 3450 Duck Creek Road, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.70652
-    lng: -108.63797
+  geo: {lat: 45.70652, lng: -108.63797}
   phone: 800-813-4492
   website: https://www.agworker.org
-  external_ids:
-    bphc: BPS-H80-008773
+  external_ids: {bphc: BPS-H80-008773}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/montana-va-mobile-medical-unit
   name: Montana VA Mobile Medical Unit
   categories: *id002
@@ -714,6 +744,22 @@
   place: '3006550'
   phone: 406-294-2330
   website: https://newdayranch.org/
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -731,6 +777,15 @@
   place: '3006550'
   phone: 406-254-2340
   website: https://newdayranchmt.org
+  services:
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -749,6 +804,21 @@
   place: '3006550'
   phone: 406-256-3224
   website: https://newdayranchmt.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -769,6 +839,13 @@
     lng: -108.57569
   phone: 406-294-9606
   website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -822,23 +899,15 @@
   name: Orchard School-Based Health Center
   categories:
   - community-health-center
-  address:
-    street: 120 Jackson St
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 120 Jackson St, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.76786
-    lng: -108.51561
+  geo: {lat: 45.76786, lng: -108.51561}
   phone: 406-247-3200
-  external_ids:
-    bphc: BPS-H80-014532
+  external_ids: {bphc: BPS-H80-014532}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/pioneer-park
   name: Pioneer Park
   categories:
@@ -899,6 +968,22 @@
     lng: -108.51895
   phone: 406-248-3175
   website: https://www.rimrock.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  - Young adults
+  - Adult women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -908,45 +993,29 @@
   name: RiverStone Health Clinic
   categories:
   - community-health-center
-  address:
-    street: 123 S 27th St
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 123 S 27th St, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.77992
-    lng: -108.50123
+  geo: {lat: 45.77992, lng: -108.50123}
   phone: 406-247-3350
   website: https://www.riverstonehealth.org
-  external_ids:
-    bphc: BPS-H80-001427
+  external_ids: {bphc: BPS-H80-001427}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/riverstone-health-clinic-mobile-unit-1
   name: RiverStone Health Clinic - Mobile Unit 1
   categories:
   - community-health-center
-  address:
-    street: 123 S 27th St
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: 123 S 27th St, city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.77992
-    lng: -108.50123
+  geo: {lat: 45.77992, lng: -108.50123}
   phone: 406-247-3200
-  external_ids:
-    bphc: BPS-H80-039991
+  external_ids: {bphc: BPS-H80-039991}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/sandstone-school
   name: Sandstone School
   categories:
@@ -985,6 +1054,13 @@
     lng: -108.51947
   phone: 406-252-5658
   website: https://www.mhcbillings.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1013,24 +1089,16 @@
   name: '"transport" vehicle'
   categories:
   - community-health-center
-  address:
-    street: 3318 3rd Ave N, Suite 200
-    city: Billings
-    state: mt
-    zip: '59101'
+  cost: sliding-scale
+  address: {street: '3318 3rd Ave N, Suite 200', city: Billings, state: mt, zip: '59101'}
   place: '3006550'
-  geo:
-    lat: 45.78036
-    lng: -108.5143
+  geo: {lat: 45.78036, lng: -108.5143}
   phone: 800-813-4492
   website: https://www.agworker.org
-  external_ids:
-    bphc: BPS-H80-031578
+  external_ids: {bphc: BPS-H80-031578}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/billings/veteran-s-park
   name: Veteran'S Park
   categories:
@@ -1069,6 +1137,13 @@
     lng: -108.7
   phone: 406-655-2100
   website: https://www.ybgr.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

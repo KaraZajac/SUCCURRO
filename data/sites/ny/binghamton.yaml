@@ -61,23 +61,15 @@
   name: BHA Health Center
   categories:
   - community-health-center
-  address:
-    street: 35 Felters Rd
-    city: Binghamton
-    state: ny
-    zip: '13903'
+  cost: sliding-scale
+  address: {street: 35 Felters Rd, city: Binghamton, state: ny, zip: '13903'}
   place: '3606607'
-  geo:
-    lat: 42.09793
-    lng: -75.87448
+  geo: {lat: 42.09793, lng: -75.87448}
   phone: 607-201-1200
-  external_ids:
-    bphc: BPS-H80-017438
+  external_ids: {bphc: BPS-H80-017438}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/binghamton/binghamton-housing-auth-youth-ctr
   name: Binghamton Housing Auth Youth Ctr
   categories:
@@ -387,6 +379,10 @@
     lng: -75.86559
   phone: 607-797-0680
   website: https://www.omh.ny.gov
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -396,34 +392,32 @@
   name: Cornerstone Family Healthcare at Binghamton, Chenango Street
   categories:
   - community-health-center
-  address:
-    street: 275 Chenango St
-    city: Binghamton
-    state: ny
-    zip: '13901'
+  cost: sliding-scale
+  address: {street: 275 Chenango St, city: Binghamton, state: ny, zip: '13901'}
   place: '3606607'
-  geo:
-    lat: 42.10679
-    lng: -75.90501
+  geo: {lat: 42.10679, lng: -75.90501}
   phone: 607-201-1200
-  external_ids:
-    bphc: BPS-H80-032415
+  external_ids: {bphc: BPS-H80-032415}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/binghamton/county-office-for-the-aging
   name: County Office for the Aging
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Broome County
-  address: {street: 36-42 Main Street, city: Binghamton, state: ny, zip: '13905'}
+  address:
+    street: 36-42 Main Street
+    city: Binghamton
+    state: ny
+    zip: '13905'
   place: '3606607'
   phone: 607-778-1100
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/binghamton/east-middle-school
   name: East Middle School
   categories:
@@ -461,6 +455,10 @@
     lng: -75.90046
   phone: 607-722-8987
   website: https://www.frsinc.org
+  services:
+  - Residential/24-hour residential
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -545,6 +543,16 @@
     lng: -75.87
   phone: 607-773-4625
   website: https://
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -566,6 +574,10 @@
     lng: -75.86993
   phone: 607-724-1391
   website: https://omh.ny.gov/omhweb/facilities/bipc/
+  services:
+  - Outpatient
+  - Persons experiencing first-episode psychosis
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -587,6 +599,21 @@
     lng: -75.86559
   phone: 607-724-1391
   website: https://omh.ny.gov
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -770,6 +797,22 @@
     lng: -75.90404
   phone: 607-772-9100
   website: https://www.va.gov/syracuse-health-care
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -812,6 +855,12 @@
     lng: -75.91374
   phone: 607-762-2800
   website: https://www.nyuhs.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Pregnant/postpartum women
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -832,6 +881,10 @@
     lng: -75.91448
   phone: 607-762-2200
   website: https://www.nyuhs.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -852,6 +905,19 @@
     lng: -75.91461
   phone: 607-762-3288
   website: https://www.nyuhs.org/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -873,6 +939,12 @@
     lng: -75.91375
   phone: 607-762-2340
   website: https://www.nyuhs.org/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -3,35 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lawrence County
-  address: {street: 162 Green Street, city: Monticello, state: ms, zip: '39654'}
+  address:
+    street: 162 Green Street
+    city: Monticello
+    state: ms
+    zip: '39654'
   place: '2848560'
   phone: 601-587-4370
   website: https://ajfccaa.org/community-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/monticello/family-health-care-clinic-inc-monticello
   name: Family Health Care Clinic, Inc. --MONTICELLO
   categories:
   - community-health-center
-  address:
-    street: 430 W Broad St
-    city: Monticello
-    state: ms
-    zip: '39654'
+  cost: sliding-scale
+  address: {street: 430 W Broad St, city: Monticello, state: ms, zip: '39654'}
   place: '2848560'
-  geo:
-    lat: 31.55526
-    lng: -90.11135
+  geo: {lat: 31.55526, lng: -90.11135}
   phone: 601-825-7280
   website: https://www.familyhealthcareclinic.com
-  external_ids:
-    bphc: BPS-H80-005411
+  external_ids: {bphc: BPS-H80-005411}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/monticello/pbmhr-region-xii-lawrence-county-mh-center
   name: PBMHR Region XII Lawrence County MH Center
   categories:
@@ -48,6 +46,9 @@
     lng: -90.12143
   phone: 769-266-0171
   website: https://www.pbmhr.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

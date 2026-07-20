@@ -2,24 +2,16 @@
   name: 1st Choice Healthcare Paragould
   categories:
   - community-health-center
-  address:
-    street: 1 Medical Dr
-    city: Paragould
-    state: ar
-    zip: '72450'
+  cost: sliding-scale
+  address: {street: 1 Medical Dr, city: Paragould, state: ar, zip: '72450'}
   place: 0553390
-  geo:
-    lat: 36.06074
-    lng: -90.508
+  geo: {lat: 36.06074, lng: -90.508}
   phone: 870-236-2000
   website: https://www.1stchoice-ar.org
-  external_ids:
-    bphc: BPS-H80-015648
+  external_ids: {bphc: BPS-H80-015648}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/paragould/arisa-health-inc-paragould-clinic
   name: Arisa Health Inc Paragould Clinic
   categories:
@@ -36,6 +28,12 @@
     lng: -90.53047
   phone: 870-972-4000
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -57,6 +55,13 @@
     lng: -90.49901
   phone: 870-239-2244
   website: https://www.arisahealth.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -67,14 +72,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Greene County
-  address: {street: 901 E. Lake Street, city: Paragould, state: ar, zip: '72450'}
+  address:
+    street: 901 E. Lake Street
+    city: Paragould
+    state: ar
+    zip: '72450'
   place: 0553390
   phone: 870-239-3531
   email: dtate@crdccnea.com
   website: http://www.crdcnea.com
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/paragould/greene-county-tech-elementary
   name: Greene County Tech Elementary
   categories:
@@ -137,6 +148,9 @@
     lng: -90.52323
   phone: 870-520-5014
   website: https://www.thelogancenters.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -316,6 +330,14 @@
     lng: -90.50016
   phone: 870-205-5555
   website: https://www.restoringhopeparagould.com
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

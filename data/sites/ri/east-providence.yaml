@@ -14,6 +14,10 @@
     lng: -71.34978
   phone: 401-434-4999
   website: https://www.codacinc.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -24,34 +28,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Bristol County
-  address: {street: 100 Bullocks Point Ave, city: East Providence, state: ri, zip: 02915}
+  address:
+    street: 100 Bullocks Point Ave
+    city: East Providence
+    state: ri
+    zip: 02915
   place: '4422960'
   phone: 401-437-1000 x 1153
   website: https://www.ebcap.org/programs/heating-and-energy/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ri/east-providence/east-bay-family-health-care-610-waterman-avenue
   name: East Bay Family Health Care - 610 Waterman Avenue
   categories:
   - community-health-center
-  address:
-    street: 610 Waterman Ave
-    city: East Providence
-    state: ri
-    zip: 02914
+  cost: sliding-scale
+  address: {street: 610 Waterman Ave, city: East Providence, state: ri, zip: 02914}
   place: '4422960'
-  geo:
-    lat: 41.81719
-    lng: -71.35722
+  geo: {lat: 41.81719, lng: -71.35722}
   phone: 401-246-1195
-  external_ids:
-    bphc: BPS-H80-040563
+  external_ids: {bphc: BPS-H80-040563}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ri/east-providence/east-providence-housing-authority
   name: East Providence Housing Authority
   categories:

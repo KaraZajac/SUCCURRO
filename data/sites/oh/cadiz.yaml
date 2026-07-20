@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Harrison County
-  address: {street: 122 S Main Street, city: Cadiz, state: oh, zip: '43907'}
+  address:
+    street: 122 S Main Street
+    city: Cadiz
+    state: oh
+    zip: '43907'
   place: '3910800'
   phone: 740-942-8886
   email: harrfrontdesk@harcatus.org
   website: https://www.harcatus.org/HEAP
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/cadiz/harrison-central-elementary
   name: Harrison Central Elementary
   categories:
@@ -69,6 +75,10 @@
     lng: -80.99963
   phone: 740-942-4905
   website: https://www.southeasthc.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,23 +88,15 @@
   name: Southeast, Inc. - Cadiz Health Center
   categories:
   - community-health-center
-  address:
-    street: 243 S Main St
-    city: Cadiz
-    state: oh
-    zip: '43907'
+  cost: sliding-scale
+  address: {street: 243 S Main St, city: Cadiz, state: oh, zip: '43907'}
   place: '3910800'
-  geo:
-    lat: 40.27108
-    lng: -80.99919
+  geo: {lat: 40.27108, lng: -80.99919}
   phone: 740-942-4905
-  external_ids:
-    bphc: BPS-H80-019075
+  external_ids: {bphc: BPS-H80-019075}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/cadiz/tri-county-help-center-inc
   name: Tri County Help Center Inc
   categories:
@@ -111,6 +113,12 @@
     lng: -80.99846
   phone: 740-942-1018
   website: https://www.tricountyhelp.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

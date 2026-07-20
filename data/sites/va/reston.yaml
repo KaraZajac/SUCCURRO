@@ -140,24 +140,16 @@
   name: Reston
   categories:
   - community-health-center
-  address:
-    street: 11484 Washington Plz W
-    city: Reston
-    state: va
-    zip: '20190'
+  cost: sliding-scale
+  address: {street: 11484 Washington Plz W, city: Reston, state: va, zip: '20190'}
   place: '5166672'
-  geo:
-    lat: 38.96854
-    lng: -77.34253
+  geo: {lat: 38.96854, lng: -77.34253}
   phone: 703-443-2000
   website: https://www.hwnova.org
-  external_ids:
-    bphc: BPS-H80-027780
+  external_ids: {bphc: BPS-H80-027780}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/reston/sandstone-care-reston
   name: Sandstone Care Reston
   categories:
@@ -174,6 +166,15 @@
     lng: -77.33739
   phone: 703-260-9359
   website: https://www.sandstonecare.com/locations/reston-rehab-center/
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -21,35 +21,33 @@
   name: Family Health Center, Inc.
   categories:
   - community-health-center
-  address:
-    street: 713 Lomax Ave
-    city: Waynesboro
-    state: ms
-    zip: '39367'
+  cost: sliding-scale
+  address: {street: 713 Lomax Ave, city: Waynesboro, state: ms, zip: '39367'}
   place: '2878360'
-  geo:
-    lat: 31.67729
-    lng: -88.64118
+  geo: {lat: 31.67729, lng: -88.64118}
   phone: 601-425-3033
   website: https://www.lfhc.net
-  external_ids:
-    bphc: BPS-H80-015712
+  external_ids: {bphc: BPS-H80-015712}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/waynesboro/multi-county-community-service-agency
   name: Multi-County Community Service Agency
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Wayne County
-  address: {street: 1100 Bradley Dr, city: Waynesboro, state: ms, zip: '39267'}
+  address:
+    street: 1100 Bradley Dr
+    city: Waynesboro
+    state: ms
+    zip: '39267'
   place: '2878360'
   phone: 601-735-3470
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/waynesboro/pbmhr-region-xii-healthcare-resources
   name: PBMHR Region XII Healthcare Resources
   categories:
@@ -66,6 +64,9 @@
     lng: -88.64497
   phone: 601-735-3350
   website: https://
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

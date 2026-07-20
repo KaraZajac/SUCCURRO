@@ -14,6 +14,18 @@
     lng: -106.92395
   phone: 970-252-3200
   website: https://www.centermh.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,23 +35,15 @@
   name: Axis Health System - Gunnison
   categories:
   - community-health-center
-  address:
-    street: 710 N Taylor St
-    city: Gunnison
-    state: co
-    zip: '81230'
+  cost: sliding-scale
+  address: {street: 710 N Taylor St, city: Gunnison, state: co, zip: '81230'}
   place: 0833640
-  geo:
-    lat: 38.55159
-    lng: -106.92391
+  geo: {lat: 38.55159, lng: -106.92391}
   phone: 970-252-3200
-  external_ids:
-    bphc: BPS-H80-038259
+  external_ids: {bphc: BPS-H80-038259}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/gunnison/gunnison-community-school
   name: Gunnison Community School
   categories:
@@ -67,13 +71,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Gunnison County
-  address: {street: 220 N. Spruce St., city: Gunnison, state: co, zip: '81230'}
+  address:
+    street: 220 N. Spruce St.
+    city: Gunnison
+    state: co
+    zip: '81230'
   place: 0833640
   phone: 970-641-3244
   website: https://www.gunnisoncounty.org/149/Health-Human-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/gunnison/lake-preschool
   name: Lake Preschool
   categories:

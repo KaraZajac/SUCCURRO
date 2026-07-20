@@ -42,13 +42,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kiowa County
-  address: {city: Hobart, state: ok, zip: '73651'}
+  address:
+    city: Hobart
+    state: ok
+    zip: '73651'
   place: '4035000'
   phone: 405-522-5050
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/hobart/red-rock-behavioral-health-services-outpatient-o
   name: Red Rock Behavioral Health Services Outpatient Office
   categories:
@@ -65,6 +70,12 @@
     lng: -99.09282
   phone: 580-726-2452
   website: https://www.red-rock.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -74,20 +85,12 @@
   name: Variety Care Hobart
   categories:
   - community-health-center
-  address:
-    street: 1000 S Broadway
-    city: Hobart
-    state: ok
-    zip: '73651'
+  cost: sliding-scale
+  address: {street: 1000 S Broadway, city: Hobart, state: ok, zip: '73651'}
   place: '4035000'
-  geo:
-    lat: 35.01633
-    lng: -99.09595
+  geo: {lat: 35.01633, lng: -99.09595}
   phone: 405-632-6688
-  external_ids:
-    bphc: BPS-H80-038008
+  external_ids: {bphc: BPS-H80-038008}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

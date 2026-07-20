@@ -60,24 +60,16 @@
   name: Neighborhood Healthcare ~ Gold Family Health Center
   categories:
   - community-health-center
-  address:
-    street: 13010 Poway Rd
-    city: Poway
-    state: ca
-    zip: '92064'
+  cost: sliding-scale
+  address: {street: 13010 Poway Rd, city: Poway, state: ca, zip: '92064'}
   place: 0658520
-  geo:
-    lat: 32.95686
-    lng: -117.04927
+  geo: {lat: 32.95686, lng: -117.04927}
   phone: 760-520-8300
   website: https://www.nhcare.org
-  external_ids:
-    bphc: BPS-H80-018301
+  external_ids: {bphc: BPS-H80-018301}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/poway/neighborhood-healthcare-poway
   name: Neighborhood Healthcare Poway
   categories:
@@ -94,6 +86,9 @@
     lng: -117.04937
   phone: 833-867-4642
   website: https://nhcare.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

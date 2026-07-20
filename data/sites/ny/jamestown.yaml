@@ -47,6 +47,22 @@
     lng: -79.23842
   phone: 716-661-8330
   website: https://
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -68,6 +84,22 @@
     lng: -79.23806
   phone: 716-661-8330
   website: https://
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -78,34 +110,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Chautauqua County
-  address: {street: 110 E. Fourth St., city: Jamestown, state: ny, zip: '14701'}
-  place: '3638264'
-  phone: 716-661-8103
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ny/jamestown/evergreen-health-prather-ave
-  name: Evergreen Health - Prather Ave.
-  categories:
-  - community-health-center
   address:
-    street: 320 Prather Ave STE 200A
+    street: 110 E. Fourth St.
     city: Jamestown
     state: ny
     zip: '14701'
   place: '3638264'
-  geo:
-    lat: 42.09036
-    lng: -79.23438
-  phone: 716-847-2441
-  website: https://www.evergreenhs.org
-  external_ids:
-    bphc: BPS-LAL-037929
+  phone: 716-661-8103
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ny/jamestown/evergreen-health-prather-ave
+  name: Evergreen Health - Prather Ave.
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 320 Prather Ave STE 200A, city: Jamestown, state: ny, zip: '14701'}
+  place: '3638264'
+  geo: {lat: 42.09036, lng: -79.23438}
+  phone: 716-847-2441
+  website: https://www.evergreenhs.org
+  external_ids: {bphc: BPS-LAL-037929}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/jamestown/holy-family-child-care-center
   name: Holy Family Child Care Center
   categories:
@@ -198,6 +228,11 @@
     lng: -79.22474
   phone: 716-661-1590
   website: https://resourcecenter.org
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -219,6 +254,12 @@
     lng: -79.22474
   phone: 716-661-1590
   website: https://resourcecenter.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -248,65 +289,41 @@
   name: The Chautauqua Center - Jamestown
   categories:
   - community-health-center
-  address:
-    street: 107 Institute St
-    city: Jamestown
-    state: ny
-    zip: '14701'
+  cost: sliding-scale
+  address: {street: 107 Institute St, city: Jamestown, state: ny, zip: '14701'}
   place: '3638264'
-  geo:
-    lat: 42.09308
-    lng: -79.23505
+  geo: {lat: 42.09308, lng: -79.23505}
   phone: 716-363-6050
-  external_ids:
-    bphc: BPS-H80-027822
+  external_ids: {bphc: BPS-H80-027822}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/jamestown/the-chautauqua-center-jamestown-ot
   name: The Chautauqua Center - Jamestown OT
   categories:
   - community-health-center
-  address:
-    street: 15 S Main St, Suite 220
-    city: Jamestown
-    state: ny
-    zip: '14701'
+  cost: sliding-scale
+  address: {street: '15 S Main St, Suite 220', city: Jamestown, state: ny, zip: '14701'}
   place: '3638264'
-  geo:
-    lat: 42.09259
-    lng: -79.23819
+  geo: {lat: 42.09259, lng: -79.23819}
   phone: 716-484-4334
-  external_ids:
-    bphc: BPS-H80-035252
+  external_ids: {bphc: BPS-H80-035252}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/jamestown/the-chautauqua-center-mobile-unit
   name: The Chautauqua Center - Mobile Unit
   categories:
   - community-health-center
-  address:
-    street: 107 Institute St
-    city: Jamestown
-    state: ny
-    zip: '14701'
+  cost: sliding-scale
+  address: {street: 107 Institute St, city: Jamestown, state: ny, zip: '14701'}
   place: '3638264'
-  geo:
-    lat: 42.09308
-    lng: -79.23505
+  geo: {lat: 42.09308, lng: -79.23505}
   phone: 716-484-4334
-  external_ids:
-    bphc: BPS-H80-035266
+  external_ids: {bphc: BPS-H80-035266}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/jamestown/upmc-chautauqua-wca-cdu
   name: UPMC Chautauqua WCA CDU
   categories:
@@ -322,6 +339,16 @@
     lng: -79.2319
   phone: 716-664-8620
   website: https://
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -342,6 +369,15 @@
     lng: -79.24538
   phone: 716-664-8641
   website: https://www.upmchatauquawca.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -18,13 +18,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Saint Clair County
-  address: {street: 3403 Lapeer Road, city: Port Huron, state: mi, zip: '48060'}
+  address:
+    street: 3403 Lapeer Road
+    city: Port Huron
+    state: mi
+    zip: '48060'
   place: '2665820'
   phone: 810-982-8541
   website: https://www.bwcaa.org/services/utility-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: mi/port-huron/catholic-charities-of-se-michigan-saint-clair-co
   name: Catholic Charities of SE Michigan Saint Clair County Inc/SA Services
   categories:
@@ -41,6 +47,10 @@
     lng: -82.43732
   phone: 810-987-9100 x5074
   website: https://www.ccsem.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -50,24 +60,16 @@
   name: Community First Health Centers - Port Huron
   categories:
   - community-health-center
-  address:
-    street: 1011 Military St
-    city: Port Huron
-    state: mi
-    zip: '48060'
+  cost: sliding-scale
+  address: {street: 1011 Military St, city: Port Huron, state: mi, zip: '48060'}
   place: '2665820'
-  geo:
-    lat: 42.97327
-    lng: -82.42471
+  geo: {lat: 42.97327, lng: -82.42471}
   phone: 810-488-8000
   website: https://www.communityfirsthc.org
-  external_ids:
-    bphc: BPS-H80-010043
+  external_ids: {bphc: BPS-H80-010043}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/port-huron/dulhut-74m000018
   name: Dulhut - 74M000018
   categories:
@@ -106,6 +108,18 @@
     lng: -82.42799
   phone: 810-937-5366
   website: https://www.odysseyvillage.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -279,6 +293,10 @@
     lng: -82.42974
   phone: 810-985-2614
   website: https://www.mclaren.org/main/locations/behavioral-health-i
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -408,6 +426,10 @@
     lng: -82.42515
   phone: 810-984-4202
   website: https://www.pccporthuron.com
+  services:
+  - Outpatient
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -428,6 +450,22 @@
     lng: -82.42887
   phone: 810-392-2167
   website: https://www.sacredheartcenter.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -449,6 +487,22 @@
     lng: -82.44362
   phone: 810-985-8900
   website: https://www.scccmh.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

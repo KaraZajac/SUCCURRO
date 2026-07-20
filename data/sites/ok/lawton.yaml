@@ -121,24 +121,16 @@
   name: COMANCHE CNTY HOSPITAL AUTHORITY
   categories:
   - community-health-center
-  address:
-    street: 3401 W Gore Blvd
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 3401 W Gore Blvd, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.61005
-    lng: -98.43423
+  geo: {lat: 34.61005, lng: -98.43423}
   phone: 580-355-5242
   website: https://www.ccmhonline.com
-  external_ids:
-    bphc: BPS-H80-000847
+  external_ids: {bphc: BPS-H80-000847}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/comanche-county-memorial-hospital-behavioral-hea
   name: Comanche County Memorial Hospital Behavioral Health
   categories:
@@ -155,6 +147,19 @@
     lng: -98.43419
   phone: 580-355-8620 x3720
   website: https://www.ccmhhealth.com/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -337,25 +342,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Caddo County
-  address: {street: 2609 S. W. Lee Blvd., city: Lawton, state: ok, zip: '73505'}
+  address:
+    street: 2609 S. W. Lee Blvd.
+    city: Lawton
+    state: ok
+    zip: '73505'
   place: '4041850'
   phone: 580-250-3600
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/lawton/human-services-centers-comanche
   name: 'Human Services Centers: Comanche'
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Comanche County
-  address: {street: 2609 S. W. Lee Blvd., city: Lawton, state: ok, zip: '73505'}
+  address:
+    street: 2609 S. W. Lee Blvd.
+    city: Lawton
+    state: ok
+    zip: '73505'
   place: '4041850'
   phone: 580-250-3600
   website: http://www.okdhslive.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ok/lawton/jim-taliaferro-cmhc-east-campus
   name: Jim Taliaferro CMHC East Campus
   categories:
@@ -372,6 +389,11 @@
     lng: -98.38682
   phone: 580-355-0072
   website: https://ok.gov/odmhsas
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -393,6 +415,14 @@
     lng: -98.43856
   phone: 580-248-5780
   website: https://ok.gov/odmhsas
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -487,23 +517,15 @@
   name: Lawton Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 5404 SW Lee Blvd
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 5404 SW Lee Blvd, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.59386
-    lng: -98.46111
+  geo: {lat: 34.59386, lng: -98.46111}
   phone: 580-355-5242
-  external_ids:
-    bphc: BPS-H80-013747
+  external_ids: {bphc: BPS-H80-013747}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lawton-community-theatre-n60
   name: Lawton Community Theatre(N60)
   categories:
@@ -618,321 +640,201 @@
   name: LCHC Call Center
   categories:
   - community-health-center
-  address:
-    street: 602 SE Wallock St
-    city: Lawton
-    state: ok
-    zip: '73501'
+  cost: sliding-scale
+  address: {street: 602 SE Wallock St, city: Lawton, state: ok, zip: '73501'}
   place: '4041850'
-  geo:
-    lat: 34.60216
-    lng: -98.38547
+  geo: {lat: 34.60216, lng: -98.38547}
   phone: 580-355-5242
-  external_ids:
-    bphc: BPS-H80-030826
+  external_ids: {bphc: BPS-H80-030826}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-center-for-health
   name: LCHC Center for Health
   categories:
   - community-health-center
-  address:
-    street: 3811 W Gore Blvd, Suite 6
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3811 W Gore Blvd, Suite 6', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60966
-    lng: -98.44124
+  geo: {lat: 34.60966, lng: -98.44124}
   phone: 580-355-5242
   website: https://LawtonCommunityHealthCenter.com
-  external_ids:
-    bphc: BPS-H80-008861
+  external_ids: {bphc: BPS-H80-008861}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-center-for-health-suite-10
   name: LCHC Center for Health Suite 10
   categories:
   - community-health-center
-  address:
-    street: 3811 W Gore Blvd, Suite 10
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3811 W Gore Blvd, Suite 10', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60966
-    lng: -98.44124
+  geo: {lat: 34.60966, lng: -98.44124}
   phone: 580-510-7076
-  external_ids:
-    bphc: BPS-H80-030234
+  external_ids: {bphc: BPS-H80-030234}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-dental
   name: LCHC Dental
   categories:
   - community-health-center
-  address:
-    street: 3811 W Gore Blvd, Suite 1
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3811 W Gore Blvd, Suite 1', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60966
-    lng: -98.44124
+  geo: {lat: 34.60966, lng: -98.44124}
   phone: 580-357-4943
   website: https://www.lawtonchc.com
-  external_ids:
-    bphc: BPS-H80-040028
+  external_ids: {bphc: BPS-H80-040028}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-eastside
   name: LCHC Eastside
   categories:
   - community-health-center
-  address:
-    street: 1102 SE 36th St
-    city: Lawton
-    state: ok
-    zip: '73501'
+  cost: sliding-scale
+  address: {street: 1102 SE 36th St, city: Lawton, state: ok, zip: '73501'}
   place: '4041850'
-  geo:
-    lat: 34.59593
-    lng: -98.34545
+  geo: {lat: 34.59593, lng: -98.34545}
   phone: 580-585-5550
-  external_ids:
-    bphc: BPS-H80-019406
+  external_ids: {bphc: BPS-H80-019406}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-family-care-clinic
   name: LCHC Family Care Clinic
   categories:
   - community-health-center
-  address:
-    street: 3201 W Gore Blvd, Suite 203
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3201 W Gore Blvd, Suite 203', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60965
-    lng: -98.43268
+  geo: {lat: 34.60965, lng: -98.43268}
   phone: 580-250-6540
   website: https://www.lawtoncommunityhealthcenter.com
-  external_ids:
-    bphc: BPS-H80-022122
+  external_ids: {bphc: BPS-H80-022122}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-family-continuity-clinic
   name: LCHC Family Continuity Clinic
   categories:
   - community-health-center
-  address:
-    street: 2609 SW Lee Blvd
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 2609 SW Lee Blvd, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.59532
-    lng: -98.42928
+  geo: {lat: 34.59532, lng: -98.42928}
   phone: 580-248-5242
-  external_ids:
-    bphc: BPS-H80-037157
+  external_ids: {bphc: BPS-H80-037157}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-great-plains-pediatrics
   name: LCHC Great Plains Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 3201 W Gore Blvd, Suite 100
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3201 W Gore Blvd, Suite 100', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60965
-    lng: -98.43268
+  geo: {lat: 34.60965, lng: -98.43268}
   phone: 580-353-8942
-  external_ids:
-    bphc: BPS-H80-032429
+  external_ids: {bphc: BPS-H80-032429}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-health-plex
   name: LCHC Health Plex
   categories:
   - community-health-center
-  address:
-    street: 7102 NW Cache Rd
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 7102 NW Cache Rd, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.6218
-    lng: -98.47901
+  geo: {lat: 34.6218, lng: -98.47901}
   phone: 580-280-4652
-  external_ids:
-    bphc: BPS-H80-040619
+  external_ids: {bphc: BPS-H80-040619}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-lawton-pediatrics
   name: LCHC Lawton Pediatrics
   categories:
   - community-health-center
-  address:
-    street: 2701 SW Cornell Ave
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 2701 SW Cornell Ave, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60833
-    lng: -98.43147
+  geo: {lat: 34.60833, lng: -98.43147}
   phone: 580-248-0696
-  external_ids:
-    bphc: BPS-H80-034728
+  external_ids: {bphc: BPS-H80-034728}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-medicine-park
   name: LCHC Medicine Park
   categories:
   - community-health-center
-  address:
-    street: 19055 State Highway 49
-    city: Lawton
-    state: ok
-    zip: '73507'
+  cost: sliding-scale
+  address: {street: 19055 State Highway 49, city: Lawton, state: ok, zip: '73507'}
   place: '4041850'
-  geo:
-    lat: 34.72331
-    lng: -98.491
+  geo: {lat: 34.72331, lng: -98.491}
   phone: 580-280-4413
-  external_ids:
-    bphc: BPS-H80-032281
+  external_ids: {bphc: BPS-H80-032281}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-memorial-medical-clinic
   name: LCHC Memorial Medical Clinic
   categories:
   - community-health-center
-  address:
-    street: 3201 W Gore Blvd, Suite 304
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: '3201 W Gore Blvd, Suite 304', city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.60965
-    lng: -98.43268
+  geo: {lat: 34.60965, lng: -98.43268}
   phone: 580-353-6760
-  external_ids:
-    bphc: BPS-H80-031212
+  external_ids: {bphc: BPS-H80-031212}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-midtown
   name: LCHC Midtown
   categories:
   - community-health-center
-  address:
-    street: 1202 NW Arlington Ave
-    city: Lawton
-    state: ok
-    zip: '73507'
+  cost: sliding-scale
+  address: {street: 1202 NW Arlington Ave, city: Lawton, state: ok, zip: '73507'}
   place: '4041850'
-  geo:
-    lat: 34.60967
-    lng: -98.40664
+  geo: {lat: 34.60967, lng: -98.40664}
   phone: 580-248-2288
-  external_ids:
-    bphc: BPS-H80-027843
+  external_ids: {bphc: BPS-H80-027843}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-primary-health-care-center-at-comanche-coun
   name: LCHC Primary Health Care Center at Comanche County Memorial Hospital
   categories:
   - community-health-center
-  address:
-    street: 110 NW 31st St
-    city: Lawton
-    state: ok
-    zip: '73505'
+  cost: sliding-scale
+  address: {street: 110 NW 31st St, city: Lawton, state: ok, zip: '73505'}
   place: '4041850'
-  geo:
-    lat: 34.6099
-    lng: -98.43354
+  geo: {lat: 34.6099, lng: -98.43354}
   phone: 580-585-5549
-  external_ids:
-    bphc: BPS-H80-019110
+  external_ids: {bphc: BPS-H80-019110}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/lchc-southcare-clinic
   name: LCHC Southcare Clinic
   categories:
   - community-health-center
-  address:
-    street: 512 SW Lee Blvd
-    city: Lawton
-    state: ok
-    zip: '73501'
+  cost: sliding-scale
+  address: {street: 512 SW Lee Blvd, city: Lawton, state: ok, zip: '73501'}
   place: '4041850'
-  geo:
-    lat: 34.5939
-    lng: -98.39632
+  geo: {lat: 34.5939, lng: -98.39632}
   phone: 580-280-4413
   website: https://www.lawtoncommunityhealthcenter.com
-  external_ids:
-    bphc: BPS-H80-033825
+  external_ids: {bphc: BPS-H80-033825}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/lawton/life-ready-center-n49
   name: Life Ready Center(N49)
   categories:

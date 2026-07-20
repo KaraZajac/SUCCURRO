@@ -55,6 +55,9 @@
     lng: -89.58406
   phone: 715-341-6672
   website: https://www.childrenswi.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -205,24 +208,16 @@
   name: Noble Community Clinics - Stevens Point
   categories:
   - community-health-center
-  address:
-    street: 2501 Main St
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  cost: sliding-scale
+  address: {street: 2501 Main St, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.52334
-    lng: -89.56239
+  geo: {lat: 44.52334, lng: -89.56239}
   phone: 800-942-5330
   website: https://nobleclinics.org
-  external_ids:
-    bphc: BPS-H80-040334
+  external_ids: {bphc: BPS-H80-040334}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/stevens-point/opportunity-for-hope-clinic
   name: Opportunity for Hope Clinic
   categories:
@@ -239,6 +234,9 @@
     lng: -89.52805
   phone: 715-818-6443
   website: https://www.odcinc.com/opportunity-for-hope
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -306,6 +304,22 @@
     lng: -89.5733
   phone: 715-345-5350
   website: https://www.co.portage.wi.gov/199/Health-Human-Services
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -316,13 +330,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Portage County
-  address: {street: 1224 Strongs Ave., city: Stevens Point, state: wi, zip: '54481'}
+  address:
+    street: 1224 Strongs Ave.
+    city: Stevens Point
+    state: wi
+    zip: '54481'
   place: '5577200'
   phone: 800-506-5596
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/stevens-point/portage-county-housing-authority
   name: Portage County Housing Authority
   categories:

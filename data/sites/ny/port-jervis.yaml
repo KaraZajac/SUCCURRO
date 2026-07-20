@@ -24,24 +24,16 @@
   name: Cornerstone Family Health Care at Port Jervis
   categories:
   - community-health-center
-  address:
-    street: 140 Hammond St
-    city: Port Jervis
-    state: ny
-    zip: '12771'
+  cost: sliding-scale
+  address: {street: 140 Hammond St, city: Port Jervis, state: ny, zip: '12771'}
   place: '3659388'
-  geo:
-    lat: 41.36969
-    lng: -74.68507
+  geo: {lat: 41.36969, lng: -74.68507}
   phone: 845-856-8450
   website: https://www.cornerstonefamilyhealthcare.org
-  external_ids:
-    bphc: BPS-H80-021476
+  external_ids: {bphc: BPS-H80-021476}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/port-jervis/orange-county-dept-of-mental-health-port-jervis
   name: Orange County Dept of Mental Health Port Jervis Outpatient Clinic
   categories:
@@ -58,6 +50,10 @@
     lng: -74.69121
   phone: 845-858-1456
   website: https://orangecountygov.com
+  services:
+  - Outpatient
+  - Seniors or older adults
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -204,6 +200,14 @@
     lng: -74.69187
   phone: 845-856-7576
   website: https://www.restorativemanagement.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

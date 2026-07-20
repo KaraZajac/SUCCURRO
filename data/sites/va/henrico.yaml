@@ -13,6 +13,10 @@
     lng: -77.52662
   phone: 804-606-0268
   website: https://www.bloomhealthcenters.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -33,6 +37,12 @@
     lng: -77.54909
   phone: 804-272-2000
   website: https://dominion.care/
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -116,6 +126,10 @@
     lng: -77.50818
   phone: 804-727-8967
   website: https://henrico.gov/mhds/
+  services:
+  - Outpatient
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -147,12 +161,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Henrico County
-  address: {street: 8600 Dixon Powers Drive (P. O. Box 90775), city: Henrico, state: va, zip: '23273'}
+  address:
+    street: 8600 Dixon Powers Drive (P. O. Box 90775)
+    city: Henrico
+    state: va
+    zip: '23273'
   phone: 804-501-4001
   website: https://henrico.us/dss/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/henrico/oakland-connect
   name: Oakland Connect
   categories:
@@ -189,6 +209,10 @@
     lng: -77.52662
   phone: 804-672-4380
   website: https://www.hcavirginia.com/locations/parham-hospital-mental-health-and-wellness-center
+  services:
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -269,6 +293,10 @@
     lng: -77.55257
   phone: 804-230-0999
   website: https://www.rivercityccs.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -318,19 +346,11 @@
   name: Westerre Conference Center
   categories:
   - community-health-center
-  address:
-    street: 3831 Westerre Pkwy
-    city: Henrico
-    state: va
-    zip: '23233'
-  geo:
-    lat: 37.64324
-    lng: -77.58108
+  cost: sliding-scale
+  address: {street: 3831 Westerre Pkwy, city: Henrico, state: va, zip: '23233'}
+  geo: {lat: 37.64324, lng: -77.58108}
   phone: 434-581-4701
-  external_ids:
-    bphc: BPS-H80-035837
+  external_ids: {bphc: BPS-H80-035837}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

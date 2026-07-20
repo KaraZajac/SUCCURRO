@@ -14,6 +14,9 @@
     lng: -85.50748
   phone: 706-956-5526
   website: https://www.bridgecsb.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -87,35 +90,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dade County
-  address: {street: 9622 Highway 11 South, city: Trenton, state: ga, zip: '30752'}
+  address:
+    street: 9622 Highway 11 South
+    city: Trenton
+    state: ga
+    zip: '30752'
   place: '1377372'
   phone: 706-657-4664
   website: http://www.ngcainc.com/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/trenton/primary-health-care-center-trenton
   name: Primary Health Care Center Trenton
   categories:
   - community-health-center
-  address:
-    street: 13570 N Main St
-    city: Trenton
-    state: ga
-    zip: '30752'
+  cost: sliding-scale
+  address: {street: 13570 N Main St, city: Trenton, state: ga, zip: '30752'}
   place: '1377372'
-  geo:
-    lat: 34.88744
-    lng: -85.49919
+  geo: {lat: 34.88744, lng: -85.49919}
   phone: 706-657-7575
   website: https://www.primaryhealthcarecenter.org
-  external_ids:
-    bphc: BPS-H80-002107
+  external_ids: {bphc: BPS-H80-002107}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/trenton/trenton-ministry-center
   name: Trenton Ministry Center
   categories:

@@ -2,45 +2,29 @@
   name: Alder Street
   categories:
   - community-health-center
-  address:
-    street: 425 Alder St
-    city: Scranton
-    state: pa
-    zip: '18505'
+  cost: sliding-scale
+  address: {street: 425 Alder St, city: Scranton, state: pa, zip: '18505'}
   place: '4269000'
-  geo:
-    lat: 41.39999
-    lng: -75.66579
+  geo: {lat: 41.39999, lng: -75.66579}
   phone: 570-955-5524
   website: https://www.scrantonprimary.org
-  external_ids:
-    bphc: BPS-H80-020921
+  external_ids: {bphc: BPS-H80-020921}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/caring-community-health-center-mount-pleasant
   name: Caring Community Health Center - Mount Pleasant
   categories:
   - community-health-center
-  address:
-    street: 531 Mount Pleasant Dr
-    city: Scranton
-    state: pa
-    zip: '18503'
+  cost: sliding-scale
+  address: {street: 531 Mount Pleasant Dr, city: Scranton, state: pa, zip: '18503'}
   place: '4269000'
-  geo:
-    lat: 41.41694
-    lng: -75.6716
+  geo: {lat: 41.41694, lng: -75.6716}
   phone: 570-342-8500
-  external_ids:
-    bphc: BPS-LAL-038216
+  external_ids: {bphc: BPS-LAL-038216}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/central-boys-and-girls-club
   name: Central Boys And Girls Club
   categories:
@@ -96,6 +80,10 @@
     lng: -75.6763
   phone: 570-904-6000
   website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -137,6 +125,16 @@
     lng: -75.66159
   phone: 570-961-1997 x212
   website: https://www.datsrecovery.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -174,6 +172,22 @@
   place: '4269000'
   phone: 570-382-8157
   website: https://fellowshiphouses.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -183,36 +197,33 @@
   name: Lackawanna College
   categories:
   - community-health-center
-  address:
-    street: 406 N Washington Ave
-    city: Scranton
-    state: pa
-    zip: '18503'
+  cost: sliding-scale
+  address: {street: 406 N Washington Ave, city: Scranton, state: pa, zip: '18503'}
   place: '4269000'
-  geo:
-    lat: 41.41045
-    lng: -75.66036
+  geo: {lat: 41.41045, lng: -75.66036}
   phone: 570-344-9684
   website: https://www.scrantonprimary.org
-  external_ids:
-    bphc: BPS-H80-020964
+  external_ids: {bphc: BPS-H80-020964}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/lackawanna-county-assistance-office
   name: Lackawanna County Assistance Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lackawanna County
-  address: {street: 200 Scranton State Office Building 100 Lackawanna Avenue, city: Scranton, state: pa,
-    zip: '18503'}
+  address:
+    street: 200 Scranton State Office Building 100 Lackawanna Avenue
+    city: Scranton
+    state: pa
+    zip: '18503'
   place: '4269000'
   phone: 570-963-4842
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: pa/scranton/lakeside-nepa-inc
   name: Lakeside NEPA Inc
   categories:
@@ -228,6 +239,12 @@
     lng: -75.51925
   phone: 570-344-5253
   website: https://www.lakesidenepa.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -269,6 +286,16 @@
     lng: -75.65068
   phone: 570-770-6395
   website: https://www.commonwealthhealth.net/moses-taylor-hospital-commonwealth
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -330,6 +357,10 @@
     lng: -75.62933
   phone: 570-348-6269
   website: https://www.marywood.edu/psc/index.html
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -372,6 +403,22 @@
     lng: -75.67431
   phone: 570-348-6100
   website: https://www.scrantonscc.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -504,46 +551,30 @@
   name: SCRANTON PRIMARY HEALTH CARE CENTER, INC.
   categories:
   - community-health-center
-  address:
-    street: 959 Wyoming Ave
-    city: Scranton
-    state: pa
-    zip: '18509'
+  cost: sliding-scale
+  address: {street: 959 Wyoming Ave, city: Scranton, state: pa, zip: '18509'}
   place: '4269000'
-  geo:
-    lat: 41.41829
-    lng: -75.65499
+  geo: {lat: 41.41829, lng: -75.65499}
   phone: 570-344-9684
   website: https://www.scrantonprimary.org
-  external_ids:
-    bphc: BPS-H80-002129
+  external_ids: {bphc: BPS-H80-002129}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/scranton-primary-health-care-center-inc-administ
   name: Scranton Primary Health Care Center, Inc. Administrative Offices
   categories:
   - community-health-center
-  address:
-    street: 921 Wyoming Ave
-    city: Scranton
-    state: pa
-    zip: '18509'
+  cost: sliding-scale
+  address: {street: 921 Wyoming Ave, city: Scranton, state: pa, zip: '18509'}
   place: '4269000'
-  geo:
-    lat: 41.41692
-    lng: -75.65613
+  geo: {lat: 41.41692, lng: -75.65613}
   phone: 570-344-3517
   website: https://scrantonprimary.org
-  external_ids:
-    bphc: BPS-H80-038771
+  external_ids: {bphc: BPS-H80-038771}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/scranton-sumner
   name: Scranton-Sumner
   categories:
@@ -668,174 +699,110 @@
   name: The Wright Center for Community Health Dickson City Practice
   categories:
   - community-health-center
-  address:
-    street: 312 Boulevard Ave
-    city: Scranton
-    state: pa
-    zip: '18519'
+  cost: sliding-scale
+  address: {street: 312 Boulevard Ave, city: Scranton, state: pa, zip: '18519'}
   place: '4269000'
-  geo:
-    lat: 41.45094
-    lng: -75.62712
+  geo: {lat: 41.45094, lng: -75.62712}
   phone: 570-489-4567
-  external_ids:
-    bphc: BPS-LAL-038884
+  external_ids: {bphc: BPS-LAL-038884}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-friendshi
   name: The Wright Center for Community Health Friendship House Practice
   categories:
   - community-health-center
-  address:
-    street: 200 Wyoming Ave
-    city: Scranton
-    state: pa
-    zip: '18503'
+  cost: sliding-scale
+  address: {street: 200 Wyoming Ave, city: Scranton, state: pa, zip: '18503'}
   place: '4269000'
-  geo:
-    lat: 41.40881
-    lng: -75.66477
+  geo: {lat: 41.40881, lng: -75.66477}
   phone: 570-230-0019
-  external_ids:
-    bphc: BPS-LAL-039560
+  external_ids: {bphc: BPS-LAL-039560}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-north-scr
   name: The Wright Center for Community Health North Scranton Practice
   categories:
   - community-health-center
-  address:
-    street: 1721 N Main Ave
-    city: Scranton
-    state: pa
-    zip: '18508'
+  cost: sliding-scale
+  address: {street: 1721 N Main Ave, city: Scranton, state: pa, zip: '18508'}
   place: '4269000'
-  geo:
-    lat: 41.43672
-    lng: -75.65985
+  geo: {lat: 41.43672, lng: -75.65985}
   phone: 570-230-0019
-  external_ids:
-    bphc: BPS-LAL-036802
+  external_ids: {bphc: BPS-LAL-036802}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-northeast
   name: The Wright Center for Community Health Northeast Scranton Intermediate School
   categories:
   - community-health-center
-  address:
-    street: 721 Adams Ave
-    city: Scranton
-    state: pa
-    zip: '18510'
+  cost: sliding-scale
+  address: {street: 721 Adams Ave, city: Scranton, state: pa, zip: '18510'}
   place: '4269000'
-  geo:
-    lat: 41.4142
-    lng: -75.65527
+  geo: {lat: 41.4142, lng: -75.65527}
   phone: 570-591-5280
   website: https://www.thewrightcenter.org
-  external_ids:
-    bphc: BPS-LAL-027817
+  external_ids: {bphc: BPS-LAL-027817}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-school-ba
   name: The Wright Center for Community Health School Based Practice
   categories:
   - community-health-center
-  address:
-    street: 1401 Fellows St
-    city: Scranton
-    state: pa
-    zip: '18504'
+  cost: sliding-scale
+  address: {street: 1401 Fellows St, city: Scranton, state: pa, zip: '18504'}
   place: '4269000'
-  geo:
-    lat: 41.40879
-    lng: -75.69142
+  geo: {lat: 41.40879, lng: -75.69142}
   phone: 570-591-5280
   website: https://thewrightcenter.org/home/patientcare/locations/togetherinhealth/
-  external_ids:
-    bphc: BPS-LAL-027811
+  external_ids: {bphc: BPS-LAL-027811}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-scranton
   name: The Wright Center for Community Health Scranton Counseling Practice
   categories:
   - community-health-center
-  address:
-    street: 329 Cherry St
-    city: Scranton
-    state: pa
-    zip: '18505'
+  cost: sliding-scale
+  address: {street: 329 Cherry St, city: Scranton, state: pa, zip: '18505'}
   place: '4269000'
-  geo:
-    lat: 41.39424
-    lng: -75.67455
+  geo: {lat: 41.39424, lng: -75.67455}
   phone: 570-230-0019
-  external_ids:
-    bphc: BPS-LAL-031962
+  external_ids: {bphc: BPS-LAL-031962}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-scranton-2
   name: The Wright Center for Community Health Scranton Practice
   categories:
   - community-health-center
-  address:
-    street: 501 S Washington Ave
-    city: Scranton
-    state: pa
-    zip: '18505'
+  cost: sliding-scale
+  address: {street: 501 S Washington Ave, city: Scranton, state: pa, zip: '18505'}
   place: '4269000'
-  geo:
-    lat: 41.40187
-    lng: -75.66918
+  geo: {lat: 41.40187, lng: -75.66918}
   phone: 570-343-2383
   website: https://thewrightcenter.org/
-  external_ids:
-    bphc: BPS-LAL-027816
+  external_ids: {bphc: BPS-LAL-027816}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/the-wright-center-for-community-health-south-scr
   name: The Wright Center for Community Health South Scranton Intermediate School
   categories:
   - community-health-center
-  address:
-    street: 355 Maple St
-    city: Scranton
-    state: pa
-    zip: '18505'
+  cost: sliding-scale
+  address: {street: 355 Maple St, city: Scranton, state: pa, zip: '18505'}
   place: '4269000'
-  geo:
-    lat: 41.3978
-    lng: -75.67119
+  geo: {lat: 41.3978, lng: -75.67119}
   phone: 570-591-5280
   website: https://thewrightcenter.org
-  external_ids:
-    bphc: BPS-LAL-027818
+  external_ids: {bphc: BPS-LAL-027818}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/scranton/tpals-turning-point-alt-living-solutions
   name: TPALS Turning Point Alt Living Solutions
   categories:
@@ -852,6 +819,10 @@
     lng: -75.66374
   phone: 570-880-7614
   website: https://TPALS.NET
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -974,6 +945,9 @@
     lng: -75.66972
   phone: 570-941-0630
   website: https://www.thewrightcenter.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

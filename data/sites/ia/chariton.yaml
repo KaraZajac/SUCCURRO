@@ -53,6 +53,9 @@
     lng: -93.31909
   phone: 641-774-8484
   website: https://www.weareinfinityhealth.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -62,36 +65,34 @@
   name: Infinity Health - Chariton Office
   categories:
   - community-health-center
-  address:
-    street: 1711 Osceola Ave
-    city: Chariton
-    state: ia
-    zip: '50049'
+  cost: sliding-scale
+  address: {street: 1711 Osceola Ave, city: Chariton, state: ia, zip: '50049'}
   place: '1912720'
-  geo:
-    lat: 41.02165
-    lng: -93.31901
+  geo: {lat: 41.02165, lng: -93.31901}
   phone: 641-774-8484
   website: https://www.chcsi.org
-  external_ids:
-    bphc: BPS-H80-020768
+  external_ids: {bphc: BPS-H80-020768}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/chariton/south-central-iowa-community-action-prog
   name: South Central Iowa Community Action Prog.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lucas County
-  address: {street: '117 South Grand,', city: Chariton, state: ia, zip: '50049'}
+  address:
+    street: 117 South Grand,
+    city: Chariton
+    state: ia
+    zip: '50049'
   place: '1912720'
   phone: 641-217-8180
   website: http://www.scicap.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ia/chariton/southern-iowa-economic-dev-association-sieda-beh
   name: Southern Iowa Economic Dev Association (SIEDA)/Behav Health and Trt Services
   categories:
@@ -107,6 +108,13 @@
     lng: -93.30722
   phone: 641-683-6747
   website: https://www.sieda.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

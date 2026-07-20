@@ -14,6 +14,12 @@
     lng: -151.22902
   phone: 907-283-3658
   website: https://www.cookinletcounseling.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -84,14 +90,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kenai Peninsula County
-  address: {street: '11312 Kenai Spur Hwy., Suite 2', city: Kenai, state: ak, zip: '99611'}
+  address:
+    street: 11312 Kenai Spur Hwy., Suite 2
+    city: Kenai
+    state: ak
+    zip: '99611'
   place: 0238420
   phone: 800-478-7778
   email: hss.dpa.offices@alaska.gov
   website: https://health.alaska.gov/dpa/Pages/hap/default.aspx
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ak/kenai/kenai-teen-center
   name: Kenai Teen Center
   categories:
@@ -138,24 +150,16 @@
   name: PCHS - KENAI MEDICAL AND BEHAVIORAL HEALTH CENTER
   categories:
   - community-health-center
-  address:
-    street: 805 Frontage Rd
-    city: Kenai
-    state: ak
-    zip: '99611'
+  cost: sliding-scale
+  address: {street: 805 Frontage Rd, city: Kenai, state: ak, zip: '99611'}
   place: 0238420
-  geo:
-    lat: 60.55394
-    lng: -151.25805
+  geo: {lat: 60.55394, lng: -151.25805}
   phone: 907-260-7300
   website: https://WWW.PCHSAK.ORG
-  external_ids:
-    bphc: BPS-H80-015445
+  external_ids: {bphc: BPS-H80-015445}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/kenai/peninsula-community-health-services-kenai
   name: Peninsula Community Health Services Kenai
   categories:
@@ -172,6 +176,16 @@
     lng: -151.2577
   phone: 907-260-7300
   website: https://www.pchsak.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -181,24 +195,16 @@
   name: Peninsula Community Health Services of Alaska - Dental
   categories:
   - community-health-center
-  address:
-    street: 395 Main Street Loop
-    city: Kenai
-    state: ak
-    zip: '99611'
+  cost: sliding-scale
+  address: {street: 395 Main Street Loop, city: Kenai, state: ak, zip: '99611'}
   place: 0238420
-  geo:
-    lat: 60.55763
-    lng: -151.25614
+  geo: {lat: 60.55763, lng: -151.25614}
   phone: 907-283-7759
   website: https://www.pchsak.org
-  external_ids:
-    bphc: BPS-H80-005568
+  external_ids: {bphc: BPS-H80-005568}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/kenai/peninsula-community-health-services-of-kenai
   name: Peninsula Community Health Services of Kenai
   categories:
@@ -214,6 +220,11 @@
     lng: -151.2577
   phone: 907-260-7300
   website: https://www.pchsak.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

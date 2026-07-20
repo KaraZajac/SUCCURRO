@@ -2,66 +2,42 @@
   name: 'Heartland Community Health Clinic DBA:  Heartland Health Services - Mobile Health Center 1'
   categories:
   - community-health-center
-  address:
-    street: 19 Olt Ave
-    city: Pekin
-    state: il
-    zip: '61554'
+  cost: sliding-scale
+  address: {street: 19 Olt Ave, city: Pekin, state: il, zip: '61554'}
   place: '1758447'
-  geo:
-    lat: 40.54978
-    lng: -89.60477
+  geo: {lat: 40.54978, lng: -89.60477}
   phone: 309-680-7600
-  external_ids:
-    bphc: BPS-H80-040162
+  external_ids: {bphc: BPS-H80-040162}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/pekin/heartland-community-health-clinic-dba-heartland-2
   name: 'Heartland Community Health Clinic DBA: Heartland Health Services - Olt'
   categories:
   - community-health-center
-  address:
-    street: 19 Olt Ave
-    city: Pekin
-    state: il
-    zip: '61554'
+  cost: sliding-scale
+  address: {street: 19 Olt Ave, city: Pekin, state: il, zip: '61554'}
   place: '1758447'
-  geo:
-    lat: 40.54978
-    lng: -89.60477
+  geo: {lat: 40.54978, lng: -89.60477}
   phone: 309-680-7600
   website: https://hhsil.com
-  external_ids:
-    bphc: BPS-H80-029878
+  external_ids: {bphc: BPS-H80-029878}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/pekin/heartland-community-health-clinic-dba-heartland-3
   name: 'Heartland Community Health Clinic DBA: Heartland Health Services - Vandever'
   categories:
   - community-health-center
-  address:
-    street: 3248 Vandever Ave, Ste B
-    city: Pekin
-    state: il
-    zip: '61554'
+  cost: sliding-scale
+  address: {street: '3248 Vandever Ave, Ste B', city: Pekin, state: il, zip: '61554'}
   place: '1758447'
-  geo:
-    lat: 40.54837
-    lng: -89.59897
+  geo: {lat: 40.54837, lng: -89.59897}
   phone: 309-680-7600
-  external_ids:
-    bphc: BPS-H80-024953
+  external_ids: {bphc: BPS-H80-024953}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/pekin/heartland-health-services-vanderver
   name: Heartland Health Services Vanderver
   categories:
@@ -78,6 +54,9 @@
     lng: -89.59888
   phone: 309-680-7600
   website: https://hhsil.com
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -138,6 +117,12 @@
     lng: -89.60301
   phone: 309-347-2499
   website: https://www.unitypoint.org/peoria/unityplace.aspx
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

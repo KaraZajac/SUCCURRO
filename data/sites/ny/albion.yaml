@@ -64,12 +64,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Orleans County
-  address: {street: 14016 Route 31 West, city: Albion, state: ny, zip: '14111'}
+  address:
+    street: 14016 Route 31 West
+    city: Albion
+    state: ny
+    zip: '14111'
   place: '3601033'
   phone: 585-589-3191
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/albion/little-leapers-day-care-center
   name: Little Leapers Day Care Center
   categories:
@@ -93,46 +99,30 @@
   name: Oak Orchard Community Health Center (Albion)
   categories:
   - community-health-center
-  address:
-    street: 301 West Ave
-    city: Albion
-    state: ny
-    zip: '14411'
+  cost: sliding-scale
+  address: {street: 301 West Ave, city: Albion, state: ny, zip: '14411'}
   place: '3601033'
-  geo:
-    lat: 43.24122
-    lng: -78.20256
+  geo: {lat: 43.24122, lng: -78.20256}
   phone: 585-589-5613
   website: https://www.oochc.org
-  external_ids:
-    bphc: BPS-H80-003239
+  external_ids: {bphc: BPS-H80-003239}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/albion/oak-orchard-health-dental-at-albion
   name: Oak Orchard Health Dental at Albion
   categories:
   - community-health-center
-  address:
-    street: 362 S Main St
-    city: Albion
-    state: ny
-    zip: '14411'
+  cost: sliding-scale
+  address: {street: 362 S Main St, city: Albion, state: ny, zip: '14411'}
   place: '3601033'
-  geo:
-    lat: 43.23453
-    lng: -78.19445
+  geo: {lat: 43.23453, lng: -78.19445}
   phone: 585-637-3905
   website: https://oakorchardhealth.org/
-  external_ids:
-    bphc: BPS-H80-035644
+  external_ids: {bphc: BPS-H80-035644}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/albion/orleans-county-department-of-mental-health
   name: Orleans County Department of Mental Health
   categories:
@@ -149,6 +139,10 @@
     lng: -78.1679
   phone: 585-589-7066
   website: https://www.orleanscountyny.gov
+  services:
+  - Outpatient
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -159,34 +153,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Orleans County
-  address: {street: 14016 Rt 31W, city: Albion, state: ny, zip: '14411'}
-  place: '3601033'
-  phone: 585-589-3182
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-- id: ny/albion/the-wellness-center-at-oak-orchard
-  name: The Wellness Center at Oak Orchard
-  categories:
-  - community-health-center
   address:
-    street: 317 West Ave
+    street: 14016 Rt 31W
     city: Albion
     state: ny
     zip: '14411'
   place: '3601033'
-  geo:
-    lat: 43.2416
-    lng: -78.20313
-  phone: 585-637-3905
-  website: https://www.oakorchardhealth.org
-  external_ids:
-    bphc: BPS-H80-029719
+  phone: 585-589-3182
   sources:
-  - hrsa/health-center-sites
+  - acf/liheap-clearinghouse
   verified:
     'on': '2026-07-19'
-    method: api
+    method: scrape
+- id: ny/albion/the-wellness-center-at-oak-orchard
+  name: The Wellness Center at Oak Orchard
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 317 West Ave, city: Albion, state: ny, zip: '14411'}
+  place: '3601033'
+  geo: {lat: 43.2416, lng: -78.20313}
+  phone: 585-637-3905
+  website: https://www.oakorchardhealth.org
+  external_ids: {bphc: BPS-H80-029719}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/albion/uconnectcare-inc-cop2
   name: UConnectCare Inc COP2
   categories:
@@ -202,6 +194,15 @@
     lng: -78.18698
   phone: 585-589-0055
   website: https://www.uconnectcare.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

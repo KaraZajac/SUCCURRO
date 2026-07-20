@@ -367,12 +367,18 @@
   - utility-assistance
   description: LIHEAP intake office serving Burke, Columbia, Emanuel, Glascock, Jefferson, Jenkins, Lincoln,
     McDuffie, Richmond, Screven, Taliaferro, Warren, Wilkes Counties
-  address: {street: 1261 Greene St. (P. O. Box 10104), city: Augusta, state: ga, zip: '30903'}
+  address:
+    street: 1261 Greene St. (P. O. Box 10104)
+    city: Augusta
+    state: ga
+    zip: '30903'
   phone: 706-724-0701
   website: https://www.csraeoa.org/programs/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ga/augusta/charlie-norwood-department-of-veterans-affairs-m
   name: Charlie Norwood Department of Veterans Affairs Medical Center
   categories: *id001
@@ -433,106 +439,66 @@
   name: 'Christ Community Health: Medical District CHC'
   categories:
   - community-health-center
-  address:
-    street: 1226 Dantignac St
-    city: Augusta
-    state: ga
-    zip: '30901'
-  geo:
-    lat: 33.46935
-    lng: -81.97841
+  cost: sliding-scale
+  address: {street: 1226 Dantignac St, city: Augusta, state: ga, zip: '30901'}
+  geo: {lat: 33.46935, lng: -81.97841}
   phone: 706-922-0600
   website: https://www.cchsaugusta.org
-  external_ids:
-    bphc: BPS-H80-011667
+  external_ids: {bphc: BPS-H80-011667}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/christ-community-health-medical-district-chc-ped
   name: 'Christ Community Health: Medical District CHC (Pediatrics)'
   categories:
   - community-health-center
-  address:
-    street: 1238 D&#39;Antignac
-    city: Augusta
-    state: ga
-    zip: '30901'
-  geo:
-    lat: 33.46964
-    lng: -81.97849
+  cost: sliding-scale
+  address: {street: 1238 D&#39;Antignac, city: Augusta, state: ga, zip: '30901'}
+  geo: {lat: 33.46964, lng: -81.97849}
   phone: 706-922-0600
   website: https://www.cchsaugusta.org
-  external_ids:
-    bphc: BPS-H80-034378
+  external_ids: {bphc: BPS-H80-034378}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/christ-community-health-olde-town-chc
   name: 'Christ Community Health: Olde Town CHC'
   categories:
   - community-health-center
-  address:
-    street: 127 Telfair St
-    city: Augusta
-    state: ga
-    zip: '30901'
-  geo:
-    lat: 33.46782
-    lng: -81.95176
+  cost: sliding-scale
+  address: {street: 127 Telfair St, city: Augusta, state: ga, zip: '30901'}
+  geo: {lat: 33.46782, lng: -81.95176}
   phone: 706-922-0600
   website: https://www.cchsaugusta.org
-  external_ids:
-    bphc: BPS-H80-011672
+  external_ids: {bphc: BPS-H80-011672}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/christ-community-health-olde-town-chc-dental
   name: 'Christ Community Health: Olde Town CHC Dental'
   categories:
   - community-health-center
-  address:
-    street: 127 Telfair St
-    city: Augusta
-    state: ga
-    zip: '30901'
-  geo:
-    lat: 33.46782
-    lng: -81.95176
+  cost: sliding-scale
+  address: {street: 127 Telfair St, city: Augusta, state: ga, zip: '30901'}
+  geo: {lat: 33.46782, lng: -81.95176}
   phone: 706-922-0600
-  external_ids:
-    bphc: BPS-H80-039729
+  external_ids: {bphc: BPS-H80-039729}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/christ-community-health-peach-orchard-road-chc
   name: 'Christ Community Health: Peach Orchard Road CHC'
   categories:
   - community-health-center
-  address:
-    street: '2604 Peach Orchard Rd, #200'
-    city: Augusta
-    state: ga
-    zip: '30906'
-  geo:
-    lat: 33.42546
-    lng: -82.01814
+  cost: sliding-scale
+  address: {street: '2604 Peach Orchard Rd, #200', city: Augusta, state: ga, zip: '30906'}
+  geo: {lat: 33.42546, lng: -82.01814}
   phone: 706-922-0600
   website: https://www.cchsaugusta.org
-  external_ids:
-    bphc: BPS-H80-032109
+  external_ids: {bphc: BPS-H80-032109}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/deans-bridge-road-head-start
   name: Deans Bridge Road Head Start
   categories:
@@ -605,6 +571,22 @@
     zip: '30904'
   phone: 706-737-9879
   website: https://www.hopehouseaugusta.org
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -715,209 +697,129 @@
   name: MAP @ 1580 Walton Way
   categories:
   - community-health-center
-  address:
-    street: 1580 Walton Way
-    city: Augusta
-    state: ga
-    zip: '30904'
-  geo:
-    lat: 33.47542
-    lng: -81.99192
+  cost: sliding-scale
+  address: {street: 1580 Walton Way, city: Augusta, state: ga, zip: '30904'}
+  geo: {lat: 33.47542, lng: -81.99192}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-038709
+  external_ids: {bphc: BPS-H80-038709}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-dental-dph
   name: MAP Dental @ DPH
   categories:
   - community-health-center
-  address:
-    street: 2420 Windsor Spring Rd
-    city: Augusta
-    state: ga
-    zip: '30906'
-  geo:
-    lat: 33.39814
-    lng: -82.05098
+  cost: sliding-scale
+  address: {street: 2420 Windsor Spring Rd, city: Augusta, state: ga, zip: '30906'}
+  geo: {lat: 33.39814, lng: -82.05098}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-041004
+  external_ids: {bphc: BPS-H80-041004}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-garredd
   name: MAP @ Garredd
   categories:
   - community-health-center
-  address:
-    street: 1111 Garredd Blvd
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48738
-    lng: -82.09767
+  cost: sliding-scale
+  address: {street: 1111 Garredd Blvd, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48738, lng: -82.09767}
   phone: 706-863-5776
-  external_ids:
-    bphc: BPS-H80-022220
+  external_ids: {bphc: BPS-H80-022220}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-garredd-ii
   name: MAP @ Garredd II
   categories:
   - community-health-center
-  address:
-    street: 1115 Garredd Blvd
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48713
-    lng: -82.09755
+  cost: sliding-scale
+  address: {street: 1115 Garredd Blvd, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48713, lng: -82.09755}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-028102
+  external_ids: {bphc: BPS-H80-028102}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-garredd-iii
   name: MAP @ Garredd III
   categories:
   - community-health-center
-  address:
-    street: 1113 Garredd Blvd
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48761
-    lng: -82.09766
+  cost: sliding-scale
+  address: {street: 1113 Garredd Blvd, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48761, lng: -82.09766}
   phone: 706-790-4440
   website: https://www.mapbt.com
-  external_ids:
-    bphc: BPS-H80-031400
+  external_ids: {bphc: BPS-H80-031400}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-interstate-parkway
   name: MAP @ Interstate Parkway
   categories:
   - community-health-center
-  address:
-    street: 1299 Interstate Pkwy
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48954
-    lng: -82.09654
+  cost: sliding-scale
+  address: {street: 1299 Interstate Pkwy, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48954, lng: -82.09654}
   phone: 706-790-4440
   website: https://www.mapbt.com
-  external_ids:
-    bphc: BPS-H80-031740
+  external_ids: {bphc: BPS-H80-031740}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-interstate-parkway-ii
   name: MAP @ Interstate Parkway II
   categories:
   - community-health-center
-  address:
-    street: 1265 Interstate Pkwy
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48908
-    lng: -82.09923
+  cost: sliding-scale
+  address: {street: 1265 Interstate Pkwy, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48908, lng: -82.09923}
   phone: 706-790-4440
-  external_ids:
-    bphc: BPS-H80-034371
+  external_ids: {bphc: BPS-H80-034371}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-pulmonology
   name: MAP @ Pulmonology
   categories:
   - community-health-center
-  address:
-    street: 3624 J Dewey Gray Cir
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48636
-    lng: -82.09727
+  cost: sliding-scale
+  address: {street: 3624 J Dewey Gray Cir, city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48636, lng: -82.09727}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-040070
+  external_ids: {bphc: BPS-H80-040070}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-wheeler-road
   name: MAP @ Wheeler Road
   categories:
   - community-health-center
-  address:
-    street: 3685 Wheeler Rd, Suite 100
-    city: Augusta
-    state: ga
-    zip: '30909'
-  geo:
-    lat: 33.48326
-    lng: -82.09544
+  cost: sliding-scale
+  address: {street: '3685 Wheeler Rd, Suite 100', city: Augusta, state: ga, zip: '30909'}
+  geo: {lat: 33.48326, lng: -82.09544}
   phone: 706-790-4440
-  external_ids:
-    bphc: BPS-H80-035530
+  external_ids: {bphc: BPS-H80-035530}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/map-wrightsboro-road
   name: MAP @ Wrightsboro Road
   categories:
   - community-health-center
-  address:
-    street: 2300 Wrightsboro Rd
-    city: Augusta
-    state: ga
-    zip: '30904'
-  geo:
-    lat: 33.46795
-    lng: -82.02079
+  cost: sliding-scale
+  address: {street: 2300 Wrightsboro Rd, city: Augusta, state: ga, zip: '30904'}
+  geo: {lat: 33.46795, lng: -82.02079}
   phone: 706-790-4440
   website: https://www.mapbt.com
-  external_ids:
-    bphc: BPS-H80-030334
+  external_ids: {bphc: BPS-H80-030334}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/martinez-urgent-care
   name: Martinez Urgent Care
   categories:
@@ -933,6 +835,9 @@
     lng: -82.09242
   phone: 706-855-1755
   website: https://www.martinezurgentcare.com
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -942,43 +847,27 @@
   name: Medical Associates Plus
   categories:
   - community-health-center
-  address:
-    street: 2050 Walton Way
-    city: Augusta
-    state: ga
-    zip: '30904'
-  geo:
-    lat: 33.47554
-    lng: -82.00663
+  cost: sliding-scale
+  address: {street: 2050 Walton Way, city: Augusta, state: ga, zip: '30904'}
+  geo: {lat: 33.47554, lng: -82.00663}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-017411
+  external_ids: {bphc: BPS-H80-017411}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/medical-associates-plus-mobile-health-van
   name: Medical Associates Plus Mobile Health Van
   categories:
   - community-health-center
-  address:
-    street: 2467 Golden Camp Rd
-    city: Augusta
-    state: ga
-    zip: '30906'
-  geo:
-    lat: 33.42911
-    lng: -82.0511
+  cost: sliding-scale
+  address: {street: 2467 Golden Camp Rd, city: Augusta, state: ga, zip: '30906'}
+  geo: {lat: 33.42911, lng: -82.0511}
   phone: 706-790-4440
-  external_ids:
-    bphc: BPS-H80-018663
+  external_ids: {bphc: BPS-H80-018663}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/mobile-site-15-2669-thomas-lane-and-strickland-c
   name: 'Mobile Site #15 2669 Thomas Lane And Strickland Court'
   categories:
@@ -1005,23 +894,15 @@
   name: Mobile Testing & Vaccines
   categories:
   - community-health-center
-  address:
-    street: 2467 Golden Camp Rd
-    city: Augusta
-    state: ga
-    zip: '30906'
-  geo:
-    lat: 33.42911
-    lng: -82.0511
+  cost: sliding-scale
+  address: {street: 2467 Golden Camp Rd, city: Augusta, state: ga, zip: '30906'}
+  geo: {lat: 33.42911, lng: -82.0511}
   phone: 706-790-4440
   website: https://www.mapbt.com
-  external_ids:
-    bphc: BPS-H80-033693
+  external_ids: {bphc: BPS-H80-033693}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/monte-sano-elementary-school
   name: Monte Sano Elementary School
   categories:
@@ -1069,23 +950,15 @@
   name: NEIGHBORHOOD IMPROVEMENT PROJECT, INC. dba Medical Associates Plus @ Belle Terrace
   categories:
   - community-health-center
-  address:
-    street: 2467 Golden Camp Rd
-    city: Augusta
-    state: ga
-    zip: '30906'
-  geo:
-    lat: 33.42911
-    lng: -82.0511
+  cost: sliding-scale
+  address: {street: 2467 Golden Camp Rd, city: Augusta, state: ga, zip: '30906'}
+  geo: {lat: 33.42911, lng: -82.0511}
   phone: 706-790-4440
   website: https://mapbt.com
-  external_ids:
-    bphc: BPS-H80-004944
+  external_ids: {bphc: BPS-H80-004944}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/augusta/oak-point
   name: Oak Point
   categories:
@@ -1145,6 +1018,19 @@
     lng: -82.12571
   phone: 706-787-8290 x8642
   website: https://eisenhower.tricare.mil/Health-Services/Men
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1250,6 +1136,15 @@
     lng: -82.00767
   phone: 706-432-3865
   website: https://www.serenitybhs.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient detoxification
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Short-term residential
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1265,6 +1160,11 @@
     zip: '30909'
   phone: 706-733-1935
   website: https://www.steppingstonestorecovery.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1285,6 +1185,19 @@
     lng: -82.12571
   phone: 706-787-5392
   website: https://eisenhower.tricare.mil/Health-Services/Men
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Young adults
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1347,6 +1260,11 @@
     lng: -82.07561
   phone: 706-364-1404
   website: https://www.tfsga.org
+  services:
+  - Outpatient
+  - Young adults
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -1367,6 +1285,17 @@
     lng: -82.02497
   phone: 706-733-0188 x26237
   website: https://www.va.gov/augusta-health-care/locations/augusta-va-medical-center-uptown/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Residential/24-hour residential
+  - Veterans
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

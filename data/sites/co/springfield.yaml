@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Baca County
-  address: {street: '772 Colorado St., Suite #1', city: Springfield, state: co, zip: '81073'}
+  address:
+    street: '772 Colorado St., Suite #1'
+    city: Springfield
+    state: co
+    zip: '81073'
   place: 0873330
   phone: 719-523-4131
   website: https://www.bacacountyco.gov/departments/department-of-human-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/springfield/springfield-junior-senior-high-school
   name: Springfield Junior/Senior High School
   categories:
@@ -36,23 +42,15 @@
   name: Valley-Wide Counseling & Support Center- Springfield
   categories:
   - community-health-center
-  address:
-    street: 189 E 9th Ave
-    city: Springfield
-    state: co
-    zip: '81073'
+  cost: sliding-scale
+  address: {street: 189 E 9th Ave, city: Springfield, state: co, zip: '81073'}
   place: 0873330
-  geo:
-    lat: 37.40516
-    lng: -102.61544
+  geo: {lat: 37.40516, lng: -102.61544}
   phone: 800-511-5446
-  external_ids:
-    bphc: BPS-H80-036411
+  external_ids: {bphc: BPS-H80-036411}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/springfield/valley-wide-health-systems
   name: Valley Wide Health Systems
   categories:
@@ -69,6 +67,11 @@
     lng: -102.61535
   phone: 800-511-5446
   website: https://
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

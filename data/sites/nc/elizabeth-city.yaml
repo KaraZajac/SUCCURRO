@@ -63,23 +63,15 @@
   name: Gateway Community Health Centers, Inc. Elizabeth City Site
   categories:
   - community-health-center
-  address:
-    street: 1134 N Road St
-    city: Elizabeth City
-    state: nc
-    zip: '27909'
+  cost: sliding-scale
+  address: {street: 1134 N Road St, city: Elizabeth City, state: nc, zip: '27909'}
   place: '3720580'
-  geo:
-    lat: 36.32086
-    lng: -76.21776
+  geo: {lat: 36.32086, lng: -76.21776}
   phone: 252-333-1047
-  external_ids:
-    bphc: BPS-H80-040326
+  external_ids: {bphc: BPS-H80-040326}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/elizabeth-city/kids-n-play
   name: Kids-N-Play
   categories:
@@ -114,6 +106,10 @@
     lng: -76.2248
   phone: 252-335-5346
   website: https://lisacreef.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -165,13 +161,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pasquotank County
-  address: {street: 709 Roanoke Avenue, city: Elizabeth City, state: nc, zip: '27909'}
+  address:
+    street: 709 Roanoke Avenue
+    city: Elizabeth City
+    state: nc
+    zip: '27909'
   place: '3720580'
   phone: 252-338-2126
   website: https://www.pasquotankcountync.org/dss
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: nc/elizabeth-city/pasquotank-lois-johnson-head-start
   name: Pasquotank/Lois Johnson Head Start
   categories:
@@ -207,6 +209,10 @@
     lng: -76.23474
   phone: 252-331-0322
   website: https://www.pridenc.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -228,6 +234,22 @@
     lng: -76.22381
   phone: 252-621-1067
   website: https://springlifecare.com
+  services:
+  - Outpatient
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

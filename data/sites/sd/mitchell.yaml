@@ -14,6 +14,11 @@
     lng: -98.02954
   phone: 605-996-2486
   website: https://abbotthouse.org
+  services:
+  - Residential/24-hour residential
+  - Clients who have experienced trauma
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -23,23 +28,15 @@
   name: Access Health - Mitchell
   categories:
   - community-health-center
-  address:
-    street: 1900 Grassland Dr
-    city: Mitchell
-    state: sd
-    zip: '57301'
+  cost: sliding-scale
+  address: {street: 1900 Grassland Dr, city: Mitchell, state: sd, zip: '57301'}
   place: '4643100'
-  geo:
-    lat: 43.69033
-    lng: -98.0235
+  geo: {lat: 43.69033, lng: -98.0235}
   phone: 605-995-7000
-  external_ids:
-    bphc: BPS-H80-028108
+  external_ids: {bphc: BPS-H80-028108}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/mitchell/city-of-mitchell-housing-redevelopment-comm
   name: City Of Mitchell Housing & Redevelopment Comm
   categories:
@@ -65,13 +62,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Davison County
-  address: {street: 116 E. 11th Ave, city: Mitchell, state: sd, zip: '57301'}
+  address:
+    street: 116 E. 11th Ave
+    city: Mitchell
+    state: sd
+    zip: '57301'
   place: '4643100'
   phone: 605-995-8000
   email: DSSRegion6EA@state.sd.us
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: sd/mitchell/home-based-baker
   name: Home-based Baker
   categories:

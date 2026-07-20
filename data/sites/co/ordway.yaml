@@ -3,13 +3,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Crowley County
-  address: {street: '631 Main St., Suite 100', city: Ordway, state: co, zip: '81063'}
+  address:
+    street: 631 Main St., Suite 100
+    city: Ordway
+    state: co
+    zip: '81063'
   place: 0856145
   phone: 719-267-3546
   website: https://www.colorado.gov/pacific/crowleycounty/human-services-2
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: co/ordway/crowley-county-elementary-k-6
   name: Crowley County Elementary K-6
   categories:
@@ -49,6 +55,11 @@
     lng: -103.7563
   phone: 800-511-5446
   website: https://
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -58,21 +69,13 @@
   name: Valley-Wide Ordway
   categories:
   - community-health-center
-  address:
-    street: 319 Main St
-    city: Ordway
-    state: co
-    zip: '81063'
+  cost: sliding-scale
+  address: {street: 319 Main St, city: Ordway, state: co, zip: '81063'}
   place: 0856145
-  geo:
-    lat: 38.21849
-    lng: -103.75624
+  geo: {lat: 38.21849, lng: -103.75624}
   phone: 719-267-3503
   website: https://vwhs.org/
-  external_ids:
-    bphc: BPS-H80-028367
+  external_ids: {bphc: BPS-H80-028367}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

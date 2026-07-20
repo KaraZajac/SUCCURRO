@@ -43,24 +43,16 @@
   name: MERCER PRIMARY CARE
   categories:
   - community-health-center
-  address:
-    street: 737 Greenville Rd
-    city: Mercer
-    state: pa
-    zip: '16137'
+  cost: sliding-scale
+  address: {street: 737 Greenville Rd, city: Mercer, state: pa, zip: '16137'}
   place: '4248696'
-  geo:
-    lat: 41.24813
-    lng: -80.24882
+  geo: {lat: 41.24813, lng: -80.24882}
   phone: 724-662-2650
   website: https://www.primary-health.net
-  external_ids:
-    bphc: BPS-H80-005255
+  external_ids: {bphc: BPS-H80-005255}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/mercer/paoletta-counseling-services-inc
   name: Paoletta Counseling Services Inc
   categories:
@@ -77,6 +69,9 @@
     lng: -80.23633
   phone: 724-662-7202
   website: https://www.paoletta.org
+  services:
+  - Outpatient
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -18,13 +18,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Madison, Richland Counties
-  address: {street: '611 North Cedar, (P. O. Box 352)', city: Tallulah, state: la, zip: '71284'}
+  address:
+    street: 611 North Cedar, (P. O. Box 352)
+    city: Tallulah
+    state: la
+    zip: '71284'
   place: '2274690'
   phone: 318-574-2130
   website: https://deltacaala.com/energy-assistance/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: la/tallulah/delta-head-start-early-head-start-tallulah
   name: Delta Head Start/Early Head Start - Tallulah
   categories:
@@ -113,24 +119,16 @@
   name: Outpatient Medical Center, Inc. @ Tallulah
   categories:
   - community-health-center
-  address:
-    street: 804 N Beech St
-    city: Tallulah
-    state: la
-    zip: '71282'
+  cost: sliding-scale
+  address: {street: 804 N Beech St, city: Tallulah, state: la, zip: '71282'}
   place: '2274690'
-  geo:
-    lat: 32.40913
-    lng: -91.18155
+  geo: {lat: 32.40913, lng: -91.18155}
   phone: 800-308-7566
   website: http://www.outpatientmedical.org
-  external_ids:
-    bphc: BPS-H80-000390
+  external_ids: {bphc: BPS-H80-000390}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/tallulah/preventive-measures-programs-inc
   name: Preventive Measures Programs Inc
   categories:
@@ -147,6 +145,22 @@
     lng: -91.18176
   phone: 318-600-4225
   website: https://www.preventivemeasures.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -168,6 +182,19 @@
     lng: -91.18413
   phone: 318-574-1713
   website: https://www.nedeltahsa.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

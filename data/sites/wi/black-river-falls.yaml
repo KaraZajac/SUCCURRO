@@ -66,24 +66,16 @@
   name: Family Health Center - Black River Falls Dental Center
   categories:
   - community-health-center
-  address:
-    street: N6571 Lumberjack Guy Rd
-    city: Black River Falls
-    state: wi
-    zip: '54615'
+  cost: sliding-scale
+  address: {street: N6571 Lumberjack Guy Rd, city: Black River Falls, state: wi, zip: '54615'}
   place: '5507900'
-  geo:
-    lat: 44.30867
-    lng: -90.80597
+  geo: {lat: 44.30867, lng: -90.80597}
   phone: 715-670-0400
   website: https://familyhealthcenter.org
-  external_ids:
-    bphc: BPS-H80-011373
+  external_ids: {bphc: BPS-H80-011373}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/black-river-falls/ho-chunk-gra
   name: Ho Chunk Gra
   categories:
@@ -131,13 +123,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Jackson County
-  address: {street: 420 Hwy. 54 W., city: Black River Falls, state: wi, zip: '54615'}
+  address:
+    street: 420 Hwy. 54 W.
+    city: Black River Falls
+    state: wi
+    zip: '54615'
   place: '5507900'
   phone: 715-284-4301 ext. 307
   website: http://homeenergyplus.wi.gov
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wi/black-river-falls/nw-system-csl-and-guidance-clinic-northwest-jour
   name: NW System/Csl and Guidance Clinic Northwest Journey/Black River Falls
   categories:
@@ -153,6 +151,13 @@
     lng: -90.89881
   phone: 715-284-1100
   website: https://www.nwcgc.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

@@ -94,6 +94,10 @@
     lng: -77.29645
   phone: 585-394-0530
   website: https://www.rochesterregional.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -103,23 +107,15 @@
   name: Jordan Health at CCIA
   categories:
   - community-health-center
-  address:
-    street: 120 N Main St
-    city: Canandaigua
-    state: ny
-    zip: '14424'
+  cost: sliding-scale
+  address: {street: 120 N Main St, city: Canandaigua, state: ny, zip: '14424'}
   place: '3612144'
-  geo:
-    lat: 42.89125
-    lng: -77.28492
+  geo: {lat: 42.89125, lng: -77.28492}
   phone: 585-396-6980
-  external_ids:
-    bphc: BPS-H80-012226
+  external_ids: {bphc: BPS-H80-012226}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/canandaigua/noah-s-blessing-box
   name: Noah's Blessing Box
   categories:
@@ -140,12 +136,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ontario County
-  address: {street: 3010 County Complex Dr., city: Canandaigua, state: ny, zip: '14424'}
+  address:
+    street: 3010 County Complex Dr.
+    city: Canandaigua
+    state: ny
+    zip: '14424'
   place: '3612144'
   phone: 585-396-4060
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ny/canandaigua/ontario-county-mental-health-center-canandaigua
   name: Ontario County Mental Health Center Canandaigua Clinic
   categories:
@@ -162,6 +164,9 @@
     lng: -77.21033
   phone: 585-396-4363
   website: https://www.co.ontario.ny.us/
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -172,9 +177,15 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ontario County
-  address: {street: 3010 County Complex Drive, city: Canandaigua, state: ny, zip: '14424'}
+  address:
+    street: 3010 County Complex Drive
+    city: Canandaigua
+    state: ny
+    zip: '14424'
   place: '3612144'
   phone: 585-396-4020
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

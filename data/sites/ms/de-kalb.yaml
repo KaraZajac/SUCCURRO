@@ -44,35 +44,33 @@
   name: KEMPER FAMILY MEDICAL CENTER
   categories:
   - community-health-center
-  address:
-    street: 201 Birch St
-    city: De Kalb
-    state: ms
-    zip: '39328'
+  cost: sliding-scale
+  address: {street: 201 Birch St, city: De Kalb, state: ms, zip: '39328'}
   place: '2818340'
-  geo:
-    lat: 32.78064
-    lng: -88.67702
+  geo: {lat: 32.78064, lng: -88.67702}
   phone: 601-743-2643
   website: https://www.gmhcinc.org
-  external_ids:
-    bphc: BPS-H80-004099
+  external_ids: {bphc: BPS-H80-004099}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/de-kalb/multi-county-community-service-agency
   name: Multi-County Community Service Agency
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Kemper County
-  address: {street: 39 Bell St., city: DeKalb, state: ms, zip: '39328'}
+  address:
+    street: 39 Bell St.
+    city: DeKalb
+    state: ms
+    zip: '39328'
   place: '2818340'
   phone: 601-743-5752
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ms/de-kalb/region-x-weems-cmhc-kemper-county
   name: Region X Weems CMHC Kemper County
   categories:
@@ -89,6 +87,17 @@
     lng: -88.65195
   phone: 601-743-5616
   website: https://www.weemsmh.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

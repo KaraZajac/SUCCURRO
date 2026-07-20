@@ -24,24 +24,16 @@
   name: ARcare-121
   categories:
   - community-health-center
-  address:
-    street: 630 W South St
-    city: Benton
-    state: ar
-    zip: '72015'
+  cost: sliding-scale
+  address: {street: 630 W South St, city: Benton, state: ar, zip: '72015'}
   place: 0505290
-  geo:
-    lat: 34.5633
-    lng: -92.59388
+  geo: {lat: 34.5633, lng: -92.59388}
   phone: 870-347-2534
   website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-027250
+  external_ids: {bphc: BPS-H80-027250}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/benton/birch-tree-communities-inc-benton-town
   name: Birch Tree Communities Inc Benton Town
   categories:
@@ -57,6 +49,13 @@
     lng: -92.60483
   phone: 501-315-3344
   website: https://birchtree.org
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -113,14 +112,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Saline County
-  address: {street: 714 Edison Ave, city: Benton, state: ar, zip: '72018'}
+  address:
+    street: 714 Edison Ave
+    city: Benton
+    state: ar
+    zip: '72018'
   place: 0505290
   phone: 501-326-6229
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: ar/benton/counseling-clinic-inc-outpatient-substance-abuse
   name: Counseling Clinic Inc Outpatient Substance Abuse Program
   categories:
@@ -137,6 +142,11 @@
     lng: -92.58394
   phone: 501-315-4224
   website: https://cciar.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -146,44 +156,28 @@
   name: Healthy Connections- Bryant
   categories:
   - community-health-center
-  address:
-    street: 3525 Highway 5
-    city: Benton
-    state: ar
-    zip: '72019'
+  cost: sliding-scale
+  address: {street: 3525 Highway 5, city: Benton, state: ar, zip: '72019'}
   place: 0505290
-  geo:
-    lat: 34.6157
-    lng: -92.51631
+  geo: {lat: 34.6157, lng: -92.51631}
   phone: 888-710-8220
-  external_ids:
-    bphc: BPS-H80-039071
+  external_ids: {bphc: BPS-H80-039071}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/benton/healthy-connections-haskell-clinic
   name: Healthy Connections - Haskell Clinic
   categories:
   - community-health-center
-  address:
-    street: 2323 N Highway 229
-    city: Benton
-    state: ar
-    zip: '72015'
+  cost: sliding-scale
+  address: {street: 2323 N Highway 229, city: Benton, state: ar, zip: '72015'}
   place: 0505290
-  geo:
-    lat: 34.51091
-    lng: -92.64401
+  geo: {lat: 34.51091, lng: -92.64401}
   phone: 479-437-3449
-  external_ids:
-    bphc: BPS-H80-035538
+  external_ids: {bphc: BPS-H80-035538}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/benton/housing-authority-of-the-city-of-benton-ar
   name: Housing Authority Of The City Of Benton, Ar
   categories:
@@ -220,6 +214,15 @@
     lng: -92.58556
   phone: 501-847-0081
   website: https://www.thepointebhs.com
+  services:
+  - Outpatient
+  - Young adults
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -241,6 +244,12 @@
     lng: -92.57805
   phone: 501-575-2344
   website: https://www.reachbh.com
+  services:
+  - Outpatient
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -284,6 +293,14 @@
     lng: -92.53206
   phone: 501-316-1255
   website: https://www.rivendellofarkansas.com
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
+  - Active duty military
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

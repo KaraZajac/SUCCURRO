@@ -2,24 +2,16 @@
   name: CHS Lenoir City - Creekwood
   categories:
   - community-health-center
-  address:
-    street: 5500 Creekwood Park Blvd
-    city: Lenoir City
-    state: tn
-    zip: '37772'
+  cost: sliding-scale
+  address: {street: 5500 Creekwood Park Blvd, city: Lenoir City, state: tn, zip: '37772'}
   place: '4741760'
-  geo:
-    lat: 35.83642
-    lng: -84.2703
+  geo: {lat: 35.83642, lng: -84.2703}
   phone: 865-986-8082
   website: https://www.cherokeehealth.com
-  external_ids:
-    bphc: BPS-H80-033718
+  external_ids: {bphc: BPS-H80-033718}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tn/lenoir-city/eaton-elementary
   name: Eaton Elementary
   categories:
@@ -156,14 +148,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Loudon County
-  address: {street: '119 N. A Street, Suite B', city: Lenoir City, state: tn, zip: '37771'}
+  address:
+    street: 119 N. A Street, Suite B
+    city: Lenoir City
+    state: tn
+    zip: '37771'
   place: '4741760'
   phone: 865-248-8661
   email: liheap@mecaa.net
   website: https://www.mecaa.net/agency-program-services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: tn/lenoir-city/north-middle-school
   name: North Middle School
   categories:
@@ -203,6 +201,9 @@
     lng: -84.27086
   phone: 865-986-8082
   website: https://www.rvh.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

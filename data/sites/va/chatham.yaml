@@ -61,23 +61,15 @@
   name: Health Centers of the Piedmont - Chatham
   categories:
   - community-health-center
-  address:
-    street: 30 S Main St
-    city: Chatham
-    state: va
-    zip: '24531'
+  cost: sliding-scale
+  address: {street: 30 S Main St, city: Chatham, state: va, zip: '24531'}
   place: '5115000'
-  geo:
-    lat: 36.82508
-    lng: -79.39859
+  geo: {lat: 36.82508, lng: -79.39859}
   phone: 434-432-4443
-  external_ids:
-    bphc: BPS-H80-031548
+  external_ids: {bphc: BPS-H80-031548}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/chatham/mini-pantry
   name: mini pantry
   categories:
@@ -117,12 +109,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Pittsylvania County
-  address: {street: '220 H. G. McGhee Drive, (P. O. Box E)', city: Chatham, state: va, zip: '24531'}
+  address:
+    street: 220 H. G. McGhee Drive, (P. O. Box E)
+    city: Chatham
+    state: va
+    zip: '24531'
   place: '5115000'
   phone: 434-432-7281
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: va/chatham/tranquility-grove
   name: Tranquility Grove
   categories:
@@ -138,6 +136,10 @@
     lng: -79.39066
   phone: 434-835-4601
   website: https://www.epichealthpartners.com
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

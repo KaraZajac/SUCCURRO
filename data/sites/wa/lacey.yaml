@@ -41,13 +41,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Thurston County
-  address: {street: 3020 Willamette Drive NE, city: Lacey, state: wa, zip: '98516'}
+  address:
+    street: 3020 Willamette Drive NE
+    city: Lacey
+    state: wa
+    zip: '98516'
   place: '5336745'
   phone: 360-438-1100
   website: http://www.caclmt.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: wa/lacey/college-glen-apts
   name: College Glen Apts
   categories:
@@ -248,6 +254,11 @@
     lng: -122.82122
   phone: 360-456-7575
   website: https://www.providence.org
+  services:
+  - Outpatient
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -291,6 +302,22 @@
     lng: -122.83694
   phone: 360-923-9585
   website: https://www.TheRightStepInc.com
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -300,24 +327,16 @@
   name: Sea Mar CHC - Lacey Woodland Square Loop
   categories:
   - community-health-center
-  address:
-    street: 669 Woodland Square Loop SE
-    city: Lacey
-    state: wa
-    zip: '98503'
+  cost: sliding-scale
+  address: {street: 669 Woodland Square Loop SE, city: Lacey, state: wa, zip: '98503'}
   place: '5336745'
-  geo:
-    lat: 47.04296
-    lng: -122.82357
+  geo: {lat: 47.04296, lng: -122.82357}
   phone: 360-359-4840
   website: https://www.seamar.org
-  external_ids:
-    bphc: BPS-H80-009600
+  external_ids: {bphc: BPS-H80-009600}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/lacey/timberline-high-school
   name: Timberline High School
   categories:

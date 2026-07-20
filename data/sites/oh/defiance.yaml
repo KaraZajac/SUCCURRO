@@ -25,24 +25,16 @@
   name: Defiance Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 1018 Ralston Ave
-    city: Defiance
-    state: oh
-    zip: '43512'
+  cost: sliding-scale
+  address: {street: 1018 Ralston Ave, city: Defiance, state: oh, zip: '43512'}
   place: '3921308'
-  geo:
-    lat: 41.29773
-    lng: -84.37186
+  geo: {lat: 41.29773, lng: -84.37186}
   phone: 567-239-4562
   website: https://www.hpwohio.org
-  external_ids:
-    bphc: BPS-H80-037297
+  external_ids: {bphc: BPS-H80-037297}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/defiance/defiance-va-clinic
   name: Defiance VA Clinic
   categories:
@@ -116,6 +108,10 @@
     lng: -84.36074
   phone: 419-475-4449
   website: https://www.harbor.org
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -172,25 +168,37 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Van Wert County
-  address: {street: 1933 E. Second St., city: Defiance, state: oh, zip: '43512'}
+  address:
+    street: 1933 E. Second St.
+    city: Defiance
+    state: oh
+    zip: '43512'
   place: '3921308'
   phone: 419-784-5136
   website: https://nocac.org/emergency-services/heap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/defiance/northwestern-ohio-community-action-commission
   name: Northwestern Ohio Community Action Commission
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Defiance County
-  address: {street: 1933 E. Second St., city: Defiance, state: oh, zip: '43512'}
+  address:
+    street: 1933 E. Second St.
+    city: Defiance
+    state: oh
+    zip: '43512'
   place: '3921308'
   phone: 419-219-4641
   website: https://nocac.org/emergency-services/heap/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/defiance/promedica-defiance-regional-hospital-coping-cent
   name: ProMedica Defiance Regional Hospital Coping Center
   categories:
@@ -207,6 +215,12 @@
     lng: -84.37671
   phone: 419-783-6957
   website: https://www.promedica.org
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Outpatient
+  - Young adults
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -228,6 +242,9 @@
     lng: -84.36453
   phone: 419-782-9920 x117
   website: https://www.rsnwo.org
+  services:
+  - Outpatient
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

@@ -2,24 +2,16 @@
   name: Avoyelles Community Health Center
   categories:
   - community-health-center
-  address:
-    street: 338 Moreau St
-    city: Marksville
-    state: la
-    zip: '71351'
+  cost: sliding-scale
+  address: {street: 338 Moreau St, city: Marksville, state: la, zip: '71351'}
   place: '2248750'
-  geo:
-    lat: 31.11978
-    lng: -92.06875
+  geo: {lat: 31.11978, lng: -92.06875}
   phone: 318-648-0375
   website: https://www.winnchc.org
-  external_ids:
-    bphc: BPS-H80-030079
+  external_ids: {bphc: BPS-H80-030079}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/marksville/avoyelles-parish-police-jury
   name: Avoyelles Parish Police Jury
   categories:
@@ -45,12 +37,18 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Avoyelles, Pointe Coupee Counties
-  address: {street: '641 Goverment St., (P.O. Box 527)', city: Marksville, state: la, zip: '71351'}
+  address:
+    street: 641 Goverment St., (P.O. Box 527)
+    city: Marksville
+    state: la
+    zip: '71351'
   place: '2248750'
   phone: 318-253-6085
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: la/marksville/caring-choices-of-marksville-central-la-human-se
   name: Caring Choices of Marksville Central LA Human Service District
   categories:
@@ -67,6 +65,17 @@
     lng: -92.06717
   phone: 318-253-9638
   website: https://www.clhsd.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -149,6 +158,17 @@
     lng: -92.06715
   phone: 318-253-8705
   website: https://www.marksvillehopecenter.com
+  services:
+  - Outpatient
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:

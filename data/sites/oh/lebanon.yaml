@@ -13,6 +13,13 @@
     lng: -84.17557
   phone: 513-496-3014 x7038
   website: https://baymark.com/ohio/
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,24 +63,16 @@
   name: HealthSource Lebanon
   categories:
   - community-health-center
-  address:
-    street: 1231 Columbus Ave, Unit A1
-    city: Lebanon
-    state: oh
-    zip: '45036'
+  cost: sliding-scale
+  address: {street: '1231 Columbus Ave, Unit A1', city: Lebanon, state: oh, zip: '45036'}
   place: '3942364'
-  geo:
-    lat: 39.45136
-    lng: -84.18299
+  geo: {lat: 39.45136, lng: -84.18299}
   phone: 513-696-4495
   website: https://www.healthsourceofohio.com
-  external_ids:
-    bphc: BPS-H80-012809
+  external_ids: {bphc: BPS-H80-012809}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/lebanon/lebanon-early-learning-center
   name: Lebanon Early Learning Center
   categories:
@@ -129,6 +128,12 @@
     lng: -84.2032
   phone: 513-932-4337
   website: https://www.talberthouse.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -139,13 +144,19 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Warren County
-  address: {street: 645 Oak Street, city: Lebanon, state: oh, zip: '45036'}
+  address:
+    street: 645 Oak Street
+    city: Lebanon
+    state: oh
+    zip: '45036'
   place: '3942364'
   phone: 513-695-2100
   website: https://www.wccsi.org/sitepages/PGM_ENERGY-EHEAP.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/lebanon/warren-metropolitian-housing-authority
   name: Warren Metropolitian Housing Authority
   categories:

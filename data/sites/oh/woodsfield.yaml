@@ -3,34 +3,32 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Monroe County
-  address: {street: 108 E. Marietta St., city: Woodsfield, state: oh, zip: '43793'}
+  address:
+    street: 108 E. Marietta St.
+    city: Woodsfield
+    state: oh
+    zip: '43793'
   place: '3986436'
   phone: 740-472-0828
   website: https://gmntrico.org/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape
 - id: oh/woodsfield/ohhc-woodsfield
   name: OHHC Woodsfield
   categories:
   - community-health-center
-  address:
-    street: 584 Lewisville Rd
-    city: Woodsfield
-    state: oh
-    zip: '43793'
+  cost: sliding-scale
+  address: {street: 584 Lewisville Rd, city: Woodsfield, state: oh, zip: '43793'}
   place: '3986436'
-  geo:
-    lat: 39.76661
-    lng: -81.12863
+  geo: {lat: 39.76661, lng: -81.12863}
   phone: 740-239-6447
-  external_ids:
-    bphc: BPS-H80-033686
+  external_ids: {bphc: BPS-H80-033686}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/woodsfield/southeast-healthcare
   name: Southeast Healthcare
   categories:
@@ -47,6 +45,10 @@
     lng: -81.11538
   phone: 740-472-0753
   website: https://www.southeasthc.org
+  services:
+  - Outpatient
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -56,23 +58,15 @@
   name: Southeast, Inc. - Woodsfield Health Center
   categories:
   - community-health-center
-  address:
-    street: 37990 Airport Rd
-    city: Woodsfield
-    state: oh
-    zip: '43793'
+  cost: sliding-scale
+  address: {street: 37990 Airport Rd, city: Woodsfield, state: oh, zip: '43793'}
   place: '3986436'
-  geo:
-    lat: 39.76541
-    lng: -81.13119
+  geo: {lat: 39.76541, lng: -81.13119}
   phone: 740-472-0753
-  external_ids:
-    bphc: BPS-H80-034083
+  external_ids: {bphc: BPS-H80-034083}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/woodsfield/tri-county-help-center-inc
   name: Tri County Help Center Inc
   categories:
@@ -89,6 +83,12 @@
     lng: -81.11577
   phone: 740-472-0255
   website: https://www.tricountyhelp.org
+  services:
+  - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:

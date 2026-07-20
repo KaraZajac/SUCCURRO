@@ -13,6 +13,17 @@
     lng: -124.28863
   phone: 877-408-8941
   website: https://adaptoregon.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
@@ -82,23 +93,15 @@
   name: Brookings-Harbor School District-Brookings-Harbor High School
   categories:
   - community-health-center
-  address:
-    street: 625 Pioneer Rd
-    city: Brookings
-    state: or
-    zip: '97415'
+  cost: sliding-scale
+  address: {street: 625 Pioneer Rd, city: Brookings, state: or, zip: '97415'}
   place: '4108650'
-  geo:
-    lat: 42.05753
-    lng: -124.27996
+  geo: {lat: 42.05753, lng: -124.27996}
   phone: 541-332-1114
-  external_ids:
-    bphc: BPS-H80-041125
+  external_ids: {bphc: BPS-H80-041125}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/brookings/brookings-va-clinic
   name: Brookings VA Clinic
   categories:
@@ -147,9 +150,15 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Curry County
-  address: {street: '937 Chetco Ave, #D (P. O. Box 227)', city: Brookings, state: or, zip: '97415'}
+  address:
+    street: '937 Chetco Ave, #D (P. O. Box 227)'
+    city: Brookings
+    state: or
+    zip: '97415'
   place: '4108650'
   phone: 541-469-3155
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-07-19'
+    method: scrape

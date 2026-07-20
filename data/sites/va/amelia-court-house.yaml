@@ -25,24 +25,16 @@
   name: AMELIA HEALTHCARE CENTER
   categories:
   - community-health-center
-  address:
-    street: 8920 Otterburn Rd
-    city: Amelia Court House
-    state: va
-    zip: '23002'
+  cost: sliding-scale
+  address: {street: 8920 Otterburn Rd, city: Amelia Court House, state: va, zip: '23002'}
   place: '5101640'
-  geo:
-    lat: 37.33804
-    lng: -77.99029
+  geo: {lat: 37.33804, lng: -77.99029}
   phone: 804-561-5150
   website: https://www.sdhsinc.com
-  external_ids:
-    bphc: BPS-H80-001854
+  external_ids: {bphc: BPS-H80-001854}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/amelia-court-house/crossroads-community-services-board-amelia-clini
   name: Crossroads Community Services Board Amelia Clinic
   categories:
@@ -59,6 +51,11 @@
     lng: -77.97548
   phone: 804-561-5057
   website: https://www.crossroadscsb.org
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
