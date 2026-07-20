@@ -82,6 +82,27 @@ export function orgsFor(state) {
 
 export const source = (id) => loadFresh(`sources/${id}.yaml`);
 
+export function allSources() {
+  if (cache.has("_sources")) return cache.get("_sources");
+  const base = path.join(DATA, "sources");
+  const list = [];
+  for (const dir of fs.readdirSync(base)) {
+    for (const f of fs.readdirSync(path.join(base, dir))) {
+      list.push(loadFresh(`sources/${dir}/${f}`));
+    }
+  }
+  list.sort((a, b) => (a.publisher + a.title).localeCompare(b.publisher + b.title));
+  cache.set("_sources", list);
+  return list;
+}
+
+export function sourceIndex() {
+  if (!cache.has("_srcIdx")) {
+    cache.set("_srcIdx", new Map(allSources().map((s) => [s.id, s])));
+  }
+  return cache.get("_srcIdx");
+}
+
 export const STATE_NAMES = {
   al: "Alabama", ak: "Alaska", az: "Arizona", ar: "Arkansas", ca: "California",
   co: "Colorado", ct: "Connecticut", de: "Delaware", dc: "District of Columbia",

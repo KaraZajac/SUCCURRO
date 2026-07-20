@@ -11,9 +11,10 @@ const name = STATE_NAMES[state] || state.toUpperCase();
 
 const placeNames = new Map(placesFor(state).map((p) => [p.slug, p.name]));
 const served = servedPlaces()
-  .filter((p) => p.state === state)
+  .filter((p) => p.state === state && p.slug !== "online" && p.slug !== "unknown")
   .map((p) => ({ slug: p.slug, name: placeNames.get(p.slug) || p.slug.replace(/-/g, " ") }))
   .sort((a, b) => a.name.localeCompare(b.name));
+const hasOnline = servedPlaces().some((p) => p.state === state && p.slug === "online");
 const orgs = orgsFor(state).sort((a, b) => a.name.localeCompare(b.name));
 ---
 <Base title={`${name} — SUCCURRO`}>
@@ -22,6 +23,10 @@ const orgs = orgsFor(state).sort((a, b) => a.name.localeCompare(b.name));
     {served.length.toLocaleString()} communities with listed services.
     Statewide and regional organizations are listed below the communities.
   </p>
+
+  {hasOnline && (
+    <p><a class="chip" href={`${base}/${state}/online`}>Online meetings for {name}</a></p>
+  )}
 
   <h2>Communities</h2>
   <div class="cols">

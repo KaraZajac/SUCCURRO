@@ -53,6 +53,9 @@ def main(argv):
             "categories": ["food-pantry"],
             "place": geoid,
             "geo": Flow(lat=round(lat, 5), lng=round(lng, 5)),
+            # each pantry's own LFP page carries the address/description we
+            # deliberately don't crawl (4,886 detail fetches) — link instead
+            "website": f"{URL}pantry/{pid}",
             "external_ids": Flow(lfp=pid),
             "sources": [source_id],
             "verified": Flow(on=today(), method="scrape"),

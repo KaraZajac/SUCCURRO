@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import {
   servedPlaces, placesFor, sitesFor, meetingsFor,
-  taxonomyIndex, label, STATE_NAMES,
+  taxonomyIndex, label, STATE_NAMES, sourceIndex,
 } from "../../lib/data.js";
 
 export function getStaticPaths() {
@@ -12,8 +12,27 @@ const { state, place } = Astro.params;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const placeRec = placesFor(state).find((p) => p.slug === place);
-const placeName = placeRec?.name || place.replace(/-/g, " ");
 const stateName = STATE_NAMES[state] || state.toUpperCase();
+const placeName =
+  place === "online" ? `Online (${stateName})`
+  : place === "unknown" ? `${stateName} (location unlisted)`
+  : placeRec?.name || place.replace(/-/g, " ");
+
+const sources = sourceIndex();
+const attribution = (rec) => {
+  const s = sources.get((rec.sources || [])[0]);
+  if (!s) return null;
+  return { name: s.publisher, url: s.url || s.archive_url };
+};
+const mapsUrl = (rec) => {
+  if (rec.geo) return `https://www.google.com/maps/search/?api=1&query=${rec.geo.lat},${rec.geo.lng}`;
+  const a = rec.address || rec.venue;
+  if (a?.street && a?.city) {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      `${a.street}, ${a.city}, ${(a.state || state).toUpperCase()} ${a.zip || ""}`)}`;
+  }
+  return null;
+};
 
 const sites = sitesFor(state, place);
 const meetings = meetingsFor(state, place);
@@ -76,6 +95,20 @@ const hoursText = (h) =>
           {s.hours && <div class="meta">{hoursText(s.hours)}</div>}
           {s.description && <div class="meta">{s.description}</div>}
           {s.eligibility && <div class="meta">Eligibility: {s.eligibility}</div>}
+          <div class="meta">
+            {mapsUrl(s) && <a href={mapsUrl(s)}>directions</a>}
+            {attribution(s) && (
+              <>
+                {mapsUrl(s) && " · "}
+                <span>
+                  via {attribution(s).url
+                    ? <a href={attribution(s).url}>{attribution(s).name}</a>
+                    : attribution(s).name},
+                  verified {s.verified?.on}
+                </span>
+              </>
+            )}
+          </div>
         </div>
       ))}
     </>
@@ -97,6 +130,12 @@ const hoursText = (h) =>
             <div class="meta">
               {m.venue?.street && `${m.venue.street}, `}{m.venue?.city}
               {m.conference_url && <a href={m.conference_url}> join online</a>}
+              {mapsUrl(m) && <> · <a href={mapsUrl(m)}>directions</a></>}
+              {attribution(m) && (
+                <> · via {attribution(m).url
+                  ? <a href={attribution(m).url}>{attribution(m).name}</a>
+                  : attribution(m).name}</>
+              )}
             </div>
           </div>
         ))}

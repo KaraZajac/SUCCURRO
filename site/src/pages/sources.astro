@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+import { allSources } from "../lib/data.js";
+const sources = allSources();
+---
+<Base title="Sources — SUCCURRO">
+  <h1>Sources</h1>
+  <p>
+    Every record in SUCCURRO cites at least one of these {sources.length} sources
+    and carries the date it was last verified against it. Archive links are
+    Wayback Machine snapshots taken to guard against link rot.
+  </p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Publisher</th><th>Source</th><th>Tier</th><th>Retrieved</th><th>Archive</th></tr></thead>
+    <tbody>
+      {sources.map((s) => (
+        <tr>
+          <td>{s.publisher}</td>
+          <td>{s.url ? <a href={s.url}>{s.title}</a> : s.title}</td>
+          <td>{s.tier}</td>
+          <td>{s.retrieved_on}</td>
+          <td>{s.archive_url && <a href={s.archive_url}>snapshot</a>}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+  <p class="meta">
+    Full rights and handling per source:
+    <a href="https://github.com/KaraZajac/SUCCURRO/blob/master/DATA-RIGHTS.md">DATA-RIGHTS.md</a>
+    · numbered registry with statuses:
+    <a href="https://github.com/KaraZajac/SUCCURRO/blob/master/docs/sources.md">docs/sources.md</a>
+  </p>
+</Base>

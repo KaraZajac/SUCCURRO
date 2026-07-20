@@ -45,6 +45,8 @@ class Places:
         stable slug so records shard sensibly; the validator soft-finds them."""
         if not city:
             return None, "unknown"
+        if re.match(r"^\d+(\s|$)", city):
+            return None, "unknown"  # a street address leaked into the city field
         state = state.lower()
         index = self.by_state.get(state, {})
         key = norm(city)
