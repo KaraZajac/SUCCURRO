@@ -21,6 +21,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     <strong>1-800-799-7233</strong> (Domestic Violence Hotline).
   </div>
 
+  <form action={`${base}/search`} method="get" class="card" role="search">
+    <label for="home-q"><strong>Your city or town</strong></label><br />
+    <input id="home-q" name="q" type="search" placeholder="e.g. Garden Grove"
+      style="width:100%;max-width:24rem;padding:0.5rem 0.7rem;margin:0.4rem 0.4rem 0 0;
+             border:1px solid var(--line);border-radius:var(--radius);
+             background:var(--bg);color:var(--text);font-size:1rem;" />
+    <button type="submit"
+      style="padding:0.5rem 1rem;border:1px solid var(--accent);border-radius:var(--radius);
+             background:var(--accent);color:var(--bg);font-size:1rem;cursor:pointer;">
+      Find help
+    </button>
+  </form>
+
   <div class="stat-row">
     <div class="stat"><div class="n">{m.counts.sites.toLocaleString()}</div><div class="l">service locations</div></div>
     <div class="stat"><div class="n">{m.counts.meetings.toLocaleString()}</div><div class="l">recovery &amp; support meetings</div></div>

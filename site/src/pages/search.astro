@@ -1,0 +1,126 @@
+---
+import Base from "../layouts/Base.astro";
+import { taxonomy, STATE_NAMES } from "../lib/data.js";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
+---
+<Base title="Search — SUCCURRO" indexable={false}>
+  <h1>Find help</h1>
+  <p>Type your city or town, pick what you need, and go.</p>
+
+  <div class="card">
+    <label for="q"><strong>Your city or town</strong></label><br />
+    <input id="q" type="search" autocomplete="off" placeholder="e.g. Garden Grove"
+      style="width:100%;max-width:24rem;padding:0.5rem 0.7rem;margin:0.4rem 0;
+             border:1px solid var(--line);border-radius:var(--radius);
+             background:var(--bg);color:var(--text);font-size:1rem;" />
+    <label for="need" style="margin-left:0.5rem;">Need</label>
+    <select id="need"
+      style="padding:0.45rem 0.5rem;margin-left:0.3rem;border:1px solid var(--line);
+             border-radius:var(--radius);background:var(--bg);color:var(--text);">
+      <option value="">everything</option>
+      {roots.map((t) => <option value={t.id}>{t.label}</option>)}
+      <option value="meetings">Recovery &amp; support meetings</option>
+    </select>
+    <div id="results" role="listbox" aria-label="Matching communities"></div>
+  </div>
+
+  <h2>Search everything</h2>
+  <p class="meta">Full-text search over every organization, location, and meeting name.</p>
+  <div id="pagefind" class="card"></div>
+
+  <script is:inline define:vars={{ base, stateNames: STATE_NAMES }}>
+    const q = document.getElementById("q");
+    const need = document.getElementById("need");
+    const results = document.getElementById("results");
+    let index = null;
+
+    async function ensureIndex() {
+      if (!index) {
+        const resp = await fetch(`${base}/api/places-index.json`);
+        index = await resp.json();
+      }
+      return index;
+    }
+
+    function score(entry, term) {
+      const name = entry.n.toLowerCase();
+      if (name === term) return 100;
+      if (name.startsWith(term)) return 50;
+      if (name.includes(term)) return 10;
+      return 0;
+    }
+
+    function total(entry) {
+      return Object.values(entry.c).reduce((a, b) => a + b, 0);
+    }
+
+    async function render() {
+      const term = q.value.trim().toLowerCase();
+      if (term.length < 2) { results.innerHTML = ""; return; }
+      const idx = await ensureIndex();
+      const needToken = need.value;
+      const matches = idx
+        .map((e) => ({ e, s: score(e, term) }))
+        .filter((m) => m.s > 0)
+        .filter((m) => !needToken || m.e.c[needToken])
+        .sort((a, b) => b.s - a.s || total(b.e) - total(a.e))
+        .slice(0, 20);
+      if (!matches.length) {
+        results.innerHTML =
+          `<p class="meta">No listed services match${needToken ? " that need" : ""} there yet.
+           Try the nearest larger town, or the full-text search below.</p>`;
+        return;
+      }
+      results.innerHTML = matches.map(({ e }) => {
+        const anchor = needToken && needToken !== "meetings" ? `#${needToken}`
+          : needToken === "meetings" ? "#meetings" : "";
+        const bits = [];
+        if (e.c.meetings) bits.push(`${e.c.meetings} meetings`);
+        const siteCount = total(e) - (e.c.meetings || 0);
+        if (siteCount) bits.push(`${siteCount} services`);
+        return `<div class="card"><h3>
+          <a href="${base}/${e.st}/${e.p}${anchor}">${e.n}, ${(stateNames[e.st] || e.st.toUpperCase())}</a>
+          </h3><div class="meta">${bits.join(" · ")}</div></div>`;
+      }).join("");
+    }
+
+    q.addEventListener("input", render);
+    need.addEventListener("change", render);
+    const params = new URLSearchParams(location.search);
+    if (params.get("q")) { q.value = params.get("q"); render(); }
+
+    // Pagefind full-text (present only in production builds)
+    (async () => {
+      try {
+        const pf = await import(`${base}/pagefind/pagefind.js`);
+        await pf.options({ ranking: { termFrequency: 0.8 } });
+        const box = document.getElementById("pagefind");
+        const input = document.createElement("input");
+        input.type = "search";
+        input.placeholder = "e.g. food pantry, NAMI, Serenity";
+        input.style.cssText =
+          "width:100%;max-width:24rem;padding:0.5rem 0.7rem;border:1px solid var(--line);" +
+          "border-radius:var(--radius);background:var(--bg);color:var(--text);font-size:1rem;";
+        const out = document.createElement("div");
+        box.append(input, out);
+        let timer;
+        input.addEventListener("input", () => {
+          clearTimeout(timer);
+          timer = setTimeout(async () => {
+            const term = input.value.trim();
+            if (term.length < 2) { out.innerHTML = ""; return; }
+            const search = await pf.search(term);
+            const top = await Promise.all(search.results.slice(0, 10).map((r) => r.data()));
+            out.innerHTML = top.map((d) =>
+              `<div class="card"><h3><a href="${d.url}">${d.meta.title || d.url}</a></h3>
+               <div class="meta">${d.excerpt}</div></div>`).join("");
+          }, 150);
+        });
+      } catch {
+        document.getElementById("pagefind").innerHTML =
+          '<p class="meta">Full-text search is available on the published site (it indexes the built pages).</p>';
+      }
+    })();
+  </script>
+</Base>

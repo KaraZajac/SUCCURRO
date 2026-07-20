@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import { meta } from "../lib/data.js";
-const { title = "SUCCURRO", description = "Find local help and support services across the US." } = Astro.props;
+const { title = "SUCCURRO", description = "Find local help and support services across the US.", indexable = true } = Astro.props;
 const m = meta();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
@@ -19,13 +19,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <div class="wrap">
         <a class="brand" href={`${base}/`}>SUCCURRO</a>
         <nav>
+          <a href={`${base}/search`}>Search</a>
           <a href={`${base}/states`}>Browse by state</a>
           <a href={`${base}/categories`}>By need</a>
           <a href={`${base}/about`}>About</a>
         </nav>
       </div>
     </header>
-    <main class="wrap">
+    <main class="wrap" data-pagefind-body={indexable ? "" : undefined}>
       <slot />
     </main>
     <footer class="site">

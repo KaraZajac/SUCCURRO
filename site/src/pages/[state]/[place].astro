@@ -60,7 +60,7 @@ const hoursText = (h) =>
 
   {groupOrder.map((root) => (
     <>
-      <h2>{label(root)}</h2>
+      <h2 id={root}>{label(root)}</h2>
       {groups.get(root).sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
         <div class="card">
           <h3>{s.website ? <a href={s.website}>{s.name}</a> : s.name}</h3>
@@ -81,7 +81,7 @@ const hoursText = (h) =>
     </>
   ))}
 
-  {meetings.length > 0 && <h2>Recovery &amp; support meetings</h2>}
+  {meetings.length > 0 && <h2 id="meetings">Recovery &amp; support meetings</h2>}
   {[...meetingsByProgram.keys()].sort().map((prog) => (
     <>
       <h3>{prog} meetings</h3>
