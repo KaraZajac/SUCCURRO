@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import { STATES, STATE_NAMES, servedPlaces } from "../lib/data.js";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const counts = new Map();
+for (const p of servedPlaces()) counts.set(p.state, (counts.get(p.state) || 0) + 1);
+---
+<Base title="Browse by state — SUCCURRO">
+  <h1>Browse by state</h1>
+  <div class="table-scroll"><table>
+    <thead><tr><th>State</th><th>Communities with listed services</th></tr></thead>
+    <tbody>
+      {STATES().map((st) => (
+        <tr>
+          <td><a href={`${base}/${st}`}>{STATE_NAMES[st] || st.toUpperCase()}</a></td>
+          <td>{(counts.get(st) || 0).toLocaleString()}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+</Base>

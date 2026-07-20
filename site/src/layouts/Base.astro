@@ -1,0 +1,43 @@
+---
+import "../styles/global.css";
+import { meta } from "../lib/data.js";
+const { title = "SUCCURRO", description = "Find local help and support services across the US." } = Astro.props;
+const m = meta();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href={`${base}/`}>SUCCURRO</a>
+        <nav>
+          <a href={`${base}/states`}>Browse by state</a>
+          <a href={`${base}/categories`}>By need</a>
+          <a href={`${base}/about`}>About</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        In crisis right now? Call or text <strong>988</strong> (Suicide &amp; Crisis
+        Lifeline) or text <strong>HOME</strong> to <strong>741741</strong>.
+        &middot; {m.counts.sites.toLocaleString()} sites,
+        {m.counts.meetings.toLocaleString()} meetings,
+        {m.counts.orgs.toLocaleString()} organizations &middot; data through {m.built}
+        &middot; CC BY-NC 4.0 &middot;
+        <a href="https://github.com/KaraZajac/SUCCURRO">source &amp; corrections</a>
+      </div>
+    </footer>
+  </body>
+</html>

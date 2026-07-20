@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+import { meta, taxonomy, STATES, STATE_NAMES } from "../lib/data.js";
+const m = meta();
+const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<Base>
+  <h1>Find help near you</h1>
+  <p>
+    A curated, source-anchored directory of help and support services across the
+    United States — food banks and pantries, shelters, treatment programs,
+    recovery meetings, veteran services, LGBTQ+ centers, legal aid, and more —
+    resolved to your city or town.
+  </p>
+
+  <div class="crisis-band">
+    <strong>In crisis right now?</strong> Call or text <strong>988</strong>
+    (Suicide &amp; Crisis Lifeline, 24/7) &middot; text <strong>HOME</strong> to
+    <strong>741741</strong> (Crisis Text Line) &middot; call
+    <strong>1-800-799-7233</strong> (Domestic Violence Hotline).
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">{m.counts.sites.toLocaleString()}</div><div class="l">service locations</div></div>
+    <div class="stat"><div class="n">{m.counts.meetings.toLocaleString()}</div><div class="l">recovery &amp; support meetings</div></div>
+    <div class="stat"><div class="n">{m.counts.orgs.toLocaleString()}</div><div class="l">organizations</div></div>
+    <div class="stat"><div class="n">{m.counts.places.toLocaleString()}</div><div class="l">cities &amp; towns indexed</div></div>
+  </div>
+
+  <h2>What do you need?</h2>
+  <p>
+    {roots.map((t) => (
+      <a class="chip" href={`${base}/category/${t.id}`}>{t.label}</a>
+    ))}
+  </p>
+
+  <h2>Where are you?</h2>
+  <div class="cols">
+    {STATES().map((st) => (
+      <a href={`${base}/${st}`}>{STATE_NAMES[st] || st.toUpperCase()}</a>
+    ))}
+  </div>
+</Base>

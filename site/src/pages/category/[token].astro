@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/Base.astro";
+import { taxonomy, label, STATES, STATE_NAMES } from "../../lib/data.js";
+
+export function getStaticPaths() {
+  return taxonomy()
+    .filter((t) => !t.superseded_by)
+    .map((t) => ({ params: { token: t.id } }));
+}
+const { token } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const entry = taxonomy().find((t) => t.id === token);
+const children = taxonomy().filter((t) => t.parent === token && !t.superseded_by);
+---
+<Base title={`${entry.label} — SUCCURRO`}>
+  <h1>{entry.label}</h1>
+  {children.length > 0 && (
+    <p>
+      {children.map((c) => (
+        <a class="chip" href={`${base}/category/${c.id}`}>{c.label}</a>
+      ))}
+    </p>
+  )}
+  <p>Pick your state, then your city or town, to see {entry.label.toLowerCase()} services near you:</p>
+  <div class="cols">
+    {STATES().map((st) => (
+      <a href={`${base}/${st}`}>{STATE_NAMES[st] || st.toUpperCase()}</a>
+    ))}
+  </div>
+</Base>

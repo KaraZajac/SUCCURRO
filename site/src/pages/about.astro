@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { meta } from "../lib/data.js";
+const m = meta();
+---
+<Base title="About — SUCCURRO">
+  <h1>About SUCCURRO</h1>
+  <p>
+    <em>Succurro</em> (Latin): to run to the aid of, to help. This is a curated,
+    source-anchored dataset and directory of help and support services across the
+    United States, resolved to the city and town level.
+  </p>
+  <p>
+    Every record cites its source and carries a verification date. Records that
+    go stale are flagged; safety-critical listings are suppressed rather than
+    shown stale. Confidential shelter locations are never published — only
+    hotline and intake contacts. Meeting listings carry venue and schedule facts
+    only, respecting the anonymity traditions of the fellowships they describe.
+  </p>
+  <p>
+    Data comes from federal open data (SAMHSA, HRSA, VA, HUD, USDA, ACF, DOJ),
+    open community feeds (the BMLT and Meeting Guide ecosystems), and facts-only
+    curation of public directories — {m.counts.sources} sources in all, listed in
+    the <a href="https://github.com/KaraZajac/SUCCURRO/blob/master/docs/sources.md">source registry</a>.
+  </p>
+  <p>
+    The dataset is CC BY-NC 4.0 and lives on
+    <a href="https://github.com/KaraZajac/SUCCURRO">GitHub</a>. Corrections and
+    takedown requests are honored without argument — open an issue or email
+    <a href="mailto:kara@soulstone.org">kara@soulstone.org</a>. If you run a
+    service listed here and want it updated or removed, that is your call, not
+    ours.
+  </p>
+  <p>
+    Not affiliated with any listed organization. In an emergency call 911; in a
+    mental-health crisis call or text 988.
+  </p>
+</Base>

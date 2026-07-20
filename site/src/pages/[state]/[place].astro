@@ -1,0 +1,111 @@
+---
+import Base from "../../layouts/Base.astro";
+import {
+  servedPlaces, placesFor, sitesFor, meetingsFor,
+  taxonomyIndex, label, STATE_NAMES,
+} from "../../lib/data.js";
+
+export function getStaticPaths() {
+  return servedPlaces().map(({ state, slug }) => ({ params: { state, place: slug } }));
+}
+const { state, place } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const placeRec = placesFor(state).find((p) => p.slug === place);
+const placeName = placeRec?.name || place.replace(/-/g, " ");
+const stateName = STATE_NAMES[state] || state.toUpperCase();
+
+const sites = sitesFor(state, place);
+const meetings = meetingsFor(state, place);
+
+// group sites by root category
+const tax = taxonomyIndex();
+const rootOf = (token) => {
+  let t = tax.get(token);
+  while (t?.parent) t = tax.get(t.parent);
+  return t?.id || token;
+};
+const groups = new Map();
+for (const s of sites) {
+  const root = rootOf((s.categories || [])[0] || "other");
+  if (!groups.has(root)) groups.set(root, []);
+  groups.get(root).push(s);
+}
+const groupOrder = [...groups.keys()].sort((a, b) => label(a).localeCompare(label(b)));
+
+const DAY_LABELS = { mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun" };
+const PROGRAMS = { aa: "AA", na: "NA", "al-anon": "Al-Anon", smart: "SMART Recovery", nami: "NAMI" };
+const fmtSchedule = (m) =>
+  (m.schedule || [])
+    .map((e) => `${DAY_LABELS[e.day] || e.day} ${e.time}`)
+    .join(", ");
+const meetingsByProgram = new Map();
+for (const m of meetings) {
+  const prog = PROGRAMS[m.program] || m.program.toUpperCase();
+  if (!meetingsByProgram.has(prog)) meetingsByProgram.set(prog, []);
+  meetingsByProgram.get(prog).push(m);
+}
+const hoursText = (h) =>
+  (h || []).map((e) => `${e.days.map((d) => DAY_LABELS[d] || d).join("/")} ${e.open}–${e.close}`).join(" · ");
+---
+<Base title={`Help in ${placeName}, ${stateName} — SUCCURRO`}
+      description={`Food, shelter, treatment, recovery meetings, and support services in ${placeName}, ${stateName}.`}>
+  <p class="meta"><a href={`${base}/${state}`}>{stateName}</a> →</p>
+  <h1>Help in {placeName}</h1>
+  <p class="meta">
+    {sites.length > 0 && `${sites.length} service location${sites.length === 1 ? "" : "s"}`}
+    {sites.length > 0 && meetings.length > 0 && " · "}
+    {meetings.length > 0 && `${meetings.length} recurring meeting${meetings.length === 1 ? "" : "s"}`}
+  </p>
+
+  {groupOrder.map((root) => (
+    <>
+      <h2>{label(root)}</h2>
+      {groups.get(root).sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
+        <div class="card">
+          <h3>{s.website ? <a href={s.website}>{s.name}</a> : s.name}</h3>
+          <div class="meta">
+            {(s.categories || []).map((c) => <span class="chip">{label(c)}</span>)}
+            {s.cost === "free" && <span class="chip">free</span>}
+            {s.cost === "sliding-scale" && <span class="chip">sliding-scale fees</span>}
+          </div>
+          <div class="meta">
+            {s.address?.street && `${s.address.street}, `}{s.address?.city}
+            {s.phone && ` · ${s.phone}`}
+          </div>
+          {s.hours && <div class="meta">{hoursText(s.hours)}</div>}
+          {s.description && <div class="meta">{s.description}</div>}
+          {s.eligibility && <div class="meta">Eligibility: {s.eligibility}</div>}
+        </div>
+      ))}
+    </>
+  ))}
+
+  {meetings.length > 0 && <h2>Recovery &amp; support meetings</h2>}
+  {[...meetingsByProgram.keys()].sort().map((prog) => (
+    <>
+      <h3>{prog} meetings</h3>
+      {meetingsByProgram.get(prog)
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((m) => (
+          <div class="card">
+            <h3>{m.url ? <a href={m.url}>{m.name}</a> : m.name}</h3>
+            <div class="meta">
+              {fmtSchedule(m)} · {m.format}
+              {m.venue_name && ` · ${m.venue_name}`}
+            </div>
+            <div class="meta">
+              {m.venue?.street && `${m.venue.street}, `}{m.venue?.city}
+              {m.conference_url && <a href={m.conference_url}> join online</a>}
+            </div>
+          </div>
+        ))}
+    </>
+  ))}
+
+  <p class="meta">
+    Every listing is sourced and dated — see
+    <a href="https://github.com/KaraZajac/SUCCURRO">the dataset</a> to verify or
+    submit corrections. Call ahead when you can: hours and locations change.
+  </p>
+</Base>

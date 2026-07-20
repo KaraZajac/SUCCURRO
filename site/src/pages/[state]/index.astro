@@ -1,0 +1,49 @@
+---
+import Base from "../../layouts/Base.astro";
+import { STATES, STATE_NAMES, placesFor, servedPlaces, orgsFor, label } from "../../lib/data.js";
+
+export function getStaticPaths() {
+  return STATES().map((state) => ({ params: { state } }));
+}
+const { state } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const name = STATE_NAMES[state] || state.toUpperCase();
+
+const placeNames = new Map(placesFor(state).map((p) => [p.slug, p.name]));
+const served = servedPlaces()
+  .filter((p) => p.state === state)
+  .map((p) => ({ slug: p.slug, name: placeNames.get(p.slug) || p.slug.replace(/-/g, " ") }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const orgs = orgsFor(state).sort((a, b) => a.name.localeCompare(b.name));
+---
+<Base title={`${name} — SUCCURRO`}>
+  <h1>{name}</h1>
+  <p>
+    {served.length.toLocaleString()} communities with listed services.
+    Statewide and regional organizations are listed below the communities.
+  </p>
+
+  <h2>Communities</h2>
+  <div class="cols">
+    {served.map((p) => (
+      <a href={`${base}/${state}/${p.slug}`}>{p.name}</a>
+    ))}
+  </div>
+
+  {orgs.length > 0 && (
+    <>
+      <h2>Organizations in {name}</h2>
+      {orgs.map((o) => (
+        <div class="card">
+          <h3>{o.website ? <a href={o.website}>{o.name}</a> : o.name}</h3>
+          <div class="meta">
+            {(o.categories || []).map((c) => <span class="chip">{label(c)}</span>)}
+            {o.phone && <span> {o.phone}</span>}
+            {o.service_area?.kind === "state" && <span> · statewide</span>}
+          </div>
+          {o.description && <div class="meta">{o.description}</div>}
+        </div>
+      ))}
+    </>
+  )}
+</Base>
