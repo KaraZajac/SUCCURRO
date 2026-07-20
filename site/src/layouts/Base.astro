@@ -33,12 +33,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <div class="wrap">
         In crisis right now? Call or text <strong>988</strong> (Suicide &amp; Crisis
         Lifeline) or text <strong>HOME</strong> to <strong>741741</strong>.
-        &middot; {m.counts.sites.toLocaleString()} sites,
-        {m.counts.meetings.toLocaleString()} meetings,
-        {m.counts.orgs.toLocaleString()} organizations &middot; data through {m.built}
-        &middot; CC BY-NC 4.0 &middot;
-        <a href={`${base}/sources`}>sources</a> &middot;
-        <a href="https://github.com/KaraZajac/SUCCURRO">data &amp; corrections</a>
+        {" · "}{m.counts.sites.toLocaleString()} sites, {m.counts.meetings.toLocaleString()} meetings, {m.counts.orgs.toLocaleString()} organizations
+        {" · "}data through {m.built}
+        {" · "}CC BY-NC 4.0
+        {" · "}<a href={`${base}/sources`}>sources</a>
+        {" · "}<a href="https://github.com/KaraZajac/SUCCURRO">data &amp; corrections</a>
       </div>
     </footer>
   </body>
