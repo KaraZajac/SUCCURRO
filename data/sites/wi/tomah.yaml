@@ -122,13 +122,28 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 500 East Veterans Street, city: Tomah, state: wi, zip: '54660'}
+  address:
+    street: 500 East Veterans Street
+    city: Tomah
+    state: wi
+    zip: '54660'
   place: '5580075'
-  geo: {lat: 44.00111, lng: -90.49391}
+  geo:
+    lat: 44.00111
+    lng: -90.49391
   phone: 608-372-3971
   website: https://www.va.gov/tomah-health-care/locations/tomah-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -167,10 +182,13 @@
   - Toxic exposure screening
   - Urgent care
   - Women Veteran care
-  external_ids: {va: vha_676}
+  external_ids:
+    va: vha_676
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/tomah/tomah-vamc-mental-health-service-line
   name: Tomah VAMC Mental Health Service Line
   categories:

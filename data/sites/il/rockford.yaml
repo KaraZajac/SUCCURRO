@@ -945,19 +945,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/rockford/rockford-human-services-department
+  name: Rockford Human Services Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Boone, Winnebago Counties
+  address: {street: 612 N. Church St., city: Rockford, state: il, zip: '61104'}
+  place: '1765000'
+  phone: 844-710-6919
+  website: http://www.rockfordil.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/rockford/rockford-va-clinic
   name: Rockford VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 816 Featherstone Road, city: Rockford, state: il, zip: '61107'}
+  address:
+    street: 816 Featherstone Road
+    city: Rockford
+    state: il
+    zip: '61107'
   place: '1765000'
-  geo: {lat: 42.27847, lng: -88.99854}
+  geo:
+    lat: 42.27847
+    lng: -88.99854
   phone: 815-227-0081
   website: https://www.va.gov/madison-health-care/locations/rockford-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:45'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:45'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -982,21 +1007,37 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_607HA}
+  external_ids:
+    va: vha_607HA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/rockford/rockford-vet-center
   name: Rockford Vet Center
   categories:
   - vet-center
-  address: {street: '7015 Rote Road, Suite 105', city: Rockford, state: il, zip: '61107'}
+  address:
+    street: 7015 Rote Road, Suite 105
+    city: Rockford
+    state: il
+    zip: '61107'
   place: '1765000'
-  geo: {lat: 42.29041, lng: -88.9782}
+  geo:
+    lat: 42.29041
+    lng: -88.9782
   phone: 815-395-1279
   website: https://www.va.gov/rockford-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1007,10 +1048,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0447V}
+  external_ids:
+    va: vc_0447V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/rockford/rolling-green
   name: Rolling Green
   categories:

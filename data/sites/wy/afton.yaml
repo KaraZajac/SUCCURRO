@@ -23,20 +23,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 125 South Washington Street, city: Afton, state: wy, zip: '83110'}
+  address:
+    street: 125 South Washington Street
+    city: Afton
+    state: wy
+    zip: '83110'
   place: '5600245'
-  geo: {lat: 42.73131, lng: -110.9332}
+  geo:
+    lat: 42.73131
+    lng: -110.9332
   phone: 877-309-8931
   website: https://www.va.gov/sheridan-health-care/locations/afton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
   - Telehealth
-  external_ids: {va: vha_666QA}
+  external_ids:
+    va: vha_666QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/afton/high-country-behavioral-health-afton-office
   name: High Country Behavioral Health Afton Office
   categories:
@@ -58,3 +73,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/afton/lincoln-county-department-of-family-services
+  name: Lincoln County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lincoln County
+  address: {street: 631 Washington (P. O Box 1336), city: Afton, state: wy, zip: '83110'}
+  place: '5600245'
+  phone: 307-886-9232
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

@@ -249,16 +249,32 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '500 East Hampden Avenue, Synergy Medical Center', city: Englewood, state: co, zip: '80113'}
+  address:
+    street: 500 East Hampden Avenue, Synergy Medical Center
+    city: Englewood
+    state: co
+    zip: '80113'
   place: 0824785
-  geo: {lat: 39.6531, lng: -104.981}
+  geo:
+    lat: 39.6531
+    lng: -104.981
   phone: 303-639-7000
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
-  external_ids: {va: vha_554GL}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
+  external_ids:
+    va: vha_554GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/englewood/footprints-to-recovery-php-iop-op
   name: Footprints to Recovery PHP/IOP/OP
   categories:

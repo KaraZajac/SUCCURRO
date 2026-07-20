@@ -22,12 +22,23 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: Tobyhanna Army Depot, city: Tobyhanna, state: pa, zip: '18466'}
-  geo: {lat: 41.18582, lng: -75.42966}
+  address:
+    street: Tobyhanna Army Depot
+    city: Tobyhanna
+    state: pa
+    zip: '18466'
+  geo:
+    lat: 41.18582
+    lng: -75.42966
   phone: 570-615-8341
   website: https://www.va.gov/wilkes-barre-health-care/locations/tobyhanna-va-clinic/
   hours:
-  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -39,10 +50,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_693GC}
+  external_ids:
+    va: vha_693GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/tobyhanna/vhp-pediatrics-tobyhanna
   name: VHP Pediatrics - Tobyhanna
   categories:

@@ -40,13 +40,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 770 Riverside Avenue, city: Adrian, state: mi, zip: '49221'}
+  address:
+    street: 770 Riverside Avenue
+    city: Adrian
+    state: mi
+    zip: '49221'
   place: '2600440'
-  geo: {lat: 41.91275, lng: -84.04781}
+  geo:
+    lat: 41.91275
+    lng: -84.04781
   phone: 734-222-7160
   website: https://www.va.gov/ann-arbor-health-care/locations/adrian-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -56,10 +69,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_506GF}
+  external_ids:
+    va: vha_506GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/adrian/alexander-elementary-school-460100046
   name: Alexander Elementary School - 460100046
   categories:
@@ -140,6 +156,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/adrian/community-action-agency-jackson-lenawee-hillsdal
+  name: Community Action Agency Jackson-Lenawee-Hillsdale
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lenawee County
+  address: {street: 400 W. South Street, city: Adrian, state: mi, zip: '49221'}
+  place: '2600440'
+  phone: 517-784-4800
+  website: https://www.caajlh.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/adrian/drager-early-education-center-460103186
   name: Drager Early Education Center - 460103186
   categories:

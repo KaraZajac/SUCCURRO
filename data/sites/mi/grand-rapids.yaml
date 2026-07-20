@@ -408,20 +408,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 620 Century Avenue Southwest, city: Grand Rapids, state: mi, zip: '49503'}
+  address:
+    street: 620 Century Avenue Southwest
+    city: Grand Rapids
+    state: mi
+    zip: '49503'
   place: '2634000'
-  geo: {lat: 42.95174, lng: -85.67388}
+  geo:
+    lat: 42.95174
+    lng: -85.67388
   phone: 269-966-5600
   website: https://www.va.gov/battle-creek-health-care/locations/century-avenue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - LGBTQ+ Veteran care
-  external_ids: {va: vha_515QB}
+  external_ids:
+    va: vha_515QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/grand-rapids/cherry-street-health-center
   name: Cherry Street Health Center
   categories:
@@ -859,13 +875,26 @@
   name: Grand Rapids Vet Center
   categories:
   - vet-center
-  address: {street: '2050 Breton Road, Southeast, Suite 100', city: Grand Rapids, state: mi, zip: '49546'}
+  address:
+    street: 2050 Breton Road, Southeast, Suite 100
+    city: Grand Rapids
+    state: mi
+    zip: '49546'
   place: '2634000'
-  geo: {lat: 42.92575, lng: -85.60904}
+  geo:
+    lat: 42.92575
+    lng: -85.60904
   phone: 616-285-5795
   website: https://www.va.gov/grand-rapids-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -881,26 +910,38 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0403V}
+  external_ids:
+    va: vc_0403V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/grand-rapids/grand-rapids-veteran-readiness-and-employment-of
   name: Grand Rapids Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '110 Michigan Street, Room 436', city: Grand Rapids, state: mi, zip: '49503'}
+  address:
+    street: 110 Michigan Street, Room 436
+    city: Grand Rapids
+    state: mi
+    zip: '49503'
   place: '2634000'
-  geo: {lat: 42.96995, lng: -85.6711}
+  geo:
+    lat: 42.96995
+    lng: -85.6711
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329b}
+  external_ids:
+    va: vba_329b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/grand-rapids/guiding-light
   name: Guiding Light
   categories:
@@ -1171,6 +1212,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/grand-rapids/kent-county-community-action-agency
+  name: Kent County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kent County
+  address: {street: 121 Franklin St. S.E., city: Grand Rapids, state: mi, zip: '49507'}
+  place: '2634000'
+  phone: 616-632-7950
+  website: https://www.accesskent.com/Departments/CommunityAction/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/grand-rapids/las-canchas-futsal-program-41m000191
   name: Las Canchas Futsal Program - 41M000191
   categories:

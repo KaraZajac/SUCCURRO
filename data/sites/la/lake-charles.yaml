@@ -147,6 +147,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/lake-charles/calcasieu-parish-police-jury-human-services-depa
+  name: Calcasieu Parish Police Jury/Human Services Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Calcasieu County
+  address: {street: '2001 Moeling St., (P. O. Box 3171)', city: Lake Charles, state: la, zip: '70601'}
+  place: '2241155'
+  phone: 337-721-4030
+  website: https://www.calcasieu.gov/services/human-services/human-services-programs/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: la/lake-charles/cameron-community-action-agency
+  name: Cameron Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cameron County
+  address: {street: 965 Hwy 384, city: Lake Charles, state: la, zip: '70607'}
+  place: '2241155'
+  phone: 337-598-5158
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/lake-charles/college-oaks
   name: College Oaks
   categories:
@@ -265,22 +288,38 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '3601 Gerstner Memorial Drive, Hwy 14', city: Lake Charles, state: la, zip: '70607'}
+  address:
+    street: 3601 Gerstner Memorial Drive, Hwy 14
+    city: Lake Charles
+    state: la
+    zip: '70607'
   place: '2241155'
-  geo: {lat: 30.19183, lng: -93.17997}
+  geo:
+    lat: 30.19183
+    lng: -93.17997
   phone: 337-475-9500
   website: https://www.va.gov/alexandria-health-care/locations/douglas-fournet-department-of-veterans-affairs-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - MentalHealth
   - Ophthalmology
   - PrimaryCare
-  external_ids: {va: vha_502GE}
+  external_ids:
+    va: vha_502GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/lake-charles/drew-park-recreation-center
   name: Drew Park Recreation Center
   categories:

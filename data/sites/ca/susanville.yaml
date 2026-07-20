@@ -4,13 +4,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 110 Bella Way, city: Susanville, state: ca, zip: '96130'}
+  address:
+    street: 110 Bella Way
+    city: Susanville
+    state: ca
+    zip: '96130'
   place: '0677364'
-  geo: {lat: 40.40585, lng: -120.62557}
+  geo:
+    lat: 40.40585
+    lng: -120.62557
   phone: 530-251-4550
   website: https://www.va.gov/sierra-nevada-health-care/locations/diamond-view-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -18,10 +31,13 @@
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_654GD}
+  external_ids:
+    va: vha_654GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/susanville/lassen-center
   name: Lassen Center
   categories:

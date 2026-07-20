@@ -23,13 +23,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2410 West Main Street, city: Artesia, state: nm, zip: '88210'}
+  address:
+    street: 2410 West Main Street
+    city: Artesia
+    state: nm
+    zip: '88210'
   place: '3505220'
-  geo: {lat: 32.84265, lng: -104.42747}
+  geo:
+    lat: 32.84265
+    lng: -104.42747
   phone: 575-746-3531
   website: https://www.va.gov/new-mexico-health-care/locations/artesia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -37,10 +50,24 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_501GA}
+  external_ids:
+    va: vha_501GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nm/artesia/isd-field-office-for-the-artesia-area
+  name: ISD Field Office for the Artesia Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Eddy County
+  address: {street: 108 N. 16th, city: Artesia, state: nm, zip: '88210'}
+  place: '3505220'
+  phone: 575-748-3361
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/artesia/pms-artesia-family-health-center
   name: PMS - Artesia Family Health Center
   categories:

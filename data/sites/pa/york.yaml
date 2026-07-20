@@ -933,6 +933,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/york/york-county-assistance-office
+  name: York County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving York County
+  address: {street: 130 N. Duke Street (P. O. Box 15041), city: York, state: pa, zip: '17405'}
+  place: '4287048'
+  phone: 800-991-0929
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/york/york-hospital-behavioral-health-services
   name: York Hospital Behavioral Health Services
   categories:
@@ -978,13 +989,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2251 Eastern Boulevard, city: York, state: pa, zip: '17402'}
+  address:
+    street: 2251 Eastern Boulevard
+    city: York
+    state: pa
+    zip: '17402'
   place: '4287048'
-  geo: {lat: 39.97259, lng: -76.68297}
+  geo:
+    lat: 39.97259
+    lng: -76.68297
   phone: 717-840-2730
   website: https://www.va.gov/lebanon-health-care/locations/york-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1009,10 +1033,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_595GE}
+  external_ids:
+    va: vha_595GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/york/yorktown-park
   name: Yorktown Park
   categories:

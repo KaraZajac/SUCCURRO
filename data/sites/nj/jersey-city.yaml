@@ -873,13 +873,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 115 Christopher Columbus Drive, city: Jersey City, state: nj, zip: '07302'}
+  address:
+    street: 115 Christopher Columbus Drive
+    city: Jersey City
+    state: nj
+    zip: '07302'
   place: '3436000'
-  geo: {lat: 40.71982, lng: -74.04398}
+  geo:
+    lat: 40.71982
+    lng: -74.04398
   phone: 201-435-3055
   website: https://www.va.gov/new-jersey-health-care/locations/jersey-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -889,10 +902,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GE}
+  external_ids:
+    va: vha_561GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/jersey-city/joseph-h-brensinger-school-17
   name: 'Joseph H Brensinger School #17'
   categories:
@@ -1237,6 +1253,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/jersey-city/puertorriquenos-asociados-for-community-organiza
+  name: Puertorriquenos Asociados for Community Organization
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hudson County
+  address: {street: 307 Marthin Luther King Dr., city: Jersey City, state: nj, zip: '07305'}
+  place: '3436000'
+  phone: 844-722-6432
+  email: liheap@pacoagency.org
+  website: https://pacoagency.org/heap/#
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/jersey-city/rafael-cordero-y-molina-school-37
   name: 'Rafael Cordero Y Molina School #37'
   categories:

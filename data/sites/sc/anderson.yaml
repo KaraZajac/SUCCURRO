@@ -88,13 +88,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3030 North Highway 81, city: Anderson, state: sc, zip: '29621'}
+  address:
+    street: 3030 North Highway 81
+    city: Anderson
+    state: sc
+    zip: '29621'
   place: '4501360'
-  geo: {lat: 34.5727, lng: -82.62397}
+  geo:
+    lat: 34.5727
+    lng: -82.62397
   phone: 864-224-5450
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/anderson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -103,10 +116,13 @@
   - Orthopedics
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_544GD}
+  external_ids:
+    va: vha_544GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/anderson/art-consortium
   name: Art Consortium
   categories:
@@ -905,6 +921,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/anderson/sunbelt-human-advancement-resources-inc
+  name: Sunbelt Human Advancement Resources Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Anderson County
+  address: {street: 10074 East Greenville Street, city: Anderson, state: sc, zip: '29621'}
+  place: '4501360'
+  phone: 864-224-7028
+  website: http:// https://www.sharesc.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/anderson/t-l-hanna-high
   name: T L Hanna High
   categories:

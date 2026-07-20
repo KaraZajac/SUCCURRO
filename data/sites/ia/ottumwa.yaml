@@ -150,13 +150,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1020 North Quincy Avenue, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 1020 North Quincy Avenue
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   place: '1960465'
-  geo: {lat: 41.01517, lng: -92.43838}
+  geo:
+    lat: 41.01517
+    lng: -92.43838
   phone: 641-683-4300
   website: https://www.va.gov/iowa-city-health-care/locations/ottumwa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -168,10 +181,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GS}
+  external_ids:
+    va: vha_636GS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/ottumwa/rhchc-administrative-offices
   name: RHCHC Administrative Offices
   categories:
@@ -405,6 +421,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/ottumwa/sieda-community-action
+  name: Sieda Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wapello County
+  address: {street: '725 W 2nd St., (P. O. Box 658)', city: Ottumwa, state: ia, zip: '52501'}
+  place: '1960465'
+  phone: 641-682-8741
+  website: http://www.sieda.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/ottumwa/sieda-head-start-wapello-county-presbyterian
   name: Sieda Head Start- Wapello County-Presbyterian
   categories:

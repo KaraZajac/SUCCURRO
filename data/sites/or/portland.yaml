@@ -993,6 +993,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/portland/community-service-division-of-the-department-of
+  name: Community Service Division of the Department of County Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Multnomah County
+  address: {street: 421 SW Oak Suite 200, city: Portland, state: or, zip: '97204'}
+  place: '4159000'
+  phone: 503-988-6295
+  website: https://multco.us/info/eviction-prevention-and-energy-bill-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/portland/creston
   name: Creston
   categories:
@@ -3805,13 +3817,26 @@
   name: Portland, OR Vet Center
   categories:
   - vet-center
-  address: {street: 4706 NE Glisan Street, city: Portland, state: or, zip: '97213'}
+  address:
+    street: 4706 NE Glisan Street
+    city: Portland
+    state: or
+    zip: '97213'
   place: '4159000'
-  geo: {lat: 45.52648, lng: -122.61472}
+  geo:
+    lat: 45.52648
+    lng: -122.61472
   phone: 503-688-5361
   website: https://www.va.gov/portland-or-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3828,10 +3853,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0617V}
+  external_ids:
+    va: vc_0617V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/portland/portland-rescue-mission
   name: Portland Rescue Mission
   place: '4159000'
@@ -3853,15 +3881,29 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '308 Southwest 1st Avenue, Community Resource & Referral Center (CRRC)', city: Portland,
-    state: or, zip: '97204'}
+  address:
+    street: 308 Southwest 1st Avenue, Community Resource & Referral Center (CRRC)
+    city: Portland
+    state: or
+    zip: '97204'
   place: '4159000'
-  geo: {lat: 45.52024, lng: -122.67219}
+  geo:
+    lat: 45.52024
+    lng: -122.67219
   phone: 503-808-1256
   website: https://www.va.gov/portland-health-care/locations/portland-va-clinic/
   hours:
-  - {days: [mon, tue, wed, fri], open: '07:30', close: '16:30'}
-  - {days: [thu], open: '10:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - thu
+    open: '10:00'
+    close: '16:30'
   services:
   - Audiology and speech
   - Homeless Veteran care
@@ -3870,17 +3912,26 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_648GI}
+  external_ids:
+    va: vha_648GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/portland/portland-va-medical-center
   name: Portland VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3710 Southwest US Veterans Hospital Road, city: Portland, state: or, zip: '97239'}
+  address:
+    street: 3710 Southwest US Veterans Hospital Road
+    city: Portland
+    state: or
+    zip: '97239'
   place: '4159000'
-  geo: {lat: 45.4969, lng: -122.68331}
+  geo:
+    lat: 45.4969
+    lng: -122.68331
   phone: 503-220-8262
   website: https://www.va.gov/portland-health-care/locations/portland-va-medical-center/
   services:
@@ -3948,18 +3999,27 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_648}
+  external_ids:
+    va: vha_648
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/portland/portland-va-regional-benefit-office
   name: Portland VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: '100 SW Main Street, Floor 2', city: Portland, state: or, zip: '97204'}
+  address:
+    street: 100 SW Main Street, Floor 2
+    city: Portland
+    state: or
+    zip: '97204'
   place: '4159000'
-  geo: {lat: 45.51516, lng: -122.67552}
+  geo:
+    lat: 45.51516
+    lng: -122.67552
   phone: 800-827-1000
   website: https://www.va.gov/portland-va-regional-benefit-office/
   services:
@@ -3972,25 +4032,37 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_348}
+  external_ids:
+    va: vba_348
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/portland/portland-veteran-readiness-and-employment-office
   name: Portland Veteran Readiness and Employment Office
   categories: *id002
   description: Veteran Readiness and Employment Office
-  address: {street: '100 SW Main St, Floor 2', city: Portland, state: or, zip: '97204'}
+  address:
+    street: 100 SW Main St, Floor 2
+    city: Portland
+    state: or
+    zip: '97204'
   place: '4159000'
-  geo: {lat: 45.51491, lng: -122.6753}
+  geo:
+    lat: 45.51491
+    lng: -122.6753
   phone: 503-309-1788
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_348a}
+  external_ids:
+    va: vba_348a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/portland/portsmouth-1
   name: Portsmouth 1
   place: '4159000'

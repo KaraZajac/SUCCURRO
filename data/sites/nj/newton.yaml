@@ -144,6 +144,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/newton/norwescap-inc
+  name: NORWESCAP Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sussex County
+  address: {street: 17 Church Street, city: Newton, state: nj, zip: 08865}
+  place: '3451930'
+  phone: 908-454-4778
+  email: liheap@norwescap.org
+  website: https://norwescap.org/what-we-do/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/newton/resource-center-for-the-chemically-dep-sussex-co
   name: Resource Center for the Chemically Dep Sussex County Aftercare Center
   categories:
@@ -170,13 +183,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 222 High Street, city: Newton, state: nj, zip: 07860}
+  address:
+    street: 222 High Street
+    city: Newton
+    state: nj
+    zip: 07860
   place: '3451930'
-  geo: {lat: 41.05387, lng: -74.76832}
+  geo:
+    lat: 41.05387
+    lng: -74.76832
   phone: 973-756-1504
   website: https://www.va.gov/new-jersey-health-care/locations/sussex-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -186,10 +212,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GK}
+  external_ids:
+    va: vha_561GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/newton/zufall-health-center-sussex
   name: Zufall Health Center - Sussex
   categories:

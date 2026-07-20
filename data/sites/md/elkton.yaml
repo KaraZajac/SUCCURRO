@@ -54,6 +54,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/elkton/cecil-county-dept-of-social-services
+  name: Cecil County Dept. of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cecil County
+  address: {street: 133-135 E. High Street, city: Elkton, state: md, zip: '21921'}
+  place: '2425800'
+  phone: 410-996-0270
+  email: DLCecil_Ohep_DHS@maryland.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/elkton/cecil-county-housing-agency
   name: Cecil County Housing Agency
   categories:
@@ -200,13 +212,26 @@
   name: Elkton Vet Center
   categories:
   - vet-center
-  address: {street: '101 Chesapeake Boulevard, Suite C', city: Elkton, state: md, zip: '21921'}
+  address:
+    street: 101 Chesapeake Boulevard, Suite C
+    city: Elkton
+    state: md
+    zip: '21921'
   place: '2425800'
-  geo: {lat: 39.60526, lng: -75.78711}
+  geo:
+    lat: 39.60526
+    lng: -75.78711
   phone: 410-392-4485
   website: https://www.va.gov/elkton-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -218,10 +243,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0209V}
+  external_ids:
+    va: vc_0209V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/elkton/gilpin-manor-elementary
   name: Gilpin Manor Elementary
   categories:

@@ -135,6 +135,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/davenport/community-action-of-eastern-iowa
+  name: Community Action of Eastern Iowa
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cedar County
+  address: {street: 500 E. 59th Street, city: Davenport, state: ia, zip: '52807'}
+  place: '1919000'
+  phone: 563-324-3236
+  website: https://www.caeiowa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ia/davenport/community-action-of-eastern-iowa-scott-office
+  name: Community Action of Eastern Iowa - Scott Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Scott County
+  address: {street: 500 East 59th Street, city: Davenport, state: ia, zip: '52807'}
+  place: '1919000'
+  phone: 563-324-3236
+  website: https://www.caeiowa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/davenport/community-health-care-inc-administrative-center
   name: Community Health Care, Inc. Administrative Center
   categories:
@@ -271,21 +295,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '415 North Perry Street, Community Resource & Referral Center (CRRC)', city: Davenport,
-    state: ia, zip: '52801'}
+  address:
+    street: 415 North Perry Street, Community Resource & Referral Center (CRRC)
+    city: Davenport
+    state: ia
+    zip: '52801'
   place: '1919000'
-  geo: {lat: 41.52397, lng: -90.57262}
+  geo:
+    lat: 41.52397
+    lng: -90.57262
   phone: 563-328-5800
   website: https://www.va.gov/iowa-city-health-care/locations/davenport-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Social work
   - Suicide prevention
-  external_ids: {va: vha_636QI}
+  external_ids:
+    va: vha_636QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/davenport/davenport-ymca
   name: Davenport Ymca
   categories:
@@ -629,13 +668,26 @@
   name: Quad Cities VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 2826 West Locust Street, city: Davenport, state: ia, zip: '52804'}
+  address:
+    street: 2826 West Locust Street
+    city: Davenport
+    state: ia
+    zip: '52804'
   place: '1919000'
-  geo: {lat: 41.53933, lng: -90.61892}
+  geo:
+    lat: 41.53933
+    lng: -90.61892
   phone: 563-332-8528
   website: https://www.va.gov/iowa-city-health-care/locations/quad-cities-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -654,10 +706,13 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_636GF}
+  external_ids:
+    va: vha_636GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/davenport/roosevelt-community-center
   name: Roosevelt Community Center
   categories:

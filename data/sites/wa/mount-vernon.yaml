@@ -168,13 +168,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 307 South 13th Street, city: Mount Vernon, state: wa, zip: '98274'}
+  address:
+    street: 307 South 13th Street
+    city: Mount Vernon
+    state: wa
+    zip: '98274'
   place: '5347560'
-  geo: {lat: 48.4188, lng: -122.32529}
+  geo:
+    lat: 48.4188
+    lng: -122.32529
   phone: 360-848-8500
   website: https://www.va.gov/puget-sound-health-care/locations/mount-vernon-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -189,10 +202,13 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_663GC}
+  external_ids:
+    va: vha_663GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/mount-vernon/mt-vernon-club
   name: Mt. Vernon Club
   categories:
@@ -363,6 +379,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/mount-vernon/skagit-county-community-action-agency
+  name: Skagit County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Skagit County
+  address: {street: 330 Pacific Place, city: Mount Vernon, state: wa, zip: '98273'}
+  place: '5347560'
+  phone: 360-428-1011
+  email: energy@communityactionskagit.org
+  website: https://www.communityactionskagit.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/mount-vernon/skagit-regional-health-mount-vernon-behavioral-h
   name: Skagit Regional Health Mount Vernon Behavioral Health Unit
   categories:

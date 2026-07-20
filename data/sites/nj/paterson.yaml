@@ -718,13 +718,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '11 Getty Avenue, DePaul Center', city: Paterson, state: nj, zip: '07503'}
+  address:
+    street: 11 Getty Avenue, DePaul Center
+    city: Paterson
+    state: nj
+    zip: '07503'
   place: '3457000'
-  geo: {lat: 40.9049, lng: -74.16588}
+  geo:
+    lat: 40.9049
+    lng: -74.16588
   phone: 973-247-1666
   website: https://www.va.gov/new-jersey-health-care/locations/paterson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -734,10 +747,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GJ}
+  external_ids:
+    va: vha_561GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/paterson/pcsst-4-7-campus
   name: Pcsst 4-7 Campus
   categories:

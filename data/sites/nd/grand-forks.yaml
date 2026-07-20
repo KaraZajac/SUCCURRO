@@ -143,6 +143,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/grand-forks/grand-forks-county-social-services-board
+  name: Grand Forks County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Grand Forks County
+  address: {street: '151 S 4th Street, Ste 200 (P. O. Box 5196)', city: Grand Forks, state: nd, zip: '58206'}
+  place: '3832060'
+  phone: 701-787-8500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/grand-forks/grand-forks-head-start
   name: Grand Forks Head Start
   categories:
@@ -211,13 +222,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1407 24th Avenue South, city: Grand Forks, state: nd, zip: '58201'}
+  address:
+    street: 1407 24th Avenue South
+    city: Grand Forks
+    state: nd
+    zip: '58201'
   place: '3832060'
-  geo: {lat: 47.89596, lng: -97.04773}
+  geo:
+    lat: 47.89596
+    lng: -97.04773
   phone: 701-335-4380
   website: https://www.va.gov/fargo-health-care/locations/grand-forks-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -229,25 +253,44 @@
   - Orthopedics
   - Primary care
   - Urology
-  external_ids: {va: vha_437GI}
+  external_ids:
+    va: vha_437GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/grand-forks/grand-forks-vet-center-outstation
   name: Grand Forks Vet Center Outstation
   categories:
   - vet-center
-  address: {street: 1407 24th Ave S, city: Grand Forks, state: nd, zip: '58201'}
+  address:
+    street: 1407 24th Ave S
+    city: Grand Forks
+    state: nd
+    zip: '58201'
   place: '3832060'
-  geo: {lat: 47.89613, lng: -97.04733}
+  geo:
+    lat: 47.89613
+    lng: -97.04733
   phone: 701-620-1448
   website: https://www.va.gov/fargo-vet-center/locations/#grand-forks-vet-center-outstat
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_4061OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_4061OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/grand-forks/lagrave-learning-center
   name: Lagrave Learning Center
   categories:

@@ -612,6 +612,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/orangeburg/orangeburg-calhoun-allendale-bamberg-community-a
+  name: Orangeburg-Calhoun-Allendale-Bamberg Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allendale, Orangeburg Counties
+  address: {street: 649 Railroad Avenue, city: Orangeburg, state: sc, zip: '29810'}
+  place: '4553080'
+  phone: 803-584-3845
+  website: https://www.ocabcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/orangeburg/orangeburg-family-medicine
   name: Orangeburg Family Medicine
   categories:
@@ -728,22 +740,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 151 Magnolia Village Parkway, city: Orangeburg, state: sc, zip: '29118'}
+  address:
+    street: 151 Magnolia Village Parkway
+    city: Orangeburg
+    state: sc
+    zip: '29118'
   place: '4553080'
-  geo: {lat: 33.47478, lng: -80.8525}
+  geo:
+    lat: 33.47478
+    lng: -80.8525
   phone: 803-533-1335
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/orangeburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_544GE}
+  external_ids:
+    va: vha_544GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/orangeburg/orangeburg-wilkinson-high
   name: Orangeburg Wilkinson High
   categories:

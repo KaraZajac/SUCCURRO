@@ -171,6 +171,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/greenfield/community-action-pioneer-valley
+  name: Community Action Pioneer Valley
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Franklin, Hampshire Counties
+  address: {street: 377 Main Street, city: Greenfield, state: ma, zip: '01301'}
+  place: '2527060'
+  phone: 413-774-2310
+  website: https://www.communityaction.us/home-energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/greenfield/community-health-center-of-franklin-county
   name: Community Health Center of Franklin County
   categories:
@@ -309,13 +321,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 143 Munson Street, city: Greenfield, state: ma, zip: '01301'}
+  address:
+    street: 143 Munson Street
+    city: Greenfield
+    state: ma
+    zip: '01301'
   place: '2527060'
-  geo: {lat: 42.5757, lng: -72.62436}
+  geo:
+    lat: 42.5757
+    lng: -72.62436
   phone: 413-773-8428
   website: https://www.va.gov/central-western-massachusetts-health-care/locations/greenfield-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -324,10 +349,13 @@
   - Mental health care
   - PTSD care
   - Primary care
-  external_ids: {va: vha_631GD}
+  external_ids:
+    va: vha_631GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/greenfield/healthcare-resource-centers-baymark-health
   name: Healthcare Resource Centers Baymark Health
   categories:

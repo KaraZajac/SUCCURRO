@@ -131,13 +131,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '300 Morrow Street, South', city: Mena, state: ar, zip: '71953'}
+  address:
+    street: 300 Morrow Street, South
+    city: Mena
+    state: ar
+    zip: '71953'
   place: '0545170'
-  geo: {lat: 34.57858, lng: -94.22265}
+  geo:
+    lat: 34.57858
+    lng: -94.22265
   phone: 501-609-2700
   website: https://www.va.gov/central-arkansas-health-care/locations/mena-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -148,10 +161,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GD}
+  external_ids:
+    va: vha_598GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/mena/polk-county-housing-authority
   name: Polk County Housing Authority
   categories:

@@ -261,6 +261,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/norristown/montgomery-county-assistance-office-norristown-d
+  name: Montgomery County Assistance Office Norristown District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Montgomery County
+  address: {street: 1931 New Hope Street, city: Norristown, state: pa, zip: '19401'}
+  place: '4254656'
+  phone: 610-272-1752
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/norristown/montgomery-county-housing-authority
   name: Montgomery County Housing Authority
   categories:
@@ -369,13 +380,26 @@
   name: Norristown Vet Center
   categories:
   - vet-center
-  address: {street: '320 East Johnson Highway, Suite 201', city: Norristown, state: pa, zip: '19401'}
+  address:
+    street: 320 East Johnson Highway, Suite 201
+    city: Norristown
+    state: pa
+    zip: '19401'
   place: '4254656'
-  geo: {lat: 40.12765, lng: -75.32154}
+  geo:
+    lat: 40.12765
+    lng: -75.32154
   phone: 215-823-5245
   website: https://www.va.gov/norristown-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -388,10 +412,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0239V}
+  external_ids:
+    va: vc_0239V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/norristown/resources-for-human-development-family-house-nor
   name: Resources For Human Development Family House Norristown
   categories:
@@ -461,13 +488,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2495 General Armistead Avenue, city: Norristown, state: pa, zip: '19403'}
+  address:
+    street: 2495 General Armistead Avenue
+    city: Norristown
+    state: pa
+    zip: '19403'
   place: '4254656'
-  geo: {lat: 40.12325, lng: -75.40111}
+  geo:
+    lat: 40.12325
+    lng: -75.40111
   phone: 610-383-0239
   website: https://www.va.gov/coatesville-health-care/locations/west-norriton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -494,7 +534,10 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_542GE}
+  external_ids:
+    va: vha_542GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

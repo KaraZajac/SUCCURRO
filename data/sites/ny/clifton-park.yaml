@@ -22,12 +22,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 963 Route 146, city: Clifton Park, state: ny, zip: '12065'}
-  geo: {lat: 42.8692, lng: -73.80736}
+  address:
+    street: 963 Route 146
+    city: Clifton Park
+    state: ny
+    zip: '12065'
+  geo:
+    lat: 42.8692
+    lng: -73.80736
   phone: 518-383-8506
   website: https://www.va.gov/albany-health-care/locations/clifton-park-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -35,7 +48,10 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GY}
+  external_ids:
+    va: vha_528GY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -294,26 +294,50 @@
   name: Greenville Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1021 W.H. Smith Boulevard, Suite 100', city: Greenville, state: nc, zip: '27834'}
+  address:
+    street: 1021 W.H. Smith Boulevard, Suite 100
+    city: Greenville
+    state: nc
+    zip: '27834'
   place: '3728080'
-  geo: {lat: 35.60139, lng: -77.38745}
+  geo:
+    lat: 35.60139
+    lng: -77.38745
   phone: 252-355-7920
   website: https://www.va.gov/greenville-nc-vet-center/locations/#greenville-mobile-vet-center
-  external_ids: {va: vc_0814MVC}
+  external_ids:
+    va: vc_0814MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greenville/greenville-nc-vet-center
   name: Greenville, NC Vet Center
   categories: *id001
-  address: {street: '2315 Dickinson Avenue, Suite 300', city: Greenville, state: nc, zip: '27834'}
+  address:
+    street: 2315 Dickinson Avenue, Suite 300
+    city: Greenville
+    state: nc
+    zip: '27834'
   place: '3728080'
-  geo: {lat: 35.59746, lng: -77.39855}
+  geo:
+    lat: 35.59746
+    lng: -77.39855
   phone: 252-355-7920
   website: https://www.va.gov/greenville-nc-vet-center/
   hours:
-  - {days: [mon, tue, wed, fri], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '08:00', close: '04:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 08:00
+    close: 04:30
   services:
   - Addiction and substance use care
   - Community engagement
@@ -324,10 +348,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0319V}
+  external_ids:
+    va: vc_0319V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greenville/greenville-treatment-center-llc
   name: Greenville Treatment Center LLC
   categories:
@@ -354,13 +381,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 401 Moye Boulevard, city: Greenville, state: nc, zip: '27834'}
+  address:
+    street: 401 Moye Boulevard
+    city: Greenville
+    state: nc
+    zip: '27834'
   place: '3728080'
-  geo: {lat: 35.6168, lng: -77.39925}
+  geo:
+    lat: 35.6168
+    lng: -77.39925
   phone: 252-830-2149
   website: https://www.va.gov/durham-health-care/locations/greenville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -376,10 +416,13 @@
   - Pharmacy
   - Primary care
   - Urology
-  external_ids: {va: vha_558GA}
+  external_ids:
+    va: vha_558GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greenville/happy-teeth-mobile
   name: Happy Teeth Mobile
   categories:
@@ -507,6 +550,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/greenville/pitt-county-department-of-social-services
+  name: Pitt County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pitt County
+  address: {street: 1717 W. Fifth Street, city: Greenville, state: nc, zip: '27834'}
+  place: '3728080'
+  phone: 252-902-1110
+  website: https://www.pittcountync.gov/454/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/greenville/pitt-county-early-head-start
   name: Pitt County Early Head Start
   categories:
@@ -575,18 +630,27 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 'East Carolina University, Brewster D-107', city: Greenville, state: nc, zip: '27858'}
+  address:
+    street: East Carolina University, Brewster D-107
+    city: Greenville
+    state: nc
+    zip: '27858'
   place: '3728080'
-  geo: {lat: 35.60688, lng: -77.36654}
+  geo:
+    lat: 35.60688
+    lng: -77.36654
   phone: 910-451-0018
   website: https://www.va.gov/find-locations/facility/vba_318h
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_318h}
+  external_ids:
+    va: vba_318h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greenville/village-casa-work-perinatal-maternal-program
   name: Village CASA Work Perinatal/Maternal Program
   categories:

@@ -127,13 +127,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '484 South West Commerce Drive, Westfield 2 Plaza', city: Lake City, state: fl, zip: '32025'}
+  address:
+    street: 484 South West Commerce Drive, Westfield 2 Plaza
+    city: Lake City
+    state: fl
+    zip: '32025'
   place: '1237775'
-  geo: {lat: 30.17503, lng: -82.68407}
+  geo:
+    lat: 30.17503
+    lng: -82.68407
   phone: 386-754-3000
   website: https://www.va.gov/north-florida-health-care/locations/lake-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -141,17 +154,26 @@
   - Primary care
   - Returning service member care
   - Toxic exposure screening
-  external_ids: {va: vha_573QK}
+  external_ids:
+    va: vha_573QK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/lake-city/lake-city-va-medical-center
   name: Lake City VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 619 South Marion Avenue, city: Lake City, state: fl, zip: '32025'}
+  address:
+    street: 619 South Marion Avenue
+    city: Lake City
+    state: fl
+    zip: '32025'
   place: '1237775'
-  geo: {lat: 30.18177, lng: -82.63692}
+  geo:
+    lat: 30.18177
+    lng: -82.63692
   phone: 386-755-3016
   website: https://www.va.gov/north-florida-health-care/locations/lake-city-va-medical-center/
   services:
@@ -184,10 +206,13 @@
   - Toxic exposure screening
   - Urology
   - Whole health
-  external_ids: {va: vha_573A4}
+  external_ids:
+    va: vha_573A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/lake-city/lawton-s-place
   name: LAWTON'S PLACE
   categories:
@@ -341,6 +366,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/lake-city/suwannee-river-economic-council-inc
+  name: Suwannee River Economic Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Columbia County
+  address: {street: 303 NW Quenten Street / P.O. Box 2104, city: Lake City, state: fl, zip: 32056-2104}
+  place: '1237775'
+  phone: 386-751-8726
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/lake-city/the-greater-lake-city-cdc
   name: The Greater Lake City Cdc
   categories:

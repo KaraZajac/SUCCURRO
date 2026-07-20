@@ -19,6 +19,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/peru/area-five-agency-on-aging-community-services-inc
+  name: Area Five Agency on Aging & Community Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Miami County
+  address: {street: 661 E. Main St., city: Peru, state: in, zip: '46970'}
+  place: '1859328'
+  phone: 765-472-0713
+  email: EAP@AREAFIVE.COM
+  website: https://www.areafive.com/financial-and-housing/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/peru/elmwood-primary-learning-center-peru-schools
   name: Elmwood Primary Learning Center Peru Schools
   categories:
@@ -44,13 +57,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1496 West Hoosier Boulevard, city: Peru, state: in, zip: '46970'}
+  address:
+    street: 1496 West Hoosier Boulevard
+    city: Peru
+    state: in
+    zip: '46970'
   place: '1859328'
-  geo: {lat: 40.66614, lng: -86.13657}
+  geo:
+    lat: 40.66614
+    lng: -86.13657
   phone: 765-472-8907
   website: https://www.va.gov/northern-indiana-health-care/locations/hoosier-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -61,10 +87,13 @@
   - Pharmacy
   - Primary care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_610GD}
+  external_ids:
+    va: vha_610GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/peru/housing-authority-of-the-city-of-peru
   name: Housing Authority Of The City Of Peru
   categories:

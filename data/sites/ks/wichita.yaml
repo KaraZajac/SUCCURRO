@@ -1890,9 +1890,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 5500 East Kellogg Drive, city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 5500 East Kellogg Drive
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.68169, lng: -97.27401}
+  geo:
+    lat: 37.68169
+    lng: -97.27401
   phone: 316-685-2221
   website: https://www.va.gov/wichita-health-care/locations/robert-j-dole-department-of-veterans-affairs-medical-and-regional-office-center/
   services:
@@ -1933,10 +1939,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_589A7}
+  external_ids:
+    va: vha_589A7
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/saint-francis-community-services-seeking-safety
   name: Saint Francis Community Services Seeking Safety
   categories:
@@ -1979,26 +1988,55 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/wichita/sedgewick-county-dcf
+  name: Sedgewick County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sedgwick County
+  address: {street: 2601 S. Oliver St., city: Wichita, state: ks, zip: '67210'}
+  place: '2079000'
+  phone: 316-337-7000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/wichita/sedgwick-county-va-clinic
   name: Sedgwick County VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '949 South Glendale Street, Parklane Shopping Center', city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 949 South Glendale Street, Parklane Shopping Center
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.67015, lng: -97.27862}
+  geo:
+    lat: 37.67015
+    lng: -97.27862
   phone: 316-685-2221
   website: https://www.va.gov/wichita-health-care/locations/sedgwick-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:30', close: '16:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:30
+    close: '16:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Ophthalmology
   - Optometry
   - Primary care
-  external_ids: {va: vha_589QB}
+  external_ids:
+    va: vha_589QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/seltzer-elementary-school
   name: Seltzer Elementary School
   categories:
@@ -2358,41 +2396,68 @@
   name: Wichita 1 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5500 East Kellogg Drive, city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 5500 East Kellogg Drive
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.6798, lng: -97.27414}
+  geo:
+    lat: 37.6798
+    lng: -97.27414
   phone: 316-685-2221
   website: https://www.va.gov/find-locations/facility/vha_589QE
-  external_ids: {va: vha_589QE}
+  external_ids:
+    va: vha_589QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-2-va-mobile-medical-unit
   name: Wichita 2 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5500 East Kellogg Drive, city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 5500 East Kellogg Drive
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.6798, lng: -97.27414}
+  geo:
+    lat: 37.6798
+    lng: -97.27414
   phone: 316-685-2221
   website: https://www.va.gov/find-locations/facility/vha_589QF
-  external_ids: {va: vha_589QF}
+  external_ids:
+    va: vha_589QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-3-va-mobile-medical-unit
   name: Wichita 3 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5500 East Kellogg Drive, city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 5500 East Kellogg Drive
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.6798, lng: -97.27414}
+  geo:
+    lat: 37.6798
+    lng: -97.27414
   phone: 316-685-2221
   website: https://www.va.gov/find-locations/facility/vha_589QG
-  external_ids: {va: vha_589QG}
+  external_ids:
+    va: vha_589QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-housing-authority
   name: Wichita Housing Authority
   categories:
@@ -2417,38 +2482,65 @@
   name: Wichita Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: 5500 East Kellogg Avenue, city: Wichita, state: ks, zip: '67208'}
+  address:
+    street: 5500 East Kellogg Avenue
+    city: Wichita
+    state: ks
+    zip: '67208'
   place: '2079000'
-  geo: {lat: 37.67884, lng: -97.31556}
+  geo:
+    lat: 37.67884
+    lng: -97.31556
   phone: 316-265-0889
   website: https://www.va.gov/wichita-vet-center/locations/#wichita-mobile-vet-center
-  external_ids: {va: vc_0824MVC}
+  external_ids:
+    va: vc_0824MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-va-mobile-medical-unit
   name: Wichita VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5500 East Kellogg Drive, city: Wichita, state: ks, zip: '67218'}
+  address:
+    street: 5500 East Kellogg Drive
+    city: Wichita
+    state: ks
+    zip: '67218'
   place: '2079000'
-  geo: {lat: 37.68169, lng: -97.27401}
+  geo:
+    lat: 37.68169
+    lng: -97.27401
   phone: 316-685-2221
   website: https://www.va.gov/find-locations/facility/vha_589QD
   hours:
-  - {days: [wed], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_589QD}
+  - days:
+    - wed
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_589QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-va-regional-benefit-office-at-robert-j-d
   name: Wichita VA Regional Benefit Office at Robert J. Dole VA Medical Center
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '9111 E. Douglas Ave, Suite 200', city: Wichita, state: ks, zip: '67207'}
+  address:
+    street: 9111 E. Douglas Ave, Suite 200
+    city: Wichita
+    state: ks
+    zip: '67207'
   place: '2079000'
-  geo: {lat: 37.68169, lng: -97.27401}
+  geo:
+    lat: 37.68169
+    lng: -97.27401
   phone: 316-651-3602
   services:
   - ApplyingForBenefits
@@ -2459,21 +2551,39 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_452}
+  external_ids:
+    va: vba_452
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/wichita/wichita-vet-center
   name: Wichita Vet Center
   categories: *id002
-  address: {street: 393 North McLean Boulevard, city: Wichita, state: ks, zip: '67203'}
+  address:
+    street: 393 North McLean Boulevard
+    city: Wichita
+    state: ks
+    zip: '67203'
   place: '2079000'
-  geo: {lat: 37.69056, lng: -97.35271}
+  geo:
+    lat: 37.69056
+    lng: -97.35271
   phone: 316-265-0889
   website: https://www.va.gov/wichita-vet-center/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '19:00'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '19:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2489,7 +2599,10 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0426V}
+  external_ids:
+    va: vc_0426V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

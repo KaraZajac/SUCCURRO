@@ -25,16 +25,32 @@
   name: Atlanta Vet Center
   categories:
   - vet-center
-  address: {street: '1800 Phoenix Boulevard, Building 400, Suite 404', city: College Park, state: ga,
-    zip: '30349'}
+  address:
+    street: 1800 Phoenix Boulevard, Building 400, Suite 404
+    city: College Park
+    state: ga
+    zip: '30349'
   place: '1317776'
-  geo: {lat: 33.6132, lng: -84.44693}
+  geo:
+    lat: 33.6132
+    lng: -84.44693
   phone: 770-994-6700
   website: https://www.va.gov/atlanta-vet-center/
   hours:
-  - {days: [mon, wed], open: '07:30', close: '19:00'}
-  - {days: [tue, thu], open: '07:00', close: '16:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    open: 07:30
+    close: '19:00'
+  - days:
+    - tue
+    - thu
+    open: 07:00
+    close: '16:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -47,10 +63,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0304V}
+  external_ids:
+    va: vc_0304V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/college-park/banneker-high-school
   name: Banneker High School
   categories:
@@ -362,20 +381,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1800 Phoenix Boulevard, city: College Park, state: ga, zip: '30349'}
+  address:
+    street: 1800 Phoenix Boulevard
+    city: College Park
+    state: ga
+    zip: '30349'
   place: '1317776'
-  geo: {lat: 33.6132, lng: -84.44693}
+  geo:
+    lat: 33.6132
+    lng: -84.44693
   phone: 770-907-3300
   website: https://www.va.gov/atlanta-health-care/locations/south-fulton-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_508QH}
+  external_ids:
+    va: vha_508QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/college-park/south-fulton-studios-2
   name: 'South Fulton Studios #2'
   categories:

@@ -674,13 +674,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1400 29th Street South, city: Great Falls, state: mt, zip: '59405'}
+  address:
+    street: 1400 29th Street South
+    city: Great Falls
+    state: mt
+    zip: '59405'
   place: '3032800'
-  geo: {lat: 47.49046, lng: -111.25737}
+  geo:
+    lat: 47.49046
+    lng: -111.25737
   phone: 406-771-5800
   website: https://www.va.gov/montana-health-care/locations/great-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -695,21 +708,37 @@
   - Primary care
   - Sleep medicine
   - Suicide prevention
-  external_ids: {va: vha_436GB}
+  external_ids:
+    va: vha_436GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/great-falls/great-falls-vet-center
   name: Great Falls Vet Center
   categories:
   - vet-center
-  address: {street: 615 2nd Avenue North, city: Great Falls, state: mt, zip: '59401'}
+  address:
+    street: 615 2nd Avenue North
+    city: Great Falls
+    state: mt
+    zip: '59401'
   place: '3032800'
-  geo: {lat: 47.50752, lng: -111.29643}
+  geo:
+    lat: 47.50752
+    lng: -111.29643
   phone: 406-452-9048
   website: https://www.va.gov/great-falls-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -725,10 +754,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0538V}
+  external_ids:
+    va: vc_0538V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/great-falls/indian-family-health-clinic
   name: Indian Family Health Clinic
   categories:
@@ -850,6 +882,32 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/great-falls/opportunities-inc
+  name: Opportunities Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cascade, Chouteau, Glacier Counties
+  address: {street: 905 First Avenue North (P. O. Box 2289), city: Great Falls, state: mt, zip: '59403'}
+  place: '3032800'
+  phone: 406-761-0310
+  email: oppincquestion@gfoppinc.org
+  website: https://oppincchanginglives.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: mt/great-falls/opprotunities-inc
+  name: Opprotunities, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pondera, Teton, Toole Counties
+  address: {street: 905 First Avenue North (P. O. Box 2289), city: Great Falls, state: mt, zip: 59403-2289}
+  place: '3032800'
+  phone: 406-761-0310
+  email: oppincquestion@gfoppinc.org
+  website: https://oppincchanginglives.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mt/great-falls/paris-gibson-ed-center
   name: Paris Gibson Ed Center
   categories:

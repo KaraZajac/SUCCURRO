@@ -497,13 +497,26 @@
   name: West Valley Vet Center
   categories:
   - vet-center
-  address: {street: '14050 North 83rd Avenue, Suite 170', city: Peoria, state: az, zip: '85381'}
+  address:
+    street: 14050 North 83rd Avenue, Suite 170
+    city: Peoria
+    state: az
+    zip: '85381'
   place: '0454050'
-  geo: {lat: 33.61279, lng: -112.24008}
+  geo:
+    lat: 33.61279
+    lng: -112.24008
   phone: 623-398-8854
   website: https://www.va.gov/west-valley-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -515,10 +528,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0533V}
+  external_ids:
+    va: vc_0533V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/peoria/western-judicial-services-inc-peoria
   name: Western Judicial Services Inc Peoria
   categories:

@@ -326,6 +326,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/la-crosse/la-crosse-county-department-of-human-services
+  name: La Crosse County Department of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving La Crosse County
+  address: {street: 300 4th St. N, city: La Crosse, state: wi, zip: '54601'}
+  place: '5540775'
+  phone: 608-784-4357
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/la-crosse/la-crosse-housing-authority
   name: La Crosse Housing Authority
   categories:
@@ -375,13 +387,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '4000 State Road 16, Valley View Mall Annex', city: La Crosse, state: wi, zip: '54601'}
+  address:
+    street: 4000 State Road 16, Valley View Mall Annex
+    city: La Crosse
+    state: wi
+    zip: '54601'
   place: '5540775'
-  geo: {lat: 43.86782, lng: -91.19558}
+  geo:
+    lat: 43.86782
+    lng: -91.19558
   phone: 608-784-3886
   website: https://www.va.gov/tomah-health-care/locations/la-crosse-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -394,10 +419,13 @@
   - Smoking and tobacco cessation
   - Suicide prevention
   - Women Veteran care
-  external_ids: {va: vha_676GC}
+  external_ids:
+    va: vha_676GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/la-crosse/lacrosse-county-housing-authority
   name: Lacrosse County Housing Authority
   categories:

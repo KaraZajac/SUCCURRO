@@ -78,13 +78,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1001 Sneath Lane, city: San Bruno, state: ca, zip: '94066'}
+  address:
+    street: 1001 Sneath Lane
+    city: San Bruno
+    state: ca
+    zip: '94066'
   place: 0665028
-  geo: {lat: 37.63469, lng: -122.42579}
+  geo:
+    lat: 37.63469
+    lng: -122.42579
   phone: 650-615-6000
   website: https://www.va.gov/san-francisco-health-care/locations/san-bruno-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -102,10 +115,13 @@
   - Travel reimbursement
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_662GE}
+  external_ids:
+    va: vha_662GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-bruno/san-bruno-va-clinic-san-francisco-va-healthcare
   name: San Bruno VA Clinic San Francisco VA Healthcare System
   categories:

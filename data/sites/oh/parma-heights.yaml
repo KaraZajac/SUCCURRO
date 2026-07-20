@@ -70,15 +70,32 @@
   name: Parma Vet Center
   categories:
   - vet-center
-  address: {street: '6325 York Road, Suite 102', city: Parma Heights, state: oh, zip: '44130'}
+  address:
+    street: 6325 York Road, Suite 102
+    city: Parma Heights
+    state: oh
+    zip: '44130'
   place: '3961028'
-  geo: {lat: 41.38829, lng: -81.76338}
+  geo:
+    lat: 41.38829
+    lng: -81.76338
   phone: 440-845-5023
   website: https://www.va.gov/parma-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '19:30'}
-  - {days: [tue, wed, thu], open: '08:00', close: '16:30'}
-  - {days: [fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '19:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -89,10 +106,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0206V}
+  external_ids:
+    va: vc_0206V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/parma-heights/tails-of-hope-cleveland-pet-food-pantry
   name: Tails Of Hope Cleveland Pet Food Pantry
   categories:

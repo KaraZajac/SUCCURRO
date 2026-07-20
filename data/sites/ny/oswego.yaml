@@ -85,6 +85,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/oswego/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Oswego County
+  address: {street: 74 Bunner Street, city: Oswego, state: ny, zip: '13126'}
+  place: '3655574'
+  phone: 315-349-3484
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/oswego/east-park
   name: East Park
   categories:
@@ -372,13 +383,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 293 State Route 104, city: Oswego, state: ny, zip: '13126'}
+  address:
+    street: 293 State Route 104
+    city: Oswego
+    state: ny
+    zip: '13126'
   place: '3655574'
-  geo: {lat: 43.46334, lng: -76.48267}
+  geo:
+    lat: 43.46334
+    lng: -76.48267
   phone: 315-207-0120
   website: https://www.va.gov/syracuse-health-care/locations/oswego-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -392,10 +416,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_528GP}
+  external_ids:
+    va: vha_528GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/oswego/oswego-ymca-youth-center
   name: Oswego Ymca Youth Center
   categories:

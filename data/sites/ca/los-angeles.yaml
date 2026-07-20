@@ -8039,15 +8039,24 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 11301 Wilshire Boulevard, city: Los Angeles, state: ca, zip: '90073'}
+  address:
+    street: 11301 Wilshire Boulevard
+    city: Los Angeles
+    state: ca
+    zip: '90073'
   place: '0644000'
-  geo: {lat: 34.05109, lng: -118.45415}
+  geo:
+    lat: 34.05109
+    lng: -118.45415
   phone: 310-478-3711
   website: https://www.va.gov/find-locations/facility/vha_691QA
-  external_ids: {va: vha_691QA}
+  external_ids:
+    va: vha_691QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/green-meadows-recreation-center
   name: Green Meadows Recreation Center
   categories:
@@ -11770,13 +11779,26 @@
   name: Los Angeles VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 351 East Temple Street, city: Los Angeles, state: ca, zip: '90012'}
+  address:
+    street: 351 East Temple Street
+    city: Los Angeles
+    state: ca
+    zip: '90012'
   place: '0644000'
-  geo: {lat: 34.05149, lng: -118.23848}
+  geo:
+    lat: 34.05149
+    lng: -118.23848
   phone: 213-253-2677
   website: https://www.va.gov/greater-los-angeles-health-care/locations/los-angeles-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:00'
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -11824,18 +11846,27 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691GE}
+  external_ids:
+    va: vha_691GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/los-angeles-va-regional-benefit-office
   name: Los Angeles VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: '11000 Wilshire Blvd., Federal Building', city: Los Angeles, state: ca, zip: '90024'}
+  address:
+    street: 11000 Wilshire Blvd., Federal Building
+    city: Los Angeles
+    state: ca
+    zip: '90024'
   place: '0644000'
-  geo: {lat: 34.05771, lng: -118.44784}
+  geo:
+    lat: 34.05771
+    lng: -118.44784
   phone: 800-827-1000
   website: https://www.va.gov/los-angeles-va-regional-benefit-office/
   services:
@@ -11851,10 +11882,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_344}
+  external_ids:
+    va: vba_344
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/los-feliz-science-tech-engineer-math-medicine-ma
   name: Los Feliz Science/Tech/Engineer/Math/Medicine Magnet
   categories:
@@ -13662,6 +13696,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/los-angeles/pacific-asian-consortium-in-employment
+  name: Pacific Asian Consortium in Employment
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Los Angeles County
+  address: {street: 1055 Wilshire Blvd Ste. 900E, city: Los Angeles, state: ca, zip: '90017'}
+  place: '0644000'
+  phone: 213-989-3177
+  website: https://pacela.org/our-work/energy/utility-bill-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/los-angeles/pacific-clinics
   name: Pacific Clinics
   categories:
@@ -18625,36 +18671,54 @@
   name: VetSuccess on Campus at Santa Monica City College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '1900 Pico Blvd, Veteran Resource Center', city: Los Angeles, state: ca, zip: '90405'}
+  address:
+    street: 1900 Pico Blvd, Veteran Resource Center
+    city: Los Angeles
+    state: ca
+    zip: '90405'
   place: '0644000'
-  geo: {lat: 34.01693, lng: -118.47071}
+  geo:
+    lat: 34.01693
+    lng: -118.47071
   phone: 310-434-8205
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_344z}
+  external_ids:
+    va: vba_344z
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/vetsuccess-on-campus-at-university-of-california
   name: VetSuccess on Campus at University of California, Los Angeles
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '405 Hilgard Ave, Veteran Resource Center', city: Los Angeles, state: ca, zip: '90095'}
+  address:
+    street: 405 Hilgard Ave, Veteran Resource Center
+    city: Los Angeles
+    state: ca
+    zip: '90095'
   place: '0644000'
-  geo: {lat: 34.07279, lng: -118.4393}
+  geo:
+    lat: 34.07279
+    lng: -118.4393
   phone: 310-206-6915
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_344y}
+  external_ids:
+    va: vba_344y
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/via-care-1st-street-administrative-site
   name: Via Care 1st Street Administrative Site
   categories:
@@ -19821,9 +19885,15 @@
   name: West Los Angeles VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 11301 Wilshire Boulevard, city: Los Angeles, state: ca, zip: '90073'}
+  address:
+    street: 11301 Wilshire Boulevard
+    city: Los Angeles
+    state: ca
+    zip: '90073'
   place: '0644000'
-  geo: {lat: 34.05243, lng: -118.45846}
+  geo:
+    lat: 34.05243
+    lng: -118.45846
   phone: 310-478-3711
   website: https://www.va.gov/greater-los-angeles-health-care/locations/west-los-angeles-va-medical-center/
   services:
@@ -19878,10 +19948,13 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691}
+  external_ids:
+    va: vha_691
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/los-angeles/westchester-enriched-sciences-magnets
   name: Westchester Enriched Sciences Magnets
   categories:

@@ -173,13 +173,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 11216 Sunrise Boulevard East, city: Puyallup, state: wa, zip: '98374'}
+  address:
+    street: 11216 Sunrise Boulevard East
+    city: Puyallup
+    state: wa
+    zip: '98374'
   place: '5356695'
-  geo: {lat: 47.0973, lng: -122.27807}
+  geo:
+    lat: 47.0973
+    lng: -122.27807
   phone: 253-583-3821
   website: https://www.va.gov/puget-sound-health-care/locations/puyallup-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - COVID-19 vaccines
@@ -188,10 +201,13 @@
   - My HealtheVet coordinator
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_663GJ}
+  external_ids:
+    va: vha_663GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/puyallup/sea-mar-behavioral-health-pierce-county
   name: Sea Mar Behavioral Health Pierce County
   categories:

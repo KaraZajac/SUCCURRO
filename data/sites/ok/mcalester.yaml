@@ -214,6 +214,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/mcalester/human-services-centers-pittsburg
+  name: 'Human Services Centers: Pittsburg'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pittsburg County
+  address: {street: 1900 South Main, city: McAlester, state: ok, zip: '74501'}
+  place: '4044800'
+  phone: 918-421-6100
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/mcalester/hwc-adventure-head-start-early-head-start-mcales
   name: HWC Adventure Head Start/Early Head Start - McAlester
   categories:
@@ -365,14 +377,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '2 East Clark Bass Boulevard, The Doctor''s Building', city: McAlester, state: ok,
-    zip: '74501'}
+  address:
+    street: 2 East Clark Bass Boulevard, The Doctor's Building
+    city: McAlester
+    state: ok
+    zip: '74501'
   place: '4044800'
-  geo: {lat: 34.93602, lng: -95.75032}
+  geo:
+    lat: 34.93602
+    lng: -95.75032
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/mcalester-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -389,10 +413,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_623GA}
+  external_ids:
+    va: vha_623GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/mcalester/mcalester-va-outpatient-clinic
   name: McAlester VA Outpatient Clinic
   categories:

@@ -921,23 +921,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 245 North Bultman Drive, city: Sumter, state: sc, zip: '29150'}
+  address:
+    street: 245 North Bultman Drive
+    city: Sumter
+    state: sc
+    zip: '29150'
   place: '4570405'
-  geo: {lat: 33.94958, lng: -80.36885}
+  geo:
+    lat: 33.94958
+    lng: -80.36885
   phone: 803-938-9901
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/sumter-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_544GF}
+  external_ids:
+    va: vha_544GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/sumter/tandem-health
   name: Tandem Health
   categories:

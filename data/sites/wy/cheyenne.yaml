@@ -91,9 +91,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2360 East Pershing Boulevard, city: Cheyenne, state: wy, zip: '82001'}
+  address:
+    street: 2360 East Pershing Boulevard
+    city: Cheyenne
+    state: wy
+    zip: '82001'
   place: '5613900'
-  geo: {lat: 41.14803, lng: -104.78626}
+  geo:
+    lat: 41.14803
+    lng: -104.78626
   phone: 307-778-7550
   website: https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/
   services:
@@ -149,18 +155,27 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_442}
+  external_ids:
+    va: vha_442
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/cheyenne/cheyenne-va-regional-benefit-office
   name: Cheyenne VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 2360 E. Pershing Blvd., city: Cheyenne, state: wy, zip: '82001'}
+  address:
+    street: 2360 E. Pershing Blvd.
+    city: Cheyenne
+    state: wy
+    zip: '82001'
   place: '5613900'
-  geo: {lat: 41.14803, lng: -104.78626}
+  geo:
+    lat: 41.14803
+    lng: -104.78626
   phone: 800-827-1000
   website: https://www.va.gov/cheyenne-va-regional-benefit-office/
   services:
@@ -175,22 +190,40 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_442}
+  external_ids:
+    va: vba_442
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/cheyenne/cheyenne-vet-center
   name: Cheyenne Vet Center
   categories:
   - vet-center
-  address: {street: '2617 East Lincolnway, Suite C', city: Cheyenne, state: wy, zip: '82001'}
+  address:
+    street: 2617 East Lincolnway, Suite C
+    city: Cheyenne
+    state: wy
+    zip: '82001'
   place: '5613900'
-  geo: {lat: 41.13839, lng: -104.78454}
+  geo:
+    lat: 41.13839
+    lng: -104.78454
   phone: 307-778-7370
   website: https://www.va.gov/cheyenne-vet-center/
   hours:
-  - {days: [mon], open: '07:00', close: '16:30'}
-  - {days: [tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    open: 07:00
+    close: '16:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -202,10 +235,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0501V}
+  external_ids:
+    va: vc_0501V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/cheyenne/community-action-of-laramie-county-inc
   name: Community Action of Laramie County, Inc.
   categories:
@@ -333,6 +369,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/cheyenne/laramie-county-department-of-family-services
+  name: Laramie County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Laramie County
+  address: {street: 1022 Airport Parkway, city: Cheyenne, state: wy, zip: '82001'}
+  place: '5613900'
+  phone: 307-777-7921
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/cheyenne/mercedes-van
   name: Mercedes -Van
   categories:

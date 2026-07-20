@@ -13,6 +13,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: oh/georgetown/adams-brown-economic-opportunities-inc
+  name: Adams/Brown Economic Opportunities Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Adams, Brown Counties
+  address: {street: 406 W Plum St, city: Georgetown, state: oh, zip: '45121'}
+  place: '3929778'
+  phone: 937-378-6041
+  website: https://www.abcap.net/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/georgetown/adams-brown-ehs-home-base-units
   name: Adams Brown EHS Home Base Units
   categories:
@@ -118,13 +130,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 474 Home Street, city: Georgetown, state: oh, zip: '45121'}
+  address:
+    street: 474 Home Street
+    city: Georgetown
+    state: oh
+    zip: '45121'
   place: '3929778'
-  geo: {lat: 38.85674, lng: -83.89813}
+  geo:
+    lat: 38.85674
+    lng: -83.89813
   phone: 937-378-3413
   website: https://www.va.gov/cincinnati-health-care/locations/georgetown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -135,10 +160,13 @@
   - Podiatry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_539GF}
+  external_ids:
+    va: vha_539GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/georgetown/healthsource-georgetown
   name: HealthSource Georgetown
   categories:

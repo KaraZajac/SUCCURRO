@@ -1420,13 +1420,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4602 North Bartlett Avenue, city: Laredo, state: tx, zip: '78041'}
+  address:
+    street: 4602 North Bartlett Avenue
+    city: Laredo
+    state: tx
+    zip: '78041'
   place: '4841464'
-  geo: {lat: 27.53727, lng: -99.47499}
+  geo:
+    lat: 27.53727
+    lng: -99.47499
   phone: 956-523-7850
   website: https://www.va.gov/texas-valley-health-care/locations/laredo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -1439,21 +1452,37 @@
   - Primary care
   - Social work
   - Whole health
-  external_ids: {va: vha_740GD}
+  external_ids:
+    va: vha_740GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/laredo/laredo-vet-center
   name: Laredo Vet Center
   categories:
   - vet-center
-  address: {street: '6999 McPherson Road, Suite 102', city: Laredo, state: tx, zip: '78041'}
+  address:
+    street: 6999 McPherson Road, Suite 102
+    city: Laredo
+    state: tx
+    zip: '78041'
   place: '4841464'
-  geo: {lat: 27.56646, lng: -99.47306}
+  geo:
+    lat: 27.56646
+    lng: -99.47306
   phone: 956-723-4680
   website: https://www.va.gov/laredo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1465,10 +1494,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0712V}
+  external_ids:
+    va: vc_0712V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/laredo/larga-vista
   name: Larga Vista
   categories:
@@ -2563,6 +2595,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/laredo/south-texas-development-council
+  name: South Texas Development Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jim Hogg, Starr, Zapata Counties
+  address: {street: P.O. Box 2187 / 1002 Dicky Lane, city: Laredo, state: tx, zip: '78044'}
+  place: '4841464'
+  phone: 956-722-3995
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/laredo/templo-cristiano
   name: Templo Cristiano
   categories:
@@ -2826,6 +2869,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/laredo/webb-county-community-action-agency
+  name: Webb County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Webb County
+  address: {street: 520 Reynolds Street, city: Laredo, state: tx, zip: '78040'}
+  place: '4841464'
+  phone: 956-523-4182
+  website: https://www.webbcountytx.gov/default.aspx
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/laredo/women-s-health-mobile-clinic
   name: Women's Health Mobile Clinic
   categories:

@@ -4,12 +4,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 225 Von Karman Road, city: Arnold Air Force Base, state: tn, zip: '37389'}
-  geo: {lat: 35.38277, lng: -86.02963}
+  address:
+    street: 225 Von Karman Road
+    city: Arnold Air Force Base
+    state: tn
+    zip: '37389'
+  geo:
+    lat: 35.38277
+    lng: -86.02963
   phone: 615-225-3700
   website: https://www.va.gov/tennessee-valley-health-care/locations/tullahoma-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '15:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -17,7 +30,10 @@
   - Mental health care
   - Primary care
   - Suicide prevention
-  external_ids: {va: vha_626GG}
+  external_ids:
+    va: vha_626GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

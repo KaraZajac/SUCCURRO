@@ -4,12 +4,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 900 Commonwealth Drive, city: Cranberry Township, state: pa, zip: '16066'}
-  geo: {lat: 40.68353, lng: -80.11108}
+  address:
+    street: 900 Commonwealth Drive
+    city: Cranberry Township
+    state: pa
+    zip: '16066'
+  geo:
+    lat: 40.68353
+    lng: -80.11108
   phone: 724-742-3500
   website: https://www.va.gov/butler-health-care/locations/cranberry-township-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Diabetes care
@@ -27,7 +40,10 @@
   - Telehealth
   - Travel reimbursement
   - Women Veteran care
-  external_ids: {va: vha_529GF}
+  external_ids:
+    va: vha_529GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

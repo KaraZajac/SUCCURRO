@@ -66,17 +66,33 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 733 Market Avenue South, city: Canton, state: oh, zip: '44702'}
+  address:
+    street: 733 Market Avenue South
+    city: Canton
+    state: oh
+    zip: '44702'
   place: '3912000'
-  geo: {lat: 40.79301, lng: -81.37671}
+  geo:
+    lat: 40.79301
+    lng: -81.37671
   phone: 216-791-3800
   website: https://www.va.gov/find-locations/facility/vha_541QC
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '15:00'}
-  external_ids: {va: vha_541QC}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '15:00'
+  external_ids:
+    va: vha_541QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/canton/canton-fnb-st-charles-court-little-free-food-pan
   name: Canton FNB St Charles Court little free food pantry
   categories:
@@ -96,13 +112,26 @@
   name: Canton VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 733 Market Avenue South, city: Canton, state: oh, zip: '44702'}
+  address:
+    street: 733 Market Avenue South
+    city: Canton
+    state: oh
+    zip: '44702'
   place: '3912000'
-  geo: {lat: 40.79327, lng: -81.37719}
+  geo:
+    lat: 40.79327
+    lng: -81.37719
   phone: 330-489-4600
   website: https://www.va.gov/northeast-ohio-health-care/locations/canton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -122,10 +151,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_541BY}
+  external_ids:
+    va: vha_541BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/canton/child-and-adolescent-behavioral-health-plain
   name: Child and Adolescent Behavioral Health Plain
   categories:
@@ -598,19 +630,40 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/canton/stark-county-community-action-agency
+  name: Stark County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Stark County
+  address: {street: 1366 Market Avenue North, city: Canton, state: oh, zip: '44714'}
+  place: '3912000'
+  phone: 330-617-1676
+  website: https://www.sccaa.org/wba/content/agency-programs/heap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/canton/stark-county-mobile-vet-center
   name: Stark County Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: 4220 Cleveland Ave NW, city: Canton, state: oh, zip: '44709'}
+  address:
+    street: 4220 Cleveland Ave NW
+    city: Canton
+    state: oh
+    zip: '44709'
   place: '3912000'
-  geo: {lat: 40.84488, lng: -81.39166}
+  geo:
+    lat: 40.84488
+    lng: -81.39166
   phone: 330-454-3120
   website: https://www.va.gov/stark-county-vet-center/locations/#stark-county-mobile-vet-center
-  external_ids: {va: vc_0859MVC}
+  external_ids:
+    va: vc_0859MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/canton/stark-county-tasc-inc
   name: Stark County TASC Inc
   categories:
@@ -635,14 +688,29 @@
 - id: oh/canton/stark-county-vet-center
   name: Stark County Vet Center
   categories: *id002
-  address: {street: 4220 Cleveland Ave NW, city: Canton, state: oh, zip: '44709'}
+  address:
+    street: 4220 Cleveland Ave NW
+    city: Canton
+    state: oh
+    zip: '44709'
   place: '3912000'
-  geo: {lat: 40.84488, lng: -81.39166}
+  geo:
+    lat: 40.84488
+    lng: -81.39166
   phone: 330-454-3120
   website: https://www.va.gov/stark-county-vet-center/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '19:00'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '19:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -656,10 +724,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0241V}
+  external_ids:
+    va: vc_0241V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/canton/stark-metropolitian-housing-authority
   name: Stark Metropolitian Housing Authority
   categories:

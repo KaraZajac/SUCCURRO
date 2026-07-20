@@ -1,3 +1,14 @@
+- id: pa/state-college/centre-county-assistance-office
+  name: Centre County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Centre County
+  address: {street: 2580 Park Center Boulevard, city: State College, state: pa, zip: '16801'}
+  place: '4273808'
+  phone: 814-861-1955
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/state-college/corl-street-elementary
   name: Corl Street Elementary
   categories:
@@ -64,13 +75,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2581 Clyde Avenue, city: State College, state: pa, zip: '16801'}
+  address:
+    street: 2581 Clyde Avenue
+    city: State College
+    state: pa
+    zip: '16801'
   place: '4273808'
-  geo: {lat: 40.82749, lng: -77.80595}
+  geo:
+    lat: 40.82749
+    lng: -77.80595
   phone: 814-943-8164
   website: https://www.va.gov/altoona-health-care/locations/state-college-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -93,7 +117,10 @@
   - Telehealth
   - Travel reimbursement
   - Wound care and ostomy
-  external_ids: {va: vha_503GC}
+  external_ids:
+    va: vha_503GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

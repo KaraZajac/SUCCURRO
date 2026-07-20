@@ -99,6 +99,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/clinton-township/macomb-community-action
+  name: Macomb Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Macomb County
+  address: {street: '21885 Dunham Rd., Suite 10', city: Clinton Township, state: mi, zip: '48038'}
+  phone: 586-469-6999
+  email: mca@macombgov.org
+  website: https://mca.macombgov.org/MCA-ES-ActionCenters
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/clinton-township/macomb-county-cmhc-assessment-referral
   name: Macomb County CMHC Assessment/Referral
   categories:
@@ -188,12 +200,25 @@
   name: Macomb County Vet Center
   categories:
   - vet-center
-  address: {street: '42621 Garfield Road, Suite 105', city: Clinton Township, state: mi, zip: '48038'}
-  geo: {lat: 42.61018, lng: -82.95286}
+  address:
+    street: 42621 Garfield Road, Suite 105
+    city: Clinton Township
+    state: mi
+    zip: '48038'
+  geo:
+    lat: 42.61018
+    lng: -82.95286
   phone: 586-412-0107
   website: https://www.va.gov/macomb-county-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -205,25 +230,37 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0437V}
+  external_ids:
+    va: vc_0437V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/clinton-township/macomb-county-veteran-readiness-and-employment-o
   name: Macomb County Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '21885 Dunham Road, Suite 3', city: Clinton Township, state: mi, zip: '48036'}
-  geo: {lat: 42.61897, lng: -82.89249}
+  address:
+    street: 21885 Dunham Road, Suite 3
+    city: Clinton Township
+    state: mi
+    zip: '48036'
+  geo:
+    lat: 42.61897
+    lng: -82.89249
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329a}
+  external_ids:
+    va: vba_329a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/clinton-township/macomb-family-services-inc
   name: Macomb Family Services Inc
   categories:

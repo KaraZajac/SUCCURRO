@@ -42,6 +42,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/emporia/emporia-city-liheap
+  name: Emporia City Liheap
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Emporia City County
+  address: {street: 1748 East Atlantic Street, city: Emporia, state: va, zip: '23847'}
+  place: '5125808'
+  phone: 434-634-6576
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/emporia/emporia-medical-center
   name: EMPORIA MEDICAL CENTER
   categories:
@@ -69,13 +80,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1746 East Atlantic Street, city: Emporia, state: va, zip: '23847'}
+  address:
+    street: 1746 East Atlantic Street
+    city: Emporia
+    state: va
+    zip: '23847'
   place: '5125808'
-  geo: {lat: 36.69014, lng: -77.52807}
+  geo:
+    lat: 36.69014
+    lng: -77.52807
   phone: 434-348-1055
   website: https://www.va.gov/richmond-health-care/locations/emporia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -83,10 +107,13 @@
   - Pharmacy
   - Podiatry
   - Primary care
-  external_ids: {va: vha_652GF}
+  external_ids:
+    va: vha_652GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/emporia/greensville-county-high
   name: Greensville County High
   categories:
@@ -133,6 +160,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/emporia/greensville-emporia-department-of-social-service
+  name: Greensville/Emporia Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greensville County
+  address: {street: '1748 E. Atlantic St., P.O. Box 1136', city: Emporia, state: va, zip: 23847-1136}
+  place: '5125808'
+  phone: 434-634-6576
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/emporia/greensville-head-start
   name: Greensville Head Start
   categories:

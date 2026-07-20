@@ -142,20 +142,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2500 Green Road, city: Ann Arbor, state: mi, zip: '48105'}
+  address:
+    street: 2500 Green Road
+    city: Ann Arbor
+    state: mi
+    zip: '48105'
   place: '2603000'
-  geo: {lat: 42.31034, lng: -83.69285}
+  geo:
+    lat: 42.31034
+    lng: -83.69285
   phone: 734-769-7100
   website: https://www.va.gov/ann-arbor-health-care/locations/green-road-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Sleep medicine
-  external_ids: {va: vha_506QB}
+  external_ids:
+    va: vha_506QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/gretchen-s-house
   name: Gretchen's House
   categories:
@@ -199,9 +215,15 @@
   name: Lieutenant Colonel Charles S. Kettles VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2215 Fuller Road, city: Ann Arbor, state: mi, zip: '48105'}
+  address:
+    street: 2215 Fuller Road
+    city: Ann Arbor
+    state: mi
+    zip: '48105'
   place: '2603000'
-  geo: {lat: 42.28478, lng: -83.71412}
+  geo:
+    lat: 42.28478
+    lng: -83.71412
   phone: 734-769-7100
   website: https://www.va.gov/ann-arbor-health-care/locations/lieutenant-colonel-charles-s-kettles-va-medical-center/
   services:
@@ -256,10 +278,13 @@
   - Vascular surgery
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_506}
+  external_ids:
+    va: vha_506
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/lifestance-health
   name: LifeStance Health
   categories:
@@ -350,21 +375,37 @@
   name: Packard Road VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3800 Packard Road, city: Ann Arbor, state: mi, zip: '48108'}
+  address:
+    street: 3800 Packard Road
+    city: Ann Arbor
+    state: mi
+    zip: '48108'
   place: '2603000'
-  geo: {lat: 42.24533, lng: -83.68525}
+  geo:
+    lat: 42.24533
+    lng: -83.68525
   phone: 734-222-7600
   website: https://www.va.gov/ann-arbor-health-care/locations/packard-road-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Mental health care
   - Psychology
-  external_ids: {va: vha_506QA}
+  external_ids:
+    va: vha_506QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/packard-west
   name: Packard West
   categories:
@@ -490,51 +531,78 @@
   categories: &id002
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '2215 Fuller Road, Lower L108', city: Ann Arbor, state: mi, zip: '48105'}
+  address:
+    street: 2215 Fuller Road, Lower L108
+    city: Ann Arbor
+    state: mi
+    zip: '48105'
   place: '2603000'
-  geo: {lat: 42.28478, lng: -83.71412}
+  geo:
+    lat: 42.28478
+    lng: -83.71412
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329i}
+  external_ids:
+    va: vba_329i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/vetsuccess-on-campus-at-university-of-michigan
   name: VetSuccess on Campus at University of Michigan
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '500 S. State Street, LSA Building, Suite 2005', city: Ann Arbor, state: mi, zip: '48109'}
+  address:
+    street: 500 S. State Street, LSA Building, Suite 2005
+    city: Ann Arbor
+    state: mi
+    zip: '48109'
   place: '2603000'
-  geo: {lat: 42.27625, lng: -83.74124}
+  geo:
+    lat: 42.27625
+    lng: -83.74124
   phone: 313-690-9632
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329m}
+  external_ids:
+    va: vba_329m
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/vetsuccess-on-campus-at-washtenaw-community-coll
   name: VetSuccess on Campus at Washtenaw Community College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '4800 E. Huron River Drive, Student Center 206', city: Ann Arbor, state: mi, zip: '48105'}
+  address:
+    street: 4800 E. Huron River Drive, Student Center 206
+    city: Ann Arbor
+    state: mi
+    zip: '48105'
   place: '2603000'
-  geo: {lat: 42.26285, lng: -83.66425}
+  geo:
+    lat: 42.26285
+    lng: -83.66425
   phone: 313-690-9632
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329l}
+  external_ids:
+    va: vba_329l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/w-scott-westerman-jr-preschool-and-family-center
   name: W. Scott Westerman Jr.,  Preschool and Family Center
   categories:

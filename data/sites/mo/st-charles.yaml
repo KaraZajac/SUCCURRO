@@ -327,13 +327,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2845 Veterans Memorial Parkway, city: 'St. Charles,', state: mo, zip: '63303'}
+  address:
+    street: 2845 Veterans Memorial Parkway
+    city: St. Charles,
+    state: mo
+    zip: '63303'
   place: '2964082'
-  geo: {lat: 38.78082, lng: -90.52434}
+  geo:
+    lat: 38.78082
+    lng: -90.52434
   phone: 314-652-4100
   website: https://www.va.gov/st-louis-health-care/locations/st-charles-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -341,10 +354,13 @@
   - Gastroenterology
   - Primary care
   - Whole health
-  external_ids: {va: vha_657GD}
+  external_ids:
+    va: vha_657GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/st-charles/st-charles-elc
   name: St. Charles ELC
   categories:

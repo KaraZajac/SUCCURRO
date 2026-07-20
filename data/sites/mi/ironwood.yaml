@@ -110,13 +110,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 629 West Cloverland Drive, city: Ironwood, state: mi, zip: '49938'}
+  address:
+    street: 629 West Cloverland Drive
+    city: Ironwood
+    state: mi
+    zip: '49938'
   place: '2641060'
-  geo: {lat: 46.46336, lng: -90.18408}
+  geo:
+    lat: 46.46336
+    lng: -90.18408
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/ironwood-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -136,7 +149,10 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585GD}
+  external_ids:
+    va: vha_585GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

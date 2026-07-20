@@ -42,6 +42,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/hinesville/coastal-georgia-area-community-action-authority
+  name: Coastal Georgia Area Community Action Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Liberty County
+  address: {street: 933 E.G. Miles Parkway, city: Hinesville, state: ga, zip: '31313'}
+  place: '1338964'
+  phone: 912-876-6173
+  website: http://www.coastalgacaa.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/hinesville/darsey-black-and-associates-llc
   name: Darsey Black and Associates LLC
   categories:
@@ -326,13 +338,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 500 East Oglethorpe Highway, city: Hinesville, state: ga, zip: '31313'}
+  address:
+    street: 500 East Oglethorpe Highway
+    city: Hinesville
+    state: ga
+    zip: '31313'
   place: '1338964'
-  geo: {lat: 31.84891, lng: -81.589}
+  geo:
+    lat: 31.84891
+    lng: -81.589
   phone: 843-577-5011
   website: https://www.va.gov/charleston-health-care/locations/john-gibson-dan-james-william-sapp-and-frankie-smiley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -345,10 +370,13 @@
   - Returning service member care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_534GE}
+  external_ids:
+    va: vha_534GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/hinesville/joseph-martin-elementary-school
   name: Joseph Martin Elementary School
   categories:

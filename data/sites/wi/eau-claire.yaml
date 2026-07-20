@@ -85,6 +85,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/eau-claire/eau-claire-county-western-dairlyland-eoc
+  name: Eau Claire County, Western Dairlyland EOC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Eau Claire County
+  address: {street: 418 Wisconsin St., city: Eau Claire, state: wi, zip: '54703'}
+  place: '5522300'
+  phone: 715-836-7511 ext. 1160
+  website: http://homeenergyplus.wi.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/eau-claire/eau-claire-head-start-center
   name: Eau Claire Head Start Center
   categories:
@@ -148,17 +160,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 1310 W. Clairemont Ave, city: Eau Claire, state: wi, zip: '54311'}
+  address:
+    street: 1310 W. Clairemont Ave
+    city: Eau Claire
+    state: wi
+    zip: '54311'
   place: '5522300'
-  geo: {lat: 44.79678, lng: -91.5234}
+  geo:
+    lat: 44.79678
+    lng: -91.5234
   phone: 920-965-0001
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_330c}
+  external_ids:
+    va: vba_330c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/eau-claire/fahrman-center
   name: Fahrman Center
   categories:

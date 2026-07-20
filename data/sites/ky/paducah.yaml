@@ -806,13 +806,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2620 Perkins Creek Drive, city: Paducah, state: ky, zip: '42001'}
+  address:
+    street: 2620 Perkins Creek Drive
+    city: Paducah
+    state: ky
+    zip: '42001'
   place: '2158836'
-  geo: {lat: 37.06696, lng: -88.68641}
+  geo:
+    lat: 37.06696
+    lng: -88.68641
   phone: 270-444-8465
   website: https://www.va.gov/marion-health-care/locations/paducah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -820,10 +833,13 @@
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_657GL}
+  external_ids:
+    va: vha_657GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/paducah/reidland-elementary-school
   name: Reidland Elementary School
   categories:
@@ -1148,6 +1164,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/paducah/west-kentucky-allied-services
+  name: West Kentucky Allied Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving McCracken County
+  address: {street: 1601 Broadway Street (P. O. Box 2617), city: Paducah, state: ky, zip: '42001'}
+  place: '2158836'
+  phone: 270-444-7380
+  website: http://wkas.info/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/paducah/west-kentucky-drug-and-alcohol-intervention-serv
   name: West Kentucky Drug and Alcohol Intervention Servcies
   categories:

@@ -182,6 +182,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/okeechobee/economic-opportunities-council-of-indian-river-c
+  name: Economic Opportunities Council Of Indian River County Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Okeechobee County
+  address: {street: '1798 NW 9th Avenue,', city: Okeechobee, state: fl, zip: '34972'}
+  place: '1251200'
+  phone: 863-357-2240
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/okeechobee/everglades-elementary-school
   name: Everglades Elementary School
   categories:
@@ -695,13 +707,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1201 North Parrot Avenue, city: Okeechobee, state: fl, zip: '34972'}
+  address:
+    street: 1201 North Parrot Avenue
+    city: Okeechobee
+    state: fl
+    zip: '34972'
   place: '1251200'
-  geo: {lat: 27.25615, lng: -80.82995}
+  geo:
+    lat: 27.25615
+    lng: -80.82995
   phone: 863-824-3232
   website: https://www.va.gov/west-palm-beach-health-care/locations/okeechobee-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Internal medicine
@@ -710,10 +735,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Social work
-  external_ids: {va: vha_548GF}
+  external_ids:
+    va: vha_548GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/okeechobee/osceola-middle-school
   name: Osceola Middle School
   categories:

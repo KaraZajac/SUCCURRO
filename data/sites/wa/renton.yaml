@@ -448,19 +448,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 419 South 2nd Street, city: Renton, state: wa, zip: '98057'}
+  address:
+    street: 419 South 2nd Street
+    city: Renton
+    state: wa
+    zip: '98057'
   place: '5357745'
-  geo: {lat: 47.48111, lng: -122.21096}
+  geo:
+    lat: 47.48111
+    lng: -122.21096
   phone: 206-764-5149
   website: https://www.va.gov/puget-sound-health-care/locations/renton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
-  external_ids: {va: vha_663QA}
+  external_ids:
+    va: vha_663QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/st-mathews-church
   name: St Mathews Church
   categories:

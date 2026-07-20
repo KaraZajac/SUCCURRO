@@ -96,6 +96,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/ithaca/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tompkins County
+  address: {street: 320 West Martin Luther King Jr/State Street, city: Ithaca, state: ny, zip: '14850'}
+  place: '3638077'
+  phone: 607-274-5482
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/ithaca/elmira-psychiatric-center-mid-lakes-act-team
   name: Elmira Psychiatric Center Mid Lakes ACT Team
   categories:
@@ -378,19 +389,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/ithaca/tompkins-county-department-of-social-services
+  name: Tompkins County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tompkins County
+  address: {street: 320 West Martin Luther King Jr/ State Street, city: Ithaca, state: ny, zip: '14850'}
+  place: '3638077'
+  phone: 607-274-5264
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/ithaca/tompkins-county-va-clinic
   name: Tompkins County VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '2309 North Triphammer Road, Cayuga Shopping Center', city: Ithaca, state: ny, zip: '14850'}
+  address:
+    street: 2309 North Triphammer Road, Cayuga Shopping Center
+    city: Ithaca
+    state: ny
+    zip: '14850'
   place: '3638077'
-  geo: {lat: 42.48293, lng: -76.48493}
+  geo:
+    lat: 42.48293
+    lng: -76.48493
   phone: 607-257-2045
   website: https://www.va.gov/syracuse-health-care/locations/tompkins-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -402,7 +437,10 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_528G9}
+  external_ids:
+    va: vha_528G9
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

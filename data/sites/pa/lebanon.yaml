@@ -155,6 +155,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/lebanon/lebanon-county-assistance-office
+  name: Lebanon County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lebanon County
+  address: {street: 625 South Eighth Street, city: Lebanon, state: pa, zip: '17042'}
+  place: '4242168'
+  phone: 717-273-1641
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/lebanon/lebanon-dental
   name: Lebanon Dental
   categories:
@@ -270,9 +281,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1700 South Lincoln Avenue, city: Lebanon, state: pa, zip: '17042'}
+  address:
+    street: 1700 South Lincoln Avenue
+    city: Lebanon
+    state: pa
+    zip: '17042'
   place: '4242168'
-  geo: {lat: 40.3152, lng: -76.40871}
+  geo:
+    lat: 40.3152
+    lng: -76.40871
   phone: 717-272-6621
   website: https://www.va.gov/lebanon-health-care/locations/lebanon-va-medical-center/
   services:
@@ -326,10 +343,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_595}
+  external_ids:
+    va: vha_595
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/lebanon/lebanon-vamc-behavioral-health-and-sciences
   name: Lebanon VAMC Behavioral Health and Sciences
   categories:

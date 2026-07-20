@@ -112,13 +112,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1905 North Mitchell Street, city: Cadillac, state: mi, zip: '49601'}
+  address:
+    street: 1905 North Mitchell Street
+    city: Cadillac
+    state: mi
+    zip: '49601'
   place: '2612320'
-  geo: {lat: 44.27729, lng: -85.40663}
+  geo:
+    lat: 44.27729
+    lng: -85.40663
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/cadillac-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -128,10 +141,13 @@
   - PTSD care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_655GG}
+  external_ids:
+    va: vha_655GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/cadillac/emanuel-lutheran-church-83m000009
   name: Emanuel Lutheran Church - 83M000009
   categories:
@@ -276,6 +292,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/cadillac/northwest-michigan-community-action-agency
+  name: Northwest Michigan Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Missaukee, Roscommon, Wexford Counties
+  address: {street: 1640 Marty Paul, city: Cadillac, state: mi, zip: '49601'}
+  place: '2612320'
+  phone: 231-775-9781
+  website: https://www.nmcaa.net/emergency_assist.asp
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/cadillac/viking-learning-center-830103852
   name: Viking Learning Center - 830103852
   categories:

@@ -2893,6 +2893,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/toledo/pathway-inc
+  name: Pathway, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lucas County
+  address: {street: 505 Hamilton St., city: Toledo, state: oh, zip: '43604'}
+  place: '3977000'
+  phone: 419-242-7304
+  email: info@pathwaytoledo.org
+  website: https://pathwaytoledo.org/home-energy-assistance-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/toledo/philio-inc-dba-new-concepts
   name: Philio Inc DBA New Concepts
   categories:
@@ -3680,13 +3693,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1200 South Detroit Avenue, city: Toledo, state: oh, zip: '43614'}
+  address:
+    street: 1200 South Detroit Avenue
+    city: Toledo
+    state: oh
+    zip: '43614'
   place: '3977000'
-  geo: {lat: 41.61891, lng: -83.60335}
+  geo:
+    lat: 41.61891
+    lng: -83.60335
   phone: 419-259-2000
   website: https://www.va.gov/ann-arbor-health-care/locations/toledo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -3711,21 +3737,37 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_506GA}
+  external_ids:
+    va: vha_506GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/toledo/toledo-vet-center
   name: Toledo Vet Center
   categories:
   - vet-center
-  address: {street: '1565 South Byrne Road, Suite 104', city: Toledo, state: oh, zip: '43614'}
+  address:
+    street: 1565 South Byrne Road, Suite 104
+    city: Toledo
+    state: oh
+    zip: '43614'
   place: '3977000'
-  geo: {lat: 41.61023, lng: -83.62461}
+  geo:
+    lat: 41.61023
+    lng: -83.62461
   phone: 419-213-7533
   website: https://www.va.gov/toledo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3736,10 +3778,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0234V}
+  external_ids:
+    va: vc_0234V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/toledo/unison-behavioral-health-center
   name: Unison Behavioral Health Center
   categories:

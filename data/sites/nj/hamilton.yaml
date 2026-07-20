@@ -81,12 +81,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3635 Quakerbridge Road, city: Hamilton, state: nj, zip: 08619}
-  geo: {lat: 40.25957, lng: -74.67752}
+  address:
+    street: 3635 Quakerbridge Road
+    city: Hamilton
+    state: nj
+    zip: 08619
+  geo:
+    lat: 40.25957
+    lng: -74.67752
   phone: 609-570-6600
   website: https://www.va.gov/new-jersey-health-care/locations/hamilton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -99,10 +112,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GA}
+  external_ids:
+    va: vha_561GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/hamilton/kinderworld-educare
   name: KinderWorld EduCare
   categories:

@@ -153,22 +153,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1001 Gateway Boulevard, city: Rock Springs, state: wy, zip: '82901'}
+  address:
+    street: 1001 Gateway Boulevard
+    city: Rock Springs
+    state: wy
+    zip: '82901'
   place: '5667235'
-  geo: {lat: 41.58616, lng: -109.24719}
+  geo:
+    lat: 41.58616
+    lng: -109.24719
   phone: 866-381-2830
   website: https://www.va.gov/sheridan-health-care/locations/rock-springs-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_666GF}
+  external_ids:
+    va: vha_666GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/rock-springs/sage-elementary
   name: Sage Elementary
   categories:
@@ -325,6 +341,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/rock-springs/sweetwater-county-department-of-family-services
+  name: Sweetwater County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sweetwater County
+  address: {street: '2451 Foothill Blvd., Suite 103', city: Rock Springs, state: wy, zip: '82901'}
+  place: '5667235'
+  phone: 307-352-2500
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/rock-springs/sweetwater-county-school-district-1-head-start
   name: 'Sweetwater County School District #1 Head Start'
   categories:

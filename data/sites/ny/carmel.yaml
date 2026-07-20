@@ -44,13 +44,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1875 Route 6, city: Carmel, state: ny, zip: '10512'}
+  address:
+    street: 1875 Route 6
+    city: Carmel
+    state: ny
+    zip: '10512'
   place: '3612518'
-  geo: {lat: 41.41486, lng: -73.67012}
+  geo:
+    lat: 41.41486
+    lng: -73.67012
   phone: 845-228-5291
   website: https://www.va.gov/hudson-valley-health-care/locations/carmel-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Cardiology
@@ -62,10 +75,24 @@
   - Podiatry
   - Primary care
   - Social work
-  external_ids: {va: vha_620GB}
+  external_ids:
+    va: vha_620GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/carmel/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Putnam County
+  address: {street: '110 Old Route 6, Building 3', city: Carmel, state: ny, zip: '10512'}
+  place: '3612518'
+  phone: 845-808-1700 X 47134
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/carmel/covecare-center-mental-health-clinic
   name: CoveCare Center Mental Health Clinic
   categories:
@@ -105,3 +132,25 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/carmel/putnam-county-department-of-social-services
+  name: Putnam County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Putnam County
+  address: {street: '110 Old Rte Six, Building #2', city: Carmel, state: ny, zip: '10512'}
+  place: '3612518'
+  phone: 845-808-1500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/carmel/sheriff
+  name: Sheriff
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Putnam County
+  address: {city: Carmel, state: ny}
+  place: '3612518'
+  phone: 845-225-4300
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

@@ -212,13 +212,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 27843 State Route 7, city: Marietta, state: oh, zip: '45750'}
+  address:
+    street: 27843 State Route 7
+    city: Marietta
+    state: oh
+    zip: '45750'
   place: '3947628'
-  geo: {lat: 39.36444, lng: -81.39127}
+  geo:
+    lat: 39.36444
+    lng: -81.39127
   phone: 740-568-0412
   website: https://www.va.gov/chillicothe-health-care/locations/marietta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Laboratory and pathology
@@ -229,10 +242,13 @@
   - Podiatry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_538GC}
+  external_ids:
+    va: vha_538GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/marietta/rigel-recovery-residential-services
   name: Rigel Recovery Residential Services
   categories:
@@ -293,3 +309,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/marietta/washington-morgan-community-action
+  name: Washington Morgan Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Morgan, Washington Counties
+  address: {street: 50 W. Third Street (P. O. Box 398), city: Marietta, state: oh, zip: '45750'}
+  place: '3947628'
+  phone: 740-373-3745
+  website: http://www.wmcap.org/energy.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

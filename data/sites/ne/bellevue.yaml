@@ -117,16 +117,32 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2206 Longo Drive, city: Bellevue, state: ne, zip: '68005'}
+  address:
+    street: 2206 Longo Drive
+    city: Bellevue
+    state: ne
+    zip: '68005'
   place: '3103950'
-  geo: {lat: 41.15647, lng: -95.92361}
+  geo:
+    lat: 41.15647
+    lng: -95.92361
   phone: 402-744-7300
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_636QM}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_636QM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/bellevue/bellevue-psychiatric-associates-bellevue
   name: Bellevue Psychiatric Associates Bellevue
   categories:

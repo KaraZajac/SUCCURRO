@@ -298,13 +298,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 100 Deerfield Preserve Boulevard, city: Saint Augustine, state: fl, zip: '32086'}
+  address:
+    street: 100 Deerfield Preserve Boulevard
+    city: Saint Augustine
+    state: fl
+    zip: '32086'
   place: '1262500'
-  geo: {lat: 29.85946, lng: -81.34824}
+  geo:
+    lat: 29.85946
+    lng: -81.34824
   phone: 904-829-0814
   website: https://www.va.gov/north-florida-health-care/locations/leo-c-chase-jr-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -327,10 +340,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_573GE}
+  external_ids:
+    va: vha_573GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/st-augustine/metro-treatment-of-florida-lp-new-season-treatme
   name: Metro Treatment of Florida LP New Season Treatment Center 15
   categories:
@@ -351,6 +367,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/st-augustine/northeast-florida-community-action-agency-inc
+  name: Northeast Florida Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Johns County
+  address: {street: 1300 Duval Street, city: St. Augustine, state: fl, zip: '32084'}
+  place: '1262500'
+  phone: 904-362-8052
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/st-augustine/osceola-elementary-school
   name: Osceola Elementary School
   categories:

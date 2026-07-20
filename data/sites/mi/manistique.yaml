@@ -64,13 +64,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 813 East Lakeshore Drive, city: Manistique, state: mi, zip: '49854'}
+  address:
+    street: 813 East Lakeshore Drive
+    city: Manistique
+    state: mi
+    zip: '49854'
   place: '2650760'
-  geo: {lat: 45.94868, lng: -86.23085}
+  geo:
+    lat: 45.94868
+    lng: -86.23085
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/manistique-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Cardiology
@@ -89,10 +102,13 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585GF}
+  external_ids:
+    va: vha_585GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/manistique/sault-tribe-health-and-human-services-behavioral
   name: Sault Tribe Health and Human Services Behavioral Health Program
   categories:

@@ -38,6 +38,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: de/georgetown/catholic-charities-energy-assistance-program
+  name: Catholic Charities Energy Assistance Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sussex County
+  address: {street: 406 S Bedford Street Suite 9, city: Georgetown, state: de, zip: '19947'}
+  place: '1029090'
+  phone: 302-856-6310
+  website: https://www.ccwilm.org/basic-needs/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: de/georgetown/dsamh-bridge-clinic
   name: DSAMH Bridge Clinic
   categories:
@@ -266,28 +278,50 @@
   name: Sussex County Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '20653 DuPont Boulevard, Suite 1', city: Georgetown, state: de, zip: '19947'}
+  address:
+    street: 20653 DuPont Boulevard, Suite 1
+    city: Georgetown
+    state: de
+    zip: '19947'
   place: '1029090'
-  geo: {lat: 38.6968, lng: -75.40005}
+  geo:
+    lat: 38.6968
+    lng: -75.40005
   phone: 302-225-9110
   website: https://www.va.gov/find-locations/facility/vc_0808MVC
-  external_ids: {va: vc_0808MVC}
+  external_ids:
+    va: vc_0808MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: de/georgetown/sussex-county-va-clinic
   name: Sussex County VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 21748 Roth Avenue, city: Georgetown, state: de, zip: '19947'}
+  address:
+    street: 21748 Roth Avenue
+    city: Georgetown
+    state: de
+    zip: '19947'
   place: '1029090'
-  geo: {lat: 38.69901, lng: -75.40354}
+  geo:
+    lat: 38.69901
+    lng: -75.40354
   phone: 800-461-8262
   website: https://www.va.gov/wilmington-health-care/locations/sussex-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -316,20 +350,36 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_460GA}
+  external_ids:
+    va: vha_460GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: de/georgetown/sussex-county-vet-center
   name: Sussex County Vet Center
   categories: *id001
-  address: {street: '20653 DuPont Boulevard, Suite 1', city: Georgetown, state: de, zip: '19947'}
+  address:
+    street: 20653 DuPont Boulevard, Suite 1
+    city: Georgetown
+    state: de
+    zip: '19947'
   place: '1029090'
-  geo: {lat: 38.69683, lng: -75.40002}
+  geo:
+    lat: 38.69683
+    lng: -75.40002
   phone: 302-225-9110
   website: https://www.va.gov/sussex-county-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -345,10 +395,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0243V}
+  external_ids:
+    va: vc_0243V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: de/georgetown/thresholds-inc
   name: Thresholds Inc
   categories:

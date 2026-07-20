@@ -141,18 +141,34 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 957 Baxter Street, city: Athens, state: ga, zip: '30606'}
-  geo: {lat: 33.94858, lng: -83.3902}
+  address:
+    street: 957 Baxter Street
+    city: Athens
+    state: ga
+    zip: '30606'
+  geo:
+    lat: 33.94858
+    lng: -83.3902
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/athens-baxter-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MentalHealth
-  external_ids: {va: vha_509QB}
+  external_ids:
+    va: vha_509QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/athens/athens-housing-authority
   name: Athens Housing Authority
   categories:
@@ -237,12 +253,25 @@
   name: Athens VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: '9249 Highway 29, South', city: Athens, state: ga, zip: '30601'}
-  geo: {lat: 33.98818, lng: -83.34274}
+  address:
+    street: 9249 Highway 29, South
+    city: Athens
+    state: ga
+    zip: '30601'
+  geo:
+    lat: 33.98818
+    lng: -83.34274
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/athens-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -256,10 +285,13 @@
   - Primary care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_509GA}
+  external_ids:
+    va: vha_509GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/athens/boys-girls-club-of-athens-youthforce
   name: Boys & Girls Club Of Athens Youthforce
   categories:
@@ -550,6 +582,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/athens/ninth-district-opportunity-inc-classic-center-em
+  name: Ninth District Opportunity, Inc. (Classic Center - Empire Room)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clarke, Oconee Counties
+  address: {street: 130 Foundry Street, city: Athens, state: ga, zip: '30601'}
+  phone: 855-636-3108
+  website: https://www.ndo.org/services/heating-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/athens/northeast-georgia-youth-organization-corp
   name: Northeast Georgia Youth Organization Corp
   categories:

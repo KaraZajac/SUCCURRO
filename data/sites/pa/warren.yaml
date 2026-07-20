@@ -287,13 +287,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3 Farm Colony Drive, city: Warren, state: pa, zip: '16365'}
+  address:
+    street: 3 Farm Colony Drive
+    city: Warren
+    state: pa
+    zip: '16365'
   place: '4281000'
-  geo: {lat: 41.90563, lng: -79.15204}
+  geo:
+    lat: 41.90563
+    lng: -79.15204
   phone: 866-682-3250
   website: https://www.va.gov/erie-health-care/locations/warren-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -308,10 +321,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562GE}
+  external_ids:
+    va: vha_562GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/warren/warren-state-hospital
   name: Warren State Hospital
   categories:

@@ -257,19 +257,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pottsville/schuylkill-county-assistance-office
+  name: Schuylkill County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Schuylkill County
+  address: {street: 2640 Woodglen Road (P. O. Box 1100), city: Pottsville, state: pa, zip: '17901'}
+  place: '4262432'
+  phone: 570-621-3072
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pottsville/schuylkill-county-va-clinic
   name: Schuylkill County VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1410 Laurel Boulevard, city: Pottsville, state: pa, zip: '17901'}
+  address:
+    street: 1410 Laurel Boulevard
+    city: Pottsville
+    state: pa
+    zip: '17901'
   place: '4262432'
-  geo: {lat: 40.68358, lng: -76.2106}
+  geo:
+    lat: 40.68358
+    lng: -76.2106
   phone: 570-628-5374
   website: https://www.va.gov/lebanon-health-care/locations/schuylkill-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -287,7 +311,10 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_595GF}
+  external_ids:
+    va: vha_595GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

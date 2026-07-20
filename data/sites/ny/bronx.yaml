@@ -814,26 +814,55 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 130 West Kingsbridge Road, city: Bronx, state: ny, zip: '10468'}
-  geo: {lat: 40.86867, lng: -73.905}
+  address:
+    street: 130 West Kingsbridge Road
+    city: Bronx
+    state: ny
+    zip: '10468'
+  geo:
+    lat: 40.86867
+    lng: -73.905
   phone: 718-584-9000
   website: https://www.va.gov/find-locations/facility/vha_526QA
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_526QA}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_526QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/bronx/bronx-vet-center
   name: Bronx Vet Center
   categories:
   - vet-center
-  address: {street: '3250 Westchester Ave, Suite 105', city: Bronx, state: ny, zip: '10461'}
-  geo: {lat: 40.86263, lng: -73.89977}
+  address:
+    street: 3250 Westchester Ave, Suite 105
+    city: Bronx
+    state: ny
+    zip: '10461'
+  geo:
+    lat: 40.86263
+    lng: -73.89977
   phone: 718-367-3500
   website: https://www.va.gov/bronx-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -846,10 +875,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0110V}
+  external_ids:
+    va: vc_0110V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/bronx/bronxcare-ambulatory-care-network
   name: BronxCare Ambulatory Care Network
   categories:
@@ -2412,6 +2444,26 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/bronx/hra-benefits-access-center-crotona
+  name: HRA Benefits Access Center Crotona
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New York City County
+  address: {street: '1910 Monterey Avenue, 2nd Floor, Room 226', city: Bronx, state: ny, zip: '10457'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/bronx/hra-benefits-access-center-rider-bronx
+  name: HRA Benefits Access Center Rider (Bronx)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New York City County
+  address: {street: '300 Canal Place, 1 Floor', city: Bronx, state: ny, zip: '10451'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/bronx/in-tech-academy-ms-high-school-368
   name: In-Tech Academy (MS/High School 368)
   categories:
@@ -2718,8 +2770,14 @@
   name: James J. Peters Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 130 West Kingsbridge Road, city: Bronx, state: ny, zip: '10468'}
-  geo: {lat: 40.86867, lng: -73.905}
+  address:
+    street: 130 West Kingsbridge Road
+    city: Bronx
+    state: ny
+    zip: '10468'
+  geo:
+    lat: 40.86867
+    lng: -73.905
   phone: 718-584-9000
   website: https://www.va.gov/bronx-health-care/locations/james-j-peters-department-of-veterans-affairs-medical-center/
   services:
@@ -2782,10 +2840,13 @@
   - Vascular surgery
   - Wheelchair and mobility
   - Women Veteran care
-  external_ids: {va: vha_526}
+  external_ids:
+    va: vha_526
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/bronx/james-kieran-school-based-health-center
   name: James Kieran School Based Health Center
   categories:

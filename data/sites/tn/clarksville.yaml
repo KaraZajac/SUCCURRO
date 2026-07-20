@@ -166,6 +166,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/clarksville/clarksville-montgomery-county-community-action-a
+  name: Clarksville-Montgomery County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Montgomery County
+  address: {street: '150 Lafayette Rd, (P. O. Box 487)', city: Clarksville, state: tn, zip: '37041'}
+  place: '4715160'
+  phone: 931-896-1800
+  website: https://cmccaa.com/community-programs/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/clarksville/clarksville-montgomery-county-public-library
   name: Clarksville-Montgomery County Public Library
   categories:
@@ -195,13 +207,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 782 Weatherly Drive, city: Clarksville, state: tn, zip: '37043'}
+  address:
+    street: 782 Weatherly Drive
+    city: Clarksville
+    state: tn
+    zip: '37043'
   place: '4715160'
-  geo: {lat: 36.57359, lng: -87.28686}
+  geo:
+    lat: 36.57359
+    lng: -87.28686
   phone: 931-645-3552
   website: https://www.va.gov/tennessee-valley-health-care/locations/clarksville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -219,21 +244,37 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_626GE}
+  external_ids:
+    va: vha_626GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/clarksville/clarksville-vet-center
   name: Clarksville Vet Center
   categories:
   - vet-center
-  address: {street: '141 Chesapeake Lane, Suite 101', city: Clarksville, state: tn, zip: '37043'}
+  address:
+    street: 141 Chesapeake Lane, Suite 101
+    city: Clarksville
+    state: tn
+    zip: '37043'
   place: '4715160'
-  geo: {lat: 36.57919, lng: -87.27532}
+  geo:
+    lat: 36.57919
+    lng: -87.27532
   phone: 931-221-4600
   website: https://www.va.gov/clarksville-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -247,26 +288,38 @@
   - PTSD care
   - Returning service member care
   - Veteran connections
-  external_ids: {va: vc_0350V}
+  external_ids:
+    va: vc_0350V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/clarksville/clarksville-veteran-readiness-and-employment-off
   name: Clarksville Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 227-B Dunbar Cave Rd, city: Clarksville, state: tn, zip: '37043'}
+  address:
+    street: 227-B Dunbar Cave Rd
+    city: Clarksville
+    state: tn
+    zip: '37043'
   place: '4715160'
-  geo: {lat: 36.55304, lng: -87.32019}
+  geo:
+    lat: 36.55304
+    lng: -87.32019
   phone: 615-279-6225
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_320b}
+  external_ids:
+    va: vba_320b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/clarksville/clarvida-clarksville
   name: Clarvida Clarksville
   categories:
@@ -381,19 +434,35 @@
   name: Dalton Drive VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2292 Dalton Drive, city: Clarksville, state: tn, zip: '37043'}
+  address:
+    street: 2292 Dalton Drive
+    city: Clarksville
+    state: tn
+    zip: '37043'
   place: '4715160'
-  geo: {lat: 36.57223, lng: -87.28614}
+  geo:
+    lat: 36.57223
+    lng: -87.28614
   phone: 931-503-1111
   website: https://www.va.gov/tennessee-valley-health-care/locations/dalton-drive-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Dental/oral surgery
-  external_ids: {va: vha_626QF}
+  external_ids:
+    va: vha_626QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/clarksville/forest-street-united-methodist-church
   name: Forest Street United Methodist Church
   categories:
@@ -649,18 +718,34 @@
   name: Montgomery County VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 647 Dunlop Lane, city: Clarksville, state: tn, zip: '37040'}
+  address:
+    street: 647 Dunlop Lane
+    city: Clarksville
+    state: tn
+    zip: '37040'
   place: '4715160'
-  geo: {lat: 36.58014, lng: -87.27098}
+  geo:
+    lat: 36.58014
+    lng: -87.27098
   phone: 931-503-1120
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_626GS}
+  external_ids:
+    va: vha_626GS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/clarksville/northeast-high-school
   name: Northeast High School
   categories:

@@ -109,13 +109,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '100 Pike Street, Port Jervis Plaza', city: Port Jervis, state: ny, zip: '12771'}
+  address:
+    street: 100 Pike Street, Port Jervis Plaza
+    city: Port Jervis
+    state: ny
+    zip: '12771'
   place: '3659388'
-  geo: {lat: 41.37671, lng: -74.69369}
+  geo:
+    lat: 41.37671
+    lng: -74.69369
   phone: 845-856-5396
   website: https://www.va.gov/hudson-valley-health-care/locations/port-jervis-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -128,10 +141,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_620GE}
+  external_ids:
+    va: vha_620GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/port-jervis/port-jervis-youth-center
   name: Port Jervis Youth Center
   categories:

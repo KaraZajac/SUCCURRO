@@ -149,13 +149,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 208 South Oak Drive, city: Lake Jackson, state: tx, zip: '77566'}
+  address:
+    street: 208 South Oak Drive
+    city: Lake Jackson
+    state: tx
+    zip: '77566'
   place: '4840588'
-  geo: {lat: 29.03174, lng: -95.45705}
+  geo:
+    lat: 29.03174
+    lng: -95.45705
   phone: 979-230-4852
   website: https://www.va.gov/houston-health-care/locations/lake-jackson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -175,10 +188,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GF}
+  external_ids:
+    va: vha_580GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/lake-jackson/mychn-kids-way
   name: MyCHN Kids  Way
   categories:

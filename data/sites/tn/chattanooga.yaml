@@ -477,13 +477,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 6401 Shallowford Road, city: Chattanooga, state: tn, zip: '37421'}
+  address:
+    street: 6401 Shallowford Road
+    city: Chattanooga
+    state: tn
+    zip: '37421'
   place: '4714000'
-  geo: {lat: 35.05087, lng: -85.17623}
+  geo:
+    lat: 35.05087
+    lng: -85.17623
   phone: 423-893-6500
   website: https://www.va.gov/tennessee-valley-health-care/locations/chattanooga-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -499,21 +512,37 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_626GF}
+  external_ids:
+    va: vha_626GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/chattanooga/chattanooga-vet-center
   name: Chattanooga Vet Center
   categories:
   - vet-center
-  address: {street: '1300 Premier Drive, Suite 180', city: Chattanooga, state: tn, zip: '37421'}
+  address:
+    street: 1300 Premier Drive, Suite 180
+    city: Chattanooga
+    state: tn
+    zip: '37421'
   place: '4714000'
-  geo: {lat: 35.01568, lng: -85.19044}
+  geo:
+    lat: 35.01568
+    lng: -85.19044
   phone: 423-855-6570
   website: https://www.va.gov/chattanooga-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -524,10 +553,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0722V}
+  external_ids:
+    va: vc_0722V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/chattanooga/chattanooga-zoo
   name: Chattanooga Zoo
   categories:
@@ -1580,6 +1612,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/chattanooga/office-of-family-empowerment-chattanooga
+  name: Office of Family Empowerment - Chattanooga
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hamilton County
+  address: {street: 6098 Debra Rd, city: Chattanooga, state: tn, zip: '37411'}
+  place: '4714000'
+  phone: 423-643-6434
+  email: liheap@chattanooga.gov
+  website: https://chattanooga.gov/community-development/office-of-family-empowerment
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/chattanooga/outdoor-chattanooga
   name: Outdoor Chattanooga
   categories:
@@ -1607,35 +1652,67 @@
   name: Pointe Centre 2 VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1208 Pointe Centre Drive, city: Chattanooga, state: tn, zip: '37421'}
+  address:
+    street: 1208 Pointe Centre Drive
+    city: Chattanooga
+    state: tn
+    zip: '37421'
   place: '4714000'
-  geo: {lat: 35.01284, lng: -85.18714}
+  geo:
+    lat: 35.01284
+    lng: -85.18714
   phone: 423-893-6500
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_626QI}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_626QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/chattanooga/pointe-centre-va-clinic
   name: Pointe Centre VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1208 Pointe Centre, Pointe Centre Properties', city: Chattanooga, state: tn, zip: '37421'}
+  address:
+    street: 1208 Pointe Centre, Pointe Centre Properties
+    city: Chattanooga
+    state: tn
+    zip: '37421'
   place: '4714000'
-  geo: {lat: 35.01342, lng: -85.18711}
+  geo:
+    lat: 35.01342
+    lng: -85.18711
   phone: 423-893-6500
   website: https://www.va.gov/tennessee-valley-health-care/locations/pointe-centre-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Optometry
   - Pulmonary medicine
-  external_ids: {va: vha_626QC}
+  external_ids:
+    va: vha_626QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/chattanooga/pop-up-project
   name: Pop Up Project
   categories:

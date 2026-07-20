@@ -1180,20 +1180,47 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '1250-B East Cliff Drive, .', city: El Paso, state: tx, zip: '79902'}
+  address:
+    street: 1250-B East Cliff Drive, .
+    city: El Paso
+    state: tx
+    zip: '79902'
   place: '4824000'
-  geo: {lat: 31.77644, lng: -106.48502}
+  geo:
+    lat: 31.77644
+    lng: -106.48502
   phone: 915-313-3002
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-central-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Sleep medicine
   - Toxic exposure screening
-  external_ids: {va: vha_756QB}
+  external_ids:
+    va: vha_756QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/el-paso/el-paso-community-action-program-project-bravo-i
+  name: El Paso Community Action Program, Project BRAVO, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving El Paso County
+  address: {street: 2000 Texas Ave., city: El Paso, state: tx, zip: 79901-1919}
+  place: '4824000'
+  phone: 915-562-4100
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/el-paso/el-paso-community-mh-mr-dba-emergence-health-net
   name: El Paso Community MH/MR DBA Emergence Health Network West Side
   categories:
@@ -1219,13 +1246,26 @@
   name: El Paso Eastside VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 2400 Trawood Drive, city: El Paso, state: tx, zip: '79936'}
+  address:
+    street: 2400 Trawood Drive
+    city: El Paso
+    state: tx
+    zip: '79936'
   place: '4824000'
-  geo: {lat: 31.76417, lng: -106.3167}
+  geo:
+    lat: 31.76417
+    lng: -106.3167
   phone: 915-217-2428
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-eastside-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -1233,10 +1273,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Toxic exposure screening
-  external_ids: {va: vha_756GB}
+  external_ids:
+    va: vha_756GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-h-s
   name: El Paso H S
   categories:
@@ -1262,22 +1305,38 @@
   name: El Paso Northeast VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 5229 Sanders Avenue, city: El Paso, state: tx, zip: '79924'}
+  address:
+    street: 5229 Sanders Avenue
+    city: El Paso
+    state: tx
+    zip: '79924'
   place: '4824000'
-  geo: {lat: 31.88141, lng: -106.41919}
+  geo:
+    lat: 31.88141
+    lng: -106.41919
   phone: 915-832-4000
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-northeast-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_756GD}
+  external_ids:
+    va: vha_756GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-psychiatric-center
   name: El Paso Psychiatric Center
   categories:
@@ -1303,33 +1362,63 @@
   name: El Paso South Central VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 350 Revere Street, city: El Paso, state: tx, zip: '79905'}
+  address:
+    street: 350 Revere Street
+    city: El Paso
+    state: tx
+    zip: '79905'
   place: '4824000'
-  geo: {lat: 31.77534, lng: -106.42999}
+  geo:
+    lat: 31.77534
+    lng: -106.42999
   phone: 915-782-5300
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-south-central-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Gynecology
   - Mental health care
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_756QA}
+  external_ids:
+    va: vha_756QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-va-clinic
   name: El Paso VA Clinic
   categories: *id001
   description: Health Care Center (HCC)
-  address: {street: 5001 North Piedras Street, city: El Paso, state: tx, zip: '79930'}
+  address:
+    street: 5001 North Piedras Street
+    city: El Paso
+    state: tx
+    zip: '79930'
   place: '4824000'
-  geo: {lat: 31.81884, lng: -106.46148}
+  geo:
+    lat: 31.81884
+    lng: -106.46148
   phone: 915-564-6100
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -1356,10 +1445,13 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_756}
+  external_ids:
+    va: vha_756
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-va-eastside-cboc-eastside-cboc
   name: El Paso VA Eastside CBOC Eastside CBOC
   categories:
@@ -1448,14 +1540,29 @@
   name: El Paso Vet Center
   categories:
   - vet-center
-  address: {street: '1155 Westmoreland Drive, Suite 121', city: El Paso, state: tx, zip: '79925'}
+  address:
+    street: 1155 Westmoreland Drive, Suite 121
+    city: El Paso
+    state: tx
+    zip: '79925'
   place: '4824000'
-  geo: {lat: 31.77943, lng: -106.38694}
+  geo:
+    lat: 31.77943
+    lng: -106.38694
   phone: 915-772-0013
   website: https://www.va.gov/el-paso-vet-center/
   hours:
-  - {days: [mon, tue, fri], open: '08:00', close: '16:30'}
-  - {days: [wed, thu], open: '08:00', close: '20:00'}
+  - days:
+    - mon
+    - tue
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    - thu
+    open: 08:00
+    close: '20:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1469,26 +1576,38 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0707V}
+  external_ids:
+    va: vc_0707V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-veteran-readiness-and-employment-office
   name: El Paso Veteran Readiness and Employment Office
   categories: &id002
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '7500 Viscount Blvd, Suite C-50', city: El Paso, state: tx, zip: '79925'}
+  address:
+    street: 7500 Viscount Blvd, Suite C-50
+    city: El Paso
+    state: tx
+    zip: '79925'
   place: '4824000'
-  geo: {lat: 31.77994, lng: -106.38599}
+  geo:
+    lat: 31.77994
+    lng: -106.38599
   phone: 915-772-2195
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349v}
+  external_ids:
+    va: vba_349v
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/el-paso-veterans-affairs-healthcare-south-centra
   name: El Paso Veterans Affairs Healthcare South Central Wellness Center
   categories:
@@ -1514,13 +1633,26 @@
   name: El Paso Westside VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1870 Northwestern Drive, city: El Paso, state: tx, zip: '79912'}
+  address:
+    street: 1870 Northwestern Drive
+    city: El Paso
+    state: tx
+    zip: '79912'
   place: '4824000'
-  geo: {lat: 31.90279, lng: -106.57651}
+  geo:
+    lat: 31.90279
+    lng: -106.57651
   phone: 915-877-5800
   website: https://www.va.gov/el-paso-health-care/locations/el-paso-westside-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -1528,10 +1660,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Toxic exposure screening
-  external_ids: {va: vha_756GC}
+  external_ids:
+    va: vha_756GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/emergence-health-network-cad
   name: Emergence Health Network CAD
   categories:
@@ -3122,9 +3257,15 @@
   name: Pre-Discharge Site at El Paso VA Clinic
   categories: *id002
   description: Pre-Discharge Site
-  address: {street: '5001 N. Piedras Street, Benefits Office', city: El Paso, state: tx, zip: '79930'}
+  address:
+    street: 5001 N. Piedras Street, Benefits Office
+    city: El Paso
+    state: tx
+    zip: '79930'
   place: '4824000'
-  geo: {lat: 31.81884, lng: -106.46148}
+  geo:
+    lat: 31.81884
+    lng: -106.46148
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3135,10 +3276,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_349i}
+  external_ids:
+    va: vba_349i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/project-vida-health-center
   name: PROJECT VIDA HEALTH CENTER
   categories:
@@ -3684,9 +3828,15 @@
   name: VA Regional Benefit Satellite Office at El Paso VA Clinic
   categories: *id002
   description: Satellite Office
-  address: {street: 5001 N. Piedras Street, city: El Paso, state: tx, zip: '79930'}
+  address:
+    street: 5001 N. Piedras Street
+    city: El Paso
+    state: tx
+    zip: '79930'
   place: '4824000'
-  geo: {lat: 31.81834, lng: -106.46148}
+  geo:
+    lat: 31.81834
+    lng: -106.46148
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3699,10 +3849,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_349ad}
+  external_ids:
+    va: vba_349ad
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/el-paso/valle-verde-early-college-h-s
   name: Valle Verde Early College H S
   categories:

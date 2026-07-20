@@ -342,15 +342,24 @@
   name: Henderson Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '400 North Stephanie, Suite 180', city: Henderson, state: nv, zip: '89014'}
+  address:
+    street: 400 North Stephanie, Suite 180
+    city: Henderson
+    state: nv
+    zip: '89014'
   place: '3231900'
-  geo: {lat: 36.05739, lng: -115.04407}
+  geo:
+    lat: 36.05739
+    lng: -115.04407
   phone: 702-791-9100
   website: https://www.va.gov/henderson-vet-center/locations/#henderson-mobile-vet-center
-  external_ids: {va: vc_0886MVC}
+  external_ids:
+    va: vc_0886MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/henderson/henderson-multigenerational-center
   name: Henderson Multigenerational Center
   categories:
@@ -376,13 +385,26 @@
 - id: nv/henderson/henderson-vet-center
   name: Henderson Vet Center
   categories: *id001
-  address: {street: '400 North Stephanie Street, Suite 180', city: Henderson, state: nv, zip: '89014'}
+  address:
+    street: 400 North Stephanie Street, Suite 180
+    city: Henderson
+    state: nv
+    zip: '89014'
   place: '3231900'
-  geo: {lat: 36.05739, lng: -115.04407}
+  geo:
+    lat: 36.05739
+    lng: -115.04407
   phone: 702-791-9100
   website: https://www.va.gov/henderson-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -394,10 +416,24 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0534V}
+  external_ids:
+    va: vc_0534V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nv/henderson/hopelink-of-souther-nevada
+  name: Hopelink of Souther Nevada
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 178 Westminster Way, city: Henderson, state: nv, zip: '89015'}
+  place: '3231900'
+  phone: 702-566-0576
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/henderson/john-c-kish-clubhouse-bgc
   name: John C Kish Clubhouse Bgc
   categories:
@@ -657,13 +693,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1020 South Boulder Highway, city: Henderson, state: nv, zip: '89015'}
+  address:
+    street: 1020 South Boulder Highway
+    city: Henderson
+    state: nv
+    zip: '89015'
   place: '3231900'
-  geo: {lat: 36.0193, lng: -114.95723}
+  geo:
+    lat: 36.0193
+    lng: -114.95723
   phone: 702-791-9030
   website: https://www.va.gov/southern-nevada-health-care/locations/southeast-las-vegas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -682,10 +731,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_593GE}
+  external_ids:
+    va: vha_593GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/henderson/taylor-elementary-school
   name: Taylor Elementary School
   categories:

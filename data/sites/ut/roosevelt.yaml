@@ -89,17 +89,45 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 245 West 200 North, city: Roosevelt, state: ut, zip: '84066'}
+  address:
+    street: 245 West 200 North
+    city: Roosevelt
+    state: ut
+    zip: '84066'
   place: '4964670'
-  geo: {lat: 40.30206, lng: -109.9959}
+  geo:
+    lat: 40.30206
+    lng: -109.9959
   phone: 435-725-1050
   website: https://www.va.gov/salt-lake-city-health-care/locations/roosevelt-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Primary care
-  external_ids: {va: vha_660GD}
+  external_ids:
+    va: vha_660GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ut/roosevelt/uintah-basin-association-of-governments-heat-pro
+  name: Uintah Basin Association of Governments - Heat Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Daggett, Duchesne, Uintah Counties
+  address: {street: 330 E 100 S, city: Roosevelt, state: ut, zip: '84066'}
+  place: '4964670'
+  phone: 435-772-5218
+  email: ubaogheat@ubaog.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

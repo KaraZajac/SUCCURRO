@@ -53,19 +53,43 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ny/goshen/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Orange County
+  address: {street: '40 Matthews Street, Suite 305', city: Goshen, state: ny, zip: '10924'}
+  place: '3629542'
+  phone: 845-615-3700
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/goshen/goshen-va-clinic
   name: Goshen VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 30 Hatfield Lane, city: Goshen, state: ny, zip: '10924'}
+  address:
+    street: 30 Hatfield Lane
+    city: Goshen
+    state: ny
+    zip: '10924'
   place: '3629542'
-  geo: {lat: 41.39511, lng: -74.3398}
+  geo:
+    lat: 41.39511
+    lng: -74.3398
   phone: 845-294-6927
   website: https://www.va.gov/hudson-valley-health-care/locations/goshen-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -82,10 +106,25 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_620GD}
+  external_ids:
+    va: vha_620GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/goshen/orange-county-department-of-social-services
+  name: Orange County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Orange County
+  address: {street: 11 Quarry Rd, city: Goshen, state: ny, zip: '10924'}
+  place: '3629542'
+  phone: 845-291-2002
+  email: dfa5a33.sm.HEAP@dfa.state.ny.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/goshen/rockland-childrens-psychiatric-center-orange-cli
   name: Rockland Childrens Psychiatric Center Orange Clinic
   categories:

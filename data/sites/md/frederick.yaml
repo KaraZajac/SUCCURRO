@@ -336,13 +336,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1433 Porter Street, city: Frederick, state: md, zip: '21702'}
+  address:
+    street: 1433 Porter Street
+    city: Frederick
+    state: md
+    zip: '21702'
   place: '2430325'
-  geo: {lat: 39.43774, lng: -77.42237}
+  geo:
+    lat: 39.43774
+    lng: -77.42237
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/fort-detrick-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -359,10 +372,25 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GG}
+  external_ids:
+    va: vha_613GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: md/frederick/frederick-county-community-action-agency
+  name: Frederick County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Frederick County
+  address: {street: 6040 New Design Road, city: Frederick, state: md, zip: '21701'}
+  place: '2430325'
+  phone: 301-600-2410
+  email: ohep@cityoffrederick.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/frederick/frederick-housing-authority
   name: Frederick Housing Authority
   categories:

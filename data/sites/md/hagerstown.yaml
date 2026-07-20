@@ -351,13 +351,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1101 Opal Court, city: Hagerstown, state: md, zip: '21740'}
+  address:
+    street: 1101 Opal Court
+    city: Hagerstown
+    state: md
+    zip: '21740'
   place: '2436075'
-  geo: {lat: 39.63626, lng: -77.69659}
+  geo:
+    lat: 39.63626
+    lng: -77.69659
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/hagerstown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -372,10 +385,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GB}
+  external_ids:
+    va: vha_613GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/hagerstown/head-start-of-washington-county-inc
   name: Head Start of Washington County, Inc.
   categories:
@@ -781,6 +797,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/hagerstown/washington-co-community-action-council-inc
+  name: Washington Co. Community Action Council, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: 117 Summit Avenue, city: Hagerstown, state: md, zip: '21740'}
+  place: '2436075'
+  phone: 301-797-4161
+  email: WashingtonCountyOHEP@wccac.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/hagerstown/wells-house-baltimore-street
   name: Wells House Baltimore Street
   categories:

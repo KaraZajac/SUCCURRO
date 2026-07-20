@@ -147,19 +147,46 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 350 Capitol Hill Avenue, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 350 Capitol Hill Avenue
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.5107, lng: -119.747}
+  geo:
+    lat: 39.5107
+    lng: -119.747
   phone: 775-324-6600
   website: https://www.va.gov/sierra-nevada-health-care/locations/capitol-hill-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:00'
   services:
   - PrimaryCare
-  external_ids: {va: vha_654QB}
+  external_ids:
+    va: vha_654QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nv/reno/catholic-charities-of-northern-nevada-and-the-st
+  name: Catholic Charities of Northern Nevada and the St. Vincents Programs
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washoe County
+  address: {street: 500 E. 4th Street, city: Reno, state: nv, zip: '89512'}
+  place: '3260600'
+  phone: 775-322-7073 x 450
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/reno/cdt-service-corporation-dba-new-dawn-treatment-c
   name: CDT Service Corporation DBA New Dawn Treatment Centers
   categories:
@@ -176,6 +203,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/reno/central-south-reno-family-resource-center
+  name: Central/South Reno Family Resource Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washoe County
+  address: {street: 1950 Villanova Drive, city: Reno, state: nv, zip: '89502'}
+  place: '3260600'
+  phone: 775-321-5037
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/reno/change-point
   name: Change Point
   categories:
@@ -393,6 +431,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/reno/community-services-agency
+  name: Community Services Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washoe County
+  address: {street: 1094 East 8th Street, city: Reno, state: nv, zip: '89512'}
+  place: '3260600'
+  phone: 775-786-6023
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/reno/complex-care-center-ccc
   name: Complex Care Center (CCC)
   categories:
@@ -583,9 +632,15 @@
   name: Ioannis A. Lougaris Veterans' Administration Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 975 Kirman Avenue, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 975 Kirman Avenue
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.51632, lng: -119.79952}
+  geo:
+    lat: 39.51632
+    lng: -119.79952
   phone: 775-786-7200
   website: https://www.va.gov/sierra-nevada-health-care/locations/ioannis-a-lougaris-veterans-administration-medical-center/
   services:
@@ -612,25 +667,44 @@
   - Suicide prevention
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_654}
+  external_ids:
+    va: vha_654
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/kietzke-va-clinic
   name: Kietzke VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2295 Kietzke Lane, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 2295 Kietzke Lane
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.50191, lng: -119.78913}
+  geo:
+    lat: 39.50191
+    lng: -119.78913
   phone: 775-328-1773
   website: https://www.va.gov/sierra-nevada-health-care/locations/kietzke-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
-  external_ids: {va: vha_654QA}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
+  external_ids:
+    va: vha_654QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/lifequest-behavioral-heath
   name: Lifequest Behavioral Heath
   categories:
@@ -759,23 +833,50 @@
   name: North Reno VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1140 Selmi Drive, city: Reno, state: nv, zip: '89512'}
+  address:
+    street: 1140 Selmi Drive
+    city: Reno
+    state: nv
+    zip: '89512'
   place: '3260600'
-  geo: {lat: 39.55764, lng: -119.80018}
+  geo:
+    lat: 39.55764
+    lng: -119.80018
   phone: 775-786-7200
   website: https://www.va.gov/sierra-nevada-health-care/locations/north-reno-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_654GF}
+  external_ids:
+    va: vha_654GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nv/reno/north-valleys-family-resource-center
+  name: North Valleys Family Resource Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washoe County
+  address: {street: 10500 Stead Blvd, city: Reno, state: nv, zip: '89506'}
+  place: '3260600'
+  phone: 775-677-5437
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/reno/north-valleys-hs
   name: North Valleys Hs
   categories:
@@ -822,6 +923,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/reno/northeast-reno-family-resource-center
+  name: Northeast Reno Family Resource Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washoe County
+  address: {street: 2750 Elementary Drive, city: Reno, state: nv, zip: '89512'}
+  place: '3260600'
+  phone: 775-353-5563
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/reno/northern-nevada-hiv-outpatient-program-education
   name: Northern Nevada HIV Outpatient Program Education and Services
   categories:
@@ -999,55 +1111,95 @@
   name: Reno East VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 1201 Corporate Boulevard, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 1201 Corporate Boulevard
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.51016, lng: -119.75064}
+  geo:
+    lat: 39.51016
+    lng: -119.75064
   phone: 775-786-7200
   website: https://www.va.gov/sierra-nevada-health-care/locations/reno-east-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - COVID-19 vaccines
   - Dermatology
   - Primary care
-  external_ids: {va: vha_654GE}
+  external_ids:
+    va: vha_654GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/reno-mobile-vet-center
   name: Reno Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '5580 Mill Street, Suite 600', city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 5580 Mill Street, Suite 600
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.51178, lng: -119.74528}
+  geo:
+    lat: 39.51178
+    lng: -119.74528
   phone: 775-323-1294
   website: https://www.va.gov/reno-vet-center/locations/#reno-mobile-vet-center
-  external_ids: {va: vc_0867MVC}
+  external_ids:
+    va: vc_0867MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/reno-va-mobile-medical-unit
   name: Reno VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 975 Kirman Avenue, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 975 Kirman Avenue
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.51595, lng: -119.7985}
+  geo:
+    lat: 39.51595
+    lng: -119.7985
   phone: 775-786-7200
   website: https://www.va.gov/find-locations/facility/vha_654QE
-  external_ids: {va: vha_654QE}
+  external_ids:
+    va: vha_654QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/reno-va-regional-benefit-office
   name: Reno VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 5460 Reno Corporate Dr., city: Reno, state: nv, zip: '89511'}
+  address:
+    street: 5460 Reno Corporate Dr.
+    city: Reno
+    state: nv
+    zip: '89511'
   place: '3260600'
-  geo: {lat: 39.46725, lng: -119.76502}
+  geo:
+    lat: 39.46725
+    lng: -119.76502
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1060,20 +1212,36 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_354}
+  external_ids:
+    va: vba_354
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/reno-vet-center
   name: Reno Vet Center
   categories: *id002
-  address: {street: '5580 Mill Street, Suite 600', city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 5580 Mill Street, Suite 600
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.51178, lng: -119.74528}
+  geo:
+    lat: 39.51178
+    lng: -119.74528
   phone: 775-323-1294
   website: https://www.va.gov/reno-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1085,10 +1253,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0506V}
+  external_ids:
+    va: vc_0506V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/ridge-house-inc-ridge-house
   name: Ridge House Inc Ridge House
   categories:
@@ -1417,18 +1588,36 @@
   name: Virginia Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3674 South Virginia Street, city: Reno, state: nv, zip: '89502'}
+  address:
+    street: 3674 South Virginia Street
+    city: Reno
+    state: nv
+    zip: '89502'
   place: '3260600'
-  geo: {lat: 39.48892, lng: -119.79493}
+  geo:
+    lat: 39.48892
+    lng: -119.79493
   phone: 775-326-2995
   website: https://www.va.gov/sierra-nevada-health-care/locations/virginia-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:30', close: '17:00'}
-  - {days: [fri], open: '07:30', close: '16:00'}
-  external_ids: {va: vha_654QD}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:30
+    close: '17:00'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:00'
+  external_ids:
+    va: vha_654QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/reno/vitality-integrated-programs-reno
   name: Vitality Integrated Programs Reno
   categories:

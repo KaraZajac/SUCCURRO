@@ -636,13 +636,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3551 Commercial Drive South West, city: Rochester, state: mn, zip: '55902'}
+  address:
+    street: 3551 Commercial Drive South West
+    city: Rochester
+    state: mn
+    zip: '55902'
   place: '2754880'
-  geo: {lat: 43.97001, lng: -92.46382}
+  geo:
+    lat: 43.97001
+    lng: -92.46382
   phone: 507-252-0885
   website: https://www.va.gov/minneapolis-health-care/locations/rochester-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -669,10 +682,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618GG}
+  external_ids:
+    va: vha_618GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/rochester/sagent-behavioral-health
   name: Sagent Behavioral Health
   categories:
@@ -835,6 +851,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/rochester/three-rivers-community-action
+  name: Three Rivers Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Olmsted County
+  address: {street: '1926 Collegeview Rd. E, Suite 1302', city: Rochester, state: mn, zip: '55904'}
+  place: '2754880'
+  phone: 507-316-0610
+  website: https://www.threeriverscap.org/energy/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/rochester/ymca-little-free-pantry
   name: YMCA Little Free Pantry
   categories:

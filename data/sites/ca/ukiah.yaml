@@ -374,6 +374,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/ukiah/north-coast-energy-services
+  name: North Coast Energy Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lake, Mendocino, Napa Counties
+  address: {street: 966 Mazzoni St. Suite 3B, city: Ukiah, state: ca, zip: '95482'}
+  place: 0681134
+  phone: 707-463-0303
+  website: https://nces.org/index.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/ukiah/north-state-street
   name: North State Street
   categories:
@@ -650,13 +662,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 630 Kings Court, city: Ukiah, state: ca, zip: '95482'}
+  address:
+    street: 630 Kings Court
+    city: Ukiah
+    state: ca
+    zip: '95482'
   place: 0681134
-  geo: {lat: 39.14812, lng: -123.19754}
+  geo:
+    lat: 39.14812
+    lng: -123.19754
   phone: 707-468-7700
   website: https://www.va.gov/san-francisco-health-care/locations/ukiah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -671,7 +696,10 @@
   - Radiology
   - Travel reimbursement
   - Whole health
-  external_ids: {va: vha_662GD}
+  external_ids:
+    va: vha_662GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

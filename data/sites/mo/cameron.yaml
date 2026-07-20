@@ -46,23 +46,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 311 Little Brick Road, city: Cameron, state: mo, zip: '64429'}
+  address:
+    street: 311 Little Brick Road
+    city: Cameron
+    state: mo
+    zip: '64429'
   place: '2910828'
-  geo: {lat: 39.75323, lng: -94.23695}
+  geo:
+    lat: 39.75323
+    lng: -94.23695
   phone: 816-922-2651
   website: https://www.va.gov/kansas-city-health-care/locations/cameron-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Optometry
   - Orthopedics
   - Primary care
-  external_ids: {va: vha_589GZ}
+  external_ids:
+    va: vha_589GZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/cameron/cameron-veteran-s-middle
   name: Cameron Veteran'S Middle
   categories:
@@ -85,6 +101,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/cameron/community-action-partnership-of-greater-st-josep
+  name: Community Action Partnership of Greater St. Joseph
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clinton, Dekalb Counties
+  address: {street: 1015 West 4th Street, city: Cameron, state: mo, zip: '64429'}
+  place: '2910828'
+  phone: 816-233-8281
+  website: https://www.capstjoe.org/services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/cameron/family-guidance-center-cameron
   name: Family Guidance Center/Cameron
   categories:

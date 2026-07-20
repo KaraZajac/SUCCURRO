@@ -244,6 +244,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/franklin-7360/venango-county-assistance-office
+  name: Venango County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Venango County
+  address: {street: 530 13th Street, city: Franklin, state: pa, zip: '16323'}
+  place: '4227360'
+  phone: 814-437-4354
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/franklin-7360/venango-county-early-head-start
   name: Venango County Early Head Start
   categories:
@@ -269,13 +280,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 125 Home Depot Drive, city: Franklin, state: pa, zip: '16323'}
+  address:
+    street: 125 Home Depot Drive
+    city: Franklin
+    state: pa
+    zip: '16323'
   place: '4227360'
-  geo: {lat: 41.35145, lng: -79.72186}
+  geo:
+    lat: 41.35145
+    lng: -79.72186
   phone: 866-962-3260
   website: https://www.va.gov/erie-health-care/locations/venango-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -292,7 +316,10 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562GD}
+  external_ids:
+    va: vha_562GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

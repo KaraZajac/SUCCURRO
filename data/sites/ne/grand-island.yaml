@@ -152,9 +152,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2201 North Broadwell Avenue, city: Grand Island, state: ne, zip: '68803'}
+  address:
+    street: 2201 North Broadwell Avenue
+    city: Grand Island
+    state: ne
+    zip: '68803'
   place: '3119595'
-  geo: {lat: 40.94239, lng: -98.35881}
+  geo:
+    lat: 40.94239
+    lng: -98.35881
   phone: 308-382-3660
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/grand-island-va-medical-center/
   services:
@@ -173,10 +179,13 @@
   - Rehabilitation and extended care
   - Urology
   - Whole health
-  external_ids: {va: vha_636A4}
+  external_ids:
+    va: vha_636A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/grand-island/hall-county-head-start-piper
   name: Hall County Head Start -- Piper
   categories:
@@ -388,6 +397,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/grand-island/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hall, Hamilton, Merrick Counties
+  address: {street: 116 South Pine Street, city: Grand Island, state: ne, zip: '68802'}
+  place: '3119595'
+  phone: 308-385-6100
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/grand-island/o-connor-learning-center
   name: O'Connor Learning Center
   categories:

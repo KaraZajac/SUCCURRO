@@ -106,14 +106,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3110 Hamilton Boulevard, city: Allentown, state: pa, zip: '18103'}
+  address:
+    street: 3110 Hamilton Boulevard
+    city: Allentown
+    state: pa
+    zip: '18103'
   place: '4202000'
-  geo: {lat: 40.58346, lng: -75.51742}
+  geo:
+    lat: 40.58346
+    lng: -75.51742
   phone: 610-776-4304
   website: https://www.va.gov/wilkes-barre-health-care/locations/allentown-va-clinic/
   hours:
-  - {days: [mon], open: '08:00', close: '20:00'}
-  - {days: [tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '20:00'
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -137,10 +152,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_693B4}
+  external_ids:
+    va: vha_693B4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/allentown/andre-reed-irving-park
   name: Andre Reed (Irving) Park
   categories:
@@ -230,20 +248,35 @@
   name: Cedar Crest Boulevard VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1605 North Cedar Crest Boulevard, Roma Corporate Center', city: Allentown, state: pa,
-    zip: '18104'}
+  address:
+    street: 1605 North Cedar Crest Boulevard, Roma Corporate Center
+    city: Allentown
+    state: pa
+    zip: '18104'
   place: '4202000'
-  geo: {lat: 40.61444, lng: -75.53362}
+  geo:
+    lat: 40.61444
+    lng: -75.53362
   phone: 570-824-3521
   website: https://www.va.gov/wilkes-barre-health-care/locations/cedar-crest-boulevard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
-  external_ids: {va: vha_693QB}
+  external_ids:
+    va: vha_693QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/allentown/center-for-women-s-medicine
   name: Center for Women's Medicine
   categories:
@@ -753,6 +786,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/allentown/lehigh-county-assistance-office
+  name: Lehigh County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lehigh County
+  address: {street: '555 Union Blvd., Suite 3', city: Allentown, state: pa, zip: '18109'}
+  place: '4202000'
+  phone: 610-821-6509
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/allentown/lehigh-valley-health-network-adolescent-transiti
   name: Lehigh Valley Health Network Adolescent Transitions Partial Hosp
   categories:

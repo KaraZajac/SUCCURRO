@@ -44,13 +44,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 630 2nd Avenue South, city: Glasgow, state: mt, zip: '59230'}
+  address:
+    street: 630 2nd Avenue South
+    city: Glasgow
+    state: mt
+    zip: '59230'
   place: '3031075'
-  geo: {lat: 48.19486, lng: -106.63914}
+  geo:
+    lat: 48.19486
+    lng: -106.63914
   phone: 406-228-4101
   website: https://www.va.gov/montana-health-care/locations/glasgow-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -58,10 +71,13 @@
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_436GI}
+  external_ids:
+    va: vha_436GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/glasgow/housing-authority-of-glasgow
   name: Housing Authority Of Glasgow
   categories:

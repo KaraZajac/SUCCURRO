@@ -281,13 +281,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 201 East Merle Hibbs Boulevard, city: Marshalltown, state: ia, zip: '50158'}
+  address:
+    street: 201 East Merle Hibbs Boulevard
+    city: Marshalltown
+    state: ia
+    zip: '50158'
   place: '1949755'
-  geo: {lat: 42.014, lng: -92.87764}
+  geo:
+    lat: 42.014
+    lng: -92.87764
   phone: 641-754-6700
   website: https://www.va.gov/central-iowa-health-care/locations/marshalltown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -298,10 +311,25 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_636GD}
+  external_ids:
+    va: vha_636GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ia/marshalltown/mid-iowa-community-action-inc
+  name: Mid-Iowa Community Action Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marshall County
+  address: {street: 1001 S. 18th Ave., city: Marshalltown, state: ia, zip: '50158'}
+  place: '1949755'
+  phone: 641-752-7162
+  website: http://www.micaonline.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/marshalltown/primary-health-care-marshalltown-clinic
   name: Primary Health Care - Marshalltown Clinic
   categories:

@@ -350,13 +350,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 790 Generations Drive, city: New Braunfels, state: tx, zip: '78130'}
+  address:
+    street: 790 Generations Drive
+    city: New Braunfels
+    state: tx
+    zip: '78130'
   place: '4850820'
-  geo: {lat: 29.72015, lng: -98.06232}
+  geo:
+    lat: 29.72015
+    lng: -98.06232
   phone: 830-643-0717
   website: https://www.va.gov/south-texas-health-care/locations/new-braunfels-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Dermatology
@@ -364,10 +377,13 @@
   - Orthopedics
   - Primary care
   - Social work
-  external_ids: {va: vha_671GL}
+  external_ids:
+    va: vha_671GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/new-braunfels/peace-lutheran-church-little-pantry
   name: Peace Lutheran Church Little Pantry
   categories:

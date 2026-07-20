@@ -945,6 +945,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/roanoke/roanoke-city-department-of-social-services
+  name: Roanoke City Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Craig, Franklin, Roanoke City Counties
+  address: {street: 1510 Williamson Road N.E., city: Roanoke, state: va, zip: '24012'}
+  place: '5168000'
+  phone: 540-853-2591
+  website: http://www.roanokeva.gov/WebMgmt/ywbase61b.nsf/Cur
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/roanoke/roanoke-comprehensive-treatment-center
   name: Roanoke Comprehensive Treatment Center
   categories:
@@ -991,15 +1003,24 @@
   name: Roanoke Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1401 Franklin Road, Southwest, Suite 200', city: Roanoke, state: va, zip: '24016'}
+  address:
+    street: 1401 Franklin Road, Southwest, Suite 200
+    city: Roanoke
+    state: va
+    zip: '24016'
   place: '5168000'
-  geo: {lat: 37.26103, lng: -79.94696}
+  geo:
+    lat: 37.26103
+    lng: -79.94696
   phone: 540-342-9726
   website: https://www.va.gov/roanoke-vet-center/locations/#roanoke-mobile-vet-center
-  external_ids: {va: vc_0876MVC}
+  external_ids:
+    va: vc_0876MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/roanoke/roanoke-redevelopment-housing-authority
   name: Roanoke Redevelopment & Housing Authority
   categories:
@@ -1025,9 +1046,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '210 Franklin Rd, SW', city: Roanoke, state: va, zip: '24011'}
+  address:
+    street: 210 Franklin Rd, SW
+    city: Roanoke
+    state: va
+    zip: '24011'
   place: '5168000'
-  geo: {lat: 37.26878, lng: -79.94462}
+  geo:
+    lat: 37.26878
+    lng: -79.94462
   phone: 800-827-1000
   website: https://www.va.gov/roanoke-va-regional-benefit-office/
   services:
@@ -1044,22 +1071,42 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_314}
+  external_ids:
+    va: vba_314
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/roanoke/roanoke-vet-center
   name: Roanoke Vet Center
   categories: *id001
-  address: {street: '1401 Franklin Road, Southwest, Suite 200', city: Roanoke, state: va, zip: '24016'}
+  address:
+    street: 1401 Franklin Road, Southwest, Suite 200
+    city: Roanoke
+    state: va
+    zip: '24016'
   place: '5168000'
-  geo: {lat: 37.26103, lng: -79.94696}
+  geo:
+    lat: 37.26103
+    lng: -79.94696
   phone: 540-342-9726
   website: https://www.va.gov/roanoke-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '20:30'}
-  - {days: [tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '20:00'}
+  - days:
+    - mon
+    open: 08:00
+    close: '20:30'
+  - days:
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '20:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1074,10 +1121,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0226V}
+  external_ids:
+    va: vc_0226V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/roanoke/the-villages-at-lincoln-terrace
   name: The Villages At Lincoln Terrace
   categories:

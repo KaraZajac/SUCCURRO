@@ -68,20 +68,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3753 Dacoro Lane, city: Castle Rock, state: co, zip: '80109'}
+  address:
+    street: 3753 Dacoro Lane
+    city: Castle Rock
+    state: co
+    zip: '80109'
   place: 0812415
-  geo: {lat: 39.40056, lng: -104.87837}
+  geo:
+    lat: 39.40056
+    lng: -104.87837
   phone: 720-586-6901
   website: https://www.va.gov/eastern-colorado-health-care/locations/castle-rock-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology
   - PrimaryCare
-  external_ids: {va: vha_554GN}
+  external_ids:
+    va: vha_554GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/castle-rock/castle-view-high-school
   name: Castle View High School
   categories:
@@ -126,6 +142,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/castle-rock/douglas-county-department-of-human-services-cast
+  name: Douglas County Department of Human Services - Castle Rock
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas County
+  address: {street: 4400 Castleton Ct., city: Castle Rock, state: co, zip: '80109'}
+  place: 0812415
+  phone: 303-688-4825
+  website: https://www.douglas.co.us/government/departments/humanservices/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/castle-rock/new-paradigm-counseling-llc
   name: New Paradigm Counseling LLC
   categories:

@@ -268,6 +268,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/palatka/northeast-florida-community-action-agency-inc
+  name: Northeast Florida Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Putnam County
+  address: {street: 820 Reid Street, city: Palatka, state: fl, zip: '32177'}
+  place: '1253875'
+  phone: 386-385-3954
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/palatka/paks-martial-arts-academy
   name: Paks Martial Arts Academy
   categories:
@@ -340,13 +352,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 400 North State Road 19, city: Palatka, state: fl, zip: '32177'}
+  address:
+    street: 400 North State Road 19
+    city: Palatka
+    state: fl
+    zip: '32177'
   place: '1253875'
-  geo: {lat: 29.65301, lng: -81.67172}
+  geo:
+    lat: 29.65301
+    lng: -81.67172
   phone: 386-329-8800
   website: https://www.va.gov/north-florida-health-care/locations/palatka-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:30'
   services:
   - Advice nurse
   - COVID-19 vaccines
@@ -364,10 +388,13 @@
   - Toxic exposure screening
   - Whole health
   - Wound care and ostomy
-  external_ids: {va: vha_573GL}
+  external_ids:
+    va: vha_573GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/palatka/rcma-palatka-cdc
   name: RCMA Palatka CDC
   categories:

@@ -24,27 +24,56 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '15512 West 113th Street, Lenexa VA Clinic', city: Lenexa, state: ks, zip: '66219'}
+  address:
+    street: 15512 West 113th Street, Lenexa VA Clinic
+    city: Lenexa
+    state: ks
+    zip: '66219'
   place: '2039350'
-  geo: {lat: 38.92226, lng: -94.76534}
+  geo:
+    lat: 38.92226
+    lng: -94.76534
   phone: 816-861-4700
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_589QI}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_589QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/lenexa-va-clinic
   name: Lenexa VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 15512 West 113th Street, city: Lenexa, state: ks, zip: '66219'}
+  address:
+    street: 15512 West 113th Street
+    city: Lenexa
+    state: ks
+    zip: '66219'
   place: '2039350'
-  geo: {lat: 38.92181, lng: -94.7639}
+  geo:
+    lat: 38.92181
+    lng: -94.7639
   phone: 816-922-2522
   website: https://www.va.gov/kansas-city-health-care/locations/lenexa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -61,10 +90,13 @@
   - Prosthetics and rehabilitation
   - Radiology
   - Telehealth
-  external_ids: {va: vha_589JG}
+  external_ids:
+    va: vha_589JG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/rosehill-elementary-school
   name: Rosehill Elementary School
   categories:

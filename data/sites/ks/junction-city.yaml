@@ -1,3 +1,25 @@
+- id: ks/junction-city/dickinson-county-dcf
+  name: Dickinson County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dickinson County
+  address: {street: 1010 West 6th, city: Junction City, state: ks, zip: '66441'}
+  place: '2035750'
+  phone: 785-762-5445
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ks/junction-city/geary-county-dcf
+  name: Geary County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Geary County
+  address: {street: 1010 West 6th, city: Junction City, state: ks, zip: '66441'}
+  place: '2035750'
+  phone: 785-762-5445
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/junction-city/jc-north-washington-blessing-box
   name: JC North Washington Blessing Box
   categories:
@@ -77,13 +99,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 623 Southwind Drive, city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 623 Southwind Drive
+    city: Junction City
+    state: ks
+    zip: '66441'
   place: '2035750'
-  geo: {lat: 39.01742, lng: -96.86336}
+  geo:
+    lat: 39.01742
+    lng: -96.86336
   phone: 800-574-8387
   website: https://www.va.gov/eastern-kansas-health-care/locations/junction-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -91,10 +126,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_589JH}
+  external_ids:
+    va: vha_589JH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/junction-city/konza-prairie-community-health-center
   name: KONZA PRAIRIE COMMUNITY HEALTH CENTER
   categories:
@@ -121,13 +159,26 @@
   name: Lieutenant General Richard J. Seitz Community-Based Outpatient Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1169 Southwind Drive, city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 1169 Southwind Drive
+    city: Junction City
+    state: ks
+    zip: '66441'
   place: '2035750'
-  geo: {lat: 39.01022, lng: -96.86433}
+  geo:
+    lat: 39.01022
+    lng: -96.86433
   phone: 800-574-8387
   website: https://www.va.gov/eastern-kansas-health-care/locations/lieutenant-general-richard-j-seitz-community-based-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -137,10 +188,13 @@
   - Pharmacy
   - Primary care
   - Psychiatry
-  external_ids: {va: vha_589GR}
+  external_ids:
+    va: vha_589GR
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/junction-city/lincoln-elementary-school
   name: Lincoln Elementary School
   categories:

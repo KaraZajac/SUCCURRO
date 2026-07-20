@@ -17,6 +17,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/hot-springs/community-services-offices-inc-cso
+  name: Community Services Offices, Inc. (CSO)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Garland County
+  address: {street: 2228 Albert Pike Ste. P, city: Hot Springs, state: ar, zip: '71913'}
+  place: '0533400'
+  phone: 501-624-5724 Ext 105
+  email: ceo@csoarkansas.org
+  website: https://csoark.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/hot-springs/cso-early-head-start-center-pat-longinotti
   name: CSO Early Head Start Center - Pat Longinotti
   categories:
@@ -222,13 +235,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 177 Sawtooth Oak Street, city: Hot Springs, state: ar, zip: '71901'}
+  address:
+    street: 177 Sawtooth Oak Street
+    city: Hot Springs
+    state: ar
+    zip: '71901'
   place: '0533400'
-  geo: {lat: 34.4893, lng: -93.03901}
+  geo:
+    lat: 34.4893
+    lng: -93.03901
   phone: 501-520-6250
   website: https://www.va.gov/central-arkansas-health-care/locations/hot-springs-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -243,10 +269,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GC}
+  external_ids:
+    va: vha_598GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/hot-springs/hssd-blessing-box
   name: HSSD Blessing Box
   categories:

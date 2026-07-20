@@ -119,6 +119,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/norman/human-services-centers-cleveland
+  name: 'Human Services Centers: Cleveland'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cleveland County
+  address: {street: 2631 E. Robinson St., city: Norman, state: ok, zip: '73071'}
+  place: '4052500'
+  phone: 405-573-8300
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/norman/irving-community-pantry
   name: Irving Community Pantry
   categories:
@@ -270,23 +282,39 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1020 24th Avenue Northwest, city: Norman, state: ok, zip: '73069'}
+  address:
+    street: 1020 24th Avenue Northwest
+    city: Norman
+    state: ok
+    zip: '73069'
   place: '4052500'
-  geo: {lat: 35.23122, lng: -97.4814}
+  geo:
+    lat: 35.23122
+    lng: -97.4814
   phone: 405-217-6000
   website: https://www.va.gov/oklahoma-city-health-care/locations/norman-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
   - Mental health care
   - Primary care
   - Urology
-  external_ids: {va: vha_635GI}
+  external_ids:
+    va: vha_635GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/norman/red-dirt-collective-pantry-vicksburg
   name: Red Dirt Collective Pantry- Vicksburg
   categories:

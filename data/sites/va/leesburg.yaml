@@ -120,17 +120,33 @@
   name: Leesburg Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '751 E. Miller Drive SE, Suite E', city: Leesburg, state: va, zip: '20175'}
+  address:
+    street: 751 E. Miller Drive SE, Suite E
+    city: Leesburg
+    state: va
+    zip: '20175'
   place: '5144984'
-  geo: {lat: 39.08277, lng: -77.55668}
+  geo:
+    lat: 39.08277
+    lng: -77.55668
   phone: 304-263-6776
   website: https://www.va.gov/martinsburg-vet-center/locations/#leesburg-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '09:30', close: '15:00'}
-  external_ids: {va: vc_2241OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 09:30
+    close: '15:00'
+  external_ids:
+    va: vc_2241OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/leesburg/little-free-food-pantry
   name: Little Free Food Pantry
   categories:
@@ -168,6 +184,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/leesburg/loudoun-county-department-of-family-services
+  name: Loudoun County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Loudoun County
+  address: {street: '102 Heritage Way, N.E., Suite 203 (P. O. Box 7400)', city: Leesburg, state: va, zip: '20176'}
+  place: '5144984'
+  phone: 703-777-0353
+  website: https://www.loudoun.gov/107/Family-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/leesburg/loudoun-county-dhcd
   name: Loudoun County Dhcd
   categories:

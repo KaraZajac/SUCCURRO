@@ -65,15 +65,32 @@
   name: Alexandria, LA Vet Center
   categories:
   - vet-center
-  address: {street: '5803 Coliseum Boulevard, Suite D', city: Alexandria, state: la, zip: '71303'}
+  address:
+    street: 5803 Coliseum Boulevard, Suite D
+    city: Alexandria
+    state: la
+    zip: '71303'
   place: '2200975'
-  geo: {lat: 31.2953, lng: -92.507}
+  geo:
+    lat: 31.2953
+    lng: -92.507
   phone: 318-466-4327
   website: https://www.va.gov/alexandria-la-vet-center/
   hours:
-  - {days: [mon, wed], open: '07:30', close: '16:30'}
-  - {days: [tue, thu], open: '07:30', close: '20:00'}
-  - {days: [fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    open: 07:30
+    close: '16:30'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '20:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -84,10 +101,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0734V}
+  external_ids:
+    va: vc_0734V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/alexandria/alexandria-senior-high-school
   name: Alexandria Senior High School
   categories:
@@ -238,6 +258,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/alexandria/cenla-community-action-committee
+  name: Cenla Community Action Committee
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rapides County
+  address: {street: '2011 MacArthur Drive, Blg. 1', city: Alexandria, state: la, zip: '71303'}
+  place: '2200975'
+  phone: 318-314-3480
+  website: https://www.cenlacac.org/programs
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/alexandria/cherokee-elementary
   name: Cherokee Elementary
   categories:

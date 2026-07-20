@@ -329,15 +329,24 @@
   name: Bakersfield Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 1110 Golden State Avenue, city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 1110 Golden State Avenue
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   place: '0603526'
-  geo: {lat: 35.38418, lng: -119.01395}
+  geo:
+    lat: 35.38418
+    lng: -119.01395
   phone: 661-323-8387
   website: https://www.va.gov/bakersfield-vet-center/locations/#bakersfield-mobile-vet-center
-  external_ids: {va: vc_0841MVC}
+  external_ids:
+    va: vc_0841MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/bakersfield-police-activities-league
   name: Bakersfield Police Activities League
   categories:
@@ -434,13 +443,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1801 Westwind Drive, city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 1801 Westwind Drive
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   place: '0603526'
-  geo: {lat: 35.37582, lng: -119.04254}
+  geo:
+    lat: 35.37582
+    lng: -119.04254
   phone: 661-632-1800
   website: https://www.va.gov/greater-los-angeles-health-care/locations/bakersfield-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -487,21 +509,39 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691GD}
+  external_ids:
+    va: vha_691GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/bakersfield-vet-center
   name: Bakersfield Vet Center
   categories: *id001
-  address: {street: 1110 Golden State Avenue, city: Bakersfield, state: ca, zip: '93301'}
+  address:
+    street: 1110 Golden State Avenue
+    city: Bakersfield
+    state: ca
+    zip: '93301'
   place: '0603526'
-  geo: {lat: 35.38418, lng: -119.01395}
+  geo:
+    lat: 35.38418
+    lng: -119.01395
   phone: 661-323-8387
   website: https://www.va.gov/bakersfield-vet-center/
   hours:
-  - {days: [mon, wed, fri], open: '08:00', close: '16:30'}
-  - {days: [tue, thu], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    - thu
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -513,10 +553,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0601V}
+  external_ids:
+    va: vc_0601V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/bakersfield/beale-memorial-library
   name: Beale Memorial Library
   categories:
@@ -750,6 +793,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/bakersfield/community-action-partnership-of-kern
+  name: Community Action Partnership of Kern
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kern County
+  address: {street: 300 19th St., city: Bakersfield, state: ca, zip: '93301'}
+  place: '0603526'
+  phone: 661-336-5200
+  website: https://energy.capk.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/bakersfield/community-service-organization-cso-behav-hlth-pr
   name: Community Service Organization (CSO) Behav Hlth Program/Brotherhood Center
   categories:

@@ -261,6 +261,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/richmond/interlocal-community-action-program-inc
+  name: Interlocal Community Action Program, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wayne County
+  address: {street: 2519 E. Main St. Suite 101, city: Richmond, state: in, zip: '47374'}
+  place: '1864260'
+  phone: 765-488-2416
+  email: icap@icapcaa.org
+  website: https://www.icapcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/richmond/jack-elstro-plaza
   name: Jack Elstro Plaza
   categories:
@@ -557,13 +570,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1010 North J Street, city: Richmond, state: in, zip: '47374'}
+  address:
+    street: 1010 North J Street
+    city: Richmond
+    state: in
+    zip: '47374'
   place: '1864260'
-  geo: {lat: 39.84071, lng: -84.88782}
+  geo:
+    lat: 39.84071
+    lng: -84.88782
   phone: 765-973-6915
   website: https://www.va.gov/dayton-health-care/locations/richmond-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -575,10 +601,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_552GC}
+  external_ids:
+    va: vha_552GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/richmond/townsend-head-start
   name: Townsend Head Start
   categories:

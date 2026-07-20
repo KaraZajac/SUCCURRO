@@ -106,6 +106,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/aurora/arapahoe-county-department-of-human-services-aur
+  name: Arapahoe County Department of Human Services - Aurora
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Arapahoe County
+  address: {street: 14980 E. Alameda Dr., city: Aurora, state: co, zip: '80012'}
+  place: 0804000
+  phone: 303-636-1130
+  website: https://www.arapahoegov.com/388/Human-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/aurora/arts-potomac-street-center
   name: ARTS Potomac Street Center
   categories:
@@ -1226,13 +1238,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 14400 East Jewell Avenue, city: Aurora, state: co, zip: '80012'}
+  address:
+    street: 14400 East Jewell Avenue
+    city: Aurora
+    state: co
+    zip: '80012'
   place: 0804000
-  geo: {lat: 39.68128, lng: -104.81982}
+  geo:
+    lat: 39.68128
+    lng: -104.81982
   phone: 303-283-5400
   website: https://www.va.gov/eastern-colorado-health-care/locations/jewell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Amputation care
   - Audiology and speech
@@ -1242,10 +1267,13 @@
   - Prosthetics and rehabilitation
   - Recreation and creative arts therapy
   - Telehealth
-  external_ids: {va: vha_554QB}
+  external_ids:
+    va: vha_554QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/aurora/kenton-elementary-school
   name: Kenton Elementary School
   categories:
@@ -1294,23 +1322,39 @@
   name: Lieutenant Colonel John W. Mosley VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 21825 East Quincy Avenue, city: Aurora, state: co, zip: '80018'}
+  address:
+    street: 21825 East Quincy Avenue
+    city: Aurora
+    state: co
+    zip: '80018'
   place: 0804000
-  geo: {lat: 39.63858, lng: -104.73318}
+  geo:
+    lat: 39.63858
+    lng: -104.73318
   phone: 303-398-6340
   website: https://www.va.gov/eastern-colorado-health-care/locations/aurora-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Nutrition, food, and dietary care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_554GB}
+  external_ids:
+    va: vha_554GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/aurora/meadow-hills-pool
   name: Meadow Hills Pool
   categories:
@@ -1735,9 +1779,15 @@
   name: Rocky Mountain Regional VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1700 North Wheeling Street, city: Aurora, state: co, zip: '80045'}
+  address:
+    street: 1700 North Wheeling Street
+    city: Aurora
+    state: co
+    zip: '80045'
   place: 0804000
-  geo: {lat: 39.74451, lng: -104.83095}
+  geo:
+    lat: 39.74451
+    lng: -104.83095
   phone: 303-399-8020
   website: https://www.va.gov/eastern-colorado-health-care/locations/rocky-mountain-regional-va-medical-center/
   services:
@@ -1783,10 +1833,13 @@
   - Vascular surgery
   - Wheelchair and mobility
   - Women Veteran care
-  external_ids: {va: vha_554}
+  external_ids:
+    va: vha_554
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/aurora/rocky-ridge-park
   name: Rocky Ridge Park
   categories:
@@ -2115,9 +2168,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '1700 North Wheeling Street, Room D1-185', city: Aurora, state: co, zip: '80045'}
+  address:
+    street: 1700 North Wheeling Street, Room D1-185
+    city: Aurora
+    state: co
+    zip: '80045'
   place: 0804000
-  geo: {lat: 39.74451, lng: -104.8309}
+  geo:
+    lat: 39.74451
+    lng: -104.8309
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -2127,10 +2186,13 @@
   - HomelessAssistance
   - PreDischargeClaimAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_339f}
+  external_ids:
+    va: vba_339f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/aurora/vanguard-classical-school-east
   name: Vanguard Classical School - East
   categories:

@@ -59,6 +59,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/fairfax/fairfax-county-department-of-family-services
+  name: Fairfax County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fairfax County
+  address: {street: '12011 Government Center Parkway, Suite 232', city: Fairfax, state: va, zip: '22035'}
+  place: '5126496'
+  phone: 703-324-7500
+  website: http://www.fairfaxcounty.gov/dfs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/fairfax/fairfax-county-redevelopment-hsg-authority
   name: Fairfax County Redevelopment & Hsg Authority
   categories:
@@ -326,16 +338,25 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '4400 University Dr., SUB 1 BLDG, Room 1510', city: Fairfax, state: va, zip: '22030'}
+  address:
+    street: 4400 University Dr., SUB 1 BLDG, Room 1510
+    city: Fairfax
+    state: va
+    zip: '22030'
   place: '5126496'
-  geo: {lat: 38.83498, lng: -77.308}
+  geo:
+    lat: 38.83498
+    lng: -77.308
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_372h}
+  external_ids:
+    va: vba_372h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -44,13 +44,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1020 Johnson Road, city: Golden, state: co, zip: '80401'}
+  address:
+    street: 1020 Johnson Road
+    city: Golden
+    state: co
+    zip: '80401'
   place: 0830835
-  geo: {lat: 39.73374, lng: -105.199}
+  geo:
+    lat: 39.73374
+    lng: -105.199
   phone: 303-914-2680
   website: https://www.va.gov/eastern-colorado-health-care/locations/golden-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -63,7 +76,22 @@
   - Radiology
   - Registry exams
   - Travel reimbursement
-  external_ids: {va: vha_554GC}
+  external_ids:
+    va: vha_554GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: co/golden/jefferson-county-department-of-human-services-go
+  name: Jefferson County Department of Human Services - Golden
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: 900 Jefferson County Pkwy, city: Golden, state: co, zip: '80401'}
+  place: 0830835
+  phone: 303-271-1388
+  website: https://www.jeffco.us/human-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

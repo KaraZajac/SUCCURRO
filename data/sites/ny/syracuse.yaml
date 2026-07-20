@@ -280,6 +280,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/syracuse/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Onondaga County
+  address: {street: '421 Montgomery St., 5th Floor', city: Syracuse, state: ny, zip: '13202'}
+  place: '3673000'
+  phone: 315-435-2362
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/syracuse/crouse-health-hospital-inc-commonwealth-place-in
   name: Crouse Health Hospital Inc Commonwealth Place/Inpatient Program
   categories:
@@ -441,39 +452,73 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 910 Erie Boulevard East, city: Syracuse, state: ny, zip: '13210'}
+  address:
+    street: 910 Erie Boulevard East
+    city: Syracuse
+    state: ny
+    zip: '13210'
   place: '3673000'
-  geo: {lat: 43.0505, lng: -76.13754}
+  geo:
+    lat: 43.0505
+    lng: -76.13754
   phone: 315-425-2468
   website: https://www.va.gov/syracuse-health-care/locations/erie-east-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
-  external_ids: {va: vha_528QI}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
+  external_ids:
+    va: vha_528QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/syracuse/erie-west-va-clinic
   name: Erie West VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 620 Erie Boulevard West, city: Syracuse, state: ny, zip: '13204'}
+  address:
+    street: 620 Erie Boulevard West
+    city: Syracuse
+    state: ny
+    zip: '13204'
   place: '3673000'
-  geo: {lat: 43.04916, lng: -76.16445}
+  geo:
+    lat: 43.04916
+    lng: -76.16445
   phone: 315-425-3463
   website: https://www.va.gov/syracuse-health-care/locations/erie-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '19:00'}
-  - {days: [fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '19:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Addiction and substance use care
   - Homeless Veteran care
   - Mental health care
   - Military sexual trauma care
   - PTSD care
-  external_ids: {va: vha_528QG}
+  external_ids:
+    va: vha_528QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/syracuse/expeditionary-learning-middle-sch
   name: Expeditionary Learning Middle Sch
   categories:
@@ -1319,6 +1364,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/syracuse/onondaga-county-department-of-social-services
+  name: Onondaga County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Onondaga County
+  address: {street: 'Civic Center 421 Montgomery Street, 3rd Floor', city: Syracuse, state: ny, zip: '13202'}
+  place: '3673000'
+  phone: 315-435-2700
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/syracuse/peace-incorporated-2
   name: Peace, Incorporated (2)
   categories:
@@ -2039,9 +2095,15 @@
   name: Syracuse VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 800 Irving Avenue, city: Syracuse, state: ny, zip: '13210'}
+  address:
+    street: 800 Irving Avenue
+    city: Syracuse
+    state: ny
+    zip: '13210'
   place: '3673000'
-  geo: {lat: 43.03836, lng: -76.13826}
+  geo:
+    lat: 43.03836
+    lng: -76.13826
   phone: 315-425-4400
   website: https://www.va.gov/syracuse-health-care/locations/syracuse-va-medical-center/
   services:
@@ -2097,21 +2159,37 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_528A7}
+  external_ids:
+    va: vha_528A7
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/syracuse/syracuse-vet-center
   name: Syracuse Vet Center
   categories:
   - vet-center
-  address: {street: '109 Pine Street, Suite 101', city: Syracuse, state: ny, zip: '13210'}
+  address:
+    street: 109 Pine Street, Suite 101
+    city: Syracuse
+    state: ny
+    zip: '13210'
   place: '3673000'
-  geo: {lat: 43.04953, lng: -76.12908}
+  geo:
+    lat: 43.04953
+    lng: -76.12908
   phone: 315-478-7127
   website: https://www.va.gov/syracuse-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2125,10 +2203,13 @@
   - Telehealth
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0131V}
+  external_ids:
+    va: vc_0131V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/syracuse/thornden-park
   name: Thornden Park
   categories:

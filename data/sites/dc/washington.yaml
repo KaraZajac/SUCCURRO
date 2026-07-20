@@ -1743,6 +1743,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: dc/washington/district-of-columbia
+  name: District of Columbia
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving District of Columbia County
+  address: {street: 1200 1st Street NE, city: Washington, state: dc}
+  place: '1150000'
+  phone: 202-673-6750 or 311
+  website: https://doee.dc.gov//liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: dc/washington/dororthy-i-height-es
   name: Dororthy I. Height Es
   categories:
@@ -2500,22 +2512,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '1500 Franklin Street Northeast, Community Resource & Referral Center (CRRC)', city: Washington,
-    state: dc, zip: '20018'}
+  address:
+    street: 1500 Franklin Street Northeast, Community Resource & Referral Center (CRRC)
+    city: Washington
+    state: dc
+    zip: '20018'
   place: '1150000'
-  geo: {lat: 38.92601, lng: -76.98362}
+  geo:
+    lat: 38.92601
+    lng: -76.98362
   phone: 202-745-3012
   website: https://www.va.gov/washington-dc-health-care/locations/franklin-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Mental health care
   - Pharmacy
   - Women Veteran care
-  external_ids: {va: vha_688QA}
+  external_ids:
+    va: vha_688QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: dc/washington/fred-douglas
   name: Fred Douglas
   categories:
@@ -5608,23 +5635,39 @@
   name: Southeast Washington VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: '820 Chesapeake Street, Southeast', city: Washington, state: dc, zip: '20032'}
+  address:
+    street: 820 Chesapeake Street, Southeast
+    city: Washington
+    state: dc
+    zip: '20032'
   place: '1150000'
-  geo: {lat: 38.82939, lng: -76.99248}
+  geo:
+    lat: 38.82939
+    lng: -76.99248
   phone: 202-745-8685
   website: https://www.va.gov/washington-dc-health-care/locations/southeast-washington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_688GB}
+  external_ids:
+    va: vha_688GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: dc/washington/southwest-health-center
   name: Southwest Health Center
   categories:
@@ -6577,19 +6620,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 2121 Eye St NW, city: Washington, state: dc, zip: '20052'}
+  address:
+    street: 2121 Eye St NW
+    city: Washington
+    state: dc
+    zip: '20052'
   place: '1150000'
-  geo: {lat: 38.89971, lng: -77.0486}
+  geo:
+    lat: 38.89971
+    lng: -77.0486
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_372i}
+  external_ids:
+    va: vba_372i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: dc/washington/victory-youth-center-merrick-center
   name: Victory Youth Center - Merrick Center
   categories:
@@ -6661,14 +6713,29 @@
   name: Washington, D.C. Vet Center
   categories:
   - vet-center
-  address: {street: '1296 Upshur Street, Northwest', city: Washington, state: dc, zip: '20011'}
+  address:
+    street: 1296 Upshur Street, Northwest
+    city: Washington
+    state: dc
+    zip: '20011'
   place: '1150000'
-  geo: {lat: 38.94165, lng: -77.02927}
+  geo:
+    lat: 38.94165
+    lng: -77.02927
   phone: 202-726-5212
   website: https://www.va.gov/washington-dc-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
-  - {days: [fri], open: '08:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
+  - days:
+    - fri
+    open: 08:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -6679,10 +6746,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0214V}
+  external_ids:
+    va: vc_0214V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: dc/washington/washington-hospital-center-outpatient-behavioral
   name: Washington Hospital Center Outpatient Behavioral Health Services
   categories:
@@ -6708,9 +6778,15 @@
   name: Washington VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: '50 Irving Street, Northwest', city: Washington, state: dc, zip: '20422'}
+  address:
+    street: 50 Irving Street, Northwest
+    city: Washington
+    state: dc
+    zip: '20422'
   place: '1150000'
-  geo: {lat: 38.9294, lng: -77.0112}
+  geo:
+    lat: 38.9294
+    lng: -77.0112
   phone: 202-745-8000
   website: https://www.va.gov/washington-dc-health-care/locations/washington-va-medical-center/
   services:
@@ -6749,10 +6825,13 @@
   - Transplant surgery
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_688}
+  external_ids:
+    va: vha_688
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: dc/washington/wellness-health-services-llc-the-ark-of-dc
   name: Wellness Health Services LLC The ARK of DC
   categories:

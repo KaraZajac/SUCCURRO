@@ -638,6 +638,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/salem/mid-willamette-valley-community-action-agency
+  name: Mid-Willamette Valley Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marion, Polk Counties
+  address: {street: 2475 Center St., city: Salem, state: or, zip: '97301'}
+  place: '4164900'
+  phone: 503-588-9016
+  email: info@mwvcaa.org
+  website: https://mwvcaa.org/programs/energy-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/salem/middle-grove
   name: Middle Grove
   categories:
@@ -846,28 +859,50 @@
   name: Salem Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '2645 Portland Road, NE, Suite 250', city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2645 Portland Road, NE, Suite 250
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96139, lng: -123.01487}
+  geo:
+    lat: 44.96139
+    lng: -123.01487
   phone: 503-362-9911
   website: https://www.va.gov/salem-vet-center/locations/#salem-mobile-vet-center
-  external_ids: {va: vc_0840MVC}
+  external_ids:
+    va: vc_0840MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/salem/salem-va-clinic
   name: Salem VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1750 McGilchrist Street Southeast, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1750 McGilchrist Street Southeast
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.91603, lng: -123.02439}
+  geo:
+    lat: 44.91603
+    lng: -123.02439
   phone: 971-304-2200
   website: https://www.va.gov/portland-health-care/locations/salem-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -886,20 +921,36 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_648GB}
+  external_ids:
+    va: vha_648GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/salem/salem-vet-center
   name: Salem Vet Center
   categories: *id001
-  address: {street: '2645 Portland Road, NE, Suite 250', city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2645 Portland Road, NE, Suite 250
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96139, lng: -123.01487}
+  geo:
+    lat: 44.96139
+    lng: -123.01487
   phone: 503-362-9911
   website: https://www.va.gov/salem-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -915,10 +966,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0640V}
+  external_ids:
+    va: vc_0640V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/salem/sequoia-creek
   name: Sequoia Creek
   categories:

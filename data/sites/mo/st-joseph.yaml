@@ -1,3 +1,15 @@
+- id: mo/st-joseph/community-action-partnership-of-greater-st-josep
+  name: Community Action Partnership of Greater St. Joseph
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Buchanan County
+  address: {street: 1322 N. 36th Street, city: St. Joseph, state: mo, zip: '64503'}
+  place: '2964550'
+  phone: 816-233-8281
+  website: https://www.capstjoe.org/services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/st-joseph/cottonwood-creek-apts
   name: Cottonwood Creek Apts
   categories:
@@ -507,13 +519,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4782 Sienna Drive, city: St. Joseph, state: mo, zip: '64506'}
+  address:
+    street: 4782 Sienna Drive
+    city: St. Joseph
+    state: mo
+    zip: '64506'
   place: '2964550'
-  geo: {lat: 39.81145, lng: -94.80376}
+  geo:
+    lat: 39.81145
+    lng: -94.80376
   phone: 913-758-6925
   website: https://www.va.gov/eastern-kansas-health-care/locations/st-joseph-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -524,10 +549,13 @@
   - Pharmacy
   - Primary care
   - Psychiatry
-  external_ids: {va: vha_589GI}
+  external_ids:
+    va: vha_589GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/st-joseph/woodson-chapel
   name: Woodson Chapel
   categories:

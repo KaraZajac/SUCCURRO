@@ -994,6 +994,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/yuma/western-arizona-council-of-governments-wacog
+  name: Western Arizona Council of Governments (WACOG)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving La Paz, Mohave, Yuma Counties
+  address: {street: 1235 S. Redondo Center Dr., city: Yuma, state: az, zip: '85365'}
+  place: 0485540
+  phone: 928-782-1886
+  website: http://www.wacog.com/community_services.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/yuma/yuma
   name: Yuma
   categories:
@@ -1083,13 +1095,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3111 South 4th Avenue, city: Yuma, state: az, zip: '85364'}
+  address:
+    street: 3111 South 4th Avenue
+    city: Yuma
+    state: az
+    zip: '85364'
   place: 0485540
-  geo: {lat: 32.67087, lng: -114.62447}
+  geo:
+    lat: 32.67087
+    lng: -114.62447
   phone: 928-317-9973
   website: https://www.va.gov/southern-arizona-health-care/locations/yuma-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -1106,21 +1131,37 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_678GB}
+  external_ids:
+    va: vha_678GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/yuma/yuma-vet-center
   name: Yuma Vet Center
   categories:
   - vet-center
-  address: {street: '1450 East 16th Street, Suite 103', city: Yuma, state: az, zip: '85365'}
+  address:
+    street: 1450 East 16th Street, Suite 103
+    city: Yuma
+    state: az
+    zip: '85365'
   place: 0485540
-  geo: {lat: 32.69911, lng: -114.6054}
+  geo:
+    lat: 32.69911
+    lng: -114.6054
   phone: 928-271-8700
   website: https://www.va.gov/yuma-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1136,10 +1177,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0537V}
+  external_ids:
+    va: vc_0537V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/yuma/yuma-west-head-start-center
   name: Yuma West Head Start Center
   categories:

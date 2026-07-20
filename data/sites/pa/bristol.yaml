@@ -39,17 +39,41 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/bristol/bucks-county-assistance-office
+  name: Bucks County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bucks County
+  address: {street: 1214 Veterans Highway, city: Bristol, state: pa, zip: 19007-2593}
+  place: '4208760'
+  phone: 215-781-3393
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/bristol/bucks-county-vet-center
   name: Bucks County Vet Center
   categories:
   - vet-center
-  address: {street: '2 Canals End Road, Suite 201B', city: Bristol, state: pa, zip: '19007'}
+  address:
+    street: 2 Canals End Road, Suite 201B
+    city: Bristol
+    state: pa
+    zip: '19007'
   place: '4208760'
-  geo: {lat: 40.0963, lng: -74.85986}
+  geo:
+    lat: 40.0963
+    lng: -74.85986
   phone: 215-823-4590
   website: https://www.va.gov/bucks-county-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -63,10 +87,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0238V}
+  external_ids:
+    va: vc_0238V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/bristol/family-unity-center
   name: Family Unity Center
   categories:

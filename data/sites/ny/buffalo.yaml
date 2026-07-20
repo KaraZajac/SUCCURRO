@@ -648,24 +648,46 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2963 Main Street, city: Buffalo, state: ny, zip: '14214'}
+  address:
+    street: 2963 Main Street
+    city: Buffalo
+    state: ny
+    zip: '14214'
   place: '3611000'
-  geo: {lat: 42.94555, lng: -78.83042}
+  geo:
+    lat: 42.94555
+    lng: -78.83042
   phone: 716-862-8865
   website: https://www.va.gov/western-new-york-health-care/locations/buffalo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_528QA}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_528QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/buffalo/buffalo-va-medical-center
   name: Buffalo VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3495 Bailey Avenue, city: Buffalo, state: ny, zip: '14215'}
+  address:
+    street: 3495 Bailey Avenue
+    city: Buffalo
+    state: ny
+    zip: '14215'
   place: '3611000'
-  geo: {lat: 42.95121, lng: -78.8137}
+  geo:
+    lat: 42.95121
+    lng: -78.8137
   phone: 716-834-9200
   website: https://www.va.gov/western-new-york-health-care/locations/buffalo-va-medical-center/
   services:
@@ -720,18 +742,27 @@
   - Transplant surgery
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_528}
+  external_ids:
+    va: vha_528
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/buffalo/buffalo-va-regional-benefit-office
   name: Buffalo VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '130 South Elmwood Ave, Suite 601', city: Buffalo, state: ny, zip: '14202'}
+  address:
+    street: 130 South Elmwood Ave, Suite 601
+    city: Buffalo
+    state: ny
+    zip: '14202'
   place: '3611000'
-  geo: {lat: 42.88818, lng: -78.87926}
+  geo:
+    lat: 42.88818
+    lng: -78.87926
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -744,10 +775,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_307}
+  external_ids:
+    va: vba_307
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/buffalo/casa-di-vita-residential-reintegration
   name: Casa Di Vita Residential Reintegration
   categories:
@@ -1121,6 +1155,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/buffalo/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Erie County
+  address: {street: '95 Franklin Street, 13th Floor', city: Buffalo, state: ny, zip: '14202'}
+  place: '3611000'
+  phone: 716-858-7644
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/buffalo/delavan-grider-community-center
   name: Delavan Grider Community Center
   categories:
@@ -1419,6 +1464,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/buffalo/erie-county-department-of-social-services
+  name: Erie County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Erie County
+  address: {street: 95 Franklin Street, city: Buffalo, state: ny, zip: '14202'}
+  place: '3611000'
+  phone: 716-858-7644
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/buffalo/erie-county-medical-center-corporation-adult-and
   name: Erie County Medical Center Corporation Adult and Family Clinic
   categories:
@@ -2992,19 +3048,35 @@
   name: Packard VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1325 Main Street, city: Buffalo, state: ny, zip: '14209'}
+  address:
+    street: 1325 Main Street
+    city: Buffalo
+    state: ny
+    zip: '14209'
   place: '3611000'
-  geo: {lat: 42.90971, lng: -78.86609}
+  geo:
+    lat: 42.90971
+    lng: -78.86609
   phone: 716-862-8885
   website: https://www.va.gov/western-new-york-health-care/locations/packard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_528QB}
+  external_ids:
+    va: vha_528QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/buffalo/pal-jfk
   name: Pal - Jfk
   categories:

@@ -89,13 +89,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3000 Medical Parkway, city: Claremore, state: ok, zip: '74017'}
+  address:
+    street: 3000 Medical Parkway
+    city: Claremore
+    state: ok
+    zip: '74017'
   place: '4014700'
-  geo: {lat: 36.33757, lng: -95.59892}
+  geo:
+    lat: 36.33757
+    lng: -95.59892
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/claremore-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -108,10 +121,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_623GD}
+  external_ids:
+    va: vha_623GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/claremore/grand-lake-mental-health-center-rogers-county-of
   name: Grand Lake Mental Health Center Rogers County Office
   categories:

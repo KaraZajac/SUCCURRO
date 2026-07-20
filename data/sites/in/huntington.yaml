@@ -193,21 +193,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '2859 Northpark Avenue, Berkshire Building', city: Huntington, state: in, zip: '46750'}
+  address:
+    street: 2859 Northpark Avenue, Berkshire Building
+    city: Huntington
+    state: in
+    zip: '46750'
   place: '1835302'
-  geo: {lat: 40.90203, lng: -85.5093}
+  geo:
+    lat: 40.90203
+    lng: -85.5093
   phone: 260-824-7300
   website: https://www.va.gov/northern-indiana-health-care/locations/huntington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_610GF}
+  external_ids:
+    va: vha_610GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/huntington/memorial-park
   name: Memorial Park
   categories:

@@ -136,6 +136,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/salina/ellsworth-county-dcf
+  name: Ellsworth County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ellsworth County
+  address: {street: '901 Westchester Dr., Suite A', city: Salina, state: ks, zip: '67401'}
+  place: '2062700'
+  phone: 785-826-8000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/salina/heartland-early-education-salina
   name: Heartland Early Education - Salina
   categories:
@@ -218,6 +229,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/salina/lincoln-county-dcf
+  name: Lincoln County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lincoln County
+  address: {street: '901 Westchester Dr., Suite A', city: Salina, state: ks, zip: '67401'}
+  place: '2062700'
+  phone: 785-826-8000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/salina/meadowlark-elementary-salina
   name: Meadowlark Elementary - Salina
   categories:
@@ -256,6 +278,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/salina/ottawa-county-dcf
+  name: Ottawa County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ottawa County
+  address: {street: '901 Westchester Dr., Suite A', city: Salina, state: ks, zip: '67401'}
+  place: '2062700'
+  phone: 785-826-8000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/salina/outreach
   name: Outreach
   categories:
@@ -542,13 +575,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1410 East Iron Avenue, city: Salina, state: ks, zip: '67401'}
+  address:
+    street: 1410 East Iron Avenue
+    city: Salina
+    state: ks
+    zip: '67401'
   place: '2062700'
-  geo: {lat: 38.84042, lng: -97.5886}
+  geo:
+    lat: 38.84042
+    lng: -97.5886
   phone: 785-826-1580
   website: https://www.va.gov/wichita-health-care/locations/salina-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -556,10 +602,24 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_589GW}
+  external_ids:
+    va: vha_589GW
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ks/salina/saline-county-dcf
+  name: Saline County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saline County
+  address: {street: '901 Westchester Dr., Suite A', city: Salina, state: ks, zip: '67401'}
+  place: '2062700'
+  phone: 785-826-8000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/salina/schilling-elementary-salina
   name: Schilling Elementary - Salina
   categories:

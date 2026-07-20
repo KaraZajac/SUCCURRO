@@ -46,13 +46,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1330 Waterloo Lane, city: Gardnerville, state: nv, zip: '89410'}
+  address:
+    street: 1330 Waterloo Lane
+    city: Gardnerville
+    state: nv
+    zip: '89410'
   place: '3226300'
-  geo: {lat: 38.93497, lng: -119.74071}
+  geo:
+    lat: 38.93497
+    lng: -119.74071
   phone: 775-782-5265
   website: https://www.va.gov/sierra-nevada-health-care/locations/carson-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -62,10 +75,24 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_654GB}
+  external_ids:
+    va: vha_654GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nv/gardnerville/douglas-county-social-services
+  name: Douglas County Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas County
+  address: {street: 1133 Spruce Street, city: Gardnerville, state: nv, zip: '89410'}
+  place: '3226300'
+  phone: 775-782-9825
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/gardnerville/dresslerville
   name: Dresslerville
   categories:

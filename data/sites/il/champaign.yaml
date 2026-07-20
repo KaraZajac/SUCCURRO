@@ -71,21 +71,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1702 South Mattis Avenue, city: Champaign, state: il, zip: '61821'}
+  address:
+    street: 1702 South Mattis Avenue
+    city: Champaign
+    state: il
+    zip: '61821'
   place: '1712385'
-  geo: {lat: 40.0963, lng: -88.2765}
+  geo:
+    lat: 40.0963
+    lng: -88.2765
   phone: 217-200-7200
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology
   - Cardiology
   - PrimaryCare
   - Urology
-  external_ids: {va: vha_550GH}
+  external_ids:
+    va: vha_550GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/champaign/chp-champaign-health-center
   name: CHP Champaign Health Center
   categories:

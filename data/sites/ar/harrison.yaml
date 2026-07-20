@@ -131,13 +131,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 814 US Highway 62-65 North, city: Harrison, state: ar, zip: '72601'}
+  address:
+    street: 814 US Highway 62-65 North
+    city: Harrison
+    state: ar
+    zip: '72601'
   place: '0530460'
-  geo: {lat: 36.25286, lng: -93.12073}
+  geo:
+    lat: 36.25286
+    lng: -93.12073
   phone: 870-704-6300
   website: https://www.va.gov/fayetteville-arkansas-health-care/locations/harrison-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - MOVE! weight management
@@ -148,10 +161,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_564GA}
+  external_ids:
+    va: vha_564GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/harrison/harrison-zero-to-five-head-start-center
   name: Harrison Zero to Five Head Start Center
   categories:
@@ -192,6 +208,78 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/harrison/ozark-opportunities-inc-ooi-baxter
+  name: Ozark Opportunities, Inc. (OOI) - Baxter
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baxter County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 870-425-5118
+  website: https://www.ozarkopp.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ar/harrison/ozark-opportunities-inc-ooi-boone
+  name: Ozark Opportunities, Inc. (OOI) - Boone
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Boone County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 870-741-2089
+  website: https://www.ozarkopp.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ar/harrison/ozark-opportunities-inc-ooi-marion
+  name: Ozark Opportunities, Inc. (OOI) - Marion
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marion County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 870-425-5118
+  website: https://www.ozarkopp.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ar/harrison/ozark-opportunities-inc-ooi-newton
+  name: Ozark Opportunities, Inc. (OOI) - Newton
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Newton County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 870-741-9406 X 2
+  website: https://www.ozarkopp.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ar/harrison/ozark-opportunities-inc-ooi-searcy
+  name: Ozark Opportunities, Inc. (OOI) -Searcy
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Searcy County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 501-754-2437
+  website: http://www.ozarkopp.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ar/harrison/ozark-opportunities-inc-ooi-van-buren
+  name: Ozark Opportunities, Inc. (OOI) - Van Buren
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Van Buren County
+  address: {street: 701 E Prospect Ave, city: Harrison, state: ar, zip: '72602'}
+  place: '0530460'
+  phone: 501-745-2437
+  website: http://www.ozarkopp.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/harrison/ridge-runner-cloggers-little-free-pantry
   name: Ridge Runner Cloggers' Little Free Pantry
   categories:

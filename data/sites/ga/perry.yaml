@@ -371,13 +371,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1309 Main Street, city: Perry, state: ga, zip: '31069'}
+  address:
+    street: 1309 Main Street
+    city: Perry
+    state: ga
+    zip: '31069'
   place: '1360340'
-  geo: {lat: 32.45927, lng: -83.72377}
+  geo:
+    lat: 32.45927
+    lng: -83.72377
   phone: 478-224-1309
   website: https://www.va.gov/dublin-health-care/locations/perry-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -393,10 +406,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_557HA}
+  external_ids:
+    va: vha_557HA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/perry/westfield-summer-program
   name: Westfield Summer Program
   categories:

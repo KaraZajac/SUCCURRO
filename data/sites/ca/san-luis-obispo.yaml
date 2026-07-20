@@ -65,6 +65,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-luis-obispo/community-action-partnership-of-san-luis-obispo
+  name: Community Action Partnership of San Luis Obispo County, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving San Luis Obispo County
+  address: {street: '3970 Short Street, Suite 110', city: San Luis Obispo, state: ca, zip: '93401'}
+  place: 0668154
+  phone: 805-541-4122
+  website: https://www.capslo.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/san-luis-obispo/community-health-centers-casa
   name: Community Health Centers Casa
   categories:
@@ -256,13 +268,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1288 Morro Street, city: San Luis Obispo, state: ca, zip: '93401'}
+  address:
+    street: 1288 Morro Street
+    city: San Luis Obispo
+    state: ca
+    zip: '93401'
   place: 0668154
-  geo: {lat: 35.27924, lng: -120.66041}
+  geo:
+    lat: 35.27924
+    lng: -120.66041
   phone: 805-543-1233
   website: https://www.va.gov/greater-los-angeles-health-care/locations/san-luis-obispo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -305,21 +330,37 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691GK}
+  external_ids:
+    va: vha_691GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-luis-obispo/san-luis-obispo-vet-center
   name: San Luis Obispo Vet Center
   categories:
   - vet-center
-  address: {street: 1070 Southwood Drive, city: San Luis Obispo, state: ca, zip: '93401'}
+  address:
+    street: 1070 Southwood Drive
+    city: San Luis Obispo
+    state: ca
+    zip: '93401'
   place: 0668154
-  geo: {lat: 35.26608, lng: -120.64323}
+  geo:
+    lat: 35.26608
+    lng: -120.64323
   phone: 805-782-9101
   website: https://www.va.gov/san-luis-obispo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -335,10 +376,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0619V}
+  external_ids:
+    va: vc_0619V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-luis-obispo/santa-rosa-early-education-and-child-care
   name: Santa Rosa Early Education and Child Care
   categories:

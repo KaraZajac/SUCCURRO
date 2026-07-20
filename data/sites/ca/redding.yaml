@@ -126,23 +126,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 760 Cypress Avenue, city: Redding, state: ca, zip: '96001'}
+  address:
+    street: 760 Cypress Avenue
+    city: Redding
+    state: ca
+    zip: '96001'
   place: 0659920
-  geo: {lat: 40.57438, lng: -122.38047}
+  geo:
+    lat: 40.57438
+    lng: -122.38047
   phone: 530-244-8800
   website: https://www.va.gov/northern-california-health-care/locations/cypress-avenue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
   - Dental/oral surgery
   - Ophthalmology
   - Optometry
-  external_ids: {va: vha_612QC}
+  external_ids:
+    va: vha_612QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/redding/enterprise-family-health-and-dental-center
   name: Enterprise Family Health and Dental Center
   categories:
@@ -609,13 +625,26 @@
   name: Redding VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 3455 Knighton Road, city: Redding, state: ca, zip: '96002'}
+  address:
+    street: 3455 Knighton Road
+    city: Redding
+    state: ca
+    zip: '96002'
   place: 0659920
-  geo: {lat: 40.50703, lng: -122.31257}
+  geo:
+    lat: 40.50703
+    lng: -122.31257
   phone: 530-226-7555
   website: https://www.va.gov/northern-california-health-care/locations/redding-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -643,10 +672,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_612B4}
+  external_ids:
+    va: vha_612B4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/redding/schc-proj-hope-med-dent-mobile
   name: SCHC PROJ HOPE MED/DENT MOBILE
   categories:
@@ -691,6 +723,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/redding/self-help-home-improvement-project-incorporated
+  name: Self-Help Home Improvement Project Incorporated
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Shasta, Tehama Counties
+  address: {street: '3777 Meadowveiw Dr., Suite 100', city: Redding, state: ca, zip: '96002'}
+  place: 0659920
+  phone: 530-378-6900
+  website: https://shhip.org/programs/home-energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/redding/shasta-college-campus-center
   name: Shasta College Campus Center
   categories:

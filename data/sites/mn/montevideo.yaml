@@ -105,13 +105,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 814 North 11th Street, city: Montevideo, state: mn, zip: '56265'}
+  address:
+    street: 814 North 11th Street
+    city: Montevideo
+    state: mn
+    zip: '56265'
   place: '2743720'
-  geo: {lat: 44.95303, lng: -95.7135}
+  geo:
+    lat: 44.95303
+    lng: -95.7135
   phone: 320-269-2222
   website: https://www.va.gov/st-cloud-health-care/locations/montevideo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -125,10 +138,26 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_656GB}
+  external_ids:
+    va: vha_656GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mn/montevideo/prairie-five-community-action-council-inc
+  name: Prairie Five Community Action Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chippewa, Swift Counties
+  address: {street: '719 North 7th Street, Suite 302 (P. O. Box 159)', city: Montevideo, state: mn, zip: '56265'}
+  place: '2743720'
+  phone: 320-269-6578
+  email: eap@prairiefive.org
+  website: https://prairiefive.org/programs/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/montevideo/sanford-education-center
   name: Sanford Education Center
   categories:

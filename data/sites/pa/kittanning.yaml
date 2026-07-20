@@ -1,3 +1,14 @@
+- id: pa/kittanning/armstrong-county-assistance-office
+  name: Armstrong County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Armstrong County
+  address: {street: 1280 North Water Street, city: Kittanning, state: pa, zip: 16201-0898}
+  place: '4240040'
+  phone: 724-543-6076
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/kittanning/armstrong-county-council-on-alc-and-other-drugs
   name: Armstrong County Council on Alc and Other Drugs/ARC Manor
   categories:
@@ -44,13 +55,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 11 Hilltop Plaza, city: Kittanning, state: pa, zip: '16201'}
+  address:
+    street: 11 Hilltop Plaza
+    city: Kittanning
+    state: pa
+    zip: '16201'
   place: '4240040'
-  geo: {lat: 40.81425, lng: -79.54544}
+  geo:
+    lat: 40.81425
+    lng: -79.54544
   phone: 724-545-8420
   website: https://www.va.gov/butler-health-care/locations/armstrong-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -68,10 +92,13 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_529GC}
+  external_ids:
+    va: vha_529GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/kittanning/family-counseling-center-of-armstrong-county
   name: Family Counseling Center of Armstrong County
   categories:

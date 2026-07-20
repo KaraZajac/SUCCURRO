@@ -111,26 +111,48 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '820 St. Sebastian Way, Medical Building 1', city: Augusta, state: ga, zip: '30901'}
-  geo: {lat: 33.47221, lng: -81.98294}
+  address:
+    street: 820 St. Sebastian Way, Medical Building 1
+    city: Augusta
+    state: ga
+    zip: '30901'
+  geo:
+    lat: 33.47221
+    lng: -81.98294
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/augusta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Gynecology
   - PrimaryCare
   - WomensHealth
-  external_ids: {va: vha_509QC}
+  external_ids:
+    va: vha_509QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/augusta/augusta-va-medical-center-uptown
   name: Augusta VA Medical Center-Uptown
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: One Freedom Way, city: Augusta, state: ga, zip: '30904'}
-  geo: {lat: 33.46768, lng: -82.02573}
+  address:
+    street: One Freedom Way
+    city: Augusta
+    state: ga
+    zip: '30904'
+  geo:
+    lat: 33.46768
+    lng: -82.02573
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/augusta-va-medical-center-uptown/
   services:
@@ -147,20 +169,36 @@
   - Primary care
   - Recreation and creative arts therapy
   - Women Veteran care
-  external_ids: {va: vha_509A0}
+  external_ids:
+    va: vha_509A0
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/augusta/augusta-vet-center
   name: Augusta Vet Center
   categories:
   - vet-center
-  address: {street: '2050 Walton Way, Suite 100', city: Augusta, state: ga, zip: '30904'}
-  geo: {lat: 33.47545, lng: -82.00667}
+  address:
+    street: 2050 Walton Way, Suite 100
+    city: Augusta
+    state: ga
+    zip: '30904'
+  geo:
+    lat: 33.47545
+    lng: -82.00667
   phone: 706-729-5762
   website: https://www.va.gov/augusta-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -173,10 +211,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0346V}
+  external_ids:
+    va: vc_0346V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/augusta/bayvale-elementary-summer-enrichment-program
   name: Bayvale Elementary Summer Enrichment Program
   categories:
@@ -320,12 +361,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/augusta/central-savannah-river-area-economic-opportunity
+  name: Central Savannah River Area Economic Opportunity Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Burke, Columbia, Emanuel, Glascock, Jefferson, Jenkins, Lincoln,
+    McDuffie, Richmond, Screven, Taliaferro, Warren, Wilkes Counties
+  address: {street: 1261 Greene St. (P. O. Box 10104), city: Augusta, state: ga, zip: '30903'}
+  phone: 706-724-0701
+  website: https://www.csraeoa.org/programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/augusta/charlie-norwood-department-of-veterans-affairs-m
   name: Charlie Norwood Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 950 15th Street, city: Augusta, state: ga, zip: '30904'}
-  geo: {lat: 33.4728, lng: -81.98654}
+  address:
+    street: 950 15th Street
+    city: Augusta
+    state: ga
+    zip: '30904'
+  geo:
+    lat: 33.4728
+    lng: -81.98654
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/charlie-norwood-department-of-veterans-affairs-medical-center/
   services:
@@ -363,10 +422,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_509}
+  external_ids:
+    va: vha_509
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/augusta/christ-community-health-medical-district-chc
   name: 'Christ Community Health: Medical District CHC'
   categories:

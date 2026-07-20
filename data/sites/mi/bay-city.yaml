@@ -600,13 +600,26 @@
   name: Great Lakes Bay Vet Center
   categories:
   - vet-center
-  address: {street: 6387 Westside Saginaw Road, city: Bay City, state: mi, zip: '48706'}
+  address:
+    street: 6387 Westside Saginaw Road
+    city: Bay City
+    state: mi
+    zip: '48706'
   place: '2606020'
-  geo: {lat: 43.55525, lng: -83.95143}
+  geo:
+    lat: 43.55525
+    lng: -83.95143
   phone: 989-321-4650
   website: https://www.va.gov/saginaw-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -618,10 +631,13 @@
   - Suicide prevention
   - Veteran connections
   - Veteran readiness and employment programs
-  external_ids: {va: vc_0433V}
+  external_ids:
+    va: vc_0433V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/bay-city/isd-local-programs
   name: Isd-Local Programs
   categories:
@@ -703,6 +719,19 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: mi/bay-city/mid-michigan-community-action-bay-office
+  name: Mid Michigan Community Action Bay Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bay County
+  address: {street: 114 South Washington, city: Bay City, state: mi, zip: '48708'}
+  place: '2606020'
+  phone: 989-894-9060
+  email: contactus@mmcaa.org
+  website: https://www.mmcaa.org/economicsecurity.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/bay-city/recovery-pathways-llc
   name: Recovery Pathways LLC
   categories:

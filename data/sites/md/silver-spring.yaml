@@ -595,13 +595,26 @@
   name: Silver Spring Vet Center
   categories:
   - vet-center
-  address: {street: '2900 Linden Lane, Suite 100', city: Silver Spring, state: md, zip: '20910'}
+  address:
+    street: 2900 Linden Lane, Suite 100
+    city: Silver Spring
+    state: md
+    zip: '20910'
   place: '2472450'
-  geo: {lat: 39.01492, lng: -77.05748}
+  geo:
+    lat: 39.01492
+    lng: -77.05748
   phone: 301-589-1073
   website: https://www.va.gov/silver-spring-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -616,10 +629,13 @@
   - Veteran connections
   - Whole health
   - Workshops and classes
-  external_ids: {va: vc_0213V}
+  external_ids:
+    va: vc_0213V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/silver-spring/steven-a-cohen-military-family-clinic-easterseal
   name: Steven A Cohen Military Family Clinic Easterseals
   categories:

@@ -160,21 +160,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1067 Vendall Road, city: Dyersburg, state: tn, zip: '38024'}
+  address:
+    street: 1067 Vendall Road
+    city: Dyersburg
+    state: tn
+    zip: '38024'
   place: '4722200'
-  geo: {lat: 36.0605, lng: -89.39785}
+  geo:
+    lat: 36.0605
+    lng: -89.39785
   phone: 731-287-7289
   website: https://www.va.gov/memphis-health-care/locations/dyersburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
-  external_ids: {va: vha_614GI}
+  external_ids:
+    va: vha_614GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/dyersburg/evansville-non-congregate
   name: Evansville Non-Congregate
   categories:
@@ -376,6 +392,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/dyersburg/northwest-tennessee-economic-development-council
+  name: Northwest Tennessee Economic Development Council - Dyer
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dyer County
+  address: {street: 1400 Hornbrook St., city: Dyersburg, state: tn, zip: '38024'}
+  place: '4722200'
+  phone: 731-285-5556
+  website: https://nwcommunityaction.org/services-and-programs/low-income-home-energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/dyersburg/pathways-of-tennessee-inc-pathways-dyer-county-o
   name: Pathways of Tennessee Inc Pathways Dyer County Office
   categories:

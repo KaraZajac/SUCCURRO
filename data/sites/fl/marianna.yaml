@@ -202,13 +202,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4970 Highway 90, city: Marianna, state: fl, zip: '32446'}
+  address:
+    street: 4970 Highway 90
+    city: Marianna
+    state: fl
+    zip: '32446'
   place: '1243175'
-  geo: {lat: 30.7472, lng: -85.1818}
+  geo:
+    lat: 30.7472
+    lng: -85.1818
   phone: 850-718-5620
   website: https://www.va.gov/north-florida-health-care/locations/marianna-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:30'
   services:
   - Advice nurse
   - COVID-19 vaccines
@@ -230,10 +242,13 @@
   - Toxic exposure screening
   - Whole health
   - Wound care and ostomy
-  external_ids: {va: vha_573GK}
+  external_ids:
+    va: vha_573GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/marianna/pancare-health-mobile-optometry
   name: PanCare Health Mobile Optometry
   categories:

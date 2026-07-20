@@ -80,28 +80,50 @@
   name: Farmington (Hopi) Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '4251 East Main Street, Suite A', city: Farmington, state: nm, zip: '87402'}
+  address:
+    street: 4251 East Main Street, Suite A
+    city: Farmington
+    state: nm
+    zip: '87402'
   place: '3525800'
-  geo: {lat: 36.76045, lng: -108.15557}
+  geo:
+    lat: 36.76045
+    lng: -108.15557
   phone: 928-734-5166
   website: https://www.va.gov/farmington-vet-center/locations/#farmington-hopi-mobile-vet-cen
-  external_ids: {va: vc_0832MVC}
+  external_ids:
+    va: vc_0832MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/farmington/farmington-va-clinic
   name: Farmington VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3605 English Road, city: Farmington, state: nm, zip: '87402'}
+  address:
+    street: 3605 English Road
+    city: Farmington
+    state: nm
+    zip: '87402'
   place: '3525800'
-  geo: {lat: 36.76236, lng: -108.14841}
+  geo:
+    lat: 36.76236
+    lng: -108.14841
   phone: 505-326-4383
   website: https://www.va.gov/new-mexico-health-care/locations/farmington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -109,20 +131,36 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_501GB}
+  external_ids:
+    va: vha_501GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/farmington/farmington-vet-center
   name: Farmington Vet Center
   categories: *id001
-  address: {street: '4251 East Main Street, Suite A', city: Farmington, state: nm, zip: '87402'}
+  address:
+    street: 4251 East Main Street, Suite A
+    city: Farmington
+    state: nm
+    zip: '87402'
   place: '3525800'
-  geo: {lat: 36.76046, lng: -108.15554}
+  geo:
+    lat: 36.76046
+    lng: -108.15554
   phone: 505-327-9684
   website: https://www.va.gov/farmington-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -136,10 +174,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0516V}
+  external_ids:
+    va: vc_0516V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/farmington/housing-authority-of-the-county-of-san-juan
   name: Housing Authority Of The County Of San Juan
   categories:
@@ -160,6 +201,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/farmington/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving San Juan County
+  address: {street: 101 W. Animas, city: Farmington, state: nm, zip: '87401'}
+  place: '3525800'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/farmington/lee-acres-park
   name: Lee Acres Park
   categories:

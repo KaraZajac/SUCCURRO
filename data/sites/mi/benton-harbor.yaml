@@ -67,13 +67,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1275 Mall Drive, city: Benton Harbor, state: mi, zip: '49022'}
+  address:
+    street: 1275 Mall Drive
+    city: Benton Harbor
+    state: mi
+    zip: '49022'
   place: '2607520'
-  geo: {lat: 42.08193, lng: -86.42526}
+  geo:
+    lat: 42.08193
+    lng: -86.42526
   phone: 269-934-9123
   website: https://www.va.gov/battle-creek-health-care/locations/benton-harbor-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - COVID-19 vaccines
@@ -92,10 +105,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_515GC}
+  external_ids:
+    va: vha_515GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/benton-harbor/benton-manor-11m000003
   name: Benton Manor - 11M000003
   categories:
@@ -669,6 +685,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/benton-harbor/southwest-michigan-community-action-agency
+  name: Southwest Michigan Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Berrien, Cass, Van Buren Counties
+  address: {street: '185 E. Main Street, Suite 303', city: Benton Harbor, state: mi, zip: '49022'}
+  place: '2607520'
+  phone: 269-925-9077
+  website: https://www.smcaa.com/apply
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/benton-harbor/spinks-corner-migrant-early-head-start
   name: Spinks Corner Migrant Early Head Start
   categories:

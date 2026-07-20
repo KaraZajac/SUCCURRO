@@ -2465,13 +2465,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 5201 Raymond Street, city: Orlando, state: fl, zip: '32803'}
+  address:
+    street: 5201 Raymond Street
+    city: Orlando
+    state: fl
+    zip: '32803'
   place: '1253000'
-  geo: {lat: 28.57912, lng: -81.32164}
+  geo:
+    lat: 28.57912
+    lng: -81.32164
   phone: 407-646-5500
   website: https://www.va.gov/orlando-health-care/locations/lake-baldwin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -2500,10 +2513,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_675GG}
+  external_ids:
+    va: vha_675GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/lake-baldwin-va-clinic-mental-health
   name: Lake Baldwin VA Clinic Mental Health
   categories:
@@ -3646,6 +3662,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/orlando/orange-county-youth-and-family-services-division
+  name: Orange County Youth And Family Services Division
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Orange County
+  address: {street: 2100 E. Michigan St., city: Orlando, state: fl, zip: '32806'}
+  place: '1253000'
+  phone: 407-836-7429 (1st & 3rd Thurs)
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/orlando/orange-technical-college
   name: Orange Technical College
   categories:
@@ -3696,30 +3724,55 @@
   name: Orlando 1 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5201 Raymond Street, city: Orlando, state: fl, zip: '32803'}
+  address:
+    street: 5201 Raymond Street
+    city: Orlando
+    state: fl
+    zip: '32803'
   place: '1253000'
-  geo: {lat: 28.57912, lng: -81.32164}
+  geo:
+    lat: 28.57912
+    lng: -81.32164
   phone: 407-646-5500
   website: https://www.va.gov/find-locations/facility/vha_675QE
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_675QE}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_675QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/orlando-3-va-mobile-medical-unit
   name: Orlando 3 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 13800 Veterans Way, city: Orlando, state: fl, zip: '32827'}
+  address:
+    street: 13800 Veterans Way
+    city: Orlando
+    state: fl
+    zip: '32827'
   place: '1253000'
-  geo: {lat: 28.36684, lng: -81.27624}
+  geo:
+    lat: 28.36684
+    lng: -81.27624
   phone: 407-631-1000
   website: https://www.va.gov/find-locations/facility/vha_675QI
-  external_ids: {va: vha_675QI}
+  external_ids:
+    va: vha_675QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/orlando-christian-learning-center
   name: Orlando Christian Learning Center
   categories:
@@ -3826,15 +3879,24 @@
   name: Orlando Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '5575 S Semoran Blvd, Suite 30', city: Orlando, state: fl, zip: '32822'}
+  address:
+    street: 5575 S Semoran Blvd, Suite 30
+    city: Orlando
+    state: fl
+    zip: '32822'
   place: '1253000'
-  geo: {lat: 28.48233, lng: -81.30905}
+  geo:
+    lat: 28.48233
+    lng: -81.30905
   phone: 407-857-2800
   website: https://www.va.gov/orlando-vet-center/locations/#orlando-mobile-vet-center
-  external_ids: {va: vc_0864MVC}
+  external_ids:
+    va: vc_0864MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/orlando-recovery-center-drug-and-alcohol-rehab
   name: Orlando Recovery Center Drug and Alcohol Rehab
   categories:
@@ -3898,9 +3960,15 @@
   name: Orlando VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 13800 Veterans Way, city: Orlando, state: fl, zip: '32827'}
+  address:
+    street: 13800 Veterans Way
+    city: Orlando
+    state: fl
+    zip: '32827'
   place: '1253000'
-  geo: {lat: 28.36669, lng: -81.27646}
+  geo:
+    lat: 28.36669
+    lng: -81.27646
   phone: 407-631-1000
   website: https://www.va.gov/orlando-health-care/locations/orlando-va-medical-center/
   services:
@@ -3942,10 +4010,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_675}
+  external_ids:
+    va: vha_675
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/orlando-vamc-mental-health-116a
   name: Orlando VAMC Mental Health 116A
   categories:
@@ -3970,13 +4041,26 @@
 - id: fl/orlando/orlando-vet-center
   name: Orlando Vet Center
   categories: *id002
-  address: {street: '5575 South Semoran Boulevard, Suite 30', city: Orlando, state: fl, zip: '32822'}
+  address:
+    street: 5575 South Semoran Boulevard, Suite 30
+    city: Orlando
+    state: fl
+    zip: '32822'
   place: '1253000'
-  geo: {lat: 28.48217, lng: -81.30719}
+  geo:
+    lat: 28.48217
+    lng: -81.30719
   phone: 407-857-2800
   website: https://www.va.gov/orlando-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3993,10 +4077,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0314V}
+  external_ids:
+    va: vc_0314V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/outlook-clinic
   name: Outlook Clinic
   categories:
@@ -5554,9 +5641,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 5201 Raymond Street, city: Orlando, state: fl, zip: '32803'}
+  address:
+    street: 5201 Raymond Street
+    city: Orlando
+    state: fl
+    zip: '32803'
   place: '1253000'
-  geo: {lat: 28.57912, lng: -81.32164}
+  geo:
+    lat: 28.57912
+    lng: -81.32164
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -5567,10 +5660,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_317l}
+  external_ids:
+    va: vba_317l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/orlando/ventura-elementary
   name: VENTURA ELEMENTARY
   categories:

@@ -102,13 +102,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 323A Upper River Road, city: Gallipolis, state: oh, zip: '45631'}
+  address:
+    street: 323A Upper River Road
+    city: Gallipolis
+    state: oh
+    zip: '45631'
   place: '3929204'
-  geo: {lat: 38.83568, lng: -82.15283}
+  geo:
+    lat: 38.83568
+    lng: -82.15283
   phone: 740-446-3934
   website: https://www.va.gov/huntington-health-care/locations/gallipolis-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -116,10 +129,13 @@
   - Nutrition, food, and dietary care
   - Primary care
   - Travel reimbursement
-  external_ids: {va: vha_581GG}
+  external_ids:
+    va: vha_581GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/gallipolis/grab-and-go-court-street-ministries
   name: Grab And Go Court Street Ministries
   categories:

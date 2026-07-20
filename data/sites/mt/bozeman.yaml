@@ -154,6 +154,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/bozeman/district-ix-hrdc
+  name: District IX HRDC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Gallatin, Meagher, Park Counties
+  address: {street: 206 E. Griffin Sr., city: Bozeman, state: mt, zip: '59715'}
+  place: '3008950'
+  phone: 406-587-4486
+  email: hello@thehrdc.org
+  website: https://thehrdc.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mt/bozeman/gallatin-valley-food-bank
   name: Gallatin Valley Food Bank
   categories:
@@ -309,13 +322,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1101 East Main Street, city: Bozeman, state: mt, zip: '59715'}
+  address:
+    street: 1101 East Main Street
+    city: Bozeman
+    state: mt
+    zip: '59715'
   place: '3008950'
-  geo: {lat: 45.6791, lng: -111.02036}
+  geo:
+    lat: 45.6791
+    lng: -111.02036
   phone: 406-582-5300
   website: https://www.va.gov/montana-health-care/locations/travis-w-atkins-department-of-veterans-affairs-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -329,7 +355,10 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_436GD}
+  external_ids:
+    va: vha_436GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

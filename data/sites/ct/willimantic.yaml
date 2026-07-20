@@ -1,3 +1,16 @@
+- id: ct/willimantic/access-community-action-agency
+  name: Access Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Windham County
+  address: {street: 1315 Main Street, city: Willimantic, state: ct, zip: '06226'}
+  place: 0985810
+  phone: 860-450-7400
+  email: access@accessagency.org
+  website: http://www.accessagency.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ct/willimantic/arts-at-the-capitol-theater-sbhc
   name: Arts at the Capitol Theater SBHC
   categories:
@@ -254,22 +267,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1320 Main Street, city: Willimantic, state: ct, zip: '06226'}
+  address:
+    street: 1320 Main Street
+    city: Willimantic
+    state: ct
+    zip: '06226'
   place: 0985810
-  geo: {lat: 41.71522, lng: -72.22893}
+  geo:
+    lat: 41.71522
+    lng: -72.22893
   phone: 860-450-7583
   website: https://www.va.gov/connecticut-health-care/locations/willimantic-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_689GC}
+  external_ids:
+    va: vha_689GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/willimantic/windham-early-childhood-center
   name: Windham Early Childhood Center
   categories:

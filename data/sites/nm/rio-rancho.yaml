@@ -54,6 +54,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/rio-rancho/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sandoval County
+  address: {street: 4363 Jager Drive, city: Rio Rancho, state: nm, zip: '87144'}
+  place: '3563460'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/rio-rancho/mcdermott-athletic-center-the-mac-pantry
   name: McDermott Athletic Center (The MAC) Pantry
   categories:
@@ -75,13 +86,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '1760 Grande Boulevard, Southeast', city: Rio Rancho, state: nm, zip: '87124'}
+  address:
+    street: 1760 Grande Boulevard, Southeast
+    city: Rio Rancho
+    state: nm
+    zip: '87124'
   place: '3563460'
-  geo: {lat: 35.22739, lng: -106.6613}
+  geo:
+    lat: 35.22739
+    lng: -106.6613
   phone: 505-896-7200
   website: https://www.va.gov/new-mexico-health-care/locations/northwest-metro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gynecology
@@ -90,10 +114,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_501GM}
+  external_ids:
+    va: vha_501GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/rio-rancho/pms-rio-rancho-family-health-center-psr
   name: PMS - Rio Rancho Family Health Center PSR
   categories:

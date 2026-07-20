@@ -629,6 +629,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/yakima/oic-of-washington
+  name: OIC of Washington
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Yakima County
+  address: {street: 815 Fruitvale Blvd, city: Yakima, state: wa, zip: '98902'}
+  place: '5380010'
+  phone: 509-955-7100
+  website: https://oicofwa.org/pathways/support/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/yakima/rhonda-d-hauff-resource-center
   name: Rhonda D Hauff Resource Center
   categories:
@@ -1041,13 +1053,26 @@
   name: Yakima Valley Vet Center
   categories:
   - vet-center
-  address: {street: 2119 West Lincoln Avenue, city: Yakima, state: wa, zip: '98902'}
+  address:
+    street: 2119 West Lincoln Avenue
+    city: Yakima
+    state: wa
+    zip: '98902'
   place: '5380010'
-  geo: {lat: 46.60356, lng: -120.53731}
+  geo:
+    lat: 46.60356
+    lng: -120.53731
   phone: 509-457-2736
   website: https://www.va.gov/yakima-valley-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1061,10 +1086,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0523V}
+  external_ids:
+    va: vc_0523V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/yakima/ynhs-at-chuck-austin-place
   name: YNHS at Chuck Austin Place
   categories:

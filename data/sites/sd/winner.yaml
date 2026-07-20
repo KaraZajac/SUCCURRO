@@ -39,6 +39,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sd/winner/tripp-county-liheap
+  name: Tripp County Liheap
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tripp County
+  address: {street: '648 W. 2nd St., (P. O. Box 31)', city: Winner, state: sd, zip: '57580'}
+  place: '4672180'
+  phone: 605-842-0400
+  email: DSSRegion4EA@state.sd.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sd/winner/winner-high-school
   name: Winner High School
   categories:
@@ -68,13 +80,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 660 West 2nd Street, city: Winner, state: sd, zip: '57580'}
+  address:
+    street: 660 West 2nd Street
+    city: Winner
+    state: sd
+    zip: '57580'
   place: '4672180'
-  geo: {lat: 43.37665, lng: -99.8654}
+  geo:
+    lat: 43.37665
+    lng: -99.8654
   phone: 605-842-2443
   website: https://www.va.gov/black-hills-health-care/locations/winner-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -82,7 +107,10 @@
   - PTSD care
   - Primary care
   - Suicide prevention
-  external_ids: {va: vha_568HP}
+  external_ids:
+    va: vha_568HP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

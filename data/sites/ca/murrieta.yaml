@@ -154,13 +154,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 25125 Madison Avenue, city: Murrieta, state: ca, zip: '92562'}
+  address:
+    street: 25125 Madison Avenue
+    city: Murrieta
+    state: ca
+    zip: '92562'
   place: '0650076'
-  geo: {lat: 33.55658, lng: -117.19968}
+  geo:
+    lat: 33.55658
+    lng: -117.19968
   phone: 909-825-7084
   website: https://www.va.gov/loma-linda-health-care/locations/murrieta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -169,10 +182,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_605GB}
+  external_ids:
+    va: vha_605GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/murrieta/neighborhood-healthcare-pace-murrieta
   name: Neighborhood Healthcare PACE ~ Murrieta
   categories:

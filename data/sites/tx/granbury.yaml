@@ -23,13 +23,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1210 Paluxy Medical Circle, city: Granbury, state: tx, zip: '76048'}
+  address:
+    street: 1210 Paluxy Medical Circle
+    city: Granbury
+    state: tx
+    zip: '76048'
   place: '4830416'
-  geo: {lat: 32.42519, lng: -97.80867}
+  geo:
+    lat: 32.42519
+    lng: -97.80867
   phone: 817-573-2321
   website: https://www.va.gov/north-texas-health-care/locations/granbury-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -38,10 +51,13 @@
   - Pharmacy
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GF}
+  external_ids:
+    va: vha_549GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/granbury/hood-county-ymca
   name: Hood County Ymca
   categories:

@@ -238,13 +238,26 @@
   name: East Idaho Vet Center
   categories:
   - vet-center
-  address: {street: '1000 Riverwalk Drive, Suite 350', city: Idaho Falls, state: id, zip: '83402'}
+  address:
+    street: 1000 Riverwalk Drive, Suite 350
+    city: Idaho Falls
+    state: id
+    zip: '83402'
   place: '1639700'
-  geo: {lat: 43.48893, lng: -112.04799}
+  geo:
+    lat: 43.48893
+    lng: -112.04799
   phone: 208-522-5712
   website: https://www.va.gov/east-idaho-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -259,10 +272,13 @@
   - Veteran connections
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0531V}
+  external_ids:
+    va: vc_0531V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/idaho-falls/east-idaho-youth-homes-llc
   name: East Idaho Youth Homes LLC
   categories:
@@ -280,6 +296,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: id/idaho-falls/eastern-idaho-community-action-partnership-eicap
+  name: Eastern Idaho Community Action Partnership (EICAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bonneville, Butte, Clark, Custer, Fremont, Jefferson, Teton
+    Counties
+  address: {street: 935 E. Lincoln Rd, city: Idaho Falls, state: id, zip: '83401'}
+  place: '1639700'
+  phone: 208-542-8178
+  email: eaif@eicap.org
+  website: https://www.eicap.org/our-programs/family-services/energy-assistance-winter-heating-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: id/idaho-falls/eastern-idaho-regional-medical-ctr-behavioral-he
   name: Eastern Idaho Regional Medical Ctr Behavioral Health Center
   categories:
@@ -534,21 +564,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 640 South Woodruff Avenue, city: Idaho Falls, state: id, zip: '83401'}
+  address:
+    street: 640 South Woodruff Avenue
+    city: Idaho Falls
+    state: id
+    zip: '83401'
   place: '1639700'
-  geo: {lat: 43.49181, lng: -111.99911}
+  geo:
+    lat: 43.49181
+    lng: -111.99911
   phone: 208-522-2922
   website: https://www.va.gov/salt-lake-city-health-care/locations/idaho-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:00'
   services:
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_660QA}
+  external_ids:
+    va: vha_660QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/idaho-falls/idaho-falls-west-center
   name: Idaho Falls West Center
   categories:

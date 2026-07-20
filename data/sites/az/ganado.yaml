@@ -131,17 +131,33 @@
   name: Navajo Vet Center Outstation
   categories:
   - vet-center
-  address: {street: 'Hwy 264, Building 10915', city: Ganado, state: az, zip: '86505'}
+  address:
+    street: Hwy 264, Building 10915
+    city: Ganado
+    state: az
+    zip: '86505'
   place: '0426210'
-  geo: {lat: 35.7546, lng: -109.62695}
+  geo:
+    lat: 35.7546
+    lng: -109.62695
   phone: 505-327-9684
   website: https://www.va.gov/farmington-vet-center/locations/#navajo-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_5161OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_5161OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/ganado/nazlini-community-school
   name: Nazlini Community School
   categories:

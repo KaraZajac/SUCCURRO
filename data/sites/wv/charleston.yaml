@@ -125,13 +125,26 @@
   name: Charleston, WV Vet Center
   categories:
   - vet-center
-  address: {street: 200 Tracy Way, city: Charleston, state: wv, zip: '25311'}
+  address:
+    street: 200 Tracy Way
+    city: Charleston
+    state: wv
+    zip: '25311'
   place: '5414600'
-  geo: {lat: 38.35798, lng: -81.59939}
+  geo:
+    lat: 38.35798
+    lng: -81.59939
   phone: 304-343-3825
   website: https://www.va.gov/charleston-wv-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -145,10 +158,13 @@
   - Veteran connections
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vc_0223V}
+  external_ids:
+    va: vc_0223V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/charleston/chesapeake-healthcare-center
   name: Chesapeake Healthcare Center
   categories:
@@ -693,6 +709,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/charleston/kanawha-county-dhhr-office
+  name: Kanawha County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kanawha County
+  address: {street: 4190 Washington Street, city: Charleston, state: wv, zip: '25313'}
+  place: '5414600'
+  phone: 304-746-2360
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/charleston/kanawha-valley-enrichment-center
   name: Kanawha Valley Enrichment Center
   categories:

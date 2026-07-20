@@ -102,6 +102,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/lowell/community-teamwork-inc-cti
+  name: Community Teamwork, Inc. (CTI)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Middlesex County
+  address: {street: 45 Kirk St., city: Lowell, state: ma, zip: 01854}
+  place: '2537000'
+  phone: 978-459-6161
+  website: http://www.commteam.org/how-we-help/housing-utilities/liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/lowell/elm-tree-clinic
   name: Elm Tree Clinic
   categories:
@@ -403,14 +415,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 130 Marshall Road, city: Lowell, state: ma, zip: 01852}
+  address:
+    street: 130 Marshall Road
+    city: Lowell
+    state: ma
+    zip: 01852
   place: '2537000'
-  geo: {lat: 42.61937, lng: -71.31537}
+  geo:
+    lat: 42.61937
+    lng: -71.31537
   phone: 800-865-3384
   website: https://www.va.gov/boston-health-care/locations/lowell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
-  - {days: [fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -429,21 +456,37 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_523BY}
+  external_ids:
+    va: vha_523BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/lowell-vet-center
   name: Lowell Vet Center
   categories:
   - vet-center
-  address: {street: 10 George Street, city: Lowell, state: ma, zip: 01852}
+  address:
+    street: 10 George Street
+    city: Lowell
+    state: ma
+    zip: 01852
   place: '2537000'
-  geo: {lat: 42.64209, lng: -71.30568}
+  geo:
+    lat: 42.64209
+    lng: -71.30568
   phone: 978-453-1151
   website: https://www.va.gov/lowell-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -463,10 +506,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0125V}
+  external_ids:
+    va: vc_0125V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/mcpherson-park-sf-171-003
   name: Mcpherson Park (Sf-171-003)
   categories:

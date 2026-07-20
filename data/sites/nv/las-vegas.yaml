@@ -736,6 +736,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/boys-girls-club-of-las-vegas-las-vegas-west-fami
+  name: Boys & Girls Club of Las Vegas/Las Vegas West Family Resource Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 2850 S. Lindell Road, city: Las Vegas, state: nv, zip: '89146'}
+  place: '3240000'
+  phone: 702-932-1880
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/boys-town-nevada-behavioral-health-clinic
   name: Boys Town Nevada Behavioral Health Clinic
   categories:
@@ -2006,6 +2017,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/east-valley-family-services
+  name: East Valley Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 1800 E. Sahara Avenue Ste 111, city: Las Vegas, state: nv, zip: '89104'}
+  place: '3240000'
+  phone: 702-631-7098
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/eastern-family-medical-and-dental-center
   name: Eastern Family Medical and Dental Center
   categories:
@@ -3393,14 +3415,29 @@
   name: Las Vegas Vet Center
   categories:
   - vet-center
-  address: {street: '7455 W. Washington Ave., Suite 240', city: Las Vegas, state: nv, zip: '89128'}
+  address:
+    street: 7455 W. Washington Ave., Suite 240
+    city: Las Vegas
+    state: nv
+    zip: '89128'
   place: '3240000'
-  geo: {lat: 36.1791, lng: -115.25604}
+  geo:
+    lat: 36.1791
+    lng: -115.25604
   phone: 702-791-9170
   website: https://www.va.gov/las-vegas-vet-center/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3420,10 +3457,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0505V}
+  external_ids:
+    va: vc_0505V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/las-vegas/lawrence-clifford-j-ms
   name: Lawrence, Clifford J. Ms
   categories:
@@ -4216,6 +4256,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/nevada-hand
+  name: Nevada Hand
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: '295 East Warm Springs Road, Ste. 101', city: Las Vegas, state: nv, zip: '89119'}
+  place: '3240000'
+  phone: 702-739-3345
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/nevada-health-centers-at-enterprise
   name: Nevada Health Centers at Enterprise
   categories:
@@ -4374,14 +4425,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '4461 East Charleston Boulevard, Community Resource & Referral Center (CRRC)', city: Las
-      Vegas, state: nv, zip: '89104'}
+  address:
+    street: 4461 East Charleston Boulevard, Community Resource & Referral Center (CRRC)
+    city: Las Vegas
+    state: nv
+    zip: '89104'
   place: '3240000'
-  geo: {lat: 36.15781, lng: -115.07652}
+  geo:
+    lat: 36.15781
+    lng: -115.07652
   phone: 702-791-9050
   website: https://www.va.gov/southern-nevada-health-care/locations/northeast-las-vegas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -4398,10 +4461,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_593GG}
+  external_ids:
+    va: vha_593GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/las-vegas/northeast-primary-care-clinic
   name: Northeast Primary Care Clinic
   categories:
@@ -4427,13 +4493,26 @@
   name: Northwest Las Vegas VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 3968 North Rancho Drive, city: Las Vegas, state: nv, zip: '89130'}
+  address:
+    street: 3968 North Rancho Drive
+    city: Las Vegas
+    state: nv
+    zip: '89130'
   place: '3240000'
-  geo: {lat: 36.23048, lng: -115.22407}
+  geo:
+    lat: 36.23048
+    lng: -115.22407
   phone: 702-791-9020
   website: https://www.va.gov/southern-nevada-health-care/locations/northwest-las-vegas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -4449,10 +4528,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_593GD}
+  external_ids:
+    va: vha_593GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/las-vegas/nw-career-tech-ctr-hs
   name: Nw Career & Tech Ctr Hs
   categories:
@@ -5069,6 +5151,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/rose-foundation
+  name: Rose Foundation
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 3330 E. Flamingo Rd., city: Las Vegas, state: nv, zip: '89119'}
+  place: '3240000'
+  phone: 702-451-8041 x 6915
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/rundle-elementary-school
   name: Rundle Elementary School
   categories:
@@ -5811,13 +5904,26 @@
   name: Southwest Las Vegas VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 7235 South Buffalo Drive, city: Las Vegas, state: nv, zip: '89113'}
+  address:
+    street: 7235 South Buffalo Drive
+    city: Las Vegas
+    state: nv
+    zip: '89113'
   place: '3240000'
-  geo: {lat: 36.0566, lng: -115.26107}
+  geo:
+    lat: 36.0566
+    lng: -115.26107
   phone: 702-791-9040
   website: https://www.va.gov/southern-nevada-health-care/locations/southwest-las-vegas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -5836,10 +5942,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_593GF}
+  external_ids:
+    va: vha_593GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/las-vegas/southwest-vegas-comprehensive-trt-ctr
   name: Southwest Vegas Comprehensive Trt Ctr
   categories:
@@ -6221,6 +6330,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/three-square
+  name: Three Square
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 4190 North Pecos Road, city: Las Vegas, state: nv, zip: '89115'}
+  place: '3240000'
+  phone: 702-644-3663
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/thrive-behavioral-hospital
   name: Thrive Behavioral Hospital
   categories:
@@ -6325,6 +6445,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/las-vegas/united-labor-agency-of-nevada
+  name: United Labor Agency of Nevada
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: '1201 North Decatur Blvd., Suite 106', city: Las Vegas, state: nv, zip: '89108'}
+  place: '3240000'
+  phone: 702-648-3500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/las-vegas/valetudo-pllc-cheerfeel
   name: Valetudo PLLC CheerFeel
   categories:
@@ -6433,19 +6564,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 4505 S. Maryland Pkwy, city: Las Vegas, state: nv, zip: '89154'}
+  address:
+    street: 4505 S. Maryland Pkwy
+    city: Las Vegas
+    state: nv
+    zip: '89154'
   place: '3240000'
-  geo: {lat: 36.10906, lng: -115.14431}
+  geo:
+    lat: 36.10906
+    lng: -115.14431
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_354b}
+  external_ids:
+    va: vba_354b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/las-vegas/virtue-recovery-las-vegas-llc
   name: Virtue Recovery Las Vegas LLC
   categories:

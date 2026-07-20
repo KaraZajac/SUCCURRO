@@ -231,17 +231,45 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 189 South 600 West, city: Price, state: ut, zip: '84501'}
+  address:
+    street: 189 South 600 West
+    city: Price
+    state: ut
+    zip: '84501'
   place: '4962030'
-  geo: {lat: 39.59782, lng: -110.82015}
+  geo:
+    lat: 39.59782
+    lng: -110.82015
   phone: 435-613-0342
   website: https://www.va.gov/salt-lake-city-health-care/locations/price-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_660QB}
+  external_ids:
+    va: vha_660QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ut/price/southeastern-utah-association-of-local-governmen
+  name: Southeastern Utah Association of Local Governments - Heat Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Carbon, Emery, Grand, San Juan Counties
+  address: {street: PO Box 1106, city: Price, state: ut, zip: '84501'}
+  place: '4962030'
+  phone: 435-613-0100
+  email: heat@seualg.utah.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

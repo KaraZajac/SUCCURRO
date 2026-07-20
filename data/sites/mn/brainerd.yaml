@@ -123,13 +123,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 722 Northwest 7th Street, city: Brainerd, state: mn, zip: '56401'}
+  address:
+    street: 722 Northwest 7th Street
+    city: Brainerd
+    state: mn
+    zip: '56401'
   place: '2707300'
-  geo: {lat: 46.3594, lng: -94.22233}
+  geo:
+    lat: 46.3594
+    lng: -94.22233
   phone: 218-855-1115
   website: https://www.va.gov/st-cloud-health-care/locations/brainerd-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -147,10 +160,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_656GA}
+  external_ids:
+    va: vha_656GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/brainerd/gustafson-park-ruralnc
   name: Gustafson Park Ruralnc
   categories:
@@ -235,6 +251,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/brainerd/lutheran-social-service-of-minnesota-2
+  name: Lutheran Social Service of Minnesota
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Crow Wing County
+  address: {street: 716 E St., city: Brainerd, state: mn, zip: '56401'}
+  place: '2707300'
+  phone: 218-829-5000
+  email: energy@lssmn.org
+  website: https://www.lssmn.org/services/housing-assistance/assistance-and-eviction-protection/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/brainerd/northern-pines-mental-health-center-brainerd-out
   name: Northern Pines Mental Health Center Brainerd Outpatient Office
   categories:

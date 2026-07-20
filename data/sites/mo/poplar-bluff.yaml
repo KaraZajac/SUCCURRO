@@ -174,13 +174,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1500 North Westwood Boulevard, city: Poplar Bluff, state: mo, zip: '63901'}
+  address:
+    street: 1500 North Westwood Boulevard
+    city: Poplar Bluff
+    state: mo
+    zip: '63901'
   place: '2959096'
-  geo: {lat: 36.77159, lng: -90.418}
+  geo:
+    lat: 36.77159
+    lng: -90.418
   phone: 573-686-4151
   website: https://www.va.gov/poplar-bluff-health-care/locations/john-j-pershing-veterans-administration-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -226,10 +239,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_657A4}
+  external_ids:
+    va: vha_657A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/poplar-bluff/junior-high-school
   name: Junior High School
   categories:
@@ -783,3 +799,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/poplar-bluff/south-central-missouri-community-action-agency-s
+  name: South Central Missouri Community Action Agency (SCMCAA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Butler County
+  address: {street: 1716 S. Broadway, city: Poplar Bluff, state: mo, zip: '63901'}
+  place: '2959096'
+  phone: 573-785-4727
+  website: https://scmcaa.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

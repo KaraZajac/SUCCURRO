@@ -89,14 +89,31 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 5500 Armstrong Road, city: Battle Creek, state: mi, zip: '49037'}
+  address:
+    street: 5500 Armstrong Road
+    city: Battle Creek
+    state: mi
+    zip: '49037'
   place: '2605920'
-  geo: {lat: 42.34723, lng: -85.29793}
+  geo:
+    lat: 42.34723
+    lng: -85.29793
   phone: 269-966-5600
   website: https://www.va.gov/battle-creek-health-care/locations/battle-creek-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '19:00'}
-  - {days: [sat, sun], open: '08:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '19:00'
+  - days:
+    - sat
+    - sun
+    open: 08:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Amputation care
@@ -144,10 +161,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_515}
+  external_ids:
+    va: vha_515
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/battle-creek/battle-creek-vamc-battle-creek-medical-center
   name: Battle Creek VAMC Battle Creek Medical Center
   categories:
@@ -1127,34 +1147,52 @@
   categories: &id001
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '5500 Armstrong Road, Building 07, Room 12', city: Battle Creek, state: mi, zip: '49037'}
+  address:
+    street: 5500 Armstrong Road, Building 07, Room 12
+    city: Battle Creek
+    state: mi
+    zip: '49037'
   place: '2605920'
-  geo: {lat: 42.34723, lng: -85.29793}
+  geo:
+    lat: 42.34723
+    lng: -85.29793
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329g}
+  external_ids:
+    va: vba_329g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/battle-creek/vetsuccess-on-campus-at-kellogg-community-colleg
   name: VetSuccess on Campus at Kellogg Community College
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: 450 North Avenue, city: Battle Creek, state: mi, zip: '49017'}
+  address:
+    street: 450 North Avenue
+    city: Battle Creek
+    state: mi
+    zip: '49017'
   place: '2605920'
-  geo: {lat: 42.3349, lng: -85.17716}
+  geo:
+    lat: 42.3349
+    lng: -85.17716
   phone: 313-686-8691
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329p}
+  external_ids:
+    va: vba_329p
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/battle-creek/victory-clinical-services-battle-creek
   name: Victory Clinical Services Battle Creek
   categories:

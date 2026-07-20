@@ -184,13 +184,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 717 Better Now Plaza, city: Ada, state: ok, zip: '74820'}
+  address:
+    street: 717 Better Now Plaza
+    city: Ada
+    state: ok
+    zip: '74820'
   place: '4000200'
-  geo: {lat: 34.78159, lng: -96.62905}
+  geo:
+    lat: 34.78159
+    lng: -96.62905
   phone: 580-436-2262
   website: https://www.va.gov/oklahoma-city-health-care/locations/ada-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -200,10 +213,13 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GD}
+  external_ids:
+    va: vha_635GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/ada/ada-willard-es-n213
   name: Ada, Willard Es(N213)
   categories:
@@ -646,6 +662,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/ada/human-services-centers-hughes
+  name: 'Human Services Centers: Hughes'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hughes County
+  address: {street: 2320 Arlington Ste. B, city: Ada, state: ok, zip: '74820'}
+  place: '4000200'
+  phone: 580-310-7050
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/ada/human-services-centers-pontotoc
+  name: 'Human Services Centers: Pontotoc'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pontotoc County
+  address: {street: 2320 Arlington Ste. B, city: Ada, state: ok, zip: '74820'}
+  place: '4000200'
+  phone: 580-310-7050
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/ada/latta-kids-zone
   name: Latta Kids Zone
   categories:

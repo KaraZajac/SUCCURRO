@@ -104,28 +104,50 @@
   name: Binghamton Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 53 Chenango Street, city: Binghamton, state: ny, zip: '13901'}
+  address:
+    street: 53 Chenango Street
+    city: Binghamton
+    state: ny
+    zip: '13901'
   place: '3606607'
-  geo: {lat: 42.10022, lng: -75.91039}
+  geo:
+    lat: 42.10022
+    lng: -75.91039
   phone: 607-722-2393
   website: https://www.va.gov/binghamton-vet-center/locations/#binghamton-mobile-vet-center
-  external_ids: {va: vc_0805MVC}
+  external_ids:
+    va: vc_0805MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/binghamton/binghamton-va-clinic
   name: Binghamton VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 203 Court Street, city: Binghamton, state: ny, zip: '13901'}
+  address:
+    street: 203 Court Street
+    city: Binghamton
+    state: ny
+    zip: '13901'
   place: '3606607'
-  geo: {lat: 42.10074, lng: -75.90401}
+  geo:
+    lat: 42.10074
+    lng: -75.90401
   phone: 607-772-9100
   website: https://www.va.gov/syracuse-health-care/locations/binghamton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -146,20 +168,36 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_528GN}
+  external_ids:
+    va: vha_528GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/binghamton/binghamton-vet-center
   name: Binghamton Vet Center
   categories: *id001
-  address: {street: 53 Chenango Street, city: Binghamton, state: ny, zip: '13901'}
+  address:
+    street: 53 Chenango Street
+    city: Binghamton
+    state: ny
+    zip: '13901'
   place: '3606607'
-  geo: {lat: 42.10043, lng: -75.91082}
+  geo:
+    lat: 42.10043
+    lng: -75.91082
   phone: 607-722-2393
   website: https://www.va.gov/binghamton-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -175,10 +213,13 @@
   - Veteran connections
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0137V}
+  external_ids:
+    va: vc_0137V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/binghamton/boys-girls-club-of-binghamton
   name: Boys & Girls Club Of Binghamton
   categories:
@@ -372,6 +413,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/binghamton/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Broome County
+  address: {street: 36-42 Main Street, city: Binghamton, state: ny, zip: '13905'}
+  place: '3606607'
+  phone: 607-778-1100
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/binghamton/east-middle-school
   name: East Middle School
   categories:

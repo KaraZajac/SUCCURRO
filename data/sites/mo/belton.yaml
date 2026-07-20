@@ -65,22 +65,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1900 East 173rd Street, city: Belton, state: mo, zip: '64012'}
+  address:
+    street: 1900 East 173rd Street
+    city: Belton
+    state: mo
+    zip: '64012'
   place: '2904384'
-  geo: {lat: 38.80932, lng: -94.51079}
+  geo:
+    lat: 38.80932
+    lng: -94.51079
   phone: 816-922-2161
   website: https://www.va.gov/kansas-city-health-care/locations/belton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Primary care
   - Telehealth
-  external_ids: {va: vha_589GB}
+  external_ids:
+    va: vha_589GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/belton/community-pet-food-pantry
   name: Community Pet Food Pantry
   categories:

@@ -429,16 +429,32 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 179-00 Linden Boulevard, city: Jamaica, state: ny, zip: '11434'}
-  geo: {lat: 40.69245, lng: -73.76812}
+  address:
+    street: 179-00 Linden Boulevard
+    city: Jamaica
+    state: ny
+    zip: '11434'
+  geo:
+    lat: 40.69245
+    lng: -73.76812
   phone: 212-686-7500
   website: https://www.va.gov/find-locations/facility/vha_630QB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_630QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_630QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/jamaica/new-york-therapeutic-communities-inc
   name: New York Therapeutic Communities Inc
   categories:

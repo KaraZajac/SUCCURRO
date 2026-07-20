@@ -447,13 +447,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3114 Croasdaile Drive, city: Durham, state: nc, zip: '27705'}
+  address:
+    street: 3114 Croasdaile Drive
+    city: Durham
+    state: nc
+    zip: '27705'
   place: '3719000'
-  geo: {lat: 36.02508, lng: -78.94774}
+  geo:
+    lat: 36.02508
+    lng: -78.94774
   phone: 919-973-7540
   website: https://www.va.gov/durham-health-care/locations/croasdaile-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -464,10 +477,13 @@
   - Prosthetics and rehabilitation
   - Radiology
   - Social work
-  external_ids: {va: vha_558GI}
+  external_ids:
+    va: vha_558GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/durham/ctr-for-adol-and-young-adult-subst-use-duke-medi
   name: Ctr for Adol and Young Adult Subst Use Duke Medical Center (Psychiatry)
   categories:
@@ -620,6 +636,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/durham/durham-county-department-of-social-services
+  name: Durham County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Durham County
+  address: {street: 220 E. Main St. (P. O. Box 810), city: Durham, state: nc, zip: '27702'}
+  place: '3719000'
+  phone: 919-560-8000
+  website: https://www.dconc.gov/county-departments/departments-f-z/social-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/durham/durham-county-justice-services-department
   name: Durham County Justice Services Department
   categories:
@@ -644,20 +672,36 @@
   name: Durham County VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1830 Hillandale Road, city: Durham, state: nc, zip: '27705'}
+  address:
+    street: 1830 Hillandale Road
+    city: Durham
+    state: nc
+    zip: '27705'
   place: '3719000'
-  geo: {lat: 36.03146, lng: -78.93516}
+  geo:
+    lat: 36.03146
+    lng: -78.93516
   phone: 919-383-6107
   website: https://www.va.gov/durham-health-care/locations/durham-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Prosthetics and rehabilitation
-  external_ids: {va: vha_558GD}
+  external_ids:
+    va: vha_558GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/durham/durham-sch-of-the-arts
   name: Durham Sch Of The Arts
   categories:
@@ -704,9 +748,15 @@
   name: Durham VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 508 Fulton Street, city: Durham, state: nc, zip: '27705'}
+  address:
+    street: 508 Fulton Street
+    city: Durham
+    state: nc
+    zip: '27705'
   place: '3719000'
-  geo: {lat: 36.00952, lng: -78.93972}
+  geo:
+    lat: 36.00952
+    lng: -78.93972
   phone: 919-286-0411
   website: https://www.va.gov/durham-health-care/locations/durham-va-medical-center/
   services:
@@ -746,10 +796,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_558}
+  external_ids:
+    va: vha_558
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/durham/e-k-powe-elementary
   name: E K Powe Elementary
   categories:
@@ -911,22 +964,38 @@
   name: Hillandale Road VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1824 Hillandale Road, city: Durham, state: nc, zip: '27705'}
+  address:
+    street: 1824 Hillandale Road
+    city: Durham
+    state: nc
+    zip: '27705'
   place: '3719000'
-  geo: {lat: 36.03087, lng: -78.93576}
+  geo:
+    lat: 36.03087
+    lng: -78.93576
   phone: 919-383-6107
   website: https://www.va.gov/durham-health-care/locations/hillandale-road-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_558GE}
+  external_ids:
+    va: vha_558GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/durham/holton-wellness-center
   name: Holton Wellness Center
   categories:

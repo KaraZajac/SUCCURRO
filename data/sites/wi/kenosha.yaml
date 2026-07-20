@@ -349,6 +349,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/kenosha/kenosha-country-energy-assistance
+  name: Kenosha Country Energy Assistance
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kenosha County
+  address: {street: 1330 52nd St., city: Kenosha, state: wi, zip: '53140'}
+  place: '5539225'
+  phone: 414-389-6364
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/kenosha/kenosha-housing-authority
   name: Kenosha Housing Authority
   categories:
@@ -394,13 +406,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 8207 22nd Avenue, city: Kenosha, state: wi, zip: '53143'}
+  address:
+    street: 8207 22nd Avenue
+    city: Kenosha
+    state: wi
+    zip: '53143'
   place: '5539225'
-  geo: {lat: 42.55537, lng: -87.83437}
+  geo:
+    lat: 42.55537
+    lng: -87.83437
   phone: 262-653-9286
   website: https://www.va.gov/lovell-federal-health-care-va/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Bariatric surgery
@@ -420,10 +445,13 @@
   - Suicide prevention
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_556GD}
+  external_ids:
+    va: vha_556GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/kenosha/kenosha-y-summer-breakfast-hoops
   name: Kenosha Y Summer Breakfast & Hoops
   categories:

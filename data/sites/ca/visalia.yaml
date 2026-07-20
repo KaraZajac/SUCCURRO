@@ -81,6 +81,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/visalia/community-services-employment-training-inc
+  name: Community Services & Employment Training, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tulare County
+  address: {street: 312 N.W. 3rd Ave., city: Visalia, state: ca, zip: '93291'}
+  place: 0682954
+  phone: 884-244-1316
+  website: https://www.cset.org/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/visalia/complete-care-community-health-center-visalia
   name: Complete Care Community Health Center-Visalia
   categories:
@@ -886,13 +898,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 500 North Santa Fe Street, city: Visalia, state: ca, zip: '93292'}
+  address:
+    street: 500 North Santa Fe Street
+    city: Visalia
+    state: ca
+    zip: '93292'
   place: 0682954
-  geo: {lat: 36.33405, lng: -119.2876}
+  geo:
+    lat: 36.33405
+    lng: -119.2876
   phone: 559-684-8703
   website: https://www.va.gov/central-california-health-care/locations/visalia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -908,10 +933,13 @@
   - Smoking and tobacco cessation
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_570GB}
+  external_ids:
+    va: vha_570GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/visalia/willow-glen-elementary
   name: Willow Glen Elementary
   categories:

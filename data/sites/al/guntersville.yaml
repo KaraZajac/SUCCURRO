@@ -67,13 +67,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 100 Judy Smith Drive, city: Guntersville, state: al, zip: '35976'}
+  address:
+    street: 100 Judy Smith Drive
+    city: Guntersville
+    state: al
+    zip: '35976'
   place: '0132416'
-  geo: {lat: 34.3064, lng: -86.27871}
+  geo:
+    lat: 34.3064
+    lng: -86.27871
   phone: 256-582-4033
   website: https://www.va.gov/birmingham-health-care/locations/guntersville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -82,10 +95,13 @@
   - Optometry
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_521GI}
+  external_ids:
+    va: vha_521GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/guntersville/family-life-center-inc
   name: Family Life Center Inc
   categories:

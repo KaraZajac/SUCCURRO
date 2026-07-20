@@ -40,6 +40,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/elko/elko-county-human-social-services
+  name: Elko County Human & Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Elko County
+  address: {street: '540 Court Street, Suite 105', city: Elko, state: nv, zip: '89801'}
+  place: '3222500'
+  phone: 775-738-4375
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/elko/elko-early-head-start
   name: Elko Early Head Start
   categories:
@@ -106,22 +117,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2767 Mountain City Highway, city: Elko, state: nv, zip: '89801'}
+  address:
+    street: 2767 Mountain City Highway
+    city: Elko
+    state: nv
+    zip: '89801'
   place: '3222500'
-  geo: {lat: 40.83935, lng: -115.79449}
+  geo:
+    lat: 40.83935
+    lng: -115.79449
   phone: 775-738-0188
   website: https://www.va.gov/salt-lake-city-health-care/locations/elko-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
   - Laboratory and pathology
   - Primary care
-  external_ids: {va: vha_660GK}
+  external_ids:
+    va: vha_660GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/elko/mobile-dental-services-1
   name: Mobile Dental Services 1
   categories:

@@ -175,6 +175,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/lawrence/douglas-county-dcf
+  name: Douglas County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas County
+  address: {street: 1901 Delaware, city: Lawrence, state: ks, zip: '66046'}
+  place: '2038900'
+  phone: 785-832-3700
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/lawrence/douglas-county-fairgrounds
   name: Douglas County Fairgrounds
   categories:
@@ -286,13 +297,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4821 Quail Crest Place, city: Lawrence, state: ks, zip: '66049'}
+  address:
+    street: 4821 Quail Crest Place
+    city: Lawrence
+    state: ks
+    zip: '66049'
   place: '2038900'
-  geo: {lat: 38.96013, lng: -95.30544}
+  geo:
+    lat: 38.96013
+    lng: -95.30544
   phone: 800-574-8387
   website: https://www.va.gov/eastern-kansas-health-care/locations/lawrence-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -307,10 +331,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_589GU}
+  external_ids:
+    va: vha_589GU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lawrence/sunset-hill-elementary
   name: Sunset Hill Elementary
   categories:
@@ -338,17 +365,25 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '1300 Sunnyside Ave., KU Military-Affiliated Student Center', city: Lawrence, state: ks,
-    zip: '66045'}
+  address:
+    street: 1300 Sunnyside Ave., KU Military-Affiliated Student Center
+    city: Lawrence
+    state: ks
+    zip: '66045'
   place: '2038900'
-  geo: {lat: 38.95563, lng: -95.24981}
+  geo:
+    lat: 38.95563
+    lng: -95.24981
   phone: 785-864-0903
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_452c}
+  external_ids:
+    va: vba_452c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

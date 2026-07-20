@@ -79,6 +79,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/morristown/morris-office
+  name: Morris Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Morris County
+  address: {street: 45 Clyde Potts Court, city: Morristown, state: nj, zip: 07960}
+  place: '3448300'
+  phone: 973-366-4774 X 120
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/morristown/morristown-housing-authority
   name: Morristown Housing Authority
   categories:
@@ -128,13 +139,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 540 West Hanover Avenue, city: Morristown, state: nj, zip: 07960}
+  address:
+    street: 540 West Hanover Avenue
+    city: Morristown
+    state: nj
+    zip: 07960
   place: '3448300'
-  geo: {lat: 40.83242, lng: -74.52139}
+  geo:
+    lat: 40.83242
+    lng: -74.52139
   phone: 973-539-9791
   website: https://www.va.gov/new-jersey-health-care/locations/morristown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -145,10 +169,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GH}
+  external_ids:
+    va: vha_561GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/morristown/mrs-wilson-s-halfway-house
   name: Mrs Wilson's Halfway House
   categories:

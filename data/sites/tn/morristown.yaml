@@ -85,6 +85,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: tn/morristown/douglas-cherokee-economic-authority-inc
+  name: Douglas-Cherokee Economic Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cocke, Grainger, Hamblen, Jefferson, Monroe, Sevier Counties
+  address: {street: 534 E. First North Street (P. O. Box 1218), city: Morristown, state: tn, zip: '37816'}
+  place: '4750280'
+  phone: 423-587-4500
+  website: https://www.dcea-liheap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/morristown/early-head-start-west
   name: EARLY HEAD START WEST
   categories:
@@ -245,13 +257,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 226 Euclid Avenue, city: Morristown, state: tn, zip: '37813'}
+  address:
+    street: 226 Euclid Avenue
+    city: Morristown
+    state: tn
+    zip: '37813'
   place: '4750280'
-  geo: {lat: 36.21665, lng: -83.28229}
+  geo:
+    lat: 36.21665
+    lng: -83.28229
   phone: 423-586-9100
   website: https://www.va.gov/mountain-home-health-care/locations/morristown-east-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -259,10 +284,13 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Telehealth
   - Urology
-  external_ids: {va: vha_621GP}
+  external_ids:
+    va: vha_621GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/morristown/morristown-va-clinic
   name: Morristown VA Clinic
   categories:
@@ -284,22 +312,38 @@
   name: Morristown VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 226 Euclid Avenue, city: Morristown, state: tn, zip: '37813'}
+  address:
+    street: 226 Euclid Avenue
+    city: Morristown
+    state: tn
+    zip: '37813'
   place: '4750280'
-  geo: {lat: 36.21665, lng: -83.28229}
+  geo:
+    lat: 36.21665
+    lng: -83.28229
   phone: 423-586-9100
   website: https://www.va.gov/mountain-home-health-care/locations/morristown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_621GG}
+  external_ids:
+    va: vha_621GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/morristown/mountain-view
   name: MOUNTAIN VIEW
   categories:

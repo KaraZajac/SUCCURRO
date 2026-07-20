@@ -61,12 +61,25 @@
   name: Chatsworth Vet Center
   categories:
   - vet-center
-  address: {street: '20946 Devonshire Street, Suite 101', city: Chatsworth, state: ca, zip: '91311'}
-  geo: {lat: 34.25695, lng: -118.59054}
+  address:
+    street: 20946 Devonshire Street, Suite 101
+    city: Chatsworth
+    state: ca
+    zip: '91311'
+  geo:
+    lat: 34.25695
+    lng: -118.59054
   phone: 818-576-0201
   website: https://www.va.gov/chatsworth-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -80,10 +93,13 @@
   - Veteran connections
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0605V}
+  external_ids:
+    va: vc_0605V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/chatsworth/germain-academy-for-academic-achievement
   name: Germain Academy For Academic Achievement
   categories:

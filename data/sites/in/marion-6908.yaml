@@ -200,6 +200,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/marion-6908/interlocal-community-action-program-inc
+  name: Interlocal Community Action Program, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Grant County
+  address: {street: 901 S. Branson, city: Marion, state: in, zip: '46952'}
+  place: '1846908'
+  phone: 765-573-5193
+  email: icap@icapcaa.org
+  website: https://www.icapcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/marion-6908/kendall-elementary
   name: Kendall Elementary
   categories:
@@ -240,13 +253,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1700 East 38th Street, city: Marion, state: in, zip: '46953'}
+  address:
+    street: 1700 East 38th Street
+    city: Marion
+    state: in
+    zip: '46953'
   place: '1846908'
-  geo: {lat: 40.52368, lng: -85.6372}
+  geo:
+    lat: 40.52368
+    lng: -85.6372
   phone: 765-674-3321
   website: https://www.va.gov/northern-indiana-health-care/locations/marion-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -266,10 +292,13 @@
   - Surgery
   - Urgent care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_610}
+  external_ids:
+    va: vha_610
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/marion-6908/meridian-health-services-corp
   name: Meridian Health Services Corp
   categories:
@@ -556,11 +585,20 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '1700 East 38th Street, Suite 1300', city: Marion, state: in, zip: '46953'}
+  address:
+    street: 1700 East 38th Street, Suite 1300
+    city: Marion
+    state: in
+    zip: '46953'
   place: '1846908'
-  geo: {lat: 40.52368, lng: -85.6372}
+  geo:
+    lat: 40.52368
+    lng: -85.6372
   phone: 260-426-5431, ext. 73804
-  external_ids: {va: vba_326c}
+  external_ids:
+    va: vba_326c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

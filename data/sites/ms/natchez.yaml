@@ -19,6 +19,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/natchez/ajfc-community-action-agency-inc
+  name: AJFC Community Action Agency, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Adams County
+  address: {street: 8 Feltus Street, city: Natchez, state: ms, zip: '39120'}
+  place: '2850440'
+  phone: 601-442-8681
+  website: https://ajfccaa.org/community-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/natchez/christian-hope-church
   name: Christian Hope Church
   categories:
@@ -223,20 +235,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 105 Northgate Drive, city: Natchez, state: ms, zip: '39120'}
+  address:
+    street: 105 Northgate Drive
+    city: Natchez
+    state: ms
+    zip: '39120'
   place: '2850440'
-  geo: {lat: 31.56477, lng: -91.35164}
+  geo:
+    lat: 31.56477
+    lng: -91.35164
   phone: 601-442-7141
   website: https://www.va.gov/jackson-health-care/locations/natchez-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GE}
+  external_ids:
+    va: vha_586GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/natchez/new-beginnings-missionary-bapt
   name: New Beginnings Missionary Bapt
   categories:

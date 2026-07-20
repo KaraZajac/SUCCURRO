@@ -60,6 +60,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/wellsboro/tioga-county-assistance-office
+  name: Tioga County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tioga County
+  address: {street: 11809 Route 6, city: Wellsboro, state: pa, zip: '16901'}
+  place: '4282160'
+  phone: 570-724-4051
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/wellsboro/wellsboro
   name: Wellsboro
   categories:
@@ -127,13 +138,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1835 Shumway Hill Road, city: Wellsboro, state: pa, zip: '16901'}
+  address:
+    street: 1835 Shumway Hill Road
+    city: Wellsboro
+    state: pa
+    zip: '16901'
   place: '4282160'
-  geo: {lat: 41.74005, lng: -77.27015}
+  geo:
+    lat: 41.74005
+    lng: -77.27015
   phone: 607-664-4680
   website: https://www.va.gov/finger-lakes-health-care/locations/wellsboro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -141,7 +165,10 @@
   - Optometry
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_528QF}
+  external_ids:
+    va: vha_528QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

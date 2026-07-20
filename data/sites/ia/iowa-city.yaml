@@ -277,21 +277,42 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/iowa-city/hawkeye-area-community-action-program
+  name: Hawkeye Area Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Johnson County
+  address: {street: 367 Southgate Ave., city: Iowa City, state: ia, zip: '52240'}
+  place: '1938595'
+  phone: 319-337-5765
+  website: http://www.hacap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/iowa-city/iowa-city-2-va-mobile-medical-unit
   name: Iowa City 2 VA Mobile Medical Unit
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 601 Highway 6 West, city: Iowa City, state: ia, zip: '52246'}
+  address:
+    street: 601 Highway 6 West
+    city: Iowa City
+    state: ia
+    zip: '52246'
   place: '1938595'
-  geo: {lat: 41.66362, lng: -91.54863}
+  geo:
+    lat: 41.66362
+    lng: -91.54863
   phone: 319-338-0581
   website: https://www.va.gov/find-locations/facility/vha_636QL
-  external_ids: {va: vha_636QL}
+  external_ids:
+    va: vha_636QL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/iowa-city/iowa-city-housing-authority
   name: Iowa City Housing Authority
   categories:
@@ -339,29 +360,50 @@
   name: Iowa City VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '400 South Clinton Street, Iowa City Federal Building', city: Iowa City, state: ia,
-    zip: '52240'}
+  address:
+    street: 400 South Clinton Street, Iowa City Federal Building
+    city: Iowa City
+    state: ia
+    zip: '52240'
   place: '1938595'
-  geo: {lat: 41.65618, lng: -91.53392}
+  geo:
+    lat: 41.65618
+    lng: -91.53392
   phone: 319-351-1110
   website: https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Physical therapy, occupational therapy and kinesiotherapy
   - Rehabilitation and extended care
-  external_ids: {va: vha_636QJ}
+  external_ids:
+    va: vha_636QJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/iowa-city/iowa-city-va-medical-center
   name: Iowa City VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 601 Highway 6 West, city: Iowa City, state: ia, zip: '52246'}
+  address:
+    street: 601 Highway 6 West
+    city: Iowa City
+    state: ia
+    zip: '52246'
   place: '1938595'
-  geo: {lat: 41.66361, lng: -91.54862}
+  geo:
+    lat: 41.66361
+    lng: -91.54862
   phone: 319-338-0581
   website: https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-medical-center/
   services:
@@ -397,25 +439,44 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_636A8}
+  external_ids:
+    va: vha_636A8
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/iowa-city/iowa-city-va-mobile-medical-unit
   name: Iowa City VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 601 Highway 6 West, city: Iowa City, state: ia, zip: '52246'}
+  address:
+    street: 601 Highway 6 West
+    city: Iowa City
+    state: ia
+    zip: '52246'
   place: '1938595'
-  geo: {lat: 41.66361, lng: -91.54862}
+  geo:
+    lat: 41.66361
+    lng: -91.54862
   phone: 319-338-0581
   website: https://www.va.gov/find-locations/facility/vha_636QG
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_636QG}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_636QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/iowa-city/lake-ridge-estates
   name: Lake Ridge Estates
   categories:
@@ -554,9 +615,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '601 Highway 6 West, Room 1E52', city: Iowa City, state: ia, zip: '52246'}
+  address:
+    street: 601 Highway 6 West, Room 1E52
+    city: Iowa City
+    state: ia
+    zip: '52246'
   place: '1938595'
-  geo: {lat: 41.66361, lng: -91.54862}
+  geo:
+    lat: 41.66361
+    lng: -91.54862
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -568,10 +635,13 @@
   - PreDischargeClaimAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_333e}
+  external_ids:
+    va: vba_333e
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/iowa-city/veterans-affairs-med-center-outpatient-subst-abu
   name: Veterans Affairs Med Center Outpatient Subst Abuse Treatment Program (SATP)
   categories:

@@ -341,14 +341,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5838 Metro Way Southwest, city: Wyoming, state: mi, zip: '49519'}
+  address:
+    street: 5838 Metro Way Southwest
+    city: Wyoming
+    state: mi
+    zip: '49519'
   place: '2688940'
-  geo: {lat: 42.85818, lng: -85.71426}
+  geo:
+    lat: 42.85818
+    lng: -85.71426
   phone: 616-249-5300
   website: https://www.va.gov/battle-creek-health-care/locations/wyoming-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
-  - {days: [wed], open: '07:30', close: '18:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - wed
+    open: 07:30
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -384,7 +399,10 @@
   - Urology
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_515BY}
+  external_ids:
+    va: vha_515BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

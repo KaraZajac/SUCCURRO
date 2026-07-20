@@ -672,19 +672,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 624 East Front Avenue, city: Spokane, state: wa, zip: '99202'}
+  address:
+    street: 624 East Front Avenue
+    city: Spokane
+    state: wa
+    zip: '99202'
   place: '5367000'
-  geo: {lat: 47.66032, lng: -117.40147}
+  geo:
+    lat: 47.66032
+    lng: -117.40147
   phone: 509-434-7000
   website: https://www.va.gov/spokane-health-care/locations/east-front-avenue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_668GC}
+  external_ids:
+    va: vha_668GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/spokane/east-valley-middle-school
   name: East Valley Middle School
   categories:
@@ -1393,13 +1409,28 @@
   name: Mann-Grandstaff Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 4815 North Assembly Street, city: Spokane, state: wa, zip: '99205'}
+  address:
+    street: 4815 North Assembly Street
+    city: Spokane
+    state: wa
+    zip: '99205'
   place: '5367000'
-  geo: {lat: 47.70193, lng: -117.47562}
+  geo:
+    lat: 47.70193
+    lng: -117.47562
   phone: 509-434-7000
   website: https://www.va.gov/spokane-health-care/locations/mann-grandstaff-department-of-veterans-affairs-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '07:00', close: '19:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 07:00
+    close: '19:00'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -1463,10 +1494,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_668}
+  external_ids:
+    va: vha_668
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/spokane/mann-grandstaff-va-medical-center-substance-abus
   name: Mann Grandstaff VA Medical Center Substance Abuse Treatment Program
   categories:
@@ -2294,6 +2328,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/spokane/snap
+  name: SNAP
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Spokane County
+  address: {street: 3102 W. Whistalks Way, city: Spokane, state: wa, zip: '99224'}
+  place: '5367000'
+  phone: 509-456-7627
+  website: https://www.snapwa.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/spokane/southgate-clinic
   name: Southgate Clinic
   categories:
@@ -2588,30 +2634,59 @@
   name: Spokane VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 504 East 2nd Avenue, city: Spokane, state: wa, zip: '99202'}
+  address:
+    street: 504 East 2nd Avenue
+    city: Spokane
+    state: wa
+    zip: '99202'
   place: '5367000'
-  geo: {lat: 47.65443, lng: -117.40325}
+  geo:
+    lat: 47.65443
+    lng: -117.40325
   phone: 509-462-2500
   website: https://www.va.gov/spokane-health-care/locations/spokane-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_668QE}
+  external_ids:
+    va: vha_668QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/spokane/spokane-vet-center
   name: Spokane Vet Center
   categories:
   - vet-center
-  address: {street: 13109 East Mirabeau Parkway, city: Spokane, state: wa, zip: '99216'}
+  address:
+    street: 13109 East Mirabeau Parkway
+    city: Spokane
+    state: wa
+    zip: '99216'
   place: '5367000'
-  geo: {lat: 47.68671, lng: -117.22664}
+  geo:
+    lat: 47.68671
+    lng: -117.22664
   phone: 509-444-8387
   website: https://www.va.gov/spokane-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2628,10 +2703,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0510V}
+  external_ids:
+    va: vc_0510V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/spokane/stevens-elementary
   name: Stevens Elementary
   categories:
@@ -2852,9 +2930,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '920 West Riverside Avenue, Suite 594', city: Spokane, state: wa, zip: '99201'}
+  address:
+    street: 920 West Riverside Avenue, Suite 594
+    city: Spokane
+    state: wa
+    zip: '99201'
   place: '5367000'
-  geo: {lat: 47.65856, lng: -117.42606}
+  geo:
+    lat: 47.65856
+    lng: -117.42606
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -2868,10 +2952,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_346b}
+  external_ids:
+    va: vba_346b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/spokane/valley-mission-park
   name: Valley Mission Park
   categories:

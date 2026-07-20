@@ -260,13 +260,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 101 Ridge Street, city: Glens Falls, state: ny, zip: '12801'}
+  address:
+    street: 101 Ridge Street
+    city: Glens Falls
+    state: ny
+    zip: '12801'
   place: '3629333'
-  geo: {lat: 43.31242, lng: -73.64364}
+  geo:
+    lat: 43.31242
+    lng: -73.64364
   phone: 518-798-6066
   website: https://www.va.gov/albany-health-care/locations/glens-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -274,10 +287,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GT}
+  external_ids:
+    va: vha_528GT
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/glens-falls/health-center-on-broad-street
   name: Health Center on Broad Street
   categories:

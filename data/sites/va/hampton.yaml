@@ -393,15 +393,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 100 Emancipation Drive, city: Hampton, state: va, zip: '23667'}
+  address:
+    street: 100 Emancipation Drive
+    city: Hampton
+    state: va
+    zip: '23667'
   place: '5135000'
-  geo: {lat: 37.01531, lng: -76.3332}
+  geo:
+    lat: 37.01531
+    lng: -76.3332
   phone: 757-722-9961
   website: https://www.va.gov/find-locations/facility/vha_590QC
-  external_ids: {va: vha_590QC}
+  external_ids:
+    va: vha_590QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: va/hampton/hampton-department-of-social-services
+  name: Hampton Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hampton City County
+  address: {street: '400 Butler Farm Road, Suite 200', city: Hampton, state: va, zip: '23666'}
+  place: '5135000'
+  phone: 757-727-1800
+  website: https://hampton.gov/269/Human-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/hampton/hampton-high
   name: Hampton High
   categories:
@@ -506,9 +527,15 @@
   name: Hampton VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 100 Emancipation Drive, city: Hampton, state: va, zip: '23667'}
+  address:
+    street: 100 Emancipation Drive
+    city: Hampton
+    state: va
+    zip: '23667'
   place: '5135000'
-  geo: {lat: 37.01486, lng: -76.333}
+  geo:
+    lat: 37.01486
+    lng: -76.333
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/hampton-va-medical-center/
   services:
@@ -544,10 +571,13 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_590}
+  external_ids:
+    va: vha_590
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/hampton/hampton-vamc-mental-health-sud-services
   name: Hampton VAMC Mental Health SUD Services
   categories:
@@ -616,9 +646,15 @@
   categories: &id002
   - va-facility
   description: IDES Site
-  address: {street: '77 Nealy Ave, Bldg 266', city: Hampton, state: va, zip: '23665'}
+  address:
+    street: 77 Nealy Ave, Bldg 266
+    city: Hampton
+    state: va
+    zip: '23665'
   place: '5135000'
-  geo: {lat: 37.07363, lng: -76.35727}
+  geo:
+    lat: 37.07363
+    lng: -76.35727
   phone: 757-225-6959
   website: https://www.va.gov/find-locations/facility/vba_314n
   services:
@@ -628,10 +664,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314n}
+  external_ids:
+    va: vba_314n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/hampton/integrated-health-services-llc
   name: Integrated Health Services LLC
   categories:
@@ -696,19 +735,35 @@
   name: Langley VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 77 Nealy Avenue, city: Hampton, state: va, zip: '23665'}
+  address:
+    street: 77 Nealy Avenue
+    city: Hampton
+    state: va
+    zip: '23665'
   place: '5135000'
-  geo: {lat: 37.07044, lng: -76.36036}
+  geo:
+    lat: 37.07044
+    lng: -76.36036
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/langley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_590QD}
+  external_ids:
+    va: vha_590QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/hampton/little-england-cultural-center
   name: Little England Cultural Center
   categories:
@@ -1069,17 +1124,26 @@
   name: Veteran Readiness and Employment Office at The Net Center
   categories: *id002
   description: Veteran Readiness and Employment Office
-  address: {street: '5200 W. Mercury Blvd, Suite 295', city: Hampton, state: va, zip: '23605'}
+  address:
+    street: 5200 W. Mercury Blvd, Suite 295
+    city: Hampton
+    state: va
+    zip: '23605'
   place: '5135000'
-  geo: {lat: 37.02388, lng: -76.4395}
+  geo:
+    lat: 37.02388
+    lng: -76.4395
   phone: 757-896-2200
   website: https://www.va.gov/find-locations/facility/vba_314g
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314g}
+  external_ids:
+    va: vba_314g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/hampton/west-hampton-community-ctr
   name: West Hampton Community Ctr
   categories:

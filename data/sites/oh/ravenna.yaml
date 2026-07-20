@@ -144,6 +144,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/ravenna/community-action-council-of-portage-county
+  name: Community Action Council of Portage County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Portage County
+  address: {street: 1036 W. Main St. (P.O. Box 917), city: Ravenna, state: oh, zip: '44266'}
+  place: '3965592'
+  phone: 330-297-1456
+  email: info@cacportage.net
+  website: http://www.cacportage.net/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/ravenna/community-action-council-youth-center
   name: Community Action Council Youth Center
   categories:
@@ -357,13 +370,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 6751 North Chestnut Street, city: Ravenna, state: oh, zip: '44266'}
+  address:
+    street: 6751 North Chestnut Street
+    city: Ravenna
+    state: oh
+    zip: '44266'
   place: '3965592'
-  geo: {lat: 41.1786, lng: -81.2563}
+  geo:
+    lat: 41.1786
+    lng: -81.2563
   phone: 330-296-3641
   website: https://www.va.gov/northeast-ohio-health-care/locations/ravenna-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -377,10 +403,13 @@
   - Suicide prevention
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_541GK}
+  external_ids:
+    va: vha_541GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/ravenna/reed-memorial-library
   name: Reed Memorial Library
   categories:

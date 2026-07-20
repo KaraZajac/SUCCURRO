@@ -566,13 +566,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 180 Old Hickory Boulevard, city: Jackson, state: tn, zip: '38305'}
+  address:
+    street: 180 Old Hickory Boulevard
+    city: Jackson
+    state: tn
+    zip: '38305'
   place: '4737640'
-  geo: {lat: 35.65321, lng: -88.83489}
+  geo:
+    lat: 35.65321
+    lng: -88.83489
   phone: 731-661-2750
   website: https://www.va.gov/memphis-health-care/locations/jackson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
@@ -580,10 +593,13 @@
   - Optometry
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_614GG}
+  external_ids:
+    va: vha_614GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/jackson/jcm-high-school-credit-recovery
   name: Jcm High School Credit Recovery
   categories:
@@ -1173,6 +1189,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/jackson/southwest-human-resource-agency-madison
+  name: Southwest Human Resource Agency - Madison
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Madison County
+  address: {street: 1124 Whitehall Street, city: Jackson, state: tn, zip: '38301'}
+  place: '4737640'
+  phone: 731-423-8768
+  website: https://www.swhra.org/low-income-energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/jackson/spero-health-jackson
   name: Spero Health Jackson
   categories:

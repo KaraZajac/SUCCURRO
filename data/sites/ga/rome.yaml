@@ -425,13 +425,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 30 Chateau Drive Southeast, city: Rome, state: ga, zip: '30161'}
+  address:
+    street: 30 Chateau Drive Southeast
+    city: Rome
+    state: ga
+    zip: '30161'
   place: '1366668'
-  geo: {lat: 34.22017, lng: -85.15482}
+  geo:
+    lat: 34.22017
+    lng: -85.15482
   phone: 706-291-3620
   website: https://www.va.gov/atlanta-health-care/locations/rome-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -439,10 +452,13 @@
   - Ophthalmology
   - Primary care
   - Telehealth
-  external_ids: {va: vha_508GL}
+  external_ids:
+    va: vha_508GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/rome/southeast-detox-ga
   name: Southeast Detox GA
   categories:

@@ -82,20 +82,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1651 Highway 1 South, city: Greenville, state: ms, zip: '38701'}
+  address:
+    street: 1651 Highway 1 South
+    city: Greenville
+    state: ms
+    zip: '38701'
   place: '2829180'
-  geo: {lat: 33.375, lng: -91.0397}
+  geo:
+    lat: 33.375
+    lng: -91.0397
   phone: 662-599-2007
   website: https://www.va.gov/jackson-health-care/locations/greenville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GC}
+  external_ids:
+    va: vha_586GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/greenville/life-help-mental-health-ctr-region-6
   name: Life Help Mental Health Ctr/Region 6
   categories:
@@ -327,3 +343,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/greenville/wwiscaa
+  name: WWISCAA
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: 1165 South Raceway Road, city: Greenville, state: ms, zip: '38701'}
+  place: '2829180'
+  phone: 662-378-8663
+  website: https://www.wwiscaa.net/copy-of-homemaker-services-2
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

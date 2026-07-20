@@ -897,15 +897,24 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3200 Vine Street, city: Cincinnati, state: oh, zip: '45220'}
+  address:
+    street: 3200 Vine Street
+    city: Cincinnati
+    state: oh
+    zip: '45220'
   place: '3915000'
-  geo: {lat: 39.13816, lng: -84.5095}
+  geo:
+    lat: 39.13816
+    lng: -84.5095
   phone: 513-861-3100
   website: https://www.va.gov/find-locations/facility/vha_539QE
-  external_ids: {va: vha_539QE}
+  external_ids:
+    va: vha_539QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/cincinnati-childrens-hospital-med-ctr-burnet-cam
   name: Cincinnati Childrens Hospital Med Ctr Burnet Campus
   categories:
@@ -1059,9 +1068,15 @@
   name: Cincinnati VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3200 Vine Street, city: Cincinnati, state: oh, zip: '45220'}
+  address:
+    street: 3200 Vine Street
+    city: Cincinnati
+    state: oh
+    zip: '45220'
   place: '3915000'
-  geo: {lat: 39.13815, lng: -84.5095}
+  geo:
+    lat: 39.13815
+    lng: -84.5095
   phone: 513-861-3100
   website: https://www.va.gov/cincinnati-health-care/locations/cincinnati-va-medical-center/
   services:
@@ -1118,10 +1133,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_539}
+  external_ids:
+    va: vha_539
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/cincinnati-va-medical-center-substance-dependenc
   name: Cincinnati VA Medical Center Substance Dependence Program
   categories:
@@ -1146,13 +1164,26 @@
   name: Cincinnati Vet Center
   categories:
   - vet-center
-  address: {street: '615 Elsinore Place, 200A', city: Cincinnati, state: oh, zip: '45202'}
+  address:
+    street: 615 Elsinore Place, 200A
+    city: Cincinnati
+    state: oh
+    zip: '45202'
   place: '3915000'
-  geo: {lat: 39.11317, lng: -84.50201}
+  geo:
+    lat: 39.11317
+    lng: -84.50201
   phone: 513-763-3500
   website: https://www.va.gov/cincinnati-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1168,10 +1199,13 @@
   - Veteran connections
   - Whole health
   - Workshops and classes
-  external_ids: {va: vc_0204V}
+  external_ids:
+    va: vc_0204V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/city-of-cincinnati-health-department-administrat
   name: City of Cincinnati Health Department/Administration Offices/Ambrose H. Clement
   categories:
@@ -1241,13 +1275,26 @@
   name: Clermont County VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 4600 Beechwood Road, city: Cincinnati, state: oh, zip: '45244'}
+  address:
+    street: 4600 Beechwood Road
+    city: Cincinnati
+    state: oh
+    zip: '45244'
   place: '3915000'
-  geo: {lat: 39.11168, lng: -84.30439}
+  geo:
+    lat: 39.11168
+    lng: -84.30439
   phone: 513-943-3680
   website: https://www.va.gov/cincinnati-health-care/locations/clermont-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -1261,10 +1308,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_539GB}
+  external_ids:
+    va: vha_539GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/clifton-library
   name: Clifton Library
   categories:
@@ -1309,6 +1359,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/cincinnati/community-action-agency-cincinnati-hamilton-coun
+  name: Community Action Agency Cincinnati-Hamilton County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hamilton County
+  address: {street: 1740 Langdon Farm Road, city: Cincinnati, state: oh, zip: '45237'}
+  place: '3915000'
+  phone: 513-569-1840
+  website: https://www.cincy-caa.org/what-we-do/supportive-services/utility-assistance-programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/cincinnati/community-building
   name: Community Building
   categories:
@@ -1806,20 +1868,36 @@
   name: Eden Park VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2090 Florence Avenue, city: Cincinnati, state: oh, zip: '45206'}
+  address:
+    street: 2090 Florence Avenue
+    city: Cincinnati
+    state: oh
+    zip: '45206'
   place: '3915000'
-  geo: {lat: 39.11939, lng: -84.49786}
+  geo:
+    lat: 39.11939
+    lng: -84.49786
   phone: 513-559-3599
   website: https://www.va.gov/cincinnati-health-care/locations/highland-avenue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Ophthalmology
   - Optometry
-  external_ids: {va: vha_539QB}
+  external_ids:
+    va: vha_539QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/elmwood-place-library
   name: Elmwood Place Library
   categories:
@@ -4801,9 +4879,15 @@
   categories: &id002
   - va-facility
   description: Satellite Office
-  address: {street: '311 Elm Street, Suite 330', city: Cincinnati, state: oh, zip: '45202'}
+  address:
+    street: 311 Elm Street, Suite 330
+    city: Cincinnati
+    state: oh
+    zip: '45202'
   place: '3915000'
-  geo: {lat: 39.09831, lng: -84.51567}
+  geo:
+    lat: 39.09831
+    lng: -84.51567
   phone: 513-684-2661
   services:
   - ApplyingForBenefits
@@ -4812,27 +4896,39 @@
   - FamilyMemberClaimAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_325b}
+  external_ids:
+    va: vba_325b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/vetsuccess-on-campus-at-university-of-cincinnati
   name: VetSuccess on Campus at University of Cincinnati
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: 230 University Pavilion, city: Cincinnati, state: oh, zip: '45221'}
+  address:
+    street: 230 University Pavilion
+    city: Cincinnati
+    state: oh
+    zip: '45221'
   place: '3915000'
-  geo: {lat: 39.13168, lng: -84.51849}
+  geo:
+    lat: 39.13168
+    lng: -84.51849
   phone: 513-556-3322
   website: https://www.va.gov/find-locations/facility/vba_325h
   services:
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_325h}
+  external_ids:
+    va: vba_325h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/viking-school-based-health-center
   name: Viking School Based Health Center
   categories:
@@ -4880,19 +4976,35 @@
   name: Vine Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 909 Vine Street, city: Cincinnati, state: oh, zip: '45202'}
+  address:
+    street: 909 Vine Street
+    city: Cincinnati
+    state: oh
+    zip: '45202'
   place: '3915000'
-  geo: {lat: 39.10573, lng: -84.51414}
+  geo:
+    lat: 39.10573
+    lng: -84.51414
   phone: 513-977-6800
   website: https://www.va.gov/cincinnati-health-care/locations/vine-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_539QC}
+  external_ids:
+    va: vha_539QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cincinnati/walnut-hills-branch-cinci-library
   name: Walnut Hills Branch Cinci Library
   categories:

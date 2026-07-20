@@ -184,6 +184,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/clarksburg/harrison-county-dhhr-office
+  name: Harrison County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Harrison County
+  address: {street: '153 W. Main St., Suite D.', city: Clarksburg, state: wv, zip: '26301'}
+  place: '5415628'
+  phone: 304-627-2295
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/clarksburg/highland-clarksburg-hospital
   name: Highland/Clarksburg Hospital
   categories:
@@ -255,9 +266,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1 Medical Center Drive, city: Clarksburg, state: wv, zip: '26301'}
+  address:
+    street: 1 Medical Center Drive
+    city: Clarksburg
+    state: wv
+    zip: '26301'
   place: '5415628'
-  geo: {lat: 39.27034, lng: -80.36142}
+  geo:
+    lat: 39.27034
+    lng: -80.36142
   phone: 304-623-3461
   website: https://www.va.gov/clarksburg-health-care/locations/louis-a-johnson-veterans-administration-medical-center/
   services:
@@ -304,10 +321,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_540}
+  external_ids:
+    va: vha_540
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/clarksburg/louis-a-johnson-veterans-affairs-med-center-subs
   name: Louis A Johnson Veterans Affairs Med Center/Substance Abuse Services
   categories:
@@ -541,17 +561,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 'One Medical Center Drive, Room 4C488', city: Clarksburg, state: wv, zip: '26301'}
+  address:
+    street: One Medical Center Drive, Room 4C488
+    city: Clarksburg
+    state: wv
+    zip: '26301'
   place: '5415628'
-  geo: {lat: 39.27034, lng: -80.36142}
+  geo:
+    lat: 39.27034
+    lng: -80.36142
   phone: 304-623-3461, ext. 2313
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_315g}
+  external_ids:
+    va: vba_315g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/clarksburg/victory-elementary
   name: Victory Elementary
   categories:

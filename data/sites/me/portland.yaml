@@ -980,6 +980,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: me/portland/opportunity-alliance
+  name: Opportunity Alliance
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cumberland County
+  address: {street: '222 St. John Steet, Suite 207', city: Portland, state: me, zip: '04102'}
+  place: '2360545'
+  phone: 207-553-5900
+  website: http://www.opportunityalliance.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: me/portland/portland-community-health-center-dba-greater-por
   name: Portland Community Health Center DBA Greater Portland Health
   categories:
@@ -1154,13 +1166,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 141 West Commercial Street, city: Portland, state: me, zip: '04102'}
+  address:
+    street: 141 West Commercial Street
+    city: Portland
+    state: me
+    zip: '04102'
   place: '2360545'
-  geo: {lat: 43.64398, lng: -70.26936}
+  geo:
+    lat: 43.64398
+    lng: -70.26936
   phone: 877-421-8263
   website: https://www.va.gov/maine-health-care/locations/portland-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1196,10 +1221,13 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_402HC}
+  external_ids:
+    va: vha_402HC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/portland/psl-services-wall-street-wall-street
   name: PSL Services/Wall Street Wall Street
   categories:

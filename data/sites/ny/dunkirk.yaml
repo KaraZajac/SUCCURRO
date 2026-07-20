@@ -63,6 +63,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/dunkirk/chautauqua-county-department-of-social-service-d
+  name: Chautauqua County Department of Social Service - Dunkirk
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chautauqua County
+  address: {street: 15W. Lucas Avenue, city: Dunkirk, state: ny, zip: '14048'}
+  place: '3621105'
+  phone: 716-363-3500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/dunkirk/chautauqua-county-dept-mental-hygiene-dunkirk-me
   name: Chautauqua County Dept Mental Hygiene Dunkirk Mental Health Clinic
   categories:
@@ -151,13 +162,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1170 Central Avenue, city: Dunkirk, state: ny, zip: '14048'}
+  address:
+    street: 1170 Central Avenue
+    city: Dunkirk
+    state: ny
+    zip: '14048'
   place: '3621105'
-  geo: {lat: 42.45757, lng: -79.33208}
+  geo:
+    lat: 42.45757
+    lng: -79.33208
   phone: 716-203-6474
   website: https://www.va.gov/western-new-york-health-care/locations/dunkirk-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -168,10 +192,13 @@
   - Primary care
   - Radiology
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GC}
+  external_ids:
+    va: vha_528GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/dunkirk/early-childhood-community-center-holy-trinity
   name: Early Childhood Community Center/Holy Trinity
   categories:

@@ -470,6 +470,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/waterloo/operation-threshold
+  name: Operation Threshold
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Black Hawk County
+  address: {street: 1535 Lafayette St. (P.O. Box 4120), city: Waterloo, state: ia, zip: '50704'}
+  place: '1982425'
+  phone: 319-291-2065
+  website: http://www.operationthreshold.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/waterloo/orange-elementary-school
   name: Orange Elementary School
   categories:
@@ -594,9 +606,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 4000 University Avenue, city: Waterloo, state: ia, zip: '50701'}
+  address:
+    street: 4000 University Avenue
+    city: Waterloo
+    state: ia
+    zip: '50701'
   place: '1982425'
-  geo: {lat: 42.50543, lng: -92.40488}
+  geo:
+    lat: 42.50543
+    lng: -92.40488
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -610,10 +628,13 @@
   - UpdatingDirectDepositInformation
   - VAHomeLoanAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_333f}
+  external_ids:
+    va: vba_333f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/waterloo/waterloo-housing-authority
   name: Waterloo Housing Authority
   categories:
@@ -640,13 +661,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4000 University Avenue, city: Waterloo, state: ia, zip: '50701'}
+  address:
+    street: 4000 University Avenue
+    city: Waterloo
+    state: ia
+    zip: '50701'
   place: '1982425'
-  geo: {lat: 42.50525, lng: -92.40406}
+  geo:
+    lat: 42.50525
+    lng: -92.40406
   phone: 319-235-1230
   website: https://www.va.gov/iowa-city-health-care/locations/waterloo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -660,7 +694,10 @@
   - Radiology
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GH}
+  external_ids:
+    va: vha_636GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

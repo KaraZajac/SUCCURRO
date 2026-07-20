@@ -44,13 +44,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 408 Park West Court, city: Decatur, state: tx, zip: '76234'}
+  address:
+    street: 408 Park West Court
+    city: Decatur
+    state: tx
+    zip: '76234'
   place: '4819528'
-  geo: {lat: 33.23157, lng: -97.60826}
+  geo:
+    lat: 33.23157
+    lng: -97.60826
   phone: 940-627-7001
   website: https://www.va.gov/north-texas-health-care/locations/decatur-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -59,10 +72,13 @@
   - Pharmacy
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GE}
+  external_ids:
+    va: vha_549GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/decatur/housing-authority-of-decatur
   name: Housing Authority Of Decatur
   categories:

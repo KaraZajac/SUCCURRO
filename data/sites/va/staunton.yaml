@@ -268,13 +268,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 102 Lacy B. King Way, city: Staunton, state: va, zip: '24401'}
+  address:
+    street: 102 Lacy B. King Way
+    city: Staunton
+    state: va
+    zip: '24401'
   place: '5175216'
-  geo: {lat: 38.1365, lng: -79.08872}
+  geo:
+    lat: 38.1365
+    lng: -79.08872
   phone: 540-886-5777
   website: https://www.va.gov/salem-health-care/locations/staunton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -284,10 +297,13 @@
   - Orthopedics
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_658GD}
+  external_ids:
+    va: vha_658GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/staunton/thomas-c-mcswain-elem
   name: Thomas C. Mcswain Elem
   categories:

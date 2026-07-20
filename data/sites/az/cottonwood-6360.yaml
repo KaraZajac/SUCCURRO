@@ -129,13 +129,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 501 South Willard Street, city: Cottonwood, state: az, zip: '86326'}
+  address:
+    street: 501 South Willard Street
+    city: Cottonwood
+    state: az
+    zip: '86326'
   place: '0416360'
-  geo: {lat: 34.73053, lng: -112.0292}
+  geo:
+    lat: 34.73053
+    lng: -112.0292
   phone: 928-649-1532
   website: https://www.va.gov/northern-arizona-health-care/locations/cottonwood-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:00'
   services:
   - Cardiology
   - Dermatology
@@ -147,10 +160,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649GE}
+  external_ids:
+    va: vha_649GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/cottonwood-6360/dr-daniel-bright-elementary-school
   name: Dr Daniel Bright Elementary School
   categories:

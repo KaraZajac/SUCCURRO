@@ -103,6 +103,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/tuscaloosa/community-service-program-of-west-alabama
+  name: Community Service Program of West Alabama
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fayette, Tuscaloosa Counties
+  address: {street: 1600 Temple Ave. North Suite 7, city: Tuscaloosa, state: al, zip: '35555'}
+  place: '0177256'
+  phone: 205-932-3218
+  website: https://www.cspwal.com/liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/tuscaloosa/csp-west-al-tender-loving-care
   name: CSP WEST AL - Tender Loving Care
   categories:
@@ -414,9 +426,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 3701 Loop Road East, city: Tuscaloosa, state: al, zip: '35404'}
+  address:
+    street: 3701 Loop Road East
+    city: Tuscaloosa
+    state: al
+    zip: '35404'
   place: '0177256'
-  geo: {lat: 33.19015, lng: -87.48823}
+  geo:
+    lat: 33.19015
+    lng: -87.48823
   phone: 205-554-2000
   website: https://www.va.gov/tuscaloosa-health-care/locations/tuscaloosa-va-medical-center/
   services:
@@ -449,10 +467,13 @@
   - Suicide prevention
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_679}
+  external_ids:
+    va: vha_679
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/tuscaloosa/tuscaloosa-va-medical-center-comprehensive-op-su
   name: Tuscaloosa VA Medical Center Comprehensive OP Substance Abuse Treat
   categories:

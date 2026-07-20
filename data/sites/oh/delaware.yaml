@@ -43,19 +43,35 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 870 Sunbury Road, city: Delaware, state: oh, zip: '43015'}
+  address:
+    street: 870 Sunbury Road
+    city: Delaware
+    state: oh
+    zip: '43015'
   place: '3921434'
-  geo: {lat: 40.29288, lng: -83.03787}
+  geo:
+    lat: 40.29288
+    lng: -83.03787
   phone: 614-257-5604
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - PrimaryCare
-  external_ids: {va: vha_757GE}
+  external_ids:
+    va: vha_757GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/delaware/mid-ohio-psychological-services
   name: Mid Ohio Psychological Services
   categories:

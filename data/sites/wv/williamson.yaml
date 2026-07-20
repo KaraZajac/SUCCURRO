@@ -88,13 +88,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '2867 Route 65, 15 Lenore Business Mall', city: Williamson, state: wv, zip: '25661'}
+  address:
+    street: 2867 Route 65, 15 Lenore Business Mall
+    city: Williamson
+    state: wv
+    zip: '25661'
   place: '5487508'
-  geo: {lat: 37.78386, lng: -82.25243}
+  geo:
+    lat: 37.78386
+    lng: -82.25243
   phone: 304-475-3000
   website: https://www.va.gov/huntington-health-care/locations/lenore-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -103,10 +115,24 @@
   - Primary care
   - Telehealth
   - Travel reimbursement
-  external_ids: {va: vha_581GH}
+  external_ids:
+    va: vha_581GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wv/williamson/mingo-county-dhhr-office
+  name: Mingo County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Mingo County
+  address: {street: 203 E. Third Ave., city: Williamson, state: wv, zip: '25661'}
+  place: '5487508'
+  phone: 304-235-4680
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/williamson/mountain-laurel-integrated-health-chattaroy
   name: Mountain Laurel Integrated Health-Chattaroy
   categories:

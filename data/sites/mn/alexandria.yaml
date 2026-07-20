@@ -142,13 +142,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 410 30th Avenue East, city: Alexandria, state: mn, zip: '56308'}
+  address:
+    street: 410 30th Avenue East
+    city: Alexandria
+    state: mn
+    zip: '56308'
   place: '2700928'
-  geo: {lat: 45.86481, lng: -95.37212}
+  geo:
+    lat: 45.86481
+    lng: -95.37212
   phone: 320-759-2640
   website: https://www.va.gov/st-cloud-health-care/locations/max-j-beilke-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -163,10 +176,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_656GC}
+  external_ids:
+    va: vha_656GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/alexandria/minnesota-teen-challenge
   name: Minnesota Teen Challenge
   categories:

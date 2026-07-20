@@ -1,3 +1,16 @@
+- id: ia/knoxville/impact-community-action-partnership-knoxville-pu
+  name: IMPACT Community Action Partnership - Knoxville Public Library
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marion County
+  address: {street: 213 East Montgomery St., city: Knoxville, state: ia, zip: '50138'}
+  place: '1942015'
+  phone: 515-518-4770
+  email: info@impactcap.org
+  website: https://www.impactcap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/knoxville/infinity-health-knoxville
   name: Infinity Health Knoxville
   categories:
@@ -88,13 +101,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1607 North Lincoln Street, city: Knoxville, state: ia, zip: '50138'}
+  address:
+    street: 1607 North Lincoln Street
+    city: Knoxville
+    state: ia
+    zip: '50138'
   place: '1942015'
-  geo: {lat: 41.33254, lng: -93.10947}
+  geo:
+    lat: 41.33254
+    lng: -93.10947
   phone: 641-828-5019
   website: https://www.va.gov/central-iowa-health-care/locations/knoxville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -109,10 +135,13 @@
   - Podiatry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_636GR}
+  external_ids:
+    va: vha_636GR
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/knoxville/low-rent-housing-agency-of-knoxville
   name: Low Rent Housing Agency Of Knoxville
   categories:

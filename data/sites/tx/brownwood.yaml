@@ -87,13 +87,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2600 Memorial Park Drive, city: Brownwood, state: tx, zip: '76801'}
+  address:
+    street: 2600 Memorial Park Drive
+    city: Brownwood
+    state: tx
+    zip: '76801'
   place: '4810780'
-  geo: {lat: 31.67875, lng: -98.9915}
+  geo:
+    lat: 31.67875
+    lng: -98.9915
   phone: 800-423-2111
   website: https://www.va.gov/central-texas-health-care/locations/brownwood-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -107,10 +120,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_674GB}
+  external_ids:
+    va: vha_674GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/brownwood/central-texas-va-healthcare-system-brownwood-cbo
   name: Central Texas VA Healthcare System Brownwood CBOC
   categories:
@@ -152,6 +168,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/brownwood/cornerstone-community-action-agency-brown-county
+  name: Cornerstone Community Action Agency (Brown County)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Brown County
+  address: {street: 1500 Dublin St., city: Brownwood, state: tx, zip: '76801'}
+  place: '4810780'
+  phone: 325-625-4167
+  email: mail@cornerstonecaa.org
+  website: https://www.cornerstonecaa.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/brownwood/ethos-pet-brands-blessings-box
   name: Ethos Pet Brands Blessings Box
   categories:

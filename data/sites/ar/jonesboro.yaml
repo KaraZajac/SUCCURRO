@@ -273,6 +273,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/jonesboro/crowley-ridge-development-council-inc-crdc
+  name: Crowley Ridge Development Council, Inc. (CRDC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Craighead, Saint Francis Counties
+  address: {street: 2401 Fox Meadow Ln., city: Jonesboro, state: ar, zip: '72403'}
+  place: '0535710'
+  phone: 870-802-7100
+  email: crdc@crdcnea.org
+  website: http://www.crdcnea.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/jonesboro/crowleys-ridge-development-council-inc-northeast
   name: Crowleys Ridge Development Council Inc Northeast Arkansas Regional Recov Ctr
   categories:
@@ -483,22 +496,38 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1843 East Highland Drive, city: Jonesboro, state: ar, zip: '72401'}
+  address:
+    street: 1843 East Highland Drive
+    city: Jonesboro
+    state: ar
+    zip: '72401'
   place: '0535710'
-  geo: {lat: 35.81938, lng: -90.68322}
+  geo:
+    lat: 35.81938
+    lng: -90.68322
   phone: 870-277-0778
   website: https://www.va.gov/memphis-health-care/locations/jonesboro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_614GB}
+  external_ids:
+    va: vha_614GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/jonesboro/leadership
   name: Leadership
   categories:

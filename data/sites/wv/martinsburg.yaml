@@ -33,6 +33,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/martinsburg/berkeley-county-dhhr-office
+  name: Berkeley County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Berkeley County
+  address: {street: 433 Mid-Atlantic Parkway (P.O. Box 1247), city: Martinsburg, state: wv, zip: '25402'}
+  place: '5452060'
+  phone: 304-267-0100
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/martinsburg/berkeley-heights
   name: Berkeley Heights
   categories:
@@ -264,9 +275,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 510 Butler Avenue, city: Martinsburg, state: wv, zip: '25405'}
+  address:
+    street: 510 Butler Avenue
+    city: Martinsburg
+    state: wv
+    zip: '25405'
   place: '5452060'
-  geo: {lat: 39.41726, lng: -77.91098}
+  geo:
+    lat: 39.41726
+    lng: -77.91098
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/martinsburg-va-medical-center/
   services:
@@ -320,10 +337,13 @@
   - Urology
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_613}
+  external_ids:
+    va: vha_613
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/martinsburg/national-youth-advocate-program-inc
   name: National Youth Advocate Program Inc
   categories:

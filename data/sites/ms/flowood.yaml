@@ -88,13 +88,26 @@
   name: Jackson Vet Center
   categories:
   - vet-center
-  address: {street: '15 River Bend Place, Suite 15A', city: Flowood, state: ms, zip: '39232'}
+  address:
+    street: 15 River Bend Place, Suite 15A
+    city: Flowood
+    state: ms
+    zip: '39232'
   place: '2825100'
-  geo: {lat: 32.32731, lng: -90.12531}
+  geo:
+    lat: 32.32731
+    lng: -90.12531
   phone: 601-985-2560
   website: https://www.va.gov/jackson-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -106,10 +119,13 @@
   - Suicide prevention
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0709V}
+  external_ids:
+    va: vc_0709V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/flowood/pathway-healthcare
   name: Pathway Healthcare
   categories:

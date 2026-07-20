@@ -40,19 +40,45 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/sanford/lee-county-department-of-social-services
+  name: Lee County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lee County
+  address: {street: 530 Carthage St. (P. O. Box 1066), city: Sanford, state: nc, zip: '27330'}
+  place: '3759280'
+  phone: 919-718-4690
+  email: dssswitchboard@leecountync.gov
+  website: https://leecountync.gov/departments/social_services/index.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/sanford/lee-county-va-clinic
   name: Lee County VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3112 Tramway Road, city: Sanford, state: nc, zip: '27330'}
+  address:
+    street: 3112 Tramway Road
+    city: Sanford
+    state: nc
+    zip: '27330'
   place: '3759280'
-  geo: {lat: 35.43818, lng: -79.21354}
+  geo:
+    lat: 35.43818
+    lng: -79.21354
   phone: 919-775-6160
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/lee-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -60,10 +86,13 @@
   - Optometry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_565GG}
+  external_ids:
+    va: vha_565GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/sanford/ncm-bread-of-life-ministries
   name: Ncm Bread Of Life Ministries
   categories:

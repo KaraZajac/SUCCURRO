@@ -219,13 +219,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 6 Shaw's Cove, city: New London, state: ct, zip: '06320'}
+  address:
+    street: 6 Shaw's Cove
+    city: New London
+    state: ct
+    zip: '06320'
   place: 0952280
-  geo: {lat: 41.34614, lng: -72.10078}
+  geo:
+    lat: 41.34614
+    lng: -72.10078
   phone: 860-437-3611
   website: https://www.va.gov/connecticut-health-care/locations/john-j-mcguirk-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -233,10 +246,13 @@
   - Mental health care
   - Optometry
   - Primary care
-  external_ids: {va: vha_689HC}
+  external_ids:
+    va: vha_689HC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/new-london/new-london-community-center
   name: New London Community Center
   categories:
@@ -427,6 +443,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ct/new-london/thames-valley-council-for-community-action-inc
+  name: Thames Valley Council for Community Action Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New London County
+  address: {street: 83 Huntington St, city: New London, state: ct, zip: '06320'}
+  place: 0952280
+  phone: 860-425-6563
+  website: http://www.tvcca.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ct/new-london/the-interdistrict-school-for-arts-and-communicat
   name: The Interdistrict School for Arts and Communication (ISAAC) - SBHC
   categories:

@@ -92,13 +92,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 619 West Main Street, city: Clarkson, state: ky, zip: '42726'}
+  address:
+    street: 619 West Main Street
+    city: Clarkson
+    state: ky
+    zip: '42726'
   place: '2115148'
-  geo: {lat: 37.49557, lng: -86.23391}
+  geo:
+    lat: 37.49557
+    lng: -86.23391
   phone: 866-653-8232
   website: https://www.va.gov/louisville-health-care/locations/grayson-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -106,10 +119,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_603GF}
+  external_ids:
+    va: vha_603GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/clarkson/intersection-of-vanmeter-st-spring-st-clarkson
   name: Intersection Of Vanmeter St. & Spring St. Clarkson
   categories:

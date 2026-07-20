@@ -66,13 +66,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 128 Lakeside Avenue, city: Burlington, state: vt, zip: '05401'}
+  address:
+    street: 128 Lakeside Avenue
+    city: Burlington
+    state: vt
+    zip: '05401'
   place: '5010675'
-  geo: {lat: 44.46153, lng: -73.21752}
+  geo:
+    lat: 44.46153
+    lng: -73.21752
   phone: 802-657-7000
   website: https://www.va.gov/white-river-junction-health-care/locations/burlington-lakeside-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -94,10 +107,25 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_405HA}
+  external_ids:
+    va: vha_405HA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: vt/burlington/champlain-valley-office-of-economic-opportunity
+  name: Champlain Valley Office of Economic Opportunity (CVOEO)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Grand Isle County
+  address: {street: 255 South Champlain Street (P. O. Box 1603), city: Burlington, state: vt, zip: '05401'}
+  place: '5010675'
+  phone: 802-862-2771
+  website: https://www.cvoeo.org/get-help/home-heating-fuel-and-utilities
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: vt/burlington/college-street-early-learning-center
   name: College Street Early Learning Center
   categories:

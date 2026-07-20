@@ -63,6 +63,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/pocahontas/black-river-area-development-corp-brad
+  name: Black River Area Development Corp. (BRAD)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Randolph County
+  address: {street: 1403 Hospital Drive, city: Pocahontas, state: ar, zip: '72455'}
+  place: '0556540'
+  phone: 870-378-5170
+  website: http://www.blackriverareadevelopment.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/pocahontas/black-river-child-development-center
   name: Black River Child Development Center
   categories:
@@ -187,13 +199,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 300 Camp Road, city: Pocahontas, state: ar, zip: '72455'}
+  address:
+    street: 300 Camp Road
+    city: Pocahontas
+    state: ar
+    zip: '72455'
   place: '0556540'
-  geo: {lat: 36.28963, lng: -90.99445}
+  geo:
+    lat: 36.28963
+    lng: -90.99445
   phone: 573-686-4151
   website: https://www.va.gov/poplar-bluff-health-care/locations/pocahontas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Chiropractic
@@ -210,7 +235,10 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_657GW}
+  external_ids:
+    va: vha_657GW
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

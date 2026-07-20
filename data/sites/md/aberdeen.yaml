@@ -39,18 +39,36 @@
   name: Aberdeen Vet Center Outstation
   categories:
   - vet-center
-  address: {street: 223 West Bel Air Ave, city: Aberdeen, state: md, zip: '21001'}
+  address:
+    street: 223 West Bel Air Ave
+    city: Aberdeen
+    state: md
+    zip: '21001'
   place: '2400125'
-  geo: {lat: 39.5109, lng: -76.16792}
+  geo:
+    lat: 39.5109
+    lng: -76.16792
   phone: 410-272-6771
   website: https://www.va.gov/elkton-vet-center/locations/#aberdeen-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '17:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_2092OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '17:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_2092OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/aberdeen/ars-of-aberdeen
   name: ARS of Aberdeen
   categories:

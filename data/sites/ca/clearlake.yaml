@@ -86,13 +86,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 15145 Lakeshore Drive, city: Clearlake, state: ca, zip: '95422'}
+  address:
+    street: 15145 Lakeshore Drive
+    city: Clearlake
+    state: ca
+    zip: '95422'
   place: 0613945
-  geo: {lat: 38.94985, lng: -122.62854}
+  geo:
+    lat: 38.94985
+    lng: -122.62854
   phone: 707-995-7200
   website: https://www.va.gov/san-francisco-health-care/locations/clearlake-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -109,10 +122,13 @@
   - Telehealth
   - Travel reimbursement
   - Whole health
-  external_ids: {va: vha_662GG}
+  external_ids:
+    va: vha_662GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/clearlake/lake-county-behavioral-health-services-clearlake
   name: Lake County Behavioral Health Services Clearlake Clinic
   categories:

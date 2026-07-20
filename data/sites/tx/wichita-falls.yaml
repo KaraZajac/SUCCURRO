@@ -540,6 +540,78 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/wichita-falls/rolling-plains-management-corporation-archer-cou
+  name: Rolling Plains Management Corporation - Archer County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Archer County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-684-1571
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/wichita-falls/rolling-plains-management-corporation-clay-count
+  name: Rolling Plains Management Corporation - Clay County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clay County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-723-2261
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/wichita-falls/rolling-plains-management-corporation-jack-count
+  name: Rolling Plains Management Corporation - Jack County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jack County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-723-2261
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/wichita-falls/rolling-plains-management-corporation-montague-c
+  name: Rolling Plains Management Corporation - Montague County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Montague County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-726-2261
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/wichita-falls/rolling-plains-management-corporation-wichita-co
+  name: Rolling Plains Management Corporation - Wichita County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wichita County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-723-2261
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/wichita-falls/rolling-plains-management-corporation-young-coun
+  name: Rolling Plains Management Corporation - Young County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Young County
+  address: {street: '807 8th Street, Suite 300', city: Wichita Falls, state: tx, zip: '76301'}
+  place: '4879000'
+  phone: 940-684-1571
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/wichita-falls/scotland-park-elementary
   name: Scotland Park Elementary
   categories:
@@ -712,13 +784,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2600 Central Freeway, city: Wichita Falls, state: tx, zip: '76306'}
+  address:
+    street: 2600 Central Freeway
+    city: Wichita Falls
+    state: tx
+    zip: '76306'
   place: '4879000'
-  geo: {lat: 33.94911, lng: -98.52706}
+  geo:
+    lat: 33.94911
+    lng: -98.52706
   phone: 940-257-0000
   website: https://www.va.gov/oklahoma-city-health-care/locations/wichita-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -726,7 +811,10 @@
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GB}
+  external_ids:
+    va: vha_635GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

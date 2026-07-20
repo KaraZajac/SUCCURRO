@@ -333,14 +333,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1201 Eagle Street, city: Joliet, state: il, zip: '60432'}
+  address:
+    street: 1201 Eagle Street
+    city: Joliet
+    state: il
+    zip: '60432'
   place: '1738570'
-  geo: {lat: 41.53523, lng: -88.05214}
+  geo:
+    lat: 41.53523
+    lng: -88.05214
   phone: 815-740-8100
   website: https://www.va.gov/hines-health-care/locations/joliet-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '18:00'}
-  - {days: [fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '18:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -355,10 +370,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_578GA}
+  external_ids:
+    va: vha_578GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/joliet/messiah-lutheran-church-ymca
   name: Messiah Lutheran Church (Ymca)
   categories:
@@ -753,6 +771,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/joliet/will-county-center-for-community-concerns
+  name: Will County Center for Community Concerns
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Will County
+  address: {street: 2455 Glenwood Ave., city: Joliet, state: il, zip: '60435'}
+  place: '1738570'
+  phone: 815-722-0722
+  website: http://www.wcccc.net/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/joliet/will-county-community-health-center
   name: WILL COUNTY COMMUNITY HEALTH CENTER
   categories:

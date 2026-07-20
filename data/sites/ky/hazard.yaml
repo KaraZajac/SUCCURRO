@@ -350,13 +350,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 160 Nautilus Drive, city: Hazard, state: ky, zip: '41701'}
+  address:
+    street: 160 Nautilus Drive
+    city: Hazard
+    state: ky
+    zip: '41701'
   place: '2135362'
-  geo: {lat: 37.29744, lng: -83.20178}
+  geo:
+    lat: 37.29744
+    lng: -83.20178
   phone: 606-436-2350
   website: https://www.va.gov/lexington-health-care/locations/hazard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -364,10 +377,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_596GC}
+  external_ids:
+    va: vha_596GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/hazard/homeplace-community-center
   name: Homeplace Community Center
   categories:
@@ -682,6 +698,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/hazard/lklp-community-action-council-inc
+  name: LKLP Community Action Council, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Perry County
+  address: {street: 412 Roy Campbell Dr., city: Hazard, state: ky, zip: '41701'}
+  place: '2135362'
+  phone: 606-436-3161
+  website: http://www.lklp.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/hazard/lothair-baptist-church
   name: Lothair Baptist Church
   categories:

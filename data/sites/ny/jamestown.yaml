@@ -73,6 +73,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/jamestown/chautauqua-county-department-of-social-services
+  name: Chautauqua County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chautauqua County
+  address: {street: 110 E. Fourth St., city: Jamestown, state: ny, zip: '14701'}
+  place: '3638264'
+  phone: 716-661-8103
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/jamestown/evergreen-health-prather-ave
   name: Evergreen Health - Prather Ave.
   categories:
@@ -120,13 +131,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 321 Hazeltine Avenue, city: Jamestown, state: ny, zip: '14701'}
+  address:
+    street: 321 Hazeltine Avenue
+    city: Jamestown
+    state: ny
+    zip: '14701'
   place: '3638264'
-  geo: {lat: 42.08221, lng: -79.25458}
+  geo:
+    lat: 42.08221
+    lng: -79.25458
   phone: 716-338-1511
   website: https://www.va.gov/western-new-york-health-care/locations/jamestown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -136,10 +160,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GB}
+  external_ids:
+    va: vha_528GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/jamestown/mckinley-ave-little-free-pantry
   name: McKinley Ave Little Free Pantry
   categories:

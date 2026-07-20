@@ -336,13 +336,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '814 Radford Boulevard, Naval Branch Health Clinic', city: Albany, state: ga, zip: '31704'}
+  address:
+    street: 814 Radford Boulevard, Naval Branch Health Clinic
+    city: Albany
+    state: ga
+    zip: '31704'
   place: '1301052'
-  geo: {lat: 31.55073, lng: -84.06388}
+  geo:
+    lat: 31.55073
+    lng: -84.06388
   phone: 229-446-9000
   website: https://www.va.gov/dublin-health-care/locations/albany-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -352,10 +365,13 @@
   - Pharmacy
   - Podiatry
   - Primary care
-  external_ids: {va: vha_557GB}
+  external_ids:
+    va: vha_557GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/albany/alice-coachman-elementary-school
   name: Alice Coachman Elementary School
   categories:
@@ -1378,6 +1394,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/albany/southwest-georgia-community-action-council-inc
+  name: Southwest Georgia Community Action Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dougherty, Lee Counties
+  address: {street: 317 West First Ave., city: Albany, state: ga, zip: '31701'}
+  place: '1301052'
+  phone: 229-883-1365
+  website: http://www.swgacac.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/albany/tift-child-development-center
   name: Tift Child Development Center
   categories:

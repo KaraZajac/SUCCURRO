@@ -404,13 +404,23 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '2001 River Avenue, Villages at Cabrillo', city: Long Beach, state: ca, zip: '90806'}
+  address:
+    street: 2001 River Avenue, Villages at Cabrillo
+    city: Long Beach
+    state: ca
+    zip: '90806'
   place: '0643000'
-  geo: {lat: 33.79221, lng: -118.22216}
+  geo:
+    lat: 33.79221
+    lng: -118.22216
   phone: 562-826-8414
   website: https://www.va.gov/long-beach-health-care/locations/cabrillo-va-clinic/
   hours:
-  - {days: [tue, thu], open: '07:30', close: '16:00'}
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '16:00'
   services:
   - Advice nurse
   - Laboratory and pathology
@@ -418,10 +428,13 @@
   - Primary care
   - Social work
   - Suicide prevention
-  external_ids: {va: vha_600GC}
+  external_ids:
+    va: vha_600GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/long-beach/california-recreation-center-mcbride-park
   name: California Recreation Center @ Mcbride Park
   categories:
@@ -1210,6 +1223,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/long-beach/long-beach-community-action-partnership
+  name: Long Beach Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Los Angeles County
+  address: {street: 117 West Victoria Street, city: Long Beach, state: ca, zip: '90805'}
+  place: '0643000'
+  phone: 888-351-4061
+  website: https://www.lbcap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/long-beach/long-beach-health-center-101
   name: 'Long Beach Health Center #101'
   categories:
@@ -2428,9 +2453,15 @@
   name: Tibor Rubin VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 5901 East Seventh Street, city: Long Beach, state: ca, zip: '90822'}
+  address:
+    street: 5901 East Seventh Street
+    city: Long Beach
+    state: ca
+    zip: '90822'
   place: '0643000'
-  geo: {lat: 33.77537, lng: -118.11995}
+  geo:
+    lat: 33.77537
+    lng: -118.11995
   phone: 562-826-8000
   website: https://www.va.gov/long-beach-health-care/locations/tibor-rubin-va-medical-center/
   services:
@@ -2471,10 +2502,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_600}
+  external_ids:
+    va: vha_600
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/long-beach/veterans-park
   name: Veterans Park
   categories:
@@ -2503,36 +2537,54 @@
   categories: &id002
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '1250 Bellflower Blvd, Veterans Resource Center', city: Long Beach, state: ca, zip: '90840'}
+  address:
+    street: 1250 Bellflower Blvd, Veterans Resource Center
+    city: Long Beach
+    state: ca
+    zip: '90840'
   place: '0643000'
-  geo: {lat: 33.77717, lng: -118.11479}
+  geo:
+    lat: 33.77717
+    lng: -118.11479
   phone: 562-985-5115
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_344m}
+  external_ids:
+    va: vba_344m
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/long-beach/vetsuccess-on-campus-at-long-beach-city-college
   name: VetSuccess on Campus at Long Beach City College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '4901 Carson Street, Veterans Resource Center', city: Long Beach, state: ca, zip: '90808'}
+  address:
+    street: 4901 Carson Street, Veterans Resource Center
+    city: Long Beach
+    state: ca
+    zip: '90808'
   place: '0643000'
-  geo: {lat: 33.83279, lng: -118.13478}
+  geo:
+    lat: 33.83279
+    lng: -118.13478
   phone: 562-938-4162
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_344n}
+  external_ids:
+    va: vba_344n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/long-beach/webster
   name: Webster
   categories:

@@ -1427,13 +1427,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1225 Oakdale Road, city: Modesto, state: ca, zip: '95355'}
+  address:
+    street: 1225 Oakdale Road
+    city: Modesto
+    state: ca
+    zip: '95355'
   place: 0648354
-  geo: {lat: 37.66061, lng: -120.95755}
+  geo:
+    lat: 37.66061
+    lng: -120.95755
   phone: 209-557-6200
   website: https://www.va.gov/northern-california-health-care/locations/modesto-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -1459,10 +1472,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_612GM}
+  external_ids:
+    va: vha_612GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/modesto/muncy-child-development-center
   name: Muncy Child Development Center
   categories:

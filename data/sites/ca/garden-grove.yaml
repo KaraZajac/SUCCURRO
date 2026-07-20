@@ -279,6 +279,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/garden-grove/community-action-partnership-of-orange-county
+  name: Community Action Partnership of Orange County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Orange County
+  address: {street: 11870 Monarch St., city: Garden Grove, state: ca, zip: '92841'}
+  place: 0629000
+  phone: 714-839-6199
+  website: http://www.capoc.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/garden-grove/community-of-christ-anaheim-little-free-pantry
   name: Community of Christ Anaheim Little Free Pantry
   categories:
@@ -400,13 +412,26 @@
   name: North Orange County Vet Center
   categories:
   - vet-center
-  address: {street: '12453 Lewis Street, Suite 101', city: Garden Grove, state: ca, zip: '92840'}
+  address:
+    street: 12453 Lewis Street, Suite 101
+    city: Garden Grove
+    state: ca
+    zip: '92840'
   place: 0629000
-  geo: {lat: 33.78216, lng: -117.89828}
+  geo:
+    lat: 33.78216
+    lng: -117.89828
   phone: 714-776-0161
   website: https://www.va.gov/north-orange-county-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -420,10 +445,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0624V}
+  external_ids:
+    va: vc_0624V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/garden-grove/project-access-crystal-view
   name: Project Access - Crystal View
   categories:

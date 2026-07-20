@@ -46,13 +46,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 9600 Veterans Drive Southwest, city: Tacoma, state: wa, zip: '98493'}
+  address:
+    street: 9600 Veterans Drive Southwest
+    city: Tacoma
+    state: wa
+    zip: '98493'
   place: '5370000'
-  geo: {lat: 47.14221, lng: -122.56452}
+  geo:
+    lat: 47.14221
+    lng: -122.56452
   phone: 800-329-8387
   website: https://www.va.gov/puget-sound-health-care/locations/american-lake-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -116,10 +129,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_663A4}
+  external_ids:
+    va: vha_663A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/tacoma/arlington
   name: Arlington
   categories:
@@ -964,6 +980,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/tacoma/metropolitan-development-council
+  name: Metropolitan Development Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pierce County
+  address: {street: 721 S. Fawcett Suite 204, city: Tacoma, state: wa, zip: '98402'}
+  place: '5370000'
+  phone: 253-572-5557
+  website: http://www.mdc-tacoma.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/tacoma/midland-s-kiddie-korral
   name: MIDLAND'S KIDDIE KORRAL
   categories:
@@ -1216,24 +1244,48 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/tacoma/pierce-county-community-connections
+  name: Pierce County Community Connections
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pierce County
+  address: {street: '3602 Pacific Ave., Suite 200', city: Tacoma, state: wa, zip: '98418'}
+  place: '5370000'
+  phone: 800-562-0336
+  website: http://www.co.pierce.wa.us/index.aspx?NID=1280
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/tacoma/puget-sound-va-mobile-medical-unit
   name: Puget Sound VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 9600 Veterans Drive Southwest, city: Tacoma, state: wa, zip: '98493'}
+  address:
+    street: 9600 Veterans Drive Southwest
+    city: Tacoma
+    state: wa
+    zip: '98493'
   place: '5370000'
-  geo: {lat: 47.14221, lng: -122.56452}
+  geo:
+    lat: 47.14221
+    lng: -122.56452
   phone: 800-329-8387
   website: https://www.va.gov/puget-sound-health-care/locations/puget-sound-va-mobile-clinic/
   hours:
-  - {days: [wed], open: '08:00', close: '16:00'}
+  - days:
+    - wed
+    open: 08:00
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Primary care
-  external_ids: {va: vha_663HK}
+  external_ids:
+    va: vha_663HK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/tacoma/roosevelt
   name: Roosevelt
   categories:
@@ -1759,15 +1811,24 @@
   name: Tacoma Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '4916 Center Street, Suite E', city: Tacoma, state: wa, zip: '98409'}
+  address:
+    street: 4916 Center Street, Suite E
+    city: Tacoma
+    state: wa
+    zip: '98409'
   place: '5370000'
-  geo: {lat: 47.23442, lng: -122.5036}
+  geo:
+    lat: 47.23442
+    lng: -122.5036
   phone: 253-565-7038
   website: https://www.va.gov/tacoma-vet-center/locations/#tacoma-mobile-vet-center
-  external_ids: {va: vc_0885MVC}
+  external_ids:
+    va: vc_0885MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/tacoma/tacoma-pierce-county-health-department-treatment
   name: Tacoma Pierce County Health Department Treatment Services Unit 1
   categories:
@@ -1791,13 +1852,26 @@
 - id: wa/tacoma/tacoma-vet-center
   name: Tacoma Vet Center
   categories: *id002
-  address: {street: '4916 Center Street, Suite E', city: Tacoma, state: wa, zip: '98409'}
+  address:
+    street: 4916 Center Street, Suite E
+    city: Tacoma
+    state: wa
+    zip: '98409'
   place: '5370000'
-  geo: {lat: 47.23349, lng: -122.5036}
+  geo:
+    lat: 47.23349
+    lng: -122.5036
   phone: 253-565-7038
   website: https://www.va.gov/tacoma-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1817,10 +1891,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0508V}
+  external_ids:
+    va: vc_0508V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/tacoma/tcc-early-learning-center
   name: TCC EARLY LEARNING CENTER
   categories:

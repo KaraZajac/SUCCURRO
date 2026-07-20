@@ -65,13 +65,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3399 East Grand River Avenue, city: Howell, state: mi, zip: '48843'}
+  address:
+    street: 3399 East Grand River Avenue
+    city: Howell
+    state: mi
+    zip: '48843'
   place: '2639540'
-  geo: {lat: 42.59146, lng: -83.88687}
+  geo:
+    lat: 42.59146
+    lng: -83.88687
   phone: 517-552-3700
   website: https://www.va.gov/ann-arbor-health-care/locations/howell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - COVID-19 vaccines
   - Mental health care
@@ -80,10 +93,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_506GE}
+  external_ids:
+    va: vha_506GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/howell/key-development-center
   name: Key Development Center
   categories:

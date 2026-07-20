@@ -471,13 +471,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1691 Bienville Drive, city: Monroe, state: la, zip: '71201'}
+  address:
+    street: 1691 Bienville Drive
+    city: Monroe
+    state: la
+    zip: '71201'
   place: '2251410'
-  geo: {lat: 32.53051, lng: -92.09916}
+  geo:
+    lat: 32.53051
+    lng: -92.09916
   phone: 318-343-6100
   website: https://www.va.gov/shreveport-health-care/locations/monroe-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -487,10 +500,13 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_667GB}
+  external_ids:
+    va: vha_667GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/monroe/ne-delta-human-servs-authority-nedhsa-monroe-beh
   name: NE Delta Human Servs Authority (NEDHSA)/Monroe Behavioral Health Ctr
   categories:
@@ -531,6 +547,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/monroe/ouachita-multi-purpose-community-action-program
+  name: Ouachita Multi-Purpose Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ouachita County
+  address: {street: 4001 Jackson Street (P. O. Box 3086), city: Monroe, state: la, zip: '71210'}
+  place: '2251410'
+  phone: 318-322-7151
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/monroe/ouachita-parish-police-jury
   name: Ouachita Parish Police Jury
   categories:

@@ -1,3 +1,14 @@
+- id: nv/fallon/churchill-county-social-services
+  name: Churchill County Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Churchill County
+  address: {street: 485 W. B St. Ste. 105, city: Fallon, state: nv, zip: '89406'}
+  place: '3224100'
+  phone: 775-423-6695
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/fallon/fallon-center
   name: Fallon Center
   categories:
@@ -36,6 +47,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/fallon/fallon-tribal-health-center
+  name: Fallon Tribal Health Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Churchill County
+  address: {street: 1001 Rio Vista Drive, city: Fallon, state: nv, zip: '89407'}
+  place: '3224100'
+  phone: 775-423-3634
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/fallon/fallon-tribal-health-clinic
   name: Fallon Tribal Health Clinic
   categories:
@@ -63,13 +85,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1020 New River Parkway, city: Fallon, state: nv, zip: '89406'}
+  address:
+    street: 1020 New River Parkway
+    city: Fallon
+    state: nv
+    zip: '89406'
   place: '3224100'
-  geo: {lat: 39.4654, lng: -118.76223}
+  geo:
+    lat: 39.4654
+    lng: -118.76223
   phone: 775-829-5685
   website: https://www.va.gov/sierra-nevada-health-care/locations/lahontan-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -77,10 +112,13 @@
   - Mental health care
   - Primary care
   - Urology
-  external_ids: {va: vha_654GC}
+  external_ids:
+    va: vha_654GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/fallon/new-frontier-churchill-council-of-alc-other-drug
   name: New Frontier Churchill Council of Alc/Other Drugs
   categories:

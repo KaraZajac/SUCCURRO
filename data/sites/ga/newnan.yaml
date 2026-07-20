@@ -137,22 +137,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 39-A Oak Hill Court, city: Newnan, state: ga, zip: '30265'}
+  address:
+    street: 39-A Oak Hill Court
+    city: Newnan
+    state: ga
+    zip: '30265'
   place: '1355020'
-  geo: {lat: 33.40093, lng: -84.71065}
+  geo:
+    lat: 33.40093
+    lng: -84.71065
   phone: 678-423-8020
   website: https://www.va.gov/atlanta-health-care/locations/newnan-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '15:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_508GI}
+  external_ids:
+    va: vha_508GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/newnan/pathways-center-care-campus-adult-behavioral-hea
   name: Pathways Center Care Campus Adult Behavioral Health Crisis Center
   categories:

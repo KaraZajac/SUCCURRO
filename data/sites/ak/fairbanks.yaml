@@ -1,3 +1,17 @@
+- id: ak/fairbanks/alaska-health-and-social-services-fairbanks-dist
+  name: Alaska Health and Social Services - Fairbanks District Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Denali, Fairbanks North Star, North Slope, Southeast Fairbanks
+    Counties
+  address: {street: '675 7th Avenue, Station E', city: Fairbanks, state: ak, zip: '99701'}
+  place: '0224230'
+  phone: 800-478-7778
+  email: hss.dpa.offices@alaska.gov
+  website: https://health.alaska.gov/dpa/Pages/hap/default.aspx
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ak/fairbanks/barnette-elementary-school
   name: Barnette Elementary School
   categories:
@@ -90,13 +104,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2555 Phillips Field Road, city: Fairbanks, state: ak, zip: '99709'}
+  address:
+    street: 2555 Phillips Field Road
+    city: Fairbanks
+    state: ak
+    zip: '99709'
   place: '0224230'
-  geo: {lat: 64.84723, lng: -147.78342}
+  geo:
+    lat: 64.84723
+    lng: -147.78342
   phone: 907-328-1750
   website: https://www.va.gov/alaska-health-care/locations/fairbanks-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -109,10 +136,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_463GA}
+  external_ids:
+    va: vha_463GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/fairbanks/family-centered-services-of-alaska-outpatient
   name: Family Centered Services of Alaska Outpatient
   categories:

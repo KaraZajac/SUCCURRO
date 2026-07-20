@@ -56,6 +56,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/valdosta/coastal-plain-area-economic-opportunity-authorit
+  name: Coastal Plain Area Economic Opportunity Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lowndes County
+  address: {street: 900 S. Troupe St., city: Valdosta, state: ga, zip: '31601'}
+  place: '1378800'
+  phone: 229-242-8814
+  email: lowndes@coastalplain.org
+  website: http://www.coastalplain.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/valdosta/community-action-of-georgia-inc
   name: Community Action Of Georgia, Inc.
   categories:
@@ -480,13 +493,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 348 Enterprise Drive, city: Valdosta, state: ga, zip: '31601'}
+  address:
+    street: 348 Enterprise Drive
+    city: Valdosta
+    state: ga
+    zip: '31601'
   place: '1378800'
-  geo: {lat: 30.82692, lng: -83.3138}
+  geo:
+    lat: 30.82692
+    lng: -83.3138
   phone: 229-293-0132
   website: https://www.va.gov/north-florida-health-care/locations/valdosta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - COVID-19 vaccines
@@ -506,10 +532,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_573GA}
+  external_ids:
+    va: vha_573GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/valdosta/ymca-summer-program-gornto-rd
   name: Ymca Summer Program (Gornto Rd)
   categories:

@@ -107,23 +107,39 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1380 Celebration Boulevard, city: Florence, state: sc, zip: '29501'}
+  address:
+    street: 1380 Celebration Boulevard
+    city: Florence
+    state: sc
+    zip: '29501'
   place: '4525810'
-  geo: {lat: 34.16722, lng: -79.82751}
+  geo:
+    lat: 34.16722
+    lng: -79.82751
   phone: 843-292-8383
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/florence-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_544GB}
+  external_ids:
+    va: vha_544GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/florence/gator-elite-dillon-park
   name: Gator Elite Dillon Park
   categories:
@@ -602,6 +618,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/florence/pee-dee-community-action-partnership-florence-of
+  name: Pee Dee Community Action Partnership - Florence Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Florence County
+  address: {street: 2685 South Irby Street (Post Office Drawer 12670), city: Florence, state: sc, zip: '29505'}
+  place: '4525810'
+  phone: 843-678-3400
+  website: http://peedeecap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/florence/pee-dee-mental-health-center-florence-clinic
   name: Pee Dee Mental Health Center Florence Clinic
   categories:

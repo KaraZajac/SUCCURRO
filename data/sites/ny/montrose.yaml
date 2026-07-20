@@ -4,14 +4,31 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2094 Albany Post Road, city: Montrose, state: ny, zip: '10548'}
+  address:
+    street: 2094 Albany Post Road
+    city: Montrose
+    state: ny
+    zip: '10548'
   place: '3648208'
-  geo: {lat: 41.24466, lng: -73.92626}
+  geo:
+    lat: 41.24466
+    lng: -73.92626
   phone: 914-737-4400
   website: https://www.va.gov/hudson-valley-health-care/locations/franklin-delano-roosevelt-hospital/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '20:00'}
-  - {days: [sat, sun], open: '08:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '20:00'
+  - days:
+    - sat
+    - sun
+    open: 08:00
+    close: '18:00'
   services:
   - Advice nurse
   - Audiology and speech
@@ -43,7 +60,10 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_620}
+  external_ids:
+    va: vha_620
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

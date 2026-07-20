@@ -155,13 +155,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 8325 Jack Finney Boulevard, city: Greenville, state: tx, zip: '75402'}
+  address:
+    street: 8325 Jack Finney Boulevard
+    city: Greenville
+    state: tx
+    zip: '75402'
   place: '4830920'
-  geo: {lat: 33.08645, lng: -96.08041}
+  geo:
+    lat: 33.08645
+    lng: -96.08041
   phone: 903-450-1143
   website: https://www.va.gov/north-texas-health-care/locations/greenville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -170,10 +183,13 @@
   - Pharmacy
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GH}
+  external_ids:
+    va: vha_549GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/greenville/hunt-regional-outpatient-behav-health
   name: Hunt Regional Outpatient Behav Health
   categories:

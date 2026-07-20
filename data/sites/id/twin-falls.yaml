@@ -606,6 +606,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: id/twin-falls/south-central-community-action-partnership-sccap
+  name: South Central Community Action Partnership (SCCAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Blaine, Camas, Cassia, Gooding, Jerome, Lincoln Counties
+  address: {street: 550 Washington Street South (P. O. Box 531), city: Twin Falls, state: id, zip: '83303'}
+  place: '1682810'
+  phone: 208-733-9351
+  email: info@sccap-id.org
+  website: http://www.sccap-id.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: id/twin-falls/south-hills-middle-school
   name: South Hills Middle School
   categories:
@@ -778,21 +791,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 260 2nd Avenue East, city: Twin Falls, state: id, zip: '83301'}
+  address:
+    street: 260 2nd Avenue East
+    city: Twin Falls
+    state: id
+    zip: '83301'
   place: '1682810'
-  geo: {lat: 42.55487, lng: -114.46689}
+  geo:
+    lat: 42.55487
+    lng: -114.46689
   phone: 208-732-0959
   website: https://www.va.gov/boise-health-care/locations/twin-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_531GE}
+  external_ids:
+    va: vha_531GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/twin-falls/walker-center
   name: Walker Center
   categories:

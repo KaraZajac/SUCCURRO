@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 103 Landmark Drive, city: Bellevue, state: ky, zip: '41073'}
+  address:
+    street: 103 Landmark Drive
+    city: Bellevue
+    state: ky
+    zip: '41073'
   place: '2105446'
-  geo: {lat: 39.10096, lng: -84.48464}
+  geo:
+    lat: 39.10096
+    lng: -84.48464
   phone: 859-392-3840
   website: https://www.va.gov/cincinnati-health-care/locations/bellevue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -65,7 +78,10 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_539GA}
+  external_ids:
+    va: vha_539GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

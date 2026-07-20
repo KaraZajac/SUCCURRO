@@ -180,13 +180,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 60491 Doss Drive, city: Slidell, state: la, zip: '70460'}
+  address:
+    street: 60491 Doss Drive
+    city: Slidell
+    state: la
+    zip: '70460'
   place: '2270805'
-  geo: {lat: 30.3096, lng: -89.77598}
+  geo:
+    lat: 30.3096
+    lng: -89.77598
   phone: 985-690-2626
   website: https://www.va.gov/southeast-louisiana-health-care/locations/slidell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -203,10 +216,13 @@
   - Prosthetics and rehabilitation
   - Returning service member care
   - Urology
-  external_ids: {va: vha_629GC}
+  external_ids:
+    va: vha_629GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/slidell/southeast-louisiana-va-hcs-slidell-va-clinic
   name: Southeast Louisiana VA HCS Slidell VA Clinic
   categories:
@@ -250,6 +266,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/slidell/st-tammany-parish-community-action-agency
+  name: St. Tammany Parish Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Tammany County
+  address: {street: 520 Old Spanish Trail Suite 3-C (P. O. Box 1609), city: Slidell, state: la, zip: '70458'}
+  place: '2270805'
+  phone: 985-646-2090
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/slidell/st-tammany-parish-library-south-slidell-branch
   name: St. Tammany Parish Library South Slidell Branch
   categories:

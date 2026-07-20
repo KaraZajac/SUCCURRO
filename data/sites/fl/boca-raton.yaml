@@ -136,13 +136,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 901 Meadows Road, city: Boca Raton, state: fl, zip: '33433'}
+  address:
+    street: 901 Meadows Road
+    city: Boca Raton
+    state: fl
+    zip: '33433'
   place: '1207300'
-  geo: {lat: 26.3585, lng: -80.10453}
+  geo:
+    lat: 26.3585
+    lng: -80.10453
   phone: 561-416-8995
   website: https://www.va.gov/west-palm-beach-health-care/locations/boca-raton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Internal medicine
@@ -151,10 +164,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Social work
-  external_ids: {va: vha_548GD}
+  external_ids:
+    va: vha_548GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/boca-raton/boca-recovery-center
   name: Boca Recovery Center
   categories:

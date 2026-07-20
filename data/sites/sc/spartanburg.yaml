@@ -1315,29 +1315,58 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/spartanburg/spartanburg-sc-liheap-utility-assistance-office
+  name: Spartanburg SC LIHEAP Utility Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Spartanburg County
+  address: {street: '736 East Main Street, Suite 101 (P. O. Box 3485)', city: Spartanburg, state: sc,
+    zip: '29304'}
+  place: '4568290'
+  phone: 864-707-5029
+  website: https://www.gleamnshrc.org/menus/spartanburg-liheap.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/spartanburg/spartanburg-va-clinic
   name: Spartanburg VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 279 North Grove Medical Park Drive, city: Spartanburg, state: sc, zip: '29303'}
+  address:
+    street: 279 North Grove Medical Park Drive
+    city: Spartanburg
+    state: sc
+    zip: '29303'
   place: '4568290'
-  geo: {lat: 34.99248, lng: -81.94297}
+  geo:
+    lat: 34.99248
+    lng: -81.94297
   phone: 864-582-7025
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/spartanburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_544GG}
+  external_ids:
+    va: vha_544GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/spartanburg/sptbg-co-school-dist-6-child-dev-family-serv-cen
   name: Sptbg Co School Dist 6 Child Dev & Family Serv Center
   categories:

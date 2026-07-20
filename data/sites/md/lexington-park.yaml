@@ -67,13 +67,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '45870 East Run Drive, East Run Center', city: Lexington Park, state: md, zip: '20653'}
+  address:
+    street: 45870 East Run Drive, East Run Center
+    city: Lexington Park
+    state: md
+    zip: '20653'
   place: '2446725'
-  geo: {lat: 38.25932, lng: -76.40501}
+  geo:
+    lat: 38.25932
+    lng: -76.40501
   phone: 240-237-1625
   website: https://www.va.gov/washington-dc-health-care/locations/lexington-park-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -84,10 +97,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_688GG}
+  external_ids:
+    va: vha_688GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/lexington-park/little-free-pantry-at-lexington-park-library
   name: Little Free Pantry at Lexington Park Library
   categories:
@@ -143,3 +159,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/lexington-park/southern-md-tri-county-community-action-committe
+  name: Southern MD Tri County Community Action Committee, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Marys County
+  address: {street: 21775 Great Mills Rd., city: Lexington Park, state: md, zip: '20653'}
+  place: '2446725'
+  phone: 301-475-5574
+  email: OHEP@smtccac.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

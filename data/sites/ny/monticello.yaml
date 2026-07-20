@@ -46,13 +46,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 55 Sturgis Road, city: Monticello, state: ny, zip: '12701'}
+  address:
+    street: 55 Sturgis Road
+    city: Monticello
+    state: ny
+    zip: '12701'
   place: '3648175'
-  geo: {lat: 41.66009, lng: -74.69458}
+  geo:
+    lat: 41.66009
+    lng: -74.69458
   phone: 845-791-4936
   website: https://www.va.gov/hudson-valley-health-care/locations/monticello-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -62,10 +75,13 @@
   - Optometry
   - Podiatry
   - Primary care
-  external_ids: {va: vha_620GF}
+  external_ids:
+    va: vha_620GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/monticello/oda-monticello-primary-health-care-center
   name: ODA Monticello Primary Health Care Center
   categories:

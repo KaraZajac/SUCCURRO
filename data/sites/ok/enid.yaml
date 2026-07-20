@@ -103,13 +103,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 915 East Owen K. Garriott Road, city: Enid, state: ok, zip: '73701'}
+  address:
+    street: 915 East Owen K. Garriott Road
+    city: Enid
+    state: ok
+    zip: '73701'
   place: '4023950'
-  geo: {lat: 36.39066, lng: -97.86439}
+  geo:
+    lat: 36.39066
+    lng: -97.86439
   phone: 877-576-8291
   website: https://www.va.gov/oklahoma-city-health-care/locations/enid-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -118,10 +131,13 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GG}
+  external_ids:
+    va: vha_635GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/enid/garfield-es-130
   name: Garfield Es (130)
   categories:
@@ -273,6 +289,42 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/enid/human-services-centers-blaine
+  name: 'Human Services Centers: Blaine'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Blaine County
+  address: {street: 2405 Mercer Dr., city: Enid, state: ok, zip: '73701'}
+  place: '4023950'
+  phone: 580-548-2100
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/enid/human-services-centers-garfield
+  name: 'Human Services Centers: Garfield'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Garfield County
+  address: {street: 2405 Mercer Dr., city: Enid, state: ok, zip: '73701'}
+  place: '4023950'
+  phone: 580-548-2100
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/enid/human-services-centers-kingfisher
+  name: 'Human Services Centers: Kingfisher'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kingfisher County
+  address: {street: 2405 Mercer Dr., city: Enid, state: ok, zip: '73701'}
+  place: '4023950'
+  phone: 580-548-2100
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/enid/integris-bass-baptist-behav-health-meadowlake
   name: Integris Bass Baptist Behav Health Meadowlake
   categories:

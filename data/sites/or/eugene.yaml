@@ -236,9 +236,15 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 211 East 7th Avenue, city: Eugene, state: or, zip: '97401'}
+  address:
+    street: 211 East 7th Avenue
+    city: Eugene
+    state: or
+    zip: '97401'
   place: '4123850'
-  geo: {lat: 44.05248, lng: -123.08937}
+  geo:
+    lat: 44.05248
+    lng: -123.08937
   phone: 541-242-0440
   website: https://www.va.gov/roseburg-health-care/locations/downtown-eugene-va-clinic/
   services:
@@ -246,10 +252,13 @@
   - Intimate partner violence support
   - Mental health care
   - Toxic exposure screening
-  external_ids: {va: vha_653QA}
+  external_ids:
+    va: vha_653QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/eugene/emerald-park-river-road-park
   name: Emerald Park (River Road Park)
   categories:
@@ -336,13 +345,26 @@
   name: Eugene VA Clinic
   categories: *id001
   description: Health Care Center (HCC)
-  address: {street: 3355 Chad Drive, city: Eugene, state: or, zip: '97408'}
+  address:
+    street: 3355 Chad Drive
+    city: Eugene
+    state: or
+    zip: '97408'
   place: '4123850'
-  geo: {lat: 44.08846, lng: -123.05252}
+  geo:
+    lat: 44.08846
+    lng: -123.05252
   phone: 541-607-0897
   website: https://www.va.gov/roseburg-health-care/locations/eugene-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -365,21 +387,37 @@
   - Surgery
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_653BY}
+  external_ids:
+    va: vha_653BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/eugene/eugene-vet-center
   name: Eugene Vet Center
   categories:
   - vet-center
-  address: {street: 190 East 11th Avenue, city: Eugene, state: or, zip: '97401'}
+  address:
+    street: 190 East 11th Avenue
+    city: Eugene
+    state: or
+    zip: '97401'
   place: '4123850'
-  geo: {lat: 44.04752, lng: -123.08995}
+  geo:
+    lat: 44.04752
+    lng: -123.08995
   phone: 541-465-6918
   website: https://www.va.gov/eugene-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -391,10 +429,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0626V}
+  external_ids:
+    va: vc_0626V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/eugene/fairfield-head-start-center
   name: Fairfield Head Start Center
   categories:
@@ -616,6 +657,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/eugene/lane-county-human-services-commission
+  name: Lane County Human Services Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lane County
+  address: {street: '151 W. 7th Ave, Room 560', city: Eugene, state: or, zip: '97401'}
+  place: '4123850'
+  phone: 541-682-3378
+  website: https://www.lanecounty.org/government/county_departments/health_and_human_services/human_services_division/energy_and_weatherization_programs/general_public
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/eugene/lane-county-mental-health
   name: Lane County Mental Health
   categories:

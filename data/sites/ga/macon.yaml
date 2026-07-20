@@ -429,6 +429,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/macon/macon-bibb-county-economic-opportunity-council-i
+  name: Macon-Bibb County Economic Opportunity Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bibb, Macon Counties
+  address: {street: 456 Bay Street, city: Macon, state: ga, zip: '31201'}
+  phone: 478-738-3240
+  website: https://www.maconbibbeoc.com/web-schedulers/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/macon/macon-bibb-enrichment-program
   name: Macon Bibb Enrichment Program
   categories:
@@ -454,26 +465,48 @@
   name: Macon Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 750 Riverside Drive, city: Macon, state: ga, zip: '31201'}
-  geo: {lat: 32.8419, lng: -83.62803}
+  address:
+    street: 750 Riverside Drive
+    city: Macon
+    state: ga
+    zip: '31201'
+  geo:
+    lat: 32.8419
+    lng: -83.62803
   phone: 478-477-3813
   website: https://www.va.gov/macon-vet-center/locations/#macon-mobile-vet-center
-  external_ids: {va: vc_0818MVC}
+  external_ids:
+    va: vc_0818MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/macon/macon-va-clinic
   name: Macon VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5566 Thomaston Road, city: Macon, state: ga, zip: '31220'}
-  geo: {lat: 32.83396, lng: -83.74292}
+  address:
+    street: 5566 Thomaston Road
+    city: Macon
+    state: ga
+    zip: '31220'
+  geo:
+    lat: 32.83396
+    lng: -83.74292
   phone: 478-476-8868
   website: https://www.va.gov/dublin-health-care/locations/macon-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -484,19 +517,35 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_557GA}
+  external_ids:
+    va: vha_557GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/macon/macon-vet-center
   name: Macon Vet Center
   categories: *id001
-  address: {street: 750 Riverside Drive, city: Macon, state: ga, zip: '31201'}
-  geo: {lat: 32.8419, lng: -83.62803}
+  address:
+    street: 750 Riverside Drive
+    city: Macon
+    state: ga
+    zip: '31201'
+  geo:
+    lat: 32.8419
+    lng: -83.62803
   phone: 478-477-3813
   website: https://www.va.gov/macon-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -515,10 +564,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0333V}
+  external_ids:
+    va: vc_0333V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/macon/northwoods-academy-federal-special-ed-pre-school
   name: Northwoods Academy - Federal Special Ed. Pre-School Program
   categories:

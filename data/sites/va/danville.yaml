@@ -83,6 +83,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/danville/danville-division-of-social-services
+  name: Danville Division of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Danville City County
+  address: {street: '510 Patton St., (P. O. Box 3300)', city: Danville, state: va, zip: '24541'}
+  place: '5121344'
+  phone: 434-799-6543
+  website: http://www.danville-va.gov/304/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/danville/danville-pittsylvania-community-servs-dpcs
   name: Danville Pittsylvania Community Servs (DPCS)
   categories:
@@ -148,13 +160,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '325 Piedmont Drive, Danville Mall', city: Danville, state: va, zip: '24540'}
+  address:
+    street: 325 Piedmont Drive, Danville Mall
+    city: Danville
+    state: va
+    zip: '24540'
   place: '5121344'
-  geo: {lat: 36.59531, lng: -79.42199}
+  geo:
+    lat: 36.59531
+    lng: -79.42199
   phone: 434-710-4210
   website: https://www.va.gov/salem-health-care/locations/danville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gastroenterology
@@ -165,10 +190,13 @@
   - Radiology
   - Smoking and tobacco cessation
   - Women Veteran care
-  external_ids: {va: vha_658GB}
+  external_ids:
+    va: vha_658GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/danville/e-a-gibson-elem
   name: E. A. Gibson Elem
   categories:

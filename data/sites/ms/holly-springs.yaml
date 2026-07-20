@@ -109,22 +109,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1700 Crescent Meadows Drive, city: Holly Springs, state: ms, zip: '38635'}
+  address:
+    street: 1700 Crescent Meadows Drive
+    city: Holly Springs
+    state: ms
+    zip: '38635'
   place: '2833100'
-  geo: {lat: 34.75044, lng: -89.45589}
+  geo:
+    lat: 34.75044
+    lng: -89.45589
   phone: 662-252-2552
   website: https://www.va.gov/memphis-health-care/locations/holly-springs-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_614GC}
+  external_ids:
+    va: vha_614GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/holly-springs/ics-central-office-early-head-start
   name: ICS- Central Office Early Head Start
   categories:
@@ -207,6 +223,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/holly-springs/northeast-ms-community-services
+  name: Northeast MS Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marshall County
+  address: {street: 156 Old Highway 78 E, city: Holly Springs, state: ms, zip: '38635'}
+  place: '2833100'
+  phone: 662-252-2713
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/holly-springs/the-housing-authority-of-the-city-of-holly-sprin
   name: The Housing Authority Of The City Of Holly Springs
   categories:

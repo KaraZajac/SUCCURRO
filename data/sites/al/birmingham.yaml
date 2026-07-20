@@ -222,13 +222,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2415 7th Avenue South, city: Birmingham, state: al, zip: '35233'}
+  address:
+    street: 2415 7th Avenue South
+    city: Birmingham
+    state: al
+    zip: '35233'
   place: '0107000'
-  geo: {lat: 33.50877, lng: -86.79367}
+  geo:
+    lat: 33.50877
+    lng: -86.79367
   phone: 205-933-8101
   website: https://www.va.gov/birmingham-health-care/locations/birmingham-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -240,10 +253,13 @@
   - Pharmacy
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_521GJ}
+  external_ids:
+    va: vha_521GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/birmingham/birmingham-va-healthcare-system-birmingham-east
   name: Birmingham VA Healthcare System Birmingham East VA East Clinic
   categories:
@@ -269,9 +285,15 @@
   name: Birmingham VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 700 South 19th Street, city: Birmingham, state: al, zip: '35233'}
+  address:
+    street: 700 South 19th Street
+    city: Birmingham
+    state: al
+    zip: '35233'
   place: '0107000'
-  geo: {lat: 33.50422, lng: -86.80168}
+  geo:
+    lat: 33.50422
+    lng: -86.80168
   phone: 205-933-8101
   website: https://www.va.gov/birmingham-health-care/locations/birmingham-va-medical-center/
   services:
@@ -314,23 +336,35 @@
   - Urology
   - Vascular surgery
   - Women Veteran care
-  external_ids: {va: vha_521}
+  external_ids:
+    va: vha_521
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/birmingham/birmingham-va-mobile-medical-unit
   name: Birmingham VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 700 South 19th Street, city: Birmingham, state: al, zip: '35233'}
+  address:
+    street: 700 South 19th Street
+    city: Birmingham
+    state: al
+    zip: '35233'
   place: '0107000'
-  geo: {lat: 33.50468, lng: -86.80094}
+  geo:
+    lat: 33.50468
+    lng: -86.80094
   phone: 205-933-8101
   website: https://www.va.gov/birmingham-health-care/locations/birmingham-va-mobile-medical-unit/
-  external_ids: {va: vha_521QC}
+  external_ids:
+    va: vha_521QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/birmingham/bradford-health-services-birmingham-regional-off
   name: Bradford Health Services Birmingham Regional Office/Jefferson
   categories:
@@ -744,6 +778,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/birmingham/community-action-agency-of-northeast-alabama-bir
+  name: Community Action Agency of Northeast Alabama - Birmingham
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: 900 38th Street N., city: Birmingham, state: al, zip: '35222'}
+  place: '0107000'
+  phone: 205-502-2108
+  website: https://www.caaneal.org/liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/birmingham/cooper-green-head-start-center
   name: Cooper Green Head Start Center
   categories:

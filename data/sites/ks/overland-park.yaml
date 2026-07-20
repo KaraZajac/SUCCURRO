@@ -199,6 +199,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/overland-park/johnson-county-dcf
+  name: Johnson County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Johnson County
+  address: {street: 8915 Lenexa Dr., city: Overland Park, state: ks, zip: '66124'}
+  place: '2053775'
+  phone: 913-823-7300
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/overland-park/johnson-county-library-central
   name: Johnson County Library (Central)
   categories:
@@ -271,21 +282,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 10500 Mastin Street, city: Overland Park, state: ks, zip: '66207'}
+  address:
+    street: 10500 Mastin Street
+    city: Overland Park
+    state: ks
+    zip: '66207'
   place: '2053775'
-  geo: {lat: 38.93817, lng: -94.70226}
+  geo:
+    lat: 38.93817
+    lng: -94.70226
   phone: 816-922-2880
   website: https://www.va.gov/kansas-city-health-care/locations/overland-park-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Cancer care
   - Radiation oncology
   - Telehealth
-  external_ids: {va: vha_589QA}
+  external_ids:
+    va: vha_589QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/overland-park/shawnee-mission-west-high-school
   name: Shawnee Mission West High School
   categories:
@@ -334,19 +361,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '12345 College Blvd, COM302  BOX 40', city: Overland Park, state: ks, zip: '66210'}
+  address:
+    street: 12345 College Blvd, COM302  BOX 40
+    city: Overland Park
+    state: ks
+    zip: '66210'
   place: '2053775'
-  geo: {lat: 38.92379, lng: -94.73062}
+  geo:
+    lat: 38.92379
+    lng: -94.73062
   phone: 913-469-8500, ext. 2626
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_452d}
+  external_ids:
+    va: vba_452d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/overland-park/we-care-hcbs-alcohol-and-drug-education-dot-sap
   name: We Care HCBS Alcohol and Drug Education/DOT SAP
   categories:

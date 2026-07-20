@@ -501,6 +501,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/lancaster/lancaster-county-assistance-office
+  name: Lancaster County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lancaster County
+  address: {street: 832 Manor Street (P. O. Box 4967), city: Lancaster, state: pa, zip: '17604'}
+  place: '4241216'
+  phone: 717-299-7543
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/lancaster/lancaster-county-housing-authority
   name: Lancaster County Housing Authority
   categories:
@@ -646,15 +657,32 @@
   name: Lancaster Vet Center
   categories:
   - vet-center
-  address: {street: '1817 Olde Homestead Lane, Suite 207', city: Lancaster, state: pa, zip: '17601'}
+  address:
+    street: 1817 Olde Homestead Lane, Suite 207
+    city: Lancaster
+    state: pa
+    zip: '17601'
   place: '4241216'
-  geo: {lat: 40.05069, lng: -76.24791}
+  geo:
+    lat: 40.05069
+    lng: -76.24791
   phone: 717-283-0735
   website: https://www.va.gov/lancaster-vet-center/
   hours:
-  - {days: [mon, wed, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '18:30'}
-  - {days: [thu], open: '08:00', close: '19:30'}
+  - days:
+    - mon
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '18:30'
+  - days:
+    - thu
+    open: 08:00
+    close: '19:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -665,10 +693,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0242V}
+  external_ids:
+    va: vc_0242V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/lancaster/lancaster-west-end
   name: Lancaster West End
   categories:

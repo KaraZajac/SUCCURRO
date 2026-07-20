@@ -105,13 +105,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 840 Railroad Street, city: Brookings, state: or, zip: '97415'}
+  address:
+    street: 840 Railroad Street
+    city: Brookings
+    state: or
+    zip: '97415'
   place: '4108650'
-  geo: {lat: 42.05213, lng: -124.2883}
+  geo:
+    lat: 42.05213
+    lng: -124.2883
   phone: 541-412-1152
   website: https://www.va.gov/roseburg-health-care/locations/brookings-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Homeless Veteran care
@@ -122,7 +135,21 @@
   - Primary care
   - Social work
   - Toxic exposure screening
-  external_ids: {va: vha_653GB}
+  external_ids:
+    va: vha_653GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: or/brookings/oregon-coast-community-action
+  name: Oregon Coast Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Curry County
+  address: {street: '937 Chetco Ave, #D (P. O. Box 227)', city: Brookings, state: or, zip: '97415'}
+  place: '4108650'
+  phone: 541-469-3155
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

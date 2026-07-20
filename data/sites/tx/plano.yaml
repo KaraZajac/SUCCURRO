@@ -413,13 +413,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3804 West 15th Street, city: Plano, state: tx, zip: '75075'}
+  address:
+    street: 3804 West 15th Street
+    city: Plano
+    state: tx
+    zip: '75075'
   place: '4858016'
-  geo: {lat: 33.0192, lng: -96.7643}
+  geo:
+    lat: 33.0192
+    lng: -96.7643
   phone: 972-801-4200
   website: https://www.va.gov/north-texas-health-care/locations/plano-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -429,10 +442,13 @@
   - Radiology
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_549GL}
+  external_ids:
+    va: vha_549GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/plano/weatherford-el
   name: Weatherford El
   categories:

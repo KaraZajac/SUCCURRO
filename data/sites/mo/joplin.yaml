@@ -151,6 +151,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/joplin/economic-security-corporation-of-the-southwest-a
+  name: Economic Security Corporation of the Southwest Area (ESC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Barton, Jasper, McDonald, Newton Counties
+  address: {street: 302 Joplin Street (P. O Box 207), city: Joplin, state: mo, zip: '64801'}
+  place: '2937592'
+  phone: 417-781-0352
+  email: liheap@escswa.org
+  website: https://www.escswa.org/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/joplin/escswa-dba-jasper-cty-public-housing-agency
   name: Escswa Dba Jasper Cty Public Housing Agency
   categories:
@@ -391,13 +404,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3015 South Connecticut Avenue, city: Joplin, state: mo, zip: '64804'}
+  address:
+    street: 3015 South Connecticut Avenue
+    city: Joplin
+    state: mo
+    zip: '64804'
   place: '2937592'
-  geo: {lat: 37.05637, lng: -94.495}
+  geo:
+    lat: 37.05637
+    lng: -94.495
   phone: 800-691-8387
   website: https://www.va.gov/fayetteville-arkansas-health-care/locations/joplin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -417,10 +443,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_564GF}
+  external_ids:
+    va: vha_564GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/joplin/kelsey-norman-elementary
   name: Kelsey Norman Elementary
   categories:

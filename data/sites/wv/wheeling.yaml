@@ -281,6 +281,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/wheeling/ohio-county-dhhr-office
+  name: Ohio County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ohio County
+  address: {street: 69 16th St., city: Wheeling, state: wv, zip: '26003'}
+  place: '5486452'
+  phone: 304-232-4411
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/wheeling/orchard-park
   name: Orchard Park
   categories:
@@ -472,13 +483,26 @@
   name: Wheeling Vet Center
   categories:
   - vet-center
-  address: {street: 1058 East Bethlehem Boulevard, city: Wheeling, state: wv, zip: '26003'}
+  address:
+    street: 1058 East Bethlehem Boulevard
+    city: Wheeling
+    state: wv
+    zip: '26003'
   place: '5486452'
-  geo: {lat: 40.04014, lng: -80.67991}
+  geo:
+    lat: 40.04014
+    lng: -80.67991
   phone: 304-232-0587
   website: https://www.va.gov/wheeling-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -492,10 +516,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0233V}
+  external_ids:
+    va: vc_0233V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/wheeling/woodsdale
   name: Woodsdale
   categories:

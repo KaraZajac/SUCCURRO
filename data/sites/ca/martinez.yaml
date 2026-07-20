@@ -426,13 +426,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 150 Muir Road, city: Martinez, state: ca, zip: '94553'}
+  address:
+    street: 150 Muir Road
+    city: Martinez
+    state: ca
+    zip: '94553'
   place: '0646114'
-  geo: {lat: 37.99524, lng: -122.11529}
+  geo:
+    lat: 37.99524
+    lng: -122.11529
   phone: 925-372-2000
   website: https://www.va.gov/northern-california-health-care/locations/martinez-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Allergy, asthma and immunology
@@ -472,10 +485,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_612GF}
+  external_ids:
+    va: vha_612GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/martinez/mobile-clinic-site
   name: MOBILE CLINIC SITE
   categories:
@@ -587,9 +603,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 150 Muir Road, city: Martinez, state: ca, zip: '94553'}
+  address:
+    street: 150 Muir Road
+    city: Martinez
+    state: ca
+    zip: '94553'
   place: '0646114'
-  geo: {lat: 37.99524, lng: -122.11529}
+  geo:
+    lat: 37.99524
+    lng: -122.11529
   phone: 925-372-2000
   services:
   - ApplyingForBenefits
@@ -600,7 +622,10 @@
   - TransitionAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_343b}
+  external_ids:
+    va: vba_343b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

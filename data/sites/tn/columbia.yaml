@@ -170,14 +170,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '800 South James Campbell Boulevard, Shady Brook Mall', city: Columbia, state: tn,
-    zip: '38401'}
+  address:
+    street: 800 South James Campbell Boulevard, Shady Brook Mall
+    city: Columbia
+    state: tn
+    zip: '38401'
   place: '4716540'
-  geo: {lat: 35.59618, lng: -87.05643}
+  geo:
+    lat: 35.59618
+    lng: -87.05643
   phone: 931-981-6930
   website: https://www.va.gov/tennessee-valley-health-care/locations/columbia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -188,10 +200,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GM}
+  external_ids:
+    va: vha_626GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/columbia/first-baptist-church-of-columbia-non-congregate
   name: First Baptist Church Of Columbia- {Non Congregate}
   categories:
@@ -374,6 +389,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/columbia/south-central-human-resource-agency-maury
+  name: South Central Human Resource Agency - Maury
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Maury County
+  address: {street: '5021 Trotwood Ave., Suite 5A', city: Columbia, state: tn}
+  place: '4716540'
+  phone: 931-388-1173
+  website: https://www.schra.us/services/community-block-grant#emergency-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/columbia/spring-hill-high-pick-up
   name: Spring Hill High Pick-Up
   categories:

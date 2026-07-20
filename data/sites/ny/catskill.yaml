@@ -46,14 +46,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '159 Jefferson Heights, Greene Medical Arts Building', city: Catskill, state: ny,
-    zip: '12414'}
+  address:
+    street: 159 Jefferson Heights, Greene Medical Arts Building
+    city: Catskill
+    state: ny
+    zip: '12414'
   place: '3613002'
-  geo: {lat: 42.23168, lng: -73.87802}
+  geo:
+    lat: 42.23168
+    lng: -73.87802
   phone: 518-626-5240
   website: https://www.va.gov/albany-health-care/locations/catskill-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gynecology
@@ -63,10 +75,36 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528G7}
+  external_ids:
+    va: vha_528G7
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/catskill/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greene County
+  address: {street: '411 Main Street, 2nd floor, Suite 247', city: Catskill, state: ny, zip: '12414'}
+  place: '3613002'
+  phone: 518-719-3555
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/catskill/greene-county-department-of-social-services
+  name: Greene County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greene County
+  address: {street: '411 Main Street, Suite 238', city: Catskill, state: ny, zip: '12414'}
+  place: '3613002'
+  phone: 518-719-3700
+  email: DSS@Discovergreene.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/catskill/riverside-residential-820-residential-reintegrat
   name: Riverside Residential 820 Residential Reintegration
   categories:

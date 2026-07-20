@@ -901,13 +901,28 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 718 Smyth Road, city: Manchester, state: nh, zip: '03104'}
+  address:
+    street: 718 Smyth Road
+    city: Manchester
+    state: nh
+    zip: '03104'
   place: '3345140'
-  geo: {lat: 43.01139, lng: -71.44003}
+  geo:
+    lat: 43.01139
+    lng: -71.44003
   phone: 603-624-4366
   website: https://www.va.gov/manchester-health-care/locations/manchester-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -957,32 +972,57 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_608}
+  external_ids:
+    va: vha_608
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/manchester/manchester-va-mobile-medical-unit
   name: Manchester VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1750 Elm Street, Brady Sullivan Tower', city: Manchester, state: nh, zip: '03104'}
+  address:
+    street: 1750 Elm Street, Brady Sullivan Tower
+    city: Manchester
+    state: nh
+    zip: '03104'
   place: '3345140'
-  geo: {lat: 43.01414, lng: -71.46478}
+  geo:
+    lat: 43.01414
+    lng: -71.46478
   phone: 603-624-4366
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_608QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_608QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/manchester/manchester-va-regional-benefit-office
   name: Manchester VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '275 Chestnut St, Norris Cotton Federal Building', city: Manchester, state: nh, zip: '03101'}
+  address:
+    street: 275 Chestnut St, Norris Cotton Federal Building
+    city: Manchester
+    state: nh
+    zip: '03101'
   place: '3345140'
-  geo: {lat: 42.98853, lng: -71.4606}
+  geo:
+    lat: 42.98853
+    lng: -71.4606
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -994,10 +1034,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_373}
+  external_ids:
+    va: vba_373
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/manchester/manchester-vamc-mental-health-service-line
   name: Manchester VAMC Mental Health Service Line
   categories:
@@ -1045,20 +1088,36 @@
   name: Manchester West VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1750 Elm Street, Brady Sullivan  Tower', city: Manchester, state: nh, zip: '03104'}
+  address:
+    street: 1750 Elm Street, Brady Sullivan  Tower
+    city: Manchester
+    state: nh
+    zip: '03104'
   place: '3345140'
-  geo: {lat: 43.00395, lng: -71.46503}
+  geo:
+    lat: 43.00395
+    lng: -71.46503
   phone: 603-624-4366
   website: https://www.va.gov/manchester-health-care/locations/manchester-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MentalHealth
   - PrimaryCare
-  external_ids: {va: vha_608QA}
+  external_ids:
+    va: vha_608QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/manchester/mcdonough-school
   name: Mcdonough School
   categories:
@@ -1327,6 +1386,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/manchester/southern-new-hampshire-services-inc-manchester-a
+  name: Southern New Hampshire Services Inc. - Manchester Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hillsborough County
+  address: {street: 40 Pine Street, city: Manchester, state: nh, zip: '03103'}
+  place: '3345140'
+  phone: 603-647-4470
+  website: https://www.snhs.org/services/fuel-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nh/manchester/union-st-clubhouse
   name: Union St. Clubhouse
   categories:

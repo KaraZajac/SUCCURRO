@@ -213,22 +213,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1141 Cold Springs Road, city: Mountain City, state: tn, zip: '37683'}
+  address:
+    street: 1141 Cold Springs Road
+    city: Mountain City
+    state: tn
+    zip: '37683'
   place: '4750400'
-  geo: {lat: 36.49992, lng: -81.81965}
+  geo:
+    lat: 36.49992
+    lng: -81.81965
   phone: 423-727-3979
   website: https://www.va.gov/mountain-home-health-care/locations/mountain-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_621GO}
+  external_ids:
+    va: vha_621GO
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/mountain-city/mountain-youth-academy
   name: Mountain Youth Academy
   categories:

@@ -286,13 +286,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4800 Linton Boulevard, city: Delray Beach, state: fl, zip: '33445'}
+  address:
+    street: 4800 Linton Boulevard
+    city: Delray Beach
+    state: fl
+    zip: '33445'
   place: '1217100'
-  geo: {lat: 26.4381, lng: -80.11839}
+  geo:
+    lat: 26.4381
+    lng: -80.11839
   phone: 561-422-6510
   website: https://www.va.gov/west-palm-beach-health-care/locations/delray-beach-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -303,10 +316,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Social work
-  external_ids: {va: vha_548GB}
+  external_ids:
+    va: vha_548GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/delray-beach/fair-oaks-pavilion
   name: Fair Oaks Pavilion
   categories:
@@ -544,6 +560,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/delray-beach/palm-beach-county-community-services-delray
+  name: Palm Beach County Community Services Delray
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Palm Beach County
+  address: {street: 225 S. Congress Ave., city: Delray Beach, state: fl, zip: '33444'}
+  place: '1217100'
+  phone: 561-355-4792
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/delray-beach/pine-grove-elementary
   name: PINE GROVE ELEMENTARY
   categories:

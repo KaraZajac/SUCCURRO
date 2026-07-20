@@ -185,13 +185,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2249 Vinson Highway Southeast, city: Milledgeville, state: ga, zip: '31061'}
+  address:
+    street: 2249 Vinson Highway Southeast
+    city: Milledgeville
+    state: ga
+    zip: '31061'
   place: '1351492'
-  geo: {lat: 33.05029, lng: -83.21356}
+  geo:
+    lat: 33.05029
+    lng: -83.21356
   phone: 478-414-4540
   website: https://www.va.gov/dublin-health-care/locations/milledgeville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Diabetes care
@@ -205,10 +218,13 @@
   - Smoking and tobacco cessation
   - Social work
   - Telehealth
-  external_ids: {va: vha_557GC}
+  external_ids:
+    va: vha_557GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/milledgeville/new-start-treatment-milledgeville
   name: New Start Treatment Milledgeville
   categories:
@@ -273,6 +289,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/milledgeville/overview-inc
+  name: Overview Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baldwin, Hancock, Jasper, Johnson, Putnam, Washington, Wilkinson
+    Counties
+  address: {street: 325 N. Cobb St., city: Milledgeville, state: ga, zip: '31061'}
+  place: '1351492'
+  phone: 478-453-4111
+  website: https://overviewinc.com/energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ga/milledgeville/overview-inc-2
+  name: Overview, Inc
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Morgan County
+  address: {street: 325 N. Cobb, city: Milledgeville, state: ga, zip: '31061'}
+  place: '1351492'
+  phone: 478-453-4111
+  website: https://overviewinc.com/energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ga/milledgeville/overview-inc-3
+  name: Overview, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greene County
+  address: {street: 325 N. Cobb, city: Milledgeville, state: ga, zip: '31061'}
+  place: '1351492'
+  phone: 478-453-4111
+  website: https://overviewinc.com/energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/milledgeville/river-edge-behavioral-health
   name: River Edge Behavioral Health
   categories:

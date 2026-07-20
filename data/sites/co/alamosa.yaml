@@ -36,6 +36,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/alamosa/alamosa-county-department-of-human-services-alam
+  name: Alamosa County Department of Human Services - Alamosa
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Alamosa County
+  address: {street: 8900 C Independence Way, city: Alamosa, state: co, zip: '81101'}
+  place: 0801090
+  phone: 719-589-2581
+  website: https://alamosacounty.colorado.gov/departments/human-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/alamosa/alamosa-elementary-school-k-2
   name: Alamosa Elementary School K-2
   categories:
@@ -110,23 +122,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 622 Del Sol Drive, city: Alamosa, state: co, zip: '81101'}
+  address:
+    street: 622 Del Sol Drive
+    city: Alamosa
+    state: co
+    zip: '81101'
   place: 0801090
-  geo: {lat: 37.4796, lng: -105.90276}
+  geo:
+    lat: 37.4796
+    lng: -105.90276
   phone: 719-587-6800
   website: https://www.va.gov/eastern-colorado-health-care/locations/alamosa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_554GF}
+  external_ids:
+    va: vha_554GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/alamosa/ascension-csl-and-transformation-llc
   name: Ascension Csl and Transformation LLC
   categories:

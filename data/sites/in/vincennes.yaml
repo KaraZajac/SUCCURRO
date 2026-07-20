@@ -355,6 +355,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/vincennes/pace-community-action-agency-inc
+  name: Pace Community Action Agency, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Knox County
+  address: {street: 525 N. 4th St., city: Vincennes, state: in, zip: '47591'}
+  place: '1879208'
+  phone: 812-882-7927 ext 2
+  email: eap@pacecaa.org
+  website: https://www.pacecaa.org/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/vincennes/rain-tree-consulting-llc
   name: Rain Tree Consulting LLC
   categories:
@@ -506,22 +519,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1321 Willow Street, city: Vincennes, state: in, zip: '47591'}
+  address:
+    street: 1321 Willow Street
+    city: Vincennes
+    state: in
+    zip: '47591'
   place: '1879208'
-  geo: {lat: 38.66376, lng: -87.53321}
+  geo:
+    lat: 38.66376
+    lng: -87.53321
   phone: 812-882-0894
   website: https://www.va.gov/marion-health-care/locations/vincennes-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_657GQ}
+  external_ids:
+    va: vha_657GQ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/vincennes/washington-learning-academy
   name: Washington Learning Academy
   categories:

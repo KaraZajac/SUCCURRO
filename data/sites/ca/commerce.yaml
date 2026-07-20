@@ -224,13 +224,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5426 East Olympic Boulevard, city: Commerce, state: ca, zip: '90022'}
+  address:
+    street: 5426 East Olympic Boulevard
+    city: Commerce
+    state: ca
+    zip: '90022'
   place: 0614974
-  geo: {lat: 34.01554, lng: -118.15522}
+  geo:
+    lat: 34.01554
+    lng: -118.15522
   phone: 323-725-7372
   website: https://www.va.gov/greater-los-angeles-health-care/locations/east-los-angeles-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -273,10 +286,13 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691GF}
+  external_ids:
+    va: vha_691GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/commerce/jwch-institute-corporate-headquarters
   name: JWCH Institute Corporate Headquarters
   categories:
@@ -319,6 +335,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/commerce/maravilla-foundation
+  name: Maravilla Foundation
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Los Angeles County
+  address: {street: 5729 E. Union Pacific Ave., city: Commerce, state: ca, zip: '90022'}
+  place: 0614974
+  phone: 323-721-4162
+  website: https://www.maravilla.org/utilityassistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/commerce/montebello-commerce-ymca
   name: Montebello-Commerce (YMCA)
   categories:

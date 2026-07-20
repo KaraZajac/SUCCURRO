@@ -585,15 +585,33 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/asheville/buncombe-county-department-of-social-services
+  name: Buncombe County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Buncombe County
+  address: {street: 40 Coxe Ave. (P. O. Box 7408), city: Asheville, state: nc, zip: '28802'}
+  place: '3702140'
+  phone: 828-250-5588
+  website: https://www.buncombecounty.org/governing/depts/dss/default.aspx
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/asheville/charles-george-department-of-veterans-affairs-me
   name: Charles George Department of Veterans Affairs Medical Center
   categories:
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1100 Tunnel Road, city: Asheville, state: nc, zip: '28805'}
+  address:
+    street: 1100 Tunnel Road
+    city: Asheville
+    state: nc
+    zip: '28805'
   place: '3702140'
-  geo: {lat: 35.58834, lng: -82.48334}
+  geo:
+    lat: 35.58834
+    lng: -82.48334
   phone: 828-298-7911
   website: https://www.va.gov/asheville-health-care/locations/charles-george-department-of-veterans-affairs-medical-center/
   services:
@@ -640,10 +658,13 @@
   - Veteran readiness and employment programs
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_637}
+  external_ids:
+    va: vha_637
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/asheville/charles-t-koontz-intermediate
   name: Charles T. Koontz Intermediate
   categories:
@@ -1994,17 +2015,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '1100 Tunnel Road, Room B416', city: Asheville, state: nc, zip: '28805'}
+  address:
+    street: 1100 Tunnel Road, Room B416
+    city: Asheville
+    state: nc
+    zip: '28805'
   place: '3702140'
-  geo: {lat: 35.58834, lng: -82.48334}
+  geo:
+    lat: 35.58834
+    lng: -82.48334
   phone: 336-714-6099
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_318m}
+  external_ids:
+    va: vba_318m
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/asheville/western-carolina-treatment-center
   name: Western Carolina Treatment Center
   categories:

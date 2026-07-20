@@ -491,13 +491,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 180 North State Street, city: Alpena, state: mi, zip: '49707'}
+  address:
+    street: 180 North State Street
+    city: Alpena
+    state: mi
+    zip: '49707'
   place: '2601740'
-  geo: {lat: 45.06106, lng: -83.43057}
+  geo:
+    lat: 45.06106
+    lng: -83.43057
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/lieutenant-colonel-clement-c-van-wagoner-department-of-veterans-affairs-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -512,10 +525,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_655GD}
+  external_ids:
+    va: vha_655GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/alpena/lincoln-school-wildcat-health-extension
   name: Lincoln School Wildcat Health Extension
   categories:

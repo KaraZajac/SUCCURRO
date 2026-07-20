@@ -551,17 +551,33 @@
   name: Solano County Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '420 Executive Ct, North Suite A', city: Fairfield, state: ca, zip: '94534'}
+  address:
+    street: 420 Executive Ct, North Suite A
+    city: Fairfield
+    state: ca
+    zip: '94534'
   place: 0623182
-  geo: {lat: 38.23044, lng: -122.12401}
+  geo:
+    lat: 38.23044
+    lng: -122.12401
   phone: 707-864-5360
   website: https://www.va.gov/concord-vet-center/locations/#solano-county-vet-center-outst
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_6021OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_6021OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/fairfield/suisun
   name: Suisun
   categories:

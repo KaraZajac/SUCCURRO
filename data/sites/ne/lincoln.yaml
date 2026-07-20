@@ -28,6 +28,42 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ne/lincoln/access-nebraska
+  name: ACCESS NEBRASKA
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving 48 counties
+  address: {city: Lincoln, state: ne, zip: '85801'}
+  place: '3128000'
+  phone: 800-383-4278
+  website: http:///www.accessnebraska.ne.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ne/lincoln/access-nebrasks
+  name: ACCESS Nebrasks
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Garden County
+  address: {city: Lincoln, state: ne, zip: '68501'}
+  place: '3128000'
+  phone: 800-383-4278
+  website: http://www.accessnebraska.ne.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ne/lincoln/accessnebraska
+  name: ACCESSNebraska
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving 44 counties
+  address: {street: P.O. Box 85801, city: Lincoln, state: ne, zip: '68501'}
+  place: '3128000'
+  phone: 800-383-4278
+  website: http://www.accessnebraska.ne.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/lincoln/antelope-creek-valley-little-free-pantry
   name: Antelope Creek Valley Little Free Pantry
   categories:
@@ -1280,15 +1316,24 @@
   name: Lincoln Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 211 South 84th Street, city: Lincoln, state: ne, zip: '68510'}
+  address:
+    street: 211 South 84th Street
+    city: Lincoln
+    state: ne
+    zip: '68510'
   place: '3128000'
-  geo: {lat: 40.81219, lng: -96.606}
+  geo:
+    lat: 40.81219
+    lng: -96.606
   phone: 402-327-9727
   website: https://www.va.gov/lincoln-vet-center/locations/#lincoln-mobile-vet-center
-  external_ids: {va: vc_0825MVC}
+  external_ids:
+    va: vc_0825MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/lincoln/lincoln-north-east
   name: Lincoln North East
   categories:
@@ -1317,13 +1362,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 420 Victory Park Drive, city: Lincoln, state: ne, zip: '68510'}
+  address:
+    street: 420 Victory Park Drive
+    city: Lincoln
+    state: ne
+    zip: '68510'
   place: '3128000'
-  geo: {lat: 40.80963, lng: -96.62292}
+  geo:
+    lat: 40.80963
+    lng: -96.62292
   phone: 402-489-3802
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/lincoln-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -1338,18 +1396,27 @@
   - Primary care
   - Urology
   - Whole health
-  external_ids: {va: vha_636A5}
+  external_ids:
+    va: vha_636A5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/lincoln/lincoln-va-regional-benefit-office
   name: Lincoln VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 3800 Village Drive, city: Lincoln, state: ne, zip: '68516'}
+  address:
+    street: 3800 Village Drive
+    city: Lincoln
+    state: ne
+    zip: '68516'
   place: '3128000'
-  geo: {lat: 40.75437, lng: -96.66575}
+  geo:
+    lat: 40.75437
+    lng: -96.66575
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1358,20 +1425,36 @@
   - HomelessAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_334}
+  external_ids:
+    va: vba_334
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/lincoln/lincoln-vet-center
   name: Lincoln Vet Center
   categories: *id001
-  address: {street: 211 South 84th Street, city: Lincoln, state: ne, zip: '68510'}
+  address:
+    street: 211 South 84th Street
+    city: Lincoln
+    state: ne
+    zip: '68510'
   place: '3128000'
-  geo: {lat: 40.81219, lng: -96.606}
+  geo:
+    lat: 40.81219
+    lng: -96.606
   phone: 402-327-9727
   website: https://www.va.gov/lincoln-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1383,10 +1466,13 @@
   - Suicide prevention
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0427V}
+  external_ids:
+    va: vc_0427V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/lincoln/lutheran-family-services-health-360
   name: Lutheran Family Services Health 360
   categories:
@@ -1472,6 +1558,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/lincoln/nebraska-department-of-health-and-human-service
+  name: Nebraska Department of Health and Human Service
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saunders County
+  address: {street: 246 S. 14th Street Suite 2, city: Lincoln, state: ne, zip: '68508'}
+  place: '3128000'
+  phone: 402-471-7000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ne/lincoln/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lancaster, Saline Counties
+  address: {street: 246 S. 14th Street Suite 2, city: Lincoln, state: ne, zip: '68508'}
+  place: '3128000'
+  phone: 402-471-7000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/lincoln/nebraska-giving-realty-little-free-library
   name: Nebraska Giving Realty Little Free Library
   categories:

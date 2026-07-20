@@ -106,13 +106,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 9201 Parallel Parkway, city: Kansas City, state: ks, zip: '66112'}
+  address:
+    street: 9201 Parallel Parkway
+    city: Kansas City
+    state: ks
+    zip: '66112'
   place: '2036000'
-  geo: {lat: 39.12856, lng: -94.79211}
+  geo:
+    lat: 39.12856
+    lng: -94.79211
   phone: 913-758-6990
   website: https://www.va.gov/eastern-kansas-health-care/locations/captain-elwin-shopteese-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -121,10 +134,13 @@
   - Pharmacy
   - Primary care
   - Psychiatry
-  external_ids: {va: vha_589GJ}
+  external_ids:
+    va: vha_589GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/kansas-city/carl-b-bruce-middle-school
   name: Carl B Bruce Middle School
   categories:
@@ -1368,3 +1384,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/kansas-city/wyandotte-county-dcf
+  name: Wyandotte County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wyandotte County
+  address: {street: 402 State Ave., city: Kansas City, state: ks, zip: '66101'}
+  place: '2036000'
+  phone: 913-279-7000
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

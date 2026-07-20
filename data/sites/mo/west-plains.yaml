@@ -165,6 +165,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/west-plains/ozark-action-inc-oai
+  name: Ozark Action Inc. (OAI)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas, Howell, Oregon, Ozark, Texas, Wright Counties
+  address: {street: 710 E. Main St, city: West Plains, state: mo, zip: '65775'}
+  place: '2978928'
+  phone: 417-256-6147
+  website: https://oaiwp.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/west-plains/ozarks-healthcare-behavioral-health-center
   name: Ozarks Healthcare Behavioral Health Center
   categories:
@@ -338,13 +350,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1418 Doctors Drive, city: West Plains, state: mo, zip: '65775'}
+  address:
+    street: 1418 Doctors Drive
+    city: West Plains
+    state: mo
+    zip: '65775'
   place: '2978928'
-  geo: {lat: 36.72123, lng: -91.83073}
+  geo:
+    lat: 36.72123
+    lng: -91.83073
   phone: 888-557-8262
   website: https://www.va.gov/poplar-bluff-health-care/locations/west-plains-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -367,7 +392,10 @@
   - Toxic exposure screening
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_657GF}
+  external_ids:
+    va: vha_657GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

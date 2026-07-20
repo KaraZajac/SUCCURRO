@@ -1,3 +1,15 @@
+- id: mi/iron-mountain/dickinson-iron-community-services-agency
+  name: Dickinson-Iron Community Services Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dickinson, Iron Counties
+  address: {street: 1238 Carpenter Avenue, city: Iron Mountain, state: mi, zip: '49801'}
+  place: '2640960'
+  phone: 906-774-2256
+  website: https://www.dicsami.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/iron-mountain/great-lakes-recovery-centers-inc-iron-mountain-o
   name: Great Lakes Recovery Centers Inc Iron Mountain Outpatient Services
   categories:
@@ -44,13 +56,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 325 East H Street, city: Iron Mountain, state: mi, zip: '49801'}
+  address:
+    street: 325 East H Street
+    city: Iron Mountain
+    state: mi
+    zip: '49801'
   place: '2640960'
-  geo: {lat: 45.81002, lng: -88.06018}
+  geo:
+    lat: 45.81002
+    lng: -88.06018
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/oscar-g-johnson-department-of-veterans-affairs-medical-facility/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -93,23 +118,35 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_585}
+  external_ids:
+    va: vha_585
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/iron-mountain/veteran-readiness-and-employment-office-at-oscar
   name: Veteran Readiness and Employment Office at Oscar G. Johnson VA Medical Center
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '25 East H Street, Room 6206B', city: Iron Mountain, state: mi, zip: '49801'}
+  address:
+    street: 25 East H Street, Room 6206B
+    city: Iron Mountain
+    state: mi
+    zip: '49801'
   place: '2640960'
-  geo: {lat: 45.81002, lng: -88.06018}
+  geo:
+    lat: 45.81002
+    lng: -88.06018
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329c}
+  external_ids:
+    va: vba_329c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

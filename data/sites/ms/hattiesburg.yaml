@@ -176,20 +176,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5003 Hardy Street, city: Hattiesburg, state: ms, zip: '39402'}
+  address:
+    street: 5003 Hardy Street
+    city: Hattiesburg
+    state: ms
+    zip: '39402'
   place: '2831020'
-  geo: {lat: 31.32619, lng: -89.36793}
+  geo:
+    lat: 31.32619
+    lng: -89.36793
   phone: 601-296-3530
   website: https://www.va.gov/jackson-health-care/locations/hattiesburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GD}
+  external_ids:
+    va: vha_586GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/hattiesburg/hawkins-early-head-start
   name: Hawkins Early Head Start
   categories:
@@ -542,6 +558,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/hattiesburg/pearl-river-valley-opporotunity-prvo
+  name: Pearl River Valley Opporotunity (PRVO)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Forrest County
+  address: {street: 100 West Front St., city: Hattiesburg, state: ms, zip: '39401'}
+  place: '2831020'
+  phone: 601-545-8110
+  website: https://prvohs.org/family/liheap-family/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/hattiesburg/pine-belt-mental-health-resources-oak-arbor
   name: Pine Belt Mental Health Resources Oak Arbor
   categories:
@@ -735,19 +763,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 3503 Morningside Drive, city: Hattiesburg, state: ms, zip: '39401'}
+  address:
+    street: 3503 Morningside Drive
+    city: Hattiesburg
+    state: ms
+    zip: '39401'
   place: '2831020'
-  geo: {lat: 31.33236, lng: -89.34254}
+  geo:
+    lat: 31.33236
+    lng: -89.34254
   phone: 601-264-4629
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_323d}
+  external_ids:
+    va: vba_323d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/hattiesburg/wesley-foundation-pantry
   name: Wesley Foundation Pantry
   categories:

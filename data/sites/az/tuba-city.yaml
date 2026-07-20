@@ -324,13 +324,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 167 North Main Street, city: Tuba City, state: az, zip: '86045'}
+  address:
+    street: 167 North Main Street
+    city: Tuba City
+    state: az
+    zip: '86045'
   place: '0476010'
-  geo: {lat: 36.13539, lng: -111.23975}
+  geo:
+    lat: 36.13539
+    lng: -111.23975
   phone: 928-283-4465
   website: https://www.va.gov/northern-arizona-health-care/locations/tuba-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -338,7 +351,10 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649QF}
+  external_ids:
+    va: vha_649QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

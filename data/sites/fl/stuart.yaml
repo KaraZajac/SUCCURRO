@@ -479,13 +479,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3501 Southeast Willoughby Boulevard, city: Stuart, state: fl, zip: '34997'}
+  address:
+    street: 3501 Southeast Willoughby Boulevard
+    city: Stuart
+    state: fl
+    zip: '34997'
   place: '1268875'
-  geo: {lat: 27.16173, lng: -80.24056}
+  geo:
+    lat: 27.16173
+    lng: -80.24056
   phone: 772-288-0304
   website: https://www.va.gov/west-palm-beach-health-care/locations/stuart-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Internal medicine
@@ -494,10 +507,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Social work
-  external_ids: {va: vha_548GC}
+  external_ids:
+    va: vha_548GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/stuart/tykes-and-teens-inc
   name: Tykes and Teens Inc
   categories:

@@ -737,19 +737,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/santa-rosa/north-coast-energy-services
+  name: North Coast Energy Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sonoma County
+  address: {street: '1100 Coddingtown Center, Suite 1', city: Santa Rosa, state: ca, zip: '95401'}
+  place: 0670098
+  phone: 707-495-4417
+  website: http://www.northcoastenergyservices.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/santa-rosa/north-santa-rosa-va-clinic
   name: North Santa Rosa VA Clinic
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3841 Brickway Boulevard, city: Santa Rosa, state: ca, zip: '95403'}
+  address:
+    street: 3841 Brickway Boulevard
+    city: Santa Rosa
+    state: ca
+    zip: '95403'
   place: 0670098
-  geo: {lat: 38.51221, lng: -122.79336}
+  geo:
+    lat: 38.51221
+    lng: -122.79336
   phone: 707-569-2300
   website: https://www.va.gov/san-francisco-health-care/locations/north-santa-rosa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -764,10 +789,13 @@
   - Surgery
   - Travel reimbursement
   - Urology
-  external_ids: {va: vha_662QB}
+  external_ids:
+    va: vha_662QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/santa-rosa/parkway-campus
   name: Parkway Campus
   categories:
@@ -1215,13 +1243,26 @@
   name: South Santa Rosa VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 2285 Challenger Way, city: Santa Rosa, state: ca, zip: '95407'}
+  address:
+    street: 2285 Challenger Way
+    city: Santa Rosa
+    state: ca
+    zip: '95407'
   place: 0670098
-  geo: {lat: 38.42366, lng: -122.75109}
+  geo:
+    lat: 38.42366
+    lng: -122.75109
   phone: 707-569-2300
   website: https://www.va.gov/san-francisco-health-care/locations/south-santa-rosa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -1256,10 +1297,13 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_662GA}
+  external_ids:
+    va: vha_662GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/santa-rosa/st-joseph-s-dental-clinic
   name: St. Joseph's Dental Clinic
   categories:

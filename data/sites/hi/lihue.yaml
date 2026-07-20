@@ -251,17 +251,41 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: hi/lihue/kauai-economic-opportunity-keo
+  name: Kauai Economic Opportunity (KEO)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kauai County
+  address: {street: 2804 Wehe Rd., city: Lihue, state: hi, zip: '96766'}
+  place: '1545200'
+  phone: 808-245-4077
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: hi/lihue/kauai-vet-center
   name: Kauai Vet Center
   categories:
   - vet-center
-  address: {street: '4485 Pahe''e Street, Suite 101', city: Lihue, state: hi, zip: '96766'}
+  address:
+    street: 4485 Pahe'e Street, Suite 101
+    city: Lihue
+    state: hi
+    zip: '96766'
   place: '1545200'
-  geo: {lat: 21.97028, lng: -159.38261}
+  geo:
+    lat: 21.97028
+    lng: -159.38261
   phone: 808-246-1163
   website: https://www.va.gov/kauai-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -274,10 +298,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0633V}
+  external_ids:
+    va: vc_0633V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/lihue/king-kaumuali-i-elementary-school
   name: King Kaumuali'I Elementary School
   categories:
@@ -346,13 +373,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4485 Pahe'e Street, city: Lihue, state: hi, zip: '96766'}
+  address:
+    street: 4485 Pahe'e Street
+    city: Lihue
+    state: hi
+    zip: '96766'
   place: '1545200'
-  geo: {lat: 21.97028, lng: -159.38273}
+  geo:
+    lat: 21.97028
+    lng: -159.38273
   phone: 800-214-1306
   website: https://www.va.gov/pacific-islands-health-care/locations/lihue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -369,10 +409,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_459GD}
+  external_ids:
+    va: vha_459GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/lihue/wailua-golf-course
   name: Wailua Golf Course
   categories:

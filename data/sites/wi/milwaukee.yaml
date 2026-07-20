@@ -937,9 +937,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 5000 West National Avenue, city: Milwaukee, state: wi, zip: '53295'}
+  address:
+    street: 5000 West National Avenue
+    city: Milwaukee
+    state: wi
+    zip: '53295'
   place: '5553000'
-  geo: {lat: 43.02317, lng: -87.97218}
+  geo:
+    lat: 43.02317
+    lng: -87.97218
   phone: 414-384-2000
   website: https://www.va.gov/milwaukee-health-care/locations/clement-j-zablocki-veterans-administration-medical-center/
   services:
@@ -1035,10 +1041,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_695}
+  external_ids:
+    va: vha_695
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/milwaukee/clovernook-playground
   name: Clovernook Playground
   categories:
@@ -3299,6 +3308,54 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/milwaukee/milwaukee-county-community-advocates-downtown
+  name: Milwaukee County - Community Advocates Downtown
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Milwaukee County
+  address: {street: 728 N. James Lovell Dr., city: Milwaukee, state: wi, zip: '53203'}
+  place: '5553000'
+  phone: 414-270-4653
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: wi/milwaukee/milwaukee-county-community-advocates-northwest
+  name: Milwaukee County - Community Advocates Northwest
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Milwaukee County
+  address: {street: 4906 W. Fond du Lac Ave., city: Milwaukee, state: wi, zip: '53216'}
+  place: '5553000'
+  phone: 414-270-4653
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: wi/milwaukee/milwaukee-county-umos-south
+  name: Milwaukee County - Umos South
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Milwaukee County
+  address: {street: 5663 S. 27th St., city: Milwaukee, state: wi, zip: '53221'}
+  place: '5553000'
+  phone: 414-270-4653
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: wi/milwaukee/milwaukee-county-umos-southeast
+  name: Milwaukee County - Umos Southeast
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Milwaukee County
+  address: {street: 2701 S. Chase Ave., city: Milwaukee, state: wi, zip: '53207'}
+  place: '5553000'
+  phone: 414-270-4653
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/milwaukee/milwaukee-health-services-inc
   name: MILWAUKEE HEALTH SERVICES, INC.
   categories:
@@ -3386,30 +3443,51 @@
   name: Milwaukee VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1818 North Martin Luther King Drive, Community Resource & Referral Center (CRRC)',
-    city: Milwaukee, state: wi, zip: '53212'}
+  address:
+    street: 1818 North Martin Luther King Drive, Community Resource & Referral Center (CRRC)
+    city: Milwaukee
+    state: wi
+    zip: '53212'
   place: '5553000'
-  geo: {lat: 43.05431, lng: -87.91384}
+  geo:
+    lat: 43.05431
+    lng: -87.91384
   phone: 414-263-7673
   website: https://www.va.gov/milwaukee-health-care/locations/milwaukee-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Mental health care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_695QA}
+  external_ids:
+    va: vha_695QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/milwaukee/milwaukee-va-regional-benefit-office
   name: Milwaukee VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: 5400 W. National Ave., city: Milwaukee, state: wi, zip: '53214'}
+  address:
+    street: 5400 W. National Ave.
+    city: Milwaukee
+    state: wi
+    zip: '53214'
   place: '5553000'
-  geo: {lat: 43.01883, lng: -87.98039}
+  geo:
+    lat: 43.01883
+    lng: -87.98039
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3422,21 +3500,37 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_330}
+  external_ids:
+    va: vba_330
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/milwaukee/milwaukee-vet-center
   name: Milwaukee Vet Center
   categories:
   - vet-center
-  address: {street: 11925 W. Lake Park Drive, city: Milwaukee, state: wi, zip: '53224'}
+  address:
+    street: 11925 W. Lake Park Drive
+    city: Milwaukee
+    state: wi
+    zip: '53224'
   place: '5553000'
-  geo: {lat: 43.15903, lng: -88.05676}
+  geo:
+    lat: 43.15903
+    lng: -88.05676
   phone: 414-902-5561
   website: https://www.va.gov/milwaukee-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3449,10 +3543,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0415V}
+  external_ids:
+    va: vc_0415V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/milwaukee/mitchell
   name: Mitchell
   categories:
@@ -5488,19 +5585,28 @@
   name: VetSuccess on Campus at University of Wisconsin-Milwaukee
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: 2200 E Kenwood Drive, city: Milwaukee, state: wi, zip: '53201'}
+  address:
+    street: 2200 E Kenwood Drive
+    city: Milwaukee
+    state: wi
+    zip: '53201'
   place: '5553000'
-  geo: {lat: 43.07523, lng: -87.88142}
+  geo:
+    lat: 43.07523
+    lng: -87.88142
   phone: 414-469-3842
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_330a}
+  external_ids:
+    va: vba_330a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/milwaukee/vieau
   name: Vieau
   categories:

@@ -403,15 +403,24 @@
   name: Beckley Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: 201 Grey Flatts Road, city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 201 Grey Flatts Road
+    city: Beckley
+    state: wv
+    zip: '25801'
   place: '5405332'
-  geo: {lat: 37.77892, lng: -81.15897}
+  geo:
+    lat: 37.77892
+    lng: -81.15897
   phone: 304-252-8220
   website: https://www.va.gov/beckley-vet-center/locations/#beckley-mobile-vet-center
-  external_ids: {va: vc_0812MVC}
+  external_ids:
+    va: vc_0812MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/beckley-stratton-school-based-clinic
   name: Beckley Stratton School-Based Clinic
   categories:
@@ -439,9 +448,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 200 Veterans Avenue, city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 200 Veterans Avenue
+    city: Beckley
+    state: wv
+    zip: '25801'
   place: '5405332'
-  geo: {lat: 37.76604, lng: -81.19195}
+  geo:
+    lat: 37.76604
+    lng: -81.19195
   phone: 304-255-2121
   website: https://www.va.gov/beckley-health-care/locations/beckley-va-medical-center/
   services:
@@ -476,35 +491,67 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_517}
+  external_ids:
+    va: vha_517
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/beckley-va-mobile-medical-unit
   name: Beckley VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 200 Veterans Avenue, city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 200 Veterans Avenue
+    city: Beckley
+    state: wv
+    zip: '25801'
   place: '5405332'
-  geo: {lat: 37.76512, lng: -81.19269}
+  geo:
+    lat: 37.76512
+    lng: -81.19269
   phone: 304-255-2121
   website: https://www.va.gov/beckley-health-care/locations/beckley-va-mobile-medical-unit/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_517HK}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_517HK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/beckley-vet-center
   name: Beckley Vet Center
   categories: *id002
-  address: {street: 201 Grey Flatts Road, city: Beckley, state: wv, zip: '25801'}
+  address:
+    street: 201 Grey Flatts Road
+    city: Beckley
+    state: wv
+    zip: '25801'
   place: '5405332'
-  geo: {lat: 37.77892, lng: -81.15897}
+  geo:
+    lat: 37.77892
+    lng: -81.15897
   phone: 304-252-8220
   website: https://www.va.gov/beckley-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -518,10 +565,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0231V}
+  external_ids:
+    va: vc_0231V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/beckley/bullfrogs-butterflies
   name: Bullfrogs & Butterflies
   categories:
@@ -903,6 +953,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/beckley/raleigh-county-dhhr-office
+  name: Raleigh County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Raleigh County
+  address: {street: 407 Neville St, city: Beckley, state: wv, zip: '25801'}
+  place: '5405332'
+  phone: 304-256-6930
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/beckley/stanaford-elementary
   name: Stanaford Elementary
   categories:

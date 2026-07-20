@@ -59,6 +59,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/sioux-city/community-action-agency-of-siouxland
+  name: Community Action Agency of Siouxland
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Woodbury County
+  address: {street: 2700 Leech Ave., city: Sioux City, state: ia, zip: '51106'}
+  place: '1973335'
+  phone: 712-274-1610 ext. 220
+  website: http://www.caasiouxland.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/sioux-city/cooper-building
   name: Cooper Building
   categories:
@@ -515,13 +527,26 @@
   name: Sioux City Vet Center
   categories:
   - vet-center
-  address: {street: '4280 Sergeant Road, Suite 104', city: Sioux City, state: ia, zip: '51106'}
+  address:
+    street: 4280 Sergeant Road, Suite 104
+    city: Sioux City
+    state: ia
+    zip: '51106'
   place: '1973335'
-  geo: {lat: 42.44979, lng: -96.35404}
+  geo:
+    lat: 42.44979
+    lng: -96.35404
   phone: 712-255-3808
   website: https://www.va.gov/sioux-city-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -532,10 +557,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0428V}
+  external_ids:
+    va: vc_0428V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/sioux-city/siouxland-community-health-center
   name: SIOUXLAND COMMUNITY HEALTH CENTER
   categories:

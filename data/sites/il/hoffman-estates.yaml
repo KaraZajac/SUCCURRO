@@ -69,14 +69,29 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4885 Hoffman Boulevard, city: Hoffman Estates, state: il, zip: '60192'}
+  address:
+    street: 4885 Hoffman Boulevard
+    city: Hoffman Estates
+    state: il
+    zip: '60192'
   place: '1735411'
-  geo: {lat: 42.06805, lng: -88.199}
+  geo:
+    lat: 42.06805
+    lng: -88.199
   phone: 847-645-1443
   website: https://www.va.gov/hines-health-care/locations/hoffman-estates-va-clinic/
   hours:
-  - {days: [mon, thu, fri], open: '07:30', close: '16:30'}
-  - {days: [tue, wed], open: '07:30', close: '17:30'}
+  - days:
+    - mon
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - tue
+    - wed
+    open: 07:30
+    close: '17:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -85,10 +100,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_578GE}
+  external_ids:
+    va: vha_578GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/hoffman-estates/j-b-conant-high-school
   name: J B Conant High School
   categories:

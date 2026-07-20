@@ -351,9 +351,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 940 Belmont Street, city: Brockton, state: ma, zip: '02301'}
+  address:
+    street: 940 Belmont Street
+    city: Brockton
+    state: ma
+    zip: '02301'
   place: '2509000'
-  geo: {lat: 42.06091, lng: -71.05187}
+  geo:
+    lat: 42.06091
+    lng: -71.05187
   phone: 508-583-4500
   website: https://www.va.gov/boston-health-care/locations/brockton-va-medical-center/
   services:
@@ -403,21 +409,37 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_523A5}
+  external_ids:
+    va: vha_523A5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/brockton/brockton-vet-center
   name: Brockton Vet Center
   categories:
   - vet-center
-  address: {street: '1 Pearl Street, Suite 2300', city: Brockton, state: ma, zip: '02301'}
+  address:
+    street: 1 Pearl Street, Suite 2300
+    city: Brockton
+    state: ma
+    zip: '02301'
   place: '2509000'
-  geo: {lat: 42.08874, lng: -71.06557}
+  geo:
+    lat: 42.08874
+    lng: -71.06557
   phone: 508-580-2730
   website: https://www.va.gov/brockton-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -428,10 +450,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0104V}
+  external_ids:
+    va: vc_0104V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/brockton/camp-brookside-at-brockton-clubhouse-sf-36-014
   name: Camp Brookside At Brockton Clubhouse (Sf-36-014)
   categories:
@@ -797,6 +822,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/brockton/self-help-inc-shi
+  name: Self Help Inc. (SHI)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Norfolk County
+  address: {street: 1362 Main St., city: Brockton, state: ma, zip: '02301'}
+  place: '2509000'
+  phone: 508-588-5440
+  website: https://selfhelpinc.org/program-services/fuel-energy/home-energy-assistance/locations/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/brockton/ulysses-g-shelton-center
   name: Ulysses G Shelton Center
   categories:

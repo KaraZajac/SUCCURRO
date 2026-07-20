@@ -2040,14 +2040,29 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: '1701 Hardee Avenue, Southwest', city: Atlanta, state: ga, zip: '30310'}
+  address:
+    street: 1701 Hardee Avenue, Southwest
+    city: Atlanta
+    state: ga
+    zip: '30310'
   place: '1304000'
-  geo: {lat: 33.7064, lng: -84.4293}
+  geo:
+    lat: 33.7064
+    lng: -84.4293
   phone: 404-230-5683
   website: https://www.va.gov/atlanta-health-care/locations/fort-mcpherson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:30', close: '20:00'}
-  - {days: [fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:30
+    close: '20:00'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dental/oral surgery
   - Dermatology
@@ -2056,10 +2071,13 @@
   - Mental health care
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_508GA}
+  external_ids:
+    va: vha_508GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/atlanta/frederick-douglass-high-school
   name: Frederick Douglass High School
   categories:
@@ -2120,6 +2138,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/atlanta/fulton-atlanta-community-action-authority-inc
+  name: Fulton Atlanta Community Action Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fulton County
+  address: {street: 341 Kelly Street (P. O. Box 13367), city: Atlanta, state: ga, zip: '30312'}
+  place: '1304000'
+  phone: 404-437-4621
+  website: https://www.facaa.org/programs/liheap-2/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/atlanta/future-seekers-creel-park
   name: Future Seekers @ Creel Park
   categories:
@@ -2424,21 +2454,39 @@
   name: Henderson Mill VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2296 Henderson Mill Road, city: Atlanta, state: ga, zip: '30345'}
+  address:
+    street: 2296 Henderson Mill Road
+    city: Atlanta
+    state: ga
+    zip: '30345'
   place: '1304000'
-  geo: {lat: 33.85243, lng: -84.25903}
+  geo:
+    lat: 33.85243
+    lng: -84.25903
   phone: 770-492-2748
   website: https://www.va.gov/atlanta-health-care/locations/henderson-mill-va-clinic/
   hours:
-  - {days: [mon, wed, fri], open: '07:00', close: '18:30'}
-  - {days: [tue, thu], open: '07:00', close: '20:30'}
+  - days:
+    - mon
+    - wed
+    - fri
+    open: 07:00
+    close: '18:30'
+  - days:
+    - tue
+    - thu
+    open: 07:00
+    close: '20:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_508QC}
+  external_ids:
+    va: vha_508QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/atlanta/heritage-academy-aps
   name: Heritage Academy- APS
   categories:
@@ -5596,13 +5644,26 @@
   name: Tucker VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: '2309 Parklake Drive Northeast, North Lake', city: Atlanta, state: ga, zip: '30345'}
+  address:
+    street: 2309 Parklake Drive Northeast, North Lake
+    city: Atlanta
+    state: ga
+    zip: '30345'
   place: '1304000'
-  geo: {lat: 33.85371, lng: -84.24926}
+  geo:
+    lat: 33.85371
+    lng: -84.24926
   phone: 770-496-4200
   website: https://www.va.gov/atlanta-health-care/locations/tucker-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Blind and low vision rehabilitation
   - Cardiology
@@ -5612,10 +5673,13 @@
   - Optometry
   - Polytrauma and traumatic brain injury
   - Primary care
-  external_ids: {va: vha_508QJ}
+  external_ids:
+    va: vha_508QJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/atlanta/tuskegee-airmen-global-academy-aps
   name: TUSKEGEE AIRMEN GLOBAL ACADEMY - APS
   categories:

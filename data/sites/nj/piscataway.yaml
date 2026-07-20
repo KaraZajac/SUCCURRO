@@ -4,12 +4,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 14 Wills Way, city: Piscataway, state: nj, zip: 08854}
-  geo: {lat: 40.55442, lng: -74.47656}
+  address:
+    street: 14 Wills Way
+    city: Piscataway
+    state: nj
+    zip: 08854
+  geo:
+    lat: 40.55442
+    lng: -74.47656
   phone: 732-981-8193
   website: https://www.va.gov/new-jersey-health-care/locations/piscataway-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -20,10 +33,13 @@
   - Primary care
   - Social work
   - Toxic exposure screening
-  external_ids: {va: vha_561GF}
+  external_ids:
+    va: vha_561GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/piscataway/renew-counseling-consulting-and-wellness-service
   name: Renew Counseling Consulting and Wellness Services LLC
   categories:

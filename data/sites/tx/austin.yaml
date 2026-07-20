@@ -205,15 +205,24 @@
   name: Austin Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1524 South IH 35, Suite 100', city: Austin, state: tx, zip: '78704'}
+  address:
+    street: 1524 South IH 35, Suite 100
+    city: Austin
+    state: tx
+    zip: '78704'
   place: '4805000'
-  geo: {lat: 30.24281, lng: -97.73624}
+  geo:
+    lat: 30.24281
+    lng: -97.73624
   phone: 801-266-1499
   website: https://www.va.gov/austin-vet-center/locations/#austin-mobile-vet-center
-  external_ids: {va: vc_0831MVC}
+  external_ids:
+    va: vc_0831MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/austin-oaks-hospital
   name: Austin Oaks Hospital
   categories:
@@ -262,13 +271,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 7901 Metropolis Drive, city: Austin, state: tx, zip: '78744'}
+  address:
+    street: 7901 Metropolis Drive
+    city: Austin
+    state: tx
+    zip: '78744'
   place: '4805000'
-  geo: {lat: 30.20566, lng: -97.69035}
+  geo:
+    lat: 30.20566
+    lng: -97.69035
   phone: 800-423-2111
   website: https://www.va.gov/central-texas-health-care/locations/austin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Amputation care
   - Audiology and speech
@@ -301,33 +323,58 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_674BY}
+  external_ids:
+    va: vha_674BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/austin-va-mobile-medical-unit
   name: Austin VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 7901 Metropolis Drive, city: Austin, state: tx, zip: '78744'}
+  address:
+    street: 7901 Metropolis Drive
+    city: Austin
+    state: tx
+    zip: '78744'
   place: '4805000'
-  geo: {lat: 30.20775, lng: -97.69022}
+  geo:
+    lat: 30.20775
+    lng: -97.69022
   phone: 800-423-2111
   website: https://www.va.gov/find-locations/facility/vha_674QB
-  external_ids: {va: vha_674QB}
+  external_ids:
+    va: vha_674QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/austin-vet-center
   name: Austin Vet Center
   categories: *id002
-  address: {street: '1524 South IH 35, Suite 100', city: Austin, state: tx, zip: '78704'}
+  address:
+    street: 1524 South IH 35, Suite 100
+    city: Austin
+    state: tx
+    zip: '78704'
   place: '4805000'
-  geo: {lat: 30.2431, lng: -97.73686}
+  geo:
+    lat: 30.2431
+    lng: -97.73686
   phone: 512-416-1314
   website: https://www.va.gov/austin-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -343,26 +390,38 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0703V}
+  external_ids:
+    va: vc_0703V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/austin-veteran-readiness-and-employment-office
   name: Austin Veteran Readiness and Employment Office
   categories: &id003
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '12515 Research Blvd, Bldg 7, Suite 160', city: Austin, state: tx, zip: '78759'}
+  address:
+    street: 12515 Research Blvd, Bldg 7, Suite 160
+    city: Austin
+    state: tx
+    zip: '78759'
   place: '4805000'
-  geo: {lat: 30.4312, lng: -97.75177}
+  geo:
+    lat: 30.4312
+    lng: -97.75177
   phone: 512-206-0857
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349k}
+  external_ids:
+    va: vba_349k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/ayw
   name: AYW
   categories:
@@ -4226,6 +4285,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/austin/travis-county-health-and-human-services-and-vete
+  name: Travis County Health and Human Services and Veterans Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Travis County
+  address: {street: 5021 E. Cesar Chavez (P. O. Box 1748), city: Austin, state: tx, zip: '78767'}
+  place: '4805000'
+  phone: 512-854-4120
+  website: https://www.traviscountytx.gov/health-human-services/apply-for-assistance/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/austin/travis-county-healthcare-district
   name: Travis County Healthcare District
   categories:
@@ -4325,10 +4396,15 @@
   name: VA Regional Benefit Satellite Office at Austin VA Clinic
   categories: *id003
   description: Satellite Office
-  address: {street: '7901 Metropolis Drive, Rooms 1G-104, 1G-105, and 1G-106', city: Austin, state: tx,
-    zip: '78744'}
+  address:
+    street: 7901 Metropolis Drive, Rooms 1G-104, 1G-105, and 1G-106
+    city: Austin
+    state: tx
+    zip: '78744'
   place: '4805000'
-  geo: {lat: 30.20566, lng: -97.69035}
+  geo:
+    lat: 30.20566
+    lng: -97.69035
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -4338,10 +4414,13 @@
   - HomelessAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_349b}
+  external_ids:
+    va: vba_349b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/val-langston-free-pantry
   name: Val-Langston Free Pantry
   categories:
@@ -4361,19 +4440,28 @@
   name: VetSuccess on Campus at Austin Community College Highland Campus
   categories: *id003
   description: VetSuccess On Campus
-  address: {street: '6101 Highland Campus Dr, Bldg 4000', city: Austin, state: tx, zip: '78752'}
+  address:
+    street: 6101 Highland Campus Dr, Bldg 4000
+    city: Austin
+    state: tx
+    zip: '78752'
   place: '4805000'
-  geo: {lat: 30.32632, lng: -97.71266}
+  geo:
+    lat: 30.32632
+    lng: -97.71266
   phone: 512-223-7041
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349n}
+  external_ids:
+    va: vba_349n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/austin/walnut-creek-aisd-head-start
   name: Walnut Creek-AISD/Head Start
   categories:

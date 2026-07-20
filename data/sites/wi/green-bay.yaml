@@ -190,6 +190,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/green-bay/brown-county-human-services
+  name: Brown County Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Brown County
+  address: {street: 111 N. Jefferson St., city: Green Bay, state: wi, zip: '54301'}
+  place: '5531000'
+  phone: 920-448-6460
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/green-bay/brown-county-human-services-department
   name: Brown County Human Services Department
   categories:
@@ -934,25 +945,47 @@
   name: Green Bay Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 1600 South Ashland Avenue, city: Green Bay, state: wi, zip: '54304'}
+  address:
+    street: 1600 South Ashland Avenue
+    city: Green Bay
+    state: wi
+    zip: '54304'
   place: '5531000'
-  geo: {lat: 44.50067, lng: -88.03952}
+  geo:
+    lat: 44.50067
+    lng: -88.03952
   phone: 920-435-5650
   website: https://www.va.gov/green-bay-vet-center/locations/#green-bay-mobile-vet-center
-  external_ids: {va: vc_0856MVC}
+  external_ids:
+    va: vc_0856MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/green-bay/green-bay-vet-center
   name: Green Bay Vet Center
   categories: *id001
-  address: {street: 1600 South Ashland Avenue, city: Green Bay, state: wi, zip: '54304'}
+  address:
+    street: 1600 South Ashland Avenue
+    city: Green Bay
+    state: wi
+    zip: '54304'
   place: '5531000'
-  geo: {lat: 44.50067, lng: -88.03952}
+  geo:
+    lat: 44.50067
+    lng: -88.03952
   phone: 920-435-5650
   website: https://www.va.gov/green-bay-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -964,10 +997,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0441V}
+  external_ids:
+    va: vc_0441V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/green-bay/green-isle-park
   name: Green Isle Park
   categories:
@@ -1360,13 +1396,26 @@
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 2851 University Avenue, city: Green Bay, state: wi, zip: '54311'}
+  address:
+    street: 2851 University Avenue
+    city: Green Bay
+    state: wi
+    zip: '54311'
   place: '5531000'
-  geo: {lat: 44.52365, lng: -87.94379}
+  geo:
+    lat: 44.52365
+    lng: -87.94379
   phone: 920-431-2500
   website: https://www.va.gov/milwaukee-health-care/locations/milo-c-huempfner-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -1410,10 +1459,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_695GD}
+  external_ids:
+    va: vha_695GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/green-bay/minoka-hill-school
   name: Minoka-Hill School
   categories:

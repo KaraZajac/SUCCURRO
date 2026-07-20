@@ -39,19 +39,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/sheffield/community-action-agency-of-northwest-alabama-col
+  name: Community Action Agency of Northwest Alabama - Colbert
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Colbert County
+  address: {street: 505 N. Columbia Ave., city: Sheffield, state: al, zip: '35660'}
+  place: 0169648
+  phone: 256-383-3832
+  website: https://www.caanw.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/sheffield/florence-va-clinic
   name: Florence VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 410 Cox Boulevard, city: Sheffield, state: al, zip: '35660'}
+  address:
+    street: 410 Cox Boulevard
+    city: Sheffield
+    state: al
+    zip: '35660'
   place: 0169648
-  geo: {lat: 34.75111, lng: -87.68062}
+  geo:
+    lat: 34.75111
+    lng: -87.68062
   phone: 256-381-9055
   website: https://www.va.gov/birmingham-health-care/locations/florence-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -59,10 +84,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_521GC}
+  external_ids:
+    va: vha_521GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/sheffield/le-willson-elem-school
   name: Le Willson Elem School
   categories:

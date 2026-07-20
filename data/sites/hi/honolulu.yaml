@@ -379,6 +379,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: hi/honolulu/hcap-kalihi-palama-district-service-center
+  name: HCAP - Kalihi-Palama District Service Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Honolulu County
+  address: {street: 420 N. King St., city: Honolulu, state: hi, zip: '96817'}
+  phone: 808-847-0804
+  email: hcap@hcapweb.org
+  website: https://www.hcapweb.org/low-income-home-energy-assistance-program-liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: hi/honolulu/hcap-leahi-district
+  name: HCAP - Leahi District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Honolulu County
+  address: {street: 1915 Palolo Avenue, city: Honolulu, state: hi, zip: '96816'}
+  phone: 808-732-7755
+  website: https://www.hcapweb.org/low-income-home-energy-assistance-program-liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: hi/honolulu/hina-mauka-teen-care-aliamanu-middle-school
   name: Hina Mauka/Teen Care Aliamanu Middle School
   categories:
@@ -442,8 +465,14 @@
   categories: &id001
   - va-facility
   description: Regional Benefit Office
-  address: {street: 459 Patterson Road, city: Honolulu, state: hi, zip: '96819'}
-  geo: {lat: 21.36125, lng: -157.88888}
+  address:
+    street: 459 Patterson Road
+    city: Honolulu
+    state: hi
+    zip: '96819'
+  geo:
+    lat: 21.36125
+    lng: -157.88888
   phone: 800-827-1000
   website: https://www.va.gov/honolulu-va-regional-benefit-office-at-spark-m-matsunaga-department-of-veterans-affairs-medical-center/
   services:
@@ -461,20 +490,36 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_459}
+  external_ids:
+    va: vba_459
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/honolulu-vet-center
   name: Honolulu Vet Center
   categories:
   - vet-center
-  address: {street: '1680 Kapiolani Boulevard, Suite F-3', city: Honolulu, state: hi, zip: '96814'}
-  geo: {lat: 21.29134, lng: -157.83851}
+  address:
+    street: 1680 Kapiolani Boulevard, Suite F-3
+    city: Honolulu
+    state: hi
+    zip: '96814'
+  geo:
+    lat: 21.29134
+    lng: -157.83851
   phone: 808-973-8387
   website: https://www.va.gov/honolulu-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -486,16 +531,25 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0609V}
+  external_ids:
+    va: vc_0609V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/integrated-disability-evaluation-system-ides-sit
   name: Integrated Disability Evaluation System (IDES) Site at Tripler Army Medical Center
   categories: *id001
   description: IDES Site
-  address: {street: '1 Jarrett White Road, First Floor Room 1A-303', city: Honolulu, state: hi, zip: '96819'}
-  geo: {lat: 21.36013, lng: -157.88949}
+  address:
+    street: 1 Jarrett White Road, First Floor Room 1A-303
+    city: Honolulu
+    state: hi
+    zip: '96819'
+  geo:
+    lat: 21.36013
+    lng: -157.88949
   phone: 808-433-1383
   services:
   - ApplyingForBenefits
@@ -504,10 +558,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_459f}
+  external_ids:
+    va: vba_459f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/jefferson-el
   name: Jefferson El.
   categories:
@@ -1241,17 +1298,33 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '347 North Kuakini Street, Kuakini Medical Center', city: Honolulu, state: hi, zip: '96817'}
-  geo: {lat: 21.32169, lng: -157.85574}
+  address:
+    street: 347 North Kuakini Street, Kuakini Medical Center
+    city: Honolulu
+    state: hi
+    zip: '96817'
+  geo:
+    lat: 21.32169
+    lng: -157.85574
   phone: 800-214-1306
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Gastroenterology
-  external_ids: {va: vha_459QD}
+  external_ids:
+    va: vha_459QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/kuhio-el
   name: Kuhio El.
   categories:
@@ -1856,8 +1929,14 @@
   name: Spark M. Matsunaga Department of Veterans Affairs Medical Center
   categories: *id002
   description: VA Medical Center (VAMC)
-  address: {street: 459 Patterson Road, city: Honolulu, state: hi, zip: '96819'}
-  geo: {lat: 21.36125, lng: -157.88888}
+  address:
+    street: 459 Patterson Road
+    city: Honolulu
+    state: hi
+    zip: '96819'
+  geo:
+    lat: 21.36125
+    lng: -157.88888
   phone: 800-214-1306
   website: https://www.va.gov/pacific-islands-health-care/locations/spark-m-matsunaga-department-of-veterans-affairs-medical-center/
   services:
@@ -1884,10 +1963,13 @@
   - Suicide prevention
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_459}
+  external_ids:
+    va: vha_459
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/theodore-roosevelt-high-school
   name: Theodore Roosevelt High School
   categories:
@@ -1913,34 +1995,52 @@
   name: VetSuccess on Campus at Hawaii Pacific University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '1164 Bishop St., Suite 912', city: Honolulu, state: hi, zip: '96813'}
-  geo: {lat: 21.31034, lng: -157.85967}
+  address:
+    street: 1164 Bishop St., Suite 912
+    city: Honolulu
+    state: hi
+    zip: '96813'
+  geo:
+    lat: 21.31034
+    lng: -157.85967
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_459c}
+  external_ids:
+    va: vba_459c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/vetsuccess-on-campus-at-university-of-hawaii-at
   name: VetSuccess on Campus at University of Hawaii at Manoa
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '2600 Campus Road, QLC Room 310', city: Honolulu, state: hi, zip: '96822'}
-  geo: {lat: 21.30057, lng: -157.8184}
+  address:
+    street: 2600 Campus Road, QLC Room 310
+    city: Honolulu
+    state: hi
+    zip: '96822'
+  geo:
+    lat: 21.30057
+    lng: -157.8184
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_459a}
+  external_ids:
+    va: vba_459a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/honolulu/waikiki-health-at-lili-uokalani-center
   name: Waikiki Health at Lili'uokalani Center
   categories:

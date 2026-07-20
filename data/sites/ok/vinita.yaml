@@ -63,6 +63,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/vinita/human-services-centers-craig
+  name: 'Human Services Centers: Craig'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Craig County
+  address: {city: Vinita, state: ok, zip: '74301'}
+  place: '4077550'
+  phone: 405-522-5050
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/vinita/vinita-es-200
   name: Vinita Es(200)
   categories:
@@ -132,21 +144,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '27371 South 4410 Road, Cherokee Nation Medical Clinic', city: Vinita, state: ok,
-    zip: '74301'}
+  address:
+    street: 27371 South 4410 Road, Cherokee Nation Medical Clinic
+    city: Vinita
+    state: ok
+    zip: '74301'
   place: '4077550'
-  geo: {lat: 36.62057, lng: -95.1436}
+  geo:
+    lat: 36.62057
+    lng: -95.1436
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/vinita-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Primary care
-  external_ids: {va: vha_623GB}
+  external_ids:
+    va: vha_623GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/vinita/whiteoak-baptist-church-noncongregate-n101
   name: Whiteoak Baptist Church Noncongregate(N101)
   categories:

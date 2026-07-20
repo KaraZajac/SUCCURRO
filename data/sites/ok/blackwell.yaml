@@ -69,22 +69,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1009 West Ferguson Avenue, city: Blackwell, state: ok, zip: '74631'}
+  address:
+    street: 1009 West Ferguson Avenue
+    city: Blackwell
+    state: ok
+    zip: '74631'
   place: '4006600'
-  geo: {lat: 36.79695, lng: -97.2969}
+  geo:
+    lat: 36.79695
+    lng: -97.2969
   phone: 580-363-0052
   website: https://www.va.gov/oklahoma-city-health-care/locations/blackwell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GC}
+  external_ids:
+    va: vha_635GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/blackwell/grand-lake-mental-health-center-kay-county-satel
   name: Grand Lake Mental Health Center Kay County Satellite
   categories:

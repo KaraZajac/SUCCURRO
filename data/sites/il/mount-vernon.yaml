@@ -123,13 +123,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4000 South Water Tower Place, city: Mount Vernon, state: il, zip: '62864'}
+  address:
+    street: 4000 South Water Tower Place
+    city: Mount Vernon
+    state: il
+    zip: '62864'
   place: '1751180'
-  geo: {lat: 38.30519, lng: -88.93824}
+  geo:
+    lat: 38.30519
+    lng: -88.93824
   phone: 618-246-2910
   website: https://www.va.gov/marion-health-care/locations/mount-vernon-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -138,10 +151,13 @@
   - Ophthalmology
   - Optometry
   - Primary care
-  external_ids: {va: vha_657GK}
+  external_ids:
+    va: vha_657GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/mount-vernon/mt-vernon-community-health-center-christopher-ru
   name: Mt Vernon Community Health Center Christopher Rural Health Corp
   categories:

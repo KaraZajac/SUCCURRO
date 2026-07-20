@@ -209,13 +209,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2668 Hualapai Mountain Road, city: Kingman, state: az, zip: '86401'}
+  address:
+    street: 2668 Hualapai Mountain Road
+    city: Kingman
+    state: az
+    zip: '86401'
   place: '0437620'
-  geo: {lat: 35.19121, lng: -114.01631}
+  geo:
+    lat: 35.19121
+    lng: -114.01631
   phone: 928-718-7300
   website: https://www.va.gov/northern-arizona-health-care/locations/kingman-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Cardiology
   - Dermatology
@@ -228,10 +241,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649GA}
+  external_ids:
+    va: vha_649GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/kingman/la-senita-elementary
   name: La Senita Elementary
   categories:

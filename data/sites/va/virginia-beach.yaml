@@ -767,9 +767,15 @@
   categories: &id001
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '5555 Greenwich Rd, Room 124', city: Virginia Beach, state: va, zip: '23462'}
+  address:
+    street: 5555 Greenwich Rd, Room 124
+    city: Virginia Beach
+    state: va
+    zip: '23462'
   place: '5182000'
-  geo: {lat: 36.84274, lng: -76.17884}
+  geo:
+    lat: 36.84274
+    lng: -76.17884
   phone: 757-858-6148, ext. 30163
   website: https://www.va.gov/find-locations/facility/vba_314e
   services:
@@ -777,18 +783,26 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314e}
+  external_ids:
+    va: vba_314e
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/virginia-beach/vetsuccess-on-campus-at-tidewater-community-coll
   name: VetSuccess on Campus at Tidewater Community College Virginia Beach Campus
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '1700 College Crescent, Kempsville Building D-A-118', city: Virginia Beach, state: va,
-    zip: '23453'}
+  address:
+    street: 1700 College Crescent, Kempsville Building D-A-118
+    city: Virginia Beach
+    state: va
+    zip: '23453'
   place: '5182000'
-  geo: {lat: 36.78695, lng: -76.10119}
+  geo:
+    lat: 36.78695
+    lng: -76.10119
   phone: 757-858-6154, ext. 30191
   website: https://www.va.gov/find-locations/facility/vba_314j
   services:
@@ -796,10 +810,25 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314j}
+  external_ids:
+    va: vba_314j
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: va/virginia-beach/virginia-beach-department-of-human-services
+  name: Virginia Beach Department of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Virginia Beach City County
+  address: {street: '3432 Virginia Beach Blvd., Suite 342', city: Virginia Beach, state: va, zip: 23452-4420}
+  place: '5182000'
+  phone: 757-437-3200
+  website: https://hs.virginiabeach.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/virginia-beach/virginia-beach-family-medical-center
   name: Virginia Beach Family Medical Center
   categories:
@@ -891,13 +920,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 244 Clearfield Boulevard, city: Virginia Beach, state: va, zip: '23462'}
+  address:
+    street: 244 Clearfield Boulevard
+    city: Virginia Beach
+    state: va
+    zip: '23462'
   place: '5182000'
-  geo: {lat: 36.84603, lng: -76.16518}
+  geo:
+    lat: 36.84603
+    lng: -76.16518
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/virginia-beach-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -907,21 +949,37 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_590GB}
+  external_ids:
+    va: vha_590GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/virginia-beach/virginia-beach-vet-center
   name: Virginia Beach Vet Center
   categories:
   - vet-center
-  address: {street: '324 Southport Circle, Suite 102', city: Virginia Beach, state: va, zip: '23452'}
+  address:
+    street: 324 Southport Circle, Suite 102
+    city: Virginia Beach
+    state: va
+    zip: '23452'
   place: '5182000'
-  geo: {lat: 36.83133, lng: -76.13122}
+  geo:
+    lat: 36.83133
+    lng: -76.13122
   phone: 757-248-3665
   website: https://www.va.gov/virginia-beach-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -934,10 +992,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0240V}
+  external_ids:
+    va: vc_0240V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/virginia-beach/williams-elem
   name: Williams Elem
   categories:

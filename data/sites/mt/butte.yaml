@@ -1,3 +1,15 @@
+- id: mt/butte/action-inc
+  name: Action, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Beaverhead, Deer Lodge, Granite, Madison, Powell, Silver Bow
+    Counties
+  address: {street: 25 W. Silver, city: Butte, state: mt, zip: '59702'}
+  phone: 406-533-6855
+  website: http://butteassistanceprograms.org/low-income-energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mt/butte/aware-center-for-early-childhood-services-butte
   name: AWARE Center for Early Childhood Services - Butte
   categories:
@@ -185,12 +197,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 40 Three Bears Drive, city: Butte, state: mt, zip: '59701'}
-  geo: {lat: 45.96203, lng: -112.47623}
+  address:
+    street: 40 Three Bears Drive
+    city: Butte
+    state: mt
+    zip: '59701'
+  geo:
+    lat: 45.96203
+    lng: -112.47623
   phone: 406-496-3000
   website: https://www.va.gov/montana-health-care/locations/charlie-dowd-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -205,10 +230,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_436GO}
+  external_ids:
+    va: vha_436GO
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/butte/clark-park
   name: Clark Park
   categories:

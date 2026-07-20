@@ -831,13 +831,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 175 Elm Street, city: New Bedford, state: ma, zip: '02740'}
+  address:
+    street: 175 Elm Street
+    city: New Bedford
+    state: ma
+    zip: '02740'
   place: '2545000'
-  geo: {lat: 41.63627, lng: -70.92963}
+  geo:
+    lat: 41.63627
+    lng: -70.92963
   phone: 508-994-0217
   website: https://www.va.gov/providence-health-care/locations/new-bedford-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -849,10 +862,13 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_650GA}
+  external_ids:
+    va: vha_650GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/new-bedford/our-sisters-sf-318-096
   name: Our Sisters (Sf-318-096)
   categories:
@@ -899,6 +915,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/new-bedford/pepole-action-in-community-endeavors-inc-pace
+  name: Pepole Action in Community Endeavors, Inc. (PACE)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bristol County
+  address: {street: 166 Williams St., city: New Bedford, state: ma, zip: '02740'}
+  place: '2545000'
+  phone: 508-999-9920
+  website: https://paceinfo.org/programs/fuel-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/new-bedford/pulaski-elementary-school-community-site-sf-318
   name: Pulaski Elementary School Community Site (Sf-318-030)
   categories:
@@ -1079,9 +1107,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '175 Elm St, Office 1', city: New Bedford, state: ma, zip: '02740'}
+  address:
+    street: 175 Elm St, Office 1
+    city: New Bedford
+    state: ma
+    zip: '02740'
   place: '2545000'
-  geo: {lat: 41.63594, lng: -70.93044}
+  geo:
+    lat: 41.63594
+    lng: -70.93044
   phone: 800-827-1186
   services:
   - ApplyingForBenefits
@@ -1089,7 +1123,10 @@
   - FamilyMemberClaimAssistance
   - HomelessAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_304n}
+  external_ids:
+    va: vba_304n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

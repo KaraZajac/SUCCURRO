@@ -433,13 +433,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5080 East Bill Farr Drive, city: Terre Haute, state: in, zip: '47803'}
+  address:
+    street: 5080 East Bill Farr Drive
+    city: Terre Haute
+    state: in
+    zip: '47803'
   place: '1875428'
-  geo: {lat: 39.43794, lng: -87.34179}
+  geo:
+    lat: 39.43794
+    lng: -87.34179
   phone: 812-478-1825
   website: https://www.va.gov/indiana-health-care/locations/terre-haute-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -457,10 +470,13 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_583GA}
+  external_ids:
+    va: vha_583GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/terre-haute/va-east-community-base-op-clinic
   name: VA East Community Base OP Clinic
   categories:
@@ -648,6 +664,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/terre-haute/western-indiana-community-action-agency-inc
+  name: Western Indiana Community Action Agency, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Vigo County
+  address: {street: 705 S. 5th St., city: Terre Haute, state: in, zip: '47807'}
+  place: '1875428'
+  phone: 812-234-3517
+  website: https://www.wicaa.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/terre-haute/wicaa-vigo-county-head-start
   name: WICAA-Vigo County Head Start
   categories:

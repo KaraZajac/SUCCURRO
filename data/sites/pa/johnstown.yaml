@@ -110,6 +110,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/johnstown/cambria-county-assistance-office
+  name: Cambria County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cambria County
+  address: {street: 625 Main Street, city: Johnstown, state: pa, zip: '15901'}
+  place: '4238288'
+  phone: 814-533-2253
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/johnstown/cambria-county-library-johnstown
   name: Cambria County Library-Johnstown
   categories:
@@ -447,13 +458,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 598 Galleria Drive, city: Johnstown, state: pa, zip: '15904'}
+  address:
+    street: 598 Galleria Drive
+    city: Johnstown
+    state: pa
+    zip: '15904'
   place: '4238288'
-  geo: {lat: 40.29995, lng: -78.83208}
+  geo:
+    lat: 40.29995
+    lng: -78.83208
   phone: 814-943-8164
   website: https://www.va.gov/altoona-health-care/locations/johnstown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -478,10 +502,13 @@
   - Travel reimbursement
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_503GA}
+  external_ids:
+    va: vha_503GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/johnstown/moxham-lutheran-church
   name: Moxham Lutheran Church
   categories:

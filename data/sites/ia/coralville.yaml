@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2213 2nd Street, city: Coralville, state: ia, zip: '52241'}
+  address:
+    street: 2213 2nd Street
+    city: Coralville
+    state: ia
+    zip: '52241'
   place: '1916230'
-  geo: {lat: 41.68405, lng: -91.59712}
+  geo:
+    lat: 41.68405
+    lng: -91.59712
   phone: 319-358-2406
   website: https://www.va.gov/iowa-city-health-care/locations/coralville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -65,10 +78,13 @@
   - Social work
   - Suicide prevention
   - Whole health
-  external_ids: {va: vha_636GW}
+  external_ids:
+    va: vha_636GW
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/coralville/east-ridge-elementary
   name: East Ridge Elementary
   categories:

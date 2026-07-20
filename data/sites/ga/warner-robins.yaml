@@ -426,6 +426,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/warner-robins/middle-georgia-community-action-agency-inc
+  name: Middle Georgia Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Butts, Crawford, Houston, Jones, Lamar, Monroe, Peach, Pike,
+    Twiggs, Upson Counties
+  address: {street: 121 Prince Street, city: Warner Robins, state: ga, zip: '30223'}
+  place: '1380508'
+  phone: 478-922-4464
+  website: http://www.mgcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/warner-robins/moms-club-of-warner-robins-community-pantry
   name: MOMS Club of Warner Robins Community Pantry
   categories:
@@ -801,20 +814,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '655 7th Street, 78th Medical Group', city: Warner Robins, state: ga, zip: '31098'}
+  address:
+    street: 655 7th Street, 78th Medical Group
+    city: Warner Robins
+    state: ga
+    zip: '31098'
   place: '1380508'
-  geo: {lat: 32.60338, lng: -83.58564}
+  geo:
+    lat: 32.60338
+    lng: -83.58564
   phone: 478-272-1210
   website: https://www.va.gov/find-locations/facility/vha_557GG
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - PrimaryCare
-  external_ids: {va: vha_557GG}
+  external_ids:
+    va: vha_557GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/warner-robins/shirley-hills-elementary
   name: Shirley Hills Elementary
   categories:

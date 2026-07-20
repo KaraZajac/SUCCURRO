@@ -390,13 +390,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2106 Treasure Hills Boulevard, city: Harlingen, state: tx, zip: '78550'}
+  address:
+    street: 2106 Treasure Hills Boulevard
+    city: Harlingen
+    state: tx
+    zip: '78550'
   place: '4832372'
-  geo: {lat: 26.1745, lng: -97.66672}
+  geo:
+    lat: 26.1745
+    lng: -97.66672
   phone: 956-366-4500
   website: https://www.va.gov/texas-valley-health-care/locations/harlingen-va-clinic-treasure-hills/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -409,10 +422,13 @@
   - Primary care
   - Social work
   - Toxic exposure screening
-  external_ids: {va: vha_740GA}
+  external_ids:
+    va: vha_740GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/harlingen/horizon-montessori-iii
   name: Horizon Montessori Iii
   categories:

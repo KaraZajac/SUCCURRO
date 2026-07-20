@@ -150,13 +150,26 @@
   name: Aurora Vet Center
   categories:
   - vet-center
-  address: {street: '750 Shoreline Drive, Suite 150', city: Aurora, state: il, zip: '60504'}
+  address:
+    street: 750 Shoreline Drive, Suite 150
+    city: Aurora
+    state: il
+    zip: '60504'
   place: '1703012'
-  geo: {lat: 41.7442, lng: -88.22727}
+  geo:
+    lat: 41.7442
+    lng: -88.22727
   phone: 630-585-1853
   website: https://www.va.gov/aurora-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -167,10 +180,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0436V}
+  external_ids:
+    va: vc_0436V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/aurora/aurora-west
   name: Aurora West
   categories:
@@ -232,6 +248,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/aurora/community-contacts-inc
+  name: Community Contacts, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kane County
+  address: {street: 1700 N. Farnsworth Ave. Suite 13, city: Aurora, state: il, zip: '60505'}
+  place: '1703012'
+  phone: 847-697-4400
+  website: http://cci-hci.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/aurora/community-health-partnership-of-illinois
   name: COMMUNITY HEALTH PARTNERSHIP OF ILLINOIS
   categories:

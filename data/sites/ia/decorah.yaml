@@ -23,13 +23,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1106 Military Boulevard, city: Decorah, state: ia, zip: '52101'}
+  address:
+    street: 1106 Military Boulevard
+    city: Decorah
+    state: ia
+    zip: '52101'
   place: '1919405'
-  geo: {lat: 43.32902, lng: -91.7833}
+  geo:
+    lat: 43.32902
+    lng: -91.7833
   phone: 563-387-5840
   website: https://www.va.gov/iowa-city-health-care/locations/decorah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -42,10 +55,13 @@
   - Radiology
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GU}
+  external_ids:
+    va: vha_636GU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/decorah/little-free-pantry-luther-college
   name: Little Free Pantry @ Luther College
   categories:
@@ -103,6 +119,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/decorah/northeast-iowa-community-action-corporation-winn
+  name: Northeast Iowa Community Action Corporation - Winneshiek
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Winneshiek County
+  address: {street: '305 Montgomery St., (P. O. Box 487)', city: Decorah, state: ia, zip: '52101'}
+  place: '1919405'
+  phone: 563-387-4958
+  website: http://www.neicac.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/decorah/upper-explorerland-regional-housing-authority
   name: Upper Explorerland Regional Housing Authority
   categories:

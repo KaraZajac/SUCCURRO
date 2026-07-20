@@ -64,6 +64,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/fargo/cass-county-social-services-board
+  name: Cass County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cass County
+  address: {street: 1010 2nd Avenue South (P. O. Box 2986), city: Fargo, state: nd, zip: '58108'}
+  place: '3825700'
+  phone: 701-241-5761
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/fargo/central-head-start
   name: Central Head Start
   categories:
@@ -269,15 +280,24 @@
   name: Fargo Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 5622 34th Ave S, city: Fargo, state: nd, zip: '58104'}
+  address:
+    street: 5622 34th Ave S
+    city: Fargo
+    state: nd
+    zip: '58104'
   place: '3825700'
-  geo: {lat: 46.82734, lng: -96.88103}
+  geo:
+    lat: 46.82734
+    lng: -96.88103
   phone: 701-237-0942
   website: https://www.va.gov/fargo-vet-center/locations/#fargo-mobile-vet-center
-  external_ids: {va: vc_0820MVC}
+  external_ids:
+    va: vc_0820MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/fargo-va-healthcare-system-substance-use-disorde
   name: Fargo VA Healthcare System Substance Use Disorder Treatment Prog
   categories:
@@ -305,9 +325,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2101 Elm Street North, city: Fargo, state: nd, zip: '58102'}
+  address:
+    street: 2101 Elm Street North
+    city: Fargo
+    state: nd
+    zip: '58102'
   place: '3825700'
-  geo: {lat: 46.90609, lng: -96.77504}
+  geo:
+    lat: 46.90609
+    lng: -96.77504
   phone: 701-239-3700
   website: https://www.va.gov/fargo-health-care/locations/fargo-va-medical-center/
   services:
@@ -366,18 +392,27 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_437}
+  external_ids:
+    va: vha_437
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/fargo-va-regional-benefit-office-at-north-fargo
   name: Fargo VA Regional Benefit Office at North Fargo VA Clinic
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '2101 Elm Street N, Building 40', city: Fargo, state: nd, zip: '58102'}
+  address:
+    street: 2101 Elm Street N, Building 40
+    city: Fargo
+    state: nd
+    zip: '58102'
   place: '3825700'
-  geo: {lat: 46.87756, lng: -96.79235}
+  geo:
+    lat: 46.87756
+    lng: -96.79235
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -390,25 +425,52 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_437}
+  external_ids:
+    va: vba_437
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/fargo-vet-center
   name: Fargo Vet Center
   categories: *id001
-  address: {street: 5622 34th Ave S, city: Fargo, state: nd, zip: '58104'}
+  address:
+    street: 5622 34th Ave S
+    city: Fargo
+    state: nd
+    zip: '58104'
   place: '3825700'
-  geo: {lat: 46.82734, lng: -96.88103}
+  geo:
+    lat: 46.82734
+    lng: -96.88103
   phone: 701-237-0942
   website: https://www.va.gov/fargo-vet-center/
   hours:
-  - {days: [mon], open: '07:00', close: '18:30'}
-  - {days: [tue], open: '07:00', close: '19:30'}
-  - {days: [wed], open: '07:00', close: '16:30'}
-  - {days: [thu], open: '07:00', close: '18:00'}
-  - {days: [fri], open: '07:00', close: '17:30'}
-  - {days: [sat], open: '08:00', close: '14:30'}
+  - days:
+    - mon
+    open: 07:00
+    close: '18:30'
+  - days:
+    - tue
+    open: 07:00
+    close: '19:30'
+  - days:
+    - wed
+    open: 07:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 07:00
+    close: '18:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '17:30'
+  - days:
+    - sat
+    open: 08:00
+    close: '14:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -421,10 +483,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0406V}
+  external_ids:
+    va: vc_0406V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/fhc-medical-dental-homeless-services-and-adminis
   name: FHC Medical, Dental, Homeless Services, and Administrative Site in Fargo
   categories:
@@ -612,22 +677,37 @@
   name: North Fargo VA Clinic
   categories: *id002
   description: Primary Care CBOC
-  address: {street: '721 1st Avenue North, Community Resource & Referral Center (CRRC)', city: Fargo,
-    state: nd, zip: '58102'}
+  address:
+    street: 721 1st Avenue North, Community Resource & Referral Center (CRRC)
+    city: Fargo
+    state: nd
+    zip: '58102'
   place: '3825700'
-  geo: {lat: 46.87756, lng: -96.79235}
+  geo:
+    lat: 46.87756
+    lng: -96.79235
   phone: 701-461-7330
   website: https://www.va.gov/fargo-health-care/locations/north-fargo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MOVE! weight management
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_437QA}
+  external_ids:
+    va: vha_437QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/fargo/sagent-behavioral-health-formerly-nys
   name: Sagent Behavioral Health formerly Nys
   categories:

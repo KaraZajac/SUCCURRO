@@ -188,6 +188,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/sedalia/missouri-valley-community-action-agency-mvcaa
+  name: Missouri Valley Community Action Agency (MVCAA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pettis County
+  address: {street: '505 S. Kentucky Ave, Suite A', city: Sedalia, state: mo, zip: '65301'}
+  place: '2966440'
+  phone: 660-826-0804
+  email: info@mvcaa.net
+  website: http://www.mvcaa.net
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/sedalia/pettis-county-compton-early-learning-center
   name: Pettis County- Compton Early Learning Center
   categories:
@@ -312,13 +325,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 981 Winchester Drive, city: Sedalia, state: mo, zip: '65301'}
+  address:
+    street: 981 Winchester Drive
+    city: Sedalia
+    state: mo
+    zip: '65301'
   place: '2966440'
-  geo: {lat: 38.70448, lng: -93.27351}
+  geo:
+    lat: 38.70448
+    lng: -93.27351
   phone: 660-826-3800
   website: https://www.va.gov/columbia-missouri-health-care/locations/sedalia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -327,10 +353,13 @@
   - Orthopedics
   - Primary care
   - Urology
-  external_ids: {va: vha_589JA}
+  external_ids:
+    va: vha_589JA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/sedalia/washington-elementary-school
   name: Washington Elementary School
   categories:

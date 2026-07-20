@@ -111,13 +111,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1800 Northeast Market Drive, city: Fairview, state: or, zip: '97024'}
+  address:
+    street: 1800 Northeast Market Drive
+    city: Fairview
+    state: or
+    zip: '97024'
   place: '4124250'
-  geo: {lat: 45.53351, lng: -122.44202}
+  geo:
+    lat: 45.53351
+    lng: -122.44202
   phone: 503-660-0600
   website: https://www.va.gov/portland-health-care/locations/fairview-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -127,10 +140,13 @@
   - Primary care
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_648GE}
+  external_ids:
+    va: vha_648GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/fairview-4250/reynolds-middle
   name: Reynolds Middle
   categories:

@@ -232,14 +232,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1540 Trinity Place, city: Mishawaka, state: in, zip: '46545'}
+  address:
+    street: 1540 Trinity Place
+    city: Mishawaka
+    state: in
+    zip: '46545'
   place: '1849932'
-  geo: {lat: 41.70693, lng: -86.16584}
+  geo:
+    lat: 41.70693
+    lng: -86.16584
   phone: 574-272-9000
   website: https://www.va.gov/northern-indiana-health-care/locations/jackie-walorski-va-clinic/
   hours:
-  - {days: [mon, wed], open: '07:00', close: '19:00'}
-  - {days: [tue, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    open: 07:00
+    close: '19:00'
+  - days:
+    - tue
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -264,10 +279,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_610BY}
+  external_ids:
+    va: vha_610BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/mishawaka/liberty-elementary
   name: Liberty Elementary
   categories:

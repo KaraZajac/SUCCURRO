@@ -218,13 +218,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 700 Hale Street, city: Wisconsin Rapids, state: wi, zip: '54495'}
+  address:
+    street: 700 Hale Street
+    city: Wisconsin Rapids
+    state: wi
+    zip: '54495'
   place: '5588200'
-  geo: {lat: 44.39297, lng: -89.83231}
+  geo:
+    lat: 44.39297
+    lng: -89.83231
   phone: 715-424-4682
   website: https://www.va.gov/tomah-health-care/locations/wisconsin-rapids-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -237,10 +250,13 @@
   - Smoking and tobacco cessation
   - Suicide prevention
   - Women Veteran care
-  external_ids: {va: vha_676GD}
+  external_ids:
+    va: vha_676GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/wisconsin-rapids/wisconsin-rapids-west-center
   name: Wisconsin Rapids - West Center
   categories:
@@ -283,6 +299,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/wisconsin-rapids/wood-county-human-services
+  name: Wood County Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wood County
+  address: {street: '111 W. Jackson St., 2nd Floor', city: Wisconsin Rapids, state: wi, zip: '54495'}
+  place: '5588200'
+  phone: 715-421-8654
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/wisconsin-rapids/wood-county-human-services-department-outpatient
   name: Wood County Human Services Department Outpatient
   categories:

@@ -20,6 +20,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/newport/community-services-consortium
+  name: Community Services Consortium
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lincoln County
+  address: {street: 120 NE Avery Street, city: Newport, state: or, zip: '97365'}
+  place: '4152450'
+  phone: 541-704-7632
+  website: https://communityservices.us/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/newport/community-services-consortium-head-start-newport
   name: Community Services consortium Head Start - Newport
   categories:
@@ -171,22 +183,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 36 Southwest Nye Street, city: Newport, state: or, zip: '97365'}
+  address:
+    street: 36 Southwest Nye Street
+    city: Newport
+    state: or
+    zip: '97365'
   place: '4152450'
-  geo: {lat: 44.63599, lng: -124.05567}
+  geo:
+    lat: 44.63599
+    lng: -124.05567
   phone: 541-265-4182
   website: https://www.va.gov/portland-health-care/locations/newport-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_648GH}
+  external_ids:
+    va: vha_648GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/newport/reconnections-alc-and-drug-trt-inc
   name: Reconnections Alc and Drug Trt Inc
   categories:

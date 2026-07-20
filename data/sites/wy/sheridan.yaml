@@ -61,19 +61,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/sheridan/sheridan-county-department-of-family-services
+  name: Sheridan County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sheridan County
+  address: {street: '247 Grinnell St., Suite 100', city: Sheridan, state: wy, zip: '82801'}
+  place: '5669845'
+  phone: 307-672-2404
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/sheridan/sheridan-va-medical-center
   name: Sheridan VA Medical Center
   categories:
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1898 Fort Road, city: Sheridan, state: wy, zip: '82801'}
+  address:
+    street: 1898 Fort Road
+    city: Sheridan
+    state: wy
+    zip: '82801'
   place: '5669845'
-  geo: {lat: 44.82697, lng: -106.98492}
+  geo:
+    lat: 44.82697
+    lng: -106.98492
   phone: 307-672-3473
   website: https://www.va.gov/sheridan-health-care/locations/sheridan-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -93,18 +118,27 @@
   - Suicide prevention
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_666}
+  external_ids:
+    va: vha_666
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/sheridan/va-regional-benefit-satellite-office-at-sheridan
   name: VA Regional Benefit Satellite Office at Sheridan VA Medical Center
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 1898 Fort Road, city: Sheridan, state: wy, zip: '82801'}
+  address:
+    street: 1898 Fort Road
+    city: Sheridan
+    state: wy
+    zip: '82801'
   place: '5669845'
-  geo: {lat: 44.82697, lng: -106.98492}
+  geo:
+    lat: 44.82697
+    lng: -106.98492
   phone: 307-675-3615
   services:
   - ApplyingForBenefits
@@ -113,10 +147,13 @@
   - HomelessAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_442a}
+  external_ids:
+    va: vba_442a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/sheridan/volunteers-of-america-northern-rockies-gathering
   name: Volunteers of America Northern Rockies/Gathering Place
   categories:

@@ -269,27 +269,45 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 3001 C Street, city: Anchorage, state: ak, zip: '99503'}
+  address:
+    street: 3001 C Street
+    city: Anchorage
+    state: ak
+    zip: '99503'
   place: '0203000'
-  geo: {lat: 61.19356, lng: -149.8866}
+  geo:
+    lat: 61.19356
+    lng: -149.8866
   phone: 907-273-4000
-  external_ids: {va: vha_463A5}
+  external_ids:
+    va: vha_463A5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/anchorage-mobile-vet-center
   name: Anchorage Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '4400 Business Park Blvd, Suite B-34', city: Anchorage, state: ak, zip: '99503'}
+  address:
+    street: 4400 Business Park Blvd, Suite B-34
+    city: Anchorage
+    state: ak
+    zip: '99503'
   place: '0203000'
-  geo: {lat: 61.17992, lng: -149.88931}
+  geo:
+    lat: 61.17992
+    lng: -149.88931
   phone: 907-563-6966
   website: https://www.va.gov/anchorage-vet-center/locations/#anchorage-mobile-vet-center
-  external_ids: {va: vc_0893MVC}
+  external_ids:
+    va: vc_0893MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/anchorage-neighborhood-health-center-inc
   name: Anchorage Neighborhood Health Center, Inc.
   categories:
@@ -318,9 +336,15 @@
   categories: &id003
   - va-facility
   description: Regional Benefit Office
-  address: {street: 1201 North Muldoon Street, city: Anchorage, state: ak, zip: '99504'}
+  address:
+    street: 1201 North Muldoon Street
+    city: Anchorage
+    state: ak
+    zip: '99504'
   place: '0203000'
-  geo: {lat: 61.23134, lng: -149.74442}
+  geo:
+    lat: 61.23134
+    lng: -149.74442
   phone: 800-827-1000
   website: https://www.va.gov/anchorage-va-regional-benefit-office-at-colonel-mary-louise-rasmuson-campus-of-the-alaska-va-healthcare-system/
   services:
@@ -336,20 +360,36 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_463}
+  external_ids:
+    va: vba_463
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/anchorage-vet-center
   name: Anchorage Vet Center
   categories: *id001
-  address: {street: '4400 Business Park Boulevard, Suite B-34', city: Anchorage, state: ak, zip: '99503'}
+  address:
+    street: 4400 Business Park Boulevard, Suite B-34
+    city: Anchorage
+    state: ak
+    zip: '99503'
   place: '0203000'
-  geo: {lat: 61.17979, lng: -149.88983}
+  geo:
+    lat: 61.17979
+    lng: -149.88983
   phone: 907-563-6966
   website: https://www.va.gov/anchorage-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -364,10 +404,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0502V}
+  external_ids:
+    va: vc_0502V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/arc-of-anchorage
   name: Arc of Anchorage
   categories:
@@ -538,13 +581,26 @@
   name: Colonel Mary Louise Rasmuson Campus of the Alaska VA Healthcare System
   categories: *id002
   description: VA Medical Center (VAMC)
-  address: {street: 1201 North Muldoon Road, city: Anchorage, state: ak, zip: '99504'}
+  address:
+    street: 1201 North Muldoon Road
+    city: Anchorage
+    state: ak
+    zip: '99504'
   place: '0203000'
-  geo: {lat: 61.23134, lng: -149.74442}
+  geo:
+    lat: 61.23134
+    lng: -149.74442
   phone: 888-353-7574
   website: https://www.va.gov/alaska-health-care/locations/colonel-mary-louise-rasmuson-campus-of-the-alaska-va-healthcare-system/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -571,10 +627,13 @@
   - Toxic exposure screening
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_463}
+  external_ids:
+    va: vha_463
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/community-medical-services-anchorage-on-laurel
   name: Community Medical Services Anchorage on Laurel
   categories:
@@ -947,17 +1006,26 @@
   name: Pre-Discharge Site at Eielson Air Force Base
   categories: *id003
   description: Pre-Discharge Site
-  address: {street: 2630 Central Avenue, city: Anchorage, state: ak, zip: '99508'}
+  address:
+    street: 2630 Central Avenue
+    city: Anchorage
+    state: ak
+    zip: '99508'
   place: '0203000'
-  geo: {lat: 61.23747, lng: -149.74851}
+  geo:
+    lat: 61.23747
+    lng: -149.74851
   phone: 800-827-1156
   website: https://www.va.gov/find-locations/facility/vba_463e
   services:
   - PreDischargeClaimAssistance
-  external_ids: {va: vba_463e}
+  external_ids:
+    va: vba_463e
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/renew-your-mind
   name: Renew Your Mind
   categories:

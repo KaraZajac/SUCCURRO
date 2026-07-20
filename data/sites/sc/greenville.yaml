@@ -636,13 +636,26 @@
   name: Greenville, SC Vet Center
   categories:
   - vet-center
-  address: {street: '3 Caledon, Suite B', city: Greenville, state: sc, zip: '29615'}
+  address:
+    street: 3 Caledon, Suite B
+    city: Greenville
+    state: sc
+    zip: '29615'
   place: '4530850'
-  geo: {lat: 34.86209, lng: -82.34034}
+  geo:
+    lat: 34.86209
+    lng: -82.34034
   phone: 864-271-2711
   website: https://www.va.gov/greenville-sc-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -653,10 +666,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0316V}
+  external_ids:
+    va: vc_0316V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/greenville/greenville-senior-high-academy
   name: Greenville Senior High Academy
   categories:
@@ -707,17 +723,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '800 E. Washington St., Suite G', city: Greenville, state: sc, zip: '29601'}
+  address:
+    street: 800 E. Washington St., Suite G
+    city: Greenville
+    state: sc
+    zip: '29601'
   place: '4530850'
-  geo: {lat: 34.84789, lng: -82.38913}
+  geo:
+    lat: 34.84789
+    lng: -82.38913
   phone: 864-271-9682
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_319g}
+  external_ids:
+    va: vba_319g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/greenville/hollis-academy
   name: Hollis Academy
   categories:
@@ -858,14 +883,30 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 41 Park Creek Drive, city: Greenville, state: sc, zip: '29605'}
+  address:
+    street: 41 Park Creek Drive
+    city: Greenville
+    state: sc
+    zip: '29605'
   place: '4530850'
-  geo: {lat: 34.81493, lng: -82.41606}
+  geo:
+    lat: 34.81493
+    lng: -82.41606
   phone: 864-299-1600
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/lance-corporal-dana-cornell-darnell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [sat], open: '08:00', close: '14:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - sat
+    open: 08:00
+    close: '14:30'
   services:
   - Audiology and speech
   - Dental/oral surgery
@@ -880,10 +921,13 @@
   - Prosthetics and rehabilitation
   - Radiology
   - Telehealth
-  external_ids: {va: vha_544BZ}
+  external_ids:
+    va: vha_544BZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/greenville/life-line-services-llc
   name: Life Line Services LLC
   categories:
@@ -1380,6 +1424,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/greenville/sunbelt-human-advancement-resources-inc
+  name: Sunbelt Human Advancement Resources Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greenville County
+  address: {street: 254 S. Pleasantburg Drive (P. O. Box 10204), city: Greenville, state: sc, zip: '29607'}
+  place: '4530850'
+  phone: 864-269-0700
+  website: https://www.sharesc.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/greenville/tanglewood-middle
   name: Tanglewood Middle
   categories:

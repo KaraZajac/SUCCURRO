@@ -131,15 +131,32 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 207 Hamilton Road, city: Bloomington, state: il, zip: '61704'}
+  address:
+    street: 207 Hamilton Road
+    city: Bloomington
+    state: il
+    zip: '61704'
   place: '1706613'
-  geo: {lat: 40.45096, lng: -88.98804}
+  geo:
+    lat: 40.45096
+    lng: -88.98804
   phone: 309-827-4090
   website: https://www.va.gov/illiana-health-care/locations/bloomington-va-clinic/
   hours:
-  - {days: [mon], open: '07:30', close: '18:00'}
-  - {days: [tue, wed, thu], open: '06:00', close: '18:00'}
-  - {days: [fri], open: '06:00', close: '16:00'}
+  - days:
+    - mon
+    open: 07:30
+    close: '18:00'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 06:00
+    close: '18:00'
+  - days:
+    - fri
+    open: 06:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -155,10 +172,13 @@
   - Smoking and tobacco cessation
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_550GG}
+  external_ids:
+    va: vha_550GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/bloomington/cedar-ridge-elem-school
   name: Cedar Ridge Elem School
   categories:
@@ -696,6 +716,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/bloomington/tazwood-community-services
+  name: Tazwood Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Livingston, McLean Counties
+  address: {street: 808 S. Eldorado Rd. Unit-E, city: Bloomington, state: il, zip: '61704'}
+  place: '1706613'
+  phone: 309-533-7723
+  website: http://www.tazwoodcs.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: il/bloomington/tazwood-community-services-inc
+  name: Tazwood Community Services Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tazewell, Woodford Counties
+  address: {street: '808 S. Eldorado Rd., Unit 100-E', city: Bloomington, state: il, zip: '61704'}
+  place: '1706613'
+  phone: 309-533-7723
+  website: http://www.tazwoodcs.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/bloomington/trinity-lutheran-church
   name: Trinity Lutheran Church
   categories:

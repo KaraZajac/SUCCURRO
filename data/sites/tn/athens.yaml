@@ -113,13 +113,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1320 Decatur Pike, city: Athens, state: tn, zip: '37303'}
+  address:
+    street: 1320 Decatur Pike
+    city: Athens
+    state: tn
+    zip: '37303'
   place: '4702320'
-  geo: {lat: 35.44942, lng: -84.61679}
+  geo:
+    lat: 35.44942
+    lng: -84.61679
   phone: 423-746-1410
   website: https://www.va.gov/tennessee-valley-health-care/locations/athens-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -128,10 +141,13 @@
   - Primary care
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GN}
+  external_ids:
+    va: vha_626GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/athens/clem-jones-non-congregate
   name: Clem Jones Non-Congregate
   categories:

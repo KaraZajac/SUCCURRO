@@ -457,17 +457,33 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 6522 Dogwood View Parkway, city: Jackson, state: ms, zip: '39213'}
+  address:
+    street: 6522 Dogwood View Parkway
+    city: Jackson
+    state: ms
+    zip: '39213'
   place: '2836000'
-  geo: {lat: 32.39941, lng: -90.19618}
+  geo:
+    lat: 32.39941
+    lng: -90.19618
   phone: 601-362-4471
   website: https://www.va.gov/jackson-health-care/locations/dogwood-view-parkway-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
-  external_ids: {va: vha_586QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:00'
+  external_ids:
+    va: vha_586QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/first-presbyterian-church
   name: First Presbyterian Church
   categories:
@@ -516,9 +532,15 @@
   name: G.V. (Sonny) Montgomery Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1500 East Woodrow Wilson Avenue, city: Jackson, state: ms, zip: '39216'}
+  address:
+    street: 1500 East Woodrow Wilson Avenue
+    city: Jackson
+    state: ms
+    zip: '39216'
   place: '2836000'
-  geo: {lat: 32.32754, lng: -90.16632}
+  geo:
+    lat: 32.32754
+    lng: -90.16632
   phone: 800-949-1009
   website: https://www.va.gov/jackson-health-care/locations/gv-sonny-montgomery-department-of-veterans-affairs-medical-center/
   services:
@@ -548,10 +570,13 @@
   - Suicide prevention
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_586}
+  external_ids:
+    va: vha_586
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/galloway-elementary-school
   name: Galloway Elementary School
   categories:
@@ -661,6 +686,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/jackson/hinds-county-human-resource-agency
+  name: Hinds County Human Resource Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hinds County
+  address: {street: 258 Maddox Road, city: Jackson, state: ms, zip: '39212'}
+  place: '2836000'
+  phone: 601-923-3950
+  website: https://hchra.org/programs/liheap-low-income-home-energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/jackson/holy-ghost-early-head-start-center
   name: Holy Ghost Early Head Start Center
   categories:
@@ -727,15 +764,24 @@
   name: Jackson 2 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1500 Woodrow Wilson Avenue, city: Jackson, state: ms, zip: '39216'}
+  address:
+    street: 1500 Woodrow Wilson Avenue
+    city: Jackson
+    state: ms
+    zip: '39216'
   place: '2836000'
-  geo: {lat: 32.32681, lng: -90.16779}
+  geo:
+    lat: 32.32681
+    lng: -90.16779
   phone: 800-949-1009
   website: https://www.va.gov/find-locations/facility/vha_586QD
-  external_ids: {va: vha_586QD}
+  external_ids:
+    va: vha_586QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/jackson-battlefield-community-center
   name: Jackson Battlefield Community Center
   categories:
@@ -1194,50 +1240,82 @@
   name: Jackson Mobile Vet Center
   categories:
   - vet-center
-  address: {street: '1755 Lelia Drive, Suite 104', city: Jackson, state: ms, zip: '39216'}
+  address:
+    street: 1755 Lelia Drive, Suite 104
+    city: Jackson
+    state: ms
+    zip: '39216'
   place: '2836000'
-  geo: {lat: 32.33261, lng: -90.14301}
+  geo:
+    lat: 32.33261
+    lng: -90.14301
   phone: 601-985-2560
   website: https://www.va.gov/jackson-vet-center/locations/#jackson-mobile-vet-center
-  external_ids: {va: vc_0863MVC}
+  external_ids:
+    va: vc_0863MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/jackson-va-domiciliary
   name: Jackson VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: '5354 I-55 South Frontage Road East, Harbor House Chemical Dependency Services', city: Jackson,
-    state: ms, zip: '39272'}
+  address:
+    street: 5354 I-55 South Frontage Road East, Harbor House Chemical Dependency Services
+    city: Jackson
+    state: ms
+    zip: '39272'
   place: '2836000'
-  geo: {lat: 32.19865, lng: -90.24669}
+  geo:
+    lat: 32.19865
+    lng: -90.24669
   phone: 800-949-1009
   website: https://www.va.gov/find-locations/facility/vha_586BU
-  external_ids: {va: vha_586BU}
+  external_ids:
+    va: vha_586BU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/jackson-va-mobile-medical-unit
   name: Jackson VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1500 East Woodrow Wilson Avenue, city: Jackson, state: ms, zip: '39216'}
+  address:
+    street: 1500 East Woodrow Wilson Avenue
+    city: Jackson
+    state: ms
+    zip: '39216'
   place: '2836000'
-  geo: {lat: 32.32754, lng: -90.16632}
+  geo:
+    lat: 32.32754
+    lng: -90.16632
   phone: 800-949-1009
   website: https://www.va.gov/find-locations/facility/vha_586QA
-  external_ids: {va: vha_586QA}
+  external_ids:
+    va: vha_586QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/jackson-va-regional-benefit-office
   name: Jackson VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 1600 E. Woodrow Wilson Ave., city: Jackson, state: ms, zip: '39216'}
+  address:
+    street: 1600 E. Woodrow Wilson Ave.
+    city: Jackson
+    state: ms
+    zip: '39216'
   place: '2836000'
-  geo: {lat: 32.328, lng: -90.16389}
+  geo:
+    lat: 32.328
+    lng: -90.16389
   phone: 601-364-7191
   services:
   - ApplyingForBenefits
@@ -1255,10 +1333,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_323}
+  external_ids:
+    va: vba_323
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/jackson/jackson-vamc-gv-sonny-montgomery
   name: Jackson VAMC GV Sonny Montgomery
   categories:

@@ -506,13 +506,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1114 Georgiana Street, city: Port Angeles, state: wa, zip: '98362'}
+  address:
+    street: 1114 Georgiana Street
+    city: Port Angeles
+    state: wa
+    zip: '98362'
   place: '5355365'
-  geo: {lat: 48.11303, lng: -123.41316}
+  geo:
+    lat: 48.11303
+    lng: -123.41316
   phone: 360-565-7420
   website: https://www.va.gov/puget-sound-health-care/locations/north-olympic-peninsula-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -524,10 +537,13 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_663GE}
+  external_ids:
+    va: vha_663GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/port-angeles/peninsula-behavioral-health
   name: Peninsula Behavioral Health
   categories:

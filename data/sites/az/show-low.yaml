@@ -167,13 +167,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5171 Cub Lake Road, city: Show Low, state: az, zip: '85901'}
+  address:
+    street: 5171 Cub Lake Road
+    city: Show Low
+    state: az
+    zip: '85901'
   place: '0466470'
-  geo: {lat: 34.20207, lng: -110.02076}
+  geo:
+    lat: 34.20207
+    lng: -110.02076
   phone: 928-532-1069
   website: https://www.va.gov/phoenix-health-care/locations/show-low-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -184,10 +197,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_644GB}
+  external_ids:
+    va: vha_644GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/show-low/sober-mountain-triple-r-ranch
   name: Sober Mountain Triple R Ranch
   categories:

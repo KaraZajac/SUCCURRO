@@ -23,21 +23,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 325 Denver Avenue, city: Dalhart, state: tx, zip: '79022'}
+  address:
+    street: 325 Denver Avenue
+    city: Dalhart
+    state: tx
+    zip: '79022'
   place: '4818524'
-  geo: {lat: 36.06256, lng: -102.52191}
+  geo:
+    lat: 36.06256
+    lng: -102.52191
   phone: 806-249-0673
   website: https://www.va.gov/amarillo-health-care/locations/dalhart-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_504HB}
+  external_ids:
+    va: vha_504HB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dalhart/nc-dalhart-el
   name: Nc_Dalhart El
   categories:
@@ -59,3 +75,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/dalhart/panhandle-community-services-dallam-county
+  name: Panhandle Community Services - Dallam County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dallam County
+  address: {street: '414 Denver Ave, Ste. 105', city: Dalhart, state: tx, zip: '79022'}
+  place: '4818524'
+  phone: 806-244-5240
+  website: https://www.pcsvcs.org/services/utility/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

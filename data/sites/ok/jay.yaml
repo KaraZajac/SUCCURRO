@@ -190,13 +190,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1569 North Main Street, city: Jay, state: ok, zip: '74346'}
+  address:
+    street: 1569 North Main Street
+    city: Jay
+    state: ok
+    zip: '74346'
   place: '4037650'
-  geo: {lat: 36.43575, lng: -94.78236}
+  geo:
+    lat: 36.43575
+    lng: -94.78236
   phone: 888-424-8387
   website: https://www.va.gov/fayetteville-arkansas-health-care/locations/jay-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gastroenterology
@@ -210,10 +223,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_564GE}
+  external_ids:
+    va: vha_564GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/jay/northeast-oklahoma-community-action-early-head-s
   name: Northeast Oklahoma Community Action Early Head Start Program
   categories:

@@ -272,18 +272,34 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3838 Cascades Boulevard, city: Kent, state: oh, zip: '44240'}
+  address:
+    street: 3838 Cascades Boulevard
+    city: Kent
+    state: oh
+    zip: '44240'
   place: '3939872'
-  geo: {lat: 41.09486, lng: -81.38938}
+  geo:
+    lat: 41.09486
+    lng: -81.38938
   phone: 330-593-3059
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
-  external_ids: {va: vha_541QG}
+  external_ids:
+    va: vha_541QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/kent/plum-creek-park
   name: Plum Creek Park
   categories:

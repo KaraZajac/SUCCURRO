@@ -968,13 +968,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4251 Northern Avenue, city: Kansas City, state: mo, zip: '64133'}
+  address:
+    street: 4251 Northern Avenue
+    city: Kansas City
+    state: mo
+    zip: '64133'
   place: '2938000'
-  geo: {lat: 39.04591, lng: -94.45224}
+  geo:
+    lat: 39.04591
+    lng: -94.45224
   phone: 816-861-4700
   website: https://www.va.gov/kansas-city-health-care/locations/honor-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -986,10 +999,13 @@
   - Returning service member care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_589JF}
+  external_ids:
+    va: vha_589JF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kansas-city/hope-family-care-center-3027-prospect-ave-kansas
   name: Hope Family Care Center, 3027 Prospect Ave., Kansas City, MO 64128
   categories:
@@ -1334,22 +1350,37 @@
   name: Kansas City Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '4800 Main Street, Siute 107', city: Kansas City, state: mo, zip: '64112'}
+  address:
+    street: 4800 Main Street, Siute 107
+    city: Kansas City
+    state: mo
+    zip: '64112'
   place: '2938000'
-  geo: {lat: 39.03896, lng: -94.58791}
+  geo:
+    lat: 39.03896
+    lng: -94.58791
   phone: 816-922-5300
   website: https://www.va.gov/kansas-city-vet-center/locations/#kansas-city-mobile-vet-center
-  external_ids: {va: vc_0851MVC}
+  external_ids:
+    va: vc_0851MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kansas-city/kansas-city-va-medical-center
   name: Kansas City VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 4801 Linwood Boulevard, city: Kansas City, state: mo, zip: '64128'}
+  address:
+    street: 4801 Linwood Boulevard
+    city: Kansas City
+    state: mo
+    zip: '64128'
   place: '2938000'
-  geo: {lat: 39.06336, lng: -94.52688}
+  geo:
+    lat: 39.06336
+    lng: -94.52688
   phone: 816-861-4700
   website: https://www.va.gov/kansas-city-health-care/locations/kansas-city-va-medical-center/
   services:
@@ -1392,20 +1423,36 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_589}
+  external_ids:
+    va: vha_589
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kansas-city/kansas-city-vet-center
   name: Kansas City Vet Center
   categories: *id002
-  address: {street: '4800 Main Street, Suite 107', city: Kansas City, state: mo, zip: '64112'}
+  address:
+    street: 4800 Main Street, Suite 107
+    city: Kansas City
+    state: mo
+    zip: '64112'
   place: '2938000'
-  geo: {lat: 39.03896, lng: -94.58791}
+  geo:
+    lat: 39.03896
+    lng: -94.58791
   phone: 816-922-5300
   website: https://www.va.gov/kansas-city-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1417,10 +1464,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0408V}
+  external_ids:
+    va: vc_0408V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kansas-city/kvc-niles
   name: KVC/Niles
   categories:
@@ -1569,6 +1619,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/kansas-city/mid-american-assistance-coalition-maac
+  name: Mid American Assistance Coalition (MAAC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clay, Jackson, Platte Counties
+  address: {street: '4001 DR. Martin Luther King Jr. Dr., Suit 270', city: Kansas City, state: mo, zip: 64130-2350}
+  place: '2938000'
+  phone: 816-768-8900
+  email: emailapps@maac
+  website: https://maacliheap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/kansas-city/midwest-adp
   name: Midwest ADP
   categories:

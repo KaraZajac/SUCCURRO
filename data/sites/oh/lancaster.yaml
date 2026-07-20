@@ -174,19 +174,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/lancaster/lancaster-fairfield-community-action
+  name: Lancaster-Fairfield Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fairfield County
+  address: {street: 1743 E. Main St., city: Lancaster, state: oh, zip: '43130'}
+  place: '3941720'
+  phone: 740-653-4146
+  website: https://www.faircaa.org/energy-outreach1
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/lancaster/lancaster-va-clinic
   name: Lancaster VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1703 North Memorial Drive, city: Lancaster, state: oh, zip: '43130'}
+  address:
+    street: 1703 North Memorial Drive
+    city: Lancaster
+    state: oh
+    zip: '43130'
   place: '3941720'
-  geo: {lat: 39.7419, lng: -82.6349}
+  geo:
+    lat: 39.7419
+    lng: -82.6349
   phone: 740-653-6145
   website: https://www.va.gov/chillicothe-health-care/locations/lancaster-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -199,10 +224,13 @@
   - Podiatry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_538GD}
+  external_ids:
+    va: vha_538GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/lancaster/mid-ohio-psychological-services
   name: Mid Ohio Psychological Services
   categories:

@@ -755,20 +755,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 66 Main Street, city: Yonkers, state: ny, zip: '10701'}
+  address:
+    street: 66 Main Street
+    city: Yonkers
+    state: ny
+    zip: '10701'
   place: '3684000'
-  geo: {lat: 40.93462, lng: -73.9012}
+  geo:
+    lat: 40.93462
+    lng: -73.9012
   phone: 718-584-9000
   website: https://www.va.gov/bronx-health-care/locations/yonkers-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_526GB}
+  external_ids:
+    va: vha_526GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/yonkers/ywca
   name: YWCA
   categories:

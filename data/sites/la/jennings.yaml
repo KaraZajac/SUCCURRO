@@ -132,13 +132,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1907 Johnson Street, city: Jennings, state: la, zip: '70546'}
+  address:
+    street: 1907 Johnson Street
+    city: Jennings
+    state: la
+    zip: '70546'
   place: '2238355'
-  geo: {lat: 30.23828, lng: -92.66139}
+  geo:
+    lat: 30.23828
+    lng: -92.66139
   phone: 337-785-4700
   website: https://www.va.gov/alexandria-health-care/locations/jennings-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -149,10 +162,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_502GA}
+  external_ids:
+    va: vha_502GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/jennings/rehab-of-sw-la-llc-jennings
   name: Rehab of SW LA LLC Jennings
   categories:

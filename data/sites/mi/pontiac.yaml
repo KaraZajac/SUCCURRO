@@ -806,6 +806,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/pontiac/oakland-livingston-human-service-agency
+  name: Oakland-Livingston Human Service Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Livingston, Oakland Counties
+  address: {street: 196 Cesar E. Chavez Ave., city: Pontiac, state: mi, zip: '48348'}
+  place: '2665440'
+  phone: 248-209-2600
+  email: info@olhsa.org
+  website: https://www.olhsa.org/complete-services/emergency-assistance-emergency-housing
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/pontiac/olhsa-lighthouse-63m000060
   name: Olhsa Lighthouse - 63M000060
   categories:
@@ -1007,15 +1020,24 @@
   name: Pontiac Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '44200 Woodward Avenue, Suite 108', city: Pontiac, state: mi, zip: '48341'}
+  address:
+    street: 44200 Woodward Avenue, Suite 108
+    city: Pontiac
+    state: mi
+    zip: '48341'
   place: '2665440'
-  geo: {lat: 42.61445, lng: -83.27254}
+  geo:
+    lat: 42.61445
+    lng: -83.27254
   phone: 248-874-1015
   website: https://www.va.gov/pontiac-vet-center/locations/#pontiac-mobile-vet-center
-  external_ids: {va: vc_0855MVC}
+  external_ids:
+    va: vc_0855MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/pontiac/pontiac-new-bethel-early-head-start
   name: Pontiac/New Bethel Early Head Start
   categories:
@@ -1083,13 +1105,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 44200 Woodward Avenue, city: Pontiac, state: mi, zip: '48341'}
+  address:
+    street: 44200 Woodward Avenue
+    city: Pontiac
+    state: mi
+    zip: '48341'
   place: '2665440'
-  geo: {lat: 42.61445, lng: -83.27254}
+  geo:
+    lat: 42.61445
+    lng: -83.27254
   phone: 248-332-4540
   website: https://www.va.gov/detroit-health-care/locations/pontiac-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Laboratory and pathology
@@ -1097,20 +1132,36 @@
   - Pharmacy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_553GB}
+  external_ids:
+    va: vha_553GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/pontiac/pontiac-vet-center
   name: Pontiac Vet Center
   categories: *id001
-  address: {street: '44200 Woodward Avenue, Suite 108', city: Pontiac, state: mi, zip: '48341'}
+  address:
+    street: 44200 Woodward Avenue, Suite 108
+    city: Pontiac
+    state: mi
+    zip: '48341'
   place: '2665440'
-  geo: {lat: 42.61445, lng: -83.27254}
+  geo:
+    lat: 42.61445
+    lng: -83.27254
   phone: 248-874-1015
   website: https://www.va.gov/pontiac-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1121,10 +1172,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0438V}
+  external_ids:
+    va: vc_0438V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/pontiac/pontiac-youth-enrichment-summer-event-63m000154
   name: Pontiac Youth Enrichment Summer Event - 63M000154
   categories:

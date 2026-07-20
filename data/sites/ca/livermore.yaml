@@ -148,13 +148,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 4951 Arroyo Road, city: Livermore, state: ca, zip: '94550'}
+  address:
+    street: 4951 Arroyo Road
+    city: Livermore
+    state: ca
+    zip: '94550'
   place: 0641992
-  geo: {lat: 37.62509, lng: -121.75669}
+  geo:
+    lat: 37.62509
+    lng: -121.75669
   phone: 925-373-4700
   website: https://www.va.gov/palo-alto-health-care/locations/palo-alto-va-medical-center-livermore/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -194,10 +207,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_640A4}
+  external_ids:
+    va: vha_640A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/livermore/street-medicine-outreach-admin-office
   name: Street Medicine Outreach  Admin Office
   categories:

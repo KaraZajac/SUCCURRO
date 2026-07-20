@@ -1413,21 +1413,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '377 Plantation Street, Biotech', city: Worcester, state: ma, zip: '01605'}
+  address:
+    street: 377 Plantation Street, Biotech
+    city: Worcester
+    state: ma
+    zip: '01605'
   place: '2582000'
-  geo: {lat: 42.27995, lng: -71.76438}
+  geo:
+    lat: 42.27995
+    lng: -71.76438
   phone: 413-584-4040
   website: https://www.va.gov/central-western-massachusetts-health-care/locations/plantation-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Optometry
   - Podiatry
-  external_ids: {va: vha_631QA}
+  external_ids:
+    va: vha_631QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/worcester/plumley-village-sf-8-001
   name: Plumley Village (Sf-8-001)
   categories:
@@ -1781,17 +1797,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 605 Lincoln St, city: Worcester, state: ma, zip: '01605'}
+  address:
+    street: 605 Lincoln St
+    city: Worcester
+    state: ma
+    zip: '01605'
   place: '2582000'
-  geo: {lat: 42.29756, lng: -71.76754}
+  geo:
+    lat: 42.29756
+    lng: -71.76754
   phone: 508-856-0104
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_301b}
+  external_ids:
+    va: vba_301b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/worcester/washburn-house-outpatient-services
   name: Washburn House Outpatient Services
   categories:
@@ -1901,6 +1926,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/worcester/worcester-community-action-council-wcac
+  name: Worcester Community Action Council (WCAC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Worcester County
+  address: {street: '484 Main St., 2nd floor', city: Worcester, state: ma, zip: 01608}
+  place: '2582000'
+  phone: 508-754-1176
+  email: LIHEAP@wcac.net
+  website: http://wcac.net/fe_fuelassistance.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/worcester/worcester-east-middle-school-health-center
   name: Worcester East Middle School Health Center
   categories:
@@ -2060,13 +2098,26 @@
   name: Worcester VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 403 Belmont Street, city: Worcester, state: ma, zip: '01604'}
+  address:
+    street: 403 Belmont Street
+    city: Worcester
+    state: ma
+    zip: '01604'
   place: '2582000'
-  geo: {lat: 42.27465, lng: -71.7608}
+  geo:
+    lat: 42.27465
+    lng: -71.7608
   phone: 508-856-0104
   website: https://www.va.gov/central-western-massachusetts-health-care/locations/worcester-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -2081,21 +2132,37 @@
   - Primary care
   - Radiology
   - Women Veteran care
-  external_ids: {va: vha_631GE}
+  external_ids:
+    va: vha_631GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/worcester/worcester-vet-center
   name: Worcester Vet Center
   categories:
   - vet-center
-  address: {street: '255 Park Avenue, Suite 900', city: Worcester, state: ma, zip: 01609}
+  address:
+    street: 255 Park Avenue, Suite 900
+    city: Worcester
+    state: ma
+    zip: 01609
   place: '2582000'
-  geo: {lat: 42.26491, lng: -71.81848}
+  geo:
+    lat: 42.26491
+    lng: -71.81848
   phone: 508-753-7902
   website: https://www.va.gov/worcester-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2111,10 +2178,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0126V}
+  external_ids:
+    va: vc_0126V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/worcester/worcester-youth-center-sf-8-165
   name: Worcester Youth Center (Sf-8-165)
   categories:

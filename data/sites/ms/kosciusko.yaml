@@ -1,3 +1,15 @@
+- id: ms/kosciusko/central-mississippi-inc
+  name: Central Mississippi Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Attala County
+  address: {street: 550 Mississippi Hwy, city: Kosciusko, state: ms, zip: '39090'}
+  place: '2838320'
+  phone: 662-792-4033
+  website: http://www.cmicsp.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/kosciusko/kosciusko-center
   name: Kosciusko Center
   categories:
@@ -42,20 +54,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 405 West Adams Street, city: Kosciusko, state: ms, zip: '39090'}
+  address:
+    street: 405 West Adams Street
+    city: Kosciusko
+    state: ms
+    zip: '39090'
   place: '2838320'
-  geo: {lat: 33.05944, lng: -89.59466}
+  geo:
+    lat: 33.05944
+    lng: -89.59466
   phone: 662-289-2880
   website: https://www.va.gov/jackson-health-care/locations/kosciusko-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GA}
+  external_ids:
+    va: vha_586GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/kosciusko/life-help-mental-health-ctr-region-6-attala-coun
   name: Life Help Mental Health Ctr/Region 6 Attala County Office
   categories:

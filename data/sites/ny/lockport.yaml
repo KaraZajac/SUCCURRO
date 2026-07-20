@@ -103,6 +103,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/lockport/community-missions-after-hours-emergency-contact
+  name: Community Missions (After Hours Emergency Contact)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Niagara County
+  address: {city: Lockport, state: ny}
+  place: '3643082'
+  phone: 716-285-3403
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/lockport/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Niagara County
+  address: {street: 111 Main Street, city: Lockport, state: ny, zip: '14094'}
+  place: '3643082'
+  phone: 716-438-4020
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/lockport/emmanuel-umc
   name: Emmanuel UMC
   categories:
@@ -248,22 +270,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5725 South Transit Road, city: Lockport, state: ny, zip: '14094'}
+  address:
+    street: 5725 South Transit Road
+    city: Lockport
+    state: ny
+    zip: '14094'
   place: '3643082'
-  geo: {lat: 43.14768, lng: -78.69684}
+  geo:
+    lat: 43.14768
+    lng: -78.69684
   phone: 716-438-3890
   website: https://www.va.gov/western-new-york-health-care/locations/lockport-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_528GK}
+  external_ids:
+    va: vha_528GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/lockport/niagara-county-dept-of-mental-health-niagara-cou
   name: Niagara County Dept of Mental Health Niagara County Counseling and Wellness
   categories:

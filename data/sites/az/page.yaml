@@ -240,13 +240,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 801 North Navajo Drive, city: Page, state: az, zip: '86040'}
+  address:
+    street: 801 North Navajo Drive
+    city: Page
+    state: az
+    zip: '86040'
   place: 0451810
-  geo: {lat: 36.9197, lng: -111.45905}
+  geo:
+    lat: 36.9197
+    lng: -111.45905
   phone: 928-645-4966
   website: https://www.va.gov/northern-arizona-health-care/locations/page-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Diabetes care
@@ -256,7 +269,10 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649QD}
+  external_ids:
+    va: vha_649QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

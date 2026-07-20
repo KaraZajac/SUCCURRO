@@ -79,6 +79,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/mount-pleasant/eightcap
+  name: EightCAP
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Isabella County
+  address: {street: 1114 W. Hight Street, city: Mt. Pleasant, state: mi, zip: '48858'}
+  place: '2656020'
+  phone: 616-754-9315
+  website: https://8cap.org/isabella-county-cs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/mount-pleasant/isabella-citizens-for-health
   name: Isabella Citizens for Health
   categories:
@@ -228,17 +240,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '200 N. Main Street, Room 310', city: Mt. Pleasant, state: mi, zip: '48858'}
+  address:
+    street: 200 N. Main Street, Room 310
+    city: Mt. Pleasant
+    state: mi
+    zip: '48858'
   place: '2656020'
-  geo: {lat: 43.60601, lng: -84.77635}
+  geo:
+    lat: 43.60601
+    lng: -84.77635
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329e}
+  external_ids:
+    va: vba_329e
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/mount-pleasant/mymichigan-health
   name: MyMichigan Health
   categories:

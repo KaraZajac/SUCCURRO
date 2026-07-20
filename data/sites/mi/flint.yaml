@@ -714,13 +714,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2360 South Linden Road, city: Flint, state: mi, zip: '48532'}
+  address:
+    street: 2360 South Linden Road
+    city: Flint
+    state: mi
+    zip: '48532'
   place: '2629000'
-  geo: {lat: 42.99224, lng: -83.77314}
+  geo:
+    lat: 42.99224
+    lng: -83.77314
   phone: 810-720-2913
   website: https://www.va.gov/ann-arbor-health-care/locations/flint-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -735,10 +748,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_506GB}
+  external_ids:
+    va: vha_506GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/flint/food-bank-of-eastern-michigan-25m000160
   name: Food Bank Of Eastern Michigan - 25M000160
   categories:
@@ -849,6 +865,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/flint/genesee-county-community-action-resourse-departm
+  name: Genesee County Community Action Resourse Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Genesee County
+  address: {street: 601 N. Saginaw St. Suite 1B, city: Flint, state: mi, zip: '48502'}
+  place: '2629000'
+  phone: 810-232-2185
+  website: https://gccard.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/flint/genesee-county-parks-bluebell-beach-25m000184
   name: Genesee County Parks, Bluebell Beach - 25M000184
   categories:
@@ -2146,17 +2174,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '303 East Kearsley Street, Room 131', city: Flint, state: mi, zip: '48502'}
+  address:
+    street: 303 East Kearsley Street, Room 131
+    city: Flint
+    state: mi
+    zip: '48502'
   place: '2629000'
-  geo: {lat: 43.01991, lng: -83.68773}
+  geo:
+    lat: 43.01991
+    lng: -83.68773
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329h}
+  external_ids:
+    va: vba_329h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/flint/westwood-heights-ehs
   name: Westwood Heights EHS
   categories:

@@ -49,22 +49,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 800 North Clinton Street, city: Defiance, state: oh, zip: '43512'}
+  address:
+    street: 800 North Clinton Street
+    city: Defiance
+    state: oh
+    zip: '43512'
   place: '3921308'
-  geo: {lat: 41.29685, lng: -84.36089}
+  geo:
+    lat: 41.29685
+    lng: -84.36089
   phone: 419-783-2200
   website: https://www.va.gov/northern-indiana-health-care/locations/defiance-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Cardiology
   - Dermatology
   - MentalHealth
   - PrimaryCare
-  external_ids: {va: vha_610GE}
+  external_ids:
+    va: vha_610GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/defiance/family-resource-center
   name: Family Resource Center
   categories:
@@ -151,6 +167,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/defiance/northwestern-ohio-communitny-action-commission
+  name: Northwestern Ohio Communitny Action Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Van Wert County
+  address: {street: 1933 E. Second St., city: Defiance, state: oh, zip: '43512'}
+  place: '3921308'
+  phone: 419-784-5136
+  website: https://nocac.org/emergency-services/heap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: oh/defiance/northwestern-ohio-community-action-commission
+  name: Northwestern Ohio Community Action Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Defiance County
+  address: {street: 1933 E. Second St., city: Defiance, state: oh, zip: '43512'}
+  place: '3921308'
+  phone: 419-219-4641
+  website: https://nocac.org/emergency-services/heap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/defiance/promedica-defiance-regional-hospital-coping-cent
   name: ProMedica Defiance Regional Hospital Coping Center
   categories:

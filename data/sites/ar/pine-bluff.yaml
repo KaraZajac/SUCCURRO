@@ -64,6 +64,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/pine-bluff/central-delta-community-action-agency-cdcaa
+  name: Central Delta Community Action Agency (CDCAA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: '3000 Flash Dr. #3', city: Pine Bluff, state: ar, zip: '71601'}
+  place: '0555310'
+  phone: 870-536-0046
+  website: https://www.cdcaa.org/liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/pine-bluff/coleman-elementary
   name: Coleman Elementary
   categories:
@@ -423,13 +435,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2906 Market Street, city: Pine Bluff, state: ar, zip: '71601'}
+  address:
+    street: 2906 Market Street
+    city: Pine Bluff
+    state: ar
+    zip: '71601'
   place: '0555310'
-  geo: {lat: 34.21298, lng: -91.97189}
+  geo:
+    lat: 34.21298
+    lng: -91.97189
   phone: 870-850-8200
   website: https://www.va.gov/central-arkansas-health-care/locations/pine-bluff-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -441,10 +466,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GE}
+  external_ids:
+    va: vha_598GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/pine-bluff/se-arkansas-behavioral-healthcare-pine-bluff-cli
   name: SE Arkansas Behavioral Healthcare Pine Bluff Clinic
   categories:

@@ -102,6 +102,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: id/lewiston/community-action-partnership-cap
+  name: Community Action Partnership (CAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bonner, Clearwater, Latah, Nez Perce Counties
+  address: {street: 124 New 6th Street, city: Lewiston, state: id, zip: '83501'}
+  place: '1646540'
+  phone: 800-326-4843
+  email: info@cap4action.org
+  website: https://www.cap4action.org/energy/ea/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: id/lewiston/jenifer-middle-school
   name: Jenifer Middle School
   categories:
@@ -217,21 +230,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1630 23rd Avenue, city: Lewiston, state: id, zip: '83501'}
+  address:
+    street: 1630 23rd Avenue
+    city: Lewiston
+    state: id
+    zip: '83501'
   place: '1646540'
-  geo: {lat: 46.39729, lng: -117.00833}
+  geo:
+    lat: 46.39729
+    lng: -117.00833
   phone: 208-746-7784
   website: https://www.va.gov/walla-walla-health-care/locations/lewiston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Nutrition, food, and dietary care
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_687GB}
+  external_ids:
+    va: vha_687GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/lewiston/new-beginnings-counseling-and-support-services
   name: New Beginnings Counseling and Support Services
   categories:
@@ -361,14 +390,23 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 1158 Idaho St., city: Lewiston, state: id, zip: '83501'}
+  address:
+    street: 1158 Idaho St.
+    city: Lewiston
+    state: id
+    zip: '83501'
   place: '1646540'
-  geo: {lat: 46.41687, lng: -117.01842}
+  geo:
+    lat: 46.41687
+    lng: -117.01842
   phone: 800-827-1000
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_346i}
+  external_ids:
+    va: vba_346i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

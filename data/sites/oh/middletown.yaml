@@ -454,13 +454,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4337 North Union Road, city: Middletown, state: oh, zip: '45005'}
+  address:
+    street: 4337 North Union Road
+    city: Middletown
+    state: oh
+    zip: '45005'
   place: '3949840'
-  geo: {lat: 39.50603, lng: -84.31647}
+  geo:
+    lat: 39.50603
+    lng: -84.31647
   phone: 513-423-8387
   website: https://www.va.gov/dayton-health-care/locations/middletown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -472,10 +485,13 @@
   - Podiatry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_552GA}
+  external_ids:
+    va: vha_552GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/middletown/miller-ridge-elementary
   name: Miller Ridge Elementary
   categories:

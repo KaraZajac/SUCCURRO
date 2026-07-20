@@ -19,6 +19,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/lafayette/area-iv-agency-on-aging-community-action-program
+  name: Area IV Agency on Aging & Community Action Programs
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tippecanoe County
+  address: {street: 660 N. 36th St., city: Lafayette, state: in, zip: 47903-4727}
+  place: '1840788'
+  phone: 765-447-7683 x 1
+  email: eap@areaivagency.org
+  website: https://www.areaivagency.org/eap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/lafayette/bauer-early-head-start-at-eisenhower-school
   name: Bauer Early Head Start at Eisenhower School
   categories:
@@ -284,13 +297,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 940 Park East Boulevard, city: Lafayette, state: in, zip: '47905'}
+  address:
+    street: 940 Park East Boulevard
+    city: Lafayette
+    state: in
+    zip: '47905'
   place: '1840788'
-  geo: {lat: 40.4049, lng: -86.82793}
+  geo:
+    lat: 40.4049
+    lng: -86.82793
   phone: 765-464-2280
   website: https://www.va.gov/indiana-health-care/locations/lafayette-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -303,10 +329,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_583GE}
+  external_ids:
+    va: vha_583GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/lafayette/mab
   name: MAB
   categories:

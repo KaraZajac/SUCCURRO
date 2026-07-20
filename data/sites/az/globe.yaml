@@ -124,6 +124,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/globe/gila-county-community-action-program
+  name: Gila County Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Gila County
+  address: {street: '5515 South Apache Ave., Suite 200', city: Globe, state: az, zip: '85501'}
+  place: 0428030
+  phone: 928-425-7631
+  website: http://www.gilacountyaz.gov/government/community/community_action_program.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/globe/gila-county-housing-authority
   name: Gila County Housing Authority
   categories:
@@ -214,21 +226,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 5860 South Hospital Drive, city: Globe, state: az, zip: '85501'}
+  address:
+    street: 5860 South Hospital Drive
+    city: Globe
+    state: az
+    zip: '85501'
   place: 0428030
-  geo: {lat: 33.40728, lng: -110.82661}
+  geo:
+    lat: 33.40728
+    lng: -110.82661
   phone: 928-425-0027
   website: https://www.va.gov/phoenix-health-care/locations/globe-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_644GF}
+  external_ids:
+    va: vha_644GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/globe/high-desert-middle-school
   name: High Desert Middle School
   categories:

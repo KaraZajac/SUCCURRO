@@ -179,18 +179,34 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1002 15th St. SW, city: Auburn, state: wa, zip: '98001'}
+  address:
+    street: 1002 15th St. SW
+    city: Auburn
+    state: wa
+    zip: '98001'
   place: '5303180'
-  geo: {lat: 47.29564, lng: -122.2438}
+  geo:
+    lat: 47.29564
+    lng: -122.2438
   phone: 253-245-2600
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_663GM}
+  external_ids:
+    va: vha_663GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/auburn/bowman-creek-elementary
   name: Bowman Creek Elementary
   categories:

@@ -63,13 +63,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1537 North Elmira Street, city: Sayre, state: pa, zip: '18840'}
+  address:
+    street: 1537 North Elmira Street
+    city: Sayre
+    state: pa
+    zip: '18840'
   place: '4268096'
-  geo: {lat: 41.97082, lng: -76.53953}
+  geo:
+    lat: 41.97082
+    lng: -76.53953
   phone: 570-888-6803
   website: https://www.va.gov/wilkes-barre-health-care/locations/sayre-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -85,7 +98,10 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_693GA}
+  external_ids:
+    va: vha_693GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

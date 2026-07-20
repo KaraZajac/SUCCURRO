@@ -276,6 +276,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/winchester/frederick-county-department-of-social-services
+  name: Frederick County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Frederick County
+  address: {street: '107 N. Kent St., Third Floor', city: Winchester, state: va, zip: '22601'}
+  place: '5186720'
+  phone: 540-665-5688
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/winchester/indian-hollow-elem
   name: Indian Hollow Elem
   categories:
@@ -526,6 +537,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/winchester/winchester-department-of-social-services
+  name: Winchester Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Frederick, Winchester City Counties
+  address: {street: 24 Baker Street, city: Winchester, state: va, zip: '22601'}
+  place: '5186720'
+  phone: 540-662-3807
+  website: http://www.winchesterva.gov/dss/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/winchester/winchester-medical-center-behavioral-health-serv
   name: Winchester Medical Center Behavioral Health Services
   categories:
@@ -553,14 +576,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 100 Dawson Drive, city: Winchester, state: va, zip: '22602'}
+  address:
+    street: 100 Dawson Drive
+    city: Winchester
+    state: va
+    zip: '22602'
   place: '5186720'
-  geo: {lat: 39.13045, lng: -78.20229}
+  geo:
+    lat: 39.13045
+    lng: -78.20229
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/winchester-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
-  - {days: [wed], open: '06:30', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - wed
+    open: 06:30
+    close: '15:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -576,7 +614,10 @@
   - Smoking and tobacco cessation
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_613GC}
+  external_ids:
+    va: vha_613GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

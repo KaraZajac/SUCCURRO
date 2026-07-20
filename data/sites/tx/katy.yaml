@@ -211,14 +211,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '750 Westgreen Boulevard, Westgreen Professional Building', city: Katy, state: tx,
-    zip: '77450'}
+  address:
+    street: 750 Westgreen Boulevard, Westgreen Professional Building
+    city: Katy
+    state: tx
+    zip: '77450'
   place: '4838476'
-  geo: {lat: 29.7769, lng: -95.73647}
+  geo:
+    lat: 29.7769
+    lng: -95.73647
   phone: 281-578-4600
   website: https://www.va.gov/houston-health-care/locations/katy-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -243,10 +255,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GE}
+  external_ids:
+    va: vha_580GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/katy/millstone-apartments
   name: Millstone Apartments
   categories:

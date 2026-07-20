@@ -814,13 +814,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 950 N Krome Avenue, city: Homestead, state: fl, zip: '33030'}
+  address:
+    street: 950 N Krome Avenue
+    city: Homestead
+    state: fl
+    zip: '33030'
   place: '1232275'
-  geo: {lat: 25.47939, lng: -80.47752}
+  geo:
+    lat: 25.47939
+    lng: -80.47752
   phone: 305-248-0874
   website: https://www.va.gov/miami-health-care/locations/homestead-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -832,10 +845,13 @@
   - Pharmacy
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_546GC}
+  external_ids:
+    va: vha_546GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/homestead/homestead-youth-baseball
   name: Homestead Youth Baseball
   categories:

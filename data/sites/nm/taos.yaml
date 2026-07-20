@@ -104,6 +104,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/taos/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Taos County
+  address: {street: 145 Roy Road, city: Taos, state: nm, zip: '87571'}
+  place: '3576200'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/taos/luna-vista-behavioral-health
   name: Luna Vista Behavioral Health
   categories:
@@ -323,22 +334,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1353 Paseo Del Pueblo Sur, city: Taos, state: nm, zip: '87571'}
+  address:
+    street: 1353 Paseo Del Pueblo Sur
+    city: Taos
+    state: nm
+    zip: '87571'
   place: '3576200'
-  geo: {lat: 36.37416, lng: -105.59362}
+  geo:
+    lat: 36.37416
+    lng: -105.59362
   phone: 575-751-0328
   website: https://www.va.gov/new-mexico-health-care/locations/taos-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_501GN}
+  external_ids:
+    va: vha_501GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/taos/taos-whole-community-health
   name: Taos Whole Community Health
   categories:

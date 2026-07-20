@@ -545,13 +545,28 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 4801 Veterans Drive, city: St. Cloud, state: mn, zip: '56303'}
+  address:
+    street: 4801 Veterans Drive
+    city: St. Cloud
+    state: mn
+    zip: '56303'
   place: '2756896'
-  geo: {lat: 45.57259, lng: -94.21622}
+  geo:
+    lat: 45.57259
+    lng: -94.21622
   phone: 320-252-1670
   website: https://www.va.gov/st-cloud-health-care/locations/st-cloud-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -585,25 +600,44 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_656}
+  external_ids:
+    va: vha_656
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/st-cloud/st-cloud-vet-center-outstation
   name: St. Cloud Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '330 Highway 10 S, Suite 101', city: St. Cloud, state: mn, zip: '56304'}
+  address:
+    street: 330 Highway 10 S, Suite 101
+    city: St. Cloud
+    state: mn
+    zip: '56304'
   place: '2756896'
-  geo: {lat: 45.55212, lng: -94.1365}
+  geo:
+    lat: 45.55212
+    lng: -94.1365
   phone: 763-503-2220
   website: https://www.va.gov/anoka-vet-center/locations/#st-cloud-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_04391OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_04391OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/st-cloud/taras-consulting-llc
   name: Taras Consulting LLC
   categories:
@@ -652,16 +686,25 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 4801 Veterans Drive, city: St. Cloud, state: mn, zip: '56303'}
+  address:
+    street: 4801 Veterans Drive
+    city: St. Cloud
+    state: mn
+    zip: '56303'
   place: '2756896'
-  geo: {lat: 45.57259, lng: -94.21622}
+  geo:
+    lat: 45.57259
+    lng: -94.21622
   phone: 800-827-1000
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_335b}
+  external_ids:
+    va: vba_335b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/st-cloud/youthset-5th-st-n
   name: Youthset - 5Th St N
   categories:

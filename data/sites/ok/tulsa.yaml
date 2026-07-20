@@ -783,13 +783,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 8921 South Mingo Road, city: Tulsa, state: ok, zip: '74133'}
+  address:
+    street: 8921 South Mingo Road
+    city: Tulsa
+    state: ok
+    zip: '74133'
   place: '4075000'
-  geo: {lat: 36.03381, lng: -95.86845}
+  geo:
+    lat: 36.03381
+    lng: -95.86845
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/ernest-childers-department-of-veterans-affairs-outpatient/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -834,10 +847,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_623BY}
+  external_ids:
+    va: vha_623BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/eugene-field
   name: Eugene Field
   categories:
@@ -1307,6 +1323,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/tulsa/human-services-centers-tulsa
+  name: 'Human Services Centers: Tulsa'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tulsa County
+  address: {street: 444 S. Houston, city: Tulsa, state: ok, zip: '74127'}
+  place: '4075000'
+  phone: 918-581-2401
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/tulsa/human-skills-and-resources-inc
   name: Human Skills and Resources Inc
   categories:
@@ -1353,14 +1381,23 @@
   name: James Mountain Inhofe VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: '440 South Houston Avenue, JMIVAMC', city: Tulsa, state: ok, zip: '74127'}
+  address:
+    street: 440 South Houston Avenue, JMIVAMC
+    city: Tulsa
+    state: ok
+    zip: '74127'
   place: '4075000'
-  geo: {lat: 36.14945, lng: -95.9989}
+  geo:
+    lat: 36.14945
+    lng: -95.9989
   phone: 918-577-3000
-  external_ids: {va: vha_623A4}
+  external_ids:
+    va: vha_623A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/jarman-es-140
   name: Jarman Es(140)
   categories:
@@ -3066,13 +3103,26 @@
   name: Tulsa Eleventh Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '10159 East 11th Street, Guaranty Building', city: Tulsa, state: ok, zip: '74128'}
+  address:
+    street: 10159 East 11th Street, Guaranty Building
+    city: Tulsa
+    state: ok
+    zip: '74128'
   place: '4075000'
-  geo: {lat: 36.14923, lng: -95.86217}
+  geo:
+    lat: 36.14923
+    lng: -95.86217
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/tulsa-eleventh-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -3085,10 +3135,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_623QB}
+  external_ids:
+    va: vha_623QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/tulsa-met-ms-577
   name: Tulsa Met Ms(577)
   categories:
@@ -3115,15 +3168,24 @@
   name: Tulsa Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '6130 East 81st Street, Suite 200', city: Tulsa, state: ok, zip: '74137'}
+  address:
+    street: 6130 East 81st Street, Suite 200
+    city: Tulsa
+    state: ok
+    zip: '74137'
   place: '4075000'
-  geo: {lat: 36.0463, lng: -95.90567}
+  geo:
+    lat: 36.0463
+    lng: -95.90567
   phone: 918-237-4200
   website: https://www.va.gov/tulsa-vet-center/locations/#tulsa-mobile-vet-center
-  external_ids: {va: vc_0888MVC}
+  external_ids:
+    va: vc_0888MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/tulsa-ps-enrollment-center-n214
   name: Tulsa Ps Enrollment Center(N214)
   categories:
@@ -3150,17 +3212,30 @@
   name: Tulsa VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '10159 East 11th Street, Guaranty Bulding', city: Tulsa, state: ok, zip: '74128'}
+  address:
+    street: 10159 East 11th Street, Guaranty Bulding
+    city: Tulsa
+    state: ok
+    zip: '74128'
   place: '4075000'
-  geo: {lat: 36.14811, lng: -95.86217}
+  geo:
+    lat: 36.14811
+    lng: -95.86217
   phone: 888-397-8387
   website: https://www.va.gov/find-locations/facility/vha_623QE
   hours:
-  - {days: [tue, thu], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_623QE}
+  - days:
+    - tue
+    - thu
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_623QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/tulsa-va-outpatient-clinic
   name: Tulsa VA Outpatient Clinic
   categories:
@@ -3185,13 +3260,26 @@
 - id: ok/tulsa/tulsa-vet-center
   name: Tulsa Vet Center
   categories: *id002
-  address: {street: '6130 East 81st Street, Suite 200', city: Tulsa, state: ok, zip: '74137'}
+  address:
+    street: 6130 East 81st Street, Suite 200
+    city: Tulsa
+    state: ok
+    zip: '74137'
   place: '4075000'
-  geo: {lat: 36.04633, lng: -95.90566}
+  geo:
+    lat: 36.04633
+    lng: -95.90566
   phone: 918-237-4200
   website: https://www.va.gov/tulsa-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3206,10 +3294,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0723V}
+  external_ids:
+    va: vc_0723V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/tulsa-virtual-academy-n205
   name: Tulsa Virtual Academy(N205)
   categories:
@@ -3432,19 +3523,35 @@
   name: Yale Avenue VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '5110 South Yale Avenue, 51 Yale Building', city: Tulsa, state: ok, zip: '74134'}
+  address:
+    street: 5110 South Yale Avenue, 51 Yale Building
+    city: Tulsa
+    state: ok
+    zip: '74134'
   place: '4075000'
-  geo: {lat: 36.08935, lng: -95.92328}
+  geo:
+    lat: 36.08935
+    lng: -95.92328
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/yale-avenue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Dental/oral surgery
-  external_ids: {va: vha_623QC}
+  external_ids:
+    va: vha_623QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tulsa/youth-services-tulsa
   name: Youth Services Tulsa
   categories:

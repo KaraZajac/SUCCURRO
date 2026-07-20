@@ -289,15 +289,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/salem/roanoke-county-department-of-social-services
+  name: Roanoke County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Roanoke County
+  address: {street: '220 E. Main St., P.O. Box 1127', city: Salem, state: va, zip: 24153-1127}
+  place: '5170000'
+  phone: 540-387-6087
+  website: http://www.roanokecountyva.gov/index.aspx?nid=90
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: va/salem/salem-county-liheap
+  name: Salem County Liheap
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Salem County
+  address: {city: Salem, state: va}
+  place: '5170000'
+  phone: 800-230-6977
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/salem/salem-va-medical-center
   name: Salem VA Medical Center
   categories: &id001
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1970 Roanoke Boulevard, city: Salem, state: va, zip: '24153'}
+  address:
+    street: 1970 Roanoke Boulevard
+    city: Salem
+    state: va
+    zip: '24153'
   place: '5170000'
-  geo: {lat: 37.27446, lng: -80.01995}
+  geo:
+    lat: 37.27446
+    lng: -80.01995
   phone: 540-982-2463
   website: https://www.va.gov/salem-health-care/locations/salem-va-medical-center/
   services:
@@ -344,23 +373,35 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_658}
+  external_ids:
+    va: vha_658
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/salem/salem-va-mobile-medical-unit
   name: Salem VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1970 Roanoke Boulevard, city: Salem, state: va, zip: '24153'}
+  address:
+    street: 1970 Roanoke Boulevard
+    city: Salem
+    state: va
+    zip: '24153'
   place: '5170000'
-  geo: {lat: 37.27428, lng: -80.01875}
+  geo:
+    lat: 37.27428
+    lng: -80.01875
   phone: 540-982-2463
   website: https://www.va.gov/find-locations/facility/vha_658QA
-  external_ids: {va: vha_658QA}
+  external_ids:
+    va: vha_658QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/salem/scs-east-salem-elem
   name: SCS ~ East Salem Elem
   categories:

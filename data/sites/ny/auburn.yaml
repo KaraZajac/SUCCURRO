@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 47 East Genesee Street, city: Auburn, state: ny, zip: '13021'}
+  address:
+    street: 47 East Genesee Street
+    city: Auburn
+    state: ny
+    zip: '13021'
   place: '3603078'
-  geo: {lat: 42.93328, lng: -76.55944}
+  geo:
+    lat: 42.93328
+    lng: -76.55944
   phone: 315-294-7300
   website: https://www.va.gov/syracuse-health-care/locations/auburn-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -67,10 +80,13 @@
   - Radiology
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_528G5}
+  external_ids:
+    va: vha_528G5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/auburn/auburn-ymca-weiu
   name: Auburn Ymca-Weiu
   categories:
@@ -180,6 +196,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/auburn/cayuga-county-department-of-social-services
+  name: Cayuga County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cayuga County
+  address: {street: 160 Genesee Street 2nd Floor, city: Auburn, state: ny, zip: '13021'}
+  place: '3603078'
+  phone: 315-255-4904
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/auburn/cayuga-onondaga-boces
   name: Cayuga-Onondaga BOCES
   categories:
@@ -301,6 +328,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/auburn/cayuga-seneca-community-action-programs
+  name: Cayuga/Seneca Community Action Programs
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cayuga County
+  address: {street: '89 York Street, Suite 1', city: Auburn, state: ny, zip: '13021'}
+  place: '3603078'
+  phone: 315-255-1703
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/auburn/clifford-park
   name: Clifford Park
   categories:
@@ -472,6 +510,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/auburn/hss-after-hours-emergency-contact
+  name: HSS (After Hours Emergency Contact)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cayuga County
+  address: {city: Auburn, state: ny}
+  place: '3603078'
+  phone: 315-253-6272
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/auburn/liberty-resources-inc-evo-house-cayuga-crisis-re
   name: Liberty Resources Inc Evo House/Cayuga Crisis Residence
   categories:

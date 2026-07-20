@@ -169,21 +169,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 521 Ontario Street, city: Bogalusa, state: la, zip: '70427'}
+  address:
+    street: 521 Ontario Street
+    city: Bogalusa
+    state: la
+    zip: '70427'
   place: '2208150'
-  geo: {lat: 30.79158, lng: -89.86752}
+  geo:
+    lat: 30.79158
+    lng: -89.86752
   phone: 985-735-9029
   website: https://www.va.gov/southeast-louisiana-health-care/locations/bogalusa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_629GF}
+  external_ids:
+    va: vha_629GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/bogalusa/byrd-avenue-primary-school
   name: Byrd Avenue Primary School
   categories:

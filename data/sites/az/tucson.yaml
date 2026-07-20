@@ -3527,13 +3527,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3920 West Linda Vista Boulevard, city: Tucson, state: az, zip: '85742'}
+  address:
+    street: 3920 West Linda Vista Boulevard
+    city: Tucson
+    state: az
+    zip: '85742'
   place: '0477000'
-  geo: {lat: 32.38086, lng: -111.04991}
+  geo:
+    lat: 32.38086
+    lng: -111.04991
   phone: 520-219-2418
   website: https://www.va.gov/southern-arizona-health-care/locations/northwest-tucson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -3548,10 +3561,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_678GF}
+  external_ids:
+    va: vha_678GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/oro-valley-hospital-adult-behavioral-health-unit
   name: Oro Valley Hospital Adult Behavioral Health Unit
   categories:
@@ -3804,14 +3820,32 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/tucson/portable-practical-educational-preparation
+  name: Portable Practical Educational Preparation
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pima County
+  address: {street: 802 N. 46th St., city: Tucson, state: az, zip: '85713'}
+  place: '0477000'
+  phone: 520-770-2500
+  website: http://www.ppep.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/tucson/pre-discharge-site-at-davis-monthan-air-force-ba
   name: Pre-Discharge Site at Davis-Monthan Air Force Base
   categories: &id003
   - va-facility
   description: Pre-Discharge Site
-  address: {street: 4175 South Alamo Ave., city: Tucson, state: az, zip: '85723'}
+  address:
+    street: 4175 South Alamo Ave.
+    city: Tucson
+    state: az
+    zip: '85723'
   place: '0477000'
-  geo: {lat: 32.17298, lng: -110.85991}
+  geo:
+    lat: 32.17298
+    lng: -110.85991
   phone: 800-827-1149
   services:
   - BurialClaimAssistance
@@ -3819,10 +3853,13 @@
   - InsuranceClaimAssistanceAndFinancialCounseling
   - IntegratedDisabilityEvaluationSystemAssistance
   - PreDischargeClaimAssistance
-  external_ids: {va: vba_345l}
+  external_ids:
+    va: vba_345l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/prince
   name: Prince
   categories:
@@ -4366,13 +4403,26 @@
   name: Southeast Tucson VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 7395 South Houghton Road, city: Tucson, state: az, zip: '85747'}
+  address:
+    street: 7395 South Houghton Road
+    city: Tucson
+    state: az
+    zip: '85747'
   place: '0477000'
-  geo: {lat: 32.11762, lng: -110.77256}
+  geo:
+    lat: 32.11762
+    lng: -110.77256
   phone: 520-664-1831
   website: https://www.va.gov/southern-arizona-health-care/locations/southeast-tucson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -4387,10 +4437,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_678GG}
+  external_ids:
+    va: vha_678GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/southern-arizona-va-healthcare-servs-sudtp
   name: Southern Arizona VA Healthcare Servs SUDTP
   categories:
@@ -4683,22 +4736,37 @@
   name: Tucson Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '2525 E. Broadway Blvd, Suite 100', city: Tucson, state: az, zip: '85716'}
+  address:
+    street: 2525 E. Broadway Blvd, Suite 100
+    city: Tucson
+    state: az
+    zip: '85716'
   place: '0477000'
-  geo: {lat: 32.22203, lng: -110.93466}
+  geo:
+    lat: 32.22203
+    lng: -110.93466
   phone: 520-882-0333
   website: https://www.va.gov/tucson-vet-center/locations/#tucson-mobile-vet-center
-  external_ids: {va: vc_0828MVC}
+  external_ids:
+    va: vc_0828MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/tucson-va-medical-center
   name: Tucson VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3601 South Sixth Avenue, city: Tucson, state: az, zip: '85723'}
+  address:
+    street: 3601 South Sixth Avenue
+    city: Tucson
+    state: az
+    zip: '85723'
   place: '0477000'
-  geo: {lat: 32.18111, lng: -110.96826}
+  geo:
+    lat: 32.18111
+    lng: -110.96826
   phone: 520-792-1450
   website: https://www.va.gov/southern-arizona-health-care/locations/tucson-va-medical-center/
   services:
@@ -4734,33 +4802,58 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_678}
+  external_ids:
+    va: vha_678
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/tucson-va-mobile-medical-unit
   name: Tucson VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3601 South Sixth Avenue, city: Tucson, state: az, zip: '85723'}
+  address:
+    street: 3601 South Sixth Avenue
+    city: Tucson
+    state: az
+    zip: '85723'
   place: '0477000'
-  geo: {lat: 32.18038, lng: -110.96493}
+  geo:
+    lat: 32.18038
+    lng: -110.96493
   phone: 520-792-1450
   website: https://www.va.gov/southern-arizona-health-care/locations/tucson-va-mobile-clinic/
-  external_ids: {va: vha_678QC}
+  external_ids:
+    va: vha_678QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/tucson-vet-center
   name: Tucson Vet Center
   categories: *id002
-  address: {street: '2525 E. Broadway Blvd., Suite 100', city: Tucson, state: az, zip: '85716'}
+  address:
+    street: 2525 E. Broadway Blvd., Suite 100
+    city: Tucson
+    state: az
+    zip: '85716'
   place: '0477000'
-  geo: {lat: 32.22223, lng: -110.9347}
+  geo:
+    lat: 32.22223
+    lng: -110.9347
   phone: 520-882-0333
   website: https://www.va.gov/tucson-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -4777,25 +4870,37 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0521V}
+  external_ids:
+    va: vc_0521V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/tucson-veteran-readiness-and-employment-office
   name: Tucson Veteran Readiness and Employment Office
   categories: *id003
   description: Veteran Readiness and Employment Office
-  address: {street: '1360 West Irvington Road, Suite 150', city: Tucson, state: az, zip: '85746'}
+  address:
+    street: 1360 West Irvington Road, Suite 150
+    city: Tucson
+    state: az
+    zip: '85746'
   place: '0477000'
-  geo: {lat: 32.16505, lng: -110.99323}
+  geo:
+    lat: 32.16505
+    lng: -110.99323
   phone: 520-294-3628
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_345a}
+  external_ids:
+    va: vba_345a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/tully-elementary-accelerated-magnet-school
   name: Tully Elementary Accelerated Magnet School
   categories:
@@ -4906,9 +5011,15 @@
   name: VA Regional Benefit Satellite Office at Davis-Monthan Air Force Base
   categories: *id003
   description: Satellite Office
-  address: {street: 4175 South Alamo Ave., city: Tucson, state: az, zip: '85707'}
+  address:
+    street: 4175 South Alamo Ave.
+    city: Tucson
+    state: az
+    zip: '85707'
   place: '0477000'
-  geo: {lat: 32.17298, lng: -110.85991}
+  geo:
+    lat: 32.17298
+    lng: -110.85991
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -4917,10 +5028,13 @@
   - IntegratedDisabilityEvaluationSystemAssistance
   - PreDischargeClaimAssistance
   - TransitionAssistance
-  external_ids: {va: vba_345h}
+  external_ids:
+    va: vba_345h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/tucson/valencia-middle-school
   name: Valencia Middle School
   categories:

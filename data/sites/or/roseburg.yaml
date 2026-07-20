@@ -620,13 +620,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 913 Northwest Garden Valley Boulevard, city: Roseburg, state: or, zip: '97471'}
+  address:
+    street: 913 Northwest Garden Valley Boulevard
+    city: Roseburg
+    state: or
+    zip: '97471'
   place: '4163650'
-  geo: {lat: 43.22859, lng: -123.36709}
+  geo:
+    lat: 43.22859
+    lng: -123.36709
   phone: 541-440-1000
   website: https://www.va.gov/roseburg-health-care/locations/roseburg-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '18:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -656,10 +669,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_653}
+  external_ids:
+    va: vha_653
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/roseburg/saddle-butte-mobile-manor
   name: Saddle Butte Mobile Manor
   categories:
@@ -811,6 +827,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/roseburg/united-community-action-network
+  name: United Community Action Network
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas County
+  address: {street: 280 Kennweth Ford Drive, city: Roseburg, state: or, zip: '97470'}
+  place: '4163650'
+  phone: 855-935-2542
+  website: https://www.ucancap.org/utility-bill/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/roseburg/va-roseburg-healthcare-system
   name: VA Roseburg Healthcare System
   categories:

@@ -94,13 +94,26 @@
   name: North Bay Vet Center
   categories:
   - vet-center
-  address: {street: '6010 Commerce Blvd., Suite 145', city: Rohnert Park, state: ca, zip: '94928'}
+  address:
+    street: 6010 Commerce Blvd., Suite 145
+    city: Rohnert Park
+    state: ca
+    zip: '94928'
   place: '0662546'
-  geo: {lat: 38.35283, lng: -122.7101}
+  geo:
+    lat: 38.35283
+    lng: -122.7101
   phone: 707-586-5966
   website: https://www.va.gov/north-bay-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -113,10 +126,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0646V}
+  external_ids:
+    va: vc_0646V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/rohnert-park/petaluma-health-center-inc-mobile-unit
   name: Petaluma Health Center, Inc. Mobile Unit
   categories:

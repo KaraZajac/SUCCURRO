@@ -145,17 +145,33 @@
   name: Newington Vet Center Outstation
   categories:
   - vet-center
-  address: {street: 801 McGee Drive, city: Portsmouth, state: nh, zip: 03801}
+  address:
+    street: 801 McGee Drive
+    city: Portsmouth
+    state: nh
+    zip: 03801
   place: '3362900'
-  geo: {lat: 43.08378, lng: -70.78009}
+  geo:
+    lat: 43.08378
+    lng: -70.78009
   phone: 603-668-7060
   website: https://www.va.gov/manchester-vet-center/locations/#newington-vet-center-outstatio
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_1081OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_1081OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/portsmouth/portsmouth-housing-authority
   name: Portsmouth Housing Authority
   categories:
@@ -182,14 +198,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '302 Newmarket Street, Pease Air National Guard Base', city: Portsmouth, state: nh,
-    zip: 03803}
+  address:
+    street: 302 Newmarket Street, Pease Air National Guard Base
+    city: Portsmouth
+    state: nh
+    zip: 03803
   place: '3362900'
-  geo: {lat: 43.08965, lng: -70.81806}
+  geo:
+    lat: 43.08965
+    lng: -70.81806
   phone: 603-624-4366
   website: https://www.va.gov/manchester-health-care/locations/portsmouth-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -198,10 +226,13 @@
   - Pulmonary medicine
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_608GA}
+  external_ids:
+    va: vha_608GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/portsmouth/seacoast-mental-health-center
   name: Seacoast Mental Health Center
   categories:
@@ -223,3 +254,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/portsmouth/southern-new-hampshire-services-inc-portsmouth-a
+  name: Southern New Hampshire Services Inc. - Portsmouth Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rockingham County
+  address: {street: 4 Cutts Street, city: Portsmouth, state: nh, zip: 03801}
+  place: '3362900'
+  phone: 603-436-3896
+  website: https://www.snhs.org/services/fuel-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

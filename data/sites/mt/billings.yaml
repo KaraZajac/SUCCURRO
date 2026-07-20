@@ -66,13 +66,26 @@
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 1766 Majestic Lane
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.7369, lng: -108.60358}
+  geo:
+    lat: 45.7369
+    lng: -108.60358
   phone: 406-373-3500
   website: https://www.va.gov/montana-health-care/locations/benjamin-charles-steele-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Anesthesia
@@ -96,10 +109,13 @@
   - Suicide prevention
   - Telehealth
   - Urology
-  external_ids: {va: vha_436GH}
+  external_ids:
+    va: vha_436GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/billings-addiction-counseling-llc
   name: Billings Addiction Counseling LLC
   categories:
@@ -157,15 +173,24 @@
   name: Billings Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '2795 Enterprise Avenue, Suite 1', city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 2795 Enterprise Avenue, Suite 1
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.75023, lng: -108.58545}
+  geo:
+    lat: 45.75023
+    lng: -108.58545
   phone: 406-657-6071
   website: https://www.va.gov/billings-vet-center/locations/#billings-mobile-vet-center
-  external_ids: {va: vc_0829MVC}
+  external_ids:
+    va: vc_0829MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/billings-public-library
   name: Billings Public Library
   categories:
@@ -233,13 +258,26 @@
 - id: mt/billings/billings-vet-center
   name: Billings Vet Center
   categories: *id001
-  address: {street: '2795 Enterprise Avenue, Suite 1', city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 2795 Enterprise Avenue, Suite 1
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.75023, lng: -108.58545}
+  geo:
+    lat: 45.75023
+    lng: -108.58545
   phone: 406-657-6071
   website: https://www.va.gov/billings-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -251,10 +289,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0509V}
+  external_ids:
+    va: vc_0509V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/boys-girls-club-orchard
   name: Boys & Girls Club Orchard
   categories:
@@ -361,17 +402,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mt/billings/district-vii-hrdc
+  name: District VII HRDC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Big Horn, Carbon, Stillwater, Sweet Grass, Yellowstone Counties
+  address: {street: 3116 1st Ave North, city: Billings, state: mt, zip: '59101'}
+  place: '3006550'
+  phone: 406-247-4778
+  email: info@hrdc7.org
+  website: https://hrdc7.org/how-we-help/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mt/billings/dr-joseph-medicine-crow-va-clinic
   name: Dr. Joseph Medicine Crow VA Clinic
   categories: *id002
   description: Other Outpatient Services (OOS)
-  address: {street: 1775 Spring Creek Lane, city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 1775 Spring Creek Lane
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.7374, lng: -108.60617}
+  geo:
+    lat: 45.7374
+    lng: -108.60617
   phone: 406-373-3500
   website: https://www.va.gov/montana-health-care/locations/dr-joseph-medicine-crow-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Geriatrics
   - MOVE! weight management
@@ -380,18 +447,27 @@
   - Prosthetics and rehabilitation
   - Radiology
   - Telehealth
-  external_ids: {va: vha_436GN}
+  external_ids:
+    va: vha_436GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/fort-harrison-va-regional-benefit-satellite-offi
   name: Fort Harrison VA Regional Benefit Satellite Office at Benjamin Charles Steele VA Clinic
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 1766 Majestic Lane
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.73687, lng: -108.60359}
+  geo:
+    lat: 45.73687
+    lng: -108.60359
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -403,10 +479,13 @@
   - UpdatingDirectDepositInformation
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_436d}
+  external_ids:
+    va: vba_436d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/head-start-inc-aware-site
   name: Head Start, Inc. - AWARE Site
   categories:
@@ -596,17 +675,33 @@
   name: Montana VA Mobile Medical Unit
   categories: *id002
   description: Other Outpatient Services (OOS)
-  address: {street: 1766 Majestic Lane, city: Billings, state: mt, zip: '59102'}
+  address:
+    street: 1766 Majestic Lane
+    city: Billings
+    state: mt
+    zip: '59102'
   place: '3006550'
-  geo: {lat: 45.73673, lng: -108.60378}
+  geo:
+    lat: 45.73673
+    lng: -108.60378
   phone: 406-447-6000
   website: https://www.va.gov/find-locations/facility/vha_436QF
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_436QF}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_436QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/billings/new-day-inc-eagle-s-nest-adult-treatment-program
   name: New Day Inc Eagle's Nest Adult Treatment Program
   categories:

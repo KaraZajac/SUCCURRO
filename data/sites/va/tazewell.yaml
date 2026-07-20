@@ -37,6 +37,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/tazewell/tazewell-county-department-of-social-services
+  name: Tazewell County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tazewell County
+  address: {street: '253 Chamber Drive, P.O. Box 149', city: Tazewell, state: va, zip: '24651'}
+  place: '5177792'
+  phone: 276-988-8500
+  website: http://dss.tazewellcounty.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/tazewell/tazewell-head-start-center
   name: Tazewell Head Start Center
   categories:
@@ -128,21 +140,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '388 Ben Bolt Avenue, Carilion Tazewell Community Hospital', city: Tazewell, state: va,
-    zip: '24651'}
+  address:
+    street: 388 Ben Bolt Avenue, Carilion Tazewell Community Hospital
+    city: Tazewell
+    state: va
+    zip: '24651'
   place: '5177792'
-  geo: {lat: 37.12374, lng: -81.48904}
+  geo:
+    lat: 37.12374
+    lng: -81.48904
   phone: 276-988-8863
   website: https://www.va.gov/salem-health-care/locations/tazewell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_658GA}
+  external_ids:
+    va: vha_658GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

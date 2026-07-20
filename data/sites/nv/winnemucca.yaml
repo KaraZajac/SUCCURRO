@@ -42,6 +42,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/winnemucca/frontier-community-action-agency
+  name: Frontier Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Humboldt County
+  address: {street: 657 Anderson Street, city: Winnemucca, state: nv, zip: '89445'}
+  place: '3284800'
+  phone: 775-623-9003
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/winnemucca/grass-valley-elementary
   name: Grass Valley Elementary
   categories:
@@ -92,16 +103,29 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3298 Traders Way, city: Winnemucca, state: nv, zip: '89445'}
+  address:
+    street: 3298 Traders Way
+    city: Winnemucca
+    state: nv
+    zip: '89445'
   place: '3284800'
-  geo: {lat: 40.95717, lng: -117.74265}
+  geo:
+    lat: 40.95717
+    lng: -117.74265
   phone: 775-623-9575
   website: https://www.va.gov/sierra-nevada-health-care/locations/winnemucca-va-clinic/
   hours:
-  - {days: [mon, tue], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_654QC}
+  external_ids:
+    va: vha_654QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

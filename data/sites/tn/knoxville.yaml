@@ -768,19 +768,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1521 Downtown West Boulevard, city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 1521 Downtown West Boulevard
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.91895, lng: -84.05244}
+  geo:
+    lat: 35.91895
+    lng: -84.05244
   phone: 865-545-4592
   website: https://www.va.gov/mountain-home-health-care/locations/downtown-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Optometry
-  external_ids: {va: vha_621QE}
+  external_ids:
+    va: vha_621QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/dui-programs-of-east-tennessee-inc
   name: DUI Programs of East Tennessee Inc
   categories:
@@ -862,6 +878,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/knoxville/east-tennessee-human-resource-agency-ethra
+  name: East Tennessee Human Resource Agency (ETHRA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Anderson County
+  address: {street: '9111 Cross Park Drive, Suite D100', city: Knoxville, state: tn, zip: '37923'}
+  place: '4740000'
+  phone: 865-691-2551
+  email: LIHEAP@ethra.org
+  website: https://www.ethra.org/programs/26/low-income-home-energy-assistance-program-liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/knoxville/east-tn-addiction-specialists
   name: East TN Addiction Specialists
   categories:
@@ -1534,18 +1563,36 @@
   name: Kingston Pike VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 8401 Kingston Pike, city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 8401 Kingston Pike
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.92304, lng: -84.05928}
+  geo:
+    lat: 35.92304
+    lng: -84.05928
   phone: 865-769-6400
   website: https://www.va.gov/find-locations/facility/vha_621QH
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:15', close: '16:30'}
-  - {days: [fri], open: '07:15', close: '15:30'}
-  external_ids: {va: vha_621QH}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:15
+    close: '16:30'
+  - days:
+    - fri
+    open: 07:15
+    close: '15:30'
+  external_ids:
+    va: vha_621QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/kiwanis-east-ii-head-start-center
   name: Kiwanis East II Head Start Center
   categories:
@@ -1609,31 +1656,60 @@
   name: Knox County VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1557 Downtown West Boulevard, city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 1557 Downtown West Boulevard
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.91992, lng: -84.05137}
+  geo:
+    lat: 35.91992
+    lng: -84.05137
   phone: 865-545-4592
   website: https://www.va.gov/mountain-home-health-care/locations/knox-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
-  external_ids: {va: vha_621QD}
+  external_ids:
+    va: vha_621QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/knox-west-va-clinic
   name: Knox West VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1612 Downtown West Boulevard, city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 1612 Downtown West Boulevard
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.92113, lng: -84.05097}
+  geo:
+    lat: 35.92113
+    lng: -84.05097
   phone: 865-545-4592
   website: https://www.va.gov/mountain-home-health-care/locations/knox-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Cardiology
   - Dermatology
@@ -1643,10 +1719,13 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
   - Pulmonary medicine
-  external_ids: {va: vha_621QG}
+  external_ids:
+    va: vha_621QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/knoxville-arts-fine-crafts
   name: Knoxville Arts & Fine Crafts
   categories:
@@ -1670,19 +1749,40 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/knoxville/knoxville-knox-county-community-action-committee
+  name: Knoxville-Knox County Community Action Committee
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Knox County
+  address: {street: 2247 Western Avenue (P. O Box 51650), city: Knoxville, state: tn, zip: '37950'}
+  place: '4740000'
+  phone: 865-546-3500
+  website: https://www.knoxcac.org/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/knoxville/knoxville-mobile-vet-center
   name: Knoxville Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1645 Downtown West Boulevard, Suite 28', city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 1645 Downtown West Boulevard, Suite 28
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.92173, lng: -84.05078}
+  geo:
+    lat: 35.92173
+    lng: -84.05078
   phone: 865-633-0000
   website: https://www.va.gov/knoxville-vet-center/locations/#knoxville-mobile-vet-center
-  external_ids: {va: vc_0844MVC}
+  external_ids:
+    va: vc_0844MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/knoxville-s-community-development-corp
   name: Knoxville'S Community Development Corp.
   categories:
@@ -1706,13 +1806,26 @@
 - id: tn/knoxville/knoxville-vet-center
   name: Knoxville Vet Center
   categories: *id002
-  address: {street: '1645 Downtown West Boulevard, Suite 28', city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 1645 Downtown West Boulevard, Suite 28
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.92173, lng: -84.05078}
+  geo:
+    lat: 35.92173
+    lng: -84.05078
   phone: 865-633-0000
   website: https://www.va.gov/knoxville-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1727,10 +1840,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0720V}
+  external_ids:
+    va: vc_0720V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/life-church
   name: Life Church
   categories:
@@ -3001,13 +3117,26 @@
   name: William C. Tallent Department of Veterans Affairs Outpatient Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 8033 Ray Mears Boulevard, city: Knoxville, state: tn, zip: '37919'}
+  address:
+    street: 8033 Ray Mears Boulevard
+    city: Knoxville
+    state: tn
+    zip: '37919'
   place: '4740000'
-  geo: {lat: 35.9232, lng: -84.04747}
+  geo:
+    lat: 35.9232
+    lng: -84.04747
   phone: 865-545-4592
   website: https://www.va.gov/mountain-home-health-care/locations/william-c-tallent-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Cardiology
   - Dermatology
@@ -3023,10 +3152,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_621BY}
+  external_ids:
+    va: vha_621BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/knoxville/woodlawn-cc
   name: Woodlawn Cc
   categories:

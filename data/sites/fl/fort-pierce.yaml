@@ -15,6 +15,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/fort-pierce/agricultural-and-labor-program-inc
+  name: Agricultural and Labor Program, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Lucie County
+  address: {street: 720 Delaware Ave., city: Ft. Pierce, state: fl, zip: '34950'}
+  place: '1224300'
+  phone: 772-461-7788
+  website: https://alpi.org/liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/fort-pierce/bgc-st-lucie-elementary
   name: Bgc St. Lucie Elementary
   categories:
@@ -393,13 +405,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1901 South 25th Street, city: Fort Pierce, state: fl, zip: '34947'}
+  address:
+    street: 1901 South 25th Street
+    city: Fort Pierce
+    state: fl
+    zip: '34947'
   place: '1224300'
-  geo: {lat: 27.4291, lng: -80.35056}
+  geo:
+    lat: 27.4291
+    lng: -80.35056
   phone: 772-595-5150
   website: https://www.va.gov/west-palm-beach-health-care/locations/fort-pierce-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Internal medicine
@@ -411,10 +436,13 @@
   - Rehabilitation and extended care
   - Social work
   - Telehealth
-  external_ids: {va: vha_548GA}
+  external_ids:
+    va: vha_548GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/fort-pierce/fort-pierce-westwood-academy
   name: Fort Pierce Westwood Academy
   categories:

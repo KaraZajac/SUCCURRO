@@ -304,6 +304,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/santa-fe/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Santa Fe County
+  address: {street: 39B Plaza La Prensa, city: Santa Fe, state: nm, zip: '87504'}
+  place: '3570500'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/santa-fe/kearny-elementary
   name: Kearny Elementary
   categories:
@@ -1229,15 +1240,24 @@
   name: Santa Fe Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 6535 Airport Road, city: Santa Fe, state: nm, zip: '87505'}
+  address:
+    street: 6535 Airport Road
+    city: Santa Fe
+    state: nm
+    zip: '87505'
   place: '3570500'
-  geo: {lat: 35.6352, lng: -106.04966}
+  geo:
+    lat: 35.6352
+    lng: -106.04966
   phone: 505-988-6562
   website: https://www.va.gov/santa-fe-vet-center/locations/#santa-fe-mobile-vet-center
-  external_ids: {va: vc_0835MVC}
+  external_ids:
+    va: vc_0835MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/santa-fe/santa-fe-psychotherapy-and-consulting
   name: Santa Fe Psychotherapy and Consulting
   categories:
@@ -1321,13 +1341,26 @@
 - id: nm/santa-fe/santa-fe-vet-center
   name: Santa Fe Vet Center
   categories: *id001
-  address: {street: 6535 Airport Road, city: Santa Fe, state: nm, zip: '87507'}
+  address:
+    street: 6535 Airport Road
+    city: Santa Fe
+    state: nm
+    zip: '87507'
   place: '3570500'
-  geo: {lat: 35.6352, lng: -106.04966}
+  geo:
+    lat: 35.6352
+    lng: -106.04966
   phone: 505-988-6562
   website: https://www.va.gov/santa-fe-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1339,10 +1372,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0520V}
+  external_ids:
+    va: vc_0520V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/santa-fe/southwest-care-center-galisteo-family-medicince
   name: Southwest CARE Center - Galisteo Family Medicince
   categories:

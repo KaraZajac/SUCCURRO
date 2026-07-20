@@ -250,6 +250,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/longview/greater-east-texas-community-action-program-getc
+  name: Greater East Texas Community Action Program (GETCAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Gregg County
+  address: {street: '1121 Judson road, Suite 145', city: Longview, state: tx, zip: '75961'}
+  place: '4843888'
+  phone: 936-720-7474
+  website: https://getcap.itfrontdesk.com/apptonline/landing.html?client_code=GETEXCAP
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/longview/hudson-el
   name: Hudson El
   categories:
@@ -403,13 +415,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1005 North Eastman Road, city: Longview, state: tx, zip: '75601'}
+  address:
+    street: 1005 North Eastman Road
+    city: Longview
+    state: tx
+    zip: '75601'
   place: '4843888'
-  geo: {lat: 32.51298, lng: -94.71198}
+  geo:
+    lat: 32.51298
+    lng: -94.71198
   phone: 903-247-8262
   website: https://www.va.gov/shreveport-health-care/locations/longview-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -420,10 +445,13 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_667GC}
+  external_ids:
+    va: vha_667GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/longview/pine-tree-h-s
   name: Pine Tree H S
   categories:

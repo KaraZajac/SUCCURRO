@@ -62,6 +62,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: vt/rutland/broc-community-action-in-southwestern-vermont
+  name: BROC - Community Action in Southwestern Vermont
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rutland County
+  address: {street: 45 Union St., city: Rutland, state: vt, zip: '05701'}
+  place: '5061225'
+  phone: 802-775-0878
+  email: HelloBROC@broc.org
+  website: https://www.broc.org/fuel-utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: vt/rutland/broc-sw-vt-community-action-open-non-congregate
   name: Broc Sw Vt Community Action Open, Non-Congregate
   categories:
@@ -266,6 +279,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: vt/rutland/esd-district-office
+  name: ESD District office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chittenden County
+  address: {street: 320 ASA Bloomer Building, city: Rutland, state: vt, zip: '05701'}
+  place: '5061225'
+  phone: 800-479-6151
+  website: http://www.cvoeo.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: vt/rutland/forensic-consultation-and-counseling-service-llc
   name: Forensic Consultation and Counseling Service LLC
   categories:
@@ -601,15 +626,32 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 232 West Street, city: Rutland, state: vt, zip: '05701'}
+  address:
+    street: 232 West Street
+    city: Rutland
+    state: vt
+    zip: '05701'
   place: '5061225'
-  geo: {lat: 43.60712, lng: -72.98562}
+  geo:
+    lat: 43.60712
+    lng: -72.98562
   phone: 802-772-2300
   website: https://www.va.gov/white-river-junction-health-care/locations/rutland-va-clinic/
   hours:
-  - {days: [mon, wed, thu], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '17:30'}
-  - {days: [fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '17:30'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -626,10 +668,13 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_405HF}
+  external_ids:
+    va: vha_405HF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: vt/rutland/security-self-storage-open-non-congregate
   name: Security Self Storage Open, Non-Congregate
   categories:

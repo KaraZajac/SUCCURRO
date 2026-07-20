@@ -227,13 +227,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '600 US 31 West Bypass, Fairview Plaza', city: Bowling Green, state: ky, zip: '42101'}
+  address:
+    street: 600 US 31 West Bypass, Fairview Plaza
+    city: Bowling Green
+    state: ky
+    zip: '42101'
   place: '2108902'
-  geo: {lat: 36.99047, lng: -86.42827}
+  geo:
+    lat: 36.99047
+    lng: -86.42827
   phone: 270-782-0120
   website: https://www.va.gov/tennessee-valley-health-care/locations/bowling-green-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -245,10 +258,13 @@
   - Suicide prevention
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_626GC}
+  external_ids:
+    va: vha_626GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/bowling-green/briarwood-elementary-healthy-kids-clinic
   name: Briarwood Elementary Healthy Kids Clinic
   categories:
@@ -420,6 +436,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/bowling-green/community-action-of-southern-kentucky
+  name: Community Action of Southern Kentucky
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Warren County
+  address: {street: 921 Beauty Avenue, city: Bowling Green, state: ky, zip: '42102'}
+  place: '2108902'
+  phone: 270-782-3162
+  website: http://www.casoky.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/bowling-green/community-resource-center-inc
   name: Community Resource Center Inc
   categories:

@@ -2302,6 +2302,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-jose/sacred-heart-community-service
+  name: Sacred Heart Community Service
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Santa Clara County
+  address: {street: 1381 S. First Street, city: San Jose, state: ca, zip: '95110'}
+  place: 0668000
+  phone: 877-278-6455
+  website: https://www.sacredheartcs.org/energy-service
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/san-jose/san-antonio-ss
   name: San Antonio (SS)
   categories:
@@ -2370,13 +2382,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5855 Silver Creek Valley Place, city: San Jose, state: ca, zip: '95138'}
+  address:
+    street: 5855 Silver Creek Valley Place
+    city: San Jose
+    state: ca
+    zip: '95138'
   place: 0668000
-  geo: {lat: 37.26833, lng: -121.78593}
+  geo:
+    lat: 37.26833
+    lng: -121.78593
   phone: 408-574-9100
   website: https://www.va.gov/palo-alto-health-care/locations/san-jose-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -2405,21 +2430,37 @@
   - Social work
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_640BY}
+  external_ids:
+    va: vha_640BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-jose/san-jose-vet-center
   name: San Jose Vet Center
   categories:
   - vet-center
-  address: {street: '5855 Silver Creek Valley Place, Third Floor 3A', city: San Jose, state: ca, zip: '95138'}
+  address:
+    street: 5855 Silver Creek Valley Place, Third Floor 3A
+    city: San Jose
+    state: ca
+    zip: '95138'
   place: 0668000
-  geo: {lat: 37.26833, lng: -121.78593}
+  geo:
+    lat: 37.26833
+    lng: -121.78593
   phone: 408-574-9200
   website: https://www.va.gov/san-jose-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2431,10 +2472,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0615V}
+  external_ids:
+    va: vc_0615V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-jose/santa-clara-county-housing-authority
   name: Santa Clara County Housing Authority
   categories:

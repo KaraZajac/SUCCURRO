@@ -69,13 +69,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 770 South Placentia Avenue, city: Placentia, state: ca, zip: '92870'}
+  address:
+    street: 770 South Placentia Avenue
+    city: Placentia
+    state: ca
+    zip: '92870'
   place: '0657526'
-  geo: {lat: 33.86229, lng: -117.88237}
+  geo:
+    lat: 33.86229
+    lng: -117.88237
   phone: 714-223-6000
   website: https://www.va.gov/long-beach-health-care/locations/placentia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Advice nurse
   - Dermatology
@@ -85,10 +98,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_600GA}
+  external_ids:
+    va: vha_600GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/placentia/ruby-drive-center
   name: Ruby Drive Center
   categories:

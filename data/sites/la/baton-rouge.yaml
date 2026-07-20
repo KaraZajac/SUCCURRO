@@ -87,15 +87,24 @@
   name: Baton Rouge Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: 5423 S. Sherwood Forest Blvd., city: Baton Rouge, state: la, zip: '70816'}
+  address:
+    street: 5423 S. Sherwood Forest Blvd.
+    city: Baton Rouge
+    state: la
+    zip: '70816'
   place: '2205000'
-  geo: {lat: 30.40559, lng: -91.05143}
+  geo:
+    lat: 30.40559
+    lng: -91.05143
   phone: 225-761-3140
   website: https://www.va.gov/baton-rouge-vet-center/locations/#baton-rouge-mobile-vet-center
-  external_ids: {va: vc_0877MVC}
+  external_ids:
+    va: vc_0877MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/baton-rouge/baton-rouge-ochsner-discovery-health-sciences-ac
   name: Baton Rouge Ochsner Discovery Health Sciences Academy (Cafeteria)
   categories:
@@ -167,30 +176,59 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 7850 Anselmo Lane, city: Baton Rouge, state: la, zip: '70810'}
+  address:
+    street: 7850 Anselmo Lane
+    city: Baton Rouge
+    state: la
+    zip: '70810'
   place: '2205000'
-  geo: {lat: 30.39491, lng: -91.10671}
+  geo:
+    lat: 30.39491
+    lng: -91.10671
   phone: 225-768-6419
   website: https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-south-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - MentalHealth
-  external_ids: {va: vha_629QA}
+  external_ids:
+    va: vha_629QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/baton-rouge/baton-rouge-va-clinic
   name: Baton Rouge VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 7968 Essen Park Avenue, city: Baton Rouge, state: la, zip: '70809'}
+  address:
+    street: 7968 Essen Park Avenue
+    city: Baton Rouge
+    state: la
+    zip: '70809'
   place: '2205000'
-  geo: {lat: 30.40391, lng: -91.10068}
+  geo:
+    lat: 30.40391
+    lng: -91.10068
   phone: 225-761-3400
   website: https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dental/oral surgery
@@ -210,20 +248,36 @@
   - Pulmonary medicine
   - Radiology
   - Women Veteran care
-  external_ids: {va: vha_629BY}
+  external_ids:
+    va: vha_629BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/baton-rouge/baton-rouge-vet-center
   name: Baton Rouge Vet Center
   categories: *id002
-  address: {street: 5423 S. Sherwood Forest Blvd., city: Baton Rouge, state: la, zip: '70816'}
+  address:
+    street: 5423 S. Sherwood Forest Blvd.
+    city: Baton Rouge
+    state: la
+    zip: '70816'
   place: '2205000'
-  geo: {lat: 30.40555, lng: -91.051}
+  geo:
+    lat: 30.40555
+    lng: -91.051
   phone: 225-761-3140
   website: https://www.va.gov/baton-rouge-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -234,10 +288,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0725V}
+  external_ids:
+    va: vc_0725V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/baton-rouge/baton-rouge-visual-and-performing-arts-center
   name: Baton Rouge Visual And Performing Arts Center
   categories:
@@ -998,6 +1055,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/baton-rouge/east-baton-rouge-parish-office-of-social-service
+  name: East Baton Rouge Parish Office of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving East Baton Rouge County
+  address: {street: 4523 Plank Road (P. O. Box 1471), city: Baton Rouge, state: la, zip: '70821'}
+  place: '2205000'
+  phone: 225-358-4561
+  website: https://www.brla.gov/536/Utility-Assistance-LIHEAP
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/baton-rouge/ebr-career-and-technical-education-center
   name: Ebr Career And Technical Education Center
   categories:

@@ -103,13 +103,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1720 East Melrose Avenue, city: Findlay, state: oh, zip: '45840'}
+  address:
+    street: 1720 East Melrose Avenue
+    city: Findlay
+    state: oh
+    zip: '45840'
   place: '3927048'
-  geo: {lat: 41.06576, lng: -83.61958}
+  geo:
+    lat: 41.06576
+    lng: -83.61958
   phone: 567-250-7100
   website: https://www.va.gov/ann-arbor-health-care/locations/findlay-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Cardiology
   - Mental health care
@@ -117,10 +130,13 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_506GG}
+  external_ids:
+    va: vha_506GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/findlay/glenwood-middle-school
   name: Glenwood Middle School
   categories:
@@ -163,6 +179,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/findlay/hhwp-community-action-commission
+  name: HHWP Community Action Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hancock County
+  address: {street: 1637 Tiffin Avenue, city: Findlay, state: oh, zip: '45840'}
+  place: '3927048'
+  phone: 419-423-3755
+  email: general_info@hhwpcac.com
+  website: https://www.hhwpcac.org/programs/emergency-services-and-heap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/findlay/little-free-pantry-findlay
   name: Little Free Pantry Findlay
   categories:

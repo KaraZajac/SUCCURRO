@@ -81,13 +81,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2115 East Main Street, city: Albert Lea, state: mn, zip: '56007'}
+  address:
+    street: 2115 East Main Street
+    city: Albert Lea
+    state: mn
+    zip: '56007'
   place: '2700694'
-  geo: {lat: 43.65462, lng: -93.34049}
+  geo:
+    lat: 43.65462
+    lng: -93.34049
   phone: 507-379-5530
   website: https://www.va.gov/minneapolis-health-care/locations/albert-lea-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -109,10 +122,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618GK}
+  external_ids:
+    va: vha_618GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/albert-lea/brookside-education-center
   name: Brookside Education Center
   categories:
@@ -281,3 +297,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/albert-lea/semcac
+  name: Semcac
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Freeborn County
+  address: {street: 204 WEst Clark Street, city: Albert Lea, state: mn, zip: '56007'}
+  place: '2700694'
+  phone: 507-373-1329
+  email: eap@semcac.org
+  website: https://www.semcac.org/energy-programs/energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

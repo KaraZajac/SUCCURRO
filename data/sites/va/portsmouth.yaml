@@ -442,10 +442,15 @@
   categories: &id001
   - va-facility
   description: IDES Site
-  address: {street: '620 John Paul Jones Circle, Bldg 3, 7th Floor, Room 104', city: Portsmouth, state: va,
-    zip: '23708'}
+  address:
+    street: 620 John Paul Jones Circle, Bldg 3, 7th Floor, Room 104
+    city: Portsmouth
+    state: va
+    zip: '23708'
   place: '5164000'
-  geo: {lat: 36.84582, lng: -76.30476}
+  geo:
+    lat: 36.84582
+    lng: -76.30476
   phone: 757-322-1179
   services:
   - ApplyingForBenefits
@@ -454,10 +459,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314q}
+  external_ids:
+    va: vba_314q
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/portsmouth/j-e-parker-center
   name: J.E. Parker Center
   categories:
@@ -828,6 +836,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/portsmouth/portsmouth-department-of-social-services
+  name: Portsmouth Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Portsmouth City County
+  address: {street: '1701 High St., Suite 101', city: Portsmouth, state: va, zip: '23704'}
+  place: '5164000'
+  phone: 757-405-1800
+  website: https://portsmouthva.gov/384/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/portsmouth/portsmouth-pal
   name: Portsmouth Pal
   categories:
@@ -876,21 +896,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '600 Crawford Street, The Crawford Building', city: Portsmouth, state: va, zip: '23704'}
+  address:
+    street: 600 Crawford Street, The Crawford Building
+    city: Portsmouth
+    state: va
+    zip: '23704'
   place: '5164000'
-  geo: {lat: 36.83411, lng: -76.29822}
+  geo:
+    lat: 36.83411
+    lng: -76.29822
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/portsmouth-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - MentalHealth
   - PrimaryCare
-  external_ids: {va: vha_590GE}
+  external_ids:
+    va: vha_590GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/portsmouth/sh-clarke
   name: Sh Clarke
   categories:
@@ -998,9 +1034,15 @@
   name: VetSuccess on Campus at Tidewater Community College Portsmouth Campus
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '120 Campus Dr., Building A Room 151', city: Portsmouth, state: va, zip: '23701'}
+  address:
+    street: 120 Campus Dr., Building A Room 151
+    city: Portsmouth
+    state: va
+    zip: '23701'
   place: '5164000'
-  geo: {lat: 36.80625, lng: -76.34771}
+  geo:
+    lat: 36.80625
+    lng: -76.34771
   phone: 757-858-6154, ext. 30191
   website: https://www.va.gov/find-locations/facility/vba_314l
   services:
@@ -1008,10 +1050,13 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314l}
+  external_ids:
+    va: vba_314l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/portsmouth/victory-elementary-starbase
   name: Victory Elementary-Starbase
   categories:

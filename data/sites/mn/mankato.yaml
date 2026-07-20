@@ -268,13 +268,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1400 Madison Avenue, city: Mankato, state: mn, zip: '56001'}
+  address:
+    street: 1400 Madison Avenue
+    city: Mankato
+    state: mn
+    zip: '56001'
   place: '2739878'
-  geo: {lat: 44.16904, lng: -93.97168}
+  geo:
+    lat: 44.16904
+    lng: -93.97168
   phone: 507-387-2939
   website: https://www.va.gov/minneapolis-health-care/locations/lyle-c-pearson-community-based-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -299,10 +312,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618GN}
+  external_ids:
+    va: vha_618GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/mankato/mankato-east-senior
   name: Mankato East Senior
   categories:
@@ -406,6 +422,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/mankato/minnesota-valley-action-council
+  name: Minnesota Valley Action Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Blue Earth County
+  address: {street: 706 North Victory Drive, city: Mankato, state: mn, zip: '56001'}
+  place: '2739878'
+  phone: 507-345-6822
+  email: eap@mnvac.org
+  website: https://www.mnvac.org/programs/energy/energy-assistance-eap-2/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/mankato/open-door-health-center
   name: Open Door Health Center
   categories:

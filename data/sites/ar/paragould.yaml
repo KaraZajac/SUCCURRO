@@ -62,6 +62,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/paragould/crowley-ridge-development-council-inc-crdc
+  name: Crowley Ridge Development Council, Inc. (CRDC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greene County
+  address: {street: 901 E. Lake Street, city: Paragould, state: ar, zip: '72450'}
+  place: 0553390
+  phone: 870-239-3531
+  email: dtate@crdccnea.com
+  website: http://www.crdcnea.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/paragould/greene-county-tech-elementary
   name: Greene County Tech Elementary
   categories:
@@ -218,13 +231,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2420 Linwood Drive, city: Paragould, state: ar, zip: '72450'}
+  address:
+    street: 2420 Linwood Drive
+    city: Paragould
+    state: ar
+    zip: '72450'
   place: 0553390
-  geo: {lat: 36.03096, lng: -90.52124}
+  geo:
+    lat: 36.03096
+    lng: -90.52124
   phone: 870-236-9756
   website: https://www.va.gov/poplar-bluff-health-care/locations/paragould-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -245,10 +271,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_657GG}
+  external_ids:
+    va: vha_657GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/paragould/pecan-grove
   name: Pecan Grove
   categories:

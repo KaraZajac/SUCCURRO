@@ -112,13 +112,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 720 East Latham Avenue, city: Hemet, state: ca, zip: '92543'}
+  address:
+    street: 720 East Latham Avenue
+    city: Hemet
+    state: ca
+    zip: '92543'
   place: 0633182
-  geo: {lat: 33.74941, lng: -116.96484}
+  geo:
+    lat: 33.74941
+    lng: -116.96484
   phone: 909-825-7084
   website: https://www.va.gov/loma-linda-health-care/locations/hemet-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -127,10 +140,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_605GG}
+  external_ids:
+    va: vha_605GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/hemet/hemet-valley-recovery-center-and-sage-retreat
   name: Hemet Valley Recovery Center and  Sage Retreat
   categories:

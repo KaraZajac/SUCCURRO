@@ -349,6 +349,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/fort-worth/city-of-fort-worth
+  name: City of Fort Worth
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tarrant County
+  address: {street: '200 Texas Street Annex, 3rd Floor', city: Fort Worth, state: tx, zip: 76102-6312}
+  place: '4827000'
+  phone: 817-392-5795
+  email: TCHC@ahomewithhope.org
+  website: https://www.fortworthtexas.gov/departments/neighborhoods/cap/apply
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/fort-worth/clearfork-academy-php-iop
   name: Clearfork Academy PHP/IOP
   categories:
@@ -700,31 +713,59 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '101 New York Avenue, Community Resource & Referral Center (CRRC)', city: Fort Worth,
-    state: tx, zip: '76104'}
+  address:
+    street: 101 New York Avenue, Community Resource & Referral Center (CRRC)
+    city: Fort Worth
+    state: tx
+    zip: '76104'
   place: '4827000'
-  geo: {lat: 32.74303, lng: -97.31578}
+  geo:
+    lat: 32.74303
+    lng: -97.31578
   phone: 817-255-7150
   website: https://www.va.gov/north-texas-health-care/locations/fort-worth-new-york-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_549QB}
+  external_ids:
+    va: vha_549QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fort-worth/fort-worth-va-clinic
   name: Fort Worth VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 2201 Southeast Loop 820, city: Fort Worth, state: tx, zip: '76119'}
+  address:
+    street: 2201 Southeast Loop 820
+    city: Fort Worth
+    state: tx
+    zip: '76119'
   place: '4827000'
-  geo: {lat: 32.66918, lng: -97.30015}
+  geo:
+    lat: 32.66918
+    lng: -97.30015
   phone: 817-730-0000
   website: https://www.va.gov/north-texas-health-care/locations/fort-worth-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -741,10 +782,13 @@
   - Primary care
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_549BY}
+  external_ids:
+    va: vha_549BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fort-worth/fuller-cdc
   name: Fuller CDC
   categories:
@@ -2550,9 +2594,15 @@
   categories: &id002
   - va-facility
   description: Satellite Office
-  address: {street: 2201 SE Loop 820, city: Fort Worth, state: tx, zip: '76119'}
+  address:
+    street: 2201 SE Loop 820
+    city: Fort Worth
+    state: tx
+    zip: '76119'
   place: '4827000'
-  geo: {lat: 32.66918, lng: -97.30015}
+  geo:
+    lat: 32.66918
+    lng: -97.30015
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -2561,10 +2611,13 @@
   - FamilyMemberClaimAssistance
   - HomelessAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_349e}
+  external_ids:
+    va: vba_349e
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fort-worth/van-zandt-guinn
   name: Van Zandt Guinn
   categories:
@@ -2588,19 +2641,28 @@
   name: VetSuccess on Campus at Tarrant County College South Campus
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '5301 Campus Drive, Bldg SERS, Room 1104-S', city: Fort Worth, state: tx, zip: '76119'}
+  address:
+    street: 5301 Campus Drive, Bldg SERS, Room 1104-S
+    city: Fort Worth
+    state: tx
+    zip: '76119'
   place: '4827000'
-  geo: {lat: 32.66846, lng: -97.28758}
+  geo:
+    lat: 32.66846
+    lng: -97.28758
   phone: 817-515-4076
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349t}
+  external_ids:
+    va: vba_349t
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fort-worth/villa-monterrey-apt-s
   name: Villa Monterrey Apt'S
   categories:

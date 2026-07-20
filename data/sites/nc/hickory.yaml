@@ -20,6 +20,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/hickory/catawba-county-department-of-social-services
+  name: Catawba County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Catawba County
+  address: {street: 3030 Eleventh Ave. Dr. S.E., city: Hickory, state: nc, zip: '28658'}
+  place: '3731060'
+  phone: 828-695-5600
+  website: https://www.catawbacountync.gov/county-services/social-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/hickory/catawba-valley-family-medicine-northeast-hickory
   name: Catawba Valley Family Medicine - Northeast Hickory
   categories:
@@ -184,13 +196,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2440 Century Place Southeast, city: Hickory, state: nc, zip: '28602'}
+  address:
+    street: 2440 Century Place Southeast
+    city: Hickory
+    state: nc
+    zip: '28602'
   place: '3731060'
-  geo: {lat: 35.72675, lng: -81.28574}
+  geo:
+    lat: 35.72675
+    lng: -81.28574
   phone: 828-431-5600
   website: https://www.va.gov/asheville-health-care/locations/hickory-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -203,10 +228,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_637GC}
+  external_ids:
+    va: vha_637GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/hickory/integrated-care-of-greater-hickory
   name: Integrated Care of Greater Hickory
   categories:

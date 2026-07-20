@@ -1,3 +1,16 @@
+- id: ca/sonora/amador-tuolumne-community-action-agency
+  name: Amador-Tuolumne Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tuolumne County
+  address: {street: 427 N Hwy 49, city: Sonora, state: ca, zip: '95370'}
+  place: '0672674'
+  phone: 209-533-1397 X 250
+  email: memartin@atcaa.org
+  website: https://www.atcaa.org/utility-bill-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/sonora/blue-bell-hs-ehs
   name: Blue Bell HS/EHS
   categories:
@@ -23,13 +36,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 13663 Mono Way, city: Sonora, state: ca, zip: '95370'}
+  address:
+    street: 13663 Mono Way
+    city: Sonora
+    state: ca
+    zip: '95370'
   place: '0672674'
-  geo: {lat: 37.97506, lng: -120.345}
+  geo:
+    lat: 37.97506
+    lng: -120.345
   phone: 209-588-2600
   website: https://www.va.gov/northern-california-health-care/locations/sonora-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -45,10 +71,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_612GL}
+  external_ids:
+    va: vha_612GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/sonora/tuolumne-county-behavioral-hlth-servs
   name: Tuolumne County Behavioral Hlth Servs
   categories:

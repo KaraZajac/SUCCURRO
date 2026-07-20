@@ -264,6 +264,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/princeton/mercer-county-dhhr-office
+  name: Mercer County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Mercer County
+  address: {street: 350 Davis Street, city: Princeton, state: wv, zip: '24740'}
+  place: '5465692'
+  phone: 304-425-8738
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/princeton/princeton-primary
   name: Princeton Primary
   categories:
@@ -292,35 +303,68 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 150 Courthouse Road, city: Princeton, state: wv, zip: '24740'}
+  address:
+    street: 150 Courthouse Road
+    city: Princeton
+    state: wv
+    zip: '24740'
   place: '5465692'
-  geo: {lat: 37.35941, lng: -81.10735}
+  geo:
+    lat: 37.35941
+    lng: -81.10735
   phone: 304-323-4020
   website: https://www.va.gov/beckley-health-care/locations/princeton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gynecology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_517QA}
+  external_ids:
+    va: vha_517QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/princeton/princeton-vet-center
   name: Princeton Vet Center
   categories:
   - vet-center
-  address: {street: 1511 North Walker Street, city: Princeton, state: wv, zip: '24740'}
+  address:
+    street: 1511 North Walker Street
+    city: Princeton
+    state: wv
+    zip: '24740'
   place: '5465692'
-  geo: {lat: 37.36788, lng: -81.10203}
+  geo:
+    lat: 37.36788
+    lng: -81.10203
   phone: 304-425-8098
   website: https://www.va.gov/princeton-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '19:30'}
-  - {days: [tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '19:30'
+  - days:
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -334,10 +378,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0232V}
+  external_ids:
+    va: vc_0232V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/princeton/southern-highlands-cmhc-inc-child-and-adolescent
   name: Southern Highlands CMHC Inc Child and Adolescent Clinic
   categories:

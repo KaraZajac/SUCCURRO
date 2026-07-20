@@ -431,6 +431,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/norfolk/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Madison, Pierce, Stanton Counties
+  address: {street: 209 N. 5th Street, city: Norfolk, state: ne, zip: '68701'}
+  place: '3134615'
+  phone: 402-370-3120
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/norfolk/norfolk-head-start
   name: Norfolk Head Start
   categories:
@@ -496,13 +507,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3204 Raasch Drive, city: Norfolk, state: ne, zip: '68701'}
+  address:
+    street: 3204 Raasch Drive
+    city: Norfolk
+    state: ne
+    zip: '68701'
   place: '3134615'
-  geo: {lat: 42.03348, lng: -97.45857}
+  geo:
+    lat: 42.03348
+    lng: -97.45857
   phone: 402-370-4570
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/norfolk-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -514,10 +538,13 @@
   - Ophthalmology
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_636GA}
+  external_ids:
+    va: vha_636GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/norfolk/northern-hills-early-head-start
   name: Northern Hills Early Head Start
   categories:

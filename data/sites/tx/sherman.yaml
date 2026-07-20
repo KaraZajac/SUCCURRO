@@ -166,13 +166,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1715 Texoma Parkway, city: Sherman, state: tx, zip: '75090'}
+  address:
+    street: 1715 Texoma Parkway
+    city: Sherman
+    state: tx
+    zip: '75090'
   place: '4867496'
-  geo: {lat: 33.65396, lng: -96.60653}
+  geo:
+    lat: 33.65396
+    lng: -96.60653
   phone: 903-487-0477
   website: https://www.va.gov/north-texas-health-care/locations/sherman-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -181,10 +194,13 @@
   - Pharmacy
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GJ}
+  external_ids:
+    va: vha_549GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/sherman/steeple-chase-farms-summit-lp
   name: Steeple Chase Farms Summit Lp
   categories:
@@ -269,3 +285,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/sherman/texoma-council-of-governments-2
+  name: Texoma Council of Governments
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Collin, Fannin, Grayson, Hunt, Rockwall Counties
+  address: {street: '1117 Gallagher Drive, Suite 200', city: Sherman, state: tx, zip: '75074'}
+  place: '4867496'
+  phone: 903-893-2161 Ext 3541
+  email: energyapp@tcog.com
+  website: https://tcog.com/energy-services/#energy
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/sherman/texoma-council-of-governments-cooke
+  name: Texoma Council of Governments - Cooke
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cooke County
+  address: {street: '1117 Gallagher Drive, Suite 100', city: Sherman, state: tx, zip: '75090'}
+  place: '4867496'
+  phone: 903-893-2161 Ext 3541
+  email: energyapp@tcog.com
+  website: https://tcog.com/energy-services/#apply
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

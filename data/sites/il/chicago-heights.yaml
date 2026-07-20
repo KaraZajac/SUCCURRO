@@ -181,13 +181,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 211 Dixie Highway, city: Chicago Heights, state: il, zip: '60411'}
+  address:
+    street: 211 Dixie Highway
+    city: Chicago Heights
+    state: il
+    zip: '60411'
   place: '1714026'
-  geo: {lat: 41.52645, lng: -87.6546}
+  geo:
+    lat: 41.52645
+    lng: -87.6546
   phone: 708-754-8880
   website: https://www.va.gov/chicago-health-care/locations/chicago-heights-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -203,10 +216,13 @@
   - Suicide prevention
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_537GA}
+  external_ids:
+    va: vha_537GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/chicago-heights/commisioners-park
   name: Commisioners Park
   categories:

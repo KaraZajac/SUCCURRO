@@ -65,28 +65,50 @@
   name: Abilene Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 3564 North 6th Street, city: Abilene, state: tx, zip: '79603'}
+  address:
+    street: 3564 North 6th Street
+    city: Abilene
+    state: tx
+    zip: '79603'
   place: '4801000'
-  geo: {lat: 32.45532, lng: -99.76636}
+  geo:
+    lat: 32.45532
+    lng: -99.76636
   phone: 325-232-7925
   website: https://www.va.gov/abilene-vet-center/locations/#abilene-mobile-vet-center
-  external_ids: {va: vc_0846MVC}
+  external_ids:
+    va: vc_0846MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/abilene-va-clinic
   name: Abilene VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3850 Ridgemont Drive, city: Abilene, state: tx, zip: '79606'}
+  address:
+    street: 3850 Ridgemont Drive
+    city: Abilene
+    state: tx
+    zip: '79606'
   place: '4801000'
-  geo: {lat: 32.40467, lng: -99.76615}
+  geo:
+    lat: 32.40467
+    lng: -99.76615
   phone: 325-695-3252
   website: https://www.va.gov/west-texas-health-care/locations/abilene-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -104,22 +126,42 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_519HC}
+  external_ids:
+    va: vha_519HC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/abilene-vet-center
   name: Abilene Vet Center
   categories: *id001
-  address: {street: 3564 North 6th Street, city: Abilene, state: tx, zip: '79603'}
+  address:
+    street: 3564 North 6th Street
+    city: Abilene
+    state: tx
+    zip: '79603'
   place: '4801000'
-  geo: {lat: 32.45532, lng: -99.76636}
+  geo:
+    lat: 32.45532
+    lng: -99.76636
   phone: 325-232-7925
   website: https://www.va.gov/abilene-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '20:00'}
-  - {days: [tue], open: '08:00', close: '18:30'}
-  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '20:00'
+  - days:
+    - tue
+    open: 08:00
+    close: '18:30'
+  - days:
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -131,26 +173,38 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0733V}
+  external_ids:
+    va: vc_0733V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/abilene-veteran-readiness-and-employment-office
   name: Abilene Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '1150 Estates Dr, Suite B', city: Abilene, state: tx, zip: '79602'}
+  address:
+    street: 1150 Estates Dr, Suite B
+    city: Abilene
+    state: tx
+    zip: '79602'
   place: '4801000'
-  geo: {lat: 32.43563, lng: -99.70476}
+  geo:
+    lat: 32.43563
+    lng: -99.70476
   phone: 325-677-1503
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349h}
+  external_ids:
+    va: vba_349h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/abilene/abilene-zoo
   name: Abilene Zoo
   categories:
@@ -308,6 +362,42 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/abilene/rolling-plains-management-corporation-shackelfor
+  name: Rolling Plains Management Corporation - Shackelford County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Shackelford County
+  address: {street: '1150 Estates Drive, Suite A', city: Abilene, state: tx, zip: '79602'}
+  place: '4801000'
+  phone: 325-672-3969
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/abilene/rolling-plains-management-corporation-stephens-c
+  name: Rolling Plains Management Corporation - Stephens County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Stephens County
+  address: {street: '1150 Estates Drive, Suite A', city: Abilene, state: tx, zip: '79227'}
+  place: '4801000'
+  phone: 325-672-3969
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/abilene/rolling-plains-management-corporation-taylor-cou
+  name: Rolling Plains Management Corporation - Taylor County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Taylor County
+  address: {street: '1150 Estates Drive, Suite A', city: Abilene, state: tx, zip: '79602'}
+  place: '4801000'
+  phone: 325-672-3969
+  website: https://rollingplains.org/rolling-plain-programs/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/abilene/serenity-foundation-of-texas-serenity-house-abil
   name: Serenity Foundation of Texas Serenity House Abilene
   categories:

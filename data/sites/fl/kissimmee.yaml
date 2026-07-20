@@ -519,13 +519,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 701 Union Street, city: Kissimmee, state: fl, zip: '34741'}
+  address:
+    street: 701 Union Street
+    city: Kissimmee
+    state: fl
+    zip: '34741'
   place: '1236950'
-  geo: {lat: 28.29714, lng: -81.4056}
+  geo:
+    lat: 28.29714
+    lng: -81.4056
   phone: 407-518-5004
   website: https://www.va.gov/orlando-health-care/locations/kissimmee-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -545,10 +558,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_675GC}
+  external_ids:
+    va: vha_675GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/kissimmee/knightspoint
   name: Knightspoint
   categories:
@@ -1082,6 +1098,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/kissimmee/osceola-county-council-on-aging-inc
+  name: Osceola County Council On Aging Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Osceola County
+  address: {street: 700 Generation Point, city: Kissimmee, state: fl, zip: '34744'}
+  place: '1236950'
+  phone: 407-846-8532 (1st & 3rd Thur)
+  email: info@osceola-coa.com
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/kissimmee/osceola-county-housing-agency
   name: Osceola County Housing Agency
   categories:

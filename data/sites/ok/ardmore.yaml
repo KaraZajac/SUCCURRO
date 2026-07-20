@@ -89,13 +89,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1235 12th Avenue Northwest, city: Ardmore, state: ok, zip: '73401'}
+  address:
+    street: 1235 12th Avenue Northwest
+    city: Ardmore
+    state: ok
+    zip: '73401'
   place: '4002600'
-  geo: {lat: 34.18758, lng: -97.14478}
+  geo:
+    lat: 34.18758
+    lng: -97.14478
   phone: 580-222-0400
   website: https://www.va.gov/oklahoma-city-health-care/locations/ardmore-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -104,10 +117,13 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635HB}
+  external_ids:
+    va: vha_635HB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/ardmore/boys-and-girls-club-ardmore-n7
   name: Boys And Girls Club Ardmore(N7)
   categories:
@@ -301,6 +317,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/ardmore/human-services-centers-carter
+  name: 'Human Services Centers: Carter'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Carter County
+  address: {street: 410 Travertine Drive, city: Ardmore, state: ok, zip: '73401'}
+  place: '4002600'
+  phone: 580-490-3600
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/ardmore/human-services-centers-seminole
+  name: 'Human Services Centers: Seminole'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Seminole County
+  address: {street: 410 Travertine Drive, city: Ardmore, state: ok, zip: '74017'}
+  place: '4002600'
+  phone: 580-310-7050
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/ardmore/lighthouse-behavioral-wellness-centers
   name: Lighthouse Behavioral Wellness Centers
   categories:

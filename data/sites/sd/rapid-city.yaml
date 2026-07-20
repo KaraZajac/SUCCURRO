@@ -409,6 +409,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sd/rapid-city/pennington-county-liheap
+  name: Pennington County Liheap
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pennington County
+  address: {street: '221 Mall Drive, Suite 101 (P. O. Box 6221)', city: Rapid City, state: sd, zip: '57701'}
+  place: '4652980'
+  phone: 605-394-2525
+  email: RCCustomersupport@state.sd.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sd/rapid-city/pinedale-pantry
   name: Pinedale Pantry
   categories:
@@ -514,28 +526,50 @@
   name: Rapid City Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 21 East Omaha Street, city: Rapid City, state: sd, zip: '57701'}
+  address:
+    street: 21 East Omaha Street
+    city: Rapid City
+    state: sd
+    zip: '57701'
   place: '4652980'
-  geo: {lat: 44.0814, lng: -103.21358}
+  geo:
+    lat: 44.0814
+    lng: -103.21358
   phone: 605-348-0077
   website: https://www.va.gov/rapid-city-vet-center/locations/#rapid-city-mobile-vet-center
-  external_ids: {va: vc_0823MVC}
+  external_ids:
+    va: vc_0823MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/rapid-city/rapid-city-va-clinic
   name: Rapid City VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2165 Promise Road, city: Rapid City, state: sd, zip: '57701'}
+  address:
+    street: 2165 Promise Road
+    city: Rapid City
+    state: sd
+    zip: '57701'
   place: '4652980'
-  geo: {lat: 44.02413, lng: -103.25197}
+  geo:
+    lat: 44.02413
+    lng: -103.25197
   phone: 605-718-1095
   website: https://www.va.gov/black-hills-health-care/locations/rapid-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -562,21 +596,39 @@
   - Suicide prevention
   - Urology
   - Wound care and ostomy
-  external_ids: {va: vha_568GA}
+  external_ids:
+    va: vha_568GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/rapid-city/rapid-city-vet-center
   name: Rapid City Vet Center
   categories: *id001
-  address: {street: 21 East Omaha Street, city: Rapid City, state: sd, zip: '57701'}
+  address:
+    street: 21 East Omaha Street
+    city: Rapid City
+    state: sd
+    zip: '57701'
   place: '4652980'
-  geo: {lat: 44.0814, lng: -103.21358}
+  geo:
+    lat: 44.0814
+    lng: -103.21358
   phone: 605-348-0077
   website: https://www.va.gov/rapid-city-vet-center/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '18:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -589,10 +641,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0423V}
+  external_ids:
+    va: vc_0423V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/rapid-city/rapid-city-ymca-child-care
   name: Rapid City Ymca Child Care
   categories:

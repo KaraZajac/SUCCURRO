@@ -21,13 +21,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 130 Independence Lane, city: LaFollette, state: tn, zip: '37766'}
+  address:
+    street: 130 Independence Lane
+    city: LaFollette
+    state: tn
+    zip: '37766'
   place: '4740180'
-  geo: {lat: 36.35184, lng: -84.1574}
+  geo:
+    lat: 36.35184
+    lng: -84.1574
   phone: 423-563-7666
   website: https://www.va.gov/mountain-home-health-care/locations/campbell-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -36,10 +49,13 @@
   - Pharmacy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_621GK}
+  external_ids:
+    va: vha_621GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/la-follette/community-health-of-east-tennessee-inc
   name: Community Health of East Tennessee, Inc.
   categories:
@@ -62,6 +78,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/la-follette/east-tennessee-human-resource-agency-ethra
+  name: East Tennessee Human Resource Agency (ETHRA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Campbell County
+  address: {street: 2301 Jacksboro Pike STE 4B (P. O. Box 1394), city: LaFollette, state: tn, zip: 37766-2959}
+  place: '4740180'
+  phone: 423-562-2948
+  email: LIHEAP@ethra.org
+  website: https://www.ethra.org/programs/26/low-income-home-energy-assistance-program-liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/la-follette/glade-springs-baptist-church
   name: Glade Springs Baptist Church
   categories:

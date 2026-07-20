@@ -129,13 +129,23 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1205 North Sycamore Street, city: Fort Stockton, state: tx, zip: '79735'}
+  address:
+    street: 1205 North Sycamore Street
+    city: Fort Stockton
+    state: tx
+    zip: '79735'
   place: '4826808'
-  geo: {lat: 30.89597, lng: -102.90894}
+  geo:
+    lat: 30.89597
+    lng: -102.90894
   phone: 432-336-8116
   website: https://www.va.gov/west-texas-health-care/locations/fort-stockton-va-clinic/
   hours:
-  - {days: [tue, thu], open: '08:00', close: '16:30'}
+  - days:
+    - tue
+    - thu
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Cardiology
@@ -143,10 +153,13 @@
   - Primary care
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_519GD}
+  external_ids:
+    va: vha_519GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fort-stockton/pccaa-head-start
   name: PCCAA HEAD START
   categories:
@@ -166,6 +179,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/fort-stockton/pecos-county-community-action-agency
+  name: Pecos County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Crane, Pecos, Terrell Counties
+  address: {street: 101 North Jackson (P. O Box 940), city: Fort Stockton, state: tx, zip: '79735'}
+  place: '4826808'
+  phone: 432-336-7528
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/fort-stockton/permian-basin-community-ctrs-for-mh-mr
   name: Permian Basin Community Ctrs for MH/MR
   categories:

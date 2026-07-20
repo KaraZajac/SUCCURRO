@@ -150,13 +150,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 792 North Sunnyside Road, city: Decatur, state: il, zip: '62522'}
+  address:
+    street: 792 North Sunnyside Road
+    city: Decatur
+    state: il
+    zip: '62522'
   place: '1718823'
-  geo: {lat: 39.8482, lng: -89.0149}
+  geo:
+    lat: 39.8482
+    lng: -89.0149
   phone: 217-362-5442
   website: https://www.va.gov/illiana-health-care/locations/decatur-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -169,10 +182,13 @@
   - Psychology
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_550GA}
+  external_ids:
+    va: vha_550GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/decatur/disc-day-camp
   name: Disc Day Camp
   categories:
@@ -276,6 +292,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/decatur/empowerment-opportunity-center-2
+  name: Empowerment Opportunity Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Macon County
+  address: {street: 360 E Marietta St., city: Decatur, state: il, zip: '62521'}
+  place: '1718823'
+  phone: 217-428-0155
+  website: https://www.dmcoc.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/decatur/garfield-park
   name: Garfield Park
   categories:

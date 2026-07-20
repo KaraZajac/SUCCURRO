@@ -135,13 +135,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1131 South Morrison Boulevard, city: Hammond, state: la, zip: '70403'}
+  address:
+    street: 1131 South Morrison Boulevard
+    city: Hammond
+    state: la
+    zip: '70403'
   place: '2232755'
-  geo: {lat: 30.48893, lng: -90.4827}
+  geo:
+    lat: 30.48893
+    lng: -90.4827
   phone: 985-902-5100
   website: https://www.va.gov/southeast-louisiana-health-care/locations/hammond-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -155,10 +168,13 @@
   - Podiatry
   - Primary care
   - Urology
-  external_ids: {va: vha_629GB}
+  external_ids:
+    va: vha_629GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/hammond/hammond-westside-elementary-montessori-school
   name: Hammond Westside Elementary Montessori School
   categories:
@@ -202,6 +218,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/hammond/quad-area-community-action-agency-inc
+  name: Quad Area Community Action Agency, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tangipahoa County
+  address: {street: 45300 N. Baptist Rd., city: Hammond, state: la, zip: '70401'}
+  place: '2232755'
+  phone: 225-567-2350
+  website: http://www.quadarea.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/hammond/rkm-at-greenville-park-leadership-academy
   name: RKM at Greenville Park Leadership Academy
   categories:

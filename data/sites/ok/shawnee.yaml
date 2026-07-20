@@ -125,6 +125,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/shawnee/human-services-centers-pottawatomie
+  name: 'Human Services Centers: Pottawatomie'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pottawatomie County
+  address: {street: 2320 Arlington Ste. B, city: Shawnee, state: ok, zip: '74801'}
+  place: '4066800'
+  phone: 405-878-4000
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/shawnee/learning-tree-hs-ehs-shawnee
   name: Learning Tree HS/EHS - Shawnee
   categories:
@@ -316,22 +328,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '3700 North Kickapoo Avenue, Shawnee Health Plaza', city: Shawnee, state: ok, zip: '74804'}
+  address:
+    street: 3700 North Kickapoo Avenue, Shawnee Health Plaza
+    city: Shawnee
+    state: ok
+    zip: '74804'
   place: '4066800'
-  geo: {lat: 35.3673, lng: -96.92984}
+  geo:
+    lat: 35.3673
+    lng: -96.92984
   phone: 405-214-1700
   website: https://www.va.gov/oklahoma-city-health-care/locations/shawnee-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GK}
+  external_ids:
+    va: vha_635GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/shawnee/union-street-head-start-early-head-start
   name: Union Street Head Start/Early Head Start
   categories:

@@ -223,13 +223,26 @@
   name: Temecula Vet Center
   categories:
   - vet-center
-  address: {street: '40935 County Center Drive, Suite A/B', city: Temecula, state: ca, zip: '92591'}
+  address:
+    street: 40935 County Center Drive, Suite A/B
+    city: Temecula
+    state: ca
+    zip: '92591'
   place: 0678120
-  geo: {lat: 33.52844, lng: -117.16001}
+  geo:
+    lat: 33.52844
+    lng: -117.16001
   phone: 951-302-4849
   website: https://www.va.gov/temecula-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -242,7 +255,10 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0608V}
+  external_ids:
+    va: vc_0608V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

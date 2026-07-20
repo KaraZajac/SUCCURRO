@@ -165,13 +165,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 530 South 25th Street, city: Fort Dodge, state: ia, zip: '50501'}
+  address:
+    street: 530 South 25th Street
+    city: Fort Dodge
+    state: ia
+    zip: '50501'
   place: '1928515'
-  geo: {lat: 42.50076, lng: -94.16314}
+  geo:
+    lat: 42.50076
+    lng: -94.16314
   phone: 515-576-2235
   website: https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -182,10 +195,13 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_636GK}
+  external_ids:
+    va: vha_636GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/fort-dodge/grace-lutheran-church
   name: Grace Lutheran Church
   categories:
@@ -287,6 +303,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/fort-dodge/upper-des-moines-opportunity-inc
+  name: Upper Des Moines Opportunity Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Webster County
+  address: {street: 1325 1st Ave S., city: Fort Dodge, state: ia, zip: '50501'}
+  place: '1928515'
+  phone: 515-576-7774
+  website: http://www.udmo.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/fort-dodge/ywca-of-fort-dodge
   name: YWCA of Fort Dodge
   categories:

@@ -21,28 +21,55 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/reserve/st-john-the-baptist-dhhs
+  name: St. John The Baptist DHHS
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving St John the Baptist County
+  address: {street: 128 Central Ave. (P. O. Box 2108 ), city: Reserve, state: la, zip: '70084'}
+  place: '2264310'
+  phone: 985-536-4955
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/reserve/st-john-va-clinic
   name: St. John VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4004 West Airline Highway, city: Reserve, state: la, zip: '70084'}
+  address:
+    street: 4004 West Airline Highway
+    city: Reserve
+    state: la
+    zip: '70084'
   place: '2264310'
-  geo: {lat: 30.0769, lng: -90.57121}
+  geo:
+    lat: 30.0769
+    lng: -90.57121
   phone: 985-479-6770
   website: https://www.va.gov/southeast-louisiana-health-care/locations/st-john-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_629GD}
+  external_ids:
+    va: vha_629GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/reserve/teche-health-reserve
   name: Teche Health @ Reserve
   categories:

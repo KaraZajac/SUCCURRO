@@ -185,13 +185,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3458 Riverside Drive, city: Wellsville, state: ny, zip: '14895'}
+  address:
+    street: 3458 Riverside Drive
+    city: Wellsville
+    state: ny
+    zip: '14895'
   place: '3679092'
-  geo: {lat: 42.14904, lng: -77.97369}
+  geo:
+    lat: 42.14904
+    lng: -77.97369
   phone: 607-664-4660
   website: https://www.va.gov/finger-lakes-health-care/locations/wellsville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -200,7 +213,10 @@
   - Optometry
   - Podiatry
   - Primary care
-  external_ids: {va: vha_528G8}
+  external_ids:
+    va: vha_528G8
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

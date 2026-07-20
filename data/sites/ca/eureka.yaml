@@ -463,13 +463,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 930 West Harris Street, city: Eureka, state: ca, zip: '95503'}
+  address:
+    street: 930 West Harris Street
+    city: Eureka
+    state: ca
+    zip: '95503'
   place: '0623042'
-  geo: {lat: 40.78058, lng: -124.18115}
+  geo:
+    lat: 40.78058
+    lng: -124.18115
   phone: 707-269-7500
   website: https://www.va.gov/san-francisco-health-care/locations/eureka-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Complementary and integrative health
@@ -491,21 +504,37 @@
   - Social work
   - Travel reimbursement
   - Whole health
-  external_ids: {va: vha_662GC}
+  external_ids:
+    va: vha_662GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/eureka/eureka-vet-center
   name: Eureka Vet Center
   categories:
   - vet-center
-  address: {street: '2830 G Street, Suite A and B', city: Eureka, state: ca, zip: '95501'}
+  address:
+    street: 2830 G Street, Suite A and B
+    city: Eureka
+    state: ca
+    zip: '95501'
   place: '0623042'
-  geo: {lat: 40.78228, lng: -124.16248}
+  geo:
+    lat: 40.78228
+    lng: -124.16248
   phone: 707-444-8271
   website: https://www.va.gov/eureka-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -518,10 +547,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0644V}
+  external_ids:
+    va: vc_0644V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/eureka/housing-authority-of-the-city-of-eureka
   name: Housing Authority Of The City Of Eureka
   categories:
@@ -643,6 +675,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/eureka/redwood-community-action-agency
+  name: Redwood Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Humboldt County
+  address: {street: 539 T Steet, city: Eureka, state: ca, zip: '95501'}
+  place: '0623042'
+  phone: 707-444-3834
+  website: https://rcaa.org/energy-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/eureka/redwood-community-health-center
   name: Redwood Community Health Center
   categories:

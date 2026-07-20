@@ -182,17 +182,41 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/morgantown/monongalia-county-dhhr-office
+  name: Monongalia County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monongalia County
+  address: {street: 114 South High Street (P. O. Box 800), city: Morgantown, state: wv, zip: '26507'}
+  place: '5455756'
+  phone: 304-285-3175
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/morgantown/morgantown-vet-center
   name: Morgantown Vet Center
   categories:
   - vet-center
-  address: {street: '34 Commerce Drive, Suite 101', city: Morgantown, state: wv, zip: '26501'}
+  address:
+    street: 34 Commerce Drive, Suite 101
+    city: Morgantown
+    state: wv
+    zip: '26501'
   place: '5455756'
-  geo: {lat: 39.62862, lng: -79.98612}
+  geo:
+    lat: 39.62862
+    lng: -79.98612
   phone: 304-291-4303
   website: https://www.va.gov/morgantown-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -212,10 +236,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0216V}
+  external_ids:
+    va: vc_0216V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/morgantown/mountaineer-middle
   name: Mountaineer Middle
   categories:
@@ -552,17 +579,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '1550 University Avenue, 214-G Mountainlair', city: Morgantown, state: wv, zip: '26506'}
+  address:
+    street: 1550 University Avenue, 214-G Mountainlair
+    city: Morgantown
+    state: wv
+    zip: '26506'
   place: '5455756'
-  geo: {lat: 39.63477, lng: -79.95362}
+  geo:
+    lat: 39.63477
+    lng: -79.95362
   phone: 304-392-3629
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_315h}
+  external_ids:
+    va: vba_315h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/morgantown/wellspring-family-services-crittenton-services
   name: Wellspring Family Services Crittenton Services
   categories:

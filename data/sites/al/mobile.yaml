@@ -1432,6 +1432,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/mobile/mobile-community-action-agency
+  name: Mobile Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Mobile, Washington Counties
+  address: {street: 461 Donald Street, city: Mobile, state: al, zip: '36617'}
+  place: '0150000'
+  phone: 251-206-6117
+  website: https://mcamobile.cascheduler.com/apptonline/landing.html?client_code=MCAMOBIL
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/mobile/mobile-housing-authority
   name: Mobile Housing Authority
   categories:
@@ -1480,13 +1492,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4444 Demetropolis Road, city: Mobile, state: al, zip: '36619'}
+  address:
+    street: 4444 Demetropolis Road
+    city: Mobile
+    state: al
+    zip: '36619'
   place: '0150000'
-  geo: {lat: 30.59883, lng: -88.15712}
+  geo:
+    lat: 30.59883
+    lng: -88.15712
   phone: 251-219-3900
   website: https://www.va.gov/gulf-coast-health-care/locations/mobile-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -1497,21 +1522,37 @@
   - Orthopedics
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_520GA}
+  external_ids:
+    va: vha_520GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/mobile/mobile-vet-center
   name: Mobile Vet Center
   categories:
   - vet-center
-  address: {street: '3221 Springhill Avenue, Building 2, Suite C', city: Mobile, state: al, zip: '36607'}
+  address:
+    street: 3221 Springhill Avenue, Building 2, Suite C
+    city: Mobile
+    state: al
+    zip: '36607'
   place: '0150000'
-  geo: {lat: 30.70174, lng: -88.11703}
+  geo:
+    lat: 30.70174
+    lng: -88.11703
   phone: 251-478-5906
   website: https://www.va.gov/mobile-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1522,10 +1563,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0741V}
+  external_ids:
+    va: vc_0741V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/mobile/nan-gray-davis-elem-school
   name: Nan Gray Davis Elem School
   categories:

@@ -235,13 +235,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4000 Fort Campbell Boulevard, city: Hopkinsville, state: ky, zip: '42240'}
+  address:
+    street: 4000 Fort Campbell Boulevard
+    city: Hopkinsville
+    state: ky
+    zip: '42240'
   place: '2137918'
-  geo: {lat: 36.83364, lng: -87.47374}
+  geo:
+    lat: 36.83364
+    lng: -87.47374
   phone: 270-885-2106
   website: https://www.va.gov/tennessee-valley-health-care/locations/hopkinsville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -251,10 +264,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GJ}
+  external_ids:
+    va: vha_626GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/hopkinsville/hopkinsville-ymca
   name: Hopkinsville Ymca
   categories:
@@ -404,6 +420,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/hopkinsville/pennyrile-allied-community-services
+  name: Pennyrile Allied Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Caldwell, Christian, Livingston, Lyon, Todd Counties
+  address: {street: 1100 South Liberty Street (P. O Box 549), city: Hopkinsville, state: ky, zip: 42241-0549}
+  place: '2137918'
+  phone: 270-365-5097
+  website: http://www.pacs-ky.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/hopkinsville/pennyroyal-center-genesis-east
   name: Pennyroyal Center Genesis East
   categories:

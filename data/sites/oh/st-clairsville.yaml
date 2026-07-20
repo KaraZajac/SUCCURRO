@@ -4,13 +4,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '67800 Mall Ring Road, Ohio Valley Mall', city: St. Clairsville, state: oh, zip: '43950'}
+  address:
+    street: 67800 Mall Ring Road, Ohio Valley Mall
+    city: St. Clairsville
+    state: oh
+    zip: '43950'
   place: '3969526'
-  geo: {lat: 40.06922, lng: -80.86508}
+  geo:
+    lat: 40.06922
+    lng: -80.86508
   phone: 740-695-9321
   website: https://www.va.gov/pittsburgh-health-care/locations/belmont-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -32,10 +45,13 @@
   - Registry exams
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_646GA}
+  external_ids:
+    va: vha_646GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/st-clairsville/cedar-ridge-behavioral-health-solution-st-clairs
   name: Cedar Ridge Behavioral Health Solution St Clairsville Outpatient
   categories:
@@ -57,6 +73,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/st-clairsville/community-action-commission-of-belmont-county
+  name: Community Action Commission of Belmont County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Belmont County
+  address: {street: 153 1/2 W Main Street, city: St. Clairsville, state: oh, zip: '43950'}
+  place: '3969526'
+  phone: 740-695-0293
+  website: https://cacbelmont.org/heap-program-2/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/st-clairsville/early-head-start-home-base
   name: Early Head Start- Home Base
   categories:

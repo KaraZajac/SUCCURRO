@@ -218,13 +218,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1124 Blanton Drive, Sevier County Center', city: Sevierville, state: tn, zip: '37862'}
+  address:
+    street: 1124 Blanton Drive, Sevier County Center
+    city: Sevierville
+    state: tn
+    zip: '37862'
   place: '4767120'
-  geo: {lat: 35.85265, lng: -83.54172}
+  geo:
+    lat: 35.85265
+    lng: -83.54172
   phone: 865-286-6950
   website: https://www.va.gov/mountain-home-health-care/locations/dannie-a-carr-veterans-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -237,10 +250,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_621GI}
+  external_ids:
+    va: vha_621GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/sevierville/dannie-a-carr-veterans-outpt-clinic
   name: Dannie A Carr Veterans Outpt Clinic
   categories:

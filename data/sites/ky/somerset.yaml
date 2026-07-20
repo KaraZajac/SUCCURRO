@@ -361,6 +361,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/somerset/lake-cumberland-community-action-agency
+  name: Lake Cumberland Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pulaski County
+  address: {street: '100 Main St., Suite 302', city: Somerset, state: ky, zip: '42502'}
+  place: '2171688'
+  phone: 606-679-6203
+  email: pulaski@lc-caa.org
+  website: http://www.lc-caa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/somerset/lake-cumberland-regional-hospital
   name: Lake Cumberland Regional Hospital
   categories:
@@ -768,13 +781,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 300 Medpark Drive, city: Somerset, state: ky, zip: '42503'}
+  address:
+    street: 300 Medpark Drive
+    city: Somerset
+    state: ky
+    zip: '42503'
   place: '2171688'
-  geo: {lat: 37.08319, lng: -84.62952}
+  geo:
+    lat: 37.08319
+    lng: -84.62952
   phone: 606-676-0786
   website: https://www.va.gov/lexington-health-care/locations/somerset-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -789,10 +815,13 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
   - Urology
-  external_ids: {va: vha_596GA}
+  external_ids:
+    va: vha_596GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/somerset/southern-elementary-school
   name: Southern Elementary School
   categories:

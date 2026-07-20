@@ -265,13 +265,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3460 South Clark Street, city: Mexico, state: mo, zip: '65265'}
+  address:
+    street: 3460 South Clark Street
+    city: Mexico
+    state: mo
+    zip: '65265'
   place: '2947648'
-  geo: {lat: 39.13758, lng: -91.89271}
+  geo:
+    lat: 39.13758
+    lng: -91.89271
   phone: 573-581-9630
   website: https://www.va.gov/columbia-missouri-health-care/locations/mexico-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -280,10 +293,13 @@
   - Orthopedics
   - Primary care
   - Urology
-  external_ids: {va: vha_589GX}
+  external_ids:
+    va: vha_589GX
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/mexico/mobile-dental-unit
   name: Mobile Dental Unit
   categories:

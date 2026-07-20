@@ -45,13 +45,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 315 West Gary Boulevard, city: Clinton, state: ok, zip: '73601'}
+  address:
+    street: 315 West Gary Boulevard
+    city: Clinton
+    state: ok
+    zip: '73601'
   place: '4015400'
-  geo: {lat: 35.51549, lng: -98.96437}
+  geo:
+    lat: 35.51549
+    lng: -98.96437
   phone: 580-547-0900
   website: https://www.va.gov/oklahoma-city-health-care/locations/clinton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -60,10 +73,25 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GH}
+  external_ids:
+    va: vha_635GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/clinton/human-services-centers-custer
+  name: 'Human Services Centers: Custer'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Custer County
+  address: {street: 190 S. 31st, city: Clinton, state: ok, zip: '73601'}
+  place: '4015400'
+  phone: 580-331-1900
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/clinton/variety-care-clinton
   name: Variety Care Clinton
   categories:

@@ -204,6 +204,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/harrisburg/dauphin-county-assistance-office
+  name: Dauphin County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dauphin County
+  address: {street: 2432 N. 7th Street (P. O. Box 5959), city: Harrisburg, state: pa, zip: 17110-0959}
+  place: '4232800'
+  phone: 717-265-8919
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/harrisburg/dauphin-county-technical-school
   name: Dauphin County Technical School
   categories:
@@ -501,15 +512,32 @@
   name: Harrisburg Vet Center
   categories:
   - vet-center
-  address: {street: '1500 North Second Street, Suite 2', city: Harrisburg, state: pa, zip: '17102'}
+  address:
+    street: 1500 North Second Street, Suite 2
+    city: Harrisburg
+    state: pa
+    zip: '17102'
   place: '4232800'
-  geo: {lat: 40.27066, lng: -76.89337}
+  geo:
+    lat: 40.27066
+    lng: -76.89337
   phone: 717-782-3954
   website: https://www.va.gov/harrisburg-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '17:30'}
-  - {days: [tue, wed], open: '08:00', close: '20:30'}
-  - {days: [thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '17:30'
+  - days:
+    - tue
+    - wed
+    open: 08:00
+    close: '20:30'
+  - days:
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -522,26 +550,38 @@
   - Veteran connections
   - Veteran readiness and employment programs
   - Whole health
-  external_ids: {va: vc_0218V}
+  external_ids:
+    va: vc_0218V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/harrisburg/harrisburg-veteran-readiness-and-employment-offi
   name: Harrisburg Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 215 Pine Street, city: Harrisburg, state: pa, zip: '17101'}
+  address:
+    street: 215 Pine Street
+    city: Harrisburg
+    state: pa
+    zip: '17101'
   place: '4232800'
-  geo: {lat: 40.2625, lng: -76.88437}
+  geo:
+    lat: 40.2625
+    lng: -76.88437
   phone: 800-827-1000
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_310g}
+  external_ids:
+    va: vba_310g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/harrisburg/hhc-south-allison-hill
   name: HHC- South Allison Hill
   categories:

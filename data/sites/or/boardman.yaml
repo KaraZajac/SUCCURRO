@@ -86,20 +86,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2 Marine Drive, city: Boardman, state: or, zip: '97818'}
+  address:
+    street: 2 Marine Drive
+    city: Boardman
+    state: or
+    zip: '97818'
   place: '4107200'
-  geo: {lat: 45.84775, lng: -119.69359}
+  geo:
+    lat: 45.84775
+    lng: -119.69359
   phone: 541-481-2255
   website: https://www.va.gov/walla-walla-health-care/locations/morrow-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
   - Telehealth
-  external_ids: {va: vha_687QB}
+  external_ids:
+    va: vha_687QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/boardman/neal-early-learning-center-nelc
   name: Neal Early Learning Center (NELC)
   categories:

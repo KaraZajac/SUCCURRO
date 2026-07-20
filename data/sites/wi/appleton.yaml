@@ -423,13 +423,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 10 Tri-Park Way, city: Appleton, state: wi, zip: '54914'}
+  address:
+    street: 10 Tri-Park Way
+    city: Appleton
+    state: wi
+    zip: '54914'
   place: '5502375'
-  geo: {lat: 44.28054, lng: -88.45271}
+  geo:
+    lat: 44.28054
+    lng: -88.45271
   phone: 920-831-0070
   website: https://www.va.gov/milwaukee-health-care/locations/john-h-bradley-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -457,10 +470,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_695BY}
+  external_ids:
+    va: vha_695BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/appleton/johnston-elementary-school
   name: Johnston Elementary School
   categories:
@@ -665,6 +681,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: wi/appleton/outagamie-county-energy-services-inc
+  name: Outagamie County Energy Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Outagamie County
+  address: {street: '420 Longview Dr., Suite A', city: Appleton, state: wi, zip: '54911'}
+  place: '5502375'
+  phone: 920-735-0010
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/appleton/partnership-community-health-center-administrati
   name: Partnership Community Health Center-Administration
   categories:

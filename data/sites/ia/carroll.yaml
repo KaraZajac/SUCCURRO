@@ -23,13 +23,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 311 South Clark Street, city: Carroll, state: ia, zip: '51401'}
+  address:
+    street: 311 South Clark Street
+    city: Carroll
+    state: ia
+    zip: '51401'
   place: '1911080'
-  geo: {lat: 42.05728, lng: -94.8678}
+  geo:
+    lat: 42.05728
+    lng: -94.8678
   phone: 712-794-6780
   website: https://www.va.gov/central-iowa-health-care/locations/carroll-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -46,10 +59,13 @@
   - Primary care
   - Pulmonary medicine
   - Telehealth
-  external_ids: {va: vha_636GM}
+  external_ids:
+    va: vha_636GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/carroll/catholic-charities-diocese-of-sioux-city
   name: Catholic Charities Diocese of Sioux City
   categories:
@@ -152,6 +168,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ia/carroll/new-opportunities-inc
+  name: New Opportunities, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Carroll County
+  address: {street: '23751 Hwy 30 East, (P.O. Box 427)', city: Carroll, state: ia, zip: '51401'}
+  place: '1911080'
+  phone: 712-792-9266 x 1642
+  website: http://www.newopp.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/carroll/new-opportunities-inc-carroll
   name: New Opportunities Inc Carroll
   categories:

@@ -306,9 +306,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 7400 Merton Minter Boulevard, city: San Antonio, state: tx, zip: '78229'}
+  address:
+    street: 7400 Merton Minter Boulevard
+    city: San Antonio
+    state: tx
+    zip: '78229'
   place: '4865000'
-  geo: {lat: 29.50842, lng: -98.58068}
+  geo:
+    lat: 29.50842
+    lng: -98.58068
   phone: 210-617-5300
   website: https://www.va.gov/south-texas-health-care/locations/audie-l-murphy-memorial-veterans-hospital/
   services:
@@ -381,10 +387,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_671}
+  external_ids:
+    va: vha_671
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/autism-community-network-community-first-health
   name: Autism Community Network + Community First Health Plans
   categories:
@@ -473,13 +482,26 @@
   name: Balcones Heights VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 4522 Fredericksburg Road, city: San Antonio, state: tx, zip: '78201'}
+  address:
+    street: 4522 Fredericksburg Road
+    city: San Antonio
+    state: tx
+    zip: '78201'
   place: '4865000'
-  geo: {lat: 29.4897, lng: -98.551}
+  geo:
+    lat: 29.4897
+    lng: -98.551
   phone: 210-732-1802
   website: https://www.va.gov/south-texas-health-care/locations/balcones-heights-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -489,10 +511,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GP}
+  external_ids:
+    va: vha_671GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/ball
   name: Ball
   categories:
@@ -694,6 +719,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/san-antonio/bexar-county-department-of-community-resources
+  name: Bexar County Department of Community Resources
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bexar County
+  address: {street: 233 N. Pecos St. Ste. 590, city: San Antonio, state: tx, zip: '78207'}
+  place: '4865000'
+  phone: 210-335-3666
+  email: clientservices@bexar.org
+  website: https://www.bexar.org/2748/Community-Impact
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/san-antonio/bexar-county-housing-authority
   name: Bexar County Housing Authority
   categories:
@@ -2054,17 +2092,33 @@
   name: Christus Santa Rosa VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 423 Treeline Park, city: San Antonio, state: tx, zip: '78209'}
+  address:
+    street: 423 Treeline Park
+    city: San Antonio
+    state: tx
+    zip: '78209'
   place: '4865000'
-  geo: {lat: 29.50644, lng: -98.47542}
+  geo:
+    lat: 29.50644
+    lng: -98.47542
   phone: 210-617-5128
   website: https://www.va.gov/find-locations/facility/vha_671QC
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
-  external_ids: {va: vha_671QC}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
+  external_ids:
+    va: vha_671QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/churchill-h-s
   name: Churchill H S
   categories:
@@ -2742,6 +2796,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/san-antonio/concho-valley-community-action-agency
+  name: Concho Valley Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sterling County
+  address: {street: 133 W. Concho Ave., city: San Antonio, state: tx, zip: '76903'}
+  place: '4865000'
+  phone: 325-653-2411
+  website: https://cvcaa.org/what_we_do/utility_assistance.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/san-antonio/cooper-academy-navarro
   name: Cooper Academy @ Navarro
   categories:
@@ -2912,22 +2978,38 @@
   name: Data Point VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 8410 Data Point Drive, city: San Antonio, state: tx, zip: '78229'}
+  address:
+    street: 8410 Data Point Drive
+    city: San Antonio
+    state: tx
+    zip: '78229'
   place: '4865000'
-  geo: {lat: 29.51746, lng: -98.56923}
+  geo:
+    lat: 29.51746
+    lng: -98.56923
   phone: 210-617-5300
   website: https://www.va.gov/south-texas-health-care/locations/data-point-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dental/oral surgery
   - Ophthalmology
   - Optometry
-  external_ids: {va: vha_671QB}
+  external_ids:
+    va: vha_671QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/davinci-academy-for-science-and-the-arts-at-san
   name: Davinci Academy For Science And The Arts At San Antonio
   categories:
@@ -5017,9 +5099,15 @@
   categories: &id002
   - va-facility
   description: IDES Site
-  address: {street: 9939 State Highway 151, city: San Antonio, state: tx, zip: '78251'}
+  address:
+    street: 9939 State Highway 151
+    city: San Antonio
+    state: tx
+    zip: '78251'
   place: '4865000'
-  geo: {lat: 29.44894, lng: -98.67735}
+  geo:
+    lat: 29.44894
+    lng: -98.67735
   phone: 210-396-9694
   services:
   - ApplyingForBenefits
@@ -5028,17 +5116,26 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_362q}
+  external_ids:
+    va: vba_362q
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/integrated-disability-evaluation-system-ides-sit-2
   name: Integrated Disability Evaluation System (IDES) Site at Joint Base San Antonio-Lackland
   categories: *id002
   description: IDES Site
-  address: {street: 9939 State Highway 151, city: San Antonio, state: tx, zip: '78251'}
+  address:
+    street: 9939 State Highway 151
+    city: San Antonio
+    state: tx
+    zip: '78251'
   place: '4865000'
-  geo: {lat: 29.44894, lng: -98.67735}
+  geo:
+    lat: 29.44894
+    lng: -98.67735
   phone: 210-396-9694
   services:
   - ApplyingForBenefits
@@ -5047,10 +5144,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_362p}
+  external_ids:
+    va: vba_362p
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/j-b-passmore-el
   name: J B Passmore El
   categories:
@@ -6811,34 +6911,63 @@
   name: North Bexar VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 16019 Nacogdoches Road, city: San Antonio, state: tx, zip: '78247'}
+  address:
+    street: 16019 Nacogdoches Road
+    city: San Antonio
+    state: tx
+    zip: '78247'
   place: '4865000'
-  geo: {lat: 29.58703, lng: -98.36136}
+  geo:
+    lat: 29.58703
+    lng: -98.36136
   phone: 210-617-5300
   website: https://www.va.gov/south-texas-health-care/locations/north-bexar-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
   - Mental health care
   - Primary care
   - Social work
-  external_ids: {va: vha_671GR}
+  external_ids:
+    va: vha_671GR
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/north-central-federal-va-clinic
   name: North Central Federal VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 17440 Henderson Pass, city: San Antonio, state: tx, zip: '78232'}
+  address:
+    street: 17440 Henderson Pass
+    city: San Antonio
+    state: tx
+    zip: '78232'
   place: '4865000'
-  geo: {lat: 29.60335, lng: -98.46153}
+  geo:
+    lat: 29.60335
+    lng: -98.46153
   phone: 210-483-2900
   website: https://www.va.gov/south-texas-health-care/locations/north-central-federal-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -6850,42 +6979,74 @@
   - Radiology
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GO}
+  external_ids:
+    va: vha_671GO
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/north-east-bexar-va-clinic
   name: North East Bexar VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: '2391 Northeast Loop 410, Marymont Business Park', city: San Antonio, state: tx, zip: '78217'}
+  address:
+    street: 2391 Northeast Loop 410, Marymont Business Park
+    city: San Antonio
+    state: tx
+    zip: '78217'
   place: '4865000'
-  geo: {lat: 29.5164, lng: -98.41931}
+  geo:
+    lat: 29.5164
+    lng: -98.41931
   phone: 210-617-5300
   website: https://www.va.gov/south-texas-health-care/locations/north-east-bexar-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Primary care
   - Social work
   - Telehealth
   - Whole health
-  external_ids: {va: vha_671GV}
+  external_ids:
+    va: vha_671GV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/north-west-san-antonio-va-clinic
   name: North West San Antonio VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 9939 State Highway 151, city: San Antonio, state: tx, zip: '78251'}
+  address:
+    street: 9939 State Highway 151
+    city: San Antonio
+    state: tx
+    zip: '78251'
   place: '4865000'
-  geo: {lat: 29.44694, lng: -98.67607}
+  geo:
+    lat: 29.44694
+    lng: -98.67607
   phone: 210-706-7800
   website: https://www.va.gov/south-texas-health-care/locations/north-west-san-antonio-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '06:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 06:00
+    close: '16:30'
   services:
   - Dental/oral surgery
   - Dermatology
@@ -6902,10 +7063,13 @@
   - Registry exams
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_671GS}
+  external_ids:
+    va: vha_671GS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/northwest-houston-2
   name: Northwest Houston 2
   place: '4865000'
@@ -8089,14 +8253,29 @@
   name: San Antonio Northeast Vet Center
   categories: &id003
   - vet-center
-  address: {street: '9504 IH 35, North, Suite 214', city: San Antonio, state: tx, zip: '78233'}
+  address:
+    street: 9504 IH 35, North, Suite 214
+    city: San Antonio
+    state: tx
+    zip: '78233'
   place: '4865000'
-  geo: {lat: 29.52539, lng: -98.39234}
+  geo:
+    lat: 29.52539
+    lng: -98.39234
   phone: 210-650-0422
   website: https://www.va.gov/san-antonio-northeast-vet-center/
   hours:
-  - {days: [mon, tue, thu], open: '08:00', close: '19:00'}
-  - {days: [wed, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    open: 08:00
+    close: '19:00'
+  - days:
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -8108,33 +8287,60 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0721V}
+  external_ids:
+    va: vc_0721V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/san-antonio-northwest-mobile-vet-center
   name: San Antonio Northwest Mobile Vet Center
   categories: *id003
-  address: {street: '9910 West Loop 1604, North, Suite 126', city: San Antonio, state: tx, zip: '78254'}
+  address:
+    street: 9910 West Loop 1604, North, Suite 126
+    city: San Antonio
+    state: tx
+    zip: '78254'
   place: '4865000'
-  geo: {lat: 29.53419, lng: -98.68223}
+  geo:
+    lat: 29.53419
+    lng: -98.68223
   phone: 210-688-0606
   website: https://www.va.gov/san-antonio-northwest-vet-center/locations/#san-antonio-northwest-mobile-v
-  external_ids: {va: vc_0849MVC}
+  external_ids:
+    va: vc_0849MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/san-antonio-northwest-vet-center
   name: San Antonio Northwest Vet Center
   categories: *id003
-  address: {street: '9910 West Loop 1604, North, Suite 126', city: San Antonio, state: tx, zip: '78254'}
+  address:
+    street: 9910 West Loop 1604, North, Suite 126
+    city: San Antonio
+    state: tx
+    zip: '78254'
   place: '4865000'
-  geo: {lat: 29.53419, lng: -98.68223}
+  geo:
+    lat: 29.53419
+    lng: -98.68223
   phone: 210-688-0606
   website: https://www.va.gov/san-antonio-northwest-vet-center/
   hours:
-  - {days: [mon, tue], open: '08:00', close: '18:30'}
-  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    open: 08:00
+    close: '18:30'
+  - days:
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -8146,30 +8352,49 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0729V}
+  external_ids:
+    va: vc_0729V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/san-antonio-pecan-valley-va-clinic
   name: San Antonio Pecan Valley VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3418 East Southcross Boulevard, city: San Antonio, state: tx, zip: '78223'}
+  address:
+    street: 3418 East Southcross Boulevard
+    city: San Antonio
+    state: tx
+    zip: '78223'
   place: '4865000'
-  geo: {lat: 29.37701, lng: -98.43168}
+  geo:
+    lat: 29.37701
+    lng: -98.43168
   phone: 210-337-4316
   website: https://www.va.gov/south-texas-health-care/locations/san-antonio-pecan-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Laboratory and pathology
   - Primary care
   - Social work
-  external_ids: {va: vha_671GU}
+  external_ids:
+    va: vha_671GU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/san-antonio-specialty-health-sports-medicine-dow
   name: San Antonio Specialty Health & Sports Medicine - Downtown
   categories:
@@ -8218,21 +8443,37 @@
   name: San Antonio VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 7909 Fredericksburg Road, city: San Antonio, state: tx, zip: '78229'}
+  address:
+    street: 7909 Fredericksburg Road
+    city: San Antonio
+    state: tx
+    zip: '78229'
   place: '4865000'
-  geo: {lat: 29.51131, lng: -98.56764}
+  geo:
+    lat: 29.51131
+    lng: -98.56764
   phone: 210-437-0884
   website: https://www.va.gov/south-texas-health-care/locations/san-antonio-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Primary care
   - Social work
-  external_ids: {va: vha_671GK}
+  external_ids:
+    va: vha_671GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/san-juan-community-center
   name: San Juan Community Center
   categories:
@@ -8456,23 +8697,39 @@
   name: Shavano Park VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 4350 Lockhill-Selma Road, city: San Antonio, state: tx, zip: '78249'}
+  address:
+    street: 4350 Lockhill-Selma Road
+    city: San Antonio
+    state: tx
+    zip: '78249'
   place: '4865000'
-  geo: {lat: 29.579, lng: -98.56584}
+  geo:
+    lat: 29.579
+    lng: -98.56584
   phone: 210-949-3773
   website: https://www.va.gov/south-texas-health-care/locations/shavano-park-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Mental health care
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GQ}
+  external_ids:
+    va: vha_671GQ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/silos-el
   name: Silos El
   categories:
@@ -8557,13 +8814,26 @@
   name: South Bexar County VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 4610 East Southcross Boulevard, city: San Antonio, state: tx, zip: '78222'}
+  address:
+    street: 4610 East Southcross Boulevard
+    city: San Antonio
+    state: tx
+    zip: '78222'
   place: '4865000'
-  geo: {lat: 29.37412, lng: -98.40191}
+  geo:
+    lat: 29.37412
+    lng: -98.40191
   phone: 210-648-1491
   website: https://www.va.gov/south-texas-health-care/locations/south-bexar-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -8571,10 +8841,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GF}
+  external_ids:
+    va: vha_671GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/south-san-antonio
   name: South San Antonio
   place: '4865000'
@@ -8794,23 +9067,39 @@
   name: Southwest VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2310 Southwest Military Drive, city: San Antonio, state: tx, zip: '78224'}
+  address:
+    street: 2310 Southwest Military Drive
+    city: San Antonio
+    state: tx
+    zip: '78224'
   place: '4865000'
-  geo: {lat: 29.35661, lng: -98.53075}
+  geo:
+    lat: 29.35661
+    lng: -98.53075
   phone: 210-923-0777
   website: https://www.va.gov/south-texas-health-care/locations/southwest-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GW}
+  external_ids:
+    va: vha_671GW
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/spicewood-elementary
   name: Spicewood Elementary
   categories:
@@ -9398,9 +9687,15 @@
   name: VA Regional Benefit Satellite Office at North West San Antonio VA Clinic
   categories: *id002
   description: Satellite Office
-  address: {street: 9939 State Highway 151, city: San Antonio, state: tx, zip: '78251'}
+  address:
+    street: 9939 State Highway 151
+    city: San Antonio
+    state: tx
+    zip: '78251'
   place: '4865000'
-  geo: {lat: 29.44894, lng: -98.67735}
+  geo:
+    lat: 29.44894
+    lng: -98.67735
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -9415,10 +9710,13 @@
   - UpdatingDirectDepositInformation
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_362o}
+  external_ids:
+    va: vba_362o
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/valley-hi-el
   name: Valley Hi El
   categories:
@@ -9589,13 +9887,26 @@
   name: Walzem VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 6938 Walzem Road, city: San Antonio, state: tx, zip: '78239'}
+  address:
+    street: 6938 Walzem Road
+    city: San Antonio
+    state: tx
+    zip: '78239'
   place: '4865000'
-  geo: {lat: 29.49828, lng: -98.35009}
+  geo:
+    lat: 29.49828
+    lng: -98.35009
   phone: 210-969-7400
   website: https://www.va.gov/south-texas-health-care/locations/walzem-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -9605,10 +9916,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_671GT}
+  external_ids:
+    va: vha_671GT
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/san-antonio/ward-community-center
   name: Ward Community Center
   categories:

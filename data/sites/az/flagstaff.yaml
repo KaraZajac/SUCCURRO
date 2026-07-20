@@ -38,6 +38,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/flagstaff/coconino-county-community-service-dept
+  name: Coconino County Community Service Dept.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Coconino County
+  address: {street: 2625 N. King St., city: Flagstaff, state: az, zip: '86001'}
+  place: '0423620'
+  phone: 928-679-7455
+  website: http://www.coconino.az.gov/index.aspx?nid=143
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/flagstaff/elk-ridge-flagstaff-clinic
   name: ELK RIDGE - FLAGSTAFF CLINIC
   categories:
@@ -281,13 +293,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1300 West University Avenue, city: Flagstaff, state: az, zip: '86001'}
+  address:
+    street: 1300 West University Avenue
+    city: Flagstaff
+    state: az
+    zip: '86001'
   place: '0423620'
-  geo: {lat: 35.18419, lng: -111.67256}
+  geo:
+    lat: 35.18419
+    lng: -111.67256
   phone: 928-226-1056
   website: https://www.va.gov/northern-arizona-health-care/locations/flagstaff-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -299,10 +324,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649GB}
+  external_ids:
+    va: vha_649GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/flagstaff/guidance-center-inc-outpatient-services
   name: Guidance Center Inc Outpatient Services
   categories:
@@ -360,17 +388,33 @@
   name: Hopi Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '1300 West University Avenue, Suite 200', city: Flagstaff, state: az, zip: '86001'}
+  address:
+    street: 1300 West University Avenue, Suite 200
+    city: Flagstaff
+    state: az
+    zip: '86001'
   place: '0423620'
-  geo: {lat: 35.18432, lng: -111.67237}
+  geo:
+    lat: 35.18432
+    lng: -111.67237
   phone: 505-327-9684
   website: https://www.va.gov/farmington-vet-center/locations/#hopi-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_5162OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_5162OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/flagstaff/lura-kinsey-elementary-school
   name: Lura Kinsey Elementary School
   categories:
@@ -432,6 +476,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/flagstaff/northern-arizona-council-of-governments-nacog
+  name: Northern Arizona Council of Governments (NACOG)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Apache, Navajo, Yavapai Counties
+  address: {street: 119 E. Aspen Avenue, city: Flagstaff, state: az, zip: '86001'}
+  place: '0423620'
+  phone: 928-774-1895
+  website: http://nacog.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/flagstaff/ponderosa
   name: Ponderosa
   categories:

@@ -277,13 +277,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 35 State Hospital Drive, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 35 State Hospital Drive
+    city: Bangor
+    state: me
+    zip: '04401'
   place: '2302795'
-  geo: {lat: 44.8134, lng: -68.74112}
+  geo:
+    lat: 44.8134
+    lng: -68.74112
   phone: 877-421-8263
   website: https://www.va.gov/maine-health-care/locations/bangor-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -311,21 +324,37 @@
   - Travel reimbursement
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_402HB}
+  external_ids:
+    va: vha_402HB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/bangor-vet-center
   name: Bangor Vet Center
   categories:
   - vet-center
-  address: {street: '615 Odlin Road, Suite 3', city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 615 Odlin Road, Suite 3
+    city: Bangor
+    state: me
+    zip: '04401'
   place: '2302795'
-  geo: {lat: 44.78125, lng: -68.81976}
+  geo:
+    lat: 44.78125
+    lng: -68.81976
   phone: 207-947-3391
   website: https://www.va.gov/bangor-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -343,10 +372,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0121V}
+  external_ids:
+    va: vc_0121V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/brighter-heights-maine-bangor
   name: Brighter Heights Maine Bangor
   categories:
@@ -946,6 +978,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: me/bangor/penquis-community-action-program-bangor-office
+  name: Penquis Community Action Program - Bangor Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Penobscot County
+  address: {street: 262 Harlow St. (P. O. Box 1162), city: Bangor, state: me, zip: '04402'}
+  place: '2302795'
+  phone: 207-973-3500
+  website: http://www.penquis.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: me/bangor/penquis-community-action-program-rockland-office
+  name: Penquis Community Action Program - Rockland Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Knox County
+  address: {street: 262 Harlow St. (P. O. Box 1162), city: Bangor, state: me, zip: '04402'}
+  place: '2302795'
+  phone: 207-596-0361
+  website: https://www.penquis.org/services/heating-utilities/heating-assistance-liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: me/bangor/philips-strickland-house
   name: PHILIPS-STRICKLAND HOUSE
   categories:

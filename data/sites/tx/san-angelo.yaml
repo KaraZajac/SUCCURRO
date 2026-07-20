@@ -80,13 +80,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4240 Southwest Boulevard, city: San Angelo, state: tx, zip: '76904'}
+  address:
+    street: 4240 Southwest Boulevard
+    city: San Angelo
+    state: tx
+    zip: '76904'
   place: '4864472'
-  geo: {lat: 31.42516, lng: -100.4959}
+  geo:
+    lat: 31.42516
+    lng: -100.4959
   phone: 325-658-6138
   website: https://www.va.gov/west-texas-health-care/locations/colonel-charles-and-joanne-powell-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - COVID-19 vaccines
@@ -101,10 +114,26 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_519HF}
+  external_ids:
+    va: vha_519HF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tx/san-angelo/concho-valley-community-action-agency
+  name: Concho Valley Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Coke, Concho, Crockett, Irion, Kimble, Menard, Reagan, Schleicher,
+    Sutton, Tom Green Counties
+  address: {street: 133 W. Concho Ave., city: San Angelo, state: tx, zip: '76903'}
+  place: '4864472'
+  phone: 325-653-2411
+  website: https://cvcaa.org/what_we_do/utility_assistance.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/san-angelo/day-head-start-and-early-head-start
   name: Day Head Start and Early Head Start
   categories:

@@ -18,6 +18,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/akron-summit-community-action-inc-home-energy-as
+  name: Akron/Summit Community Action Inc. Home Energy Assistance Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Summit County
+  address: {street: 670 W. Exchange Street, city: Akron, state: oh, zip: '44309'}
+  place: '3901000'
+  phone: 330-253-8806
+  website: https://www.ca-akron.org/energy-assistance/contact
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/akron/akron-urban-minority-alc-drug-abuse-outreach-pro
   name: Akron Urban Minority Alc Drug Abuse Outreach Prog Inc
   categories:
@@ -44,13 +56,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 55 West Waterloo Road, city: Akron, state: oh, zip: '44319'}
+  address:
+    street: 55 West Waterloo Road
+    city: Akron
+    state: oh
+    zip: '44319'
   place: '3901000'
-  geo: {lat: 41.02913, lng: -81.529}
+  geo:
+    lat: 41.02913
+    lng: -81.529
   phone: 330-724-7715
   website: https://www.va.gov/northeast-ohio-health-care/locations/akron-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -74,27 +99,46 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_541GG}
+  external_ids:
+    va: vha_541GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/akron-west-va-clinic
   name: Akron West VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 95 West Waterloo Road, city: Akron, state: oh, zip: '44319'}
+  address:
+    street: 95 West Waterloo Road
+    city: Akron
+    state: oh
+    zip: '44319'
   place: '3901000'
-  geo: {lat: 41.02876, lng: -81.53055}
+  geo:
+    lat: 41.02876
+    lng: -81.53055
   phone: 330-724-7715
   website: https://www.va.gov/northeast-ohio-health-care/locations/akron-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MentalHealth
-  external_ids: {va: vha_541QI}
+  external_ids:
+    va: vha_541QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/axesspointe-community-health-center-akron-pharma
   name: AxessPointe Community Health Center/Akron - Pharmacy Admin
   categories:
@@ -960,22 +1004,37 @@
   name: Summit County VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '111 East Voris Street, Community Resource & Referral Center (CRRC)', city: Akron,
-    state: oh, zip: '44311'}
+  address:
+    street: 111 East Voris Street, Community Resource & Referral Center (CRRC)
+    city: Akron
+    state: oh
+    zip: '44311'
   place: '3901000'
-  geo: {lat: 41.06428, lng: -81.52204}
+  geo:
+    lat: 41.06428
+    lng: -81.52204
   phone: 330-761-7054
   website: https://www.va.gov/northeast-ohio-health-care/locations/summit-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
   - Suicide prevention
   - Toxic exposure screening
-  external_ids: {va: vha_541QA}
+  external_ids:
+    va: vha_541QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/summit-psychological-associates-inc
   name: Summit Psychological Associates Inc
   categories:

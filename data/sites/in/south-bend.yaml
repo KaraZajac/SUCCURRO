@@ -652,6 +652,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/south-bend/real-services-inc
+  name: REAL Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fulton, St Joseph Counties
+  address: {street: 1151 S. Michigan St., city: South Bend, state: in, zip: '46634'}
+  place: '1871000'
+  phone: 574-223-4649
+  website: https://www.realservices.org/_wp/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/south-bend/rise-up-academy
   name: Rise Up Academy
   categories:
@@ -678,13 +690,26 @@
   name: South Bend Vet Center
   categories:
   - vet-center
-  address: {street: 4727 Miami Street, city: South Bend, state: in, zip: '46614'}
+  address:
+    street: 4727 Miami Street
+    city: South Bend
+    state: in
+    zip: '46614'
   place: '1871000'
-  geo: {lat: 41.62621, lng: -86.23482}
+  geo:
+    lat: 41.62621
+    lng: -86.23482
   phone: 574-231-8480
   website: https://www.va.gov/south-bend-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -698,10 +723,13 @@
   - Veteran connections
   - Whole health
   - Workshops and classes
-  external_ids: {va: vc_0444V}
+  external_ids:
+    va: vc_0444V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/south-bend/st-adalbert-s-school
   name: St. Adalbert'S School
   categories:

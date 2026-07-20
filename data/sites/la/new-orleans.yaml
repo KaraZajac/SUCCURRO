@@ -3309,22 +3309,37 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2400 Canal Street, city: New Orleans, state: la, zip: '70119'}
+  address:
+    street: 2400 Canal Street
+    city: New Orleans
+    state: la
+    zip: '70119'
   place: '2255000'
-  geo: {lat: 29.96353, lng: -90.0846}
+  geo:
+    lat: 29.96353
+    lng: -90.0846
   phone: 800-935-8387
   website: https://www.va.gov/find-locations/facility/vha_629QB
-  external_ids: {va: vha_629QB}
+  external_ids:
+    va: vha_629QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-orleans/new-orleans-va-medical-center
   name: New Orleans VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2400 Canal Street, city: New Orleans, state: la, zip: '70119'}
+  address:
+    street: 2400 Canal Street
+    city: New Orleans
+    state: la
+    zip: '70119'
   place: '2255000'
-  geo: {lat: 29.96344, lng: -90.08445}
+  geo:
+    lat: 29.96344
+    lng: -90.08445
   phone: 800-935-8387
   website: https://www.va.gov/southeast-louisiana-health-care/locations/new-orleans-va-medical-center/
   services:
@@ -3358,52 +3373,86 @@
   - Suicide prevention
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_629}
+  external_ids:
+    va: vha_629
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-orleans/new-orleans-va-mobile-medical-unit
   name: New Orleans VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2400 Canal Street, city: New Orleans, state: la, zip: '70119'}
+  address:
+    street: 2400 Canal Street
+    city: New Orleans
+    state: la
+    zip: '70119'
   place: '2255000'
-  geo: {lat: 29.96353, lng: -90.0846}
+  geo:
+    lat: 29.96353
+    lng: -90.0846
   phone: 800-935-8387
   website: https://www.va.gov/find-locations/facility/vha_629QC
-  external_ids: {va: vha_629QC}
+  external_ids:
+    va: vha_629QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-orleans/new-orleans-va-regional-benefit-office-at-new-or
   name: New Orleans VA Regional Benefit Office at New Orleans VA Medical Center
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 2400 Canal Street, city: New Orleans, state: la, zip: '70119'}
+  address:
+    street: 2400 Canal Street
+    city: New Orleans
+    state: la
+    zip: '70119'
   place: '2255000'
-  geo: {lat: 29.96344, lng: -90.08445}
+  geo:
+    lat: 29.96344
+    lng: -90.08445
   phone: 504-619-4590
   services:
   - ApplyingForBenefits
   - DisabilityClaimAssistance
   - PreDischargeClaimAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_321}
+  external_ids:
+    va: vba_321
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-orleans/new-orleans-vet-center
   name: New Orleans Vet Center
   categories:
   - vet-center
-  address: {street: '1250 Poydras Street, 4th Floor, Suite 400', city: New Orleans, state: la, zip: '70113'}
+  address:
+    street: 1250 Poydras Street, 4th Floor, Suite 400
+    city: New Orleans
+    state: la
+    zip: '70113'
   place: '2255000'
-  geo: {lat: 29.95098, lng: -90.07672}
+  geo:
+    lat: 29.95098
+    lng: -90.07672
   phone: 504-507-4977
   website: https://www.va.gov/new-orleans-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3414,10 +3463,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0717V}
+  external_ids:
+    va: vc_0717V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-orleans/noela-community-health-center
   name: NOELA Community Health Center
   categories:
@@ -4756,6 +4808,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/new-orleans/total-community-action-agency
+  name: Total Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Orleans County
+  address: {street: 1420 S. Norman C. Francis Pkway, city: New Orleans, state: la, zip: '70125'}
+  place: '2255000'
+  phone: 504-872-0334
+  website: https://www.tca-nola.org/services-2/energy-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/new-orleans/total-community-action-at-viet
   name: Total Community Action at VIET
   categories:

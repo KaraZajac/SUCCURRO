@@ -1,16 +1,40 @@
+- id: pa/rochester/beaver-county-assistance-office
+  name: Beaver County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Beaver County
+  address: {street: 171 Virginia Avenue (P. O. Box 349), city: Rochester, state: pa, zip: 15074-0349}
+  place: '4265392'
+  phone: 724-773-7495
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/rochester/beaver-county-va-clinic
   name: Beaver County VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 300 Brighton Avenue, city: Rochester, state: pa, zip: '15074'}
+  address:
+    street: 300 Brighton Avenue
+    city: Rochester
+    state: pa
+    zip: '15074'
   place: '4265392'
-  geo: {lat: 40.70193, lng: -80.28574}
+  geo:
+    lat: 40.70193
+    lng: -80.28574
   phone: 724-709-6005
   website: https://www.va.gov/pittsburgh-health-care/locations/beaver-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -34,10 +58,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_646GC}
+  external_ids:
+    va: vha_646GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/rochester/glade-run-lutheran-services-epic-rochester-prs
   name: Glade Run Lutheran Services EPIC Rochester PRS
   categories:

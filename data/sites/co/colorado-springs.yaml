@@ -283,14 +283,29 @@
   name: Colorado Springs Vet Center
   categories:
   - vet-center
-  address: {street: '3920 North Union Blvd, Suite 310', city: Colorado Springs, state: co, zip: '80907'}
+  address:
+    street: 3920 North Union Blvd, Suite 310
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.88714, lng: -104.78662}
+  geo:
+    lat: 38.88714
+    lng: -104.78662
   phone: 719-471-9992
   website: https://www.va.gov/colorado-springs-vet-center/
   hours:
-  - {days: [mon, tue], open: '08:00', close: '18:30'}
-  - {days: [wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    open: 08:00
+    close: '18:30'
+  - days:
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -303,10 +318,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0525V}
+  external_ids:
+    va: vc_0525V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/convenient-care-center
   name: Convenient Care Center
   categories:
@@ -527,6 +545,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/colorado-springs/el-paso-county-department-of-human-services-colo
+  name: El Paso County Department of Human Services - Colorado Springs
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving El Paso County
+  address: {street: 1675 W. Garden of the Gods Rd., city: Colorado Springs, state: co, zip: '80907'}
+  place: 0816000
+  phone: 719-636-0000
+  website: https://humanservices.elpasoco.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/colorado-springs/enrollment-services-at-academy-suite-1500
   name: Enrollment Services at Academy, Suite 1500
   categories:
@@ -630,20 +660,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1365 Garden of the Gods Road, city: Colorado Springs, state: co, zip: '80907'}
+  address:
+    street: 1365 Garden of the Gods Road
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.89648, lng: -104.85347}
+  geo:
+    lat: 38.89648
+    lng: -104.85347
   phone: 719-593-5300
   website: https://www.va.gov/eastern-colorado-health-care/locations/garden-of-the-gods-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_554QF}
+  external_ids:
+    va: vha_554QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/gateway-to-success
   name: Gateway to Success
   categories:
@@ -1262,13 +1308,26 @@
   name: PFC Floyd K. Lindstrom Department of Veterans Affairs Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 3141 Centennial Boulevard, city: Colorado Springs, state: co, zip: '80907'}
+  address:
+    street: 3141 Centennial Boulevard
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.87414, lng: -104.84536}
+  geo:
+    lat: 38.87414
+    lng: -104.84536
   phone: 719-327-5660
   website: https://www.va.gov/eastern-colorado-health-care/locations/pfc-floyd-k-lindstrom-department-of-veterans-affairs-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '18:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1293,10 +1352,13 @@
   - Radiology
   - Surgery
   - Urology
-  external_ids: {va: vha_554GE}
+  external_ids:
+    va: vha_554GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/pikes-peak
   name: PIKES PEAK
   categories:
@@ -1442,21 +1504,37 @@
   name: Space Center VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 565 Space Center Drive, city: Colorado Springs, state: co, zip: '80915'}
+  address:
+    street: 565 Space Center Drive
+    city: Colorado Springs
+    state: co
+    zip: '80915'
   place: 0816000
-  geo: {lat: 38.84058, lng: -104.72696}
+  geo:
+    lat: 38.84058
+    lng: -104.72696
   phone: 719-638-5000
   website: https://www.va.gov/eastern-colorado-health-care/locations/space-center-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
-  external_ids: {va: vha_554GM}
+  external_ids:
+    va: vha_554GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/stratton-meadows
   name: STRATTON MEADOWS
   categories:
@@ -1499,46 +1577,76 @@
   name: Union Boulevard VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: '3920 North Union Boulevard, Premier Health Plaza', city: Colorado Springs, state: co,
-    zip: '80907'}
+  address:
+    street: 3920 North Union Boulevard, Premier Health Plaza
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.88767, lng: -104.78749}
+  geo:
+    lat: 38.88767
+    lng: -104.78749
   phone: 719-327-5660
   website: https://www.va.gov/eastern-colorado-health-care/locations/union-boulevard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_554GK}
+  external_ids:
+    va: vha_554GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/va-regional-benefit-satellite-office-at-garden-o
   name: VA Regional Benefit Satellite Office at Garden of the Gods VA Clinic
   categories: &id002
   - va-facility
   description: Satellite Office
-  address: {street: '1365 Garden of the Gods Rd, Suite 110', city: Colorado Springs, state: co, zip: '80907'}
+  address:
+    street: 1365 Garden of the Gods Rd, Suite 110
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.89642, lng: -104.85384}
+  geo:
+    lat: 38.89642
+    lng: -104.85384
   phone: 303-914-5550
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_339g}
+  external_ids:
+    va: vba_339g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/va-regional-benefit-satellite-office-at-pfc-floy
   name: VA Regional Benefit Satellite Office at PFC Floyd K. Lindstrom VA Clinic
   categories: *id002
   description: Satellite Office
-  address: {street: 3141 Centennial Blvd, city: Colorado Springs, state: co, zip: '80907'}
+  address:
+    street: 3141 Centennial Blvd
+    city: Colorado Springs
+    state: co
+    zip: '80907'
   place: 0816000
-  geo: {lat: 38.87414, lng: -104.84536}
+  geo:
+    lat: 38.87414
+    lng: -104.84536
   phone: 719-327-5660
   services:
   - ApplyingForBenefits
@@ -1547,10 +1655,13 @@
   - HomelessAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_339b}
+  external_ids:
+    va: vba_339b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/wasson-early-learning-center
   name: WASSON  EARLY LEARNING CENTER
   categories:

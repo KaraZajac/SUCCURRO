@@ -106,13 +106,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2 Saint Marks Place, city: LaGrange, state: tx, zip: '78945'}
+  address:
+    street: 2 Saint Marks Place
+    city: LaGrange
+    state: tx
+    zip: '78945'
   place: '4840276'
-  geo: {lat: 29.93611, lng: -96.87528}
+  geo:
+    lat: 29.93611
+    lng: -96.87528
   phone: 800-423-2111
   website: https://www.va.gov/central-texas-health-care/locations/lagrange-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -122,10 +135,13 @@
   - Radiology
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_674HB}
+  external_ids:
+    va: vha_674HB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/la-grange/nc-fayette-public-library
   name: Nc_Fayette Public Library
   categories:

@@ -1268,6 +1268,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: co/denver/denver-county-department-of-human-services-denve
+  name: Denver County Department of Human Services - Denver
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Denver County
+  address: {street: 1200 Federal Blvd., city: Denver, state: co, zip: '80204'}
+  place: 0820000
+  phone: 720-944-4347
+  website: https://www.denvergov.org/content/denvergov/en/denver-human-services.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/denver/denver-fridge-1
   name: Denver Fridge 1
   place: 0820000
@@ -6518,21 +6530,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '3836 York Street, Community Resource & Referral Center (CRRC)', city: Denver, state: co,
-    zip: '80205'}
+  address:
+    street: 3836 York Street, Community Resource & Referral Center (CRRC)
+    city: Denver
+    state: co
+    zip: '80205'
   place: 0820000
-  geo: {lat: 39.76957, lng: -104.95971}
+  geo:
+    lat: 39.76957
+    lng: -104.95971
   phone: 303-294-5600
   website: https://www.va.gov/eastern-colorado-health-care/locations/york-street-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '06:30', close: '15:00'}
-  - {days: [wed], open: '06:30', close: '14:00'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 06:30
+    close: '15:00'
+  - days:
+    - wed
+    open: 06:30
+    close: '14:00'
   services:
   - PrimaryCare
-  external_ids: {va: vha_554QA}
+  external_ids:
+    va: vha_554QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/denver/zuni-plaza-apartments
   name: Zuni Plaza Apartments
   categories:

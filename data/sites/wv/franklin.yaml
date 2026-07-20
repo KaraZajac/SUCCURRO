@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 91 Pine Street, city: Franklin, state: wv, zip: '26807'}
+  address:
+    street: 91 Pine Street
+    city: Franklin
+    state: wv
+    zip: '26807'
   place: '5429044'
-  geo: {lat: 38.64349, lng: -79.33122}
+  geo:
+    lat: 38.64349
+    lng: -79.33122
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/franklin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -68,10 +81,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GD}
+  external_ids:
+    va: vha_613GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/franklin/pendleton-community-care-clinic
   name: Pendleton Community Care Clinic
   categories:
@@ -94,6 +110,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/franklin/pendleton-county-dhhr-office
+  name: Pendleton County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pendleton County
+  address: {street: '100 Thorn Creek Rd., Suite 200', city: Franklin, state: wv, zip: '26807'}
+  place: '5429044'
+  phone: 304-358-2305
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/franklin/pendleton-county-high-school
   name: Pendleton County High School
   categories:

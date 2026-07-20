@@ -19,6 +19,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/morehead/gateway-community-action
+  name: Gateway Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rowan County
+  address: {street: 136 Lee Ave. Suite E, city: Morehead, state: ky, zip: '40351'}
+  place: '2153418'
+  phone: 606-743-3133
+  website: http://gatewaycaa.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/morehead/housing-authority-of-morehead
   name: Housing Authority Of Morehead
   categories:
@@ -111,13 +123,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 333 Beacon Hill Road, city: Morehead, state: ky, zip: '40351'}
+  address:
+    street: 333 Beacon Hill Road
+    city: Morehead
+    state: ky
+    zip: '40351'
   place: '2153418'
-  geo: {lat: 38.18653, lng: -83.48047}
+  geo:
+    lat: 38.18653
+    lng: -83.48047
   phone: 606-784-3004
   website: https://www.va.gov/lexington-health-care/locations/morehead-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -126,10 +151,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_596GB}
+  external_ids:
+    va: vha_596GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/morehead/mountain-comprehensive-care-3-5-revived-essence
   name: Mountain Comprehensive Care (3 5) Revived Essence Recovery
   categories:

@@ -91,20 +91,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1801 Main Street, city: Franklin, state: la, zip: '70538'}
+  address:
+    street: 1801 Main Street
+    city: Franklin
+    state: la
+    zip: '70538'
   place: '2227155'
-  geo: {lat: 29.806, lng: -91.50634}
+  geo:
+    lat: 29.806
+    lng: -91.50634
   phone: 337-828-9092
   website: https://www.va.gov/southeast-louisiana-health-care/locations/franklin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_629GE}
+  external_ids:
+    va: vha_629GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/franklin/new-providence-b-c
   name: New Providence B.C.
   categories:
@@ -187,6 +203,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/franklin/st-mary-community-action-agency
+  name: St. Mary Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Mary, Vermilion Counties
+  address: {street: 1407 Barrow St. (P. O. Box 217), city: Franklin, state: la, zip: '70538'}
+  place: '2227155'
+  phone: 337-828-5703
+  email: info@smcaa.org
+  website: https://www.stmarycaa.org/caa programs.htm
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/franklin/teche-health-administrative-location
   name: Teche Health - Administrative Location
   categories:

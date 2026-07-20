@@ -220,13 +220,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2270 College Avenue, city: Forest City, state: nc, zip: '28043'}
+  address:
+    street: 2270 College Avenue
+    city: Forest City
+    state: nc
+    zip: '28043'
   place: '3724080'
-  geo: {lat: 35.3336, lng: -81.89033}
+  geo:
+    lat: 35.3336
+    lng: -81.89033
   phone: 828-202-2735
   website: https://www.va.gov/asheville-health-care/locations/master-sergeant-jerry-k-crump-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -238,10 +251,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_637GB}
+  external_ids:
+    va: vha_637GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/forest-city/mount-vernon-ruth-elementary
   name: Mount Vernon Ruth Elementary
   categories:

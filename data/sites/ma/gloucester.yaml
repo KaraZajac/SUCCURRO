@@ -1,3 +1,15 @@
+- id: ma/gloucester/action-inc
+  name: Action, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Essex County
+  address: {street: 47 Washinghton Street, city: Gloucester, state: ma, zip: 01930}
+  place: '2526150'
+  phone: 978-373-1971
+  website: https://www.toapply.org/MassLIHEAP
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/gloucester/gloucester-family-health-center
   name: Gloucester Family Health Center
   categories:
@@ -46,13 +58,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 199 Main Street, city: Gloucester, state: ma, zip: 01930}
+  address:
+    street: 199 Main Street
+    city: Gloucester
+    state: ma
+    zip: 01930
   place: '2526150'
-  geo: {lat: 42.61311, lng: -70.66075}
+  geo:
+    lat: 42.61311
+    lng: -70.66075
   phone: 800-838-6331
   website: https://www.va.gov/bedford-health-care/locations/gloucester-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -68,10 +93,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_518GE}
+  external_ids:
+    va: vha_518GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/gloucester/jri-behavioral-health-center-satellite
   name: JRI Behavioral Health Center Satellite
   categories:

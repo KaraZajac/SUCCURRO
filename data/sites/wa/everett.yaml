@@ -567,13 +567,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 220 Olympic Boulevard, city: Everett, state: wa, zip: '98203'}
+  address:
+    street: 220 Olympic Boulevard
+    city: Everett
+    state: wa
+    zip: '98203'
   place: '5322640'
-  geo: {lat: 47.95764, lng: -122.23168}
+  geo:
+    lat: 47.95764
+    lng: -122.23168
   phone: 425-683-0545
   website: https://www.va.gov/puget-sound-health-care/locations/everett-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -585,21 +598,37 @@
   - Social work
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_663GK}
+  external_ids:
+    va: vha_663GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/everett/everett-vet-center
   name: Everett Vet Center
   categories:
   - vet-center
-  address: {street: '1010 SE Everett Mall Way, Suite 207', city: Everett, state: wa, zip: '98208'}
+  address:
+    street: 1010 SE Everett Mall Way, Suite 207
+    city: Everett
+    state: wa
+    zip: '98208'
   place: '5322640'
-  geo: {lat: 47.90882, lng: -122.21835}
+  geo:
+    lat: 47.90882
+    lng: -122.21835
   phone: 425-252-9701
   website: https://www.va.gov/everett-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -614,10 +643,13 @@
   - Veteran connections
   - Veteran readiness and employment programs
   - Whole health
-  external_ids: {va: vc_0529V}
+  external_ids:
+    va: vc_0529V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/everett/fairfax-behavioral-health-everett
   name: Fairfax Behavioral Health Everett
   categories:
@@ -1069,6 +1101,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/everett/snohomish-county-human-services-department
+  name: Snohomish County Human Services Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Snohomish County
+  address: {street: '3000 Rockefeller Avenue, Robert Drewel Building, Lower Level', city: Everett, state: wa,
+    zip: '98201'}
+  place: '5322640'
+  phone: 425-388-3880
+  website: https://snohomishcountywa.gov/552/Energy-Assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/everett/south-everett
   name: South Everett
   categories:

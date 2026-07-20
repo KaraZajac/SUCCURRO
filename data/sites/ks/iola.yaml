@@ -257,13 +257,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1408 East Street, city: Iola, state: ks, zip: '66749'}
+  address:
+    street: 1408 East Street
+    city: Iola
+    state: ks
+    zip: '66749'
   place: '2034300'
-  geo: {lat: 37.92219, lng: -95.38743}
+  geo:
+    lat: 37.92219
+    lng: -95.38743
   phone: 800-574-8387
   website: https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -273,10 +286,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_589GV}
+  external_ids:
+    va: vha_589GV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/iola/jefferson-elementary-school
   name: Jefferson Elementary School
   categories:

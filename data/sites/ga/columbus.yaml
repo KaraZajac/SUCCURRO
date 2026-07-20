@@ -359,33 +359,63 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2100 Comer Avenue, city: Columbus, state: ga, zip: '31904'}
+  address:
+    street: 2100 Comer Avenue
+    city: Columbus
+    state: ga
+    zip: '31904'
   place: '1319000'
-  geo: {lat: 32.48335, lng: -84.97922}
+  geo:
+    lat: 32.48335
+    lng: -84.97922
   phone: 706-257-7241
   website: https://www.va.gov/central-alabama-health-care/locations/columbus-downtown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - PrimaryCare
-  external_ids: {va: vha_619GG}
+  external_ids:
+    va: vha_619GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/columbus/columbus-ga-vet-center
   name: Columbus, GA Vet Center
   categories:
   - vet-center
-  address: {street: '2601 Cross Country Drive, Condominium B-2, Suite 900', city: Columbus, state: ga,
-    zip: '31906'}
+  address:
+    street: 2601 Cross Country Drive, Condominium B-2, Suite 900
+    city: Columbus
+    state: ga
+    zip: '31906'
   place: '1319000'
-  geo: {lat: 32.48422, lng: -84.9418}
+  geo:
+    lat: 32.48422
+    lng: -84.9418
   phone: 706-596-7170
   website: https://www.va.gov/columbus-ga-vet-center/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '19:00'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '19:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -398,10 +428,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0349V}
+  external_ids:
+    va: vc_0349V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/columbus/columbus-metro-treatment-center-metro-treatment
   name: Columbus Metro Treatment Center Metro Treatment of Georgia LP
   categories:
@@ -693,6 +726,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/columbus/enrichment-services-program-inc
+  name: Enrichment Services Program Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Muscogee County
+  address: {street: 2601 Cross Country Dr. Building C, city: Columbus, state: ga, zip: '31906'}
+  place: '1319000'
+  phone: 706-257-0004
+  website: https://enrichmentservices.org/liheap-psa/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/columbus/fluellen-community-center
   name: Fluellen Community Center
   categories:
@@ -1336,13 +1381,26 @@
   name: Robert S. Poydasheff VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 6910 River Road, city: Columbus, state: ga, zip: '31904'}
+  address:
+    street: 6910 River Road
+    city: Columbus
+    state: ga
+    zip: '31904'
   place: '1319000'
-  geo: {lat: 32.5449, lng: -84.99567}
+  geo:
+    lat: 32.5449
+    lng: -84.99567
   phone: 706-257-7200
   website: https://www.va.gov/central-alabama-health-care/locations/robert-s-poydasheff-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Gynecology
@@ -1360,10 +1418,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_619GA}
+  external_ids:
+    va: vha_619GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/columbus/shaw-basketball
   name: Shaw Basketball
   categories:

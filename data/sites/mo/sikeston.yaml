@@ -38,6 +38,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/sikeston/delta-area-economic-opportunity-corporation-daeo
+  name: Delta Area Economic Opportunity Corporation (DAEOC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Scott County
+  address: {street: 620 S. Kingshighway, city: Sikeston, state: mo, zip: '63801'}
+  place: '2967790'
+  phone: 573-471-4114
+  website: https://www.daeoc.com/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/sikeston/gibson-recovery-center-inc
   name: Gibson Recovery Center Inc
   categories:
@@ -211,13 +223,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 903 South Kings Highway, city: Sikeston, state: mo, zip: '63801'}
+  address:
+    street: 903 South Kings Highway
+    city: Sikeston
+    state: mo
+    zip: '63801'
   place: '2967790'
-  geo: {lat: 36.86859, lng: -89.58537}
+  geo:
+    lat: 36.86859
+    lng: -89.58537
   phone: 573-472-2139
   website: https://www.va.gov/poplar-bluff-health-care/locations/sikeston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -236,7 +261,10 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_657GV}
+  external_ids:
+    va: vha_657GV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

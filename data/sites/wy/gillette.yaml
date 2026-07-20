@@ -1,3 +1,15 @@
+- id: wy/gillette/campbell-county-department-of-family-services
+  name: Campbell County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Campbell County
+  address: {street: '551 Running W. Dr., Suite 200', city: Gillette, state: wy, zip: '82718'}
+  place: '5631855'
+  phone: 307-682-7277
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/gillette/campbell-county-health-behavioral-health-service
   name: Campbell County Health Behavioral Health Services/Outpatient
   categories:
@@ -81,13 +93,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 604 Express Drive, city: Gillette, state: wy, zip: '82718'}
+  address:
+    street: 604 Express Drive
+    city: Gillette
+    state: wy
+    zip: '82718'
   place: '5631855'
-  geo: {lat: 44.24599, lng: -105.51112}
+  geo:
+    lat: 44.24599
+    lng: -105.51112
   phone: 866-621-1887
   website: https://www.va.gov/sheridan-health-care/locations/gillette-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -95,10 +120,13 @@
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_666GE}
+  external_ids:
+    va: vha_666GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/gillette/lakeview-elementary
   name: Lakeview Elementary
   categories:

@@ -552,21 +552,37 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 750 West High Street, city: Lima, state: oh, zip: '45801'}
+  address:
+    street: 750 West High Street
+    city: Lima
+    state: oh
+    zip: '45801'
   place: '3943554'
-  geo: {lat: 40.74139, lng: -84.11519}
+  geo:
+    lat: 40.74139
+    lng: -84.11519
   phone: 419-229-3300
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - Optometry
   - Podiatry
   - PrimaryCare
-  external_ids: {va: vha_552GB}
+  external_ids:
+    va: vha_552GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/lima/little-rascals-child-development-center
   name: Little Rascals Child Development Center
   categories:
@@ -973,3 +989,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/lima/west-ohio-community-action-partnership
+  name: West Ohio Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allen County
+  address: {street: 540 South Central Ave, city: Lima, state: oh, zip: '45804'}
+  place: '3943554'
+  phone: 419-227-2586
+  website: https://wocap.org/emergency-services/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

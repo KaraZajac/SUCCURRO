@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 380 West Vista Hermosa Drive, city: Green Valley, state: az, zip: '85614'}
+  address:
+    street: 380 West Vista Hermosa Drive
+    city: Green Valley
+    state: az
+    zip: '85614'
   place: 0429710
-  geo: {lat: 31.85417, lng: -110.99776}
+  geo:
+    lat: 31.85417
+    lng: -110.99776
   phone: 520-399-2291
   website: https://www.va.gov/southern-arizona-health-care/locations/green-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -63,10 +76,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_678GE}
+  external_ids:
+    va: vha_678GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/green-valley/haven-detox-arizona
   name: Haven Detox Arizona
   categories:

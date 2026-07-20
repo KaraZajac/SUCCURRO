@@ -304,22 +304,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 105 South Coronado Avenue, city: Espanola, state: nm, zip: '87532'}
-  geo: {lat: 35.98974, lng: -106.08519}
+  address:
+    street: 105 South Coronado Avenue
+    city: Espanola
+    state: nm
+    zip: '87532'
+  geo:
+    lat: 35.98974
+    lng: -106.08519
   phone: 505-367-4213
   website: https://www.va.gov/new-mexico-health-care/locations/espanola-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Mental health care
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_501GE}
+  external_ids:
+    va: vha_501GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/espanola/espanola-valley-high-school
   name: Espanola Valley High School
   categories:
@@ -444,6 +460,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/espanola/isd-field-office-for-the-espanola-area
+  name: ISD Field Office for the Espanola Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rio Arriba County
+  address: {street: 228 Paseo de Oñate Street, city: Espanola, state: nm, zip: '87532'}
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/espanola/jgr-espanola-elementary
   name: Jgr Espanola Elementary
   categories:

@@ -260,23 +260,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 99 Stagecoach Road, city: Madisonville, state: ky, zip: '42431'}
+  address:
+    street: 99 Stagecoach Road
+    city: Madisonville
+    state: ky
+    zip: '42431'
   place: '2149368'
-  geo: {lat: 37.36476, lng: -87.49646}
+  geo:
+    lat: 37.36476
+    lng: -87.49646
   phone: 270-326-3600
   website: https://www.va.gov/marion-health-care/locations/madisonville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_657GO}
+  external_ids:
+    va: vha_657GO
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/madisonville/ms-robbies
   name: Ms. Robbies
   categories:
@@ -299,6 +315,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/madisonville/pennyrile-allied-community-services
+  name: Pennyrile Allied Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hopkins County
+  address: {street: 130 Branch St., city: Madisonville, state: ky, zip: '42431'}
+  place: '2149368'
+  phone: 270-821-8114
+  website: http://www.pacs-ky.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/madisonville/pennyroyal-center-madisonville-clinic
   name: Pennyroyal Center Madisonville Clinic
   categories:

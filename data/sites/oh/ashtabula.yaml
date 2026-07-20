@@ -116,19 +116,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/ashtabula/ashtabula-county-community-action-agency
+  name: Ashtabula County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ashtabula County
+  address: {street: 6920 Austinburg Rd, city: Ashtabula, state: oh, zip: '44004'}
+  place: '3902638'
+  phone: 440-997-5957
+  website: https://accaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/ashtabula/ashtabula-county-va-clinic
   name: Ashtabula County VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2044 Lambros Lane, city: Ashtabula, state: oh, zip: '44004'}
+  address:
+    street: 2044 Lambros Lane
+    city: Ashtabula
+    state: oh
+    zip: '44004'
   place: '3902638'
-  geo: {lat: 41.88208, lng: -80.81145}
+  geo:
+    lat: 41.88208
+    lng: -80.81145
   phone: 866-463-0912
   website: https://www.va.gov/erie-health-care/locations/ashtabula-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -144,10 +169,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562GB}
+  external_ids:
+    va: vha_562GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/ashtabula/ashtabula-metropolitian-housing-authority
   name: Ashtabula Metropolitian Housing Authority
   categories:

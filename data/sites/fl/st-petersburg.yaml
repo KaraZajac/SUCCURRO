@@ -1558,6 +1558,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/st-petersburg/pinellas-county-urban-league-inc
+  name: Pinellas County Urban League Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pinellas County
+  address: {street: 333 31st St. North, city: St. Petersburg, state: fl, zip: '33713'}
+  place: '1263000'
+  phone: 727-327-2081
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/st-petersburg/roberts-recreation-center
   name: Roberts Recreation Center
   categories:
@@ -1821,13 +1833,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 840 Dr. Martin Luther King Jr. Street North, city: St. Petersburg, state: fl, zip: '33705'}
+  address:
+    street: 840 Dr. Martin Luther King Jr. Street North
+    city: St. Petersburg
+    state: fl
+    zip: '33705'
   place: '1263000'
-  geo: {lat: 27.78066, lng: -82.64727}
+  geo:
+    lat: 27.78066
+    lng: -82.64727
   phone: 727-502-1700
   website: https://www.va.gov/bay-pines-health-care/locations/st-petersburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -1837,18 +1862,27 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_516GB}
+  external_ids:
+    va: vha_516GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/st-petersburg/st-petersburg-va-regional-benefit-office
   name: St. Petersburg VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 9500 Bay Pines Blvd., city: St. Petersburg, state: fl, zip: '33744'}
+  address:
+    street: 9500 Bay Pines Blvd.
+    city: St. Petersburg
+    state: fl
+    zip: '33744'
   place: '1263000'
-  geo: {lat: 27.81372, lng: -82.76943}
+  geo:
+    lat: 27.81372
+    lng: -82.76943
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1863,10 +1897,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_317}
+  external_ids:
+    va: vba_317
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/st-petersburg/suncoast-center-inc-community-family-programs
   name: Suncoast Center Inc Community Family Programs
   categories:

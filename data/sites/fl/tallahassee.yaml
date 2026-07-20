@@ -633,6 +633,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/tallahassee/capital-area-community-action-agency-inc
+  name: Capital Area Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Leon County
+  address: {street: 309 Office Plaza Drive, city: Tallahassee, state: fl, zip: '32301'}
+  place: '1270600'
+  phone: 850-222-2043
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/tallahassee/care-freedom-school
   name: Care Freedom School
   categories:
@@ -2305,13 +2317,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2181 East Orange Avenue, city: Tallahassee, state: fl, zip: '32311'}
+  address:
+    street: 2181 East Orange Avenue
+    city: Tallahassee
+    state: fl
+    zip: '32311'
   place: '1270600'
-  geo: {lat: 30.40999, lng: -84.24804}
+  geo:
+    lat: 30.40999
+    lng: -84.24804
   phone: 850-878-0191
   website: https://www.va.gov/north-florida-health-care/locations/sergeant-ernest-i-boots-thomas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -2344,10 +2369,13 @@
   - Toxic exposure screening
   - Urology
   - Whole health
-  external_ids: {va: vha_573GF}
+  external_ids:
+    va: vha_573GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/tallahassee/she-academy
   name: She Academy
   categories:
@@ -2571,14 +2599,26 @@
   name: Tallahassee Vet Center
   categories:
   - vet-center
-  address: {street: '2002 Old Saint Augustine Road, Building A, Suite 10', city: Tallahassee, state: fl,
-    zip: '32301'}
+  address:
+    street: 2002 Old Saint Augustine Road, Building A, Suite 10
+    city: Tallahassee
+    state: fl
+    zip: '32301'
   place: '1270600'
-  geo: {lat: 30.42618, lng: -84.24682}
+  geo:
+    lat: 30.42618
+    lng: -84.24682
   phone: 850-942-8810
   website: https://www.va.gov/tallahassee-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2592,10 +2632,13 @@
   - Telehealth
   - Veteran connections
   - Veteran readiness and employment programs
-  external_ids: {va: vc_0325V}
+  external_ids:
+    va: vc_0325V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/tallahassee/the-achieve-academy
   name: The Achieve Academy
   categories:
@@ -2714,51 +2757,78 @@
   categories: &id001
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '2181 E Orange Ave, Room 2D 103', city: Tallahassee, state: fl, zip: '32311'}
+  address:
+    street: 2181 E Orange Ave, Room 2D 103
+    city: Tallahassee
+    state: fl
+    zip: '32311'
   place: '1270600'
-  geo: {lat: 30.40999, lng: -84.24804}
+  geo:
+    lat: 30.40999
+    lng: -84.24804
   phone: 800-827-1000
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317g}
+  external_ids:
+    va: vba_317g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/tallahassee/vetsuccess-on-campus-at-florida-state-university
   name: VetSuccess on Campus at Florida State University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '282 Champions Way, Suite 4300 - PO Box 3062431', city: Tallahassee, state: fl, zip: '32306'}
+  address:
+    street: 282 Champions Way, Suite 4300 - PO Box 3062431
+    city: Tallahassee
+    state: fl
+    zip: '32306'
   place: '1270600'
-  geo: {lat: 30.43886, lng: -84.30244}
+  geo:
+    lat: 30.43886
+    lng: -84.30244
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317r}
+  external_ids:
+    va: vba_317r
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/tallahassee/vetsuccess-on-campus-at-tallahassee-community-co
   name: VetSuccess on Campus at Tallahassee Community College
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: 444 Appleyard Drive, city: Tallahassee, state: fl, zip: '32304'}
+  address:
+    street: 444 Appleyard Drive
+    city: Tallahassee
+    state: fl
+    zip: '32304'
   place: '1270600'
-  geo: {lat: 30.44347, lng: -84.34101}
+  geo:
+    lat: 30.44347
+    lng: -84.34101
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317s}
+  external_ids:
+    va: vba_317s
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/tallahassee/w-t-moore-elementary-school
   name: W.T. Moore Elementary School
   categories:

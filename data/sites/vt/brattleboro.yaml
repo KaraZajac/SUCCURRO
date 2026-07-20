@@ -106,13 +106,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 71 GSP Drive, city: Brattleboro, state: vt, zip: '05301'}
+  address:
+    street: 71 GSP Drive
+    city: Brattleboro
+    state: vt
+    zip: '05301'
   place: '5007975'
-  geo: {lat: 42.83032, lng: -72.56766}
+  geo:
+    lat: 42.83032
+    lng: -72.56766
   phone: 802-251-2200
   website: https://www.va.gov/white-river-junction-health-care/locations/brattleboro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -129,10 +142,13 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_405GC}
+  external_ids:
+    va: vha_405GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: vt/brattleboro/healthcare-and-rehabilitation-services-brattlebo
   name: Healthcare and Rehabilitation Services Brattleboro Program
   categories:

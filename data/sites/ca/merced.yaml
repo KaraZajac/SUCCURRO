@@ -433,6 +433,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/merced/merced-county-community-action-agency
+  name: Merced County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Merced County
+  address: {street: 1235 Main St., city: Merced, state: ca, zip: '95344'}
+  place: 0646898
+  phone: 209-723-4565
+  website: http://www.mercedcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/merced/merced-early-learning-center
   name: Merced Early Learning Center
   categories:
@@ -499,13 +511,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 340 East Yosemite Avenue, city: Merced, state: ca, zip: '95340'}
+  address:
+    street: 340 East Yosemite Avenue
+    city: Merced
+    state: ca
+    zip: '95340'
   place: 0646898
-  geo: {lat: 37.33085, lng: -120.46482}
+  geo:
+    lat: 37.33085
+    lng: -120.46482
   phone: 209-381-0105
   website: https://www.va.gov/central-california-health-care/locations/merced-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -521,10 +546,13 @@
   - Smoking and tobacco cessation
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_570GA}
+  external_ids:
+    va: vha_570GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/merced/pioneer-elementary
   name: Pioneer Elementary
   categories:

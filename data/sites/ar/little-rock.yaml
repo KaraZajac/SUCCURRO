@@ -371,6 +371,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/little-rock/central-arkansas-development-council-inc-cadc
+  name: Central Arkansas Development Council Inc. (CADC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pulaski County
+  address: {street: 2904 S. University, city: Little Rock, state: ar, zip: '72204'}
+  place: '0541000'
+  phone: 501-665-4870
+  email: LIHEAPINFO@CADC.COM
+  website: https://www.cadc.com/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/little-rock/central-high
   name: Central High
   categories:
@@ -742,9 +755,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 4300 West Seventh Street, city: Little Rock, state: ar, zip: '72205'}
+  address:
+    street: 4300 West Seventh Street
+    city: Little Rock
+    state: ar
+    zip: '72205'
   place: '0541000'
-  geo: {lat: 34.74636, lng: -92.32049}
+  geo:
+    lat: 34.74636
+    lng: -92.32049
   phone: 501-257-1000
   website: https://www.va.gov/central-arkansas-health-care/locations/john-l-mcclellan-memorial-veterans-hospital/
   services:
@@ -782,10 +801,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_598}
+  external_ids:
+    va: vha_598
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/little-rock/kennedy-head-start
   name: Kennedy Head Start
   categories:
@@ -919,46 +941,89 @@
   name: Little Rock Mobile Vet Center
   categories:
   - vet-center
-  address: {street: '10800 Financial Centre Parkway, Suite 175', city: Little Rock, state: ar, zip: '72211'}
+  address:
+    street: 10800 Financial Centre Parkway, Suite 175
+    city: Little Rock
+    state: ar
+    zip: '72211'
   place: '0541000'
-  geo: {lat: 34.74917, lng: -92.39508}
+  geo:
+    lat: 34.74917
+    lng: -92.39508
   phone: 501-918-1800
   website: https://www.va.gov/little-rock-vet-center/locations/#little-rock-mobile-vet-center
-  external_ids: {va: vc_0850MVC}
+  external_ids:
+    va: vc_0850MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/little-rock/little-rock-va-clinic
   name: Little Rock VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1000 Main Street, city: Little Rock, state: ar, zip: '72201'}
+  address:
+    street: 1000 Main Street
+    city: Little Rock
+    state: ar
+    zip: '72201'
   place: '0541000'
-  geo: {lat: 34.73903, lng: -92.27257}
+  geo:
+    lat: 34.73903
+    lng: -92.27257
   phone: 501-244-1900
   website: https://www.va.gov/central-arkansas-health-care/locations/little-rock-va-clinic/
   hours:
-  - {days: [mon, wed, thu, fri], open: '07:00', close: '14:30'}
-  - {days: [tue], open: '07:00', close: '14:00'}
-  external_ids: {va: vha_598QA}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '14:30'
+  - days:
+    - tue
+    open: 07:00
+    close: '14:00'
+  external_ids:
+    va: vha_598QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/little-rock/little-rock-va-mobile-medical-unit
   name: Little Rock VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4300 West Seventh Street, city: Little Rock, state: ar, zip: '72205'}
+  address:
+    street: 4300 West Seventh Street
+    city: Little Rock
+    state: ar
+    zip: '72205'
   place: '0541000'
-  geo: {lat: 34.74636, lng: -92.32049}
+  geo:
+    lat: 34.74636
+    lng: -92.32049
   phone: 501-257-1000
   website: https://www.va.gov/find-locations/facility/vha_598QB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_598QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_598QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/little-rock/little-sprouts-learning-center
   name: Little Sprouts Learning Center
   categories:

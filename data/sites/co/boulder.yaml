@@ -40,6 +40,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/boulder/boulder-county-department-of-housing-and-human-s
+  name: Boulder County Department of Housing and Human Services - Boulder
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Boulder County
+  address: {street: 3460 North Broadway, city: Boulder, state: co, zip: '80304'}
+  place: 0807850
+  phone: 303-441-1000
+  email: hhscallcenter@bouldercounty.org
+  website: https://www.bouldercounty.org/departments/housing-and-human-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/boulder/boulder-county-housing-authority
   name: Boulder County Housing Authority
   categories:
@@ -124,13 +137,26 @@
   name: Boulder Vet Center
   categories:
   - vet-center
-  address: {street: '4940 Pearl East Circle, Suite 100', city: Boulder, state: co, zip: '80301'}
+  address:
+    street: 4940 Pearl East Circle, Suite 100
+    city: Boulder
+    state: co
+    zip: '80301'
   place: 0807850
-  geo: {lat: 40.02113, lng: -105.23696}
+  geo:
+    lat: 40.02113
+    lng: -105.23696
   phone: 303-440-7306
   website: https://www.va.gov/boulder-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -144,10 +170,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0527V}
+  external_ids:
+    va: vc_0527V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/boulder/cfhw-specialty-behavioral-health-servs-ryan-well
   name: CFHW Specialty Behavioral Health Servs Ryan Wellness Center
   categories:

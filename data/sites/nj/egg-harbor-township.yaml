@@ -188,12 +188,25 @@
   name: South Jersey Vet Center
   categories:
   - vet-center
-  address: {street: '2900 Fire Road, Suite 101', city: Egg Harbor Township, state: nj, zip: 08234}
-  geo: {lat: 39.39867, lng: -74.55394}
+  address:
+    street: 2900 Fire Road, Suite 101
+    city: Egg Harbor Township
+    state: nj
+    zip: 08234
+  geo:
+    lat: 39.39867
+    lng: -74.55394
   phone: 609-487-8387
   website: https://www.va.gov/south-jersey-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -207,10 +220,13 @@
   - Veteran connections
   - Whole health
   - Workshops and classes
-  external_ids: {va: vc_0230V}
+  external_ids:
+    va: vc_0230V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/egg-harbor-township/southern-jersey-at-english-creek
   name: Southern Jersey at English Creek
   categories:

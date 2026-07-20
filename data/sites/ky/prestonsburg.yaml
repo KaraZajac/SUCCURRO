@@ -357,13 +357,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 236 North Highland Ave, city: Prestonsburg, state: ky, zip: '41653'}
+  address:
+    street: 236 North Highland Ave
+    city: Prestonsburg
+    state: ky
+    zip: '41653'
   place: '2162940'
-  geo: {lat: 37.67125, lng: -82.77323}
+  geo:
+    lat: 37.67125
+    lng: -82.77323
   phone: 606-886-1970
   website: https://www.va.gov/huntington-health-care/locations/prestonsburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -376,10 +389,13 @@
   - Primary care
   - Travel reimbursement
   - Women Veteran care
-  external_ids: {va: vha_581GA}
+  external_ids:
+    va: vha_581GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/prestonsburg/vanark-behavioral-mangement-inc
   name: VanArk Behavioral Mangement Inc
   categories:

@@ -20,6 +20,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/laramie/albany-county-department-of-family-services
+  name: Albany County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Albany County
+  address: {street: '3817 Beech St., Suite 200', city: Laramie, state: wy, zip: '82070'}
+  place: '5645050'
+  phone: 307-745-7324
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/laramie/cathedral-home-for-children
   name: Cathedral Home for Children
   categories:
@@ -89,17 +101,30 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 4750 Highway 130, city: Laramie, state: wy, zip: '82070'}
+  address:
+    street: 4750 Highway 130
+    city: Laramie
+    state: wy
+    zip: '82070'
   place: '5645050'
-  geo: {lat: 41.31566, lng: -105.63068}
+  geo:
+    lat: 41.31566
+    lng: -105.63068
   phone: 307-778-7550
   website: https://www.va.gov/cheyenne-health-care/locations/laramie-va-mobile-medical-unit/
   hours:
-  - {days: [mon, thu], open: '09:30', close: '15:00'}
-  external_ids: {va: vha_442QD}
+  - days:
+    - mon
+    - thu
+    open: 09:30
+    close: '15:00'
+  external_ids:
+    va: vha_442QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/laramie/trinity-campus-cabinet
   name: Trinity Campus Cabinet
   categories:

@@ -120,6 +120,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/poughkeepsie/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dutchess County
+  address: {street: 114 Delafield St., city: Poughkeepsie, state: ny, zip: '12601'}
+  place: '3659641'
+  phone: 845-486-2555
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/poughkeepsie/dc-dept-behavioral-community-health-dutchess-cou
   name: DC Dept Behavioral/Community Health Dutchess County Partial Hosp Program
   categories:
@@ -161,6 +172,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/poughkeepsie/dutchess-county-department-of-social-services
+  name: Dutchess County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dutchess County
+  address: {street: 60 Market Street, city: Poughkeepsie, state: ny, zip: '12601'}
+  place: '3659641'
+  phone: 845-486-3250
+  email: DCFSinfo@dutchessny.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/poughkeepsie/family-services-poughkeepsie-mental-health-clini
   name: Family Services Poughkeepsie Mental Health Clinic
   categories:
@@ -519,13 +542,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 488 Freedom Plains Road, city: Poughkeepsie, state: ny, zip: '12603'}
+  address:
+    street: 488 Freedom Plains Road
+    city: Poughkeepsie
+    state: ny
+    zip: '12603'
   place: '3659641'
-  geo: {lat: 41.67964, lng: -73.85476}
+  geo:
+    lat: 41.67964
+    lng: -73.85476
   phone: 845-452-5151
   website: https://www.va.gov/hudson-valley-health-care/locations/poughkeepsie-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -536,10 +572,13 @@
   - Podiatry
   - Primary care
   - Social work
-  external_ids: {va: vha_620GG}
+  external_ids:
+    va: vha_620GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/rockland-childrens-psychiatric-center-dutchess-i
   name: Rockland Childrens Psychiatric Center Dutchess IDT
   categories:

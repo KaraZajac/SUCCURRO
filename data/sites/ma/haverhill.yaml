@@ -42,6 +42,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/haverhill/community-action-inc
+  name: Community Action, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Essex County
+  address: {street: 3 Washington Square, city: Haverhill, state: ma, zip: 01830}
+  place: '2529405'
+  phone: 978-373-1971
+  website: https://www.communityactioninc.org/fuel-and-energy-programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/haverhill/emmaus-house
   name: EMMAUS HOUSE
   categories:
@@ -151,13 +163,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 209 Summer Street, city: Haverhill, state: ma, zip: 01830}
+  address:
+    street: 209 Summer Street
+    city: Haverhill
+    state: ma
+    zip: 01830
   place: '2529405'
-  geo: {lat: 42.776, lng: -71.06795}
+  geo:
+    lat: 42.776
+    lng: -71.06795
   phone: 800-838-6331
   website: https://www.va.gov/bedford-health-care/locations/haverhill-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -176,10 +201,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_518GB}
+  external_ids:
+    va: vha_518GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/haverhill/holy-family-hospital-haverhill-center-for-behavi
   name: Holy Family Hospital Haverhill Center for Behavioral Medicine
   categories:

@@ -314,32 +314,63 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 5283 Old Brownsville Road, city: Corpus Christi, state: tx, zip: '78405'}
+  address:
+    street: 5283 Old Brownsville Road
+    city: Corpus Christi
+    state: tx
+    zip: '78405'
   place: '4817000'
-  geo: {lat: 27.75731, lng: -97.45802}
+  geo:
+    lat: 27.75731
+    lng: -97.45802
   phone: 361-806-5600
   website: https://www.va.gov/texas-valley-health-care/locations/corpus-christi-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Mental health care
-  external_ids: {va: vha_740GC}
+  external_ids:
+    va: vha_740GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/corpus-christi/corpus-christi-vet-center
   name: Corpus Christi Vet Center
   categories:
   - vet-center
-  address: {street: '4646 Corona Drive, Suite 250', city: Corpus Christi, state: tx, zip: '78411'}
+  address:
+    street: 4646 Corona Drive, Suite 250
+    city: Corpus Christi
+    state: tx
+    zip: '78411'
   place: '4817000'
-  geo: {lat: 27.71327, lng: -97.38826}
+  geo:
+    lat: 27.71327
+    lng: -97.38826
   phone: 361-854-9961
   website: https://www.va.gov/corpus-christi-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '18:30'}
-  - {days: [tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '18:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -351,21 +382,37 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0705V}
+  external_ids:
+    va: vc_0705V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/corpus-christi/corpus-christi-west-point-va-clinic
   name: Corpus Christi West Point VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 925 South Padre Island Drive, city: Corpus Christi, state: tx, zip: '78416'}
+  address:
+    street: 925 South Padre Island Drive
+    city: Corpus Christi
+    state: tx
+    zip: '78416'
   place: '4817000'
-  geo: {lat: 27.74976, lng: -97.45434}
+  geo:
+    lat: 27.74976
+    lng: -97.45434
   phone: 361-851-6900
   website: https://www.va.gov/texas-valley-health-care/locations/corpus-christi-west-point-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Dermatology
   - Geriatrics
@@ -378,10 +425,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_740QB}
+  external_ids:
+    va: vha_740QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/corpus-christi/council-on-alcohol-and-drug-abuse-coastal-bend-t
   name: Council on Alcohol and Drug Abuse Coastal Bend/Treatment for Adults
   categories:
@@ -952,6 +1002,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/corpus-christi/nueces-county-community-action-agency
+  name: Nueces County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Nueces County
+  address: {street: 101 South Padre Island Drive, city: Corpus Christi, state: tx, zip: '78405'}
+  place: '4817000'
+  phone: 361-883-7201
+  website: https://nccaatx.org//
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/corpus-christi/oak-park-special-emphasis-school
   name: Oak Park Special Emphasis School
   categories:
@@ -1078,13 +1140,26 @@
   name: South Enterprize VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 205 South Enterprize Parkway, city: Corpus Christi, state: tx, zip: '78405'}
+  address:
+    street: 205 South Enterprize Parkway
+    city: Corpus Christi
+    state: tx
+    zip: '78405'
   place: '4817000'
-  geo: {lat: 27.76219, lng: -97.46486}
+  geo:
+    lat: 27.76219
+    lng: -97.46486
   phone: 361-939-6510
   website: https://www.va.gov/texas-valley-health-care/locations/south-enterprize-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:00'
   services:
   - Cardiology
   - Gastroenterology
@@ -1098,10 +1173,13 @@
   - Pulmonary medicine
   - Registry exams
   - Toxic exposure screening
-  external_ids: {va: vha_740GH}
+  external_ids:
+    va: vha_740GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/corpus-christi/south-texas-subst-abuse-recovery-servs
   name: South Texas Subst Abuse Recovery Servs
   categories:

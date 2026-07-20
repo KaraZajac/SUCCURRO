@@ -404,13 +404,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 6020 Broadway Street, city: Quincy, state: il, zip: '62305'}
+  address:
+    street: 6020 Broadway Street
+    city: Quincy
+    state: il
+    zip: '62305'
   place: '1762367'
-  geo: {lat: 39.93482, lng: -91.32069}
+  geo:
+    lat: 39.93482
+    lng: -91.32069
   phone: 217-224-3366
   website: https://www.va.gov/iowa-city-health-care/locations/quincy-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -427,10 +440,13 @@
   - Radiology
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GG}
+  external_ids:
+    va: vha_636GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/quincy/siu-center-for-family-medicine-adams-county-dent
   name: SIU Center for Family Medicine-Adams County Dental Clinic
   categories:
@@ -578,6 +594,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/quincy/two-rivers-regional-council-of-public-officials
+  name: Two Rivers Regional Council of Public Officials
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Adams, Brown, Pike, Schuyler Counties
+  address: {street: 107 N. 3rd Street, city: Quincy, state: il, zip: '62301'}
+  place: '1762367'
+  phone: 217-224-8171
+  website: http://www.trrcopo.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/quincy/union-united-methodist-church-box
   name: Union United Methodist Church Box
   categories:

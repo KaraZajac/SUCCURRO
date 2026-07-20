@@ -143,19 +143,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/huntingdon/huntingdon-county-assistance-office
+  name: Huntingdon County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Huntingdon County
+  address: {street: 7591 Lake Raystown Shopping Center, city: Huntingdon, state: pa, zip: '16652'}
+  place: '4236368'
+  phone: 814-643-4098
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/huntingdon/huntingdon-county-va-clinic
   name: Huntingdon County VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 10892 Fairgrounds Road, city: Huntingdon, state: pa, zip: '16652'}
+  address:
+    street: 10892 Fairgrounds Road
+    city: Huntingdon
+    state: pa
+    zip: '16652'
   place: '4236368'
-  geo: {lat: 40.4698, lng: -78.0443}
+  geo:
+    lat: 40.4698
+    lng: -78.0443
   phone: 814-943-8164
   website: https://www.va.gov/altoona-health-care/locations/huntingdon-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -177,10 +201,13 @@
   - Telehealth
   - Travel reimbursement
   - Wound care and ostomy
-  external_ids: {va: vha_503GD}
+  external_ids:
+    va: vha_503GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/huntingdon/huntingdon-high-school-classroom
   name: Huntingdon High School Classroom
   categories:

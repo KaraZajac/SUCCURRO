@@ -85,12 +85,25 @@
   name: Queens Vet Center
   categories:
   - vet-center
-  address: {street: 5005 Metropolitan Avenue, city: Ridgewood, state: ny, zip: '11385'}
-  geo: {lat: 40.71361, lng: -73.91648}
+  address:
+    street: 5005 Metropolitan Avenue
+    city: Ridgewood
+    state: ny
+    zip: '11385'
+  geo:
+    lat: 40.71361
+    lng: -73.91648
   phone: 718-296-2871
   website: https://www.va.gov/queens-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -105,10 +118,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0109V}
+  external_ids:
+    va: vc_0109V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/ridgewood/ridgewood-communicare-clinic
   name: Ridgewood Communicare Clinic
   categories:
@@ -135,16 +151,31 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 50-05 Metropolitan Avenue, city: Ridgewood, state: ny, zip: '11385'}
-  geo: {lat: 40.70855, lng: -73.83933}
+  address:
+    street: 50-05 Metropolitan Avenue
+    city: Ridgewood
+    state: ny
+    zip: '11385'
+  geo:
+    lat: 40.70855
+    lng: -73.83933
   phone: 718-741-4801
   website: https://www.va.gov/bronx-health-care/locations/thomas-p-noonan-jr-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_526GD}
+  external_ids:
+    va: vha_526GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

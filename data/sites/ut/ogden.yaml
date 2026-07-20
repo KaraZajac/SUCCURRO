@@ -248,6 +248,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ut/ogden/futures-through-training
+  name: Futures Through Training
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Davis, Morgan, Weber Counties
+  address: {street: '3564 Lincoln Ave., Suite 4B', city: Ogden, state: ut, zip: '84401'}
+  place: '4955980'
+  phone: 801-394-9774
+  email: heatprogram@fttinc.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ut/ogden/gms-counseling-llc
   name: GMS Counseling LLC
   categories:
@@ -608,17 +620,26 @@
   categories: &id001
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '324 25th St., STE 1124', city: Ogden, state: ut, zip: '84401'}
+  address:
+    street: 324 25th St., STE 1124
+    city: Ogden
+    state: ut
+    zip: '84401'
   place: '4955980'
-  geo: {lat: 41.22094, lng: -111.97259}
+  geo:
+    lat: 41.22094
+    lng: -111.97259
   phone: 801-326-2368
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_341c}
+  external_ids:
+    va: vba_341c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ut/ogden/ogden-weber-community-action-partnership-inc-gra
   name: Ogden-Weber Community Action Partnership, Inc. - Grantee Agency
   categories:
@@ -841,19 +862,28 @@
   name: VetSuccess on Campus at Weber State University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '3910 West Campus Dr., Shepard Union Building Room 322', city: Ogden, state: ut, zip: '84408'}
+  address:
+    street: 3910 West Campus Dr., Shepard Union Building Room 322
+    city: Ogden
+    state: ut
+    zip: '84408'
   place: '4955980'
-  geo: {lat: 41.19277, lng: -111.94484}
+  geo:
+    lat: 41.19277
+    lng: -111.94484
   phone: 801-626-6065
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_341f}
+  external_ids:
+    va: vba_341f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ut/ogden/washington-terrace-elementary
   name: Washington Terrace Elementary
   categories:

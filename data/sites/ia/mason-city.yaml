@@ -190,13 +190,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 478 Tiffany Drive, city: Mason City, state: ia, zip: '50401'}
+  address:
+    street: 478 Tiffany Drive
+    city: Mason City
+    state: ia
+    zip: '50401'
   place: '1950160'
-  geo: {lat: 43.1471, lng: -93.24482}
+  geo:
+    lat: 43.1471
+    lng: -93.24482
   phone: 641-494-5000
   website: https://www.va.gov/central-iowa-health-care/locations/mason-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -208,10 +221,25 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_636GC}
+  external_ids:
+    va: vha_636GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ia/mason-city/north-iowa-community-action-organization-cerro-g
+  name: North Iowa Community Action Organization - Cerro Gordo County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cerro Gordo County
+  address: {street: '100 1st St. NW, Suite 140', city: Mason City, state: ia, zip: '50401'}
+  place: '1950160'
+  phone: 641-423-7766
+  website: http://www.nicao-online.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/mason-city/north-iowa-regional-housing-authority
   name: North Iowa Regional Housing Authority
   categories:

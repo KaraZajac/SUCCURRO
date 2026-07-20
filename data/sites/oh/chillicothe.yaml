@@ -123,13 +123,28 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 17273 State Route 104, city: Chillicothe, state: oh, zip: '45601'}
+  address:
+    street: 17273 State Route 104
+    city: Chillicothe
+    state: oh
+    zip: '45601'
   place: '3914184'
-  geo: {lat: 39.39081, lng: -83.01268}
+  geo:
+    lat: 39.39081
+    lng: -83.01268
   phone: 740-773-1141
   website: https://www.va.gov/chillicothe-health-care/locations/chillicothe-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '18:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '18:00'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -162,23 +177,35 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_538}
+  external_ids:
+    va: vha_538
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/chillicothe/chillicothe-va-mobile-medical-unit
   name: Chillicothe VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 17273 State Route 104, city: Chillicothe, state: oh, zip: '45601'}
+  address:
+    street: 17273 State Route 104
+    city: Chillicothe
+    state: oh
+    zip: '45601'
   place: '3914184'
-  geo: {lat: 39.39081, lng: -83.01268}
+  geo:
+    lat: 39.39081
+    lng: -83.01268
   phone: 740-773-1141
   website: https://www.va.gov/find-locations/facility/vha_538QA
-  external_ids: {va: vha_538QA}
+  external_ids:
+    va: vha_538QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/chillicothe/clinic-security-and-logistics-dba-full-circle-re
   name: Clinic Security and Logistics DBA Full Circle Recovery Services
   categories:
@@ -873,6 +900,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/chillicothe/ross-county-community-action-commission-inc
+  name: Ross County Community Action Commission Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ross County
+  address: {street: 250 Woodbridge Ave., city: Chillicothe, state: oh, zip: '45601'}
+  place: '3914184'
+  phone: 740-536-1199
+  email: info@rossccac.com
+  website: https://www.rossccac.org/services/heap.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/chillicothe/scioto-paint-valley-mental-health-ctr-floyd-sima
   name: Scioto Paint Valley Mental Health Ctr Floyd Simantel Clinic
   categories:

@@ -1,3 +1,15 @@
+- id: ga/statesboro/action-pact-bulloch-county-services-senior-cente
+  name: Action Pact - Bulloch County Services/ Senior Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bulloch County
+  address: {street: 235 Grand Street, city: Statesboro, state: ga, zip: '30458'}
+  place: '1373256'
+  phone: 912-489-1604
+  website: https://myactionpact.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/statesboro/bulloch-counseling-services-bulloch-dui-risk-red
   name: Bulloch Counseling Services Bulloch DUI Risk Reduction Inc
   categories:
@@ -225,13 +237,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 658 Northside Drive East, city: Statesboro, state: ga, zip: '30458'}
+  address:
+    street: 658 Northside Drive East
+    city: Statesboro
+    state: ga
+    zip: '30458'
   place: '1373256'
-  geo: {lat: 32.441, lng: -81.76608}
+  geo:
+    lat: 32.441
+    lng: -81.76608
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/ray-hendrix-department-of-veterans-affairs-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -245,10 +270,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_509QA}
+  external_ids:
+    va: vha_509QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/statesboro/reliance-treatment-center-statesboro
   name: Reliance Treatment Center Statesboro
   categories:

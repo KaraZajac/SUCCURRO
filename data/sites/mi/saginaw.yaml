@@ -23,14 +23,31 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1500 Weiss Street, city: Saginaw, state: mi, zip: '48602'}
+  address:
+    street: 1500 Weiss Street
+    city: Saginaw
+    state: mi
+    zip: '48602'
   place: '2670520'
-  geo: {lat: 43.44368, lng: -83.96237}
+  geo:
+    lat: 43.44368
+    lng: -83.96237
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/aleda-e-lutz-department-of-veterans-affairs-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '19:00'}
-  - {days: [sat, sun], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '19:00'
+  - days:
+    - sat
+    - sun
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -75,10 +92,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_655}
+  external_ids:
+    va: vha_655
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/saginaw/aleda-e-lutz-vamc-hcc-annex
   name: Aleda E Lutz VAMC HCC Annex
   categories:
@@ -1279,6 +1299,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/saginaw/saginaw-county-community-action-center
+  name: Saginaw County Community Action Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saginaw County
+  address: {street: 2824 Perkins St., city: Saginaw, state: mi, zip: '48601'}
+  place: '2670520'
+  phone: 989-753-7741
+  website: http://www.saginawcac.org/programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/saginaw/saginaw-covenant-academy-739003044
   name: Saginaw Covenant Academy - 739003044
   categories:
@@ -1364,21 +1396,37 @@
   name: Saginaw North VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2830 McCarty Road, city: Saginaw, state: mi, zip: '48603'}
+  address:
+    street: 2830 McCarty Road
+    city: Saginaw
+    state: mi
+    zip: '48603'
   place: '2670520'
-  geo: {lat: 43.4654, lng: -83.97194}
+  geo:
+    lat: 43.4654
+    lng: -83.97194
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/saginaw-north-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Optometry
   - Telehealth
-  external_ids: {va: vha_655QC}
+  external_ids:
+    va: vha_655QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/saginaw/saginaw-odyssey-house-inc-outpatient-services
   name: Saginaw Odyssey House Inc Outpatient Services
   categories:
@@ -1425,39 +1473,64 @@
   name: Saginaw VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4241 Barnard Road, city: Saginaw, state: mi, zip: '48603'}
+  address:
+    street: 4241 Barnard Road
+    city: Saginaw
+    state: mi
+    zip: '48603'
   place: '2670520'
-  geo: {lat: 43.4683, lng: -83.96568}
+  geo:
+    lat: 43.4683
+    lng: -83.96568
   phone: 800-406-5143
   website: https://www.va.gov/saginaw-health-care/locations/saginaw-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Returning service member care
   - Social work
   - Telehealth
   - Veteran readiness and employment programs
-  external_ids: {va: vha_655QA}
+  external_ids:
+    va: vha_655QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/saginaw/saginaw-veteran-readiness-and-employment-office
   name: Saginaw Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '5360 Hampton Place, Suite 200', city: Saginaw, state: mi, zip: '48604'}
+  address:
+    street: 5360 Hampton Place, Suite 200
+    city: Saginaw
+    state: mi
+    zip: '48604'
   place: '2670520'
-  geo: {lat: 43.48488, lng: -83.95922}
+  geo:
+    lat: 43.48488
+    lng: -83.95922
   phone: 313-471-3800
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329f}
+  external_ids:
+    va: vba_329f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/saginaw/salvation-army-saginaw-73m000120
   name: Salvation Army- Saginaw - 73M000120
   categories:

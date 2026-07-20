@@ -202,6 +202,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/greensburg/greensburg-district
+  name: Greensburg District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Westmoreland County
+  address: {street: 587 Sells Lane, city: Greensburg, state: pa, zip: '15601'}
+  place: '4231200'
+  phone: 724-832-5218
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/greensburg/greensburg-early-care-and-education-center
   name: Greensburg Early Care and Education Center
   categories:
@@ -360,6 +371,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/greensburg/westmoreland-county-assistance-office-main-offic
+  name: Westmoreland County Assistance Office - Main Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Westmoreland County
+  address: {street: 595 Galiffa Drive (P. O. Box 592), city: Greensburg, state: pa, zip: '15601'}
+  place: '4231200'
+  phone: 724-832-5524
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/greensburg/westmoreland-county-hsg-authority
   name: Westmoreland County Hsg Authority
   categories:
@@ -386,13 +408,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5274 Route 30, city: Greensburg, state: pa, zip: '15601'}
+  address:
+    street: 5274 Route 30
+    city: Greensburg
+    state: pa
+    zip: '15601'
   place: '4231200'
-  geo: {lat: 40.30301, lng: -79.51}
+  geo:
+    lat: 40.30301
+    lng: -79.51
   phone: 724-216-0317
   website: https://www.va.gov/pittsburgh-health-care/locations/westmoreland-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - HIV/hepatitis care
@@ -411,7 +446,10 @@
   - Registry exams
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_646GB}
+  external_ids:
+    va: vha_646GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -1536,6 +1536,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/dallas/dallas-county-department-of-health-and-human-ser
+  name: Dallas County Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dallas County
+  address: {street: '2377 N. Stemmons Fwy, Suite 600', city: Dallas, state: tx, zip: 75207-2710}
+  place: '4819000'
+  phone: 214-819-1848
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/dallas/dallas-county-hospital-district
   name: Dallas County Hospital District
   categories:
@@ -1687,42 +1698,72 @@
   name: Dallas Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '8610 Greenville Avenue, Suite 125', city: Dallas, state: tx, zip: '75243'}
+  address:
+    street: 8610 Greenville Avenue, Suite 125
+    city: Dallas
+    state: tx
+    zip: '75243'
   place: '4819000'
-  geo: {lat: 32.89484, lng: -96.75226}
+  geo:
+    lat: 32.89484
+    lng: -96.75226
   phone: 214-361-5896
   website: https://www.va.gov/dallas-vet-center/locations/#dallas-mobile-vet-center
-  external_ids: {va: vc_0891MVC}
+  external_ids:
+    va: vc_0891MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/dallas-va-clinic
   name: Dallas VA Clinic
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '4900 South Lancaster Road, Community Resource & Referral Center (CRRC)', city: Dallas,
-    state: tx, zip: '75216'}
+  address:
+    street: 4900 South Lancaster Road, Community Resource & Referral Center (CRRC)
+    city: Dallas
+    state: tx
+    zip: '75216'
   place: '4819000'
-  geo: {lat: 32.68837, lng: -96.79046}
+  geo:
+    lat: 32.68837
+    lng: -96.79046
   phone: 214-742-8387
   website: https://www.va.gov/north-texas-health-care/locations/dallas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_549QA}
+  external_ids:
+    va: vha_549QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/dallas-va-medical-center
   name: Dallas VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 4500 South Lancaster Road, city: Dallas, state: tx, zip: '75216'}
+  address:
+    street: 4500 South Lancaster Road
+    city: Dallas
+    state: tx
+    zip: '75216'
   place: '4819000'
-  geo: {lat: 32.69444, lng: -96.79163}
+  geo:
+    lat: 32.69444
+    lng: -96.79163
   phone: 214-742-8387
   website: https://www.va.gov/north-texas-health-care/locations/dallas-va-medical-center/
   services:
@@ -1767,20 +1808,36 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_549}
+  external_ids:
+    va: vha_549
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/dallas-vet-center
   name: Dallas Vet Center
   categories: *id002
-  address: {street: '8610 Greenville Avenue, Suite 125', city: Dallas, state: tx, zip: '75243'}
+  address:
+    street: 8610 Greenville Avenue, Suite 125
+    city: Dallas
+    state: tx
+    zip: '75243'
   place: '4819000'
-  geo: {lat: 32.89477, lng: -96.75234}
+  geo:
+    lat: 32.89477
+    lng: -96.75234
   phone: 214-361-5896
   website: https://www.va.gov/dallas-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1791,10 +1848,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0706V}
+  external_ids:
+    va: vc_0706V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/dallas-west-branch-library
   name: Dallas West Branch Library
   categories:
@@ -5273,17 +5333,33 @@
   name: North Texas VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4500 South Lancaster Road, city: Dallas, state: tx, zip: '75216'}
+  address:
+    street: 4500 South Lancaster Road
+    city: Dallas
+    state: tx
+    zip: '75216'
   place: '4819000'
-  geo: {lat: 32.69444, lng: -96.79163}
+  geo:
+    lat: 32.69444
+    lng: -96.79163
   phone: 214-783-1179
   website: https://www.va.gov/north-texas-health-care/locations/north-texas-va-mobile-medical-unit/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_549HK}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_549HK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/northnaven-park-apartment
   name: Northnaven Park Apartment
   categories:
@@ -5561,13 +5637,26 @@
   name: Polk Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4243 South Polk Street, city: Dallas, state: tx, zip: '75224'}
+  address:
+    street: 4243 South Polk Street
+    city: Dallas
+    state: tx
+    zip: '75224'
   place: '4819000'
-  geo: {lat: 32.69347, lng: -96.84093}
+  geo:
+    lat: 32.69347
+    lng: -96.84093
   phone: 214-372-8100
   website: https://www.va.gov/north-texas-health-care/locations/polk-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Military sexual trauma care
@@ -5575,10 +5664,13 @@
   - Pharmacy
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GK}
+  external_ids:
+    va: vha_549GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/polk-wisdom-branch-library
   name: Polk Wisdom Branch Library
   categories:
@@ -7022,9 +7114,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '4500 South Lancaster Drive, Bldg TT52', city: Dallas, state: tx, zip: '75216'}
+  address:
+    street: 4500 South Lancaster Drive, Bldg TT52
+    city: Dallas
+    state: tx
+    zip: '75216'
   place: '4819000'
-  geo: {lat: 32.69166, lng: -96.79189}
+  geo:
+    lat: 32.69166
+    lng: -96.79189
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -7035,10 +7133,13 @@
   - HomelessAssistance
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349ae}
+  external_ids:
+    va: vba_349ae
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/dallas/vickery-park-branch-library
   name: Vickery Park Branch Library
   categories:

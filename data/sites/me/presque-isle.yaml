@@ -52,6 +52,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: me/presque-isle/aroostook-county-action-program
+  name: Aroostook County Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Aroostook County
+  address: {street: '771 Main St., PO Box 1116', city: Presque Isle, state: me, zip: 04769}
+  place: '2360825'
+  phone: 207-764-3721
+  website: http://www.acap-me.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: me/presque-isle/aroostook-mental-health-center-adult-crisis-stab
   name: Aroostook Mental Health Center Adult Crisis Stabilization Unit
   categories:
@@ -397,13 +409,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 732 Main Street, city: Presque Isle, state: me, zip: 04769}
+  address:
+    street: 732 Main Street
+    city: Presque Isle
+    state: me
+    zip: 04769
   place: '2360825'
-  geo: {lat: 46.69352, lng: -68.01218}
+  geo:
+    lat: 46.69352
+    lng: -68.01218
   phone: 877-421-8263
   website: https://www.va.gov/maine-health-care/locations/presque-isle-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -426,10 +451,13 @@
   - Travel reimbursement
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_402GA}
+  external_ids:
+    va: vha_402GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/presque-isle/riverside-park-pi-recreation
   name: Riverside Park/Pi Recreation
   categories:

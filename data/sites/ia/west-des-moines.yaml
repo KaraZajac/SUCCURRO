@@ -62,15 +62,32 @@
   name: Des Moines Vet Center
   categories:
   - vet-center
-  address: {street: '1821 22nd Street, Suite 115', city: West Des Moines, state: ia, zip: '50266'}
+  address:
+    street: 1821 22nd Street, Suite 115
+    city: West Des Moines
+    state: ia
+    zip: '50266'
   place: '1983910'
-  geo: {lat: 41.60014, lng: -93.73471}
+  geo:
+    lat: 41.60014
+    lng: -93.73471
   phone: 515-284-4929
   website: https://www.va.gov/des-moines-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '19:30'}
-  - {days: [tue, thu], open: '07:30', close: '19:30'}
-  - {days: [wed, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '19:30'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '19:30'
+  - days:
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -81,10 +98,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0405V}
+  external_ids:
+    va: vc_0405V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/west-des-moines/fairmeadows-elementary-school
   name: Fairmeadows Elementary School
   categories:
@@ -108,6 +128,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/west-des-moines/impact-community-action-partnership-valley-junct
+  name: IMPACT Community Action Partnership - Valley Junction (West Des Moines)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Polk County
+  address: {street: '139 6th Street, (P. O. Box 65320)', city: West Des Moines, state: ia, zip: 50265-0320}
+  place: '1983910'
+  phone: 515-222-3660
+  website: http://www.impactcap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/west-des-moines/legion-park
   name: Legion Park
   categories:
@@ -324,6 +356,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/west-des-moines/west-des-moines-human-services
+  name: West Des Moines Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Polk County
+  address: {street: '139 6th St., PO Box 65320', city: West Des Moines, state: ia, zip: 50265-0320}
+  place: '1983910'
+  phone: 515-222-3660
+  website: http://www.impactcap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/west-des-moines/western-hills-elementary-school
   name: Western Hills Elementary School
   categories:

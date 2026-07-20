@@ -101,6 +101,123 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/victoria/crossroads-community-action
+  name: Crossroads Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Refugio County
+  address: {street: 4007 Halsey St. (P. O. Box 3607), city: Victoria, state: tx, zip: '77901'}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-aransas
+  name: Crossroads Community Action - Aransas
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Aransas County
+  address: {street: 4007 Halsey St., city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-calhoun
+  name: Crossroads Community Action - Calhoun
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Calhoun County
+  address: {street: 4007 Halsey Street, city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-de-witt
+  name: Crossroads Community Action - De Witt
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving De Witt County
+  address: {street: 4007 Halsey Street, city: Victoria, state: tx, zip: '77903'}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-goliad
+  name: Crossroads Community Action- Goliad
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Goliad County
+  address: {street: 4007 Halsey St., city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-gonzales
+  name: Crossroads Community Action - Gonzales
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Gonzales County
+  address: {street: 4007 Halsey Street, city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-jackson
+  name: Crossroads Community Action - Jackson
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jackson County
+  address: {street: 4007 Halsey St., city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-lavaca
+  name: Crossroads Community Action - Lavaca
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lavaca County
+  address: {street: 4007 Halsey Street, city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/victoria/crossroads-community-action-victoria
+  name: Crossroads Community Action - Victoria
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Victoria County
+  address: {street: 4007 Halsey Street, city: Victoria, state: tx, zip: 77903-3607}
+  place: '4875428'
+  phone: 361-578-2989
+  email: Info@CrossroadsCA.org
+  website: https://www.cacv.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/victoria/early-childhood-center-at-fw-gross
   name: Early Childhood Center At Fw Gross
   categories:
@@ -469,13 +586,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 311 Spring Green Boulevard, city: Victoria, state: tx, zip: '77904'}
+  address:
+    street: 311 Spring Green Boulevard
+    city: Victoria
+    state: tx
+    zip: '77904'
   place: '4875428'
-  geo: {lat: 28.85189, lng: -97.01907}
+  geo:
+    lat: 28.85189
+    lng: -97.01907
   phone: 361-582-7700
   website: https://www.va.gov/south-texas-health-care/locations/victoria-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -486,10 +616,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_671GB}
+  external_ids:
+    va: vha_671GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/victoria/victoria-west-h-s
   name: Victoria West H S
   categories:

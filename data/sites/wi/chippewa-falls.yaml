@@ -64,13 +64,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 475 Chippewa Mall Drive, city: Chippewa Falls, state: wi, zip: '54729'}
+  address:
+    street: 475 Chippewa Mall Drive
+    city: Chippewa Falls
+    state: wi
+    zip: '54729'
   place: '5514575'
-  geo: {lat: 44.92521, lng: -91.38206}
+  geo:
+    lat: 44.92521
+    lng: -91.38206
   phone: 715-720-3780
   website: https://www.va.gov/minneapolis-health-care/locations/chippewa-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -93,10 +106,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618GE}
+  external_ids:
+    va: vha_618GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/chippewa-falls/family-health-center-chippewa-falls-dental-cente
   name: Family Health Center - Chippewa Falls Dental Center
   categories:

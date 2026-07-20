@@ -182,13 +182,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1115 South 4th Street, city: El Centro, state: ca, zip: '92243'}
+  address:
+    street: 1115 South 4th Street
+    city: El Centro
+    state: ca
+    zip: '92243'
   place: 0621782
-  geo: {lat: 32.78232, lng: -115.55237}
+  geo:
+    lat: 32.78232
+    lng: -115.55237
   phone: 760-352-1506
   website: https://www.va.gov/san-diego-health-care/locations/imperial-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -196,10 +209,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_664GA}
+  external_ids:
+    va: vha_664GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/el-centro/innercare-el-centro
   name: Innercare El Centro
   categories:

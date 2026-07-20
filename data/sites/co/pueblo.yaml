@@ -728,13 +728,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4776 Eagleridge Circle, city: Pueblo, state: co, zip: '81008'}
+  address:
+    street: 4776 Eagleridge Circle
+    city: Pueblo
+    state: co
+    zip: '81008'
   place: 0862000
-  geo: {lat: 38.32335, lng: -104.61922}
+  geo:
+    lat: 38.32335
+    lng: -104.61922
   phone: 719-553-1000
   website: https://www.va.gov/eastern-colorado-health-care/locations/pfc-james-dunn-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -744,10 +757,13 @@
   - Patient advocates
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_554GD}
+  external_ids:
+    va: vha_554GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/pueblo/pueblo-community-college-student-health-clinic
   name: Pueblo Community College Student Health Clinic
   categories:
@@ -769,42 +785,85 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/pueblo/pueblo-county-department-of-social-services-pueb
+  name: Pueblo County Department of Social Services - Pueblo
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pueblo County
+  address: {street: 320 West 10th St., city: Pueblo, state: co, zip: '81003'}
+  place: 0862000
+  phone: 719-583-6160
+  website: https://county.pueblo.org/government/county/department/social-services/social-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/pueblo/pueblo-mobile-vet-center
   name: Pueblo Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1515 Fortino Boulevard, Suite 130', city: Pueblo, state: co, zip: '81008'}
+  address:
+    street: 1515 Fortino Boulevard, Suite 130
+    city: Pueblo
+    state: co
+    zip: '81008'
   place: 0862000
-  geo: {lat: 38.31304, lng: -104.62752}
+  geo:
+    lat: 38.31304
+    lng: -104.62752
   phone: 719-583-4058
   website: https://www.va.gov/pueblo-vet-center/locations/#pueblo-mobile-vet-center
-  external_ids: {va: vc_0836MVC}
+  external_ids:
+    va: vc_0836MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/pueblo/pueblo-va-community-living-center
   name: Pueblo VA Community Living Center
   categories: *id001
   description: Extended Care Site (Community Living Center) (Stand-Alone)
-  address: {street: 2600 Oakshire Lane, city: Pueblo, state: co, zip: '81001'}
+  address:
+    street: 2600 Oakshire Lane
+    city: Pueblo
+    state: co
+    zip: '81001'
   place: 0862000
-  geo: {lat: 38.28445, lng: -104.56492}
+  geo:
+    lat: 38.28445
+    lng: -104.56492
   phone: 719-295-7260
   website: https://www.va.gov/find-locations/facility/vha_554A4
-  external_ids: {va: vha_554A4}
+  external_ids:
+    va: vha_554A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/pueblo/pueblo-vet-center
   name: Pueblo Vet Center
   categories: *id002
-  address: {street: '1515 Fortino Boulevard, Suite 130', city: Pueblo, state: co, zip: '81008'}
+  address:
+    street: 1515 Fortino Boulevard, Suite 130
+    city: Pueblo
+    state: co
+    zip: '81008'
   place: 0862000
-  geo: {lat: 38.31304, lng: -104.62752}
+  geo:
+    lat: 38.31304
+    lng: -104.62752
   phone: 719-583-4058
   website: https://www.va.gov/pueblo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -816,10 +875,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0542V}
+  external_ids:
+    va: vc_0542V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/pueblo/rawlings-pueblo-city-county-library
   name: Rawlings Pueblo City County Library
   categories:

@@ -168,27 +168,53 @@
   name: San Marcos Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 'One Civic Drive, Suite 150', city: San Marcos, state: ca, zip: '92069'}
+  address:
+    street: One Civic Drive, Suite 150
+    city: San Marcos
+    state: ca
+    zip: '92069'
   place: 0668196
-  geo: {lat: 33.14087, lng: -117.15883}
+  geo:
+    lat: 33.14087
+    lng: -117.15883
   phone: 855-898-6050
   website: https://www.va.gov/find-locations/facility/vc_0883MVC
-  external_ids: {va: vc_0883MVC}
+  external_ids:
+    va: vc_0883MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-marcos/san-marcos-vet-center
   name: San Marcos Vet Center
   categories: *id001
-  address: {street: '1 Civic Center Drive, Suite 150', city: San Marcos, state: ca, zip: '92069'}
+  address:
+    street: 1 Civic Center Drive, Suite 150
+    city: San Marcos
+    state: ca
+    zip: '92069'
   place: 0668196
-  geo: {lat: 33.14091, lng: -117.15979}
+  geo:
+    lat: 33.14091
+    lng: -117.15979
   phone: 855-898-6050
   website: https://www.va.gov/san-marcos-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '20:30'}
-  - {days: [tue, wed, thu], open: '08:00', close: '20:00'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '20:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '20:00'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -200,10 +226,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0642V}
+  external_ids:
+    va: vc_0642V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-marcos/truecare
   name: TrueCare
   categories:

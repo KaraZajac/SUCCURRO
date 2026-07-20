@@ -164,19 +164,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/bradford/mckean-county-assistance-office
+  name: McKean County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving McKean County
+  address: {street: '68 Chestnut Street, Suite B', city: Bradford, state: pa, zip: '16701'}
+  place: '4208040'
+  phone: 814-362-4671
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/bradford/mckean-county-va-clinic
   name: McKean County VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 20 Foster Brook Boulevard, city: Bradford, state: pa, zip: '16701'}
+  address:
+    street: 20 Foster Brook Boulevard
+    city: Bradford
+    state: pa
+    zip: '16701'
   place: '4208040'
-  geo: {lat: 41.97953, lng: -78.6171}
+  geo:
+    lat: 41.97953
+    lng: -78.6171
   phone: 800-274-8387
   website: https://www.va.gov/erie-health-care/locations/mckean-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Diabetes care
@@ -189,10 +213,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562GC}
+  external_ids:
+    va: vha_562GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/bradford/school-street-el-sch
   name: School Street El Sch
   categories:

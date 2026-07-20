@@ -443,6 +443,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/pensacola/community-action-program-committee-inc
+  name: Community Action Program Committee Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Escambia County
+  address: {street: 2501 West Wright St., city: Pensacola, state: fl, zip: '32505'}
+  place: '1255925'
+  phone: 850-308-1472
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/pensacola/dixon-school-of-arts-and-sciences
   name: Dixon School Of Arts And Sciences
   categories:
@@ -1101,19 +1113,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '6000 West Highway 98, Naval Hospital Pensacola', city: Pensacola, state: fl, zip: '32512'}
+  address:
+    street: 6000 West Highway 98, Naval Hospital Pensacola
+    city: Pensacola
+    state: fl
+    zip: '32512'
   place: '1255925'
-  geo: {lat: 30.3969, lng: -87.29652}
+  geo:
+    lat: 30.3969
+    lng: -87.29652
   phone: 850-912-2000
   website: https://www.va.gov/gulf-coast-health-care/locations/naval-hospital-pensacola-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Surgery
-  external_ids: {va: vha_520QC}
+  external_ids:
+    va: vha_520QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/pensacola/new-beginnings-church-youth-department
   name: New Beginnings Church Youth Department
   categories:
@@ -1247,15 +1275,24 @@
   name: Pensacola Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: 4918 Mobile Highway, city: Pensacola, state: fl, zip: '32506'}
+  address:
+    street: 4918 Mobile Highway
+    city: Pensacola
+    state: fl
+    zip: '32506'
   place: '1255925'
-  geo: {lat: 30.44264, lng: -87.28445}
+  geo:
+    lat: 30.44264
+    lng: -87.28445
   phone: 850-456-5886
   website: https://www.va.gov/pensacola-vet-center/locations/#pensacola-mobile-vet-center
-  external_ids: {va: vc_0815MVC}
+  external_ids:
+    va: vc_0815MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/pensacola/pensacola-state-college
   name: Pensacola State College
   categories:
@@ -1282,13 +1319,26 @@
   name: Pensacola VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 790 Veterans Way, city: Pensacola, state: fl, zip: '32507'}
+  address:
+    street: 790 Veterans Way
+    city: Pensacola
+    state: fl
+    zip: '32507'
   place: '1255925'
-  geo: {lat: 30.40047, lng: -87.29288}
+  geo:
+    lat: 30.40047
+    lng: -87.29288
   phone: 850-912-2000
   website: https://www.va.gov/gulf-coast-health-care/locations/pensacola-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -1304,20 +1354,36 @@
   - Primary care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_520BZ}
+  external_ids:
+    va: vha_520BZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/pensacola/pensacola-vet-center
   name: Pensacola Vet Center
   categories: *id002
-  address: {street: 4918 Mobile Highway, city: Pensacola, state: fl, zip: '32506'}
+  address:
+    street: 4918 Mobile Highway
+    city: Pensacola
+    state: fl
+    zip: '32506'
   place: '1255925'
-  geo: {lat: 30.44262, lng: -87.28448}
+  geo:
+    lat: 30.44262
+    lng: -87.28448
   phone: 850-456-5886
   website: https://www.va.gov/pensacola-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1328,10 +1394,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0742V}
+  external_ids:
+    va: vc_0742V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/pensacola/pentecostal-temple-ministries-inc
   name: Pentecostal Temple Ministries, Inc.
   categories:
@@ -1381,9 +1450,15 @@
   categories:
   - va-facility
   description: Pre-Discharge Site
-  address: {street: '790 Veterans Way, Rm 1A104/105', city: Pensacola, state: fl, zip: '32507'}
+  address:
+    street: 790 Veterans Way, Rm 1A104/105
+    city: Pensacola
+    state: fl
+    zip: '32507'
   place: '1255925'
-  geo: {lat: 30.40047, lng: -87.29288}
+  geo:
+    lat: 30.40047
+    lng: -87.29288
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1391,10 +1466,13 @@
   - IntegratedDisabilityEvaluationSystemAssistance
   - PreDischargeClaimAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_317af}
+  external_ids:
+    va: vba_317af
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/pensacola/real-women-radio-foundation-inc
   name: Real Women Radio Foundation, Inc
   categories:

@@ -145,6 +145,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/vero-beach/economic-opportunities-council-of-indian-river-c
+  name: Economic Opportunities Council of Indian River County Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Indian River County
+  address: {street: 2455 St. Lucie Ave., city: Vero Beach, state: fl, zip: '32960'}
+  place: '1274150'
+  phone: 772-562-4177
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/vero-beach/gifford-middle-school
   name: Gifford Middle School
   categories:
@@ -282,18 +294,34 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 777 37th Street, city: Vero Beach, state: fl, zip: '32960'}
+  address:
+    street: 777 37th Street
+    city: Vero Beach
+    state: fl
+    zip: '32960'
   place: '1274150'
-  geo: {lat: 27.6602, lng: -80.38795}
+  geo:
+    lat: 27.6602
+    lng: -80.38795
   phone: 561-422-8376
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology
-  external_ids: {va: vha_548GG}
+  external_ids:
+    va: vha_548GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/vero-beach/legacy-behavioral-health-center-inc
   name: Legacy Behavioral Health Center Inc
   categories:
@@ -699,13 +727,26 @@
   name: Vero Beach VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 372 17th Street, city: Vero Beach, state: fl, zip: '32960'}
+  address:
+    street: 372 17th Street
+    city: Vero Beach
+    state: fl
+    zip: '32960'
   place: '1274150'
-  geo: {lat: 27.63256, lng: -80.38022}
+  geo:
+    lat: 27.63256
+    lng: -80.38022
   phone: 772-299-4623
   website: https://www.va.gov/west-palm-beach-health-care/locations/vero-beach-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Dermatology
@@ -715,10 +756,13 @@
   - Primary care
   - Rehabilitation and extended care
   - Social work
-  external_ids: {va: vha_548GE}
+  external_ids:
+    va: vha_548GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/vero-beach/west-palm-beach-va-hcs-vero-beach-clinic
   name: West Palm Beach VA HCS Vero Beach Clinic
   categories:

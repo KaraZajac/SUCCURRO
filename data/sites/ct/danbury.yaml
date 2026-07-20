@@ -323,33 +323,64 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 7 Germantown Road, city: Danbury, state: ct, zip: 06810}
+  address:
+    street: 7 Germantown Road
+    city: Danbury
+    state: ct
+    zip: 06810
   place: 0918430
-  geo: {lat: 41.40889, lng: -73.43627}
+  geo:
+    lat: 41.40889
+    lng: -73.43627
   phone: 203-798-8422
   website: https://www.va.gov/connecticut-health-care/locations/danbury-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_689GE}
+  external_ids:
+    va: vha_689GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/danbury/danbury-vet-center
   name: Danbury Vet Center
   categories:
   - vet-center
-  address: {street: '131 West Street, Suite 2A', city: Danbury, state: ct, zip: 06810}
+  address:
+    street: 131 West Street, Suite 2A
+    city: Danbury
+    state: ct
+    zip: 06810
   place: 0918430
-  geo: {lat: 41.39313, lng: -73.46279}
+  geo:
+    lat: 41.39313
+    lng: -73.46279
   phone: 203-790-4000
   website: https://www.va.gov/danbury-vet-center/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [wed], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -362,10 +393,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0140V}
+  external_ids:
+    va: vc_0140V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/danbury/ellsworth-avenue-elementary-school
   name: Ellsworth Avenue Elementary School
   categories:

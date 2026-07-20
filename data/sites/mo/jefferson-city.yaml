@@ -431,13 +431,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3430 West Edgewood Drive, city: Jefferson City, state: mo, zip: '65109'}
+  address:
+    street: 3430 West Edgewood Drive
+    city: Jefferson City
+    state: mo
+    zip: '65109'
   place: '2937000'
-  geo: {lat: 38.56901, lng: -92.24805}
+  geo:
+    lat: 38.56901
+    lng: -92.24805
   phone: 573-635-0233
   website: https://www.va.gov/columbia-missouri-health-care/locations/jefferson-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -447,10 +460,13 @@
   - Orthopedics
   - Primary care
   - Urology
-  external_ids: {va: vha_589G8}
+  external_ids:
+    va: vha_589G8
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/jefferson-city/knowles-ymca
   name: Knowles Ymca
   categories:

@@ -85,15 +85,24 @@
   name: Escanaba Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 301 N 30th Street, city: Escanaba, state: mi, zip: '49829'}
+  address:
+    street: 301 N 30th Street
+    city: Escanaba
+    state: mi
+    zip: '49829'
   place: '2626360'
-  geo: {lat: 45.74767, lng: -87.09021}
+  geo:
+    lat: 45.74767
+    lng: -87.09021
   phone: 906-233-0244
   website: https://www.va.gov/escanaba-vet-center/locations/#escanaba-mobile-vet-center
-  external_ids: {va: vc_0826MVC}
+  external_ids:
+    va: vc_0826MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/escanaba/escanaba-upper-elementary-210101156
   name: Escanaba Upper Elementary - 210101156
   categories:
@@ -120,13 +129,26 @@
 - id: mi/escanaba/escanaba-vet-center
   name: Escanaba Vet Center
   categories: *id001
-  address: {street: 301 North 30th Street, city: Escanaba, state: mi, zip: '49829'}
+  address:
+    street: 301 North 30th Street
+    city: Escanaba
+    state: mi
+    zip: '49829'
   place: '2626360'
-  geo: {lat: 45.74769, lng: -87.09031}
+  geo:
+    lat: 45.74769
+    lng: -87.09031
   phone: 906-233-0244
   website: https://www.va.gov/escanaba-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -145,10 +167,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0434V}
+  external_ids:
+    va: vc_0434V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/escanaba/great-lakes-recovery-centers-inc-escanaba-outpat
   name: Great Lakes Recovery Centers Inc Escanaba Outpatient Services
   categories:
@@ -192,6 +217,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/escanaba/menominee-delta-schoolcraft-community-action-age
+  name: Menominee-Delta-Schoolcraft Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Delta, Menominee, Schoolcraft Counties
+  address: {street: 507 First Aveue North, city: Escanaba, state: mi, zip: '49829'}
+  place: '2626360'
+  phone: 906-786-7080
+  website: https://www.mdscaa.org/utility-and-water-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/escanaba/northern-lights-ymca-21m000004
   name: Northern Lights Ymca - 21M000004
   categories:

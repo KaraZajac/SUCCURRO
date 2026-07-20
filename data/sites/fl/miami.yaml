@@ -1555,9 +1555,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1201 Northwest 16th Street, city: Miami, state: fl, zip: '33125'}
+  address:
+    street: 1201 Northwest 16th Street
+    city: Miami
+    state: fl
+    zip: '33125'
   place: '1245000'
-  geo: {lat: 25.79096, lng: -80.21813}
+  geo:
+    lat: 25.79096
+    lng: -80.21813
   phone: 305-575-7000
   website: https://www.va.gov/miami-health-care/locations/bruce-w-carter-department-of-veterans-affairs-medical-center/
   services:
@@ -1599,10 +1605,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_546}
+  external_ids:
+    va: vha_546
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/miami/bryan-park
   name: Bryan Park
   categories:
@@ -8953,6 +8962,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/miami/miami-dade-county-community-action-agency
+  name: Miami Dade County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Miami-Dade County
+  address: {street: 701 NW 1st Court, city: Miami, state: fl, zip: '33136'}
+  place: '1245000'
+  phone: 786-469-4640
+  website: https://www.miamidade.gov/global/service.page?Mduid_service=ser1504204216164378
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/miami/miami-dade-housing-and-community-dev
   name: Miami Dade Housing And Community Dev
   categories:
@@ -9063,20 +9084,36 @@
   name: Miami Flagler VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1492 West Flagler Street, city: Miami, state: fl, zip: '33135'}
+  address:
+    street: 1492 West Flagler Street
+    city: Miami
+    state: fl
+    zip: '33135'
   place: '1245000'
-  geo: {lat: 25.77335, lng: -80.21947}
+  geo:
+    lat: 25.77335
+    lng: -80.21947
   phone: 305-541-5864
   website: https://www.va.gov/miami-health-care/locations/miami-flagler-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Primary care
-  external_ids: {va: vha_546GA}
+  external_ids:
+    va: vha_546GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/miami/miami-gardens-village-apartments
   name: Miami Gardens Village Apartments
   categories:
@@ -9373,13 +9410,26 @@
   name: Miami Vet Center
   categories:
   - vet-center
-  address: {street: '8280 Northwest 27th Street, Suite 511', city: Miami, state: fl, zip: '33122'}
+  address:
+    street: 8280 Northwest 27th Street, Suite 511
+    city: Miami
+    state: fl
+    zip: '33122'
   place: '1245000'
-  geo: {lat: 25.79839, lng: -80.33158}
+  geo:
+    lat: 25.79839
+    lng: -80.33158
   phone: 305-718-3712
   website: https://www.va.gov/miami-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -9391,10 +9441,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0310V}
+  external_ids:
+    va: vc_0310V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/miami/miller-drive-park
   name: Miller Drive Park
   categories:
@@ -13087,19 +13140,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 11200 SW 8th St, city: Miami, state: fl, zip: '33199'}
+  address:
+    street: 11200 SW 8th St
+    city: Miami
+    state: fl
+    zip: '33199'
   place: '1245000'
-  geo: {lat: 25.75904, lng: -80.37413}
+  geo:
+    lat: 25.75904
+    lng: -80.37413
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317q}
+  external_ids:
+    va: vba_317q
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/miami/vice-city-dance-company
   name: Vice City Dance Company
   categories:

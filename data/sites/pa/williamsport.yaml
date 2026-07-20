@@ -305,6 +305,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/williamsport/lycoming-county-assistance-office
+  name: Lycoming County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lycoming County
+  address: {street: 400 Little League Boulevard (P. O. Box 127), city: Williamsport, state: pa, zip: '17703'}
+  place: '4285312'
+  phone: 570-327-3497
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/williamsport/river-valley-health-express-and-specialty-care
   name: River Valley Health - Express and Specialty Care
   categories:
@@ -396,13 +407,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1705 Warren Avenue, Werner Building', city: Williamsport, state: pa, zip: '17701'}
+  address:
+    street: 1705 Warren Avenue, Werner Building
+    city: Williamsport
+    state: pa
+    zip: '17701'
   place: '4285312'
-  geo: {lat: 41.259, lng: -76.98135}
+  geo:
+    lat: 41.259
+    lng: -76.98135
   phone: 570-322-4791
   website: https://www.va.gov/wilkes-barre-health-care/locations/williamsport-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -416,22 +440,40 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_693GB}
+  external_ids:
+    va: vha_693GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/williamsport/williamsport-vet-center
   name: Williamsport Vet Center
   categories:
   - vet-center
-  address: {street: '49 East Fourth Street, Suite 104', city: Williamsport, state: pa, zip: '17701'}
+  address:
+    street: 49 East Fourth Street, Suite 104
+    city: Williamsport
+    state: pa
+    zip: '17701'
   place: '4285312'
-  geo: {lat: 41.24274, lng: -77.00112}
+  geo:
+    lat: 41.24274
+    lng: -77.00112
   phone: 570-327-5281
   website: https://www.va.gov/williamsport-vet-center/
   hours:
-  - {days: [mon, wed, thu], open: '08:00', close: '18:30'}
-  - {days: [tue, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    - thu
+    open: 08:00
+    close: '18:30'
+  - days:
+    - tue
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -448,7 +490,10 @@
   - Veteran connections
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vc_0212V}
+  external_ids:
+    va: vc_0212V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

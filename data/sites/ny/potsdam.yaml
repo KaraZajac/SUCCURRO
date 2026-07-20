@@ -140,13 +140,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 201 Market Street, city: Potsdam, state: ny, zip: '13676'}
+  address:
+    street: 201 Market Street
+    city: Potsdam
+    state: ny
+    zip: '13676'
   place: '3659564'
-  geo: {lat: 44.68575, lng: -74.98931}
+  geo:
+    lat: 44.68575
+    lng: -74.98931
   phone: 315-274-7003
   website: https://www.va.gov/syracuse-health-care/locations/potsdam-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - MOVE! weight management
@@ -159,10 +172,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Women Veteran care
-  external_ids: {va: vha_528GL}
+  external_ids:
+    va: vha_528GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/potsdam/syracuse-va-potsdam-outpatient-va-clinic
   name: Syracuse VA Potsdam Outpatient VA Clinic
   categories:

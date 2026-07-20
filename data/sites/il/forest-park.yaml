@@ -17,15 +17,32 @@
   name: Forest Park Vet Center
   categories:
   - vet-center
-  address: {street: 1515 South Harlem Avenue, city: Forest Park, state: il, zip: '60130'}
+  address:
+    street: 1515 South Harlem Avenue
+    city: Forest Park
+    state: il
+    zip: '60130'
   place: '1726935'
-  geo: {lat: 41.85897, lng: -87.80393}
+  geo:
+    lat: 41.85897
+    lng: -87.80393
   phone: 708-457-8805
   website: https://www.va.gov/forest-park-vet-center/
   hours:
-  - {days: [mon, thu], open: '08:00', close: '18:00'}
-  - {days: [tue, wed], open: '07:00', close: '20:30'}
-  - {days: [fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - thu
+    open: 08:00
+    close: '18:00'
+  - days:
+    - tue
+    - wed
+    open: 07:00
+    close: '20:30'
+  - days:
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -37,10 +54,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0411V}
+  external_ids:
+    va: vc_0411V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/forest-park/give-take
   name: Give & Take
   categories:

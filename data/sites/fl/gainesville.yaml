@@ -354,6 +354,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/gainesville/central-florida-community-action-agency-inc
+  name: Central Florida Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Alachua County
+  address: {street: '411 North Main Street, Suite 210', city: Gainesville, state: fl, zip: '32601'}
+  place: '1225175'
+  phone: 352-373-7667
+  email: info@cfcaa.org
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/gainesville/early-learning-academy-at-duval
   name: Early Learning Academy At Duval
   categories:
@@ -513,23 +526,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 5465 SW 34th Street, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 5465 SW 34th Street
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.60148, lng: -82.36889}
+  geo:
+    lat: 29.60148
+    lng: -82.36889
   phone: 352-384-3560
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-1-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Mental health care
   - PTSD care
   - Psychiatry
   - Psychology
-  external_ids: {va: vha_573QF}
+  external_ids:
+    va: vha_573QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-christian-preparatory-school-iep
   name: Gainesville Christian Preparatory School Iep
   categories:
@@ -619,82 +648,159 @@
   name: Gainesville Ninety-Eighth Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3401 Northwest 98th Street, city: Gainesville, state: fl, zip: '32606'}
+  address:
+    street: 3401 Northwest 98th Street
+    city: Gainesville
+    state: fl
+    zip: '32606'
   place: '1225175'
-  geo: {lat: 29.68464, lng: -82.45046}
+  geo:
+    lat: 29.68464
+    lng: -82.45046
   phone: 352-376-1611
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-ninety-eighth-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
-  external_ids: {va: vha_573QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
+  external_ids:
+    va: vha_573QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-sixty-fourth-street-1-va-clinic
   name: Gainesville Sixty-Fourth Street 1 VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5415 Southwest 64th Street, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 5415 Southwest 64th Street
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.60373, lng: -82.41051}
+  geo:
+    lat: 29.60373
+    lng: -82.41051
   phone: 352-338-4900
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-sixty-fourth-street-1-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
-  external_ids: {va: vha_573QC}
+  external_ids:
+    va: vha_573QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-sixty-fourth-street-2-va-clinic
   name: Gainesville Sixty-Fourth Street 2 VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5533 Southwest 64th Street, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 5533 Southwest 64th Street
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.60332, lng: -82.41025}
+  geo:
+    lat: 29.60332
+    lng: -82.41025
   phone: 352-271-5967
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-sixty-fourth-street-2-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Advice nurse
   - Optometry
-  external_ids: {va: vha_573QD}
+  external_ids:
+    va: vha_573QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-sixty-fourth-street-3-va-clinic
   name: Gainesville Sixty-Fourth Street 3 VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5571 Southwest 64th Street, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 5571 Southwest 64th Street
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.60277, lng: -82.40973}
+  geo:
+    lat: 29.60277
+    lng: -82.40973
   phone: 352-337-4900
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-sixty-fourth-street-3-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Advice nurse
   - Dermatology
-  external_ids: {va: vha_573QE}
+  external_ids:
+    va: vha_573QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-va-clinic
   name: Gainesville VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 5469 Southwest 34th Street, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 5469 Southwest 34th Street
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.60043, lng: -82.36793}
+  geo:
+    lat: 29.60043
+    lng: -82.36793
   phone: 352-548-1900
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Nutrition, food, and dietary care
@@ -706,34 +812,59 @@
   - Toxic exposure screening
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_573QL}
+  external_ids:
+    va: vha_573QL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-va-domiciliary
   name: Gainesville VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: 1604 Southeast 3rd Avenue, city: Gainesville, state: fl, zip: '32641'}
+  address:
+    street: 1604 Southeast 3rd Avenue
+    city: Gainesville
+    state: fl
+    zip: '32641'
   place: '1225175'
-  geo: {lat: 29.64918, lng: -82.30395}
+  geo:
+    lat: 29.64918
+    lng: -82.30395
   phone: 352-548-1800
   website: https://www.va.gov/north-florida-health-care/locations/gainesville-va-domiciliary/
-  external_ids: {va: vha_573BU}
+  external_ids:
+    va: vha_573BU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/gainesville-vet-center
   name: Gainesville Vet Center
   categories:
   - vet-center
-  address: {street: '105 NW 75th Street, Suite 2', city: Gainesville, state: fl, zip: '32607'}
+  address:
+    street: 105 NW 75th Street, Suite 2
+    city: Gainesville
+    state: fl
+    zip: '32607'
   place: '1225175'
-  geo: {lat: 29.65389, lng: -82.42236}
+  geo:
+    lat: 29.65389
+    lng: -82.42236
   phone: 352-331-1408
   website: https://www.va.gov/gainesville-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -746,10 +877,13 @@
   - Veteran connections
   - Veteran readiness and employment programs
   - Whole health
-  external_ids: {va: vc_0331V}
+  external_ids:
+    va: vc_0331V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/girls-place
   name: Girls Place
   categories:
@@ -1165,9 +1299,15 @@
   name: Malcom Randall Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1601 Southwest Archer Road, city: Gainesville, state: fl, zip: '32608'}
+  address:
+    street: 1601 Southwest Archer Road
+    city: Gainesville
+    state: fl
+    zip: '32608'
   place: '1225175'
-  geo: {lat: 29.63852, lng: -82.34491}
+  geo:
+    lat: 29.63852
+    lng: -82.34491
   phone: 352-376-1611
   website: https://www.va.gov/north-florida-health-care/locations/malcom-randall-department-of-veterans-affairs-medical-center/
   services:
@@ -1208,10 +1348,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_573}
+  external_ids:
+    va: vha_573
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/marjorie-k-rawlings-elementary-school
   name: Marjorie K. Rawlings Elementary School
   categories:
@@ -1824,52 +1967,78 @@
   categories: &id002
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '105 NW 75th Street, Suite 2', city: Gainesville, state: fl, zip: '32607'}
+  address:
+    street: 105 NW 75th Street, Suite 2
+    city: Gainesville
+    state: fl
+    zip: '32607'
   place: '1225175'
-  geo: {lat: 29.65385, lng: -82.42198}
+  geo:
+    lat: 29.65385
+    lng: -82.42198
   phone: 800-827-1000
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317f}
+  external_ids:
+    va: vba_317f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/vetsuccess-on-campus-at-santa-fe-college
   name: VetSuccess on Campus at Santa Fe College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '3000 NW 83rd St, Veterans and Military Success Services, Bldg R, Room 110', city: Gainesville,
-    state: fl, zip: '32606'}
+  address:
+    street: 3000 NW 83rd St, Veterans and Military Success Services, Bldg R, Room 110
+    city: Gainesville
+    state: fl
+    zip: '32606'
   place: '1225175'
-  geo: {lat: 29.67838, lng: -82.43254}
+  geo:
+    lat: 29.67838
+    lng: -82.43254
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317u}
+  external_ids:
+    va: vba_317u
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/vetsuccess-on-campus-at-university-of-florida
   name: VetSuccess on Campus at University of Florida
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '202 Peabody Hall, PO Box 114075', city: Gainesville, state: fl, zip: '32611'}
+  address:
+    street: 202 Peabody Hall, PO Box 114075
+    city: Gainesville
+    state: fl
+    zip: '32611'
   place: '1225175'
-  geo: {lat: 29.65012, lng: -82.34205}
+  geo:
+    lat: 29.65012
+    lng: -82.34205
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317t}
+  external_ids:
+    va: vba_317t
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/gainesville/westside-recreation-center
   name: Westside Recreation Center
   categories:

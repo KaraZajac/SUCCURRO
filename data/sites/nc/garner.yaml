@@ -57,13 +57,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2700 Benson Road, city: Garner, state: nc, zip: '27529'}
+  address:
+    street: 2700 Benson Road
+    city: Garner
+    state: nc
+    zip: '27529'
   place: '3725480'
-  geo: {lat: 35.65504, lng: -78.6138}
+  geo:
+    lat: 35.65504
+    lng: -78.6138
   phone: 984-202-7700
   website: https://www.va.gov/durham-health-care/locations/garner-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology
   - Cardiology
@@ -74,10 +87,13 @@
   - Ophthalmology
   - Optometry
   - PrimaryCare
-  external_ids: {va: vha_558BY}
+  external_ids:
+    va: vha_558BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/garner/little-makers-academy
   name: Little Makers Academy
   categories:

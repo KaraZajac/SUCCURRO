@@ -171,6 +171,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/ocala/central-florida-community-action-agency-inc
+  name: Central Florida Community Action Agency Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marion County
+  address: {street: 2703 NE 14th Street, city: Ocala, state: fl, zip: '34470'}
+  place: '1250750'
+  phone: 352-732-3008
+  email: info@cfcaa.org
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/ocala/college-park-elementary-community-clinic
   name: College Park Elementary Community Clinic
   categories:
@@ -1094,13 +1107,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4826 Southwest 49th Road, city: Ocala, state: fl, zip: '34474'}
+  address:
+    street: 4826 Southwest 49th Road
+    city: Ocala
+    state: fl
+    zip: '34474'
   place: '1250750'
-  geo: {lat: 29.1356, lng: -82.19801}
+  geo:
+    lat: 29.1356
+    lng: -82.19801
   phone: 352-369-3320
   website: https://www.va.gov/north-florida-health-care/locations/ocala-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -1119,21 +1145,37 @@
   - Telehealth
   - Toxic exposure screening
   - Whole health
-  external_ids: {va: vha_573GD}
+  external_ids:
+    va: vha_573GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/ocala/ocala-vet-center
   name: Ocala Vet Center
   categories:
   - vet-center
-  address: {street: '3300 Southwest 34th Avenue, Suite 140', city: Ocala, state: fl, zip: '34474'}
+  address:
+    street: 3300 Southwest 34th Avenue, Suite 140
+    city: Ocala
+    state: fl
+    zip: '34474'
   place: '1250750'
-  geo: {lat: 29.15253, lng: -82.17806}
+  geo:
+    lat: 29.15253
+    lng: -82.17806
   phone: 352-237-1947
   website: https://www.va.gov/ocala-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1145,25 +1187,44 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0344V}
+  external_ids:
+    va: vc_0344V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/ocala/ocala-west-va-clinic
   name: Ocala West VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3307 Southwest 26th Avenue, city: Ocala, state: fl, zip: '34471'}
+  address:
+    street: 3307 Southwest 26th Avenue
+    city: Ocala
+    state: fl
+    zip: '34471'
   place: '1250750'
-  geo: {lat: 29.15418, lng: -82.16741}
+  geo:
+    lat: 29.15418
+    lng: -82.16741
   phone: 352-861-3940
   website: https://www.va.gov/north-florida-health-care/locations/ocala-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
-  external_ids: {va: vha_573QH}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
+  external_ids:
+    va: vha_573QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/ocala/osceola-middle-school
   name: Osceola Middle School
   categories:

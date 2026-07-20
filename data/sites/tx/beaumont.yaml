@@ -45,13 +45,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3420 Veterans Circle, city: Beaumont, state: tx, zip: '77707'}
+  address:
+    street: 3420 Veterans Circle
+    city: Beaumont
+    state: tx
+    zip: '77707'
   place: '4807000'
-  geo: {lat: 30.07769, lng: -94.13906}
+  geo:
+    lat: 30.07769
+    lng: -94.13906
   phone: 409-981-8550
   website: https://www.va.gov/houston-health-care/locations/beaumont-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -76,10 +89,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580BY}
+  external_ids:
+    va: vha_580BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/beaumont/beaumont-va-outpatient-clinic
   name: Beaumont VA Outpatient Clinic
   categories:
@@ -105,13 +121,26 @@
   name: Beaumont Vet Center
   categories:
   - vet-center
-  address: {street: 1390 West Cardinal Drive, city: Beaumont, state: tx, zip: '77705'}
+  address:
+    street: 1390 West Cardinal Drive
+    city: Beaumont
+    state: tx
+    zip: '77705'
   place: '4807000'
-  geo: {lat: 30.03328, lng: -94.09429}
+  geo:
+    lat: 30.03328
+    lng: -94.09429
   phone: 409-347-0124
   website: https://www.va.gov/beaumont-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -122,10 +151,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0735V}
+  external_ids:
+    va: vc_0735V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/beaumont/bingman-pk
   name: Bingman Pk
   categories:
@@ -317,6 +349,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/beaumont/greater-east-texas-community-action-program
+  name: Greater East Texas Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chambers, Jefferson, Orange Counties
+  address: {street: 1110 Calder Ave, city: Beaumont, state: tx, zip: '77701'}
+  place: '4807000'
+  phone: 409-247-6270
+  website: https://get-cap.org/location-by-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: tx/beaumont/greater-east-texas-community-program
+  name: Greater East Texas Community Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Liberty County
+  address: {street: 1110 Calder Ave, city: Beaumont, state: tx, zip: '77701'}
+  place: '4807000'
+  phone: 409-247-6270
+  website: https://get-cap.org/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/beaumont/guess-el
   name: Guess El
   categories:
@@ -551,6 +607,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/beaumont/programs-for-human-services-inc
+  name: Programs for Human Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hardin County
+  address: {street: 1110 Calder Ave, city: Beaumont, state: tx, zip: '77701'}
+  place: '4807000'
+  phone: 409-247-6270
+  website: https://get-cap.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/beaumont/recovery-council-southeast-texas
   name: Recovery Council Southeast Texas
   categories:

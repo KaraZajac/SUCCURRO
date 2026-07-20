@@ -4,12 +4,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 125 Quarles Lane, city: West Helena, state: ar, zip: '72390'}
-  geo: {lat: 34.55491, lng: -90.65249}
+  address:
+    street: 125 Quarles Lane
+    city: West Helena
+    state: ar
+    zip: '72390'
+  geo:
+    lat: 34.55491
+    lng: -90.65249
   phone: 870-228-3644
   website: https://www.va.gov/memphis-health-care/locations/helena-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Diabetes care
   - Laboratory and pathology
@@ -17,10 +30,13 @@
   - Nutrition, food, and dietary care
   - Primary care
   - Urgent care
-  external_ids: {va: vha_614GN}
+  external_ids:
+    va: vha_614GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/west-helena/housing-authority-of-the-city-of-west-helena
   name: Housing Authority Of The City Of West Helena
   categories:

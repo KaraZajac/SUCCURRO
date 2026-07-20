@@ -62,15 +62,24 @@
   name: Casper Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1030 North Poplar Street, Suite B', city: Casper, state: wy, zip: '82601'}
+  address:
+    street: 1030 North Poplar Street, Suite B
+    city: Casper
+    state: wy
+    zip: '82601'
   place: '5613150'
-  geo: {lat: 42.86153, lng: -106.33267}
+  geo:
+    lat: 42.86153
+    lng: -106.33267
   phone: 307-261-5355
   website: https://www.va.gov/casper-vet-center/locations/#casper-mobile-vet-center
-  external_ids: {va: vc_0834MVC}
+  external_ids:
+    va: vc_0834MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/casper/casper-recreation-center
   name: Casper Recreation Center
   categories:
@@ -99,34 +108,65 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '6000 East 2nd Street, Parkridge Professional Center', city: Casper, state: wy, zip: '82609'}
+  address:
+    street: 6000 East 2nd Street, Parkridge Professional Center
+    city: Casper
+    state: wy
+    zip: '82609'
   place: '5613150'
-  geo: {lat: 42.84315, lng: -106.23589}
+  geo:
+    lat: 42.84315
+    lng: -106.23589
   phone: 866-338-5168
   website: https://www.va.gov/sheridan-health-care/locations/casper-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
   - Mental health care
   - Primary care
   - Social work
-  external_ids: {va: vha_666GB}
+  external_ids:
+    va: vha_666GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/casper/casper-vet-center
   name: Casper Vet Center
   categories: *id001
-  address: {street: '1030 North Poplar Street, Suite B', city: Casper, state: wy, zip: '82601'}
+  address:
+    street: 1030 North Poplar Street, Suite B
+    city: Casper
+    state: wy
+    zip: '82601'
   place: '5613150'
-  geo: {lat: 42.86153, lng: -106.33267}
+  geo:
+    lat: 42.86153
+    lng: -106.33267
   phone: 307-261-5355
   website: https://www.va.gov/casper-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:30', close: '16:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:30
+    close: '16:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -138,10 +178,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0519V}
+  external_ids:
+    va: vc_0519V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/casper/central-wyoming-counseling-center
   name: Central Wyoming Counseling Center
   categories:
@@ -291,6 +334,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/casper/natrona-county-department-of-family-services
+  name: Natrona County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Natrona County
+  address: {street: '444 W. Collins Drive, Suite 2100', city: Casper, state: wy, zip: '82601'}
+  place: '5613150'
+  phone: 307-473-3900
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/casper/university-of-wyoming-family-medicine-residency
   name: University of Wyoming Family Medicine Residency Casper
   categories:

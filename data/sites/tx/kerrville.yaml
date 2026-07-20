@@ -1,3 +1,15 @@
+- id: tx/kerrville/community-council-of-south-central-texas-inc-ker
+  name: Community Council of South Central Texas, Inc. - Kerr County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kerr County
+  address: {street: '1216 Sidney Baker South, Suite C,', city: Kerrville, state: tx, zip: '78028'}
+  place: '4839040'
+  phone: 830-896-2124
+  website: https://www.ccsct.org/utility-assistance-apply-for-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/kerrville/daniels-el
   name: Daniels El
   categories:
@@ -64,13 +76,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 3600 Memorial Boulevard, city: Kerrville, state: tx, zip: '78028'}
+  address:
+    street: 3600 Memorial Boulevard
+    city: Kerrville
+    state: tx
+    zip: '78028'
   place: '4839040'
-  geo: {lat: 30.01378, lng: -99.11665}
+  geo:
+    lat: 30.01378
+    lng: -99.11665
   phone: 830-896-2020
   website: https://www.va.gov/south-texas-health-care/locations/kerrville-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -100,7 +125,10 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_671A4}
+  external_ids:
+    va: vha_671A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

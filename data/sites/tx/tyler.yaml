@@ -505,6 +505,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/tyler/greater-east-texas-community-action-program-getc
+  name: Greater East Texas Community Action Program (GETCAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Smith County
+  address: {street: 1010 W. SW. Loop, city: Tyler, state: tx, zip: '75701'}
+  place: '4874144'
+  phone: 936-720-7474
+  website: https://getcap.itfrontdesk.com/apptonline/landing.html?client_code=GETEXCAP
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/tyler/griffin-el
   name: Griffin El
   categories:
@@ -893,13 +905,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 428 Centennial Parkway, city: Tyler, state: tx, zip: '75703'}
+  address:
+    street: 428 Centennial Parkway
+    city: Tyler
+    state: tx
+    zip: '75703'
   place: '4874144'
-  geo: {lat: 32.24498, lng: -95.28554}
+  geo:
+    lat: 32.24498
+    lng: -95.28554
   phone: 903-266-5900
   website: https://www.va.gov/north-texas-health-care/locations/tyler-centennial-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '06:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 06:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -914,10 +939,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_549GN}
+  external_ids:
+    va: vha_549GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/tyler/tyler-day-nursery
   name: Tyler Day Nursery
   categories:
@@ -1135,9 +1163,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '5620 Old Bullard Road, Suite 128', city: Tyler, state: tx, zip: '75703'}
+  address:
+    street: 5620 Old Bullard Road, Suite 128
+    city: Tyler
+    state: tx
+    zip: '75703'
   place: '4874144'
-  geo: {lat: 32.28847, lng: -95.30616}
+  geo:
+    lat: 32.28847
+    lng: -95.30616
   phone: 903-565-0441
   services:
   - ApplyingForBenefits
@@ -1149,10 +1183,13 @@
   - IntegratedDisabilityEvaluationSystemAssistance
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_349s}
+  external_ids:
+    va: vba_349s
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/tyler/w-gentry-clinic
   name: W. Gentry Clinic
   categories:

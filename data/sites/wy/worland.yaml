@@ -38,6 +38,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/worland/washakie-county-department-of-family-services
+  name: Washakie County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washakie County
+  address: {street: 1700 Robertson, city: Worland, state: wy, zip: '82401'}
+  place: '5684925'
+  phone: 307-347-6181
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/worland/worland-high-school
   name: Worland High School
   categories:
@@ -66,22 +78,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 510 South 15th Street, city: Worland, state: wy, zip: '82401'}
+  address:
+    street: 510 South 15th Street
+    city: Worland
+    state: wy
+    zip: '82401'
   place: '5684925'
-  geo: {lat: 44.0125, lng: -107.94844}
+  geo:
+    lat: 44.0125
+    lng: -107.94844
   phone: 877-483-0370
   website: https://www.va.gov/sheridan-health-care/locations/worland-va-clinic/
   hours:
-  - {days: [mon, tue, wed], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '08:00', close: '14:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 08:00
+    close: '14:30'
   services:
   - Cardiology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_666QC}
+  external_ids:
+    va: vha_666QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/worland/worland-youth-learning-center
   name: Worland Youth Learning Center
   categories:

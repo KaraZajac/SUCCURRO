@@ -148,6 +148,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/vancouver/clark-public-utilities
+  name: Clark Public Utilities
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 1200 Fort Vancouver Way, city: Vancouver, state: wa, zip: '98663'}
+  place: '5374060'
+  phone: 360-992-3000
+  website: http://www.clarkpublicutilities.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/vancouver/columbia-heights-apartments
   name: Columbia Heights Apartments
   categories:
@@ -1430,13 +1442,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1601 East 4th Plain Boulevard, city: Vancouver, state: wa, zip: '98661'}
+  address:
+    street: 1601 East 4th Plain Boulevard
+    city: Vancouver
+    state: wa
+    zip: '98661'
   place: '5374060'
-  geo: {lat: 45.63938, lng: -122.65539}
+  geo:
+    lat: 45.63938
+    lng: -122.65539
   phone: 360-759-1901
   website: https://www.va.gov/portland-health-care/locations/vancouver-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1467,10 +1492,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_648A4}
+  external_ids:
+    va: vha_648A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/vancouver/washington-elementary
   name: Washington Elementary
   categories:

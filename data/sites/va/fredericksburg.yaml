@@ -264,34 +264,63 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 10401 Spotsylvania Avenue, city: Fredericksburg, state: va, zip: '22408'}
+  address:
+    street: 10401 Spotsylvania Avenue
+    city: Fredericksburg
+    state: va
+    zip: '22408'
   place: '5129744'
-  geo: {lat: 38.2433, lng: -77.49641}
+  geo:
+    lat: 38.2433
+    lng: -77.49641
   phone: 540-693-3140
   website: https://www.va.gov/find-locations/facility/vha_652GB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_652GB}
+  external_ids:
+    va: vha_652GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/fredericksburg/fredericksburg-3-va-clinic
   name: Fredericksburg 3 VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 10432 Patriot Highway, city: Fredericksburg, state: va, zip: '22408'}
+  address:
+    street: 10432 Patriot Highway
+    city: Fredericksburg
+    state: va
+    zip: '22408'
   place: '5129744'
-  geo: {lat: 38.24696, lng: -77.49904}
+  geo:
+    lat: 38.24696
+    lng: -77.49904
   phone: 540-707-7074
   website: https://www.va.gov/find-locations/facility/vha_652BY
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - Cardiology
@@ -302,10 +331,25 @@
   - PrimaryCare
   - Urology
   - WomensHealth
-  external_ids: {va: vha_652BY}
+  external_ids:
+    va: vha_652BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: va/fredericksburg/fredericksburg-department-of-social-services
+  name: Fredericksburg Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fredericksburg City, Spotsylvania Counties
+  address: {street: '608 Jackson Street,, Suite 100', city: Fredericksburg, state: va, zip: '22401'}
+  place: '5129744'
+  phone: 540-372-1032
+  website: https://www.fredericksburgva.gov/491/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/fredericksburg/fredericksburg-field-house
   name: Fredericksburg Field House
   categories:
@@ -633,23 +677,39 @@
   name: Massaponax VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 4830 Southpoint Drive, city: Fredericksburg, state: va, zip: '22407'}
+  address:
+    street: 4830 Southpoint Drive
+    city: Fredericksburg
+    state: va
+    zip: '22407'
   place: '5129744'
-  geo: {lat: 38.23023, lng: -77.50268}
+  geo:
+    lat: 38.23023
+    lng: -77.50268
   phone: 540-370-4468
   website: https://www.va.gov/find-locations/facility/vha_652GI
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Podiatry
   - Primary care
-  external_ids: {va: vha_652GI}
+  external_ids:
+    va: vha_652GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/fredericksburg/parkside-elem
   name: Parkside Elem
   categories:

@@ -25,13 +25,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1701 Market Place, city: Pocomoke City, state: md, zip: '21851'}
+  address:
+    street: 1701 Market Place
+    city: Pocomoke City
+    state: md
+    zip: '21851'
   place: '2462475'
-  geo: {lat: 38.06169, lng: -75.54891}
+  geo:
+    lat: 38.06169
+    lng: -75.54891
   phone: 410-957-6718
   website: https://www.va.gov/maryland-health-care/locations/pocomoke-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -40,10 +53,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_512GE}
+  external_ids:
+    va: vha_512GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/pocomoke-city/pocomoke-elementary-school
   name: Pocomoke Elementary School
   categories:

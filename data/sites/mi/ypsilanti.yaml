@@ -430,19 +430,40 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 203 Pierce Hall Road, city: Ypsilanti, state: mi, zip: '48197'}
+  address:
+    street: 203 Pierce Hall Road
+    city: Ypsilanti
+    state: mi
+    zip: '48197'
   place: '2689140'
-  geo: {lat: 42.24678, lng: -83.62275}
+  geo:
+    lat: 42.24678
+    lng: -83.62275
   phone: 313-690-9632
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329k}
+  external_ids:
+    va: vba_329k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mi/ypsilanti/washtenaw-county-office-of-community-and-economi
+  name: Washtenaw County Office of Community and Economic Development
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washtenaw County
+  address: {street: '415 W. Michigan Ave., 2nd Floor', city: Ypsilanti, state: mi, zip: '48197'}
+  place: '2689140'
+  phone: 734-544-6748
+  website: https://www.washtenaw.org/569/Community-Economic-Development
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/ypsilanti/washtenaw-international-high-school-810000682
   name: Washtenaw International High School - 810000682
   categories:

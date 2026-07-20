@@ -109,12 +109,25 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5900 North Lotz Road, city: Canton, state: mi, zip: '48187'}
-  geo: {lat: 42.32641, lng: -83.43387}
+  address:
+    street: 5900 North Lotz Road
+    city: Canton
+    state: mi
+    zip: '48187'
+  geo:
+    lat: 42.32641
+    lng: -83.43387
   phone: 734-394-4500
   website: https://www.va.gov/ann-arbor-health-care/locations/major-general-oliver-w-dillard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:00'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -130,10 +143,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_506GD}
+  external_ids:
+    va: vha_506GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/canton/miller-elementary-school-821006274
   name: Miller Elementary School - 821006274
   categories:

@@ -79,6 +79,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/bristol/bristol-city-department-of-social-services
+  name: Bristol City Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bristol, Washington Counties
+  address: {street: 335 Bristol East Road, city: Bristol, state: va, zip: '24202'}
+  place: '5109816'
+  phone: 276-645-7450
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/bristol/bristol-community-health-center
   name: Bristol Community Health Center
   categories:
@@ -165,13 +176,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '3130 Lee Highway, Preston Square', city: Bristol, state: va, zip: '24202'}
+  address:
+    street: 3130 Lee Highway, Preston Square
+    city: Bristol
+    state: va
+    zip: '24202'
   place: '5109816'
-  geo: {lat: 36.63352, lng: -82.12639}
+  geo:
+    lat: 36.63352
+    lng: -82.12639
   phone: 276-645-4520
   website: https://www.va.gov/mountain-home-health-care/locations/bristol-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -182,10 +206,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_621GJ}
+  external_ids:
+    va: vha_621GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/bristol/care-clinic
   name: Care Clinic
   categories:
@@ -535,3 +562,15 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: va/bristol/washington-county-department-of-social-services
+  name: Washington County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: '15068 Lee Highway, Suite 100', city: Bristol, state: va, zip: '24202'}
+  place: '5109816'
+  phone: 276-645-5000
+  website: https://www.washcova.com/board-of-social-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

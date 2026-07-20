@@ -833,6 +833,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/lubbock/lubbock-city-of-community-development-department
+  name: Lubbock, City of, Community Development Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lubbock County
+  address: {street: '1708 Crickets Ave., (P. O. Box 2000)', city: Lubbock, state: tx, zip: '79457'}
+  place: '4845000'
+  phone: 806-775-2296
+  email: cdinfo@mylubbock.us
+  website: https://ci.lubbock.tx.us/departments/community-development
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/lubbock/lubbock-h-s
   name: Lubbock H S
   categories:
@@ -881,13 +894,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3510 4th Street, city: Lubbock, state: tx, zip: '79415'}
+  address:
+    street: 3510 4th Street
+    city: Lubbock
+    state: tx
+    zip: '79415'
   place: '4845000'
-  geo: {lat: 33.59241, lng: -101.89061}
+  geo:
+    lat: 33.59241
+    lng: -101.89061
   phone: 806-472-3400
   website: https://www.va.gov/amarillo-health-care/locations/lubbock-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -918,24 +944,46 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_504BY}
+  external_ids:
+    va: vha_504BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/lubbock/lubbock-vet-center
   name: Lubbock Vet Center
   categories:
   - vet-center
-  address: {street: '5107 82nd Street, Suite 100', city: Lubbock, state: tx, zip: '79424'}
+  address:
+    street: 5107 82nd Street, Suite 100
+    city: Lubbock
+    state: tx
+    zip: '79424'
   place: '4845000'
-  geo: {lat: 33.51967, lng: -101.9182}
+  geo:
+    lat: 33.51967
+    lng: -101.9182
   phone: 806-792-9782
   website: https://www.va.gov/lubbock-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '18:00'}
-  - {days: [tue, thu], open: '08:00', close: '19:00'}
-  - {days: [wed], open: '08:00', close: '18:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '18:00'
+  - days:
+    - tue
+    - thu
+    open: 08:00
+    close: '19:00'
+  - days:
+    - wed
+    open: 08:00
+    close: '18:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -946,10 +994,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0714V}
+  external_ids:
+    va: vc_0714V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/lubbock/mackenzie-m-s
   name: Mackenzie M S
   categories:
@@ -1477,9 +1528,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '3510 4th Street, Rooms 110 and 112', city: Lubbock, state: tx, zip: '79415'}
+  address:
+    street: 3510 4th Street, Rooms 110 and 112
+    city: Lubbock
+    state: tx
+    zip: '79415'
   place: '4845000'
-  geo: {lat: 33.59241, lng: -101.89061}
+  geo:
+    lat: 33.59241
+    lng: -101.89061
   phone: 806-765-2580
   services:
   - ApplyingForBenefits
@@ -1489,10 +1546,13 @@
   - FamilyMemberClaimAssistance
   - HomelessAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_349x}
+  external_ids:
+    va: vba_349x
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/lubbock/waters-elementary
   name: Waters Elementary
   categories:

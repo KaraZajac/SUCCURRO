@@ -154,13 +154,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1625 East 30th Street, city: Hutchinson, state: ks, zip: '67502'}
+  address:
+    street: 1625 East 30th Street
+    city: Hutchinson
+    state: ks
+    zip: '67502'
   place: '2033625'
-  geo: {lat: 38.08651, lng: -97.89497}
+  geo:
+    lat: 38.08651
+    lng: -97.89497
   phone: 888-878-6881
   website: https://www.va.gov/wichita-health-care/locations/hutchinson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -168,10 +181,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_589G7}
+  external_ids:
+    va: vha_589G7
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/hutchinson/lincoln-head-start
   name: Lincoln Head Start
   categories:
@@ -274,6 +290,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/hutchinson/reno-county-dcf
+  name: Reno County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Reno County
+  address: {street: '1700 E. 11th Ave.,', city: Hutchinson, state: ks, zip: '67501'}
+  place: '2033625'
+  phone: 620-663-5731
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/hutchinson/sjh
   name: SJH
   categories:

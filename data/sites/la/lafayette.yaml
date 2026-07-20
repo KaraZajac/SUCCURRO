@@ -366,22 +366,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '309 Saint Julien Avenue, The Specialist Center', city: Lafayette, state: la, zip: '70506'}
+  address:
+    street: 309 Saint Julien Avenue, The Specialist Center
+    city: Lafayette
+    state: la
+    zip: '70506'
   place: '2240735'
-  geo: {lat: 30.21365, lng: -92.02858}
+  geo:
+    lat: 30.21365
+    lng: -92.02858
   phone: 337-706-1940
   website: https://www.va.gov/alexandria-health-care/locations/lafayette-campus-b-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Mental health care
   - Military sexual trauma care
   - PTSD care
-  external_ids: {va: vha_502QB}
+  external_ids:
+    va: vha_502QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/lafayette/lafayette-public-library
   name: Lafayette Public Library
   categories:
@@ -408,13 +424,26 @@
   name: Lafayette VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 3149 Ambassador Caffery Parkway, city: Lafayette, state: la, zip: '70506'}
+  address:
+    street: 3149 Ambassador Caffery Parkway
+    city: Lafayette
+    state: la
+    zip: '70506'
   place: '2240735'
-  geo: {lat: 30.18733, lng: -92.07497}
+  geo:
+    lat: 30.18733
+    lng: -92.07497
   phone: 337-706-3415
   website: https://www.va.gov/alexandria-health-care/locations/lafayette-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dental/oral surgery
@@ -428,10 +457,13 @@
   - Radiology
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_502GB}
+  external_ids:
+    va: vha_502GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/lafayette/lake-detox
   name: Lake Detox
   categories:
@@ -649,6 +681,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/lafayette/smile-community-action-agency
+  name: SMILE Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Acadia, Iberia, Jefferson Davis, Lafayette, Saint Martin Counties
+  address: {street: 501 St. John St. (P. O. Box 3343), city: Lafayette, state: la, zip: '70502'}
+  place: '2240735'
+  phone: 337-324-3272
+  email: info@smilecaa.com
+  website: https://smilecaa.org/programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/lafayette/st-anthony-catholic-church-summer-feeding
   name: St. Anthony Catholic Church Summer Feeding
   categories:

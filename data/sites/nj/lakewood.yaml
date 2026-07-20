@@ -745,13 +745,26 @@
   name: Lakewood Vet Center
   categories:
   - vet-center
-  address: {street: '1255 Route 70W, Unit 22N', city: Lakewood, state: nj, zip: 08701}
+  address:
+    street: 1255 Route 70W, Unit 22N
+    city: Lakewood
+    state: nj
+    zip: 08701
   place: '3438580'
-  geo: {lat: 40.05318, lng: -74.17806}
+  geo:
+    lat: 40.05318
+    lng: -74.17806
   phone: 732-905-0327
   website: https://www.va.gov/lakewood-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -765,10 +778,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0141V}
+  external_ids:
+    va: vc_0141V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/lakewood/lechu
   name: Lechu
   categories:

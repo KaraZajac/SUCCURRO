@@ -108,13 +108,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '640 Marlboro Street, Curran Building', city: Keene, state: nh, zip: '03431'}
+  address:
+    street: 640 Marlboro Street, Curran Building
+    city: Keene
+    state: nh
+    zip: '03431'
   place: '3339300'
-  geo: {lat: 42.91533, lng: -72.24984}
+  geo:
+    lat: 42.91533
+    lng: -72.24984
   phone: 603-358-4900
   website: https://www.va.gov/white-river-junction-health-care/locations/keene-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -127,29 +140,56 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_405HE}
+  external_ids:
+    va: vha_405HE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/keene/keene-vet-center-outstation
   name: Keene Vet Center Outstation
   categories:
   - vet-center
-  address: {street: 640 Marlboro Road, city: Keene, state: nh, zip: '03431'}
+  address:
+    street: 640 Marlboro Road
+    city: Keene
+    state: nh
+    zip: '03431'
   place: '3339300'
-  geo: {lat: 42.91535, lng: -72.24985}
+  geo:
+    lat: 42.91535
+    lng: -72.24985
   phone: 603-358-4950
   website: https://www.va.gov/white-river-junction-vet-center/locations/#keene-vet-center-outstation
   hours:
-  - {days: [mon], open: '08:30', close: '18:15'}
-  - {days: [tue], open: '08:30', close: '15:15'}
-  - {days: [wed], open: '08:30', close: '18:00'}
-  - {days: [thu], open: '08:00', close: '18:00'}
-  - {days: [fri], open: '07:00', close: '16:30'}
-  external_ids: {va: vc_1221OS}
+  - days:
+    - mon
+    open: 08:30
+    close: '18:15'
+  - days:
+    - tue
+    open: 08:30
+    close: '15:15'
+  - days:
+    - wed
+    open: 08:30
+    close: '18:00'
+  - days:
+    - thu
+    open: 08:00
+    close: '18:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
+  external_ids:
+    va: vc_1221OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/keene/maps-counseling-services
   name: MAPS Counseling Services
   categories:
@@ -186,3 +226,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/keene/southwestern-community-services
+  name: Southwestern Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cheshire County
+  address: {street: 63 Community Way (P. O. Box 603), city: Keene, state: nh, zip: '03431'}
+  place: '3339300'
+  phone: 603-352-7512
+  website: https://www.scshelps.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

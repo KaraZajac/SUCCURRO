@@ -362,13 +362,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2300 Marie Curie Boulevard, city: Garland, state: tx, zip: '75042'}
+  address:
+    street: 2300 Marie Curie Boulevard
+    city: Garland
+    state: tx
+    zip: '75042'
   place: '4829000'
-  geo: {lat: 32.91861, lng: -96.662}
+  geo:
+    lat: 32.91861
+    lng: -96.662
   phone: 469-797-2100
   website: https://www.va.gov/north-texas-health-care/locations/garland-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -380,10 +393,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_549A5}
+  external_ids:
+    va: vha_549A5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/garland/granger-recreation-center
   name: Granger Recreation Center
   categories:

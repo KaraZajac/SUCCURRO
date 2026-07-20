@@ -18,6 +18,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/sandusky/community-action-commission-of-erie-huron-richla
+  name: Community Action Commission of Erie, Huron, & Richland Counties
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Huron County
+  address: {street: 908 Seavers Way, city: Sandusky, state: oh, zip: '44870'}
+  place: '3970380'
+  phone: 419-901-9539
+  website: https://www.cacehr.org/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: oh/sandusky/community-action-commition-of-erie-huron-richlan
+  name: Community Action Commition of Erie, Huron, & Richland
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Erie, Richland Counties
+  address: {street: 908 Seavers Way, city: Sandusky, state: oh, zip: '44870'}
+  place: '3970380'
+  phone: 419-626-4320
+  website: https://www.cacehr.org/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/sandusky/ecchc-ovh
   name: ECCHC @ OVH
   categories:
@@ -545,13 +569,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1912 Hayes Avenue, city: Sandusky, state: oh, zip: '44870'}
+  address:
+    street: 1912 Hayes Avenue
+    city: Sandusky
+    state: oh
+    zip: '44870'
   place: '3970380'
-  geo: {lat: 41.43745, lng: -82.71286}
+  geo:
+    lat: 41.43745
+    lng: -82.71286
   phone: 419-609-1460
   website: https://www.va.gov/northeast-ohio-health-care/locations/sandusky-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -566,7 +603,10 @@
   - Suicide prevention
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_541GC}
+  external_ids:
+    va: vha_541GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

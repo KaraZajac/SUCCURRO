@@ -541,6 +541,32 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/fort-wayne/brightpoint
+  name: Brightpoint
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Adams, Allen, Huntington, Noble, Steuben, Wells, Whitley Counties
+  address: {street: 227 E. Washington Blvd., city: Fort Wayne, state: in, zip: 46853-0570}
+  place: '1825000'
+  phone: 260-423-3546
+  email: gethelp@mybrightpoint.org.
+  website: https://www.mybrightpoint.org/index.php/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: in/fort-wayne/brightpoint-2
+  name: Brightpoint
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving De Kalb County
+  address: {street: 227 E. Washington Blvd. (P. O. Box 10570), city: Ft. Wayne, state: in, zip: '46853'}
+  place: '1825000'
+  phone: 800-589-3506
+  email: gethelp@mybrightpoint.org
+  website: https://www.mybrightpoint.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/fort-wayne/clarvida-dockside-services
   name: Clarvida Dockside Services
   categories:
@@ -776,30 +802,52 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2500 East State Boulevard, city: Fort Wayne, state: in, zip: '46805'}
+  address:
+    street: 2500 East State Boulevard
+    city: Fort Wayne
+    state: in
+    zip: '46805'
   place: '1825000'
-  geo: {lat: 41.09575, lng: -85.10631}
+  geo:
+    lat: 41.09575
+    lng: -85.10631
   phone: 260-426-5431
   website: https://www.va.gov/northern-indiana-health-care/locations/fort-wayne-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:30'
   services:
   - Addiction and substance use care
   - Mental health care
   - PTSD care
   - Smoking and tobacco cessation
   - Veteran readiness and employment programs
-  external_ids: {va: vha_610QA}
+  external_ids:
+    va: vha_610QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/fort-wayne/fort-wayne-va-medical-center
   name: Fort Wayne VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2121 Lake Avenue, city: Fort Wayne, state: in, zip: '46805'}
+  address:
+    street: 2121 Lake Avenue
+    city: Fort Wayne
+    state: in
+    zip: '46805'
   place: '1825000'
-  geo: {lat: 41.09111, lng: -85.10813}
+  geo:
+    lat: 41.09111
+    lng: -85.10813
   phone: 260-426-5431
   website: https://www.va.gov/northern-indiana-health-care/locations/fort-wayne-va-medical-center/
   services:
@@ -837,21 +885,37 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_610A4}
+  external_ids:
+    va: vha_610A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/fort-wayne/fort-wayne-vet-center
   name: Fort Wayne Vet Center
   categories:
   - vet-center
-  address: {street: 3810 Coldwater Road, city: Fort Wayne, state: in, zip: '46805'}
+  address:
+    street: 3810 Coldwater Road
+    city: Fort Wayne
+    state: in
+    zip: '46805'
   place: '1825000'
-  geo: {lat: 41.11209, lng: -85.13506}
+  geo:
+    lat: 41.11209
+    lng: -85.13506
   phone: 260-460-1456
   website: https://www.va.gov/fort-wayne-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -863,10 +927,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0409V}
+  external_ids:
+    va: vc_0409V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/fort-wayne/georgetown-acpl
   name: Georgetown Acpl
   categories:
@@ -2043,9 +2110,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 2121 Lake Avenue, city: Fort Wayne, state: in, zip: '46805'}
+  address:
+    street: 2121 Lake Avenue
+    city: Fort Wayne
+    state: in
+    zip: '46805'
   place: '1825000'
-  geo: {lat: 41.09111, lng: -85.10813}
+  geo:
+    lat: 41.09111
+    lng: -85.10813
   phone: 260-460-1327
   services:
   - ApplyingForBenefits
@@ -2056,10 +2129,13 @@
   - PreDischargeClaimAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_326h}
+  external_ids:
+    va: vba_326h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/fort-wayne/washington-center-elementary
   name: Washington Center Elementary
   categories:

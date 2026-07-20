@@ -449,13 +449,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3106 West 2nd Court, city: Russellville, state: ar, zip: '72801'}
+  address:
+    street: 3106 West 2nd Court
+    city: Russellville
+    state: ar
+    zip: '72801'
   place: '0561670'
-  geo: {lat: 35.28478, lng: -93.16591}
+  geo:
+    lat: 35.28478
+    lng: -93.16591
   phone: 479-880-5100
   website: https://www.va.gov/central-arkansas-health-care/locations/russellville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -467,10 +480,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GH}
+  external_ids:
+    va: vha_598GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/russellville/saint-marys-regional-medical-center-turning-poin
   name: Saint Marys Regional Medical Center Turning Point Adult Behavioral Health
   categories:

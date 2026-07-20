@@ -23,22 +23,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3199 North White Sands Boulevard, city: Alamogordo, state: nm, zip: '88310'}
+  address:
+    street: 3199 North White Sands Boulevard
+    city: Alamogordo
+    state: nm
+    zip: '88310'
   place: '3501780'
-  geo: {lat: 32.93, lng: -105.96229}
+  geo:
+    lat: 32.93
+    lng: -105.96229
   phone: 575-437-9195
   website: https://www.va.gov/new-mexico-health-care/locations/alamogordo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_501GI}
+  external_ids:
+    va: vha_501GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/alamogordo/ben-archer-health-center-alamogordo
   name: Ben Archer Health Center- Alamogordo
   categories:
@@ -81,6 +97,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/alamogordo/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Otero County
+  address: {street: 2000 Juniper Drive, city: Alamogordo, state: nm, zip: '88310'}
+  place: '3501780'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/alamogordo/pms-alamogordo-behavioral-health-family-health-c
   name: PMS - Alamogordo Behavioral Health Family Health Center
   categories:

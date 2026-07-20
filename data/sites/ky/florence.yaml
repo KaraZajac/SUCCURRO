@@ -89,13 +89,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 7310 Turfway Road, city: Florence, state: ky, zip: '41042'}
+  address:
+    street: 7310 Turfway Road
+    city: Florence
+    state: ky
+    zip: '41042'
   place: '2127982'
-  geo: {lat: 39.01303, lng: -84.6271}
+  geo:
+    lat: 39.01303
+    lng: -84.6271
   phone: 859-282-4480
   website: https://www.va.gov/cincinnati-health-care/locations/florence-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -108,10 +121,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_539GD}
+  external_ids:
+    va: vha_539GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/florence/grace-s-kitchen
   name: Grace's Kitchen
   categories:
@@ -170,6 +186,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/florence/northern-kentucky-community-action-commission
+  name: Northern Kentucky Community Action Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Boone County
+  address: {street: '6616 Dixie Highway, Suite 200', city: Florence, state: ky, zip: '41042'}
+  place: '2127982'
+  phone: 859-586-9250
+  website: http://www.nkcac.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/florence/northkey-community-care-je-willett-treatment-cen
   name: NorthKey Community Care JE Willett Treatment Center
   categories:

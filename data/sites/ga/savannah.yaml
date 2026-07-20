@@ -576,6 +576,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/savannah/economic-opportunity-authority-for-savannah-chat
+  name: Economic Opportunity Authority for Savannah-Chatham County Area, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chatham County
+  address: {street: 618 W. Anderson St., city: Savannah, state: ga, zip: '31415'}
+  place: '1369000'
+  phone: 912-238-2960
+  website: http://www.eoasga.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/savannah/edgemere-sackville
   name: Edgemere Sackville
   categories:
@@ -1489,28 +1501,50 @@
   name: Savannah Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 321 Commercial Drive, city: Savannah, state: ga, zip: '31406'}
+  address:
+    street: 321 Commercial Drive
+    city: Savannah
+    state: ga
+    zip: '31406'
   place: '1369000'
-  geo: {lat: 32.0046, lng: -81.10779}
+  geo:
+    lat: 32.0046
+    lng: -81.10779
   phone: 912-961-5800
   website: https://www.va.gov/savannah-vet-center/locations/#savannah-mobile-vet-center
-  external_ids: {va: vc_0862MVC}
+  external_ids:
+    va: vc_0862MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/savannah/savannah-va-clinic
   name: Savannah VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1170 Shawnee Street, city: Savannah, state: ga, zip: '31419'}
+  address:
+    street: 1170 Shawnee Street
+    city: Savannah
+    state: ga
+    zip: '31419'
   place: '1369000'
-  geo: {lat: 31.98544, lng: -81.171}
+  geo:
+    lat: 31.98544
+    lng: -81.171
   phone: 843-577-5011
   website: https://www.va.gov/charleston-health-care/locations/savannah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -1523,20 +1557,36 @@
   - Podiatry
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_534BY}
+  external_ids:
+    va: vha_534BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/savannah/savannah-vet-center
   name: Savannah Vet Center
   categories: *id001
-  address: {street: 1170 Shawnee Street, city: Savannah, state: ga, zip: '31419'}
+  address:
+    street: 1170 Shawnee Street
+    city: Savannah
+    state: ga
+    zip: '31419'
   place: '1369000'
-  geo: {lat: 31.98654, lng: -81.1756}
+  geo:
+    lat: 31.98654
+    lng: -81.1756
   phone: 912-961-5800
   website: https://www.va.gov/savannah-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1549,26 +1599,38 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0323V}
+  external_ids:
+    va: vc_0323V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/savannah/savannah-veteran-readiness-and-employment-office
   name: Savannah Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '613 Stephenson Ave, Suite F', city: Savannah, state: ga, zip: '31405'}
+  address:
+    street: 613 Stephenson Ave, Suite F
+    city: Savannah
+    state: ga
+    zip: '31405'
   place: '1369000'
-  geo: {lat: 32.01024, lng: -81.10252}
+  geo:
+    lat: 32.01024
+    lng: -81.10252
   phone: 912-355-1128
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_316o}
+  external_ids:
+    va: vba_316o
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/savannah/summer-camp-habersham-ymca
   name: Summer Camp @ Habersham Ymca
   categories:

@@ -105,6 +105,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/natchitoches/natchitoches-parish-ocs
+  name: Natchitoches Parish/OCS
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Natchitoches County
+  address: {street: 1016 Keyser Ave, city: Natchitoches, state: la, zip: '71457'}
+  place: '2253545'
+  phone: 318-357-2220
+  website: https://npgov.org/ocs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/natchitoches/natchitoches-parish-technical-and-career-center
   name: Natchitoches Parish Technical And Career Center
   categories:
@@ -134,13 +146,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 740 Keyser Avenue, city: Natchitoches, state: la, zip: '71457'}
+  address:
+    street: 740 Keyser Avenue
+    city: Natchitoches
+    state: la
+    zip: '71457'
   place: '2253545'
-  geo: {lat: 31.75299, lng: -93.07141}
+  geo:
+    lat: 31.75299
+    lng: -93.07141
   phone: 318-357-3300
   website: https://www.va.gov/alexandria-health-care/locations/natchitoches-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -150,10 +175,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Women Veteran care
-  external_ids: {va: vha_502GG}
+  external_ids:
+    va: vha_502GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/natchitoches/outpatient-medical-center-inc-lp-vaughn-sbhc
   name: Outpatient Medical Center, Inc. @ LP Vaughn SBHC
   categories:

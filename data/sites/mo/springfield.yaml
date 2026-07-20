@@ -600,13 +600,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1850 West Republic Road, city: Springfield, state: mo, zip: '65807'}
+  address:
+    street: 1850 West Republic Road
+    city: Springfield
+    state: mo
+    zip: '65807'
   place: '2970000'
-  geo: {lat: 37.13833, lng: -93.31836}
+  geo:
+    lat: 37.13833
+    lng: -93.31836
   phone: 844-501-8387
   website: https://www.va.gov/fayetteville-arkansas-health-care/locations/gene-taylor-veterans-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '19:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '19:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -636,10 +649,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_564BY}
+  external_ids:
+    va: vha_564BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/springfield/grant
   name: Grant
   categories:
@@ -1218,6 +1234,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/springfield/ozarks-area-community-action-corporation-oacac
+  name: Ozarks Area Community Action Corporation (OACAC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Barry, Christian, Dade, Dallas, Greene, Lawrence, Polk, Stone,
+    Taney, Webster Counties
+  address: {street: 215 South Barnes Ave., city: Springfield, state: mo, zip: '65802'}
+  place: '2970000'
+  phone: 417-864-3460
+  email: info@oac.ac
+  website: https://oac.ac/liheap-energy-programs/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/springfield/sertoma-unit
   name: Sertoma Unit
   categories:
@@ -1268,13 +1298,26 @@
   name: Springfield, MO Vet Center
   categories:
   - vet-center
-  address: {street: '319 East Battlefield Road, Suite B', city: Springfield, state: mo, zip: '65807'}
+  address:
+    street: 319 East Battlefield Road, Suite B
+    city: Springfield
+    state: mo
+    zip: '65807'
   place: '2970000'
-  geo: {lat: 37.16004, lng: -93.29236}
+  geo:
+    lat: 37.16004
+    lng: -93.29236
   phone: 417-891-4988
   website: https://www.va.gov/springfield-mo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1285,10 +1328,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0736V}
+  external_ids:
+    va: vc_0736V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/springfield/st-john-s-chapel
   name: st John's chapel
   categories:
@@ -1455,18 +1501,27 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 3639 South Ave., city: Springfield, state: mo, zip: '65807'}
+  address:
+    street: 3639 South Ave.
+    city: Springfield
+    state: mo
+    zip: '65807'
   place: '2970000'
-  geo: {lat: 37.14754, lng: -93.29371}
+  geo:
+    lat: 37.14754
+    lng: -93.29371
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_331d
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_331d}
+  external_ids:
+    va: vba_331d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/springfield/west-chestnut
   name: West Chestnut
   categories:

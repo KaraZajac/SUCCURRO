@@ -79,6 +79,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/kingston/community-action-program
+  name: Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ulster County
+  address: {street: 70 Lindsey Avenue, city: Kingston, state: ny, zip: '12401'}
+  place: '3639727'
+  phone: 845-338-8750 x 110
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/kingston/family-services-kingston-behavioral-health-cente
   name: Family Services Kingston Behavioral Health Center
   categories:
@@ -220,13 +231,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 101 Frank Sottile Boulevard, city: Kingston, state: ny, zip: '12401'}
+  address:
+    street: 101 Frank Sottile Boulevard
+    city: Kingston
+    state: ny
+    zip: '12401'
   place: '3639727'
-  geo: {lat: 41.97105, lng: -73.98761}
+  geo:
+    lat: 41.97105
+    lng: -73.98761
   phone: 845-331-8322
   website: https://www.va.gov/albany-health-care/locations/kingston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -235,10 +259,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GZ}
+  external_ids:
+    va: vha_528GZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/kingston/pine-street-family-health-center
   name: Pine Street Family Health Center
   categories:
@@ -300,3 +327,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/kingston/ulster-county-department-of-social-services
+  name: Ulster County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ulster County
+  address: {street: 1021 Development Court, city: Kingston, state: ny, zip: '12401'}
+  place: '3639727'
+  phone: 845-334-5436
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

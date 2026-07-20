@@ -38,13 +38,27 @@
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 1695 Kernersville Medical Parkway, city: Kernersville, state: nc, zip: '27284'}
+  address:
+    street: 1695 Kernersville Medical Parkway
+    city: Kernersville
+    state: nc
+    zip: '27284'
   place: '3735600'
-  geo: {lat: 36.09333, lng: -80.04914}
+  geo:
+    lat: 36.09333
+    lng: -80.04914
   phone: 336-515-5000
   website: https://www.va.gov/salisbury-health-care/locations/kernersville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 07:00
+    close: '17:00'
   services:
   - Allergy, asthma and immunology
   - Audiology and speech
@@ -75,10 +89,13 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_659BY}
+  external_ids:
+    va: vha_659BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/kernersville/kernersville-va-healthcare-center-outpatient-cli
   name: Kernersville VA Healthcare Center Outpatient Clinic
   categories:

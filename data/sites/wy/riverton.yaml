@@ -250,13 +250,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2300 Rose Lane, city: Riverton, state: wy, zip: '82501'}
+  address:
+    street: 2300 Rose Lane
+    city: Riverton
+    state: wy
+    zip: '82501'
   place: '5666220'
-  geo: {lat: 43.03564, lng: -108.42109}
+  geo:
+    lat: 43.03564
+    lng: -108.42109
   phone: 866-338-2609
   website: https://www.va.gov/sheridan-health-care/locations/riverton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -264,10 +277,13 @@
   - Mental health care
   - Primary care
   - Social work
-  external_ids: {va: vha_666GC}
+  external_ids:
+    va: vha_666GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/riverton/volunteers-of-america-center-of-hope
   name: Volunteers of America Center of Hope
   categories:

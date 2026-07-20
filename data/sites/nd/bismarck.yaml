@@ -66,15 +66,24 @@
   name: Bismarck Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '619 Riverwood Drive, Suite 105', city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 619 Riverwood Drive, Suite 105
+    city: Bismarck
+    state: nd
+    zip: '58504'
   place: '3807200'
-  geo: {lat: 46.79433, lng: -100.80035}
+  geo:
+    lat: 46.79433
+    lng: -100.80035
   phone: 701-224-9751
   website: https://www.va.gov/bismarck-vet-center/locations/#bismarck-mobile-vet-center
-  external_ids: {va: vc_0819MVC}
+  external_ids:
+    va: vc_0819MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/bismarck-north-health-center
   name: Bismarck North Health Center
   categories:
@@ -102,13 +111,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '2700 State Street, Gateway Mall', city: Bismarck, state: nd, zip: '58503'}
+  address:
+    street: 2700 State Street, Gateway Mall
+    city: Bismarck
+    state: nd
+    zip: '58503'
   place: '3807200'
-  geo: {lat: 46.83534, lng: -100.77636}
+  geo:
+    lat: 46.83534
+    lng: -100.77636
   phone: 701-221-9152
   website: https://www.va.gov/fargo-health-care/locations/bismarck-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -122,21 +144,39 @@
   - Orthopedics
   - Primary care
   - Urology
-  external_ids: {va: vha_437GB}
+  external_ids:
+    va: vha_437GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/bismarck-vet-center
   name: Bismarck Vet Center
   categories: *id001
-  address: {street: '619 Riverwood Drive, Suite 105', city: Bismarck, state: nd, zip: '58504'}
+  address:
+    street: 619 Riverwood Drive, Suite 105
+    city: Bismarck
+    state: nd
+    zip: '58504'
   place: '3807200'
-  geo: {lat: 46.79433, lng: -100.80035}
+  geo:
+    lat: 46.79433
+    lng: -100.80035
   phone: 701-224-9751
   website: https://www.va.gov/bismarck-vet-center/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '18:30'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '18:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -147,10 +187,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0446V}
+  external_ids:
+    va: vc_0446V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/bismarck/blessed-builders-ministry
   name: Blessed Builders Ministry
   categories:
@@ -191,6 +234,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/bismarck/burleigh-county-social-services-board
+  name: Burleigh County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Burleigh County
+  address: {street: 415 E Rosser Avenue Suite 113, city: Bismarck, state: nd, zip: '58501'}
+  place: '3807200'
+  phone: 701-222-6670
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/bismarck/central-billing-office
   name: Central Billing Office
   categories:

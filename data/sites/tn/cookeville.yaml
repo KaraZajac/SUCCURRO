@@ -130,13 +130,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 851 South Willow Avenue, city: Cookeville, state: tn, zip: '38501'}
+  address:
+    street: 851 South Willow Avenue
+    city: Cookeville
+    state: tn
+    zip: '38501'
   place: '4716920'
-  geo: {lat: 36.14406, lng: -85.52398}
+  geo:
+    lat: 36.14406
+    lng: -85.52398
   phone: 931-284-4060
   website: https://www.va.gov/tennessee-valley-health-care/locations/cookeville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -147,10 +160,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GH}
+  external_ids:
+    va: vha_626GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/cookeville/cumberland-heights-outpatient-services-of-cookev
   name: Cumberland Heights Outpatient Services of Cookeville
   categories:
@@ -478,6 +494,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tn/cookeville/upper-cumberland-human-resource-agency-putnam
+  name: Upper Cumberland Human Resource Agency - Putnam
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Putnam County
+  address: {street: 580 S. Jefferson Ave. Ste. B, city: Cookeville, state: tn, zip: '38501'}
+  place: '4716920'
+  phone: 931-528-1127
+  website: https://uchra.org/communityservices/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/cookeville/upper-cumberland-primary-care-project
   name: Upper Cumberland Primary Care Project
   categories:

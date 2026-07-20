@@ -186,13 +186,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1400 Black Horse Hill Road, city: Coatesville, state: pa, zip: '19320'}
+  address:
+    street: 1400 Black Horse Hill Road
+    city: Coatesville
+    state: pa
+    zip: '19320'
   place: '4214712'
-  geo: {lat: 39.9981, lng: -75.79631}
+  geo:
+    lat: 39.9981
+    lng: -75.79631
   phone: 610-384-7711
   website: https://www.va.gov/coatesville-health-care/locations/coatesville-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -236,10 +249,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_542}
+  external_ids:
+    va: vha_542
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/coatesville/greater-deliverance-outreach
   name: Greater Deliverance Outreach
   categories:

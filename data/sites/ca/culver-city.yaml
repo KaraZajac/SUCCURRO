@@ -419,13 +419,26 @@
   name: West Los Angeles Vet Center
   categories:
   - vet-center
-  address: {street: '5730 Uplander Way, Suite 100', city: Culver City, state: ca, zip: '90230'}
+  address:
+    street: 5730 Uplander Way, Suite 100
+    city: Culver City
+    state: ca
+    zip: '90230'
   place: 0617568
-  geo: {lat: 33.98605, lng: -118.3848}
+  geo:
+    lat: 33.98605
+    lng: -118.3848
   phone: 310-641-0326
   website: https://www.va.gov/west-los-angeles-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -439,10 +452,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0607V}
+  external_ids:
+    va: vc_0607V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/culver-city/westside-family-health-center
   name: Westside Family Health Center
   categories:

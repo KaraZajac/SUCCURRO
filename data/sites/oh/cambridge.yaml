@@ -109,13 +109,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2146 Southgate Parkway, city: Cambridge, state: oh, zip: '43725'}
+  address:
+    street: 2146 Southgate Parkway
+    city: Cambridge
+    state: oh
+    zip: '43725'
   place: '3910996'
-  geo: {lat: 40.00253, lng: -81.57672}
+  geo:
+    lat: 40.00253
+    lng: -81.57672
   phone: 740-432-1963
   website: https://www.va.gov/chillicothe-health-care/locations/cambridge-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -125,10 +138,13 @@
   - Podiatry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_538GE}
+  external_ids:
+    va: vha_538GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cambridge/cedar-ridge-behav-health-solutions-cambridge-out
   name: Cedar Ridge Behav Health Solutions Cambridge Outpatient
   categories:

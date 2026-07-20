@@ -64,20 +64,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 132 East Main Street, city: Bay Shore, state: ny, zip: '11706'}
+  address:
+    street: 132 East Main Street
+    city: Bay Shore
+    state: ny
+    zip: '11706'
   place: '3604935'
-  geo: {lat: 40.72364, lng: -73.24459}
+  geo:
+    lat: 40.72364
+    lng: -73.24459
   phone: 631-754-7978
   website: https://www.va.gov/northport-health-care/locations/bay-shore-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_632HC}
+  external_ids:
+    va: vha_632HC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/bay-shore/family-service-league-inc-south-shore-family-cen
   name: Family Service League Inc South Shore Family Center Clinic
   categories:

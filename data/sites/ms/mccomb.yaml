@@ -111,20 +111,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1308 Harrison Avenue, city: McComb, state: ms, zip: '39648'}
+  address:
+    street: 1308 Harrison Avenue
+    city: McComb
+    state: ms
+    zip: '39648'
   place: '2843280'
-  geo: {lat: 31.24942, lng: -90.46808}
+  geo:
+    lat: 31.24942
+    lng: -90.46808
   phone: 601-250-0965
   website: https://www.va.gov/jackson-health-care/locations/mccomb-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GG}
+  external_ids:
+    va: vha_586GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/mccomb/mississippi-regional-housing-authority-no-vii
   name: Mississippi Regional Housing Authority No. Vii
   categories:
@@ -230,6 +246,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/mccomb/southwest-mississippi-opportunities
+  name: Southwest Mississippi Opportunities
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pike County
+  address: {street: 4116 Highway 51, city: McComb, state: ms, zip: '39648'}
+  place: '2843280'
+  phone: 601-684-5593
+  website: http://swmocaa.org/Programs-01.asp
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/mccomb/the-housing-authority-of-the-city-of-mccomb
   name: The Housing Authority Of The City Of Mccomb
   categories:

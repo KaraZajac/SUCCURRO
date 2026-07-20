@@ -1002,6 +1002,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-diego/campesinos-unidos-inc-brawley-office
+  name: Campesinos Unidos, Inc. Brawley Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving San Diego County
+  address: {street: '885 Gateway Center Way, Suite 103', city: San Diego, state: ca, zip: '92102'}
+  place: '0666000'
+  phone: 619-391-9790
+  website: https://campesinosunidos.org/energy-department/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ca/san-diego/campesinos-unidos-inc-san-diego-office
+  name: Campesinos Unidos, Inc. San Diego Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving San Diego County
+  address: {street: '885 Gateway Center Way, Suite 103', city: San Diego, state: ca, zip: '92102'}
+  place: '0666000'
+  phone: 619-391-9790
+  website: https://campesinosunidos.org/energy-department/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/san-diego/carson-elementary
   name: Carson Elementary
   categories:
@@ -2887,10 +2911,15 @@
   categories: &id002
   - va-facility
   description: IDES Site
-  address: {street: '34800 Bob Wilson Dr, Balboa Naval Medical Center, Building 1', city: San Diego, state: ca,
-    zip: '92134'}
+  address:
+    street: 34800 Bob Wilson Dr, Balboa Naval Medical Center, Building 1
+    city: San Diego
+    state: ca
+    zip: '92134'
   place: '0666000'
-  geo: {lat: 32.72742, lng: -117.14534}
+  geo:
+    lat: 32.72742
+    lng: -117.14534
   phone: 619-532-6635
   website: https://www.va.gov/find-locations/facility/vba_377g
   services:
@@ -2898,10 +2927,13 @@
   - IntegratedDisabilityEvaluationSystemAssistance
   - PreDischargeClaimAssistance
   - TransitionAssistance
-  external_ids: {va: vba_377g}
+  external_ids:
+    va: vba_377g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/jackie-robinson-ymca
   name: Jackie Robinson Ymca
   categories:
@@ -2954,9 +2986,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 3350 La Jolla Village Drive, city: San Diego, state: ca, zip: '92161'}
+  address:
+    street: 3350 La Jolla Village Drive
+    city: San Diego
+    state: ca
+    zip: '92161'
   place: '0666000'
-  geo: {lat: 32.87555, lng: -117.23229}
+  geo:
+    lat: 32.87555
+    lng: -117.23229
   phone: 858-552-8585
   website: https://www.va.gov/san-diego-health-care/locations/jennifer-moreno-department-of-veterans-affairs-medical-center/
   services:
@@ -3009,10 +3047,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_664}
+  external_ids:
+    va: vha_664
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/john-muir-language-academy
   name: John Muir Language Academy
   categories:
@@ -3085,13 +3126,26 @@
   name: Kearny Mesa VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 8875 Aero Drive, city: San Diego, state: ca, zip: '92123'}
+  address:
+    street: 8875 Aero Drive
+    city: San Diego
+    state: ca
+    zip: '92123'
   place: '0666000'
-  geo: {lat: 32.80974, lng: -117.13707}
+  geo:
+    lat: 32.80974
+    lng: -117.13707
   phone: 619-400-5000
   website: https://www.va.gov/san-diego-health-care/locations/kearny-mesa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Allergy, asthma and immunology
   - Audiology and speech
@@ -3121,10 +3175,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_664BY}
+  external_ids:
+    va: vha_664BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/keeler-court
   name: Keeler Court
   categories:
@@ -5283,19 +5340,28 @@
   name: Pre-Discharge Site at Marine Corp Air Station Miramar
   categories: *id002
   description: Pre-Discharge Site
-  address: {street: Bldg 5305 Miramar Way, city: San Diego, state: ca, zip: '92145'}
+  address:
+    street: Bldg 5305 Miramar Way
+    city: San Diego
+    state: ca
+    zip: '92145'
   place: '0666000'
-  geo: {lat: 32.88482, lng: -117.13472}
+  geo:
+    lat: 32.88482
+    lng: -117.13472
   phone: 800-827-1216
   services:
   - ApplyingForBenefits
   - DisabilityClaimAssistance
   - PreDischargeClaimAssistance
   - TransitionAssistance
-  external_ids: {va: vba_377a}
+  external_ids:
+    va: vba_377a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/pro-kids-first-tee-san-diego
   name: Pro Kids, First Tee San Diego
   categories:
@@ -5344,20 +5410,36 @@
   name: Rio VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 8989 Rio San Diego Drive, city: San Diego, state: ca, zip: '92108'}
+  address:
+    street: 8989 Rio San Diego Drive
+    city: San Diego
+    state: ca
+    zip: '92108'
   place: '0666000'
-  geo: {lat: 32.7758, lng: -117.13677}
+  geo:
+    lat: 32.7758
+    lng: -117.13677
   phone: 619-228-8000
   website: https://www.va.gov/san-diego-health-care/locations/rio-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_664QA}
+  external_ids:
+    va: vha_664QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/rise-up-industries
   name: Rise Up Industries
   categories:
@@ -5690,37 +5772,70 @@
   name: San Diego VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: '2121 San Diego Avenue, The Aspire Center', city: San Diego, state: ca, zip: '92110'}
+  address:
+    street: 2121 San Diego Avenue, The Aspire Center
+    city: San Diego
+    state: ca
+    zip: '92110'
   place: '0666000'
-  geo: {lat: 32.74651, lng: -117.18937}
+  geo:
+    lat: 32.74651
+    lng: -117.18937
   phone: 855-297-8397
   website: https://www.va.gov/san-diego-health-care/locations/san-diego-va-domiciliary/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '16:00'}
-  external_ids: {va: vha_664BV}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '16:00'
+  external_ids:
+    va: vha_664BV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/san-diego-va-mobile-medical-unit
   name: San Diego VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3350 La Jolla Village Drive, city: San Diego, state: ca, zip: '92161'}
+  address:
+    street: 3350 La Jolla Village Drive
+    city: San Diego
+    state: ca
+    zip: '92161'
   place: '0666000'
-  geo: {lat: 32.87391, lng: -117.23154}
+  geo:
+    lat: 32.87391
+    lng: -117.23154
   phone: 858-552-8585
   website: https://www.va.gov/find-locations/facility/vha_664QB
-  external_ids: {va: vha_664QB}
+  external_ids:
+    va: vha_664QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/san-diego-va-regional-benefit-office
   name: San Diego VA Regional Benefit Office
   categories: *id002
   description: Regional Benefit Office
-  address: {street: '8620 Spectrum Center Blvd, 7th Floor', city: San Diego, state: ca, zip: '92123'}
+  address:
+    street: 8620 Spectrum Center Blvd, 7th Floor
+    city: San Diego
+    state: ca
+    zip: '92123'
   place: '0666000'
-  geo: {lat: 32.8271, lng: -117.14246}
+  geo:
+    lat: 32.8271
+    lng: -117.14246
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -5731,21 +5846,37 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_377}
+  external_ids:
+    va: vba_377
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/san-diego-vet-center
   name: San Diego Vet Center
   categories:
   - vet-center
-  address: {street: '2790 Truxtun Road, Suite 130', city: San Diego, state: ca, zip: '92106'}
+  address:
+    street: 2790 Truxtun Road, Suite 130
+    city: San Diego
+    state: ca
+    zip: '92106'
   place: '0666000'
-  geo: {lat: 32.74078, lng: -117.21338}
+  geo:
+    lat: 32.74078
+    lng: -117.21338
   phone: 858-642-1500
   website: https://www.va.gov/san-diego-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -5756,10 +5887,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0618V}
+  external_ids:
+    va: vc_0618V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/san-ysidro-health-care-view-health-center
   name: San Ysidro Health Care View Health Center
   categories:
@@ -6302,23 +6436,39 @@
   name: Sorrento Valley VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 10455 Sorrento Valley Road, city: San Diego, state: ca, zip: '92121'}
+  address:
+    street: 10455 Sorrento Valley Road
+    city: San Diego
+    state: ca
+    zip: '92121'
   place: '0666000'
-  geo: {lat: 32.89503, lng: -117.21715}
+  geo:
+    lat: 32.89503
+    lng: -117.21715
   phone: 858-552-7475
   website: https://www.va.gov/san-diego-health-care/locations/sorrento-valley-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Laboratory and pathology
   - My HealtheVet coordinator
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_664GF}
+  external_ids:
+    va: vha_664GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/south-crest-rec-center
   name: South Crest Rec Center
   categories:
@@ -6803,27 +6953,41 @@
   name: VA Regional Benefit Satellite Office at Naval Base San Diego
   categories: *id002
   description: Satellite Office
-  address: {street: '3115 Dolphin Alley, Building 270, Rooms 210 and 211', city: San Diego, state: ca,
-    zip: '92136'}
+  address:
+    street: 3115 Dolphin Alley, Building 270, Rooms 210 and 211
+    city: San Diego
+    state: ca
+    zip: '92136'
   place: '0666000'
-  geo: {lat: 32.69219, lng: -117.12779}
+  geo:
+    lat: 32.69219
+    lng: -117.12779
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - DisabilityClaimAssistance
   - TransitionAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_377l}
+  external_ids:
+    va: vba_377l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/va-regional-benefit-satellite-office-at-naval-me
   name: VA Regional Benefit Satellite Office at Naval Medical Center San Diego
   categories: *id002
   description: Satellite Office
-  address: {street: '34800 Bob Wilson Drive, Building 26 -3B', city: San Diego, state: ca, zip: '92134'}
+  address:
+    street: 34800 Bob Wilson Drive, Building 26 -3B
+    city: San Diego
+    state: ca
+    zip: '92134'
   place: '0666000'
-  geo: {lat: 32.72742, lng: -117.14534}
+  geo:
+    lat: 32.72742
+    lng: -117.14534
   phone: 619-532-5122
   website: https://www.va.gov/find-locations/facility/vba_377h
   services:
@@ -6831,27 +6995,39 @@
   - DisabilityClaimAssistance
   - PreDischargeClaimAssistance
   - TransitionAssistance
-  external_ids: {va: vba_377h}
+  external_ids:
+    va: vba_377h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/vetsuccess-on-campus-at-san-diego-state-universi
   name: Vetsuccess on Campus at San Diego State University
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '5500 Campanile Drive, Student Services West 1575', city: San Diego, state: ca, zip: '92182'}
+  address:
+    street: 5500 Campanile Drive, Student Services West 1575
+    city: San Diego
+    state: ca
+    zip: '92182'
   place: '0666000'
-  geo: {lat: 32.772, lng: -117.0727}
+  geo:
+    lat: 32.772
+    lng: -117.0727
   phone: 619-594-2444
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_377k}
+  external_ids:
+    va: vba_377k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-diego/village-at-serra-mesa
   name: Village At Serra Mesa
   categories:

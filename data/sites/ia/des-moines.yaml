@@ -506,25 +506,46 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '1223 Center Street, Community Resource & Referral Center (CRRC)', city: Des Moines,
-    state: ia, zip: '50309'}
+  address:
+    street: 1223 Center Street, Community Resource & Referral Center (CRRC)
+    city: Des Moines
+    state: ia
+    zip: '50309'
   place: '1921000'
-  geo: {lat: 41.59175, lng: -93.63281}
+  geo:
+    lat: 41.59175
+    lng: -93.63281
   phone: 515-699-5637
   website: https://www.va.gov/central-iowa-health-care/locations/des-moines-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
-  external_ids: {va: vha_636QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
+  external_ids:
+    va: vha_636QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/des-moines-va-medical-center
   name: Des Moines VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3600 30th Street, city: Des Moines, state: ia, zip: '50310'}
+  address:
+    street: 3600 30th Street
+    city: Des Moines
+    state: ia
+    zip: '50310'
   place: '1921000'
-  geo: {lat: 41.62774, lng: -93.65879}
+  geo:
+    lat: 41.62774
+    lng: -93.65879
   phone: 515-699-5999
   website: https://www.va.gov/central-iowa-health-care/locations/des-moines-va-medical-center/
   services:
@@ -564,33 +585,58 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_636A6}
+  external_ids:
+    va: vha_636A6
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/des-moines-va-mobile-medical-unit
   name: Des Moines VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3600 30th Street, city: Des Moines, state: ia, zip: '50310'}
+  address:
+    street: 3600 30th Street
+    city: Des Moines
+    state: ia
+    zip: '50310'
   place: '1921000'
-  geo: {lat: 41.62774, lng: -93.65879}
+  geo:
+    lat: 41.62774
+    lng: -93.65879
   phone: 515-699-5999
   website: https://www.va.gov/central-iowa-health-care/locations/des-moines-va-mobile-medical-unit/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_636QH}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_636QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/des-moines-va-regional-benefit-office
   name: Des Moines VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: 210 Walnut Street, city: Des Moines, state: ia, zip: '50309'}
+  address:
+    street: 210 Walnut Street
+    city: Des Moines
+    state: ia
+    zip: '50309'
   place: '1921000'
-  geo: {lat: 41.58676, lng: -93.62054}
+  geo:
+    lat: 41.58676
+    lng: -93.62054
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -605,10 +651,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_333}
+  external_ids:
+    va: vba_333
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/drake-little-free-pantry
   name: Drake Little Free Pantry
   categories:
@@ -966,6 +1015,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ia/des-moines/impact-community-action-partnership-drake-site-o
+  name: IMPACT Community Action Partnership - Drake Site Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Polk County
+  address: {street: 3226 University Ave., city: Des Moines, state: ia, zip: '50311'}
+  place: '1921000'
+  phone: 515-518-4770
+  website: http://www.impactcap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/des-moines/jefferson-elementary-school
   name: Jefferson Elementary School
   categories:
@@ -1899,22 +1960,38 @@
   name: South Des Moines VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 1211 East Army Post Road, city: Des Moines, state: ia, zip: '50315'}
+  address:
+    street: 1211 East Army Post Road
+    city: Des Moines
+    state: ia
+    zip: '50315'
   place: '1921000'
-  geo: {lat: 41.52622, lng: -93.59964}
+  geo:
+    lat: 41.52622
+    lng: -93.59964
   phone: 515-256-9540
   website: https://www.va.gov/central-iowa-health-care/locations/south-des-moines-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_636GZ}
+  external_ids:
+    va: vha_636GZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/south-side-pantry
   name: South Side Pantry
   categories:
@@ -2117,9 +2194,15 @@
   name: VA Regional Benefit Satellite Office at Des Moines VA Medical Center
   categories: *id002
   description: Satellite Office
-  address: {street: '3600 30th Street, Building 3, Room 1943/1945', city: Des Moines, state: ia, zip: '50310'}
+  address:
+    street: 3600 30th Street, Building 3, Room 1943/1945
+    city: Des Moines
+    state: ia
+    zip: '50310'
   place: '1921000'
-  geo: {lat: 41.62774, lng: -93.65879}
+  geo:
+    lat: 41.62774
+    lng: -93.65879
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -2131,10 +2214,13 @@
   - PreDischargeClaimAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_333d}
+  external_ids:
+    va: vba_333d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/weeks-middle-school
   name: Weeks Middle School
   categories:

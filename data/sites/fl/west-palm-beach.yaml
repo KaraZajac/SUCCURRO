@@ -896,6 +896,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/west-palm-beach/palm-beach-county-community-services-west-palm-b
+  name: Palm Beach County Community Services West Palm Beach
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Palm Beach County
+  address: {street: 810 Datura Street, city: West Palm Beach, state: fl, zip: '33401'}
+  place: '1276600'
+  phone: 561-355-4792
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/west-palm-beach/palm-beach-county-housing-authority
   name: Palm Beach County Housing Authority
   categories:
@@ -1084,9 +1096,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 7305 North Military Trail, city: West Palm Beach, state: fl, zip: '33410'}
+  address:
+    street: 7305 North Military Trail
+    city: West Palm Beach
+    state: fl
+    zip: '33410'
   place: '1276600'
-  geo: {lat: 26.78608, lng: -80.11177}
+  geo:
+    lat: 26.78608
+    lng: -80.11177
   phone: 561-422-8262
   website: https://www.va.gov/west-palm-beach-health-care/locations/thomas-h-corey-va-medical-center/
   services:
@@ -1154,10 +1172,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_548}
+  external_ids:
+    va: vha_548
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/west-palm-beach/union-baptist-church
   name: UNION BAPTIST CHURCH
   categories:
@@ -1302,14 +1323,23 @@
   name: West Palm Beach VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 7305 N. Military Trail, city: West Palm Beach, state: fl, zip: '33410'}
+  address:
+    street: 7305 N. Military Trail
+    city: West Palm Beach
+    state: fl
+    zip: '33410'
   place: '1276600'
-  geo: {lat: 26.78439, lng: -80.11068}
+  geo:
+    lat: 26.78439
+    lng: -80.11068
   phone: 561-422-8262
-  external_ids: {va: vha_548QB}
+  external_ids:
+    va: vha_548QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/west-palm-beach/westgate-head-start-center
   name: WESTGATE HEAD START CENTER
   categories:

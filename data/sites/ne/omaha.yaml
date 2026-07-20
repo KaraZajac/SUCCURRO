@@ -2731,6 +2731,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/omaha/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas, Washington Counties
+  address: {street: 1313 Farnam St., city: Omaha, state: ne, zip: '68102'}
+  place: '3137000'
+  phone: 402-595-2890
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/omaha/nebraska-extension-in-douglas-sarpy-counties-lit
   name: Nebraska Extension in Douglas-Sarpy Counties Little Free Pantry
   categories:
@@ -2978,27 +2989,48 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '825 Dorcas Street, Community Resource & Referral Center (CRRC)', city: Omaha, state: ne,
-    zip: '68108'}
+  address:
+    street: 825 Dorcas Street, Community Resource & Referral Center (CRRC)
+    city: Omaha
+    state: ne
+    zip: '68108'
   place: '3137000'
-  geo: {lat: 41.23941, lng: -95.92765}
+  geo:
+    lat: 41.23941
+    lng: -95.92765
   phone: 402-977-4444
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_636QA}
+  external_ids:
+    va: vha_636QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/omaha/omaha-va-medical-center
   name: Omaha VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 4101 Woolworth Avenue, city: Omaha, state: ne, zip: '68105'}
+  address:
+    street: 4101 Woolworth Avenue
+    city: Omaha
+    state: ne
+    zip: '68105'
   place: '3137000'
-  geo: {lat: 41.24513, lng: -95.97526}
+  geo:
+    lat: 41.24513
+    lng: -95.97526
   phone: 402-346-8800
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-med-center/
   services:
@@ -3032,37 +3064,71 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_636}
+  external_ids:
+    va: vha_636
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/omaha/omaha-va-mobile-medical-unit
   name: Omaha VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4101 Woolworth Avenue, city: Omaha, state: ne, zip: '68105'}
+  address:
+    street: 4101 Woolworth Avenue
+    city: Omaha
+    state: ne
+    zip: '68105'
   place: '3137000'
-  geo: {lat: 41.24318, lng: -95.97348}
+  geo:
+    lat: 41.24318
+    lng: -95.97348
   phone: 402-977-4444
   website: https://www.va.gov/find-locations/facility/vha_636QK
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_636QK}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_636QK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/omaha/omaha-vet-center
   name: Omaha Vet Center
   categories:
   - vet-center
-  address: {street: '2132 South 42nd Street, Suite 1', city: Omaha, state: ne, zip: '68105'}
+  address:
+    street: 2132 South 42nd Street, Suite 1
+    city: Omaha
+    state: ne
+    zip: '68105'
   place: '3137000'
-  geo: {lat: 41.23867, lng: -95.97585}
+  geo:
+    lat: 41.23867
+    lng: -95.97585
   phone: 402-346-6735
   website: https://www.va.gov/omaha-vet-center/
   hours:
-  - {days: [mon, tue, wed], open: '08:00', close: '19:00'}
-  - {days: [thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    open: 08:00
+    close: '19:00'
+  - days:
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3073,10 +3139,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0424V}
+  external_ids:
+    va: vc_0424V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/omaha/omni-inventive-care
   name: Omni Inventive Care
   categories:
@@ -4174,9 +4243,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 4101 Woolworth Avenue, city: Omaha, state: ne, zip: '68105'}
+  address:
+    street: 4101 Woolworth Avenue
+    city: Omaha
+    state: ne
+    zip: '68105'
   place: '3137000'
-  geo: {lat: 41.24513, lng: -95.97526}
+  geo:
+    lat: 41.24513
+    lng: -95.97526
   phone: 800-451-5796, ext. 3215
   website: https://www.va.gov/find-locations/facility/vba_334d
   services:
@@ -4188,10 +4263,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_334d}
+  external_ids:
+    va: vba_334d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/omaha/valley-hope-of-omaha
   name: Valley Hope of Omaha
   categories:

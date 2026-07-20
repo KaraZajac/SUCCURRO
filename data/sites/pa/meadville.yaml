@@ -59,6 +59,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/meadville/crawford-county-assistance-office
+  name: Crawford County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Crawford County
+  address: {street: 1084 Water Street (P. O. Box 1187), city: Meadville, state: pa, zip: '16335'}
+  place: '4248360'
+  phone: 800-527-7861
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/meadville/crawford-county-drug-and-alcohol-executive-commi
   name: Crawford County Drug and Alcohol Executive Commission Inc
   categories:
@@ -85,13 +96,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 11200 Perry Highway, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 11200 Perry Highway
+    city: Meadville
+    state: pa
+    zip: '16335'
   place: '4248360'
-  geo: {lat: 41.6201, lng: -80.20229}
+  geo:
+    lat: 41.6201
+    lng: -80.20229
   phone: 866-962-3210
   website: https://www.va.gov/erie-health-care/locations/crawford-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -108,10 +132,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562GA}
+  external_ids:
+    va: vha_562GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/ffn-crawford-early-head-start
   name: FFN/ Crawford Early Head Start
   categories:

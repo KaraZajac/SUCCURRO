@@ -643,6 +643,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/minneapolis/community-action-partnership-of-hennepin-county
+  name: Community Action Partnership of Hennepin County - Minneapolis Urban League
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hennepin County
+  address: {street: '2100 Plymouth Ave. N. #104', city: Minneapolis, state: mn, zip: '55411'}
+  place: '2743000'
+  phone: 952-930-3541
+  website: https://caphennepin.org/what-we-do/energy-assistance.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/minneapolis/community-fridge-mpls
   name: Community Fridge MPLS
   place: '2743000'
@@ -2336,22 +2348,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1201 Harmon Place, Community Resource & Referral Center (CRRC)', city: Minneapolis,
-    state: mn, zip: '55403'}
+  address:
+    street: 1201 Harmon Place, Community Resource & Referral Center (CRRC)
+    city: Minneapolis
+    state: mn
+    zip: '55403'
   place: '2743000'
-  geo: {lat: 44.9734, lng: -93.2797}
+  geo:
+    lat: 44.9734
+    lng: -93.2797
   phone: 612-313-3240
   website: https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Homeless Veteran care
   - Mental health care
   - Primary care
-  external_ids: {va: vha_618GL}
+  external_ids:
+    va: vha_618GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/minneapolis/minneapolis-va-healthcare-system-addiction-recov
   name: Minneapolis VA Healthcare System Addiction Recovery Services
   categories:
@@ -2377,9 +2404,15 @@
   name: Minneapolis VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: One Veterans Drive, city: Minneapolis, state: mn, zip: '55417'}
+  address:
+    street: One Veterans Drive
+    city: Minneapolis
+    state: mn
+    zip: '55417'
   place: '2743000'
-  geo: {lat: 44.90196, lng: -93.20433}
+  geo:
+    lat: 44.90196
+    lng: -93.20433
   phone: 612-725-2000
   website: https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-medical-center/
   services:
@@ -2441,23 +2474,35 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618}
+  external_ids:
+    va: vha_618
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/minneapolis/minneapolis-va-mobile-medical-unit
   name: Minneapolis VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: One Veterans Drive, city: Minneapolis, state: mn, zip: '55417'}
+  address:
+    street: One Veterans Drive
+    city: Minneapolis
+    state: mn
+    zip: '55417'
   place: '2743000'
-  geo: {lat: 44.90191, lng: -93.20436}
+  geo:
+    lat: 44.90191
+    lng: -93.20436
   phone: 612-313-3240
   website: https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-mobile-medical-unit/
-  external_ids: {va: vha_618QD}
+  external_ids:
+    va: vha_618QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/minneapolis/minnesota-adult-and-teen-challenge-minnesota-tee
   name: Minnesota Adult and Teen Challenge Minnesota Teen Challenge
   categories:
@@ -4414,9 +4459,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 1 Veterans Dr., city: Minneapolis, state: mn, zip: '55417'}
+  address:
+    street: 1 Veterans Dr.
+    city: Minneapolis
+    state: mn
+    zip: '55417'
   place: '2743000'
-  geo: {lat: 44.90196, lng: -93.20433}
+  geo:
+    lat: 44.90196
+    lng: -93.20433
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -4427,10 +4478,13 @@
   - UpdatingDirectDepositInformation
   - VAHomeLoanAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_335a}
+  external_ids:
+    va: vba_335a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/minneapolis/van-cleve-recreation-center
   name: Van Cleve Recreation Center
   categories:

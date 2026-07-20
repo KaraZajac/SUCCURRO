@@ -141,20 +141,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 824 Alabama Street, city: Columbus, state: ms, zip: '39702'}
+  address:
+    street: 824 Alabama Street
+    city: Columbus
+    state: ms
+    zip: '39702'
   place: '2815380'
-  geo: {lat: 33.49327, lng: -88.36569}
+  geo:
+    lat: 33.49327
+    lng: -88.36569
   phone: 662-244-0391
   website: https://www.va.gov/jackson-health-care/locations/columbus-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GF}
+  external_ids:
+    va: vha_586GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/columbus/cook-elementary-school
   name: Cook Elementary School
   categories:
@@ -376,6 +392,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/columbus/prairie-opportunity
+  name: Prairie Opportunity
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lowndes County
+  address: {street: '501 7th Street N.,', city: Columbus, state: ms, zip: '39701'}
+  place: '2815380'
+  phone: 662-328-1669
+  website: https://prairieopp.dudaone.com/services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/columbus/sale-elementary-school
   name: Sale Elementary School
   categories:

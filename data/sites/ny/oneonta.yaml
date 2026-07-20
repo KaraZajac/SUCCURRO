@@ -66,13 +66,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1 Fox Care Drive, city: Oneonta, state: ny, zip: '13820'}
+  address:
+    street: 1 Fox Care Drive
+    city: Oneonta
+    state: ny
+    zip: '13820'
   place: '3654881'
-  geo: {lat: 42.45627, lng: -75.02932}
+  geo:
+    lat: 42.45627
+    lng: -75.02932
   phone: 607-967-8590
   website: https://www.va.gov/albany-health-care/locations/oneonta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Gynecology
@@ -81,10 +94,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528G3}
+  external_ids:
+    va: vha_528G3
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/oneonta/suco-human-ecology-head-start
   name: SUCO Human Ecology Head Start
   categories:

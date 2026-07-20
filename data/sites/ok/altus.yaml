@@ -45,22 +45,86 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1604 North Main, city: Altus, state: ok, zip: '73521'}
+  address:
+    street: 1604 North Main
+    city: Altus
+    state: ok
+    zip: '73521'
   place: '4001700'
-  geo: {lat: 34.65487, lng: -99.33398}
+  geo:
+    lat: 34.65487
+    lng: -99.33398
   phone: 580-482-0721
   website: https://www.va.gov/oklahoma-city-health-care/locations/altus-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GF}
+  external_ids:
+    va: vha_635GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/altus/human-services-centers-greer
+  name: 'Human Services Centers: Greer'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Greer County
+  address: {street: '201 S. Main St,', city: Altus, state: ok, zip: '73521'}
+  place: '4001700'
+  phone: 580-480-3400
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/altus/human-services-centers-harmon
+  name: 'Human Services Centers: Harmon'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Harmon County
+  address: {street: '201 S. Main St,', city: Altus, state: ok, zip: '73521'}
+  place: '4001700'
+  phone: 580-480-3400
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/altus/human-services-centers-jackson
+  name: 'Human Services Centers: Jackson'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jackson County
+  address: {street: '201 S. Main St,', city: Altus, state: ok, zip: '73521'}
+  place: '4001700'
+  phone: 580-480-3400
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/altus/human-services-centers-tillman
+  name: 'Human Services Centers: Tillman'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tillman County
+  address: {street: '201 S. Main St,', city: Altus, state: ok, zip: '73521'}
+  place: '4001700'
+  phone: 580-480-3400
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/altus/jim-taliaferro-cmhc-altus-satellite
   name: Jim Taliaferro CMHC Altus Satellite
   categories:

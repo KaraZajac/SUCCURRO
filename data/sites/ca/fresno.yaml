@@ -1905,6 +1905,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/fresno/fresno-county-economic-opportunities-commission
+  name: Fresno County Economic Opportunities Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fresno County
+  address: {street: '1900 Mariposa Mall, Suite 260 (P. O. Box 11906)', city: Fresno, state: ca, zip: '93721'}
+  place: '0627000'
+  phone: 559-263-1320
+  website: http://www.fresnoeoc.org/liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/fresno/fresno-county-hispanic-commission-on-alcohol-dru
   name: Fresno County Hispanic Commission on Alcohol/Drug Abuse Servs Inc
   categories:
@@ -1997,9 +2009,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2615 East Clinton Avenue, city: Fresno, state: ca, zip: '93703'}
+  address:
+    street: 2615 East Clinton Avenue
+    city: Fresno
+    state: ca
+    zip: '93703'
   place: '0627000'
-  geo: {lat: 36.77349, lng: -119.77902}
+  geo:
+    lat: 36.77349
+    lng: -119.77902
   phone: 559-225-6100
   website: https://www.va.gov/central-california-health-care/locations/fresno-va-medical-center/
   services:
@@ -2060,21 +2078,37 @@
   - Vascular surgery
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_570}
+  external_ids:
+    va: vha_570
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/fresno/fresno-vet-center
   name: Fresno Vet Center
   categories:
   - vet-center
-  address: {street: '1320 East Shaw Avenue, Suite 125', city: Fresno, state: ca, zip: '93710'}
+  address:
+    street: 1320 East Shaw Avenue, Suite 125
+    city: Fresno
+    state: ca
+    zip: '93710'
   place: '0627000'
-  geo: {lat: 36.81149, lng: -119.76391}
+  geo:
+    lat: 36.81149
+    lng: -119.76391
   phone: 559-487-5660
   website: https://www.va.gov/fresno-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2086,10 +2120,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0628V}
+  external_ids:
+    va: vc_0628V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/fresno/fusd-calwa
   name: FUSD-Calwa
   categories:
@@ -5315,17 +5352,26 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '855 M Street, 1st Floor, Suite 150', city: Fresno, state: ca, zip: '93721'}
+  address:
+    street: 855 M Street, 1st Floor, Suite 150
+    city: Fresno
+    state: ca
+    zip: '93721'
   place: '0627000'
-  geo: {lat: 36.73455, lng: -119.78594}
+  geo:
+    lat: 36.73455
+    lng: -119.78594
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_343ao
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_343ao}
+  external_ids:
+    va: vba_343ao
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/fresno/vang-pao-elementary
   name: Vang Pao Elementary
   categories:

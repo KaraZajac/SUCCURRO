@@ -1025,6 +1025,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/rochester/catholic-family-center
+  name: Catholic Family Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monroe County
+  address: {city: Rochester, state: ny}
+  place: '3663000'
+  phone: 585-753-6477
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/rochester/changing-of-the-scenes-at-fieldhouse
   name: Changing Of The Scenes At Fieldhouse
   categories:
@@ -1133,6 +1144,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/rochester/dhs-after-hours-emergency-contact
+  name: DHS (After Hours Emergency Contact)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monroe County
+  address: {city: Rochester, state: ny}
+  place: '3663000'
+  phone: 585-442-1742
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/rochester/dr-david-and-ruth-anderson-academy
   name: Dr David And Ruth Anderson Academy
   categories:
@@ -2273,6 +2295,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/rochester/monroe-county-department-of-social-services
+  name: Monroe County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monroe County
+  address: {street: 111 Westfall Rd., city: Rochester, state: ny, zip: '14620'}
+  place: '3663000'
+  phone: 585-753-6477
+  email: dfa2a26.sm.monroe.HEAP@dfa.state.ny.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/rochester/monroe-county-library-system
   name: Monroe County Library System
   categories:
@@ -2562,13 +2596,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 260 Calkins Road, city: Rochester, state: ny, zip: '14623'}
+  address:
+    street: 260 Calkins Road
+    city: Rochester
+    state: ny
+    zip: '14623'
   place: '3663000'
-  geo: {lat: 43.06829, lng: -77.63399}
+  geo:
+    lat: 43.06829
+    lng: -77.63399
   phone: 585-463-2600
   website: https://www.va.gov/finger-lakes-health-care/locations/rochester-calkins-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -2591,29 +2638,48 @@
   - Social work
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_528QC}
+  external_ids:
+    va: vha_528QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/rochester/rochester-clinton-crossings-va-clinic
   name: Rochester Clinton Crossings VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 919 Westfall Road, city: Rochester, state: ny, zip: '14618'}
+  address:
+    street: 919 Westfall Road
+    city: Rochester
+    state: ny
+    zip: '14618'
   place: '3663000'
-  geo: {lat: 43.11531, lng: -77.59633}
+  geo:
+    lat: 43.11531
+    lng: -77.59633
   phone: 585-463-2600
   website: https://www.va.gov/finger-lakes-health-care/locations/rochester-clinton-crossings-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Mental health care
   - Physical therapy, occupational therapy and kinesiotherapy
   - Prosthetics and rehabilitation
-  external_ids: {va: vha_528GE}
+  external_ids:
+    va: vha_528GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/rochester/rochester-comm-sports-youth-comple
   name: Rochester Comm Sports & Youth Comple
   categories:
@@ -2681,15 +2747,24 @@
   name: Rochester Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '2000 South Winton Road, Building 5, Suite 201', city: Rochester, state: ny, zip: '14618'}
+  address:
+    street: 2000 South Winton Road, Building 5, Suite 201
+    city: Rochester
+    state: ny
+    zip: '14618'
   place: '3663000'
-  geo: {lat: 43.10569, lng: -77.57456}
+  geo:
+    lat: 43.10569
+    lng: -77.57456
   phone: 585-393-7608
   website: https://www.va.gov/rochester-vet-center/locations/#rochester-mobile-vet-center
-  external_ids: {va: vc_0873MVC}
+  external_ids:
+    va: vc_0873MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/rochester/rochester-psychiatric-center
   name: Rochester Psychiatric Center
   categories:
@@ -2778,13 +2853,26 @@
 - id: ny/rochester/rochester-vet-center
   name: Rochester Vet Center
   categories: *id002
-  address: {street: '2000 South Winton Road, Building 5, Suite 201', city: Rochester, state: ny, zip: '14618'}
+  address:
+    street: 2000 South Winton Road, Building 5, Suite 201
+    city: Rochester
+    state: ny
+    zip: '14618'
   place: '3663000'
-  geo: {lat: 43.10569, lng: -77.57456}
+  geo:
+    lat: 43.10569
+    lng: -77.57456
   phone: 585-393-7608
   website: https://www.va.gov/rochester-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2798,10 +2886,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0124V}
+  external_ids:
+    va: vc_0124V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/rochester/ryan-community-center
   name: Ryan Community Center
   categories:
@@ -3534,18 +3625,27 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 260 Calkins Road, city: Rochester, state: ny, zip: '14623'}
+  address:
+    street: 260 Calkins Road
+    city: Rochester
+    state: ny
+    zip: '14623'
   place: '3663000'
-  geo: {lat: 43.06829, lng: -77.63399}
+  geo:
+    lat: 43.06829
+    lng: -77.63399
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - DisabilityClaimAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_307a}
+  external_ids:
+    va: vba_307a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/rochester/villa-of-hope-inpatient
   name: Villa of Hope Inpatient
   categories:

@@ -483,13 +483,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 22001 Southwest Freeway, city: Richmond, state: tx, zip: '77469'}
+  address:
+    street: 22001 Southwest Freeway
+    city: Richmond
+    state: tx
+    zip: '77469'
   place: '4861892'
-  geo: {lat: 29.55552, lng: -95.7129}
+  geo:
+    lat: 29.55552
+    lng: -95.7129
   phone: 832-595-7700
   website: https://www.va.gov/houston-health-care/locations/richmond-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -509,10 +522,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GG}
+  external_ids:
+    va: vha_580GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/richmond/t-l-pink-el
   name: T L Pink El
   categories:

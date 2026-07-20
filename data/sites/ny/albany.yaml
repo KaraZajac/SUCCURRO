@@ -114,6 +114,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/albany/albany-county-department-of-social-services
+  name: Albany County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Albany County
+  address: {street: 162 Washington Avenue, city: Albany, state: ny, zip: '12210'}
+  place: '3601000'
+  phone: 518-447-7323
+  email: energy@albanycounty.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/albany/albany-county-dept-of-mental-health-adult-integr
   name: Albany County Dept of Mental Health Adult Integrated Mental Health Clinic
   categories:
@@ -301,15 +313,32 @@
   name: Albany Vet Center
   categories:
   - vet-center
-  address: {street: 17 Computer Drive West, city: Albany, state: ny, zip: '12205'}
+  address:
+    street: 17 Computer Drive West
+    city: Albany
+    state: ny
+    zip: '12205'
   place: '3601000'
-  geo: {lat: 42.72149, lng: -73.80737}
+  geo:
+    lat: 42.72149
+    lng: -73.80737
   phone: 518-626-5130
   website: https://www.va.gov/albany-vet-center/
   hours:
-  - {days: [mon, tue, wed], open: '08:00', close: '19:30'}
-  - {days: [thu], open: '08:00', close: '18:00'}
-  - {days: [fri], open: '08:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    open: 08:00
+    close: '19:30'
+  - days:
+    - thu
+    open: 08:00
+    close: '18:00'
+  - days:
+    - fri
+    open: 08:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -322,10 +351,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0111V}
+  external_ids:
+    va: vc_0111V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/albany/ann-klose-first-ak-1st
   name: Ann Klose First (AK 1st)
   categories:
@@ -576,6 +608,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/albany/homeless-traveler
+  name: Homeless & Traveler
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Albany County
+  address: {city: Albany, state: ny}
+  place: '3601000'
+  phone: 518-463-2124
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/albany/hope-house-inc-outpatient-clinic
   name: Hope House Inc Outpatient Clinic
   categories:
@@ -1054,9 +1097,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 113 Holland Avenue, city: Albany, state: ny, zip: '12208'}
+  address:
+    street: 113 Holland Avenue
+    city: Albany
+    state: ny
+    zip: '12208'
   place: '3601000'
-  geo: {lat: 42.65073, lng: -73.77194}
+  geo:
+    lat: 42.65073
+    lng: -73.77194
   phone: 518-626-5000
   website: https://www.va.gov/albany-health-care/locations/samuel-s-stratton-department-of-veterans-affairs-medical-center/
   services:
@@ -1109,10 +1158,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_528A8}
+  external_ids:
+    va: vha_528A8
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/albany/sheridan-prep-academy
   name: Sheridan Prep Academy
   categories:
@@ -1355,17 +1407,26 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '113 Holland Avenue, Room C308', city: Albany, state: ny, zip: '12208'}
+  address:
+    street: 113 Holland Avenue, Room C308
+    city: Albany
+    state: ny
+    zip: '12208'
   place: '3601000'
-  geo: {lat: 42.65073, lng: -73.77194}
+  geo:
+    lat: 42.65073
+    lng: -73.77194
   phone: 518-626-5692
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_306b}
+  external_ids:
+    va: vba_306b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/albany/vi-community-center
   name: Vi Community Center
   categories:

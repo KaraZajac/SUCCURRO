@@ -129,6 +129,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/gadsden/community-action-of-etowah-county
+  name: Community Action of Etowah County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Etowah County
+  address: {street: 624 Broad Street (P. O. Box 1888), city: Gadsden, state: al, zip: '35901'}
+  place: 0128696
+  phone: 256-546-9271
+  email: eccsp@comcast.net
+  website: https://communityaction-etowah.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/gadsden/east-gadsden-comm-ctr
   name: East Gadsden Comm. Ctr.
   categories:
@@ -449,23 +462,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 206 Rescia Avenue, city: Gadsden, state: al, zip: '35906'}
+  address:
+    street: 206 Rescia Avenue
+    city: Gadsden
+    state: al
+    zip: '35906'
   place: 0128696
-  geo: {lat: 33.96325, lng: -86.03323}
+  geo:
+    lat: 33.96325
+    lng: -86.03323
   phone: 256-413-7154
   website: https://www.va.gov/birmingham-health-care/locations/rainbow-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_521GD}
+  external_ids:
+    va: vha_521GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/gadsden/riverview-regional-medical-center-clearview
   name: Riverview Regional Medical Center Clearview
   categories:

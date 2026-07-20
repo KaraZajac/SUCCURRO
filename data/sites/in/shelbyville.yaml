@@ -40,6 +40,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/shelbyville/human-services-inc
+  name: Human Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Shelby County
+  address: {street: 825 Elm St., city: Shelbyville, state: in, zip: '46176'}
+  place: '1869318'
+  phone: 317-398-3153
+  website: http://www.hsi-indiana.com/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/shelbyville/jane-pauley-community-health-center-at-shelbyvil
   name: Jane Pauley Community Health Center at Shelbyville
   categories:
@@ -124,13 +136,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2158 Intelliplex Drive, city: Shelbyville, state: in, zip: '46176'}
+  address:
+    street: 2158 Intelliplex Drive
+    city: Shelbyville
+    state: in
+    zip: '46176'
   place: '1869318'
-  geo: {lat: 39.55737, lng: -85.78067}
+  geo:
+    lat: 39.55737
+    lng: -85.78067
   phone: 317-398-2812
   website: https://www.va.gov/indiana-health-care/locations/shelbyville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -139,10 +164,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_583GG}
+  external_ids:
+    va: vha_583GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/shelbyville/the-helping-house-sharing-shack
   name: The Helping House Sharing Shack
   categories:

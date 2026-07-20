@@ -63,13 +63,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 10155 Eagle Drive, city: Covington, state: ga, zip: '30014'}
+  address:
+    street: 10155 Eagle Drive
+    city: Covington
+    state: ga
+    zip: '30014'
   place: '1320064'
-  geo: {lat: 33.57894, lng: -83.83487}
+  geo:
+    lat: 33.57894
+    lng: -83.83487
   phone: 770-385-3000
   website: https://www.va.gov/atlanta-health-care/locations/covington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -77,10 +90,13 @@
   - Ophthalmology
   - Primary care
   - Telehealth
-  external_ids: {va: vha_508GN}
+  external_ids:
+    va: vha_508GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/covington/heard-mixon-elementary
   name: Heard Mixon Elementary
   categories:

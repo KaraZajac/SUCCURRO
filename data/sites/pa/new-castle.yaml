@@ -193,19 +193,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/new-castle/lawrence-county-assistance-office
+  name: Lawrence County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lawrence County
+  address: {street: 108 Cascade Galleria, city: New Castle, state: pa, zip: '16101'}
+  place: '4253368'
+  phone: 724-656-3021
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/new-castle/lawrence-county-va-clinic
   name: Lawrence County VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1750 New Butler Road, city: New Castle, state: pa, zip: '16101'}
+  address:
+    street: 1750 New Butler Road
+    city: New Castle
+    state: pa
+    zip: '16101'
   place: '4253368'
-  geo: {lat: 40.98391, lng: -80.3101}
+  geo:
+    lat: 40.98391
+    lng: -80.3101
   phone: 724-598-6080
   website: https://www.va.gov/butler-health-care/locations/lawrence-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Diabetes care
@@ -222,10 +246,13 @@
   - Telehealth
   - Travel reimbursement
   - Women Veteran care
-  external_ids: {va: vha_529GB}
+  external_ids:
+    va: vha_529GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/new-castle/neshannock
   name: Neshannock
   categories:

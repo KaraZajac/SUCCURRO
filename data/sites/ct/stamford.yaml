@@ -959,22 +959,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1275 Summer Street, city: Stamford, state: ct, zip: 06905}
+  address:
+    street: 1275 Summer Street
+    city: Stamford
+    state: ct
+    zip: 06905
   place: 0973000
-  geo: {lat: 41.06198, lng: -73.54155}
+  geo:
+    lat: 41.06198
+    lng: -73.54155
   phone: 203-325-0649
   website: https://www.va.gov/connecticut-health-care/locations/stamford-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_689GB}
+  external_ids:
+    va: vha_689GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/stamford/stillmeadow-elementary-sbhc
   name: Stillmeadow Elementary SBHC
   categories:

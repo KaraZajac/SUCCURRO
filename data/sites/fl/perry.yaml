@@ -107,13 +107,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1224 North Peacock Avenue, city: Perry, state: fl, zip: '32347'}
+  address:
+    street: 1224 North Peacock Avenue
+    city: Perry
+    state: fl
+    zip: '32347'
   place: '1256150'
-  geo: {lat: 30.12785, lng: -83.57633}
+  geo:
+    lat: 30.12785
+    lng: -83.57633
   phone: 850-223-8387
   website: https://www.va.gov/north-florida-health-care/locations/perry-va-clinic/
   hours:
-  - {days: [tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Intimate partner violence support
   - Laboratory and pathology
@@ -125,10 +137,25 @@
   - Telehealth
   - Toxic exposure screening
   - Whole health
-  external_ids: {va: vha_573GN}
+  external_ids:
+    va: vha_573GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: fl/perry/suwannee-river-economic-council-inc
+  name: Suwannee River Economic Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Taylor County
+  address: {street: '3233 S. Byron Butler Pkway, Ste A-04', city: Perry, state: fl, zip: '32347'}
+  place: '1256150'
+  phone: 850-587-8858
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/perry/taylor-county-elementary-school
   name: Taylor County Elementary School
   categories:

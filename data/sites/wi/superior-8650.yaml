@@ -79,6 +79,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/superior-8650/douglas-county-dhhs
+  name: Douglas County DHHS
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Douglas County
+  address: {street: '1316 N 14th St., Ste 400', city: Superior, state: wi, zip: '54880'}
+  place: '5578650'
+  phone: 800-506-5596
+  website: http://homeenergyplus.wi.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/superior-8650/four-corners-elementary-school
   name: Four Corners Elementary School
   categories:
@@ -539,13 +551,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3520 Tower Avenue, city: Superior, state: wi, zip: '54880'}
+  address:
+    street: 3520 Tower Avenue
+    city: Superior
+    state: wi
+    zip: '54880'
   place: '5578650'
-  geo: {lat: 46.69726, lng: -92.10404}
+  geo:
+    lat: 46.69726
+    lng: -92.10404
   phone: 715-398-2400
   website: https://www.va.gov/minneapolis-health-care/locations/twin-ports-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -573,10 +598,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618BY}
+  external_ids:
+    va: vha_618BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/superior-8650/vbs-central-assembly
   name: Vbs Central Assembly
   categories:

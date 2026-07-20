@@ -193,13 +193,26 @@
   name: Twin Cities Vet Center
   categories:
   - vet-center
-  address: {street: '2113 Cliff Drive, Suite 100', city: Eagan, state: mn, zip: '55122'}
+  address:
+    street: 2113 Cliff Drive, Suite 100
+    city: Eagan
+    state: mn
+    zip: '55122'
   place: '2717288'
-  geo: {lat: 44.79147, lng: -93.21644}
+  geo:
+    lat: 44.79147
+    lng: -93.21644
   phone: 612-243-7920
   website: https://www.va.gov/st-paul-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -211,7 +224,10 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0416V}
+  external_ids:
+    va: vc_0416V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

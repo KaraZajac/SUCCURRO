@@ -82,13 +82,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1142 South Van Dyke Road, city: Bad Axe, state: mi, zip: '48413'}
+  address:
+    street: 1142 South Van Dyke Road
+    city: Bad Axe
+    state: mi
+    zip: '48413'
   place: '2604740'
-  geo: {lat: 43.80189, lng: -83.03759}
+  geo:
+    lat: 43.80189
+    lng: -83.03759
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/bad-axe-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -102,10 +115,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_655GF}
+  external_ids:
+    va: vha_655GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/bad-axe/great-lakes-bay-health-centers-integrated-care-t
   name: Great Lakes Bay Health Centers Integrated Care Thumb Area
   categories:
@@ -150,6 +166,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/bad-axe/human-development-commission
+  name: Human Development Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Huron County
+  address: {street: 856 N. Van Dyke, city: Bad Axe, state: mi, zip: '48413'}
+  place: '2604740'
+  phone: 989-673-4121
+  website: https://hdc-caro.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/bad-axe/huron-behavioral-health
   name: Huron Behavioral Health
   categories:

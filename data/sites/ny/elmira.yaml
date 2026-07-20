@@ -98,6 +98,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/elmira/chemung-county-department-of-social-services
+  name: Chemung County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chemung County
+  address: {street: 425 Pennsylvania Avenue, city: Elmira, state: ny, zip: '14904'}
+  place: '3624229'
+  phone: 607-737-5368
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/elmira/elmira-housing-authority
   name: Elmira Housing Authority
   categories:
@@ -145,13 +156,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1316 College Avenue, city: Elmira, state: ny, zip: '14901'}
+  address:
+    street: 1316 College Avenue
+    city: Elmira
+    state: ny
+    zip: '14901'
   place: '3624229'
-  geo: {lat: 42.1109, lng: -76.8203}
+  geo:
+    lat: 42.1109
+    lng: -76.8203
   phone: 607-664-4640
   website: https://www.va.gov/finger-lakes-health-care/locations/elmira-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Advice nurse
   - Audiology and speech
@@ -166,10 +190,13 @@
   - Podiatry
   - Primary care
   - Social work
-  external_ids: {va: vha_528G4}
+  external_ids:
+    va: vha_528G4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/elmira/ernie-davis-academy
   name: Ernie Davis Academy
   categories:

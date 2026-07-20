@@ -127,13 +127,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1970 East Third Avenue, city: Durango, state: co, zip: '81301'}
+  address:
+    street: 1970 East Third Avenue
+    city: Durango
+    state: co
+    zip: '81301'
   place: 0822035
-  geo: {lat: 37.28403, lng: -107.87306}
+  geo:
+    lat: 37.28403
+    lng: -107.87306
   phone: 970-247-2214
   website: https://www.va.gov/new-mexico-health-care/locations/durango-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -141,10 +154,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_501GJ}
+  external_ids:
+    va: vha_501GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/durango/fanto-park
   name: Fanto Park
   categories:
@@ -189,6 +205,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/durango/la-plata-county-department-of-human-services-dur
+  name: La Plata County Department of Human Services - Durango
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving La Plata County
+  address: {street: 'Tech Center Plaza, 10 Burnett Ct., First Floor', city: Durango, state: co, zip: '81301'}
+  place: 0822035
+  phone: 970-382-6150
+  website: https://www.co.laplata.co.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/durango/needham-elementary-school
   name: Needham Elementary School
   categories:

@@ -100,19 +100,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3101 Clairmont Road Northeast, city: Brookhaven, state: ga, zip: '30329'}
+  address:
+    street: 3101 Clairmont Road Northeast
+    city: Brookhaven
+    state: ga
+    zip: '30329'
   place: '1310944'
-  geo: {lat: 33.84933, lng: -84.31343}
+  geo:
+    lat: 33.84933
+    lng: -84.31343
   phone: 404-315-4100
   website: https://www.va.gov/atlanta-health-care/locations/north-dekalb-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_508QI}
+  external_ids:
+    va: vha_508QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/brookhaven/woodward-elementary-school
   name: Woodward Elementary School
   categories:

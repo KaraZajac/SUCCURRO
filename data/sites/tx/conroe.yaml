@@ -148,13 +148,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 690 South Loop 336 West, city: Conroe, state: tx, zip: '77304'}
+  address:
+    street: 690 South Loop 336 West
+    city: Conroe
+    state: tx
+    zip: '77304'
   place: '4816432'
-  geo: {lat: 30.2826, lng: -95.47189}
+  geo:
+    lat: 30.2826
+    lng: -95.47189
   phone: 936-522-4000
   website: https://www.va.gov/houston-health-care/locations/conroe-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -183,10 +196,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_580GD}
+  external_ids:
+    va: vha_580GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/conroe/eating-recovery-center
   name: Eating Recovery Center
   categories:
@@ -332,6 +348,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/conroe/montgomery-county-emergency-assistance-inc
+  name: Montgomery County Emergency Assistance Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Montgomery County
+  address: {street: 1022 McCall, city: Conroe, state: tx, zip: '77301'}
+  place: '4816432'
+  phone: 540-382-6186
+  website: https://www.navigatelifetexas.org/en/services-groups-events/services/montgomery-county-emergency-assistance-inc
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/conroe/moorehead-j-h
   name: Moorehead J H
   categories:

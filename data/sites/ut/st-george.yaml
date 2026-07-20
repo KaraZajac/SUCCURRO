@@ -147,6 +147,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ut/st-george/five-county-aog-heat-program
+  name: Five County AOG HEAT Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Beaver, Garfield, Iron, Kane Counties
+  address: {street: '1506 S. Silicon Way, Suite 3B', city: St. George, state: ut, zip: '84770'}
+  place: '4965330'
+  phone: 435-652-9643
+  email: online.heat@fivecounty.utah.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ut/st-george/forte-strong
   name: Forte Strong
   categories:
@@ -455,15 +467,24 @@
   name: Saint George Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1664 South Dixie Drive, Suite C-102', city: Saint George, state: ut, zip: '84770'}
+  address:
+    street: 1664 South Dixie Drive, Suite C-102
+    city: Saint George
+    state: ut
+    zip: '84770'
   place: '4965330'
-  geo: {lat: 37.08001, lng: -113.60509}
+  geo:
+    lat: 37.08001
+    lng: -113.60509
   phone: 435-673-4494
   website: https://www.va.gov/saint-george-vet-center/locations/#saint-george-mobile-vet-center
-  external_ids: {va: vc_0868MVC}
+  external_ids:
+    va: vc_0868MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ut/st-george/saint-george-regional-medical-center-behavioral
   name: Saint George Regional Medical Center Behavioral Health
   categories:
@@ -487,13 +508,26 @@
 - id: ut/st-george/saint-george-vet-center
   name: Saint George Vet Center
   categories: *id001
-  address: {street: '1664 South Dixie Drive, Suite C-102', city: Saint George, state: ut, zip: '84770'}
+  address:
+    street: 1664 South Dixie Drive, Suite C-102
+    city: Saint George
+    state: ut
+    zip: '84770'
   place: '4965330'
-  geo: {lat: 37.08001, lng: -113.60509}
+  geo:
+    lat: 37.08001
+    lng: -113.60509
   phone: 435-673-4494
   website: https://www.va.gov/saint-george-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -505,10 +539,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0540V}
+  external_ids:
+    va: vc_0540V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ut/st-george/sandstone-elementary
   name: Sandstone Elementary
   categories:
@@ -580,22 +617,37 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '585 East Riverside Drive, Riverfront Medical Center', city: St. George, state: ut,
-    zip: '84790'}
+  address:
+    street: 585 East Riverside Drive, Riverfront Medical Center
+    city: St. George
+    state: ut
+    zip: '84790'
   place: '4965330'
-  geo: {lat: 37.08689, lng: -113.56383}
+  geo:
+    lat: 37.08689
+    lng: -113.56383
   phone: 435-634-7608
   website: https://www.va.gov/salt-lake-city-health-care/locations/st-george-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
-  external_ids: {va: vha_660GG}
+  external_ids:
+    va: vha_660GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ut/st-george/steps-recovery-center-outpatient
   name: Steps Recovery Center Outpatient
   categories:

@@ -273,6 +273,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/wilkes-barre/luzerne-county-assistance-office-wilkes-barre-di
+  name: Luzerne County Assistance Office Wilkes-Barre District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Luzerne County
+  address: {street: 205 South Washington Street, city: Wilkes-Barre, state: pa, zip: '18711'}
+  place: '4285152'
+  phone: 570-826-2041
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/wilkes-barre/lynn-evans-biga-center-ehs-center
   name: Lynn Evans Biga Center/EHS Center
   categories:
@@ -655,9 +666,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1111 East End Boulevard, city: Wilkes-Barre, state: pa, zip: '18711'}
+  address:
+    street: 1111 East End Boulevard
+    city: Wilkes-Barre
+    state: pa
+    zip: '18711'
   place: '4285152'
-  geo: {lat: 41.24804, lng: -75.83717}
+  geo:
+    lat: 41.24804
+    lng: -75.83717
   phone: 570-824-3521
   website: https://www.va.gov/wilkes-barre-health-care/locations/wilkes-barre-va-medical-center/
   services:
@@ -714,10 +731,13 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_693}
+  external_ids:
+    va: vha_693
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/wilkes-barre/wilkes-barre-va-medical-center-veterans-affairs
   name: Wilkes Barre VA Medical Center Veterans Affairs
   categories:

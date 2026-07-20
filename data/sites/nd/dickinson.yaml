@@ -41,6 +41,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/dickinson/billings-county-social-services-board
+  name: Billings County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Billings County
+  address: {street: '2680 Empire Road, Suite A', city: Dickinson, state: nd, zip: '58601'}
+  place: '3819620'
+  phone: 701-456-7675
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/dickinson/community-action-partnership-early-head-start
   name: Community Action Partnership Early Head Start
   categories:
@@ -85,13 +96,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '3275 West Ridge Drive, West Ridge Market Center', city: Dickinson, state: nd, zip: '58601'}
+  address:
+    street: 3275 West Ridge Drive, West Ridge Market Center
+    city: Dickinson
+    state: nd
+    zip: '58601'
   place: '3819620'
-  geo: {lat: 46.89459, lng: -102.83498}
+  geo:
+    lat: 46.89459
+    lng: -102.83498
   phone: 701-483-1850
   website: https://www.va.gov/fargo-health-care/locations/dickinson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -101,10 +125,13 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_437GJ}
+  external_ids:
+    va: vha_437GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/dickinson/heart-river-services-llc-drug-abuse-service-inc
   name: Heart River Services LLC Drug Abuse Service Inc
   categories:
@@ -265,3 +292,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/dickinson/stark-county-social-services-board
+  name: Stark County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Stark County
+  address: {street: '2680 Empire Rd., Suite A', city: Dickinson, state: nd, zip: '58601'}
+  place: '3819620'
+  phone: 701-456-7675
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

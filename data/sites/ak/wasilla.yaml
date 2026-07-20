@@ -39,6 +39,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ak/wasilla/alaska-health-and-social-services-mat-su-distric
+  name: Alaska Health and Social Services - Mat-Su District Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Matanuska Susitna County
+  address: {street: 855 W. Commercial Drive, city: Wasilla, state: ak, zip: '99654'}
+  place: 0283080
+  phone: 800-478-7778
+  email: hss.dpa.offices@alaska.gov
+  website: https://health.alaska.gov/dpa/Pages/hap/default.aspx
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ak/wasilla/banyan-alaska-llc
   name: Banyan Alaska LLC
   categories:
@@ -293,13 +306,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 865 North Seward Meridian Parkway, city: Wasilla, state: ak, zip: '99654'}
+  address:
+    street: 865 North Seward Meridian Parkway
+    city: Wasilla
+    state: ak
+    zip: '99654'
   place: 0283080
-  geo: {lat: 61.58997, lng: -149.35985}
+  geo:
+    lat: 61.58997
+    lng: -149.35985
   phone: 888-353-7574
   website: https://www.va.gov/alaska-health-care/locations/mat-su-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Advice nurse
   - Audiology and speech
@@ -314,10 +340,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_463GC}
+  external_ids:
+    va: vha_463GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/wasilla/mat-su-va-community-based-outpatient
   name: Mat Su VA Community Based Outpatient
   categories:
@@ -402,9 +431,15 @@
   categories:
   - va-facility
   description: Pre-Discharge Site
-  address: {street: '851 E. Westpoint Drive, Suite 111', city: Wasilla, state: ak, zip: '99654'}
+  address:
+    street: 851 E. Westpoint Drive, Suite 111
+    city: Wasilla
+    state: ak
+    zip: '99654'
   place: 0283080
-  geo: {lat: 61.58263, lng: -149.42875}
+  geo:
+    lat: 61.58263
+    lng: -149.42875
   phone: 800-827-1204
   services:
   - ApplyingForBenefits
@@ -422,10 +457,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_463f}
+  external_ids:
+    va: vba_463f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/wasilla/set-free-alaska-crisis-residential-and-stabiliza
   name: Set Free Alaska Crisis Residential and Stabilization
   categories:
@@ -573,13 +611,26 @@
   name: Wasilla Vet Center
   categories:
   - vet-center
-  address: {street: 1751 East Gardner Way, city: Wasilla, state: ak, zip: '99654'}
+  address:
+    street: 1751 East Gardner Way
+    city: Wasilla
+    state: ak
+    zip: '99654'
   place: 0283080
-  geo: {lat: 61.58919, lng: -149.40595}
+  geo:
+    lat: 61.58919
+    lng: -149.40595
   phone: 907-376-4318
   website: https://www.va.gov/wasilla-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -595,10 +646,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0512V}
+  external_ids:
+    va: vc_0512V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/wasilla/wonderland-park
   name: Wonderland Park
   categories:

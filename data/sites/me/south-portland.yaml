@@ -183,13 +183,26 @@
   name: Portland, ME Vet Center
   categories:
   - vet-center
-  address: {street: '707 Sable Oaks Drive, Suite 030', city: South Portland, state: me, zip: '04106'}
+  address:
+    street: 707 Sable Oaks Drive, Suite 030
+    city: South Portland
+    state: me
+    zip: '04106'
   place: '2371990'
-  geo: {lat: 43.6421, lng: -70.34021}
+  geo:
+    lat: 43.6421
+    lng: -70.34021
   phone: 207-780-3584
   website: https://www.va.gov/portland-me-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -208,10 +221,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0115V}
+  external_ids:
+    va: vc_0115V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/south-portland/south-portland-comprehensive-treatment-center
   name: South Portland Comprehensive Treatment Center
   categories:

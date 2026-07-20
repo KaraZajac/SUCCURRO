@@ -463,13 +463,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 500 Lilly Road Northeast, city: Olympia, state: wa, zip: '98506'}
+  address:
+    street: 500 Lilly Road Northeast
+    city: Olympia
+    state: wa
+    zip: '98506'
   place: '5351300'
-  geo: {lat: 47.05375, lng: -122.84439}
+  geo:
+    lat: 47.05375
+    lng: -122.84439
   phone: 253-583-2621
   website: https://www.va.gov/puget-sound-health-care/locations/olympia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -478,10 +491,13 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_663GI}
+  external_ids:
+    va: vha_663GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/olympia/pear-blossom-place
   name: Pear Blossom Place
   categories:

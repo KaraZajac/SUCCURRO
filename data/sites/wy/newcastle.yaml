@@ -4,23 +4,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1124 Washington Boulevard, city: Newcastle, state: wy, zip: '82701'}
+  address:
+    street: 1124 Washington Boulevard
+    city: Newcastle
+    state: wy
+    zip: '82701'
   place: '5656215'
-  geo: {lat: 43.84883, lng: -104.18884}
+  geo:
+    lat: 43.84883
+    lng: -104.18884
   phone: 605-745-2000
   website: https://www.va.gov/black-hills-health-care/locations/newcastle-va-clinic/
   hours:
-  - {days: [tue], open: '09:00', close: '14:30'}
+  - days:
+    - tue
+    open: 09:00
+    close: '14:30'
   services:
   - Mental health care
   - My HealtheVet coordinator
   - PTSD care
   - Primary care
   - Suicide prevention
-  external_ids: {va: vha_568HA}
+  external_ids:
+    va: vha_568HA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/newcastle/volunteers-of-america-northern-rockies-newcastle
   name: Volunteers of America Northern Rockies Newcastle Clinic
   categories:
@@ -42,6 +54,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/newcastle/weston-county-department-of-family-services
+  name: Weston County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Weston County
+  address: {street: '22922 Hwy 85, Ste 200', city: Newcastle, state: wy, zip: '82701'}
+  place: '5656215'
+  phone: 307-746-4657
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/newcastle/wyoming-child-family-development-crook-weston-co
   name: Wyoming Child & Family Development - Crook/Weston County Early Head Start
   categories:

@@ -114,19 +114,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2400 Herodian Way Southeast, city: Smyrna, state: ga, zip: '30080'}
+  address:
+    street: 2400 Herodian Way Southeast
+    city: Smyrna
+    state: ga
+    zip: '30080'
   place: '1371492'
-  geo: {lat: 33.8938, lng: -84.47319}
+  geo:
+    lat: 33.8938
+    lng: -84.47319
   phone: 770-916-7900
   website: https://www.va.gov/atlanta-health-care/locations/south-cobb-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Mental health care
-  external_ids: {va: vha_508GP}
+  external_ids:
+    va: vha_508GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/smyrna/the-tillman-house
   name: The Tillman House
   categories:

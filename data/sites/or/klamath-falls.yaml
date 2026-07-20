@@ -123,19 +123,35 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2225 North Eldorado Boulevard, city: Klamath Falls, state: or, zip: '97601'}
+  address:
+    street: 2225 North Eldorado Boulevard
+    city: Klamath Falls
+    state: or
+    zip: '97601'
   place: '4139700'
-  geo: {lat: 42.24817, lng: -121.78707}
+  geo:
+    lat: 42.24817
+    lng: -121.78707
   phone: 541-273-6206
   website: https://www.va.gov/southern-oregon-health-care/locations/klamath-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_692GA}
+  external_ids:
+    va: vha_692GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/klamath-falls/klamath-health-partnership-admin
   name: Klamath Health Partnership Admin
   categories:
@@ -196,6 +212,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/klamath-falls/klamath-lake-community-action-services
+  name: Klamath/Lake Community Action Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Klamath, Lake Counties
+  address: {street: '2316 South Sixth Street, Suite C', city: Klamath Falls, state: or, zip: '97601'}
+  place: '4139700'
+  phone: 541-882-3500
+  email: energy@klcas.org
+  website: https://www.klcas.org/energy
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/klamath-falls/klamath-open-door-family-practice
   name: Klamath Open Door Family Practice
   categories:

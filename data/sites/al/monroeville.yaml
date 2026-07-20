@@ -66,13 +66,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 159 Whetstone Street, city: Monroeville, state: al, zip: '36460'}
+  address:
+    street: 159 Whetstone Street
+    city: Monroeville
+    state: al
+    zip: '36460'
   place: 0150192
-  geo: {lat: 31.50129, lng: -87.32887}
+  geo:
+    lat: 31.50129
+    lng: -87.32887
   phone: 334-743-5891
   website: https://www.va.gov/central-alabama-health-care/locations/monroe-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -81,10 +94,13 @@
   - Pharmacy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_619GE}
+  external_ids:
+    va: vha_619GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/monroeville/monroeville-elementary-school
   name: Monroeville Elementary School
   categories:

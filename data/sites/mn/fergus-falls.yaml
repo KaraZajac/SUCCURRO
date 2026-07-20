@@ -4,13 +4,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1205 West Lincoln Avenue, city: Fergus Falls, state: mn, zip: '56537'}
+  address:
+    street: 1205 West Lincoln Avenue
+    city: Fergus Falls
+    state: mn
+    zip: '56537'
   place: '2720906'
-  geo: {lat: 46.28179, lng: -96.09661}
+  geo:
+    lat: 46.28179
+    lng: -96.09661
   phone: 218-739-1400
   website: https://www.va.gov/fargo-health-care/locations/fergus-falls-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -21,10 +34,13 @@
   - Nutrition, food, and dietary care
   - Primary care
   - Urology
-  external_ids: {va: vha_437GC}
+  external_ids:
+    va: vha_437GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/fergus-falls/hra-of-fergus-falls-minnesota
   name: Hra Of Fergus Falls, Minnesota
   categories:
@@ -107,6 +123,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/fergus-falls/mahube-otwa-community-action-partnership
+  name: Mahube-Otwa Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Otter Tail County
+  address: {street: 128 West Cavour Ave., city: Fergus Falls, state: mn, zip: '56537'}
+  place: '2720906'
+  phone: 218-739-3011
+  email: info@mahube.org
+  website: http://www.mahube.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/fergus-falls/northstar-behavioral-health-network-fergus-falls
   name: Northstar Behavioral Health Network Fergus Falls
   categories:

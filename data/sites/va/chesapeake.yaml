@@ -248,6 +248,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/chesapeake/chesapeake-department-of-social-services
+  name: Chesapeake Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chesapeake City County
+  address: {street: 100 Outlaw St. (P. O Box 15098), city: Chesapeake, state: va, zip: '23320'}
+  place: '5116000'
+  phone: 757-382-2000
+  website: https://www.cityofchesapeake.net/358/Chesapeake-Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/chesapeake/chesapeake-integrated-behavioral-healthcare
   name: Chesapeake Integrated Behavioral Healthcare
   categories:
@@ -310,13 +322,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1987 South Military Highway, city: Chesapeake, state: va, zip: '23320'}
+  address:
+    street: 1987 South Military Highway
+    city: Chesapeake
+    state: va
+    zip: '23320'
   place: '5116000'
-  geo: {lat: 36.78727, lng: -76.25587}
+  geo:
+    lat: 36.78727
+    lng: -76.25587
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/chesapeake-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -326,21 +351,37 @@
   - Primary care
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_590GD}
+  external_ids:
+    va: vha_590GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/chesapeake/chesapeake-vet-center
   name: Chesapeake Vet Center
   categories:
   - vet-center
-  address: {street: 3132 Lynnhurst Boulevard, city: Chesapeake, state: va, zip: '23321'}
+  address:
+    street: 3132 Lynnhurst Boulevard
+    city: Chesapeake
+    state: va
+    zip: '23321'
   place: '5116000'
-  geo: {lat: 36.85018, lng: -76.42682}
+  geo:
+    lat: 36.85018
+    lng: -76.42682
   phone: 757-315-3438
   website: https://www.va.gov/chesapeake-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -353,10 +394,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0207V}
+  external_ids:
+    va: vc_0207V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/chesapeake/churchland-center
   name: Churchland Center
   categories:
@@ -600,12 +644,25 @@
   name: North Battlefield VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 70 Knells Ridge Boulevard, city: Chesapeake, state: va, zip: '23320'}
+  address:
+    street: 70 Knells Ridge Boulevard
+    city: Chesapeake
+    state: va
+    zip: '23320'
   place: '5116000'
-  geo: {lat: 36.74902, lng: -76.24848}
+  geo:
+    lat: 36.74902
+    lng: -76.24848
   website: https://www.va.gov/hampton-health-care/locations/north-battlefield-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - Dermatology
@@ -615,10 +672,13 @@
   - PrimaryCare
   - Urology
   - WomensHealth
-  external_ids: {va: vha_590GF}
+  external_ids:
+    va: vha_590GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/chesapeake/oscar-f-smith-high
   name: Oscar F Smith High
   categories:
@@ -931,9 +991,15 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '1428 Cedar Rd, Pass Building, Room 204', city: Chesapeake, state: va, zip: '23322'}
+  address:
+    street: 1428 Cedar Rd, Pass Building, Room 204
+    city: Chesapeake
+    state: va
+    zip: '23322'
   place: '5116000'
-  geo: {lat: 36.72747, lng: -76.29484}
+  geo:
+    lat: 36.72747
+    lng: -76.29484
   phone: 757-858-6154, ext. 30191
   website: https://www.va.gov/find-locations/facility/vba_314m
   services:
@@ -941,10 +1007,13 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314m}
+  external_ids:
+    va: vba_314m
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/chesapeake/western-branch-int
   name: Western Branch Int
   categories:

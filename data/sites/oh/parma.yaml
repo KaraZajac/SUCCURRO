@@ -205,13 +205,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 8787 Brookpark Road, city: Parma, state: oh, zip: '44129'}
+  address:
+    street: 8787 Brookpark Road
+    city: Parma
+    state: oh
+    zip: '44129'
   place: '3961000'
-  geo: {lat: 41.41847, lng: -81.74646}
+  geo:
+    lat: 41.41847
+    lng: -81.74646
   phone: 216-739-7000
   website: https://www.va.gov/northeast-ohio-health-care/locations/parma-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -238,10 +251,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_541GL}
+  external_ids:
+    va: vha_541GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/parma/st-bridget-s
   name: St. Bridget's
   categories:

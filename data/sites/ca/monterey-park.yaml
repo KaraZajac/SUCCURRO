@@ -192,15 +192,32 @@
   name: East Los Angeles Vet Center
   categories:
   - vet-center
-  address: {street: '1000 Corporate Center Drive, Suite 450', city: Monterey Park, state: ca, zip: '91754'}
+  address:
+    street: 1000 Corporate Center Drive, Suite 450
+    city: Monterey Park
+    state: ca
+    zip: '91754'
   place: 0648914
-  geo: {lat: 34.05133, lng: -118.16231}
+  geo:
+    lat: 34.05133
+    lng: -118.16231
   phone: 323-728-9966
   website: https://www.va.gov/east-los-angeles-vet-center/
   hours:
-  - {days: [mon], open: '08:00', close: '20:00'}
-  - {days: [tue, wed, thu], open: '08:00', close: '17:00'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 08:00
+    close: '20:00'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '17:00'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -214,10 +231,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0623V}
+  external_ids:
+    va: vc_0623V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/monterey-park/garfield-health-center
   name: Garfield Health Center
   categories:

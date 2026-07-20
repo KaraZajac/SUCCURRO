@@ -123,6 +123,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/north-platte/nebraska-deparment-of-health-and-human-services
+  name: Nebraska Deparment of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lincoln County
+  address: {street: 200 South Silber St., city: North Platte, state: ne, zip: '69101'}
+  place: '3135000'
+  phone: 308-535-8200
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ne/north-platte/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hayes, Hooker, Logan, McPherson, Thomas Counties
+  address: {street: 200 South Silber St., city: North Platte, state: ne, zip: '69101'}
+  place: '3135000'
+  phone: 308-535-8200
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/north-platte/north-platte-head-start
   name: North Platte Head Start
   categories:
@@ -168,13 +190,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 300 East 3rd Street, city: North Platte, state: ne, zip: '69101'}
+  address:
+    street: 300 East 3rd Street
+    city: North Platte
+    state: ne
+    zip: '69101'
   place: '3135000'
-  geo: {lat: 41.13514, lng: -100.76097}
+  geo:
+    lat: 41.13514
+    lng: -100.76097
   phone: 308-532-6906
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/north-platte-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -184,10 +219,13 @@
   - My HealtheVet coordinator
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_636GB}
+  external_ids:
+    va: vha_636GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/north-platte/psychiatric-hope
   name: Psychiatric Hope
   categories:

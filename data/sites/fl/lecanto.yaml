@@ -1,3 +1,15 @@
+- id: fl/lecanto/citrus-county-division-of-housing-services
+  name: Citrus County Division of Housing Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Citrus County
+  address: {street: 2804 W. Marc Knighton Ct., city: Lecanto, state: fl, zip: '34461'}
+  place: '1239825'
+  phone: 352-527-7520
+  website: https://citrusbocc.com/departments/community_services/housing_services/home_energy_assistance_(liheap).php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/lecanto/citrus-county-housing-services
   name: Citrus County Housing Services
   categories:
@@ -158,13 +170,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2804 West Marc Knighton Court, city: Lecanto, state: fl, zip: '34461'}
+  address:
+    street: 2804 West Marc Knighton Court
+    city: Lecanto
+    state: fl
+    zip: '34461'
   place: '1239825'
-  geo: {lat: 28.90565, lng: -82.48043}
+  geo:
+    lat: 28.90565
+    lng: -82.48043
   phone: 352-746-8000
   website: https://www.va.gov/tampa-health-care/locations/lecanto-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -177,7 +202,10 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_673GH}
+  external_ids:
+    va: vha_673GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

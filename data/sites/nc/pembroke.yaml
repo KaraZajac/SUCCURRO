@@ -196,13 +196,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 139 Three Hunts Drive, city: Pembroke, state: nc, zip: '28372'}
+  address:
+    street: 139 Three Hunts Drive
+    city: Pembroke
+    state: nc
+    zip: '28372'
   place: '3751080'
-  geo: {lat: 34.64722, lng: -79.16965}
+  geo:
+    lat: 34.64722
+    lng: -79.16965
   phone: 910-272-3220
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/robeson-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -213,10 +226,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_565GE}
+  external_ids:
+    va: vha_565GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/pembroke/robeson-health-care-corporation
   name: Robeson Health Care Corporation
   categories:

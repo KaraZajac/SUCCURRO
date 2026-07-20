@@ -26,13 +26,28 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 76 Veterans Avenue, city: Bath, state: ny, zip: '14810'}
+  address:
+    street: 76 Veterans Avenue
+    city: Bath
+    state: ny
+    zip: '14810'
   place: '3604759'
-  geo: {lat: 42.34343, lng: -77.34725}
+  geo:
+    lat: 42.34343
+    lng: -77.34725
   phone: 607-664-4000
   website: https://www.va.gov/finger-lakes-health-care/locations/bath-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '19:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '19:00'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -76,10 +91,24 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_528A6}
+  external_ids:
+    va: vha_528A6
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ny/bath/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Steuben County
+  address: {street: 3 East Pulteney Square, city: Bath, state: ny, zip: '14810'}
+  place: '3604759'
+  phone: 607-664-2298
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/bath/eastern-steuben-hs-ehs-home-based
   name: Eastern Steuben HS/EHS Home Based
   categories:
@@ -203,6 +232,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/bath/steuben-county-department-of-social-services
+  name: Steuben County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Steuben County
+  address: {street: 3 East Pulteney Square, city: Bath, state: ny, zip: '14810'}
+  place: '3604759'
+  phone: 607-664-2500
+  email: HEAP@steubencountyny.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/bath/vernon-e-wightman-primary-school
   name: Vernon E Wightman Primary School
   categories:

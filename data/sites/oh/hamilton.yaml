@@ -494,13 +494,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 7215 Gateway Avenue, city: Hamilton, state: oh, zip: '45011'}
+  address:
+    street: 7215 Gateway Avenue
+    city: Hamilton
+    state: oh
+    zip: '45011'
   place: '3933012'
-  geo: {lat: 39.37871, lng: -84.51097}
+  geo:
+    lat: 39.37871
+    lng: -84.51097
   phone: 513-870-9444
   website: https://www.va.gov/cincinnati-health-care/locations/hamilton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -513,10 +526,13 @@
   - Podiatry
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_539GE}
+  external_ids:
+    va: vha_539GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/hamilton/hamilton-west
   name: Hamilton West
   categories:
@@ -988,6 +1004,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/hamilton/supports-to-encourage-low-income-families
+  name: Supports to Encourage Low-Income Families
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Butler County
+  address: {street: '415 S. Monument Ave,', city: Hamilton, state: oh, zip: '45011'}
+  place: '3933012'
+  phone: 513-868-9300
+  email: contact@selfhelps.org
+  website: https://selfhelps.org/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/hamilton/transitional-living
   name: Transitional Living
   categories:

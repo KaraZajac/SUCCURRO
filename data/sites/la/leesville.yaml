@@ -86,13 +86,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3353 University Parkway, city: Leesville, state: la, zip: '71446'}
+  address:
+    street: 3353 University Parkway
+    city: Leesville
+    state: la
+    zip: '71446'
   place: '2243010'
-  geo: {lat: 31.12013, lng: -93.24842}
+  geo:
+    lat: 31.12013
+    lng: -93.24842
   phone: 337-392-3800
   website: https://www.va.gov/alexandria-health-care/locations/fort-johnson-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -103,10 +116,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Women Veteran care
-  external_ids: {va: vha_502GF}
+  external_ids:
+    va: vha_502GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/leesville/hicks-head-start
   name: Hicks Head Start
   categories:
@@ -249,6 +265,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/leesville/vernon-community-action-council
+  name: Vernon Community Action Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Vernon County
+  address: {street: 12286 Lake Charles Highway, city: Leesville, state: la, zip: '71446'}
+  place: '2243010'
+  phone: 337-404-7710
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: la/leesville/vernon-parish-community-health-center
   name: Vernon Parish Community Health Center
   categories:

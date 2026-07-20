@@ -24,14 +24,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 250 North Arcadia Avenue, city: Decatur, state: ga, zip: '30030'}
+  address:
+    street: 250 North Arcadia Avenue
+    city: Decatur
+    state: ga
+    zip: '30030'
   place: '1322052'
-  geo: {lat: 33.78142, lng: -84.27757}
+  geo:
+    lat: 33.78142
+    lng: -84.27757
   phone: 404-297-1540
   website: https://www.va.gov/atlanta-health-care/locations/atlanta-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:30', close: '18:00'}
-  - {days: [wed], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:30
+    close: '18:00'
+  - days:
+    - wed
+    open: 07:30
+    close: '16:00'
   services:
   - Anesthesia
   - Dental/oral surgery
@@ -45,40 +60,61 @@
   - Rheumatology
   - Sleep medicine
   - Women Veteran care
-  external_ids: {va: vha_508QF}
+  external_ids:
+    va: vha_508QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/atlanta-va-mobile-medical-unit
   name: Atlanta VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1670 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 1670 Clairmont Road
+    city: Decatur
+    state: ga
+    zip: '30033'
   place: '1322052'
-  geo: {lat: 33.80258, lng: -84.31041}
+  geo:
+    lat: 33.80258
+    lng: -84.31041
   phone: 404-321-6111
   website: https://www.va.gov/find-locations/facility/vha_508QK
-  external_ids: {va: vha_508QK}
+  external_ids:
+    va: vha_508QK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/atlanta-veteran-readiness-and-employment-office
   name: Atlanta Veteran Readiness and Employment Office
   categories: &id002
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 1700 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 1700 Clairmont Road
+    city: Decatur
+    state: ga
+    zip: '30033'
   place: '1322052'
-  geo: {lat: 33.80401, lng: -84.31033}
+  geo:
+    lat: 33.80401
+    lng: -84.31033
   phone: 404-929-3152
   website: https://www.va.gov/find-locations/facility/vba_316a
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_316a}
+  external_ids:
+    va: vba_316a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/camp-jewell-house
   name: Camp Jewell House
   categories:
@@ -424,9 +460,15 @@
   name: Joseph Maxwell Cleland Atlanta VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1670 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 1670 Clairmont Road
+    city: Decatur
+    state: ga
+    zip: '30033'
   place: '1322052'
-  geo: {lat: 33.80194, lng: -84.31303}
+  geo:
+    lat: 33.80194
+    lng: -84.31303
   phone: 404-321-6111
   website: https://www.va.gov/atlanta-health-care/locations/joseph-maxwell-cleland-atlanta-va-medical-center/
   services:
@@ -478,10 +520,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_508}
+  external_ids:
+    va: vha_508
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/kameo-production-studios-llc
   name: Kameo Production Studios,Llc.
   categories:
@@ -874,6 +919,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/decatur/partnership-for-community-action-inc
+  name: Partnership for Community Action Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dekalb, Gwinnett, Rockdale Counties
+  address: {street: 3597 Covington Highway, city: Decatur, state: ga, zip: '30032'}
+  place: '1322052'
+  phone: 404-929-2500
+  website: http://www.pcaction.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ga/decatur/partnership-for-community-action-inc-2
+  name: Partnership for Community Action, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Newton, Walton Counties
+  address: {street: 3597 Covington Highway, city: Decatur, state: ga, zip: '30032'}
+  place: '1322052'
+  phone: 404-929-2500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/decatur/peachcrest-elementary-school
   name: Peachcrest Elementary School
   categories:
@@ -1051,9 +1119,15 @@
   name: Senator Johnny Isakson VA Atlanta Regional Office
   categories: *id002
   description: Regional Benefit Office
-  address: {street: 1700 Clairmont Road, city: Decatur, state: ga, zip: '30033'}
+  address:
+    street: 1700 Clairmont Road
+    city: Decatur
+    state: ga
+    zip: '30033'
   place: '1322052'
-  geo: {lat: 33.80356, lng: -84.31071}
+  geo:
+    lat: 33.80356
+    lng: -84.31071
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_316
   services:
@@ -1064,10 +1138,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_316}
+  external_ids:
+    va: vba_316
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/decatur/sisson-super-saver
   name: Sisson Super Saver
   categories:

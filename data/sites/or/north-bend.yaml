@@ -148,14 +148,29 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2191 Marion Street, city: North Bend, state: or, zip: '97459'}
+  address:
+    street: 2191 Marion Street
+    city: North Bend
+    state: or
+    zip: '97459'
   place: '4153000'
-  geo: {lat: 43.40429, lng: -124.236}
+  geo:
+    lat: 43.40429
+    lng: -124.236
   phone: 541-756-8002
   website: https://www.va.gov/roseburg-health-care/locations/north-bend-va-clinic/
   hours:
-  - {days: [mon, tue, wed, fri], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '09:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 09:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Homeless Veteran care
@@ -165,10 +180,13 @@
   - Primary care
   - Social work
   - Toxic exposure screening
-  external_ids: {va: vha_653GA}
+  external_ids:
+    va: vha_653GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/north-bend/waterfall-clinic-inc
   name: WATERFALL CLINIC, INC.
   categories:

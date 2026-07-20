@@ -345,6 +345,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/white-plains/westchester-county-department-of-social-services
+  name: Westchester County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Westchester County
+  address: {street: 112 E. Post Rd. 5th Fl., city: White Plains, state: ny, zip: '10601'}
+  place: '3681677'
+  phone: 914-995-3333
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/white-plains/white-plains-housing-authority
   name: White Plains Housing Authority
   categories:
@@ -415,23 +426,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 23 South Broadway, city: White Plains, state: ny, zip: '10601'}
+  address:
+    street: 23 South Broadway
+    city: White Plains
+    state: ny
+    zip: '10601'
   place: '3681677'
-  geo: {lat: 41.03278, lng: -73.76259}
+  geo:
+    lat: 41.03278
+    lng: -73.76259
   phone: 914-421-1951
   website: https://www.va.gov/bronx-health-care/locations/white-plains-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_526GA}
+  external_ids:
+    va: vha_526GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/white-plains/women-s-premier-obstetrics
   name: Women's Premier Obstetrics
   categories:

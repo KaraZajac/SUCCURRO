@@ -480,6 +480,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ct/waterbury/new-opportunities-inc-waterbury-area
+  name: New Opportunities, Inc.(Waterbury area)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Litchfield County
+  address: {street: '323 North Elm St.,', city: Waterbury, state: ct, zip: '06702'}
+  place: 0980000
+  phone: 203-575-9799
+  website: https://www.newoppinc.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ct/waterbury/nhs-of-wtby-885-n-main
   name: NHS of Wtby - 885 N Main
   categories:
@@ -971,22 +983,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 95 Scovill Street, city: Waterbury, state: ct, zip: '06706'}
+  address:
+    street: 95 Scovill Street
+    city: Waterbury
+    state: ct
+    zip: '06706'
   place: 0980000
-  geo: {lat: 41.55362, lng: -73.03735}
+  geo:
+    lat: 41.55362
+    lng: -73.03735
   phone: 203-465-5292
   website: https://www.va.gov/connecticut-health-care/locations/waterbury-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_689GA}
+  external_ids:
+    va: vha_689GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ct/waterbury/wellmore-inc-standard-outpatient
   name: Wellmore Inc Standard Outpatient
   categories:

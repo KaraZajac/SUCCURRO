@@ -366,13 +366,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1148 Lake Boulevard, city: Marion, state: oh, zip: '43302'}
+  address:
+    street: 1148 Lake Boulevard
+    city: Marion
+    state: oh
+    zip: '43302'
   place: '3947754'
-  geo: {lat: 40.56793, lng: -83.11575}
+  geo:
+    lat: 40.56793
+    lng: -83.11575
   phone: 740-223-8089
   website: https://www.va.gov/central-ohio-health-care/locations/marion-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -385,10 +398,13 @@
   - Primary care
   - Social work
   - Suicide prevention
-  external_ids: {va: vha_757GC}
+  external_ids:
+    va: vha_757GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/marion/mindfully-marion
   name: Mindfully Marion
   categories:
@@ -467,6 +483,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/marion/ohio-heartland-community-action-commission
+  name: Ohio Heartland Community Action Commission
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Crawford, Marion, Morrow, Richland Counties
+  address: {street: 372 E. Center St. (P.O. Box 779), city: Marion, state: oh, zip: '43302'}
+  place: '3947754'
+  phone: 740-387-1039
+  website: https://www.ohcac.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/marion/pinnacle-treatment-centers-oh-xiv-llc-marion-tre
   name: Pinnacle Treatment Centers OH XIV LLC Marion Treatment Services
   categories:

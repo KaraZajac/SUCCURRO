@@ -151,13 +151,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1327 Lake Pointe Parkway, city: Sugar Land, state: tx, zip: '77478'}
+  address:
+    street: 1327 Lake Pointe Parkway
+    city: Sugar Land
+    state: tx
+    zip: '77478'
   place: '4870808'
-  geo: {lat: 29.6048, lng: -95.62124}
+  geo:
+    lat: 29.6048
+    lng: -95.62124
   phone: 281-275-8900
   website: https://www.va.gov/houston-health-care/locations/sugar-land-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Internal medicine
   - Laboratory and pathology
@@ -171,7 +184,10 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GL}
+  external_ids:
+    va: vha_580GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

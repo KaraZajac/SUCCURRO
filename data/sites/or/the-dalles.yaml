@@ -90,13 +90,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 704 Veterans Drive, city: The Dalles, state: or, zip: '97058'}
+  address:
+    street: 704 Veterans Drive
+    city: The Dalles
+    state: or
+    zip: '97058'
   place: '4172950'
-  geo: {lat: 45.60037, lng: -121.12559}
+  geo:
+    lat: 45.60037
+    lng: -121.12559
   phone: 541-296-3937
   website: https://www.va.gov/portland-health-care/locations/loren-r-kaufman-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -104,10 +117,13 @@
   - Returning service member care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_648GJ}
+  external_ids:
+    va: vha_648GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/the-dalles/mid-columbia-center-for-living
   name: Mid Columbia Center for Living
   categories:
@@ -129,6 +145,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/the-dalles/mid-columbia-community-action-council
+  name: Mid-Columbia Community Action Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sherman, Wasco Counties
+  address: {street: 2505 W 7th Street, city: The Dalles, state: or, zip: '97058'}
+  place: '4172950'
+  phone: 541-298-5131
+  email: info@mccac.com
+  website: https://www.mccac.com/energy-and-utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/the-dalles/mid-columbia-housing-authority
   name: Mid-Columbia Housing Authority
   categories:

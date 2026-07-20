@@ -88,18 +88,33 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3475 North Saratoga Street, city: Oak Harbor, state: wa, zip: '98278'}
+  address:
+    street: 3475 North Saratoga Street
+    city: Oak Harbor
+    state: wa
+    zip: '98278'
   place: '5350360'
-  geo: {lat: 48.33642, lng: -122.68018}
+  geo:
+    lat: 48.33642
+    lng: -122.68018
   phone: 800-329-8387
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_663GL}
+  external_ids:
+    va: vha_663GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/oak-harbor/olympic-view-elementary
   name: Olympic View Elementary
   categories:
@@ -122,6 +137,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/oak-harbor/opportunity-council
+  name: Opportunity Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Island County
+  address: {street: '231 SE Barrington Ave., Suite 10, (P. O.Box 922)', city: Oak Harbor, state: wa, zip: '98225'}
+  place: '5350360'
+  phone: 360-679-6577
+  website: https://www.oppco.org/utilities/#how-to-apply
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/oak-harbor/pioneer-human-services-ituha
   name: Pioneer Human Services ITUHA
   categories:

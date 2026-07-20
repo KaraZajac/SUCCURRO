@@ -2604,13 +2604,26 @@
   name: Center City Philadelphia Vet Center
   categories: &id002
   - vet-center
-  address: {street: '801 Arch Street, Suite 502', city: Philadelphia, state: pa, zip: '19107'}
+  address:
+    street: 801 Arch Street, Suite 502
+    city: Philadelphia
+    state: pa
+    zip: '19107'
   place: '4260000'
-  geo: {lat: 39.95327, lng: -75.15321}
+  geo:
+    lat: 39.95327
+    lng: -75.15321
   phone: 215-627-0238
   website: https://www.va.gov/center-city-philadelphia-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2628,10 +2641,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0210V}
+  external_ids:
+    va: vc_0210V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/chalfont-playground
   name: Chalfont Playground
   categories:
@@ -2654,23 +2670,51 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/chelten-district
+  name: Chelten District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: '301 East Chelten Avenue, 3rd Floor', city: Philadelphia, state: pa, zip: '19144'}
+  place: '4260000'
+  phone: 215-560-5200
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/chestnut-street-va-clinic
   name: Chestnut Street VA Clinic
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 4219 Chestnut Street, city: Philadelphia, state: pa, zip: '19104'}
+  address:
+    street: 4219 Chestnut Street
+    city: Philadelphia
+    state: pa
+    zip: '19104'
   place: '4260000'
-  geo: {lat: 39.95633, lng: -75.20717}
+  geo:
+    lat: 39.95633
+    lng: -75.20717
   phone: 215-222-7440
   website: https://www.va.gov/philadelphia-health-care/locations/chestnut-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat], open: '06:30', close: '16:30'}
-  external_ids: {va: vha_642QA}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 06:30
+    close: '16:30'
+  external_ids:
+    va: vha_642QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/chew-playground
   name: Chew Playground
   categories:
@@ -3890,9 +3934,15 @@
   name: Corporal Michael J. Crescenz Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3900 Woodland Avenue, city: Philadelphia, state: pa, zip: '19104'}
+  address:
+    street: 3900 Woodland Avenue
+    city: Philadelphia
+    state: pa
+    zip: '19104'
   place: '4260000'
-  geo: {lat: 39.94975, lng: -75.20124}
+  geo:
+    lat: 39.94975
+    lng: -75.20124
   phone: 215-823-5800
   website: https://www.va.gov/philadelphia-health-care/locations/corporal-michael-j-crescenz-department-of-veterans-affairs/
   services:
@@ -3954,10 +4004,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_642}
+  external_ids:
+    va: vha_642
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/cottman-community-health-center
   name: Cottman Community Health Center
   categories:
@@ -4316,6 +4369,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/delancey-district
+  name: Delancey District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: '5740 Market Street, 2nd Floor', city: Philadelphia, state: pa, zip: '19139'}
+  place: '4260000'
+  phone: 215-560-3700
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/delaware-valley-community-health-inc-administrat
   name: Delaware Valley Community Health, Inc. - Administrative
   categories:
@@ -4874,6 +4938,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/elmwood-district
+  name: Elmwood District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: '5740 Market Street, 1st Floor', city: Philadelphia, state: pa, zip: '19139'}
+  place: '4260000'
+  phone: 215-560-3800
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/emlen-eleanor-c-school-pre-k
   name: Emlen, Eleanor C. School Pre-K
   categories:
@@ -5326,6 +5401,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/federal-district
+  name: Federal District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: 1334 Bainbridge Street, city: Philadelphia, state: pa, zip: '19147'}
+  place: '4260000'
+  phone: 215-560-4400
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/fels-lassin
   name: FELS- Lassin
   categories:
@@ -5580,17 +5666,33 @@
   name: Fourth Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 213 North 4th Street, city: Philadelphia, state: pa, zip: '19106'}
+  address:
+    street: 213 North 4th Street
+    city: Philadelphia
+    state: pa
+    zip: '19106'
   place: '4260000'
-  geo: {lat: 39.95464, lng: -75.14604}
+  geo:
+    lat: 39.95464
+    lng: -75.14604
   phone: 215-823-5800
   website: https://www.va.gov/philadelphia-health-care/locations/fourth-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_642QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_642QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/fouta-islamic-center-of-philadelphia
   name: Fouta Islamic Center Of Philadelphia
   categories:
@@ -8701,6 +8803,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/low-income-home-energy-assistance-program
+  name: Low Income Home Energy Assistance Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: 1163 S. Board Street, city: Philadelphia, state: pa, zip: '19132'}
+  place: '4260000'
+  phone: 215-560-1583
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/lower-mayfair-after-care
   name: Lower Mayfair After-Care
   categories:
@@ -10505,13 +10618,26 @@
 - id: pa/philadelphia/northeast-philadelphia-vet-center
   name: Northeast Philadelphia Vet Center
   categories: *id002
-  address: {street: 101 East Olney Avenue, city: Philadelphia, state: pa, zip: '19120'}
+  address:
+    street: 101 East Olney Avenue
+    city: Philadelphia
+    state: pa
+    zip: '19120'
   place: '4260000'
-  geo: {lat: 40.03534, lng: -75.12136}
+  geo:
+    lat: 40.03534
+    lng: -75.12136
   phone: 215-924-4670
   website: https://www.va.gov/northeast-philadelphia-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -10530,10 +10656,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0219V}
+  external_ids:
+    va: vc_0219V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/northeast-treatment-centers-ccbhc
   name: Northeast Treatment Centers CCBHC
   categories:
@@ -11099,6 +11228,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/philadelphia/philadelphia-county-assistance-office-headquarte
+  name: Philadelphia County Assistance Office Headquarters
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Philadelphia County
+  address: {street: 801 Market Street, city: Philadelphia, state: pa, zip: '19124'}
+  place: '4260000'
+  phone: 215-560-1583
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/philadelphia/philadelphia-district-health-center-10
   name: 'Philadelphia District Health Center #10'
   categories:
@@ -11379,15 +11519,24 @@
   name: Philadelphia VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: 1425-1429 Snyder Avenue, city: Philadelphia, state: pa, zip: '19145'}
+  address:
+    street: 1425-1429 Snyder Avenue
+    city: Philadelphia
+    state: pa
+    zip: '19145'
   place: '4260000'
-  geo: {lat: 39.92454, lng: -75.17063}
+  geo:
+    lat: 39.92454
+    lng: -75.17063
   phone: 267-292-9300
   website: https://www.va.gov/find-locations/facility/vha_642BU
-  external_ids: {va: vha_642BU}
+  external_ids:
+    va: vha_642BU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/philadelphia-va-medical-center-pvamc-addiction-r
   name: Philadelphia VA Medical Center (PVAMC) Addiction Recovery Unit
   categories:
@@ -11435,9 +11584,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 5000 Wissahickon Ave., city: Philadelphia, state: pa, zip: '19144'}
+  address:
+    street: 5000 Wissahickon Ave.
+    city: Philadelphia
+    state: pa
+    zip: '19144'
   place: '4260000'
-  geo: {lat: 40.01854, lng: -75.17342}
+  geo:
+    lat: 40.01854
+    lng: -75.17342
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -11453,10 +11608,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_310}
+  external_ids:
+    va: vba_310
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/philly-movement-s-dance-company
   name: Philly Movement'S Dance Company
   categories:
@@ -19578,13 +19736,26 @@
   name: West Philadelphia VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 6232 Market Street, city: Philadelphia, state: pa, zip: '19139'}
+  address:
+    street: 6232 Market Street
+    city: Philadelphia
+    state: pa
+    zip: '19139'
   place: '4260000'
-  geo: {lat: 39.96219, lng: -75.24623}
+  geo:
+    lat: 39.96219
+    lng: -75.24623
   phone: 215-222-7540
   website: https://www.va.gov/philadelphia-health-care/locations/west-philadelphia-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -19594,10 +19765,13 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_642GH}
+  external_ids:
+    va: vha_642GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/philadelphia/west-philadelphia-ymca
   name: West Philadelphia Ymca
   categories:

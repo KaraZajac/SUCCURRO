@@ -144,14 +144,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '5700 North Expressway, Texas Coastal Professional Building', city: Brownsville, state: tx,
-    zip: '78526'}
+  address:
+    street: 5700 North Expressway, Texas Coastal Professional Building
+    city: Brownsville
+    state: tx
+    zip: '78526'
   place: '4810768'
-  geo: {lat: 25.98746, lng: -97.51982}
+  geo:
+    lat: 25.98746
+    lng: -97.51982
   phone: 956-366-4500
   website: https://www.va.gov/texas-valley-health-care/locations/brownsville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -160,10 +172,13 @@
   - Primary care
   - Psychiatry
   - Social work
-  external_ids: {va: vha_740GK}
+  external_ids:
+    va: vha_740GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/brownsville/bruce-aiken-head-start
   name: Bruce Aiken Head Start
   categories:

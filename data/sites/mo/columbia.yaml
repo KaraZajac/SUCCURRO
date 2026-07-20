@@ -153,19 +153,35 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3425 Buttonwood Drive, city: Columbia, state: mo, zip: '65201'}
+  address:
+    street: 3425 Buttonwood Drive
+    city: Columbia
+    state: mo
+    zip: '65201'
   place: '2915670'
-  geo: {lat: 38.91315, lng: -92.33144}
+  geo:
+    lat: 38.91315
+    lng: -92.33144
   phone: 573-814-6263
   website: https://www.va.gov/columbia-missouri-health-care/locations/buttonwood-drive-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_589QH}
+  external_ids:
+    va: vha_589QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/columbia/center-for-early-learning-north
   name: Center for Early Learning North
   categories:
@@ -206,6 +222,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/columbia/central-missouri-community-action-cmca
+  name: Central Missouri Community Action (CMCA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Audrain, Boone, Callaway, Cole, Cooper, Howard, Moniteau,
+    Osage Counties
+  address: {street: 800 N Providence Rd., city: Columbia, state: mo, zip: '65203'}
+  place: '2915670'
+  phone: 573-200-6655
+  email: pr@cmca.us
+  website: https://cmca.us/get-help/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/columbia/cha-bear-creek
   name: Cha - Bear Creek
   categories:
@@ -318,14 +348,29 @@
   name: Columbia, MO Vet Center
   categories: &id001
   - vet-center
-  address: {street: '2475 Broadway Bluffs Drive, Suite 40', city: Columbia, state: mo, zip: '65201'}
+  address:
+    street: 2475 Broadway Bluffs Drive, Suite 40
+    city: Columbia
+    state: mo
+    zip: '65201'
   place: '2915670'
-  geo: {lat: 38.94752, lng: -92.30165}
+  geo:
+    lat: 38.94752
+    lng: -92.30165
   phone: 573-814-6206
   website: https://www.va.gov/columbia-mo-vet-center/
   hours:
-  - {days: [mon], open: '07:00', close: '16:30'}
-  - {days: [tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    open: 07:00
+    close: '16:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -338,22 +383,34 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0443V}
+  external_ids:
+    va: vc_0443V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/columbia/columbia-mobile-vet-center
   name: Columbia Mobile Vet Center
   categories: *id001
-  address: {street: '2475 Broadway Bluffs Drive, Suite 40', city: Columbia, state: mo, zip: '65201'}
+  address:
+    street: 2475 Broadway Bluffs Drive, Suite 40
+    city: Columbia
+    state: mo
+    zip: '65201'
   place: '2915670'
-  geo: {lat: 38.94752, lng: -92.30165}
+  geo:
+    lat: 38.94752
+    lng: -92.30165
   phone: 573-814-6206
   website: https://www.va.gov/columbia-mo-vet-center/locations/#columbia-mobile-vet-center
-  external_ids: {va: vc_0875MVC}
+  external_ids:
+    va: vc_0875MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/columbia/columbia-sda-church-pantry
   name: Columbia SDA Church Pantry
   categories:
@@ -781,9 +838,15 @@
   name: Harry S. Truman Memorial Veterans' Hospital
   categories: *id002
   description: VA Medical Center (VAMC)
-  address: {street: 800 Hospital Drive, city: Columbia, state: mo, zip: '65201'}
+  address:
+    street: 800 Hospital Drive
+    city: Columbia
+    state: mo
+    zip: '65201'
   place: '2915670'
-  geo: {lat: 38.93682, lng: -92.32919}
+  geo:
+    lat: 38.93682
+    lng: -92.32919
   phone: 573-814-6000
   website: https://www.va.gov/columbia-missouri-health-care/locations/harry-s-truman-memorial-veterans-hospital/
   services:
@@ -841,10 +904,13 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_589A4}
+  external_ids:
+    va: vha_589A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/columbia/housing-authority-of-the-city-of-columbia-mo
   name: Housing Authority Of The City Of Columbia, Mo
   categories:

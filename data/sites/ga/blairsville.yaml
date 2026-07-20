@@ -25,13 +25,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '1294 Highway 515, East', city: Blairsville, state: ga, zip: '30512'}
+  address:
+    street: 1294 Highway 515, East
+    city: Blairsville
+    state: ga
+    zip: '30512'
   place: '1308480'
-  geo: {lat: 34.88665, lng: -83.94029}
+  geo:
+    lat: 34.88665
+    lng: -83.94029
   phone: 706-835-3980
   website: https://www.va.gov/atlanta-health-care/locations/blairsville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '15:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -39,10 +52,13 @@
   - Mental health care
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_508GJ}
+  external_ids:
+    va: vha_508GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/blairsville/medmark-treatment-centers-blairsville
   name: MedMark Treatment Centers Blairsville
   categories:
@@ -83,6 +99,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/blairsville/ninth-district-opportunity-inc
+  name: Ninth District Opportunity Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Union County
+  address: {street: 165 Wellborn Street, city: Blairsville, state: ga, zip: '30512'}
+  place: '1308480'
+  phone: 706-745-6596
+  email: union@ndocsbg.org
+  website: https://www.ndo.org/services/heating-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/blairsville/union-county-head-start
   name: Union County Head Start
   categories:

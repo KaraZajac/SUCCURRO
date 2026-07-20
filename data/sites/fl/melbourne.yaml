@@ -432,13 +432,26 @@
   name: Melbourne Vet Center
   categories:
   - vet-center
-  address: {street: 2098 Sarno Road, city: Melbourne, state: fl, zip: '32935'}
+  address:
+    street: 2098 Sarno Road
+    city: Melbourne
+    state: fl
+    zip: '32935'
   place: '1243975'
-  geo: {lat: 28.12173, lng: -80.65565}
+  geo:
+    lat: 28.12173
+    lng: -80.65565
   phone: 321-254-3410
   website: https://www.va.gov/melbourne-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -451,10 +464,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0332V}
+  external_ids:
+    va: vc_0332V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/melbourne/orlando-vamc-viera-va-clinic
   name: Orlando VAMC Viera VA Clinic
   categories:

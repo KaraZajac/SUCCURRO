@@ -69,13 +69,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 10369 State Highway 27, city: Hayward, state: wi, zip: '54843'}
+  address:
+    street: 10369 State Highway 27
+    city: Hayward
+    state: wi
+    zip: '54843'
   place: '5533450'
-  geo: {lat: 46.00702, lng: -91.48144}
+  geo:
+    lat: 46.00702
+    lng: -91.48144
   phone: 715-934-5454
   website: https://www.va.gov/minneapolis-health-care/locations/hayward-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Amputation care
@@ -95,10 +107,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_618GH}
+  external_ids:
+    va: vha_618GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/hayward/lco-community-health-center
   name: LCO Community Health Center
   categories:
@@ -266,6 +281,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/hayward/sawyer-county-department-of-health-human-service
+  name: Sawyer County Department of Health & Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sawyer County
+  address: {street: '10610 Main, Suite 224', city: Hayward, state: wi, zip: '54843'}
+  place: '5533450'
+  phone: 715-634-4806
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/hayward/sawyer-county-housing-authority
   name: Sawyer County Housing Authority
   categories:

@@ -58,6 +58,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: hi/kaneohe/hcap-windward-district
+  name: HCAP - Windward District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Honolulu County
+  address: {street: 47-232 Waihee Rd., city: Kaneohe, state: hi, zip: '96744'}
+  place: '1528250'
+  phone: 808-239-5754
+  email: hcap@hcapweb.org
+  website: https://www.hcapweb.org/low-income-home-energy-assistance-program-liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: hi/kaneohe/heeia-el
   name: Heeia El.
   categories:
@@ -395,14 +408,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '46-001 Kamehameha Highway, Castle Professional Center', city: Kaneohe, state: hi,
-    zip: '96744'}
+  address:
+    street: 46-001 Kamehameha Highway, Castle Professional Center
+    city: Kaneohe
+    state: hi
+    zip: '96744'
   place: '1528250'
-  geo: {lat: 21.41868, lng: -157.80223}
+  geo:
+    lat: 21.41868
+    lng: -157.80223
   phone: 800-214-1306
   website: https://www.va.gov/pacific-islands-health-care/locations/windward-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -417,7 +442,10 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_459QC}
+  external_ids:
+    va: vha_459QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -88,13 +88,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 787 Market Street, city: Hancock, state: mi, zip: '49930'}
+  address:
+    street: 787 Market Street
+    city: Hancock
+    state: mi
+    zip: '49930'
   place: '2636300'
-  geo: {lat: 47.13127, lng: -88.59189}
+  geo:
+    lat: 47.13127
+    lng: -88.59189
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/hancock-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -115,10 +128,13 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585GA}
+  external_ids:
+    va: vha_585GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/hancock/ryan-center
   name: Ryan Center
   categories:

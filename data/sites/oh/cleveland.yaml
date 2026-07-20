@@ -1090,17 +1090,30 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 10701 East Boulevard, city: Cleveland, state: oh, zip: '44106'}
+  address:
+    street: 10701 East Boulevard
+    city: Cleveland
+    state: oh
+    zip: '44106'
   place: '3916000'
-  geo: {lat: 41.51263, lng: -81.61323}
+  geo:
+    lat: 41.51263
+    lng: -81.61323
   phone: 216-791-3800
   website: https://www.va.gov/find-locations/facility/vha_541QH
   hours:
-  - {days: [tue, thu], open: '08:00', close: '13:00'}
-  external_ids: {va: vha_541QH}
+  - days:
+    - tue
+    - thu
+    open: 08:00
+    close: '13:00'
+  external_ids:
+    va: vha_541QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/cleveland-arts-and-social-sciences-academy
   name: Cleveland Arts And Social Sciences Academy
   categories:
@@ -2337,13 +2350,27 @@
   name: Cleveland VA Clinic-Euclid
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 7000 Euclid Avenue, city: Cleveland, state: oh, zip: '44103'}
+  address:
+    street: 7000 Euclid Avenue
+    city: Cleveland
+    state: oh
+    zip: '44103'
   place: '3916000'
-  geo: {lat: 41.50369, lng: -81.64107}
+  geo:
+    lat: 41.50369
+    lng: -81.64107
   phone: 216-391-0264
   website: https://www.va.gov/northeast-ohio-health-care/locations/cleveland-va-clinic-euclid/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat], open: '05:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 05:00
+    close: '17:30'
   services:
   - Homeless Veteran care
   - Mental health care
@@ -2352,51 +2379,84 @@
   - Primary care
   - Suicide prevention
   - Toxic exposure screening
-  external_ids: {va: vha_541QB}
+  external_ids:
+    va: vha_541QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/cleveland-va-clinic-superior
   name: Cleveland VA Clinic-Superior
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 8901 Superior Avenue, city: Cleveland, state: oh, zip: '44106'}
+  address:
+    street: 8901 Superior Avenue
+    city: Cleveland
+    state: oh
+    zip: '44106'
   place: '3916000'
-  geo: {lat: 41.52076, lng: -81.62567}
+  geo:
+    lat: 41.52076
+    lng: -81.62567
   phone: 216-421-3133
   website: https://www.va.gov/northeast-ohio-health-care/locations/cleveland-va-clinic-superior/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '17:00'
   services:
   - Primary care
   - Suicide prevention
   - Toxic exposure screening
-  external_ids: {va: vha_541GM}
+  external_ids:
+    va: vha_541GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/cleveland-va-domiciliary
   name: Cleveland VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: 1563 East Boulevard, city: Cleveland, state: oh, zip: '44106'}
+  address:
+    street: 1563 East Boulevard
+    city: Cleveland
+    state: oh
+    zip: '44106'
   place: '3916000'
-  geo: {lat: 41.51404, lng: -81.61702}
+  geo:
+    lat: 41.51404
+    lng: -81.61702
   phone: 216-485-2525
   website: https://www.va.gov/find-locations/facility/vha_541BU
-  external_ids: {va: vha_541BU}
+  external_ids:
+    va: vha_541BU
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/cleveland-va-regional-benefit-office
   name: Cleveland VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: '1240 E. 9th Street, A.J. Celebrezze Federal Building', city: Cleveland, state: oh,
-    zip: '44199'}
+  address:
+    street: 1240 E. 9th Street, A.J. Celebrezze Federal Building
+    city: Cleveland
+    state: oh
+    zip: '44199'
   place: '3916000'
-  geo: {lat: 41.50536, lng: -81.69134}
+  geo:
+    lat: 41.50536
+    lng: -81.69134
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -2407,10 +2467,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_325}
+  external_ids:
+    va: vba_325
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/clever-bee-arbor-park
   name: Clever Bee Arbor Park
   categories:
@@ -3986,9 +4049,15 @@
   name: Louis Stokes Cleveland Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 10701 East Boulevard, city: Cleveland, state: oh, zip: '44106'}
+  address:
+    street: 10701 East Boulevard
+    city: Cleveland
+    state: oh
+    zip: '44106'
   place: '3916000'
-  geo: {lat: 41.51266, lng: -81.61331}
+  geo:
+    lat: 41.51266
+    lng: -81.61331
   phone: 216-791-3800
   website: https://www.va.gov/northeast-ohio-health-care/locations/louis-stokes-cleveland-department-of-veterans-affairs-medical-center/
   services:
@@ -4048,10 +4117,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_541}
+  external_ids:
+    va: vha_541
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/louis-stokes-head-start
   name: Louis Stokes Head Start
   categories:
@@ -6670,6 +6742,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/cleveland/step-forward-inc
+  name: Step Forward, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cuyahoga County
+  address: {street: '1801 Superior Ave, Suite 400', city: Cleveland, state: oh, zip: '44115'}
+  place: '3916000'
+  phone: 216-696-9077
+  website: https://www.stepforwardtoday.org/energy-assistance-programs
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/cleveland/superior-health-center
   name: SUPERIOR HEALTH CENTER
   categories:
@@ -6933,18 +7017,27 @@
   name: VetSuccess on Campus at Cleveland State University
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '2254 Euclid Avenue, Trinity Commons', city: Cleveland, state: oh, zip: '44115'}
+  address:
+    street: 2254 Euclid Avenue, Trinity Commons
+    city: Cleveland
+    state: oh
+    zip: '44115'
   place: '3916000'
-  geo: {lat: 41.50156, lng: -81.67358}
+  geo:
+    lat: 41.50156
+    lng: -81.67358
   phone: 216-875-9942
   services:
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_325d}
+  external_ids:
+    va: vba_325d
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/cleveland/villa
   name: Villa
   categories:

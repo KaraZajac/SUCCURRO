@@ -1663,8 +1663,14 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 800 Poly Place, city: Brooklyn, state: ny, zip: '11209'}
-  geo: {lat: 40.60904, lng: -74.02363}
+  address:
+    street: 800 Poly Place
+    city: Brooklyn
+    state: ny
+    zip: '11209'
+  geo:
+    lat: 40.60904
+    lng: -74.02363
   phone: 718-836-6600
   website: https://www.va.gov/new-york-harbor-health-care/locations/brooklyn-va-medical-center/
   services:
@@ -1702,20 +1708,36 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_630A4}
+  external_ids:
+    va: vha_630A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/brooklyn/brooklyn-vet-center
   name: Brooklyn Vet Center
   categories:
   - vet-center
-  address: {street: '111 Livingston St., Suite 1910', city: Brooklyn, state: ny, zip: '11201'}
-  geo: {lat: 40.69122, lng: -73.98997}
+  address:
+    street: 111 Livingston St., Suite 1910
+    city: Brooklyn
+    state: ny
+    zip: '11201'
+  geo:
+    lat: 40.69122
+    lng: -73.98997
   phone: 718-630-2830
   website: https://www.va.gov/brooklyn-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1728,10 +1750,13 @@
   - Telehealth
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0105V}
+  external_ids:
+    va: vc_0105V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/brooklyn/brownsville-chc
   name: Brownsville CHC
   categories:
@@ -3906,6 +3931,26 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/brooklyn/hra-benefits-access-center-boerum-hill
+  name: HRA Benefits Access Center Boerum Hill
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New York City County
+  address: {street: 275 Bergen Street 1st Floor, city: Brooklyn, state: ny, zip: '11217'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/brooklyn/hra-benefits-access-center-coney-island-brooklyn
+  name: HRA Benefits Access Center Coney Island (Brooklyn)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New York City County
+  address: {street: 1912 Mermaid Avenue, city: Brooklyn, state: ny, zip: '11217'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/brooklyn/hs-for-innovation-advertising-media
   name: Hs For Innovation -Advertising/Media
   categories:
@@ -5797,6 +5842,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/brooklyn/new-york-department-of-social-services
+  name: New York Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kings County
+  address: {street: 275 Bergen Street 1st Floor, city: Brooklyn, state: ny, zip: '11217'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/brooklyn/new-york-psychotherapy-counseling-ctr-bushwick-c
   name: New York Psychotherapy Counseling Ctr Bushwick Child/Family MH Center
   categories:

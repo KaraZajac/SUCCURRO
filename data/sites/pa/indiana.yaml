@@ -73,6 +73,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/indiana/indiana-county-assistance-office
+  name: Indiana County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Indiana County
+  address: {street: 2750 West Pike Road, city: Indiana, state: pa, zip: '15701'}
+  place: '4236816'
+  phone: 724-357-2918
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/indiana/indiana-county-early-head-start
   name: Indiana County Early Head Start
   categories:
@@ -98,13 +109,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 101 IRMC Drive, city: Indiana, state: pa, zip: '15701'}
+  address:
+    street: 101 IRMC Drive
+    city: Indiana
+    state: pa
+    zip: '15701'
   place: '4236816'
-  geo: {lat: 40.60685, lng: -79.15318}
+  geo:
+    lat: 40.60685
+    lng: -79.15318
   phone: 814-943-8164
   website: https://www.va.gov/altoona-health-care/locations/indiana-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -124,10 +148,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_503GE}
+  external_ids:
+    va: vha_503GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/indiana/indiana-dental-center
   name: Indiana Dental Center
   categories:

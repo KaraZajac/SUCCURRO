@@ -1922,6 +1922,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/newark/la-casa-de-don-pedro
+  name: La Casa de Don Pedro
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Essex County
+  address: {street: 317 Roseville Ave., city: Newark, state: nj, zip: '07107'}
+  place: '3451000'
+  phone: 973-485-0795
+  website: http://www.lacasanwk.org/home-energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/newark/la-casa-de-don-pedro-early-childhood-ctr-iv
   name: La Casa de Don Pedro Early Childhood Ctr IV
   categories:
@@ -3285,9 +3297,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 20 Washington Place, city: Newark, state: nj, zip: '07102'}
+  address:
+    street: 20 Washington Place
+    city: Newark
+    state: nj
+    zip: '07102'
   place: '3451000'
-  geo: {lat: 40.74266, lng: -74.17078}
+  geo:
+    lat: 40.74266
+    lng: -74.17078
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3299,10 +3317,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_309}
+  external_ids:
+    va: vba_309
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/newark/newark-vocational
   name: Newark Vocational
   categories:

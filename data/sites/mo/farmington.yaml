@@ -392,13 +392,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1580 West Columbia Street, city: Farmington, state: mo, zip: '63640'}
+  address:
+    street: 1580 West Columbia Street
+    city: Farmington
+    state: mo
+    zip: '63640'
   place: '2923752'
-  geo: {lat: 37.77317, lng: -90.44131}
+  geo:
+    lat: 37.77317
+    lng: -90.44131
   phone: 573-760-1365
   website: https://www.va.gov/poplar-bluff-health-care/locations/robert-silvey-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Cardiology
@@ -418,10 +431,13 @@
   - Toxic exposure screening
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_657GI}
+  external_ids:
+    va: vha_657GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/farmington/truman-kindergarten-center
   name: Truman Kindergarten Center
   categories:

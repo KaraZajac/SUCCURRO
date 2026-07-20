@@ -17,6 +17,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/aiken/aiken-barnwell-counties-community-action-commiss
+  name: Aiken/Barnwell Counties Community Action Commission Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Aiken County
+  address: {street: '291 Beaufort Street, NE (P. O. Box 2066)', city: Aiken, state: sc, zip: 29802-2066}
+  place: '4500550'
+  phone: 803-648-6836
+  website: https://www.abccaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/aiken/aiken-barnwell-mental-health-center
   name: Aiken-Barnwell Mental Health Center
   categories:
@@ -266,13 +278,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 951 Millbrook Avenue, city: Aiken, state: sc, zip: '29803'}
+  address:
+    street: 951 Millbrook Avenue
+    city: Aiken
+    state: sc
+    zip: '29803'
   place: '4500550'
-  geo: {lat: 33.52107, lng: -81.72037}
+  geo:
+    lat: 33.52107
+    lng: -81.72037
   phone: 706-733-0188
   website: https://www.va.gov/augusta-health-care/locations/aiken-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -288,10 +313,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_509GB}
+  external_ids:
+    va: vha_509GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/aiken/aurora-pavilion-behavioral-hlth-servs
   name: Aurora Pavilion Behavioral Hlth Servs
   categories:

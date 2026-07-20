@@ -770,6 +770,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/lynchburg/lynchburg-department-of-human-services
+  name: Lynchburg Department of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lynchburg City County
+  address: {street: '99 9th St., (P. O. Box 6798)', city: Lynchburg, state: va, zip: '24505'}
+  place: '5147672'
+  phone: 434-455-5850
+  website: https://www.lynchburgva.gov/461/Human-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: va/lynchburg/lynchburg-department-of-social-services
+  name: Lynchburg Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Amherst, Appomattox, Bedford, Campbell Counties
+  address: {street: P.O. Box 6798 99 9th St., city: Lynchburg, state: va, zip: '24505'}
+  place: '5147672'
+  phone: 434-455-5850
+  website: http://www.lynchburgva.gov/Index.aspx?page=81
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/lynchburg/lynchburg-free-pantry
   name: Lynchburg Free Pantry
   categories:
@@ -996,13 +1020,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1600 Lakeside Drive, city: Lynchburg, state: va, zip: '24501'}
+  address:
+    street: 1600 Lakeside Drive
+    city: Lynchburg
+    state: va
+    zip: '24501'
   place: '5147672'
-  geo: {lat: 37.40216, lng: -79.18907}
+  geo:
+    lat: 37.40216
+    lng: -79.18907
   phone: 434-316-5000
   website: https://www.va.gov/salem-health-care/locations/lynchburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Cardiology
   - Dermatology
@@ -1014,10 +1051,13 @@
   - Primary care
   - Smoking and tobacco cessation
   - Women Veteran care
-  external_ids: {va: vha_658GC}
+  external_ids:
+    va: vha_658GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/lynchburg/riverside-park
   name: Riverside Park
   categories:
@@ -1212,19 +1252,28 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '1971 University Blvd., Suite 3630', city: Lynchburg, state: va, zip: '24515'}
+  address:
+    street: 1971 University Blvd., Suite 3630
+    city: Lynchburg
+    state: va
+    zip: '24515'
   place: '5147672'
-  geo: {lat: 37.35325, lng: -79.17695}
+  geo:
+    lat: 37.35325
+    lng: -79.17695
   phone: 540-759-5332
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314k}
+  external_ids:
+    va: vba_314k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/lynchburg/west-lynchburg-baptist-church
   name: West Lynchburg Baptist Church
   categories:

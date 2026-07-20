@@ -63,6 +63,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/la-grande/community-connections-of-northeast-oregon-inc
+  name: Community Connections of Northeast Oregon Inc
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Union County
+  address: {street: 1504 N. Albany, city: La Grande, state: or, zip: '97850'}
+  place: '4140350'
+  phone: 541-963-7532
+  website: https://ccno.org/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/la-grande/copes-outpatient
   name: Copes Outpatient
   categories:
@@ -130,21 +142,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 202 12th Street, city: La Grande, state: or, zip: '97850'}
+  address:
+    street: 202 12th Street
+    city: La Grande
+    state: or
+    zip: '97850'
   place: '4140350'
-  geo: {lat: 45.31391, lng: -118.08637}
+  geo:
+    lat: 45.31391
+    lng: -118.08637
   phone: 541-963-0627
   website: https://www.va.gov/walla-walla-health-care/locations/la-grande-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Nutrition, food, and dietary care
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_687GC}
+  external_ids:
+    va: vha_687GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/la-grande/northeast-oregon-housing-authority
   name: Northeast Oregon Housing Authority
   categories:

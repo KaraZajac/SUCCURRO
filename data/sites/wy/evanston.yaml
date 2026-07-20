@@ -150,23 +150,40 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1565 South Highway 150, city: Evanston, state: wy, zip: '82930'}
+  address:
+    street: 1565 South Highway 150
+    city: Evanston
+    state: wy
+    zip: '82930'
   place: '5625620'
-  geo: {lat: 41.25221, lng: -110.94146}
+  geo:
+    lat: 41.25221
+    lng: -110.94146
   phone: 877-733-6128
   website: https://www.va.gov/sheridan-health-care/locations/evanston-va-clinic/
   hours:
-  - {days: [mon, tue, wed], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '08:00', close: '14:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 08:00
+    close: '14:30'
   services:
   - Cardiology
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_666QB}
+  external_ids:
+    va: vha_666QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/evanston/hamblin-park
   name: Hamblin Park
   categories:
@@ -318,3 +335,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/evanston/uinta-county-department-of-family-services
+  name: Uinta County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Uinta County
+  address: {street: '350 City View Drive, Suite 302', city: Evanston, state: wy, zip: '82930'}
+  place: '5625620'
+  phone: 307-789-2756
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

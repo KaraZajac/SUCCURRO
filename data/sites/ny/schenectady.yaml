@@ -502,6 +502,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/schenectady/schenectady-county-department-of-social-services
+  name: Schenectady County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Schenectady County
+  address: {street: 797 Broadway, city: Schenectady, state: ny, zip: '12305'}
+  place: '3665508'
+  phone: 518-388-4400
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/schenectady/schenectady-county-public-library
   name: Schenectady County Public Library
   categories:
@@ -551,13 +562,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1400 Altamont Avenue, city: Schenectady, state: ny, zip: '12303'}
+  address:
+    street: 1400 Altamont Avenue
+    city: Schenectady
+    state: ny
+    zip: '12303'
   place: '3665508'
-  geo: {lat: 42.78524, lng: -73.9446}
+  geo:
+    lat: 42.78524
+    lng: -73.9446
   phone: 518-346-3334
   website: https://www.va.gov/albany-health-care/locations/schenectady-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -565,10 +589,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GW}
+  external_ids:
+    va: vha_528GW
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/schenectady/south-gate-apartments-mobile
   name: South Gate Apartments (Mobile)
   categories:

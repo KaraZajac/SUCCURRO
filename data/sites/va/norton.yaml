@@ -138,6 +138,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/norton/norton-city-department-of-social-services
+  name: Norton City Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Norton City, Wise Counties
+  address: {street: '831 Park Ave., (P.O. Box 378)', city: Norton, state: va, zip: 24273-0378}
+  place: '5157688'
+  phone: 276-679-2701
+  website: http://www.nortonva.gov/82/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/norton/norton-elem
   name: Norton Elem
   categories:
@@ -185,13 +197,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 654 Highway 58 East, city: Norton, state: va, zip: '24273'}
+  address:
+    street: 654 Highway 58 East
+    city: Norton
+    state: va
+    zip: '24273'
   place: '5157688'
-  geo: {lat: 36.93961, lng: -82.6036}
+  geo:
+    lat: 36.93961
+    lng: -82.6036
   phone: 276-679-8010
   website: https://www.va.gov/mountain-home-health-care/locations/norton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -202,10 +227,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_621GC}
+  external_ids:
+    va: vha_621GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norton/spero-health
   name: Spero Health
   categories:

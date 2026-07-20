@@ -39,6 +39,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/beaufort/beaufort-jasper-economic-opportunity-commission
+  name: Beaufort/Jasper Economic Opportunity Commission Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Beaufort County
+  address: {street: 60 Robert Smalls Parkway (Post Office Drawer 9), city: Beaufort, state: sc, zip: '29902'}
+  place: '4504690'
+  phone: 843-255-7220
+  email: beaufortjaspereoc@yahoo.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/beaufort/beaufort-memorial-hospital-mental-health-service
   name: Beaufort Memorial Hospital Mental Health Services
   categories:
@@ -66,13 +78,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1 Pinckney Boulevard, city: Beaufort, state: sc, zip: '29902'}
+  address:
+    street: 1 Pinckney Boulevard
+    city: Beaufort
+    state: sc
+    zip: '29902'
   place: '4504690'
-  geo: {lat: 32.39195, lng: -80.68559}
+  geo:
+    lat: 32.39195
+    lng: -80.68559
   phone: 843-577-5011
   website: https://www.va.gov/charleston-health-care/locations/beaufort-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -82,10 +107,13 @@
   - Primary care
   - Radiology
   - Women Veteran care
-  external_ids: {va: vha_534GC}
+  external_ids:
+    va: vha_534GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/beaufort/broad-river-elem-school-hlth-ctr
   name: BROAD RIVER ELEM SCHOOL HLTH CTR
   categories:
@@ -200,9 +228,15 @@
   categories: &id001
   - va-facility
   description: IDES Site
-  address: {street: '1 Pinckney Blvd, Box 6188A', city: Beaufort, state: sc, zip: '29902'}
+  address:
+    street: 1 Pinckney Blvd, Box 6188A
+    city: Beaufort
+    state: sc
+    zip: '29902'
   place: '4504690'
-  geo: {lat: 32.38783, lng: -80.68424}
+  geo:
+    lat: 32.38783
+    lng: -80.68424
   phone: 843-228-5642/5470
   services:
   - ApplyingForBenefits
@@ -211,10 +245,13 @@
   - PreDischargeClaimAssistance
   - TransitionAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_319k}
+  external_ids:
+    va: vba_319k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/beaufort/joseph-s-shanklin-elementary-center
   name: Joseph S. Shanklin Elementary Center
   categories:
@@ -552,17 +589,26 @@
   name: Veteran Readiness and Employment Office at Beaufort Naval Hospital
   categories: *id001
   description: Veteran Readiness and Employment Office
-  address: {street: '1 Pinckney Blvd, Box 6188A', city: Beaufort, state: sc, zip: '29902'}
+  address:
+    street: 1 Pinckney Blvd, Box 6188A
+    city: Beaufort
+    state: sc
+    zip: '29902'
   place: '4504690'
-  geo: {lat: 32.38783, lng: -80.68424}
+  geo:
+    lat: 32.38783
+    lng: -80.68424
   phone: 843-228-5642
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_319b}
+  external_ids:
+    va: vba_319b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/beaufort/views-at-riverbend
   name: Views At Riverbend
   categories:

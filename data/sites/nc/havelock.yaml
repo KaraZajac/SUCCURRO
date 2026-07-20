@@ -45,19 +45,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 506 US Highway 70 West, city: Havelock, state: nc, zip: '28532'}
+  address:
+    street: 506 US Highway 70 West
+    city: Havelock
+    state: nc
+    zip: '28532'
   place: '3730120'
-  geo: {lat: 34.90878, lng: -76.93592}
+  geo:
+    lat: 34.90878
+    lng: -76.93592
   phone: 919-286-0411
   website: https://www.va.gov/find-locations/facility/vha_558GK
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MentalHealth
-  external_ids: {va: vha_558GK}
+  external_ids:
+    va: vha_558GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/havelock/ncm-harlowe-community-center
   name: Ncm Harlowe Community Center
   categories:

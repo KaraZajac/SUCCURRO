@@ -212,6 +212,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/searcy/community-action-program-for-central-arkansas-in
+  name: Community Action Program for Central Arkansas Inc. (CAPCA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cleburne County
+  address: {street: 703 Marion St., city: Searcy, state: ar, zip: '72143'}
+  place: '0563020'
+  phone: 501-279-2015
+  email: info@caaofsa.org
+  website: https://www.capcainc.org/posts/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/searcy/compassionate-care-clinic
   name: Compassionate Care Clinic
   categories:
@@ -368,13 +381,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1120 South Main Street, city: Searcy, state: ar, zip: '72143'}
+  address:
+    street: 1120 South Main Street
+    city: Searcy
+    state: ar
+    zip: '72143'
   place: '0563020'
-  geo: {lat: 35.23782, lng: -91.73456}
+  geo:
+    lat: 35.23782
+    lng: -91.73456
   phone: 501-207-4700
   website: https://www.va.gov/central-arkansas-health-care/locations/searcy-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -386,10 +412,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GF}
+  external_ids:
+    va: vha_598GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/searcy/sidney-deener-elementary
   name: Sidney Deener Elementary
   categories:

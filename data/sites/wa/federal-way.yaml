@@ -174,13 +174,26 @@
   name: Federal Way Vet Center
   categories:
   - vet-center
-  address: {street: '32020 32nd Avenue, South, Suite 110', city: Federal Way, state: wa, zip: '98001'}
+  address:
+    street: 32020 32nd Avenue, South, Suite 110
+    city: Federal Way
+    state: wa
+    zip: '98001'
   place: '5323515'
-  geo: {lat: 47.31438, lng: -122.29093}
+  geo:
+    lat: 47.31438
+    lng: -122.29093
   phone: 253-838-3090
   website: https://www.va.gov/federal-way-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -193,10 +206,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0535V}
+  external_ids:
+    va: vc_0535V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/federal-way/fusion-family-housing
   name: Fusion Family Housing
   categories:
@@ -429,6 +445,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/federal-way/multi-service-center
+  name: Multi-Service Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving King County
+  address: {street: 1200 South 336th St., city: Federal Way, state: wa, zip: 98093-0699}
+  place: '5323515'
+  phone: 253-517-2263
+  email: info@mschelps.org
+  website: http://www.multi-servicecenter.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/federal-way/nautilus-elementary
   name: Nautilus Elementary
   categories:

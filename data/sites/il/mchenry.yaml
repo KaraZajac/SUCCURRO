@@ -132,13 +132,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3715 Municipal Drive, city: McHenry, state: il, zip: '60050'}
+  address:
+    street: 3715 Municipal Drive
+    city: McHenry
+    state: il
+    zip: '60050'
   place: '1745694'
-  geo: {lat: 42.32297, lng: -88.2705}
+  geo:
+    lat: 42.32297
+    lng: -88.2705
   phone: 815-759-2306
   website: https://www.va.gov/lovell-federal-health-care-va/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Intimate partner violence support
@@ -156,10 +169,13 @@
   - Suicide prevention
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_556GC}
+  external_ids:
+    va: vha_556GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/mchenry/pioneer-center-human-services
   name: Pioneer Center Human Services
   categories:

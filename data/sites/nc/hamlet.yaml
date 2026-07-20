@@ -80,13 +80,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 100 Jefferson Street, city: Hamlet, state: nc, zip: '28345'}
+  address:
+    street: 100 Jefferson Street
+    city: Hamlet
+    state: nc
+    zip: '28345'
   place: '3729160'
-  geo: {lat: 34.88532, lng: -79.70215}
+  geo:
+    lat: 34.88532
+    lng: -79.70215
   phone: 910-582-3536
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/hamlet-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -96,10 +109,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_565GD}
+  external_ids:
+    va: vha_565GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/hamlet/monroe-avenue-elementary
   name: Monroe Avenue Elementary
   categories:

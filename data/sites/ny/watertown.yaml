@@ -62,6 +62,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/watertown/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: 250 Arsenal St, city: Watertown, state: ny, zip: '31601'}
+  place: '3678608'
+  phone: 315-785-3191
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/watertown/harold-t-wiley-school
   name: Harold T Wiley School
   categories:
@@ -105,6 +116,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/watertown/jcdss-housing-program-after-hours-emergency-cont
+  name: JCDSS Housing Program (After Hours Emergency Contact)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {city: Watertown, state: ny}
+  place: '3678608'
+  phone: 315-786-6721
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/watertown/jefferson-county-department-of-social-services
+  name: Jefferson County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: 250 Arsenal Street, city: Watertown, state: ny, zip: '13601'}
+  place: '3678608'
+  phone: 315-785-3229
+  email: dfa3a22.sm.Jeff_HEAP@dfa.state.ny.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/watertown/jefferson-lewis-boces-alternative-ed
   name: Jefferson-Lewis Boces Alternative Ed
   categories:
@@ -451,13 +485,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 19472 US Route 11, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 19472 US Route 11
+    city: Watertown
+    state: ny
+    zip: '13601'
   place: '3678608'
-  geo: {lat: 43.94832, lng: -75.91437}
+  geo:
+    lat: 43.94832
+    lng: -75.91437
   phone: 315-425-4400
   website: https://www.va.gov/syracuse-health-care/locations/watertown-2-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Homeless Veteran care
@@ -468,10 +515,13 @@
   - Primary care
   - Urology
   - Veteran readiness and employment programs
-  external_ids: {va: vha_528QN}
+  external_ids:
+    va: vha_528QN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/watertown-head-start
   name: Watertown Head Start
   categories:
@@ -517,15 +567,24 @@
   name: Watertown Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1511 Washington Street, Suite A', city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 1511 Washington Street, Suite A
+    city: Watertown
+    state: ny
+    zip: '13601'
   place: '3678608'
-  geo: {lat: 43.95263, lng: -75.91456}
+  geo:
+    lat: 43.95263
+    lng: -75.91456
   phone: 315-782-5479
   website: https://www.va.gov/watertown-vet-center/locations/#watertown-mobile-vet-center
-  external_ids: {va: vc_0889MVC}
+  external_ids:
+    va: vc_0889MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/watertown-senior-high-school
   name: Watertown Senior High School
   categories:
@@ -552,13 +611,26 @@
   name: Watertown VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1222 Arsenal Street, city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 1222 Arsenal Street
+    city: Watertown
+    state: ny
+    zip: '13601'
   place: '3678608'
-  geo: {lat: 43.98222, lng: -75.9432}
+  geo:
+    lat: 43.98222
+    lng: -75.9432
   phone: 315-425-8240
   website: https://www.va.gov/syracuse-health-care/locations/watertown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -574,20 +646,36 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_528GO}
+  external_ids:
+    va: vha_528GO
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/watertown-vet-center
   name: Watertown Vet Center
   categories: *id002
-  address: {street: '1511 Washington Street, Suite A', city: Watertown, state: ny, zip: '13601'}
+  address:
+    street: 1511 Washington Street, Suite A
+    city: Watertown
+    state: ny
+    zip: '13601'
   place: '3678608'
-  geo: {lat: 43.95253, lng: -75.91371}
+  geo:
+    lat: 43.95253
+    lng: -75.91371
   phone: 315-782-5479
   website: https://www.va.gov/watertown-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -604,10 +692,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0135V}
+  external_ids:
+    va: vc_0135V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/watertown/wiley-school
   name: Wiley School
   categories:

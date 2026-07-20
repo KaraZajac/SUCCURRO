@@ -297,21 +297,49 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 70 Harbert Drive North, city: Savannah, state: tn, zip: '38372'}
+  address:
+    street: 70 Harbert Drive North
+    city: Savannah
+    state: tn
+    zip: '38372'
   place: '4766720'
-  geo: {lat: 35.22158, lng: -88.22592}
+  geo:
+    lat: 35.22158
+    lng: -88.22592
   phone: 731-727-8390
   website: https://www.va.gov/memphis-health-care/locations/savannah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
-  external_ids: {va: vha_614GD}
+  external_ids:
+    va: vha_614GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tn/savannah/southwest-human-resource-agency-hardin
+  name: Southwest Human Resource Agency - Hardin
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hardin County
+  address: {street: 885 Pickwick Road, city: Savannah, state: tn, zip: '38372'}
+  place: '4766720'
+  phone: 731-925-5405
+  website: https://www.swhra.org/low-income-energy-assistance-program/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/savannah/spero-health-savannah
   name: Spero Health Savannah
   categories:

@@ -210,13 +210,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1815 Belmont Avenue, city: Youngstown, state: oh, zip: '44504'}
+  address:
+    street: 1815 Belmont Avenue
+    city: Youngstown
+    state: oh
+    zip: '44504'
   place: '3988000'
-  geo: {lat: 41.12395, lng: -80.66331}
+  geo:
+    lat: 41.12395
+    lng: -80.66331
   phone: 330-740-9200
   website: https://www.va.gov/northeast-ohio-health-care/locations/carl-nunziato-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -237,10 +250,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_541BZ}
+  external_ids:
+    va: vha_541BZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/youngstown/carl-nunziato-va-clinic-youngstown-cboc
   name: Carl Nunziato VA Clinic Youngstown CBOC
   categories:
@@ -484,6 +500,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/youngstown/mahoning-youngstown-community-action-partnership
+  name: Mahoning Youngstown Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Mahoning County
+  address: {street: 1325 5th Avenue, city: Youngstown, state: oh, zip: '44504'}
+  place: '3988000'
+  phone: 330-747-7921
+  website: https://www.mycaphelp.com/index.php/pages/emergency-planned-assistance-2
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/youngstown/mccartney-learning-center
   name: McCartney Learning Center
   categories:
@@ -1066,17 +1094,33 @@
   name: Youngstown 1 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1815 Belmont Avenue, city: Youngstown, state: oh, zip: '44504'}
+  address:
+    street: 1815 Belmont Avenue
+    city: Youngstown
+    state: oh
+    zip: '44504'
   place: '3988000'
-  geo: {lat: 41.12372, lng: -80.66317}
+  geo:
+    lat: 41.12372
+    lng: -80.66317
   phone: 216-791-3800
   website: https://www.va.gov/find-locations/facility/vha_541QF
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_541QF}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_541QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/youngstown/youngstown-community-health-center
   name: Youngstown Community Health Center
   categories:

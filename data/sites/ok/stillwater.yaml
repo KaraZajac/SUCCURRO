@@ -99,6 +99,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/stillwater/human-services-centers-pawnee
+  name: 'Human Services Centers: Pawnee'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pawnee County
+  address: {street: 711 E. Krayler, city: Stillwater, state: ok, zip: '74075'}
+  place: '4070300'
+  phone: 405-707-3700
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/stillwater/human-services-centers-payne
+  name: 'Human Services Centers: Payne'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Payne County
+  address: {street: 711 E. Krayler, city: Stillwater, state: ok, zip: '74075'}
+  place: '4070300'
+  phone: 405-707-3700
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/stillwater/little-free-pantry-at-first-presbyterian-church
   name: Little Free Pantry at First Presbyterian Church
   categories:
@@ -332,13 +356,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 320 North Perkins Road, city: Stillwater, state: ok, zip: '74075'}
+  address:
+    street: 320 North Perkins Road
+    city: Stillwater
+    state: ok
+    zip: '74075'
   place: '4070300'
-  geo: {lat: 36.12635, lng: -97.05152}
+  geo:
+    lat: 36.12635
+    lng: -97.05152
   phone: 405-707-8100
   website: https://www.va.gov/oklahoma-city-health-care/locations/stillwater-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -346,10 +383,13 @@
   - Optometry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_635GE}
+  external_ids:
+    va: vha_635GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/stillwater/westwood-es-125
   name: Westwood Es(125)
   categories:

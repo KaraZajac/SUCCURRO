@@ -90,9 +90,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1900 East Main Street, city: Danville, state: il, zip: '61832'}
+  address:
+    street: 1900 East Main Street
+    city: Danville
+    state: il
+    zip: '61832'
   place: '1718563'
-  geo: {lat: 40.13174, lng: -87.59232}
+  geo:
+    lat: 40.13174
+    lng: -87.59232
   phone: 217-554-3000
   website: https://www.va.gov/illiana-health-care/locations/danville-va-medical-center/
   services:
@@ -122,10 +128,25 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_550}
+  external_ids:
+    va: vha_550
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: il/danville/east-central-illinois-community-action-agency
+  name: East Central Illinois Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Vermilion County
+  address: {street: 56 North Vermilion Street, city: Danville, state: il, zip: 61832-1335}
+  place: '1718563'
+  phone: 217-554-9100
+  website: http://www.comaction.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/danville/fairoak-cha-mobile
   name: Fairoak Cha-Mobile
   categories:

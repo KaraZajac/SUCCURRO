@@ -98,6 +98,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/cumberland/allegany-department-of-social-services
+  name: Allegany Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegany County
+  address: {street: 1 Fredrick Street, city: Cumberland, state: md}
+  place: '2421325'
+  phone: 301-784-7000
+  email: ACDSS.OHEP@maryland.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/cumberland/alternative-drug-and-alcohol-counseling-adac
   name: Alternative Drug and Alcohol Counseling (ADAC)
   categories:
@@ -223,13 +235,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 200 Glenn Street, city: Cumberland, state: md, zip: '21502'}
+  address:
+    street: 200 Glenn Street
+    city: Cumberland
+    state: md
+    zip: '21502'
   place: '2421325'
-  geo: {lat: 39.65361, lng: -78.75863}
+  geo:
+    lat: 39.65361
+    lng: -78.75863
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/cumberland-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -249,10 +274,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GA}
+  external_ids:
+    va: vha_613GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/cumberland/early-head-start-home-based
   name: Early Head Start Home Based
   categories:

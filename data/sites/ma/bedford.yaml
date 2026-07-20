@@ -4,22 +4,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '200 Springs Road, Building 2 and 78', city: Bedford, state: ma, zip: '01730'}
-  geo: {lat: 42.50502, lng: -71.27465}
+  address:
+    street: 200 Springs Road, Building 2 and 78
+    city: Bedford
+    state: ma
+    zip: '01730'
+  geo:
+    lat: 42.50502
+    lng: -71.27465
   phone: 781-687-4949
   website: https://www.va.gov/find-locations/facility/vha_523QB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
   - Gastroenterology
   - Orthopedics
   - Urology
-  external_ids: {va: vha_523QB}
+  external_ids:
+    va: vha_523QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/bedford/edinburg-center
   name: Edinburg Center
   categories:
@@ -44,8 +60,14 @@
   name: Edith Nourse Rogers Memorial Veterans' Hospital
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 200 Springs Road, city: Bedford, state: ma, zip: '01730'}
-  geo: {lat: 42.50367, lng: -71.27268}
+  address:
+    street: 200 Springs Road
+    city: Bedford
+    state: ma
+    zip: '01730'
+  geo:
+    lat: 42.50367
+    lng: -71.27268
   phone: 781-687-2000
   website: https://www.va.gov/bedford-health-care/locations/edith-nourse-rogers-memorial-veterans-hospital/
   services:
@@ -88,10 +110,13 @@
   - Urgent care
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_518}
+  external_ids:
+    va: vha_518
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/bedford/forrest-behavioral-health
   name: Forrest Behavioral Health
   categories:

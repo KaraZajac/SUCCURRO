@@ -261,32 +261,67 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/erie/erie-county-assistance-office
+  name: Erie County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Erie County
+  address: {street: 1316 Holland Street (P. O. Box 958), city: Erie, state: pa, zip: '16512'}
+  place: '4224000'
+  phone: 814-461-2002
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/erie/erie-mobile-vet-center
   name: Erie Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '240 West 11th Street, Suite 105', city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 240 West 11th Street, Suite 105
+    city: Erie
+    state: pa
+    zip: '16501'
   place: '4224000'
-  geo: {lat: 42.12261, lng: -80.08717}
+  geo:
+    lat: 42.12261
+    lng: -80.08717
   phone: 814-453-7955
   website: https://www.va.gov/erie-vet-center/locations/#erie-mobile-vet-center
-  external_ids: {va: vc_0809MVC}
+  external_ids:
+    va: vc_0809MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/erie-va-medical-center
   name: Erie VA Medical Center
   categories:
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 135 East 38th Street, city: Erie, state: pa, zip: '16504'}
+  address:
+    street: 135 East 38th Street
+    city: Erie
+    state: pa
+    zip: '16504'
   place: '4224000'
-  geo: {lat: 42.10213, lng: -80.06304}
+  geo:
+    lat: 42.10213
+    lng: -80.06304
   phone: 814-868-8661
   website: https://www.va.gov/erie-health-care/locations/erie-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '20:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    open: 08:00
+    close: '20:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -332,20 +367,36 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_562}
+  external_ids:
+    va: vha_562
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/erie-vet-center
   name: Erie Vet Center
   categories: *id001
-  address: {street: '240 West 11th Street, Suite 105', city: Erie, state: pa, zip: '16501'}
+  address:
+    street: 240 West 11th Street, Suite 105
+    city: Erie
+    state: pa
+    zip: '16501'
   place: '4224000'
-  geo: {lat: 42.12261, lng: -80.08717}
+  geo:
+    lat: 42.12261
+    lng: -80.08717
   phone: 814-453-7955
   website: https://www.va.gov/erie-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -362,10 +413,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0222V}
+  external_ids:
+    va: vc_0222V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/erie/erie-veterans-affairs-medical-center-substance-u
   name: Erie Veterans Affairs Medical Center Substance Use Disorder Treatment Prog
   categories:

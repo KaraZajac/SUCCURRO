@@ -1,3 +1,15 @@
+- id: wa/walla-walla/blue-mountain-action-council
+  name: Blue Mountain Action Council
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Columbia, Garfield, Walla Walla Counties
+  address: {street: 8 E. Cherry, city: Walla Walla, state: wa, zip: '99362'}
+  place: '5375775'
+  phone: 509-529-4980
+  website: http://www.bmacww.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/walla-walla/college-place-cdc
   name: College Place  CDC
   categories:
@@ -65,13 +77,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 77 Wainwright Drive, city: Walla Walla, state: wa, zip: '99362'}
+  address:
+    street: 77 Wainwright Drive
+    city: Walla Walla
+    state: wa
+    zip: '99362'
   place: '5375775'
-  geo: {lat: 46.05324, lng: -118.35546}
+  geo:
+    lat: 46.05324
+    lng: -118.35546
   phone: 509-525-5200
   website: https://www.va.gov/walla-walla-health-care/locations/jonathan-m-wainwright-memorial-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -108,10 +133,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_687}
+  external_ids:
+    va: vha_687
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/walla-walla/serenity-point-counseling-services
   name: Serenity Point Counseling Services
   categories:
@@ -319,13 +347,26 @@
   name: Walla Walla Vet Center
   categories:
   - vet-center
-  address: {street: 1104 West Poplar Street, city: Walla Walla, state: wa, zip: '99362'}
+  address:
+    street: 1104 West Poplar Street
+    city: Walla Walla
+    state: wa
+    zip: '99362'
   place: '5375775'
-  geo: {lat: 46.05924, lng: -118.35252}
+  geo:
+    lat: 46.05924
+    lng: -118.35252
   phone: 509-526-8387
   website: https://www.va.gov/walla-walla-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -340,10 +381,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0541V}
+  external_ids:
+    va: vc_0541V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/walla-walla/washington-park
   name: Washington Park
   categories:

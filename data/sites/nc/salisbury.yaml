@@ -675,6 +675,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/salisbury/rowan-county-department-of-social-services
+  name: Rowan County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Rowan County
+  address: {street: 1813 East Innes Street, city: Salisbury, state: nc, zip: '28146'}
+  place: '3758860'
+  phone: 704-216-8330
+  website: https://www.rowancountync.gov/692/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/salisbury/rowan-county-housing-authority
   name: Rowan County Housing Authority
   categories:
@@ -1092,27 +1104,42 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: 1601 Brenner Avenue, city: Salisbury, state: nc, zip: '28144'}
+  address:
+    street: 1601 Brenner Avenue
+    city: Salisbury
+    state: nc
+    zip: '28144'
   place: '3758860'
-  geo: {lat: 35.68173, lng: -80.49381}
+  geo:
+    lat: 35.68173
+    lng: -80.49381
   phone: 336-714-6099
   website: https://www.va.gov/find-locations/facility/vba_318l
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_318l}
+  external_ids:
+    va: vba_318l
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/salisbury/w-g-bill-hefner-salisbury-department-of-veterans
   name: W.G. (Bill) Hefner Salisbury Department of Veterans Affairs Medical Center
   categories:
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1601 Brenner Avenue, city: Salisbury, state: nc, zip: '28144'}
+  address:
+    street: 1601 Brenner Avenue
+    city: Salisbury
+    state: nc
+    zip: '28144'
   place: '3758860'
-  geo: {lat: 35.68173, lng: -80.49381}
+  geo:
+    lat: 35.68173
+    lng: -80.49381
   phone: 704-638-9000
   website: https://www.va.gov/salisbury-health-care/locations/wg-bill-hefner-salisbury-department-of-veterans-affairs-medical/
   services:
@@ -1157,10 +1184,13 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_659}
+  external_ids:
+    va: vha_659
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/salisbury/west-trace-apartments
   name: West Trace Apartments
   categories:

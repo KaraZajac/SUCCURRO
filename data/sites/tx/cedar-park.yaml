@@ -25,13 +25,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1401 Medical Parkway, city: Cedar Park, state: tx, zip: '78613'}
+  address:
+    street: 1401 Medical Parkway
+    city: Cedar Park
+    state: tx
+    zip: '78613'
   place: '4813552'
-  geo: {lat: 30.53109, lng: -97.81287}
+  geo:
+    lat: 30.53109
+    lng: -97.81287
   phone: 800-423-2111
   website: https://www.va.gov/central-texas-health-care/locations/cedar-park-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -45,10 +58,13 @@
   - Smoking and tobacco cessation
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_674GD}
+  external_ids:
+    va: vha_674GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/cedar-park/central-texas-va-healthcare-system-cedar-park-cb
   name: Central Texas VA Healthcare System Cedar Park CBOC
   categories:

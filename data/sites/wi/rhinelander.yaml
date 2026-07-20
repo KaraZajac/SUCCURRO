@@ -126,6 +126,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/rhinelander/oneida-county-department-of-social-services
+  name: Oneida County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Oneida County
+  address: {street: 1 S Oneida Ave., city: Rhinelander, state: wi, zip: '54501'}
+  place: '5567200'
+  phone: 715-362-5695
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/rhinelander/oneida-county-human-services-forest-oneida-and-v
   name: Oneida County Human Services Forest, Oneida and Vilas Counties
   categories:
@@ -235,13 +247,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 639 West Kemp Street, city: Rhinelander, state: wi, zip: '54501'}
+  address:
+    street: 639 West Kemp Street
+    city: Rhinelander
+    state: wi
+    zip: '54501'
   place: '5567200'
-  geo: {lat: 45.63213, lng: -89.43136}
+  geo:
+    lat: 45.63213
+    lng: -89.43136
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/rhinelander-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -264,7 +289,10 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585GB}
+  external_ids:
+    va: vha_585GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

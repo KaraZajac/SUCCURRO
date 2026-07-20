@@ -150,23 +150,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1401 South Main Street, city: Lamar, state: co, zip: '81052'}
+  address:
+    street: 1401 South Main Street
+    city: Lamar
+    state: co
+    zip: '81052'
   place: 0843110
-  geo: {lat: 38.07535, lng: -102.61809}
+  geo:
+    lat: 38.07535
+    lng: -102.61809
   phone: 719-336-0315
   website: https://www.va.gov/eastern-colorado-health-care/locations/lamar-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_554GH}
+  external_ids:
+    va: vha_554GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/lamar/lincoln-hope-center
   name: Lincoln/Hope Center
   categories:
@@ -189,6 +204,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/lamar/prowers-county-department-of-human-services-lama
+  name: Prowers County Department of Human Services - Lamar
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Prowers County
+  address: {street: 1001 S. Main St., city: Lamar, state: co, zip: '81052'}
+  place: 0843110
+  phone: 719-336-7486
+  website: https://www.prowerscounty.net/departments/human_services/index.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/lamar/valley-wide-counseling-support-center-lamar
   name: Valley-Wide Counseling & Support Center - Lamar
   categories:

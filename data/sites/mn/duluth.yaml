@@ -19,6 +19,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/duluth/arrowhead-economic-opportunity-agency-city-of-du
+  name: Arrowhead Economic Opportunity Agency (City of Duluth)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Saint Louis County
+  address: {street: 702 3rd Avenue South, city: Duluth, state: mn, zip: '55792'}
+  place: '2717000'
+  phone: 218-623-3011
+  email: eap.document@aeoa.org
+  website: https://www.aeoa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/duluth/bay-view-elementary
   name: Bay View Elementary
   categories:
@@ -228,28 +241,56 @@
   name: Duluth Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '4402 Haines Road, Suite 3', city: Duluth, state: mn, zip: '55811'}
+  address:
+    street: 4402 Haines Road, Suite 3
+    city: Duluth
+    state: mn
+    zip: '55811'
   place: '2717000'
-  geo: {lat: 46.82964, lng: -92.17481}
+  geo:
+    lat: 46.82964
+    lng: -92.17481
   phone: 218-722-8654
   website: https://www.va.gov/duluth-vet-center/locations/#duluth-mobile-vet-center
-  external_ids: {va: vc_0821MVC}
+  external_ids:
+    va: vc_0821MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/duluth/duluth-vet-center
   name: Duluth Vet Center
   categories: *id001
-  address: {street: '4402 Haines Road, Suite 3', city: Duluth, state: mn, zip: '55811'}
+  address:
+    street: 4402 Haines Road, Suite 3
+    city: Duluth
+    state: mn
+    zip: '55811'
   place: '2717000'
-  geo: {lat: 46.82964, lng: -92.17393}
+  geo:
+    lat: 46.82964
+    lng: -92.17393
   phone: 218-722-8654
   website: https://www.va.gov/duluth-vet-center/
   hours:
-  - {days: [mon], open: '07:30', close: '18:00'}
-  - {days: [tue, wed], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '08:00', close: '20:00'}
-  - {days: [fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    open: 07:30
+    close: '18:00'
+  - days:
+    - tue
+    - wed
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: 08:00
+    close: '20:00'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -264,10 +305,13 @@
   - Telehealth
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0429V}
+  external_ids:
+    va: vc_0429V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/duluth/essentia-health-behavioral-health-services
   name: Essentia Health Behavioral Health Services
   categories:

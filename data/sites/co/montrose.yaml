@@ -142,19 +142,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/montrose/montrose-county-department-of-health-and-human-s
+  name: Montrose County Department of Health and Human Services - Montrose
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Montrose County
+  address: {street: 1845 South Townsend, city: Montrose, state: co, zip: '81401'}
+  place: 0851745
+  phone: 970-252-5000
+  website: https://www.montrosecounty.net/107/Human-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/montrose/montrose-va-clinic
   name: Montrose VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 154 Colorado Avenue, city: Montrose, state: co, zip: '81401'}
+  address:
+    street: 154 Colorado Avenue
+    city: Montrose
+    state: co
+    zip: '81401'
   place: 0851745
-  geo: {lat: 38.47067, lng: -107.87185}
+  geo:
+    lat: 38.47067
+    lng: -107.87185
   phone: 970-249-7791
   website: https://www.va.gov/western-colorado-health-care/locations/montrose-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -166,10 +191,13 @@
   - Primary care
   - Telehealth
   - Urology
-  external_ids: {va: vha_575GA}
+  external_ids:
+    va: vha_575GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/montrose/northside-elementary-school
   name: Northside Elementary School
   categories:

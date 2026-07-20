@@ -19,6 +19,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/port-charlotte/charlotte-county-department-of-human-services
+  name: Charlotte County Department of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Charlotte County
+  address: {street: 1050 Loveland Blvd., city: Port Charlotte, state: fl, zip: '33980'}
+  place: '1258350'
+  phone: 941-833-6500
+  website: https://www.charlottecountyfl.gov/departments/human-services/help-paying-bills.stml
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/port-charlotte/kingsway
   name: Kingsway
   categories:
@@ -161,14 +173,29 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4161 Tamiami Trail, city: Port Charlotte, state: fl, zip: '33952'}
+  address:
+    street: 4161 Tamiami Trail
+    city: Port Charlotte
+    state: fl
+    zip: '33952'
   place: '1258350'
-  geo: {lat: 26.96656, lng: -82.08247}
+  geo:
+    lat: 26.96656
+    lng: -82.08247
   phone: 941-235-2710
   website: https://www.va.gov/bay-pines-health-care/locations/port-charlotte-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
-  - {days: [wed], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - wed
+    open: 07:00
+    close: '17:00'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -183,10 +210,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_516GE}
+  external_ids:
+    va: vha_516GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/port-charlotte/the-academy
   name: The Academy
   categories:

@@ -111,13 +111,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1110 10th Avenue, city: Menominee, state: mi, zip: '49858'}
+  address:
+    street: 1110 10th Avenue
+    city: Menominee
+    state: mi
+    zip: '49858'
   place: '2653020'
-  geo: {lat: 45.10789, lng: -87.6166}
+  geo:
+    lat: 45.10789
+    lng: -87.6166
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/menominee-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Cardiology
@@ -136,10 +149,13 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585GC}
+  external_ids:
+    va: vha_585GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/menominee/northpointe-behav-healthcare-system-menominee-co
   name: Northpointe Behav Healthcare System Menominee County
   categories:

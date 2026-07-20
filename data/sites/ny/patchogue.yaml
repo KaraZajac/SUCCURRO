@@ -64,13 +64,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 4 Phyllis Drive, city: Patchogue, state: ny, zip: '11772'}
+  address:
+    street: 4 Phyllis Drive
+    city: Patchogue
+    state: ny
+    zip: '11772'
   place: '3656660'
-  geo: {lat: 40.76831, lng: -72.99637}
+  geo:
+    lat: 40.76831
+    lng: -72.99637
   phone: 631-754-7978
   website: https://www.va.gov/northport-health-care/locations/patchogue-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -78,10 +91,13 @@
   - Optometry
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_632HD}
+  external_ids:
+    va: vha_632HD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/patchogue/pilgrim-psychiatric-center-act-team
   name: Pilgrim Psychiatric Center ACT Team
   categories:

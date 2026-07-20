@@ -112,13 +112,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3885 West Broadway Street, city: Missoula, state: mt, zip: '59808'}
+  address:
+    street: 3885 West Broadway Street
+    city: Missoula
+    state: mt
+    zip: '59808'
   place: '3050200'
-  geo: {lat: 46.90874, lng: -114.05861}
+  geo:
+    lat: 46.90874
+    lng: -114.05861
   phone: 406-215-0100
   website: https://www.va.gov/montana-health-care/locations/david-j-thatcher-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -139,10 +152,26 @@
   - Suicide prevention
   - Telehealth
   - Urology
-  external_ids: {va: vha_436GC}
+  external_ids:
+    va: vha_436GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: mt/missoula/district-xi-hrc
+  name: District XI HRC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Mineral, Missoula, Ravalli Counties
+  address: {street: 1801 South Higgins, city: Missoula, state: mt, zip: '59801'}
+  place: '3050200'
+  phone: 406-728-3710
+  email: info@hrcxi.org
+  website: https://www.humanresourcecouncil.org/energy-bill-assistance-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mt/missoula/east-missoula-lions-club-park
   name: East Missoula Lions Club Park
   categories:
@@ -192,9 +221,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 3550 West Broadway, city: Missoula, state: mt, zip: '59802'}
+  address:
+    street: 3550 West Broadway
+    city: Missoula
+    state: mt
+    zip: '59802'
   place: '3050200'
-  geo: {lat: 46.90142, lng: -114.04369}
+  geo:
+    lat: 46.90142
+    lng: -114.04369
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -206,10 +241,13 @@
   - UpdatingDirectDepositInformation
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_436c}
+  external_ids:
+    va: vba_436c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/missoula/franklin-school
   name: Franklin School
   categories:
@@ -458,15 +496,24 @@
   name: Missoula Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 910 Brooks Street, city: Missoula, state: mt, zip: '59801'}
+  address:
+    street: 910 Brooks Street
+    city: Missoula
+    state: mt
+    zip: '59801'
   place: '3050200'
-  geo: {lat: 46.85553, lng: -114.00747}
+  geo:
+    lat: 46.85553
+    lng: -114.00747
   phone: 406-721-4918
   website: https://www.va.gov/missoula-vet-center/locations/#missoula-mobile-vet-center
-  external_ids: {va: vc_0837MVC}
+  external_ids:
+    va: vc_0837MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/missoula/missoula-public-library
   name: Missoula Public Library
   categories:
@@ -492,14 +539,29 @@
 - id: mt/missoula/missoula-vet-center
   name: Missoula Vet Center
   categories: *id001
-  address: {street: '910 Brooks Street, Suite 101', city: Missoula, state: mt, zip: '59801'}
+  address:
+    street: 910 Brooks Street, Suite 101
+    city: Missoula
+    state: mt
+    zip: '59801'
   place: '3050200'
-  geo: {lat: 46.85553, lng: -114.00747}
+  geo:
+    lat: 46.85553
+    lng: -114.00747
   phone: 406-721-4918
   website: https://www.va.gov/missoula-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:00'}
-  - {days: [fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:00'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -510,10 +572,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0528V}
+  external_ids:
+    va: vc_0528V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/missoula/n-2nd-food-pantry
   name: N 2nd Food Pantry
   categories:

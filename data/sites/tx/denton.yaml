@@ -127,13 +127,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2322 San Jacinto Boulevard, city: Denton, state: tx, zip: '76205'}
+  address:
+    street: 2322 San Jacinto Boulevard
+    city: Denton
+    state: tx
+    zip: '76205'
   place: '4819972'
-  geo: {lat: 33.19124, lng: -97.11157}
+  geo:
+    lat: 33.19124
+    lng: -97.11157
   phone: 940-891-6350
   website: https://www.va.gov/north-texas-health-care/locations/denton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -143,10 +156,13 @@
   - Primary care
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_549GD}
+  external_ids:
+    va: vha_549GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/denton/evers-park-el
   name: Evers Park El
   categories:
@@ -505,6 +521,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/denton/texoma-council-of-governments
+  name: Texoma Council of Governments
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Denton County
+  address: {street: 306 N. Loop 288, city: Denton, state: tx, zip: '76209'}
+  place: '4819972'
+  phone: 903-893-2161 Ext 3541
+  email: energyapp@tcog.com
+  website: https://tcog.com/energy-services/#energy
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/denton/the-veranda
   name: The Veranda
   categories:

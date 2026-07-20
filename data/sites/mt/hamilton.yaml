@@ -68,13 +68,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1331 North 1st Street, city: Hamilton, state: mt, zip: '59840'}
+  address:
+    street: 1331 North 1st Street
+    city: Hamilton
+    state: mt
+    zip: '59840'
   place: '3033775'
-  geo: {lat: 46.26437, lng: -114.15715}
+  geo:
+    lat: 46.26437
+    lng: -114.15715
   phone: 406-363-3352
   website: https://www.va.gov/montana-health-care/locations/hamilton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -82,10 +95,13 @@
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_436QA}
+  external_ids:
+    va: vha_436QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/hamilton/little-pantry
   name: Little Pantry
   categories:

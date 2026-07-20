@@ -183,13 +183,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1410 Sparta Street, Three Star Mall', city: McMinnville, state: tn, zip: '37110'}
+  address:
+    street: 1410 Sparta Street, Three Star Mall
+    city: McMinnville
+    state: tn
+    zip: '37110'
   place: '4745100'
-  geo: {lat: 35.69557, lng: -85.74712}
+  geo:
+    lat: 35.69557
+    lng: -85.74712
   phone: 931-474-7700
   website: https://www.va.gov/tennessee-valley-health-care/locations/mcminnville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -199,10 +212,25 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GK}
+  external_ids:
+    va: vha_626GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tn/mcminnville/upper-cumberland-human-resource-agency-warren
+  name: Upper Cumberland Human Resource Agency - Warren
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Warren County
+  address: {street: 201 Locust St., city: McMinnville, state: tn, zip: '37110'}
+  place: '4745100'
+  phone: 931-473-6652
+  website: https://uchra.org/communityservices/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/mcminnville/volunteer-behavioral-health-mcminnville-campus
   name: Volunteer Behavioral Health McMinnville Campus
   categories:

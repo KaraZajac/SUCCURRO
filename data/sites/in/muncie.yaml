@@ -205,6 +205,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/muncie/interlocal-community-action-program-inc
+  name: Interlocal Community Action Program, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Delaware County
+  address: {street: 407 W. Main St. (P. O Box 1794), city: Muncie, state: in, zip: '47305'}
+  place: '1851876'
+  phone: 765-288-8732
+  email: icap@icapcaa.org
+  website: https://www.icapcaa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/muncie/longfellow-elementary-school
   name: Longfellow Elementary School
   categories:
@@ -443,13 +456,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 3401 North Morrison Road, city: Muncie, state: in, zip: '47304'}
+  address:
+    street: 3401 North Morrison Road
+    city: Muncie
+    state: in
+    zip: '47304'
   place: '1851876'
-  geo: {lat: 40.22005, lng: -85.44272}
+  geo:
+    lat: 40.22005
+    lng: -85.44272
   phone: 765-254-5602
   website: https://www.va.gov/northern-indiana-health-care/locations/muncie-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Cardiology
@@ -461,10 +487,13 @@
   - Pharmacy
   - Primary care
   - Veteran readiness and employment programs
-  external_ids: {va: vha_610GB}
+  external_ids:
+    va: vha_610GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/muncie/north-view-elementary-school
   name: North View Elementary School
   categories:

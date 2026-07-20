@@ -301,9 +301,15 @@
   categories: &id001
   - va-facility
   description: Regional Benefit Office
-  address: {street: '500 Gold Ave., SW', city: Albuquerque, state: nm, zip: '87102'}
+  address:
+    street: 500 Gold Ave., SW
+    city: Albuquerque
+    state: nm
+    zip: '87102'
   place: '3502000'
-  geo: {lat: 35.0838, lng: -106.6538}
+  geo:
+    lat: 35.0838
+    lng: -106.6538
   phone: 800-827-1000
   website: https://www.va.gov/albuquerque-va-regional-benefit-office/
   services:
@@ -314,21 +320,37 @@
   - HomelessAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_340}
+  external_ids:
+    va: vba_340
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/albuquerque/albuquerque-vet-center
   name: Albuquerque Vet Center
   categories:
   - vet-center
-  address: {street: '2001 Mountain Road, Northwest', city: Albuquerque, state: nm, zip: '87104'}
+  address:
+    street: 2001 Mountain Road, Northwest
+    city: Albuquerque
+    state: nm
+    zip: '87104'
   place: '3502000'
-  geo: {lat: 35.09843, lng: -106.66821}
+  geo:
+    lat: 35.09843
+    lng: -106.66821
   phone: 505-346-6562
   website: https://www.va.gov/albuquerque-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -343,10 +365,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0515V}
+  external_ids:
+    va: vc_0515V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/albuquerque/aliviar-counseling-services-inc
   name: Aliviar Counseling Services Inc
   categories:
@@ -2052,6 +2077,50 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/albuquerque/isd-field-office-for-the-northeast-area
+  name: ISD Field Office for the Northeast Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bernalillo County
+  address: {street: 4330 Cutler NE, city: Albuquerque, state: nm, zip: '87110'}
+  place: '3502000'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: nm/albuquerque/isd-field-office-for-the-northwest-area
+  name: ISD Field Office for the Northwest Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bernalillo County
+  address: {street: 1041 Lamberton Place NE, city: Albuquerque, state: nm, zip: '87125'}
+  place: '3502000'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: nm/albuquerque/isd-field-office-for-the-southeast-area
+  name: ISD Field Office for the Southeast Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bernalillo County
+  address: {street: 1711 Randolph Rd SE, city: Albuquerque, state: nm, zip: '87106'}
+  place: '3502000'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: nm/albuquerque/isd-field-office-for-the-southwest-area
+  name: ISD Field Office for the Southwest Area
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bernalillo County
+  address: {street: 3280 Bridge Blvd. SW, city: Albuquerque, state: nm, zip: '87195'}
+  place: '3502000'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/albuquerque/isleta-pueblo-public-library
   name: Isleta Pueblo Public Library
   categories:
@@ -3434,9 +3503,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: '1501 San Pedro Drive, Southeast', city: Albuquerque, state: nm, zip: '87108'}
+  address:
+    street: 1501 San Pedro Drive, Southeast
+    city: Albuquerque
+    state: nm
+    zip: '87108'
   place: '3502000'
-  geo: {lat: 35.05174, lng: -106.58353}
+  geo:
+    lat: 35.05174
+    lng: -106.58353
   phone: 505-265-1711
   website: https://www.va.gov/new-mexico-health-care/locations/raymond-g-murphy-department-of-veterans-affairs-medical-center/
   services:
@@ -3492,10 +3567,13 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_501}
+  external_ids:
+    va: vha_501
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/albuquerque/raymond-g-sanchez-community-center
   name: Raymond G. Sanchez Community Center
   categories:
@@ -4751,19 +4829,28 @@
   name: VetSuccess on Campus at University of New Mexico
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '608 Buena Vista Dr NE, Bldg 20A', city: Albuquerque, state: nm, zip: '87131'}
+  address:
+    street: 608 Buena Vista Dr NE, Bldg 20A
+    city: Albuquerque
+    state: nm
+    zip: '87131'
   place: '3502000'
-  geo: {lat: 35.08602, lng: -106.62376}
+  geo:
+    lat: 35.08602
+    lng: -106.62376
   phone: 505-277-1596
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_340b}
+  external_ids:
+    va: vba_340b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/albuquerque/villa-hermosa-apartments
   name: Villa Hermosa Apartments
   categories:

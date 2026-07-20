@@ -84,6 +84,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/pahrump/nevada-outreach-training-organization
+  name: Nevada Outreach Training Organization
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Nye County
+  address: {street: 621 South Blagg Road, city: Pahrump, state: nv, zip: '89048'}
+  place: '3253800'
+  phone: 775-751-1118 x 107
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/pahrump/nevada-stronger
   name: Nevada Stronger
   categories:
@@ -125,6 +136,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/pahrump/nye-county-health-human-services
+  name: Nye County Health & Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Nye County
+  address: {street: '1981 E. Calvada Blvd N., Suite 120', city: Pahrump, state: nv, zip: '89060'}
+  place: '3253800'
+  phone: 775-751-7095
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/pahrump/oak-tree-counseling-llc
   name: Oak Tree Counseling LLC
   categories:
@@ -174,13 +196,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 220 South Lola Lane, city: Pahrump, state: nv, zip: '89048'}
+  address:
+    street: 220 South Lola Lane
+    city: Pahrump
+    state: nv
+    zip: '89048'
   place: '3253800'
-  geo: {lat: 36.21569, lng: -116.0234}
+  geo:
+    lat: 36.21569
+    lng: -116.0234
   phone: 775-727-7535
   website: https://www.va.gov/southern-nevada-health-care/locations/pahrump-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -191,10 +226,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_593GC}
+  external_ids:
+    va: vha_593GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/pahrump/pahrump-valley-hs
   name: Pahrump Valley Hs
   categories:

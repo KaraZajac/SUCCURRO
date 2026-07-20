@@ -239,13 +239,26 @@
   name: Dearborn Vet Center
   categories:
   - vet-center
-  address: {street: '19855 Outer Drive, Suite 105 W', city: Dearborn, state: mi, zip: '48124'}
+  address:
+    street: 19855 Outer Drive, Suite 105 W
+    city: Dearborn
+    state: mi
+    zip: '48124'
   place: '2621000'
-  geo: {lat: 42.30381, lng: -83.26219}
+  geo:
+    lat: 42.30381
+    lng: -83.26219
   phone: 313-277-1428
   website: https://www.va.gov/dearborn-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -256,10 +269,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0401V}
+  external_ids:
+    va: vc_0401V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/dearborn/fordson-high-school-820301261
   name: Fordson High School - 820301261
   categories:

@@ -162,6 +162,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/conway/community-action-program-for-central-arkansas-in
+  name: Community Action Program for Central Arkansas Inc. (CAPCA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Faulkner, White Counties
+  address: {street: 707 Robins Street Suite 700, city: Conway, state: ar, zip: '72034'}
+  place: 0515190
+  phone: 501-329-0977
+  email: info@capcainc.org
+  website: https://www.capcainc.org/posts/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/conway/community-service-inc
   name: Community Service Inc
   categories:
@@ -253,13 +266,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1520 East Dave Ward Drive, city: Conway, state: ar, zip: '72032'}
+  address:
+    street: 1520 East Dave Ward Drive
+    city: Conway
+    state: ar
+    zip: '72032'
   place: 0515190
-  geo: {lat: 35.06825, lng: -92.40557}
+  geo:
+    lat: 35.06825
+    lng: -92.40557
   phone: 501-548-0500
   website: https://www.va.gov/central-arkansas-health-care/locations/conway-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -273,10 +299,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GG}
+  external_ids:
+    va: vha_598GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/conway/first-presbyterian-church
   name: First Presbyterian Church
   categories:

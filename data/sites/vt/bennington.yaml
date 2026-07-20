@@ -132,14 +132,29 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 186 North Street, city: Bennington, state: vt, zip: '05201'}
+  address:
+    street: 186 North Street
+    city: Bennington
+    state: vt
+    zip: '05201'
   place: '5004750'
-  geo: {lat: 42.8804, lng: -73.19707}
+  geo:
+    lat: 42.8804
+    lng: -73.19707
   phone: 802-440-3300
   website: https://www.va.gov/white-river-junction-health-care/locations/bennington-va-clinic/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 07:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -150,10 +165,26 @@
   - Social work
   - Telehealth
   - Urology
-  external_ids: {va: vha_405GA}
+  external_ids:
+    va: vha_405GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: vt/bennington/broc-community-action-in-southwestern-vermont
+  name: BROC - Community Action in Southwestern Vermont
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bennington County
+  address: {street: 200 Veterans Memorial Drive Suite 6, city: Bennington, state: vt, zip: 05201-1929}
+  place: '5004750'
+  phone: 802-447-7515
+  email: HelloBROC@broc.org
+  website: https://www.broc.org/fuel-utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: vt/bennington/mount-anthony-union-middle-school
   name: Mount Anthony Union Middle School
   categories:

@@ -103,6 +103,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/charlottesville/albemarle-county-department-of-social-services
+  name: Albemarle County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Albemarle County
+  address: {street: 1600 Fifth St. Suite A, city: Charlottesville, state: va, zip: '22902'}
+  place: '5114968'
+  phone: 434-972-4011
+  website: https://www.albemarle.org/government/human-services/social-services/financial-assistance/energy-assistance-heating-cooling-crisis
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/charlottesville/bloom-health-centers
   name: Bloom Health Centers
   categories:
@@ -124,6 +136,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/charlottesville/charlottesville-department-of-social-services
+  name: Charlottesville Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Albemarle, Charlottesville City Counties
+  address: {street: 120 Seventh St. N.E. P.O. Box 911, city: Charlottesville, state: va, zip: '22902'}
+  place: '5114968'
+  phone: 434-970-3400
+  website: http://www.charlottesville.org/Index.aspx?page=36
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/charlottesville/charlottesville-high
   name: Charlottesville High
   categories:
@@ -172,13 +196,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 590 Peter Jefferson Parkway, city: Charlottesville, state: va, zip: '22911'}
+  address:
+    street: 590 Peter Jefferson Parkway
+    city: Charlottesville
+    state: va
+    zip: '22911'
   place: '5114968'
-  geo: {lat: 38.02149, lng: -78.44136}
+  geo:
+    lat: 38.02149
+    lng: -78.44136
   phone: 434-293-3890
   website: https://www.va.gov/richmond-health-care/locations/charlottesville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -187,10 +224,13 @@
   - Pharmacy
   - Podiatry
   - Primary care
-  external_ids: {va: vha_652GE}
+  external_ids:
+    va: vha_652GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/charlottesville/county-of-albemarle-office-of-housing
   name: County Of Albemarle/Office Of Housing
   categories:

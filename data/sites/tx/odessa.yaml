@@ -737,6 +737,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/odessa/west-texas-opportunities-inc-ector-neighorborhoo
+  name: West Texas Opportunities, Inc. Ector Neighorborhood Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ector County
+  address: {street: 1415 E 2nd St., city: Odessa, state: tx, zip: '79761'}
+  place: '4853388'
+  phone: 432-333-9027
+  website: https://www.gowto.org/index.cfm?fuseaction=dep_intro&dept_id=1
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/odessa/whitiker
   name: Whitiker
   categories:
@@ -762,13 +774,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 8050 East Highway 191, city: Odessa, state: tx, zip: '79765'}
+  address:
+    street: 8050 East Highway 191
+    city: Odessa
+    state: tx
+    zip: '79765'
   place: '4853388'
-  geo: {lat: 31.92102, lng: -102.28862}
+  geo:
+    lat: 31.92102
+    lng: -102.28862
   phone: 432-685-2110
   website: https://www.va.gov/west-texas-health-care/locations/wilson-and-young-medal-of-honor-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -783,10 +808,13 @@
   - Psychology
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_519GA}
+  external_ids:
+    va: vha_519GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/odessa/wilson-young-medal-of-honor-m-s
   name: Wilson & Young Medal Of Honor M S
   categories:

@@ -351,13 +351,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 401 Scenic Drive, city: Rogersville, state: tn, zip: '37857'}
+  address:
+    street: 401 Scenic Drive
+    city: Rogersville
+    state: tn
+    zip: '37857'
   place: '4764820'
-  geo: {lat: 36.40086, lng: -83.01326}
+  geo:
+    lat: 36.40086
+    lng: -83.01326
   phone: 423-235-1471
   website: https://www.va.gov/mountain-home-health-care/locations/rogersville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -367,10 +380,25 @@
   - Primary care
   - Telehealth
   - Urology
-  external_ids: {va: vha_621GA}
+  external_ids:
+    va: vha_621GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tn/rogersville/upper-east-tennessee-human-development-agency-in
+  name: Upper East Tennessee Human Development Agency Inc. - Hawkins
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hawkins County
+  address: {street: '904 East Main Street, Suite 1', city: Rogersville, state: tn, zip: '37857'}
+  place: '4764820'
+  phone: 423-246-6180
+  website: https://uethda.org/energy-2/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/rogersville/vererans-center-of-east-tn
   name: Vererans Center of East TN
   categories:

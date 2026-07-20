@@ -63,6 +63,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/altoona/blair-county-assistance-office
+  name: Blair County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Blair County
+  address: {street: 1100 Green Avenue, city: Altoona, state: pa, zip: '19602'}
+  place: '4202184'
+  phone: 814-946-7365
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/altoona/cleanslate-centers
   name: CleanSlate Centers
   categories:
@@ -250,9 +261,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2907 Pleasant Valley Boulevard, city: Altoona, state: pa, zip: '16602'}
+  address:
+    street: 2907 Pleasant Valley Boulevard
+    city: Altoona
+    state: pa
+    zip: '16602'
   place: '4202184'
-  geo: {lat: 40.48843, lng: -78.39865}
+  geo:
+    lat: 40.48843
+    lng: -78.39865
   phone: 814-943-8164
   website: https://www.va.gov/altoona-health-care/locations/james-e-van-zandt-veterans-administration-medical-center/
   services:
@@ -302,10 +319,13 @@
   - Urology
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_503}
+  external_ids:
+    va: vha_503
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/altoona/juniata-el-sch
   name: Juniata El Sch
   categories:

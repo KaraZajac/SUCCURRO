@@ -812,18 +812,36 @@
   name: Parkersburg Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '2311 Ohio Avenue, Suite D', city: Parkersburg, state: wv, zip: '26101'}
+  address:
+    street: 2311 Ohio Avenue, Suite D
+    city: Parkersburg
+    state: wv
+    zip: '26101'
   place: '5462140'
-  geo: {lat: 39.28194, lng: -81.55007}
+  geo:
+    lat: 39.28194
+    lng: -81.55007
   phone: 304-485-1599
   website: https://www.va.gov/huntington-vet-center/locations/#parkersburg-vet-center-outstat
   hours:
-  - {days: [mon], open: '08:00', close: '17:00'}
-  - {days: [tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_2081OS}
+  - days:
+    - mon
+    open: 08:00
+    close: '17:00'
+  - days:
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_2081OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/parkersburg/parkersburg-ymca
   name: Parkersburg Ymca
   categories:
@@ -921,19 +939,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/parkersburg/wood-county-dhhr-office
+  name: Wood County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wood County
+  address: {street: 400 5th Street (P.O. Box 1547), city: Parkersburg, state: wv, zip: '26102'}
+  place: '5462140'
+  phone: 304-420-2560
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/parkersburg/wood-county-va-clinic
   name: Wood County VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2311 Ohio Avenue, city: Parkersburg, state: wv, zip: '26101'}
+  address:
+    street: 2311 Ohio Avenue
+    city: Parkersburg
+    state: wv
+    zip: '26101'
   place: '5462140'
-  geo: {lat: 39.28194, lng: -81.55007}
+  geo:
+    lat: 39.28194
+    lng: -81.55007
   phone: 304-422-5114
   website: https://www.va.gov/clarksburg-health-care/locations/wood-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -941,7 +983,10 @@
   - Mental health care
   - Primary care
   - Radiology
-  external_ids: {va: vha_540GB}
+  external_ids:
+    va: vha_540GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

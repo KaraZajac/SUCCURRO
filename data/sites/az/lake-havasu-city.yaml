@@ -125,13 +125,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 145 Park Avenue, city: Lake Havasu City, state: az, zip: '86403'}
+  address:
+    street: 145 Park Avenue
+    city: Lake Havasu City
+    state: az
+    zip: '86403'
   place: 0439370
-  geo: {lat: 34.46329, lng: -114.33658}
+  geo:
+    lat: 34.46329
+    lng: -114.33658
   phone: 928-505-7100
   website: https://www.va.gov/northern-arizona-health-care/locations/lake-havasu-city-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Cardiology
   - Dermatology
@@ -142,10 +155,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_649GC}
+  external_ids:
+    va: vha_649GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/lake-havasu-city/mohave-mental-health-clinic-inc
   name: Mohave Mental Health Clinic Inc
   categories:

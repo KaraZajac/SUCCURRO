@@ -1134,29 +1134,57 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 3107 Hungary Spring Road, city: Richmond, state: va, zip: '23228'}
+  address:
+    street: 3107 Hungary Spring Road
+    city: Richmond
+    state: va
+    zip: '23228'
   place: '5167000'
-  geo: {lat: 37.62807, lng: -77.52025}
+  geo:
+    lat: 37.62807
+    lng: -77.52025
   phone: 804-675-5000
   website: https://www.va.gov/find-locations/facility/vha_652QA
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_652QA}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_652QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/henrico-county-va-clinic
   name: Henrico County VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: '7702 East Parham Road, Parham Doctors Hospital, MOB III', city: Richmond, state: va,
-    zip: '23294'}
+  address:
+    street: 7702 East Parham Road, Parham Doctors Hospital, MOB III
+    city: Richmond
+    state: va
+    zip: '23294'
   place: '5167000'
-  geo: {lat: 37.63157, lng: -77.52672}
+  geo:
+    lat: 37.63157
+    lng: -77.52672
   phone: 804-675-5000
   website: https://www.va.gov/richmond-health-care/locations/henrico-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -1165,10 +1193,13 @@
   - Ophthalmology
   - Optometry
   - Primary care
-  external_ids: {va: vha_652GC}
+  external_ids:
+    va: vha_652GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/henrico-high
   name: Henrico High
   categories:
@@ -2118,28 +2149,46 @@
   name: Richmond 1 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1201 Broad Rock Boulevard, city: Richmond, state: va, zip: '23249'}
+  address:
+    street: 1201 Broad Rock Boulevard
+    city: Richmond
+    state: va
+    zip: '23249'
   place: '5167000'
-  geo: {lat: 37.49795, lng: -77.46743}
+  geo:
+    lat: 37.49795
+    lng: -77.46743
   phone: 804-675-5000
   website: https://www.va.gov/find-locations/facility/vha_652GG
-  external_ids: {va: vha_652GG}
+  external_ids:
+    va: vha_652GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/richmond-2-va-mobile-medical-unit
   name: Richmond 2 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1201 Broad Rock Boulevard, city: Richmond, state: va, zip: '23249'}
+  address:
+    street: 1201 Broad Rock Boulevard
+    city: Richmond
+    state: va
+    zip: '23249'
   place: '5167000'
-  geo: {lat: 37.49795, lng: -77.46743}
+  geo:
+    lat: 37.49795
+    lng: -77.46743
   phone: 804-675-5000
   website: https://www.va.gov/find-locations/facility/vha_652GH
-  external_ids: {va: vha_652GH}
+  external_ids:
+    va: vha_652GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/richmond-alternative-school
   name: Richmond Alternative School
   categories:
@@ -2201,6 +2250,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/richmond/richmond-city-department-of-social-services
+  name: Richmond City Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Richmond City County
+  address: {street: 'Marshall Plaza Building, 900 E. Marshall St. (P. O. Box 10129)', city: Richmond,
+    state: va, zip: '23240'}
+  place: '5167000'
+  phone: 804-646-7000
+  website: https://www.rva.gov/social-services/social-services-main
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/richmond/richmond-goodfellows
   name: Richmond Goodfellows
   categories:
@@ -2283,9 +2345,15 @@
   name: Richmond VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1201 Broad Rock Boulevard, city: Richmond, state: va, zip: '23249'}
+  address:
+    street: 1201 Broad Rock Boulevard
+    city: Richmond
+    state: va
+    zip: '23249'
   place: '5167000'
-  geo: {lat: 37.49793, lng: -77.47035}
+  geo:
+    lat: 37.49793
+    lng: -77.47035
   phone: 804-675-5000
   website: https://www.va.gov/richmond-health-care/locations/richmond-va-medical-center/
   services:
@@ -2344,22 +2412,40 @@
   - Vascular surgery
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_652}
+  external_ids:
+    va: vha_652
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/richmond-vet-center
   name: Richmond Vet Center
   categories:
   - vet-center
-  address: {street: 4902 Fitzhugh Avenue, city: Richmond, state: va, zip: '23230'}
+  address:
+    street: 4902 Fitzhugh Avenue
+    city: Richmond
+    state: va
+    zip: '23230'
   place: '5167000'
-  geo: {lat: 37.57988, lng: -77.49554}
+  geo:
+    lat: 37.57988
+    lng: -77.49554
   phone: 804-353-8958
   website: https://www.va.gov/richmond-vet-center/
   hours:
-  - {days: [mon, tue, wed, fri], open: '08:00', close: '16:30'}
-  - {days: [thu], open: '20:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - thu
+    open: '20:00'
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -2371,10 +2457,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0217V}
+  external_ids:
+    va: vc_0217V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/robert-taylor-childcare-center
   name: Robert Taylor Childcare Center
   categories:
@@ -2919,16 +3008,25 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '1100 E. Main Street, Suite 201', city: Richmond, state: va, zip: '23219'}
+  address:
+    street: 1100 E. Main Street, Suite 201
+    city: Richmond
+    state: va
+    zip: '23219'
   place: '5167000'
-  geo: {lat: 37.49793, lng: -77.47035}
+  geo:
+    lat: 37.49793
+    lng: -77.47035
   phone: 804-675-6569
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314i}
+  external_ids:
+    va: vba_314i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/richmond/victory-family-worship-center
   name: Victory Family Worship Center
   categories:

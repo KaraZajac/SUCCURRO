@@ -186,19 +186,44 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/fayetteville/cumberland-county-department-of-social-services
+  name: Cumberland County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cumberland County
+  address: {street: 1225 Ramsey Street (P. O. Box 2429), city: Fayetteville, state: nc, zip: '28302'}
+  place: '3722920'
+  phone: 910-323-1540
+  website: http://www.ccdssnc.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/fayetteville/cumberland-county-va-clinic
   name: Cumberland County VA Clinic
   categories: &id001
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 7300 South Raeford Road, city: Fayetteville, state: nc, zip: '28304'}
+  address:
+    street: 7300 South Raeford Road
+    city: Fayetteville
+    state: nc
+    zip: '28304'
   place: '3722920'
-  geo: {lat: 35.03346, lng: -79.03011}
+  geo:
+    lat: 35.03346
+    lng: -79.03011
   phone: 910-488-2120
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/cumberland-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '17:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -219,10 +244,13 @@
   - Surgery
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_565GL}
+  external_ids:
+    va: vha_565GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/elite-care-service-inc-sacot-program
   name: Elite Care Service Inc SACOT Program
   categories:
@@ -307,9 +335,15 @@
   name: Fayetteville VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2300 Ramsey Street, city: Fayetteville, state: nc, zip: '28301'}
+  address:
+    street: 2300 Ramsey Street
+    city: Fayetteville
+    state: nc
+    zip: '28301'
   place: '3722920'
-  geo: {lat: 35.088, lng: -78.87674}
+  geo:
+    lat: 35.088
+    lng: -78.87674
   phone: 910-488-2120
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/fayetteville-va-medical-center/
   services:
@@ -345,25 +379,44 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_565}
+  external_ids:
+    va: vha_565
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/fayetteville-va-mobile-medical-unit
   name: Fayetteville VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2300 Ramsey Street, city: Fayetteville, state: nc, zip: '28301'}
+  address:
+    street: 2300 Ramsey Street
+    city: Fayetteville
+    state: nc
+    zip: '28301'
   place: '3722920'
-  geo: {lat: 35.088, lng: -78.87674}
+  geo:
+    lat: 35.088
+    lng: -78.87674
   phone: 910-488-2120
   website: https://www.va.gov/find-locations/facility/vha_565QB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_565QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_565QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/fisher-street
   name: Fisher Street
   categories:
@@ -681,20 +734,36 @@
   name: Raeford Road VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 4101 Raeford Road, city: Fayetteville, state: nc, zip: '28304'}
+  address:
+    street: 4101 Raeford Road
+    city: Fayetteville
+    state: nc
+    zip: '28304'
   place: '3722920'
-  geo: {lat: 35.04374, lng: -78.94618}
+  geo:
+    lat: 35.04374
+    lng: -78.94618
   phone: 910-908-2222
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/raeford-road-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Physical therapy, occupational therapy and kinesiotherapy
-  external_ids: {va: vha_565QD}
+  external_ids:
+    va: vha_565QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/renew-counseling-center-llc
   name: Renew Counseling Center LLC
   categories:
@@ -720,19 +789,35 @@
   name: Robeson Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2301 Robeson Street, city: Fayetteville, state: nc, zip: '28305'}
+  address:
+    street: 2301 Robeson Street
+    city: Fayetteville
+    state: nc
+    zip: '28305'
   place: '3722920'
-  geo: {lat: 35.04327, lng: -78.91718}
+  geo:
+    lat: 35.04327
+    lng: -78.91718
   phone: 910-483-9727
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/robeson-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Nephrology
-  external_ids: {va: vha_565QA}
+  external_ids:
+    va: vha_565QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/roy-turner-park-mobile
   name: Roy Turner Park- Mobile
   categories:
@@ -925,18 +1010,26 @@
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '2817 Fort Bragg Road, General Classroom Building, Room 202-A', city: Fayetteville,
-    state: nc, zip: '28303'}
+  address:
+    street: 2817 Fort Bragg Road, General Classroom Building, Room 202-A
+    city: Fayetteville
+    state: nc
+    zip: '28303'
   place: '3722920'
-  geo: {lat: 35.07066, lng: -78.92591}
+  geo:
+    lat: 35.07066
+    lng: -78.92591
   phone: 910-486-7383
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_318r}
+  external_ids:
+    va: vba_318r
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/fayetteville/village-drive-little-free-pantry-fayetteville-nc
   name: Village Drive Little Free Pantry Fayetteville NC
   categories:

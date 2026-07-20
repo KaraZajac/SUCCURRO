@@ -648,13 +648,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 180 Martin Drive, city: Carrollton, state: ga, zip: '30117'}
+  address:
+    street: 180 Martin Drive
+    city: Carrollton
+    state: ga
+    zip: '30117'
   place: '1313492'
-  geo: {lat: 33.58937, lng: -85.05723}
+  geo:
+    lat: 33.58937
+    lng: -85.05723
   phone: 678-423-4970
   website: https://www.va.gov/atlanta-health-care/locations/trinka-davis-veterans-village/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dental/oral surgery
@@ -665,10 +678,13 @@
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_508GK}
+  external_ids:
+    va: vha_508GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/carrollton/westcare-georgia-youth-academy
   name: WestCare Georgia Youth Academy
   categories:

@@ -175,6 +175,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/harrisonburg/harrisonburg-rockingham-county-department-of-soc
+  name: Harrisonburg-Rockingham County Department Of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Harrisonburg City, Rockingham Counties
+  address: {street: 110 North Mason Street (P. O. Box 809), city: Harrisonburg, state: va, zip: '22803'}
+  place: '5135624'
+  phone: 540-574-5100
+  website: https://www.rockinghamcountyva.gov/206/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/harrisonburg/harrisonburg-treatment-center-metro-treatment-of
   name: Harrisonburg Treatment Center Metro Treatment of Virginia LP
   categories:
@@ -201,13 +213,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1755 South High Street, city: Harrisonburg, state: va, zip: '22801'}
+  address:
+    street: 1755 South High Street
+    city: Harrisonburg
+    state: va
+    zip: '22801'
   place: '5135624'
-  geo: {lat: 38.43263, lng: -78.90176}
+  geo:
+    lat: 38.43263
+    lng: -78.90176
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/harrisonburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -224,10 +249,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GF}
+  external_ids:
+    va: vha_613GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/harrisonburg/hchc-administrative-office
   name: HCHC Administrative Office
   categories:

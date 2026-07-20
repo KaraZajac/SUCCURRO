@@ -23,15 +23,32 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 7717 North Orange Prairie Road, city: Peoria, state: il, zip: '61615'}
+  address:
+    street: 7717 North Orange Prairie Road
+    city: Peoria
+    state: il
+    zip: '61615'
   place: '1759000'
-  geo: {lat: 40.78264, lng: -89.67931}
+  geo:
+    lat: 40.78264
+    lng: -89.67931
   phone: 309-589-6800
   website: https://www.va.gov/illiana-health-care/locations/bob-michel-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, wed, thu], open: '07:00', close: '16:00'}
-  - {days: [tue], open: '06:15', close: '16:00'}
-  - {days: [fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - wed
+    - thu
+    open: 07:00
+    close: '16:00'
+  - days:
+    - tue
+    open: 06:15
+    close: '16:00'
+  - days:
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -47,10 +64,13 @@
   - Suicide prevention
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_550BY}
+  external_ids:
+    va: vha_550BY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/peoria/charles-a-lindbergh-middle-school
   name: Charles A. Lindbergh Middle School
   categories:
@@ -587,13 +607,26 @@
   name: Peoria Vet Center
   categories:
   - vet-center
-  address: {street: 5015 American Prairie Drive, city: Peoria, state: il, zip: '61615'}
+  address:
+    street: 5015 American Prairie Drive
+    city: Peoria
+    state: il
+    zip: '61615'
   place: '1759000'
-  geo: {lat: 40.78265, lng: -89.67197}
+  geo:
+    lat: 40.78265
+    lng: -89.67197
   phone: 309-689-9708
   website: https://www.va.gov/peoria-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -604,10 +637,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0417V}
+  external_ids:
+    va: vc_0417V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/peoria/pierson-hills-early-head-start
   name: Pierson Hills Early Head Start
   categories:
@@ -754,6 +790,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/peoria/tazwood-community-services-inc
+  name: Tazwood Community Services, Inc
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Peoria County
+  address: {street: 7625 N. University St. Suite B-2, city: Peoria, state: il, zip: '61614'}
+  place: '1759000'
+  phone: 309-690-6500
+  website: https://www.tazwoodcs.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/peoria/thomas-jefferson-primary-school
   name: Thomas Jefferson Primary School
   categories:

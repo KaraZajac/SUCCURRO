@@ -319,6 +319,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/huntsville/community-action-agency-of-huntsville-madison-li
+  name: Community Action Agency of Huntsville/Madison & Limestone Counties
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Limestone, Madison Counties
+  address: {street: 3516 Stringfield Road NW, city: Huntsville, state: al, zip: '35810'}
+  place: '0137000'
+  phone: 256-907-1550
+  website: http://www.caa-htsval.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/huntsville/family-life-center-inc
   name: Family Life Center Inc
   categories:
@@ -477,31 +489,62 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '301 Governor''s Drive Southwest, UAB Medicine Huntsville', city: Huntsville, state: al,
-    zip: '35801'}
+  address:
+    street: 301 Governor's Drive Southwest, UAB Medicine Huntsville
+    city: Huntsville
+    state: al
+    zip: '35801'
   place: '0137000'
-  geo: {lat: 34.71989, lng: -86.58352}
+  geo:
+    lat: 34.71989
+    lng: -86.58352
   phone: 205-933-8101
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
-  external_ids: {va: vha_521QD}
+  external_ids:
+    va: vha_521QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/huntsville/huntsville-va-clinic
   name: Huntsville VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: '500 Markaview Road, Northwest', city: Huntsville, state: al, zip: '35805'}
+  address:
+    street: 500 Markaview Road, Northwest
+    city: Huntsville
+    state: al
+    zip: '35805'
   place: '0137000'
-  geo: {lat: 34.72645, lng: -86.62121}
+  geo:
+    lat: 34.72645
+    lng: -86.62121
   phone: 256-533-8477
   website: https://www.va.gov/birmingham-health-care/locations/huntsville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
-  - {days: [sat], open: '08:00', close: '12:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
+  - days:
+    - sat
+    open: 08:00
+    close: '12:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -514,21 +557,37 @@
   - Primary care
   - Radiology
   - Women Veteran care
-  external_ids: {va: vha_521GA}
+  external_ids:
+    va: vha_521GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/huntsville/huntsville-vet-center
   name: Huntsville Vet Center
   categories:
   - vet-center
-  address: {street: '415 Church Street, Building H, Suite 101', city: Huntsville, state: al, zip: '35801'}
+  address:
+    street: 415 Church Street, Building H, Suite 101
+    city: Huntsville
+    state: al
+    zip: '35801'
   place: '0137000'
-  geo: {lat: 34.73438, lng: -86.5927}
+  geo:
+    lat: 34.73438
+    lng: -86.5927
   phone: 256-539-5775
   website: https://www.va.gov/huntsville-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -540,28 +599,46 @@
   - Suicide prevention
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0738V}
+  external_ids:
+    va: vc_0738V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/huntsville/huntsville-west-va-clinic
   name: Huntsville West VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: '4100 Goss Road, Southwest, Fox Army Health Center', city: Huntsville, state: al,
-    zip: '35809'}
+  address:
+    street: 4100 Goss Road, Southwest, Fox Army Health Center
+    city: Huntsville
+    state: al
+    zip: '35809'
   place: '0137000'
-  geo: {lat: 34.69847, lng: -86.66169}
+  geo:
+    lat: 34.69847
+    lng: -86.66169
   phone: 205-933-8101
   website: https://www.va.gov/birmingham-health-care/locations/huntsville-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_521GK}
+  external_ids:
+    va: vha_521GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/huntsville/james-a-lane-boys-girls-club-of-north-alabama
   name: James A. Lane Boys & Girls Club Of North Alabama
   categories:

@@ -105,6 +105,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/fort-smith/crawford-sebastian-community-development-council
+  name: Crawford-Sebastian Community Development Council Inc. (C-SCDC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Crawford, Sebastian Counties
+  address: {street: 1617 S. Zero St. (P.O. Box 180070), city: Fort Smith, state: ar, zip: '72918'}
+  place: '0524550'
+  phone: 479-785-2303
+  email: utilities@cscdccaa.org
+  website: https://www.cscdc.net/li-heap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/fort-smith/dallas-street-head-start
   name: Dallas Street Head Start
   categories:
@@ -197,13 +210,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5700 Phoenix Place, city: Fort Smith, state: ar, zip: '72903'}
+  address:
+    street: 5700 Phoenix Place
+    city: Fort Smith
+    state: ar
+    zip: '72903'
   place: '0524550'
-  geo: {lat: 35.34593, lng: -94.37107}
+  geo:
+    lat: 35.34593
+    lng: -94.37107
   phone: 479-441-2600
   website: https://www.va.gov/fayetteville-arkansas-health-care/locations/fort-smith-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -222,10 +248,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_564GB}
+  external_ids:
+    va: vha_564GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/fort-smith/full-circle-farmcorps-free-little-pantry
   name: Full Circle FarmCorps Free Little Pantry
   categories:
@@ -855,16 +884,25 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 5700 Phoenix Place, city: Fort Smith, state: ar, zip: '72903'}
+  address:
+    street: 5700 Phoenix Place
+    city: Fort Smith
+    state: ar
+    zip: '72903'
   place: '0524550'
-  geo: {lat: 35.3379, lng: -94.38103}
+  geo:
+    lat: 35.3379
+    lng: -94.38103
   phone: 800-827-1000
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_350h}
+  external_ids:
+    va: vba_350h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/fort-smith/washington-community-and-cultural-center
   name: Washington Community And Cultural Center
   categories:

@@ -821,9 +821,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 6900 North Pecos Road, city: North Las Vegas, state: nv, zip: '89086'}
+  address:
+    street: 6900 North Pecos Road
+    city: North Las Vegas
+    state: nv
+    zip: '89086'
   place: '3251800'
-  geo: {lat: 36.28508, lng: -115.09414}
+  geo:
+    lat: 36.28508
+    lng: -115.09414
   phone: 702-791-9000
   website: https://www.va.gov/southern-nevada-health-care/locations/north-las-vegas-va-medical-center/
   services:
@@ -884,10 +890,13 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_593}
+  external_ids:
+    va: vha_593
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/north-las-vegas/north-neighborhood-family-servs-center
   name: North Neighborhood Family Servs Center
   categories:
@@ -929,6 +938,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nv/north-las-vegas/olive-crest
+  name: Olive Crest
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 3825 Cheyenne Avenue Ste 604, city: North Las Vegas, state: nv, zip: '89032'}
+  place: '3251800'
+  phone: 702-685-3459
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nv/north-las-vegas/pearson-community-center
   name: Pearson Community Center
   categories:
@@ -1170,17 +1190,31 @@
   name: Southern Nevada VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 6900 North Pecos Road, city: North Las Vegas, state: nv, zip: '89086'}
+  address:
+    street: 6900 North Pecos Road
+    city: North Las Vegas
+    state: nv
+    zip: '89086'
   place: '3251800'
-  geo: {lat: 36.28576, lng: -115.09402}
+  geo:
+    lat: 36.28576
+    lng: -115.09402
   phone: 702-791-9000
   website: https://www.va.gov/find-locations/facility/vha_593QD
   hours:
-  - {days: [tue, wed, thu], open: '08:30', close: '11:30'}
-  external_ids: {va: vha_593QD}
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:30
+    close: '11:30'
+  external_ids:
+    va: vha_593QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/north-las-vegas/tribe-sin-city
   name: Tribe Sin City
   categories:
@@ -1207,9 +1241,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: 6900 North Pecos Rd, city: North Las Vegas, state: nv, zip: '89086'}
+  address:
+    street: 6900 North Pecos Rd
+    city: North Las Vegas
+    state: nv
+    zip: '89086'
   place: '3251800'
-  geo: {lat: 36.28508, lng: -115.09414}
+  geo:
+    lat: 36.28508
+    lng: -115.09414
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1222,10 +1262,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_354a}
+  external_ids:
+    va: vba_354a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nv/north-las-vegas/va-southern-nevada-healthcare-system
   name: VA Southern Nevada Healthcare System
   categories:
@@ -1273,16 +1316,32 @@
   name: West Cheyenne VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3525 West Cheyenne Avenue, city: North Las Vegas, state: nv, zip: '89032'}
+  address:
+    street: 3525 West Cheyenne Avenue
+    city: North Las Vegas
+    state: nv
+    zip: '89032'
   place: '3251800'
-  geo: {lat: 36.21745, lng: -115.1867}
+  geo:
+    lat: 36.21745
+    lng: -115.1867
   phone: 702-791-9060
   website: https://www.va.gov/southern-nevada-health-care/locations/west-cheyenne-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - MentalHealth
-  external_ids: {va: vha_593QC}
+  external_ids:
+    va: vha_593QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

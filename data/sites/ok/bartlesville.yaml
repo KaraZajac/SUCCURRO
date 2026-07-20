@@ -45,13 +45,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3005 East Frank Phillips Boulevard, city: Bartlesville, state: ok, zip: '74006'}
+  address:
+    street: 3005 East Frank Phillips Boulevard
+    city: Bartlesville
+    state: ok
+    zip: '74006'
   place: '4004450'
-  geo: {lat: 36.74877, lng: -95.94528}
+  geo:
+    lat: 36.74877
+    lng: -95.94528
   phone: 888-397-8387
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/bartlesville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -64,10 +77,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_623QD}
+  external_ids:
+    va: vha_623QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/bartlesville/brightli-dayspring-community-services-preferred
   name: Brightli Dayspring Community Services/Preferred
   categories:
@@ -236,6 +252,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/bartlesville/human-services-centers-washington
+  name: 'Human Services Centers: Washington'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: 95205 Jacquelyn Ln., city: Bartlesville, state: ok, zip: '74006'}
+  place: '4004450'
+  phone: 918-338-5700
+  website: http://www.okdhs.org/okdhslocal/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/bartlesville/hwc-provider-bartlesville
   name: HWC Provider+ Bartlesville
   categories:

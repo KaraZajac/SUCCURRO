@@ -120,13 +120,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 701 US Highway 31 South, city: Traverse City, state: mi, zip: '49685'}
+  address:
+    street: 701 US Highway 31 South
+    city: Traverse City
+    state: mi
+    zip: '49685'
   place: '2680340'
-  geo: {lat: 44.67872, lng: -85.65621}
+  geo:
+    lat: 44.67872
+    lng: -85.65621
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/colonel-demas-t-craw-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -141,10 +154,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_655GB}
+  external_ids:
+    va: vha_655GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/traverse-city/grand-traverse-county-home-based
   name: Grand Traverse County Home Based
   categories:
@@ -305,6 +321,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/traverse-city/northwest-michigan-community-action-agency
+  name: Northwest Michigan Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Benzie, Grand Traverse, Kalkaska, Leelanau Counties
+  address: {street: 3963 Three Mile Rd., city: Traverse City, state: mi, zip: '49686'}
+  place: '2680340'
+  phone: 231-947-3780
+  website: https://www.nmcaa.net/emergency_assist.asp
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/traverse-city/northwest-michigan-health-services-inc
   name: NORTHWEST MICHIGAN HEALTH SERVICES, INC.
   categories:
@@ -414,13 +442,26 @@
   name: Traverse City Vet Center
   categories:
   - vet-center
-  address: {street: 4960 Skyview Court, city: Traverse City, state: mi, zip: '49684'}
+  address:
+    street: 4960 Skyview Court
+    city: Traverse City
+    state: mi
+    zip: '49684'
   place: '2680340'
-  geo: {lat: 44.76051, lng: -85.65677}
+  geo:
+    lat: 44.76051
+    lng: -85.65677
   phone: 231-935-0051
   website: https://www.va.gov/traverse-city-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -432,10 +473,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0445V}
+  external_ids:
+    va: vc_0445V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/traverse-city/traverse-city-west-middle-school-cahc
   name: Traverse City West Middle School CAHC
   categories:

@@ -250,22 +250,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 6854 Parker Road, city: Florissant, state: mo, zip: '63033'}
+  address:
+    street: 6854 Parker Road
+    city: Florissant
+    state: mo
+    zip: '63033'
   place: '2924778'
-  geo: {lat: 38.7954, lng: -90.23486}
+  geo:
+    lat: 38.7954
+    lng: -90.23486
   phone: 314-652-4100
   website: https://www.va.gov/st-louis-health-care/locations/st-louis-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Chiropractic
   - Dermatology
   - Primary care
   - Whole health
-  external_ids: {va: vha_657GB}
+  external_ids:
+    va: vha_657GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/florissant/the-christian-academy
   name: The Christian Academy
   categories:

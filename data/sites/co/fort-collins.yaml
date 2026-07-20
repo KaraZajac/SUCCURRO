@@ -334,28 +334,50 @@
   name: Fort Collins Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '702 West Drake Road, Building C', city: Fort Collins, state: co, zip: '80526'}
+  address:
+    street: 702 West Drake Road, Building C
+    city: Fort Collins
+    state: co
+    zip: '80526'
   place: 0827425
-  geo: {lat: 40.55311, lng: -105.08911}
+  geo:
+    lat: 40.55311
+    lng: -105.08911
   phone: 970-221-5176
   website: https://www.va.gov/fort-collins-vet-center/locations/#fort-collins-mobile-vet-center
-  external_ids: {va: vc_0881MVC}
+  external_ids:
+    va: vc_0881MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/fort-collins/fort-collins-va-clinic
   name: Fort Collins VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2509 Research Boulevard, city: Fort Collins, state: co, zip: '80526'}
+  address:
+    street: 2509 Research Boulevard
+    city: Fort Collins
+    state: co
+    zip: '80526'
   place: 0827425
-  geo: {lat: 40.55387, lng: -105.08795}
+  geo:
+    lat: 40.55387
+    lng: -105.08795
   phone: 970-224-1550
   website: https://www.va.gov/cheyenne-health-care/locations/fort-collins-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Mental health care
   - My HealtheVet coordinator
@@ -363,21 +385,40 @@
   - Pharmacy
   - Primary care
   - Social work
-  external_ids: {va: vha_442GC}
+  external_ids:
+    va: vha_442GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/fort-collins/fort-collins-vet-center
   name: Fort Collins Vet Center
   categories: *id001
-  address: {street: '702 West Drake Road, Building C', city: Fort Collins, state: co, zip: '80526'}
+  address:
+    street: 702 West Drake Road, Building C
+    city: Fort Collins
+    state: co
+    zip: '80526'
   place: 0827425
-  geo: {lat: 40.55311, lng: -105.08911}
+  geo:
+    lat: 40.55311
+    lng: -105.08911
   phone: 970-221-5176
   website: https://www.va.gov/fort-collins-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [sat], open: '08:00', close: '12:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - sat
+    open: 08:00
+    close: '12:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -392,10 +433,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0543V}
+  external_ids:
+    va: vc_0543V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/fort-collins/fullana-learning-center
   name: Fullana Learning Center
   categories:
@@ -593,6 +637,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/fort-collins/larimer-county-department-of-human-services-fort
+  name: Larimer County Department of Human Services - Fort Collins
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Larimer County
+  address: {street: 1501 Blue Spruce Drive, city: Fort Collins, state: co, zip: '80524'}
+  place: 0827425
+  phone: 970-498-6300
+  website: https://www.larimer.org/humanservices/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/fort-collins/larimer-county-housing-authority
   name: Larimer County Housing Authority
   categories:

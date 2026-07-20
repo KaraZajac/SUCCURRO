@@ -352,6 +352,16 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/staten-island/hra-benefits-access-center-richmond-staten-islan
+  name: HRA Benefits Access Center Richmond (Staten Island)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Richmond County
+  address: {street: '201 Bay Street, 1st Floor', city: Staten Island, state: ny, zip: '10301'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/staten-island/is-2-george-l-egbert
   name: Is 2 George L Egbert
   categories:
@@ -1060,12 +1070,25 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1150 South Avenue, city: Staten Island, state: ny, zip: '10314'}
-  geo: {lat: 40.61089, lng: -74.1768}
+  address:
+    street: 1150 South Avenue
+    city: Staten Island
+    state: ny
+    zip: '10314'
+  geo:
+    lat: 40.61089
+    lng: -74.1768
   phone: 718-836-6600
   website: https://www.va.gov/new-york-harbor-health-care/locations/staten-island-community-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
@@ -1080,10 +1103,13 @@
   - Returning service member care
   - Social work
   - Telehealth
-  external_ids: {va: vha_630GB}
+  external_ids:
+    va: vha_630GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/staten-island/staten-island-mental-health-a-div-of-richmond-un
   name: Staten Island Mental Health A Div of Richmond University Med Ctr
   categories:
@@ -1243,12 +1269,25 @@
   name: Staten Island Vet Center
   categories:
   - vet-center
-  address: {street: 60 Bay Street, city: Staten Island, state: ny, zip: '10301'}
-  geo: {lat: 40.64054, lng: -74.07572}
+  address:
+    street: 60 Bay Street
+    city: Staten Island
+    state: ny
+    zip: '10301'
+  geo:
+    lat: 40.64054
+    lng: -74.07572
   phone: 718-816-4499
   website: https://www.va.gov/staten-island-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1267,10 +1306,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0132V}
+  external_ids:
+    va: vc_0132V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/staten-island/staten-island-ymca-counseling-service-outpatient
   name: Staten Island YMCA Counseling Service Outpatient Clinic
   categories:

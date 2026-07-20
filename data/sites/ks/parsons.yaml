@@ -145,6 +145,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/parsons/labette-county-dcf
+  name: Labette County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Labette County
+  address: {street: 300 N. 17th St., city: Parsons, state: ks, zip: '67357'}
+  place: '2054675'
+  phone: 620-421-4500
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/parsons/mendota-creek
   name: Mendota Creek
   categories:
@@ -282,13 +293,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1907 Harding Drive, city: Parsons, state: ks, zip: '67357'}
+  address:
+    street: 1907 Harding Drive
+    city: Parsons
+    state: ks
+    zip: '67357'
   place: '2054675'
-  geo: {lat: 37.36586, lng: -95.26499}
+  geo:
+    lat: 37.36586
+    lng: -95.26499
   phone: 888-878-6881
   website: https://www.va.gov/wichita-health-care/locations/parsons-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -296,7 +320,10 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_589G5}
+  external_ids:
+    va: vha_589G5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

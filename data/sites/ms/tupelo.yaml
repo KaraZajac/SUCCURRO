@@ -394,22 +394,38 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1114 Commonwealth Blvd, city: Tupelo, state: ms, zip: '38804'}
+  address:
+    street: 1114 Commonwealth Blvd
+    city: Tupelo
+    state: ms
+    zip: '38804'
   place: '2874840'
-  geo: {lat: 34.29993, lng: -88.70278}
+  geo:
+    lat: 34.29993
+    lng: -88.70278
   phone: 662-840-6366
   website: https://www.va.gov/memphis-health-care/locations/tupelo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_614GA}
+  external_ids:
+    va: vha_614GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/tupelo/west-jackson-street-baptist-church
   name: West Jackson Street Baptist Church
   categories:

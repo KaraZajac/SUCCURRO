@@ -300,6 +300,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/owensboro/audubon-area-community-services
+  name: Audubon Area Community Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Daviess County
+  address: {street: 1800 W. 5th St., city: Owensboro, state: ky, zip: '42304'}
+  place: '2158620'
+  phone: 270-686-1662
+  email: info@audubon-area.com
+  website: https://www.audubon-area.com/liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/owensboro/audubon-elementary
   name: Audubon Elementary
   categories:
@@ -1643,22 +1656,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2060 East Parrish Avenue, city: Owensboro, state: ky, zip: '42303'}
+  address:
+    street: 2060 East Parrish Avenue
+    city: Owensboro
+    state: ky
+    zip: '42303'
   place: '2158620'
-  geo: {lat: 37.76157, lng: -87.07999}
+  geo:
+    lat: 37.76157
+    lng: -87.07999
   phone: 270-684-5034
   website: https://www.va.gov/marion-health-care/locations/owensboro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_657GP}
+  external_ids:
+    va: vha_657GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/owensboro/panther-creek-park
   name: Panther Creek Park
   categories:

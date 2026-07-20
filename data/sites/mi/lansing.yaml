@@ -220,6 +220,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/lansing/capitol-area-community-services-inc
+  name: Capitol Area Community Services, Inc
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ingham County
+  address: {street: 101 E. Willow St., city: Lansing, state: mi, zip: '48906'}
+  place: '2646000'
+  phone: 517-482-6281
+  website: https://cacs-inc.org/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/lansing/care-free-dental
   name: Care Free Dental
   categories:
@@ -1048,13 +1060,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5656 South Cedar Street, city: Lansing, state: mi, zip: '48911'}
+  address:
+    street: 5656 South Cedar Street
+    city: Lansing
+    state: mi
+    zip: '48911'
   place: '2646000'
-  geo: {lat: 42.67518, lng: -84.54718}
+  geo:
+    lat: 42.67518
+    lng: -84.54718
   phone: 517-267-3925
   website: https://www.va.gov/battle-creek-health-care/locations/lansing-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1075,10 +1100,13 @@
   - Suicide prevention
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_515GB}
+  external_ids:
+    va: vha_515GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/lansing/letts-community-center-33m000019
   name: Letts Community Center - 33M000019
   categories:

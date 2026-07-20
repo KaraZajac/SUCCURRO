@@ -390,25 +390,47 @@
   name: Columbia Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1710 Richland Street, Suite A', city: Columbia, state: sc, zip: '29201'}
+  address:
+    street: 1710 Richland Street, Suite A
+    city: Columbia
+    state: sc
+    zip: '29201'
   place: '4516000'
-  geo: {lat: 34.01311, lng: -81.02946}
+  geo:
+    lat: 34.01311
+    lng: -81.02946
   phone: 803-765-9944
   website: https://www.va.gov/columbia-sc-vet-center/locations/#columbia-mobile-vet-center
-  external_ids: {va: vc_0817MVC}
+  external_ids:
+    va: vc_0817MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/columbia/columbia-sc-vet-center
   name: Columbia, SC Vet Center
   categories: *id001
-  address: {street: '1710 Richland Street, Suite A', city: Columbia, state: sc, zip: '29201'}
+  address:
+    street: 1710 Richland Street, Suite A
+    city: Columbia
+    state: sc
+    zip: '29201'
   place: '4516000'
-  geo: {lat: 34.01311, lng: -81.02946}
+  geo:
+    lat: 34.01311
+    lng: -81.02946
   phone: 803-765-9944
   website: https://www.va.gov/columbia-sc-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -420,35 +442,59 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0324V}
+  external_ids:
+    va: vc_0324V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/columbia/columbia-va-mobile-medical-unit
   name: Columbia VA Mobile Medical Unit
   categories: &id003
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 6439 Garners Ferry Road, city: Columbia, state: sc, zip: '29209'}
+  address:
+    street: 6439 Garners Ferry Road
+    city: Columbia
+    state: sc
+    zip: '29209'
   place: '4516000'
-  geo: {lat: 33.97639, lng: -80.96096}
+  geo:
+    lat: 33.97639
+    lng: -80.96096
   phone: 803-776-4000
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/columbia-va-mobile-medical-unit/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:30'}
-  external_ids: {va: vha_544HK}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:30'
+  external_ids:
+    va: vha_544HK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/columbia/columbia-va-regional-benefit-office
   name: Columbia VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: 6437 Garners Ferry Rd, city: Columbia, state: sc, zip: '29209'}
+  address:
+    street: 6437 Garners Ferry Rd
+    city: Columbia
+    state: sc
+    zip: '29209'
   place: '4516000'
-  geo: {lat: 33.97999, lng: -80.96188}
+  geo:
+    lat: 33.97999
+    lng: -80.96188
   phone: 800-827-1000
   website: https://www.va.gov/columbia-va-regional-benefit-office/
   services:
@@ -461,10 +507,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_319}
+  external_ids:
+    va: vba_319
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/columbia/cooperative-health-administrative-offices
   name: Cooperative Health Administrative Offices
   categories:
@@ -2815,20 +2864,40 @@
   name: VetSuccess on Campus at Midland Technical College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '315 S Beltline Blvd, Lindau Engineering Technology Building, room 105', city: Columbia,
-    state: sc, zip: '29205'}
+  address:
+    street: 315 S Beltline Blvd, Lindau Engineering Technology Building, room 105
+    city: Columbia
+    state: sc
+    zip: '29205'
   place: '4516000'
-  geo: {lat: 33.98624, lng: -80.98284}
+  geo:
+    lat: 33.98624
+    lng: -80.98284
   phone: 803-397-1003
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_319i}
+  external_ids:
+    va: vba_319i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: sc/columbia/wateree-community-actions
+  name: Wateree Community Actions
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Richland County
+  address: {street: 201 Columbia Mall Blvd. Ste 91, city: Columbia, state: sc, zip: '29204'}
+  place: '4516000'
+  phone: 803-807-9811
+  website: https://www.wcai.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/columbia/waverly-family-practice
   name: Waverly Family Practice
   categories:
@@ -2920,9 +2989,15 @@
   name: Wm. Jennings Bryan Dorn Department of Veterans Affairs Medical Center
   categories: *id003
   description: VA Medical Center (VAMC)
-  address: {street: 6439 Garners Ferry Road, city: Columbia, state: sc, zip: '29209'}
+  address:
+    street: 6439 Garners Ferry Road
+    city: Columbia
+    state: sc
+    zip: '29209'
   place: '4516000'
-  geo: {lat: 33.97639, lng: -80.96096}
+  geo:
+    lat: 33.97639
+    lng: -80.96096
   phone: 803-776-4000
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/wm-jennings-bryan-dorn-department-of-veterans-affairs-medical-center/
   services:
@@ -2958,10 +3033,13 @@
   - Urology
   - Vascular surgery
   - Women Veteran care
-  external_ids: {va: vha_544}
+  external_ids:
+    va: vha_544
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/columbia/woodland-park
   name: Woodland Park
   categories:

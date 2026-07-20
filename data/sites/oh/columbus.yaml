@@ -1199,14 +1199,31 @@
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 420 North James Road, city: Columbus, state: oh, zip: '43219'}
+  address:
+    street: 420 North James Road
+    city: Columbus
+    state: oh
+    zip: '43219'
   place: '3918000'
-  geo: {lat: 39.98048, lng: -82.9123}
+  geo:
+    lat: 39.98048
+    lng: -82.9123
   phone: 614-257-5200
   website: https://www.va.gov/central-ohio-health-care/locations/chalmers-p-wylie-veterans-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '18:00'}
-  - {days: [sat, sun], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '18:00'
+  - days:
+    - sat
+    - sun
+    open: 08:00
+    close: '16:00'
   services:
   - Allergy, asthma and immunology
   - Audiology and speech
@@ -1258,10 +1275,13 @@
   - Vascular surgery
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_757}
+  external_ids:
+    va: vha_757
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/columbus/champion-ms-summer-school
   name: Champion Ms Summer School
   categories:
@@ -1761,13 +1781,26 @@
   name: Columbus, OH Vet Center
   categories:
   - vet-center
-  address: {street: 855 Bethel Road, city: Columbus, state: oh, zip: '43214'}
+  address:
+    street: 855 Bethel Road
+    city: Columbus
+    state: oh
+    zip: '43214'
   place: '3918000'
-  geo: {lat: 40.06316, lng: -83.04241}
+  geo:
+    lat: 40.06316
+    lng: -83.04241
   phone: 614-257-5550
   website: https://www.va.gov/columbus-oh-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1780,10 +1813,13 @@
   - Veteran connections
   - Whole health
   - Workshops and classes
-  external_ids: {va: vc_0221V}
+  external_ids:
+    va: vc_0221V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/columbus/columbus-public-health-addiction-services
   name: Columbus Public Health Addiction Services
   categories:
@@ -3440,6 +3476,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/columbus/impact-community-action
+  name: Impact Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Franklin County
+  address: {street: 711 Southwood Avenue, city: Columbus, state: oh, zip: '43207'}
+  place: '3918000'
+  phone: 614-252-2799
+  email: communications@impactca.org
+  website: https://www.impactca.org/housing-crisis
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/columbus/independence-hs
   name: Independence Hs
   categories:
@@ -4541,17 +4590,32 @@
   name: North James Road 2 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 420 North James Road, city: Columbus, state: oh, zip: '43219'}
+  address:
+    street: 420 North James Road
+    city: Columbus
+    state: oh
+    zip: '43219'
   place: '3918000'
-  geo: {lat: 39.98048, lng: -82.9123}
+  geo:
+    lat: 39.98048
+    lng: -82.9123
   phone: 614-257-5689
   website: https://www.va.gov/find-locations/facility/vha_757QB
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_757QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_757QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/columbus/north-linden
   name: North Linden
   categories:

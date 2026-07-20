@@ -336,13 +336,26 @@
   name: Midland Vet Center
   categories:
   - vet-center
-  address: {street: 4001 W. Illinois, city: Midland, state: tx, zip: '79703'}
+  address:
+    street: 4001 W. Illinois
+    city: Midland
+    state: tx
+    zip: '79703'
   place: '4848072'
-  geo: {lat: 31.98917, lng: -102.12645}
+  geo:
+    lat: 31.98917
+    lng: -102.12645
   phone: 432-697-8222
   website: https://www.va.gov/midland-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -360,10 +373,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0716V}
+  external_ids:
+    va: vc_0716V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/midland/pease-communications-technology-magnet
   name: Pease Communications/Technology Magnet
   categories:
@@ -482,6 +498,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/midland/west-texas-opportunities-inc-midland-neighborhoo
+  name: West Texas Opportunities, Inc. Midland Neighborhood Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Midland County
+  address: {street: 208 S. Marienfeld St. Suite 127, city: Midland, state: tx, zip: '79701'}
+  place: '4848072'
+  phone: 432-218-7589
+  website: https://www.gowto.org/index.cfm?fuseaction=contact
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/midland/wtcr-midland
   name: WTCR Midland
   categories:

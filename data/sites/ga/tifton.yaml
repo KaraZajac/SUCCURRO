@@ -106,6 +106,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/tifton/coastal-plain-area-economic-opportunity-authorit
+  name: Coastal Plain Area Economic Opportunity Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Tift County
+  address: {street: '2737 S. Central Ave., Suite 4', city: Tifton, state: ga, zip: 31794-4023}
+  place: '1376476'
+  phone: 229-382-2960
+  email: tift@coastalplain.org
+  website: http://www.coastalplaineoa.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/tifton/everette-temple-non-congregate-walk-up
   name: Everette Temple Non Congregate Walk Up
   categories:
@@ -570,13 +583,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1824 Ridge Avenue North, city: Tifton, state: ga, zip: '31794'}
+  address:
+    street: 1824 Ridge Avenue North
+    city: Tifton
+    state: ga
+    zip: '31794'
   place: '1376476'
-  geo: {lat: 31.47128, lng: -83.50947}
+  geo:
+    lat: 31.47128
+    lng: -83.50947
   phone: 478-272-1210
   website: https://www.va.gov/dublin-health-care/locations/tifton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -592,10 +618,13 @@
   - Smoking and tobacco cessation
   - Social work
   - Telehealth
-  external_ids: {va: vha_557GF}
+  external_ids:
+    va: vha_557GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/tifton/ymca-congregate-site-1
   name: Ymca Congregate Site 1
   categories:

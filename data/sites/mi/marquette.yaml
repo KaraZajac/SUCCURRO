@@ -38,6 +38,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/marquette/community-action-alger-marquette
+  name: Community Action Alger - Marquette
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Alger, Marquette Counties
+  address: {street: 1125 Commerce Drive, city: Marquette, state: mi, zip: '49855'}
+  place: '2651900'
+  phone: 906-228-6522
+  email: frontdesk@communityaction.org
+  website: https://www.communityactionam.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/marquette/dolores-wright-early-childhood-center
   name: Dolores Wright Early Childhood Center
   categories:
@@ -191,13 +204,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1414 West Fair Avenue, city: Marquette, state: mi, zip: '49855'}
+  address:
+    street: 1414 West Fair Avenue
+    city: Marquette
+    state: mi
+    zip: '49855'
   place: '2651900'
-  geo: {lat: 46.55684, lng: -87.41815}
+  geo:
+    lat: 46.55684
+    lng: -87.41815
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/marquette-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -220,10 +246,13 @@
   - Pulmonary medicine
   - Returning service member care
   - Women Veteran care
-  external_ids: {va: vha_585HA}
+  external_ids:
+    va: vha_585HA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/marquette/pathways-community-mental-health
   name: Pathways Community Mental Health
   categories:

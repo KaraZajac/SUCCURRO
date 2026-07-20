@@ -155,23 +155,51 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1100 Carson Avenue, city: La Junta, state: co, zip: '81050'}
+  address:
+    street: 1100 Carson Avenue
+    city: La Junta
+    state: co
+    zip: '81050'
   place: 0842110
-  geo: {lat: 37.97756, lng: -103.54881}
+  geo:
+    lat: 37.97756
+    lng: -103.54881
   phone: 719-383-5195
   website: https://www.va.gov/eastern-colorado-health-care/locations/la-junta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_554GG}
+  external_ids:
+    va: vha_554GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: co/la-junta/otero-county-department-of-social-services-la-ju
+  name: Otero County Department of Social Services - La Junta
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Otero County
+  address: {street: 13 W. 3rd St., city: La Junta, state: co, zip: '81050'}
+  place: 0842110
+  phone: 719-383-3100
+  website: https://www.oterogov.com/departments/human-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: co/la-junta/otero-county-housing-authority
   name: Otero County Housing Authority
   categories:

@@ -112,14 +112,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '5235 King Avenue, Franklin Square Professional Center', city: Rosedale, state: md,
-    zip: '21237'}
+  address:
+    street: 5235 King Avenue, Franklin Square Professional Center
+    city: Rosedale
+    state: md
+    zip: '21237'
   place: '2468400'
-  geo: {lat: 39.35782, lng: -76.47052}
+  geo:
+    lat: 39.35782
+    lng: -76.47052
   phone: 443-730-2020
   website: https://www.va.gov/maryland-health-care/locations/eastern-baltimore-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -128,10 +140,13 @@
   - Prosthetics and rehabilitation
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_512GF}
+  external_ids:
+    va: vha_512GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/rosedale/epec-clinic-llc
   name: EPEC Clinic LLC
   categories:

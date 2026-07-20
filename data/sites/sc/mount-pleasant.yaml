@@ -19,19 +19,35 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '180 Wingo Way, Tides Medical Arts Center', city: Mount Pleasant, state: sc, zip: '29464'}
+  address:
+    street: 180 Wingo Way, Tides Medical Arts Center
+    city: Mount Pleasant
+    state: sc
+    zip: '29464'
   place: '4548535'
-  geo: {lat: 32.80329, lng: -79.89862}
+  geo:
+    lat: 32.80329
+    lng: -79.89862
   phone: 843-577-5011
   website: https://www.va.gov/find-locations/facility/vha_534GH
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - PrimaryCare
-  external_ids: {va: vha_534GH}
+  external_ids:
+    va: vha_534GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/mount-pleasant/wando-high
   name: Wando High
   categories:

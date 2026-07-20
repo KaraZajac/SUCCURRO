@@ -630,6 +630,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/wilmington/new-hanover-county-department-of-social-services
+  name: New Hanover County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New Hanover County
+  address: {street: 1650 Greenfield Street, city: Wilmington, state: nc, zip: '28402'}
+  place: '3774440'
+  phone: 910-798-3400
+  website: https://www.nhcgov.com/417/Social-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/wilmington/new-hanover-metro-treatment-center-metro-treatme
   name: New Hanover Metro Treatment Center Metro Treatment of North Carolina LP
   categories:
@@ -844,13 +856,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1705 Gardner Road, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 1705 Gardner Road
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.26873, lng: -77.91841}
+  geo:
+    lat: 34.26873
+    lng: -77.91841
   phone: 910-343-5300
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/wilmington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -873,10 +898,13 @@
   - Sleep medicine
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_565GC}
+  external_ids:
+    va: vha_565GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/wilmington/wrightsboro-elementary
   name: Wrightsboro Elementary
   categories:

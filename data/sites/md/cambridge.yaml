@@ -24,13 +24,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 830 Chesapeake Drive, city: Cambridge, state: md, zip: '21613'}
+  address:
+    street: 830 Chesapeake Drive
+    city: Cambridge
+    state: md
+    zip: '21613'
   place: '2412400'
-  geo: {lat: 38.5508, lng: -76.05351}
+  geo:
+    lat: 38.5508
+    lng: -76.05351
   phone: 410-228-6243
   website: https://www.va.gov/maryland-health-care/locations/cambridge-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -45,10 +58,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_512GA}
+  external_ids:
+    va: vha_512GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/cambridge/community-behavioral-health
   name: Community Behavioral Health
   categories:
@@ -70,6 +86,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/cambridge/dorchester-co-dept-of-social-services
+  name: Dorchester Co. Dept. of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dorchester County
+  address: {street: 2737 Dorchester SQ., city: Cambridge, state: md, zip: '21613'}
+  place: '2412400'
+  phone: 410-901-4100
+  email: dorchester.ohep@maryland.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/cambridge/dorchester-county-behavioral-health
   name: Dorchester County Behavioral Health
   categories:

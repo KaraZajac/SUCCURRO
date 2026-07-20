@@ -43,13 +43,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '701 Slate Belt Boulevard, Phoebe Center', city: Bangor, state: pa, zip: '18013'}
+  address:
+    street: 701 Slate Belt Boulevard, Phoebe Center
+    city: Bangor
+    state: pa
+    zip: '18013'
   place: '4204032'
-  geo: {lat: 40.87415, lng: -75.22829}
+  geo:
+    lat: 40.87415
+    lng: -75.22829
   phone: 610-599-0127
   website: https://www.va.gov/wilkes-barre-health-care/locations/northampton-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -62,10 +75,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_693GG}
+  external_ids:
+    va: vha_693GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/bangor/recovery-revolution-inc
   name: Recovery Revolution Inc
   categories:

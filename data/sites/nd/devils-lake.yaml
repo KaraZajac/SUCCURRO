@@ -86,13 +86,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1031 7th Street Northeast, city: Devils Lake, state: nd, zip: '58301'}
+  address:
+    street: 1031 7th Street Northeast
+    city: Devils Lake
+    state: nd
+    zip: '58301'
   place: '3819420'
-  geo: {lat: 48.11487, lng: -98.85028}
+  geo:
+    lat: 48.11487
+    lng: -98.85028
   phone: 701-662-5801
   website: https://www.va.gov/fargo-health-care/locations/devils-lake-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -103,10 +116,13 @@
   - Nutrition, food, and dietary care
   - Primary care
   - Urology
-  external_ids: {va: vha_437GL}
+  external_ids:
+    va: vha_437GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/devils-lake/evolution-counseling
   name: Evolution Counseling
   categories:
@@ -149,6 +165,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/devils-lake/lakes-social-service-district-in-ramsey-county
+  name: Lakes Social Service District (in Ramsey County)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ramsey County
+  address: {street: '524 4th Avenue NE #19', city: Devils Lake, state: nd, zip: '58301'}
+  place: '3819420'
+  phone: 701-662-7050
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/devils-lake/minnie-h-elementary-school
   name: Minnie H Elementary School
   categories:

@@ -39,6 +39,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mo/kirksville/community-action-partnership-of-northeast-missou
+  name: Community Action Partnership of Northeast Missouri (CAPNEMO)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Adair, Clark, Knox, Schuyler, Scotland Counties
+  address: {street: 215 N. Elson (P. O. Box 966), city: Kirksville, state: mo, zip: '63501'}
+  place: '2939026'
+  phone: 660-665-9855
+  email: liheap@capnemo.org
+  website: https://www.capnemo.org/energy-assistance.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mo/kirksville/early-childhood-learning-center
   name: Early Childhood Learning Center
   categories:
@@ -160,13 +173,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 506 Rosewood Drive, city: Kirksville, state: mo, zip: '63501'}
+  address:
+    street: 506 Rosewood Drive
+    city: Kirksville
+    state: mo
+    zip: '63501'
   place: '2939026'
-  geo: {lat: 40.20901, lng: -92.5793}
+  geo:
+    lat: 40.20901
+    lng: -92.5793
   phone: 660-627-8387
   website: https://www.va.gov/columbia-missouri-health-care/locations/kirksville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -174,10 +200,13 @@
   - Mental health care
   - Orthopedics
   - Primary care
-  external_ids: {va: vha_589GE}
+  external_ids:
+    va: vha_589GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/kirksville/kirksville-veteran-s-clinic
   name: Kirksville Veteran's Clinic
   categories:

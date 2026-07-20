@@ -65,6 +65,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: de/dover/catholic-charities-energy-assistance-program
+  name: Catholic Charities Energy Assistance Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kent County
+  address: {street: 2099 S. DuPont Highway, city: Dover, state: de, zip: '19901'}
+  place: '1021200'
+  phone: 302-674-1782
+  website: https://www.ccwilm.org/basic-needs/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: de/dover/cedar-chase-apartments
   name: Cedar Chase Apartments
   categories:
@@ -421,13 +433,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 655 South Bay Road, city: Dover, state: de, zip: '19901'}
+  address:
+    street: 655 South Bay Road
+    city: Dover
+    state: de
+    zip: '19901'
   place: '1021200'
-  geo: {lat: 39.15364, lng: -75.50359}
+  geo:
+    lat: 39.15364
+    lng: -75.50359
   phone: 800-461-8262
   website: https://www.va.gov/wilmington-health-care/locations/kent-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -456,10 +481,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_460GC}
+  external_ids:
+    va: vha_460GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: de/dover/kent-secondary-intensive-learning-center
   name: Kent Secondary Intensive Learning Center
   categories:

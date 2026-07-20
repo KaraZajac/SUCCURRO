@@ -309,13 +309,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 175 Medical Boulevard, city: Stockbridge, state: ga, zip: '30281'}
+  address:
+    street: 175 Medical Boulevard
+    city: Stockbridge
+    state: ga
+    zip: '30281'
   place: '1373704'
-  geo: {lat: 33.512, lng: -84.22516}
+  geo:
+    lat: 33.512
+    lng: -84.22516
   phone: 770-507-3952
   website: https://www.va.gov/atlanta-health-care/locations/stockbridge-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -323,10 +336,13 @@
   - Ophthalmology
   - Primary care
   - Radiology
-  external_ids: {va: vha_508GG}
+  external_ids:
+    va: vha_508GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/stockbridge/the-flats-at-mt-zion
   name: The Flats At Mt Zion
   categories:

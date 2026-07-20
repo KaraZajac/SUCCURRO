@@ -42,6 +42,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/alexandria-division-of-human-services
+  name: Alexandria Division of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Alexandria City, Fairfax Counties
+  address: {street: 4850 Mark Center Dr., city: Alexandria, state: va, zip: '22311'}
+  place: '5101000'
+  phone: 703-746-5700
+  website: http://www.alexandriava.gov/DCHS
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/alexandria/alexandria-little-free-pantry
   name: Alexandria Little Free Pantry
   categories:
@@ -81,13 +93,26 @@
   name: Alexandria, VA Vet Center
   categories:
   - vet-center
-  address: {street: '6940 South Kings Highway, Suite 204', city: Alexandria, state: va, zip: '22310'}
+  address:
+    street: 6940 South Kings Highway, Suite 204
+    city: Alexandria
+    state: va
+    zip: '22310'
   place: '5101000'
-  geo: {lat: 38.76788, lng: -77.11916}
+  geo:
+    lat: 38.76788
+    lng: -77.11916
   phone: 703-360-8633
   website: https://www.va.gov/alexandria-va-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -99,10 +124,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0228V}
+  external_ids:
+    va: vc_0228V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/audubon-mobile-home-park
   name: Audubon Mobile Home Park
   categories:

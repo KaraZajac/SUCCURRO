@@ -240,13 +240,26 @@
   name: Charleston, SC Vet Center
   categories:
   - vet-center
-  address: {street: 3625 West Montague Avenue, city: North Charleston, state: sc, zip: '29418'}
+  address:
+    street: 3625 West Montague Avenue
+    city: North Charleston
+    state: sc
+    zip: '29418'
   place: '4550875'
-  geo: {lat: 32.86084, lng: -80.02732}
+  geo:
+    lat: 32.86084
+    lng: -80.02732
   phone: 843-789-7000
   website: https://www.va.gov/charleston-sc-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -260,47 +273,74 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0303V}
+  external_ids:
+    va: vc_0303V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/north-charleston/charleston-va-clinic
   name: Charleston VA Clinic
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '2424 City Hall Lane, Community Resource & Referral Center (CRRC)', city: North Charleston,
-    state: sc, zip: '29406'}
+  address:
+    street: 2424 City Hall Lane, Community Resource & Referral Center (CRRC)
+    city: North Charleston
+    state: sc
+    zip: '29406'
   place: '4550875'
-  geo: {lat: 32.87536, lng: -80.01185}
+  geo:
+    lat: 32.87536
+    lng: -80.01185
   phone: 843-789-6804
   website: https://www.va.gov/charleston-health-care/locations/charleston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Mental health care
-  external_ids: {va: vha_534QC}
+  external_ids:
+    va: vha_534QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/north-charleston/charleston-veteran-readiness-and-employment-offi
   name: Charleston Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '4600 Goer Dr, Ste 110', city: North Charleston, state: sc, zip: '29406'}
+  address:
+    street: 4600 Goer Dr, Ste 110
+    city: North Charleston
+    state: sc
+    zip: '29406'
   place: '4550875'
-  geo: {lat: 32.87107, lng: -80.00799}
+  geo:
+    lat: 32.87107
+    lng: -80.00799
   phone: 843-740-9114
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_319f}
+  external_ids:
+    va: vba_319f
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/north-charleston/crescent-child-development-center
   name: Crescent Child Development Center
   categories:
@@ -815,6 +855,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/north-charleston/north-charleston
+  name: North Charleston
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Charleston County
+  address: {street: 4790 Hassell Street, city: North Charleston, state: sc, zip: '29406'}
+  place: '4550875'
+  phone: 843-724-6760
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/north-charleston/north-charleston-elem
   name: North Charleston Elem
   categories:
@@ -841,13 +892,26 @@
   name: North Charleston VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 6450 Rivers Avenue, city: North Charleston, state: sc, zip: '29406'}
+  address:
+    street: 6450 Rivers Avenue
+    city: North Charleston
+    state: sc
+    zip: '29406'
   place: '4550875'
-  geo: {lat: 32.91389, lng: -80.0251}
+  geo:
+    lat: 32.91389
+    lng: -80.0251
   phone: 843-577-5011
   website: https://www.va.gov/charleston-health-care/locations/north-charleston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dental/oral surgery
   - Dermatology
@@ -863,10 +927,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_534GF}
+  external_ids:
+    va: vha_534GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/north-charleston/northwoods-park-community-center
   name: Northwoods Park Community Center
   categories:

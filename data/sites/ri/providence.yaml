@@ -490,6 +490,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/providence/community-action-partnership-of-providence-count
+  name: Community Action Partnership of Providence County (CAPP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Providence County
+  address: {street: 518 Hartford Ave, city: Providence, state: ri, zip: 02909}
+  place: '4459000'
+  phone: 401-273-2000
+  email: info@cappri.org
+  website: https://cappri.org/programs/low-income-home-energy-assistance-liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ri/providence/community-care-alliance-acute-stabilization-unit
   name: Community Care Alliance Acute Stabilization Unit
   categories:
@@ -627,36 +640,68 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '623 Atwells Avenue, Uncas Building', city: Providence, state: ri, zip: 02909}
+  address:
+    street: 623 Atwells Avenue, Uncas Building
+    city: Providence
+    state: ri
+    zip: 02909
   place: '4459000'
-  geo: {lat: 41.82455, lng: -71.43703}
+  geo:
+    lat: 41.82455
+    lng: -71.43703
   phone: 401-273-7100
   website: https://www.va.gov/providence-health-care/locations/eagle-square-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Audiology and speech
   - Ophthalmology
   - Optometry
-  external_ids: {va: vha_650QA}
+  external_ids:
+    va: vha_650QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/eagle-street-va-clinic
   name: Eagle Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 75 Eagle Street, city: Providence, state: ri, zip: 02909}
+  address:
+    street: 75 Eagle Street
+    city: Providence
+    state: ri
+    zip: 02909
   place: '4459000'
-  geo: {lat: 41.82566, lng: -71.43542}
+  geo:
+    lat: 41.82566
+    lng: -71.43542
   phone: 401-273-7100
   website: https://www.va.gov/providence-health-care/locations/eagle-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_650QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_650QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/family-service-of-rhode-island
   name: Family Service of Rhode Island
   categories:
@@ -1577,9 +1622,15 @@
   name: Providence VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 830 Chalkstone Avenue, city: Providence, state: ri, zip: 02908}
+  address:
+    street: 830 Chalkstone Avenue
+    city: Providence
+    state: ri
+    zip: 02908
   place: '4459000'
-  geo: {lat: 41.83125, lng: -71.43179}
+  geo:
+    lat: 41.83125
+    lng: -71.43179
   phone: 401-273-7100
   website: https://www.va.gov/providence-health-care/locations/providence-va-medical-center/
   services:
@@ -1613,18 +1664,27 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_650}
+  external_ids:
+    va: vha_650
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/providence-va-regional-benefit-office
   name: Providence VA Regional Benefit Office
   categories: &id002
   - va-facility
   description: Regional Benefit Office
-  address: {street: 380 Westminster St, city: Providence, state: ri, zip: 02903}
+  address:
+    street: 380 Westminster St
+    city: Providence
+    state: ri
+    zip: 02903
   place: '4459000'
-  geo: {lat: 41.82127, lng: -71.41487}
+  geo:
+    lat: 41.82127
+    lng: -71.41487
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -1636,10 +1696,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_304}
+  external_ids:
+    va: vba_304
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/randall-sq-specialty-clinic-suite-308
   name: Randall Sq Specialty Clinic Suite 308
   categories:
@@ -1891,10 +1954,15 @@
   name: VA Regional Benefit Satellite Office at Providence VA Medical Center
   categories: *id002
   description: Satellite Office
-  address: {street: '830 Chalkstone Avenue, VA Medical Center Main Building, Room 146', city: Providence,
-    state: ri, zip: 02908}
+  address:
+    street: 830 Chalkstone Avenue, VA Medical Center Main Building, Room 146
+    city: Providence
+    state: ri
+    zip: 02908
   place: '4459000'
-  geo: {lat: 41.83125, lng: -71.43179}
+  geo:
+    lat: 41.83125
+    lng: -71.43179
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_304a
   services:
@@ -1903,10 +1971,13 @@
   - FamilyMemberClaimAssistance
   - HomelessAssistance
   - UpdatingDirectDepositInformation
-  external_ids: {va: vba_304a}
+  external_ids:
+    va: vba_304a
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/vernon-street-mini-pantry
   name: Vernon Street Mini Pantry
   categories:
@@ -1947,37 +2018,54 @@
   name: VetSuccess on Campus at Community College of Rhode Island Liston Campus
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: 'One Hilton Street, 2nd floor, 2215', city: Providence, state: ri, zip: 02905}
+  address:
+    street: One Hilton Street, 2nd floor, 2215
+    city: Providence
+    state: ri
+    zip: 02905
   place: '4459000'
-  geo: {lat: 41.80721, lng: -71.41368}
+  geo:
+    lat: 41.80721
+    lng: -71.41368
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_304k}
+  external_ids:
+    va: vba_304k
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/vetsuccess-on-campus-at-rhode-island-college
   name: VetSuccess on Campus at Rhode Island College
   categories: *id002
   description: VetSuccess On Campus
-  address: {street: '600 Mt. Pleasant Avenue, East Campus, Building 5 Lower Level', city: Providence,
-    state: ri, zip: 02908}
+  address:
+    street: 600 Mt. Pleasant Avenue, East Campus, Building 5 Lower Level
+    city: Providence
+    state: ri
+    zip: 02908
   place: '4459000'
-  geo: {lat: 41.84166, lng: -71.4527}
+  geo:
+    lat: 41.84166
+    lng: -71.4527
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_304h}
+  external_ids:
+    va: vba_304h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/victa
   name: VICTA
   categories:

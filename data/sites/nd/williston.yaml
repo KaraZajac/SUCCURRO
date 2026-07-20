@@ -259,19 +259,43 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/williston/williams-county-social-services-board
+  name: Williams County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Williams County
+  address: {street: '110 W Broadway, Ste 202', city: Williston, state: nd, zip: '58801'}
+  place: '3886220'
+  phone: 701-774-6300
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/williston/williston-va-clinic
   name: Williston VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '3210 27th Street West, Harvest Plaza', city: Williston, state: nd, zip: '58801'}
+  address:
+    street: 3210 27th Street West, Harvest Plaza
+    city: Williston
+    state: nd
+    zip: '58801'
   place: '3886220'
-  geo: {lat: 48.16986, lng: -103.67007}
+  geo:
+    lat: 48.16986
+    lng: -103.67007
   phone: 701-572-2470
   website: https://www.va.gov/fargo-health-care/locations/williston-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -281,7 +305,10 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Primary care
-  external_ids: {va: vha_437GF}
+  external_ids:
+    va: vha_437GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

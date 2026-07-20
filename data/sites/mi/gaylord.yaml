@@ -173,13 +173,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2782 South Otsego Avenue, city: Gaylord, state: mi, zip: '49735'}
+  address:
+    street: 2782 South Otsego Avenue
+    city: Gaylord
+    state: mi
+    zip: '49735'
   place: '2631720'
-  geo: {lat: 44.99158, lng: -84.67705}
+  geo:
+    lat: 44.99158
+    lng: -84.67705
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/navy-corpsman-steve-andrews-department-of-veterans-affairs-health-care-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -194,10 +207,13 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_655GA}
+  external_ids:
+    va: vha_655GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/gaylord/nmsas-recovery-center
   name: NMSAS Recovery Center
   categories:

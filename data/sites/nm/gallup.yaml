@@ -216,13 +216,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2075 South NM Highway 602, city: Gallup, state: nm, zip: '87301'}
+  address:
+    street: 2075 South NM Highway 602
+    city: Gallup
+    state: nm
+    zip: '87301'
   place: '3528460'
-  geo: {lat: 35.52634, lng: -108.75973}
+  geo:
+    lat: 35.52634
+    lng: -108.75973
   phone: 505-722-7234
   website: https://www.va.gov/new-mexico-health-care/locations/gallup-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
@@ -230,10 +243,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_501GD}
+  external_ids:
+    va: vha_501GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/gallup/hooghan-nozho-apartments
   name: Hooghan Nozho Apartments
   categories:
@@ -322,6 +338,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/gallup/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving McKinley County
+  address: {street: 3006 E. Hwy 66, city: Gallup, state: nm, zip: '87301'}
+  place: '3528460'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/gallup/jefferson-elementary
   name: Jefferson Elementary
   categories:

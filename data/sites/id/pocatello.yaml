@@ -865,22 +865,38 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 500 South 11th Avenue, city: Pocatello, state: id, zip: '83201'}
+  address:
+    street: 500 South 11th Avenue
+    city: Pocatello
+    state: id
+    zip: '83201'
   place: '1664090'
-  geo: {lat: 42.86702, lng: -112.43333}
+  geo:
+    lat: 42.86702
+    lng: -112.43333
   phone: 208-232-6214
   website: https://www.va.gov/salt-lake-city-health-care/locations/pocatello-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Mental health care
   - Optometry
   - Primary care
-  external_ids: {va: vha_660GA}
+  external_ids:
+    va: vha_660GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/pocatello/portneuf-medical-center-behavioral-health
   name: Portneuf Medical Center Behavioral Health
   categories:
@@ -1008,6 +1024,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: id/pocatello/southeastern-idaho-community-action-agency-seica
+  name: Southeastern Idaho Community Action Agency (SEICAA)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bannock, Franklin, Oneida Counties
+  address: {street: 825 E. Bridger, city: Pocatello, state: id, zip: '83201'}
+  place: '1664090'
+  phone: 208-233-1114
+  email: energy@seicaa.org
+  website: https://seicaa.org/energyassistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: id/pocatello/syringa-elementary-school
   name: SYRINGA ELEMENTARY SCHOOL
   categories:

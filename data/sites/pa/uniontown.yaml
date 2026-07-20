@@ -188,6 +188,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/uniontown/fayette-county-assistance-office
+  name: Fayette County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fayette County
+  address: {street: 41 West Church Street, city: Uniontown, state: pa, zip: '15401'}
+  place: '4278528'
+  phone: 724-439-7125
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/uniontown/fayette-county-housing-authority
   name: Fayette County Housing Authority
   categories:
@@ -214,13 +225,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 627 Pittsburgh Road, city: Uniontown, state: pa, zip: '15401'}
+  address:
+    street: 627 Pittsburgh Road
+    city: Uniontown
+    state: pa
+    zip: '15401'
   place: '4278528'
-  geo: {lat: 39.92495, lng: -79.72685}
+  geo:
+    lat: 39.92495
+    lng: -79.72685
   phone: 724-439-4990
   website: https://www.va.gov/pittsburgh-health-care/locations/fayette-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Chiropractic
@@ -242,10 +266,13 @@
   - Registry exams
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_646GE}
+  external_ids:
+    va: vha_646GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/uniontown/good-works-life-recovery-house
   name: Good Works Life Recovery House
   categories:

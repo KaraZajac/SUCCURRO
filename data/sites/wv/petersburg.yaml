@@ -17,6 +17,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/petersburg/grant-county-dhhr-office
+  name: Grant County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Grant County
+  address: {street: 53 Kiess Dr., city: Petersburg, state: wv, zip: '26847'}
+  place: '5462956'
+  phone: 304-257-4211
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/petersburg/grove-street-health-center
   name: Grove Street Health Center
   categories:
@@ -128,13 +139,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 15 Grant Street, city: Petersburg, state: wv, zip: '26847'}
+  address:
+    street: 15 Grant Street
+    city: Petersburg
+    state: wv
+    zip: '26847'
   place: '5462956'
-  geo: {lat: 38.99479, lng: -79.11802}
+  geo:
+    lat: 38.99479
+    lng: -79.11802
   phone: 800-817-3807
   website: https://www.va.gov/martinsburg-health-care/locations/petersburg-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -149,10 +173,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_613GE}
+  external_ids:
+    va: vha_613GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/petersburg/potomac-highlands-mh-guild-inc-grant-county-clin
   name: Potomac Highlands MH Guild Inc Grant County Clinic Office
   categories:

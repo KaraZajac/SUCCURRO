@@ -224,13 +224,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1301 North Turner Street, city: Hobbs, state: nm, zip: '88240'}
+  address:
+    street: 1301 North Turner Street
+    city: Hobbs
+    state: nm
+    zip: '88240'
   place: '3532520'
-  geo: {lat: 32.71214, lng: -103.13638}
+  geo:
+    lat: 32.71214
+    lng: -103.13638
   phone: 575-391-0354
   website: https://www.va.gov/west-texas-health-care/locations/hobbs-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - COVID-19 vaccines
   - Cardiology
@@ -240,10 +253,24 @@
   - Rehabilitation and extended care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_519GB}
+  external_ids:
+    va: vha_519GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nm/hobbs/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lea County
+  address: {street: 2120 N. Alto Suite D, city: Hobbs, state: nm, zip: '88240'}
+  place: '3532520'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/hobbs/jefferson-park
   name: Jefferson Park
   categories:

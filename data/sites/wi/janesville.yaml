@@ -260,13 +260,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1141 Black Bridge Road, city: Janesville, state: wi, zip: '53545'}
+  address:
+    street: 1141 Black Bridge Road
+    city: Janesville
+    state: wi
+    zip: '53545'
   place: '5537825'
-  geo: {lat: 42.7055, lng: -89.00897}
+  geo:
+    lat: 42.7055
+    lng: -89.00897
   phone: 608-758-9300
   website: https://www.va.gov/madison-health-care/locations/janesville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:45'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:45'
   services:
   - Advice nurse
   - Audiology and speech
@@ -281,10 +294,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_607GC}
+  external_ids:
+    va: vha_607GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/janesville/lutheran-social-services-of-wisconsin
   name: Lutheran Social Services of Wisconsin
   categories:

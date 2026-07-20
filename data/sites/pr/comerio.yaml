@@ -25,13 +25,28 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: Jose de Diego Street, city: Comerio, state: pr, zip: 00782}
-  geo: {lat: 18.21818, lng: -66.22662}
+  address:
+    street: Jose de Diego Street
+    city: Comerio
+    state: pr
+    zip: 00782
+  geo:
+    lat: 18.21818
+    lng: -66.22662
   phone: 787-522-2660
   website: https://www.va.gov/caribbean-health-care/locations/comerio-va-clinic/
   hours:
-  - {days: [mon, wed, fri], open: '07:30', close: '16:00'}
-  - {days: [tue, thu], open: '07:30', close: '11:30'}
+  - days:
+    - mon
+    - wed
+    - fri
+    open: 07:30
+    close: '16:00'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '11:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -40,10 +55,13 @@
   - Palliative and hospice care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_672QA}
+  external_ids:
+    va: vha_672QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pr/comerio/la-prieta
   name: La Prieta
   categories:

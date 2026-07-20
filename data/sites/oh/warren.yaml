@@ -546,6 +546,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/warren/trumbull-community-action-program
+  name: Trumbull Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Franklin, Trumbull Counties
+  address: {street: 611 Main Avenue, city: Warren, state: oh, zip: '44483'}
+  place: '3980892'
+  phone: 330-393-2507 X 225
+  email: communications@impactca.org
+  website: https://www.tcaphelps.org/menus/client-services.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/warren/trumbull-metropolitan-housing-authority
   name: Trumbull Metropolitan Housing Authority
   categories:
@@ -760,13 +773,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1460 Tod Avenue, Northwest', city: Warren, state: oh, zip: '44485'}
+  address:
+    street: 1460 Tod Avenue, Northwest
+    city: Warren
+    state: oh
+    zip: '44485'
   place: '3980892'
-  geo: {lat: 41.24653, lng: -80.83481}
+  geo:
+    lat: 41.24653
+    lng: -80.83481
   phone: 330-392-0311
   website: https://www.va.gov/northeast-ohio-health-care/locations/warren-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Dermatology
@@ -781,10 +807,13 @@
   - Suicide prevention
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_541GI}
+  external_ids:
+    va: vha_541GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/warren/warren-west-community-health-ctr
   name: WARREN WEST COMMUNITY HEALTH CTR
   categories:

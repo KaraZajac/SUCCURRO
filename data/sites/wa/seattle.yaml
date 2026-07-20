@@ -97,15 +97,24 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1660 South Columbian Way, city: Seattle, state: wa, zip: '98108'}
+  address:
+    street: 1660 South Columbian Way
+    city: Seattle
+    state: wa
+    zip: '98108'
   place: '5363000'
-  geo: {lat: 47.56362, lng: -122.30774}
+  geo:
+    lat: 47.56362
+    lng: -122.30774
   phone: 800-329-8387
   website: https://www.va.gov/puget-sound-health-care/locations/american-lake-va-mobile-clinic/
-  external_ids: {va: vha_663QD}
+  external_ids:
+    va: vha_663QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/asian-counseling-and-referral-service
   name: Asian Counseling and Referral Service
   categories:
@@ -303,6 +312,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/seattle/byrd-barr-place
+  name: Byrd Barr Place
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving King County
+  address: {street: 722 - 18th Avenue (1143 Marthin Luther king Jr Way Box 158), city: Seattle, state: wa,
+    zip: '98122'}
+  place: '5363000'
+  phone: 206-812-4940
+  website: https://byrdbarrplace.org/programs-services/energy-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/seattle/cal-anderson-playground
   name: Cal Anderson Playground
   categories:
@@ -3765,9 +3787,15 @@
   name: Seattle VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1660 South Columbian Way, city: Seattle, state: wa, zip: '98108'}
+  address:
+    street: 1660 South Columbian Way
+    city: Seattle
+    state: wa
+    zip: '98108'
   place: '5363000'
-  geo: {lat: 47.56217, lng: -122.31022}
+  geo:
+    lat: 47.56217
+    lng: -122.31022
   phone: 800-329-8387
   website: https://www.va.gov/puget-sound-health-care/locations/seattle-va-medical-center/
   services:
@@ -3853,31 +3881,49 @@
   - Whole health
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_663}
+  external_ids:
+    va: vha_663
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/seattle-va-mobile-medical-unit
   name: Seattle VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1660 South Columbian Way, city: Seattle, state: wa, zip: '98108'}
+  address:
+    street: 1660 South Columbian Way
+    city: Seattle
+    state: wa
+    zip: '98108'
   place: '5363000'
-  geo: {lat: 47.56362, lng: -122.30774}
+  geo:
+    lat: 47.56362
+    lng: -122.30774
   phone: 800-329-8387
   website: https://www.va.gov/puget-sound-health-care/locations/seattle-va-mobile-clinic/
-  external_ids: {va: vha_663QC}
+  external_ids:
+    va: vha_663QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/seattle-va-regional-benefit-office
   name: Seattle VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 915 Second Avenue, city: Seattle, state: wa, zip: '98174'}
+  address:
+    street: 915 Second Avenue
+    city: Seattle
+    state: wa
+    zip: '98174'
   place: '5363000'
-  geo: {lat: 47.60486, lng: -122.33491}
+  geo:
+    lat: 47.60486
+    lng: -122.33491
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3891,21 +3937,37 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_346}
+  external_ids:
+    va: vba_346
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/seattle-vet-center
   name: Seattle Vet Center
   categories:
   - vet-center
-  address: {street: 305 South Lucile Street, city: Seattle, state: wa, zip: '98108'}
+  address:
+    street: 305 South Lucile Street
+    city: Seattle
+    state: wa
+    zip: '98108'
   place: '5363000'
-  geo: {lat: 47.55337, lng: -122.33061}
+  geo:
+    lat: 47.55337
+    lng: -122.33061
   phone: 206-764-5130
   website: https://www.va.gov/seattle-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3918,10 +3980,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0507V}
+  external_ids:
+    va: vc_0507V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/seattle-world-school
   name: Seattle World School
   categories:
@@ -4195,17 +4260,33 @@
   name: South Lucile Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 305 South Lucile Street, city: Seattle, state: wa, zip: '98108'}
+  address:
+    street: 305 South Lucile Street
+    city: Seattle
+    state: wa
+    zip: '98108'
   place: '5363000'
-  geo: {lat: 47.55339, lng: -122.33065}
+  geo:
+    lat: 47.55339
+    lng: -122.33065
   phone: 206-764-5149
   website: https://www.va.gov/puget-sound-health-care/locations/south-lucile-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_663QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_663QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/seattle/south-park
   name: South Park
   place: '5363000'

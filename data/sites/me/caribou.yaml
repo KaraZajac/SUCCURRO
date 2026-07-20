@@ -168,13 +168,26 @@
   name: Northern Maine Vet Center
   categories:
   - vet-center
-  address: {street: 456 York Street, city: Caribou, state: me, zip: '04736'}
+  address:
+    street: 456 York Street
+    city: Caribou
+    state: me
+    zip: '04736'
   place: '2310565'
-  geo: {lat: 46.84455, lng: -68.04996}
+  geo:
+    lat: 46.84455
+    lng: -68.04996
   phone: 207-496-3900
   website: https://www.va.gov/northern-maine-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -185,10 +198,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0119V}
+  external_ids:
+    va: vc_0119V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/caribou/pines-caribou-health-center
   name: PINES Caribou Health Center
   categories:

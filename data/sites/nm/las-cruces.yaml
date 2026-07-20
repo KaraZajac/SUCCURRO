@@ -394,6 +394,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/las-cruces/dona-ana-government-community-resources
+  name: Dona Ana Government & Community Resources
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dona Ana County
+  address: {street: 2121 Summit Court, city: Las Cruces, state: nm, zip: 88001-8238}
+  place: '3539380'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/las-cruces/east-mesa-medical-and-dental-clinic
   name: East Mesa Medical and Dental Clinic
   categories:
@@ -624,29 +635,53 @@
   name: Las Cruces Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1120 Commerce Drive, Suite B', city: Las Cruces, state: nm, zip: '88001'}
+  address:
+    street: 1120 Commerce Drive, Suite B
+    city: Las Cruces
+    state: nm
+    zip: '88001'
   place: '3539380'
-  geo: {lat: 32.34704, lng: -106.76422}
+  geo:
+    lat: 32.34704
+    lng: -106.76422
   phone: 575-523-9826
   website: https://www.va.gov/las-cruces-vet-center/locations/#las-cruces-mobile-vet-center
-  external_ids: {va: vc_0838MVC}
+  external_ids:
+    va: vc_0838MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/las-cruces/las-cruces-va-clinic
   name: Las Cruces VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3401 Del Rey Boulevard, city: Las Cruces, state: nm, zip: '88012'}
+  address:
+    street: 3401 Del Rey Boulevard
+    city: Las Cruces
+    state: nm
+    zip: '88012'
   place: '3539380'
-  geo: {lat: 32.35492, lng: -106.76862}
+  geo:
+    lat: 32.35492
+    lng: -106.76862
   phone: 575-522-1241
   website: https://www.va.gov/el-paso-health-care/locations/las-cruces-va-clinic/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '09:00', close: '16:30'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 09:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -654,20 +689,36 @@
   - Primary care
   - Rehabilitation and extended care
   - Toxic exposure screening
-  external_ids: {va: vha_756GA}
+  external_ids:
+    va: vha_756GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/las-cruces/las-cruces-vet-center
   name: Las Cruces Vet Center
   categories: *id001
-  address: {street: '1120 Commerce Drive, Suite B', city: Las Cruces, state: nm, zip: '88011'}
+  address:
+    street: 1120 Commerce Drive, Suite B
+    city: Las Cruces
+    state: nm
+    zip: '88011'
   place: '3539380'
-  geo: {lat: 32.34704, lng: -106.76422}
+  geo:
+    lat: 32.34704
+    lng: -106.76422
   phone: 575-523-9826
   website: https://www.va.gov/las-cruces-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -685,10 +736,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0530V}
+  external_ids:
+    va: vc_0530V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/las-cruces/las-cruces-women-s-health-2
   name: Las Cruces Women's Health 2
   categories:

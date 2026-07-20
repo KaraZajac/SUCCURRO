@@ -4,9 +4,15 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 353 North Duffy Road, city: Butler, state: pa, zip: '16001'}
+  address:
+    street: 353 North Duffy Road
+    city: Butler
+    state: pa
+    zip: '16001'
   place: '4210464'
-  geo: {lat: 40.88868, lng: -79.94452}
+  geo:
+    lat: 40.88868
+    lng: -79.94452
   phone: 724-287-4781
   website: https://www.va.gov/butler-health-care/locations/abie-abraham-va-clinic/
   services:
@@ -54,10 +60,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_529}
+  external_ids:
+    va: vha_529
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/butler/bon-aire
   name: Bon Aire
   categories:
@@ -92,6 +101,17 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: pa/butler/butler-county-assistance-office
+  name: Butler County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Butler County
+  address: {street: 108 Woody Dr., city: Butler, state: pa, zip: '16001'}
+  place: '4210464'
+  phone: 724-284-8844
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/butler/butler-regional-recovery-program-butler-memorial
   name: Butler Regional Recovery Program Butler Memorial Hospital
   categories:
@@ -177,19 +197,28 @@
   name: Butler VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 325 New Castle Road, city: Butler, state: pa, zip: '16001'}
+  address:
+    street: 325 New Castle Road
+    city: Butler
+    state: pa
+    zip: '16001'
   place: '4210464'
-  geo: {lat: 40.87408, lng: -79.94225}
+  geo:
+    lat: 40.87408
+    lng: -79.94225
   phone: 724-287-4781
   website: https://www.va.gov/butler-health-care/locations/butler-va-medical-center/
   services:
   - Addiction and substance use care
   - COVID-19 vaccines
   - Palliative and hospice care
-  external_ids: {va: vha_529A4}
+  external_ids:
+    va: vha_529A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/butler/care-center-dba-sphs-care-center
   name: Care Center DBA SPHS Care Center
   categories:

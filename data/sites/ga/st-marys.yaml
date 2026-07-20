@@ -40,6 +40,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/st-marys/coastal-georgia-area-community-action-authority
+  name: Coastal Georgia Area Community Action Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Camden County
+  address: {street: 106 Hall St. East, city: St. Marys, state: ga, zip: '31558'}
+  place: '1367984'
+  phone: 912-729-2580
+  website: http://www.coastalgacaa.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/st-marys/non-congregate-smms-bus-2
   name: Non-Congregate Smms Bus 2
   categories:
@@ -132,13 +144,25 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '2603 Osborne Road, Kings Bay Village', city: St. Marys, state: ga, zip: '31558'}
+  address:
+    street: 2603 Osborne Road, Kings Bay Village
+    city: St. Marys
+    state: ga
+    zip: '31558'
   place: '1367984'
-  geo: {lat: 30.75139, lng: -81.57516}
+  geo:
+    lat: 30.75139
+    lng: -81.57516
   phone: 912-510-3420
   website: https://www.va.gov/north-florida-health-care/locations/st-marys-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 07:00
+    close: '17:30'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -151,7 +175,10 @@
   - Telehealth
   - Toxic exposure screening
   - Whole health
-  external_ids: {va: vha_573GJ}
+  external_ids:
+    va: vha_573GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

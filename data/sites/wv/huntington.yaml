@@ -84,6 +84,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wv/huntington/cabell-county-dhhr-office
+  name: Cabell County DHHR Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cabell County
+  address: {street: '2699 Park Avenue, Suite 100', city: Huntington, state: wv, zip: '25704'}
+  place: '5439460'
+  phone: 304-528-5800
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wv/huntington/cabell-county-public-library
   name: Cabell County Public Library
   categories:
@@ -305,9 +316,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1540 Spring Valley Drive, city: Huntington, state: wv, zip: '25704'}
+  address:
+    street: 1540 Spring Valley Drive
+    city: Huntington
+    state: wv
+    zip: '25704'
   place: '5439460'
-  geo: {lat: 38.37718, lng: -82.51686}
+  geo:
+    lat: 38.37718
+    lng: -82.51686
   phone: 304-429-6741
   website: https://www.va.gov/huntington-health-care/locations/hershel-woody-williams-va-medical-center/
   services:
@@ -343,10 +360,13 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_581}
+  external_ids:
+    va: vha_581
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/hershel-woody-williams-vamc-outpatient-treatment
   name: Hershel Woody Williams VAMC Outpatient Treatment Program
   categories:
@@ -511,56 +531,102 @@
   name: Huntington Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1850 16th Street Road, Suite 11', city: Huntington, state: wv, zip: '25701'}
+  address:
+    street: 1850 16th Street Road, Suite 11
+    city: Huntington
+    state: wv
+    zip: '25701'
   place: '5439460'
-  geo: {lat: 38.4002, lng: -82.42389}
+  geo:
+    lat: 38.4002
+    lng: -82.42389
   phone: 304-523-8387
   website: https://www.va.gov/huntington-vet-center/locations/#huntington-mobile-vet-center
-  external_ids: {va: vc_0807MVC}
+  external_ids:
+    va: vc_0807MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/huntington-ninth-street-va-clinic
   name: Huntington Ninth Street VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '624 Ninth Street, Community Resource & Referral Center (CRRC)', city: Huntington,
-    state: wv, zip: '25701'}
+  address:
+    street: 624 Ninth Street, Community Resource & Referral Center (CRRC)
+    city: Huntington
+    state: wv
+    zip: '25701'
   place: '5439460'
-  geo: {lat: 38.4171, lng: -82.44284}
+  geo:
+    lat: 38.4171
+    lng: -82.44284
   phone: 304-429-6755
   website: https://www.va.gov/huntington-health-care/locations/huntington-ninth-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Primary care
-  external_ids: {va: vha_581QA}
+  external_ids:
+    va: vha_581QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/huntington-va-mobile-medical-unit
   name: Huntington VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1540 Spring Valley Drive, city: Huntington, state: wv, zip: '25704'}
+  address:
+    street: 1540 Spring Valley Drive
+    city: Huntington
+    state: wv
+    zip: '25704'
   place: '5439460'
-  geo: {lat: 38.37718, lng: -82.51686}
+  geo:
+    lat: 38.37718
+    lng: -82.51686
   phone: 304-429-6755
   website: https://www.va.gov/huntington-health-care/locations/huntington-va-mobile-medical-unit/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_581QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_581QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/huntington-va-regional-benefit-office
   name: Huntington VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 640 4th Avenue, city: Huntington, state: wv, zip: '25701'}
+  address:
+    street: 640 4th Avenue
+    city: Huntington
+    state: wv
+    zip: '25701'
   place: '5439460'
-  geo: {lat: 38.42005, lng: -82.44826}
+  geo:
+    lat: 38.42005
+    lng: -82.44826
   phone: 800-827-1000
   website: https://www.va.gov/huntington-va-regional-benefit-office/
   services:
@@ -573,21 +639,39 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_315}
+  external_ids:
+    va: vba_315
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/huntington-vet-center
   name: Huntington Vet Center
   categories: *id002
-  address: {street: '1850 16th Street Road, Suite 11', city: Huntington, state: wv, zip: '25701'}
+  address:
+    street: 1850 16th Street Road, Suite 11
+    city: Huntington
+    state: wv
+    zip: '25701'
   place: '5439460'
-  geo: {lat: 38.4002, lng: -82.42389}
+  geo:
+    lat: 38.4002
+    lng: -82.42389
   phone: 304-523-8387
   website: https://www.va.gov/huntington-vet-center/
   hours:
-  - {days: [mon, fri], open: '08:00', close: '16:30'}
-  - {days: [tue, wed, thu], open: '08:00', close: '17:30'}
+  - days:
+    - mon
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '17:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -604,10 +688,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0208V}
+  external_ids:
+    va: vc_0208V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/huntington/kellogg-elementary
   name: Kellogg Elementary
   categories:

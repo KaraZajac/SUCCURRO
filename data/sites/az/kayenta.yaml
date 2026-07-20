@@ -129,23 +129,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: US Highway 160, city: Kayenta, state: az, zip: '86033'}
+  address:
+    street: US Highway 160
+    city: Kayenta
+    state: az
+    zip: '86033'
   place: 0436990
-  geo: {lat: 36.66081, lng: -110.41939}
+  geo:
+    lat: 36.66081
+    lng: -110.41939
   phone: 928-445-4860
   website: https://www.va.gov/northern-arizona-health-care/locations/kayenta-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Laboratory and pathology
   - Mental health care
   - PTSD care
   - Primary care
-  external_ids: {va: vha_649QH}
+  external_ids:
+    va: vha_649QH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/kayenta/monument-valley-high-school
   name: Monument Valley High School
   categories:

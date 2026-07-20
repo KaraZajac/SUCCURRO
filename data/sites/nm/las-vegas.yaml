@@ -103,6 +103,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nm/las-vegas/isd-field-office
+  name: ISD Field Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Harding, San Miguel Counties
+  address: {street: 2536 Ridge Runner Road, city: Las Vegas, state: nm, zip: '87701'}
+  place: '3539940'
+  phone: 800-283-4465
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nm/las-vegas/keys-park
   name: Keys Park
   categories:
@@ -153,23 +164,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 624 University Avenue, city: Las Vegas, state: nm, zip: '87701'}
+  address:
+    street: 624 University Avenue
+    city: Las Vegas
+    state: nm
+    zip: '87701'
   place: '3539940'
-  geo: {lat: 35.59561, lng: -105.21653}
+  geo:
+    lat: 35.59561
+    lng: -105.21653
   phone: 505-425-1910
   website: https://www.va.gov/new-mexico-health-care/locations/las-vegas-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Mental health care
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_501G2}
+  external_ids:
+    va: vha_501G2
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/las-vegas/los-ninos-elementary
   name: Los Ninos Elementary
   categories:

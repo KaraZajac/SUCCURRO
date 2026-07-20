@@ -18,6 +18,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/hillsboro/community-action-of-washington-county-hillsboro
+  name: Community Action of Washington County - Hillsboro
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: 1001 SW Baseline, city: Hillsboro, state: or, zip: '97123'}
+  place: '4134100'
+  phone: 503-615-0771
+  website: https://caowash.org/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/hillsboro/farmington-view-elem
   name: Farmington View Elem
   categories:
@@ -138,13 +150,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1925 North East Stucki Avenue, city: Hillsboro, state: or, zip: '97006'}
+  address:
+    street: 1925 North East Stucki Avenue
+    city: Hillsboro
+    state: or
+    zip: '97006'
   place: '4134100'
-  geo: {lat: 45.53446, lng: -122.87962}
+  geo:
+    lat: 45.53446
+    lng: -122.87962
   phone: 503-906-5000
   website: https://www.va.gov/portland-health-care/locations/hillsboro-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Laboratory and pathology
@@ -157,10 +182,13 @@
   - Returning service member care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_648GF}
+  external_ids:
+    va: vha_648GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/hillsboro/housing-authority-of-washington-county
   name: Housing Authority Of Washington County
   categories:

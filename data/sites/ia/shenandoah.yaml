@@ -135,13 +135,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2043 A Avenue, city: Shenandoah, state: ia, zip: '51601'}
+  address:
+    street: 2043 A Avenue
+    city: Shenandoah
+    state: ia
+    zip: '51601'
   place: '1972525'
-  geo: {lat: 40.74951, lng: -95.36606}
+  geo:
+    lat: 40.74951
+    lng: -95.36606
   phone: 712-246-0092
   website: https://www.va.gov/nebraska-western-iowa-health-care/locations/shenandoah-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -152,10 +165,13 @@
   - My HealtheVet coordinator
   - Ophthalmology
   - Primary care
-  external_ids: {va: vha_636GP}
+  external_ids:
+    va: vha_636GP
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/shenandoah/sportsman-park
   name: Sportsman Park
   categories:
@@ -200,6 +216,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/shenandoah/west-central-community-action
+  name: West Central Community Action
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Page County
+  address: {street: '301 Maple St., Ste 3', city: Shenandoah, state: ia, zip: '51601'}
+  place: '1972525'
+  phone: 712-246-2585
+  website: http://www.westcentralca.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/shenandoah/zion-integrated-behav-health-services-shenandoah
   name: ZION Integrated Behav Health Services Shenandoah
   categories:

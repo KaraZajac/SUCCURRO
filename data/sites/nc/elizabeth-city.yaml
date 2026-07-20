@@ -4,13 +4,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1845 West City Drive, city: Elizabeth City, state: nc, zip: '27909'}
+  address:
+    street: 1845 West City Drive
+    city: Elizabeth City
+    state: nc
+    zip: '27909'
   place: '3720580'
-  geo: {lat: 36.29858, lng: -76.26121}
+  geo:
+    lat: 36.29858
+    lng: -76.26121
   phone: 757-722-9961
   website: https://www.va.gov/hampton-health-care/locations/albemarle-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -19,10 +32,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_590GC}
+  external_ids:
+    va: vha_590GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/elizabeth-city/elizabeth-city-housing-authority
   name: Elizabeth City Housing Authority
   categories:
@@ -144,6 +160,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/elizabeth-city/pasquotank-county-department-of-social-services
+  name: Pasquotank County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Pasquotank County
+  address: {street: 709 Roanoke Avenue, city: Elizabeth City, state: nc, zip: '27909'}
+  place: '3720580'
+  phone: 252-338-2126
+  website: https://www.pasquotankcountync.org/dss
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/elizabeth-city/pasquotank-lois-johnson-head-start
   name: Pasquotank/Lois Johnson Head Start
   categories:

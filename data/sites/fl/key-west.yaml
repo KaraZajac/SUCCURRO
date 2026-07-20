@@ -278,13 +278,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1300 Douglas Circle, city: Key West, state: fl, zip: '33040'}
+  address:
+    street: 1300 Douglas Circle
+    city: Key West
+    state: fl
+    zip: '33040'
   place: '1236550'
-  geo: {lat: 24.56927, lng: -81.75046}
+  geo:
+    lat: 24.56927
+    lng: -81.75046
   phone: 305-293-4863
   website: https://www.va.gov/miami-health-care/locations/key-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -294,10 +307,13 @@
   - Primary care
   - Psychiatry
   - Telehealth
-  external_ids: {va: vha_546GB}
+  external_ids:
+    va: vha_546GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/key-west/miami-va-healthcare-system-key-west-cboc
   name: Miami VA Healthcare System Key West CBOC
   categories:
@@ -319,6 +335,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/key-west/monroe-county-board-of-county-commissioners
+  name: Monroe County Board Of County Commissioners
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monroe County
+  address: {street: 1100 Simonton Street Suite 2-256, city: Key West, state: fl, zip: '33040'}
+  place: '1236550'
+  phone: 305-292-4408
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/key-west/poinciana-elementary-school
   name: Poinciana Elementary School
   categories:

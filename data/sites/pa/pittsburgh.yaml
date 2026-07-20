@@ -229,6 +229,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/allegheny-county-assistance-office-headquarters
+  name: Allegheny County Assistance Office Headquarters
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: 'Piatt Place, 301 5th Avenue, Suite 470', city: Pittsburgh, state: pa, zip: '15222'}
+  place: '4261000'
+  phone: 412-565-2146
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/allegheny-traditional-academy
   name: Allegheny Traditional Academy
   categories:
@@ -1876,6 +1887,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/greater-pittsburgh-east-district
+  name: Greater Pittsburgh East District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: 5947 Penn Avenue, city: Pittsburgh, state: pa, zip: '15206'}
+  place: '4261000'
+  phone: 412-645-7400
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/greenfield-el-sch
   name: Greenfield El Sch
   categories:
@@ -1903,9 +1925,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 1010 Delafield Road, city: Pittsburgh, state: pa, zip: '15240'}
+  address:
+    street: 1010 Delafield Road
+    city: Pittsburgh
+    state: pa
+    zip: '15240'
   place: '4261000'
-  geo: {lat: 40.49516, lng: -79.8877}
+  geo:
+    lat: 40.49516
+    lng: -79.8877
   phone: 866-482-7488
   website: https://www.va.gov/pittsburgh-health-care/locations/h-john-heinz-iii-department-of-veterans-affairs-medical-center/
   services:
@@ -1950,10 +1978,13 @@
   - Veteran readiness and employment programs
   - Wheelchair and mobility
   - Women Veteran care
-  external_ids: {va: vha_646A4}
+  external_ids:
+    va: vha_646A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/pittsburgh/hazelwood-classroom-2
   name: Hazelwood Classroom 2
   categories:
@@ -2134,6 +2165,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/institution-related-eligibility-district-ired
+  name: Institution-Related Eligibility District (IRED)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: '301 5th Avenue, Suite 420', city: Pittsburgh, state: pa, zip: '15222'}
+  place: '4261000'
+  phone: 412-565-5604
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/jada-house-international
   name: Jada House International
   categories:
@@ -2553,6 +2595,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/liberty-district
+  name: Liberty District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: '332 Fifth Avenue, Suite 300', city: Pittsburgh, state: pa, zip: '15222'}
+  place: '4261000'
+  phone: 412-565-2652
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/lincoln
   name: Lincoln
   categories:
@@ -3583,9 +3636,15 @@
   name: Pittsburgh VA Medical Center-University Drive
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: University Drive, city: Pittsburgh, state: pa, zip: '15240'}
+  address:
+    street: University Drive
+    city: Pittsburgh
+    state: pa
+    zip: '15240'
   place: '4261000'
-  geo: {lat: 40.44711, lng: -79.95898}
+  geo:
+    lat: 40.44711
+    lng: -79.95898
   phone: 866-482-7488
   website: https://www.va.gov/pittsburgh-health-care/locations/pittsburgh-va-medical-center-university-drive/
   services:
@@ -3634,18 +3693,27 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_646}
+  external_ids:
+    va: vha_646
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/pittsburgh/pittsburgh-va-regional-benefit-office
   name: Pittsburgh VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 1000 Liberty Avenue, city: Pittsburgh, state: pa, zip: '15222'}
+  address:
+    street: 1000 Liberty Avenue
+    city: Pittsburgh
+    state: pa
+    zip: '15222'
   place: '4261000'
-  geo: {lat: 40.44369, lng: -79.99506}
+  geo:
+    lat: 40.44369
+    lng: -79.99506
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_311
   services:
@@ -3657,21 +3725,37 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_311}
+  external_ids:
+    va: vba_311
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/pittsburgh/pittsburgh-vet-center
   name: Pittsburgh Vet Center
   categories:
   - vet-center
-  address: {street: '2500 Baldwick Road, Suite 15', city: Pittsburgh, state: pa, zip: '15205'}
+  address:
+    street: 2500 Baldwick Road, Suite 15
+    city: Pittsburgh
+    state: pa
+    zip: '15205'
   place: '4261000'
-  geo: {lat: 40.42666, lng: -80.05719}
+  geo:
+    lat: 40.42666
+    lng: -80.05719
   phone: 412-920-1765
   website: https://www.va.gov/pittsburgh-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -3683,10 +3767,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0211V}
+  external_ids:
+    va: vc_0211V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/pittsburgh/pleasant-valley
   name: Pleasant Valley
   categories:
@@ -4184,6 +4271,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/southern-district
+  name: Southern District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: '332 Fifth Avenue, Suite 230', city: Pittsburgh, state: pa, zip: '15222'}
+  place: '4261000'
+  phone: 412-565-2232
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/southwood-childrens-behav-healthcare
   name: Southwood Childrens Behav Healthcare
   categories:
@@ -4503,6 +4601,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/pittsburgh/three-rivers-district
+  name: Three Rivers District
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Allegheny County
+  address: {street: 'Warner Center, 332 Fifth Avenue, 2nd Floor', city: Pittsburgh, state: pa, zip: '15222'}
+  place: '4261000'
+  phone: 412-565-7755
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/pittsburgh/three-rivers-manor
   name: Three Rivers Manor
   categories:

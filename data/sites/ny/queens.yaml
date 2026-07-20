@@ -1,11 +1,27 @@
+- id: ny/queens/hra-benefits-access-center-queens
+  name: HRA Benefits Access Center Queens
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving New York City County
+  address: {street: '32-20 Northern Blvd, 2nd Floor', city: Queens, state: ny, zip: '11101'}
+  phone: 718-557-1399
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/queens/st-albans-va-medical-center
   name: St. Albans VA Medical Center
   categories:
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 179-00 Linden Boulevard, city: Queens, state: ny, zip: '11424'}
-  geo: {lat: 40.69245, lng: -73.76812}
+  address:
+    street: 179-00 Linden Boulevard
+    city: Queens
+    state: ny
+    zip: '11424'
+  geo:
+    lat: 40.69245
+    lng: -73.76812
   phone: 718-526-1000
   website: https://www.va.gov/new-york-harbor-health-care/locations/st-albans-va-medical-center/
   services:
@@ -32,7 +48,10 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_630A5}
+  external_ids:
+    va: vha_630A5
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

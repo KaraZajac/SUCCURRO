@@ -1141,9 +1141,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 650 East Indian School Road, city: Phoenix, state: az, zip: '85012'}
+  address:
+    street: 650 East Indian School Road
+    city: Phoenix
+    state: az
+    zip: '85012'
   place: '0455000'
-  geo: {lat: 33.49759, lng: -112.06611}
+  geo:
+    lat: 33.49759
+    lng: -112.06611
   phone: 602-277-5551
   website: https://www.va.gov/phoenix-health-care/locations/carl-t-hayden-veterans-administration-medical-center/
   services:
@@ -1184,10 +1190,13 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_644}
+  external_ids:
+    va: vha_644
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/cartwright-child-care-center
   name: Cartwright Child Care Center
   categories:
@@ -1834,6 +1843,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/phoenix/city-of-phoenix-human-services
+  name: City of Phoenix Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Maricopa County
+  address: {street: '200 W. Washington St., 18th Floor', city: Phoenix, state: az, zip: '85003'}
+  place: '0455000'
+  phone: 602-534-2433
+  website: https://www.phoenix.gov/humanservices
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/phoenix/city-of-phoenix-juniper-library
   name: City Of Phoenix - Juniper Library
   categories:
@@ -4590,6 +4611,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/phoenix/maricopa-county-human-services-department
+  name: Maricopa County Human Services Department
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Maricopa County
+  address: {street: 234 North Central Avenue Suite 3000, city: Phoenix, state: az, zip: '85009'}
+  place: '0455000'
+  phone: 602-506-5911
+  website: http://myhsd.maricopa.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/phoenix/maryland-elementary-school
   name: Maryland Elementary School
   categories:
@@ -6191,13 +6224,26 @@
   name: Phoenix 32nd Street VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 400 North 32nd Street, city: Phoenix, state: az, zip: '85008'}
+  address:
+    street: 400 North 32nd Street
+    city: Phoenix
+    state: az
+    zip: '85008'
   place: '0455000'
-  geo: {lat: 33.45342, lng: -112.01298}
+  geo:
+    lat: 33.45342
+    lng: -112.01298
   phone: 602-914-2900
   website: https://www.va.gov/phoenix-health-care/locations/phoenix-32nd-street-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '06:30', close: '18:15'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 06:30
+    close: '18:15'
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -6207,10 +6253,13 @@
   - Patient advocates
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_644GI}
+  external_ids:
+    va: vha_644GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/phoenix-coding-academy
   name: Phoenix Coding Academy
   categories:
@@ -6339,20 +6388,36 @@
   name: Phoenix Midtown VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 5040 North 15th Avenue, city: Phoenix, state: az, zip: '85015'}
+  address:
+    street: 5040 North 15th Avenue
+    city: Phoenix
+    state: az
+    zip: '85015'
   place: '0455000'
-  geo: {lat: 33.51076, lng: -112.09207}
+  geo:
+    lat: 33.51076
+    lng: -112.09207
   phone: 602-234-7080
   website: https://www.va.gov/phoenix-health-care/locations/phoenix-midtown-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Dermatology
   - Pain management
-  external_ids: {va: vha_644GH}
+  external_ids:
+    va: vha_644GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/phoenix-union-bioscience-high-school
   name: Phoenix Union Bioscience High School
   categories:
@@ -6401,22 +6466,37 @@
   name: Phoenix VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1500 East Thomas Road, Community Resource & Referral Center (CRRC)', city: Phoenix,
-    state: az, zip: '85014'}
+  address:
+    street: 1500 East Thomas Road, Community Resource & Referral Center (CRRC)
+    city: Phoenix
+    state: az
+    zip: '85014'
   place: '0455000'
-  geo: {lat: 33.48116, lng: -112.04957}
+  geo:
+    lat: 33.48116
+    lng: -112.04957
   phone: 602-248-6040
   website: https://www.va.gov/phoenix-health-care/locations/phoenix-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Homeless Veteran care
   - Primary care
   - Social work
-  external_ids: {va: vha_644QA}
+  external_ids:
+    va: vha_644QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/phoenix-va-healthcare-system-domiciliary-substan
   name: Phoenix VA Healthcare System Domiciliary Substance Use Disorder
   categories:
@@ -6441,25 +6521,47 @@
   name: Phoenix VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 650 East Indian School Road, city: Phoenix, state: az, zip: '85012'}
+  address:
+    street: 650 East Indian School Road
+    city: Phoenix
+    state: az
+    zip: '85012'
   place: '0455000'
-  geo: {lat: 33.49477, lng: -112.0666}
+  geo:
+    lat: 33.49477
+    lng: -112.0666
   phone: 602-277-5551
   website: https://www.va.gov/find-locations/facility/vha_644QB
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_644QB}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_644QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/phoenix-va-regional-benefit-office
   name: Phoenix VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 3333 North Central Avenue, city: Phoenix, state: az, zip: '85012'}
+  address:
+    street: 3333 North Central Avenue
+    city: Phoenix
+    state: az
+    zip: '85012'
   place: '0455000'
-  geo: {lat: 33.41663, lng: -112.07347}
+  geo:
+    lat: 33.41663
+    lng: -112.07347
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -6473,24 +6575,46 @@
   - TransitionAssistance
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_345}
+  external_ids:
+    va: vba_345
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/phoenix-vet-center
   name: Phoenix Vet Center
   categories:
   - vet-center
-  address: {street: '4020 North 20th Street, Suite 110', city: Phoenix, state: az, zip: '85016'}
+  address:
+    street: 4020 North 20th Street, Suite 110
+    city: Phoenix
+    state: az
+    zip: '85016'
   place: '0455000'
-  geo: {lat: 33.49369, lng: -112.03893}
+  geo:
+    lat: 33.49369
+    lng: -112.03893
   phone: 602-640-2981
   website: https://www.va.gov/phoenix-vet-center/
   hours:
-  - {days: [mon], open: '07:00', close: '17:00'}
-  - {days: [tue, thu], open: '07:30', close: '17:30'}
-  - {days: [wed], open: '07:00', close: '17:30'}
-  - {days: [fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    open: 07:00
+    close: '17:00'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '17:30'
+  - days:
+    - wed
+    open: 07:00
+    close: '17:30'
+  - days:
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -6503,10 +6627,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0517V}
+  external_ids:
+    va: vc_0517V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/portland-26-st-bus-service-sfsp
   name: Portland & 26 St. - Bus Service - Sfsp
   categories:
@@ -7514,13 +7641,26 @@
   name: Southwest VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 9250 West Thomas Road, city: Phoenix, state: az, zip: '85037'}
+  address:
+    street: 9250 West Thomas Road
+    city: Phoenix
+    state: az
+    zip: '85037'
   place: '0455000'
-  geo: {lat: 33.4804, lng: -112.25855}
+  geo:
+    lat: 33.4804
+    lng: -112.25855
   phone: 623-772-4000
   website: https://www.va.gov/phoenix-health-care/locations/southwest-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -7530,10 +7670,13 @@
   - Pharmacy
   - Primary care
   - Social work
-  external_ids: {va: vha_644GC}
+  external_ids:
+    va: vha_644GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/spectrum-healthcare
   name: Spectrum Healthcare
   categories:
@@ -8028,19 +8171,35 @@
   name: Thunderbird VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 9424 North 25th Avenue, city: Phoenix, state: az, zip: '85021'}
+  address:
+    street: 9424 North 25th Avenue
+    city: Phoenix
+    state: az
+    zip: '85021'
   place: '0455000'
-  geo: {lat: 33.57257, lng: -112.11229}
+  geo:
+    lat: 33.57257
+    lng: -112.11229
   phone: 602-633-6900
   website: https://www.va.gov/phoenix-health-care/locations/thunderbird-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Optometry
-  external_ids: {va: vha_644GE}
+  external_ids:
+    va: vha_644GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/phoenix/tomahawk-elementary-school
   name: Tomahawk Elementary School
   categories:

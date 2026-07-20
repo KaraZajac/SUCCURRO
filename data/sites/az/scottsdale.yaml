@@ -409,22 +409,38 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 11390 East Via Linda Road, city: Scottsdale, state: az, zip: '85259'}
+  address:
+    street: 11390 East Via Linda Road
+    city: Scottsdale
+    state: az
+    zip: '85259'
   place: '0465000'
-  geo: {lat: 33.59023, lng: -111.83432}
+  geo:
+    lat: 33.59023
+    lng: -111.83432
   phone: 480-579-2200
   website: https://www.va.gov/phoenix-health-care/locations/northeast-phoenix-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_644GG}
+  external_ids:
+    va: vha_644GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/scottsdale/notmykid-inc
   name: NotMYkid Inc
   categories:

@@ -184,13 +184,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1200 Deltona Boulevard, city: Deltona, state: fl, zip: '32725'}
+  address:
+    street: 1200 Deltona Boulevard
+    city: Deltona
+    state: fl
+    zip: '32725'
   place: '1217200'
-  geo: {lat: 28.89575, lng: -81.27161}
+  geo:
+    lat: 28.89575
+    lng: -81.27161
   phone: 386-575-5000
   website: https://www.va.gov/orlando-health-care/locations/deltona-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -212,10 +225,13 @@
   - Social work
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_675GD}
+  external_ids:
+    va: vha_675GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/deltona/dewey-o-boster-park
   name: Dewey O Boster Park
   categories:

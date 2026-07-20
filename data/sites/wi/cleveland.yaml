@@ -24,13 +24,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1205 North Avenue, city: Cleveland, state: wi, zip: '53015'}
+  address:
+    street: 1205 North Avenue
+    city: Cleveland
+    state: wi
+    zip: '53015'
   place: '5515400'
-  geo: {lat: 43.92124, lng: -87.75185}
+  geo:
+    lat: 43.92124
+    lng: -87.75185
   phone: 920-693-5600
   website: https://www.va.gov/milwaukee-health-care/locations/cleveland-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -49,10 +62,13 @@
   - Suicide prevention
   - Telehealth
   - Whole health
-  external_ids: {va: vha_695GC}
+  external_ids:
+    va: vha_695GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/cleveland/lchc-cleveland-elem
   name: LCHC @ Cleveland Elem
   categories:

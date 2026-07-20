@@ -20,6 +20,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/manhattan/clay-county-dcf
+  name: Clay County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clay County
+  address: {street: 2709 Amherst, city: Manhattan, state: ks, zip: '66502'}
+  place: '2044250'
+  phone: 785-776-4011
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/manhattan/college-hill-early-learning-center
   name: College Hill Early Learning Center
   categories:
@@ -148,14 +159,29 @@
   name: Manhattan, KS Vet Center
   categories:
   - vet-center
-  address: {street: '1133 College Avenue, Building C, Suite 200', city: Manhattan, state: ks, zip: '66502'}
+  address:
+    street: 1133 College Avenue, Building C, Suite 200
+    city: Manhattan
+    state: ks
+    zip: '66502'
   place: '2044250'
-  geo: {lat: 39.19238, lng: -96.59966}
+  geo:
+    lat: 39.19238
+    lng: -96.59966
   phone: 785-350-4920
   website: https://www.va.gov/manhattan-ks-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '19:00'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '19:00'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -168,10 +194,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0432V}
+  external_ids:
+    va: vc_0432V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/manhattan/north-central-flint-hills-area-agency-on-aging
   name: North Central Flint Hills Area Agency On Aging
   categories:
@@ -235,6 +264,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/manhattan/riley-county-dcf
+  name: Riley County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Riley County
+  address: {street: 2709 Amherst, city: Manhattan, state: ks, zip: '66502'}
+  place: '2044250'
+  phone: 785-776-4011
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/manhattan/theodore-roosevelt-elementary-school
   name: Theodore Roosevelt Elementary School
   categories:
@@ -257,3 +297,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/manhattan/washington-county-dcf
+  name: Washington County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: 2709 Amherst, city: Manhattan, state: ks, zip: '66901'}
+  place: '2044250'
+  phone: 785-776-4011
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

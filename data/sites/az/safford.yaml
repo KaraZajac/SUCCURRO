@@ -169,13 +169,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 355 North 8th Avenue, city: Safford, state: az, zip: '85546'}
+  address:
+    street: 355 North 8th Avenue
+    city: Safford
+    state: az
+    zip: '85546'
   place: '0462000'
-  geo: {lat: 32.84108, lng: -109.716}
+  geo:
+    lat: 32.84108
+    lng: -109.716
   phone: 928-428-8010
   website: https://www.va.gov/southern-arizona-health-care/locations/safford-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -185,10 +198,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_678GD}
+  external_ids:
+    va: vha_678GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/safford/sierra-bonita
   name: Sierra Bonita
   categories:
@@ -229,3 +245,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/safford/southeastern-arizona-community-action-program-se
+  name: Southeastern Arizona Community Action Program (SEACAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cochise, Graham, Greenlee, Santa Cruz Counties
+  address: {street: 283 W. 5th St., city: Safford, state: az, zip: '85546'}
+  place: '0462000'
+  phone: 928-428-4653
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

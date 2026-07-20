@@ -93,6 +93,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/plattsburgh/clinton-county-department-of-social-services
+  name: Clinton County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clinton County
+  address: {street: 13 Durkee Street, city: Plattsburgh, state: ny, zip: '12901'}
+  place: '3658574'
+  phone: 518-565-3258
+  email: DSS@clintoncountygov.com
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/plattsburgh/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clinton County
+  address: {street: 135 Margaret Street, city: Plattsburgh, state: ny}
+  place: '3658574'
+  phone: 518-565-4620
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/plattsburgh/cumberland-head-elementary-school
   name: Cumberland Head Elementary School
   categories:
@@ -173,6 +196,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/plattsburgh/jceo
+  name: JCEO
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clinton County
+  address: {street: 54 Margaret Street, city: Plattsburgh, state: ny, zip: '12901'}
+  place: '3658574'
+  phone: 518-561-6310
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/plattsburgh/peru-and-saranac-hs-ehs
   name: Peru and Saranac HS/EHS
   categories:
@@ -282,13 +316,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5180 North Catherine Street, city: Plattsburgh, state: ny, zip: '12901'}
+  address:
+    street: 5180 North Catherine Street
+    city: Plattsburgh
+    state: ny
+    zip: '12901'
   place: '3658574'
-  geo: {lat: 44.70009, lng: -73.45777}
+  geo:
+    lat: 44.70009
+    lng: -73.45777
   phone: 518-561-6247
   website: https://www.va.gov/albany-health-care/locations/plattsburgh-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -297,7 +344,10 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_528GV}
+  external_ids:
+    va: vha_528GV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

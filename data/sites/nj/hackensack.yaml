@@ -41,6 +41,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/hackensack/bergen-county-cap
+  name: Bergen County CAP
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Bergen County
+  address: {street: 294 Union Street, city: Hackensack, state: nj, zip: '07601'}
+  place: '3428680'
+  phone: 201-968-0200
+  email: LIHEAP@GreaterBergen.org
+  website: https://www.greaterbergen.org/liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/hackensack/bergen-county-dept-of-health-servs-addiction-rec
   name: Bergen County Dept of Health Servs Addiction Recovery Program
   categories:
@@ -210,13 +223,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '385 Prospect Avenue, Prospect Plaza', city: Hackensack, state: nj, zip: '07601'}
+  address:
+    street: 385 Prospect Avenue, Prospect Plaza
+    city: Hackensack
+    state: nj
+    zip: '07601'
   place: '3428680'
-  geo: {lat: 40.89564, lng: -74.05211}
+  geo:
+    lat: 40.89564
+    lng: -74.05211
   phone: 201-342-4536
   website: https://www.va.gov/new-jersey-health-care/locations/hackensack-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -228,10 +254,13 @@
   - Social work
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_561GD}
+  external_ids:
+    va: vha_561GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/hackensack/high-school-summer-school
   name: High School Summer School
   categories:

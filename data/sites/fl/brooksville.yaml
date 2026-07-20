@@ -88,13 +88,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 14540 Cortez Boulevard, city: Brooksville, state: fl, zip: '34613'}
+  address:
+    street: 14540 Cortez Boulevard
+    city: Brooksville
+    state: fl
+    zip: '34613'
   place: '1208800'
-  geo: {lat: 28.53374, lng: -82.48431}
+  geo:
+    lat: 28.53374
+    lng: -82.48431
   phone: 352-597-8287
   website: https://www.va.gov/tampa-health-care/locations/brooksville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -110,10 +123,13 @@
   - Psychology
   - Social work
   - Telehealth
-  external_ids: {va: vha_673GC}
+  external_ids:
+    va: vha_673GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/brooksville/central-high-school
   name: Central High School
   categories:
@@ -377,3 +393,15 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/brooksville/you-thrive
+  name: You Thrive
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sumter County
+  address: {street: 820 Kennedy Blvd., city: Brooksville, state: fl, zip: '34601'}
+  place: '1208800'
+  phone: 888-802-7483
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}

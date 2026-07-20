@@ -111,6 +111,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/kalamazoo/community-action-kalamazoo-office
+  name: Community Action Kalamazoo Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kalamazoo County
+  address: {street: 4239 South Westnedge Ave., city: Kalamazoo, state: mi, zip: '49008'}
+  place: '2642160'
+  phone: 877-422-2726
+  website: https://caascm.org/emergency-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/kalamazoo/community-education-center-cec-39m000102
   name: Community Education Center(Cec) - 39M000102
   categories:
@@ -1409,36 +1421,54 @@
   categories: &id001
   - va-facility
   description: VetSuccess On Campus
-  address: {street: 6767 West O Avenue, city: Kalamazoo, state: mi, zip: '49009'}
+  address:
+    street: 6767 West O Avenue
+    city: Kalamazoo
+    state: mi
+    zip: '49009'
   place: '2642160'
-  geo: {lat: 42.22631, lng: -85.68145}
+  geo:
+    lat: 42.22631
+    lng: -85.68145
   phone: 313-686-8691
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329o}
+  external_ids:
+    va: vba_329o
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/kalamazoo/vetsuccess-on-campus-at-western-michigan-univers
   name: VetSuccess on Campus at Western Michigan University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: 1903 W. Michigan Avenue, city: Kalamazoo, state: mi, zip: '49008'}
+  address:
+    street: 1903 W. Michigan Avenue
+    city: Kalamazoo
+    state: mi
+    zip: '49008'
   place: '2642160'
-  geo: {lat: 42.28607, lng: -85.61642}
+  geo:
+    lat: 42.28607
+    lng: -85.61642
   phone: 313-686-8691
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_329n}
+  external_ids:
+    va: vba_329n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/kalamazoo/victory-clinical-services
   name: Victory Clinical Services
   categories:

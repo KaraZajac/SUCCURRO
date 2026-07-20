@@ -318,12 +318,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 128 Southwest Chamber Court, city: Port Saint Lucie, state: fl, zip: '34986'}
-  geo: {lat: 27.31025, lng: -80.40248}
+  address:
+    street: 128 Southwest Chamber Court
+    city: Port Saint Lucie
+    state: fl
+    zip: '34986'
+  geo:
+    lat: 27.31025
+    lng: -80.40248
   phone: 772-878-7876
   website: https://www.va.gov/west-palm-beach-health-care/locations/port-saint-lucie-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -334,10 +347,13 @@
   - Prosthetics and rehabilitation
   - Pulmonary medicine
   - Radiology
-  external_ids: {va: vha_548QA}
+  external_ids:
+    va: vha_548QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/port-saint-lucie/the-social-lab-summer-experience
   name: The Social Lab Summer Experience
   categories:

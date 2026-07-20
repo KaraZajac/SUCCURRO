@@ -248,13 +248,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '3500 Dalton Way, West Town Center', city: Cedar Rapids, state: ia, zip: '52404'}
+  address:
+    street: 3500 Dalton Way, West Town Center
+    city: Cedar Rapids
+    state: ia
+    zip: '52404'
   place: '1912000'
-  geo: {lat: 41.95189, lng: -91.7194}
+  geo:
+    lat: 41.95189
+    lng: -91.7194
   phone: 319-369-4340
   website: https://www.va.gov/iowa-city-health-care/locations/cedar-rapids-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -269,21 +282,37 @@
   - Rehabilitation and extended care
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GN}
+  external_ids:
+    va: vha_636GN
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/cedar-rapids/cedar-rapids-vet-center
   name: Cedar Rapids Vet Center
   categories:
   - vet-center
-  address: {street: '4250 River Center Court, Northeast, Suite D', city: Cedar Rapids, state: ia, zip: '52402'}
+  address:
+    street: 4250 River Center Court, Northeast, Suite D
+    city: Cedar Rapids
+    state: ia
+    zip: '52402'
   place: '1912000'
-  geo: {lat: 42.01951, lng: -91.7012}
+  geo:
+    lat: 42.01951
+    lng: -91.7012
   phone: 319-378-0016
   website: https://www.va.gov/cedar-rapids-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -295,10 +324,13 @@
   - Suicide prevention
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0431V}
+  external_ids:
+    va: vc_0431V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/cedar-rapids/cedar-river-academy-at-taylor
   name: Cedar River Academy At Taylor
   categories:
@@ -836,6 +868,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/cedar-rapids/hawkeye-area-community-action-program
+  name: Hawkeye Area Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Linn County
+  address: {street: 5560 6th St. SW, city: Cedar Rapids, state: ia, zip: '52404'}
+  place: '1912000'
+  phone: 319-336-7631
+  website: http://www.hacap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/cedar-rapids/hayes-park
   name: Hayes Park
   categories:
@@ -972,19 +1016,35 @@
   name: Linn County VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 3117 First Avenue Southeast, city: Cedar Rapids, state: ia, zip: '52402'}
+  address:
+    street: 3117 First Avenue Southeast
+    city: Cedar Rapids
+    state: ia
+    zip: '52402'
   place: '1912000'
-  geo: {lat: 42.00905, lng: -91.63405}
+  geo:
+    lat: 42.00905
+    lng: -91.63405
   phone: 319-365-0898
   website: https://www.va.gov/iowa-city-health-care/locations/linn-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Social work
-  external_ids: {va: vha_636QC}
+  external_ids:
+    va: vha_636QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/cedar-rapids/mercy-medical-center-behavioral-health-unit
   name: Mercy Medical Center Behavioral Health Unit
   categories:

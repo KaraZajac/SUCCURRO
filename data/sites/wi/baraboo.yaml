@@ -106,13 +106,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 414 State Road 136, city: Baraboo, state: wi, zip: '53913'}
+  address:
+    street: 414 State Road 136
+    city: Baraboo
+    state: wi
+    zip: '53913'
   place: '5504625'
-  geo: {lat: 43.46742, lng: -89.76901}
+  geo:
+    lat: 43.46742
+    lng: -89.76901
   phone: 608-356-9318
   website: https://www.va.gov/madison-health-care/locations/baraboo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Advice nurse
   - Audiology and speech
@@ -127,10 +140,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_607GD}
+  external_ids:
+    va: vha_607GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/baraboo/blessing-box
   name: Blessing Box
   categories:
@@ -244,6 +260,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/baraboo/sauk-county-energy-services-inc
+  name: Sauk County Energy Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sauk County
+  address: {street: 916 8th Ave., city: Baraboo, state: wi, zip: '53913'}
+  place: '5504625'
+  phone: 800-506-5596
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/baraboo/sauk-county-housing-authority
   name: Sauk County Housing Authority
   categories:

@@ -548,13 +548,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 225 Boston Street, city: Lynn, state: ma, zip: 01904}
+  address:
+    street: 225 Boston Street
+    city: Lynn
+    state: ma
+    zip: 01904
   place: '2537490'
-  geo: {lat: 42.47051, lng: -70.96002}
+  geo:
+    lat: 42.47051
+    lng: -70.96002
   phone: 800-838-6331
   website: https://www.va.gov/bedford-health-care/locations/lynn-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -570,10 +583,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_518GA}
+  external_ids:
+    va: vha_518GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lynn/lynn-vocational-tech-high-school
   name: LYNN VOCATIONAL TECH HIGH SCHOOL
   categories:

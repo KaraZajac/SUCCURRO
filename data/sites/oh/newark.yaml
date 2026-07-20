@@ -166,13 +166,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1855 West Main Street, city: Newark, state: oh, zip: '43055'}
+  address:
+    street: 1855 West Main Street
+    city: Newark
+    state: oh
+    zip: '43055'
   place: '3954040'
-  geo: {lat: 40.04125, lng: -82.46834}
+  geo:
+    lat: 40.04125
+    lng: -82.46834
   phone: 740-788-8329
   website: https://www.va.gov/central-ohio-health-care/locations/daniel-l-kinnard-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -184,10 +197,13 @@
   - Primary care
   - Social work
   - Suicide prevention
-  external_ids: {va: vha_757GD}
+  external_ids:
+    va: vha_757GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/newark/historic-hudson-care-cubby
   name: Historic Hudson Care Cubby
   categories:
@@ -203,6 +219,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: oh/newark/leads
+  name: LEADS
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Licking County
+  address: {street: 159 Wilson St., city: Newark, state: oh, zip: '43055'}
+  place: '3954040'
+  phone: 740-349-8606
+  website: https://leadscaa.org/what-we-do/community-services/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/newark/licking-county-alc-prevention-program-outpatient
   name: Licking County Alc Prevention Program Outpatient Services
   categories:

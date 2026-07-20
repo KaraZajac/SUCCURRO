@@ -359,6 +359,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/springfield/opportunities-industrialization-center
+  name: Opportunities Industrialization Center
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clark County
+  address: {street: 600 W. Main St., city: Springfield, state: oh, zip: '45504'}
+  place: '3974118'
+  phone: 937-323-6461
+  email: heap@oicofclarkco.org
+  website: https://www.oicofclarkco.org/assistance-services/utility-assistance-heap-pipp-water-/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/springfield/pinnacle-trt-centers-oh-xviii-llc-springfield-tr
   name: Pinnacle Trt Centers OH XVIII LLC Springfield Treatment Services
   categories:
@@ -557,13 +570,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1620 North Limestone Street, city: Springfield, state: oh, zip: '45503'}
+  address:
+    street: 1620 North Limestone Street
+    city: Springfield
+    state: oh
+    zip: '45503'
   place: '3974118'
-  geo: {lat: 39.94281, lng: -83.8029}
+  geo:
+    lat: 39.94281
+    lng: -83.8029
   phone: 937-342-5480
   website: https://www.va.gov/dayton-health-care/locations/springfield-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -576,10 +602,13 @@
   - Podiatry
   - Primary care
   - Telehealth
-  external_ids: {va: vha_552GD}
+  external_ids:
+    va: vha_552GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/springfield/st-john-s-little-free-pantry
   name: St. John's Little Free Pantry
   categories:

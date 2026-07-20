@@ -239,23 +239,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 5200 Babcock Street Northeast, city: Palm Bay, state: fl, zip: '32905'}
+  address:
+    street: 5200 Babcock Street Northeast
+    city: Palm Bay
+    state: fl
+    zip: '32905'
   place: '1254000'
-  geo: {lat: 28.02129, lng: -80.62219}
+  geo:
+    lat: 28.02129
+    lng: -80.62219
   phone: 321-728-8300
   website: https://www.va.gov/orlando-health-care/locations/palm-bay-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Nutrition, food, and dietary care
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_675QG}
+  external_ids:
+    va: vha_675QG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/palm-bay/port-malabar-elementary
   name: Port Malabar Elementary
   categories:

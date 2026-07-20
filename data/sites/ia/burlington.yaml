@@ -102,23 +102,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1000 North Roosevelt Avenue, city: Burlington, state: ia, zip: '52601'}
+  address:
+    street: 1000 North Roosevelt Avenue
+    city: Burlington
+    state: ia
+    zip: '52601'
   place: '1909550'
-  geo: {lat: 40.81892, lng: -91.14142}
+  geo:
+    lat: 40.81892
+    lng: -91.14142
   phone: 319-752-3722
   website: https://www.va.gov/iowa-city-health-care/locations/burlington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_636GY}
+  external_ids:
+    va: vha_636GY
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/burlington/chc-seia-administration
   name: CHC/SEIA Administration
   categories:
@@ -140,6 +156,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/burlington/community-action-of-southeast-iowa-des-moines
+  name: Community Action of Southeast Iowa - Des Moines
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Des Moines County
+  address: {street: 700 Jefferson St., city: Burlington, state: ia, zip: '52601'}
+  place: '1909550'
+  phone: 319-753-2893
+  website: https://caofseia.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/burlington/first-step-mobile-evaluations-llc-mobile-service
   name: First Step Mobile Evaluations LLC Mobile Services and Telehealth
   categories:

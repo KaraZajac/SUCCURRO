@@ -352,13 +352,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '1485 FM 1960 Bypass Road East, Humble Medical Plaza', city: Humble, state: tx, zip: '77338'}
+  address:
+    street: 1485 FM 1960 Bypass Road East, Humble Medical Plaza
+    city: Humble
+    state: tx
+    zip: '77338'
   place: '4835348'
-  geo: {lat: 30.00398, lng: -95.2524}
+  geo:
+    lat: 30.00398
+    lng: -95.2524
   phone: 281-540-5018
   website: https://www.va.gov/houston-health-care/locations/kingwood-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Internal medicine
   - Laboratory and pathology
@@ -372,10 +385,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GK}
+  external_ids:
+    va: vha_580GK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/humble/knightsbridge-apartments
   name: Knightsbridge Apartments
   categories:

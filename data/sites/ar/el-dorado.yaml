@@ -43,6 +43,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ar/el-dorado/central-arkansas-development-council-inc-cadc
+  name: Central Arkansas Development Council Inc. (CADC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Union County
+  address: {street: 1426 N West Ave, city: El Dorado, state: ar, zip: '71730'}
+  place: '0521070'
+  phone: 870-864-0067
+  email: LIHEAPINFO@CADC.COM
+  website: https://www.cadc.com/utility-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ar/el-dorado/el-dorado-high-school
   name: El Dorado High School
   categories:
@@ -92,13 +105,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1702 North West Avenue, city: El Dorado, state: ar, zip: '71730'}
+  address:
+    street: 1702 North West Avenue
+    city: El Dorado
+    state: ar
+    zip: '71730'
   place: '0521070'
-  geo: {lat: 33.22901, lng: -92.66574}
+  geo:
+    lat: 33.22901
+    lng: -92.66574
   phone: 870-875-5900
   website: https://www.va.gov/central-arkansas-health-care/locations/el-dorado-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -108,10 +134,13 @@
   - Smoking and tobacco cessation
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_598GB}
+  external_ids:
+    va: vha_598GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/el-dorado/esd-food-service-warehouse
   name: Esd Food Service Warehouse
   categories:

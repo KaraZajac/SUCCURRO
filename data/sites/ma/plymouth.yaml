@@ -148,13 +148,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 116 Long Pond Road, city: Plymouth, state: ma, zip: '02360'}
+  address:
+    street: 116 Long Pond Road
+    city: Plymouth
+    state: ma
+    zip: '02360'
   place: '2554275'
-  geo: {lat: 41.92375, lng: -70.65678}
+  geo:
+    lat: 41.92375
+    lng: -70.65678
   phone: 800-865-3384
   website: https://www.va.gov/boston-health-care/locations/plymouth-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -166,10 +179,49 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_523GD}
+  external_ids:
+    va: vha_523GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ma/plymouth/south-shore-community-action-council-inc
+  name: South Shore Community Action Council Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dukes County
+  address: {street: 71 Obery St., city: Plymouth, state: ma, zip: '02360'}
+  place: '2554275'
+  phone: 877-711-5400
+  website: https://www.sscac.org/fuel-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ma/plymouth/south-shore-community-action-council-inc-2
+  name: South Shore Community Action Council, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Barnstable, Nantucket Counties
+  address: {street: 71 Obery St, city: Plymouth, state: ma, zip: '02360'}
+  place: '2554275'
+  phone: 508-746-6707
+  website: https://www.sscac.org/fuel-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ma/plymouth/south-shore-community-action-council-inc-sscac
+  name: South Shore Community Action Council, Inc. (SSCAC)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Plymouth County
+  address: {street: 71 Obery St., city: Plymouth, state: ma, zip: '02360'}
+  place: '2554275'
+  phone: 508-746-6707
+  website: http://www.sscac.org/fuel_assistance/index.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/plymouth/south-shore-early-education-plymouth
   name: South Shore Early Education-Plymouth
   categories:

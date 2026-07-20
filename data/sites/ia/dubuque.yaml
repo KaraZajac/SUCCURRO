@@ -271,13 +271,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2600 Dodge Street, city: Dubuque, state: ia, zip: '52003'}
+  address:
+    street: 2600 Dodge Street
+    city: Dubuque
+    state: ia
+    zip: '52003'
   place: '1922395'
-  geo: {lat: 42.49119, lng: -90.70062}
+  geo:
+    lat: 42.49119
+    lng: -90.70062
   phone: 563-588-5520
   website: https://www.va.gov/iowa-city-health-care/locations/dubuque-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -291,10 +304,13 @@
   - Radiology
   - Social work
   - Telehealth
-  external_ids: {va: vha_636GJ}
+  external_ids:
+    va: vha_636GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/dubuque/eastern-iowa-regional-housing-authority
   name: Eastern Iowa Regional Housing Authority
   categories:
@@ -410,6 +426,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/dubuque/hawkeye-area-community-action-program
+  name: Hawkeye Area Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dubuque County
+  address: {street: 220 W. 7th St., city: Dubuque, state: ia, zip: '52001'}
+  place: '1922395'
+  phone: 563-556-5130
+  website: https://www.hacap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ia/dubuque/holy-trinity-lutheran-church-little-food-pantrie
   name: Holy Trinity Lutheran Church Little Food Pantries
   categories:

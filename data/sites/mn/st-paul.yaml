@@ -379,6 +379,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mn/st-paul/community-action-partnership-of-ramsey-and-washi
+  name: Community Action Partnership of Ramsey and Washington Counties
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ramsey County
+  address: {street: '450 Syndicate Street, North, Suite 35', city: St. Paul, state: mn, zip: '55104'}
+  place: '2758000'
+  phone: 651-645-6470
+  website: https://caprw.org/services/energy-food-housing/energy-assistance.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mn/st-paul/community-child-care-center
   name: Community Child Care Center
   categories:
@@ -3511,9 +3523,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '1 Federal Drive, Fort Snelling', city: St. Paul, state: mn, zip: '55111'}
+  address:
+    street: 1 Federal Drive, Fort Snelling
+    city: St. Paul
+    state: mn
+    zip: '55111'
   place: '2758000'
-  geo: {lat: 44.89357, lng: -93.19391}
+  geo:
+    lat: 44.89357
+    lng: -93.19391
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -3527,10 +3545,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_335}
+  external_ids:
+    va: vba_335
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/st-paul/the-heights
   name: The Heights
   categories:

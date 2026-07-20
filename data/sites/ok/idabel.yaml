@@ -101,6 +101,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/idabel/human-services-centers-mccurtain
+  name: 'Human Services Centers: McCurtain'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving McCurtain County
+  address: {street: 1300 S.E. Adams, city: Idabel, state: ok, zip: '74745'}
+  place: '4036750'
+  phone: 580-208-3400
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/idabel/idabel-community-center-noncongregate-n72
   name: Idabel Community Center Noncongregate(N72)
   categories:
@@ -275,13 +287,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 903 South East Washington Street, city: Idabel, state: ok, zip: '74745'}
+  address:
+    street: 903 South East Washington Street
+    city: Idabel
+    state: ok
+    zip: '74745'
   place: '4036750'
-  geo: {lat: 33.91959, lng: -94.82818}
+  geo:
+    lat: 33.91959
+    lng: -94.82818
   phone: 580-920-7200
   website: https://www.va.gov/eastern-oklahoma-health-care/locations/mccurtain-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Dermatology
@@ -296,10 +321,13 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_623GC}
+  external_ids:
+    va: vha_623GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/idabel/the-learning-tree-ehs-cc
   name: The Learning Tree EHS-CC
   categories:

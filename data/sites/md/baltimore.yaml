@@ -4594,6 +4594,78 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/baltimore/baltimore-city-eastern-community-action-partners
+  name: Baltimore City Eastern Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore City County
+  address: {street: 1731 E. Chase St., city: Baltimore, state: md, zip: '21213'}
+  place: '2404000'
+  phone: 410-396-6406
+  email: OHEP@baltimorecity.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: md/baltimore/baltimore-city-northern-community-action-partner
+  name: Baltimore City Northern Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore City County
+  address: {street: 5225 York Rd., city: Baltimore, state: md, zip: '21212'}
+  place: '2404000'
+  phone: 410-396-6084
+  email: OHEP@baltimorecity.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: md/baltimore/baltimore-city-northwest-community-action-partne
+  name: Baltimore City Northwest Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore City County
+  address: {street: 3939 Reisterstown Rd., city: Baltimore, state: md, zip: '21215'}
+  place: '2404000'
+  phone: 410-396-6406
+  email: OHEP@baltimorecity.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: md/baltimore/baltimore-city-southeast-community-action-partne
+  name: Baltimore City Southeast Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore City County
+  address: {street: 3411 Bank St., city: Baltimore, state: md, zip: '21224'}
+  place: '2404000'
+  phone: 410-396-6406
+  email: OHEP@baltimorecity.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: md/baltimore/baltimore-city-southern-community-action-partner
+  name: Baltimore City Southern Community Action Partnership
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore City County
+  address: {street: 606 Cherry Hill Rd., city: Baltimore, state: md, zip: '21225'}
+  place: '2404000'
+  phone: 410-396-6406
+  email: OHEP@baltimorecity.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: md/baltimore/baltimore-county-dept-of-social-services
+  name: Baltimore County Dept. of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Baltimore County
+  address: {street: 'Drumcastle Center, 6401 York Road', city: Baltimore, state: md, zip: '21212'}
+  place: '2404000'
+  phone: 410-853-3385
+  email: ohep.mailrequest@maryland.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/baltimore/baltimore-county-md
   name: Baltimore County, Md
   categories:
@@ -4768,15 +4840,24 @@
   name: Baltimore Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1777 Reisterstown Road, Suite 199', city: Baltimore, state: md, zip: '21208'}
+  address:
+    street: 1777 Reisterstown Road, Suite 199
+    city: Baltimore
+    state: md
+    zip: '21208'
   place: '2404000'
-  geo: {lat: 39.38567, lng: -76.73505}
+  geo:
+    lat: 39.38567
+    lng: -76.73505
   phone: 410-764-9400
   website: https://www.va.gov/baltimore-vet-center/locations/#baltimore-mobile-vet-center
-  external_ids: {va: vc_0878MVC}
+  external_ids:
+    va: vc_0878MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/baltimore-school-for-the-arts
   name: Baltimore School For The Arts
   categories:
@@ -4805,31 +4886,52 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '209 West Fayette Street, Community Resource & Referral Center (CRRC)', city: Baltimore,
-    state: md, zip: '21201'}
+  address:
+    street: 209 West Fayette Street, Community Resource & Referral Center (CRRC)
+    city: Baltimore
+    state: md
+    zip: '21201'
   place: '2404000'
-  geo: {lat: 39.29019, lng: -76.61844}
+  geo:
+    lat: 39.29019
+    lng: -76.61844
   phone: 410-605-7000
   website: https://www.va.gov/maryland-health-care/locations/baltimore-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Homeless Veteran care
   - Mental health care
   - Military sexual trauma care
   - PTSD care
   - Social work
-  external_ids: {va: vha_512QA}
+  external_ids:
+    va: vha_512QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/baltimore-va-medical-center
   name: Baltimore VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 10 North Greene Street, city: Baltimore, state: md, zip: '21201'}
+  address:
+    street: 10 North Greene Street
+    city: Baltimore
+    state: md
+    zip: '21201'
   place: '2404000'
-  geo: {lat: 39.28974, lng: -76.62447}
+  geo:
+    lat: 39.28974
+    lng: -76.62447
   phone: 410-605-7000
   website: https://www.va.gov/maryland-health-care/locations/baltimore-va-medical-center/
   services:
@@ -4885,18 +4987,27 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_512}
+  external_ids:
+    va: vha_512
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/baltimore-va-regional-benefit-office
   name: Baltimore VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '31 Hopkins Plaza, Floors G, 1, 2, 3, and 12', city: Baltimore, state: md, zip: '21201'}
+  address:
+    street: 31 Hopkins Plaza, Floors G, 1, 2, 3, and 12
+    city: Baltimore
+    state: md
+    zip: '21201'
   place: '2404000'
-  geo: {lat: 39.28842, lng: -76.6177}
+  geo:
+    lat: 39.28842
+    lng: -76.6177
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -4910,20 +5021,36 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_313}
+  external_ids:
+    va: vba_313
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/baltimore-vet-center
   name: Baltimore Vet Center
   categories: *id002
-  address: {street: '1777 Reisterstown Road, Suite 199', city: Baltimore, state: md, zip: '21208'}
+  address:
+    street: 1777 Reisterstown Road, Suite 199
+    city: Baltimore
+    state: md
+    zip: '21208'
   place: '2404000'
-  geo: {lat: 39.38741, lng: -76.73298}
+  geo:
+    lat: 39.38741
+    lng: -76.73298
   phone: 410-764-9400
   website: https://www.va.gov/baltimore-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -4934,10 +5061,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0201V}
+  external_ids:
+    va: vc_0201V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/barclay-elementary-middle-school
   name: Barclay Elementary/Middle School
   categories:
@@ -8241,13 +8371,26 @@
   name: Loch Raven VA Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 3901 The Alameda, city: Baltimore, state: md, zip: '21218'}
+  address:
+    street: 3901 The Alameda
+    city: Baltimore
+    state: md
+    zip: '21218'
   place: '2404000'
-  geo: {lat: 39.33618, lng: -76.5975}
+  geo:
+    lat: 39.33618
+    lng: -76.5975
   phone: 410-605-7650
   website: https://www.va.gov/maryland-health-care/locations/loch-raven-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -8277,10 +8420,13 @@
   - Suicide prevention
   - Travel reimbursement
   - Women Veteran care
-  external_ids: {va: vha_512GD}
+  external_ids:
+    va: vha_512GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/baltimore/londons-bright-beginnings-learning-center
   name: London’S Bright Beginnings Learning Center
   categories:

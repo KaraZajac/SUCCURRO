@@ -600,6 +600,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sd/sioux-falls/minnehaha-county-liheap
+  name: Minnehaha County Liheap
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Minnehaha County
+  address: {street: 811 E. 10th St., city: Sioux Falls, state: sd, zip: '57103'}
+  place: '4659020'
+  phone: 605-367-5444
+  email: SiouxFallsEA@state.sd.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sd/sioux-falls/our-savior-lutheran-church
   name: Our Savior Lutheran Church
   categories:
@@ -670,9 +682,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2501 West 22nd Street, city: Sioux Falls, state: sd, zip: '57105'}
+  address:
+    street: 2501 West 22nd Street
+    city: Sioux Falls
+    state: sd
+    zip: '57105'
   place: '4659020'
-  geo: {lat: 43.53124, lng: -96.75762}
+  geo:
+    lat: 43.53124
+    lng: -96.75762
   phone: 605-336-3230
   website: https://www.va.gov/sioux-falls-health-care/locations/royal-c-johnson-veterans-memorial-hospital/
   services:
@@ -710,10 +728,13 @@
   - Urology
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_438}
+  external_ids:
+    va: vha_438
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/sioux-falls/sands-freedom-center
   name: Sands Freedom Center
   categories:
@@ -778,9 +799,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '2501 W 22nd Street, Building 38', city: Sioux Falls, state: sd, zip: '57105'}
+  address:
+    street: 2501 W 22nd Street, Building 38
+    city: Sioux Falls
+    state: sd
+    zip: '57105'
   place: '4659020'
-  geo: {lat: 43.53124, lng: -96.75762}
+  geo:
+    lat: 43.53124
+    lng: -96.75762
   phone: 800-827-1000
   services:
   - ApplyingForBenefits
@@ -792,10 +819,13 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_438}
+  external_ids:
+    va: vba_438
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/sioux-falls/sonia-sotomayor-elementary
   name: Sonia Sotomayor Elementary
   categories:

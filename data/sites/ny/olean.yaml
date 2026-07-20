@@ -77,6 +77,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/olean/cattaraugus-county-department-of-social-services
+  name: Cattaraugus County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cattaraugus County
+  address: {street: 1 Leo Moss Drive Suite 6010, city: Olean, state: ny, zip: '14760'}
+  place: '3654716'
+  phone: 716-373-8065
+  email: cattheap@dfa.state.ny.us
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ny/olean/county-office-for-the-aging
+  name: County Office for the Aging
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cattaraugus County
+  address: {street: One Leo Moss Drive, city: Olean, state: ny, zip: '14760'}
+  place: '3654716'
+  phone: 716-373-8032
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ny/olean/intandem-moss-residence
   name: Intandem Moss Residence
   categories:
@@ -254,13 +277,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 465 North Union Street, city: Olean, state: ny, zip: '14760'}
+  address:
+    street: 465 North Union Street
+    city: Olean
+    state: ny
+    zip: '14760'
   place: '3654716'
-  geo: {lat: 42.08461, lng: -78.43002}
+  geo:
+    lat: 42.08461
+    lng: -78.43002
   phone: 716-373-7709
   website: https://www.va.gov/western-new-york-health-care/locations/olean-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -270,10 +306,13 @@
   - Orthopedics
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_528GR}
+  external_ids:
+    va: vha_528GR
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/olean/southern-tier-community-health-center-network-ol
   name: Southern Tier Community Health Center Network, Olean site
   categories:

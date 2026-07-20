@@ -39,6 +39,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/rawlins/carbon-county-department-of-family-services
+  name: Carbon County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Carbon County
+  address: {street: '215 W. Buffalo, Suite 359', city: Rawlins, state: wy, zip: '82301'}
+  place: '5663900'
+  phone: 307-328-0612
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/rawlins/high-country-behavioral-health-rawlins-office
   name: High Country Behavioral Health Rawlins Office
   categories:
@@ -88,13 +100,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1809 East Daley Street, city: Rawlins, state: wy, zip: '82301'}
+  address:
+    street: 1809 East Daley Street
+    city: Rawlins
+    state: wy
+    zip: '82301'
   place: '5663900'
-  geo: {lat: 41.79619, lng: -107.21782}
+  geo:
+    lat: 41.79619
+    lng: -107.21782
   phone: 307-324-5578
   website: https://www.va.gov/cheyenne-health-care/locations/rawlins-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -106,10 +131,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_442QA}
+  external_ids:
+    va: vha_442QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/rawlins/tully-park
   name: Tully Park
   categories:

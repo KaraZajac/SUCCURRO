@@ -46,13 +46,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1627 A Roy Drive, city: Washington, state: mo, zip: '63090'}
+  address:
+    street: 1627 A Roy Drive
+    city: Washington
+    state: mo
+    zip: '63090'
   place: '2977416'
-  geo: {lat: 38.5398, lng: -90.99269}
+  geo:
+    lat: 38.5398
+    lng: -90.99269
   phone: 314-652-4100
   website: https://www.va.gov/st-louis-health-care/locations/franklin-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Chiropractic
@@ -61,10 +74,13 @@
   - Primary care
   - Urology
   - Whole health
-  external_ids: {va: vha_657GS}
+  external_ids:
+    va: vha_657GS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/washington/little-food-pantry-borgia-high-school
   name: Little Food Pantry @ Borgia High School
   categories:

@@ -749,6 +749,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/muskegon/mid-michigan-community-action-muskegon-office
+  name: Mid Michigan Community Action Muskegon Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Muskegon County
+  address: {street: '878 Jefferson Street, Suite 2', city: Muskegon, state: mi, zip: '49440'}
+  place: '2656320'
+  phone: 231-557-7622
+  email: contactus@mmcaa.org
+  website: https://www.mmcaa.org/economicsecurity.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: mi/muskegon/mona-shores-high-school-610602587
   name: Mona Shores High School - 610602587
   categories:
@@ -1040,13 +1053,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2734 East Apple Avenue, city: Muskegon, state: mi, zip: '49442'}
+  address:
+    street: 2734 East Apple Avenue
+    city: Muskegon
+    state: mi
+    zip: '49442'
   place: '2656320'
-  geo: {lat: 43.23429, lng: -86.17582}
+  geo:
+    lat: 43.23429
+    lng: -86.17582
   phone: 231-798-4445
   website: https://www.va.gov/battle-creek-health-care/locations/muskegon-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -1067,10 +1093,13 @@
   - Suicide prevention
   - Telehealth
   - Toxic exposure screening
-  external_ids: {va: vha_515GA}
+  external_ids:
+    va: vha_515GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/muskegon/oakridge-high-school
   name: Oakridge High School
   categories:

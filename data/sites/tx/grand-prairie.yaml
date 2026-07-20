@@ -185,13 +185,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2737 Sherman Street, city: Grand Prairie, state: tx, zip: '75051'}
+  address:
+    street: 2737 Sherman Street
+    city: Grand Prairie
+    state: tx
+    zip: '75051'
   place: '4830464'
-  geo: {lat: 32.7343, lng: -97.04981}
+  geo:
+    lat: 32.7343
+    lng: -97.04981
   phone: 214-857-3450
   website: https://www.va.gov/north-texas-health-care/locations/grand-prairie-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -199,10 +212,13 @@
   - My HealtheVet coordinator
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_549GM}
+  external_ids:
+    va: vha_549GM
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/grand-prairie/greenhouse-treatment-center
   name: Greenhouse Treatment Center
   categories:

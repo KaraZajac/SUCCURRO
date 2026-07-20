@@ -1,3 +1,16 @@
+- id: ak/homer/alaska-health-and-social-services-homer-district
+  name: Alaska Health and Social Services - Homer District Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Aleutians East, Aleutians West, Lake and Peninsula Counties
+  address: {street: '3670 Lake Street, Suite 200', city: Homer, state: ak, zip: '99603'}
+  place: '0233140'
+  phone: 800-478-7778
+  email: hss.dpa.offices@alaska.gov
+  website: https://health.alaska.gov/dpa/Pages/hap/default.aspx
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ak/homer/cook-inlet-counseling-outpatient-homer
   name: Cook Inlet Counseling Outpatient Homer
   categories:
@@ -44,22 +57,36 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 4141 Pennock Street, city: Homer, state: ak, zip: '99603'}
+  address:
+    street: 4141 Pennock Street
+    city: Homer
+    state: ak
+    zip: '99603'
   place: '0233140'
-  geo: {lat: 59.65014, lng: -151.51804}
+  geo:
+    lat: 59.65014
+    lng: -151.51804
   phone: 888-353-7574
   website: https://www.va.gov/alaska-health-care/locations/homer-va-clinic/
   hours:
-  - {days: [mon, tue, wed], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    open: 08:00
+    close: '16:00'
   services:
   - Mental health care
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_463GD}
+  external_ids:
+    va: vha_463GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/homer/set-free-alaska-homer
   name: Set Free Alaska Homer
   categories:

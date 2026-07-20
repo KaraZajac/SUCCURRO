@@ -126,13 +126,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 33 Depot Street, city: Saranac Lake, state: ny, zip: '12983'}
+  address:
+    street: 33 Depot Street
+    city: Saranac Lake
+    state: ny
+    zip: '12983'
   place: '3665233'
-  geo: {lat: 44.33052, lng: -74.13241}
+  geo:
+    lat: 44.33052
+    lng: -74.13241
   phone: 518-626-5237
   website: https://www.va.gov/albany-health-care/locations/saranac-lake-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -141,7 +154,10 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_528QK}
+  external_ids:
+    va: vha_528QK
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

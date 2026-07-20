@@ -332,6 +332,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/lawton/human-services-centers-caddo
+  name: 'Human Services Centers: Caddo'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Caddo County
+  address: {street: 2609 S. W. Lee Blvd., city: Lawton, state: ok, zip: '73505'}
+  place: '4041850'
+  phone: 580-250-3600
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: ok/lawton/human-services-centers-comanche
+  name: 'Human Services Centers: Comanche'
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Comanche County
+  address: {street: 2609 S. W. Lee Blvd., city: Lawton, state: ok, zip: '73505'}
+  place: '4041850'
+  phone: 580-250-3600
+  website: http://www.okdhslive.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ok/lawton/jim-taliaferro-cmhc-east-campus
   name: Jim Taliaferro CMHC East Campus
   categories:
@@ -528,26 +552,50 @@
   name: Lawton Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '1016 Southwest C Avenue, Suite B', city: Lawton, state: ok, zip: '73501'}
+  address:
+    street: 1016 Southwest C Avenue, Suite B
+    city: Lawton
+    state: ok
+    zip: '73501'
   place: '4041850'
-  geo: {lat: 34.6052, lng: -98.40441}
+  geo:
+    lat: 34.6052
+    lng: -98.40441
   phone: 580-585-5880
   website: https://www.va.gov/lawton-vet-center/locations/#lawton-mobile-vet-center
-  external_ids: {va: vc_0865MVC}
+  external_ids:
+    va: vc_0865MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/lawton/lawton-vet-center
   name: Lawton Vet Center
   categories: *id001
-  address: {street: '10 SW 2nd Street, Suite 4', city: Lawton, state: ok, zip: '73501'}
+  address:
+    street: 10 SW 2nd Street, Suite 4
+    city: Lawton
+    state: ok
+    zip: '73501'
   place: '4041850'
-  geo: {lat: 34.60785, lng: -98.39041}
+  geo:
+    lat: 34.60785
+    lng: -98.39041
   phone: 580-585-5880
   website: https://www.va.gov/lawton-vet-center/
   hours:
-  - {days: [mon, fri], open: '08:00', close: '16:30'}
-  - {days: [tue, wed, thu], open: '08:00', close: '19:30'}
+  - days:
+    - mon
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '19:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -559,10 +607,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0728V}
+  external_ids:
+    va: vc_0728V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/lawton/lchc-call-center
   name: LCHC Call Center
   categories:
@@ -1126,16 +1177,25 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '2800 W. Gore Blvd, North Shepler Tower Rm 332', city: Lawton, state: ok, zip: '73507'}
+  address:
+    street: 2800 W. Gore Blvd, North Shepler Tower Rm 332
+    city: Lawton
+    state: ok
+    zip: '73507'
   place: '4041850'
-  geo: {lat: 34.60542, lng: -98.43614}
+  geo:
+    lat: 34.60542
+    lng: -98.43614
   phone: 580-213-5000
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_351g}
+  external_ids:
+    va: vba_351g
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -82,13 +82,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 915 West Emma Avenue, city: Coeur d'Alene, state: id, zip: '83814'}
+  address:
+    street: 915 West Emma Avenue
+    city: Coeur d'Alene
+    state: id
+    zip: '83814'
   place: '1616750'
-  geo: {lat: 47.69264, lng: -116.79627}
+  geo:
+    lat: 47.69264
+    lng: -116.79627
   phone: 208-665-1700
   website: https://www.va.gov/spokane-health-care/locations/coeur-d-alene-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -104,10 +117,26 @@
   - Primary care
   - Psychiatry
   - Social work
-  external_ids: {va: vha_668GB}
+  external_ids:
+    va: vha_668GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: id/coeur-d-alene/community-action-partnership-cap
+  name: Community Action Partnership (CAP)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Kootenai County
+  address: {street: 4144 West Industrial Loop, city: Coeur d Alene, state: id, zip: '83815'}
+  place: '1616750'
+  phone: 208-664-8757
+  email: info@cap4action.org
+  website: http://cap4action.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: id/coeur-d-alene/community-early-learning-center
   name: Community Early Learning Center
   categories:

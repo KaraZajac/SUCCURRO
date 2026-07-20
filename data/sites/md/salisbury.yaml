@@ -777,17 +777,45 @@
   name: Salisbury Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '926 Snow Hill Road, Bldg 3', city: Salisbury, state: md, zip: '21804'}
+  address:
+    street: 926 Snow Hill Road, Bldg 3
+    city: Salisbury
+    state: md
+    zip: '21804'
   place: '2469925'
-  geo: {lat: 38.34733, lng: -75.5819}
+  geo:
+    lat: 38.34733
+    lng: -75.5819
   phone: 410-912-7262
   website: https://www.va.gov/elkton-vet-center/locations/#salisbury-vet-center-outstatio
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
-  external_ids: {va: vc_2091OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
+  external_ids:
+    va: vc_2091OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: md/salisbury/shore-up-inc
+  name: Shore Up! Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wicomico County
+  address: {street: 500 Snow Hill Road, city: Salisbury, state: md, zip: '21804'}
+  place: '2469925'
+  phone: 410-341-9634
+  email: Energywicomico@shoreup.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: md/salisbury/stonehaven-mental-health
   name: Stonehaven Mental Health
   categories:

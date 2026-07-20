@@ -201,6 +201,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/scranton/lackawanna-county-assistance-office
+  name: Lackawanna County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Lackawanna County
+  address: {street: 200 Scranton State Office Building 100 Lackawanna Avenue, city: Scranton, state: pa,
+    zip: '18503'}
+  place: '4269000'
+  phone: 570-963-4842
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/scranton/lakeside-nepa-inc
   name: Lakeside NEPA Inc
   categories:
@@ -451,15 +463,24 @@
   name: Scranton Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 1002 Pittston Avenue, city: Scranton, state: pa, zip: '18505'}
+  address:
+    street: 1002 Pittston Avenue
+    city: Scranton
+    state: pa
+    zip: '18505'
   place: '4269000'
-  geo: {lat: 41.39585, lng: -75.66894}
+  geo:
+    lat: 41.39585
+    lng: -75.66894
   phone: 570-344-2676
   website: https://www.va.gov/scranton-vet-center/locations/#scranton-mobile-vet-center
-  external_ids: {va: vc_0811MVC}
+  external_ids:
+    va: vc_0811MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/scranton/scranton-pre-k-center
   name: Scranton Pre K Center
   categories:
@@ -545,14 +566,29 @@
 - id: pa/scranton/scranton-vet-center
   name: Scranton Vet Center
   categories: *id001
-  address: {street: 1002 Pittston Avenue, city: Scranton, state: pa, zip: '18505'}
+  address:
+    street: 1002 Pittston Avenue
+    city: Scranton
+    state: pa
+    zip: '18505'
   place: '4269000'
-  geo: {lat: 41.39585, lng: -75.66894}
+  geo:
+    lat: 41.39585
+    lng: -75.66894
   phone: 570-344-2676
   website: https://www.va.gov/scranton-vet-center/
   hours:
-  - {days: [mon, wed, thu, fri], open: '08:00', close: '16:30'}
-  - {days: [tue], open: '08:00', close: '20:00'}
+  - days:
+    - mon
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  - days:
+    - tue
+    open: 08:00
+    close: '20:00'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -564,10 +600,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0229V}
+  external_ids:
+    va: vc_0229V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/scranton/south-scranton-1-3
   name: South Scranton 1 & 3
   categories:

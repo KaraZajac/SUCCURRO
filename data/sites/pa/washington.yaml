@@ -738,6 +738,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/washington/washington-county-assistance-office
+  name: Washington County Assistance Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Washington County
+  address: {street: '90 W. Chestnut St., Suite 300 East Wing', city: Washington, state: pa, zip: '15301'}
+  place: '4281328'
+  phone: 724-223-5246
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: pa/washington/washington-county-housing-authority
   name: Washington County Housing Authority
   categories:
@@ -764,13 +775,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: '95 West Beau Street, Crossroads Center', city: Washington, state: pa, zip: '15301'}
+  address:
+    street: 95 West Beau Street, Crossroads Center
+    city: Washington
+    state: pa
+    zip: '15301'
   place: '4281328'
-  geo: {lat: 40.17084, lng: -80.24723}
+  geo:
+    lat: 40.17084
+    lng: -80.24723
   phone: 724-250-7790
   website: https://www.va.gov/pittsburgh-health-care/locations/washington-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -796,10 +820,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_646GD}
+  external_ids:
+    va: vha_646GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/washington/washington-elementary-school
   name: Washington Elementary School
   categories:

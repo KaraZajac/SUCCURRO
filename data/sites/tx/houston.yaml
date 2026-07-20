@@ -959,6 +959,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/houston/baker-ripley
+  name: Baker Ripley
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Brazoria, Galveston, Harris Counties
+  address: {street: P. O. Box 271389, city: Houston, state: tx, zip: '77277'}
+  place: '4835000'
+  phone: 713-590-2327
+  email: UtilityAssistance@BakerRipley.org
+  website: https://bakerripley.org/programs-and-services/utility-assistance/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/houston/baker-ripley-gulfton-sharpstown
   name: Baker Ripley Gulfton - Sharpstown
   categories:
@@ -6365,41 +6378,68 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2002 Holcombe Boulevard, city: Houston, state: tx, zip: '77030'}
+  address:
+    street: 2002 Holcombe Boulevard
+    city: Houston
+    state: tx
+    zip: '77030'
   place: '4835000'
-  geo: {lat: 29.70008, lng: -95.38894}
+  geo:
+    lat: 29.70008
+    lng: -95.38894
   phone: 713-791-1414
   website: https://www.va.gov/find-locations/facility/vha_580QC
-  external_ids: {va: vha_580QC}
+  external_ids:
+    va: vha_580QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-3-va-mobile-medical-unit
   name: Houston 3 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2002 Holcombe Boulevard, city: Houston, state: tx, zip: '77030'}
+  address:
+    street: 2002 Holcombe Boulevard
+    city: Houston
+    state: tx
+    zip: '77030'
   place: '4835000'
-  geo: {lat: 29.70008, lng: -95.38894}
+  geo:
+    lat: 29.70008
+    lng: -95.38894
   phone: 713-791-1414
   website: https://www.va.gov/find-locations/facility/vha_580QD
-  external_ids: {va: vha_580QD}
+  external_ids:
+    va: vha_580QD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-4-va-mobile-medical-unit
   name: Houston 4 VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2002 Holcombe Boulevard, city: Houston, state: tx, zip: '77030'}
+  address:
+    street: 2002 Holcombe Boulevard
+    city: Houston
+    state: tx
+    zip: '77030'
   place: '4835000'
-  geo: {lat: 29.70008, lng: -95.38894}
+  geo:
+    lat: 29.70008
+    lng: -95.38894
   phone: 713-791-1414
   website: https://www.va.gov/find-locations/facility/vha_580QF
-  external_ids: {va: vha_580QF}
+  external_ids:
+    va: vha_580QF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-academy-for-international-studies
   name: Houston Academy For International Studies
   categories:
@@ -6656,26 +6696,50 @@
   name: Houston Southwest Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '10103 Fondren Road, Suite 470', city: Houston, state: tx, zip: '77096'}
+  address:
+    street: 10103 Fondren Road, Suite 470
+    city: Houston
+    state: tx
+    zip: '77096'
   place: '4835000'
-  geo: {lat: 29.669, lng: -95.50846}
+  geo:
+    lat: 29.669
+    lng: -95.50846
   phone: 504-565-4977
   website: https://www.va.gov/houston-southwest-vet-center/locations/#houston-southwest-mobile-vet-c
-  external_ids: {va: vc_0847MVC}
+  external_ids:
+    va: vc_0847MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-southwest-vet-center
   name: Houston Southwest Vet Center
   categories: *id002
-  address: {street: '10103 Fondren Road, Suite 470', city: Houston, state: tx, zip: '77096'}
+  address:
+    street: 10103 Fondren Road, Suite 470
+    city: Houston
+    state: tx
+    zip: '77096'
   place: '4835000'
-  geo: {lat: 29.66898, lng: -95.50845}
+  geo:
+    lat: 29.66898
+    lng: -95.50845
   phone: 713-523-0884
   website: https://www.va.gov/houston-southwest-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu], open: '08:00', close: '19:30'}
-  - {days: [fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 08:00
+    close: '19:30'
+  - days:
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -6689,10 +6753,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0710V}
+  external_ids:
+    va: vc_0710V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-treatment-center-inc
   name: Houston Treatment Center Inc
   categories:
@@ -6717,23 +6784,38 @@
   name: Houston VA Domiciliary
   categories: *id001
   description: Residential Care Site (MH RRTP/DRRTP) (Stand-Alone)
-  address: {street: 4320 Old Spanish Trail, city: Houston, state: tx, zip: '77021'}
+  address:
+    street: 4320 Old Spanish Trail
+    city: Houston
+    state: tx
+    zip: '77021'
   place: '4835000'
-  geo: {lat: 29.70441, lng: -95.34765}
+  geo:
+    lat: 29.70441
+    lng: -95.34765
   phone: 713-791-1414
   website: https://www.va.gov/find-locations/facility/vha_580BV
-  external_ids: {va: vha_580BV}
+  external_ids:
+    va: vha_580BV
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-va-regional-benefit-office
   name: Houston VA Regional Benefit Office
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: 6900 Almeda Road, city: Houston, state: tx, zip: '77030'}
+  address:
+    street: 6900 Almeda Road
+    city: Houston
+    state: tx
+    zip: '77030'
   place: '4835000'
-  geo: {lat: 29.70007, lng: -95.38669}
+  geo:
+    lat: 29.70007
+    lng: -95.38669
   phone: 800-827-1000
   website: https://www.va.gov/houston-va-regional-benefit-office/
   services:
@@ -6744,39 +6826,70 @@
   - IntegratedDisabilityEvaluationSystemAssistance
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_362}
+  external_ids:
+    va: vba_362
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-webster-va-clinic
   name: Houston Webster VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: '1700 Webster Street, Community Resource & Referral Center (CRRC)', city: Houston,
-    state: tx, zip: '77003'}
+  address:
+    street: 1700 Webster Street, Community Resource & Referral Center (CRRC)
+    city: Houston
+    state: tx
+    zip: '77003'
   place: '4835000'
-  geo: {lat: 29.74418, lng: -95.36575}
+  geo:
+    lat: 29.74418
+    lng: -95.36575
   phone: 713-230-2810
   website: https://www.va.gov/houston-health-care/locations/houston-webster-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '15:30'
   services:
   - Homeless Veteran care
   - Mental health care
-  external_ids: {va: vha_580QE}
+  external_ids:
+    va: vha_580QE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/houston-west-vet-center
   name: Houston West Vet Center
   categories: *id002
-  address: {street: '701 North Post Oak Road, Suite 102', city: Houston, state: tx, zip: '77024'}
+  address:
+    street: 701 North Post Oak Road, Suite 102
+    city: Houston
+    state: tx
+    zip: '77024'
   place: '4835000'
-  geo: {lat: 29.77959, lng: -95.45777}
+  geo:
+    lat: 29.77959
+    lng: -95.45777
   phone: 713-682-2288
   website: https://www.va.gov/houston-west-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -6788,10 +6901,13 @@
   - Suicide prevention
   - Veteran connections
   - Workshops and classes
-  external_ids: {va: vc_0711V}
+  external_ids:
+    va: vc_0711V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/hudson-at-westchase
   name: Hudson At Westchase
   categories:
@@ -9782,9 +9898,15 @@
   name: Michael E. DeBakey Department of Veterans Affairs Medical Center
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2002 Holcombe Boulevard, city: Houston, state: tx, zip: '77030'}
+  address:
+    street: 2002 Holcombe Boulevard
+    city: Houston
+    state: tx
+    zip: '77030'
   place: '4835000'
-  geo: {lat: 29.70614, lng: -95.38638}
+  geo:
+    lat: 29.70614
+    lng: -95.38638
   phone: 713-791-1414
   website: https://www.va.gov/houston-health-care/locations/michael-e-debakey-department-of-veterans-affairs-medical-center/
   services:
@@ -9849,10 +9971,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_580}
+  external_ids:
+    va: vha_580
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/michael-e-debakey-va-medical-center
   name: Michael E DeBakey VA Medical Center
   categories:
@@ -10247,6 +10372,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/houston/neighborhood-centers-inc
+  name: Neighborhood Centers, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Harris County
+  address: {street: P.O. Box 271389, city: Houston, state: tx, zip: '77277'}
+  place: '4835000'
+  phone: 713-667-9400
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tx/houston/new-dimensions-day-treatment-centers-clear-lake
   name: New Dimensions Day Treatment Centers Clear Lake
   categories:
@@ -12606,13 +12742,26 @@
 - id: tx/houston/spring-vet-center
   name: Spring Vet Center
   categories: *id002
-  address: {street: '14300 Corner Stone Village Drive, Suite 110', city: Houston, state: tx, zip: '77014'}
+  address:
+    street: 14300 Corner Stone Village Drive, Suite 110
+    city: Houston
+    state: tx
+    zip: '77014'
   place: '4835000'
-  geo: {lat: 29.98852, lng: -95.48358}
+  geo:
+    lat: 29.98852
+    lng: -95.48358
   phone: 281-537-7812
   website: https://www.va.gov/spring-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -12624,10 +12773,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0731V}
+  external_ids:
+    va: vc_0731V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/houston/spring-woods-h-s
   name: Spring Woods H S
   categories:

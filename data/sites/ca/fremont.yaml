@@ -90,13 +90,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 39199 Liberty Street, city: Fremont, state: ca, zip: '94538'}
+  address:
+    street: 39199 Liberty Street
+    city: Fremont
+    state: ca
+    zip: '94538'
   place: '0626000'
-  geo: {lat: 37.55062, lng: -121.98167}
+  geo:
+    lat: 37.55062
+    lng: -121.98167
   phone: 510-791-4000
   website: https://www.va.gov/palo-alto-health-care/locations/fremont-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Chiropractic
@@ -115,10 +128,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_640GC}
+  external_ids:
+    va: vha_640GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/fremont/irvington-dave-clinic-i
   name: Irvington Dave Clinic I
   categories:

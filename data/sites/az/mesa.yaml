@@ -1114,6 +1114,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/mesa/mesa-community-action-network
+  name: Mesa Community Action Network
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Maricopa County
+  address: {street: 635 E. Broadway Rd., city: Mesa, state: az, zip: '85204'}
+  place: '0446000'
+  phone: 480-833-9200
+  website: http://www.turnanewleaf.org/services/mesacan.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: az/mesa/mesa-high-school
   name: Mesa High School
   categories:
@@ -1141,30 +1153,59 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 4135 South Power Road, city: Mesa, state: az, zip: '85212'}
+  address:
+    street: 4135 South Power Road
+    city: Mesa
+    state: az
+    zip: '85212'
   place: '0446000'
-  geo: {lat: 33.34026, lng: -111.68721}
+  geo:
+    lat: 33.34026
+    lng: -111.68721
   phone: 480-397-2800
   website: https://www.va.gov/phoenix-health-care/locations/mesa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Mental health care
-  external_ids: {va: vha_644GJ}
+  external_ids:
+    va: vha_644GJ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/mesa/mesa-vet-center
   name: Mesa Vet Center
   categories:
   - vet-center
-  address: {street: '1303 South Longmore, Suite 5', city: Mesa, state: az, zip: '85202'}
+  address:
+    street: 1303 South Longmore, Suite 5
+    city: Mesa
+    state: az
+    zip: '85202'
   place: '0446000'
-  geo: {lat: 33.39124, lng: -111.86316}
+  geo:
+    lat: 33.39124
+    lng: -111.86316
   phone: 480-610-6727
   website: https://www.va.gov/mesa-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1177,10 +1218,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0524V}
+  external_ids:
+    va: vc_0524V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/mesa/mind-24-7-higley-progression
   name: MIND 24/7 Higley Progression
   categories:

@@ -213,21 +213,37 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 825 Jadwin Avenue, city: Richland, state: wa, zip: '99352'}
+  address:
+    street: 825 Jadwin Avenue
+    city: Richland
+    state: wa
+    zip: '99352'
   place: '5358235'
-  geo: {lat: 46.2771, lng: -119.27528}
+  geo:
+    lat: 46.2771
+    lng: -119.27528
   phone: 509-946-1020
   website: https://www.va.gov/walla-walla-health-care/locations/richland-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Nutrition, food, and dietary care
   - Primary care
   - Toxic exposure screening
-  external_ids: {va: vha_687GA}
+  external_ids:
+    va: vha_687GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/richland/tcch-richland-endocrinology-diabetes-center
   name: TCCH Richland  -  Endocrinology & Diabetes Center
   categories:

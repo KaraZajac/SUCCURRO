@@ -171,13 +171,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 501 Lakeland Boulevard, city: Mattoon, state: il, zip: '61938'}
+  address:
+    street: 501 Lakeland Boulevard
+    city: Mattoon
+    state: il
+    zip: '61938'
   place: '1747553'
-  geo: {lat: 39.47837, lng: -88.37658}
+  geo:
+    lat: 39.47837
+    lng: -88.37658
   phone: 217-258-3370
   website: https://www.va.gov/illiana-health-care/locations/mattoon-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -188,10 +201,13 @@
   - Psychology
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_550GF}
+  external_ids:
+    va: vha_550GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/mattoon/riddle-elementary-school
   name: Riddle Elementary School
   categories:

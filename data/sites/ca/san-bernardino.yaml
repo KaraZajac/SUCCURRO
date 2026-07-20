@@ -188,6 +188,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-bernardino/community-action-partnership-of-san-bernardino-c
+  name: Community Action Partnership of San Bernardino County
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving San Bernardino County
+  address: {street: 696 South Tippecanoe Avenue, city: San Bernardino, state: ca, zip: '92408'}
+  place: '0665000'
+  phone: 909-723-1500
+  website: https://www.capsbc.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/san-bernardino/county-of-san-bernardino-phoenix-sud-recovery-se
   name: County of San Bernardino Phoenix SUD Recovery Services
   categories:
@@ -907,13 +919,26 @@
   name: San Bernardino Vet Center
   categories:
   - vet-center
-  address: {street: 356 East Vanderbilt Way, city: San Bernardino, state: ca, zip: '92408'}
+  address:
+    street: 356 East Vanderbilt Way
+    city: San Bernardino
+    state: ca
+    zip: '92408'
   place: '0665000'
-  geo: {lat: 34.06877, lng: -117.27733}
+  geo:
+    lat: 34.06877
+    lng: -117.27733
   phone: 909-801-5762
   website: https://www.va.gov/san-bernardino-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -925,10 +950,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0637V}
+  external_ids:
+    va: vc_0637V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-bernardino/sjch-san-bernardino-health-center
   name: SJCH San Bernardino Health Center
   categories:

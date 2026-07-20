@@ -798,13 +798,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4440 Calle Real, city: Santa Barbara, state: ca, zip: '93110'}
+  address:
+    street: 4440 Calle Real
+    city: Santa Barbara
+    state: ca
+    zip: '93110'
   place: 0669070
-  geo: {lat: 34.4424, lng: -119.77646}
+  geo:
+    lat: 34.4424
+    lng: -119.77646
   phone: 805-683-1491
   website: https://www.va.gov/greater-los-angeles-health-care/locations/santa-barbara-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -848,10 +861,13 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_691GB}
+  external_ids:
+    va: vha_691GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/santa-barbara/sb-adult-mental-health-services
   name: SB Adult Mental Health Services
   categories:

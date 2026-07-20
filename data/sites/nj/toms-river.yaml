@@ -107,13 +107,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1055 Hooper Avenue, city: Toms River, state: nj, zip: 08753}
+  address:
+    street: 1055 Hooper Avenue
+    city: Toms River
+    state: nj
+    zip: 08753
   place: '3473110'
-  geo: {lat: 39.97149, lng: -74.18379}
+  geo:
+    lat: 39.97149
+    lng: -74.18379
   phone: 732-206-8900
   website: https://www.va.gov/new-jersey-health-care/locations/toms-river-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
   services:
   - Allergy, asthma and immunology
   - Audiology and speech
@@ -139,10 +152,13 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_561BZ}
+  external_ids:
+    va: vha_561BZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nj/toms-river/lifebulb-counseling-and-therapy
   name: Lifebulb Counseling and Therapy
   categories:
@@ -164,6 +180,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nj/toms-river/ocean-inc-central-office
+  name: Ocean Inc. - Central Office
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Ocean County
+  address: {street: 1256 Indianhead Road Suite 32, city: Toms River, state: nj, zip: 08754}
+  place: '3473110'
+  phone: 732-244-9041 x 103
+  email: oceanhea@oceaninc.org
+  website: https://www.oceaninc.org/homeenergyassistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nj/toms-river/ocean-inc-child-development-center-toms-river
   name: OCEAN, Inc Child Development Center (Toms River)
   categories:

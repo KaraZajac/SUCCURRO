@@ -417,19 +417,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 'Calle Isaac Gonzalez Esquina Ledesma, Hospital de la Montana', city: Utuado, state: pr,
-    zip: '00641'}
-  geo: {lat: 18.26728, lng: -66.7014}
+  address:
+    street: Calle Isaac Gonzalez Esquina Ledesma, Hospital de la Montana
+    city: Utuado
+    state: pr
+    zip: '00641'
+  geo:
+    lat: 18.26728
+    lng: -66.7014
   phone: 787-522-2650
   website: https://www.va.gov/caribbean-health-care/locations/utuado-va-clinic/
   hours:
-  - {days: [mon, wed], open: '07:30', close: '13:30'}
-  - {days: [tue, thu], open: '07:30', close: '16:00'}
-  - {days: [fri], open: '07:30', close: '12:30'}
+  - days:
+    - mon
+    - wed
+    open: 07:30
+    close: '13:30'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '16:00'
+  - days:
+    - fri
+    open: 07:30
+    close: '12:30'
   services:
   - My HealtheVet coordinator
   - Primary care
-  external_ids: {va: vha_672QB}
+  external_ids:
+    va: vha_672QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

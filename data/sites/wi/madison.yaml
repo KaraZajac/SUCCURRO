@@ -367,6 +367,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/madison/dane-county-energy-services-inc
+  name: Dane County Energy Services, Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dane County
+  address: {street: 1225 S Park St., city: Madison, state: wi, zip: '53715'}
+  place: '5548000'
+  phone: 800-506-5596
+  website: http://homeenergyplus.wi.gov/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/madison/dane-county-housing-authority
   name: Dane County Housing Authority
   categories:
@@ -906,13 +918,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 4904 Eastpark Boulevard, city: Madison, state: wi, zip: '53718'}
+  address:
+    street: 4904 Eastpark Boulevard
+    city: Madison
+    state: wi
+    zip: '53718'
   place: '5548000'
-  geo: {lat: 43.14744, lng: -89.29904}
+  geo:
+    lat: 43.14744
+    lng: -89.29904
   phone: 608-240-3000
   website: https://www.va.gov/madison-health-care/locations/madison-east-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:45'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:45'
   services:
   - Advice nurse
   - Audiology and speech
@@ -930,10 +955,13 @@
   - Telehealth
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_607GH}
+  external_ids:
+    va: vha_607GH
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/madison/madison-fridge-1
   name: Madison Fridge 1
   place: '5548000'
@@ -953,13 +981,26 @@
   name: Madison Vet Center
   categories:
   - vet-center
-  address: {street: 1291 North Sherman Avenue, city: Madison, state: wi, zip: '53704'}
+  address:
+    street: 1291 North Sherman Avenue
+    city: Madison
+    state: wi
+    zip: '53704'
   place: '5548000'
-  geo: {lat: 43.11388, lng: -89.36373}
+  geo:
+    lat: 43.11388
+    lng: -89.36373
   phone: 608-264-5342
   website: https://www.va.gov/madison-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -973,10 +1014,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0419V}
+  external_ids:
+    va: vc_0419V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/madison/madison-west-comprehensive-treatment-quality-add
   name: Madison West Comprehensive Treatment Quality Addiction Management Inc
   categories:
@@ -1001,13 +1045,26 @@
   name: Madison West VA Clinic
   categories: *id001
   description: Primary Care CBOC
-  address: {street: 1 Science Court, city: Madison, state: wi, zip: '53711'}
+  address:
+    street: 1 Science Court
+    city: Madison
+    state: wi
+    zip: '53711'
   place: '5548000'
-  geo: {lat: 43.0595, lng: -89.46798}
+  geo:
+    lat: 43.0595
+    lng: -89.46798
   phone: 608-284-6360
   website: https://www.va.gov/madison-health-care/locations/madison-west-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '16:45'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '16:45'
   services:
   - Advice nurse
   - COVID-19 vaccines
@@ -1024,10 +1081,13 @@
   - Toxic exposure screening
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_607GG}
+  external_ids:
+    va: vha_607GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/madison/marlborough-park
   name: Marlborough Park
   categories:
@@ -1639,9 +1699,15 @@
   name: William S. Middleton Memorial Veterans' Hospital
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 2500 Overlook Terrace, city: Madison, state: wi, zip: '53705'}
+  address:
+    street: 2500 Overlook Terrace
+    city: Madison
+    state: wi
+    zip: '53705'
   place: '5548000'
-  geo: {lat: 43.07514, lng: -89.43107}
+  geo:
+    lat: 43.07514
+    lng: -89.43107
   phone: 608-256-1901
   website: https://www.va.gov/madison-health-care/locations/william-s-middleton-memorial-veterans-hospital/
   services:
@@ -1696,10 +1762,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_607}
+  external_ids:
+    va: vha_607
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/madison/william-s-middleton-veterans-hosp-addictive-diso
   name: William S Middleton Veterans Hosp Addictive Disorders Trt Program
   categories:

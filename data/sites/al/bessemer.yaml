@@ -92,14 +92,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: '975 Ninth Avenue, Southwest, Medical West Office Complex', city: Bessemer, state: al,
-    zip: '35022'}
+  address:
+    street: 975 Ninth Avenue, Southwest, Medical West Office Complex
+    city: Bessemer
+    state: al
+    zip: '35022'
   place: 0105980
-  geo: {lat: 33.37497, lng: -86.99006}
+  geo:
+    lat: 33.37497
+    lng: -86.99006
   phone: 205-428-3495
   website: https://www.va.gov/birmingham-health-care/locations/bessemer-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -108,10 +120,13 @@
   - Optometry
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_521GG}
+  external_ids:
+    va: vha_521GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/bessemer/bhg-bessemer-treatment-center
   name: BHG Bessemer Treatment Center
   categories:
@@ -216,6 +231,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/bessemer/community-action-agency-of-northeast-alabama-bes
+  name: Community Action Agency of Northeast Alabama - Bessemer
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Jefferson County
+  address: {street: 1616 3rd Ave. N, city: Bessemer, state: al}
+  place: 0105980
+  phone: 205-502-2108
+  website: http://www.caaneal.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/bessemer/empower-community-upper-school
   name: Empower Community Upper School
   categories:

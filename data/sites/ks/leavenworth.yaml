@@ -69,9 +69,15 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 4101 4th Street Trafficway, city: Leavenworth, state: ks, zip: '66048'}
+  address:
+    street: 4101 4th Street Trafficway
+    city: Leavenworth
+    state: ks
+    zip: '66048'
   place: '2039000'
-  geo: {lat: 39.27713, lng: -94.89971}
+  geo:
+    lat: 39.27713
+    lng: -94.89971
   phone: 913-682-2000
   website: https://www.va.gov/eastern-kansas-health-care/locations/dwight-d-eisenhower-department-of-veterans-affairs-medical-center/
   services:
@@ -112,10 +118,13 @@
   - Veteran readiness and employment programs
   - Women Veteran care
   - Wound care and ostomy
-  external_ids: {va: vha_589A6}
+  external_ids:
+    va: vha_589A6
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/leavenworth/first-presbyterian-church
   name: First Presbyterian Church
   categories:
@@ -189,6 +198,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ks/leavenworth/leavenworth-county-dcf
+  name: Leavenworth County DCF
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Leavenworth County
+  address: {street: '515 Limit, Suite 100', city: Leavenworth, state: ks, zip: '66048'}
+  place: '2039000'
+  phone: 913-680-2200
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ks/leavenworth/leavenworth-housing-authority
   name: Leavenworth Housing Authority
   categories:

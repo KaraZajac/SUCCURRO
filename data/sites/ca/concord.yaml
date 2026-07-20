@@ -167,13 +167,26 @@
   name: Concord Vet Center
   categories:
   - vet-center
-  address: {street: '1333 Willow Pass Road, Suite 106', city: Concord, state: ca, zip: '94520'}
+  address:
+    street: 1333 Willow Pass Road, Suite 106
+    city: Concord
+    state: ca
+    zip: '94520'
   place: '0616000'
-  geo: {lat: 37.96961, lng: -122.05185}
+  geo:
+    lat: 37.96961
+    lng: -122.05185
   phone: 925-680-4526
   website: https://www.va.gov/concord-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -190,10 +203,13 @@
   - Veteran connections
   - Whole health
   - Women Veteran care
-  external_ids: {va: vc_0602V}
+  external_ids:
+    va: vc_0602V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/concord/contra-costa-county-concord-library
   name: Contra Costa County Concord Library
   categories:
@@ -217,6 +233,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/concord/contra-costa-county-employment-human-services-de
+  name: Contra Costa County Employment & Human Services Dept., Community Services Bureau
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Contra Costa County
+  address: {street: '1470 Civic Court, Suite 200', city: Concord, state: ca, zip: '94520'}
+  place: '0616000'
+  phone: 925-267-6624
+  website: https://ehsd.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/concord/crossroads-high-school
   name: Crossroads High School
   categories:

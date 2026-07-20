@@ -63,6 +63,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/boston/action-for-boston-community-development-inc-abcd
+  name: Action for Boston Community Development, Inc. (ABCD)
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Suffolk County
+  address: {street: '178 Tremont Street, 4th floor', city: Boston, state: ma, zip: '02111'}
+  place: '2507000'
+  phone: 617-357-6000
+  website: https://bostonabcd.org/service/fuel-assistance-2/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ma/boston/bay-cove-treatment-center
   name: Bay Cove Treatment Center
   categories:
@@ -343,9 +355,15 @@
   categories:
   - va-facility
   description: Regional Benefit Office
-  address: {street: '15 Sudbury Street, JFK Federal Building', city: Boston, state: ma, zip: '02203'}
+  address:
+    street: 15 Sudbury Street, JFK Federal Building
+    city: Boston
+    state: ma
+    zip: '02203'
   place: '2507000'
-  geo: {lat: 42.36139, lng: -71.06056}
+  geo:
+    lat: 42.36139
+    lng: -71.06056
   phone: 800-827-1000
   website: https://www.va.gov/find-locations/facility/vba_301
   services:
@@ -359,21 +377,37 @@
   - UpdatingDirectDepositInformation
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_301}
+  external_ids:
+    va: vba_301
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/boston/boston-vet-center
   name: Boston Vet Center
   categories:
   - vet-center
-  address: {street: '7 Drydock Avenue, Suite 2070', city: Boston, state: ma, zip: '02210'}
+  address:
+    street: 7 Drydock Avenue, Suite 2070
+    city: Boston
+    state: ma
+    zip: '02210'
   place: '2507000'
-  geo: {lat: 42.34459, lng: -71.03614}
+  geo:
+    lat: 42.34459
+    lng: -71.03614
   phone: 857-203-6461
   website: https://www.va.gov/boston-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -387,10 +421,13 @@
   - Telehealth
   - Veteran connections
   - Women Veteran care
-  external_ids: {va: vc_0101V}
+  external_ids:
+    va: vc_0101V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/boston/breaktime
   name: Breaktime
   categories:
@@ -775,13 +812,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 150 South Huntington Avenue, city: Boston, state: ma, zip: '02130'}
+  address:
+    street: 150 South Huntington Avenue
+    city: Boston
+    state: ma
+    zip: '02130'
   place: '2507000'
-  geo: {lat: 42.32715, lng: -71.11106}
+  geo:
+    lat: 42.32715
+    lng: -71.11106
   phone: 617-232-9500
   website: https://www.va.gov/boston-health-care/locations/jamaica-plain-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -831,10 +881,13 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_523}
+  external_ids:
+    va: vha_523
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/boston/jean-yawkey-place
   name: Jean Yawkey Place
   categories:

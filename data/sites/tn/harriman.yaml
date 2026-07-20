@@ -406,13 +406,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2305 North Gateway Avenue, city: Harriman, state: tn, zip: '37748'}
+  address:
+    street: 2305 North Gateway Avenue
+    city: Harriman
+    state: tn
+    zip: '37748'
   place: '4732520'
-  geo: {lat: 35.89344, lng: -84.62242}
+  geo:
+    lat: 35.89344
+    lng: -84.62242
   phone: 865-882-2010
   website: https://www.va.gov/tennessee-valley-health-care/locations/roane-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -422,10 +435,13 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GL}
+  external_ids:
+    va: vha_626GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tn/harriman/spirit-of-compassion-ministry
   name: Spirit Of Compassion Ministry
   categories:

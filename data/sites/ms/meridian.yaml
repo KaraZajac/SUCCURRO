@@ -276,20 +276,36 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 2103 13th Street, city: Meridian, state: ms, zip: '39301'}
+  address:
+    street: 2103 13th Street
+    city: Meridian
+    state: ms
+    zip: '39301'
   place: '2846640'
-  geo: {lat: 32.36986, lng: -88.69958}
+  geo:
+    lat: 32.36986
+    lng: -88.69958
   phone: 601-482-3275
   website: https://www.va.gov/jackson-health-care/locations/meridian-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Mental health care
   - Primary care
-  external_ids: {va: vha_586GB}
+  external_ids:
+    va: vha_586GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ms/meridian/meridian-village-apartments
   name: Meridian Village Apartments
   categories:
@@ -356,6 +372,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ms/meridian/multi-county-community-service-agency-2
+  name: Multi-County Community Service Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Clarke, Lauderdale, Newton, Scott Counties
+  address: {street: 2906 St. Paul Street (P. O. Box 905), city: Meridian, state: ms, zip: '39302'}
+  place: '2846640'
+  phone: 601-776-3461
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ms/meridian/northeast-unit-boys-girls-club-of-east-mississip
   name: Northeast Unit Boys & Girls Club Of East Mississippi
   categories:

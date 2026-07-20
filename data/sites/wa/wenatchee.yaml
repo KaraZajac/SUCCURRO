@@ -79,6 +79,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/wenatchee/chelan-douglas-cac
+  name: Chelan-Douglas CAC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Chelan, Douglas Counties
+  address: {street: 620 Lewis St., city: Wenatchee, state: wa, zip: '98801'}
+  place: '5377105'
+  phone: 509-662-6156
+  website: http://www.cdcac.org
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/wenatchee/columbia-counseling-607-llc
   name: Columbia Counseling 607 LLC
   categories:
@@ -411,22 +423,38 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 2530 Chester Kimm Road, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 2530 Chester Kimm Road
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   place: '5377105'
-  geo: {lat: 47.46324, lng: -120.33407}
+  geo:
+    lat: 47.46324
+    lng: -120.33407
   phone: 833-500-1490
   website: https://www.va.gov/spokane-health-care/locations/elwood-bud-link-department-of-veterans-affairs-outpatient-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Optometry
   - Physical therapy, occupational therapy and kinesiotherapy
   - Primary care
-  external_ids: {va: vha_668GA}
+  external_ids:
+    va: vha_668GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/ha-of-chelan-co-and-the-city-of-wenatchee
   name: Ha Of Chelan Co And The City Of Wenatchee
   categories:

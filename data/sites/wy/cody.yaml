@@ -43,13 +43,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1432 Rumsey Avenue, city: Cody, state: wy, zip: '82414'}
+  address:
+    street: 1432 Rumsey Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
   place: '5615760'
-  geo: {lat: 44.52715, lng: -109.05888}
+  geo:
+    lat: 44.52715
+    lng: -109.05888
   phone: 307-587-4015
   website: https://www.va.gov/sheridan-health-care/locations/cody-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -57,10 +70,13 @@
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_666GD}
+  external_ids:
+    va: vha_666GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/cody/eastside-elementary
   name: Eastside Elementary
   categories:
@@ -104,6 +120,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wy/cody/park-county-department-of-family-services
+  name: Park County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Park County
+  address: {street: '1501 Stampede Ave., Unit 9009', city: Cody, state: wy, zip: '82414'}
+  place: '5615760'
+  phone: 307-587-6246
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wy/cody/paul-stock-aquatic-and-recreation-center
   name: Paul Stock Aquatic And Recreation Center
   categories:

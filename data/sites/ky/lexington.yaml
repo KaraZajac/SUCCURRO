@@ -537,6 +537,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ky/lexington/community-action-council-for-lexington-fayette-b
+  name: Community Action Council for Lexington-Fayette, Bourbon, Harrison and Nicholas Counties
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Fayette County
+  address: {street: 710 West High Street, city: Lexington, state: ky, zip: '40508'}
+  phone: 859-233-4600
+  website: http://www.commaction.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ky/lexington/consolidated-baptist-church
   name: Consolidated Baptist Church
   categories:
@@ -834,12 +845,25 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 2250 Leestown Road, city: Lexington, state: ky, zip: '40511'}
-  geo: {lat: 38.07169, lng: -84.54145}
+  address:
+    street: 2250 Leestown Road
+    city: Lexington
+    state: ky
+    zip: '40511'
+  geo:
+    lat: 38.07169
+    lng: -84.54145
   phone: 859-233-4511
   website: https://www.va.gov/lexington-health-care/locations/franklin-r-sousley-campus/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -858,10 +882,13 @@
   - Prosthetics and rehabilitation
   - Rehabilitation and extended care
   - Women Veteran care
-  external_ids: {va: vha_596}
+  external_ids:
+    va: vha_596
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/frederick-douglass-high-school
   name: Frederick Douglass High School
   categories:
@@ -1476,14 +1503,23 @@
   name: Lexington Mobile Vet Center
   categories: &id002
   - vet-center
-  address: {street: '1500 Leestown Road, Suite 104', city: Lexington, state: ky, zip: '40511'}
-  geo: {lat: 38.06608, lng: -84.52415}
+  address:
+    street: 1500 Leestown Road, Suite 104
+    city: Lexington
+    state: ky
+    zip: '40511'
+  geo:
+    lat: 38.06608
+    lng: -84.52415
   phone: 859-253-0717
   website: https://www.va.gov/lexington-vet-center/locations/#lexington-mobile-vet-center
-  external_ids: {va: vc_0806MVC}
+  external_ids:
+    va: vc_0806MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/lexington-traditional-magnet-healthfirst-bluegra
   name: Lexington Traditional Magnet HealthFirst Bluegrass School Clinic
   categories:
@@ -1509,23 +1545,45 @@
   name: Lexington VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 2250 Leestown Road, city: Lexington, state: ky, zip: '40511'}
-  geo: {lat: 38.07452, lng: -84.54278}
+  address:
+    street: 2250 Leestown Road
+    city: Lexington
+    state: ky
+    zip: '40511'
+  geo:
+    lat: 38.07452
+    lng: -84.54278
   phone: 859-233-4511
   website: https://www.va.gov/find-locations/facility/vha_596QB
-  external_ids: {va: vha_596QB}
+  external_ids:
+    va: vha_596QB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/lexington-vet-center
   name: Lexington Vet Center
   categories: *id002
-  address: {street: '1500 Leestown Road, Suite 104', city: Lexington, state: ky, zip: '40511'}
-  geo: {lat: 38.06608, lng: -84.52415}
+  address:
+    street: 1500 Leestown Road, Suite 104
+    city: Lexington
+    state: ky
+    zip: '40511'
+  geo:
+    lat: 38.06608
+    lng: -84.52415
   phone: 859-253-0717
   website: https://www.va.gov/lexington-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1542,10 +1600,13 @@
   - Telehealth
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0203V}
+  external_ids:
+    va: vc_0203V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/lifepath-behavioral-clinic
   name: LifePath Behavioral Clinic
   categories:
@@ -2465,8 +2526,14 @@
   name: Troy Bowling Campus
   categories: *id001
   description: VA Medical Center (VAMC)
-  address: {street: 1101 Veterans Drive, city: Lexington, state: ky, zip: '40502'}
-  geo: {lat: 38.02929, lng: -84.50668}
+  address:
+    street: 1101 Veterans Drive
+    city: Lexington
+    state: ky
+    zip: '40502'
+  geo:
+    lat: 38.02929
+    lng: -84.50668
   phone: 859-233-4511
   website: https://www.va.gov/lexington-health-care/locations/troy-bowling-campus/
   services:
@@ -2493,10 +2560,13 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids: {va: vha_596A4}
+  external_ids:
+    va: vha_596A4
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/university-of-kentucky
   name: University of Kentucky
   categories:
@@ -2523,8 +2593,14 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '164 Opportunity Way, Building C, Room 117', city: Lexington, state: ky, zip: '40511'}
-  geo: {lat: 38.0675, lng: -84.53726}
+  address:
+    street: 164 Opportunity Way, Building C, Room 117
+    city: Lexington
+    state: ky
+    zip: '40511'
+  geo:
+    lat: 38.0675
+    lng: -84.53726
   phone: 859-246-6678
   website: https://www.va.gov/find-locations/facility/vba_327i
   services:
@@ -2532,10 +2608,13 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_327i}
+  external_ids:
+    va: vba_327i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/lexington/victory-pont-apartments
   name: Victory Pont Apartments
   categories:

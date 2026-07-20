@@ -649,13 +649,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1300 Rancho del Oro Drive, city: Oceanside, state: ca, zip: '92056'}
+  address:
+    street: 1300 Rancho del Oro Drive
+    city: Oceanside
+    state: ca
+    zip: '92056'
   place: '0653322'
-  geo: {lat: 33.2074, lng: -117.31085}
+  geo:
+    lat: 33.2074
+    lng: -117.31085
   phone: 760-643-2000
   website: https://www.va.gov/san-diego-health-care/locations/oceanside-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Dental/oral surgery
@@ -675,10 +688,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_664GB}
+  external_ids:
+    va: vha_664GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/oceanside/old-grove
   name: Old Grove
   categories:
@@ -1184,16 +1200,25 @@
   categories:
   - va-facility
   description: VetSuccess On Campus
-  address: {street: '1 Barnard, T100', city: Oceanside, state: ca, zip: '92056'}
+  address:
+    street: 1 Barnard, T100
+    city: Oceanside
+    state: ca
+    zip: '92056'
   place: '0653322'
-  geo: {lat: 33.19004, lng: -117.30216}
+  geo:
+    lat: 33.19004
+    lng: -117.30216
   phone: 760-757-2121, ext. 6332
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_377n}
+  external_ids:
+    va: vba_377n
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

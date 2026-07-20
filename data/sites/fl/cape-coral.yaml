@@ -301,15 +301,33 @@
   - va-facility
   - health
   description: Health Care Center (HCC)
-  address: {street: 2489 Diplomat Parkway East, city: Cape Coral, state: fl, zip: '33909'}
+  address:
+    street: 2489 Diplomat Parkway East
+    city: Cape Coral
+    state: fl
+    zip: '33909'
   place: '1210275'
-  geo: {lat: 26.68531, lng: -81.92001}
+  geo:
+    lat: 26.68531
+    lng: -81.92001
   phone: 239-652-1800
   website: https://www.va.gov/bay-pines-health-care/locations/lee-county-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:00', close: '16:30'}
-  - {days: [wed], open: '07:00', close: '17:30'}
-  - {days: [sat], open: '07:30', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 07:00
+    close: '17:30'
+  - days:
+    - sat
+    open: 07:30
+    close: '15:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -341,10 +359,13 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_516BZ}
+  external_ids:
+    va: vha_516BZ
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/cape-coral/lime-counseling
   name: Lime Counseling
   categories:

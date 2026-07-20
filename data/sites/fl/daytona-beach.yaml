@@ -184,13 +184,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1776 North Williamson Boulevard, city: Daytona Beach, state: fl, zip: '32117'}
+  address:
+    street: 1776 North Williamson Boulevard
+    city: Daytona Beach
+    state: fl
+    zip: '32117'
   place: '1216525'
-  geo: {lat: 29.2297, lng: -81.09994}
+  geo:
+    lat: 29.2297
+    lng: -81.09994
   phone: 386-323-7500
   website: https://www.va.gov/orlando-health-care/locations/daytona-beach-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Advice nurse
@@ -226,21 +239,37 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_675GB}
+  external_ids:
+    va: vha_675GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/daytona-beach/daytona-beach-vet-center
   name: Daytona Beach Vet Center
   categories:
   - vet-center
-  address: {street: '1620 Mason Avenue, Suite C', city: Daytona Beach, state: fl, zip: '32117'}
+  address:
+    street: 1620 Mason Avenue, Suite C
+    city: Daytona Beach
+    state: fl
+    zip: '32117'
   place: '1216525'
-  geo: {lat: 29.2122, lng: -81.06529}
+  geo:
+    lat: 29.2122
+    lng: -81.06529
   phone: 386-366-6600
   website: https://www.va.gov/daytona-beach-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -252,10 +281,13 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids: {va: vc_0341V}
+  external_ids:
+    va: vc_0341V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/daytona-beach/fact-team
   name: FACT Team
   categories:
@@ -961,6 +993,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/daytona-beach/volusia-county-community-assistance-division
+  name: Volusia County Community Assistance Division
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Volusia County
+  address: {street: 1845 Holsonback Dr., city: Daytona Beach, state: fl, zip: '32117'}
+  place: '1216525'
+  phone: 386-239-7830
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/daytona-beach/westside-elementary-school
   name: Westside Elementary School
   categories:
@@ -988,19 +1032,35 @@
   name: Westside Pavilion VA Clinic
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address: {street: 1821 Business Park Boulevard, city: Daytona Beach, state: fl, zip: '32114'}
+  address:
+    street: 1821 Business Park Boulevard
+    city: Daytona Beach
+    state: fl
+    zip: '32114'
   place: '1216525'
-  geo: {lat: 29.20365, lng: -81.07549}
+  geo:
+    lat: 29.20365
+    lng: -81.07549
   phone: 386-366-6700
   website: https://www.va.gov/orlando-health-care/locations/westside-pavilion-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - MentalHealth
-  external_ids: {va: vha_675QC}
+  external_ids:
+    va: vha_675QC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/daytona-beach/william-v-chappell-jr-va-satellite
   name: William V Chappell Jr VA Satellite
   categories:

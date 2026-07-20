@@ -82,22 +82,46 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 116 Yates Street, city: Fort Yates, state: nd, zip: '58538'}
+  address:
+    street: 116 Yates Street
+    city: Fort Yates
+    state: nd
+    zip: '58538'
   place: '3827860'
-  geo: {lat: 46.0885, lng: -100.62814}
+  geo:
+    lat: 46.0885
+    lng: -100.62814
   phone: 701-854-9902
   website: https://www.va.gov/black-hills-health-care/locations/fort-yates-va-clinic/
   hours:
-  - {days: [tue, thu], open: '08:30', close: '15:00'}
+  - days:
+    - tue
+    - thu
+    open: 08:30
+    close: '15:00'
   services:
   - Homeless Veteran care
   - Mental health care
   - PTSD care
   - Suicide prevention
-  external_ids: {va: vha_568QA}
+  external_ids:
+    va: vha_568QA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: nd/fort-yates/sioux-county-social-services-board
+  name: Sioux County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sioux County
+  address: {street: 105 N. Agency Ave. (P. O Box B), city: Fort Yates, state: nd, zip: '58538'}
+  place: '3827860'
+  phone: 701-854-3821
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nd/fort-yates/st-bernard-mission-school
   name: St Bernard Mission School
   categories:

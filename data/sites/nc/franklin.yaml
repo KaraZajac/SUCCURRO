@@ -47,13 +47,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 647 Wayah Street, city: Franklin, state: nc, zip: '28734'}
+  address:
+    street: 647 Wayah Street
+    city: Franklin
+    state: nc
+    zip: '28734'
   place: '3724640'
-  geo: {lat: 35.17555, lng: -83.37474}
+  geo:
+    lat: 35.17555
+    lng: -83.37474
   phone: 828-369-1781
   website: https://www.va.gov/asheville-health-care/locations/franklin-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -65,10 +78,13 @@
   - Primary care
   - Social work
   - Telehealth
-  external_ids: {va: vha_637GA}
+  external_ids:
+    va: vha_637GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/franklin/hazelwood-healthcare-pllc
   name: Hazelwood Healthcare PLLC
   categories:
@@ -89,6 +105,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/franklin/macon-county-department-of-social-services
+  name: Macon County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Macon County
+  address: {street: 1832 Lakeside Government Complex, city: Franklin, state: nc, zip: '28734'}
+  place: '3724640'
+  phone: 828-349-2124
+  website: https://maconnc.org/dss-economic.html
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/franklin/macon-county-public-library
   name: Macon County Public Library
   categories:

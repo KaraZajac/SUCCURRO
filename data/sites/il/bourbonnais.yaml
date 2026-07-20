@@ -48,14 +48,29 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 581 William Latham Drive, city: Bourbonnais, state: il, zip: '60914'}
+  address:
+    street: 581 William Latham Drive
+    city: Bourbonnais
+    state: il
+    zip: '60914'
   place: '1707471'
-  geo: {lat: 41.16267, lng: -87.87961}
+  geo:
+    lat: 41.16267
+    lng: -87.87961
   phone: 815-932-3823
   website: https://www.va.gov/hines-health-care/locations/kankakee-county-va-clinic/
   hours:
-  - {days: [mon, wed, fri], open: '07:30', close: '16:30'}
-  - {days: [tue, thu], open: '07:30', close: '18:00'}
+  - days:
+    - mon
+    - wed
+    - fri
+    open: 07:30
+    close: '16:30'
+  - days:
+    - tue
+    - thu
+    open: 07:30
+    close: '18:00'
   services:
   - Audiology and speech
   - Dermatology
@@ -64,10 +79,13 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_578GC}
+  external_ids:
+    va: vha_578GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/bourbonnais/lasting-impressions
   name: Lasting Impressions
   categories:

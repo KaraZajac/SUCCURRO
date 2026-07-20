@@ -932,15 +932,33 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5682 Bee Ridge Road, city: Sarasota, state: fl, zip: '34233'}
+  address:
+    street: 5682 Bee Ridge Road
+    city: Sarasota
+    state: fl
+    zip: '34233'
   place: '1264175'
-  geo: {lat: 27.29877, lng: -82.45631}
+  geo:
+    lat: 27.29877
+    lng: -82.45631
   phone: 941-371-3349
   website: https://www.va.gov/bay-pines-health-care/locations/sarasota-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '07:00', close: '16:30'}
-  - {days: [wed], open: '07:00', close: '18:00'}
-  - {days: [sat], open: '07:00', close: '15:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 07:00
+    close: '16:30'
+  - days:
+    - wed
+    open: 07:00
+    close: '18:00'
+  - days:
+    - sat
+    open: 07:00
+    close: '15:30'
   services:
   - Audiology and speech
   - Dermatology
@@ -953,21 +971,37 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_516GA}
+  external_ids:
+    va: vha_516GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/sarasota/sarasota-vet-center
   name: Sarasota Vet Center
   categories:
   - vet-center
-  address: {street: '4801 Swift Road, Suite A', city: Sarasota, state: fl, zip: '34231'}
+  address:
+    street: 4801 Swift Road, Suite A
+    city: Sarasota
+    state: fl
+    zip: '34231'
   place: '1264175'
-  geo: {lat: 27.28347, lng: -82.51383}
+  geo:
+    lat: 27.28347
+    lng: -82.51383
   phone: 941-927-8285
   website: https://www.va.gov/sarasota-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -978,26 +1012,38 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0320V}
+  external_ids:
+    va: vc_0320V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/sarasota/sarasota-veteran-readiness-and-employment-office
   name: Sarasota Veteran Readiness and Employment Office
   categories:
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '2055 Wood Street, Suite 207', city: Sarasota, state: fl, zip: '34237'}
+  address:
+    street: 2055 Wood Street, Suite 207
+    city: Sarasota
+    state: fl
+    zip: '34237'
   place: '1264175'
-  geo: {lat: 27.32871, lng: -82.52889}
+  geo:
+    lat: 27.32871
+    lng: -82.52889
   phone: 800-827-1000
   services:
   - EducationAndCareerCounseling
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_317h}
+  external_ids:
+    va: vba_317h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/sarasota/selby-library
   name: Selby Library
   categories:
@@ -1061,6 +1107,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/sarasota/step-up-suncoast
+  name: Step Up Suncoast
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Manatee County
+  address: {street: 6428 Parkland Drive, city: Sarasota, state: fl, zip: '34243'}
+  place: '1264175'
+  phone: 941-827-0188
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
+- id: fl/sarasota/the-salvation-army
+  name: The Salvation Army
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sarasota County
+  address: {street: 1701 S. Turttle Ave., city: Sarasota, state: fl, zip: '34239'}
+  place: '1264175'
+  phone: 941-364-8845
+  website: https://floridaliheap.com/relief_program
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: fl/sarasota/triad
   name: Triad
   categories:

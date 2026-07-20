@@ -1030,6 +1030,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/sacramento/community-resource-project-inc
+  name: Community Resource Project Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sacramento County
+  address: {street: '250 Harris Ave., Suite 3', city: Sacramento, state: ca, zip: '95838'}
+  place: '0664000'
+  phone: 916-567-5200
+  website: http://www.communityresourceproject.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ca/sacramento/comunity-health-centers-of-america-sacramento
   name: Comunity Health Centers of America Sacramento
   categories:
@@ -4529,13 +4541,26 @@
   name: Sacramento Vet Center
   categories:
   - vet-center
-  address: {street: '1111 Howe Avenue, Suite 390', city: Sacramento, state: ca, zip: '95825'}
+  address:
+    street: 1111 Howe Avenue, Suite 390
+    city: Sacramento
+    state: ca
+    zip: '95825'
   place: '0664000'
-  geo: {lat: 38.58618, lng: -121.41612}
+  geo:
+    lat: 38.58618
+    lng: -121.41612
   phone: 916-566-7430
   website: https://www.va.gov/sacramento-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -4548,10 +4573,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0638V}
+  external_ids:
+    va: vc_0638V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/sacramento/sam-brannan-middle
   name: Sam Brannan Middle
   categories:

@@ -176,13 +176,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1680 Hartwick Pines Road, city: Grayling, state: mi, zip: '49738'}
+  address:
+    street: 1680 Hartwick Pines Road
+    city: Grayling
+    state: mi
+    zip: '49738'
   place: '2634640'
-  geo: {lat: 44.70947, lng: -84.7099}
+  geo:
+    lat: 44.70947
+    lng: -84.7099
   phone: 989-497-2500
   website: https://www.va.gov/saginaw-health-care/locations/grayling-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -193,10 +206,13 @@
   - Pharmacy
   - Primary care
   - Telehealth
-  external_ids: {va: vha_655GI}
+  external_ids:
+    va: vha_655GI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/grayling/northern-lakes-community-mh-crawford-county-offi
   name: Northern Lakes Community MH Crawford County Office/Grayling
   categories:

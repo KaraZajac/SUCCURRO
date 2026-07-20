@@ -23,13 +23,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1406 Donelson Parkway, city: Dover, state: tn, zip: '37058'}
+  address:
+    street: 1406 Donelson Parkway
+    city: Dover
+    state: tn
+    zip: '37058'
   place: '4721400'
-  geo: {lat: 36.48072, lng: -87.88593}
+  geo:
+    lat: 36.48072
+    lng: -87.88593
   phone: 931-232-1300
   website: https://www.va.gov/tennessee-valley-health-care/locations/dover-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:00', close: '17:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:00
+    close: '17:30'
   services:
   - Dermatology
   - Laboratory and pathology
@@ -39,10 +52,25 @@
   - Social work
   - Suicide prevention
   - Telehealth
-  external_ids: {va: vha_626GA}
+  external_ids:
+    va: vha_626GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: tn/dover/highland-rim-economic-corporation-stewart
+  name: Highland Rim Economic Corporation - Stewart
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Stewart County
+  address: {street: Stewart County Courthouse (P. O. Box 704), city: Dover, state: tn, zip: '37058'}
+  place: '4721400'
+  phone: 931-232-5184
+  website: https://www.highlandrim.org/services/energy-assistance
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: tn/dover/stewart-county-community-health
   name: STEWART COUNTY COMMUNITY HEALTH
   categories:

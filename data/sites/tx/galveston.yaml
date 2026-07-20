@@ -131,13 +131,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 500 Seawall Boulevard, city: Galveston, state: tx, zip: '77550'}
+  address:
+    street: 500 Seawall Boulevard
+    city: Galveston
+    state: tx
+    zip: '77550'
   place: '4828068'
-  geo: {lat: 29.30617, lng: -94.77144}
+  geo:
+    lat: 29.30617
+    lng: -94.77144
   phone: 409-761-3200
   website: https://www.va.gov/houston-health-care/locations/galveston-county-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Internal medicine
   - Laboratory and pathology
@@ -153,10 +166,13 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids: {va: vha_580GC}
+  external_ids:
+    va: vha_580GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/galveston/galveston-isd-burnet-stream-magnet
   name: Galveston ISD (Burnet STREAM Magnet)
   categories:

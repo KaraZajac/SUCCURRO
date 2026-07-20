@@ -915,6 +915,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/norfolk/norfolk-department-of-human-services
+  name: Norfolk Department of Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Norfolk City County
+  address: {street: 'Franklin Building, 741 Monticello Avenue', city: Norfolk, state: va, zip: 23510-1506}
+  place: '5157000'
+  phone: 757-664-6000
+  email: http://www.norfolk.gov/Index.aspx?NID=295
+  website: https://www.norfolk.gov/295/Human-Services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/norfolk/norfolk-re-ed-school-secep-oakwood
   name: Norfolk Re-Ed School - Secep - Oakwood
   categories:
@@ -1560,24 +1573,39 @@
   categories: &id001
   - va-facility
   description: Veteran Readiness and Employment Office
-  address: {street: '2551 Eltham Ave, Suite E', city: Norfolk, state: va, zip: '23513'}
+  address:
+    street: 2551 Eltham Ave, Suite E
+    city: Norfolk
+    state: va
+    zip: '23513'
   place: '5157000'
-  geo: {lat: 36.87799, lng: -76.22288}
+  geo:
+    lat: 36.87799
+    lng: -76.22288
   phone: 757-858-6154, ext. 30158
   website: https://www.va.gov/find-locations/facility/vba_314b
   services:
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314b}
+  external_ids:
+    va: vba_314b
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norfolk/vetsuccess-on-campus-at-norfolk-state-university
   name: VetSuccess on Campus at Norfolk State University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '700 Park Ave., Room 110A', city: Norfolk, state: va, zip: '23504'}
+  address:
+    street: 700 Park Ave., Room 110A
+    city: Norfolk
+    state: va
+    zip: '23504'
   place: '5157000'
-  geo: {lat: 36.84746, lng: -76.25874}
+  geo:
+    lat: 36.84746
+    lng: -76.25874
   phone: 757-858-6154, ext. 30198
   website: https://www.va.gov/find-locations/facility/vba_314c
   services:
@@ -1585,34 +1613,52 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314c}
+  external_ids:
+    va: vba_314c
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norfolk/vetsuccess-on-campus-at-old-dominion-university
   name: VetSuccess on Campus at Old Dominion University
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: 1106 Monarch Hall, city: Norfolk, state: va, zip: '23529'}
+  address:
+    street: 1106 Monarch Hall
+    city: Norfolk
+    state: va
+    zip: '23529'
   place: '5157000'
-  geo: {lat: 36.88575, lng: -76.30255}
+  geo:
+    lat: 36.88575
+    lng: -76.30255
   phone: 757-858-6154, ext. 30198
   services:
   - ApplyingForBenefits
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314h}
+  external_ids:
+    va: vba_314h
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norfolk/vetsuccess-on-campus-at-tidewater-community-coll
   name: VetSuccess on Campus at Tidewater Community College Norfolk Campus
   categories: *id001
   description: VetSuccess On Campus
-  address: {street: '315 Granby Street, Andrews Building, Room 1104', city: Norfolk, state: va, zip: '23510'}
+  address:
+    street: 315 Granby Street, Andrews Building, Room 1104
+    city: Norfolk
+    state: va
+    zip: '23510'
   place: '5157000'
-  geo: {lat: 36.85067, lng: -76.29054}
+  geo:
+    lat: 36.85067
+    lng: -76.29054
   phone: 757-858-6154, ext. 30191
   website: https://www.va.gov/find-locations/facility/vba_314ab
   services:
@@ -1620,10 +1666,13 @@
   - EducationAndCareerCounseling
   - EducationClaimAssistance
   - VocationalRehabilitationAndEmploymentAssistance
-  external_ids: {va: vba_314ab}
+  external_ids:
+    va: vba_314ab
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norfolk/wellington-oaks-center
   name: Wellington Oaks Center
   categories:

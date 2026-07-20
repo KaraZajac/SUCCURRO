@@ -88,13 +88,26 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address: {street: 8495 Crater Lake Highway, city: White City, state: or, zip: '97503'}
+  address:
+    street: 8495 Crater Lake Highway
+    city: White City
+    state: or
+    zip: '97503'
   place: '4181450'
-  geo: {lat: 42.43995, lng: -122.8363}
+  geo:
+    lat: 42.43995
+    lng: -122.8363
   phone: 541-826-2111
   website: https://www.va.gov/southern-oregon-health-care/locations/white-city-va-medical-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -128,10 +141,13 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids: {va: vha_692}
+  external_ids:
+    va: vha_692
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/white-city/white-mountain-health-center
   name: White Mountain Health Center
   categories:

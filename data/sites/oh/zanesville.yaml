@@ -592,6 +592,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/zanesville/muskingum-economic-opportunity-action-group
+  name: Muskingum Economic Opportunity Action Group
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Muskingum County
+  address: {street: 828 Lee Street, city: Zanesville, state: oh, zip: '43701'}
+  place: '3988084'
+  phone: 740-453-5703
+  email: HEAP_MEOAG@midohio.twcbc.com
+  website: https://www.meoag.org/programs.php
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/zanesville/muskingum-valley-health-center-administration
   name: Muskingum Valley Health Center - Administration
   categories:
@@ -893,13 +906,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 2800 Maple Avenue, city: Zanesville, state: oh, zip: '43701'}
+  address:
+    street: 2800 Maple Avenue
+    city: Zanesville
+    state: oh
+    zip: '43701'
   place: '3988084'
-  geo: {lat: 39.97538, lng: -82.00988}
+  geo:
+    lat: 39.97538
+    lng: -82.00988
   phone: 740-453-7725
   website: https://www.va.gov/central-ohio-health-care/locations/zanesville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -910,7 +936,10 @@
   - Primary care
   - Social work
   - Suicide prevention
-  external_ids: {va: vha_757GA}
+  external_ids:
+    va: vha_757GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -33,6 +33,17 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ne/sidney/nebraska-department-of-health-and-human-services
+  name: Nebraska Department of Health and Human Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Cheyenne, Deuel Counties
+  address: {street: 1000 10th St, city: Sidney, state: ne, zip: '69162'}
+  place: '3145295'
+  phone: 308-254-6900
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ne/sidney/sidney-high-school
   name: Sidney High School
   categories:
@@ -61,13 +72,25 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1116 10th Avenue, city: Sidney, state: ne, zip: '69162'}
+  address:
+    street: 1116 10th Avenue
+    city: Sidney
+    state: ne
+    zip: '69162'
   place: '3145295'
-  geo: {lat: 41.14246, lng: -102.97669}
+  geo:
+    lat: 41.14246
+    lng: -102.97669
   phone: 308-254-6085
   website: https://www.va.gov/cheyenne-health-care/locations/sidney-va-clinic/
   hours:
-  - {days: [mon, tue, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -78,7 +101,10 @@
   - Pharmacy
   - Primary care
   - Social work
-  external_ids: {va: vha_442GB}
+  external_ids:
+    va: vha_442GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -219,6 +219,17 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/wytheville/wythe-county-department-of-social-services
+  name: Wythe County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Wythe County
+  address: {street: '290 S. Sixth St., Suite 200', city: Wytheville, state: va, zip: '24382'}
+  place: '5188000'
+  phone: 276-228-5493
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: va/wytheville/wythe-youth-and-family-services
   name: Wythe Youth and Family Services
   categories:
@@ -277,20 +288,36 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 165 Peppers Ferry Road, city: Wytheville, state: va, zip: '24382'}
+  address:
+    street: 165 Peppers Ferry Road
+    city: Wytheville
+    state: va
+    zip: '24382'
   place: '5188000'
-  geo: {lat: 36.95481, lng: -81.07778}
+  geo:
+    lat: 36.95481
+    lng: -81.07778
   phone: 276-223-5400
   website: https://www.va.gov/salem-health-care/locations/wytheville-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
   - Women Veteran care
-  external_ids: {va: vha_658GE}
+  external_ids:
+    va: vha_658GE
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

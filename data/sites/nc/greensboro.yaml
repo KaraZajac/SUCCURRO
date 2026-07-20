@@ -666,15 +666,24 @@
   name: Greensboro, NC Mobile Vet Center
   categories:
   - vet-center
-  address: {street: '4259 Piedmont Parkway, Suite 108', city: Greensboro, state: nc, zip: '27410'}
+  address:
+    street: 4259 Piedmont Parkway, Suite 108
+    city: Greensboro
+    state: nc
+    zip: '27410'
   place: '3728000'
-  geo: {lat: 36.0557, lng: -79.94398}
+  geo:
+    lat: 36.0557
+    lng: -79.94398
   phone: 336-323-2660
   website: https://www.va.gov/greensboro-vet-center/locations/#greensboro-nc-mobile-vet-cente
-  external_ids: {va: vc_0861MVC}
+  external_ids:
+    va: vc_0861MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greensboro/greensboro-parks-and-rec-woodmere-park
   name: Greensboro Parks And Rec – Woodmere Park
   categories:
@@ -719,6 +728,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/greensboro/guilford-county-department-of-social-services
+  name: Guilford County Department of Social Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Guilford County
+  address: {street: 1203 Maple Street (P. O. Box 3388), city: Greensboro, state: nc, zip: '27405'}
+  place: '3728000'
+  phone: 336-641-3000
+  website: https://www.guilfordcountync.gov/our-county/human-services/social-services
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/greensboro/housing-authority-of-the-city-of-greensboro
   name: Housing Authority Of The City Of Greensboro
   categories:

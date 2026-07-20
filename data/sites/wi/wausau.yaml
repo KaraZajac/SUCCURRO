@@ -224,6 +224,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: wi/wausau/marathon-county-energy-services-inc
+  name: Marathon County / Energy Services Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Marathon County
+  address: {street: '401 N. 5th St., Suite 443', city: Wausau, state: wi, zip: '54401'}
+  place: '5584475'
+  phone: 715-842-3111
+  website: http://homeenergyplus.wi.gov
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wi/wausau/marathon-county-park
   name: Marathon County Park
   categories:
@@ -346,14 +358,30 @@
   name: Wausau Vet Center Outstation
   categories:
   - vet-center
-  address: {street: '605 South 24th Avenue, Suite 24', city: Wausau, state: wi, zip: '54401'}
+  address:
+    street: 605 South 24th Avenue, Suite 24
+    city: Wausau
+    state: wi
+    zip: '54401'
   place: '5584475'
-  geo: {lat: 44.95665, lng: -89.66423}
+  geo:
+    lat: 44.95665
+    lng: -89.66423
   phone: 715-842-1724
   website: https://www.va.gov/la-crosse-vet-center/locations/#wausau-vet-center-outstation
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vc_4421OS}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vc_4421OS
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -64,6 +64,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: sc/rock-hill/carolina-community-actions-inc
+  name: Carolina Community Actions Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving York County
+  address: {street: '138 South Oakland Ave, (P. O. Box 933)', city: Rock Hill, state: sc, zip: '29731'}
+  place: '4561405'
+  phone: 803-329-5195
+  website: https://www.carolinacommunityactions.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: sc/rock-hill/catawba-community-mental-health-center-york-coun
   name: Catawba Community Mental Health Center York County Adult Services
   categories:
@@ -563,23 +575,39 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 459 Lakeshore Parkway, city: Rock Hill, state: sc, zip: '29730'}
+  address:
+    street: 459 Lakeshore Parkway
+    city: Rock Hill
+    state: sc
+    zip: '29730'
   place: '4561405'
-  geo: {lat: 34.93059, lng: -80.99721}
+  geo:
+    lat: 34.93059
+    lng: -80.99721
   phone: 803-366-4848
   website: https://www.va.gov/columbia-south-carolina-health-care/locations/rock-hill-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Primary care
-  external_ids: {va: vha_544GC}
+  external_ids:
+    va: vha_544GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sc/rock-hill/st-john-s-united-methodist-church-blessing-box
   name: St. John's United Methodist Church Blessing Box
   categories:

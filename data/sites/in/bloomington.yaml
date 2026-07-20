@@ -105,13 +105,26 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 3098 North Lintel Drive, city: Bloomington, state: in, zip: '47403'}
+  address:
+    street: 3098 North Lintel Drive
+    city: Bloomington
+    state: in
+    zip: '47403'
   place: '1805860'
-  geo: {lat: 39.19597, lng: -86.57461}
+  geo:
+    lat: 39.19597
+    lng: -86.57461
   phone: 812-336-5723
   website: https://www.va.gov/indiana-health-care/locations/bloomington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -128,10 +141,13 @@
   - Social work
   - Telehealth
   - Wheelchair and mobility
-  external_ids: {va: vha_583GB}
+  external_ids:
+    va: vha_583GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/bloomington/bloomington-va-outpatient-clinic
   name: Bloomington VA Outpatient Clinic
   categories:
@@ -700,6 +716,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/bloomington/south-central-community-action-program
+  name: South Central Community Action Program
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Monroe County
+  address: {street: 1500 W. 15th St., city: Bloomington, state: in, zip: '47404'}
+  place: '1805860'
+  phone: 812-339-3447
+  email: eap@insccap.org
+  website: http://www.insccap.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: in/bloomington/southcrest-mobile-manor
   name: Southcrest Mobile Manor
   categories:

@@ -191,28 +191,50 @@
   name: Grants Pass Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: 135 N.E. Steiger Street, city: Grants Pass, state: or, zip: '97526'}
+  address:
+    street: 135 N.E. Steiger Street
+    city: Grants Pass
+    state: or
+    zip: '97526'
   place: '4130550'
-  geo: {lat: 42.45253, lng: -123.32097}
+  geo:
+    lat: 42.45253
+    lng: -123.32097
   phone: 541-479-6912
   website: https://www.va.gov/grants-pass-vet-center/locations/#grants-pass-mobile-vet-center
-  external_ids: {va: vc_0871MVC}
+  external_ids:
+    va: vc_0871MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/grants-pass/grants-pass-va-clinic
   name: Grants Pass VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1877 Williams Highway, city: Grants Pass, state: or, zip: '97527'}
+  address:
+    street: 1877 Williams Highway
+    city: Grants Pass
+    state: or
+    zip: '97527'
   place: '4130550'
-  geo: {lat: 42.41656, lng: -123.33771}
+  geo:
+    lat: 42.41656
+    lng: -123.33771
   phone: 541-955-5551
   website: https://www.va.gov/southern-oregon-health-care/locations/grants-pass-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Cardiology
   - Laboratory and pathology
@@ -222,20 +244,36 @@
   - Primary care
   - Smoking and tobacco cessation
   - Telehealth
-  external_ids: {va: vha_692GB}
+  external_ids:
+    va: vha_692GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/grants-pass/grants-pass-vet-center
   name: Grants Pass Vet Center
   categories: *id001
-  address: {street: 135 N.E. Steiger Street, city: Grants Pass, state: or, zip: '97526'}
+  address:
+    street: 135 N.E. Steiger Street
+    city: Grants Pass
+    state: or
+    zip: '97526'
   place: '4130550'
-  geo: {lat: 42.45253, lng: -123.32097}
+  geo:
+    lat: 42.45253
+    lng: -123.32097
   phone: 541-479-6912
   website: https://www.va.gov/grants-pass-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -247,10 +285,13 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0645V}
+  external_ids:
+    va: vc_0645V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/grants-pass/harbeck-village
   name: Harbeck Village
   categories:
@@ -551,6 +592,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/grants-pass/united-community-action-network
+  name: United Community Action Network
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Josephine County
+  address: {street: 900 SE 8th Street, city: Grants Pass, state: or, zip: '97526'}
+  place: '4130550'
+  phone: 541-956-4050
+  website: https://www.ucancap.org/utility-bill/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: or/grants-pass/wild-life-images-rehabilitation-education-center
   name: Wild Life Images Rehabilitation & Education Center
   categories:

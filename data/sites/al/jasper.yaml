@@ -181,13 +181,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 1454 Jones Dairy Road, city: Jasper, state: al, zip: '35501'}
+  address:
+    street: 1454 Jones Dairy Road
+    city: Jasper
+    state: al
+    zip: '35501'
   place: 0138416
-  geo: {lat: 33.83911, lng: -87.24297}
+  geo:
+    lat: 33.83911
+    lng: -87.24297
   phone: 205-221-7384
   website: https://www.va.gov/birmingham-health-care/locations/jasper-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:00'
   services:
   - Dermatology
   - Mental health care
@@ -195,10 +208,13 @@
   - Optometry
   - Pharmacy
   - Primary care
-  external_ids: {va: vha_521GF}
+  external_ids:
+    va: vha_521GF
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/jasper/maddox-intermediate-school
   name: Maddox Intermediate School
   categories:
@@ -387,6 +403,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/jasper/walker-county-community-action-agency
+  name: Walker County Community Action Agency
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Walker County
+  address: {street: 224 Highway 195 S., city: Jasper, state: al, zip: '35501'}
+  place: 0138416
+  phone: 205-221-4010
+  email: dtatwccaa@bellsouth.net
+  website: https://caawalker.org/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/jasper/walker-county-early-head-start-center
   name: Walker County Early Head Start Center
   categories:

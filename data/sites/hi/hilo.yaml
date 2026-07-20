@@ -144,6 +144,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: hi/hilo/hceoc
+  name: HCEOC
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Hawaii County
+  address: {street: 47 Rainbow Dr., city: Hilo, state: hi, zip: '96720'}
+  place: '1514650'
+  phone: 808-731-7009 *opt 1
+  email: liheapintake@hceoc.net
+  website: https://hceoc.net/energy/liheap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: hi/hilo/hilo-armory
   name: Hilo Armory
   categories:
@@ -338,13 +351,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 45 Mohouli Street, city: Hilo, state: hi, zip: '96720'}
+  address:
+    street: 45 Mohouli Street
+    city: Hilo
+    state: hi
+    zip: '96720'
   place: '1514650'
-  geo: {lat: 19.71302, lng: -155.07827}
+  geo:
+    lat: 19.71302
+    lng: -155.07827
   phone: 800-214-1306
   website: https://www.va.gov/pacific-islands-health-care/locations/hilo-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Advice nurse
   - Audiology and speech
@@ -360,21 +386,37 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids: {va: vha_459GB}
+  external_ids:
+    va: vha_459GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/hilo/hilo-vet-center
   name: Hilo Vet Center
   categories:
   - vet-center
-  address: {street: '70 Lanihuli Street, Suite 102', city: Hilo, state: hi, zip: '96720'}
+  address:
+    street: 70 Lanihuli Street, Suite 102
+    city: Hilo
+    state: hi
+    zip: '96720'
   place: '1514650'
-  geo: {lat: 19.71101, lng: -155.07885}
+  geo:
+    lat: 19.71101
+    lng: -155.07885
   phone: 808-969-3833
   website: https://www.va.gov/hilo-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -385,10 +427,13 @@
   - Returning service member care
   - Suicide prevention
   - Veteran connections
-  external_ids: {va: vc_0635V}
+  external_ids:
+    va: vc_0635V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/hilo/hilo-woman-s-health-center
   name: Hilo Woman's Health Center
   categories:
@@ -585,9 +630,15 @@
   categories:
   - va-facility
   description: Satellite Office
-  address: {street: '154 Waianuenue Ave., Room 327', city: Hilo, state: hi, zip: '96720'}
+  address:
+    street: 154 Waianuenue Ave., Room 327
+    city: Hilo
+    state: hi
+    zip: '96720'
   place: '1514650'
-  geo: {lat: 19.72579, lng: -155.08906}
+  geo:
+    lat: 19.72579
+    lng: -155.08906
   phone: 808-935-2451
   services:
   - ApplyingForBenefits
@@ -604,10 +655,13 @@
   - VAHomeLoanAssistance
   - VocationalRehabilitationAndEmploymentAssistance
   - eBenefitsRegistrationAssistance
-  external_ids: {va: vba_459i}
+  external_ids:
+    va: vba_459i
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: hi/hilo/waiakea-high-school
   name: Waiakea High School
   categories:

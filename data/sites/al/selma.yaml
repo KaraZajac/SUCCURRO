@@ -42,6 +42,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/selma/community-service-programs-of-west-alabama
+  name: Community Service Programs of West Alabama
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Dallas County
+  address: {street: 317 West Highland Ave., city: Selma, state: al, zip: '36701'}
+  place: 0169120
+  phone: 334-418-0023
+  website: https://www.cspwal.com/liheap
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: al/selma/easter-seals-admin-office-early-head-start
   name: Easter Seals Admin Office/Early Head Start
   categories:
@@ -240,13 +252,26 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address: {street: 206 Vaughn Memorial Drive, city: Selma, state: al, zip: '36701'}
+  address:
+    street: 206 Vaughn Memorial Drive
+    city: Selma
+    state: al
+    zip: '36701'
   place: 0169120
-  geo: {lat: 32.40531, lng: -87.05693}
+  geo:
+    lat: 32.40531
+    lng: -87.05693
   phone: 205-554-2010
   website: https://www.va.gov/tuscaloosa-health-care/locations/selma-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Laboratory and pathology
   - Mental health care
@@ -254,10 +279,13 @@
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
-  external_ids: {va: vha_679GA}
+  external_ids:
+    va: vha_679GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/selma/sophia-p-kingston-elementary-school
   name: Sophia P Kingston Elementary School
   categories:

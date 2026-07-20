@@ -45,23 +45,39 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 8 Second Avenue Southeast, city: Cut Bank, state: mt, zip: '59427'}
+  address:
+    street: 8 Second Avenue Southeast
+    city: Cut Bank
+    state: mt
+    zip: '59427'
   place: '3018775'
-  geo: {lat: 48.63472, lng: -112.33028}
+  geo:
+    lat: 48.63472
+    lng: -112.33028
   phone: 406-873-9047
   website: https://www.va.gov/montana-health-care/locations/cut-bank-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
   - Mental health care
   - Primary care
   - Telehealth
-  external_ids: {va: vha_436GL}
+  external_ids:
+    va: vha_436GL
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mt/cut-bank/gchc-pharmacy
   name: GCHC Pharmacy
   categories:

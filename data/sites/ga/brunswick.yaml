@@ -71,23 +71,39 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 93 Benchmark Way, city: Brunswick, state: ga, zip: '31520'}
+  address:
+    street: 93 Benchmark Way
+    city: Brunswick
+    state: ga
+    zip: '31520'
   place: '1311560'
-  geo: {lat: 31.20393, lng: -81.50449}
+  geo:
+    lat: 31.20393
+    lng: -81.50449
   phone: 843-577-5011
   website: https://www.va.gov/charleston-health-care/locations/brunswick-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology
   - Dermatology
   - MentalHealth
   - Optometry
   - PrimaryCare
-  external_ids: {va: vha_534GG}
+  external_ids:
+    va: vha_534GG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/brunswick/burroughs-molette
   name: Burroughs-Molette
   categories:
@@ -263,6 +279,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ga/brunswick/coastal-georgia-area-community-action-authority
+  name: Coastal Georgia Area Community Action Authority Inc.
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Glynn County
+  address: {street: One Community Action Drive, city: Brunswick, state: ga, zip: '31521'}
+  place: '1311560'
+  phone: 912-264-3281
+  website: http://www.cgacaa.org/working/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ga/brunswick/coastal-outreach-soccer
   name: Coastal Outreach Soccer
   categories:

@@ -518,6 +518,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: il/springfield/sangamon-county-department-of-community-resource
+  name: Sangamon County Department of Community Resources
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Sangamon County
+  address: {street: 2833 South Grand Ave. Suite C100, city: Springfield, state: il, zip: '62703'}
+  place: '1772000'
+  phone: 217-535-3120
+  website: http://www.co.sangamon.il.us/
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
 - id: il/springfield/siu-center-for-family-medicine-general-internal
   name: SIU Center for Family Medicine - General Internal Medicine Clinic
   categories:
@@ -691,13 +703,26 @@
   name: Springfield, IL Vet Center
   categories: &id001
   - vet-center
-  address: {street: 2980 Baker Drive, city: Springfield, state: il, zip: '62703'}
+  address:
+    street: 2980 Baker Drive
+    city: Springfield
+    state: il
+    zip: '62703'
   place: '1772000'
-  geo: {lat: 39.76217, lng: -89.6444}
+  geo:
+    lat: 39.76217
+    lng: -89.6444
   phone: 217-492-4955
   website: https://www.va.gov/springfield-il-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -709,35 +734,60 @@
   - Suicide prevention
   - Veteran connections
   - Whole health
-  external_ids: {va: vc_0421V}
+  external_ids:
+    va: vc_0421V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/springfield/springfield-mobile-vet-center
   name: Springfield Mobile Vet Center
   categories: *id001
-  address: {street: 2980 Baker Drive, city: Springfield, state: il, zip: '62703'}
+  address:
+    street: 2980 Baker Drive
+    city: Springfield
+    state: il
+    zip: '62703'
   place: '1772000'
-  geo: {lat: 39.76217, lng: -89.6444}
+  geo:
+    lat: 39.76217
+    lng: -89.6444
   phone: 217-492-4955
   website: https://www.va.gov/springfield-il-vet-center/locations/#springfield-mobile-vet-center
-  external_ids: {va: vc_0822MVC}
+  external_ids:
+    va: vc_0822MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/springfield/springfield-va-clinic
   name: Springfield VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 5850 South 6th Street, city: Springfield, state: il, zip: '62703'}
+  address:
+    street: 5850 South 6th Street
+    city: Springfield
+    state: il
+    zip: '62703'
   place: '1772000'
-  geo: {lat: 39.77455, lng: -89.6486}
+  geo:
+    lat: 39.77455
+    lng: -89.6486
   phone: 217-529-5046
   website: https://www.va.gov/illiana-health-care/locations/springfield-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:00'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:00'
   services:
   - Audiology and speech
   - Cardiology
@@ -749,10 +799,13 @@
   - Psychology
   - Social work
   - Women Veteran care
-  external_ids: {va: vha_550GD}
+  external_ids:
+    va: vha_550GD
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/springfield/st-john-s-dental-clinic
   name: St. John's Dental Clinic
   categories:

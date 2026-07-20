@@ -44,13 +44,26 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: 1319 West 11th Street, city: Grafton, state: nd, zip: '58237'}
+  address:
+    street: 1319 West 11th Street
+    city: Grafton
+    state: nd
+    zip: '58237'
   place: '3831820'
-  geo: {lat: 48.4135, lng: -97.42072}
+  geo:
+    lat: 48.4135
+    lng: -97.42072
   phone: 701-352-4059
   website: https://www.va.gov/fargo-health-care/locations/grafton-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -60,10 +73,13 @@
   - Nutrition, food, and dietary care
   - Orthopedics
   - Primary care
-  external_ids: {va: vha_437GA}
+  external_ids:
+    va: vha_437GA
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nd/grafton/northeast-human-service-center-outreach-office
   name: Northeast Human Service Center Outreach Office
   categories:
@@ -120,3 +136,14 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nd/grafton/walsh-county-social-services-board
+  name: Walsh County Social Services Board
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Walsh County
+  address: {street: 'Chase Building, 2nd Floor, 516 Cooper Ave', city: Grafton, state: nd, zip: '58237'}
+  place: '3831820'
+  phone: 701-352-5111
+  sources:
+  - acf/liheap-clearinghouse
+  verified: {'on': '2026-07-19', method: scrape}
