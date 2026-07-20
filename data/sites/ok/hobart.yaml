@@ -2,15 +2,23 @@
   name: Hobart Head Start
   categories:
   - child-care
-  address: {street: 400B N Randlett St, city: Hobart, state: ok, zip: '73651'}
+  address:
+    street: 400B N Randlett St
+    city: Hobart
+    state: ok
+    zip: '73651'
   description: Head Start early childhood program — 16 funded slots; operated by Community Action Development
     Corporation.
   place: '4035000'
-  geo: {lat: 35.03217, lng: -99.09918}
+  geo:
+    lat: 35.03217
+    lng: -99.09918
   phone: 580-726-3648
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/hobart/housing-authority-of-the-city-of-hobart
   name: Housing Authority Of The City Of Hobart
   categories:
@@ -48,6 +56,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ok/hobart/kiowa-chd-wic-clinic
+  name: Kiowa CHD WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 431 W Elm St, city: Hobart, state: ok, zip: '73651'}
+  geo: {lat: 35.03711, lng: -99.09933}
+  place: '4035000'
+  phone: 580-726-3316
+  external_ids: {wic: 'ok-osdh:44'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/hobart/red-rock-behavioral-health-services-outpatient-o
   name: Red Rock Behavioral Health Services Outpatient Office
   categories:

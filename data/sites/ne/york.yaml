@@ -49,15 +49,23 @@
   name: York County Head Start 0-5 (225 West 5h Street)
   categories:
   - child-care
-  address: {street: 225 W 5th St, city: York, state: ne, zip: '68467'}
+  address:
+    street: 225 W 5th St
+    city: York
+    state: ne
+    zip: '68467'
   description: Head Start early childhood program — 48 funded slots; operated by Blue Valley Community
     Action, Inc.
   place: '3154045'
-  geo: {lat: 40.86582, lng: -97.5945}
+  geo:
+    lat: 40.86582
+    lng: -97.5945
   phone: 402-362-4299
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/york/york-high-school
   name: York High School
   categories:
@@ -100,3 +108,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/york/york-wic-clinic
+  name: York WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (BVCA FCS Building)'
+  address: {street: 3401 N Lincoln Ave, street2: STE 104, city: York, state: ne, zip: '68467'}
+  geo: {lat: 40.89808, lng: -97.59399}
+  place: '3154045'
+  phone: 402-587-0706
+  external_ids: {wic: 'ne-dhhs:3'}
+  sources:
+  - wic/ne-dhhs
+  verified: {'on': '2026-07-20', method: api}

@@ -87,14 +87,22 @@
   name: Martin EHS & HS
   categories:
   - child-care
-  address: {street: 1509 E Bennett Ave, city: Martin, state: sd, zip: '57551'}
+  address:
+    street: 1509 E Bennett Ave
+    city: Martin
+    state: sd
+    zip: '57551'
   description: Head Start early childhood program — 32 funded slots; operated by Oglala Lakota College.
   place: '4641100'
-  geo: {lat: 43.17156, lng: -101.70669}
+  geo:
+    lat: 43.17156
+    lng: -101.70669
   phone: 605-685-6651
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/martin/martin-housing-redevelopment-commission
   name: Martin Housing & Redevelopment Commission
   categories:
@@ -114,4 +122,40 @@
   - hud/resource-locator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: sd/martin/oglala-sioux
+  name: Oglala Sioux
+  categories:
+  - food
+  - seniors
+  description: Commodity Supplemental Food Program (CSFP) administering agency — coordinates monthly USDA
+    food packages for low-income adults 60 and older.
+  place: '4641100'
+  geo:
+    lat: 43.17179
+    lng: -101.69734
+  external_ids:
+    fns: '4699003'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: sd/martin/sd-oglala-sioux
+  name: SD Oglala Sioux
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4641100'
+  geo:
+    lat: 43.17179
+    lng: -101.69734
+  external_ids:
+    fns: '4699003'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
     method: api

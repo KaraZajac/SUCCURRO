@@ -18,16 +18,58 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/pawnee/pawnee-chd-pawnee-wic-clinic
+  name: Pawnee CHD - Pawnee WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 501 5th St, city: Pawnee, state: ok, zip: '74058'}
+  geo: {lat: 36.33877, lng: -96.80197}
+  place: '4057650'
+  phone: 918-762-3643
+  external_ids: {wic: 'ok-osdh:82'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/pawnee/pawnee-head-start-early-head-start
   name: Pawnee Head Start/Early Head Start
   categories:
   - child-care
-  address: {street: 1101 Sewell Dr, city: Pawnee, state: ok, zip: '74058'}
+  address:
+    street: 1101 Sewell Dr
+    city: Pawnee
+    state: ok
+    zip: '74058'
   description: Head Start early childhood program — 17 funded slots; operated by United Community Action
     Program, Inc..
   place: '4057650'
-  geo: {lat: 36.3501, lng: -96.80063}
+  geo:
+    lat: 36.3501
+    lng: -96.80063
   phone: 918-762-3474
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/pawnee/pawnee-tribe-ok
+  name: Pawnee Tribe, OK
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4057650'
+  geo:
+    lat: 36.33797
+    lng: -96.8016
+  external_ids:
+    fns: '4099010'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api

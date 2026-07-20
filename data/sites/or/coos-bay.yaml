@@ -122,15 +122,23 @@
   name: CHILD & FAMILY RESOURCE CENTER
   categories:
   - child-care
-  address: {street: 1855 Thomas Ave, city: Coos Bay, state: or, zip: '97420'}
+  address:
+    street: 1855 Thomas Ave
+    city: Coos Bay
+    state: or
+    zip: '97420'
   description: Head Start early childhood program — 66 funded slots; operated by Oregon Coast Community
     Action.
   place: '4115250'
-  geo: {lat: 43.39012, lng: -124.25544}
+  geo:
+    lat: 43.39012
+    lng: -124.25544
   phone: 541-888-3717
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/coos-bay/coos-health-and-wellness
   name: Coos Health and Wellness
   categories:
@@ -168,19 +176,79 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/coos-bay/coos-health-and-wellness-wic-clinic
+  name: Coos Health and Wellness WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 591 Miluk Dr., city: Coos Bay, state: or, zip: '97420'}
+  geo: {lat: 43.36097, lng: -124.29879}
+  place: '4115250'
+  phone: 541-751-2401
+  website: http://www.co.coos.or.us/ph/wic/
+  external_ids: {wic: 'or-wic:93'}
+  sources:
+  - wic/or-wic
+  verified: {'on': '2026-07-20', method: api}
+- id: or/coos-bay/coos-health-and-wellness-wic-clinic-2
+  name: Coos Health and Wellness WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 281 LaClair St., city: Coos Bay, state: or, zip: '97420'}
+  geo: {lat: 43.39008, lng: -124.25499}
+  place: '4115250'
+  phone: 541-751-2401
+  website: http://www.co.coos.or.us/ph/wic/
+  external_ids: {wic: 'or-wic:104'}
+  sources:
+  - wic/or-wic
+  verified: {'on': '2026-07-20', method: api}
 - id: or/coos-bay/coquille-indian-head-start
   name: Coquille Indian Head Start
   categories:
   - child-care
-  address: {street: 591 Miluk Drive, city: Coos Bay, state: or, zip: '97420'}
+  address:
+    street: 591 Miluk Drive
+    city: Coos Bay
+    state: or
+    zip: '97420'
   description: Head Start early childhood program — 20 funded slots; operated by Coquille Indian Tribe
     Head Start.
   place: '4115250'
-  geo: {lat: 43.35837, lng: -124.29561}
+  geo:
+    lat: 43.35837
+    lng: -124.29561
   phone: 541-888-7737
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: or/coos-bay/dept-human-services
+  name: Dept Human Services
+  categories:
+  - food
+  - seniors
+  description: Commodity Supplemental Food Program (CSFP) administering agency — coordinates monthly USDA
+    food packages for low-income adults 60 and older.
+  place: '4115250'
+  geo:
+    lat: 43.39195
+    lng: -124.25095
+  external_ids:
+    fns: '4193301'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: or/coos-bay/eastside-elementary
   name: Eastside Elementary
   categories:

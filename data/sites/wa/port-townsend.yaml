@@ -30,6 +30,21 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: wa/port-townsend/jefferson-cph-port-townsend-wic-clinic
+  name: Jefferson CPH-Port Townsend WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Jefferson County Public Health.'
+  address: {street: 615 Sheridan, city: Port Townsend, state: wa, zip: '98368'}
+  geo: {lat: 48.10423, lng: -122.79175}
+  place: '5355855'
+  external_ids: {wic: 'wa-doh:146'}
+  sources:
+  - wic/wa-doh
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/port-townsend/newport-academy-teen-and-adolescent-residential
   name: Newport Academy Teen and Adolescent Residential
   categories:
@@ -87,15 +102,24 @@
   name: Port Townsend Head Start/Early Head Start
   categories:
   - child-care
-  address: {street: 1637 Grant St, street2: Rooms 71-73, city: Port Townsend, state: wa, zip: '98368'}
+  address:
+    street: 1637 Grant St
+    street2: Rooms 71-73
+    city: Port Townsend
+    state: wa
+    zip: '98368'
   description: Head Start early childhood program — 17 funded slots; operated by Olympic Community Action
     Programs.
   place: '5355855'
-  geo: {lat: 48.11191, lng: -122.79211}
+  geo:
+    lat: 48.11191
+    lng: -122.79211
   phone: 360-379-5287
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/port-townsend/recovery-cafe-little-free-pantry
   name: Recovery Cafe Little Free Pantry
   categories:

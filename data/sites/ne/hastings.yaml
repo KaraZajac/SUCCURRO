@@ -2,15 +2,23 @@
   name: Adams
   categories:
   - child-care
-  address: {street: 123 N Marian Rd, city: Hastings, state: ne, zip: '68901'}
+  address:
+    street: 123 N Marian Rd
+    city: Hastings
+    state: ne
+    zip: '68901'
   description: Head Start early childhood program — 51 funded slots; operated by Head Start Child & Family
     Development Program Inc..
   place: '3121415'
-  geo: {lat: 40.58406, lng: -98.42271}
+  geo:
+    lat: 40.58406
+    lng: -98.42271
   phone: 402-462-4187
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/hastings/hastings-housing-authority
   name: Hastings Housing Authority
   categories:
@@ -53,6 +61,22 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/hastings/hastings-wic-clinic
+  name: Hastings WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (Foote Building)'
+  address: {street: 422 N Hastings St, street2: STE 104, city: Hastings, state: ne, zip: '68901'}
+  geo: {lat: 40.58764, lng: -98.38964}
+  place: '3121415'
+  phone: 402-462-9242
+  external_ids: {wic: 'ne-dhhs:39'}
+  sources:
+  - wic/ne-dhhs
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/hastings/heartland-health-center-hastings
   name: Heartland Health Center - Hastings
   categories:

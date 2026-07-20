@@ -66,15 +66,23 @@
   name: Williams Head Start
   categories:
   - child-care
-  address: {street: 310 W Sherman Ave, city: Williams, state: az, zip: '86046'}
+  address:
+    street: 310 W Sherman Ave
+    city: Williams
+    state: az
+    zip: '86046'
   description: Head Start early childhood program — 8 funded slots; operated by Northern Arizona Council
     of Governments.
   place: 0483160
-  geo: {lat: 35.24828, lng: -112.18872}
+  geo:
+    lat: 35.24828
+    lng: -112.18872
   phone: 928-635-4273
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/williams/williams-housing-authority
   name: Williams Housing Authority
   categories:
@@ -95,3 +103,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/williams/williams-wic
+  name: Williams WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Coconino County Dept Of Public Health.'
+  address: {street: 850 W Grant Ave, city: Williams, state: az, zip: '86046'}
+  geo: {lat: 35.24707, lng: -112.19512}
+  place: 0483160
+  external_ids: {wic: 'az-dhs:133'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}

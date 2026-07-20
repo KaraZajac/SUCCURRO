@@ -40,15 +40,23 @@
   name: Wayne Head Start
   categories:
   - child-care
-  address: {street: 1210 E 7th St, city: Wayne, state: ne, zip: '68787'}
+  address:
+    street: 1210 E 7th St
+    city: Wayne
+    state: ne
+    zip: '68787'
   description: Head Start early childhood program — 17 funded slots; operated by Northeast Nebraska Community
     Action Partnership, Inc.
   place: '3151840'
-  geo: {lat: 42.23571, lng: -97.00148}
+  geo:
+    lat: 42.23571
+    lng: -97.00148
   phone: 402-375-2913
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/wayne/wayne-housing-authority
   name: Wayne Housing Authority
   categories:
@@ -69,3 +77,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/wayne/wayne-wic-clinic
+  name: Wayne WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (First United Methodist Church)'
+  address: {street: 516 N Main St, city: Wayne, state: ne, zip: '68787'}
+  geo: {lat: 42.23442, lng: -97.01819}
+  place: '3151840'
+  phone: 402-385-6300
+  external_ids: {wic: 'ne-dhhs:65'}
+  sources:
+  - wic/ne-dhhs
+  verified: {'on': '2026-07-20', method: api}

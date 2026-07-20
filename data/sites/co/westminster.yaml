@@ -341,14 +341,22 @@
   name: Rainbow Head Start
   categories:
   - child-care
-  address: {street: 8401 Circle Dr, city: Westminster, state: co, zip: '80030'}
+  address:
+    street: 8401 Circle Dr
+    city: Westminster
+    state: co
+    zip: '80030'
   description: Head Start early childhood program — 48 funded slots; operated by Adams County.
   place: 0883835
-  geo: {lat: 39.84947, lng: -105.03989}
+  geo:
+    lat: 39.84947
+    lng: -105.03989
   phone: 303-428-6477
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/westminster/rocky-mountain-elementary-school
   name: Rocky Mountain Elementary School
   categories:
@@ -481,3 +489,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/westminster/westminster-wic-clinic
+  name: Westminster WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1401 W. 122nd Ave., city: Westminster, state: co, zip: '80234'}
+  geo: {lat: 39.91786, lng: -105.00358}
+  place: 0883835
+  phone: 303-452-9547
+  external_ids: {wic: 'co-cdphe:33'}
+  sources:
+  - wic/co-cdphe
+  verified: {'on': '2026-07-20', method: api}

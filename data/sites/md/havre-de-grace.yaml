@@ -142,14 +142,39 @@
   name: Havre de Grace Office
   categories:
   - child-care
-  address: {street: 422 S Stokes St, city: Havre De Grace, state: md, zip: '21078'}
+  address:
+    street: 422 S Stokes St
+    city: Havre De Grace
+    state: md
+    zip: '21078'
   description: Head Start early childhood program — 38 funded slots; operated by ASSOCIATED CATHOLIC CHARITIES.
   place: '2437600'
-  geo: {lat: 39.54373, lng: -76.09352}
+  geo:
+    lat: 39.54373
+    lng: -76.09352
   phone: 667-600-2160
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: md/havre-de-grace/havre-de-grace-wic-clinic
+  name: Havre de Grace WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: '2027 Pulaski Highway, Suite 107', city: Havre De Grace, state: md, zip: '21078'}
+  geo: {lat: 39.52867, lng: -76.13232}
+  place: '2437600'
+  phone: 410-939-6680
+  email: hchd.wic@maryland.gov
+  external_ids: {wic: 'md-health:34'}
+  sources:
+  - wic/md-health
+  verified: {'on': '2026-07-20', method: api}
 - id: md/havre-de-grace/matclinics
   name: MATClinics
   categories:

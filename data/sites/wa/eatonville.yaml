@@ -2,15 +2,23 @@
   name: HOME BASED - EATONVILLE EHS
   categories:
   - child-care
-  address: {street: 209 Lynch Creek Road E, city: Eatonville, state: wa, zip: '98328'}
+  address:
+    street: 209 Lynch Creek Road E
+    city: Eatonville
+    state: wa
+    zip: '98328'
   description: Head Start early childhood program — 10 funded slots; operated by Puget Sound Educational
     Service District - EHS.
   place: '5320260'
-  geo: {lat: 46.86997, lng: -122.26382}
+  geo:
+    lat: 46.86997
+    lng: -122.26382
   phone: 253-778-7700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/eatonville/little-free-resource-hub
   name: Little Free Resource Hub
   categories:
@@ -27,3 +35,18 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: wa/eatonville/multicare-hs-eatonville-wic-clinic
+  name: MultiCare HS-Eatonville WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by MultiCare Health Systems.'
+  address: {street: 118 Washington Ave N, city: Eatonville, state: wa, zip: '98328'}
+  geo: {lat: 46.86835, lng: -122.26569}
+  place: '5320260'
+  external_ids: {wic: 'wa-doh:171'}
+  sources:
+  - wic/wa-doh
+  verified: {'on': '2026-07-20', method: api}

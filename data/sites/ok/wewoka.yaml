@@ -2,14 +2,22 @@
   name: Barking Water Center
   categories:
   - child-care
-  address: {street: 36631 US Highway 270, city: Wewoka, state: ok, zip: '74884'}
+  address:
+    street: 36631 US Highway 270
+    city: Wewoka
+    state: ok
+    zip: '74884'
   description: Head Start early childhood program — 24 funded slots; operated by SEMINOLE NATION OF OKLAHOMA.
   place: '4080550'
-  geo: {lat: 35.12979, lng: -96.49104}
+  geo:
+    lat: 35.12979
+    lng: -96.49104
   phone: 405-257-7220
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/wewoka/boys-and-girls-club-seminole-nation-n584
   name: Boys And Girls Club Seminole Nation(N584)
   categories:
@@ -75,6 +83,40 @@
   - hud/resource-locator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: ok/wewoka/seminole-chd-wewoka-wic-clinic
+  name: Seminole CHD - Wewoka WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 200 South Brown, city: Wewoka, state: ok, zip: '74884'}
+  geo: {lat: 35.15765, lng: -96.489}
+  place: '4080550'
+  phone: 405-257-5401
+  external_ids: {wic: 'ok-osdh:91'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
+- id: ok/wewoka/seminole-nation-of-oklahoma
+  name: Seminole Nation of Oklahoma
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4080550'
+  geo:
+    lat: 35.15527
+    lng: -96.48941
+  external_ids:
+    fns: '4099017'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: ok/wewoka/wewoka-es-105
   name: Wewoka Es(105)

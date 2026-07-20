@@ -16,6 +16,24 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ok/okmulgee/muscogee-creek-nation
+  name: Muscogee (creek) Nation
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4055150'
+  geo:
+    lat: 35.63884
+    lng: -95.9605
+  external_ids:
+    fns: '4099004'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/okmulgee/muscogee-creek-nation-behavioral-hlth-substance
   name: Muscogee Creek Nation Behavioral Hlth Substance Abuse Services
   categories:
@@ -113,28 +131,60 @@
   name: Okmulgee
   categories:
   - child-care
-  address: {street: 1810 N Miami Street, city: Okmulgee, state: ok, zip: '74447'}
+  address:
+    street: 1810 N Miami Street
+    city: Okmulgee
+    state: ok
+    zip: '74447'
   description: Head Start early childhood program — 57 funded slots; operated by Muscogee (Creek) Nation
     Head Start.
   place: '4055150'
-  geo: {lat: 35.63905, lng: -95.95758}
+  geo:
+    lat: 35.63905
+    lng: -95.95758
   phone: 918-758-1430
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ok/okmulgee/okmulgee-chd-wic-clinic
+  name: Okmulgee CHD WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1304 R. D. Miller Dr, city: Okmulgee, state: ok, zip: '74447'}
+  geo: {lat: 35.6124, lng: -95.95381}
+  place: '4055150'
+  phone: 918-756-1883
+  external_ids: {wic: 'ok-osdh:78'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/okmulgee/okmulgee-head-start
   name: Okmulgee Head Start
   categories:
   - child-care
-  address: {street: 4300 N Wood Dr, city: Okmulgee, state: ok, zip: '74447'}
+  address:
+    street: 4300 N Wood Dr
+    city: Okmulgee
+    state: ok
+    zip: '74447'
   description: Head Start early childhood program — 51 funded slots; operated by United Community Action
     Program, Inc..
   place: '4055150'
-  geo: {lat: 35.65893, lng: -95.96211}
+  geo:
+    lat: 35.65893
+    lng: -95.96211
   phone: 918-756-1561
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/okmulgee/okmulgee-ymca-n114
   name: Okmulgee Ymca(N114)
   categories:

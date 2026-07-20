@@ -58,6 +58,24 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/lake-havasu-city/economic-security
+  name: Economic Security
+  categories:
+  - food
+  - seniors
+  description: Commodity Supplemental Food Program (CSFP) administering agency — coordinates monthly USDA
+    food packages for low-income adults 60 and older.
+  place: 0439370
+  geo:
+    lat: 34.47827
+    lng: -114.35033
+  external_ids:
+    fns: '493701'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: az/lake-havasu-city/elk-ridge-lake-havasu-city-clinic
   name: ELK RIDGE - LAKE HAVASU CITY CLINIC
   categories:
@@ -105,28 +123,44 @@
   name: Havasupai Head Start
   categories:
   - child-care
-  address: {street: 880 Cashmere Dr, city: Lake Havasu City, state: az, zip: '86404'}
+  address:
+    street: 880 Cashmere Dr
+    city: Lake Havasu City
+    state: az
+    zip: '86404'
   description: Head Start early childhood program — 20 funded slots; operated by Western Arizona Council
     of Governments.
   place: 0439370
-  geo: {lat: 34.50901, lng: -114.31575}
+  geo:
+    lat: 34.50901
+    lng: -114.31575
   phone: 928-505-6046
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/lake-havasu-city/lake-havasu-city-head-start-center
   name: Lake Havasu City Head Start Center
   categories:
   - child-care
-  address: {street: 2385 Pima Dr N, city: Lake Havasu City, state: az, zip: '86403'}
+  address:
+    street: 2385 Pima Dr N
+    city: Lake Havasu City
+    state: az
+    zip: '86403'
   description: Head Start early childhood program — 20 funded slots; operated by Western Arizona Council
     of Governments.
   place: 0439370
-  geo: {lat: 34.48774, lng: -114.32216}
+  geo:
+    lat: 34.48774
+    lng: -114.32216
   phone: 928-680-6212
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/lake-havasu-city/lake-havasu-city-va-clinic
   name: Lake Havasu City VA Clinic
   categories:
@@ -170,6 +204,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/lake-havasu-city/lake-havasu-wic
+  name: Lake Havasu WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Mohave County Dept Of Health And Social Svcs.'
+  address: {street: 2001 College Dr Ste 104, city: Lake Havasu City, state: az, zip: '86403'}
+  geo: {lat: 34.50783, lng: -114.34639}
+  place: 0439370
+  external_ids: {wic: 'az-dhs:167'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}
 - id: az/lake-havasu-city/mohave-mental-health-clinic-inc
   name: Mohave Mental Health Clinic Inc
   categories:

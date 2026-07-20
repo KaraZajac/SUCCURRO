@@ -1,7 +1,7 @@
 .PHONY: help places build meta verify conformance install-hooks site site-dev
 
 MODULES = findtreatment summermeals hrsa headstart hud bmlt nami pflag feedingamerica ndbn \
-          mutualaidhub littlefreepantry va tsml nnedv lsc mha clubhouse ccusa eoir liheap
+          mutualaidhub littlefreepantry va tsml nnedv lsc mha clubhouse ccusa eoir liheap fdpir wic
 
 help: ## list targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-14s %s\n", $$1, $$2}'

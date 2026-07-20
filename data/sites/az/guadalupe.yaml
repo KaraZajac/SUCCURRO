@@ -24,28 +24,63 @@
   name: Frank
   categories:
   - child-care
-  address: {street: 8409 S Avenida Del Yaqui, street2: '# 24', city: Guadalupe, state: az, zip: '85283'}
+  address:
+    street: 8409 S Avenida Del Yaqui
+    street2: '# 24'
+    city: Guadalupe
+    state: az
+    zip: '85283'
   description: Head Start early childhood program — 20 funded slots; operated by Maricopa County Head
     Start.
   place: '0430270'
-  geo: {lat: 33.36991, lng: -111.9631}
+  geo:
+    lat: 33.36991
+    lng: -111.9631
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: az/guadalupe/gila-river-indian-community
+  name: Gila River Indian Community
+  categories: &id001
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '0430270'
+  geo:
+    lat: 33.28976
+    lng: -111.96405
+  external_ids:
+    fns: '499004'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: az/guadalupe/guadalupe-cdc
   name: Guadalupe CDC
   categories:
   - child-care
-  address: {street: 9401 S Avenida Del Yaqui, city: Guadalupe, state: az, zip: '85283'}
+  address:
+    street: 9401 S Avenida Del Yaqui
+    city: Guadalupe
+    state: az
+    zip: '85283'
   description: Head Start early childhood program — 20 funded slots; operated by Maricopa County Head
     Start.
   place: '0430270'
-  geo: {lat: 33.36187, lng: -111.96309}
+  geo:
+    lat: 33.36187
+    lng: -111.96309
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/guadalupe/native-health-at-walupe-health-center
   name: Native Health At Walupe Health Center
   categories:
@@ -67,6 +102,22 @@
   - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
+    method: api
+- id: az/guadalupe/pascua-yaqui
+  name: Pascua Yaqui
+  categories: *id001
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '0430270'
+  geo:
+    lat: 33.3598
+    lng: -111.96141
+  external_ids:
+    fns: '499001'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: az/guadalupe/valleywise-community-health-center-guadalupe
   name: Valleywise Community Health Center - Guadalupe

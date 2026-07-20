@@ -63,12 +63,35 @@
   name: Duncan
   categories:
   - child-care
-  address: {street: 0001 McGrath Ave, city: Duncan, state: az, zip: '85534'}
+  address:
+    street: 0001 McGrath Ave
+    city: Duncan
+    state: az
+    zip: '85534'
   description: Head Start early childhood program — 18 funded slots; operated by Child-Parent Centers,
     Inc..
   place: '0420750'
-  geo: {lat: 32.74824, lng: -109.08988}
+  geo:
+    lat: 32.74824
+    lng: -109.08988
   phone: 928-359-2872
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: az/duncan/duncan-wic
+  name: Duncan WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Greenlee County Health Dept.'
+  address: {street: 1684 Fairgrounds Rd, city: Duncan, state: az, zip: '85534'}
+  geo: {lat: 32.74237, lng: -109.09899}
+  place: '0420750'
+  external_ids: {wic: 'az-dhs:143'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}

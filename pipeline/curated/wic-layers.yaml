@@ -1,0 +1,75 @@
+# WIC clinic layer registry: state health departments that publish their WIC
+# clinic directory as a public ArcGIS layer. There is no national dataset.
+# Hand-maintained; verify a layer with
+#   curl -s '<url>/query?where=1%3D1&returnCountOnly=true&f=json'
+# url: the layer's query root (FeatureServer/<n> or MapServer/<n> — both speak
+#   the same query API). oid: the layer's object-id field (pagination order +
+#   external id). fields: layer field -> record field mapping; `address` marks
+#   a combined single-line "street, City, ST zip" field. caps: feed is ALL CAPS.
+# Discovery sweep 2026-07-20 via ArcGIS Online search. Not available as state
+# layers: TX/NY/IL/GA/NC/PA/OH/MI (nothing statewide published); CA publishes
+# vendors only; NM (2013/2016) and UT (2019) layers are stale; MT publishes a
+# per-year panel (2023 vintage), not a current directory.
+- id: az-dhs
+  state: az
+  publisher: Arizona Department of Health Services
+  title: WIC Clinics in Arizona
+  url: https://services1.arcgis.com/mpVYz37anSdrK4d8/arcgis/rest/services/WIC_Clinics/FeatureServer/0
+  oid: OBJECTID
+  caps: true
+  fields: {name: CLINICNAME, agency: AGENCYNAME, street: N_ADDRESS, street2: N_ADDR2,
+           city: N_CITY, zip: N_ZIP}
+- id: wa-doh
+  state: wa
+  publisher: Washington State Department of Health
+  title: WIC Clinics (Washington)
+  url: https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/WIC_Clinics/FeatureServer/0
+  oid: ObjectId
+  fields: {name: ClinicName, agency: Agency, street: Address1, street2: Address2,
+           city: City, zip: ZipCode}
+- id: co-cdphe
+  state: co
+  publisher: Colorado Department of Public Health and Environment
+  title: WIC Clinic Locations
+  url: https://www.cohealthmaps.dphe.state.co.us/arcgis/rest/services/OPEN_DATA/cdphe_wic_program/MapServer/0
+  oid: OBJECTID
+  fields: {name: Name, agency: Local_Agency, street: Address, city: City, zip: Zip,
+           phone: Phone, note: Notes}
+- id: fl-doh
+  state: fl
+  publisher: Florida Department of Health
+  title: Florida WIC Clinics
+  url: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/WIC_Clinics/FeatureServer/0
+  oid: ObjectId
+  fields: {name: CLINIC_NAME, agency: LOCAL_AGENCY, street: ADDRESS, city: CITY,
+           zip: ZIP, phone: CLINIC_PHONE}
+- id: ok-osdh
+  state: ok
+  publisher: Oklahoma State Department of Health
+  title: Oklahoma WIC Clinics
+  url: https://services9.arcgis.com/QeqGrHRDFO8mPwTf/arcgis/rest/services/WIC_Clinics_2023_03_02/FeatureServer/1
+  oid: OBJECTID
+  fields: {name: ClinicName, street: Address, city: City, zip: Zip, phone: Phone1}
+- id: or-wic
+  state: or
+  publisher: Oregon Health Authority
+  title: Oregon WIC Clinics
+  url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/WIC_CLINICS_view/FeatureServer/0
+  oid: OBJECTID
+  fields: {name: Local_agency_map, street: Address, city: City, zip: ZIP,
+           phone: Phone, website: Website}
+- id: ne-dhhs
+  state: ne
+  publisher: Nebraska Department of Health and Human Services
+  title: DHHS Women Infants and Children Clinics
+  url: https://gis.ne.gov/Agency/rest/services/WomenInfantsChildrenClinicsWICDHHS/FeatureServer/0
+  oid: OBJECTID
+  fields: {name: Clinic_Name, street: Street_Address, street2: Address_2, city: Town,
+           zip: Zip_Code, phone: Phone_Number, note: Clinic_Building}
+- id: md-health
+  state: md
+  publisher: Maryland Department of Health
+  title: Maryland WIC Clinics
+  url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MDWIC_clinics_Spanish/FeatureServer/7
+  oid: ObjectID
+  fields: {name: USER_NAME, address: Address, phone: Phone_Number, email: E_Mail}

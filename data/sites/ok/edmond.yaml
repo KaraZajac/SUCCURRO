@@ -37,15 +37,23 @@
   name: Edmond Head Start
   categories:
   - child-care
-  address: {street: 717 Churchill Rd, city: Edmond, state: ok, zip: '73034'}
+  address:
+    street: 717 Churchill Rd
+    city: Edmond
+    state: ok
+    zip: '73034'
   description: Head Start early childhood program — 60 funded slots; operated by CMTY Action AGCY of OK
     CY & CTY & OK/Canadian CTYS Inc.
   place: '4023200'
-  geo: {lat: 35.66613, lng: -97.47114}
+  geo:
+    lat: 35.66613
+    lng: -97.47114
   phone: 405-359-7155
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/edmond/feeding-the-future
   name: Feeding the Future
   categories:
@@ -62,6 +70,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ok/edmond/hope-center-health-clinic-wic-clinic
+  name: Hope Center Health Clinic WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1251 N Broadway, city: Edmond, state: ok, zip: '73034'}
+  geo: {lat: 35.66652, lng: -97.48116}
+  place: '4023200'
+  phone: 405-348-4680
+  external_ids: {wic: 'ok-osdh:69'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/edmond/lions-summer-scholar-program-n588
   name: Lions Summer Scholar Program (N588)
   categories:

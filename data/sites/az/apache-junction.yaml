@@ -25,15 +25,23 @@
   name: Apache Junction Head Start & Early Head Start
   categories:
   - child-care
-  address: {street: 900 N Plaza Dr, city: Apache Junction, state: az, zip: '85120'}
+  address:
+    street: 900 N Plaza Dr
+    city: Apache Junction
+    state: az
+    zip: '85120'
   description: Head Start early childhood program — 8 funded slots; operated by Pinal Gila Community Child
     Services, Inc..
   place: 0402830
-  geo: {lat: 33.42369, lng: -111.55096}
+  geo:
+    lat: 33.42369
+    lng: -111.55096
   phone: 480-982-4516
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/apache-junction/apache-junction-high-school
   name: Apache Junction High School
   categories:
@@ -56,6 +64,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/apache-junction/apache-junction-wic
+  name: Apache Junction WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Pinal County Dept Of Public Health.'
+  address: {street: 575 N Idaho Rd Ste 301, city: Apache Junction, state: az, zip: '85119'}
+  geo: {lat: 33.4207, lng: -111.54593}
+  place: 0402830
+  external_ids: {wic: 'az-dhs:185'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}
 - id: az/apache-junction/averys-house
   name: Averys House
   categories:

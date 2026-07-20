@@ -2,15 +2,40 @@
   name: Akron Head Start
   categories:
   - child-care
-  address: {street: 902 E 1st St, city: Akron, state: co, zip: '80720'}
+  address:
+    street: 902 E 1st St
+    city: Akron
+    state: co
+    zip: '80720'
   description: Head Start early childhood program — 37 funded slots; operated by AKRON UNITED METHODIST
     CHURCH.
   place: 0800925
-  geo: {lat: 40.1592, lng: -103.20114}
+  geo:
+    lat: 40.1592
+    lng: -103.20114
   phone: 970-345-2695
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: co/akron/akron-wic-clinic
+  name: Akron WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Northeast Colorado Health Department. (Wednesday 9:00 am-4:00
+    pm)'
+  address: {street: 77 Main Avenue, city: Akron, state: co, zip: '80720'}
+  geo: {lat: 40.1586, lng: -103.21289}
+  place: 0800925
+  phone: 970-345-6562
+  external_ids: {wic: 'co-cdphe:96'}
+  sources:
+  - wic/co-cdphe
+  verified: {'on': '2026-07-20', method: api}
 - id: co/akron/centennial-mental-health-center-inc
   name: Centennial Mental Health Center Inc
   categories:
@@ -47,6 +72,24 @@
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
+    method: api
+- id: co/akron/dept-of-human-services
+  name: Dept of Human Services
+  categories:
+  - food
+  - seniors
+  description: Commodity Supplemental Food Program (CSFP) administering agency — coordinates monthly USDA
+    food packages for low-income adults 60 and older.
+  place: 0800925
+  geo:
+    lat: 40.16311
+    lng: -103.21309
+  external_ids:
+    fns: '892501'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: co/akron/share-shed-rcrc
   name: Share Shed, RCRC

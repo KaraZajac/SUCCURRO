@@ -103,12 +103,35 @@
   name: NORTHSHORE WOODMOOR
   categories:
   - child-care
-  address: {street: 12225 NE 160th St, city: Bothell, state: wa, zip: '98011'}
+  address:
+    street: 12225 NE 160th St
+    city: Bothell
+    state: wa
+    zip: '98011'
   description: Head Start early childhood program — 57 funded slots; operated by Puget Sound Educational
     Service District - HS.
   place: '5307380'
-  geo: {lat: 47.74122, lng: -122.17631}
+  geo:
+    lat: 47.74122
+    lng: -122.17631
   phone: 425-408-5600
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wa/bothell/phskc-northshore-phc-healthpoint-bothell-wic-cli
+  name: PHSKC-Northshore PHC-HealthPoint Bothell WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Public Health Seattle King County.'
+  address: {street: 10414 Beardslee Blvd, city: Bothell, state: wa, zip: '98011'}
+  geo: {lat: 47.76093, lng: -122.20058}
+  place: '5307380'
+  external_ids: {wic: 'wa-doh:8'}
+  sources:
+  - wic/wa-doh
+  verified: {'on': '2026-07-20', method: api}

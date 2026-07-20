@@ -181,15 +181,23 @@
   name: Show Low
   categories:
   - child-care
-  address: {street: 20 N 6th St, city: Show Low, state: az, zip: '85901'}
+  address:
+    street: 20 N 6th St
+    city: Show Low
+    state: az
+    zip: '85901'
   description: Head Start early childhood program — 11 funded slots; operated by Northern Arizona Council
     of Governments.
   place: '0466470'
-  geo: {lat: 34.24988, lng: -110.03658}
+  geo:
+    lat: 34.24988
+    lng: -110.03658
   phone: 928-537-7716
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/show-low/show-low-junior-high-school
   name: Show Low Junior High School
   categories:
@@ -254,6 +262,21 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/show-low/show-low-wic
+  name: Show Low WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Navajo County Health Dept.'
+  address: {street: 600 N 9Th Pl, city: Show Low, state: az, zip: '85901'}
+  geo: {lat: 34.25537, lng: -110.03234}
+  place: '0466470'
+  external_ids: {wic: 'az-dhs:178'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}
 - id: az/show-low/sober-mountain-triple-r-ranch
   name: Sober Mountain Triple R Ranch
   categories:

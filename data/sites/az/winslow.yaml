@@ -82,15 +82,23 @@
   name: Clear Creek Head Start
   categories:
   - child-care
-  address: {street: 1400 E Third St, city: Winslow, state: az, zip: '86047'}
+  address:
+    street: 1400 E Third St
+    city: Winslow
+    state: az
+    zip: '86047'
   description: Head Start early childhood program — 32 funded slots; operated by Northern Arizona Council
     of Governments.
   place: 0483930
-  geo: {lat: 35.02025, lng: -110.68361}
+  geo:
+    lat: 35.02025
+    lng: -110.68361
   phone: 928-289-2651
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/winslow/coopertown-park-mobile-bus
   name: Coopertown Park Mobile (Bus)
   categories:
@@ -218,6 +226,24 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/winslow/navajo-tribe-az
+  name: Navajo Tribe, AZ
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: 0483930
+  geo:
+    lat: 35.03226
+    lng: -110.7142
+  external_ids:
+    fns: '499007'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: az/winslow/park-view-apartments
   name: Park View Apartments
   categories:
@@ -286,15 +312,23 @@
   name: Winslow
   categories:
   - child-care
-  address: {street: Old Country Club / Airport Road, city: Winslow, state: az, zip: '86047'}
+  address:
+    street: Old Country Club / Airport Road
+    city: Winslow
+    state: az
+    zip: '86047'
   description: Head Start early childhood program — 32 funded slots; operated by Northern Arizona Council
     of Governments.
   place: 0483930
-  geo: {lat: 35.01878, lng: -110.70116}
+  geo:
+    lat: 35.01878
+    lng: -110.70116
   phone: 928-289-2651
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/winslow/winslow-crossings-apartments
   name: Winslow Crossings Apartments
   categories:
@@ -320,15 +354,23 @@
   name: Winslow Early Head Start
   categories:
   - child-care
-  address: {street: 710 N. Apache Ave, city: Winslow, state: az, zip: '86047'}
+  address:
+    street: 710 N. Apache Ave
+    city: Winslow
+    state: az
+    zip: '86047'
   description: Head Start early childhood program — 16 funded slots; operated by Northern Arizona Council
     of Governments.
   place: 0483930
-  geo: {lat: 35.02696, lng: -110.6934}
+  geo:
+    lat: 35.02696
+    lng: -110.6934
   phone: 928-289-2122
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/winslow/winslow-junior-high-school
   name: Winslow Junior High School
   categories:
@@ -391,3 +433,18 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/winslow/winslow-wic
+  name: Winslow  WIC
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. Operated by Navajo County Health Dept.'
+  address: {street: 619 E Third St, city: Winslow, state: az, zip: '86047'}
+  geo: {lat: 35.022, lng: -110.69215}
+  place: 0483930
+  external_ids: {wic: 'az-dhs:180'}
+  sources:
+  - wic/az-dhs
+  verified: {'on': '2026-07-20', method: api}

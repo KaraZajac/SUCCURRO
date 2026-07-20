@@ -54,14 +54,22 @@
   name: Florence
   categories:
   - child-care
-  address: {street: 2325 Oak St, city: Florence, state: or, zip: '97439'}
+  address:
+    street: 2325 Oak St
+    city: Florence
+    state: or
+    zip: '97439'
   description: Head Start early childhood program — 32 funded slots; operated by Head Start of Lane County.
   place: '4126050'
-  geo: {lat: 43.98695, lng: -124.10385}
+  geo:
+    lat: 43.98695
+    lng: -124.10385
   phone: 541-997-9176
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/florence/florence-little-free-pantry
   name: Florence Little Free Pantry
   categories:
@@ -78,6 +86,23 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: or/florence/lane-co-health-dept-wic-clinic
+  name: Lane Co. Health Dept. WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1536 12th St, city: Florence, state: or, zip: '97439'}
+  geo: {lat: 43.97733, lng: -124.1046}
+  place: '4126050'
+  phone: 541-682-4202
+  website: http://www.lanecounty.org/government/county_departments/health_and_human_services/public_health/women__infants___children___w_i_c__program/
+  external_ids: {wic: 'or-wic:53'}
+  sources:
+  - wic/or-wic
+  verified: {'on': '2026-07-20', method: api}
 - id: or/florence/miller-park
   name: Miller Park
   categories:

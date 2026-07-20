@@ -61,15 +61,23 @@
   name: Plattsmouth ECC
   categories:
   - child-care
-  address: {street: 902 Main St, city: Plattsmouth, state: ne, zip: '68048'}
+  address:
+    street: 902 Main St
+    city: Plattsmouth
+    state: ne
+    zip: '68048'
   description: Head Start early childhood program — 99 funded slots; operated by Plattsmouth Community
     School District.
   place: '3139345'
-  geo: {lat: 41.01124, lng: -95.88991}
+  geo:
+    lat: 41.01124
+    lng: -95.88991
   phone: 402-296-5250
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/plattsmouth/plattsmouth-elementary
   name: Plattsmouth Elementary
   categories:
@@ -134,3 +142,19 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/plattsmouth/plattsmouth-wic-clinic
+  name: Plattsmouth WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (St. Luke''s Epsicopal Church)'
+  address: {street: 302 Ave A, city: Plattsmouth, state: ne, zip: '68048'}
+  geo: {lat: 41.01227, lng: -95.88269}
+  place: '3139345'
+  phone: 402-335-2988
+  external_ids: {wic: 'ne-dhhs:55'}
+  sources:
+  - wic/ne-dhhs
+  verified: {'on': '2026-07-20', method: api}

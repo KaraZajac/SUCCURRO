@@ -1,3 +1,21 @@
+- id: or/umatilla/confed-tribes-of-umatilla
+  name: Confed. Tribes of Umatilla
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4175650'
+  geo:
+    lat: 45.92396
+    lng: -119.26016
+  external_ids:
+    fns: '4199008'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: or/umatilla/kiwanis-park
   name: Kiwanis Park
   categories:
@@ -68,15 +86,23 @@
   name: Pine Tree
   categories:
   - child-care
-  address: {street: 477 Pine Tree Ave, city: Umatilla, state: or, zip: '97882'}
+  address:
+    street: 477 Pine Tree Ave
+    city: Umatilla
+    state: or
+    zip: '97882'
   description: Head Start early childhood program — 16 funded slots; operated by Umatilla-Morrow Head
     Start.
   place: '4175650'
-  geo: {lat: 45.90448, lng: -119.34097}
+  geo:
+    lat: 45.90448
+    lng: -119.34097
   phone: 541-922-5574
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/umatilla/triangle-park
   name: Triangle Park
   categories:
@@ -103,15 +129,23 @@
   name: Umatilla
   categories:
   - child-care
-  address: {street: 1371 3rd St, city: Umatilla, state: or, zip: '97882'}
+  address:
+    street: 1371 3rd St
+    city: Umatilla
+    state: or
+    zip: '97882'
   description: Head Start early childhood program — 50 funded slots; operated by Umatilla-Morrow Head
     Start.
   place: '4175650'
-  geo: {lat: 45.92106, lng: -119.33667}
+  geo:
+    lat: 45.92106
+    lng: -119.33667
   phone: 541-922-5574
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/umatilla/umatilla-high
   name: Umatilla High
   categories:
@@ -134,3 +168,20 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/umatilla/umatilla-morrow-head-start-wic-clinic
+  name: Umatilla-Morrow Head Start WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1371 3rd St., city: Umatilla, state: or, zip: '97882'}
+  geo: {lat: 45.92112, lng: -119.33644}
+  place: '4175650'
+  phone: 800-559-5878
+  website: http://www.umchs.org/programs/wic.html
+  external_ids: {wic: 'or-wic:77'}
+  sources:
+  - wic/or-wic
+  verified: {'on': '2026-07-20', method: api}

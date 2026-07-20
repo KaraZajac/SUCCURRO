@@ -24,15 +24,23 @@
   name: Minden Head Start
   categories:
   - child-care
-  address: {street: 506 S Nance Ave, city: Minden, state: ne, zip: '68959'}
+  address:
+    street: 506 S Nance Ave
+    city: Minden
+    state: ne
+    zip: '68959'
   description: Head Start early childhood program — 16 funded slots; operated by Community Action Partnership
     of Mid-Nebraska.
   place: '3132340'
-  geo: {lat: 40.49193, lng: -98.9541}
+  geo:
+    lat: 40.49193
+    lng: -98.9541
   phone: 308-832-1054
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/minden/minden-housing-agency
   name: Minden Housing Agency
   categories:
@@ -69,3 +77,19 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ne/minden/minden-wic-clinic
+  name: Minden WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (United Methodist Church)'
+  address: {street: 340 N Newell, city: Minden, state: ne, zip: '68959'}
+  geo: {lat: 40.49808, lng: -98.94108}
+  place: '3132340'
+  phone: 308-865-5366
+  external_ids: {wic: 'ne-dhhs:81'}
+  sources:
+  - wic/ne-dhhs
+  verified: {'on': '2026-07-20', method: api}

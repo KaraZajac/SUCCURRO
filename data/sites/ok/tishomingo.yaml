@@ -14,6 +14,24 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: ok/tishomingo/chickasaw-nation-ok
+  name: Chickasaw Nation, OK
+  categories:
+  - food
+  - food-bank
+  description: Food Distribution Program on Indian Reservations (FDPIR) administering agency — distributes
+    USDA foods to income-eligible households living on or near participating reservations.
+  place: '4073900'
+  geo:
+    lat: 34.23845
+    lng: -96.67902
+  external_ids:
+    fns: '4099002'
+  sources:
+  - usda/fdpir-csfp-agencies
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/tishomingo/family-health-center-of-southern-oklahoma
   name: Family Health Center Of Southern Oklahoma
   categories:
@@ -99,6 +117,22 @@
   geo:
     lat: 34.23062
     lng: -96.66521
+- id: ok/tishomingo/johnston-chd-wic-clinic
+  name: Johnston CHD WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5.'
+  address: {street: 1080 S Byrd St, city: Tishomingo, state: ok, zip: '73460'}
+  geo: {lat: 34.22129, lng: -96.6749}
+  place: '4073900'
+  phone: 580-371-2470
+  external_ids: {wic: 'ok-osdh:40'}
+  sources:
+  - wic/ok-osdh
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/tishomingo/osapa-tunowa-tishomingo-noncongregate-n194
   name: Osapa Tunowa Tishomingo Noncongregate (N194)
   categories:
@@ -149,25 +183,41 @@
   name: TISHOMINGO HEAD START
   categories:
   - child-care
-  address: {street: 304 W 7th St, city: Tishomingo, state: ok, zip: '73460'}
+  address:
+    street: 304 W 7th St
+    city: Tishomingo
+    state: ok
+    zip: '73460'
   description: Head Start early childhood program — 8 funded slots; operated by INCA COMMUNITY SERVICES,
     INC.
   place: '4073900'
-  geo: {lat: 34.23877, lng: -96.67709}
+  geo:
+    lat: 34.23877
+    lng: -96.67709
   phone: 580-371-3680
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/tishomingo/tishomingo-head-start-2
   name: Tishomingo Head Start
   categories:
   - child-care
-  address: {street: 803 E 6th St, city: Tishomingo, state: ok, zip: '73460'}
+  address:
+    street: 803 E 6th St
+    city: Tishomingo
+    state: ok
+    zip: '73460'
   description: Head Start early childhood program — 60 funded slots; operated by The Chickasaw Nation
     Head Start.
   place: '4073900'
-  geo: {lat: 34.23349, lng: -96.66264}
+  geo:
+    lat: 34.23349
+    lng: -96.66264
   phone: 580-371-3216
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
