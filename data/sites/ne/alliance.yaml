@@ -82,6 +82,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/alliance/alliance-ne-service-extension
+  name: 'Alliance, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Alliance, state: ne, zip: '69301'}
+  geo: {lat: 42.10557, lng: -102.87388}
+  place: '3100905'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/alliance/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb32b5b095a}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/alliance/alliance-wic-clinic
   name: Alliance WIC Clinic
   categories:
@@ -90,14 +115,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Western Community Health Resources)'
-  address: {street: 619 Box Butte Ave, city: Alliance, state: ne, zip: '69301'}
-  geo: {lat: 42.10089, lng: -102.87055}
+  address:
+    street: 619 Box Butte Ave
+    city: Alliance
+    state: ne
+    zip: '69301'
+  geo:
+    lat: 42.10089
+    lng: -102.87055
   place: '3100905'
   phone: 308-762-3696
-  external_ids: {wic: 'ne-dhhs:77'}
+  external_ids:
+    wic: ne-dhhs:77
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/alliance/grandview-elementary-school
   name: Grandview Elementary School
   categories:

@@ -206,14 +206,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Polk County WIC Program.'
-  address: {street: 835 West Central Avenue, city: Lake Wales, state: fl, zip: '33853'}
-  geo: {lat: 27.90238, lng: -81.6057}
+  address:
+    street: 835 West Central Avenue
+    city: Lake Wales
+    state: fl
+    zip: '33853'
+  geo:
+    lat: 27.90238
+    lng: -81.6057
   place: '1238950'
   phone: 863-519-7542
-  external_ids: {wic: 'fl-doh:152'}
+  external_ids:
+    wic: fl-doh:152
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/lake-wales/mary-norma-campbell-resource-center
   name: Mary Norma Campbell Resource Center
   categories:
@@ -236,6 +245,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/lake-wales/polk-county-fl-lake-wales-service-unit
+  name: Polk County FL (Lake Wales) Service Unit
+  categories:
+  - emergency-shelter
+  - family-youth
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Lake Wales, state: fl, zip: '33853'}
+  geo: {lat: 27.90156, lng: -81.58376}
+  place: '1238950'
+  phone: 813-962-6611
+  website: https://www.salvationarmyusa.org/fl/lake-wales/unspecified/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Homelessness
+  - Poverty
+  - Youth Services
+  - Hunger
+  external_ids: {gdos: 8a83ac11909d821f0190a148d0830002}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/lake-wales/south-ridge-unit
   name: South Ridge Unit
   categories:

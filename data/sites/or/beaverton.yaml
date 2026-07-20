@@ -455,6 +455,25 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: or/beaverton/social-services-veterans-family-center
+  name: 'Social Services: Veterans Family Center'
+  categories:
+  - transitional-housing
+  - emergency-shelter
+  description: Salvation Army transitional housing shelter
+  address: {street: 14825 SW Farmington Road, city: Beaverton, state: or, zip: '97007'}
+  geo: {lat: 45.48333, lng: -122.83333}
+  place: '4105350'
+  phone: 503-239-1259
+  website: https://www.salvationarmyusa.org/or/beaverton/sw-farmington-road/
+  services:
+  - Adult Program Services
+  - Poverty
+  - Homelessness
+  external_ids: {gdos: 8a78d5473e314c1b013e376430930c69}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: or/beaverton/southridge
   name: Southridge
   categories:
@@ -665,15 +684,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 12550 SW 2nd ST, city: Beaverton, state: or, zip: '97005'}
-  geo: {lat: 45.4856, lng: -122.8057}
+  address:
+    street: 12550 SW 2nd ST
+    city: Beaverton
+    state: or
+    zip: '97005'
+  geo:
+    lat: 45.4856
+    lng: -122.8057
   place: '4105350'
   phone: 503-846-3555
   website: http://www.co.washington.or.us/HHS/PublicHealth/WIC/index.cfm
-  external_ids: {wic: 'or-wic:74'}
+  external_ids:
+    wic: or-wic:74
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: or/beaverton/whitford-middle
   name: Whitford Middle
   categories:

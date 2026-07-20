@@ -398,6 +398,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/palatka/putnam-county-fl-palatka-service-unit
+  name: Putnam County FL (Palatka) Service Unit
+  categories:
+  - emergency-shelter
+  - family-youth
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Palatka, state: fl, zip: '32177'}
+  geo: {lat: 29.65358, lng: -81.6629}
+  place: '1253875'
+  phone: 904-301-4856
+  website: https://www.salvationarmyusa.org/fl/palatka/unspecified/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Homelessness
+  - Poverty
+  - Youth Services
+  - Hunger
+  external_ids: {gdos: 8a82820e7cf3026e017cf8cb81f10065}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/palatka/putnam-cphu-wic-clinic
   name: Putnam Cphu WIC Clinic
   categories:
@@ -406,14 +429,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Putnam County WIC Program.'
-  address: {street: 2801 Kennedy Street, city: Palatka, state: fl, zip: '32177'}
-  geo: {lat: 29.64529, lng: -81.65836}
+  address:
+    street: 2801 Kennedy Street
+    city: Palatka
+    state: fl
+    zip: '32177'
+  geo:
+    lat: 29.64529
+    lng: -81.65836
   place: '1253875'
   phone: 386-326-3216
-  external_ids: {wic: 'fl-doh:155'}
+  external_ids:
+    wic: fl-doh:155
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/palatka/rcma-palatka-cdc
   name: RCMA Palatka CDC
   categories:

@@ -356,13 +356,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Public Health Seattle King County.'
-  address: {street: 3201 NE 7th Street, city: Renton, state: wa, zip: '98056'}
-  geo: {lat: 47.49482, lng: -122.17609}
+  address:
+    street: 3201 NE 7th Street
+    city: Renton
+    state: wa
+    zip: '98056'
+  geo:
+    lat: 47.49482
+    lng: -122.17609
   place: '5357745'
-  external_ids: {wic: 'wa-doh:12'}
+  external_ids:
+    wic: wa-doh:12
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/renton/programa-ser
   name: Programa SER
   categories:
@@ -391,6 +400,62 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/renton/renton-corps-community-center
+  name: Renton Corps Community Center
+  categories:
+  - family-support
+  - food-pantry
+  - seniors
+  - family-youth
+  description: Salvation Army community center
+  address: {street: 720 S. Tobin St., city: Renton, state: wa, zip: '98055'}
+  geo: {lat: 47.48362, lng: -122.20752}
+  place: '5357745'
+  phone: 425-255-5974
+  website: https://www.salvationarmyusa.org/wa/renton/s-tobin-st-corps/
+  services:
+  - Family Services
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Senior Services
+  - Worship and Spiritual Programs
+  - Adult Program Services
+  - Youth Services
+  external_ids: {gdos: 8a78d5473e314c1b013e376bcf9c0e73}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
+- id: wa/renton/renton-food-bank-multi-service-center
+  name: Renton Food Bank & Multi-Service Center
+  categories:
+  - seniors
+  - utility-assistance
+  - financial
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army program service
+  address: {street: 206 S. Tobin St., city: Renton, state: wa, zip: '98055'}
+  geo: {lat: 47.48372, lng: -122.21411}
+  place: '5357745'
+  phone: 425-255-5969
+  website: https://www.salvationarmyusa.org/wa/renton/s-tobin-st-1/
+  services:
+  - Worship and Spiritual Programs
+  - Senior Services
+  - Utility Rent Assistance
+  - Giving Back
+  - Holiday Giving
+  - Poverty
+  - Hunger
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a808375559c116c0155e2dc04bc03b3}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/renton/renton-public-health-center
   name: Renton Public Health Center
   categories:

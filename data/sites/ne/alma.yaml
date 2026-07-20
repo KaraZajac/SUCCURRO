@@ -18,6 +18,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/alma/alma-ne-service-extension
+  name: 'Alma, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Alma, state: ne, zip: '68920'}
+  geo: {lat: 40.10265, lng: -99.35943}
+  place: '3100975'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/alma/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bc03c050b34}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/alma/alma-wic-clinic
   name: Alma WIC Clinic
   categories:
@@ -26,11 +51,20 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Johnson Community Center)'
-  address: {street: 509 Main St, city: Alma, state: ne, zip: '68920'}
-  geo: {lat: 40.09733, lng: -99.36003}
+  address:
+    street: 509 Main St
+    city: Alma
+    state: ne
+    zip: '68920'
+  geo:
+    lat: 40.09733
+    lng: -99.36003
   place: '3100975'
   phone: 308-324-6212
-  external_ids: {wic: 'ne-dhhs:80'}
+  external_ids:
+    wic: ne-dhhs:80
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api

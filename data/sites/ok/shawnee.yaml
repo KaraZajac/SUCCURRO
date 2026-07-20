@@ -269,14 +269,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1904 Gordon Cooper Dr, city: Shawnee, state: ok}
-  geo: {lat: 35.27794, lng: -96.93086}
+  address:
+    street: 1904 Gordon Cooper Dr
+    city: Shawnee
+    state: ok
+  geo:
+    lat: 35.27794
+    lng: -96.93086
   place: '4066800'
   phone: 405-273-2157
-  external_ids: {wic: 'ok-osdh:87'}
+  external_ids:
+    wic: ok-osdh:87
   sources:
   - wic/ok-osdh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/shawnee/red-rock-behavioral-health-services-outpatient-o
   name: Red Rock Behavioral Health Services Outpatient Office and MAT Clinic
   categories:
@@ -341,6 +349,24 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/shawnee/red-shield-youth-center-of-shawnee
+  name: Red Shield Youth Center of Shawnee
+  categories:
+  - family-youth
+  - family-support
+  description: Salvation Army youth program center
+  address: {street: 200 E 9th St, city: Shawnee, state: ok, zip: '74801'}
+  geo: {lat: 35.32893, lng: -96.92068}
+  place: '4066800'
+  phone: 405-275-2243
+  website: https://www.salvationarmyusa.org/ok/shawnee/e-9th-st/
+  services:
+  - Youth Services
+  - Family Services
+  external_ids: {gdos: 8a82828477f441e801784161b15d0cd2}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/shawnee/salvation-army-boys-and-girls-club-shawnee-n151
   name: Salvation Army Boys And Girls Club Shawnee(N151)
   categories:
@@ -364,6 +390,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/shawnee/shawnee-corps
+  name: Shawnee Corps
+  categories:
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army community center
+  address: {street: 200 E 9th St, city: Shawnee, state: ok, zip: '74801'}
+  geo: {lat: 35.32893, lng: -96.92068}
+  place: '4066800'
+  phone: 405-275-2243
+  website: https://www.salvationarmyusa.org/ok/shawnee/e-9th-st-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Utility Rent Assistance
+  - Giving Back
+  - Family Services
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 402818763d5b8722013d5d51c8942790}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/shawnee/shawnee-hs-705
   name: Shawnee Hs (705)
   categories:

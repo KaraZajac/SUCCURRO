@@ -372,15 +372,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 4545 Crain Hwy, city: White Plains, state: md, zip: '20695'}
-  geo: {lat: 38.58918, lng: -76.94551}
+  address:
+    street: 4545 Crain Hwy
+    city: White Plains
+    state: md
+    zip: '20695'
+  geo:
+    lat: 38.58918
+    lng: -76.94551
   place: '2481175'
   phone: 301-609-6857
   email: charlescounty.wic@maryland.gov
-  external_ids: {wic: 'md-health:24'}
+  external_ids:
+    wic: md-health:24
   sources:
   - wic/md-health
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: md/waldorf/thomas-stone-high-school
   name: Thomas Stone High School
   categories:
@@ -478,6 +487,33 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/waldorf/waldorf-corps
+  name: Waldorf Corps
+  categories:
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - family-youth
+  description: Salvation Army outpost
+  address: {street: 11690 Doolittle Dr, city: Waldorf, state: md, zip: '20602'}
+  geo: {lat: 38.61189, lng: -76.90366}
+  place: '2481175'
+  phone: 301-638-9532
+  website: https://www.salvationarmyusa.org/md/waldorf/doolittle-dr-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Utility Rent Assistance
+  - Family Services
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  external_ids: {gdos: 402818763d5b8722013d5cf31e982262}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: md/waldorf/westlake-high-school
   name: Westlake High School
   categories:

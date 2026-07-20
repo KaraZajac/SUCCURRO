@@ -237,12 +237,49 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Maricopa County Dept Of Public Health- WIC Administration.'
-  address: {street: 777 E Galveston St, city: Chandler, state: az, zip: '85225'}
-  geo: {lat: 33.31331, lng: -111.82866}
+  address:
+    street: 777 E Galveston St
+    city: Chandler
+    state: az
+    zip: '85225'
+  geo:
+    lat: 33.31331
+    lng: -111.82866
   place: '0412000'
-  external_ids: {wic: 'az-dhs:150'}
+  external_ids:
+    wic: az-dhs:150
   sources:
   - wic/az-dhs
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: az/chandler/chandler-corps-community-center
+  name: Chandler Corps Community Center
+  categories:
+  - family-support
+  - food-pantry
+  - utility-assistance
+  - financial
+  - family-youth
+  description: Salvation Army community center
+  address: {street: 85 E. Saragosa Street, city: Chandler, state: az, zip: '85225'}
+  geo: {lat: 33.29487, lng: -111.8403}
+  place: '0412000'
+  phone: 480-963-2041
+  website: https://www.salvationarmyusa.org/az/chandler/e-saragosa-street-corps/
+  services:
+  - Family Services
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Worship and Spiritual Programs
+  - Utility Rent Assistance
+  - Adult Program Services
+  - Youth Services
+  external_ids: {gdos: 8a808375559c116c0155bece75e702fe}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: az/chandler/chandler-high-school
   name: Chandler High School

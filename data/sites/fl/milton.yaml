@@ -345,14 +345,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Santa Rosa County  WIC Program.'
-  address: {street: 5527 Stewart Street, city: Milton, state: fl, zip: '32570'}
-  geo: {lat: 30.63519, lng: -87.04316}
+  address:
+    street: 5527 Stewart Street
+    city: Milton
+    state: fl
+    zip: '32570'
+  geo:
+    lat: 30.63519
+    lng: -87.04316
   place: '1245750'
   phone: 850-983-5250
-  external_ids: {wic: 'fl-doh:163'}
+  external_ids:
+    wic: fl-doh:163
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/milton/mobile-carpenters-park
   name: Mobile - Carpenters Park
   categories:
@@ -459,6 +468,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/milton/santa-rosa-county-fl-milton-service-unit
+  name: Santa Rosa County FL (Milton) Service Unit
+  categories:
+  - emergency-shelter
+  - family-youth
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Milton, state: fl, zip: '32570'}
+  geo: {lat: 30.68864, lng: -87.04329}
+  place: '1245750'
+  phone: 813-962-6611
+  website: https://www.salvationarmyusa.org/fl/milton/unspecified/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Homelessness
+  - Poverty
+  - Youth Services
+  - Hunger
+  external_ids: {gdos: 8a8384a9909d41350190a148e3c40006}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/milton/t-r-jackson-pre-k-center
   name: T.R. Jackson Pre-K Center
   categories:

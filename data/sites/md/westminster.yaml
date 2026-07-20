@@ -182,15 +182,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 290 S Center Street, city: Westminster, state: md, zip: '21157'}
-  geo: {lat: 39.56744, lng: -76.99684}
+  address:
+    street: 290 S Center Street
+    city: Westminster
+    state: md
+    zip: '21157'
+  geo:
+    lat: 39.56744
+    lng: -76.99684
   place: '2483100'
   phone: 410-876-4898
   email: carroll.wic@maryland.gov
-  external_ids: {wic: 'md-health:19'}
+  external_ids:
+    wic: md-health:19
   sources:
   - wic/md-health
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: md/westminster/carroll-county-housing-community-dev
   name: Carroll County Housing & Community Dev
   categories:
@@ -298,15 +307,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 200 Memorial Avenue, city: Westminster, state: md, zip: '21157'}
-  geo: {lat: 39.55837, lng: -76.99026}
+  address:
+    street: 200 Memorial Avenue
+    city: Westminster
+    state: md
+    zip: '21157'
+  geo:
+    lat: 39.55837
+    lng: -76.99026
   place: '2483100'
   phone: 410-876-4898
   email: carroll.wic@maryland.gov
-  external_ids: {wic: 'md-health:22'}
+  external_ids:
+    wic: md-health:22
   sources:
   - wic/md-health
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: md/westminster/city-of-westminster-housing-office
   name: City Of Westminster Housing Office
   categories:
@@ -728,3 +746,25 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: md/westminster/westminster-service-center
+  name: Westminster Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service center
+  address: {street: 300 Hahn Rd, city: Westminster, state: md, zip: '21157'}
+  geo: {lat: 39.58723, lng: -76.98461}
+  place: '2483100'
+  phone: 410-876-9358
+  website: https://www.salvationarmyusa.org/md/westminster/hahn-rd/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  external_ids: {gdos: 8a82805a7e532110017e5c8fabd4006a}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}

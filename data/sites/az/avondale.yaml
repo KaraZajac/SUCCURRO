@@ -71,13 +71,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Adelante Healthcare.'
-  address: {street: 995 E Riley Dr, city: Avondale, state: az, zip: '85323'}
-  geo: {lat: 33.43883, lng: -112.33729}
+  address:
+    street: 995 E Riley Dr
+    city: Avondale
+    state: az
+    zip: '85323'
+  geo:
+    lat: 33.43883
+    lng: -112.33729
   place: '0404720'
-  external_ids: {wic: 'az-dhs:106'}
+  external_ids:
+    wic: az-dhs:106
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: az/avondale/canyon-breeze-elementary
   name: Canyon Breeze Elementary
   categories:
@@ -234,6 +243,35 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/avondale/estrella-mountain-corps-community-center
+  name: Estrella Mountain Corps Community Center
+  categories:
+  - family-support
+  - food-pantry
+  - utility-assistance
+  - financial
+  - family-youth
+  description: Salvation Army community center
+  address: {street: 11 N. 3rd Avenue, city: Avondale, state: az, zip: '85323'}
+  geo: {lat: 33.43524, lng: -112.35332}
+  place: '0404720'
+  phone: 623-932-0472
+  website: https://www.salvationarmyusa.org/az/avondale/n-3rd-avenue-corps/
+  services:
+  - Family Services
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Worship and Spiritual Programs
+  - Utility Rent Assistance
+  - Adult Program Services
+  - Correctional Services
+  - Youth Services
+  external_ids: {gdos: 8a808375559c116c0155bece78b80304}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: az/avondale/garden-lakes-elementary-school
   name: Garden Lakes Elementary School
   categories:

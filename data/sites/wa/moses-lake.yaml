@@ -402,13 +402,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Moses Lake Comm Health Center.'
-  address: {street: 605 Coolidge Dr, street2: Suite 101, city: Moses Lake, state: wa, zip: '98837'}
-  geo: {lat: 47.12918, lng: -119.26332}
+  address:
+    street: 605 Coolidge Dr
+    street2: Suite 101
+    city: Moses Lake
+    state: wa
+    zip: '98837'
+  geo:
+    lat: 47.12918
+    lng: -119.26332
   place: '5347245'
-  external_ids: {wic: 'wa-doh:165'}
+  external_ids:
+    wic: wa-doh:165
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/moses-lake/moses-lake-community-health-center
   name: MOSES LAKE COMMUNITY HEALTH CENTER
   categories:
@@ -454,6 +464,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/moses-lake/moses-lake-service-center
+  name: Moses Lake Service Center
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service center
+  address: {street: 212 Alder St., city: Moses Lake, state: wa, zip: '98837'}
+  geo: {lat: 47.13114, lng: -119.27734}
+  place: '5347245'
+  phone: 509-766-5875
+  website: https://www.salvationarmyusa.org/wa/moses-lake/alder-st/
+  services:
+  - Giving Back
+  - Holiday Giving
+  - Poverty
+  - Hunger
+  - Miscellaneous
+  - Youth Services
+  - Correctional Services
+  - Homelessness
+  external_ids: {gdos: 8a80800f559c116f0155c3f3794300ab}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/moses-lake/north-elementary
   name: North Elementary
   categories:

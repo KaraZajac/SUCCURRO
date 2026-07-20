@@ -106,6 +106,32 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: wa/des-moines/federal-way-corps-community-center
+  name: Federal Way Corps Community Center
+  categories:
+  - family-support
+  - food-pantry
+  - seniors
+  description: Salvation Army community center
+  address: {street: 26419 16th Ave. S, city: Des Moines, state: wa, zip: '98198'}
+  geo: {lat: 47.36667, lng: -122.31667}
+  place: '5317635'
+  phone: 253-946-1346
+  website: https://www.salvationarmyusa.org/wa/des-moines/16th-ave-s-corps/
+  services:
+  - Family Services
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Senior Services
+  - Worship and Spiritual Programs
+  - Adult Program Services
+  - Correctional Services
+  external_ids: {gdos: 8a808375559c116c0155becdea9c0223}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/des-moines/healthpoint-midway
   name: HealthPoint Midway
   categories:
@@ -197,13 +223,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Public Health Seattle King County.'
-  address: {street: 26401 Pacific Highway South, city: Des Moines, state: wa, zip: '98198'}
-  geo: {lat: 47.36499, lng: -122.30654}
+  address:
+    street: 26401 Pacific Highway South
+    city: Des Moines
+    state: wa
+    zip: '98198'
+  geo:
+    lat: 47.36499
+    lng: -122.30654
   place: '5317635'
-  external_ids: {wic: 'wa-doh:15'}
+  external_ids:
+    wic: wa-doh:15
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/des-moines/redondo-beach
   name: Redondo Beach
   categories:

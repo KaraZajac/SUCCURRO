@@ -62,6 +62,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/o-neill/holt-county-ne-service-extension
+  name: 'Holt County, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: O'Neill, state: ne, zip: '68763'}
+  geo: {lat: 42.45646, lng: -98.63804}
+  place: '3137105'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ne/o-neill/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb061ea08f1}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/o-neill/midtown-health-center-o-neill
   name: Midtown Health Center - O'Neill
   categories:
@@ -169,14 +194,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (North Central District Health Department)'
-  address: {street: 422 E Douglas St, city: O'Neill, state: ne, zip: '68763'}
-  geo: {lat: 42.45801, lng: -98.64678}
+  address:
+    street: 422 E Douglas St
+    city: O'Neill
+    state: ne
+    zip: '68763'
+  geo:
+    lat: 42.45801
+    lng: -98.64678
   place: '3137105'
   phone: 402-336-2406
-  external_ids: {wic: 'ne-dhhs:18'}
+  external_ids:
+    wic: ne-dhhs:18
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/o-neill/valley-hope-of-oneill
   name: Valley Hope of ONeill
   categories:

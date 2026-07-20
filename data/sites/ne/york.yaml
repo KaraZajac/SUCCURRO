@@ -108,6 +108,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/york/york-ne-service-extension
+  name: 'York, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service extension
+  address: {city: York, state: ne, zip: '68467'}
+  geo: {lat: 40.89767, lng: -97.59316}
+  place: '3154045'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ne/york/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb317a40957}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/york/york-wic-clinic
   name: York WIC Clinic
   categories:
@@ -116,11 +139,21 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (BVCA FCS Building)'
-  address: {street: 3401 N Lincoln Ave, street2: STE 104, city: York, state: ne, zip: '68467'}
-  geo: {lat: 40.89808, lng: -97.59399}
+  address:
+    street: 3401 N Lincoln Ave
+    street2: STE 104
+    city: York
+    state: ne
+    zip: '68467'
+  geo:
+    lat: 40.89808
+    lng: -97.59399
   place: '3154045'
   phone: 402-587-0706
-  external_ids: {wic: 'ne-dhhs:3'}
+  external_ids:
+    wic: ne-dhhs:3
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api

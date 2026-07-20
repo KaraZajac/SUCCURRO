@@ -19,6 +19,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/auburn/auburn-ne-service-extension
+  name: 'Auburn, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Auburn, state: ne, zip: '68305'}
+  geo: {lat: 40.39282, lng: -95.83642}
+  place: '3102655'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/auburn/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb215670930}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/auburn/auburn-wic-clinic
   name: Auburn WIC Clinic
   categories:
@@ -27,14 +52,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (United Methodist Church)'
-  address: {street: 1205 L St, city: Auburn, state: ne, zip: '68305'}
-  geo: {lat: 40.39251, lng: -95.84125}
+  address:
+    street: 1205 L St
+    city: Auburn
+    state: ne
+    zip: '68305'
+  geo:
+    lat: 40.39251
+    lng: -95.84125
   place: '3102655'
   phone: 402-335-2988
-  external_ids: {wic: 'ne-dhhs:29'}
+  external_ids:
+    wic: ne-dhhs:29
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/auburn/blue-valley-behavioral-health-auburn-office
   name: Blue Valley Behavioral Health Auburn Office
   categories:

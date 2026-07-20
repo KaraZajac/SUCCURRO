@@ -100,14 +100,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Leon County WIC Program.'
-  address: {street: 1215 Peacock Street, city: Perry, state: fl, zip: '32347'}
-  geo: {lat: 30.12728, lng: -83.57639}
+  address:
+    street: 1215 Peacock Street
+    city: Perry
+    state: fl
+    zip: '32347'
+  geo:
+    lat: 30.12728
+    lng: -83.57639
   place: '1256150'
   phone: 850-404-6350
-  external_ids: {wic: 'fl-doh:97'}
+  external_ids:
+    wic: fl-doh:97
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/perry/north-florida-medical-perry
   name: North Florida Medical - Perry
   categories:
@@ -216,6 +225,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/perry/taylor-county-fl-perry-service-unit
+  name: Taylor County FL (Perry) Service Unit
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service unit
+  address: {street: 604 W Julia St, city: Perry, state: fl, zip: '32347'}
+  geo: {lat: 30.12312, lng: -83.58708}
+  place: '1256150'
+  phone: 850-584-5678
+  website: https://www.salvationarmyusa.org/fl/perry/w-julia-st/
+  services:
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a82828477f441e801784144e37b0b67}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/perry/taylor-county-high-school
   name: Taylor County High School
   categories:

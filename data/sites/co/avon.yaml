@@ -6,14 +6,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Eagle County Public Health.'
-  address: {street: '100 W.  Beaver Creek Boulevard, Suite 107', city: Avon, state: co, zip: '81620'}
-  geo: {lat: 39.35778, lng: -104.5961}
+  address:
+    street: 100 W.  Beaver Creek Boulevard, Suite 107
+    city: Avon
+    state: co
+    zip: '81620'
+  geo:
+    lat: 39.35778
+    lng: -104.5961
   place: 0804110
   phone: 970-949-7026
-  external_ids: {wic: 'co-cdphe:46'}
+  external_ids:
+    wic: co-cdphe:46
   sources:
   - wic/co-cdphe
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: co/avon/homestake-peak
   name: Homestake Peak
   categories:
@@ -80,6 +89,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/avon/vail-service-center
+  name: Vail Service Center
+  categories:
+  - seniors
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {street: 40780 U.S. Highway 6, city: Avon, state: co, zip: '81620'}
+  geo: {lat: 39.62202, lng: -106.47987}
+  place: 0804110
+  phone: 970-748-0704
+  website: https://www.salvationarmyusa.org/co/avon/us-highway-6/
+  services:
+  - Senior Services
+  - Giving Back
+  - Holiday Giving
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Homelessness
+  external_ids: {gdos: 8a80823b5adc4fcd015b1dcf10f70075}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: co/avon/youth-power-365-avon-elementary-school
   name: Youth Power 365 - Avon Elementary School
   categories:

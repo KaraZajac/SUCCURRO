@@ -59,14 +59,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Flagler County WIC Program.'
-  address: {street: 301 Dr. Carter Blvd., city: Bunnell, state: fl, zip: '32110'}
-  geo: {lat: 29.46622, lng: -81.24895}
+  address:
+    street: 301 Dr. Carter Blvd.
+    city: Bunnell
+    state: fl
+    zip: '32110'
+  geo:
+    lat: 29.46622
+    lng: -81.24895
   place: '1209550'
   phone: 386-437-7294
-  external_ids: {wic: 'fl-doh:55'}
+  external_ids:
+    wic: fl-doh:55
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/bunnell/epic-community-services-inc-flagler-office
   name: EPIC Community Services Inc Flagler Office
   categories:
@@ -105,6 +114,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/bunnell/flagler-county-fl-bunnell-service-unit
+  name: Flagler County FL (Bunnell) Service Unit
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service unit
+  address: {street: 700 E Moody Blvd Ste 3, city: Bunnell, state: fl, zip: '32110'}
+  geo: {lat: 29.469, lng: -81.25385}
+  place: '1209550'
+  phone: 386-236-2020
+  website: https://www.salvationarmyusa.org/fl/bunnell/e-moody-blvd-ste-3/
+  services:
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a8280c68b4e700a018b656eaa2f0000}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/bunnell/g-w-carver-community-center
   name: G. W. Carver Community Center
   categories:

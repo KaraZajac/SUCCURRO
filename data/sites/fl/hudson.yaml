@@ -115,14 +115,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Pasco County WIC Program.'
-  address: {street: 11611 Denton Avenue, city: Hudson, state: fl, zip: '34667'}
-  geo: {lat: 28.39001, lng: -82.62454}
+  address:
+    street: 11611 Denton Avenue
+    city: Hudson
+    state: fl
+    zip: '34667'
+  geo:
+    lat: 28.39001
+    lng: -82.62454
   place: '1232825'
   phone: 877-942-2329
-  external_ids: {wic: 'fl-doh:140'}
+  external_ids:
+    wic: fl-doh:140
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/hudson/premier-community-healthcare-group-inc-hudson-hi
   name: Premier Community HealthCare Group Inc. - Hudson High
   categories:
@@ -191,6 +200,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/hudson/west-pasco-domestic-violence-shelter
+  name: West Pasco Domestic Violence Shelter
+  categories:
+  - domestic-violence
+  - utility-assistance
+  - financial
+  - emergency-shelter
+  description: Salvation Army domestic violence center
+  address: {street: Unspecified, city: Hudson, state: fl, zip: '34667'}
+  geo: {lat: 28.3738, lng: -82.66787}
+  place: '1232825'
+  phone: 727-815-8539
+  website: https://www.salvationarmyusa.org/fl/hudson/unspecified/
+  services:
+  - Domestic Violence
+  - Human Trafficking
+  - Utility Rent Assistance
+  - Poverty
+  - Homelessness
+  external_ids: {gdos: 8a8280b58d7316e6018d7bcc81bd0090}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/hudson/west-pasco-education-academy
   name: West Pasco Education Academy
   categories:

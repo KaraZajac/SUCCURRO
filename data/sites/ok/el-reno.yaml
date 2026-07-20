@@ -6,14 +6,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 100 S Rock Island Ave, city: El Reno, state: ok, zip: '73036'}
-  geo: {lat: 35.53301, lng: -97.95303}
+  address:
+    street: 100 S Rock Island Ave
+    city: El Reno
+    state: ok
+    zip: '73036'
+  geo:
+    lat: 35.53301
+    lng: -97.95303
   place: '4023700'
   phone: 405-262-0042
-  external_ids: {wic: 'ok-osdh:9'}
+  external_ids:
+    wic: ok-osdh:9
   sources:
   - wic/ok-osdh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/el-reno/darlington-public-school-105
   name: Darlington Public School(105)
   categories:
@@ -57,6 +66,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/el-reno/el-reno-service-center
+  name: El Reno Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service center
+  address: {street: 1012 S Rock Island Ave, city: El Reno, state: ok, zip: '73036'}
+  geo: {lat: 35.52442, lng: -97.95303}
+  place: '4023700'
+  phone: 405-295-2343
+  website: https://www.salvationarmyusa.org/ok/el-reno/s-rock-island-ave/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  external_ids: {gdos: 8a82828477f441e801784153dbdb0c18}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/el-reno/gary-e-miller-candian-county-childrens-justice-c
   name: Gary E Miller Candian County Childrens Justice Center
   categories:

@@ -18,6 +18,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/aurora/aurora-ne-service-extension
+  name: 'Aurora, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Aurora, state: ne, zip: '68305'}
+  geo: {lat: 40.39282, lng: -95.83642}
+  place: '3102690'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/aurora/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb110a90909}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/aurora/aurora-wic-clinic
   name: Aurora WIC Clinic
   categories:
@@ -26,11 +51,20 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Methodist Church)'
-  address: {street: 1104 A St, city: Aurora, state: ne, zip: '68818'}
-  geo: {lat: 40.85717, lng: -98.0039}
+  address:
+    street: 1104 A St
+    city: Aurora
+    state: ne
+    zip: '68818'
+  geo:
+    lat: 40.85717
+    lng: -98.0039
   place: '3102690'
   phone: 308-385-5188
-  external_ids: {wic: 'ne-dhhs:9'}
+  external_ids:
+    wic: ne-dhhs:9
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api

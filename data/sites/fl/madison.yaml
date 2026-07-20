@@ -58,14 +58,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Leon County WIC Program.'
-  address: {street: 218 SW Third Street, city: Madison, state: fl, zip: '32340'}
-  geo: {lat: 30.46375, lng: -83.42079}
+  address:
+    street: 218 SW Third Street
+    city: Madison
+    state: fl
+    zip: '32340'
+  geo:
+    lat: 30.46375
+    lng: -83.42079
   place: '1242425'
   phone: 850-404-6350
-  external_ids: {wic: 'fl-doh:96'}
+  external_ids:
+    wic: fl-doh:96
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/madison/madison-county-central-school
   name: Madison County Central School
   categories:
@@ -89,6 +98,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/madison/madison-county-fl-madison-service-unit
+  name: Madison County FL (Madison) Service Unit
+  categories:
+  - emergency-shelter
+  - family-youth
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Madison, state: fl, zip: '32340'}
+  geo: {lat: 30.48248, lng: -83.40634}
+  place: '1242425'
+  phone: 813-962-6611
+  website: https://www.salvationarmyusa.org/fl/madison/unspecified/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Homelessness
+  - Poverty
+  - Youth Services
+  - Hunger
+  external_ids: {gdos: 8a83ac11909d821f0190a148debc0008}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/madison/madison-county-head-start
   name: Madison County Head Start
   categories:

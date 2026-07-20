@@ -605,13 +605,41 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1400 E College Ave, city: McAlester, state: ok, zip: '74501'}
-  geo: {lat: 34.93196, lng: -95.73952}
+  address:
+    street: 1400 E College Ave
+    city: McAlester
+    state: ok
+    zip: '74501'
+  geo:
+    lat: 34.93196
+    lng: -95.73952
   place: '4044800'
   phone: 918-423-1267
-  external_ids: {wic: 'ok-osdh:85'}
+  external_ids:
+    wic: ok-osdh:85
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/mcalester/pittsburg-county-ok-mcalester-service-unit
+  name: Pittsburg County OK (McAlester) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  description: Salvation Army service unit
+  address: {street: 609 E Peoria Ave, city: McAlester, state: ok, zip: '74501'}
+  geo: {lat: 34.91761, lng: -95.76604}
+  place: '4044800'
+  phone: 918-423-3525
+  website: https://www.salvationarmyusa.org/ok/mcalester/e-peoria-ave/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  external_ids: {gdos: 402818763d5b8722013d5cd06e261fad}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: ok/mcalester/randy-hughes-ms-515
   name: Randy Hughes Ms(515)

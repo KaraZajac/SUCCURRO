@@ -35,6 +35,38 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: md/cambridge/cambridge-corps
+  name: Cambridge Corps
+  categories:
+  - seniors
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army community center
+  address: {street: 200 Washington St, city: Cambridge, state: md, zip: '21613'}
+  geo: {lat: 38.56167, lng: -76.07359}
+  place: '2412400'
+  phone: 410-330-4154
+  website: https://www.salvationarmyusa.org/md/cambridge/washington-st-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Senior Services
+  - Utility Rent Assistance
+  - Giving Back
+  - Family Services
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 402818763d5b8722013d5cde31c120b2}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: md/cambridge/cambridge-va-clinic
   name: Cambridge VA Clinic
   categories:
@@ -90,15 +122,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: '7 Cedar Street, Suite 5', city: Cambridge, state: md, zip: '21613'}
-  geo: {lat: 38.56477, lng: -76.06881}
+  address:
+    street: 7 Cedar Street, Suite 5
+    city: Cambridge
+    state: md
+    zip: '21613'
+  geo:
+    lat: 38.56477
+    lng: -76.06881
   place: '2412400'
   phone: 410-479-8060
   email: midshore.wic@maryland.gov
-  external_ids: {wic: 'md-health:20'}
+  external_ids:
+    wic: md-health:20
   sources:
   - wic/md-health
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: md/cambridge/community-behavioral-health
   name: Community Behavioral Health
   categories:

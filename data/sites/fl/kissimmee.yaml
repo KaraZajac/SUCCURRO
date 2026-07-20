@@ -506,14 +506,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Osceola County WIC Program.'
-  address: {street: 1875 Fortune Road, city: Kissimmee, state: fl, zip: '34744'}
-  geo: {lat: 28.30423, lng: -81.36858}
+  address:
+    street: 1875 Fortune Road
+    city: Kissimmee
+    state: fl
+    zip: '34744'
+  geo:
+    lat: 28.30423
+    lng: -81.36858
   place: '1236950'
   phone: 407-343-2085
-  external_ids: {wic: 'fl-doh:128'}
+  external_ids:
+    wic: fl-doh:128
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/kissimmee/kissimmee-elementary-school
   name: Kissimmee Elementary School
   categories:
@@ -1180,6 +1189,27 @@
   geo:
     lat: 28.28642
     lng: -81.35915
+- id: fl/kissimmee/osceola-county-fl-kissimmee-service-unit
+  name: Osceola County FL (Kissimmee) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Kissimmee, state: fl, zip: '34741'}
+  geo: {lat: 28.30945, lng: -81.42361}
+  place: '1236950'
+  phone: 407-944-9968
+  website: https://www.salvationarmyusa.org/fl/kissimmee/unspecified/
+  services:
+  - Giving Back
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  external_ids: {gdos: 2c9f66ad98e5c7c4019919576dda0014}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/kissimmee/osceola-county-housing-agency
   name: Osceola County Housing Agency
   categories:

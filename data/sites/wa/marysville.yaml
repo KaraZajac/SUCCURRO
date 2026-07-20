@@ -168,6 +168,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/marysville/marysville-service-center
+  name: Marysville Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - family-youth
+  description: Salvation Army service center
+  address: {street: 1108 State Avenue, city: Marysville, state: wa, zip: '98270'}
+  geo: {lat: 48.06081, lng: -122.17648}
+  place: '5343955'
+  phone: 360-926-2228
+  website: https://www.salvationarmyusa.org/wa/marysville/state-avenue/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  external_ids: {gdos: 8a8081ee6cf82b59016d5e639f380008}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/marysville/pregnancy-aid-wic-marysville
   name: Pregnancy Aid WIC-Marysville
   categories:
@@ -176,13 +200,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Pregnancy Aid of Snohomish County.'
-  address: {street: 1410 7th Street, street2: Suite A, city: Marysville, state: wa, zip: '98270'}
-  geo: {lat: 48.05445, lng: -122.17843}
+  address:
+    street: 1410 7th Street
+    street2: Suite A
+    city: Marysville
+    state: wa
+    zip: '98270'
+  geo:
+    lat: 48.05445
+    lng: -122.17843
   place: '5343955'
-  external_ids: {wic: 'wa-doh:21'}
+  external_ids:
+    wic: wa-doh:21
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/marysville/quil-ceda-creek-counseling-company
   name: Quil Ceda Creek Counseling Company
   categories:

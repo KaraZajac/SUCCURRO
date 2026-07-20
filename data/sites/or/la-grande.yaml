@@ -67,14 +67,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 2301 Cove Ave., city: La Grande, state: or, zip: '97850'}
-  geo: {lat: 45.32591, lng: -118.07513}
+  address:
+    street: 2301 Cove Ave.
+    city: La Grande
+    state: or
+    zip: '97850'
+  geo:
+    lat: 45.32591
+    lng: -118.07513
   place: '4140350'
   phone: 541-962-8829
-  external_ids: {wic: 'or-wic:5'}
+  external_ids:
+    wic: or-wic:5
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: or/la-grande/central-elem
   name: Central Elem
   categories:
@@ -295,3 +304,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/la-grande/service-extension-social-service-centers-la-gran
+  name: 'Service Extension Social Service Centers: La Grande Service Unit'
+  categories:
+  - domestic-violence
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service center
+  address: {street: 1114 "Y" Ave., city: La Grande, state: or, zip: '97850'}
+  geo: {lat: 45.33586, lng: -118.0944}
+  place: '4140350'
+  phone: 541-963-4829
+  website: https://www.salvationarmyusa.org/or/la-grande/y-ave/
+  services:
+  - Domestic Violence
+  - Utility Rent Assistance
+  - Giving Back
+  - Holiday Giving
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Homelessness
+  external_ids: {gdos: 8a78d5473e314c1b013e376483e00c81}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}

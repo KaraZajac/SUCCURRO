@@ -181,6 +181,38 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/bradenton/bradenton-corps
+  name: Bradenton Corps
+  categories:
+  - seniors
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army community center
+  address: {street: 5328 24th St E, city: Bradenton, state: fl, zip: '34203'}
+  geo: {lat: 27.44683, lng: -82.53462}
+  place: '1207950'
+  phone: 941-755-3248
+  website: https://www.salvationarmyusa.org/fl/bradenton/24th-st-e-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Senior Services
+  - Utility Rent Assistance
+  - Giving Back
+  - Family Services
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 402818763d5b8722013d5ce278942109}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/bradenton/bradenton-family-medical-center
   name: Bradenton Family Medical Center
   categories:
@@ -204,6 +236,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/bradenton/bradenton-social-services
+  name: Bradenton Social Services
+  categories:
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army program service
+  address: {street: 1204 Tamiami Trl, city: Bradenton, state: fl, zip: '34205'}
+  geo: {lat: 27.48809, lng: -82.57555}
+  place: '1207950'
+  phone: 941-748-5110
+  website: https://www.salvationarmyusa.org/fl/bradenton/tamiami-trl/
+  services:
+  - Adult Program Services
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Donation Dropoff
+  - Homelessness
+  external_ids: {gdos: 402818763d5b8722013d5d7e306b2ba7}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/bradenton/bradenton-va-clinic
   name: Bradenton VA Clinic
   categories:
@@ -976,14 +1030,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Manatee County WIC Program.'
-  address: {street: 212 6th Avenue East, city: Bradenton, state: fl, zip: '34208'}
-  geo: {lat: 27.49389, lng: -82.56099}
+  address:
+    street: 212 6th Avenue East
+    city: Bradenton
+    state: fl
+    zip: '34208'
+  geo:
+    lat: 27.49389
+    lng: -82.56099
   place: '1207950'
   phone: 941-741-3400
-  external_ids: {wic: 'fl-doh:98'}
+  external_ids:
+    wic: fl-doh:98
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/bradenton/manatee-elementary-school
   name: Manatee Elementary School
   categories:

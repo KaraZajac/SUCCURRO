@@ -75,14 +75,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Palm Beach County WIC Program.'
-  address: {street: 38754 State Road 80, city: Belle Glade, state: fl, zip: '33430'}
-  geo: {lat: 26.7257, lng: -80.66389}
+  address:
+    street: 38754 State Road 80
+    city: Belle Glade
+    state: fl
+    zip: '33430'
+  geo:
+    lat: 26.7257
+    lng: -80.66389
   place: '1205200'
   phone: 561-357-6007
-  external_ids: {wic: 'fl-doh:135'}
+  external_ids:
+    wic: fl-doh:135
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/belle-glade/covenant-villas
   name: Covenant Villas
   categories:
@@ -392,6 +401,29 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+- id: fl/belle-glade/palm-beach-county-fl-belle-glade-service-unit
+  name: Palm Beach County FL (Belle Glade) Service Unit
+  categories:
+  - emergency-shelter
+  - family-youth
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: Unspecified, city: Belle Glade, state: fl, zip: '33430'}
+  geo: {lat: 26.68608, lng: -80.67054}
+  place: '1205200'
+  phone: 561-686-3530
+  website: https://www.salvationarmyusa.org/fl/belle-glade/unspecified/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Homelessness
+  - Poverty
+  - Youth Services
+  - Hunger
+  external_ids: {gdos: 8a8384a9909d41350190a148da150003}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/belle-glade/peppi
   name: PEPPI
   categories:

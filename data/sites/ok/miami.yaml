@@ -310,13 +310,43 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1930 N Elm St, city: Miami, state: ok, zip: '74354'}
-  geo: {lat: 36.89694, lng: -94.85899}
+  address:
+    street: 1930 N Elm St
+    city: Miami
+    state: ok
+    zip: '74354'
+  geo:
+    lat: 36.89694
+    lng: -94.85899
   place: '4048000'
   phone: 918-540-2481
-  external_ids: {wic: 'ok-osdh:81'}
+  external_ids:
+    wic: ok-osdh:81
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/miami/ottawa-county-ok-miami-service-unit
+  name: Ottawa County OK (Miami) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: 1915 N Main St, city: Miami, state: ok, zip: '74354'}
+  geo: {lat: 36.89684, lng: -94.87788}
+  place: '4048000'
+  phone: 918-542-3467
+  website: https://www.salvationarmyusa.org/ok/miami/n-main-st/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  external_ids: {gdos: 8a82828477f441e801784129025309c3}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: ok/miami/quapaw-counseling-services
   name: Quapaw Counseling Services

@@ -175,13 +175,41 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: '215 Fairgrounds Rd, Ste A', city: Guthrie, state: ok, zip: '73044'}
-  geo: {lat: 35.86544, lng: -97.42787}
+  address:
+    street: 215 Fairgrounds Rd, Ste A
+    city: Guthrie
+    state: ok
+    zip: '73044'
+  geo:
+    lat: 35.86544
+    lng: -97.42787
   place: '4031700'
   phone: 405-282-3485
-  external_ids: {wic: 'ok-osdh:48'}
+  external_ids:
+    wic: ok-osdh:48
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/guthrie/logan-county-ok-guthrie-service-unit
+  name: Logan County OK (Guthrie) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  description: Salvation Army service unit
+  address: {street: 1524 E Perkins Ave, city: Guthrie, state: ok, zip: '73044'}
+  geo: {lat: 35.87399, lng: -97.40689}
+  place: '4031700'
+  phone: 405-466-8115
+  website: https://www.salvationarmyusa.org/ok/guthrie/e-perkins-ave/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  external_ids: {gdos: 8a82804d77cf72c60178413f74ac0b1b}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: ok/guthrie/mineral-wells-noncongregate-n6
   name: Mineral Wells Noncongregate(N6)

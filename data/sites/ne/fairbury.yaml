@@ -65,6 +65,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/fairbury/fairbury-ne-service-extension
+  name: 'Fairbury, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Fairbury, state: ne, zip: '68352'}
+  geo: {lat: 40.14634, lng: -97.17843}
+  place: '3116410'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ne/fairbury/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb03b0908eb}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/fairbury/fairbury-wic-clinic
   name: Fairbury WIC Clinic
   categories:
@@ -73,14 +98,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (United Methodist Church)'
-  address: {street: 605 E St, city: Fairbury, state: ne, zip: '68352'}
-  geo: {lat: 40.13743, lng: -97.18003}
+  address:
+    street: 605 E St
+    city: Fairbury
+    state: ne
+    zip: '68352'
+  geo:
+    lat: 40.13743
+    lng: -97.18003
   place: '3116410'
   phone: 402-335-2988
-  external_ids: {wic: 'ne-dhhs:27'}
+  external_ids:
+    wic: ne-dhhs:27
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/fairbury/jefferson-county-head-start-0-3
   name: Jefferson County Head Start 0-3
   categories:

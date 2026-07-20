@@ -445,13 +445,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Cowlitz Family Health Center.'
-  address: {street: 1717 Olympia Way, street2: Suite 206, city: Longview, state: wa, zip: '98632'}
-  geo: {lat: 46.14056, lng: -122.94012}
+  address:
+    street: 1717 Olympia Way
+    street2: Suite 206
+    city: Longview
+    state: wa
+    zip: '98632'
+  geo:
+    lat: 46.14056
+    lng: -122.94012
   place: '5340245'
-  external_ids: {wic: 'wa-doh:132'}
+  external_ids:
+    wic: wa-doh:132
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/longview/cowlitz-family-health-center
   name: COWLITZ FAMILY HEALTH CENTER
   categories:
@@ -636,6 +646,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/longview/longview-temple-corps-community-center
+  name: Longview Temple Corps Community Center
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army community center
+  address: {street: 1639 10th Ave., city: Longview, state: wa, zip: '98632'}
+  geo: {lat: 46.14054, lng: -122.92873}
+  place: '5340245'
+  phone: 360-423-3992
+  website: https://www.salvationarmyusa.org/wa/longview/10th-ave-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Giving Back
+  - Holiday Giving
+  - Poverty
+  - Hunger
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a808375559c116c0155becdf1f8022f}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/longview/lower-columbia-cac
   name: Lower Columbia CAC
   categories:

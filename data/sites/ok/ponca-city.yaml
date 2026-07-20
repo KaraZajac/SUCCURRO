@@ -120,14 +120,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 433 Fairview Ave, city: Ponca City, state: ok, zip: '74601'}
-  geo: {lat: 36.72965, lng: -97.06875}
+  address:
+    street: 433 Fairview Ave
+    city: Ponca City
+    state: ok
+    zip: '74601'
+  geo:
+    lat: 36.72965
+    lng: -97.06875
   place: '4059850'
   phone: 580-762-1641
-  external_ids: {wic: 'ok-osdh:41'}
+  external_ids:
+    wic: ok-osdh:41
   sources:
   - wic/ok-osdh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/ponca-city/kay-county-ponca-city
   name: Kay County - Ponca City
   categories:
@@ -312,6 +321,26 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/ponca-city/ponca-city-service-center
+  name: Ponca City Service Center
+  categories:
+  - utility-assistance
+  - financial
+  description: Salvation Army service center
+  address: {street: '445 Fairview Ave # 103', city: Ponca City, state: ok, zip: '74601'}
+  geo: {lat: 36.72882, lng: -97.06943}
+  place: '4059850'
+  phone: 580-762-7501
+  website: https://www.salvationarmyusa.org/ok/ponca-city/fairview-ave-103/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Disaster Relief
+  external_ids: {gdos: 402818763d5b8722013d5d35c0b12613}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/ponca-city/ponca-tribe-head-start
   name: Ponca Tribe Head Start
   categories:

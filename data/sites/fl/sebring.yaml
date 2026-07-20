@@ -252,14 +252,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Highlands County WIC Program.'
-  address: {street: 7205 S. George Blvd., city: Sebring, state: fl, zip: '33875'}
-  geo: {lat: 27.43557, lng: -81.42089}
+  address:
+    street: 7205 S. George Blvd.
+    city: Sebring
+    state: fl
+    zip: '33875'
+  geo:
+    lat: 27.43557
+    lng: -81.42089
   place: '1264875'
   phone: 863-382-7216
-  external_ids: {wic: 'fl-doh:62'}
+  external_ids:
+    wic: fl-doh:62
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/sebring/sebring-high-school
   name: Sebring High School
   categories:
@@ -306,6 +315,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/sebring/sebring-service-center
+  name: Sebring Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service center
+  address: {street: 3135 Kenilworth Blvd, city: Sebring, state: fl, zip: '33870'}
+  geo: {lat: 27.4852, lng: -81.43522}
+  place: '1264875'
+  phone: 863-385-7548
+  website: https://www.salvationarmyusa.org/fl/sebring/kenilworth-blvd-1/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  external_ids: {gdos: 8a82805a8824cea6018837c23d52003b}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/sebring/sebring-va-clinic
   name: Sebring VA Clinic
   categories:

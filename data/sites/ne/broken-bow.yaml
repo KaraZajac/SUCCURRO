@@ -40,6 +40,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/broken-bow/broken-bow-ne-service-extension
+  name: 'Broken Bow, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Broken Bow, state: ne, zip: '68822'}
+  geo: {lat: 41.40499, lng: -99.64291}
+  place: '3106610'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/broken-bow/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb0256e08e8}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/broken-bow/broken-bow-wic-clinic
   name: Broken Bow WIC Clinic
   categories:
@@ -48,14 +73,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Veteran''s Memorial Building)'
-  address: {street: 416 S 1st Ave, city: Broken Bow, state: ne, zip: '68822'}
-  geo: {lat: 41.40274, lng: -99.63065}
+  address:
+    street: 416 S 1st Ave
+    city: Broken Bow
+    state: ne
+    zip: '68822'
+  geo:
+    lat: 41.40274
+    lng: -99.63065
   place: '3106610'
   phone: 308-346-5795
-  external_ids: {wic: 'ne-dhhs:13'}
+  external_ids:
+    wic: ne-dhhs:13
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/broken-bow/nebraska-department-of-health-and-human-services
   name: Nebraska Department of Health and Human Services
   categories:

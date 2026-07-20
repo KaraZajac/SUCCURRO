@@ -311,14 +311,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1400 Lynn Ln, city: Idabel, state: ok, zip: '74745'}
-  geo: {lat: 33.88379, lng: -94.80857}
+  address:
+    street: 1400 Lynn Ln
+    city: Idabel
+    state: ok
+    zip: '74745'
+  geo:
+    lat: 33.88379
+    lng: -94.80857
   place: '4036750'
   phone: 580-286-6628
-  external_ids: {wic: 'ok-osdh:52'}
+  external_ids:
+    wic: ok-osdh:52
   sources:
   - wic/ok-osdh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/idabel/mccurtain-county-community-based-outpatient-clin
   name: McCurtain County Community Based Outpatient Clinic
   categories:
@@ -348,6 +357,25 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/idabel/mccurtain-county-ok-idabell-and-broken-bow-servi
+  name: McCurtain County OK (Idabell and Broken Bow) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  description: Salvation Army service unit
+  address: {street: 312 NW Texas St, city: Idabel, state: ok, zip: '74745'}
+  geo: {lat: 33.89929, lng: -94.83113}
+  place: '4036750'
+  phone: 580-286-6472
+  website: https://www.salvationarmyusa.org/ok/idabel/nw-texas-st/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  external_ids: {gdos: 8a8280b58e374d73018e3c750d440005}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/idabel/mccurtain-county-va-clinic
   name: McCurtain County VA Clinic
   categories:

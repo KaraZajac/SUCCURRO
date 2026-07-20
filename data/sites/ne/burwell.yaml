@@ -39,6 +39,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/burwell/burwell-ne-service-extension
+  name: 'Burwell, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  - emergency-shelter
+  description: Salvation Army service extension
+  address: {city: Burwell, state: ne, zip: '68823'}
+  geo: {lat: 41.78167, lng: -99.13315}
+  place: '3107345'
+  phone: 402-898-7700
+  website: https://www.salvationarmyusa.org/ne/burwell/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Homelessness
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb0fd010906}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/burwell/burwell-wic-clinic
   name: Burwell WIC Clinic
   categories:
@@ -47,11 +72,20 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Loup Basin Public Health Department)'
-  address: {street: 327 N 8th Ave, city: Burwell, state: ne, zip: '68823'}
-  geo: {lat: 41.78471, lng: -99.13561}
+  address:
+    street: 327 N 8th Ave
+    city: Burwell
+    state: ne
+    zip: '68823'
+  geo:
+    lat: 41.78471
+    lng: -99.13561
   place: '3107345'
   phone: 308-346-5795
-  external_ids: {wic: 'ne-dhhs:16'}
+  external_ids:
+    wic: ne-dhhs:16
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api

@@ -219,6 +219,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: az/kingman/kingman-service-center
+  name: Kingman Service Center
+  categories:
+  - food-pantry
+  - utility-assistance
+  - financial
+  description: Salvation Army service center
+  address: {street: 309 E Beale St, city: Kingman, state: az, zip: '86401'}
+  geo: {lat: 35.19021, lng: -114.06047}
+  place: '0437620'
+  website: https://www.salvationarmyusa.org/az/kingman/e-beale-st/
+  services:
+  - Disaster Relief
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Utility Rent Assistance
+  external_ids: {gdos: 8a808375559c116c0155bece82900319}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: az/kingman/kingman-va-clinic
   name: Kingman VA Clinic
   categories:
@@ -272,13 +294,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Mohave County Dept Of Health And Social Svcs.'
-  address: {street: 700 W Beale St, city: Kingman, state: az, zip: '86401'}
-  geo: {lat: 35.1906, lng: -114.06548}
+  address:
+    street: 700 W Beale St
+    city: Kingman
+    state: az
+    zip: '86401'
+  geo:
+    lat: 35.1906
+    lng: -114.06548
   place: '0437620'
-  external_ids: {wic: 'az-dhs:166'}
+  external_ids:
+    wic: az-dhs:166
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: az/kingman/la-senita-elementary
   name: La Senita Elementary
   categories:

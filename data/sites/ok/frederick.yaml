@@ -65,11 +65,41 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1500 N Main St, city: Frederick, state: ok, zip: '73542'}
-  geo: {lat: 34.40475, lng: -99.01505}
+  address:
+    street: 1500 N Main St
+    city: Frederick
+    state: ok
+    zip: '73542'
+  geo:
+    lat: 34.40475
+    lng: -99.01505
   place: '4027800'
   phone: 580-335-2163
-  external_ids: {wic: 'ok-osdh:96'}
+  external_ids:
+    wic: ok-osdh:96
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/frederick/tillman-county-ok-frederick-service-unit
+  name: Tillman County OK (Frederick) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: 105 S Main St, city: Frederick, state: ok, zip: '73542'}
+  geo: {lat: 34.38862, lng: -99.01739}
+  place: '4027800'
+  phone: 580-335-5588
+  website: https://www.salvationarmyusa.org/ok/frederick/s-main-st/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  external_ids: {gdos: 8a82828477f441e8017841314bab0a3b}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}

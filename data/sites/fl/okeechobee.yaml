@@ -652,14 +652,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Okeechobee County WIC Program.'
-  address: {street: 1728 NW 9th Avenue, city: Okeechobee, state: fl, zip: '34972'}
-  geo: {lat: 27.26039, lng: -80.83888}
+  address:
+    street: 1728 NW 9th Avenue
+    city: Okeechobee
+    state: fl
+    zip: '34972'
+  geo:
+    lat: 27.26039
+    lng: -80.83888
   place: '1251200'
   phone: 863-462-5795
-  external_ids: {wic: 'fl-doh:122'}
+  external_ids:
+    wic: fl-doh:122
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/okeechobee/okeechobee-county-cattlemen-s-arena
   name: Okeechobee County Cattlemen'S Arena
   categories:
@@ -682,6 +691,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/okeechobee/okeechobee-county-fl-okeechobee-service-unit
+  name: Okeechobee County FL (Okeechobee) Service Unit
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service unit
+  address: {street: '1600 SW 2nd Ave # B', city: Okeechobee, state: fl, zip: '34974'}
+  geo: {lat: 27.22849, lng: -80.83102}
+  place: '1251200'
+  phone: 772-288-1471
+  website: https://www.salvationarmyusa.org/fl/okeechobee/sw-2nd-ave-b/
+  services:
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a8081ee6cf82b59016d740ad2bd000f}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/okeechobee/okeechobee-library
   name: Okeechobee Library
   categories:

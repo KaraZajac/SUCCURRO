@@ -326,15 +326,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 412 NE Ford St., city: McMinnville, state: or, zip: '97128'}
-  geo: {lat: 45.21098, lng: -123.1945}
+  address:
+    street: 412 NE Ford St.
+    city: McMinnville
+    state: or
+    zip: '97128'
+  geo:
+    lat: 45.21098
+    lng: -123.1945
   place: '4145000'
   phone: 503-434-6740
   website: http://www.saludwic.org/
-  external_ids: {wic: 'or-wic:66'}
+  external_ids:
+    wic: or-wic:66
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: or/mcminnville/sue-buel-elementary
   name: Sue Buel Elementary
   categories:
@@ -544,3 +553,38 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/mcminnville/yamhill-service-center
+  name: Yamhill Service Center
+  categories:
+  - seniors
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - counseling
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service center
+  address: {street: 1950 N.W. 2nd Street, city: Mcminnville, state: or, zip: '97128'}
+  geo: {lat: 45.20913, lng: -123.22471}
+  place: '4145000'
+  phone: 503-472-1009
+  website: https://www.salvationarmyusa.org/or/mcminnville/nw-2nd-street/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Senior Services
+  - Utility Rent Assistance
+  - Giving Back
+  - Holiday Giving
+  - Family Services
+  - Poverty
+  - Hunger
+  - Family Counseling
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a808375559c116c0155becd0c8500f1}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}

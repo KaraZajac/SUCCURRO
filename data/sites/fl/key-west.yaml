@@ -271,14 +271,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Monroe County WIC Program.'
-  address: {street: 1100 Simonton St, city: Key West, state: fl, zip: '33040'}
-  geo: {lat: 24.55065, lng: -81.79701}
+  address:
+    street: 1100 Simonton St
+    city: Key West
+    state: fl
+    zip: '33040'
+  geo:
+    lat: 24.55065
+    lng: -81.79701
   place: '1236550'
   phone: 305-676-3852
-  external_ids: {wic: 'fl-doh:114'}
+  external_ids:
+    wic: fl-doh:114
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/key-west/key-west-health-center
   name: Key West Health Center
   categories:
@@ -325,6 +334,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/key-west/key-west-service-center
+  name: Key West Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service center
+  address: {street: 1920 Flagler Ave, city: Key West, state: fl, zip: '33040'}
+  geo: {lat: 24.5556, lng: -81.7788}
+  place: '1236550'
+  phone: 305-294-5611
+  website: https://www.salvationarmyusa.org/fl/key-west/flagler-ave-corps/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  external_ids: {gdos: 402818763d5b8722013d5d898fb92c40}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/key-west/key-west-va-clinic
   name: Key West VA Clinic
   categories:

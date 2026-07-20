@@ -156,13 +156,43 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1304 R. D. Miller Dr, city: Okmulgee, state: ok, zip: '74447'}
-  geo: {lat: 35.6124, lng: -95.95381}
+  address:
+    street: 1304 R. D. Miller Dr
+    city: Okmulgee
+    state: ok
+    zip: '74447'
+  geo:
+    lat: 35.6124
+    lng: -95.95381
   place: '4055150'
   phone: 918-756-1883
-  external_ids: {wic: 'ok-osdh:78'}
+  external_ids:
+    wic: ok-osdh:78
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/okmulgee/okmulgee-county-ok-okmulgee-service-unit
+  name: Okmulgee County OK (Okmulgee) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: 111 E 8th St, city: Okmulgee, state: ok, zip: '74447'}
+  geo: {lat: 35.62164, lng: -95.97115}
+  place: '4055150'
+  phone: 918-756-9224
+  website: https://www.salvationarmyusa.org/ok/okmulgee/e-8th-st-1/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  external_ids: {gdos: 8a8280448c24a853018c2e7f07a20006}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: ok/okmulgee/okmulgee-head-start
   name: Okmulgee Head Start

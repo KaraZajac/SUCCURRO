@@ -107,14 +107,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 212 N. Pierce, city: Wagoner, state: ok, zip: '74467'}
-  geo: {lat: 35.96189, lng: -95.38663}
+  address:
+    street: 212 N. Pierce
+    city: Wagoner
+    state: ok
+    zip: '74467'
+  geo:
+    lat: 35.96189
+    lng: -95.38663
   place: '4077850'
   phone: 918-485-3022
-  external_ids: {wic: 'ok-osdh:109'}
+  external_ids:
+    wic: ok-osdh:109
   sources:
   - wic/ok-osdh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ok/wagoner/wagoner-community-hospital-mental-health-unit
   name: Wagoner Community Hospital Mental Health Unit
   categories:
@@ -140,6 +149,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ok/wagoner/wagoner-county-ok-wagoner-service-unit
+  name: Wagoner County OK (Wagoner) Service Unit
+  categories:
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army service unit
+  address: {street: 100 NW 8th St, city: Wagoner, state: ok, zip: '74467'}
+  geo: {lat: 35.96796, lng: -95.37695}
+  place: '4077850'
+  phone: 918-587-7801
+  website: https://www.salvationarmyusa.org/ok/wagoner/nw-8th-st/
+  services:
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a82828477f441e80178416c96580d77}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ok/wagoner/wagoner-hs-710
   name: Wagoner Hs (710)
   categories:

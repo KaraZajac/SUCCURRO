@@ -182,13 +182,22 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Columbia Valley Comm Health.'
-  address: {street: 502 Orondo Ave, city: Wenatchee, state: wa, zip: '98801'}
-  geo: {lat: 47.42016, lng: -120.31614}
+  address:
+    street: 502 Orondo Ave
+    city: Wenatchee
+    state: wa
+    zip: '98801'
+  geo:
+    lat: 47.42016
+    lng: -120.31614
   place: '5377105'
-  external_ids: {wic: 'wa-doh:120'}
+  external_ids:
+    wic: wa-doh:120
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wa/wenatchee/columbia-valley-community-health-adult-behaviora
   name: Columbia Valley Community Health Adult Behavioral Health
   categories:
@@ -804,6 +813,64 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/wenatchee/wenatchee-corps-community-center
+  name: Wenatchee Corps Community Center
+  categories:
+  - family-support
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army community center
+  address: {street: 1501 Russell Street, city: Wenatchee, state: wa, zip: '98801'}
+  geo: {lat: 47.41151, lng: -120.32058}
+  place: '5377105'
+  phone: 509-662-8864
+  website: https://www.salvationarmyusa.org/wa/wenatchee/russell-street-corps/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Giving Back
+  - Holiday Giving
+  - Family Services
+  - Poverty
+  - Hunger
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a808375559c116c0155bece12e90259}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
+- id: wa/wenatchee/wenatchee-family-services
+  name: Wenatchee Family Services
+  categories:
+  - utility-assistance
+  - financial
+  - family-support
+  - food-pantry
+  - family-youth
+  - emergency-shelter
+  description: Salvation Army program service
+  address: {street: 1205 S. Columbia Street, city: Wenatchee, state: wa, zip: '98801'}
+  geo: {lat: 47.40943, lng: -120.29881}
+  place: '5377105'
+  phone: 509-662-8864
+  website: https://www.salvationarmyusa.org/wa/wenatchee/s-columbia-street/
+  services:
+  - Adult Program Services
+  - Worship and Spiritual Programs
+  - Utility Rent Assistance
+  - Giving Back
+  - Holiday Giving
+  - Family Services
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  - Youth Services
+  - Homelessness
+  external_ids: {gdos: 8a808375559c116c0155e2dc1f4c03c2}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/wenatchee/wenatchee-fumc
   name: Wenatchee FUMC
   categories:

@@ -590,14 +590,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by St. Lucie County WIC Program.'
-  address: {street: 714 Avenue C, city: Fort Pierce, state: fl, zip: '34950'}
-  geo: {lat: 27.4496, lng: -80.32986}
+  address:
+    street: 714 Avenue C
+    city: Fort Pierce
+    state: fl
+    zip: '34950'
+  geo:
+    lat: 27.4496
+    lng: -80.32986
   place: '1224300'
   phone: 772-462-3900
-  external_ids: {wic: 'fl-doh:161'}
+  external_ids:
+    wic: fl-doh:161
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/fort-pierce/future-generation
   name: Future Generation
   categories:
@@ -1129,6 +1138,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/fort-pierce/st-lucie-county-fl-fort-pierce-service-unit
+  name: St Lucie County FL (Fort Pierce) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  - emergency-shelter
+  - food-pantry
+  description: Salvation Army service unit
+  address: {street: 3629 S US Highway 1, city: Fort Pierce, state: fl, zip: '34982'}
+  geo: {lat: 27.39311, lng: -80.32616}
+  place: '1224300'
+  phone: 772-288-1471
+  website: https://www.salvationarmyusa.org/fl/fort-pierce/s-us-highway-1-2/
+  services:
+  - Giving Back
+  - Utility Rent Assistance
+  - Poverty
+  - Homelessness
+  - Hunger
+  external_ids: {gdos: 8a8384a9909d41350190a148f25a000f}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/fort-pierce/village-of-crc
   name: Village of CRC
   categories:

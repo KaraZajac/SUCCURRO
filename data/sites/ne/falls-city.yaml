@@ -72,14 +72,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (United Methodist Church)'
-  address: {street: 1700 Harlan St, city: Falls City, state: ne, zip: '68355'}
-  geo: {lat: 40.06199, lng: -95.6015}
+  address:
+    street: 1700 Harlan St
+    city: Falls City
+    state: ne
+    zip: '68355'
+  geo:
+    lat: 40.06199
+    lng: -95.6015
   place: '3116655'
   phone: 402-335-2988
-  external_ids: {wic: 'ne-dhhs:32'}
+  external_ids:
+    wic: ne-dhhs:32
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ne/falls-city/high-school
   name: High School
   categories:
@@ -143,6 +152,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/falls-city/richardson-county-ne-service-extension
+  name: 'Richardson County, NE: Service Extension'
+  categories:
+  - food-pantry
+  - utility-assistance
+  - financial
+  description: Salvation Army service extension
+  address: {street: 1820 Towle St, city: Falls City, state: ne, zip: '68355'}
+  geo: {lat: 40.06291, lng: -95.60603}
+  place: '3116655'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ne/falls-city/towle-st/
+  services:
+  - Disaster Relief
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Utility Rent Assistance
+  external_ids: {gdos: 8a80823b5adc4fcd015d7aa5b30a020b}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/falls-city/the-little-free-pantry-falls-city
   name: The Little Free Pantry - Falls City
   categories:

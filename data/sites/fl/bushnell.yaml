@@ -50,14 +50,23 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Marion County WIC Program.'
-  address: {street: 415 E. Noble Avenue, city: Bushnell, state: fl, zip: '33513'}
-  geo: {lat: 28.66487, lng: -82.10494}
+  address:
+    street: 415 E. Noble Avenue
+    city: Bushnell
+    state: fl
+    zip: '33513'
+  geo:
+    lat: 28.66487
+    lng: -82.10494
   place: '1209625'
   phone: 352-622-1161
-  external_ids: {wic: 'fl-doh:109'}
+  external_ids:
+    wic: fl-doh:109
   sources:
   - wic/fl-doh
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: fl/bushnell/keys-to-knowledge
   name: Keys To Knowledge
   categories:
@@ -131,6 +140,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/bushnell/sumter-county-fl-service-center
+  name: Sumter County FL Service Center
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service center
+  address: {street: 100 E Dade Ave, city: Bushnell, state: fl, zip: '33513'}
+  geo: {lat: 28.66684, lng: -82.11144}
+  place: '1209625'
+  phone: 352-568-2284
+  website: https://www.salvationarmyusa.org/fl/bushnell/e-dade-ave/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  - Hunger
+  - Disaster Relief
+  external_ids: {gdos: 402818763d5b8722013d5d867cab2c19}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/bushnell/sumter-youth-center
   name: Sumter Youth Center
   categories:

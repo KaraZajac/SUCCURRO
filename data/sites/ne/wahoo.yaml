@@ -70,6 +70,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ne/wahoo/wahoo-ne-service-extension
+  name: 'Wahoo, NE: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service extension
+  address: {city: Wahoo, state: ne, zip: '68066'}
+  geo: {lat: 41.21132, lng: -96.62058}
+  place: '3150965'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ne/wahoo/service-extension/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Poverty
+  - Hunger
+  - Holiday Giving
+  external_ids: {gdos: 402818763d5b8722013d5bb001c908e2}
+  sources:
+  - salvationarmy/location-finder
+  verified: {'on': '2026-07-20', method: api}
 - id: ne/wahoo/wahoo-wic-clinic
   name: Wahoo WIC Clinic
   categories:
@@ -78,11 +101,20 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. (Bethlehem Lutheran Church)'
-  address: {street: 504 W 8th St, city: Wahoo, state: ne, zip: '68066'}
-  geo: {lat: 41.21327, lng: -96.62498}
+  address:
+    street: 504 W 8th St
+    city: Wahoo
+    state: ne
+    zip: '68066'
+  geo:
+    lat: 41.21327
+    lng: -96.62498
   place: '3150965'
   phone: 402-727-0608
-  external_ids: {wic: 'ne-dhhs:62'}
+  external_ids:
+    wic: ne-dhhs:62
   sources:
   - wic/ne-dhhs
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-07-20'
+    method: api

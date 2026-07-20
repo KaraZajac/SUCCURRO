@@ -88,13 +88,41 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 1524 Chuckwa St, city: Durant, state: ok, zip: '74701'}
-  geo: {lat: 34.00857, lng: -96.39249}
+  address:
+    street: 1524 Chuckwa St
+    city: Durant
+    state: ok
+    zip: '74701'
+  geo:
+    lat: 34.00857
+    lng: -96.39249
   place: '4022050'
   phone: 580-924-4285
-  external_ids: {wic: 'ok-osdh:7'}
+  external_ids:
+    wic: ok-osdh:7
   sources:
   - wic/ok-osdh
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ok/durant/bryan-county-ok-durant-service-unit
+  name: Bryan County OK (Durant) Service Unit
+  categories:
+  - utility-assistance
+  - financial
+  description: Salvation Army service center
+  address: {street: 1502 N 1st Ave, city: Durant, state: ok, zip: '74701'}
+  geo: {lat: 34.00518, lng: -96.37283}
+  place: '4022050'
+  phone: 405-254-1100
+  website: https://www.salvationarmyusa.org/ok/durant/n-1st-ave/
+  services:
+  - Utility Rent Assistance
+  - Giving Back
+  - Poverty
+  external_ids: {gdos: 8a82804d77cf72c60178414bd9d20bcf}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: ok/durant/durant-head-start
   name: Durant Head Start

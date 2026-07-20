@@ -807,14 +807,45 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 254 N First Ave, city: Hillsboro, state: or, zip: '97124'}
-  geo: {lat: 45.52281, lng: -122.98981}
+  address:
+    street: 254 N First Ave
+    city: Hillsboro
+    state: or
+    zip: '97124'
+  geo:
+    lat: 45.52281
+    lng: -122.98981
   place: '4134100'
   phone: 503-846-3555
   website: http://www.co.washington.or.us/HHS/PublicHealth/WIC/index.cfm
-  external_ids: {wic: 'or-wic:18'}
+  external_ids:
+    wic: or-wic:18
   sources:
   - wic/or-wic
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: or/hillsboro/washington-county-hope-center
+  name: Washington County HOPE Center
+  categories:
+  - food-pantry
+  - utility-assistance
+  - financial
+  description: Salvation Army service center
+  address: {street: 1440 SE 21st Avenue, city: Hillsboro, state: or, zip: '97123'}
+  geo: {lat: 45.50891, lng: -122.96022}
+  place: '4134100'
+  phone: 503-640-4311
+  website: https://www.salvationarmyusa.org/or/hillsboro/se-21st-avenue/
+  services:
+  - Giving Back
+  - Holiday Giving
+  - Hunger
+  - Poverty
+  - Utility Rent Assistance
+  external_ids: {gdos: 8a808375559c116c0155becd099000eb}
+  sources:
+  - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
 - id: or/hillsboro/washington-enterprise
   name: Washington-Enterprise
