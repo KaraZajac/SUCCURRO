@@ -25,7 +25,43 @@ ToS verification (2026-07-20):
 
 ---
 
-## 1. Al-Anon WSO — meeting data
+## Batch 2 — restricted TSML intergroups (Meeting Guide sharing keys)
+
+Seventeen intergroups run TSML with feed sharing set to "restricted" — the
+plugin supports issuing named sharing keys. One short email each. Contacts
+are each site's webmaster/office address (on their contact pages):
+Dallas (aadallas.org), Fort Worth (fortworthaa.org), Boston (aaboston.org),
+Miami-Dade (aamiamidade.org), Tampa (aatampa-area.org), Charlotte
+(charlotteaa.org), Salt Lake (saltlakeaa.org), Cleveland (aacle.org),
+Akron (akronaa.org), Anchorage (anchorageaa.org), Buffalo (buffaloaany.org),
+SE Michigan Area 33 (aa-semi.org), NH Area 43 (nhaa.net), RI Area 61
+(aainri.com), ND Area 41 (aanorthdakota.org), Idaho Area 18
+(idahoarea18aa.org), TN Area 64 (area64assembly.org).
+
+**Template** (subject: *Meeting Guide feed sharing key request — succurro.org*):
+
+> Hello,
+>
+> I run SUCCURRO (succurro.org), a free, noncommercial directory of help and
+> support services across the US — food banks, shelters, treatment, and
+> recovery meetings — built so anyone can type in their town and find help
+> nearby. We already list AA meetings from 43 intergroups that publish open
+> Meeting Guide (12 Step Meeting List) feeds, always with attribution and a
+> link back to the intergroup, and we honor any removal request immediately.
+>
+> Your meeting feed is set to restricted sharing, which we respect — so I'm
+> writing to ask for a sharing key (the 12 Step Meeting List plugin can issue
+> one under Settings → Sharing). We'd pull the feed at most daily, list only
+> the meeting facts you already publish (no member information, ever), and
+> credit [intergroup name] on every listing.
+>
+> Happy to answer any questions.
+>
+> Kara Zajac — kara@soulstone.org
+
+**Status:** drafted 2026-07-20, not yet sent
+
+
 
 **To:** afgmobile@al-anon.org
 **Subject:** Permission to include Al-Anon meeting listings in an open, noncommercial help-services directory
