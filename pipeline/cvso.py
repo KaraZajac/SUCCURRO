@@ -9,12 +9,15 @@ cvso/<st>), so each state's re-run replaces exactly its own records.
 Pages/feeds cache under sources/cvso/.
 
 2026-07 all-state survey summary (see module registry for the built
-set): built 16 states; JS/blocked with no recoverable feed: CA, KS, MA,
-NH, VA; PDF-only left unbuilt: AR, FL (multi-column), NC (interleaved
-3-column), TX (county->website only); buildable but multi-page crawls
-deferred: LA, ND, NY; state-office systems only (no county roster): AK,
-AZ, CT, DE, GA, HI, ID, KY, MD, ME, MO*, MT, NM, NV, OK, RI, UT, VT,
-WA, WV, WY (*MO's ArcGIS feed is state-run offices; MI similar).
+set): built 19 states (the LA/ND/NY multi-page crawls deferred by the
+survey are now built); JS/blocked with no recoverable feed: CA, KS, MA,
+NH, VA (MA's monthly VSO CSV re-probed 2026-07: mass.gov's WAF 403s
+python and curl even with browser headers — client fingerprinting, not
+UA); PDF-only left unbuilt: AR, FL (multi-column), NC (interleaved
+3-column), TX (county->website only); state-office systems only (no
+county roster): AK, AZ, CT, DE, GA, HI, ID, KY, MD, ME, MO*, MT, NM,
+NV, OK, RI, UT, VT, WA, WV, WY (*MO's ArcGIS feed is state-run
+offices; MI similar).
 
 FACTS-ONLY: the office is the record, not the person — officer personal
 names and personal emails are never recorded; phone is the published
@@ -264,6 +267,228 @@ def parse_in(page: str, source_id: str) -> list[dict]:
                               city=city_of(text, "in"), phone=phone,
                               email=org_email(text),
                               website=web_m.group(1) if web_m else None))
+    return records
+
+
+# pages of a multi-page crawl are joined on this sentinel for the parser
+PAGE_BREAK = "\n<!--cvso-page-break-->\n"
+
+
+# --- LA: vetaffairs.la.gov locations (parish service offices) --------------
+# WordPress locations CPT: a paginated /locations index links one page per
+# parish office (plus HQ, veterans homes, and cemeteries — skipped). Detail
+# pages carry a segmented <address> and a class="contact phone" tel link
+# (the fax sits in a "contact fax" div, the footer holds the LDVA line —
+# neither is parsed). Parenthetical variants ((East Bank), (Itinerant
+# Point)) are distinct service points and kept as separate records.
+
+LA_TITLE_RE = re.compile(r"<title>\s*([^|<]+?)\s*[|<]")
+
+
+def fetch_la(url: str, force: bool) -> str:
+    first = fetch(url, SOURCES / "cvso" / "la-index.html",
+                  force=force).read_text(errors="replace")
+    indexes = [first]
+    last = max((int(n) for n in re.findall(
+        r'href="[^"]*/locations/page/(\d+)', first)), default=1)
+    for p in range(2, last + 1):
+        indexes.append(fetch(f"{url}/page/{p}",
+                             SOURCES / "cvso" / f"la-index-p{p}.html",
+                             force=force).read_text(errors="replace"))
+    slugs = sorted(set(re.findall(
+        r'href="https://vetaffairs\.la\.gov/locations/([a-z0-9-]+)/?"',
+        "".join(indexes))))
+    if len(slugs) < 70:
+        raise SystemExit(f"la: only {len(slugs)} location links — "
+                         "index layout changed")
+    parts = []
+    for slug in slugs:
+        parts.append(fetch(f"https://vetaffairs.la.gov/locations/{slug}",
+                           SOURCES / "cvso" / f"la-{slug}.html",
+                           force=force).read_text(errors="replace"))
+    return PAGE_BREAK.join(parts)
+
+
+def parse_la(pages: str, source_id: str) -> list[dict]:
+    records, skipped = [], []
+    for chunk in pages.split(PAGE_BREAK):
+        title_m = LA_TITLE_RE.search(chunk)
+        if not title_m:
+            continue
+        title = squash(html.unescape(title_m.group(1)))
+        if "PARISH" not in title.upper():
+            skipped.append(title.title())  # HQ, veterans homes, cemeteries
+            continue
+        m = re.match(r"(.+?\bPARISH)\s*(\(.+\))?$", title, re.I)
+        parish_part = m.group(1).title().replace("Lasalle", "LaSalle")
+        variant = m.group(2).title() if m.group(2) else ""
+        name = parish_part + " Veteran Service Office" + \
+            (f" {variant}" if variant else "")
+        base = parish_part[:-len(" Parish")]
+        counties = (["East Feliciana", "West Feliciana"]
+                    if base == "East/West Feliciana" else [base])
+        served = (f"{counties[0]} Parish" if len(counties) == 1 else
+                  " and ".join(f"{c} Parish" for c in counties))
+        desc = (f"Parish veteran service office serving {served}, LA. "
+                "Assists veterans and their families with VA benefit "
+                "claims and local veteran services.")
+        if "Itinerant" in variant:
+            desc += " Itinerant service point of the parish office."
+        city_m = re.search(r'segment-city">([^<]+)</span>', chunk)
+        phone_m = re.search(r'class="contact phone">([^<]+)<', chunk)
+        records.append(record(
+            "la", counties, source_id, name=name, desc=desc,
+            city=squash(html.unescape(city_m.group(1))).strip(" ,")
+            if city_m else None,
+            phone=phone_fmt(phone_m.group(1)) if phone_m else None))
+    if skipped:
+        print(f"la: {len(skipped)} non-parish locations skipped: "
+              f"{', '.join(sorted(skipped))}")
+    return records
+
+
+# --- ND: veterans.nd.gov per-county service-officer pages ------------------
+# Drupal: the find-a-service-officer page links /service-officers/county/
+# <slug>; each county page holds office blocks (views-field-title h2 +
+# organization-address + Office Phone) and separate staff hero cards
+# (personal names/emails — never parsed). Counties without their own
+# staffed office (e.g. Billings) carry a stub block pointing at the
+# serving county's office, whose contact details are borrowed with a
+# "served through" note.
+
+ND_INDEX = "https://www.veterans.nd.gov/about/find-a-service-officer"
+
+
+def fetch_nd(url: str, force: bool) -> str:
+    index = fetch(url, SOURCES / "cvso" / "nd.html",
+                  force=force).read_text(errors="replace")
+    slugs = sorted(set(re.findall(
+        r'href="/service-officers/county/([a-z0-9-]+)"', index)))
+    if len(slugs) < 50:
+        raise SystemExit(f"nd: only {len(slugs)} county links — "
+                         "index layout changed")
+    parts = []
+    for slug in slugs:
+        parts.append(fetch(
+            f"https://www.veterans.nd.gov/service-officers/county/{slug}",
+            SOURCES / "cvso" / f"nd-{slug}.html",
+            force=force).read_text(errors="replace"))
+    return PAGE_BREAK.join(parts)
+
+
+def _nd_office(block: str) -> dict:
+    name_m = re.search(r">([^<]+)</a></h2>", block)
+    addr_m = re.search(
+        r"field-organization-address.*?field-content\">(.*?)</div>",
+        block, re.S)
+    phone_m = re.search(r"Office Phone:</strong>\s*([^<]+)", block)
+    return {
+        "name": squash(strip_tags(name_m.group(1))) if name_m else "",
+        "city": city_of(strip_tags(addr_m.group(1)), "nd")
+        if addr_m else None,
+        "phone": phone_fmt(phone_m.group(1)) if phone_m else None,
+    }
+
+
+def parse_nd(pages: str, source_id: str) -> list[dict]:
+    records = []
+    for chunk in pages.split(PAGE_BREAK):
+        title_m = re.search(r"<title>\s*([^|<]+?)\s*[|<]", chunk)
+        if not title_m:
+            continue
+        county = squash(html.unescape(title_m.group(1)))
+        offices = [_nd_office(b) for b in
+                   chunk.split('views-field views-field-title')[1:]]
+        offices = [o for o in offices if o["name"]]
+        if not offices:
+            print(f"nd: no office block on {county} page — skipped")
+            continue
+        own = next((o for o in offices
+                    if o["name"].lower().startswith(county.lower())), None)
+        serving = next((o for o in offices if o["phone"]), None)
+        name = (own or {}).get("name") or \
+            f"{county} County Veterans Service Office"
+        desc = ""
+        if (not own or not own["phone"]) and serving and \
+                serving["name"] != name:
+            # unstaffed county: record keeps the county office identity,
+            # contact details point at the office that serves it
+            desc = (f"County veteran service office for {county} County, "
+                    f"ND. Served through the {serving['name']}. Assists "
+                    "veterans and their families with VA benefit claims "
+                    "and local veteran services.")
+            own = serving
+        own = own or offices[0]
+        records.append(record("nd", county, source_id, name=name, desc=desc,
+                              city=own["city"], phone=own["phone"]))
+    return records
+
+
+# --- NY: veterans.ny.gov office-locations (county agencies) ----------------
+# Drupal listing paginated ?page=0..; /location/<slug> details. Only the
+# county veterans service agency pages are taken — the same listing also
+# holds NYS DVS field offices, NYC DVS borough offices, and VA facilities.
+# The site-header hotline and 988 tel links are skipped; the office phone
+# is the article's class="phone-number" link.
+
+NY_URL = "https://veterans.ny.gov/office-locations"
+NY_COUNTY_SLUG_RE = re.compile(r"county.*veterans?.*(?:service|services).*agency")
+
+
+def fetch_ny(url: str, force: bool) -> str:
+    slugs: set[str] = set()
+    for p in range(0, 30):
+        page = fetch(f"{url}?page={p}",
+                     SOURCES / "cvso" / f"ny-index-p{p}.html",
+                     force=force).read_text(errors="replace")
+        found = set(re.findall(r'href="/location/([a-z0-9-]+)"', page))
+        if not found - slugs:
+            break
+        slugs |= found
+    else:
+        raise SystemExit("ny: still paginating after 30 index pages")
+    wanted = sorted(s for s in slugs if NY_COUNTY_SLUG_RE.search(s))
+    if len(wanted) < 50:
+        raise SystemExit(f"ny: only {len(wanted)} county agency links — "
+                         "listing layout changed")
+    parts = []
+    for slug in wanted:
+        parts.append(fetch(f"https://veterans.ny.gov/location/{slug}",
+                           SOURCES / "cvso" / f"ny-{slug}.html",
+                           force=force).read_text(errors="replace"))
+    return PAGE_BREAK.join(parts)
+
+
+def parse_ny(pages: str, source_id: str) -> list[dict]:
+    records = []
+    for chunk in pages.split(PAGE_BREAK):
+        title_m = re.search(r"<title>\s*([^|<]+?)\s*[|<]", chunk)
+        if not title_m:
+            continue
+        name = squash(html.unescape(title_m.group(1))).replace(" (NY)", "")
+        counties = [squash(c) for c in
+                    re.findall(r'location-counties">([^<]+)<', chunk)]
+        counties = [c for c in counties if c]
+        if not counties:
+            cm = re.match(r"(.+?) County", name)
+            if not cm:
+                print(f"ny: no county on {name!r} page — skipped")
+                continue
+            counties = [cm.group(1)]
+        city_m = re.search(r'"locality">([^<]+)<', chunk)
+        phone_m = re.search(r'href="tel:([^"]+)" class="phone-number"',
+                            chunk)
+        served = (f"{counties[0]} County" if len(counties) == 1 else
+                  " and ".join(", ".join(counties).rsplit(", ", 1))
+                  + " counties")
+        desc = (f"County veterans service agency serving {served}, NY. "
+                "Assists veterans and their families with VA benefit "
+                "claims and local veteran services.")
+        records.append(record(
+            "ny", counties, source_id, name=name, desc=desc,
+            city=squash(html.unescape(city_m.group(1))).strip(" , ")
+            or None if city_m else None,
+            phone=phone_fmt(phone_m.group(1)) if phone_m else None))
     return records
 
 
@@ -647,18 +872,30 @@ STATES = {
     "in": ("Indiana Department of Veterans Affairs",
            "https://www.in.gov/dva/home/cvso-locate/",
            "County veterans service offices (CVSO locate)", parse_in, 85),
+    "la": ("Louisiana Department of Veterans Affairs",
+           "https://vetaffairs.la.gov/locations",
+           "Parish veteran service offices (locations directory)",
+           parse_la, 65),
     "mn": ("Minnesota Association of County Veterans Service Officers",
            MN_URL, "Find-a-CVSO county lookup (per-county pages)",
            parse_mn, 80),
     "ms": ("Mississippi Veterans Affairs",
            "https://www.msva.ms.gov/serviceofficers",
            "County veterans service offices", parse_ms, 75),
+    "nd": ("North Dakota Department of Veterans Affairs",
+           ND_INDEX,
+           "County veterans service officers (find-a-service-officer "
+           "county pages)", parse_nd, 45),
     "ne": ("Nebraska Department of Veterans' Affairs",
            "https://veterans.nebraska.gov/cvso",
            "County veterans service offices", parse_ne, 85),
     "nj": ("New Jersey Department of Military and Veterans Affairs",
            "https://www.nj.gov/dva/veterans/services/vso/",
            "Veterans service offices by county", parse_nj, 20),
+    "ny": ("New York State Department of Veterans' Services",
+           NY_URL,
+           "County veterans service agencies (office-locations listing)",
+           parse_ny, 50),
     "oh": ("Ohio Department of Veterans Services",
            "https://dvs.ohio.gov/what-we-do/find-a-cvso",
            "County veterans service offices (find-a-CVSO)", parse_oh, 80),
@@ -702,7 +939,10 @@ FETCHERS = {
                                    ).read_text(errors="replace"),
     "il": lambda url, force: fetch(IL_API, SOURCES / "cvso" / "il.json",
                                    force=force).read_text(errors="replace"),
+    "la": fetch_la,
     "mn": fetch_mn,
+    "nd": fetch_nd,
+    "ny": fetch_ny,
     "oh": lambda url, force: fetch(url, SOURCES / "cvso" / "oh.html",
                                    force=force, ua=BROWSER_UA
                                    ).read_text(errors="replace"),
