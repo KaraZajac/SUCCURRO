@@ -15,8 +15,10 @@ build: ## run every source module, then reconcile and recount meta
 	python3 -m pipeline.meta
 
 meta: ## recount data/meta.yaml
-	python3 -m pipeline.reconcile
 	python3 -m pipeline.meta
+
+reconcile: ## cross-source dedup by layered precedence
+	python3 -m pipeline.reconcile
 
 modules: ## print the module list (used by the refresh workflow)
 	@echo $(MODULES)
