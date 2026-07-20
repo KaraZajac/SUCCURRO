@@ -1,6 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { STATES, STATE_NAMES, placesFor, servedPlaces, orgsFor, label } from "../../lib/data.js";
+import StateOutline from "../../components/StateOutline.astro";
+import Donut from "../../components/Donut.astro";
+import {
+  STATES, STATE_NAMES, placesFor, servedPlaces, orgsFor, label,
+  categoryCounts, catColor, rootOf,
+} from "../../lib/data.js";
 
 export function getStaticPaths() {
   return STATES().map((state) => ({ params: { state } }));
@@ -9,13 +14,17 @@ const { state } = Astro.params;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const name = STATE_NAMES[state] || state.toUpperCase();
 
-const placeNames = new Map(placesFor(state).map((p) => [p.slug, p.name]));
+const placeIndex = new Map(placesFor(state).map((p) => [p.slug, p]));
 const served = servedPlaces()
   .filter((p) => p.state === state && p.slug !== "online" && p.slug !== "unknown")
-  .map((p) => ({ slug: p.slug, name: placeNames.get(p.slug) || p.slug.replace(/-/g, " ") }))
+  .map((p) => {
+    const rec = placeIndex.get(p.slug);
+    return { slug: p.slug, name: rec?.name || p.slug.replace(/-/g, " "), geo: rec?.geo };
+  })
   .sort((a, b) => a.name.localeCompare(b.name));
 const hasOnline = servedPlaces().some((p) => p.state === state && p.slug === "online");
 const orgs = orgsFor(state).sort((a, b) => a.name.localeCompare(b.name));
+const stateCounts = categoryCounts().byState[state] || {};
 ---
 <Base title={`${name} — SUCCURRO`}>
   <h1>{name}</h1>
@@ -27,6 +36,10 @@ const orgs = orgsFor(state).sort((a, b) => a.name.localeCompare(b.name));
   {hasOnline && (
     <p><a class="chip" href={`${base}/${state}/online`}>Online meetings for {name}</a></p>
   )}
+
+  <StateOutline state={state} places={served} />
+
+  <Donut counts={stateCounts} title={`Service locations by need in ${name}`} />
 
   <h2>Communities</h2>
   <div class="cols">

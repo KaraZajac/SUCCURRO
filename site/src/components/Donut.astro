@@ -1,0 +1,62 @@
+---
+// Part-to-whole donut: top slices keep their fixed category colors, the tail
+// folds into gray "Other". 2px surface gaps between slices; direct % labels
+// on slices >= 6%; full legend with counts (the table-view relief for the
+// low-contrast Latte hues). Build-time SVG, no client JS.
+import { label, catColor } from "../lib/data.js";
+
+const { counts, title = "Service locations by need", top = 6 } = Astro.props;
+const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+const head = entries.slice(0, top);
+const tailSum = entries.slice(top).reduce((a, [, v]) => a + v, 0);
+const slices = [
+  ...head.map(([root, v]) => ({ root, label: label(root), value: v, color: catColor(root) })),
+  ...(tailSum > 0 ? [{ root: "other", label: "Other", value: tailSum, color: catColor("other") }] : []),
+];
+const total = slices.reduce((a, s) => a + s.value, 0);
+
+const R = 70, r = 42, C = 90;
+let angle = -Math.PI / 2;
+const arcs = slices.map((s) => {
+  const sweep = (s.value / total) * Math.PI * 2;
+  const a0 = angle, a1 = angle + sweep;
+  angle = a1;
+  const large = sweep > Math.PI ? 1 : 0;
+  const p = (a, rad) => `${(C + rad * Math.cos(a)).toFixed(1)},${(C + rad * Math.sin(a)).toFixed(1)}`;
+  const mid = (a0 + a1) / 2;
+  return {
+    ...s,
+    d: `M${p(a0, R)}A${R},${R} 0 ${large} 1 ${p(a1, R)}L${p(a1, r)}A${r},${r} 0 ${large} 0 ${p(a0, r)}Z`,
+    pct: Math.round((s.value / total) * 100),
+    lx: C + ((R + r) / 2) * Math.cos(mid),
+    ly: C + ((R + r) / 2) * Math.sin(mid),
+  };
+});
+const fmt = (n) => n.toLocaleString();
+---
+<div class="donut card">
+  <svg width="180" height="180" viewBox="0 0 180 180" role="img" aria-label={title}>
+    {arcs.map((a) => (
+      <path d={a.d} fill={a.color} stroke="var(--bg)" stroke-width="2">
+        <title>{a.label}: {fmt(a.value)} ({a.pct}%)</title>
+      </path>
+    ))}
+    {arcs.filter((a) => a.pct >= 6).map((a) => (
+      <text x={a.lx} y={a.ly} text-anchor="middle" dominant-baseline="middle"
+        font-size="11" font-weight="600" fill="#eff1f5">{a.pct}%</text>
+    ))}
+    <text class="center-n" x={C} y={C - 2} text-anchor="middle">{fmt(total)}</text>
+    <text class="center-l" x={C} y={C + 14} text-anchor="middle">locations</text>
+  </svg>
+  <div class="legend">
+    <strong>{title}</strong>
+    <ul>
+      {arcs.map((a) => (
+        <li>
+          <span class="swatch" style={`background:${a.color}`}></span>
+          {a.label} — {fmt(a.value)} ({a.pct}%)
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

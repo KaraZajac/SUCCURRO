@@ -1,0 +1,39 @@
+---
+// State outline (Census 5m boundary) with every served community as a
+// clickable dot, sized by listing count. The community text list stays on
+// the page — the map is a shortcut, not the only path.
+import { stateGeometry, categoryCounts } from "../lib/data.js";
+
+const { state, places } = Astro.props; // places: [{slug, name, geo}]
+const geo = stateGeometry(state);
+const { byPlaceTotal } = categoryCounts();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const dots = places
+  .filter((p) => p.geo)
+  .map((p) => {
+    let lng = p.geo.lng;
+    if (state === "ak" && lng > 0) lng -= 360;
+    const total = byPlaceTotal[`${state}/${p.slug}`] || 0;
+    return {
+      slug: p.slug, name: p.name, total,
+      cx: (lng - geo.minlng) * geo.kx * geo.s,
+      cy: (geo.maxlat - p.geo.lat) * geo.s,
+      r: Math.min(2 + Math.log2(total + 1) * 1.1, 8),
+    };
+  })
+  .filter((d) => d.cx >= -5 && d.cx <= geo.w + 5 && d.cy >= -5 && d.cy <= geo.h + 5)
+  .sort((a, b) => b.r - a.r); // big dots first so small ones stay clickable on top
+---
+<svg class="state-map" viewBox={`-6 -6 ${geo.w + 12} ${Math.ceil(geo.h) + 12}`}
+  role="navigation" aria-label="Communities with services"
+  style="max-width:34rem;width:100%;height:auto;">
+  <path class="outline" d={geo.path} />
+  {dots.map((d) => (
+    <a href={`${base}/${state}/${d.slug}`} aria-label={`${d.name} — ${d.total} listings`}>
+      <circle cx={d.cx.toFixed(1)} cy={d.cy.toFixed(1)} r={d.r.toFixed(1)}>
+        <title>{d.name} — {d.total} listing{d.total === 1 ? "" : "s"}</title>
+      </circle>
+    </a>
+  ))}
+</svg>

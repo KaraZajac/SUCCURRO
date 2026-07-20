@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { taxonomy } from "../lib/data.js";
+import { taxonomy, catColor } from "../lib/data.js";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
 const children = (id) => taxonomy().filter((t) => t.parent === id && !t.superseded_by);
@@ -8,11 +8,12 @@ const children = (id) => taxonomy().filter((t) => t.parent === id && !t.supersed
 <Base title="Browse by need — SUCCURRO">
   <h1>Browse by need</h1>
   {roots.map((r) => (
-    <div class="card">
+    <div class="card" style={`border-left:4px solid ${catColor(r.id)}`}>
       <h3><a href={`${base}/category/${r.id}`}>{r.label}</a></h3>
       <div class="meta">
         {children(r.id).map((c) => (
-          <a class="chip" href={`${base}/category/${c.id}`}>{c.label}</a>
+          <a class="chip cat" style={`--cat:${catColor(r.id)}`}
+             href={`${base}/category/${c.id}`}>{c.label}</a>
         ))}
       </div>
     </div>

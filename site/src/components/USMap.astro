@@ -1,0 +1,16 @@
+---
+// Clickable US map (Albers-USA projection built by pipeline/geometry.py).
+// Each state is a link; the text list stays elsewhere on the page for
+// screen readers and tiny screens.
+import { nationalGeometry, STATE_NAMES } from "../lib/data.js";
+const geo = nationalGeometry();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<svg class="usmap" viewBox={`0 0 ${geo.width} ${geo.height}`} role="navigation"
+  aria-label="Choose your state" style="max-width:100%;height:auto;">
+  {Object.entries(geo.states).map(([st, d]) => (
+    <a href={`${base}/${st}`} aria-label={STATE_NAMES[st] || st}>
+      <path d={d}><title>{STATE_NAMES[st] || st.toUpperCase()}</title></path>
+    </a>
+  ))}
+</svg>

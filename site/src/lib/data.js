@@ -103,6 +103,50 @@ export function sourceIndex() {
   return cache.get("_srcIdx");
 }
 
+export function rootOf(token) {
+  const tax = taxonomyIndex();
+  let t = tax.get(token);
+  while (t?.parent) t = tax.get(t.parent);
+  return t?.id || token;
+}
+
+export const nationalGeometry = () => load("geometry/national.yaml");
+export const stateGeometry = (st) => load(`geometry/${st}.yaml`);
+
+// One full-corpus scan, cached: root-category site counts nationally and per
+// state, plus per-place totals (sites + meetings) for map dot sizing.
+export function categoryCounts() {
+  if (cache.has("_catCounts")) return cache.get("_catCounts");
+  const national = {};
+  const byState = {};
+  const byPlaceTotal = {};
+  for (const { state, slug } of servedPlaces()) {
+    const key = `${state}/${slug}`;
+    let total = 0;
+    for (const s of sitesFor(state, slug)) {
+      const root = rootOf((s.categories || [])[0] || "other");
+      national[root] = (national[root] || 0) + 1;
+      (byState[state] ??= {})[root] = (byState[state][root] || 0) + 1;
+      total += 1;
+    }
+    total += meetingsFor(state, slug).length;
+    byPlaceTotal[key] = total;
+  }
+  const result = { national, byState, byPlaceTotal };
+  cache.set("_catCounts", result);
+  return result;
+}
+
+// fixed entity->color assignment (Latte hues, CVD-validated chart order)
+export const CATEGORY_COLORS = {
+  food: "#fe640b", health: "#1e66f5", "family-youth": "#df8e1d",
+  "mental-health": "#8839ef", recovery: "#40a02b", lgbtq: "#ea76cb",
+  housing: "#209fb5", veterans: "#179299", crisis: "#d20f39",
+  legal: "#e64553", financial: "#dd7878", seniors: "#04a5e5",
+  "mutual-aid": "#dc8a78", other: "#9ca0b0",
+};
+export const catColor = (root) => CATEGORY_COLORS[root] || CATEGORY_COLORS.other;
+
 export const STATE_NAMES = {
   al: "Alabama", ak: "Alaska", az: "Arizona", ar: "Arkansas", ca: "California",
   co: "Colorado", ct: "Connecticut", de: "Delaware", dc: "District of Columbia",

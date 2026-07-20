@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import {
   servedPlaces, placesFor, sitesFor, meetingsFor,
-  taxonomyIndex, label, STATE_NAMES, sourceIndex,
+  taxonomyIndex, label, STATE_NAMES, sourceIndex, catColor,
 } from "../../lib/data.js";
 
 export function getStaticPaths() {
@@ -93,12 +93,14 @@ const hoursText = (h) =>
 
   {groupOrder.map((root) => (
     <>
-      <h2 id={root}>{label(root)}</h2>
+      <h2 id={root} class="cat" style={`--cat:${catColor(root)}`}>{label(root)}</h2>
       {groups.get(root).sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
         <div class="card">
           <h3>{s.website ? <a href={s.website}>{s.name}</a> : s.name}</h3>
           <div class="meta">
-            {(s.categories || []).map((c) => <span class="chip">{label(c)}</span>)}
+            {(s.categories || []).map((c) => (
+              <span class="chip cat" style={`--cat:${catColor(rootOf(c))}`}>{label(c)}</span>
+            ))}
             {s.cost === "free" && <span class="chip">free</span>}
             {s.cost === "sliding-scale" && <span class="chip">sliding-scale fees</span>}
           </div>

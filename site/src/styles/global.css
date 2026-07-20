@@ -13,6 +13,23 @@
   --warn: #df8e1d;         /* yellow */
   --radius: 8px;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* per-category identity colors, all Latte hues; chart order validated
+     against CVD + contrast (dataviz palette checks) */
+  --cat-food: #fe640b;          /* peach */
+  --cat-health: #1e66f5;        /* blue */
+  --cat-family-youth: #df8e1d;  /* yellow */
+  --cat-mental-health: #8839ef; /* mauve */
+  --cat-recovery: #40a02b;      /* green */
+  --cat-lgbtq: #ea76cb;         /* pink */
+  --cat-housing: #209fb5;       /* sapphire */
+  --cat-veterans: #179299;      /* teal */
+  --cat-crisis: #d20f39;        /* red */
+  --cat-legal: #e64553;         /* maroon */
+  --cat-financial: #dd7878;     /* flamingo */
+  --cat-seniors: #04a5e5;       /* sky */
+  --cat-mutual-aid: #dc8a78;    /* rosewater */
+  --cat-other: #9ca0b0;         /* overlay0 */
 }
 
 * { box-sizing: border-box; }
@@ -70,6 +87,34 @@ h2 { font-size: 1.15rem; margin: 1.6rem 0 0.5rem; }
   font-size: 0.78rem;
   margin-right: 0.3rem;
 }
+/* category-tinted chips + section headers: --cat is set inline per element */
+.chip.cat {
+  background: color-mix(in srgb, var(--cat) 14%, var(--bg));
+  color: color-mix(in srgb, var(--cat) 55%, var(--text));
+}
+h2.cat {
+  border-left: 4px solid var(--cat);
+  padding-left: 0.5rem;
+}
+
+/* maps */
+.usmap path { fill: var(--surface); stroke: var(--accent); stroke-width: 0.8; }
+.usmap a:hover path, .usmap a:focus-visible path { fill: var(--accent-soft); }
+.state-map path.outline { fill: var(--surface); stroke: var(--accent); stroke-width: 1; }
+.state-map circle { fill: var(--accent); fill-opacity: 0.7; stroke: var(--bg); stroke-width: 1; }
+.state-map a:hover circle, .state-map a:focus-visible circle { fill: var(--accent-strong); fill-opacity: 1; }
+
+/* donut chart */
+.donut { display: flex; gap: 1.4rem; align-items: center; flex-wrap: wrap; }
+.donut .legend { font-size: 0.88rem; min-width: 15rem; }
+.donut .legend li { list-style: none; margin: 0.15rem 0; }
+.donut .legend ul { padding: 0; margin: 0; }
+.donut .swatch {
+  display: inline-block; width: 0.7rem; height: 0.7rem;
+  border-radius: 3px; margin-right: 0.45rem; vertical-align: baseline;
+}
+.donut .center-n { font-size: 1.3rem; font-weight: 700; fill: var(--text); }
+.donut .center-l { font-size: 0.55rem; fill: var(--muted); }
 
 .stat-row { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
 .stat {
