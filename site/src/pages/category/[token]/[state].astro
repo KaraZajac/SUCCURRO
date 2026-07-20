@@ -1,0 +1,49 @@
+---
+import Base from "../../../layouts/Base.astro";
+import {
+  taxonomy, STATE_NAMES, placesFor, categoryCounts, catColor, rootOf, label,
+} from "../../../lib/data.js";
+
+export function getStaticPaths() {
+  const { tokenPlaces } = categoryCounts();
+  const paths = [];
+  for (const [token, states] of Object.entries(tokenPlaces)) {
+    for (const state of Object.keys(states)) {
+      paths.push({ params: { token, state } });
+    }
+  }
+  return paths;
+}
+const { token, state } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const stateName = STATE_NAMES[state] || state.toUpperCase();
+const color = catColor(rootOf(token));
+const anchor = rootOf(token) === "recovery" && token === "recovery-meeting"
+  ? "meetings" : rootOf(token);
+
+const placeNames = new Map(placesFor(state).map((p) => [p.slug, p.name]));
+const places = Object.entries(categoryCounts().tokenPlaces[token]?.[state] || {})
+  .map(([slug, n]) => ({
+    slug, n,
+    name: slug === "online" ? `Online (${stateName})`
+      : placeNames.get(slug) || slug.replace(/-/g, " "),
+  }))
+  .filter((p) => p.slug !== "unknown")
+  .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+const total = places.reduce((a, p) => a + p.n, 0);
+---
+<Base title={`${label(token)} in ${stateName} — SUCCURRO`}>
+  <p class="meta">
+    <a href={`${base}/category/${token}`}>{label(token)}</a> → {stateName}
+  </p>
+  <h1 class="cat" style={`--cat:${color};border-left:4px solid var(--cat);padding-left:0.5rem`}>
+    {label(token)} in {stateName}
+  </h1>
+  <p>{total.toLocaleString()} listings in {places.length} communities — sorted by most listings:</p>
+  {places.map((p) => (
+    <div class="card">
+      <h3><a href={`${base}/${state}/${p.slug}#${anchor}`}>{p.name}</a></h3>
+      <div class="meta">{p.n} listing{p.n === 1 ? "" : "s"}</div>
+    </div>
+  ))}
+</Base>

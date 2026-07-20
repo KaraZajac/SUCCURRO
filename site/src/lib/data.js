@@ -113,13 +113,39 @@ export function rootOf(token) {
 export const nationalGeometry = () => load("geometry/national.yaml");
 export const stateGeometry = (st) => load(`geometry/${st}.yaml`);
 
+function withAncestors(token) {
+  const tax = taxonomyIndex();
+  const out = [];
+  let t = tax.get(token);
+  if (!t) return [token];
+  while (t) {
+    out.push(t.id);
+    t = t.parent ? tax.get(t.parent) : null;
+  }
+  return out;
+}
+
 // One full-corpus scan, cached: root-category site counts nationally and per
-// state, plus per-place totals (sites + meetings) for map dot sizing.
+// state, per-place totals (sites + meetings) for map dot sizing, and a
+// token -> state -> place -> count index (tokens count toward themselves and
+// every ancestor) powering the filtered by-need pages.
 export function categoryCounts() {
   if (cache.has("_catCounts")) return cache.get("_catCounts");
   const national = {};
   const byState = {};
   const byPlaceTotal = {};
+  const tokenPlaces = {};
+  const bump = (tokens, state, slug) => {
+    const seen = new Set();
+    for (const raw of tokens) {
+      for (const t of withAncestors(raw)) {
+        if (seen.has(t)) continue;
+        seen.add(t);
+        ((tokenPlaces[t] ??= {})[state] ??= {})[slug] =
+          (tokenPlaces[t][state][slug] || 0) + 1;
+      }
+    }
+  };
   for (const { state, slug } of servedPlaces()) {
     const key = `${state}/${slug}`;
     let total = 0;
@@ -128,11 +154,15 @@ export function categoryCounts() {
       national[root] = (national[root] || 0) + 1;
       (byState[state] ??= {})[root] = (byState[state][root] || 0) + 1;
       total += 1;
+      bump(s.categories || [], state, slug);
     }
-    total += meetingsFor(state, slug).length;
+    for (const m of meetingsFor(state, slug)) {
+      bump(m.categories || [], state, slug);
+      total += 1;
+    }
     byPlaceTotal[key] = total;
   }
-  const result = { national, byState, byPlaceTotal };
+  const result = { national, byState, byPlaceTotal, tokenPlaces };
   cache.set("_catCounts", result);
   return result;
 }

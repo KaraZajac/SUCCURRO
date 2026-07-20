@@ -1,6 +1,8 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { taxonomy, label, STATES, STATE_NAMES } from "../../lib/data.js";
+import {
+  taxonomy, STATE_NAMES, categoryCounts, catColor, rootOf,
+} from "../../lib/data.js";
 
 export function getStaticPaths() {
   return taxonomy()
@@ -11,20 +13,53 @@ const { token } = Astro.params;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const entry = taxonomy().find((t) => t.id === token);
 const children = taxonomy().filter((t) => t.parent === token && !t.superseded_by);
+const color = catColor(rootOf(token));
+
+const perState = categoryCounts().tokenPlaces[token] || {};
+const states = Object.entries(perState)
+  .map(([st, places]) => ({
+    st,
+    name: STATE_NAMES[st] || st.toUpperCase(),
+    listings: Object.values(places).reduce((a, b) => a + b, 0),
+    communities: Object.keys(places).filter((s) => s !== "online" && s !== "unknown").length,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const total = states.reduce((a, s) => a + s.listings, 0);
 ---
 <Base title={`${entry.label} — SUCCURRO`}>
-  <h1>{entry.label}</h1>
+  <h1 class="cat" style={`--cat:${color};border-left:4px solid var(--cat);padding-left:0.5rem`}>{entry.label}</h1>
   {children.length > 0 && (
     <p>
       {children.map((c) => (
-        <a class="chip" href={`${base}/category/${c.id}`}>{c.label}</a>
+        <a class="chip cat" style={`--cat:${color}`}
+           href={`${base}/category/${c.id}`}>{c.label}</a>
       ))}
     </p>
   )}
-  <p>Pick your state, then your city or town, to see {entry.label.toLowerCase()} services near you:</p>
-  <div class="cols">
-    {STATES().map((st) => (
-      <a href={`${base}/${st}`}>{STATE_NAMES[st] || st.toUpperCase()}</a>
-    ))}
-  </div>
+  {states.length === 0 ? (
+    <p>
+      No listings under this need yet — coverage grows with every data refresh.
+      Try the <a href={`${base}/category/${rootOf(token)}`}>broader category</a>
+      {" "}or <a href={`${base}/search`}>search your town</a>.
+    </p>
+  ) : (
+    <>
+      <p>
+        {total.toLocaleString()} listings across {states.length} states.
+        Pick your state to see the communities that have them:
+      </p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>State</th><th>Listings</th><th>Communities</th></tr></thead>
+        <tbody>
+          {states.map((s) => (
+            <tr>
+              <td><a href={`${base}/category/${token}/${s.st}`}>{s.name}</a></td>
+              <td>{s.listings.toLocaleString()}</td>
+              <td>{s.communities.toLocaleString()}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </>
+  )}
 </Base>
