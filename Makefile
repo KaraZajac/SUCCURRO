@@ -9,11 +9,13 @@ help: ## list targets
 places: ## build the national place registry from Census gazetteer
 	python3 -m pipeline.places
 
-build: ## run every source module, then recount meta
+build: ## run every source module, then reconcile and recount meta
 	@for m in $(MODULES); do echo "== $$m"; python3 -m pipeline.$$m || exit 1; done
+	python3 -m pipeline.reconcile
 	python3 -m pipeline.meta
 
 meta: ## recount data/meta.yaml
+	python3 -m pipeline.reconcile
 	python3 -m pipeline.meta
 
 modules: ## print the module list (used by the refresh workflow)

@@ -83,41 +83,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: al/dothan/central-alabama-va-healthcare-system-dothan-ment
-  name: Central Alabama VA Healthcare System Dothan Mental Health Clinic
-  categories:
-  - su-treatment
-  - mh-treatment
-  address:
-    street: 3753 Ross Clark Circle
-    city: Dothan
-    state: al
-    zip: '36303'
-  place: 0121184
-  geo:
-    lat: 31.25353
-    lng: -85.4152
-  phone: 334-503-7819 x47801
-  website: https://www.va.gov/central-alabama-health-care/locations/dothan-2-va-clinic/
-  services:
-  - Hospital inpatient/24-hour hospital inpatient
-  - Outpatient
-  - Partial hospitalization/day treatment
-  - Residential/24-hour residential
-  - Seniors or older adults
-  - Veterans
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
-  - Clients who have experienced trauma
-  - Persons with traumatic brain injury (TBI)
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: al/dothan/crawford-village
   name: Crawford Village
   categories:
@@ -249,14 +214,23 @@
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: '4300 W Main St, Suite 300', city: Dothan, state: al, zip: '36305'}
+  address:
+    street: 4300 W Main St, Suite 300
+    city: Dothan
+    state: al
+    zip: '36305'
   place: 0121184
-  geo: {lat: 31.23637, lng: -85.45664}
+  geo:
+    lat: 31.23637
+    lng: -85.45664
   phone: 334-446-0076
-  external_ids: {bphc: BPS-H80-015193}
+  external_ids:
+    bphc: BPS-H80-015193
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/dothan/dothan-houston-county-drug-treatment-center
   name: Dothan Houston County Drug Treatment Center
   categories:

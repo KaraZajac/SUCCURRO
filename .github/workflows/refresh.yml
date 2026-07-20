@@ -29,6 +29,7 @@ jobs:
             echo "== $mod"
             python3 -m pipeline.$mod --force || echo "::warning::$mod failed"
           done
+          python3 -m pipeline.reconcile
           python3 -m pipeline.meta
       - name: validation gate
         run: python3 -m pipeline.validate
