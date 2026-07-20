@@ -9,8 +9,8 @@ const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
   <p>Type your city or town, pick what you need, and go.</p>
 
   <div class="card">
-    <label for="q"><strong>Your city or town</strong></label><br />
-    <input id="q" type="search" autocomplete="off" placeholder="e.g. Garden Grove"
+    <label for="q"><strong>Your city, town, or ZIP code</strong></label><br />
+    <input id="q" type="search" autocomplete="off" placeholder="e.g. Garden Grove or 92841"
       style="width:100%;max-width:24rem;padding:0.5rem 0.7rem;margin:0.4rem 0;
              border:1px solid var(--line);border-radius:var(--radius);
              background:var(--bg);color:var(--text);font-size:1rem;" />
@@ -22,6 +22,12 @@ const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
       {roots.map((t) => <option value={t.id}>{t.label}</option>)}
       <option value="meetings">Recovery &amp; support meetings</option>
     </select>
+    <button id="geo" type="button"
+      style="padding:0.45rem 0.8rem;margin-left:0.5rem;border:1px solid var(--accent);
+             border-radius:var(--radius);background:var(--accent-soft);
+             color:var(--accent-strong);cursor:pointer;">
+      Use my location
+    </button>
     <div id="results" role="listbox" aria-label="Matching communities"></div>
   </div>
 
@@ -32,15 +38,17 @@ const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
   <script is:inline define:vars={{ base, stateNames: STATE_NAMES }}>
     const q = document.getElementById("q");
     const need = document.getElementById("need");
+    const geoBtn = document.getElementById("geo");
     const results = document.getElementById("results");
-    let index = null;
+    let index = null, zips = null;
 
     async function ensureIndex() {
-      if (!index) {
-        const resp = await fetch(`${base}/api/places-index.json`);
-        index = await resp.json();
-      }
+      if (!index) index = await (await fetch(`${base}/api/places-index.json`)).json();
       return index;
+    }
+    async function ensureZips() {
+      if (!zips) zips = await (await fetch(`${base}/api/zips-index.json`)).json();
+      return zips;
     }
 
     function score(entry, term) {
@@ -50,14 +58,53 @@ const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
       if (name.includes(term)) return 10;
       return 0;
     }
+    const total = (e) => Object.values(e.c).reduce((a, b) => a + b, 0);
+    const miles = (a, b) => {
+      const dy = (a[0] - b[0]) * 69;
+      const dx = (a[1] - b[1]) * 69 * Math.cos((a[0] * Math.PI) / 180);
+      return Math.sqrt(dx * dx + dy * dy);
+    };
 
-    function total(entry) {
-      return Object.values(entry.c).reduce((a, b) => a + b, 0);
+    function card(e, extra = "") {
+      const needToken = need.value;
+      const anchor = needToken && needToken !== "meetings" ? `#${needToken}`
+        : needToken === "meetings" ? "#meetings" : "";
+      const bits = [];
+      if (e.c.meetings) bits.push(`${e.c.meetings} meeting${e.c.meetings === 1 ? "" : "s"}`);
+      const siteCount = total(e) - (e.c.meetings || 0);
+      if (siteCount) bits.push(`${siteCount} service${siteCount === 1 ? "" : "s"}`);
+      if (extra) bits.push(extra);
+      return `<div class="card"><h3>
+        <a href="${base}/${e.st}/${e.p}${anchor}">${e.n}, ${(stateNames[e.st] || e.st.toUpperCase())}</a>
+        </h3><div class="meta">${bits.join(" · ")}</div></div>`;
+    }
+
+    async function renderNear(origin, headline) {
+      const idx = await ensureIndex();
+      const needToken = need.value;
+      const near = idx
+        .filter((e) => e.g)
+        .filter((e) => !needToken || e.c[needToken])
+        .map((e) => ({ e, d: miles(origin, e.g) }))
+        .sort((a, b) => a.d - b.d)
+        .slice(0, 12);
+      results.innerHTML =
+        `<p class="meta">${headline}</p>` +
+        near.map(({ e, d }) => card(e, `${d < 1 ? "<1" : Math.round(d)} mi away`)).join("");
     }
 
     async function render() {
       const term = q.value.trim().toLowerCase();
       if (term.length < 2) { results.innerHTML = ""; return; }
+      if (/^\d{5}$/.test(term)) {
+        const z = await ensureZips();
+        if (z[term]) {
+          renderNear(z[term], `Communities with services near ZIP ${term}:`);
+        } else {
+          results.innerHTML = `<p class="meta">ZIP ${term} isn't in the Census ZIP-area table — try your town's name.</p>`;
+        }
+        return;
+      }
       const idx = await ensureIndex();
       const needToken = need.value;
       const matches = idx
@@ -69,21 +116,27 @@ const roots = taxonomy().filter((t) => !t.parent && !t.superseded_by);
       if (!matches.length) {
         results.innerHTML =
           `<p class="meta">No listed services match${needToken ? " that need" : ""} there yet.
-           Try the nearest larger town, or the full-text search below.</p>`;
+           Try a ZIP code, the nearest larger town, or the full-text search below.</p>`;
         return;
       }
-      results.innerHTML = matches.map(({ e }) => {
-        const anchor = needToken && needToken !== "meetings" ? `#${needToken}`
-          : needToken === "meetings" ? "#meetings" : "";
-        const bits = [];
-        if (e.c.meetings) bits.push(`${e.c.meetings} meetings`);
-        const siteCount = total(e) - (e.c.meetings || 0);
-        if (siteCount) bits.push(`${siteCount} services`);
-        return `<div class="card"><h3>
-          <a href="${base}/${e.st}/${e.p}${anchor}">${e.n}, ${(stateNames[e.st] || e.st.toUpperCase())}</a>
-          </h3><div class="meta">${bits.join(" · ")}</div></div>`;
-      }).join("");
+      results.innerHTML = matches.map(({ e }) => card(e)).join("");
     }
+
+    geoBtn.addEventListener("click", () => {
+      geoBtn.textContent = "Locating…";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          geoBtn.textContent = "Use my location";
+          renderNear([pos.coords.latitude, pos.coords.longitude],
+            "Communities with services near you:");
+        },
+        () => {
+          geoBtn.textContent = "Use my location";
+          results.innerHTML =
+            '<p class="meta">Couldn\'t get your location — type your town or ZIP instead.</p>';
+        },
+        { timeout: 10000 });
+    });
 
     q.addEventListener("input", render);
     need.addEventListener("change", render);

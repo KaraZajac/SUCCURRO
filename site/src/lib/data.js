@@ -71,8 +71,27 @@ export function servedPlaces() {
   return list;
 }
 
-export const sitesFor = (state, slug) => loadFresh(`sites/${state}/${slug}.yaml`) || [];
-export const meetingsFor = (state, slug) => loadFresh(`meetings/${state}/${slug}.yaml`) || [];
+// Safety-critical stale records are suppressed from the site, not shown
+// wrong (DATA-RIGHTS policy). Thresholds mirror pipeline/validate.py.
+const SAFETY_CRITICAL = new Set([
+  "crisis", "crisis-hotline", "suicide-prevention", "domestic-violence",
+  "sexual-assault", "emergency-shelter", "youth-shelter",
+]);
+const STALE_DAYS = { sites: 180, meetings: 90 };
+const NOW = Date.now();
+
+function suppressStale(records, kind) {
+  return records.filter((r) => {
+    if (!(r.categories || []).some((c) => SAFETY_CRITICAL.has(c))) return true;
+    const on = r.verified?.on ? Date.parse(r.verified.on) : 0;
+    return (NOW - on) / 86400000 <= STALE_DAYS[kind];
+  });
+}
+
+export const sitesFor = (state, slug) =>
+  suppressStale(loadFresh(`sites/${state}/${slug}.yaml`) || [], "sites");
+export const meetingsFor = (state, slug) =>
+  suppressStale(loadFresh(`meetings/${state}/${slug}.yaml`) || [], "meetings");
 
 export function orgsFor(state) {
   const base = path.join(DATA, "orgs", state);
@@ -112,6 +131,53 @@ export function rootOf(token) {
 
 export const nationalGeometry = () => load("geometry/national.yaml");
 export const stateGeometry = (st) => load(`geometry/${st}.yaml`);
+export const zipCentroids = () => load("crosswalk/zips.yaml") || {};
+
+// Served places with registry geo, plus a half-degree grid for nearest lookups.
+export function servedGeo() {
+  if (cache.has("_servedGeo")) return cache.get("_servedGeo");
+  const list = [];
+  const grid = new Map();
+  for (const { state, slug } of servedPlaces()) {
+    if (slug === "online" || slug === "unknown") continue;
+    const rec = placesFor(state).find((p) => p.slug === slug);
+    if (!rec?.geo) continue;
+    const entry = { state, slug, name: rec.name, lat: rec.geo.lat, lng: rec.geo.lng };
+    list.push(entry);
+    const cell = `${Math.floor(entry.lat * 2)}:${Math.floor(entry.lng * 2)}`;
+    if (!grid.has(cell)) grid.set(cell, []);
+    grid.get(cell).push(entry);
+  }
+  const result = { list, grid };
+  cache.set("_servedGeo", result);
+  return result;
+}
+
+const MILES = (a, b) => {
+  const dy = (a.lat - b.lat) * 69;
+  const dx = (a.lng - b.lng) * 69 * Math.cos((a.lat * Math.PI) / 180);
+  return Math.sqrt(dx * dx + dy * dy);
+};
+
+export function nearestServed(lat, lng, k = 8, excludeKey = null) {
+  const { grid } = servedGeo();
+  const origin = { lat, lng };
+  const found = [];
+  const cy = Math.floor(lat * 2), cx = Math.floor(lng * 2);
+  for (let ring = 0; ring <= 3; ring++) {
+    for (let dy = -ring; dy <= ring; dy++) {
+      for (let dx = -ring; dx <= ring; dx++) {
+        if (Math.max(Math.abs(dy), Math.abs(dx)) !== ring) continue;
+        for (const p of grid.get(`${cy + dy}:${cx + dx}`) || []) {
+          if (`${p.state}/${p.slug}` === excludeKey) continue;
+          found.push({ ...p, miles: MILES(origin, p) });
+        }
+      }
+    }
+    if (found.length >= k * 3 && ring >= 1) break;
+  }
+  return found.sort((a, b) => a.miles - b.miles).slice(0, k);
+}
 
 function withAncestors(token) {
   const tax = taxonomyIndex();

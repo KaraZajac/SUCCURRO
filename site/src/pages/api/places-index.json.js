@@ -14,12 +14,12 @@ export async function GET() {
     return t?.id || token;
   };
 
-  const nameCache = new Map();
-  const placeName = (state, slug) => {
-    if (!nameCache.has(state)) {
-      nameCache.set(state, new Map(placesFor(state).map((p) => [p.slug, p.name])));
+  const recCache = new Map();
+  const placeRec = (state, slug) => {
+    if (!recCache.has(state)) {
+      recCache.set(state, new Map(placesFor(state).map((p) => [p.slug, p])));
     }
-    return nameCache.get(state).get(slug);
+    return recCache.get(state).get(slug);
   };
 
   const entries = [];
@@ -31,12 +31,15 @@ export async function GET() {
     }
     const meetings = meetingsFor(state, slug).length;
     if (meetings) counts.meetings = meetings;
-    entries.push({
-      n: placeName(state, slug) || slug.replace(/-/g, " "),
+    const rec = placeRec(state, slug);
+    const entry = {
+      n: rec?.name || slug.replace(/-/g, " "),
       st: state,
       p: slug,
       c: counts,
-    });
+    };
+    if (rec?.geo) entry.g = [rec.geo.lat, rec.geo.lng];
+    entries.push(entry);
   }
   entries.sort((a, b) => a.n.localeCompare(b.n));
   return new Response(JSON.stringify(entries), {

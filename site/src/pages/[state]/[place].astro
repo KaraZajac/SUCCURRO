@@ -1,8 +1,8 @@
 ---
 import Base from "../../layouts/Base.astro";
 import {
-  servedPlaces, placesFor, sitesFor, meetingsFor,
-  taxonomyIndex, label, STATE_NAMES, sourceIndex, catColor,
+  servedPlaces, placesFor, sitesFor, meetingsFor, taxonomyIndex, label,
+  STATE_NAMES, sourceIndex, catColor, nearestServed, categoryCounts,
 } from "../../lib/data.js";
 
 export function getStaticPaths() {
@@ -52,6 +52,12 @@ for (const s of sites) {
 }
 const groupOrder = [...groups.keys()].sort((a, b) => label(a).localeCompare(label(b)));
 
+const nearby = placeRec?.geo
+  ? nearestServed(placeRec.geo.lat, placeRec.geo.lng, 8, `${state}/${place}`)
+  : [];
+const { byPlaceTotal } = nearby.length ? categoryCounts() : { byPlaceTotal: {} };
+
+const DAY_ORDER = { mon: 0, tue: 1, wed: 2, thu: 3, fri: 4, sat: 5, sun: 6 };
 const DAY_LABELS = { mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun" };
 const PROGRAMS = { aa: "AA", na: "NA", "al-anon": "Al-Anon", smart: "SMART Recovery", nami: "NAMI" };
 // standard Meeting Guide / BMLT type codes -> readable labels (unknown codes hidden)
@@ -130,14 +136,29 @@ const hoursText = (h) =>
     </>
   ))}
 
-  {meetings.length > 0 && <h2 id="meetings">Recovery &amp; support meetings</h2>}
-  {[...meetingsByProgram.keys()].sort().map((prog) => (
+  {meetings.length > 0 && (
     <>
+      <h2 id="meetings">Recovery &amp; support meetings</h2>
+      <div id="day-filter" class="meta" style="margin:0.3rem 0 0.6rem;">
+        <button data-day="" class="chip" type="button" style="border:none;cursor:pointer;">All days</button>
+        <button data-day="today" class="chip" type="button" style="border:none;cursor:pointer;">Today</button>
+        {Object.entries(DAY_LABELS).map(([tok, lbl]) => (
+          <button data-day={tok} class="chip" type="button" style="border:none;cursor:pointer;">{lbl}</button>
+        ))}
+      </div>
+    </>
+  )}
+  {[...meetingsByProgram.keys()].sort().map((prog) => (
+    <div class="prog">
       <h3>{prog} meetings</h3>
       {meetingsByProgram.get(prog)
-        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) =>
+          (DAY_ORDER[a.schedule?.[0]?.day] ?? 9) - (DAY_ORDER[b.schedule?.[0]?.day] ?? 9) ||
+          (a.schedule?.[0]?.time || "").localeCompare(b.schedule?.[0]?.time || "") ||
+          a.name.localeCompare(b.name))
         .map((m) => (
-          <div class="card">
+          <div class="card meeting"
+               data-days={(m.schedule || []).map((e) => e.day).join(" ")}>
             <h3>{m.url ? <a href={m.url}>{m.name}</a> : m.name}</h3>
             <div class="meta">
               {fmtSchedule(m)} · {m.format}
@@ -156,8 +177,47 @@ const hoursText = (h) =>
             </div>
           </div>
         ))}
-    </>
+    </div>
   ))}
+
+  {meetings.length > 0 && (
+    <script is:inline>
+      (() => {
+        const bar = document.getElementById("day-filter");
+        if (!bar) return;
+        const tokens = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+        const today = tokens[new Date().getDay()];
+        const cards = [...document.querySelectorAll(".card.meeting")];
+        const progs = [...document.querySelectorAll(".prog")];
+        bar.addEventListener("click", (ev) => {
+          const btn = ev.target.closest("button[data-day]");
+          if (!btn) return;
+          const day = btn.dataset.day === "today" ? today : btn.dataset.day;
+          for (const b of bar.querySelectorAll("button"))
+            b.style.outline = b === btn ? "2px solid var(--accent)" : "";
+          for (const c of cards)
+            c.style.display = !day || c.dataset.days.split(" ").includes(day) ? "" : "none";
+          for (const p of progs)
+            p.style.display = [...p.querySelectorAll(".card.meeting")]
+              .some((c) => c.style.display !== "none") ? "" : "none";
+        });
+      })();
+    </script>
+  )}
+
+  {nearby.length > 0 && (
+    <>
+      <h2>Nearby communities</h2>
+      <p class="meta">More help within driving distance:</p>
+      <div class="cols">
+        {nearby.map((p) => (
+          <a href={`${base}/${p.state}/${p.slug}`}>
+            {p.name} ({p.miles < 1 ? "<1" : Math.round(p.miles)} mi · {byPlaceTotal[`${p.state}/${p.slug}`] || 0} listings)
+          </a>
+        ))}
+      </div>
+    </>
+  )}
 
   <p class="meta">
     Every listing is sourced and dated — see <a href="https://github.com/KaraZajac/SUCCURRO">the dataset</a> to

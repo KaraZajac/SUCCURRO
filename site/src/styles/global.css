@@ -141,3 +141,18 @@ th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(
   padding: 0.7rem 1rem;
   margin: 1rem 0;
 }
+
+/* print: a town page should work as a paper handout */
+@media print {
+  header.site nav, .usmap, .state-map, .donut, #day-filter,
+  form[role="search"], .stat-row, details { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card { border: 1px solid #999; break-inside: avoid; }
+  .chip { border: 1px solid #999; background: none !important; color: #000 !important; }
+  a { color: #000; text-decoration: none; font-weight: 600; }
+  .card h3 a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-weight: 400; font-size: 0.75em; word-break: break-all;
+  }
+  footer.site { border-top: 1px solid #999; }
+}
