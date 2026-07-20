@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address:
-    street: 3440 I-75 Business Spur
-    city: Sault Saint Marie
-    state: mi
-    zip: '49783'
-  geo:
-    lat: 46.46777
-    lng: -84.36741
+  address: {street: 3440 I-75 Business Spur, city: Sault Saint Marie, state: mi, zip: '49783'}
+  geo: {lat: 46.46777, lng: -84.36741}
   phone: 800-215-8262
   website: https://www.va.gov/iron-mountain-health-care/locations/sault-saint-marie-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -43,11 +30,8 @@
   - Primary care
   - Pulmonary medicine
   - Women Veteran care
-  external_ids:
-    va: vha_585HB
+  external_ids: {va: vha_585HB}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '2671740'

@@ -4,25 +4,34 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: thu
-    time: '19:30'
-    duration_min: 60
+  - {day: thu, time: '19:30', duration_min: 60}
   format: in-person
   types:
   - 4-point-recovery
   - adults
   venue_name: Stoughton YMCA
-  venue:
-    city: Stoughton
-    state: ma
-    zip: '02072'
+  venue: {city: Stoughton, state: ma, zip: '02072'}
   languages:
   - en
   url: https://meetings.smartrecovery.org/meetings/8783/
-  external_ids:
-    smart: '8783'
+  external_ids: {smart: '8783'}
   sources:
   - smart/meeting-finder
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}
+- id: ma/stoughton/stoughton-shg
+  name: Stoughton SHG
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: thu, time: '13:00', duration_min: 120, note: 3rd Thursday of each month}
+  format: in-person
+  venue_name: Stoughton Council on Aging
+  venue: {street: 110 Rockland Street, city: Stoughton, state: ma, zip: '02072'}
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/stoughton-shg
+  external_ids: {ms_society: stoughton-shg}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}

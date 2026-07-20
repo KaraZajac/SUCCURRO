@@ -6,48 +6,30 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5. Operated by Chelan Douglas Health District.'
-  address:
-    street: 224 Benton St
-    street2: Faith Lutheran Church
-    city: Leavenworth
-    state: wa
-    zip: '98826'
-  geo:
-    lat: 47.59561
-    lng: -120.66758
+  address: {street: 224 Benton St, street2: Faith Lutheran Church, city: Leavenworth, state: wa, zip: '98826'}
+  geo: {lat: 47.59561, lng: -120.66758}
   place: '5338845'
-  external_ids:
-    wic: wa-doh:112
+  external_ids: {wic: 'wa-doh:112'}
   sources:
   - wic/wa-doh
-  verified:
-    'on': '2026-07-20'
-    method: api
+  verified: {'on': '2026-07-20', method: api}
 - id: wa/leavenworth/faith-lutheran-little-free-pantry
   name: Faith Lutheran Little Free Pantry
   categories:
   - food-pantry
   place: '5338845'
-  geo:
-    lat: 47.59573
-    lng: -120.66775
+  geo: {lat: 47.59573, lng: -120.66775}
   website: https://mapping.littlefreepantry.org/pantry/2748
-  external_ids:
-    lfp: '2748'
+  external_ids: {lfp: '2748'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}
 - id: wa/leavenworth/uvcares-behavioral-health
   name: UVCares Behavioral Health
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    city: Leavenworth
-    state: wa
-    zip: '98826'
+  address: {city: Leavenworth, state: wa, zip: '98826'}
   place: '5338845'
   phone: 509-300-1113
   website: https://www.uvcares.org
@@ -70,6 +52,4 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

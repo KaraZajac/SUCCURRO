@@ -4,27 +4,35 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: sat
-    time: 09:00
-    duration_min: 90
+  - {day: sat, time: '09:00', duration_min: 90}
   format: hybrid
   types:
   - 4-point-recovery
   - adults
   venue_name: West Milford Public Library
-  venue:
-    street: 1470 Union Valley Rd
-    city: West Milford
-    state: nj
-    zip: 07480
+  venue: {street: 1470 Union Valley Rd, city: West Milford, state: nj, zip: 07480}
   conference_url: https://instance-us.pathcheck.net/j/C4T7N7
   languages:
   - en
   url: https://meetings.smartrecovery.org/meetings/4063/
-  external_ids:
-    smart: '4063'
+  external_ids: {smart: '4063'}
   sources:
   - smart/meeting-finder
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}
+- id: nj/west-milford/squeaky-wheels-ms-self-help-group
+  name: Squeaky Wheels MS Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: wed, time: '12:00', duration_min: 90, note: 4th Wednesday of each month}
+  format: hybrid
+  venue_name: West Milford Township Library
+  venue: {street: 1470 Union Valley Road, city: West Milford, state: nj, zip: 07480}
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/squeaky-wheels-ms-self-help-group
+  external_ids: {ms_society: squeaky-wheels-ms-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}

@@ -4,25 +4,13 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address:
-    street: 16111 Plummer Street, Sepulveda Ambulatory Care Center
-    city: Sepulveda
-    state: ca
-    zip: '91343'
-  geo:
-    lat: 34.24292
-    lng: -118.48325
+  address: {street: '16111 Plummer Street, Sepulveda Ambulatory Care Center', city: Sepulveda, state: ca,
+    zip: '91343'}
+  geo: {lat: 34.24292, lng: -118.48325}
   phone: 818-891-7711
   website: https://www.va.gov/greater-los-angeles-health-care/locations/sepulveda-va-medical-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '17:00'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '17:00'}
   services:
   - Adaptive sports
   - Allergy, asthma and immunology
@@ -74,11 +62,8 @@
   - Wheelchair and mobility
   - Whole health
   - Women Veteran care
-  external_ids:
-    va: vha_691A4
+  external_ids: {va: vha_691A4}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '0666140'

@@ -1,3 +1,21 @@
+- id: ma/methuen/methuen-shg
+  name: Methuen SHG
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: mon, time: '10:00', duration_min: 120, note: 4th Monday of each month}
+  format: in-person
+  venue_name: Nevins Memorial Library
+  venue: {street: 305 Broadway, city: Methuen, state: ma, zip: 01844}
+  place: '2540675'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/methuen-shg
+  external_ids: {ms_society: methuen-shg}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}
 - id: ma/methuen/trust-and-hope
   name: Trust and Hope
   program: nar-anon
@@ -5,36 +23,23 @@
   - recovery-meeting
   - family-support
   schedule:
-  - day: mon
-    time: '18:30'
+  - {day: mon, time: '18:30'}
   format: in-person
   venue_name: Forest Street Union Church~United Church of Christ
-  venue:
-    street: 15 Forest Street
-    city: Methuen
-    state: ma
-    zip: 01844
+  venue: {street: 15 Forest Street, city: Methuen, state: ma, zip: 01844}
   place: '2540675'
-  geo:
-    lat: 42.70793
-    lng: -71.20502
-  external_ids:
-    knack: 55f71fb511b108d13e6ada6a
-    naranon: 106-013
+  geo: {lat: 42.70793, lng: -71.20502}
+  external_ids: {knack: 55f71fb511b108d13e6ada6a, naranon: 106-013}
   sources:
   - naranon/group-database
-  verified:
-    'on': '2026-07-20'
-    method: api
+  verified: {'on': '2026-07-20', method: api}
 - id: ma/methuen/women-do-recover
   name: Women Do Recover
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: wed
-    time: '19:00'
-    duration_min: 75
+  - {day: wed, time: '19:00', duration_min: 75}
   format: in-person
   types:
   - o
@@ -42,20 +47,11 @@
   - w
   - cw
   venue_name: Our Lady Of Good Counsel
-  venue:
-    street: 22 Plymouth Street
-    city: Methuen
-    state: ma
-    zip: 01844
+  venue: {street: 22 Plymouth Street, city: Methuen, state: ma, zip: 01844}
   place: '2540675'
-  geo:
-    lat: 42.70588
-    lng: -71.19137
+  geo: {lat: 42.70588, lng: -71.19137}
   notes: https://nerna.org/women-do-recover-group/
-  external_ids:
-    bmlt: 21:528
+  external_ids: {bmlt: '21:528'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

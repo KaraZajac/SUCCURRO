@@ -4,35 +4,17 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address:
-    street: 221 Third Street West
-    city: Randolph Air Force Base
-    state: tx
-    zip: '78150'
-  geo:
-    lat: 29.53533
-    lng: -98.2865
+  address: {street: 221 Third Street West, city: Randolph Air Force Base, state: tx, zip: '78150'}
+  geo: {lat: 29.53533, lng: -98.2865}
   phone: 210-617-5300
   website: https://www.va.gov/south-texas-health-care/locations/san-antonio-randolph-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - thu
-    - fri
-    open: 07:30
-    close: '16:00'
-  - days:
-    - wed
-    open: 09:30
-    close: '16:00'
+  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:00'}
+  - {days: [wed], open: '09:30', close: '16:00'}
   services:
   - Dental/oral surgery
-  external_ids:
-    va: vha_671QD
+  external_ids: {va: vha_671QD}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '4860608'

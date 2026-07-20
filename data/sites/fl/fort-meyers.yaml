@@ -3,48 +3,25 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lee County
-  address:
-    street: 2440 Thompson Street
-    city: Fort Meyers
-    state: fl
-    zip: '33901'
+  address: {street: 2440 Thompson Street, city: Fort Meyers, state: fl, zip: '33901'}
   phone: 239-533-7900
   website: https://floridaliheap.com/relief_program
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-07-19'
-    method: scrape
-  geo:
-    lat: 26.64127
-    lng: -81.86459
+  verified: {'on': '2026-07-19', method: scrape}
+  geo: {lat: 26.64127, lng: -81.86459}
   place: '1240985'
 - id: fl/fort-meyers/naples-vet-center
   name: Naples Vet Center
   categories:
   - vet-center
-  address:
-    street: 2891 Center Pointe Drive, Unit 100
-    city: Fort Meyers
-    state: fl
-    zip: '33916'
-  geo:
-    lat: 26.60313
-    lng: -81.85111
+  address: {street: '2891 Center Pointe Drive, Unit 100', city: Fort Meyers, state: fl, zip: '33916'}
+  geo: {lat: 26.60313, lng: -81.85111}
   phone: 239-403-2377
   website: https://www.va.gov/naples-vet-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - thu
-    - fri
-    open: 07:30
-    close: '18:00'
-  - days:
-    - wed
-    open: 07:30
-    close: '18:30'
+  - {days: [mon, tue, thu, fri], open: '07:30', close: '18:00'}
+  - {days: [wed], open: '07:30', close: '18:30'}
   services:
   - Addiction and substance use care
   - Community engagement
@@ -56,11 +33,8 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids:
-    va: vc_0348V
+  external_ids: {va: vc_0348V}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '1224125'

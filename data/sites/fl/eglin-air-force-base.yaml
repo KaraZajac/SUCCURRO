@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 100 Veterans Way
-    city: Eglin Air Force Base
-    state: fl
-    zip: '32542'
-  geo:
-    lat: 30.46217
-    lng: -86.55942
+  address: {street: 100 Veterans Way, city: Eglin Air Force Base, state: fl, zip: '32542'}
+  geo: {lat: 30.46217, lng: -86.55942}
   phone: 850-609-2600
   website: https://www.va.gov/gulf-coast-health-care/locations/eglin-air-force-base-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Dermatology
   - Gynecology
@@ -30,11 +17,8 @@
   - Mental health care
   - My HealtheVet coordinator
   - Primary care
-  external_ids:
-    va: vha_520GC
+  external_ids: {va: vha_520GC}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '1220050'

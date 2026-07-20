@@ -2,83 +2,46 @@
   name: Major Brent Taylor Vet Center Outstation
   categories:
   - vet-center
-  address:
-    street: 5957 Fashion Point Drive, 101
-    city: South Ogden
-    state: ut
-    zip: '84403'
+  address: {street: '5957 Fashion Point Drive, 101', city: South Ogden, state: ut, zip: '84403'}
   place: '4970960'
-  geo:
-    lat: 41.15485
-    lng: -111.93795
+  geo: {lat: 41.15485, lng: -111.93795}
   phone: 801-737-9737
   website: https://www.va.gov/salt-lake-city-vet-center/locations/#major-brent-taylor-vet-center-
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
-  external_ids:
-    va: vc_5141OS
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  external_ids: {va: vc_5141OS}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ut/south-ogden/marlon-hills-pantry
   name: Marlon Hills Pantry
   categories:
   - food-pantry
   place: '4970960'
-  geo:
-    lat: 41.18268
-    lng: -111.95721
+  geo: {lat: 41.18268, lng: -111.95721}
   website: https://mapping.littlefreepantry.org/pantry/3484
-  external_ids:
-    lfp: '3484'
+  external_ids: {lfp: '3484'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}
 - id: ut/south-ogden/ogden-va-clinic
   name: Ogden VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 3945 South Washington Boulevard
-    city: South Ogden
-    state: ut
-    zip: '84403'
+  address: {street: 3945 South Washington Boulevard, city: South Ogden, state: ut, zip: '84403'}
   place: '4970960'
-  geo:
-    lat: 41.19152
-    lng: -111.97269
+  geo: {lat: 41.19152, lng: -111.97269}
   phone: 801-479-4105
   website: https://www.va.gov/salt-lake-city-health-care/locations/ogden-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
   services:
   - Audiology and speech
   - Mental health care
   - Primary care
-  external_ids:
-    va: vha_660GB
+  external_ids: {va: vha_660GB}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

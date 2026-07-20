@@ -1,3 +1,21 @@
+- id: mi/southgate/downriver-self-help-group
+  name: Downriver Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: thu, time: '18:00', duration_min: 90, note: 3rd Thursday of June and July}
+  format: hybrid
+  venue_name: Southgate Veterans Memorial Library
+  venue: {street: 14680 Dix Toledo Road, city: Southgate, state: mi, zip: '48195'}
+  place: '2674960'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/downriver-self-help-group
+  external_ids: {ms_society: downriver-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}
 - id: mi/southgate/love-hope
   name: Love & Hope
   program: nar-anon
@@ -5,54 +23,33 @@
   - recovery-meeting
   - family-support
   schedule:
-  - day: thu
-    time: '21:00'
+  - {day: thu, time: '21:00'}
   format: in-person
   venue_name: Calvary Church
-  venue:
-    street: 15500 Howard
-    city: Southgate
-    state: mi
-    zip: '48195'
+  venue: {street: 15500 Howard, city: Southgate, state: mi, zip: '48195'}
   place: '2674960'
-  geo:
-    lat: 42.19533
-    lng: -83.18495
-  external_ids:
-    knack: 589ba0f48ce5b9234c927757
-    naranon: 126-041
+  geo: {lat: 42.19533, lng: -83.18495}
+  external_ids: {knack: 589ba0f48ce5b9234c927757, naranon: 126-041}
   sources:
   - naranon/group-database
-  verified:
-    'on': '2026-07-20'
-    method: api
+  verified: {'on': '2026-07-20', method: api}
 - id: mi/southgate/the-journey-continues
   name: The Journey Continues
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: thu
-    time: '19:00'
-    duration_min: 90
+  - {day: thu, time: '19:00', duration_min: 90}
   format: in-person
   types:
   - o
   - wc
   - ra
   venue_name: Calvary Church
-  venue:
-    street: 15500 Howard Street
-    city: Southgate
-    state: mi
+  venue: {street: 15500 Howard Street, city: Southgate, state: mi}
   place: '2674960'
-  geo:
-    lat: 42.19432
-    lng: -83.18502
-  external_ids:
-    bmlt: 17:362
+  geo: {lat: 42.19432, lng: -83.18502}
+  external_ids: {bmlt: '17:362'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

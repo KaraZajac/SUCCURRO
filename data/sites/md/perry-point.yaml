@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address:
-    street: 361 Boiler House Road
-    city: Perry Point
-    state: md
-    zip: '21902'
-  geo:
-    lat: 39.55125
-    lng: -76.06604
+  address: {street: 361 Boiler House Road, city: Perry Point, state: md, zip: '21902'}
+  geo: {lat: 39.55125, lng: -76.06604}
   phone: 410-642-2411
   website: https://www.va.gov/maryland-health-care/locations/perry-point-va-medical-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -62,27 +49,18 @@
   - Travel reimbursement
   - Urology
   - Women Veteran care
-  external_ids:
-    va: vha_512A5
+  external_ids: {va: vha_512A5}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '2461150'
 - id: md/perry-point/va-maryland-healthcare-system-perry-point-divisi
   name: VA Maryland Healthcare System Perry Point Division/SARRTP
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: Avenue A
-    city: Perry Point
-    state: md
-    zip: '21902'
-  geo:
-    lat: 39.54953
-    lng: -76.07053
+  address: {street: Avenue A, city: Perry Point, state: md, zip: '21902'}
+  geo: {lat: 39.54953, lng: -76.07053}
   phone: 410-642-2411 x26221
   website: https://
   services:
@@ -95,7 +73,5 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '2461150'

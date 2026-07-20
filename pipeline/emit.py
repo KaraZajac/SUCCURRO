@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from .util import DATA, dump_yaml, load_yaml, slugify
+from .util import DATA, Flow, dump_yaml, load_yaml, slugify
 
 _norm = re.compile(r"[^a-z0-9]+")
 
@@ -93,6 +93,22 @@ def write_source(pub_dir: str, slug: str, **fields) -> str:
     return sid
 
 
+FLOW_KEYS = ("geo", "verified", "address", "venue", "external_ids", "service_area")
+FLOW_LIST_KEYS = ("schedule", "hours")
+
+
+def _reflow(rec: dict) -> dict:
+    """Re-apply flow style to small structured values on records loaded from
+    disk, so re-dumping kept records doesn't flatten earlier formatting."""
+    for key in FLOW_KEYS:
+        if isinstance(rec.get(key), dict):
+            rec[key] = Flow(rec[key])
+    for key in FLOW_LIST_KEYS:
+        if isinstance(rec.get(key), list):
+            rec[key] = [Flow(e) if isinstance(e, dict) else e for e in rec[key]]
+    return rec
+
+
 def _cites(rec: dict, source_id: str) -> bool:
     """True if the record cites source_id. A trailing-slash source_id is a
     prefix match ("aa/" owns every record citing any aa/<feed> source) so a
@@ -126,7 +142,7 @@ def replace_records(kind: str, source_id: str, records: list[dict]):
         for path in sorted(base.rglob("*.yaml")) if base.exists() else []:
             remaining = [r for r in load_yaml(path) or [] if not _cites(r, source_id)]
             if remaining:
-                kept[path] = remaining
+                kept[path] = [_reflow(r) for r in remaining]
                 taken.update(r["id"] for r in remaining)
             else:
                 path.unlink()  # file held only this source's records (or was empty)

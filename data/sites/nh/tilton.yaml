@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address:
-    street: 630 West Main Street
-    city: Tilton
-    state: nh
-    zip: '03276'
-  geo:
-    lat: 43.4472
-    lng: -71.62007
+  address: {street: 630 West Main Street, city: Tilton, state: nh, zip: '03276'}
+  geo: {lat: 43.4472, lng: -71.62007}
   phone: 603-624-4366
   website: https://www.va.gov/manchester-health-care/locations/tilton-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
   services:
   - Audiology and speech
   - Dermatology
@@ -33,11 +20,8 @@
   - Social work
   - Telehealth
   - Women Veteran care
-  external_ids:
-    va: vha_608HA
+  external_ids: {va: vha_608HA}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '3377100'

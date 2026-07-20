@@ -4,31 +4,14 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address:
-    street: 41 Castle Point Road
-    city: Wappingers Falls
-    state: ny
-    zip: '12590'
+  address: {street: 41 Castle Point Road, city: Wappingers Falls, state: ny, zip: '12590'}
   place: '3678168'
-  geo:
-    lat: 41.5404
-    lng: -73.9622
+  geo: {lat: 41.5404, lng: -73.9622}
   phone: 845-831-2000
   website: https://www.va.gov/hudson-valley-health-care/locations/castle-point-va-medical-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '20:00'
-  - days:
-    - sat
-    - sun
-    open: 08:00
-    close: '18:00'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '20:00'}
+  - {days: [sat, sun], open: '08:00', close: '18:00'}
   services:
   - Advice nurse
   - Audiology and speech
@@ -54,26 +37,17 @@
   - Urgent care
   - Urology
   - Women Veteran care
-  external_ids:
-    va: vha_620A4
+  external_ids: {va: vha_620A4}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/wappingers-falls/lcr-southern-dutchess-clinic
   name: LCR Southern Dutchess Clinic
   categories:
   - su-treatment
-  address:
-    street: 942 Route 376
-    city: Wappingers Falls
-    state: ny
-    zip: '12590'
+  address: {street: 942 Route 376, city: Wappingers Falls, state: ny, zip: '12590'}
   place: '3678168'
-  geo:
-    lat: 41.60794
-    lng: -73.83171
+  geo: {lat: 41.60794, lng: -73.83171}
   phone: 845-765-2366 x1400
   website: https://www.lexingtonctr.org
   services:
@@ -95,43 +69,27 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/wappingers-falls/mt-alvernia-astor-services-for-children-families
   name: Mt Alvernia/Astor Services For Children & Families
   categories:
   - child-care
-  address:
-    street: 136 Sheafe Rd
-    city: Wappingers Falls
-    state: ny
-    zip: '12590'
+  address: {street: 136 Sheafe Rd, city: Wappingers Falls, state: ny, zip: '12590'}
   description: Head Start early childhood program — 52 funded slots; operated by Astor Services.
   place: '3678168'
-  geo:
-    lat: 41.60211
-    lng: -73.93296
+  geo: {lat: 41.60211, lng: -73.93296}
   phone: 845-296-1879
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/wappingers-falls/va-regional-benefit-satellite-office-at-castle-p
   name: VA Regional Benefit Satellite Office at Castle Point VA Medical Center
   categories:
   - va-facility
   description: Satellite Office
-  address:
-    street: 41 Castle Point Rd
-    city: Wappingers Falls
-    state: ny
-    zip: '12590'
+  address: {street: 41 Castle Point Rd, city: Wappingers Falls, state: ny, zip: '12590'}
   place: '3678168'
-  geo:
-    lat: 41.5404
-    lng: -73.9622
+  geo: {lat: 41.5404, lng: -73.9622}
   phone: 845-831-2000, ext. 5097
   services:
   - ApplyingForBenefits
@@ -140,10 +98,7 @@
   - FamilyMemberClaimAssistance
   - UpdatingDirectDepositInformation
   - eBenefitsRegistrationAssistance
-  external_ids:
-    va: vba_306f
+  external_ids: {va: vba_306f}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

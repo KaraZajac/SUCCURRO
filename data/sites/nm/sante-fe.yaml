@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 5152 Beckner Road
-    city: Sante Fe
-    state: nm
-    zip: '87505'
-  geo:
-    lat: 35.6144
-    lng: -106.02473
+  address: {street: 5152 Beckner Road, city: Sante Fe, state: nm, zip: '87505'}
+  geo: {lat: 35.6144, lng: -106.02473}
   phone: 505-986-8645
   website: https://www.va.gov/new-mexico-health-care/locations/santa-fe-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - COVID-19 vaccines
   - Dermatology
@@ -31,11 +18,8 @@
   - Primary care
   - Telehealth
   - Women Veteran care
-  external_ids:
-    va: vha_501GK
+  external_ids: {va: vha_501GK}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '3582332'

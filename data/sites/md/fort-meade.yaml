@@ -4,26 +4,13 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address:
-    street: 2479 5th Street
-    city: Fort Meade
-    state: md
-    zip: '20755'
+  address: {street: 2479 5th Street, city: Fort Meade, state: md, zip: '20755'}
   place: '2429400'
-  geo:
-    lat: 39.09662
-    lng: -76.72881
+  geo: {lat: 39.09662, lng: -76.72881}
   phone: 410-305-5300
   website: https://www.va.gov/maryland-health-care/locations/fort-meade-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Audiology and speech
   - Dermatology
@@ -36,10 +23,7 @@
   - Returning service member care
   - Social work
   - Women Veteran care
-  external_ids:
-    va: vha_512GG
+  external_ids: {va: vha_512GG}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

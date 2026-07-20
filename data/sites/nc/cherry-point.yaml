@@ -4,32 +4,17 @@
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address:
-    street: Beaufort Road, Naval Health Clinic Cherry Point
-    city: Cherry Point
-    state: nc
-    zip: '28533'
-  geo:
-    lat: 34.88257
-    lng: -76.90628
+  address: {street: 'Beaufort Road, Naval Health Clinic Cherry Point', city: Cherry Point, state: nc,
+    zip: '28533'}
+  geo: {lat: 34.88257, lng: -76.90628}
   phone: 252-665-7100
   website: https://www.va.gov/durham-health-care/locations/cherry-point-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - PrimaryCare
-  external_ids:
-    va: vha_558GJ
+  external_ids: {va: vha_558GJ}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '3730120'

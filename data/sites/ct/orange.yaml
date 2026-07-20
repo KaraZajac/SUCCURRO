@@ -2,29 +2,14 @@
   name: New Haven Vet Center
   categories:
   - vet-center
-  address:
-    street: 291 South Lambert Road
-    city: Orange
-    state: ct
-    zip: '06477'
+  address: {street: 291 South Lambert Road, city: Orange, state: ct, zip: '06477'}
   place: 0957670
-  geo:
-    lat: 41.26235
-    lng: -73.00574
+  geo: {lat: 41.26235, lng: -73.00574}
   phone: 203-795-0148
   website: https://www.va.gov/new-haven-vet-center/
   hours:
-  - days:
-    - mon
-    - wed
-    open: 08:00
-    close: '18:30'
-  - days:
-    - tue
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, wed], open: '08:00', close: '18:30'}
+  - {days: [tue, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Addiction and substance use care
   - Community engagement
@@ -40,39 +25,23 @@
   - Veteran readiness and employment programs
   - Whole health
   - Women Veteran care
-  external_ids:
-    va: vc_0116V
+  external_ids: {va: vc_0116V}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ct/orange/orange-va-clinic
   name: Orange VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address:
-    street: 200 Edison Road
-    city: Orange
-    state: ct
-    zip: '06477'
+  address: {street: 200 Edison Road, city: Orange, state: ct, zip: '06477'}
   place: 0957670
-  geo:
-    lat: 41.25795
-    lng: -73.00023
+  geo: {lat: 41.25795, lng: -73.00023}
   phone: 203-508-7700
   website: https://www.va.gov/connecticut-health-care/locations/orange-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Addiction and substance use care
   - Homeless Veteran care
@@ -84,10 +53,7 @@
   - Telehealth
   - Veteran readiness and employment programs
   - Whole health
-  external_ids:
-    va: vha_689GF
+  external_ids: {va: vha_689GF}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

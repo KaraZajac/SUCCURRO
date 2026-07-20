@@ -4,79 +4,67 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: mon
-    time: '19:00'
-    duration_min: 60
+  - {day: mon, time: '19:00', duration_min: 60}
   format: in-person
   types:
   - o
   venue_name: Trinity Lutheran Church
-  venue:
-    street: 17330 US 441
-    city: Summerfield
-    state: fl
-    zip: '34491'
+  venue: {street: 17330 US 441, city: Summerfield, state: fl, zip: '34491'}
   place: '1237375'
-  geo:
-    lat: 28.97141
-    lng: -81.97807
-  external_ids:
-    bmlt: 24:12743
+  geo: {lat: 28.97141, lng: -81.97807}
+  external_ids: {bmlt: '24:12743'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/lady-lake/kickstart-your-recovery-2
   name: Kickstart Your Recovery
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: tue
-    time: '19:00'
-    duration_min: 60
+  - {day: tue, time: '19:00', duration_min: 60}
   format: in-person
   types:
   - o
   venue_name: Trinity Lutheran Church
-  venue:
-    street: 17330 US-441
-    city: Summerfield
-    state: fl
-    zip: '34491'
+  venue: {street: 17330 US-441, city: Summerfield, state: fl, zip: '34491'}
   place: '1237375'
-  geo:
-    lat: 28.97141
-    lng: -81.97807
-  external_ids:
-    bmlt: 24:12403
+  geo: {lat: 28.97141, lng: -81.97807}
+  external_ids: {bmlt: '24:12403'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/lady-lake/lady-lake-g-a-tuesday
   name: Lady Lake G.A. - Tuesday
   program: ga
   categories:
   - recovery-meeting
   schedule:
-  - day: tue
-    time: 09:00
+  - {day: tue, time: '09:00'}
   format: in-person
   venue_name: Lady Lake United Methodist Church 109 W McClendon St.
-  venue:
-    street: 109 West McClendon Street
-    city: Lady Lake
-    state: fl
-    zip: '32159'
+  venue: {street: 109 West McClendon Street, city: Lady Lake, state: fl, zip: '32159'}
   place: '1237375'
-  external_ids:
-    gamblersanon: lady-lake-g-a-tuesday
+  external_ids: {gamblersanon: lady-lake-g-a-tuesday}
   url: https://gamblersanonymous.org/find-a-meeting/lady-lake-g-a-tuesday/
   sources:
   - gamblersanon/meeting-search
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}
+- id: fl/lady-lake/marion-county-self-help-group
+  name: Marion County Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: tue, time: '10:00', duration_min: 120, note: 3rd Tuesday of each month}
+  format: in-person
+  venue_name: La Hacienda Center
+  venue: {street: 1200 Avenida Central, city: Lady Lake, state: fl, zip: '32159'}
+  place: '1237375'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/marion-county-self-help-group
+  external_ids: {ms_society: marion-county-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}

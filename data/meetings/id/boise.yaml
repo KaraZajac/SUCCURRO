@@ -1,3 +1,20 @@
+- id: id/boise/boise-ms-self-help-group
+  name: Boise MS Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: thu, time: '13:00', duration_min: 60, note: 3rd Thursday of each month}
+  format: in-person
+  venue_name: St. Alphonsus Regional Medical Center, Conference Room 3
+  venue: {street: 1055 N. Curtis Road, city: Boise, state: id, zip: '83706'}
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/boise-ms-self-help-group
+  external_ids: {ms_society: boise-ms-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}
 - id: id/boise/friday-aca
   name: Friday ACA
   program: aca
@@ -47,51 +64,35 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: wed
-    time: '17:30'
-    duration_min: 90
+  - {day: wed, time: '17:30', duration_min: 90}
   format: in-person
   types:
   - 4-point-recovery
   - adults
   venue_name: PEER Wellness Center
-  venue:
-    city: Boise
-    state: id
-    zip: '83709'
+  venue: {city: Boise, state: id, zip: '83709'}
   languages:
   - en
   url: https://meetings.smartrecovery.org/meetings/2773/
-  external_ids:
-    smart: '2773'
+  external_ids: {smart: '2773'}
   sources:
   - smart/meeting-finder
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}
 - id: id/boise/southminster-presbyterian-church
   name: Southminster Presbyterian Church
   program: oa
   categories:
   - recovery-meeting
   schedule:
-  - day: mon
-    time: '19:00'
+  - {day: mon, time: '19:00'}
   format: in-person
   types:
   - oa-steps-and-or-traditions-study
-  venue:
-    street: 6500 W Overland Road
-    city: Boise
-    state: id
-    zip: '83709'
+  venue: {street: 6500 W Overland Road, city: Boise, state: id, zip: '83709'}
   languages:
   - en
   url: https://oa.org/meetings/01438/
-  external_ids:
-    oa: 01438
+  external_ids: {oa: 01438}
   sources:
   - oa/meeting-finder
-  verified:
-    'on': '2026-07-20'
-    method: api
+  verified: {'on': '2026-07-20', method: api}

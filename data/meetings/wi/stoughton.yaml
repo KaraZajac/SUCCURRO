@@ -4,30 +4,37 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: fri
-    time: '16:30'
-    duration_min: 60
+  - {day: fri, time: '16:30', duration_min: 60}
   format: hybrid
   types:
   - o
   - to
   - wc
   - hy
-  venue:
-    street: 2320 Jackson St., Unit 4
-    city: Stoughton
-    state: wi
-    zip: '53589'
+  venue: {street: '2320 Jackson St., Unit 4', city: Stoughton, state: wi, zip: '53589'}
   place: '5577675'
-  geo:
-    lat: 42.92073
-    lng: -89.24526
+  geo: {lat: 42.92073, lng: -89.24526}
   conference_url: https://us06web.zoom.us/j/84041670326?pwd=B7dEd97Yh02g3965DxC6oRFrxEawEC.1
   notes: 'Meeting ID:  840 4167 0326 Passcode: 675286'
-  external_ids:
-    bmlt: 11:380
+  external_ids: {bmlt: '11:380'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
+- id: wi/stoughton/stoughton-self-help-group
+  name: Stoughton Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: tue, time: '10:00', duration_min: 90, note: 2nd Tuesday of each month}
+  format: in-person
+  venue_name: Stoughton Senior Center
+  venue: {street: 248 W. Main St., city: Stoughton, state: wi, zip: '53589'}
+  place: '5577675'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/stoughton-self-help-group
+  external_ids: {ms_society: stoughton-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}

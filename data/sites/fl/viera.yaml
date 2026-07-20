@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 2900 Veterans Way
-    city: Viera
-    state: fl
-    zip: '32940'
-  geo:
-    lat: 28.25528
-    lng: -80.73811
+  address: {street: 2900 Veterans Way, city: Viera, state: fl, zip: '32940'}
+  geo: {lat: 28.25528, lng: -80.73811}
   phone: 321-637-3788
   website: https://www.va.gov/orlando-health-care/locations/viera-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
   services:
   - Audiology and speech
   - Cardiology
@@ -48,11 +35,8 @@
   - Toxic exposure screening
   - Urology
   - Women Veteran care
-  external_ids:
-    va: vha_675GA
+  external_ids: {va: vha_675GA}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '1274370'

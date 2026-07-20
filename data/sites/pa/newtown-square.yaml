@@ -4,25 +4,12 @@
   - va-facility
   - health
   description: Primary Care CBOC
-  address:
-    street: 4883 West Chester Pike, Marville Center
-    city: Newtown Square
-    state: pa
-    zip: '19073'
-  geo:
-    lat: 39.9752
-    lng: -75.44245
+  address: {street: '4883 West Chester Pike, Marville Center', city: Newtown Square, state: pa, zip: '19073'}
+  geo: {lat: 39.9752, lng: -75.44245}
   phone: 610-383-0239
   website: https://www.va.gov/coatesville-health-care/locations/delaware-county-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Addiction and substance use care
   - Audiology and speech
@@ -48,11 +35,8 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids:
-    va: vha_542GA
+  external_ids: {va: vha_542GA}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
   place: '4243272'

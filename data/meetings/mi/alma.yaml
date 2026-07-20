@@ -4,53 +4,51 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: wed
-    time: '19:00'
-    duration_min: 75
+  - {day: wed, time: '19:00', duration_min: 75}
   format: in-person
   venue_name: Parkside Assembly of God
-  venue:
-    street: 302 Pine Ave
-    city: Alma
-    state: mi
-    zip: '48801'
+  venue: {street: 302 Pine Ave, city: Alma, state: mi, zip: '48801'}
   place: '2601540'
-  geo:
-    lat: 43.37765
-    lng: -84.65658
-  external_ids:
-    bmlt: 17:1970
+  geo: {lat: 43.37765, lng: -84.65658}
+  external_ids: {bmlt: '17:1970'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
+- id: mi/alma/gratiot-county-self-help-group
+  name: Gratiot County Self-Help Group
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: sat, time: '11:00', duration_min: 90, note: 2nd Saturday of each month}
+  format: in-person
+  venue_name: Alma Public Library
+  venue: {street: 500 E Superior Street, city: Alma, state: mi, zip: '48801'}
+  place: '2601540'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/gratiot-county-self-help-group
+  external_ids: {ms_society: gratiot-county-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}
 - id: mi/alma/smart-recovery-meeting-9388
   name: 'SMART Recovery Meeting #9388'
   program: smart
   categories:
   - recovery-meeting
   schedule:
-  - day: tue
-    time: '13:00'
-    duration_min: 60
+  - {day: tue, time: '13:00', duration_min: 60}
   format: in-person
   types:
   - 4-point-recovery
   - adults
-  venue:
-    street: 608 Wright Ave.
-    city: Alma
-    state: mi
-    zip: '48801'
+  venue: {street: 608 Wright Ave., city: Alma, state: mi, zip: '48801'}
   place: '2601540'
   languages:
   - en
   url: https://meetings.smartrecovery.org/meetings/9388/
-  external_ids:
-    smart: '9388'
+  external_ids: {smart: '9388'}
   sources:
   - smart/meeting-finder
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}

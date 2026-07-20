@@ -3,15 +3,9 @@
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 100 West Laurel Street
-    city: Plentywood
-    state: mt
-    zip: '59254'
+  address: {street: 100 West Laurel Street, city: Plentywood, state: mt, zip: '59254'}
   place: '3058375'
-  geo:
-    lat: 48.77844
-    lng: -104.55659
+  geo: {lat: 48.77844, lng: -104.55659}
   phone: 406-765-2550
   website: https://www.emcmhc.org
   services:
@@ -23,43 +17,26 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/plentywood/plentywood-va-clinic
   name: Plentywood VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address:
-    street: 440 West Laurel Avenue, Sheridan Memorial Hospital
-    city: Plentywood
-    state: mt
-    zip: '59254'
+  address: {street: '440 West Laurel Avenue, Sheridan Memorial Hospital', city: Plentywood, state: mt,
+    zip: '59254'}
   place: '3058375'
-  geo:
-    lat: 48.77871
-    lng: -104.56325
+  geo: {lat: 48.77871, lng: -104.56325}
   phone: 406-765-3719
   website: https://www.va.gov/montana-health-care/locations/plentywood-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Audiology and speech
   - Primary care
   - Telehealth
-  external_ids:
-    va: vha_436QB
+  external_ids: {va: vha_436QB}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

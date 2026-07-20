@@ -3,15 +3,9 @@
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 27 Franklin Street
-    city: Springville
-    state: ny
-    zip: '14141'
+  address: {street: 27 Franklin Street, city: Springville, state: ny, zip: '14141'}
   place: '3670442'
-  geo:
-    lat: 42.50968
-    lng: -78.66401
+  geo: {lat: 42.50968, lng: -78.66401}
   phone: 716-592-9301
   website: https://shswny.org
   services:
@@ -25,64 +19,38 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/springville/springville-head-start-academy
   name: Springville Head Start Academy
   categories:
   - child-care
-  address:
-    street: 393 North St
-    city: Springville
-    state: ny
-    zip: '14141'
+  address: {street: 393 North St, city: Springville, state: ny, zip: '14141'}
   description: Head Start early childhood program — 40 funded slots; operated by CAO Head Start.
   place: '3670442'
-  geo:
-    lat: 42.5189
-    lng: -78.65054
+  geo: {lat: 42.5189, lng: -78.65054}
   phone: 716-592-2595
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/springville/springville-va-clinic
   name: Springville VA Clinic
   categories:
   - va-facility
   - health
   description: MCS
-  address:
-    street: 231 South Cascade Drive
-    city: Springville
-    state: ny
-    zip: '14141'
+  address: {street: 231 South Cascade Drive, city: Springville, state: ny, zip: '14141'}
   place: '3670442'
-  geo:
-    lat: 42.50306
-    lng: -78.68954
+  geo: {lat: 42.50306, lng: -78.68954}
   phone: 716-592-2409
   website: https://www.va.gov/western-new-york-health-care/locations/springville-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
   - Primary care
-  external_ids:
-    va: vha_528GQ01
+  external_ids: {va: vha_528GQ01}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

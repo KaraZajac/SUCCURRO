@@ -4,9 +4,7 @@
   categories:
   - recovery-meeting
   schedule:
-  - day: sun
-    time: '18:30'
-    duration_min: 75
+  - {day: sun, time: '18:30', duration_min: 75}
   format: in-person
   types:
   - o
@@ -14,31 +12,20 @@
   - ns
   - lc
   venue_name: Christ the Rock Church
-  venue:
-    street: 4701 Industrial Park Rd
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 4701 Industrial Park Rd, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.50955
-    lng: -89.53332
-  external_ids:
-    bmlt: '11:32'
+  geo: {lat: 44.50955, lng: -89.53332}
+  external_ids: {bmlt: '11:32'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/stevens-point/any-lengths-2
   name: Any Lengths
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: mon
-    time: '18:30'
-    duration_min: 75
+  - {day: mon, time: '18:30', duration_min: 75}
   format: in-person
   types:
   - o
@@ -46,61 +33,57 @@
   - wc
   - ns
   venue_name: Christ the Rock Church
-  venue:
-    street: 4701 Industrial Park Rd
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 4701 Industrial Park Rd, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.50955
-    lng: -89.53332
-  external_ids:
-    bmlt: 11:70
+  geo: {lat: 44.50955, lng: -89.53332}
+  external_ids: {bmlt: '11:70'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/stevens-point/point-of-freedom
   name: Point of Freedom
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: thu
-    time: '18:30'
-    duration_min: 75
+  - {day: thu, time: '18:30', duration_min: 75}
   format: in-person
   types:
   - o
   - to
   venue_name: 2617 Club
-  venue:
-    street: 1578 Strongs Ave
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 1578 Strongs Ave, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.51931
-    lng: -89.58026
-  external_ids:
-    bmlt: 11:223
+  geo: {lat: 44.51931, lng: -89.58026}
+  external_ids: {bmlt: '11:223'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
+- id: wi/stevens-point/portage-county-stevens-point-self-help
+  name: Portage County Stevens Point Self-Help
+  program: ms-society
+  categories:
+  - health
+  - peer-support
+  schedule:
+  - {day: tue, time: '18:00', duration_min: 120, note: 1st Tuesday of each month}
+  format: in-person
+  venue_name: Lincoln Center
+  venue: {street: 1519 Water St, city: Stevens Point, state: wi, zip: '54481'}
+  place: '5577200'
+  notes: 'Audience: People living with MS'
+  url: https://www.nationalmssociety.org/how-you-can-help/get-involved/calendar-of-all-programs-and-events/portage-county-stevens-point-self-help-group
+  external_ids: {ms_society: portage-county-stevens-point-self-help-group}
+  sources:
+  - ms-society/self-help-groups
+  verified: {'on': '2026-07-20', method: scrape}
 - id: wi/stevens-point/spirit-of-anonymity
   name: Spirit of Anonymity
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: wed
-    time: '19:00'
-    duration_min: 75
+  - {day: wed, time: '19:00', duration_min: 75}
   format: in-person
   types:
   - o
@@ -109,57 +92,38 @@
   - wc
   - ns
   venue_name: Peace Campus Lutheran Church
-  venue:
-    street: 1517 Maria Dr
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 1517 Maria Dr, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.53297
-    lng: -89.57674
-  external_ids:
-    bmlt: 11:188
+  geo: {lat: 44.53297, lng: -89.57674}
+  external_ids: {bmlt: '11:188'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/stevens-point/stevens-point-g-a-monday
   name: Stevens Point G.A. - Monday
   program: ga
   categories:
   - recovery-meeting
   schedule:
-  - day: mon
-    time: '19:00'
+  - {day: mon, time: '19:00'}
   format: in-person
   types:
   - open
-  venue:
-    street: 600 Wilshire Boulevard
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 600 Wilshire Boulevard, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
   notes: Open Meeting
-  external_ids:
-    gamblersanon: stevens-point-g-a-monday
+  external_ids: {gamblersanon: stevens-point-g-a-monday}
   url: https://gamblersanonymous.org/find-a-meeting/stevens-point-g-a-monday/
   sources:
   - gamblersanon/meeting-search
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-20', method: scrape}
 - id: wi/stevens-point/temporarily-closed-not-actively-meeting-vision-o
   name: Temporarily Closed  (Not Actively Meeting) - Vision of Hope
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: fri
-    time: '19:00'
-    duration_min: 75
+  - {day: fri, time: '19:00', duration_min: 75}
   format: in-person
   types:
   - o
@@ -169,31 +133,20 @@
   - ns
   - spad
   venue_name: UWSP Communication Arts Center, 2nd Floor Room 201
-  venue:
-    street: 1101 Reserve St
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 1101 Reserve St, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.52488
-    lng: -89.56929
-  external_ids:
-    bmlt: 11:287
+  geo: {lat: 44.52488, lng: -89.56929}
+  external_ids: {bmlt: '11:287'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/stevens-point/temporarily-closed-not-actively-meeting-vision-o-2
   name: Temporarily Closed (Not Actively Meeting) - Vision of Hope
   program: na
   categories:
   - recovery-meeting
   schedule:
-  - day: tue
-    time: '19:00'
-    duration_min: 75
+  - {day: tue, time: '19:00', duration_min: 75}
   format: in-person
   types:
   - o
@@ -203,19 +156,10 @@
   - ns
   - spad
   venue_name: UWSP Communication Arts Center, 2nd Floor Room 201
-  venue:
-    street: 1101 Reserve St
-    city: Stevens Point
-    state: wi
-    zip: '54481'
+  venue: {street: 1101 Reserve St, city: Stevens Point, state: wi, zip: '54481'}
   place: '5577200'
-  geo:
-    lat: 44.52488
-    lng: -89.56929
-  external_ids:
-    bmlt: 11:143
+  geo: {lat: 44.52488, lng: -89.56929}
+  external_ids: {bmlt: '11:143'}
   sources:
   - bmlt/aggregator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

@@ -2,52 +2,29 @@
   name: LASALLE
   categories:
   - child-care
-  address:
-    street: 3691 Cougar Dr
-    city: Peru
-    state: il
-    zip: '61354'
+  address: {street: 3691 Cougar Dr, city: Peru, state: il, zip: '61354'}
   description: Head Start early childhood program — 15 funded slots; operated by Tri-County Opportunities
     Council, Inc..
   place: '1759234'
-  geo:
-    lat: 41.36064
-    lng: -89.16096
+  geo: {lat: 41.36064, lng: -89.16096}
   phone: 815-322-7537
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/peru/lasalle-va-clinic
   name: LaSalle VA Clinic
   categories:
   - va-facility
   - health
   description: Primary Care CBOC
-  address:
-    street: 4461 Progress Boulevard
-    city: Peru
-    state: il
-    zip: '61354'
+  address: {street: 4461 Progress Boulevard, city: Peru, state: il, zip: '61354'}
   place: '1759234'
-  geo:
-    lat: 41.35847
-    lng: -89.12204
+  geo: {lat: 41.35847, lng: -89.12204}
   phone: 815-223-9678
   website: https://www.va.gov/hines-health-care/locations/lasalle-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
-  - days:
-    - wed
-    open: 07:30
-    close: '17:30'
+  - {days: [mon, tue, thu, fri], open: '07:30', close: '16:30'}
+  - {days: [wed], open: '07:30', close: '17:30'}
   services:
   - Audiology and speech
   - Dermatology
@@ -57,26 +34,17 @@
   - My HealtheVet coordinator
   - Pharmacy
   - Primary care
-  external_ids:
-    va: vha_578GF
+  external_ids: {va: vha_578GF}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/peru/maitri-path-to-wellness-pllc
   name: Maitri Path to Wellness PLLC
   categories:
   - su-treatment
-  address:
-    street: 710 Peoria Street
-    city: Peru
-    state: il
-    zip: '61354'
+  address: {street: 710 Peoria Street, city: Peru, state: il, zip: '61354'}
   place: '1759234'
-  geo:
-    lat: 41.32685
-    lng: -89.12932
+  geo: {lat: 41.32685, lng: -89.12932}
   phone: 815-780-0690
   website: https://maitripathtowellness.com
   services:
@@ -101,6 +69,4 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

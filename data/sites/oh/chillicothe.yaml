@@ -2,15 +2,9 @@
   name: Adena Health System Inpatient Behavioral Health Services
   categories:
   - mh-treatment
-  address:
-    street: 272 Hospital Road
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 272 Hospital Road, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.39623
-    lng: -82.96834
+  geo: {lat: 39.39623, lng: -82.96834}
   phone: 740-779-7557
   website: https://www.adena.org/
   services:
@@ -19,22 +13,14 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/brightview-health
   name: BrightView Health
   categories:
   - su-treatment
-  address:
-    street: 126 East 2nd Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 126 East 2nd Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33491
-    lng: -82.97881
+  geo: {lat: 39.33491, lng: -82.97881}
   phone: 844-707-7775
   website: https://www.brightviewhealth.com
   services:
@@ -48,68 +34,44 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/chillicothe-community-cares-cabinet
   name: Chillicothe Community Cares Cabinet
   categories:
   - food-pantry
   place: '3914184'
-  geo:
-    lat: 39.33637
-    lng: -82.97179
+  geo: {lat: 39.33637, lng: -82.97179}
   website: https://mapping.littlefreepantry.org/pantry/3796
-  external_ids:
-    lfp: '3796'
+  external_ids: {lfp: '3796'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}
 - id: oh/chillicothe/chillicothe-dental
   name: Chillicothe Dental
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 624 Central Ctr
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 624 Central Ctr, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33601
-    lng: -83.00092
+  geo: {lat: 39.33601, lng: -83.00092}
   phone: 740-851-5575
   website: https://www.hopewellhealth.org
-  external_ids:
-    bphc: BPS-H80-039219
+  external_ids: {bphc: BPS-H80-039219}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/chillicothe-metropolitan-housing-authority
   name: Chillicothe Metropolitan Housing Authority
   categories:
   - housing-assistance
-  address:
-    street: 178 W 4th St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 178 W 4th St, city: Chillicothe, state: oh, zip: '45601'}
   description: Public housing and Housing Choice Voucher agency
   place: '3914184'
-  geo:
-    lat: 39.33109
-    lng: -82.9858
+  geo: {lat: 39.33109, lng: -82.9858}
   phone: 740-775-7881
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/chillicothe-ohio-corps
   name: Chillicothe, Ohio Corps
   categories:
@@ -145,28 +107,13 @@
   - va-facility
   - health
   description: VA Medical Center (VAMC)
-  address:
-    street: 17273 State Route 104
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 17273 State Route 104, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.39081
-    lng: -83.01268
+  geo: {lat: 39.39081, lng: -83.01268}
   phone: 740-773-1141
   website: https://www.va.gov/chillicothe-health-care/locations/chillicothe-va-medical-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    - sat
-    - sun
-    open: 08:00
-    close: '18:00'
+  - {days: [mon, tue, wed, thu, fri, sat, sun], open: '08:00', close: '18:00'}
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -199,49 +146,31 @@
   - Urology
   - Veteran readiness and employment programs
   - Women Veteran care
-  external_ids:
-    va: vha_538
+  external_ids: {va: vha_538}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/chillicothe-va-mobile-medical-unit
   name: Chillicothe VA Mobile Medical Unit
   categories: *id001
   description: Other Outpatient Services (OOS)
-  address:
-    street: 17273 State Route 104
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 17273 State Route 104, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.39081
-    lng: -83.01268
+  geo: {lat: 39.39081, lng: -83.01268}
   phone: 740-773-1141
   website: https://www.va.gov/find-locations/facility/vha_538QA
-  external_ids:
-    va: vha_538QA
+  external_ids: {va: vha_538QA}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/clinic-security-and-logistics-dba-full-circle-re
   name: Clinic Security and Logistics DBA Full Circle Recovery Services
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 2530 Western Avenue
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 2530 Western Avenue, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.34539
-    lng: -83.0396
+  geo: {lat: 39.34539, lng: -83.0396}
   phone: 800-829-5461
   website: https://www.ohiofullcircle.com
   services:
@@ -256,23 +185,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/clinic-security-and-logistics-dba-full-circle-re-2
   name: Clinic Security and Logistics DBA Full Circle Recovery Services
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 536 Mill Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 536 Mill Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33722
-    lng: -82.99925
+  geo: {lat: 39.33722, lng: -82.99925}
   phone: 800-829-5461
   website: https://www.ohiofullcircle.com
   services:
@@ -287,23 +208,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/clinic-security-and-logistics-dba-full-circle-re-3
   name: Clinic Security and Logistics DBA Full Circle Recovery Services
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 931 East Water Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 931 East Water Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.34035
-    lng: -82.95567
+  geo: {lat: 39.34035, lng: -82.95567}
   phone: 800-829-5461
   website: https://www.ohiofullcircle.com
   services:
@@ -318,560 +231,337 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-carousel-court
   name: Grab And Go Carousel Court
   categories:
   - meal-program
-  address:
-    street: 20544 Us Hwy 23 N.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 20544 Us Hwy 23 N., city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.4527
-    lng: -82.9716
+  geo: {lat: 39.4527, lng: -82.9716}
   phone: (740) 642-5251
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0093
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0093}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-chillicothe-city-pool
   name: Grab And Go Chillicothe City Pool
   categories:
   - meal-program
-  address:
-    street: 1 Corner Yoctangee Parkway
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 1 Corner Yoctangee Parkway, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.34121
-    lng: -82.98905
+  geo: {lat: 39.34121, lng: -82.98905}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0094
+  external_ids: {usda_master: Cycle 06_OH_SSO_0094}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-chillicothe-football-field-parking-l
   name: Grab And Go Chillicothe Football Field Parking Lot
   categories:
   - meal-program
-  address:
-    street: 345 Arch St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 345 Arch St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.33935
-    lng: -82.99415
+  geo: {lat: 39.33935, lng: -82.99415}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0095
+  external_ids: {usda_master: Cycle 06_OH_SSO_0095}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-chillicothe-high-school
   name: Grab And Go Chillicothe High School
   categories:
   - meal-program
-  address:
-    street: 381 Yoctangee Parkway
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 381 Yoctangee Parkway, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.34068
-    lng: -82.98873
+  geo: {lat: 39.34068, lng: -82.98873}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0096
+  external_ids: {usda_master: Cycle 06_OH_SSO_0096}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-country-wood-estates
   name: Grab And Go Country Wood Estates
   categories:
   - meal-program
-  address:
-    street: 2276 Stone Rd
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 2276 Stone Rd, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.45044
-    lng: -83.02168
+  geo: {lat: 39.45044, lng: -83.02168}
   phone: (740) 851-2884
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0099
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0099}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-don-coppel-athletic-complex
   name: Grab And Go Don Coppel Athletic Complex
   categories:
   - meal-program
-  address:
-    street: 134 Star Drive
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 134 Star Drive, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.34378
-    lng: -83.03983
+  geo: {lat: 39.34378, lng: -83.03983}
   phone: (614) 638-3924
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0100
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0100}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-gleason-mobile-home-park
   name: Grab And Go Gleason Mobile Home Park
   categories:
   - meal-program
-  address:
-    street: 1667 Stone Rd.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 1667 Stone Rd., city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.44412
-    lng: -83.02714
+  geo: {lat: 39.44412, lng: -83.02714}
   phone: (740) 775-9782
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0101
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0101}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-huntington-elementary
   name: Grab And Go Huntington Elementary
   categories:
   - meal-program
-  address:
-    street: 188 Huntsman Rd.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 188 Huntsman Rd., city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.24465
-    lng: -83.05778
+  geo: {lat: 39.24465, lng: -83.05778}
   phone: (740) 663-2191
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0102
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0102}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-lincoln-park
   name: Grab And Go Lincoln Park
   categories:
   - meal-program
-  address:
-    street: W 7Th St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: W 7Th St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.32791
-    lng: -82.98236
+  geo: {lat: 39.32791, lng: -82.98236}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0103
+  external_ids: {usda_master: Cycle 06_OH_SSO_0103}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-main-library
   name: Grab And Go Main Library
   categories:
   - meal-program
-  address:
-    street: 140 S Paint St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 140 S Paint St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.32988
-    lng: -82.98127
+  geo: {lat: 39.32988, lng: -82.98127}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0104
+  external_ids: {usda_master: Cycle 06_OH_SSO_0104}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-manor-park
   name: Grab And Go Manor Park
   categories:
   - meal-program
-  address:
-    street: Cedar Wood Dr
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: Cedar Wood Dr, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.35338
-    lng: -82.97986
+  geo: {lat: 39.35338, lng: -82.97986}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0105
+  external_ids: {usda_master: Cycle 06_OH_SSO_0105}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-mt-logan-early-childhood-center
   name: Grab And Go Mt Logan Early Childhood Center
   categories:
   - meal-program
-  address:
-    street: 841 Maint St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 841 Maint St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.33609
-    lng: -82.99093
+  geo: {lat: 39.33609, lng: -82.99093}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0106
+  external_ids: {usda_master: Cycle 06_OH_SSO_0106}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-ouc-shoemaker-center-parking-lot
   name: Grab And Go Ouc-Shoemaker Center Parking Lot
   categories:
   - meal-program
-  address:
-    street: W 4Th St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: W 4Th St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.33
-    lng: -82.99377
+  geo: {lat: 39.33, lng: -82.99377}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0107
+  external_ids: {usda_master: Cycle 06_OH_SSO_0107}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-poland-park
   name: Grab And Go Poland Park
   categories:
   - meal-program
-  address:
-    street: 132 S Hickory St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 132 S Hickory St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.33109
-    lng: -82.97512
+  geo: {lat: 39.33109, lng: -82.97512}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0109
+  external_ids: {usda_master: Cycle 06_OH_SSO_0109}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-ross-county-service-center
   name: Grab And Go Ross County Service Center
   categories:
   - meal-program
-  address:
-    street: 475 Western Ave
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 475 Western Ave, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.3355
-    lng: -83.00299
+  geo: {lat: 39.3355, lng: -83.00299}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0111
+  external_ids: {usda_master: Cycle 06_OH_SSO_0111}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-scioto-woods
   name: Grab And Go Scioto Woods
   categories:
   - meal-program
-  address:
-    street: 2097 Western Ave.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 2097 Western Ave., city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.34245
-    lng: -83.03436
+  geo: {lat: 39.34245, lng: -83.03436}
   phone: (740) 779-6580
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0112
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0112}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-sherman-park
   name: Grab And Go Sherman Park
   categories:
   - meal-program
-  address:
-    street: 1270 Sherman Park
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 1270 Sherman Park, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.35078
-    lng: -83.00558
+  geo: {lat: 39.35078, lng: -83.00558}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0113
+  external_ids: {usda_master: Cycle 06_OH_SSO_0113}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-southeastern-local-sd
   name: Grab And Go Southeastern Local Sd
   categories:
   - meal-program
-  address:
-    street: 2003 Lancaster Rd.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 2003 Lancaster Rd., city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.28124
-    lng: -82.86871
+  geo: {lat: 39.28124, lng: -82.86871}
   phone: (740) 774-2003
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0114
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0114}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-tiffin-estates
   name: Grab And Go Tiffin Estates
   categories:
   - meal-program
-  address:
-    street: 2125 Anderson Station
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 2125 Anderson Station, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.35317
-    lng: -83.04748
+  geo: {lat: 39.35317, lng: -83.04748}
   phone: (740) 773-0084
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0115
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0115}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-wade-street-park
   name: Grab And Go Wade Street Park
   categories:
   - meal-program
-  address:
-    street: Wade St
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: Wade St, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chillicothe City SD.
   place: '3914184'
-  geo:
-    lat: 39.33564
-    lng: -82.96169
+  geo: {lat: 39.33564, lng: -82.96169}
   phone: (740) 775-4250
-  external_ids:
-    usda_master: Cycle 06_OH_SSO_0116
+  external_ids: {usda_master: Cycle 06_OH_SSO_0116}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-zane-trace-elementary
   name: Grab And Go Zane Trace Elementary
   categories:
   - meal-program
-  address:
-    street: 946 St. Rt 180
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 946 St. Rt 180, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.42863
-    lng: -82.93938
+  geo: {lat: 39.42863, lng: -82.93938}
   phone: (740) 703-7862
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0117
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0117}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/grab-and-go-zane-village
   name: Grab And Go Zane Village
   categories:
   - meal-program
-  address:
-    street: 11 Iroquois Lane
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 11 Iroquois Lane, city: Chillicothe, state: oh, zip: '45601'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ross County Community
     Action Council.
   place: '3914184'
-  geo:
-    lat: 39.36285
-    lng: -82.97912
+  geo: {lat: 39.36285, lng: -82.97912}
   phone: (740) 672-3000
-  external_ids:
-    usda_master: Cycle 06_OH_SFSP_0118
+  external_ids: {usda_master: Cycle 06_OH_SFSP_0118}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/hopewell-health-centers-chillicothe
   name: Hopewell Health Centers - Chillicothe
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 1049 Western Ave
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 1049 Western Ave, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33353
-    lng: -83.01268
+  geo: {lat: 39.33353, lng: -83.01268}
   phone: 740-773-1006
   website: http://www.hopewellhealth.org
-  external_ids:
-    bphc: BPS-H80-002006
+  external_ids: {bphc: BPS-H80-002006}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/huntington
   name: Huntington
   categories:
   - child-care
-  address:
-    street: 188 Huntsman Rd
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 188 Huntsman Rd, city: Chillicothe, state: oh, zip: '45601'}
   description: Head Start early childhood program — 34 funded slots; operated by Ross County Community
     Action Commission, Inc..
   place: '3914184'
-  geo:
-    lat: 39.24384
-    lng: -83.05801
+  geo: {lat: 39.24384, lng: -83.05801}
   phone: 740-702-7222
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/mares-cares-counseling-llc
   name: Mares Cares Counseling LLC
   categories:
   - mh-treatment
-  address:
-    street: 841 East Main Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 841 East Main Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33829
-    lng: -82.95834
+  geo: {lat: 39.33829, lng: -82.95834}
   phone: 740-804-6800
   website: https://www.mares-cares.com/
   services:
@@ -880,23 +570,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/pike-county-recovery-council
   name: Pike County Recovery Council
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 38 East Water Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 38 East Water Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33566
-    lng: -82.98145
+  geo: {lat: 39.33566, lng: -82.98145}
   phone: 740-851-5307
   website: https://www.therecoverycouncil.org
   services:
@@ -906,23 +588,15 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/pike-county-recovery-council-chillicothe-womens
   name: Pike County Recovery Council Chillicothe/Womens Transition
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 46 East Water Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 46 East Water Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33548
-    lng: -82.98132
+  geo: {lat: 39.33548, lng: -82.98132}
   phone: 740-779-1180
   website: https://www.therecoverycouncil.org
   services:
@@ -940,17 +614,12 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/prism-behavioral-healthcare
   name: Prism Behavioral Healthcare
   categories:
   - su-treatment
-  address:
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
   phone: 740-771-9051
   website: https://prismbh.com
@@ -962,65 +631,41 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/rccac-early-learning-programs-ou-c
   name: RCCAC Early Learning Programs @ OU-C
   categories:
   - child-care
-  address:
-    street: 101 University Dr
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 101 University Dr, city: Chillicothe, state: oh, zip: '45601'}
   description: Head Start early childhood program — 102 funded slots; operated by Ross County Community
     Action Commission, Inc..
   place: '3914184'
-  geo:
-    lat: 39.32806
-    lng: -83.00433
+  geo: {lat: 39.32806, lng: -83.00433}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/ross-county-community-action-commission-inc
   name: Ross County Community Action Commission Inc.
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Ross County
-  address:
-    street: 250 Woodbridge Ave.
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 250 Woodbridge Ave., city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
   phone: 740-536-1199
   email: info@rossccac.com
   website: https://www.rossccac.org/services/heap.html
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-07-19'
-    method: scrape
-  geo:
-    lat: 39.33517
-    lng: -83.00454
+  verified: {'on': '2026-07-19', method: scrape}
+  geo: {lat: 39.33517, lng: -83.00454}
 - id: oh/chillicothe/scioto-paint-valley-mental-health-ctr-floyd-sima
   name: Scioto Paint Valley Mental Health Ctr Floyd Simantel Clinic
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 312 East 2nd Street
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 312 East 2nd Street, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.33569
-    lng: -82.97336
+  geo: {lat: 39.33569, lng: -82.97336}
   phone: 740-775-1270
   website: https://www.spvmhc.org
   services:
@@ -1034,23 +679,15 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/chillicothe/scioto-paint-valley-mental-health-ctr-martha-cot
   name: Scioto Paint Valley Mental Health Ctr Martha Cothrill Clinic
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 4449 State Route 159
-    city: Chillicothe
-    state: oh
-    zip: '45601'
+  address: {street: 4449 State Route 159, city: Chillicothe, state: oh, zip: '45601'}
   place: '3914184'
-  geo:
-    lat: 39.39672
-    lng: -82.96652
+  geo: {lat: 39.39672, lng: -82.96652}
   phone: 740-775-0292
   website: https://www.spvmhc.org
   services:
@@ -1063,6 +700,4 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
