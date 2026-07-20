@@ -1,25 +1,3 @@
-- id: or/bend/administrative-annex
-  name: Administrative Annex
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 965 SW Emkay Dr
-    city: Bend
-    state: or
-    zip: '97702'
-  place: '4105800'
-  geo:
-    lat: 44.04529
-    lng: -121.3244
-  phone: 541-383-3005
-  external_ids:
-    bphc: BPS-H80-019235
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: or/bend/adult-and-teen-challenge-pacific-nw-life-renewal
   name: Adult and Teen Challenge Pacific NW Life Renewal/Bend
   categories:
@@ -43,32 +21,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: or/bend/bend-admin-site
-  name: Bend Admin Site
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 600 SW Columbia St, Apt 6150
-    city: Bend
-    state: or
-    zip: '97702'
-  place: '4105800'
-  geo:
-    lat: 44.04338
-    lng: -121.32483
-  phone: 541-383-3005
-  website: https://www.mosaicmedical.org
-  external_ids:
-    bphc: BPS-H80-013901
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -148,6 +104,10 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -158,28 +118,46 @@
   name: Boys & Girls Club - Ariel
   categories:
   - meal-program
-  address: {street: 1707 Se Tempest Dr, city: Bend, state: or, zip: '97702'}
+  address:
+    street: 1707 Se Tempest Dr
+    city: Bend
+    state: or
+    zip: '97702'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bend-LaPine SD.
   place: '4105800'
-  geo: {lat: 44.04595, lng: -121.28044}
+  geo:
+    lat: 44.04595
+    lng: -121.28044
   phone: (541) 355-1150
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0052}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/bend/boys-girls-club-bend
   name: Boys & Girls Club - Bend
   categories:
   - meal-program
-  address: {street: 520 Nw Wall Street, city: Bend, state: or, zip: '97703'}
+  address:
+    street: 520 Nw Wall Street
+    city: Bend
+    state: or
+    zip: '97703'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bend-LaPine SD.
   place: '4105800'
-  geo: {lat: 44.05677, lng: -121.31658}
+  geo:
+    lat: 44.05677
+    lng: -121.31658
   phone: (541) 355-1150
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0053}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0053
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/bend/central-oregon-vet-center
   name: Central Oregon Vet Center
   categories:
@@ -271,21 +249,14 @@
   name: East Bend Head Start
   categories:
   - child-care
-  address:
-    street: 2125 NE Daggett Ln
-    city: Bend
-    state: or
-    zip: '97701'
+  address: {street: 2125 NE Daggett Ln, city: Bend, state: or, zip: '97701'}
+  description: Head Start early childhood program — 58 funded slots; operated by NeighborImpact Head Start.
   place: '4105800'
-  geo:
-    lat: 44.0716
-    lng: -121.27636
+  geo: {lat: 44.0716, lng: -121.27636}
   phone: 541-385-5698
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/bend/east-bend-health-center
   name: East Bend Health Center
   categories:
@@ -332,6 +303,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -365,21 +337,14 @@
   name: Healy Heights Head Start
   categories:
   - child-care
-  address:
-    street: 1900 NE Bear Creek Rd
-    city: Bend
-    state: or
-    zip: '97701'
+  address: {street: 1900 NE Bear Creek Rd, city: Bend, state: or, zip: '97701'}
+  description: Head Start early childhood program — 58 funded slots; operated by NeighborImpact Head Start.
   place: '4105800'
-  geo:
-    lat: 44.05255
-    lng: -121.27485
+  geo: {lat: 44.05255, lng: -121.27485}
   phone: 541-322-8994
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/bend/mosaic-pharmacy-bend
   name: Mosaic Pharmacy - Bend
   categories:
@@ -450,6 +415,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -486,6 +452,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -496,15 +463,24 @@
   name: Ponderosa Elementary
   categories:
   - meal-program
-  address: {street: 3790 Ne Purcell Blvd, city: Bend, state: or, zip: '97701'}
+  address:
+    street: 3790 Ne Purcell Blvd
+    city: Bend
+    state: or
+    zip: '97701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bend-LaPine SD.
   place: '4105800'
-  geo: {lat: 44.09266, lng: -121.27364}
+  geo:
+    lat: 44.09266
+    lng: -121.27364
   phone: (541) 355-1150
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0421}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0421
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/bend/rimrock-trails-treatment-services-bend-outpatien
   name: Rimrock Trails Treatment Services Bend Outpatient
   categories:
@@ -527,6 +503,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons with eating disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -601,6 +578,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -611,21 +589,14 @@
   name: South Bend Head Start
   categories:
   - child-care
-  address:
-    street: 60850 Brosterhous Rd
-    city: Bend
-    state: or
-    zip: '97702'
+  address: {street: 60850 Brosterhous Rd, city: Bend, state: or, zip: '97702'}
+  description: Head Start early childhood program — 20 funded slots; operated by NeighborImpact Head Start.
   place: '4105800'
-  geo:
-    lat: 44.00895
-    lng: -121.28853
+  geo: {lat: 44.00895, lng: -121.28853}
   phone: 541-330-9944
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/bend/va-portland-hcs-bend-cboc
   name: VA Portland HCS Bend CBOC
   categories:
@@ -647,6 +618,7 @@
   - Veterans
   - Clients with co-occurring mental and substance use disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -657,31 +629,33 @@
   name: West Side Head Start
   categories:
   - child-care
-  address:
-    street: 2051 NW Shevlin Park Rd
-    city: Bend
-    state: or
-    zip: '97703'
+  address: {street: 2051 NW Shevlin Park Rd, city: Bend, state: or, zip: '97703'}
+  description: Head Start early childhood program — 38 funded slots; operated by NeighborImpact Head Start.
   place: '4105800'
-  geo:
-    lat: 44.0626
-    lng: -121.34235
+  geo: {lat: 44.0626, lng: -121.34235}
   phone: 541-330-9944
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/bend/westside-village-school
   name: Westside Village School
   categories:
   - meal-program
-  address: {street: 1101 Nw 12Th St, city: Bend, state: or, zip: '97703'}
+  address:
+    street: 1101 Nw 12Th St
+    city: Bend
+    state: or
+    zip: '97703'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bend-LaPine SD.
   place: '4105800'
-  geo: {lat: 44.06014, lng: -121.32885}
+  geo:
+    lat: 44.06014
+    lng: -121.32885
   phone: (541) 355-1150
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0586}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0586
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

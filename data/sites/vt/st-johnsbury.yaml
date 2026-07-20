@@ -28,6 +28,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -53,6 +54,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.41934
+    lng: -72.01853
 - id: vt/st-johnsbury/northeast-kingdom-human-services-inc-tricounty-s
   name: Northeast Kingdom Human Services Inc TriCounty Substance Abuse Services
   categories:
@@ -81,32 +85,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: vt/st-johnsbury/northern-counties-health-care-inc
-  name: NORTHERN COUNTIES HEALTH CARE, INC.
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 165 Sherman Dr
-    city: Saint Johnsbury
-    state: vt
-    zip: 05819
-  place: '5062125'
-  geo:
-    lat: 44.44782
-    lng: -72.01274
-  phone: 802-748-9405
-  website: http://www.nchcvt.org/
-  external_ids:
-    bphc: BPS-H80-005349
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -137,21 +119,15 @@
   name: St. Johnsbury Child and Family Development Program
   categories:
   - child-care
-  address:
-    street: 115 Lincoln St
-    city: Saint Johnsbury
-    state: vt
-    zip: 05819
+  address: {street: 115 Lincoln St, city: Saint Johnsbury, state: vt, zip: 05819}
+  description: Head Start early childhood program — 10 funded slots; operated by NORTHEAST KINGDOM COMMUNITY
+    ACTION, INC.
   place: '5062125'
-  geo:
-    lat: 44.41985
-    lng: -71.99962
+  geo: {lat: 44.41985, lng: -71.99962}
   phone: 802-748-3201
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: vt/st-johnsbury/st-johnsbury-community-health-center
   name: St. Johnsbury Community Health Center
   categories:
@@ -179,13 +155,22 @@
   name: St. Johnsbury School Open, Non-Congregate
   categories:
   - meal-program
-  address: {street: 257 Western Avenue, city: St. Johnsbury, state: vt, zip: 05819}
+  address:
+    street: 257 Western Avenue
+    city: St. Johnsbury
+    state: vt
+    zip: 05819
   description: Free summer meals for kids and teens (2026 season) — sponsored by St. Johnsbury Town School
     District.
   place: '5062125'
-  geo: {lat: 44.41679, lng: -72.02476}
+  geo:
+    lat: 44.41679
+    lng: -72.02476
   phone: (802) 745-2802
-  external_ids: {usda_master: Cycle 08_VT_SFSP_0243}
+  external_ids:
+    usda_master: Cycle 08_VT_SFSP_0243
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

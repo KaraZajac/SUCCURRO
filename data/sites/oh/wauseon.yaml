@@ -20,6 +20,7 @@
   - Partial hospitalization/day treatment
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -44,6 +45,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.55481
+    lng: -84.1343
 - id: oh/wauseon/recovery-services-of-nw-ohio
   name: Recovery Services of NW Ohio
   categories:
@@ -67,6 +71,7 @@
   - Regular outpatient treatment
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -77,32 +82,35 @@
   name: Reighard Park
   categories:
   - meal-program
-  address: {street: 621 E Oak St, city: Wauseon, state: oh, zip: '43567'}
+  address:
+    street: 621 E Oak St
+    city: Wauseon
+    state: oh
+    zip: '43567'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northwestern Ohio Community
     Action Commission.
   place: '3981928'
-  geo: {lat: 41.5517, lng: -84.13226}
+  geo:
+    lat: 41.5517
+    lng: -84.13226
   phone: (567) 454-2379
-  external_ids: {usda_master: Cycle 06_OH_SFSP_0201}
+  external_ids:
+    usda_master: Cycle 06_OH_SFSP_0201
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/wauseon/wauseon-head-start
   name: Wauseon Head Start
   categories:
   - child-care
-  address:
-    street: 1210 N Ottokee St
-    city: Wauseon
-    state: oh
-    zip: '43567'
+  address: {street: 1210 N Ottokee St, city: Wauseon, state: oh, zip: '43567'}
+  description: Head Start early childhood program — 34 funded slots; operated by Northwestern Ohio Community
+    Action Commission.
   place: '3981928'
-  geo:
-    lat: 41.56458
-    lng: -84.14584
+  geo: {lat: 41.56458, lng: -84.14584}
   phone: 419-337-9141
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

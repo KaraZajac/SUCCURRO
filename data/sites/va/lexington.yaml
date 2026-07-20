@@ -2,40 +2,28 @@
   name: CDC RKBC - Waddell
   categories:
   - child-care
-  address:
-    street: 100 Pendleton Pl
-    city: Lexington
-    state: va
-    zip: '24450'
+  address: {street: 100 Pendleton Pl, city: Lexington, state: va, zip: '24450'}
+  description: Head Start early childhood program — 15 funded slots; operated by Total Action Against
+    Poverty In Roanoke Valley, Inc..
   place: '5145512'
-  geo:
-    lat: 37.78218
-    lng: -79.45197
+  geo: {lat: 37.78218, lng: -79.45197}
   phone: 540-463-3763
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/lexington/ehs-ptnr-yellow-brick-road
   name: EHS - PTNR - Yellow Brick Road
   categories:
   - child-care
-  address:
-    street: 410 Yellow Brick Rd
-    city: Lexington
-    state: va
-    zip: '24450'
+  address: {street: 410 Yellow Brick Rd, city: Lexington, state: va, zip: '24450'}
+  description: Head Start early childhood program — 13 funded slots; operated by Total Action Against
+    Poverty in Roanoke Valley, Inc..
   place: '5145512'
-  geo:
-    lat: 37.78053
-    lng: -79.44051
+  geo: {lat: 37.78053, lng: -79.44051}
   phone: 540-463-7344
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/lexington/lexington-area-social-services
   name: Lexington Area Social Services
   categories:
@@ -53,19 +41,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.78282
+    lng: -79.44415
 - id: va/lexington/maury-river-middle
   name: Maury River Middle
   categories:
   - meal-program
-  address: {street: 600 Waddell St, city: Lexington, state: va, zip: '24450'}
+  address:
+    street: 600 Waddell St
+    city: Lexington
+    state: va
+    zip: '24450'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Rockbridge County Public
     Schools.
   place: '5145512'
-  geo: {lat: 37.77369, lng: -79.44444}
-  external_ids: {usda_master: Cycle 03_VA_SFSP_0582}
+  geo:
+    lat: 37.77369
+    lng: -79.44444
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_0582
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/lexington/maury-river-middle-school-health-center
   name: Maury River Middle School Health Center
   categories:
@@ -107,28 +107,6 @@
   website: https://www.rockahc.org
   external_ids:
     bphc: BPS-H80-034797
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: va/lexington/rahc-magnolia-square
-  name: RAHC - Magnolia Square
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 35 Magnolia Sq, Suite 9
-    city: Lexington
-    state: va
-    zip: '24450'
-  place: '5145512'
-  geo:
-    lat: 37.79402
-    lng: -79.42354
-  phone: 540-464-8700
-  external_ids:
-    bphc: BPS-H80-036267
   sources:
   - hrsa/health-center-sites
   verified:
@@ -180,6 +158,7 @@
   - Adolescents
   - Adult women
   - Adult men
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -226,6 +205,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.78282
+    lng: -79.44415
 - id: va/lexington/rockbridge-county-high-school-health-center
   name: Rockbridge County High School Health Center
   categories:

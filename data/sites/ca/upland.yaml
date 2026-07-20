@@ -20,50 +20,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ca/upland/central-city-community-health-center-inc-upland
-  name: Central City Community Health Center, Inc. - Upland Admin Site
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 268 McArthur Way
-    city: Upland
-    state: ca
-    zip: '91786'
-  place: 0681344
-  geo:
-    lat: 34.09704
-    lng: -117.67888
-  phone: 323-724-0019
-  external_ids:
-    bphc: BPS-H80-041820
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/upland/cnhf-upland-admin
-  name: CNHF - Upland Admin
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 360 E 7th St, Suite B
-    city: Upland
-    state: ca
-    zip: '91786'
-  place: 0681344
-  geo:
-    lat: 34.0886
-    lng: -117.64652
-  phone: 909-981-2500
-  external_ids:
-    bphc: BPS-H80-030576
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ca/upland/euclid-community-health-center
   name: Euclid Community Health Center
   categories:
@@ -111,6 +67,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -142,6 +102,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -173,6 +137,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -209,6 +177,10 @@
   - Veterans
   - Active duty military
   - Members of military families
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -245,6 +217,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -299,6 +275,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -309,32 +289,35 @@
   name: Upland Head Start
   categories:
   - child-care
-  address:
-    street: 732 N 3rd Ave
-    city: Upland
-    state: ca
-    zip: '91786'
+  address: {street: 732 N 3rd Ave, city: Upland, state: ca, zip: '91786'}
+  description: Head Start early childhood program — 32 funded slots; operated by County of San Bernardino,
+    Preschool Services Dept..
   place: 0681344
-  geo:
-    lat: 34.10242
-    lng: -117.64715
+  geo: {lat: 34.10242, lng: -117.64715}
   phone: 909-931-0147
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/upland/upland-public-library
   name: Upland Public Library
   categories:
   - meal-program
-  address: {street: 450 N Euclid Ave, city: Upland, state: ca, zip: '91786'}
+  address:
+    street: 450 N Euclid Ave
+    city: Upland
+    state: ca
+    zip: '91786'
   description: Free summer meals for kids and teens (2026 season) — sponsored by UPLAND UNIFIED SCHOOL
     DISTRICT.
   place: 0681344
-  geo: {lat: 34.09878, lng: -117.65095}
+  geo:
+    lat: 34.09878
+    lng: -117.65095
   phone: (909) 985-1864
-  external_ids: {usda_master: Cycle 05_CA_SSO_0656}
+  external_ids:
+    usda_master: Cycle 05_CA_SSO_0656
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

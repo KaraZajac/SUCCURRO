@@ -26,6 +26,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -51,6 +52,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.18305
+    lng: -96.93798
 - id: tx/giddings/combined-community-action-inc
   name: Combined Community Action Inc.
   categories:
@@ -69,6 +73,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.18305
+    lng: -96.93798
 - id: tx/giddings/combined-community-action-inc-2
   name: Combined Community Action, Inc.
   categories:
@@ -87,48 +94,63 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.18305
+    lng: -96.93798
 - id: tx/giddings/giddings-el
   name: Giddings El
   categories:
   - meal-program
-  address: {street: 1402 E Industry St, city: Giddings, state: tx, zip: '78942'}
+  address:
+    street: 1402 E Industry St
+    city: Giddings
+    state: tx
+    zip: '78942'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GIDDINGS ISD.
   place: '4829432'
-  geo: {lat: 30.17505, lng: -96.92518}
-  external_ids: {usda_master: Cycle 01_TX_SSO_0595}
+  geo:
+    lat: 30.17505
+    lng: -96.92518
+  external_ids:
+    usda_master: Cycle 01_TX_SSO_0595
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/giddings/giddings-h-s
   name: Giddings H S
   categories:
   - meal-program
-  address: {street: 2335 North Main St, city: Giddings, state: tx, zip: '78942'}
+  address:
+    street: 2335 North Main St
+    city: Giddings
+    state: tx
+    zip: '78942'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GIDDINGS ISD.
   place: '4829432'
-  geo: {lat: 30.20142, lng: -96.92994}
-  external_ids: {usda_master: Cycle 06_TX_SSO_1204}
+  geo:
+    lat: 30.20142
+    lng: -96.92994
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_1204
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/giddings/jeff-dock-child-development-center
   name: Jeff Dock Child Development Center
   categories:
   - child-care
-  address:
-    street: 1975 N Main St
-    city: Giddings
-    state: tx
-    zip: '78942'
+  address: {street: 1975 N Main St, city: Giddings, state: tx, zip: '78942'}
+  description: Head Start early childhood program — 17 funded slots; operated by Cen-Tex Family Services
+    Inc.
   place: '4829432'
-  geo:
-    lat: 30.19882
-    lng: -96.9328
+  geo: {lat: 30.19882, lng: -96.9328}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/giddings/tejas-health-care-giddings-decker-building
   name: 'Tejas Health Care Giddings: Decker Building'
   categories:

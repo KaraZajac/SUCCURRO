@@ -24,6 +24,7 @@
   - Adolescents
   - Adult women
   - Adult men
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -70,6 +71,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -107,6 +109,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -131,6 +134,7 @@
   website: https://www.charakcenter.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -155,26 +159,21 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.15249
+    lng: -81.86715
 - id: oh/medina/creative-kids
   name: Creative Kids
   categories:
   - child-care
-  address:
-    street: 787 Lafayette Rd
-    street2: Na
-    city: Medina
-    state: oh
-    zip: '44256'
+  address: {street: 787 Lafayette Rd, street2: Na, city: Medina, state: oh, zip: '44256'}
+  description: Head Start early childhood program — 46 funded slots; operated by Community Action Wayne/Medina.
   place: '3948790'
-  geo:
-    lat: 41.12866
-    lng: -81.88341
+  geo: {lat: 41.12866, lng: -81.88341}
   phone: 330-723-1849
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/medina/medina-county
   name: Medina County
   categories:
@@ -240,6 +239,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -250,12 +250,21 @@
   name: The Salvation Army - Medina
   categories:
   - meal-program
-  address: {street: 425 W. Liberty St., city: Medina, state: oh, zip: '44256'}
+  address:
+    street: 425 W. Liberty St.
+    city: Medina
+    state: oh
+    zip: '44256'
   description: Free summer meals for kids and teens (2026 season) — sponsored by The Salvation Army-Medina.
   place: '3948790'
-  geo: {lat: 41.13917, lng: -81.87035}
+  geo:
+    lat: 41.13917
+    lng: -81.87035
   phone: (330) 722-6488
-  external_ids: {usda_master: Cycle 07_OH_SFSP_0058}
+  external_ids:
+    usda_master: Cycle 07_OH_SFSP_0058
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -27,15 +28,24 @@
   name: Garfield Es(110)
   categories:
   - meal-program
-  address: {street: 701 North Roosevelt Avenue, city: Sand Springs, state: ok, zip: '74063'}
+  address:
+    street: 701 North Roosevelt Avenue
+    city: Sand Springs
+    state: ok
+    zip: '74063'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SAND SPRINGS.
   place: '4065300'
-  geo: {lat: 36.1455, lng: -96.11283}
+  geo:
+    lat: 36.1455
+    lng: -96.11283
   phone: (918) 246-1430
-  external_ids: {usda_master: Cycle 04_OK_SFSP_0435}
+  external_ids:
+    usda_master: Cycle 04_OK_SFSP_0435
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/sand-springs/little-blue-pantry
   name: Little Blue Pantry
   categories:
@@ -56,21 +66,15 @@
   name: Sand Springs
   categories:
   - child-care
-  address:
-    street: 1701 Park Rd
-    city: Sand Springs
-    state: ok
-    zip: '74063'
+  address: {street: 1701 Park Rd, city: Sand Springs, state: ok, zip: '74063'}
+  description: Head Start early childhood program — 32 funded slots; operated by Community Action Project
+    of Tulsa County (CAP).
   place: '4065300'
-  geo:
-    lat: 36.14388
-    lng: -96.09331
+  geo: {lat: 36.14388, lng: -96.09331}
   phone: 918-419-2900
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/sand-springs/tulsa-boys-home
   name: Tulsa Boys Home
   categories:
@@ -97,6 +101,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents; men only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

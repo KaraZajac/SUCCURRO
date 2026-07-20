@@ -29,6 +29,10 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -76,6 +80,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 28.67859
+    lng: -99.82823
 - id: tx/crystal-city/community-council-of-south-central-texas-zavala
   name: Community Council of South Central Texas - Zavala County
   categories:
@@ -94,25 +101,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 28.67859
+    lng: -99.82823
 - id: tx/crystal-city/crystal-city-1-center
   name: Crystal City 1 Center
   categories:
   - child-care
-  address:
-    street: 209 Cypress Ave
-    city: Crystal City
-    state: tx
-    zip: '78839'
+  address: {street: 209 Cypress Ave, city: Crystal City, state: tx, zip: '78839'}
+  description: Head Start early childhood program — 42 funded slots; operated by Chicanos por la Causa,
+    Inc..
   place: '4818020'
-  geo:
-    lat: 28.65921
-    lng: -99.80913
+  geo: {lat: 28.65921, lng: -99.80913}
   phone: 830-310-7087
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/crystal-city/crystal-city-housing-authority
   name: Crystal City Housing Authority
   categories:
@@ -137,14 +141,23 @@
   name: Nc_Central Kitchen
   categories:
   - meal-program
-  address: {street: 1021 N. 7Th Avenue, city: Crystal City, state: tx, zip: '78839'}
+  address:
+    street: 1021 N. 7Th Avenue
+    city: Crystal City
+    state: tx
+    zip: '78839'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CRYSTAL CITY ISD.
   place: '4818020'
-  geo: {lat: 28.68857, lng: -99.8242}
-  external_ids: {usda_master: Cycle 01_TX_SSO_1814}
+  geo:
+    lat: 28.68857
+    lng: -99.8242
+  external_ids:
+    usda_master: Cycle 01_TX_SSO_1814
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/crystal-city/vida-y-salud-health-systems-inc
   name: VIDA Y SALUD-HEALTH SYSTEMS INC
   categories:

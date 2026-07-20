@@ -94,6 +94,14 @@ def main(argv):
                 "zip": zip5 if re.fullmatch(r"\d{5}", zip5) else None,
             }.items() if v}),
         }
+        slots = row.get("funded_slots")
+        desc = "Head Start early childhood program"
+        if isinstance(slots, int) and slots > 0:
+            desc += f" — {slots} funded slots"
+        admin = (row.get("program_admin_name") or "").strip()
+        if admin:
+            desc += f"; operated by {admin}"
+        rec["description"] = desc + "."
         if geoid:
             rec["place"] = geoid
         try:

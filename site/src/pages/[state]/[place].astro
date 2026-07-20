@@ -54,6 +54,20 @@ const groupOrder = [...groups.keys()].sort((a, b) => label(a).localeCompare(labe
 
 const DAY_LABELS = { mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun" };
 const PROGRAMS = { aa: "AA", na: "NA", "al-anon": "Al-Anon", smart: "SMART Recovery", nami: "NAMI" };
+// standard Meeting Guide / BMLT type codes -> readable labels (unknown codes hidden)
+const TYPE_LABELS = {
+  o: "Open", c: "Closed", d: "Discussion", sp: "Speaker", b: "Big Book",
+  bb: "Big Book", st: "Step study", "12x12": "Steps & Traditions", tr: "Tradition study",
+  m: "Men", w: "Women", g: "LGBTQ+", l: "LGBTQ+", t: "Transgender", yp: "Young people",
+  y: "Young people", s: "Spanish", es: "Spanish", en: "English", fr: "French",
+  beg: "Beginners", ne: "Newcomer", jt: "Just for Today", med: "Meditation",
+  can: "Candlelight", cf: "Child-friendly", x: "Wheelchair accessible",
+  wc: "Wheelchair accessible", ba: "Babysitting", var: "Format varies",
+  lit: "Literature study", "as-bi": "ASL available", asl: "ASL available",
+  onl: "Online", hyb: "Hybrid", vm: "Virtual", tc: "Temporarily online",
+};
+const typeChips = (m) =>
+  (m.types || []).map((t) => TYPE_LABELS[t]).filter(Boolean).slice(0, 5);
 const fmtSchedule = (m) =>
   (m.schedule || [])
     .map((e) => `${DAY_LABELS[e.day] || e.day} ${e.time}`)
@@ -126,6 +140,7 @@ const hoursText = (h) =>
             <div class="meta">
               {fmtSchedule(m)} · {m.format}
               {m.venue_name && ` · ${m.venue_name}`}
+              {typeChips(m).map((t) => <span class="chip">{t}</span>)}
             </div>
             <div class="meta">
               {m.venue?.street && `${m.venue.street}, `}{m.venue?.city}

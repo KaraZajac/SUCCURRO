@@ -2,34 +2,37 @@
   name: Paris
   categories:
   - child-care
-  address:
-    street: 200 W Academy St
-    city: Paris
-    state: ar
-    zip: '72855'
+  address: {street: 200 W Academy St, city: Paris, state: ar, zip: '72855'}
+  description: Head Start early childhood program — 17 funded slots; operated by Arkansas Early Learning,
+    Inc..
   place: 0553480
-  geo:
-    lat: 35.28985
-    lng: -93.73207
+  geo: {lat: 35.28985, lng: -93.73207}
   phone: 479-874-7550
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/paris/paris-middle-school
   name: Paris Middle School
   categories:
   - meal-program
-  address: {street: 602 N. 10Th Street, city: Paris, state: ar, zip: '72855'}
+  address:
+    street: 602 N. 10Th Street
+    city: Paris
+    state: ar
+    zip: '72855'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Paris School District.
   place: 0553480
-  geo: {lat: 35.29668, lng: -93.72112}
+  geo:
+    lat: 35.29668
+    lng: -93.72112
   phone: (479) 847-4023
-  external_ids: {usda_master: Cycle 04_AR_SSO_0003}
+  external_ids:
+    usda_master: Cycle 04_AR_SSO_0003
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/paris/paris-wellness-center
   name: Paris Wellness Center
   categories:
@@ -80,6 +83,7 @@
   - Active duty military
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

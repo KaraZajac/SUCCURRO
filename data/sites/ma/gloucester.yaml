@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.61297
+    lng: -70.66756
 - id: ma/gloucester/gloucester-family-health-center
   name: Gloucester Family Health Center
   categories:
@@ -130,6 +133,11 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -156,6 +164,7 @@
   - Outpatient detoxification
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -166,21 +175,15 @@
   name: Pathways for Children Head Start and Early Head Start at Emerson
   categories:
   - child-care
-  address:
-    street: 29 Emerson Ave
-    city: Gloucester
-    state: ma
-    zip: 01930
+  address: {street: 29 Emerson Ave, city: Gloucester, state: ma, zip: 01930}
+  description: Head Start early childhood program — 90 funded slots; operated by PATHWAYS FOR CHILDREN,
+    INC..
   place: '2526150'
-  geo:
-    lat: 42.61588
-    lng: -70.67608
+  geo: {lat: 42.61588, lng: -70.67608}
   phone: 978-515-5454
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/gloucester/program-for-all-inclusive-care-for-the-elderly-p
   name: Program for All-Inclusive Care for the Elderly (PACE) Site
   categories:

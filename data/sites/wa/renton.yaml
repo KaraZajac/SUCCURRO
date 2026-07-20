@@ -26,6 +26,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -51,6 +55,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -61,53 +66,34 @@
   name: Family Circle Learning Center
   categories:
   - child-care
-  address:
-    street: 10717 SE 172nd St
-    city: Renton
-    state: wa
-    zip: '98055'
+  address: {street: 10717 SE 172nd St, city: Renton, state: wa, zip: '98055'}
+  description: Head Start early childhood program — 10 funded slots; operated by Akin (formerly Children's
+    Home Society of Washington).
   place: '5357745'
-  geo:
-    lat: 47.44848
-    lng: -122.19761
+  geo: {lat: 47.44848, lng: -122.19761}
   phone: 425-228-9111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/renton/family-first-community-center
   name: Family First Community Center
   categories:
   - meal-program
-  address: {street: 16200 116Th Ave Se, city: Renton, state: wa, zip: '98058'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
-  place: '5357745'
-  geo: {lat: 47.45793, lng: -122.18592}
-  phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0158}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: wa/renton/finance-office
-  name: Finance Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
   address:
-    street: 500 SW 7th St STE 201
+    street: 16200 116Th Ave Se
     city: Renton
     state: wa
-    zip: '98057'
+    zip: '98058'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
   geo:
-    lat: 47.47377
-    lng: -122.22258
-  phone: 206-462-7162
+    lat: 47.45793
+    lng: -122.18592
+  phone: (425) 204-3545
   external_ids:
-    bphc: BPS-H80-030789
+    usda_master: Cycle 07_WA_SFSP_0158
   sources:
-  - hrsa/health-center-sites
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -128,51 +114,6 @@
   phone: 425-226-1850
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: wa/renton/healthpoint-administration
-  name: HealthPoint Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 955 Powell Ave SW
-    city: Renton
-    state: wa
-    zip: '98057'
-  place: '5357745'
-  geo:
-    lat: 47.47046
-    lng: -122.23213
-  phone: 425-277-1311
-  website: https://www.healthpointchc.org
-  external_ids:
-    bphc: BPS-H80-000429
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: wa/renton/healthpoint-administration-841
-  name: HealthPoint Administration 841
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 841 Powell Ave SW
-    city: Renton
-    state: wa
-    zip: '98057'
-  place: '5357745'
-  geo:
-    lat: 47.47207
-    lng: -122.23096
-  phone: 425-277-1311
-  external_ids:
-    bphc: BPS-H80-030994
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -315,54 +256,90 @@
   name: Heritage Park
   categories:
   - meal-program
-  address: {street: 233 Union Ave Ne, city: Renton, state: wa, zip: '98059'}
+  address:
+    street: 233 Union Ave Ne
+    city: Renton
+    state: wa
+    zip: '98059'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.48573, lng: -122.16419}
+  geo:
+    lat: 47.48573
+    lng: -122.16419
   phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0209}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0209
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/highlands-elementary
   name: Highlands Elementary
   categories:
   - meal-program
-  address: {street: 2720 Ne 7Th St, city: Renton, state: wa, zip: '98056'}
+  address:
+    street: 2720 Ne 7Th St
+    city: Renton
+    state: wa
+    zip: '98056'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.49402, lng: -122.18225}
+  geo:
+    lat: 47.49402
+    lng: -122.18225
   phone: (425) 204-4603
-  external_ids: {usda_master: Cycle 09_WA_SFSP_0347}
+  external_ids:
+    usda_master: Cycle 09_WA_SFSP_0347
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/kiwanis-park
   name: Kiwanis Park
   categories:
   - meal-program
-  address: {street: 815 Union Ave Ne, city: Renton, state: wa, zip: '98059'}
+  address:
+    street: 815 Union Ave Ne
+    city: Renton
+    state: wa
+    zip: '98059'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.49722, lng: -122.16559}
+  geo:
+    lat: 47.49722
+    lng: -122.16559
   phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0241}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0241
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/liberty-park
   name: Liberty Park
   categories:
   - meal-program
-  address: {street: 1101 Bronson Way N, city: Renton, state: wa, zip: '98057'}
+  address:
+    street: 1101 Bronson Way N
+    city: Renton
+    state: wa
+    zip: '98057'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.48271, lng: -122.20201}
+  geo:
+    lat: 47.48271
+    lng: -122.20201
   phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0261}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0261
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/programa-ser
   name: Programa SER
   categories:
@@ -381,6 +358,10 @@
   - Regular outpatient treatment
   - Adult women
   - Adult men
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -414,15 +395,24 @@
   name: Renton Salvation Army
   categories:
   - meal-program
-  address: {street: 720 S Tobin St, city: Renton, state: wa, zip: '98057'}
+  address:
+    street: 720 S Tobin St
+    city: Renton
+    state: wa
+    zip: '98057'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.48376, lng: -122.20721}
+  geo:
+    lat: 47.48376
+    lng: -122.20721
   phone: (425) 255-5974
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0364}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0364
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/renton-va-clinic
   name: Renton VA Clinic
   categories:
@@ -462,41 +452,68 @@
   name: St Mathews Church
   categories:
   - meal-program
-  address: {street: 1700 Edmonds Ave Ne, city: Renton, state: wa, zip: '98056'}
+  address:
+    street: 1700 Edmonds Ave Ne
+    city: Renton
+    state: wa
+    zip: '98056'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.50697, lng: -122.18562}
+  geo:
+    lat: 47.50697
+    lng: -122.18562
   phone: (425) 351-7412
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0415}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0415
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/sunset-park
   name: Sunset Park
   categories:
   - meal-program
-  address: {street: 2680 Sunset Ln Ne, city: Renton, state: wa, zip: '98056'}
+  address:
+    street: 2680 Sunset Ln Ne
+    city: Renton
+    state: wa
+    zip: '98056'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.50049, lng: -122.18274}
+  geo:
+    lat: 47.50049
+    lng: -122.18274
   phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0428}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0428
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/tiffany-park
   name: Tiffany Park
   categories:
   - meal-program
-  address: {street: 1902 Lake Youngs Way Se, city: Renton, state: wa, zip: '98058'}
+  address:
+    street: 1902 Lake Youngs Way Se
+    city: Renton
+    state: wa
+    zip: '98058'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Renton School District.
   place: '5357745'
-  geo: {lat: 47.46378, lng: -122.17859}
+  geo:
+    lat: 47.46378
+    lng: -122.17859
   phone: (425) 204-3545
-  external_ids: {usda_master: Cycle 07_WA_SFSP_0441}
+  external_ids:
+    usda_master: Cycle 07_WA_SFSP_0441
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/renton/united-christian-church-renton-pantry
   name: United Christian Church Renton Pantry
   categories:

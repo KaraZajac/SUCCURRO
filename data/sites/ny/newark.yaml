@@ -28,6 +28,7 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -59,12 +60,14 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 43.04549, lng: -77.08415}
 - id: ny/newark/newark-community-health
   name: Newark Community Health
   categories:
@@ -96,6 +99,8 @@
     city: Newark
     state: ny
     zip: '14513'
+  description: Head Start early childhood program — 81 funded slots; operated by WAYNE COUNTY ACTION PROGRAM,
+    INC.
   place: '3649891'
   geo:
     lat: 43.05196
@@ -110,16 +115,25 @@
   name: Newark Public Library
   categories:
   - meal-program
-  address: {street: 121 High St, city: Newark, state: ny, zip: '14513'}
+  address:
+    street: 121 High St
+    city: Newark
+    state: ny
+    zip: '14513'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Arc Wayne County Chapter
     Inc.
   place: '3649891'
-  geo: {lat: 43.04441, lng: -77.09743}
+  geo:
+    lat: 43.04441
+    lng: -77.09743
   phone: (315) 331-7741
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0418}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0418
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/newark/the-little-free-pantry
   name: The Little Free Pantry
   categories:

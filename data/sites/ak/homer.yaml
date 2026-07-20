@@ -17,6 +17,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 59.64405
+    lng: -151.52498
 - id: ak/homer/cook-inlet-counseling-outpatient-homer
   name: Cook Inlet Counseling Outpatient Homer
   categories:
@@ -39,6 +42,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -49,21 +53,15 @@
   name: Homer Head Start
   categories:
   - child-care
-  address:
-    street: 1266 Ocean Dr
-    city: Homer
-    state: ak
-    zip: '99603'
+  address: {street: 1266 Ocean Dr, city: Homer, state: ak, zip: '99603'}
+  description: Head Start early childhood program — 18 funded slots; operated by Rural Alaska Community
+    Action Program, Inc.
   place: '0233140'
-  geo:
-    lat: 59.63868
-    lng: -151.51054
+  geo: {lat: 59.63868, lng: -151.51054}
   phone: 907-235-4322
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/homer/homer-va-clinic
   name: Homer VA Clinic
   categories:
@@ -122,6 +120,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -156,6 +155,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

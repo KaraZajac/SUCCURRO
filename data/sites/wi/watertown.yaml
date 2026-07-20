@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -41,6 +42,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -66,6 +68,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -90,6 +93,7 @@
   website: https://www.rockrivercommunityclinic.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -138,32 +142,35 @@
   name: Watertown Head Start Center
   categories:
   - child-care
-  address:
-    street: 672 Johnson St
-    city: Watertown
-    state: wi
-    zip: '53094'
+  address: {street: 672 Johnson St, city: Watertown, state: wi, zip: '53094'}
+  description: 'Head Start early childhood program — 66 funded slots; operated by Cooperative Educational
+    Service Agency #2.'
   place: '5583975'
-  geo:
-    lat: 43.18412
-    lng: -88.73533
+  geo: {lat: 43.18412, lng: -88.73533}
   phone: 920-261-8716
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/watertown/watertown-high-school
   name: Watertown High School
   categories:
   - meal-program
-  address: {street: 825 Endeavour Drive, city: Watertown, state: wi, zip: '53098'}
+  address:
+    street: 825 Endeavour Drive
+    city: Watertown
+    state: wi
+    zip: '53098'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Watertown Unified School
     District.
   place: '5583975'
-  geo: {lat: 43.20845, lng: -88.7383}
+  geo:
+    lat: 43.20845
+    lng: -88.7383
   phone: (920) 262-7536
-  external_ids: {usda_master: Cycle 01_WI_SFSP_0155}
+  external_ids:
+    usda_master: Cycle 01_WI_SFSP_0155
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

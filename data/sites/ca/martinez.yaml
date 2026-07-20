@@ -13,32 +13,10 @@
   services:
   - Residential/24-hour residential
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/martinez/contra-costa-county-health-services-dept
-  name: CONTRA COSTA COUNTY HEALTH SERVICES DEPT.
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 50 Douglas Dr
-    city: Martinez
-    state: ca
-    zip: '94553'
-  place: '0646114'
-  geo:
-    lat: 37.99364
-    lng: -122.12615
-  phone: 925-313-6600
-  website: https://www.cchealth.org
-  external_ids:
-    bphc: BPS-H80-000591
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -62,6 +40,10 @@
   - Hospital inpatient/24-hour hospital inpatient
   - Outpatient
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -94,16 +76,25 @@
   name: Hidden Valley Elementary
   categories:
   - meal-program
-  address: {street: 500 Glacier Dr., city: Martinez, state: ca, zip: '94553'}
+  address:
+    street: 500 Glacier Dr.
+    city: Martinez
+    state: ca
+    zip: '94553'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MT. DIABLO UNIFIED SCHOOL
     DISTRICT.
   place: '0646114'
-  geo: {lat: 37.98254, lng: -122.08821}
+  geo:
+    lat: 37.98254
+    lng: -122.08821
   phone: (925) 682-8000
-  external_ids: {usda_master: Cycle 05_CA_SSO_1134}
+  external_ids:
+    usda_master: Cycle 05_CA_SSO_1134
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/martinez/housing-authority-of-the-county-contra-costa
   name: Housing Authority Of The County Contra Costa
   categories:
@@ -128,16 +119,25 @@
   name: Las Juntas Elementary
   categories:
   - meal-program
-  address: {street: 4105 Pacheco Blvd., city: Martinez, state: ca, zip: '94553'}
+  address:
+    street: 4105 Pacheco Blvd.
+    city: Martinez
+    state: ca
+    zip: '94553'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MARTINEZ UNIFIED SCHOOL
     DISTRICT.
   place: '0646114'
-  geo: {lat: 38.00739, lng: -122.09312}
+  geo:
+    lat: 38.00739
+    lng: -122.09312
   phone: (925) 335-5810
-  external_ids: {usda_master: Cycle 01_CA_SSO_0278}
+  external_ids:
+    usda_master: Cycle 01_CA_SSO_0278
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/martinez/martinez-health-center-family-medicine-2a
   name: Martinez Health Center - Family Medicine 2A
   categories:
@@ -596,6 +596,7 @@
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves young adults, adults; women only.
   cost: varies
   sources:
   - samhsa/findtreatment

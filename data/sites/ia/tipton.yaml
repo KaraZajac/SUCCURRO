@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.76589
+    lng: -91.12988
 - id: ia/tipton/community-and-family-resources-tipton
   name: Community and Family Resources Tipton
   categories:
@@ -34,6 +37,7 @@
   website: https://www.cfrhelps.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -44,31 +48,34 @@
   name: Sycamore Learning Center
   categories:
   - child-care
-  address:
-    street: 621 W 6th St
-    city: Tipton
-    state: ia
-    zip: '52772'
+  address: {street: 621 W 6th St, city: Tipton, state: ia, zip: '52772'}
+  description: Head Start early childhood program — 14 funded slots; operated by Community Action of Eastern
+    Iowa.
   place: '1978285'
-  geo:
-    lat: 41.77079
-    lng: -91.13639
+  geo: {lat: 41.77079, lng: -91.13639}
   phone: 563-886-3243
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/tipton/tipton-elementary-school
   name: Tipton Elementary School
   categories:
   - meal-program
-  address: {street: 601 Lemon Street, city: Tipton, state: ia, zip: '52772'}
+  address:
+    street: 601 Lemon Street
+    city: Tipton
+    state: ia
+    zip: '52772'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Tipton Comm School District.
   place: '1978285'
-  geo: {lat: 41.77105, lng: -91.13686}
+  geo:
+    lat: 41.77105
+    lng: -91.13686
   phone: (563) 886-9701
-  external_ids: {usda_master: Cycle 03_IA_SFSP_0034}
+  external_ids:
+    usda_master: Cycle 03_IA_SFSP_0034
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

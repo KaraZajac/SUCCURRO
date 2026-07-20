@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -46,21 +47,15 @@
   name: Long Prairie CentraCare
   categories:
   - child-care
-  address:
-    street: 20 9th St SE
-    city: Long Prairie
-    state: mn
-    zip: '56347'
+  address: {street: 20 9th St SE, city: Long Prairie, state: mn, zip: '56347'}
+  description: Head Start early childhood program — 22 funded slots; operated by Tri County Community
+    Action Partnership, Inc..
   place: '2738060'
-  geo:
-    lat: 45.97366
-    lng: -94.84856
+  geo: {lat: 45.97366, lng: -94.84856}
   phone: 320-894-5400
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/long-prairie/long-prairie-centracare-blessings-box
   name: Long Prairie CentraCare Blessings Box
   categories:
@@ -81,30 +76,48 @@
   name: Long Prairie Elementary
   categories:
   - meal-program
-  address: {street: 205 2Nd St S, city: Long Prairie, state: mn, zip: '56347'}
+  address:
+    street: 205 2Nd St S
+    city: Long Prairie
+    state: mn
+    zip: '56347'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Long Prairie Grey Eagle
     ISD #2753.'
   place: '2738060'
-  geo: {lat: 45.97142, lng: -94.86221}
+  geo:
+    lat: 45.97142
+    lng: -94.86221
   phone: (320) 732-4645
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0021}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0021
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/long-prairie/long-prairie-grey-eagle-secondary
   name: Long Prairie-Grey Eagle Secondary
   categories:
   - meal-program
-  address: {street: 510 9Th St Ne, city: Long Prairie, state: mn, zip: '56347'}
+  address:
+    street: 510 9Th St Ne
+    city: Long Prairie
+    state: mn
+    zip: '56347'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Long Prairie Grey Eagle
     ISD #2753.'
   place: '2738060'
-  geo: {lat: 45.9801, lng: -94.85025}
+  geo:
+    lat: 45.9801
+    lng: -94.85025
   phone: (320) 732-4645
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0022}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0022
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/long-prairie/northern-pines-mental-health-center-long-prairie
   name: Northern Pines Mental Health Center Long Prairie Outpatient
   categories:
@@ -123,6 +136,7 @@
   website: https://www.npmh.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -147,3 +161,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 45.97198
+    lng: -94.86146

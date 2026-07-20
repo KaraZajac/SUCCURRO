@@ -21,48 +21,18 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ut/blanding/blanding-family-practice-community-health-center-2
-  name: Blanding Family Practice Community Health Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 802 S 200 W
-    city: Blanding
-    state: ut
-    zip: '84511'
-  place: '4906370'
-  geo:
-    lat: 37.61294
-    lng: -109.4826
-  phone: 435-678-3601
-  website: https://www.unhsinc.com
-  external_ids:
-    bphc: BPS-H80-009078
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ut/blanding/blanding-hs
   name: Blanding HS
   categories:
   - child-care
-  address:
-    street: 106 E Center St
-    city: Blanding
-    state: ut
-    zip: '84511'
+  address: {street: 106 E Center St, city: Blanding, state: ut, zip: '84511'}
+  description: Head Start early childhood program — 11 funded slots; operated by RURAL UTAH CHILD DEVELOPMENT.
   place: '4906370'
-  geo:
-    lat: 37.62516
-    lng: -109.4761
+  geo: {lat: 37.62516, lng: -109.4761}
   phone: 800-841-2867
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ut/blanding/san-juan-counseling-center
   name: San Juan Counseling Center
   categories:
@@ -86,6 +56,10 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -96,12 +70,21 @@
   name: Ufb Southeastern Distribution Center
   categories:
   - meal-program
-  address: {street: 295 E 200 N, city: Blanding, state: ut, zip: '84511'}
+  address:
+    street: 295 E 200 N
+    city: Blanding
+    state: ut
+    zip: '84511'
   description: Free summer meals for kids and teens (2026 season) — sponsored by UTAH FOOD BANK.
   place: '4906370'
-  geo: {lat: 37.62825, lng: -109.47275}
+  geo:
+    lat: 37.62825
+    lng: -109.47275
   phone: (435) 351-1039
-  external_ids: {usda_master: Cycle 04_UT_SFSP_0098}
+  external_ids:
+    usda_master: Cycle 04_UT_SFSP_0098
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

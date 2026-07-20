@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -27,54 +28,51 @@
   name: Ithaca School Rnc
   categories:
   - meal-program
-  address: {street: 24615 State Hwy 58, city: Richland Center, state: wi, zip: '53581'}
+  address:
+    street: 24615 State Hwy 58
+    city: Richland Center
+    state: wi
+    zip: '53581'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ithaca School District.
   place: '5567625'
-  geo: {lat: 43.34133, lng: -90.28185}
+  geo:
+    lat: 43.34133
+    lng: -90.28185
   phone: (608) 585-2512
-  external_ids: {usda_master: Cycle 01_WI_SFSP_0004}
+  external_ids:
+    usda_master: Cycle 01_WI_SFSP_0004
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/richland-center/richland-center-ehs-expansion-classroom
   name: Richland Center EHS Expansion Classroom
   categories:
   - child-care
-  address:
-    street: 586 N Main St
-    city: Richland Center
-    state: wi
-    zip: '53581'
+  address: {street: 586 N Main St, city: Richland Center, state: wi, zip: '53581'}
+  description: Head Start early childhood program — 8 funded slots; operated by SOUTHWESTERN WISCONSIN
+    COMMUNITY ACTION PROGRAM.
   place: '5567625'
-  geo:
-    lat: 43.33965
-    lng: -90.38688
+  geo: {lat: 43.33965, lng: -90.38688}
   phone: 608-935-3379
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/richland-center/richland-center-head-start
   name: Richland  Center Head Start
   categories:
   - child-care
-  address:
-    street: 586 N Main St
-    street2: Jefferson Elementary School
-    city: Richland Center
-    state: wi
-    zip: '53581'
+  address: {street: 586 N Main St, street2: Jefferson Elementary School, city: Richland Center, state: wi,
+    zip: '53581'}
+  description: Head Start early childhood program — 11 funded slots; operated by Southwestern Wisconsin
+    Community Action Program.
   place: '5567625'
-  geo:
-    lat: 43.33965
-    lng: -90.38688
+  geo: {lat: 43.33965, lng: -90.38688}
   phone: 608-935-5422
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/richland-center/richland-center-housing-authority
   name: Richland Center Housing Authority
   categories:
@@ -126,6 +124,7 @@
   - Persons with Alzheimer's or dementia
   - Persons with eating disorders
   - Persons experiencing first-episode psychosis
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -150,6 +149,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 43.33461
+    lng: -90.38694
 - id: wi/richland-center/richland-county-housing-authority
   name: Richland County Housing Authority
   categories:

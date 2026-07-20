@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.55657
+    lng: -86.4682
 - id: in/paoli/lifespring-health-systems-paoli-office
   name: LifeSpring Health Systems Paoli Office
   categories:
@@ -36,6 +39,7 @@
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -46,44 +50,15 @@
   name: PAOLI HEAD START
   categories:
   - child-care
-  address:
-    street: 414 W Longest St
-    city: Paoli
-    state: in
-    zip: '47454'
+  address: {street: 414 W Longest St, city: Paoli, state: in, zip: '47454'}
+  description: Head Start early childhood program — 12 funded slots; operated by Hoosier Uplands Economic
+    Development Corporation.
   place: '1857780'
-  geo:
-    lat: 38.56716
-    lng: -86.4744
+  geo: {lat: 38.56716, lng: -86.4744}
   phone: 812-723-3687
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: in/paoli/sichc-administration
-  name: SICHC Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 202 Cherry St
-    city: Paoli
-    state: in
-    zip: '47454'
-  place: '1857780'
-  geo:
-    lat: 38.55313
-    lng: -86.47078
-  phone: 812-723-3944
-  website: https://www.sichc.org
-  external_ids:
-    bphc: BPS-H80-031156
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/paoli/sichc-paoli
   name: SICHC Paoli
   categories:

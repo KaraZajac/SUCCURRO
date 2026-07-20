@@ -2,21 +2,15 @@
   name: BCMW Centralia Head Start
   categories:
   - child-care
-  address:
-    street: 1101 S Locust St
-    city: Centralia
-    state: il
-    zip: '62801'
+  address: {street: 1101 S Locust St, city: Centralia, state: il, zip: '62801'}
+  description: Head Start early childhood program — 120 funded slots; operated by B.C.M.W. Community Services,
+    Inc..
   place: '1712164'
-  geo:
-    lat: 38.51553
-    lng: -89.13686
+  geo: {lat: 38.51553, lng: -89.13686}
   phone: 618-545-0180
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/centralia/bcmw-community-services-inc
   name: BCMW Community Services Inc.
   categories:
@@ -35,6 +29,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.53263
+    lng: -89.12354
 - id: il/centralia/bcmw-community-services-inc-main-office
   name: BCMW Community Services Inc. (Main Office)
   categories:
@@ -53,19 +50,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.53263
+    lng: -89.12354
 - id: il/centralia/centralia-high-school
   name: Centralia High School
   categories:
   - meal-program
-  address: {street: 2100 E Calumet St, city: Centralia, state: il, zip: '62801'}
+  address:
+    street: 2100 E Calumet St
+    city: Centralia
+    state: il
+    zip: '62801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Centralia HSD 200.
   place: '1712164'
-  geo: {lat: 38.51795, lng: -89.10419}
+  geo:
+    lat: 38.51795
+    lng: -89.10419
   phone: (618) 532-7391
-  external_ids: {usda_master: Cycle 03_IL_SSO_0117}
+  external_ids:
+    usda_master: Cycle 03_IL_SSO_0117
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/centralia/centralia-little-food-pantries
   name: Centralia Little Food Pantries
   categories:
@@ -123,6 +132,7 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -183,6 +193,7 @@
   website: https://
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -208,6 +219,7 @@
   services:
   - Hospital inpatient/24-hour hospital inpatient
   - Seniors or older adults
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

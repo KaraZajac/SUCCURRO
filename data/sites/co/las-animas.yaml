@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.06638
+    lng: -103.21784
 - id: co/las-animas/fort-lyon-health-center
   name: Fort Lyon Health Center
   categories:
@@ -66,16 +69,25 @@
   name: Las Animas Elementary School
   categories:
   - meal-program
-  address: {street: 530 Poplar Ave, city: Las Animas, state: co, zip: '81054'}
+  address:
+    street: 530 Poplar Ave
+    city: Las Animas
+    state: co
+    zip: '81054'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Bent County School District
     #1.'
   place: 0843660
-  geo: {lat: 38.06715, lng: -103.23185}
+  geo:
+    lat: 38.06715
+    lng: -103.23185
   phone: (719) 456-0211
-  external_ids: {usda_master: Cycle 06_CO_SFSP_0064}
+  external_ids:
+    usda_master: Cycle 06_CO_SFSP_0064
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/las-animas/las-animas-housing-authority
   name: Las Animas Housing Authority
   categories:
@@ -126,6 +138,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -162,6 +175,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

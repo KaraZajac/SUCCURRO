@@ -2,21 +2,15 @@
   name: Albia Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 105 S 7th St
-    city: Albia
-    state: ia
-    zip: '52531'
+  address: {street: 105 S 7th St, city: Albia, state: ia, zip: '52531'}
+  description: Head Start early childhood program — 36 funded slots; operated by South Central Iowa Community
+    Action Program.
   place: '1900910'
-  geo:
-    lat: 41.02614
-    lng: -92.80016
+  geo: {lat: 41.02614, lng: -92.80016}
   phone: 641-932-2632
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/albia/albia-housing-agency
   name: Albia Housing Agency
   categories:
@@ -41,15 +35,24 @@
   name: Lincoln Center
   categories:
   - meal-program
-  address: {street: 222 N 2Nd Street, city: Albia, state: ia, zip: '52531'}
+  address:
+    street: 222 N 2Nd Street
+    city: Albia
+    state: ia
+    zip: '52531'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Albia Comm School District.
   place: '1900910'
-  geo: {lat: 41.02946, lng: -92.80586}
+  geo:
+    lat: 41.02946
+    lng: -92.80586
   phone: (641) 932-2161
-  external_ids: {usda_master: Cycle 01_IA_SFSP_0002}
+  external_ids:
+    usda_master: Cycle 01_IA_SFSP_0002
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/albia/south-central-iowa-community-action-program
   name: South Central Iowa Community Action Program
   categories:
@@ -68,6 +71,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.025
+    lng: -92.80841
 - id: ia/albia/southern-iowa-economic-dev-association-sieda-beh
   name: Southern Iowa Economic Dev Association (SIEDA)/Behav Health and Trt Services
   categories:
@@ -89,6 +95,7 @@
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

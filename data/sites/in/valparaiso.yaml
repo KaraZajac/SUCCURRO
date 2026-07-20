@@ -39,6 +39,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.47704
+    lng: -87.06596
 - id: in/valparaiso/family-wellness-center
   name: Family Wellness Center
   categories:
@@ -53,6 +56,10 @@
   website: https://valparaisotherapy.com
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -80,6 +87,10 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced intimate partner violence, domestic violence
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -154,28 +165,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: in/valparaiso/marram-health-center-administrative-offices
-  name: Marram Health Center Administrative Offices
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 601 Wall St
-    city: Valparaiso
-    state: in
-    zip: '46383'
-  place: '1878326'
-  geo:
-    lat: 41.48928
-    lng: -87.05366
-  phone: 219-531-3500
-  external_ids:
-    bphc: BPS-H80-030044
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: in/valparaiso/marram-health-center-valparaiso
   name: Marram Health Center Valparaiso
   categories:
@@ -220,6 +209,10 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -245,6 +238,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -303,6 +297,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: free
   sources:
   - samhsa/findtreatment
@@ -329,21 +324,14 @@
   name: Porter County Early Learning Academy
   categories:
   - child-care
-  address:
-    street: 370 W US Highway 6
-    city: Valparaiso
-    state: in
-    zip: '46385'
+  address: {street: 370 W US Highway 6, city: Valparaiso, state: in, zip: '46385'}
+  description: Head Start early childhood program — 60 funded slots; operated by Geminus Corporation.
   place: '1878326'
-  geo:
-    lat: 41.55029
-    lng: -87.13842
+  geo: {lat: 41.55029, lng: -87.13842}
   phone: 219-685-1460
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/valparaiso/porter-starke-services-inc
   name: Porter Starke Services Inc
   categories:
@@ -368,6 +356,7 @@
   - Adolescents
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -397,6 +386,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Persons experiencing first-episode psychosis
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -423,6 +416,7 @@
   - Outpatient detoxification
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -433,38 +427,65 @@
   name: Salt Creek Commons
   categories:
   - meal-program
-  address: {street: 500 Mccool Rd., city: Valparaiso, state: in, zip: '46385'}
+  address:
+    street: 500 Mccool Rd.
+    city: Valparaiso
+    state: in
+    zip: '46385'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Portage Township,
     Inc..
   place: '1878326'
-  geo: {lat: 41.50759, lng: -87.1435}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0939}
+  geo:
+    lat: 41.50759
+    lng: -87.1435
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0939
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/valparaiso/thomas-jefferson-elementary-school
   name: Thomas Jefferson Elementary School
   categories:
   - meal-program
-  address: {street: 1700 Roosevelt Road, city: Valparaiso, state: in, zip: '46383'}
+  address:
+    street: 1700 Roosevelt Road
+    city: Valparaiso
+    state: in
+    zip: '46383'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Valparaiso Community
     Schools.
   place: '1878326'
-  geo: {lat: 41.48412, lng: -87.0465}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0809}
+  geo:
+    lat: 41.48412
+    lng: -87.0465
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0809
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/valparaiso/valparaiso-high-school
   name: Valparaiso High School
   categories:
   - meal-program
-  address: {street: 2727 N. Campbell St., city: Valparaiso, state: in, zip: '46385'}
+  address:
+    street: 2727 N. Campbell St.
+    city: Valparaiso
+    state: in
+    zip: '46385'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Valparaiso Community
     Schools.
   place: '1878326'
-  geo: {lat: 41.4933, lng: -87.066}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0807}
+  geo:
+    lat: 41.4933
+    lng: -87.066
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0807
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

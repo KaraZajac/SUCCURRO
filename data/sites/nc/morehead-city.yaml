@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -45,6 +46,7 @@
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -90,12 +92,14 @@
   - Outpatient
   - Residential/24-hour residential
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 34.72162, lng: -76.71852}
 - id: nc/morehead-city/integrated-care-of-greater-hickory-icgh-morehead
   name: Integrated Care of Greater Hickory ICGH Morehead Carteret County Hlth Dpt
   categories:
@@ -123,6 +127,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -150,6 +155,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Veterans
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -186,6 +192,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -236,13 +243,22 @@
   name: Ncmh Morehead Primary School
   categories:
   - meal-program
-  address: {street: 4409 Country Club Road, city: Morehead City, state: nc, zip: '28557'}
+  address:
+    street: 4409 Country Club Road
+    city: Morehead City
+    state: nc
+    zip: '28557'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Carteret County Public
     Schools.
   place: '3744320'
-  geo: {lat: 34.73558, lng: -76.77768}
+  geo:
+    lat: 34.73558
+    lng: -76.77768
   phone: (252) 728-4583
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0235}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0235
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

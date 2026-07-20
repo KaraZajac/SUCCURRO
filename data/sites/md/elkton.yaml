@@ -21,6 +21,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -46,6 +47,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -72,6 +74,7 @@
   - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -96,6 +99,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.60998
+    lng: -75.82857
 - id: md/elkton/cecil-county-housing-agency
   name: Cecil County Housing Agency
   categories:
@@ -120,41 +126,28 @@
   name: Cecil Family Education Center
   categories:
   - child-care
-  address:
-    street: 200 Road B
-    street2: Hollingsworth Manor
-    city: Elkton
-    state: md
-    zip: '21921'
+  address: {street: 200 Road B, street2: Hollingsworth Manor, city: Elkton, state: md, zip: '21921'}
+  description: Head Start early childhood program — 15 funded slots; operated by Maryland Rural Development
+    Corporation.
   place: '2425800'
-  geo:
-    lat: 39.60304
-    lng: -75.84784
+  geo: {lat: 39.60304, lng: -75.84784}
   phone: 410-287-1100
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/elkton/cecil-family-education-center-2
   name: Cecil Family Education Center
   categories:
   - child-care
-  address:
-    street: 200 Road B Hollingsworth Manor
-    city: Elkton
-    state: md
-    zip: '21921'
+  address: {street: 200 Road B Hollingsworth Manor, city: Elkton, state: md, zip: '21921'}
+  description: Head Start early childhood program — 24 funded slots; operated by MARYLAND FAMILY NETWORK,
+    INC..
   place: '2425800'
-  geo:
-    lat: 39.60239
-    lng: -75.84518
+  geo: {lat: 39.60239, lng: -75.84518}
   phone: 410-287-1100
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/elkton/concerted-care-group-elkton-llc
   name: Concerted Care Group Elkton LLC
   categories:
@@ -186,6 +179,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -216,6 +210,7 @@
   - Adult men
   - Seniors or older adults
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -226,15 +221,24 @@
   name: Elkton High
   categories:
   - meal-program
-  address: {street: 110 James Street, city: Elkton, state: md, zip: '21921'}
+  address:
+    street: 110 James Street
+    city: Elkton
+    state: md
+    zip: '21921'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CECIL CO PUB SCH.
   place: '2425800'
-  geo: {lat: 39.62227, lng: -75.8348}
+  geo:
+    lat: 39.62227
+    lng: -75.8348
   phone: (410) 642-3904
-  external_ids: {usda_master: Cycle 06_MD_SFSP_0053}
+  external_ids:
+    usda_master: Cycle 06_MD_SFSP_0053
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/elkton/elkton-housing-authority
   name: Elkton Housing Authority
   categories:
@@ -301,15 +305,24 @@
   name: Gilpin Manor Elementary
   categories:
   - meal-program
-  address: {street: 203 Newark Road, city: Elkton, state: md, zip: '21921'}
+  address:
+    street: 203 Newark Road
+    city: Elkton
+    state: md
+    zip: '21921'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CECIL CO PUB SCH.
   place: '2425800'
-  geo: {lat: 39.6197, lng: -75.83495}
+  geo:
+    lat: 39.6197
+    lng: -75.83495
   phone: (410) 996-5040
-  external_ids: {usda_master: Cycle 06_MD_SFSP_0067}
+  external_ids:
+    usda_master: Cycle 06_MD_SFSP_0067
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/elkton/harwood-behavioral-health-ii
   name: Harwood Behavioral Health II
   categories:
@@ -336,6 +349,7 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -361,6 +375,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Adult men
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -371,47 +386,59 @@
   name: MRDC Head Start - FEC
   categories:
   - child-care
-  address:
-    street: 200 Road B
-    city: Elkton
-    state: md
-    zip: '21921'
+  address: {street: 200 Road B, city: Elkton, state: md, zip: '21921'}
+  description: Head Start early childhood program — 34 funded slots; operated by MARYLAND RURAL DEVELOPMENT
+    CORPORATION.
   place: '2425800'
-  geo:
-    lat: 39.60304
-    lng: -75.84786
+  geo: {lat: 39.60304, lng: -75.84786}
   phone: 410-398-6638
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/elkton/providence-high-roads
   name: Providence (High Roads)
   categories:
   - meal-program
-  address: {street: 3035 Singerly Road, city: Elkton, state: md, zip: '21921'}
+  address:
+    street: 3035 Singerly Road
+    city: Elkton
+    state: md
+    zip: '21921'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CECIL CO PUB SCH.
   place: '2425800'
-  geo: {lat: 39.69131, lng: -75.86643}
+  geo:
+    lat: 39.69131
+    lng: -75.86643
   phone: (410) 398-6900
-  external_ids: {usda_master: Cycle 11_MD_SFSP_0187}
+  external_ids:
+    usda_master: Cycle 11_MD_SFSP_0187
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/elkton/rudy-park
   name: Rudy Park
   categories:
   - meal-program
-  address: {street: 900 Rudy Park Drive, city: Elkton, state: md, zip: '21921'}
+  address:
+    street: 900 Rudy Park Drive
+    city: Elkton
+    state: md
+    zip: '21921'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CECIL CO PUB SCH.
   place: '2425800'
-  geo: {lat: 39.61942, lng: -75.84054}
+  geo:
+    lat: 39.61942
+    lng: -75.84054
   phone: (410) 449-2560
-  external_ids: {usda_master: Cycle 07_MD_SFSP_0159}
+  external_ids:
+    usda_master: Cycle 07_MD_SFSP_0159
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/elkton/serenity-health-llc-elkton
   name: Serenity Health LLC Elkton
   categories:
@@ -442,6 +469,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -469,6 +497,11 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Clients with co-occurring pain and substance use disorders
+  languages:
+  - en
+  - fa
+  - tl
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -506,6 +539,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

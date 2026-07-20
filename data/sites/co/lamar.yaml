@@ -28,6 +28,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -103,28 +107,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: co/lamar/high-plains-financial-services-site
-  name: High Plains Financial Services Site
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 108 S 5th St
-    city: Lamar
-    state: co
-    zip: '81052'
-  place: 0843110
-  geo:
-    lat: 38.08834
-    lng: -102.62059
-  phone: 719-336-0261
-  external_ids:
-    bphc: BPS-H80-014439
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: co/lamar/housing-authority-of-the-city-of-lamar
   name: Housing Authority Of The City Of Lamar
   categories:
@@ -149,21 +131,14 @@
   name: Lamar Center
   categories:
   - child-care
-  address:
-    street: 607 Savage Ave
-    city: Lamar
-    state: co
-    zip: '81052'
+  address: {street: 607 Savage Ave, city: Lamar, state: co, zip: '81052'}
+  description: Head Start early childhood program — 56 funded slots; operated by Otero College.
   place: 0843110
-  geo:
-    lat: 38.07054
-    lng: -102.62533
+  geo: {lat: 38.07054, lng: -102.62533}
   phone: 719-336-1203
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: co/lamar/lamar-va-clinic
   name: Lamar VA Clinic
   categories:
@@ -206,15 +181,24 @@
   name: Lincoln/Hope Center
   categories:
   - meal-program
-  address: {street: 200 N 10Th St, city: Lamar, state: co, zip: '81052'}
+  address:
+    street: 200 N 10Th St
+    city: Lamar
+    state: co
+    zip: '81052'
   description: Free summer meals for kids and teens (2026 season) — sponsored by LAMAR RE-2.
   place: 0843110
-  geo: {lat: 38.09148, lng: -102.6274}
+  geo:
+    lat: 38.09148
+    lng: -102.6274
   phone: (719) 696-4248
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0144}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0144
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/lamar/prowers-county-department-of-human-services-lama
   name: Prowers County Department of Human Services - Lamar
   categories:
@@ -233,6 +217,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.07981
+    lng: -102.61843
 - id: co/lamar/valley-wide-counseling-support-center-lamar
   name: Valley-Wide Counseling & Support Center - Lamar
   categories:
@@ -275,6 +262,7 @@
   - Outpatient
   - Residential/24-hour residential
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -307,25 +295,43 @@
   name: Washington Elementary School
   categories:
   - meal-program
-  address: {street: 510 S 9Th St, city: Lamar, state: co, zip: '81052'}
+  address:
+    street: 510 S 9Th St
+    city: Lamar
+    state: co
+    zip: '81052'
   description: Free summer meals for kids and teens (2026 season) — sponsored by LAMAR RE-2.
   place: 0843110
-  geo: {lat: 38.08488, lng: -102.62564}
+  geo:
+    lat: 38.08488
+    lng: -102.62564
   phone: (719) 696-4248
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0142}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0142
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/lamar/willow-creek-park
   name: Willow Creek Park
   categories:
   - meal-program
-  address: {street: 1107 Parkview Ave, city: Lamar, state: co, zip: '81052'}
+  address:
+    street: 1107 Parkview Ave
+    city: Lamar
+    state: co
+    zip: '81052'
   description: Free summer meals for kids and teens (2026 season) — sponsored by LAMAR RE-2.
   place: 0843110
-  geo: {lat: 38.07837, lng: -102.61429}
+  geo:
+    lat: 38.07837
+    lng: -102.61429
   phone: (719) 336-3251
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0143}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0143
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

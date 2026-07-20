@@ -143,6 +143,8 @@
     city: Glendale
     state: ca
     zip: '91208'
+  description: Head Start early childhood program — 10 funded slots; operated by Pacific Clinics Head
+    Start.
   place: '0630000'
   geo:
     lat: 34.18359
@@ -150,50 +152,6 @@
   phone: 818-653-5381
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/glendale/cchc-administrative-offices
-  name: CCHC Administrative Offices
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 801 S Chevy Chase Dr, Suite 20
-    city: Glendale
-    state: ca
-    zip: '91205'
-  place: '0630000'
-  geo:
-    lat: 34.13666
-    lng: -118.24045
-  phone: 818-630-2202
-  external_ids:
-    bphc: BPS-H80-021554
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/glendale/cchc-administrative-offices-suite-25
-  name: CCHC Administrative Offices - Suite 25
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 801 S Chevy Chase Dr STE 25
-    city: Glendale
-    state: ca
-    zip: '91205'
-  place: '0630000'
-  geo:
-    lat: 34.13675
-    lng: -118.23962
-  phone: 818-630-2201
-  external_ids:
-    bphc: BPS-H80-021864
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -264,12 +222,17 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 34.14665, lng: -118.25674}
 - id: ca/glendale/didi-hirsch-mental-health-services
   name: Didi Hirsch Mental Health Services
   categories:
@@ -291,6 +254,10 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -329,6 +296,8 @@
     city: Glendale
     state: ca
     zip: '91208'
+  description: Head Start early childhood program — 24 funded slots; operated by Pacific Clinics Head
+    Start.
   place: '0630000'
   geo:
     lat: 34.16548
@@ -370,6 +339,8 @@
     city: Glendale
     state: ca
     zip: '91206'
+  description: Head Start early childhood program — 74 funded slots; operated by Pacific Clinics Head
+    Start.
   place: '0630000'
   geo:
     lat: 34.15579
@@ -389,6 +360,7 @@
     city: Glendale
     state: ca
     zip: '91208'
+  description: Head Start early childhood program — 7 funded slots; operated by Pacific Clinics Head Start.
   place: '0630000'
   geo:
     lat: 34.16822
@@ -425,6 +397,7 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -460,6 +433,8 @@
     city: Glendale
     state: ca
     zip: '91206'
+  description: Head Start early childhood program — 33 funded slots; operated by Pacific Clinics Head
+    Start.
   place: '0630000'
   geo:
     lat: 34.15204
@@ -474,30 +449,48 @@
   name: Maple Park
   categories:
   - meal-program
-  address: {street: 820 E. Maple St., city: Glendale, state: ca, zip: '91205'}
+  address:
+    street: 820 E. Maple St.
+    city: Glendale
+    state: ca
+    zip: '91205'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GLENDALE UNIFIED SCHOOL
     DISTRICT.
   place: '0630000'
-  geo: {lat: 34.13897, lng: -118.24491}
+  geo:
+    lat: 34.13897
+    lng: -118.24491
   phone: (818) 552-2677
-  external_ids: {usda_master: Cycle 09_CA_SSO_1116}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1116
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/glendale/pacific-park
   name: Pacific Park
   categories:
   - meal-program
-  address: {street: 501 S. Pacific Avenue, city: Glendale, state: ca, zip: '91204'}
+  address:
+    street: 501 S. Pacific Avenue
+    city: Glendale
+    state: ca
+    zip: '91204'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GLENDALE UNIFIED SCHOOL
     DISTRICT.
   place: '0630000'
-  geo: {lat: 34.13967, lng: -118.26448}
+  geo:
+    lat: 34.13967
+    lng: -118.26448
   phone: (818) 522-2677
-  external_ids: {usda_master: Cycle 09_CA_SSO_0767}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_0767
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/glendale/st-marks-glendale
   name: St Marks Glendale
   categories:
@@ -514,50 +507,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: ca/glendale/suite-250-admin-office
-  name: Suite 250 Admin Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 801 S Chevy Chase Dr, Suite 250
-    city: Glendale
-    state: ca
-    zip: '91205'
-  place: '0630000'
-  geo:
-    lat: 34.13683
-    lng: -118.24036
-  phone: 818-265-2264
-  external_ids:
-    bphc: BPS-H80-034770
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/glendale/tri-state-community-healthcare-center
-  name: Tri-State Community Healthcare Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1535 East Colorado Street
-    city: Glendale
-    state: ca
-    zip: '91205'
-  place: '0630000'
-  geo:
-    lat: 34.1428
-    lng: -118.23008
-  phone: 844-444-1424
-  external_ids:
-    bphc: BPS-H80-035103
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ca/glendale/verdugo-center
   name: Verdugo Center
   categories:
@@ -567,6 +516,8 @@
     city: Glendale
     state: ca
     zip: '91205'
+  description: Head Start early childhood program — 16 funded slots; operated by Pacific Clinics Head
+    Start.
   place: '0630000'
   geo:
     lat: 34.13476
@@ -602,6 +553,15 @@
   - Adult men
   - Seniors or older adults
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  - ar
+  - fa
+  - de
+  - ru
+  - tl
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -634,6 +594,14 @@
   - Adult men
   - Seniors or older adults
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  - ar
+  - fa
+  - ru
+  - tl
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

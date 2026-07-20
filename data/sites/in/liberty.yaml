@@ -20,28 +20,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: in/liberty/neighborhood-health-center-pharmacy
-  name: Neighborhood Health Center Pharmacy
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 10 S Main St
-    city: Liberty
-    state: in
-    zip: '47353'
-  place: '1843434'
-  geo:
-    lat: 39.63499
-    lng: -84.93184
-  phone: 765-596-6009
-  external_ids:
-    bphc: BPS-LAL-041906
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: in/liberty/neighborhood-health-center-union-county-medical
   name: Neighborhood Health Center - Union County Medical Center
   categories:
@@ -69,21 +47,15 @@
   name: Phyllis Howard Community Care Center
   categories:
   - child-care
-  address:
-    street: 302 Harrison St
-    city: Liberty
-    state: in
-    zip: '47353'
+  address: {street: 302 Harrison St, city: Liberty, state: in, zip: '47353'}
+  description: Head Start early childhood program — 34 funded slots; operated by Community Care in Union
+    County, Inc..
   place: '1843434'
-  geo:
-    lat: 39.63186
-    lng: -84.93319
+  geo: {lat: 39.63186, lng: -84.93319}
   phone: 765-458-7491
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/liberty/southeastern-indiana-economic-opportunity-corp
   name: Southeastern Indiana Economic Opportunity Corp.
   categories:
@@ -102,16 +74,28 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.63183
+    lng: -84.93324
 - id: in/liberty/union-county-high-school
   name: Union County High School
   categories:
   - meal-program
-  address: {street: 410 Patriot Blvd., city: Liberty, state: in, zip: '47353'}
+  address:
+    street: 410 Patriot Blvd.
+    city: Liberty
+    state: in
+    zip: '47353'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Union County/College
     Corner Joint School District.
   place: '1843434'
-  geo: {lat: 39.63545, lng: -84.92133}
-  external_ids: {usda_master: Cycle 03_IN_SSO_0283}
+  geo:
+    lat: 39.63545
+    lng: -84.92133
+  external_ids:
+    usda_master: Cycle 03_IN_SSO_0283
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

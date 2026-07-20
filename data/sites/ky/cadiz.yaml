@@ -2,21 +2,15 @@
   name: Cadiz Child Development Center
   categories:
   - child-care
-  address:
-    street: 117 Lincoln Ave
-    city: Cadiz
-    state: ky
-    zip: '42211'
+  address: {street: 117 Lincoln Ave, city: Cadiz, state: ky, zip: '42211'}
+  description: Head Start early childhood program — 17 funded slots; operated by AUDUBON AREA COMMUNITY
+    SERVICES, INC.
   place: '2111692'
-  geo:
-    lat: 36.87137
-    lng: -87.82359
+  geo: {lat: 36.87137, lng: -87.82359}
   phone: 270-522-4035
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/cadiz/housing-authority-of-cadiz
   name: Housing Authority Of Cadiz
   categories:
@@ -55,38 +49,44 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 36.85943
+    lng: -87.8386
 - id: ky/cadiz/trigg-co-library
   name: Trigg Co Library
   categories:
   - meal-program
-  address: {street: 244 Main St, city: Cadiz, state: ky, zip: '42211'}
+  address:
+    street: 244 Main St
+    city: Cadiz
+    state: ky
+    zip: '42211'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Feeding America Kentucky's
     Heartland, Inc..
   place: '2111692'
-  geo: {lat: 36.86696, lng: -87.82315}
-  external_ids: {usda_master: Cycle 04_KY_SFSP_0067}
+  geo:
+    lat: 36.86696
+    lng: -87.82315
+  external_ids:
+    usda_master: Cycle 04_KY_SFSP_0067
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/cadiz/trigg-county-home-based
   name: Trigg County Home Based
   categories:
   - child-care
-  address:
-    street: 1724 Canton Rd
-    city: Cadiz
-    state: ky
-    zip: '42211'
+  address: {street: 1724 Canton Rd, city: Cadiz, state: ky, zip: '42211'}
+  description: Head Start early childhood program — 12 funded slots; operated by AUDUBON AREA COMMUNITY
+    SERVICES, INC.
   place: '2111692'
-  geo:
-    lat: 36.84373
-    lng: -87.85692
+  geo: {lat: 36.84373, lng: -87.85692}
   phone: 270-873-8311
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/cadiz/trigg-county-hospital-behavioral-health
   name: Trigg County Hospital Behavioral Health
   categories:
@@ -105,6 +105,7 @@
   website: https://www.trigghospital.org
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

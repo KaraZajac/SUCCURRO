@@ -20,6 +20,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -44,6 +45,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.43954
+    lng: -82.71424
 - id: oh/sandusky/community-action-commition-of-erie-huron-richlan
   name: Community Action Commition of Erie, Huron, & Richland
   categories:
@@ -62,6 +66,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.43954
+    lng: -82.71424
 - id: oh/sandusky/ecchc-ovh
   name: ECCHC @ OVH
   categories:
@@ -195,29 +202,6 @@
     'on': '2026-07-19'
     method: api
 - id: oh/sandusky/family-health-services-medical-center
-  name: Family Health Services - Medical Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 149 E Water St
-    city: Sandusky
-    state: oh
-    zip: '44870'
-  place: '3970380'
-  geo:
-    lat: 41.4578
-    lng: -82.71132
-  phone: 419-502-2800
-  website: https://www.familyhs.org
-  external_ids:
-    bphc: BPS-H80-038499
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: oh/sandusky/family-health-services-medical-center-2
   name: Family Health Services Medical Center
   categories:
   - community-health-center
@@ -437,6 +421,7 @@
   services:
   - Outpatient
   - Partial hospitalization/day treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -460,6 +445,7 @@
   website: https://www.firelands.com
   services:
   - Hospital inpatient/24-hour hospital inpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -470,15 +456,24 @@
   name: Ne - (Grab And Go) Sandusky Library
   categories:
   - meal-program
-  address: {street: 114 West Adams Street, city: Sandusky, state: oh, zip: '44870'}
+  address:
+    street: 114 West Adams Street
+    city: Sandusky
+    state: oh
+    zip: '44870'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Children's Hunger Alliance.
   place: '3970380'
-  geo: {lat: 41.45352, lng: -82.71066}
+  geo:
+    lat: 41.45352
+    lng: -82.71066
   phone: (419) 625-3834
-  external_ids: {usda_master: Cycle 02_OH_SFSP_0099}
+  external_ids:
+    usda_master: Cycle 02_OH_SFSP_0099
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/sandusky/ohioguidestone
   name: OhioGuidestone
   categories:
@@ -501,6 +496,10 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -516,6 +515,8 @@
     city: Sandusky
     state: oh
     zip: '44870'
+  description: Head Start early childhood program — 36 funded slots; operated by Community Action Commission
+    of Erie, Huron and Richland.
   place: '3970380'
   geo:
     lat: 41.43858
@@ -547,6 +548,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -570,6 +572,7 @@
   - Partial hospitalization/day treatment
   - Residential/24-hour residential
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -585,6 +588,8 @@
     city: Sandusky
     state: oh
     zip: '44870'
+  description: Head Start early childhood program — 63 funded slots; operated by Community Action Commission
+    of Erie, Huron and Richland.
   place: '3970380'
   geo:
     lat: 41.43959

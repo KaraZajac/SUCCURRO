@@ -58,6 +58,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 31.11652
+    lng: -92.06743
 - id: la/marksville/caring-choices-of-marksville-central-la-human-se
   name: Caring Choices of Marksville Central LA Human Service District
   categories:
@@ -84,6 +87,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -94,21 +98,15 @@
   name: Cinderella Head Start
   categories:
   - child-care
-  address:
-    street: 492 Scallan St
-    city: Marksville
-    state: la
-    zip: '71351'
+  address: {street: 492 Scallan St, city: Marksville, state: la, zip: '71351'}
+  description: Head Start early childhood program — 34 funded slots; operated by Avoyelles Child Development
+    Services, Inc..
   place: '2248750'
-  geo:
-    lat: 31.12888
-    lng: -92.05632
+  geo: {lat: 31.12888, lng: -92.05632}
   phone: 318-240-6595
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/marksville/housing-authority-of-the-town-of-marksville
   name: Housing Authority Of The Town Of Marksville
   categories:
@@ -133,16 +131,25 @@
   name: Marksville Elementary- Nc
   categories:
   - meal-program
-  address: {street: 430 West Waddil St., city: Marksville, state: la, zip: '71351'}
+  address:
+    street: 430 West Waddil St.
+    city: Marksville
+    state: la
+    zip: '71351'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Avoyelles Parish School
     Board.
   place: '2248750'
-  geo: {lat: 31.127, lng: -92.07332}
+  geo:
+    lat: 31.127
+    lng: -92.07332
   phone: (318) 253-6805
-  external_ids: {usda_master: Cycle 02_LA_SFSP_0011}
+  external_ids:
+    usda_master: Cycle 02_LA_SFSP_0011
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/marksville/washington-street-hope-center-inc
   name: Washington Street Hope Center Inc
   categories:
@@ -168,6 +175,7 @@
   - Young adults
   - Adult women
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

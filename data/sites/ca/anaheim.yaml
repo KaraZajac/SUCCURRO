@@ -158,29 +158,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ca/anaheim/altamed-patient-service-center
-  name: AltaMed Patient Service Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 401 N East St
-    city: Anaheim
-    state: ca
-    zip: '92805'
-  place: '0602000'
-  geo:
-    lat: 33.84173
-    lng: -117.90389
-  phone: 888-499-9303
-  website: https://www.altamed.org
-  external_ids:
-    bphc: BPS-H80-027358
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ca/anaheim/altamed-pharmacy-anaheim
   name: AltaMed Pharmacy - Anaheim
   categories:
@@ -231,16 +208,25 @@
   name: Anaheim Central Library
   categories:
   - meal-program
-  address: {street: 500 W. Broadway, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 500 W. Broadway
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CENTRALIA ELEMENTARY
     SCHOOL DISTRICT.
   place: '0602000'
-  geo: {lat: 33.83182, lng: -117.91933}
+  geo:
+    lat: 33.83182
+    lng: -117.91933
   phone: (714) 228-3134
-  external_ids: {usda_master: Cycle 03_CA_SSO_0511}
+  external_ids:
+    usda_master: Cycle 03_CA_SSO_0511
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/anaheim-comprehensive-treatment-center
   name: Anaheim Comprehensive Treatment Center
   categories:
@@ -271,6 +257,13 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  languages:
+  - en
+  - es
+  - ar
+  - fa
+  - tl
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -281,29 +274,47 @@
   name: Anaheim Family Ymca- Admin Office
   categories:
   - meal-program
-  address: {street: 240 S. Euclid Street, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 240 S. Euclid Street
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82995, lng: -117.94147}
+  geo:
+    lat: 33.82995
+    lng: -117.94147
   phone: (714) 334-6552
-  external_ids: {usda_master: Cycle 05_CA_SFSP_1006}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_1006
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/anaheim-independencia
   name: Anaheim Independencia
   categories:
   - meal-program
-  address: {street: 10841 Garza Avenue, city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 10841 Garza Avenue
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.80509, lng: -117.97009}
+  geo:
+    lat: 33.80509
+    lng: -117.97009
   phone: (714) 315-4423
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0400}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0400
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/anaheim-lighthouse
   name: Anaheim Lighthouse
   categories:
@@ -334,6 +345,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -370,6 +382,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -380,47 +393,59 @@
   name: Baden Powell Center
   categories:
   - child-care
-  address:
-    street: 801 S Gaymont St
-    city: Anaheim
-    state: ca
-    zip: '92804'
+  address: {street: 801 S Gaymont St, city: Anaheim, state: ca, zip: '92804'}
+  description: Head Start early childhood program — 36 funded slots; operated by Orange County Head Start,
+    Inc..
   place: '0602000'
-  geo:
-    lat: 33.8233
-    lng: -117.99079
+  geo: {lat: 33.8233, lng: -117.99079}
   phone: 714-236-4224
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/anaheim/ball-junior-high
   name: Ball Junior High
   categories:
   - meal-program
-  address: {street: 1500 W. Ball Rd., city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 1500 W. Ball Rd.
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.81792, lng: -117.93378}
+  geo:
+    lat: 33.81792
+    lng: -117.93378
   phone: (714) 702-6029
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0491}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0491
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/barton-elementary
   name: Barton Elementary
   categories:
   - meal-program
-  address: {street: 1926 W. Clearbrook Ln, city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 1926 W. Clearbrook Ln
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82362, lng: -117.95154}
+  geo:
+    lat: 33.82362
+    lng: -117.95154
   phone: (714) 863-2174
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0411}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0411
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/benevolence-industries-inc-anaheim
   name: Benevolence Industries, Inc. - Anaheim
   categories:
@@ -448,28 +473,46 @@
   name: Boys And Girls Club Anaheim - Manzanita Park
   categories:
   - meal-program
-  address: {street: 1260 N Riviera, city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 1260 N Riviera
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by OUR LITTLE HELPERS INC.
   place: '0602000'
-  geo: {lat: 33.85304, lng: -117.92702}
+  geo:
+    lat: 33.85304
+    lng: -117.92702
   phone: (714) 269-3402
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0669}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0669
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/brookhurst-junior-high
   name: Brookhurst Junior High
   categories:
   - meal-program
-  address: {street: 601 N. Brookhurst St., city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 601 N. Brookhurst St.
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84029, lng: -117.95916}
+  geo:
+    lat: 33.84029
+    lng: -117.95916
   phone: (714) 944-0175
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0519}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0519
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/central-city-community-health-center-inc-anaheim
   name: Central City Community Health Center, Inc. - Anaheim
   categories:
@@ -678,56 +721,92 @@
   name: Dale Junior High
   categories:
   - meal-program
-  address: {street: 900 S. Dale St., city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 900 S. Dale St.
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.81948, lng: -117.98458}
+  geo:
+    lat: 33.81948
+    lng: -117.98458
   phone: (714) 293-6988
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0520}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0520
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/danbrook-elementary
   name: Danbrook Elementary
   categories:
   - meal-program
-  address: {street: 320 Danbrook St., city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 320 Danbrook St.
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CENTRALIA ELEMENTARY
     SCHOOL DISTRICT.
   place: '0602000'
-  geo: {lat: 33.82754, lng: -118.00822}
+  geo:
+    lat: 33.82754
+    lng: -118.00822
   phone: (714) 228-3134
-  external_ids: {usda_master: Cycle 03_CA_SSO_0298}
+  external_ids:
+    usda_master: Cycle 03_CA_SSO_0298
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/edison-thomas-elementary
   name: Edison (Thomas) Elementary
   categories:
   - meal-program
-  address: {street: 1526 E. Romneya Dr., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1526 E. Romneya Dr.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.85086, lng: -117.89693}
+  geo:
+    lat: 33.85086
+    lng: -117.89693
   phone: (714) 863-2176
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0412}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0412
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/euclid-branch-library
   name: Euclid Branch Library
   categories:
   - meal-program
-  address: {street: 1340 S Euclid Street, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 1340 S Euclid Street
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.81447, lng: -117.9414}
+  geo:
+    lat: 33.81447
+    lng: -117.9414
   phone: (714) 765-5069
-  external_ids: {usda_master: Cycle 09_CA_SFSP_1897}
+  external_ids:
+    usda_master: Cycle 09_CA_SFSP_1897
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/families-together-of-orange-county-garden-grove
   name: Families Together of Orange County - Garden Grove
   categories:
@@ -745,28 +824,6 @@
   phone: 714-665-9891
   external_ids:
     bphc: BPS-LAL-027825
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ca/anaheim/family-health-matters-admin-offices
-  name: Family Health Matters Admin Offices
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 888 S Disneyland Dr
-    city: Anaheim
-    state: ca
-    zip: '92802'
-  place: '0602000'
-  geo:
-    lat: 33.82034
-    lng: -117.92286
-  phone: 714-441-0411
-  external_ids:
-    bphc: BPS-H80-039734
   sources:
   - hrsa/health-center-sites
   verified:
@@ -931,106 +988,139 @@
   name: Finamore Center
   categories:
   - child-care
-  address:
-    street: 2125 S Manchester Ave
-    city: Anaheim
-    state: ca
-    zip: '92802'
+  address: {street: 2125 S Manchester Ave, city: Anaheim, state: ca, zip: '92802'}
+  description: Head Start early childhood program — 36 funded slots; operated by Orange County Head Start,
+    Inc..
   place: '0602000'
-  geo:
-    lat: 33.79648
-    lng: -117.89703
+  geo: {lat: 33.79648, lng: -117.89703}
   phone: 714-241-8920
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/anaheim/franklin
   name: Franklin
   categories:
   - meal-program
-  address: {street: 521 W. Water St., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 521 W. Water St.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82742, lng: -117.91833}
+  geo:
+    lat: 33.82742
+    lng: -117.91833
   phone: (714) 863-2178
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0456}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0456
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/franklin-center
   name: Franklin Center
   categories:
   - child-care
-  address:
-    street: 506 S Janss St
-    city: Anaheim
-    state: ca
-    zip: '92805'
+  address: {street: 506 S Janss St, city: Anaheim, state: ca, zip: '92805'}
+  description: Head Start early childhood program — 36 funded slots; operated by Orange County Head Start,
+    Inc..
   place: '0602000'
-  geo:
-    lat: 33.82922
-    lng: -117.91968
+  geo: {lat: 33.82922, lng: -117.91968}
   phone: 714-399-2100
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/anaheim/gauer
   name: Gauer
   categories:
   - meal-program
-  address: {street: 801 N. Gilbert St., city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 801 N. Gilbert St.
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84305, lng: -117.96786}
+  geo:
+    lat: 33.84305
+    lng: -117.96786
   phone: (714) 863-2181
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0457}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0457
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/guinn
   name: Guinn
   categories:
   - meal-program
-  address: {street: 1051 S. Sunkist St., city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 1051 S. Sunkist St.
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82321, lng: -117.88057}
+  geo:
+    lat: 33.82321
+    lng: -117.88057
   phone: (714) 863-2182
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0458}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0458
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/haskett-library
   name: Haskett Library
   categories:
   - meal-program
-  address: {street: 2650 W. Broadway, city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 2650 W. Broadway
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82853, lng: -117.97854}
+  geo:
+    lat: 33.82853
+    lng: -117.97854
   phone: (714) 765-5063
-  external_ids: {usda_master: Cycle 05_CA_SFSP_1009}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_1009
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/haskett-library-branch
   name: Haskett Library Branch
   categories:
   - meal-program
-  address: {street: 2650 W Broadway, city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 2650 W Broadway
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MAGNOLIA ELEMENTARY SCHOOL
     DISTRICT.
   place: '0602000'
-  geo: {lat: 33.82853, lng: -117.97854}
+  geo:
+    lat: 33.82853
+    lng: -117.97854
   phone: (714) 761-2151
-  external_ids: {usda_master: Cycle 09_CA_SSO_1414}
+  external_ids:
+    usda_master: Cycle 09_CA_SSO_1414
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/hatch-behavioral-health
   name: Hatch Behavioral Health
   categories:
@@ -1057,6 +1147,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1067,15 +1158,24 @@
   name: Higher Ground
   categories:
   - meal-program
-  address: {street: 1535 E. Broadway St., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1535 E. Broadway St.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.83721, lng: -117.89633}
+  geo:
+    lat: 33.83721
+    lng: -117.89633
   phone: (714) 863-3756
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0847}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0847
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/hope-house-corporation
   name: Hope House Corporation
   categories:
@@ -1093,6 +1193,7 @@
   - Long-term residential
   - Short-term residential
   - Adult men
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1126,28 +1227,46 @@
   name: John Marshall
   categories:
   - meal-program
-  address: {street: 2066 W. Falmouth Ave, city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 2066 W. Falmouth Ave
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84915, lng: -117.95456}
+  geo:
+    lat: 33.84915
+    lng: -117.95456
   phone: (714) 863-2190
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0466}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0466
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/juarez
   name: Juarez
   categories:
   - meal-program
-  address: {street: 841 S. Sunkist Ave., city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 841 S. Sunkist Ave.
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82936, lng: -117.88056}
+  geo:
+    lat: 33.82936
+    lng: -117.88056
   phone: (714) 863-2185
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0460}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0460
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/kcs-health-center-anaheim
   name: KCS Health Center - Anaheim
   categories:
@@ -1201,6 +1320,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1237,6 +1357,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1273,6 +1394,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1309,6 +1431,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1345,6 +1468,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1381,6 +1505,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1391,54 +1516,90 @@
   name: Lincoln
   categories:
   - meal-program
-  address: {street: 1413 E. Broadway, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1413 E. Broadway
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.83683, lng: -117.89798}
+  geo:
+    lat: 33.83683
+    lng: -117.89798
   phone: (714) 863-2186
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0462}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0462
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/loara
   name: Loara
   categories:
   - meal-program
-  address: {street: 1601 W. Broadway, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 1601 W. Broadway
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82893, lng: -117.93844}
+  geo:
+    lat: 33.82893
+    lng: -117.93844
   phone: (714) 863-2187
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0463}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0463
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/madison
   name: Madison
   categories:
   - meal-program
-  address: {street: 1510 S. Nutwood St., city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 1510 S. Nutwood St.
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.8099, lng: -117.95012}
+  geo:
+    lat: 33.8099
+    lng: -117.95012
   phone: (714) 863-2188
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0464}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0464
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/mann
   name: Mann
   categories:
   - meal-program
-  address: {street: 600 W. La Palma Ave, city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 600 W. La Palma Ave
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84715, lng: -117.92542}
+  geo:
+    lat: 33.84715
+    lng: -117.92542
   phone: (714) 863-2189
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0465}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0465
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/newport-academy-teen-and-adolescent-residential
   name: Newport Academy Teen and Adolescent Residential
   categories:
@@ -1463,6 +1624,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1493,6 +1655,10 @@
   - Pregnant/postpartum women
   - Adult men
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1503,218 +1669,362 @@
   name: Orangegrove
   categories:
   - meal-program
-  address: {street: 1000 S. Harbor Boulevard, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1000 S. Harbor Boulevard
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.8203, lng: -117.91497}
+  geo:
+    lat: 33.8203
+    lng: -117.91497
   phone: (714) 863-2193
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0467}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0467
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/orangeview-junior-high
   name: Orangeview Junior High
   categories:
   - meal-program
-  address: {street: 501 S. Western Ave., city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 501 S. Western Ave.
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82606, lng: -118.00219}
+  geo:
+    lat: 33.82606
+    lng: -118.00219
   phone: (714) 296-2058
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0521}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0521
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/ponderosa
   name: Ponderosa
   categories:
   - meal-program
-  address: {street: 2135 S. Mountain View Avenue, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 2135 S. Mountain View Avenue
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.79499, lng: -117.90372}
+  geo:
+    lat: 33.79499
+    lng: -117.90372
   phone: (714) 863-2197
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0461}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0461
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/ponderosa-joint-use-library
   name: Ponderosa Joint-Use Library
   categories:
   - meal-program
-  address: {street: 240 E Orangewood Ave, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 240 E Orangewood Ave
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.79609, lng: -117.90414}
+  geo:
+    lat: 33.79609
+    lng: -117.90414
   phone: (714) 765-5063
-  external_ids: {usda_master: Cycle 09_CA_SFSP_1766}
+  external_ids:
+    usda_master: Cycle 09_CA_SFSP_1766
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/price
   name: Price
   categories:
   - meal-program
-  address: {street: 1516 W. North Street, city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 1516 W. North Street
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84085, lng: -117.93636}
+  geo:
+    lat: 33.84085
+    lng: -117.93636
   phone: (714) 863-2198
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0468}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0468
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-cherry-orchard
   name: Project Access Cherry Orchard
   categories:
   - meal-program
-  address: {street: 2748 W. Lincoln Ave., city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 2748 W. Lincoln Ave.
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.83207, lng: -117.98226}
+  geo:
+    lat: 33.83207
+    lng: -117.98226
   phone: (949) 594-1879
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0864}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0864
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-hermosa-village
   name: Project Access - Hermosa Village
   categories:
   - meal-program
-  address: {street: 1515 S Calle Del Mar, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 1515 S Calle Del Mar
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.80948, lng: -117.93079}
+  geo:
+    lat: 33.80948
+    lng: -117.93079
   phone: (949) 594-1142
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0383}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0383
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-madison-park
   name: Project Access - Madison Park
   categories:
   - meal-program
-  address: {street: 2235 W Broadway, city: Anaheim, state: ca, zip: '92804'}
+  address:
+    street: 2235 W Broadway
+    city: Anaheim
+    state: ca
+    zip: '92804'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.82888, lng: -117.96121}
+  geo:
+    lat: 33.82888
+    lng: -117.96121
   phone: (949) 942-6085
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0881}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0881
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-park-vista
   name: Project Access - Park Vista
   categories:
   - meal-program
-  address: {street: 1305 N. Wren Street, city: Anaheim, state: ca, zip: '92801'}
+  address:
+    street: 1305 N. Wren Street
+    city: Anaheim
+    state: ca
+    zip: '92801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.85303, lng: -117.92961}
+  geo:
+    lat: 33.85303
+    lng: -117.92961
   phone: (949) 594-1287
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0384}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0384
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-pradera
   name: Project Access Pradera
   categories:
   - meal-program
-  address: {street: 130 N Citrus Ranch Rd., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 130 N Citrus Ranch Rd.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.83959, lng: -117.9007}
+  geo:
+    lat: 33.83959
+    lng: -117.9007
   phone: (949) 594-1290
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0706}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0706
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/project-access-vintage-crossings
   name: Project Access Vintage Crossings
   categories:
   - meal-program
-  address: {street: 712 East South St., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 712 East South St.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: '0602000'
-  geo: {lat: 33.82831, lng: -117.90404}
+  geo:
+    lat: 33.82831
+    lng: -117.90404
   phone: (949) 594-1319
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0759}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0759
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/revere
   name: Revere
   categories:
   - meal-program
-  address: {street: 140 W. Guinida Ln, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 140 W. Guinida Ln
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.81401, lng: -117.90822}
+  geo:
+    lat: 33.81401
+    lng: -117.90822
   phone: (714) 863-2199
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0469}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0469
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/rio-vista-elementary
   name: Rio Vista Elementary
   categories:
   - meal-program
-  address: {street: 310 North Rio Vista St., city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 310 North Rio Vista St.
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by PLACENTIA-YORBA LINDA
     UNIFIED SCHOOL DISTRICT.
   place: '0602000'
-  geo: {lat: 33.84389, lng: -117.87164}
+  geo:
+    lat: 33.84389
+    lng: -117.87164
   phone: (714) 985-8610
-  external_ids: {usda_master: Cycle 08_CA_SSO_2492}
+  external_ids:
+    usda_master: Cycle 08_CA_SSO_2492
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/roosevelt
   name: Roosevelt
   categories:
   - meal-program
-  address: {street: 1600 E. Vermont Ave., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1600 E. Vermont Ave.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82715, lng: -117.8924}
+  geo:
+    lat: 33.82715
+    lng: -117.8924
   phone: (714) 863-2202
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0470}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0470
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/ross
   name: Ross
   categories:
   - meal-program
-  address: {street: 535 S. Walnut Street, city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 535 S. Walnut Street
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82627, lng: -117.9285}
+  geo:
+    lat: 33.82627
+    lng: -117.9285
   phone: (714) 863-2203
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0471}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0471
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/south-junior-high
   name: South Junior High
   categories:
   - meal-program
-  address: {street: 2320 E. South Street, city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 2320 E. South Street
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.83263, lng: -117.88374}
+  geo:
+    lat: 33.83263
+    lng: -117.88374
   phone: (714) 904-7125
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0522}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0522
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/st-jude-neighborhood-health-centers-finamore-pla
   name: St. Jude Neighborhood Health Centers - Finamore Place
   categories:
@@ -1764,67 +2074,112 @@
   name: Stoddard
   categories:
   - meal-program
-  address: {street: 1841 S. Ninth St., city: Anaheim, state: ca, zip: '92802'}
+  address:
+    street: 1841 S. Ninth St.
+    city: Anaheim
+    state: ca
+    zip: '92802'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.80211, lng: -117.93272}
+  geo:
+    lat: 33.80211
+    lng: -117.93272
   phone: (714) 863-2204
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0472}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0472
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/sunkist
   name: Sunkist
   categories:
   - meal-program
-  address: {street: 500 N. Sunkist St., city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 500 N. Sunkist St.
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84506, lng: -117.88043}
+  geo:
+    lat: 33.84506
+    lng: -117.88043
   phone: (714) 635-9622
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0473}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0473
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/sunkist-branch-library
   name: Sunkist Branch-Library
   categories:
   - meal-program
-  address: {street: 901 S. Sunkist, city: Anaheim, state: ca, zip: '92806'}
+  address:
+    street: 901 S. Sunkist
+    city: Anaheim
+    state: ca
+    zip: '92806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82813, lng: -117.88057}
+  geo:
+    lat: 33.82813
+    lng: -117.88057
   phone: (714) 765-6493
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0997}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0997
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/sycamore-junior-high
   name: Sycamore Junior High
   categories:
   - meal-program
-  address: {street: 1801 E. Sycamore, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1801 E. Sycamore
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.84495, lng: -117.89346}
+  geo:
+    lat: 33.84495
+    lng: -117.89346
   phone: (714) 296-2741
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0523}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0523
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/thomas-jefferson
   name: Thomas Jefferson
   categories:
   - meal-program
-  address: {street: 504 E. South Street, city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 504 E. South Street
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA ANAHEIM FAMILY.
   place: '0602000'
-  geo: {lat: 33.82785, lng: -117.90606}
+  geo:
+    lat: 33.82785
+    lng: -117.90606
   phone: (714) 863-2184
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0459}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0459
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/uc-irvine-family-health-center-anaheim
   name: UC Irvine Family Health Center- Anaheim
   categories:
@@ -1851,34 +2206,37 @@
   name: Vibrant Minds Charter School
   categories:
   - meal-program
-  address: {street: 1450 E. La Palma Ave., city: Anaheim, state: ca, zip: '92805'}
+  address:
+    street: 1450 E. La Palma Ave.
+    city: Anaheim
+    state: ca
+    zip: '92805'
   description: Free summer meals for kids and teens (2026 season) — sponsored by IMPACT LA.
   place: '0602000'
-  geo: {lat: 33.84725, lng: -117.89928}
+  geo:
+    lat: 33.84725
+    lng: -117.89928
   phone: (714) 563-2390
-  external_ids: {usda_master: Cycle 06_CA_SFSP_1288}
+  external_ids:
+    usda_master: Cycle 06_CA_SFSP_1288
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/anaheim/walter-center
   name: Walter Center
   categories:
   - child-care
-  address:
-    street: 9200 W Pacific Pl
-    city: Anaheim
-    state: ca
-    zip: '92804'
+  address: {street: 9200 W Pacific Pl, city: Anaheim, state: ca, zip: '92804'}
+  description: Head Start early childhood program — 18 funded slots; operated by Orange County Head Start,
+    Inc..
   place: '0602000'
-  geo:
-    lat: 33.8077
-    lng: -117.97165
+  geo: {lat: 33.8077, lng: -117.97165}
   phone: 714-761-4967
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/anaheim/wel-mor-psychology-group-inc
   name: Wel Mor Psychology Group Inc
   categories:
@@ -1900,6 +2258,7 @@
   - Regular outpatient treatment
   - Adolescents
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

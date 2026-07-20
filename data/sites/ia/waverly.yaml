@@ -56,6 +56,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.74126
+    lng: -92.46844
 - id: ia/waverly/pathways-behavioral-services-child-and-adolescen
   name: Pathways Behavioral Services Child and Adolescent Center
   categories:
@@ -75,6 +78,7 @@
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -100,6 +104,10 @@
   services:
   - Outpatient
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -110,31 +118,34 @@
   name: Waverly
   categories:
   - child-care
-  address:
-    street: 809 4th St SE
-    city: Waverly
-    state: ia
-    zip: '50677'
+  address: {street: 809 4th St SE, city: Waverly, state: ia, zip: '50677'}
+  description: Head Start early childhood program — 18 funded slots; operated by NORTHEAST IOWA COMMUNITY
+    ACTION CORPORATION.
   place: '1982875'
-  geo:
-    lat: 42.71807
-    lng: -92.4651
+  geo: {lat: 42.71807, lng: -92.4651}
   phone: 319-352-2228
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/waverly/waverly-shell-rock-area-united-way
   name: Waverly-Shell Rock Area United Way
   categories:
   - meal-program
-  address: {street: 109 4Th St. Sw, city: Waverly, state: ia, zip: '50677'}
+  address:
+    street: 109 4Th St. Sw
+    city: Waverly
+    state: ia
+    zip: '50677'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Northeast Iowa Food Bank.
   place: '1982875'
-  geo: {lat: 42.7256, lng: -92.47562}
+  geo:
+    lat: 42.7256
+    lng: -92.47562
   phone: (319) 352-2582
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0191}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0191
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

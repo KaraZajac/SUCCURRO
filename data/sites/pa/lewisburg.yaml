@@ -18,6 +18,10 @@
   - Outpatient
   - Young adults
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -55,6 +59,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -86,6 +91,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -116,21 +122,14 @@
   name: Lewisburg Children's Center (LCC)
   categories:
   - child-care
-  address:
-    street: 205 Hospital Dr
-    city: Lewisburg
-    state: pa
-    zip: '17837'
+  address: {street: 205 Hospital Dr, city: Lewisburg, state: pa, zip: '17837'}
+  description: Head Start early childhood program — 50 funded slots; operated by Summit Early Learning.
   place: '4242976'
-  geo:
-    lat: 40.98263
-    lng: -76.89133
+  geo: {lat: 40.98263, lng: -76.89133}
   phone: 570-524-0926
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/lewisburg/lewisburg-little-free-pantry
   name: Lewisburg Little Free Pantry
   categories:
@@ -180,3 +179,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.96058
+    lng: -76.90158

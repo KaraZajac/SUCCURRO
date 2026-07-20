@@ -90,28 +90,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ca/orange/altamed-field-based-services-office-orange
-  name: AltaMed Field-Based Services Office -- Orange
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 500 City Pkwy W
-    city: Orange
-    state: ca
-    zip: '92868'
-  place: 0653980
-  geo:
-    lat: 33.78332
-    lng: -117.89576
-  phone: 888-499-9303
-  external_ids:
-    bphc: BPS-H80-041053
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ca/orange/altamed-medical-group-mobile-van-4
   name: 'AltaMed Medical Group  -  Mobile Van #4'
   categories:
@@ -182,6 +160,7 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -220,6 +199,8 @@
     city: Orange
     state: ca
     zip: '92869'
+  description: Head Start early childhood program — 36 funded slots; operated by Orange County Head Start,
+    Inc..
   place: 0653980
   geo:
     lat: 33.78928
@@ -251,12 +232,18 @@
   - Adult women
   - Adult men
   - Seniors or older adults
+  languages:
+  - en
+  - es
+  - fa
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 33.78776, lng: -117.83883}
 - id: ca/orange/county-of-orange-healthcare-agency-children-and
   name: County of Orange Healthcare Agency Children and Youth Services East
   categories:
@@ -280,6 +267,12 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  - ko
+  - vi
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -290,16 +283,25 @@
   name: El Modena Family Resource Center
   categories:
   - meal-program
-  address: {street: 18672 E. Center Avenue, city: Orange, state: ca, zip: '92869'}
+  address:
+    street: 18672 E. Center Avenue
+    city: Orange
+    state: ca
+    zip: '92869'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: 0653980
-  geo: {lat: 33.78954, lng: -117.80707}
+  geo:
+    lat: 33.78954
+    lng: -117.80707
   phone: (714) 492-2807
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0399}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0399
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/orange/hewes-center
   name: Hewes Center
   categories:
@@ -309,6 +311,8 @@
     city: Orange
     state: ca
     zip: '92869'
+  description: Head Start early childhood program — 36 funded slots; operated by Orange County Head Start,
+    Inc..
   place: 0653980
   geo:
     lat: 33.78223
@@ -367,6 +371,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -389,12 +394,17 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 33.79568, lng: -117.87242}
 - id: ca/orange/mariposa-women-and-family-center-suite-300
   name: Mariposa Women and Family Center Suite 300
   categories:
@@ -412,12 +422,17 @@
   - Outpatient
   - Young adults
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 33.79568, lng: -117.87242}
 - id: ca/orange/newport-academy
   name: Newport Academy
   categories:
@@ -445,6 +460,7 @@
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -478,6 +494,7 @@
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -508,6 +525,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -541,6 +559,7 @@
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -571,6 +590,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -601,6 +621,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -631,6 +652,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -662,6 +684,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -692,6 +715,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -723,6 +747,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -753,6 +778,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -827,28 +853,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ca/orange/st-jude-neighborhood-health-centers-leadership-o
-  name: St. Jude Neighborhood Health Centers Leadership Offices @ SJO
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1100 W Stewart Dr
-    city: Orange
-    state: ca
-    zip: '92868'
-  place: 0653980
-  geo:
-    lat: 33.78212
-    lng: -117.86495
-  phone: 714-744-8808
-  external_ids:
-    bphc: BPS-H80-031600
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ca/orange/the-la-amistad-mobile-clinic
   name: The La Amistad Mobile Clinic
   categories:
@@ -892,6 +896,10 @@
   - Intensive outpatient treatment
   - Regular outpatient treatment
   - Adolescents
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -919,6 +927,7 @@
   - Persons experiencing first-episode psychosis
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -929,13 +938,22 @@
   name: Youth Centers Of Orange - Shaffer Park
   categories:
   - meal-program
-  address: {street: 1930 N Shaffer Street, city: Orange, state: ca, zip: '92865'}
+  address:
+    street: 1930 N Shaffer Street
+    city: Orange
+    state: ca
+    zip: '92865'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SECOND HARVEST FOOD BANK
     OF ORANGE COUNTY, INC.
   place: 0653980
-  geo: {lat: 33.81993, lng: -117.84902}
+  geo:
+    lat: 33.81993
+    lng: -117.84902
   phone: (562) 980-2190
-  external_ids: {usda_master: Cycle 05_CA_SFSP_0948}
+  external_ids:
+    usda_master: Cycle 05_CA_SFSP_0948
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

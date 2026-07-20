@@ -22,6 +22,10 @@
   - Adult women
   - Adult men
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -50,6 +54,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -77,6 +82,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -87,39 +93,26 @@
   name: Bethlehem Community Center, Inc
   categories:
   - child-care
-  address:
-    street: 520 N Cleveland Ave
-    city: Winston Salem
-    state: nc
-    zip: '27101'
+  address: {street: 520 N Cleveland Ave, city: Winston Salem, state: nc, zip: '27101'}
+  description: Head Start early childhood program — 36 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.10121
-    lng: -80.23187
+  geo: {lat: 36.10121, lng: -80.23187}
   phone: 336-722-6264
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/carver-road-education-center
   name: Carver Road Education Center
   categories:
   - child-care
-  address:
-    street: 3011 Carver School Rd
-    city: Winston Salem
-    state: nc
-    zip: '27105'
+  address: {street: 3011 Carver School Rd, city: Winston Salem, state: nc, zip: '27105'}
+  description: Head Start early childhood program — 8 funded slots; operated by Family Services Child
+    Development.
   place: '3775000'
-  geo:
-    lat: 36.12357
-    lng: -80.20582
+  geo: {lat: 36.12357, lng: -80.20582}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/crchc-at-ashley-academy
   name: CRCHC at Ashley Academy
   categories:
@@ -279,6 +272,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -289,48 +283,58 @@
   name: Easton Elementary
   categories:
   - meal-program
-  address: {street: 734 Clemmonsville Circle, city: Winston-Salem, state: nc, zip: '27107'}
+  address:
+    street: 734 Clemmonsville Circle
+    city: Winston-Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.05654, lng: -80.22335}
+  geo:
+    lat: 36.05654
+    lng: -80.22335
   phone: (336) 748-4068
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0920}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0920
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/family-services-child-development-the-heights
   name: Family Services Child Development @ The Heights
   categories:
   - child-care
-  address:
-    street: 1472 Felicity Lane
-    street2: 1472 Felicity Lane
-    city: Winston Salem
-    state: nc
-    zip: '27101'
+  address: {street: 1472 Felicity Lane, street2: 1472 Felicity Lane, city: Winston Salem, state: nc, zip: '27101'}
+  description: Head Start early childhood program — 70 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.11497
-    lng: -80.18951
+  geo: {lat: 36.11497, lng: -80.18951}
   phone: 336-778-5059
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/forest-park-elementary
   name: Forest Park Elementary
   categories:
   - meal-program
-  address: {street: 2019 Milford St, city: Winston Salem, state: nc, zip: '27107'}
+  address:
+    street: 2019 Milford St
+    city: Winston Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.07183, lng: -80.21706}
+  geo:
+    lat: 36.07183
+    lng: -80.21706
   phone: (336) 703-4282
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0921}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0921
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/forsyth-county-department-of-social-services
   name: Forsyth County Department of Social Services
   categories:
@@ -349,6 +353,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 36.10299
+    lng: -80.23319
 - id: nc/winston-salem/four-directions-counseling-and-recovery-center
   name: Four Directions Counseling and Recovery Center
   categories:
@@ -378,6 +385,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -405,6 +416,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -415,34 +427,36 @@
   name: Green Oaks
   categories:
   - meal-program
-  address: {street: Green Oaks Ct, city: Winston-Salem, state: nc, zip: '27107'}
+  address:
+    street: Green Oaks Ct
+    city: Winston-Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.0575, lng: -80.19547}
+  geo:
+    lat: 36.0575
+    lng: -80.19547
   phone: (336) 703-6738
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0937}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0937
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/griffith-elementary
   name: Griffith Elementary
   categories:
   - child-care
-  address:
-    street: 1385 W Clemmonsville Rd
-    city: Winston Salem
-    state: nc
-    zip: '27127'
+  address: {street: 1385 W Clemmonsville Rd, city: Winston Salem, state: nc, zip: '27127'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.04107
-    lng: -80.26455
+  geo: {lat: 36.04107, lng: -80.26455}
   phone: 336-703-4245
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/housing-authority-of-the-city-of-winston-salem
   name: Housing Authority Of The City Of Winston-Salem
   categories:
@@ -467,15 +481,24 @@
   name: Ibraham Elementary
   categories:
   - meal-program
-  address: {street: 5036 Old Walkertown Rd, city: Winston-Salem, state: nc, zip: '27105'}
+  address:
+    street: 5036 Old Walkertown Rd
+    city: Winston-Salem
+    state: nc
+    zip: '27105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.15764, lng: -80.20028}
+  geo:
+    lat: 36.15764
+    lng: -80.20028
   phone: (336) 703-6773
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0924}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0924
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/insight-human-services-inc
   name: Insight Human Services Inc
   categories:
@@ -507,6 +530,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -517,20 +544,13 @@
   name: Intergenerational Arts and Wellness Center
   categories:
   - child-care
-  address:
-    street: 114 W 30THE Street
-    city: Winston Salem
-    state: nc
-    zip: '27105'
+  address: {street: 114 W 30THE Street, city: Winston Salem, state: nc, zip: '27105'}
+  description: Head Start early childhood program — 70 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.12811
-    lng: -80.24778
+  geo: {lat: 36.12811, lng: -80.24778}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/kintegra-at-flat-rock-middle
   name: Kintegra at Flat Rock MIddle
   categories:
@@ -650,60 +670,80 @@
   name: Martin L. King Jr Community Center
   categories:
   - meal-program
-  address: {street: 2001 Pittsburg Ave, city: Winston-Salem, state: nc, zip: '27105'}
+  address:
+    street: 2001 Pittsburg Ave
+    city: Winston-Salem
+    state: nc
+    zip: '27105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.11868, lng: -80.25205}
+  geo:
+    lat: 36.11868
+    lng: -80.25205
   phone: (336) 727-2301
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0948}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0948
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/maxx-kinder-kollege
   name: Maxx Kinder Kollege
   categories:
   - child-care
-  address:
-    street: 2411 Waughtown St
-    city: Winston Salem
-    state: nc
-    zip: '27107'
+  address: {street: 2411 Waughtown St, city: Winston Salem, state: nc, zip: '27107'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.07465
-    lng: -80.19298
+  geo: {lat: 36.07465, lng: -80.19298}
   phone: 336-788-8599
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/miller-park
   name: Miller Park
   categories:
   - meal-program
-  address: {street: 400 Leisure Lane, city: Winston-Salem, state: nc, zip: '27103'}
+  address:
+    street: 400 Leisure Lane
+    city: Winston-Salem
+    state: nc
+    zip: '27103'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.0864, lng: -80.28162}
+  geo:
+    lat: 36.0864
+    lng: -80.28162
   phone: (336) 703-6738
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0943}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0943
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/minnie-lee-davis-harris-recreation-center
   name: Minnie Lee Davis Harris Recreation Center
   categories:
   - meal-program
-  address: {street: 2020 E 14Th St, city: Winston-Salem, state: nc, zip: '27105'}
+  address:
+    street: 2020 E 14Th St
+    city: Winston-Salem
+    state: nc
+    zip: '27105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.1129, lng: -80.22046}
+  geo:
+    lat: 36.1129
+    lng: -80.22046
   phone: (336) 727-2301
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0951}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0951
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/monarch-bh-forsyth
   name: Monarch BH Forsyth
   categories:
@@ -724,6 +764,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -734,53 +775,48 @@
   name: Ncm Clemmons Middle
   categories:
   - meal-program
-  address: {street: 3785 Fraternity Church Road, city: Winston Salem, state: nc, zip: '27127'}
+  address:
+    street: 3785 Fraternity Church Road
+    city: Winston Salem
+    state: nc
+    zip: '27127'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.02723, lng: -80.33683}
+  geo:
+    lat: 36.02723
+    lng: -80.33683
   phone: (336) 703-4275
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0954}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0954
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/north-hills-elementary
   name: North Hills Elementary
   categories:
   - child-care
-  address:
-    street: 340 Alspaugh Dr
-    city: Winston Salem
-    state: nc
-    zip: '27105'
+  address: {street: 340 Alspaugh Dr, city: Winston Salem, state: nc, zip: '27105'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.15057
-    lng: -80.25294
+  geo: {lat: 36.15057, lng: -80.25294}
   phone: 336-703-4176
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/north-point-academy-llc
   name: North Point Academy LLC
   categories:
   - child-care
-  address:
-    street: 4950 Indiana Ave
-    city: Winston Salem
-    state: nc
-    zip: '27106'
+  address: {street: 4950 Indiana Ave, city: Winston Salem, state: nc, zip: '27106'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.15469
-    lng: -80.27489
+  geo: {lat: 36.15469, lng: -80.27489}
   phone: 336-744-7678
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/novant-health-forsyth-medical-center-behavioral
   name: Novant Health Forsyth Medical Center Behavioral Health Services
   categories:
@@ -801,6 +837,7 @@
   - Hospital inpatient/24-hour hospital inpatient
   - Hospital inpatient detoxification
   - Hospital inpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -828,6 +865,7 @@
   - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -838,52 +876,47 @@
   name: Oak Summit Learning Academy
   categories:
   - child-care
-  address:
-    street: 230 Oak Summit Rd
-    city: Winston Salem
-    state: nc
-    zip: '27105'
+  address: {street: 230 Oak Summit Rd, city: Winston Salem, state: nc, zip: '27105'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.17359
-    lng: -80.26717
+  geo: {lat: 36.17359, lng: -80.26717}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/old-town-elementary
   name: Old Town Elementary
   categories:
   - child-care
-  address:
-    street: 3930 Reynolda Rd
-    city: Winston Salem
-    state: nc
-    zip: '27106'
+  address: {street: 3930 Reynolda Rd, city: Winston Salem, state: nc, zip: '27106'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.16458
-    lng: -80.33239
+  geo: {lat: 36.16458, lng: -80.33239}
   phone: 336-924-2915
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/old-town-park
   name: Old Town Park
   categories:
   - meal-program
-  address: {street: 4550 Shattalon Dr, city: Winston-Salem, state: nc, zip: '27106'}
+  address:
+    street: 4550 Shattalon Dr
+    city: Winston-Salem
+    state: nc
+    zip: '27106'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.15696, lng: -80.33433}
+  geo:
+    lat: 36.15696
+    lng: -80.33433
   phone: (336) 703-6738
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0944}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0944
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/old-vineyard-behavioral-health-service
   name: Old Vineyard Behavioral Health Service
   categories:
@@ -915,6 +948,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -925,105 +959,136 @@
   name: Piedmont Circle
   categories:
   - meal-program
-  address: {street: Piedmont Circle, city: Winston-Salem, state: nc, zip: '27105'}
+  address:
+    street: Piedmont Circle
+    city: Winston-Salem
+    state: nc
+    zip: '27105'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.12368, lng: -80.2298}
+  geo:
+    lat: 36.12368
+    lng: -80.2298
   phone: (336) 727-2301
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0939}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0939
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/plaza-south-apartments
   name: Plaza South Apartments
   categories:
   - meal-program
-  address: {street: 3501 Plaza Ridge Cir, city: Winston-Salem, state: nc, zip: '27107'}
+  address:
+    street: 3501 Plaza Ridge Cir
+    city: Winston-Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.06931, lng: -80.16744}
+  geo:
+    lat: 36.06931
+    lng: -80.16744
   phone: (336) 703-6738
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0936}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0936
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/quality-education-institute
   name: Quality Education Institute
   categories:
   - child-care
-  address:
-    street: 5012 Lansing Dr
-    street2: '# D'
-    city: Winston Salem
-    state: nc
-    zip: '27105'
+  address: {street: 5012 Lansing Dr, street2: '# D', city: Winston Salem, state: nc, zip: '27105'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.15034
-    lng: -80.20562
+  geo: {lat: 36.15034, lng: -80.20562}
   phone: 336-744-0804
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/sarah-y-austin
   name: Sarah Y. Austin
   categories:
   - child-care
-  address:
-    street: 2050 Big House Gaines Blvd
-    city: Winston Salem
-    state: nc
-    zip: '27101'
+  address: {street: 2050 Big House Gaines Blvd, city: Winston Salem, state: nc, zip: '27101'}
+  description: Head Start early childhood program — 8 funded slots; operated by Family Services Child
+    Development.
   place: '3775000'
-  geo:
-    lat: 36.10149
-    lng: -80.21851
+  geo: {lat: 36.10149, lng: -80.21851}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/sedge-garden-park
   name: Sedge Garden Park
   categories:
   - meal-program
-  address: {street: 401 Robbins Rd, city: Winston- Salem, state: nc, zip: '27107'}
+  address:
+    street: 401 Robbins Rd
+    city: Winston- Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.07241, lng: -80.15573}
+  geo:
+    lat: 36.07241
+    lng: -80.15573
   phone: (336) 703-4234
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0946}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0946
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/speas-elementary
   name: Speas Elementary
   categories:
   - meal-program
-  address: {street: 2000 W. Polo Road, city: Winston Salem, state: nc, zip: '27106'}
+  address:
+    street: 2000 W. Polo Road
+    city: Winston Salem
+    state: nc
+    zip: '27106'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.13108, lng: -80.29661}
+  geo:
+    lat: 36.13108
+    lng: -80.29661
   phone: (336) 703-4136
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0933}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0933
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/sprague-street-recreation-center
   name: Sprague Street Recreation Center
   categories:
   - meal-program
-  address: {street: 1350 E. Sprague St, city: Winston-Salem, state: nc, zip: '27107'}
+  address:
+    street: 1350 E. Sprague St
+    city: Winston-Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.06642, lng: -80.20939}
+  geo:
+    lat: 36.06642
+    lng: -80.20939
   phone: (336) 727-2301
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0949}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0949
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/spring-life-behavioral-care-llc
   name: Spring Life Behavioral Care LLC
   categories:
@@ -1055,6 +1120,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1065,34 +1131,36 @@
   name: The Salvation Army Boys & Girls Club
   categories:
   - meal-program
-  address: {street: 2100 Reynolds Park Dr, city: Winston-Salem, state: nc, zip: '27107'}
+  address:
+    street: 2100 Reynolds Park Dr
+    city: Winston-Salem
+    state: nc
+    zip: '27107'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.08885, lng: -80.21442}
+  geo:
+    lat: 36.08885
+    lng: -80.21442
   phone: (336) 703-6738
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0938}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0938
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/tlc-learning-academy
   name: TLC Learning Academy
   categories:
   - child-care
-  address:
-    street: 2832 S Main St
-    city: Winston Salem
-    state: nc
-    zip: '27127'
+  address: {street: 2832 S Main St, city: Winston Salem, state: nc, zip: '27127'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.05982
-    lng: -80.23909
+  geo: {lat: 36.05982, lng: -80.23909}
   phone: 336-650-9652
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/top-priority-care-services-llc
   name: Top Priority Care Services LLC
   categories:
@@ -1124,6 +1192,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1151,6 +1220,7 @@
   - Adult men
   - Veterans
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: free
   sources:
   - samhsa/findtreatment
@@ -1176,6 +1246,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1317,6 +1388,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1327,33 +1399,35 @@
   name: WASHINGTON PARK CDC
   categories:
   - child-care
-  address:
-    street: 1411 S Broad St
-    city: Winston Salem
-    state: nc
-    zip: '27127'
+  address: {street: 1411 S Broad St, city: Winston Salem, state: nc, zip: '27127'}
+  description: Head Start early childhood program — 68 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.07718
-    lng: -80.24321
+  geo: {lat: 36.07718, lng: -80.24321}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/william-c-sims-neighborhood-center
   name: William C. Sims Neighborhood Center
   categories:
   - meal-program
-  address: {street: 1201 Alder St, city: Winston-Salem, state: nc, zip: '27127'}
+  address:
+    street: 1201 Alder St
+    city: Winston-Salem
+    state: nc
+    zip: '27127'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Forsyth County Schools.
   place: '3775000'
-  geo: {lat: 36.08294, lng: -80.23572}
+  geo:
+    lat: 36.08294
+    lng: -80.23572
   phone: (336) 703-4234
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0950}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0950
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/winston-salem/wilsons-constant-care
   name: Wilsons Constant Care
   categories:
@@ -1374,6 +1448,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1403,6 +1478,7 @@
   - Pregnant/postpartum women
   - Adult men
   - Seniors or older adults
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1413,21 +1489,14 @@
   name: Winston-Salem State University Child Development Center
   categories:
   - child-care
-  address:
-    street: 601 S Martin Luther King Jr Dr
-    city: Winston Salem
-    state: nc
-    zip: '27110'
+  address: {street: 601 S Martin Luther King Jr Dr, city: Winston Salem, state: nc, zip: '27110'}
+  description: Head Start early childhood program — 60 funded slots; operated by Family Services, Inc.
   place: '3775000'
-  geo:
-    lat: 36.08839
-    lng: -80.22358
+  geo: {lat: 36.08839, lng: -80.22358}
   phone: 336-750-2411
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/winston-salem/winston-salem-va-regional-benefit-office
   name: Winston-Salem VA Regional Benefit Office
   categories: *id001

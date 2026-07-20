@@ -1,25 +1,3 @@
-- id: me/bangor/992-admin
-  name: 992 Admin
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 992 Union St, Suite 3
-    city: Bangor
-    state: me
-    zip: '04401'
-  place: '2302795'
-  geo:
-    lat: 44.81554
-    lng: -68.80716
-  phone: 207-992-9200
-  external_ids:
-    bphc: BPS-H80-032269
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: me/bangor/acadia-hospital
   name: Acadia Hospital
   categories:
@@ -44,6 +22,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -79,6 +58,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -127,12 +107,14 @@
   - Clients who have experienced trauma
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.81837, lng: -68.76896}
 - id: me/bangor/bangor-comprehensive-treatment-center-discovery
   name: Bangor Comprehensive Treatment Center Discovery House BR Inc
   categories:
@@ -152,6 +134,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -176,6 +159,7 @@
   website: https://www.bangorcounselingcenter.com/
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -186,29 +170,47 @@
   name: Bangor High School
   categories:
   - meal-program
-  address: {street: 885 Broadway, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 885 Broadway
+    city: Bangor
+    state: me
+    zip: '04401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bangor Public Schools.
   place: '2302795'
-  geo: {lat: 44.83128, lng: -68.78174}
+  geo:
+    lat: 44.83128
+    lng: -68.78174
   phone: (207) 735-8046
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0012}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0012
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/bangor-housing-splash-pad
   name: Bangor Housing Splash Pad
   categories:
   - meal-program
-  address: {street: Bangor Housing Splash Pad, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: Bangor Housing Splash Pad
+    city: Bangor
+    state: me
+    zip: '04401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club of
     Bangor.
   place: '2302795'
-  geo: {lat: 44.84366, lng: -68.82247}
+  geo:
+    lat: 44.84366
+    lng: -68.82247
   phone: (207) 942-6365
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0013}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0013
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/bangor-nursing-rehabilitation-center
   name: BANGOR NURSING & REHABILITATION CENTER
   categories:
@@ -426,6 +428,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -456,6 +459,7 @@
   - Adult women
   - Adult men
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -483,6 +487,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -507,6 +512,7 @@
   website: https://www.comcareme.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -554,6 +560,7 @@
   services:
   - Outpatient
   - Residential/24-hour residential
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -580,6 +587,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -595,6 +603,7 @@
     city: Bangor
     state: me
     zip: '04401'
+  description: Head Start early childhood program — 28 funded slots; operated by PENQUIS C A P,INC.
   place: '2302795'
   geo:
     lat: 44.84153
@@ -703,6 +712,7 @@
     city: Bangor
     state: me
     zip: '04401'
+  description: Head Start early childhood program — 15 funded slots; operated by PENQUIS C A P,INC.
   place: '2302795'
   geo:
     lat: 44.82753
@@ -717,15 +727,24 @@
   name: Fourteenth Street School
   categories:
   - meal-program
-  address: {street: 224 Fourteenth Street, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 224 Fourteenth Street
+    city: Bangor
+    state: me
+    zip: '04401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bangor Public Schools.
   place: '2302795'
-  geo: {lat: 44.80383, lng: -68.79395}
+  geo:
+    lat: 44.80383
+    lng: -68.79395
   phone: (207) 735-8046
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0100}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0100
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/groups-recover-together
   name: Groups Recover Together
   categories:
@@ -745,6 +764,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -811,6 +831,10 @@
   website: https://investinyoucounseling.com
   services:
   - Outpatient
+  languages:
+  - en
+  - fr
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -835,32 +859,10 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: me/bangor/maine-avenue-administration-clinical-center
-  name: Maine Avenue Administration/Clinical Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 103 Maine Ave
-    city: Bangor
-    state: me
-    zip: '04401'
-  place: '2302795'
-  geo:
-    lat: 44.80126
-    lng: -68.80774
-  phone: 207-945-5247
-  website: http://www.pchcbangor.org/
-  external_ids:
-    bphc: BPS-H80-008838
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -909,6 +911,7 @@
   - Adult men
   - Seniors or older adults
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -944,6 +947,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -975,6 +979,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -997,6 +1002,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1022,6 +1028,7 @@
   services:
   - Outpatient
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1112,6 +1119,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.8058
+    lng: -68.77489
 - id: me/bangor/penquis-community-action-program-rockland-office
   name: Penquis Community Action Program - Rockland Office
   categories:
@@ -1130,6 +1140,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.8058
+    lng: -68.77489
 - id: me/bangor/philips-strickland-house
   name: PHILIPS-STRICKLAND HOUSE
   categories:
@@ -1156,15 +1169,24 @@
   name: Rock Church
   categories:
   - meal-program
-  address: {street: 1195 Ohio Street, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 1195 Ohio Street
+    city: Bangor
+    state: me
+    zip: '04401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bangor Public Schools.
   place: '2302795'
-  geo: {lat: 44.82885, lng: -68.81458}
+  geo:
+    lat: 44.82885
+    lng: -68.81458
   phone: (207) 478-8086
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0225}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0225
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/ross-manor
   name: ROSS MANOR
   categories:
@@ -1206,6 +1228,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1256,41 +1279,28 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: me/bangor/support-services
-  name: Support Services
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1 Ammo Industrial Park
-    city: Bangor
-    state: me
-    zip: '04401'
-  place: '2302795'
-  geo:
-    lat: 44.7775
-    lng: -68.822
-  phone: 207-992-9200
-  external_ids:
-    bphc: BPS-H80-038656
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: me/bangor/the-regional-program
   name: The Regional Program
   categories:
   - meal-program
-  address: {street: 208 Maine Avenue, city: Bangor, state: me, zip: '04401'}
+  address:
+    street: 208 Maine Avenue
+    city: Bangor
+    state: me
+    zip: '04401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bangor Public Schools.
   place: '2302795'
-  geo: {lat: 44.80496, lng: -68.80998}
+  geo:
+    lat: 44.80496
+    lng: -68.80998
   phone: (207) 659-5257
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0270}
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0270
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: me/bangor/venture-way-child-development
   name: Venture Way Child Development
   categories:
@@ -1300,6 +1310,7 @@
     city: Bangor
     state: me
     zip: '04401'
+  description: Head Start early childhood program — 35 funded slots; operated by PENQUIS C A P,INC.
   place: '2302795'
   geo:
     lat: 44.8037
@@ -1331,6 +1342,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Residential detoxification
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1364,12 +1376,14 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.83119, lng: -68.77192}
 - id: me/bangor/wellspring-inc-mens-residential-program
   name: Wellspring Inc Mens Residential Program
   categories:
@@ -1392,6 +1406,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1417,12 +1432,14 @@
   - Residential detoxification
   - Pregnant/postpartum women
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.80734, lng: -68.76882}
 - id: me/bangor/wellspring-inc-outpatient-services
   name: Wellspring Inc Outpatient Services
   categories:
@@ -1445,6 +1462,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

@@ -1,26 +1,3 @@
-- id: wv/union/admin-building
-  name: Admin Building
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 21 Health Center Dr
-    city: Union
-    state: wv
-    zip: '24983'
-  place: '5481940'
-  geo:
-    lat: 37.5893
-    lng: -80.54614
-  phone: 304-772-3064
-  website: https://www.monroehealthcenters.com
-  external_ids:
-    bphc: BPS-H80-038685
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: wv/union/fmrs-health-systems-inc-monroe-county-office
   name: FMRS Health Systems Inc Monroe County Office
   categories:
@@ -42,6 +19,7 @@
   - Young adults
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -138,18 +116,12 @@
   name: Union Center
   categories:
   - child-care
-  address:
-    street: 620 School Street
-    city: Union
-    state: wv
-    zip: '24983'
+  address: {street: 620 School Street, city: Union, state: wv, zip: '24983'}
+  description: Head Start early childhood program — 30 funded slots; operated by MONROE COUNTY BOARD OF
+    EDUCATION.
   place: '5481940'
-  geo:
-    lat: 37.58657
-    lng: -80.54489
+  geo: {lat: 37.58657, lng: -80.54489}
   phone: 304-772-3435
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

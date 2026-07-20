@@ -80,6 +80,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Adult men
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -104,6 +105,7 @@
   website: https://www.lmhc.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -129,6 +131,7 @@
   services:
   - Outpatient
   - Veterans
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -154,6 +157,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 46.28459
+    lng: -96.07475
 - id: mn/fergus-falls/northstar-behavioral-health-network-fergus-falls
   name: Northstar Behavioral Health Network Fergus Falls
   categories:
@@ -184,6 +190,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -241,6 +248,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced sexual abuse
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -268,6 +276,7 @@
   - Young adults
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -278,19 +287,13 @@
   name: WCMCA Head Start-Fergus Falls
   categories:
   - child-care
-  address:
-    street: 130 E Meadowlark Ln
-    street2: Synstelien Community Services
-    city: Fergus Falls
-    state: mn
-    zip: '56537'
+  address: {street: 130 E Meadowlark Ln, street2: Synstelien Community Services, city: Fergus Falls, state: mn,
+    zip: '56537'}
+  description: Head Start early childhood program — 48 funded slots; operated by West Central Minnesota
+    Communities Action, Inc..
   place: '2720906'
-  geo:
-    lat: 46.30163
-    lng: -96.07429
+  geo: {lat: 46.30163, lng: -96.07429}
   phone: 218-218-4486
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

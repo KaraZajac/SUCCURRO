@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.35668
+    lng: -94.87305
 - id: mo/maryville/family-guidance-center
   name: Family Guidance Center
   categories:
@@ -39,6 +42,7 @@
   - Regular outpatient treatment
   - Adult women
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -49,21 +53,15 @@
   name: Maryville Head Start
   categories:
   - child-care
-  address:
-    street: 1212D S Main St
-    city: Maryville
-    state: mo
-    zip: '64468'
+  address: {street: 1212D S Main St, city: Maryville, state: mo, zip: '64468'}
+  description: Head Start early childhood program — 30 funded slots; operated by Community Services Inc.
+    of Northwest Missouri.
   place: '2946640'
-  geo:
-    lat: 40.33369
-    lng: -94.87384
+  geo: {lat: 40.33369, lng: -94.87384}
   phone: 660-582-4347
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/maryville/maryville-housing-authority
   name: Maryville Housing Authority
   categories:
@@ -106,6 +104,7 @@
   - Young adults
   - Seniors or older adults
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

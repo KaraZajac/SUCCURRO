@@ -20,6 +20,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -30,54 +31,51 @@
   name: BGC Early Head Start
   categories:
   - child-care
-  address:
-    street: 1203 Martin Luther King Ave
-    city: Perry
-    state: fl
-    zip: '32348'
+  address: {street: 1203 Martin Luther King Ave, city: Perry, state: fl, zip: '32348'}
+  description: Head Start early childhood program — 40 funded slots; operated by Boys and Girls Club of
+    North Central Florida.
   place: '1256150'
-  geo:
-    lat: 30.10681
-    lng: -83.59378
+  geo: {lat: 30.10681, lng: -83.59378}
   phone: 855-364-4327
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/perry/bgc-head-start
   name: BGC Head Start
   categories:
   - child-care
+  address: {street: 302 N Jefferson St, city: Perry, state: fl, zip: '32347'}
+  description: Head Start early childhood program — 54 funded slots; operated by Boys and Girls Club of
+    North Central Florida.
+  place: '1256150'
+  geo: {lat: 30.11905, lng: -83.58166}
+  phone: 855-364-4327
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
+- id: fl/perry/first-umc-perry
+  name: First Umc Perry
+  categories:
+  - meal-program
   address:
     street: 302 N Jefferson St
     city: Perry
     state: fl
     zip: '32347'
-  place: '1256150'
-  geo:
-    lat: 30.11905
-    lng: -83.58166
-  phone: 855-364-4327
-  sources:
-  - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: fl/perry/first-umc-perry
-  name: First Umc Perry
-  categories:
-  - meal-program
-  address: {street: 302 N Jefferson St, city: Perry, state: fl, zip: '32347'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by America's Second Harvest
     of the Big Bend.
   place: '1256150'
-  geo: {lat: 30.11917, lng: -83.58201}
+  geo:
+    lat: 30.11917
+    lng: -83.58201
   phone: (850) 295-0623
-  external_ids: {usda_master: Cycle 03_FL_SFSP_0845}
+  external_ids:
+    usda_master: Cycle 03_FL_SFSP_0845
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/perry/north-florida-medical-perry
   name: North Florida Medical - Perry
   categories:
@@ -161,6 +159,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.16303
+    lng: -83.62466
 - id: fl/perry/taylor-county-elementary-school
   name: Taylor County Elementary School
   categories:
@@ -187,16 +188,25 @@
   name: Taylor County High School
   categories:
   - meal-program
-  address: {street: 900 N Johnson Stripling Rd, city: Perry, state: fl, zip: '32347'}
+  address:
+    street: 900 N Johnson Stripling Rd
+    city: Perry
+    state: fl
+    zip: '32347'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Taylor County School
     Board.
   place: '1256150'
-  geo: {lat: 30.1263, lng: -83.57504}
+  geo:
+    lat: 30.1263
+    lng: -83.57504
   phone: (386) 984-0071
-  external_ids: {usda_master: Cycle 03_FL_SSO_0567}
+  external_ids:
+    usda_master: Cycle 03_FL_SSO_0567
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/perry/taylor-county-primary-school
   name: Taylor County Primary School
   categories:
@@ -223,27 +233,45 @@
   name: Taylor County Primary School
   categories:
   - meal-program
-  address: {street: 1000 Howard St, city: Perry, state: fl, zip: '32347'}
+  address:
+    street: 1000 Howard St
+    city: Perry
+    state: fl
+    zip: '32347'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Taylor County School
     Board.
   place: '1256150'
-  geo: {lat: 30.12023, lng: -83.56584}
+  geo:
+    lat: 30.12023
+    lng: -83.56584
   phone: (850) 223-7210
-  external_ids: {usda_master: Cycle 03_FL_SSO_0566}
+  external_ids:
+    usda_master: Cycle 03_FL_SSO_0566
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: fl/perry/veteran-s-park-unit
   name: Veteran'S Park Unit
   categories:
   - meal-program
-  address: {street: 918 N Washington St, city: Perry, state: fl, zip: '32347'}
+  address:
+    street: 918 N Washington St
+    city: Perry
+    state: fl
+    zip: '32347'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys and Girls Club of
     North Central Florida, Inc..
   place: '1256150'
-  geo: {lat: 30.12435, lng: -83.58102}
+  geo:
+    lat: 30.12435
+    lng: -83.58102
   phone: (355) 364-4327
-  external_ids: {usda_master: Cycle 03_FL_SFSP_1112}
+  external_ids:
+    usda_master: Cycle 03_FL_SFSP_1112
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -16,6 +16,7 @@
   website: https://www.aspireindiana.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -50,6 +51,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -74,6 +76,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.51731
+    lng: -85.77843
 - id: in/shelbyville/jane-pauley-community-health-center-at-shelbyvil
   name: Jane Pauley Community Health Center at Shelbyville
   categories:
@@ -100,14 +105,23 @@
   name: Nc Shelbyville Senior High
   categories:
   - meal-program
-  address: {street: 2003 S Miller St, city: Shelbyville, state: in, zip: '46176'}
+  address:
+    street: 2003 S Miller St
+    city: Shelbyville
+    state: in
+    zip: '46176'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Shelbyville Central Schools.
   place: '1869318'
-  geo: {lat: 39.50552, lng: -85.78679}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0836}
+  geo:
+    lat: 39.50552
+    lng: -85.78679
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0836
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/shelbyville/shelbville-va-cboc
   name: Shelbville VA CBOC
   categories:
@@ -135,6 +149,7 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with Alzheimer's or dementia
   - Persons experiencing first-episode psychosis
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -145,21 +160,14 @@
   name: Shelby Head Start
   categories:
   - child-care
-  address:
-    street: 1609 S Miller St
-    city: Shelbyville
-    state: in
-    zip: '46176'
+  address: {street: 1609 S Miller St, city: Shelbyville, state: in, zip: '46176'}
+  description: Head Start early childhood program — 36 funded slots; operated by Human Services, Inc..
   place: '1869318'
-  geo:
-    lat: 39.50941
-    lng: -85.78608
+  geo: {lat: 39.50941, lng: -85.78608}
   phone: 317-392-1592
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/shelbyville/shelbyville-va-clinic
   name: Shelbyville VA Clinic
   categories:

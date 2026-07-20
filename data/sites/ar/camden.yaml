@@ -24,21 +24,15 @@
   name: Camden Head Start / Early Head Start
   categories:
   - child-care
-  address:
-    street: 225 Pope Ave
-    city: Camden
-    state: ar
-    zip: '71701'
+  address: {street: 225 Pope Ave, city: Camden, state: ar, zip: '71701'}
+  description: Head Start early childhood program — 18 funded slots; operated by Families and Children
+    Together, Inc..
   place: '0510720'
-  geo:
-    lat: 33.58138
-    lng: -92.83161
+  geo: {lat: 33.58138, lng: -92.83161}
   phone: 870-836-5227
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/camden/camden-housing-authority
   name: Camden Housing Authority
   categories:
@@ -78,20 +72,32 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 33.58405
+    lng: -92.83273
 - id: ar/camden/fairview-elementary-school
   name: Fairview Elementary School
   categories:
   - meal-program
-  address: {street: '#1 Robin St.', city: Camden, state: ar, zip: '71701'}
+  address:
+    street: '#1 Robin St.'
+    city: Camden
+    state: ar
+    zip: '71701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Camden Fairview School
     District.
   place: '0510720'
-  geo: {lat: 33.53252, lng: -92.84214}
+  geo:
+    lat: 33.53252
+    lng: -92.84214
   phone: (870) 231-5434
-  external_ids: {usda_master: Cycle 11_AR_SSO_0001}
+  external_ids:
+    usda_master: Cycle 11_AR_SSO_0001
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/camden/ouachita-medical-center-chemical-dependency-unit
   name: Ouachita Medical Center Chemical Dependency Unit
   categories:
@@ -119,6 +125,7 @@
   - Adult women
   - Adult men
   - Seniors or older adults
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

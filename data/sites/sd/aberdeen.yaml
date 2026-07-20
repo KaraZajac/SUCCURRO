@@ -2,21 +2,15 @@
   name: ABERDEEN CENTER
   categories:
   - child-care
-  address:
-    street: 200 S Harrison St
-    city: Aberdeen
-    state: sd
-    zip: '57401'
+  address: {street: 200 S Harrison St, city: Aberdeen, state: sd, zip: '57401'}
+  description: Head Start early childhood program — 90 funded slots; operated by Northeast South Dakota
+    Head Start Program, Inc..
   place: '4600100'
-  geo:
-    lat: 45.46214
-    lng: -98.47018
+  geo: {lat: 45.46214, lng: -98.47018}
   phone: 605-226-3611
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/aberdeen/aberdeen-housing-redevelopment-commission
   name: Aberdeen Housing & Redevelopment Commission
   categories:
@@ -102,6 +96,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -126,6 +121,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 45.45512
+    lng: -98.43913
 - id: sd/aberdeen/horizon-health-aberdeen
   name: Horizon Health - Aberdeen
   categories:
@@ -153,12 +151,21 @@
   name: Youth Development Center
   categories:
   - meal-program
-  address: {street: 6 S State St, city: Aberdeen, state: sd, zip: '57401'}
+  address:
+    street: 6 S State St
+    city: Aberdeen
+    state: sd
+    zip: '57401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA OF ABERDEEN.
   place: '4600100'
-  geo: {lat: 45.46492, lng: -98.47932}
+  geo:
+    lat: 45.46492
+    lng: -98.47932
   phone: (605) 225-7113
-  external_ids: {usda_master: Cycle 06_SD_SFSP_0049}
+  external_ids:
+    usda_master: Cycle 06_SD_SFSP_0049
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

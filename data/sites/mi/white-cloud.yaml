@@ -16,6 +16,7 @@
   website: https://www.arborcircle.org
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -93,6 +94,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -103,21 +108,14 @@
   name: Newaygo County Early Head Start
   categories:
   - child-care
-  address:
-    street: 434 N Evergreen Dr
-    city: White Cloud
-    state: mi
-    zip: '49349'
+  address: {street: 434 N Evergreen Dr, city: White Cloud, state: mi, zip: '49349'}
+  description: Head Start early childhood program — 12 funded slots; operated by FiveCAP, Inc..
   place: '2686680'
-  geo:
-    lat: 43.56204
-    lng: -85.77119
+  geo: {lat: 43.56204, lng: -85.77119}
   phone: 231-689-6688
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/white-cloud/white-cloud-child-and-adolescent-center
   name: White Cloud Child and Adolescent Center
   categories:
@@ -145,13 +143,22 @@
   name: White Cloud Junior High School - 620907756
   categories:
   - meal-program
-  address: {street: 555 E Wilcox Ave, city: White Cloud, state: mi, zip: '49349'}
+  address:
+    street: 555 E Wilcox Ave
+    city: White Cloud
+    state: mi
+    zip: '49349'
   description: Free summer meals for kids and teens (2026 season) — sponsored by White Cloud Public Schools
     - 62090.
   place: '2686680'
-  geo: {lat: 43.55015, lng: -85.78427}
+  geo:
+    lat: 43.55015
+    lng: -85.78427
   phone: (231) 689-3201
-  external_ids: {usda_master: Cycle 07_MI_SFSP_0527}
+  external_ids:
+    usda_master: Cycle 07_MI_SFSP_0527
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -16,6 +16,10 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -91,29 +95,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: md/silver-spring/community-clinic-inc
-  name: Community Clinic, Inc
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 8665 Georgia Ave
-    city: Silver Spring
-    state: md
-    zip: '20910'
-  place: '2472450'
-  geo:
-    lat: 38.99749
-    lng: -77.02907
-  phone: 301-340-7525
-  website: https://www.cciweb.org
-  external_ids:
-    bphc: BPS-H80-034335
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: md/silver-spring/compass-health-center-silver-spring
   name: Compass Health Center Silver Spring
   categories:
@@ -138,6 +119,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -175,6 +157,27 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  - ar
+  - ht
+  - fa
+  - fr
+  - de
+  - el
+  - he
+  - hi
+  - hmn
+  - it
+  - ja
+  - ko
+  - pl
+  - pt
+  - ru
+  - tl
+  - vi
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -202,6 +205,10 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -217,6 +224,8 @@
     city: Silver Spring
     state: md
     zip: '20905'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.09111
@@ -236,6 +245,8 @@
     city: Silver Spring
     state: md
     zip: '20910'
+  description: Head Start early childhood program — 17 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 38.9922
@@ -255,6 +266,8 @@
     city: Silver Spring
     state: md
     zip: '20905'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.09071
@@ -290,6 +303,8 @@
     city: Silver Spring
     state: md
     zip: '20906'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.07496
@@ -309,6 +324,8 @@
     city: Silver Spring
     state: md
     zip: '20902'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.0611
@@ -328,6 +345,8 @@
     city: Silver Spring
     state: md
     zip: '20906'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.07684
@@ -347,6 +366,8 @@
     city: Silver Spring
     state: md
     zip: '20902'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.0504
@@ -371,12 +392,14 @@
   website: https://www.icamentalhealth.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 38.99763, lng: -77.02974}
 - id: md/silver-spring/joann-leleck-es
   name: JoAnn Leleck ES
   categories:
@@ -386,6 +409,8 @@
     city: Silver Spring
     state: md
     zip: '20903'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.00891
@@ -416,15 +441,24 @@
   name: Macdonald Knolls
   categories:
   - meal-program
-  address: {street: 10611 Tenbrook Drive, city: Silver Spring, state: md, zip: '20901'}
+  address:
+    street: 10611 Tenbrook Drive
+    city: Silver Spring
+    state: md
+    zip: '20901'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MONTGOMERY CO PUB SCH.
   place: '2472450'
-  geo: {lat: 39.03034, lng: -77.02739}
+  geo:
+    lat: 39.03034
+    lng: -77.02739
   phone: (240) 740-7400
-  external_ids: {usda_master: Cycle 08_MD_SFSP_0279}
+  external_ids:
+    usda_master: Cycle 08_MD_SFSP_0279
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/silver-spring/mary-s-center-silver-spring-md
   name: Mary's Center - Silver Spring MD
   categories:
@@ -456,6 +490,8 @@
     city: Silver Spring
     state: md
     zip: '20904'
+  description: Head Start early childhood program — 8 funded slots; operated by The Reginald S. Lourie
+    Center for Infants and Young Children.
   place: '2472450'
   geo:
     lat: 39.08609
@@ -497,6 +533,8 @@
     city: Silver Spring
     state: md
     zip: '20901'
+  description: Head Start early childhood program — 30 funded slots; operated by Montgomery County Community
+    Action Agency.
   place: '2472450'
   geo:
     lat: 39.03067
@@ -573,6 +611,11 @@
   - Young adults
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  - fr
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -588,6 +631,8 @@
     city: Silver Spring
     state: md
     zip: '20901'
+  description: Head Start early childhood program — 10 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.0065
@@ -607,6 +652,8 @@
     city: Silver Spring
     state: md
     zip: '20903'
+  description: Head Start early childhood program — 75 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 38.99815
@@ -640,6 +687,10 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -712,6 +763,7 @@
   - Active duty military
   - Members of military families
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -754,6 +806,10 @@
   - Outpatient
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -769,6 +825,8 @@
     city: Silver Spring
     state: md
     zip: '20906'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.04804
@@ -788,6 +846,8 @@
     city: Silver Spring
     state: md
     zip: '20906'
+  description: Head Start early childhood program — 20 funded slots; operated by Montgomery County Public
+    Schools.
   place: '2472450'
   geo:
     lat: 39.0652

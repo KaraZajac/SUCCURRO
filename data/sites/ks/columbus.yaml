@@ -15,6 +15,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.17092
+    lng: -94.84109
 - id: ks/columbus/columbus-housing-authority
   name: Columbus Housing Authority
   categories:
@@ -66,6 +69,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -169,6 +173,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -179,32 +184,35 @@
   name: St. Rose Parish Hall
   categories:
   - meal-program
-  address: {street: 129 N Kansas Avenue, city: Columbus, state: ks, zip: '66725'}
+  address:
+    street: 129 N Kansas Avenue
+    city: Columbus
+    state: ks
+    zip: '66725'
   description: Free summer meals for kids and teens (2026 season) — sponsored by P0528-S - First Christian
     Church.
   place: '2015075'
-  geo: {lat: 37.17166, lng: -94.84258}
+  geo:
+    lat: 37.17166
+    lng: -94.84258
   phone: (620) 762-1326
-  external_ids: {usda_master: Cycle 02_KS_SFSP_0280}
+  external_ids:
+    usda_master: Cycle 02_KS_SFSP_0280
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/columbus/the-virginia-crossland-early-learning-center
   name: The Virginia Crossland Early Learning Center -
   categories:
   - child-care
-  address:
-    street: 601 S East Ave
-    city: Columbus
-    state: ks
-    zip: '66725'
+  address: {street: 601 S East Ave, city: Columbus, state: ks, zip: '66725'}
+  description: Head Start early childhood program — 15 funded slots; operated by SOUTHEAST KANSAS COMMUNITY
+    ACTION PROGRAM, INC.
   place: '2015075'
-  geo:
-    lat: 37.16424
-    lng: -94.83254
+  geo: {lat: 37.16424, lng: -94.83254}
   phone: 620-724-8204
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

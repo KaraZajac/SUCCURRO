@@ -36,6 +36,7 @@
   website: https://www.npmh.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -46,31 +47,33 @@
   name: Staples EHS
   categories:
   - child-care
-  address:
-    street: 616 4th St NE
-    street2: Ste 1
-    city: Staples
-    state: mn
-    zip: '56479'
+  address: {street: 616 4th St NE, street2: Ste 1, city: Staples, state: mn, zip: '56479'}
+  description: Head Start early childhood program — 8 funded slots; operated by Tri County Community Action
+    Partnership, Inc..
   place: '2762446'
-  geo:
-    lat: 46.36087
-    lng: -94.79435
+  geo: {lat: 46.36087, lng: -94.79435}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/staples/staples-motley-secondary
   name: Staples-Motley Secondary
   categories:
   - meal-program
-  address: {street: 401 Centennial Lane, city: Staples, state: mn, zip: '56479'}
+  address:
+    street: 401 Centennial Lane
+    city: Staples
+    state: mn
+    zip: '56479'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Staples Motley ISD #2170.'
   place: '2762446'
-  geo: {lat: 46.35854, lng: -94.79574}
+  geo:
+    lat: 46.35854
+    lng: -94.79574
   phone: (218) 894-5400
-  external_ids: {usda_master: Cycle 03_MN_SFSP_0063}
+  external_ids:
+    usda_master: Cycle 03_MN_SFSP_0063
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

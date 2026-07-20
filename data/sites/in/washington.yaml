@@ -43,6 +43,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Persons with Alzheimer's or dementia
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -68,6 +69,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -93,25 +95,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.65584
+    lng: -87.20101
 - id: in/washington/washington-head-start
   name: Washington Head Start
   categories:
   - child-care
-  address:
-    street: 2103 Cosby Rd
-    city: Washington
-    state: in
-    zip: '47501'
+  address: {street: 2103 Cosby Rd, city: Washington, state: in, zip: '47501'}
+  description: Head Start early childhood program — 16 funded slots; operated by Pace Community Action
+    Agency, Inc..
   place: '1880504'
-  geo:
-    lat: 38.65522
-    lng: -87.20068
+  geo: {lat: 38.65522, lng: -87.20068}
   phone: 812-254-6098
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/washington/washington-high-school
   name: Washington High School
   categories:
@@ -138,15 +137,24 @@
   name: Washington Intermediate
   categories:
   - meal-program
-  address: {street: 801 Nw 11Th St, city: Washington, state: in, zip: '47501'}
+  address:
+    street: 801 Nw 11Th St
+    city: Washington
+    state: in
+    zip: '47501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Washington Community
     Schools.
   place: '1880504'
-  geo: {lat: 38.66478, lng: -87.18936}
-  external_ids: {usda_master: Cycle 03_IN_SFSP_0061}
+  geo:
+    lat: 38.66478
+    lng: -87.18936
+  external_ids:
+    usda_master: Cycle 03_IN_SFSP_0061
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/washington/washington-junior-high-school
   name: Washington Junior High School
   categories:

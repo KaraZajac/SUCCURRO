@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -48,6 +49,27 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  - ar
+  - ht
+  - fa
+  - fr
+  - de
+  - el
+  - he
+  - hi
+  - hmn
+  - it
+  - ja
+  - ko
+  - pl
+  - pt
+  - ru
+  - tl
+  - vi
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -58,21 +80,15 @@
   name: North Orange
   categories:
   - child-care
-  address:
-    street: 168 Athol Rd
-    city: Orange
-    state: ma
-    zip: '01364'
+  address: {street: 168 Athol Rd, city: Orange, state: ma, zip: '01364'}
+  description: Head Start early childhood program — 15 funded slots; operated by COMMUNITY ACTION PIONEER
+    VALLEY, INC.
   place: '2551230'
-  geo:
-    lat: 42.63369
-    lng: -72.25931
+  geo: {lat: 42.63369, lng: -72.25931}
   phone: 978-575-0522
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/orange/north-quabbin-health-center-dental
   name: North Quabbin Health Center- Dental
   categories:
@@ -119,40 +135,26 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ma/orange/north-quabbin-pharmacy
-  name: North Quabbin Pharmacy
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 119 New Athol Rd, Suite 140
-    city: Orange
-    state: ma
-    zip: '01364'
-  place: '2551230'
-  geo:
-    lat: 42.58439
-    lng: -72.26419
-  phone: 413-325-8500
-  website: https://www.chcfc.org
-  external_ids:
-    bphc: BPS-H80-039678
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ma/orange/ralph-c-mahar-regional-school-summereat-sf-310-0
   name: Ralph C. Mahar Regional School Summereat (Sf-310-001)
   categories:
   - meal-program
-  address: {street: 507 South Main Street, city: Orange, state: ma, zip: '01364'}
+  address:
+    street: 507 South Main Street
+    city: Orange
+    state: ma
+    zip: '01364'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ralph C Mahar Regional
     School District (06-223-SF-310).
   place: '2551230'
-  geo: {lat: 42.5729, lng: -72.30555}
+  geo:
+    lat: 42.5729
+    lng: -72.30555
   phone: (978) 544-2542
-  external_ids: {usda_master: Cycle 10_MA_SFSP_0226}
+  external_ids:
+    usda_master: Cycle 10_MA_SFSP_0226
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

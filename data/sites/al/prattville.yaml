@@ -17,6 +17,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 32.43459
+    lng: -86.421
 - id: al/prattville/housing-authority-of-the-city-of-prattville-al
   name: Housing Authority Of The City Of Prattville, Al
   categories:
@@ -64,6 +67,7 @@
   - Clients who have experienced trauma
   - Persons with Alzheimer's or dementia
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -74,33 +78,35 @@
   name: Prattville Head Start
   categories:
   - child-care
-  address:
-    street: 869 Jensen Rd
-    street2: 869 Jensen Road
-    city: Prattville
-    state: al
-    zip: '36067'
+  address: {street: 869 Jensen Rd, street2: 869 Jensen Road, city: Prattville, state: al, zip: '36067'}
+  description: Head Start early childhood program — 52 funded slots; operated by Family Guidance Center
+    of Alabama, Inc..
   place: 0162328
-  geo:
-    lat: 32.42366
-    lng: -86.47213
+  geo: {lat: 32.42366, lng: -86.47213}
   phone: 334-310-1700
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/prattville/prattville-high-school
   name: Prattville High School
   categories:
   - meal-program
-  address: {street: 1315 Upper Kingston Road, city: Prattville, state: al, zip: '36067'}
+  address:
+    street: 1315 Upper Kingston Road
+    city: Prattville
+    state: al
+    zip: '36067'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Autauga County Board
     of Education.
   place: 0162328
-  geo: {lat: 32.49916, lng: -86.47052}
+  geo:
+    lat: 32.49916
+    lng: -86.47052
   phone: (334) 850-2350
-  external_ids: {usda_master: Cycle 04_AL_SFSP_0147}
+  external_ids:
+    usda_master: Cycle 04_AL_SFSP_0147
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

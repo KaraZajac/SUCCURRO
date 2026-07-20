@@ -21,6 +21,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -44,38 +45,44 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.12855
+    lng: -101.71856
 - id: ne/ogallala/ogallala-head-start
   name: Ogallala Head Start
   categories:
   - child-care
-  address:
-    street: 2606 Spruce Acres
-    city: Ogallala
-    state: ne
-    zip: '69153'
+  address: {street: 2606 Spruce Acres, city: Ogallala, state: ne, zip: '69153'}
+  description: Head Start early childhood program — 15 funded slots; operated by Community Action Partnership
+    of Mid-Nebraska.
   place: '3135980'
-  geo:
-    lat: 41.15152
-    lng: -101.72104
+  geo: {lat: 41.15152, lng: -101.72104}
   phone: 308-284-3503
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/ogallala/prairie-view-school
   name: Prairie View School
   categories:
   - meal-program
-  address: {street: 801 East O Street, city: Ogallala, state: ne, zip: '69153'}
+  address:
+    street: 801 East O Street
+    city: Ogallala
+    state: ne
+    zip: '69153'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ogallala Public School.
   place: '3135980'
-  geo: {lat: 41.13144, lng: -101.70125}
+  geo:
+    lat: 41.13144
+    lng: -101.70125
   phone: (308) 284-4060
-  external_ids: {usda_master: Cycle 04_NE_SFSP_0117}
+  external_ids:
+    usda_master: Cycle 04_NE_SFSP_0117
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ne/ogallala/west-central-nebraska-joint-housing-authority
   name: West Central Nebraska Joint Housing Authority
   categories:

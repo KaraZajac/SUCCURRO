@@ -2,61 +2,41 @@
   name: Aldrich
   categories:
   - child-care
-  address:
-    street: 295 Harrison St
-    city: Fall River
-    state: ma
-    zip: '02723'
+  address: {street: 295 Harrison St, city: Fall River, state: ma, zip: '02723'}
+  description: Head Start early childhood program — 206 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.69075
-    lng: -71.13765
+  geo: {lat: 41.69075, lng: -71.13765}
   phone: 508-324-7509
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/bennie-costa-head-start-center
   name: Bennie Costa Head Start Center
   categories:
   - child-care
-  address:
-    street: 300 Amity St
-    street2: Ste 506
-    city: Fall River
-    state: ma
-    zip: '02721'
+  address: {street: 300 Amity St, street2: Ste 506, city: Fall River, state: ma, zip: '02721'}
+  description: Head Start early childhood program — 18 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.67289
-    lng: -71.16727
+  geo: {lat: 41.67289, lng: -71.16727}
   phone: 508-324-7521
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/campus-preschool
   name: Campus Preschool
   categories:
   - child-care
-  address:
-    street: 777 Elsbree St
-    street2: Bldg C112
-    city: Fall River
-    state: ma
-    zip: '02720'
+  address: {street: 777 Elsbree St, street2: Bldg C112, city: Fall River, state: ma, zip: '02720'}
+  description: Head Start early childhood program — 15 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.72198
-    lng: -71.11928
+  geo: {lat: 41.72198, lng: -71.11928}
   phone: 508-838-7468
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/children-making-strides
   name: Children Making Strides
   categories:
@@ -74,6 +54,7 @@
   website: https://www.cmsaba.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -98,6 +79,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.6888
+    lng: -71.16969
 - id: ma/fall-river/citizens-for-citizens-cfc-tauton-office
   name: Citizens for Citizens (CFC) Tauton Office
   categories:
@@ -116,6 +100,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.6888
+    lng: -71.16969
 - id: ma/fall-river/dr-john-c-corrigan-mental-hlth-center
   name: Dr John C Corrigan Mental Hlth Center
   categories:
@@ -143,6 +130,13 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  - fa
+  - fr
+  - pt
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -171,6 +165,13 @@
   - Adult women
   - Pregnant/postpartum women
   - Adult men
+  languages:
+  - en
+  - es
+  - de
+  - pt
+  - ru
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -215,6 +216,10 @@
   website: https://www.frfsa.org
   services:
   - Outpatient
+  languages:
+  - en
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -225,58 +230,94 @@
   name: Father Diaferio Village (Sf-88-012)
   categories:
   - meal-program
-  address: {street: 249 Johnson Street, city: Fall River, state: ma, zip: '02723'}
+  address:
+    street: 249 Johnson Street
+    city: Fall River
+    state: ma
+    zip: '02723'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.70095, lng: -71.13625}
+  geo:
+    lat: 41.70095
+    lng: -71.13625
   phone: (508) 675-3555
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0074}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0074
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/father-travassos-park-sf-88-050
   name: Father Travassos Park (Sf-88-050)
   categories:
   - meal-program
-  address: {street: 69 Alden Street, city: Fall River, state: ma, zip: '02723'}
+  address:
+    street: 69 Alden Street
+    city: Fall River
+    state: ma
+    zip: '02723'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.68839, lng: -71.13788}
+  geo:
+    lat: 41.68839
+    lng: -71.13788
   phone: (508) 491-6789
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0082}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0082
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/fordney-apartments-sf-88-087
   name: Fordney Apartments (Sf-88-087)
   categories:
   - meal-program
-  address: {street: 201-202 Fordney Street, city: Fall River, state: ma, zip: '02720'}
+  address:
+    street: 201-202 Fordney Street
+    city: Fall River
+    state: ma
+    zip: '02720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.7108, lng: -71.125}
+  geo:
+    lat: 41.7108
+    lng: -71.125
   phone: (508) 675-3535
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0095}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0095
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/griffin-park-sf-88-001
   name: Griffin Park (Sf-88-001)
   categories:
   - meal-program
-  address: {street: 449 4Th Street, city: Fall River, state: ma, zip: '02721'}
+  address:
+    street: 449 4Th Street
+    city: Fall River
+    state: ma
+    zip: '02721'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.69469, lng: -71.15732}
+  geo:
+    lat: 41.69469
+    lng: -71.15732
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0070}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0070
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/healthfirst-family-care-center-inc
   name: HealthFirst Family Care Center Inc.
   categories:
@@ -326,55 +367,51 @@
   name: Heritage Heights
   categories:
   - child-care
-  address:
-    street: 100 Green St
-    street2: Apt 612
-    city: Fall River
-    state: ma
-    zip: '02720'
+  address: {street: 100 Green St, street2: Apt 612, city: Fall River, state: ma, zip: '02720'}
+  description: Head Start early childhood program — 18 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.70376
-    lng: -71.15743
+  geo: {lat: 41.70376, lng: -71.15743}
   phone: 508-324-7513
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/heritage-heights-sf-88-048
   name: Heritage Heights (Sf-88-048)
   categories:
   - meal-program
-  address: {street: 100 Green Street, city: Fall River, state: ma, zip: '02720'}
+  address:
+    street: 100 Green Street
+    city: Fall River
+    state: ma
+    zip: '02720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.70411, lng: -71.15854}
+  geo:
+    lat: 41.70411
+    lng: -71.15854
   phone: (508) 491-6789
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0081}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0081
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/highland-birth-to-five-center
   name: Highland Birth to Five Center
   categories:
   - child-care
-  address:
-    street: 302 Highland Ave
-    city: Fall River
-    state: ma
-    zip: '02720'
+  address: {street: 302 Highland Ave, city: Fall River, state: ma, zip: '02720'}
+  description: Head Start early childhood program — 16 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.71026
-    lng: -71.14738
+  geo: {lat: 41.71026, lng: -71.14738}
   phone: 508-324-7505
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/ignite-recovery-llc
   name: Ignite Recovery LLC
   categories:
@@ -404,6 +441,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - pt
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -414,49 +455,61 @@
   name: Kennedy Park (Sf-88-002)
   categories:
   - meal-program
-  address: {street: 450 Middle Street, city: Fall River, state: ma, zip: '02724'}
+  address:
+    street: 450 Middle Street
+    city: Fall River
+    state: ma
+    zip: '02724'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.69443, lng: -71.1697}
+  geo:
+    lat: 41.69443
+    lng: -71.1697
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0071}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0071
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/lafayette-park-sf-88-003
   name: Lafayette Park (Sf-88-003)
   categories:
   - meal-program
-  address: {street: 339 Eastern Avenue, city: Fall River, state: ma, zip: '02723'}
+  address:
+    street: 339 Eastern Avenue
+    city: Fall River
+    state: ma
+    zip: '02723'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.69243, lng: -71.13072}
+  geo:
+    lat: 41.69243
+    lng: -71.13072
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0072}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0072
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/maple-birth-to-five-center
   name: Maple Birth to Five Center
   categories:
   - child-care
-  address:
-    street: 881 Maple St
-    city: Fall River
-    state: ma
-    zip: '02720'
+  address: {street: 881 Maple St, city: Fall River, state: ma, zip: '02720'}
+  description: Head Start early childhood program — 34 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.70638
-    lng: -71.14281
+  geo: {lat: 41.70638, lng: -71.14281}
   phone: 508-324-7520
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/mental-health-clinic-community-behavioral-health
   name: Mental Health Clinic Community Behavioral Health Center
   categories:
@@ -475,6 +528,11 @@
   website: https://cfservices.org
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -485,72 +543,117 @@
   name: Pleasant View (Sf-88-032)
   categories:
   - meal-program
-  address: {street: 10 Pleasant View, city: Fall River, state: ma, zip: '02720'}
+  address:
+    street: 10 Pleasant View
+    city: Fall River
+    state: ma
+    zip: '02720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.73078, lng: -71.13251}
+  geo:
+    lat: 41.73078
+    lng: -71.13251
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0078}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0078
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/poulos-park-sf-88-077
   name: Poulos Park (Sf-88-077)
   categories:
   - meal-program
-  address: {street: 281-371 Aetna Street, city: Fall River, state: ma, zip: '02721'}
+  address:
+    street: 281-371 Aetna Street
+    city: Fall River
+    state: ma
+    zip: '02721'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.68108, lng: -71.1608}
+  geo:
+    lat: 41.68108
+    lng: -71.1608
   phone: (508) 491-6789
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0090}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0090
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/pulaski-park-sf-88-006
   name: Pulaski Park (Sf-88-006)
   categories:
   - meal-program
-  address: {street: 6-98 Pulaski Street, city: Fall River, state: ma, zip: '02721'}
+  address:
+    street: 6-98 Pulaski Street
+    city: Fall River
+    state: ma
+    zip: '02721'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.6879, lng: -71.15259}
+  geo:
+    lat: 41.6879
+    lng: -71.15259
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0073}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0073
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/ruggles-park-sf-88-015
   name: Ruggles Park (Sf-88-015)
   categories:
   - meal-program
-  address: {street: 308 Seabury Street, city: Fall River, state: ma, zip: '02720'}
+  address:
+    street: 308 Seabury Street
+    city: Fall River
+    state: ma
+    zip: '02720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.70472, lng: -71.14659}
+  geo:
+    lat: 41.70472
+    lng: -71.14659
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0076}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0076
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/ship-s-cove-sf-88-090
   name: Ship'S Cove (Sf-88-090)
   categories:
   - meal-program
-  address: {street: 130 Canal Street, city: Fall River, state: ma, zip: '02721'}
+  address:
+    street: 130 Canal Street
+    city: Fall River
+    state: ma
+    zip: '02721'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.70065, lng: -71.16216}
+  geo:
+    lat: 41.70065
+    lng: -71.16216
   phone: (508) 679-2587
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0097}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0097
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/sstar-alcoholism-drug-detox-program
   name: SSTAR Alcoholism/Drug Detox Program
   categories:
@@ -567,6 +670,11 @@
     lng: -71.13617
   phone: 508-324-7763
   website: https://www.sstar.org
+  languages:
+  - en
+  - es
+  - pt
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -614,6 +722,10 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -668,6 +780,12 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  - ht
+  - pt
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -704,6 +822,7 @@
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -740,6 +859,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -777,6 +897,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -809,6 +930,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -845,6 +970,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -855,36 +981,38 @@
   name: Sullivan Birth To Five Center
   categories:
   - child-care
-  address:
-    street: 571 2nd St
-    street2: Word of mouth
-    city: Fall River
-    state: ma
-    zip: '02721'
+  address: {street: 571 2nd St, street2: Word of mouth, city: Fall River, state: ma, zip: '02721'}
+  description: Head Start early childhood program — 43 funded slots; operated by Citizens For Citizens,
+    Inc..
   place: '2523000'
-  geo:
-    lat: 41.69484
-    lng: -71.15929
+  geo: {lat: 41.69484, lng: -71.15929}
   phone: 508-678-2961
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/fall-river/sunset-hill-housing-sf-88-062
   name: Sunset Hill Housing (Sf-88-062)
   categories:
   - meal-program
-  address: {street: 351 Charles Street, city: Fall River, state: ma, zip: '02724'}
+  address:
+    street: 351 Charles Street
+    city: Fall River
+    state: ma
+    zip: '02724'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Greater Fall River Recreation
     (03-095-SF-88).
   place: '2523000'
-  geo: {lat: 41.68375, lng: -71.18403}
+  geo:
+    lat: 41.68375
+    lng: -71.18403
   phone: (508) 679-0922
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0084}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0084
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/fall-river/the-family-healthcare-center-at-sstar
   name: The Family HealthCare Center at SSTAR
   categories:

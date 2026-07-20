@@ -28,6 +28,7 @@
   - Adult men
   - Seniors or older adults
   - Veterans
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -58,6 +59,10 @@
   - Regular outpatient treatment
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -94,6 +99,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -104,21 +110,15 @@
   name: Children's Learning Center
   categories:
   - child-care
-  address:
-    street: 205 N Michigan St
-    city: Lawrence
-    state: ks
-    zip: '66044'
+  address: {street: 205 N Michigan St, city: Lawrence, state: ks, zip: '66044'}
+  description: Head Start early childhood program — 21 funded slots; operated by East Central Kansas Economic
+    Opportunity Corporation.
   place: '2038900'
-  geo:
-    lat: 38.98481
-    lng: -95.25204
+  geo: {lat: 38.98481, lng: -95.25204}
   phone: 784-785-5867
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/lawrence/dccca-inc-first-step-at-lake-view
   name: DCCCA Inc First Step at Lake View
   categories:
@@ -148,6 +148,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -173,6 +174,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -183,59 +185,41 @@
   name: Douglas Co. Head Start
   categories:
   - child-care
-  address:
-    street: 925 Vermont St
-    city: Lawrence
-    state: ks
-    zip: '66044'
+  address: {street: 925 Vermont St, city: Lawrence, state: ks, zip: '66044'}
+  description: Head Start early childhood program — 54 funded slots; operated by East Central Kansas Economic
+    Opportunity Corporation.
   place: '2038900'
-  geo:
-    lat: 38.9666
-    lng: -95.23735
+  geo: {lat: 38.9666, lng: -95.23735}
   phone: 785-842-2515
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/lawrence/douglas-co-head-start-2-kennedy-elementary
   name: 'Douglas Co. Head Start #2 - Kennedy Elementary'
   categories:
   - child-care
-  address:
-    street: 1605 Davis Rd
-    city: Lawrence
-    state: ks
-    zip: '66046'
+  address: {street: 1605 Davis Rd, city: Lawrence, state: ks, zip: '66046'}
+  description: Head Start early childhood program — 18 funded slots; operated by East Central Kansas Economic
+    Opportunity Corporation.
   place: '2038900'
-  geo:
-    lat: 38.94722
-    lng: -95.21598
+  geo: {lat: 38.94722, lng: -95.21598}
   phone: 785-842-2515
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/lawrence/douglas-co-home-based
   name: Douglas Co. Home Based
   categories:
   - child-care
-  address:
-    street: 2518 Ridge Ct
-    city: Lawrence
-    state: ks
-    zip: '66046'
+  address: {street: 2518 Ridge Ct, city: Lawrence, state: ks, zip: '66046'}
+  description: Head Start early childhood program — 12 funded slots; operated by East Central Kansas Economic
+    Opportunity Corporation.
   place: '2038900'
-  geo:
-    lat: 38.93783
-    lng: -95.25771
+  geo: {lat: 38.93783, lng: -95.25771}
   phone: 785-727-8352
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/lawrence/douglas-county-dcf
   name: Douglas County DCF
   categories:
@@ -253,19 +237,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.94994
+    lng: -95.22855
 - id: ks/lawrence/douglas-county-fairgrounds
   name: Douglas County Fairgrounds
   categories:
   - meal-program
-  address: {street: 2110 Harper St., city: Lawrence, state: ks, zip: '66046'}
+  address:
+    street: 2110 Harper St.
+    city: Lawrence
+    state: ks
+    zip: '66046'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0497 - Lawrence.
   place: '2038900'
-  geo: {lat: 38.94704, lng: -95.21415}
+  geo:
+    lat: 38.94704
+    lng: -95.21415
   phone: (785) 832-5000
-  external_ids: {usda_master: Cycle 02_KS_SFSP_0229}
+  external_ids:
+    usda_master: Cycle 02_KS_SFSP_0229
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lawrence/heartland-at-534-michigan
   name: Heartland at 534 Michigan
   categories:
@@ -403,15 +399,24 @@
   name: Sunset Hill Elementary
   categories:
   - meal-program
-  address: {street: 901 Schwarz Rd, city: Lawrence, state: ks, zip: '66049'}
+  address:
+    street: 901 Schwarz Rd
+    city: Lawrence
+    state: ks
+    zip: '66049'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0497 - Lawrence.
   place: '2038900'
-  geo: {lat: 38.96725, lng: -95.2697}
+  geo:
+    lat: 38.96725
+    lng: -95.2697
   phone: (785) 832-5000
-  external_ids: {usda_master: Cycle 02_KS_SFSP_0228}
+  external_ids:
+    usda_master: Cycle 02_KS_SFSP_0228
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lawrence/vetsuccess-on-campus-at-university-of-kansas
   name: VetSuccess on Campus at University of Kansas
   categories:

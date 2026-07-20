@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.34537
+    lng: -98.23114
 - id: sd/huron/behavioral-health-medicine-and-administrative-of
   name: Behavioral Health Medicine and Administrative Offices
   categories:
@@ -47,6 +50,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -84,6 +88,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -120,6 +125,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -130,16 +136,25 @@
   name: Gng Huron Middle School
   categories:
   - meal-program
-  address: {street: 1045 18Th St Sw, city: Huron, state: sd, zip: '57350'}
+  address:
+    street: 1045 18Th St Sw
+    city: Huron
+    state: sd
+    zip: '57350'
   description: Free summer meals for kids and teens (2026 season) — sponsored by HURON SCHOOL DISTRICT
     02-2.
   place: '4631060'
-  geo: {lat: 44.34544, lng: -98.23039}
+  geo:
+    lat: 44.34544
+    lng: -98.23039
   phone: (605) 353-6909
-  external_ids: {usda_master: Cycle 06_SD_SFSP_0047}
+  external_ids:
+    usda_master: Cycle 06_SD_SFSP_0047
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: sd/huron/horizon-health-huron
   name: Horizon Health - Huron
   categories:
@@ -167,21 +182,15 @@
   name: HURON CENTER
   categories:
   - child-care
-  address:
-    street: 135 Waibel Dr
-    city: Huron
-    state: sd
-    zip: '57350'
+  address: {street: 135 Waibel Dr, city: Huron, state: sd, zip: '57350'}
+  description: Head Start early childhood program — 60 funded slots; operated by Northeast South Dakota
+    Head Start Program, Inc..
   place: '4631060'
-  geo:
-    lat: 44.36784
-    lng: -98.20602
+  geo: {lat: 44.36784, lng: -98.20602}
   phone: 605-352-1845
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: sd/huron/huron-housing-authority
   name: Huron Housing Authority
   categories:
@@ -229,6 +238,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents.
   cost: varies
   sources:
   - samhsa/findtreatment

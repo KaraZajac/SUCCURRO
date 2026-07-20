@@ -38,15 +38,24 @@
   name: Patch Youth Center At Roane Committee On Aging
   categories:
   - meal-program
-  address: {street: 811 Madison Ave., city: Spencer, state: wv, zip: '25276'}
+  address:
+    street: 811 Madison Ave.
+    city: Spencer
+    state: wv
+    zip: '25276'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Roane Co Patch Inc.
   place: '5475820'
-  geo: {lat: 38.79432, lng: -81.35476}
+  geo:
+    lat: 38.79432
+    lng: -81.35476
   phone: (304) 927-8047
-  external_ids: {usda_master: Cycle 07_WV_SFSP_0266}
+  external_ids:
+    usda_master: Cycle 07_WV_SFSP_0266
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/spencer/roane-county-dhhr-office
   name: Roane County DHHR Office
   categories:
@@ -64,6 +73,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.80031
+    lng: -81.37796
 - id: wv/spencer/roane-county-family-health-care
   name: ROANE COUNTY FAMILY HEALTH CARE
   categories:
@@ -91,53 +103,48 @@
   name: Spencer Elementary (Roane Co)
   categories:
   - child-care
+  address: {street: 85 Clay Rd, city: Spencer, state: wv, zip: '25276'}
+  description: Head Start early childhood program — 16 funded slots; operated by AFL-CIO Appalachian Council.
+  place: '5475820'
+  geo: {lat: 38.7605, lng: -81.30381}
+  phone: 304-927-6428
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
+- id: wv/spencer/spencer-elementary-school
+  name: Spencer Elementary School
+  categories:
+  - meal-program
   address:
     street: 85 Clay Rd
     city: Spencer
     state: wv
     zip: '25276'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Roane Co Bd of Education.
   place: '5475820'
   geo:
-    lat: 38.7605
-    lng: -81.30381
-  phone: 304-927-6428
+    lat: 38.78982
+    lng: -81.35024
+  phone: (304) 927-6488
+  external_ids:
+    usda_master: Cycle 04_WV_SFSP_0169
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
-- id: wv/spencer/spencer-elementary-school
-  name: Spencer Elementary School
-  categories:
-  - meal-program
-  address: {street: 85 Clay Rd, city: Spencer, state: wv, zip: '25276'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Roane Co Bd of Education.
-  place: '5475820'
-  geo: {lat: 38.78982, lng: -81.35024}
-  phone: (304) 927-6488
-  external_ids: {usda_master: Cycle 04_WV_SFSP_0169}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
 - id: wv/spencer/spencer-roane-co
   name: Spencer (Roane Co)
   categories:
   - child-care
-  address:
-    street: 811 Madison Ave
-    city: Spencer
-    state: wv
-    zip: '25276'
+  address: {street: 811 Madison Ave, city: Spencer, state: wv, zip: '25276'}
+  description: Head Start early childhood program — 34 funded slots; operated by AFL-CIO Appalachian Council.
   place: '5475820'
-  geo:
-    lat: 38.79408
-    lng: -81.3547
+  geo: {lat: 38.79408, lng: -81.3547}
   phone: 304-927-4206
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/spencer/westbrook-health-services-roane-county-office
   name: Westbrook Health Services Roane County Office
   categories:
@@ -157,6 +164,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

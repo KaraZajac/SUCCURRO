@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -26,21 +27,15 @@
   name: Belfast Early Head Start Center "Jabine"
   categories:
   - child-care
-  address:
-    street: 275 High St
-    city: Belfast
-    state: me
-    zip: 04915
+  address: {street: 275 High St, city: Belfast, state: me, zip: 04915}
+  description: Head Start early childhood program — 24 funded slots; operated by Waldo Community Action
+    Partners.
   place: '2303950'
-  geo:
-    lat: 44.43106
-    lng: -69.01376
+  geo: {lat: 44.43106, lng: -69.01376}
   phone: 207-338-4590
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: me/belfast/brighter-heights-maine-belfast
   name: Brighter Heights Maine Belfast
   categories:
@@ -61,6 +56,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -71,73 +67,63 @@
   name: Captain Albert W. Stevens School
   categories:
   - meal-program
-  address: {street: 31 Elementary Ave, city: Belfast, state: me, zip: 04915}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by RSU 71.
-  place: '2303950'
-  geo: {lat: 44.41794, lng: -69.01308}
-  phone: (207) 338-3510
-  external_ids: {usda_master: Cycle 08_ME_SFSP_0044}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: me/belfast/cass-hs-pre-k
-  name: CASS HS/Pre-K
-  categories:
-  - child-care
   address:
     street: 31 Elementary Ave
     city: Belfast
     state: me
     zip: 04915
+  description: Free summer meals for kids and teens (2026 season) — sponsored by RSU 71.
   place: '2303950'
   geo:
-    lat: 44.41791
-    lng: -69.01263
-  phone: 207-338-3510
+    lat: 44.41794
+    lng: -69.01308
+  phone: (207) 338-3510
+  external_ids:
+    usda_master: Cycle 08_ME_SFSP_0044
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: me/belfast/cass-hs-pre-k
+  name: CASS HS/Pre-K
+  categories:
+  - child-care
+  address: {street: 31 Elementary Ave, city: Belfast, state: me, zip: 04915}
+  description: Head Start early childhood program — 7 funded slots; operated by Waldo Community Action
+    Partners.
+  place: '2303950'
+  geo: {lat: 44.41791, lng: -69.01263}
+  phone: 207-338-3510
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: me/belfast/early-head-start-home-based-option
   name: Early Head Start Home Based Option
   categories:
   - child-care
-  address:
-    street: 9 Field St
-    street2: Suite 209
-    city: Belfast
-    state: me
-    zip: 04915
+  address: {street: 9 Field St, street2: Suite 209, city: Belfast, state: me, zip: 04915}
+  description: Head Start early childhood program — 11 funded slots; operated by Waldo Community Action
+    Partners.
   place: '2303950'
-  geo:
-    lat: 44.43163
-    lng: -69.01411
+  geo: {lat: 44.43163, lng: -69.01411}
   phone: 207-338-3827
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: me/belfast/east-belfast-head-start-pre-k
   name: East Belfast Head Start/Pre-K
   categories:
   - child-care
-  address:
-    street: 14 Swan Lake Ave
-    city: Belfast
-    state: me
-    zip: 04915
+  address: {street: 14 Swan Lake Ave, city: Belfast, state: me, zip: 04915}
+  description: Head Start early childhood program — 9 funded slots; operated by Waldo Community Action
+    Partners.
   place: '2303950'
-  geo:
-    lat: 44.45782
-    lng: -69.0062
+  geo: {lat: 44.45782, lng: -69.0062}
   phone: 207-338-3827
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: me/belfast/maine-behavioral-healthcare
   name: Maine Behavioral Healthcare
   categories:
@@ -156,6 +142,7 @@
   website: https://mainehealth.org/maine-behavioral-healthcare
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -203,6 +190,7 @@
   website: https://searsportcounseling.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -227,3 +215,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.43129
+    lng: -69.01499

@@ -43,6 +43,7 @@
   - Clients who have experienced trauma
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -67,35 +68,41 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 36.37276
+    lng: -91.82366
 - id: ar/salem-2150/salem-head-start
   name: Salem Head Start
   categories:
   - child-care
-  address:
-    street: 146 N Pickren St
-    city: Salem
-    state: ar
-    zip: '72576'
+  address: {street: 146 N Pickren St, city: Salem, state: ar, zip: '72576'}
+  description: Head Start early childhood program — 18 funded slots; operated by North Central Arkansas
+    Development Council, Inc.
   place: '0562150'
-  geo:
-    lat: 36.37226
-    lng: -91.82378
+  geo: {lat: 36.37226, lng: -91.82378}
   phone: 870-895-3434
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/salem-2150/salem-high-school
   name: Salem High School
   categories:
   - meal-program
-  address: {street: 313 Hwy 62 E, city: Salem, state: ar, zip: '72576'}
+  address:
+    street: 313 Hwy 62 E
+    city: Salem
+    state: ar
+    zip: '72576'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem School District.
   place: '0562150'
-  geo: {lat: 36.36062, lng: -91.81553}
+  geo:
+    lat: 36.36062
+    lng: -91.81553
   phone: (870) 895-5198
-  external_ids: {usda_master: Cycle 04_AR_SSO_0181}
+  external_ids:
+    usda_master: Cycle 04_AR_SSO_0181
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

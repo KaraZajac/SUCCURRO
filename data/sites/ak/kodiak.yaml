@@ -40,6 +40,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 57.78858
+    lng: -152.40281
 - id: ak/kodiak/carolyn-street-facility
   name: Carolyn Street Facility
   categories:
@@ -102,6 +105,7 @@
   website: https://kodiakhealthcare.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -151,6 +155,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -184,35 +189,38 @@
   name: Kodiak Head Start
   categories:
   - child-care
-  address:
-    street: 419 Hillside Dr
-    city: Kodiak
-    state: ak
-    zip: '99615'
+  address: {street: 419 Hillside Dr, city: Kodiak, state: ak, zip: '99615'}
+  description: Head Start early childhood program — 18 funded slots; operated by Rural Alaska Community
+    Action Program, Inc.
   place: 0240950
-  geo:
-    lat: 57.79364
-    lng: -152.40736
+  geo: {lat: 57.79364, lng: -152.40736}
   phone: 907-486-4963
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ak/kodiak/kodiak-high-school
   name: Kodiak High School
   categories:
   - meal-program
-  address: {street: 917 E Rezanof Drive, city: Kodiak, state: ak, zip: '99615'}
+  address:
+    street: 917 E Rezanof Drive
+    city: Kodiak
+    state: ak
+    zip: '99615'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Kodiak Island Borough
     School District.
   place: 0240950
-  geo: {lat: 57.79243, lng: -152.39354}
+  geo:
+    lat: 57.79243
+    lng: -152.39354
   phone: (907) 486-7448
-  external_ids: {usda_master: Cycle 01_AK_SFSP_0007}
+  external_ids:
+    usda_master: Cycle 01_AK_SFSP_0007
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/kodiak/larsen-bay-health-clinic
   name: Larsen Bay Health Clinic
   categories:

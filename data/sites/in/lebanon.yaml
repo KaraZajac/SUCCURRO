@@ -17,6 +17,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.04761
+    lng: -86.4861
 - id: in/lebanon/aspire-indiana-health-lebanon
   name: Aspire Indiana Health - Lebanon
   categories:
@@ -61,6 +64,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -94,21 +98,15 @@
   name: Boone County Head Start
   categories:
   - child-care
-  address:
-    street: 2791 N Lebanon St
-    city: Lebanon
-    state: in
-    zip: '46052'
+  address: {street: 2791 N Lebanon St, city: Lebanon, state: in, zip: '46052'}
+  description: Head Start early childhood program — 12 funded slots; operated by Community Action Program,
+    Inc. of Western Indiana.
   place: '1842624'
-  geo:
-    lat: 40.07951
-    lng: -86.47031
+  geo: {lat: 40.07951, lng: -86.47031}
   phone: 765-535-7930
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/lebanon/cummins-behavioral-health-systems-inc-boone
   name: Cummins Behavioral Health Systems Inc Boone
   categories:
@@ -134,6 +132,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

@@ -17,6 +17,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 46.57609
+    lng: -90.9062
 - id: wi/ashland/ashland-housing-authority
   name: Ashland Housing Authority
   categories:
@@ -57,6 +60,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -67,60 +71,39 @@
   name: Bad River Head Start/Early Head Start
   categories:
   - child-care
-  address:
-    street: 53552 Abinoojiyag Rd
-    city: Ashland
-    state: wi
-    zip: '54806'
+  address: {street: 53552 Abinoojiyag Rd, city: Ashland, state: wi, zip: '54806'}
+  description: Head Start early childhood program — 65 funded slots; operated by Bad River Band of Lake
+    Superior Chippewa Indians.
   place: '5503225'
-  geo:
-    lat: 46.59407
-    lng: -90.64427
+  geo: {lat: 46.59407, lng: -90.64427}
   phone: 715-682-7144
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/ashland/center-7
   name: 'Center # 7'
   categories:
   - child-care
-  address:
-    street: 301 13th Ave E
-    city: Ashland
-    state: wi
-    zip: '54806'
+  address: {street: 301 13th Ave E, city: Ashland, state: wi, zip: '54806'}
+  description: Head Start early childhood program — 60 funded slots; operated by FAMILY FORUM, INC..
   place: '5503225'
-  geo:
-    lat: 46.59665
-    lng: -90.86736
+  geo: {lat: 46.59665, lng: -90.86736}
   phone: 715-682-5035
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/ashland/center-7-ehs
   name: 'Center # 7 EHS'
   categories:
   - child-care
-  address:
-    street: 220 3rd Ave W
-    street2: Ste B
-    city: Ashland
-    state: wi
-    zip: '54806'
+  address: {street: 220 3rd Ave W, street2: Ste B, city: Ashland, state: wi, zip: '54806'}
+  description: Head Start early childhood program — 22 funded slots; operated by FAMILY FORUM, INC..
   place: '5503225'
-  geo:
-    lat: 46.58981
-    lng: -90.88476
+  geo: {lat: 46.58981, lng: -90.88476}
   phone: 715-682-3156
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/ashland/lake-superior-intermediate
   name: Lake Superior Intermediate
   categories:
@@ -148,15 +131,24 @@
   name: Lake Superior Intermediate School
   categories:
   - meal-program
-  address: {street: 1101 Binsfield Rd, city: Ashland, state: wi, zip: '54806'}
+  address:
+    street: 1101 Binsfield Rd
+    city: Ashland
+    state: wi
+    zip: '54806'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ashland School District.
   place: '5503225'
-  geo: {lat: 46.56701, lng: -90.87891}
+  geo:
+    lat: 46.56701
+    lng: -90.87891
   phone: (715) 682-7080
-  external_ids: {usda_master: Cycle 05_WI_SFSP_0396}
+  external_ids:
+    usda_master: Cycle 05_WI_SFSP_0396
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/ashland/lake-superior-primary
   name: Lake Superior Primary
   categories:
@@ -226,29 +218,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: wi/ashland/northlakes-ashland-east
-  name: NorthLakes - Ashland East
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 719 Main St E
-    city: Ashland
-    state: wi
-    zip: '54806'
-  place: '5503225'
-  geo:
-    lat: 46.5953
-    lng: -90.875
-  phone: 888-834-4551
-  website: https://www.northlakesclinic.org
-  external_ids:
-    bphc: BPS-H80-008174
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: wi/ashland/northlakes-community-clinic-ashland
   name: NorthLakes Community Clinic Ashland
   categories:
@@ -271,6 +240,7 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -342,6 +312,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Persons with eating disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -369,6 +340,7 @@
   - Hospital inpatient detoxification
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

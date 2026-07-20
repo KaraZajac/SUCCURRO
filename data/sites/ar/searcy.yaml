@@ -90,29 +90,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: ar/searcy/arcare-114-clinical-pharmacy-office
-  name: ARcare-114 Clinical Pharmacy Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1241 W Beebe Capps Expy
-    city: Searcy
-    state: ar
-    zip: '72143'
-  place: '0563020'
-  geo:
-    lat: 35.24466
-    lng: -91.7498
-  phone: 501-462-2305
-  website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-041929
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ar/searcy/arcare-64
   name: ARcare-64
   categories:
@@ -181,6 +158,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -208,6 +186,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -218,21 +197,15 @@
   name: CAPCA Head Start Searcy
   categories:
   - child-care
-  address:
-    street: 610 N Moss Ave
-    city: Searcy
-    state: ar
-    zip: '72143'
+  address: {street: 610 N Moss Ave, city: Searcy, state: ar, zip: '72143'}
+  description: Head Start early childhood program — 55 funded slots; operated by COMMUNITY ACTION PROGRAM
+    FOR CENTRAL ARKANSAS CAPCA.
   place: '0563020'
-  geo:
-    lat: 35.25313
-    lng: -91.71894
+  geo: {lat: 35.25313, lng: -91.71894}
   phone: 501-268-9868
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/searcy/community-action-program-for-central-arkansas-in
   name: Community Action Program for Central Arkansas Inc. (CAPCA)
   categories:
@@ -252,6 +225,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 35.25274
+    lng: -91.70446
 - id: ar/searcy/compassionate-care-clinic
   name: Compassionate Care Clinic
   categories:
@@ -271,6 +247,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -301,6 +278,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -311,35 +289,21 @@
   name: Riverview High School
   categories:
   - meal-program
-  address: {street: 810 Raider Drive, city: Searcy, state: ar, zip: '72143'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Riverview School District.
-  place: '0563020'
-  geo: {lat: 35.25519, lng: -91.69012}
-  phone: (501) 279-0540
-  external_ids: {usda_master: Cycle 04_AR_SFSP_0001}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: ar/searcy/searcy-corporate-support-center
-  name: Searcy Corporate Support Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
   address:
-    street: 200 W Race Ave
+    street: 810 Raider Drive
     city: Searcy
     state: ar
     zip: '72143'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Riverview School District.
   place: '0563020'
   geo:
-    lat: 35.25106
-    lng: -91.73903
-  phone: 501-207-8481
-  website: https://www.arcare.net
+    lat: 35.25519
+    lng: -91.69012
+  phone: (501) 279-0540
   external_ids:
-    bphc: BPS-H80-041736
+    usda_master: Cycle 04_AR_SFSP_0001
   sources:
-  - hrsa/health-center-sites
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -347,16 +311,25 @@
   name: Searcy High School
   categories:
   - meal-program
-  address: {street: 802 E. Moore Ave, city: Searcy, state: ar, zip: '72143'}
+  address:
+    street: 802 E. Moore Ave
+    city: Searcy
+    state: ar
+    zip: '72143'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Seacy Special School
     District.
   place: '0563020'
-  geo: {lat: 35.25318, lng: -91.7287}
+  geo:
+    lat: 35.25318
+    lng: -91.7287
   phone: (501) 278-2242
-  external_ids: {usda_master: Cycle 08_AR_SSO_0117}
+  external_ids:
+    usda_master: Cycle 08_AR_SSO_0117
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/searcy/searcy-housing-authority
   name: Searcy Housing Authority
   categories:
@@ -374,29 +347,6 @@
   phone: 501-268-8547
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ar/searcy/searcy-positive-connections
-  name: Searcy Positive Connections
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 417 S Main St
-    city: Searcy
-    state: ar
-    zip: '72143'
-  place: '0563020'
-  geo:
-    lat: 35.24482
-    lng: -91.73726
-  phone: 870-347-2534
-  website: https://www.arcare.net
-  external_ids:
-    bphc: BPS-H80-041737
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -448,30 +398,48 @@
   name: Sidney Deener Elementary
   categories:
   - meal-program
-  address: {street: 163 Cloverdale Blvd, city: Searcy, state: ar, zip: '72143'}
+  address:
+    street: 163 Cloverdale Blvd
+    city: Searcy
+    state: ar
+    zip: '72143'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Seacy Special School
     District.
   place: '0563020'
-  geo: {lat: 35.2479, lng: -91.71294}
+  geo:
+    lat: 35.2479
+    lng: -91.71294
   phone: (501) 278-2209
-  external_ids: {usda_master: Cycle 08_AR_SSO_0118}
+  external_ids:
+    usda_master: Cycle 08_AR_SSO_0118
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/searcy/southwest-middle-school
   name: Southwest Middle School
   categories:
   - meal-program
-  address: {street: 1000 West Beebe Capps Expy, city: Searcy, state: ar, zip: '72143'}
+  address:
+    street: 1000 West Beebe Capps Expy
+    city: Searcy
+    state: ar
+    zip: '72143'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Seacy Special School
     District.
   place: '0563020'
-  geo: {lat: 35.2439, lng: -91.74764}
+  geo:
+    lat: 35.2439
+    lng: -91.74764
   phone: (501) 278-2207
-  external_ids: {usda_master: Cycle 08_AR_SSO_0120}
+  external_ids:
+    usda_master: Cycle 08_AR_SSO_0120
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/searcy/unity-health-clearview-unit
   name: Unity Health Clearview Unit
   categories:
@@ -494,6 +462,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Persons with Alzheimer's or dementia
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -522,6 +491,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

@@ -22,21 +22,15 @@
   name: SCS Head Start Claremont Center
   categories:
   - child-care
-  address:
-    street: 6 Kinney Pl
-    city: Claremont
-    state: nh
-    zip: '03743'
+  address: {street: 6 Kinney Pl, city: Claremont, state: nh, zip: '03743'}
+  description: Head Start early childhood program — 45 funded slots; operated by Southwestern Community
+    Services, Inc..
   place: '3312900'
-  geo:
-    lat: 43.37674
-    lng: -72.34676
+  geo: {lat: 43.37674, lng: -72.34676}
   phone: 603-719-4304
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nh/claremont/southwestern-community-services
   name: Southwestern Community Services
   categories:
@@ -55,6 +49,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 43.37185
+    lng: -72.33872
 - id: nh/claremont/west-central-behavioral-health-adult-outpatient
   name: West Central Behavioral Health Adult Outpatient Services
   categories:
@@ -76,6 +73,7 @@
   - Young adults
   - Seniors or older adults
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -101,6 +99,7 @@
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

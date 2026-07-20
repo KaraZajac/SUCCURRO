@@ -15,6 +15,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 34.94409
+    lng: -104.6821
 - id: nm/santa-rosa/new-mexico-behav-health-institute-community-base
   name: New Mexico Behav Health Institute Community Based Services
   categories:
@@ -38,6 +41,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -48,35 +52,38 @@
   name: Santa Rosa Elementary School
   categories:
   - meal-program
-  address: {street: 658 S 5Th Street, city: Santa Rosa, state: nm, zip: '88435'}
+  address:
+    street: 658 S 5Th Street
+    city: Santa Rosa
+    state: nm
+    zip: '88435'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Santa Rosa Consolidated
     Schools.
   place: '3570670'
-  geo: {lat: 34.93693, lng: -104.68097}
+  geo:
+    lat: 34.93693
+    lng: -104.68097
   phone: (575) 472-3172
-  external_ids: {usda_master: Cycle 03_NM_SFSP_0147}
+  external_ids:
+    usda_master: Cycle 03_NM_SFSP_0147
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nm/santa-rosa/santa-rosa-head-start
   name: Santa Rosa Head Start
   categories:
   - child-care
-  address:
-    street: 658 S 5th St
-    city: Santa Rosa
-    state: nm
-    zip: '88435'
+  address: {street: 658 S 5th St, city: Santa Rosa, state: nm, zip: '88435'}
+  description: Head Start early childhood program — 34 funded slots; operated by Eastern Plains Community
+    Action Agency, Inc..
   place: '3570670'
-  geo:
-    lat: 34.93693
-    lng: -104.68082
+  geo: {lat: 34.93693, lng: -104.68082}
   phone: 575-472-3196
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nm/santa-rosa/santa-rosa-high-school-school-based-clinic
   name: Santa Rosa High School School Based Clinic
   categories:

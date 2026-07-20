@@ -13,6 +13,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -23,53 +24,50 @@
   name: Carrollton Early Learning Center
   categories:
   - child-care
-  address:
-    street: 106 Walnut Hills Dr
-    city: Carrollton
-    state: mo
-    zip: '64633'
+  address: {street: 106 Walnut Hills Dr, city: Carrollton, state: mo, zip: '64633'}
+  description: Head Start early childhood program — 9 funded slots; operated by Missouri Valley Community
+    Action Agency.
   place: '2911566'
-  geo:
-    lat: 39.36062
-    lng: -93.50841
+  geo: {lat: 39.36062, lng: -93.50841}
   phone: 660-322-5088
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/carrollton/carrollton-elementary
   name: Carrollton Elementary
   categories:
   - meal-program
-  address: {street: 207 East Ninth Street, city: Carrollton, state: mo, zip: '64633'}
+  address:
+    street: 207 East Ninth Street
+    city: Carrollton
+    state: mo
+    zip: '64633'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Carrollton R-VII.
   place: '2911566'
-  geo: {lat: 39.36825, lng: -93.49147}
+  geo:
+    lat: 39.36825
+    lng: -93.49147
   phone: (660) 542-2535
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0122}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0122
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mo/carrollton/carrollton-head-start
   name: Carrollton Head Start
   categories:
   - child-care
-  address:
-    street: 108 Walnut Hills Dr
-    city: Carrollton
-    state: mo
-    zip: '64633'
+  address: {street: 108 Walnut Hills Dr, city: Carrollton, state: mo, zip: '64633'}
+  description: Head Start early childhood program — 35 funded slots; operated by Missouri Valley Community
+    Action Agency.
   place: '2911566'
-  geo:
-    lat: 39.35593
-    lng: -93.51152
+  geo: {lat: 39.35593, lng: -93.51152}
   phone: 660-542-2560
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/carrollton/carrollton-housing-authority
   name: Carrollton Housing Authority
   categories:
@@ -120,6 +118,7 @@
   - Persons with Alzheimer's or dementia
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -168,3 +167,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.35836
+    lng: -93.49704

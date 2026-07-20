@@ -2,21 +2,15 @@
   name: Albemarle Academy
   categories:
   - child-care
-  address:
-    street: 405 Davis St
-    city: Albemarle
-    state: nc
-    zip: '28001'
+  address: {street: 405 Davis St, city: Albemarle, state: nc, zip: '28001'}
+  description: Head Start early childhood program — 55 funded slots; operated by SCUS Head Start Programs,
+    Inc.
   place: '3700680'
-  geo:
-    lat: 35.34776
-    lng: -80.18984
+  geo: {lat: 35.34776, lng: -80.18984}
   phone: 910-294-6918
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/albemarle/city-of-albemarle-department-of-public-housing
   name: City Of Albemarle Department Of Public Housing
   categories:
@@ -65,6 +59,7 @@
   - Veterans
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -150,6 +145,7 @@
   website: https://www.monarchnc.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -160,15 +156,24 @@
   name: Ncmh Albemarle Middle School
   categories:
   - meal-program
-  address: {street: Albemarle Middle School, city: Albemarle, state: nc, zip: '28001'}
+  address:
+    street: Albemarle Middle School
+    city: Albemarle
+    state: nc
+    zip: '28001'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Stanly County Schools.
   place: '3700680'
-  geo: {lat: 35.35316, lng: -80.16927}
+  geo:
+    lat: 35.35316
+    lng: -80.16927
   phone: (704) 961-3048
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1243}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1243
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/albemarle/stanly-county-department-of-social-services
   name: Stanly County Department of Social Services
   categories:
@@ -187,6 +192,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 35.36521
+    lng: -80.19785
 - id: nc/albemarle/the-gathering-free-pantry
   name: The gathering free pantry
   categories:

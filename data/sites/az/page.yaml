@@ -20,29 +20,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: az/page/canyonlands-healthcare-administration
-  name: Canyonlands Healthcare - Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 827 Vista Ave
-    city: Page
-    state: az
-    zip: '86040'
-  place: 0451810
-  geo:
-    lat: 36.9214
-    lng: -111.46101
-  phone: 928-645-9675
-  website: https://www.canyonlandschc.org
-  external_ids:
-    bphc: BPS-H80-003079
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: az/page/canyonlands-healthcare-lake-powell
   name: Canyonlands Healthcare - Lake Powell
   categories:
@@ -86,6 +63,7 @@
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -141,73 +119,103 @@
   name: City Of Page - Page Public Library
   categories:
   - meal-program
-  address: {street: 479 S. Lake Powell Blvd, city: Page, state: az, zip: '86040'}
+  address:
+    street: 479 S. Lake Powell Blvd
+    city: Page
+    state: az
+    zip: '86040'
   description: Free summer meals for kids and teens (2026 season) — sponsored by St. Mary's Food Bank
     Alliance.
   place: 0451810
-  geo: {lat: 36.90935, lng: -111.4631}
-  external_ids: {usda_master: Cycle 06_AZ_SFSP_0996}
+  geo:
+    lat: 36.90935
+    lng: -111.4631
+  external_ids:
+    usda_master: Cycle 06_AZ_SFSP_0996
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/page/page-early-childhood-learning-center
   name: Page Early Childhood Learning Center
   categories:
   - meal-program
-  address: {street: 500 S Navajo Dr, city: Page, state: az, zip: '86040'}
+  address:
+    street: 500 S Navajo Dr
+    city: Page
+    state: az
+    zip: '86040'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Page Unified School
     District #8.'
   place: 0451810
-  geo: {lat: 36.91301, lng: -111.45869}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0422}
+  geo:
+    lat: 36.91301
+    lng: -111.45869
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0422
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/page/page-elementary-school
   name: Page Elementary School
   categories:
   - meal-program
-  address: {street: 1801 N Navajo Dr, city: Page, state: az, zip: '86040'}
+  address:
+    street: 1801 N Navajo Dr
+    city: Page
+    state: az
+    zip: '86040'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Page Unified School
     District #8.'
   place: 0451810
-  geo: {lat: 36.93093, lng: -111.46106}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0423}
+  geo:
+    lat: 36.93093
+    lng: -111.46106
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0423
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/page/page-high-school
   name: Page High School
   categories:
   - meal-program
-  address: {street: 434 Lake Powell Boulevard, city: Page, state: az, zip: '86040'}
+  address:
+    street: 434 Lake Powell Boulevard
+    city: Page
+    state: az
+    zip: '86040'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Page Unified School
     District #8.'
   place: 0451810
-  geo: {lat: 36.91093, lng: -111.45631}
-  external_ids: {usda_master: Cycle 04_AZ_SSO_0424}
+  geo:
+    lat: 36.91093
+    lng: -111.45631
+  external_ids:
+    usda_master: Cycle 04_AZ_SSO_0424
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/page/page-locally-designed-option
   name: Page Locally Designed Option
   categories:
   - child-care
-  address:
-    street: 11 Cameron Road
-    city: Page
-    state: az
-    zip: '86040'
+  address: {street: 11 Cameron Road, city: Page, state: az, zip: '86040'}
+  description: Head Start early childhood program — 6 funded slots; operated by Northern Arizona Council
+    of Governments.
   place: 0451810
-  geo:
-    lat: 36.90578
-    lng: -111.46402
+  geo: {lat: 36.90578, lng: -111.46402}
   phone: 928-645-8080
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/page/page-va-clinic
   name: Page VA Clinic
   categories:

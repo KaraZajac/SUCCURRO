@@ -2,41 +2,28 @@
   name: Administrative Office
   categories:
   - child-care
-  address:
-    street: 254 E King St
-    street2: Ste 103
-    city: Chambersburg
-    state: pa
-    zip: '17201'
+  address: {street: 254 E King St, street2: Ste 103, city: Chambersburg, state: pa, zip: '17201'}
+  description: Head Start early childhood program — 48 funded slots; operated by Franklin Cty Early Head
+    Start Program, Inc..
   place: '4212536'
-  geo:
-    lat: 39.93854
-    lng: -77.65762
+  geo: {lat: 39.93854, lng: -77.65762}
   phone: 717-263-8019
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/celc
   name: CELC
   categories:
   - child-care
-  address:
-    street: 871 Stanley Ave
-    city: Chambersburg
-    state: pa
-    zip: '17201'
+  address: {street: 871 Stanley Ave, city: Chambersburg, state: pa, zip: '17201'}
+  description: Head Start early childhood program — 20 funded slots; operated by First Start Partnerships
+    for Children and Families.
   place: '4212536'
-  geo:
-    lat: 39.92154
-    lng: -77.64744
+  geo: {lat: 39.92154, lng: -77.64744}
   phone: 717-263-8019
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/chambersburg-hospital-behavioral-health-unit
   name: Chambersburg Hospital Behavioral Health Unit
   categories:
@@ -56,6 +43,7 @@
   - Hospital inpatient/24-hour hospital inpatient
   - Seniors or older adults
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -66,21 +54,15 @@
   name: 'FCHA: Meadow Creek'
   categories:
   - child-care
-  address:
-    street: 440 W Washington St
-    city: Chambersburg
-    state: pa
-    zip: '17201'
+  address: {street: 440 W Washington St, city: Chambersburg, state: pa, zip: '17201'}
+  description: Head Start early childhood program — 38 funded slots; operated by First Start Partnerships
+    for Children and Families.
   place: '4212536'
-  geo:
-    lat: 39.93363
-    lng: -77.67097
+  geo: {lat: 39.93363, lng: -77.67097}
   phone: 717-263-8019
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/folium-inc-dba-laurel-life-services
   name: Folium Inc DBA Laurel Life Services
   categories:
@@ -101,6 +83,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -127,6 +110,10 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - ar
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -150,6 +137,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.94863
+    lng: -77.64438
 - id: pa/chambersburg/housing-authority-of-the-county-of-franklin
   name: Housing Authority Of The County Of Franklin
   categories:
@@ -167,28 +157,6 @@
   phone: 717-860-7795
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: pa/chambersburg/keystone-agricultural-worker-program-franklin-co
-  name: Keystone Agricultural Worker Program - Franklin Co.
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 820 5th Ave
-    city: Chambersburg
-    state: pa
-    zip: '17201'
-  place: '4212536'
-  geo:
-    lat: 39.94503
-    lng: -77.63956
-  phone: 717-709-7999
-  external_ids:
-    bphc: BPS-H80-007428
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -350,28 +318,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: pa/chambersburg/keystone-education-center
-  name: Keystone Education Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 100 Chambers Hill Dr STE 102
-    city: Chambersburg
-    state: pa
-    zip: '17201'
-  place: '4212536'
-  geo:
-    lat: 39.94388
-    lng: -77.64248
-  phone: 717-709-7900
-  external_ids:
-    bphc: BPS-H80-037525
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: pa/chambersburg/keystone-family-medicine-catherine-street
   name: Keystone Family Medicine Catherine Street
   categories:
@@ -459,6 +405,12 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  - hi
+  - ru
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -621,28 +573,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: pa/chambersburg/keystone-rural-health-center
-  name: Keystone Rural Health Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 111 Chambers Hill Dr, Suite 200
-    city: Chambersburg
-    state: pa
-    zip: '17201'
-  place: '4212536'
-  geo:
-    lat: 39.94448
-    lng: -77.64081
-  phone: 717-709-7900
-  external_ids:
-    bphc: BPS-H80-027860
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: pa/chambersburg/keystone-school-health-center-sixth-street
   name: Keystone School Health Center Sixth Street
   categories:
@@ -736,79 +666,93 @@
   name: Lincoln Way Early Learning Center
   categories:
   - child-care
-  address:
-    street: 2071 Lincoln Way E
-    city: Chambersburg
-    state: pa
-    zip: '17202'
+  address: {street: 2071 Lincoln Way E, city: Chambersburg, state: pa, zip: '17202'}
+  description: Head Start early childhood program — 176 funded slots; operated by First Start Partnerships
+    for Children and Families.
   place: '4212536'
-  geo:
-    lat: 39.91955
-    lng: -77.58545
+  geo: {lat: 39.91955, lng: -77.58545}
   phone: 717-263-8019
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/mill-creek-park
   name: Mill Creek Park
   categories:
   - meal-program
-  address: {street: 300 Eisenhower Drive, city: Chambersburg, state: pa, zip: '17201'}
+  address:
+    street: 300 Eisenhower Drive
+    city: Chambersburg
+    state: pa
+    zip: '17201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.92185, lng: -77.674}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0303}
+  geo:
+    lat: 39.92185
+    lng: -77.674
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0303
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/municipal-park
   name: Municipal Park
   categories:
   - meal-program
-  address: {street: 1100 East Mckinley Street, city: Chambersburg, state: pa, zip: '17201'}
+  address:
+    street: 1100 East Mckinley Street
+    city: Chambersburg
+    state: pa
+    zip: '17201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.92311, lng: -77.64328}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0320}
+  geo:
+    lat: 39.92311
+    lng: -77.64328
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0320
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/nicholson-square-park
   name: Nicholson Square Park
   categories:
   - meal-program
-  address: {street: Basset Drive, city: Chambersburg, state: pa, zip: '17201'}
+  address:
+    street: Basset Drive
+    city: Chambersburg
+    state: pa
+    zip: '17201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.95355, lng: -77.63028}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0331}
+  geo:
+    lat: 39.95355
+    lng: -77.63028
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0331
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/pathstone-franklin-county-mshs
   name: PathStone Franklin County MSHS
   categories:
   - child-care
-  address:
-    street: 301 Lortz Ave
-    city: Chambersburg
-    state: pa
-    zip: '17201'
+  address: {street: 301 Lortz Ave, city: Chambersburg, state: pa, zip: '17201'}
+  description: Head Start early childhood program — 55 funded slots; operated by PathStone-PA.
   place: '4212536'
-  geo:
-    lat: 39.92984
-    lng: -77.65724
+  geo: {lat: 39.92984, lng: -77.65724}
   phone: 717-267-3275
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/pyramid-healthcare-inc
   name: Pyramid Healthcare Inc
   categories:
@@ -833,6 +777,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -843,28 +791,46 @@
   name: Rnc- Falling Springs Elementary School
   categories:
   - meal-program
-  address: {street: 1006 Falling Spring Road, city: Chambersburg, state: pa, zip: '17202'}
+  address:
+    street: 1006 Falling Spring Road
+    city: Chambersburg
+    state: pa
+    zip: '17202'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.91497, lng: -77.62406}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0509}
+  geo:
+    lat: 39.91497
+    lng: -77.62406
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0509
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/rnc-teens-and-greens-pick-up
   name: Rnc - Teens And Greens Pick Up
   categories:
   - meal-program
-  address: {street: 3015 Molly Pitcher Highway, city: Chambersburg, state: pa, zip: '17202'}
+  address:
+    street: 3015 Molly Pitcher Highway
+    city: Chambersburg
+    state: pa
+    zip: '17202'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.89394, lng: -77.67686}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0490}
+  geo:
+    lat: 39.89394
+    lng: -77.67686
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0490
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/roxbury-outpatient-services
   name: Roxbury Outpatient Services
   categories:
@@ -891,6 +857,12 @@
   - Veterans
   - Active duty military
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  languages:
+  - en
+  - es
+  - ht
+  - fr
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -901,47 +873,59 @@
   name: Second Street Playground
   categories:
   - meal-program
-  address: {street: 261 East Mckinley Street, city: Chambersburg, state: pa, zip: '17201'}
+  address:
+    street: 261 East Mckinley Street
+    city: Chambersburg
+    state: pa
+    zip: '17201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.92807, lng: -77.65979}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0570}
+  geo:
+    lat: 39.92807
+    lng: -77.65979
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0570
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/tax-credit-housing-development
   name: Tax Credit Housing Development
   categories:
   - meal-program
-  address: {street: 440 West Washington Street, city: Chambersburg, state: pa, zip: '17201'}
+  address:
+    street: 440 West Washington Street
+    city: Chambersburg
+    state: pa
+    zip: '17201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chambersburg Area School
     District.
   place: '4212536'
-  geo: {lat: 39.93377, lng: -77.6713}
-  external_ids: {usda_master: Cycle 04_PA_SFSP_0620}
+  geo:
+    lat: 39.93377
+    lng: -77.6713
+  external_ids:
+    usda_master: Cycle 04_PA_SFSP_0620
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/chambersburg/trinity
   name: Trinity
   categories:
   - child-care
-  address:
-    street: 431 Philadelphia Ave
-    city: Chambersburg
-    state: pa
-    zip: '17201'
+  address: {street: 431 Philadelphia Ave, city: Chambersburg, state: pa, zip: '17201'}
+  description: Head Start early childhood program — 60 funded slots; operated by First Start Partnerships
+    for Children and Families.
   place: '4212536'
-  geo:
-    lat: 39.94338
-    lng: -77.65806
+  geo: {lat: 39.94338, lng: -77.65806}
   phone: 717-263-8019
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/chambersburg/wellspan-chambesburg-hospital-wellspan-behaviora
   name: WellSpan Chambesburg Hospital WellSpan Behavioral Health
   categories:
@@ -959,6 +943,7 @@
   website: https://www.wellspan.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

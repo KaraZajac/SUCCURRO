@@ -17,6 +17,10 @@
   services:
   - Outpatient
   - Residential/24-hour residential
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -44,6 +48,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - de
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -70,6 +78,11 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - ar
+  - ru
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -80,21 +93,15 @@
   name: Head Start Early Learning Center
   categories:
   - child-care
-  address:
-    street: 22 Pray St
-    city: Quincy
-    state: ma
-    zip: 02169
+  address: {street: 22 Pray St, city: Quincy, state: ma, zip: 02169}
+  description: Head Start early childhood program — 173 funded slots; operated by QUINCY COMMUNITY ACTION
+    PROGRAMS INC.
   place: '2555745'
-  geo:
-    lat: 42.24734
-    lng: -70.97849
+  geo: {lat: 42.24734, lng: -70.97849}
   phone: 617-249-2000
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/quincy/holmes-street-clinic
   name: HOLMES STREET CLINIC
   categories:
@@ -240,6 +247,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -265,6 +276,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.24797
+    lng: -71.00157
 - id: ma/quincy/quincy-comprehensive-treatment-center-arbour-hos
   name: Quincy Comprehensive Treatment Center Arbour Hospital
   categories:
@@ -287,6 +301,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -402,6 +417,7 @@
   - Persons with Alzheimer's or dementia
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

@@ -1,26 +1,3 @@
-- id: la/new-roads/arbor-family-health-corporate
-  name: Arbor Family Health Corporate
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 2500 False River Dr
-    city: New Roads
-    state: la
-    zip: '70760'
-  place: '2255105'
-  geo:
-    lat: 30.68
-    lng: -91.467
-  phone: 225-618-5015
-  website: https://www.arborfamilyhealth.org/
-  external_ids:
-    bphc: BPS-H80-041448
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: la/new-roads/capital-area-human-services-pointe-coupee-behavi
   name: Capital Area Human Services Pointe Coupee Behavioral Health
   categories:
@@ -39,6 +16,7 @@
   website: https://www.cahsd.org
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -135,16 +113,25 @@
   name: Pointe Coupee Enrichment Center Inc. Summer Feeding -- Nc
   categories:
   - meal-program
-  address: {street: 8414 Mandela Drive, city: New Roads, state: la, zip: '70760'}
+  address:
+    street: 8414 Mandela Drive
+    city: New Roads
+    state: la
+    zip: '70760'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Pointe Coupee Enrichment
     Center Inc.
   place: '2255105'
-  geo: {lat: 30.72913, lng: -91.47028}
+  geo:
+    lat: 30.72913
+    lng: -91.47028
   phone: (225) 718-1627
-  external_ids: {usda_master: Cycle 02_LA_SFSP_0213}
+  external_ids:
+    usda_master: Cycle 02_LA_SFSP_0213
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/new-roads/pointe-coupee-human-services-ctr
   name: Pointe Coupee Human Services Ctr
   categories:
@@ -175,6 +162,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: free
   sources:
   - samhsa/findtreatment
@@ -207,35 +195,38 @@
   name: Rosenwald Elementary School
   categories:
   - meal-program
-  address: {street: 1100 New Roads St, city: New Roads, state: la, zip: '70760'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Pointe Coupee Parish
-    School Board.
-  place: '2255105'
-  geo: {lat: 30.7049, lng: -91.43654}
-  phone: (225) 638-6341
-  external_ids: {usda_master: Cycle 02_LA_SFSP_0215}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: la/new-roads/rosenwald-elementary-school-head-start
-  name: Rosenwald Elementary School Head Start
-  categories:
-  - child-care
   address:
     street: 1100 New Roads St
     city: New Roads
     state: la
     zip: '70760'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Pointe Coupee Parish
+    School Board.
   place: '2255105'
   geo:
-    lat: 30.70528
-    lng: -91.43582
-  phone: 225-618-4893
+    lat: 30.7049
+    lng: -91.43654
+  phone: (225) 638-6341
+  external_ids:
+    usda_master: Cycle 02_LA_SFSP_0215
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: la/new-roads/rosenwald-elementary-school-head-start
+  name: Rosenwald Elementary School Head Start
+  categories:
+  - child-care
+  address: {street: 1100 New Roads St, city: New Roads, state: la, zip: '70760'}
+  description: Head Start early childhood program — 58 funded slots; operated by Pointe Coupee Parish
+    School Board.
+  place: '2255105'
+  geo: {lat: 30.70528, lng: -91.43582}
+  phone: 225-618-4893
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: la/new-roads/stem-magnet-academy-of-pointe-coupee
   name: Stem Magnet Academy of Pointe Coupee
   categories:

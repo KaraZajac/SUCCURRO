@@ -43,6 +43,7 @@
   - Regular outpatient treatment
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -70,6 +71,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -80,21 +82,14 @@
   name: Princess Anne Child Development Center
   categories:
   - child-care
-  address:
-    street: 12459 Independence Ct
-    city: Princess Anne
-    state: md
-    zip: '21853'
+  address: {street: 12459 Independence Ct, city: Princess Anne, state: md, zip: '21853'}
+  description: Head Start early childhood program — 38 funded slots; operated by Shore Up, Inc.
   place: '2464000'
-  geo:
-    lat: 38.22263
-    lng: -75.6914
+  geo: {lat: 38.22263, lng: -75.6914}
   phone: 410-651-4385
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/princess-anne/somerset-county-energy-office
   name: Somerset County Energy Office
   categories:
@@ -131,6 +126,7 @@
   website: https://www.chesapeakehc.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -210,12 +206,21 @@
   name: Washington High School
   categories:
   - meal-program
-  address: {street: 10902 Old Princess Anne Rd., city: Princess Anne, state: md, zip: '21853'}
+  address:
+    street: 10902 Old Princess Anne Rd.
+    city: Princess Anne
+    state: md
+    zip: '21853'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SOMERSET CO PUB SCH.
   place: '2464000'
-  geo: {lat: 38.18116, lng: -75.68597}
+  geo:
+    lat: 38.18116
+    lng: -75.68597
   phone: (410) 621-6265
-  external_ids: {usda_master: Cycle 07_MD_SFSP_0206}
+  external_ids:
+    usda_master: Cycle 07_MD_SFSP_0206
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

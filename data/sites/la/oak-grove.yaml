@@ -29,6 +29,7 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -52,6 +53,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 32.85562
+    lng: -91.38904
 - id: la/oak-grove/northeast-la-substance-abuse-inc
   name: Northeast LA Substance Abuse Inc
   categories:
@@ -82,6 +86,7 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -92,35 +97,38 @@
   name: Oak Grove Head Start Center
   categories:
   - child-care
-  address:
-    street: 410 Combs Street
-    city: Oak Grove
-    state: la
-    zip: '71263'
+  address: {street: 410 Combs Street, city: Oak Grove, state: la, zip: '71263'}
+  description: Head Start early childhood program — 28 funded slots; operated by Morehouse Community Improvement
+    Organization, Inc..
   place: '2256820'
-  geo:
-    lat: 32.86888
-    lng: -91.38833
+  geo: {lat: 32.86888, lng: -91.38833}
   phone: 318-428-4790
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: la/oak-grove/oak-grove-high-school
   name: Oak Grove High School
   categories:
   - meal-program
-  address: {street: 501 West Main, city: Oak Grove, state: la, zip: '71263'}
+  address:
+    street: 501 West Main
+    city: Oak Grove
+    state: la
+    zip: '71263'
   description: Free summer meals for kids and teens (2026 season) — sponsored by West Carroll Parish School
     Board.
   place: '2256820'
-  geo: {lat: 32.86021, lng: -91.39625}
+  geo:
+    lat: 32.86021
+    lng: -91.39625
   phone: (318) 428-4215
-  external_ids: {usda_master: Cycle 02_LA_SSO_0298}
+  external_ids:
+    usda_master: Cycle 02_LA_SSO_0298
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: la/oak-grove/west-carroll-parish-police-jury-housing-assistan
   name: West Carroll Parish Police Jury Housing Assistance
   categories:

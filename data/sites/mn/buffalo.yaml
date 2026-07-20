@@ -2,22 +2,15 @@
   name: Buffalo
   categories:
   - child-care
-  address:
-    street: 1405 3rd Ave NE
-    street2: Wright Technical Center
-    city: Buffalo
-    state: mn
-    zip: '55313'
+  address: {street: 1405 3rd Ave NE, street2: Wright Technical Center, city: Buffalo, state: mn, zip: '55313'}
+  description: Head Start early childhood program — 32 funded slots; operated by Wright County Community
+    Action, Inc..
   place: '2708452'
-  geo:
-    lat: 45.19203
-    lng: -93.86992
+  geo: {lat: 45.19203, lng: -93.86992}
   phone: 763-684-0027
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/buffalo/central-minnesota-mental-health-ctr-buffalo
   name: Central Minnesota Mental Health Ctr Buffalo
   categories:
@@ -49,6 +42,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -86,6 +80,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -118,6 +116,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -128,16 +127,25 @@
   name: Northwinds Elementary
   categories:
   - meal-program
-  address: {street: 1111 7Th Ave Nw, city: Buffalo, state: mn, zip: '55313'}
+  address:
+    street: 1111 7Th Ave Nw
+    city: Buffalo
+    state: mn
+    zip: '55313'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Buffalo Hanover Montrose
     ISD #877.'
   place: '2708452'
-  geo: {lat: 45.18399, lng: -93.89164}
+  geo:
+    lat: 45.18399
+    lng: -93.89164
   phone: (763) 682-8772
-  external_ids: {usda_master: Cycle 02_MN_SFSP_0104}
+  external_ids:
+    usda_master: Cycle 02_MN_SFSP_0104
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/buffalo/rockbridge-treatment-and-recovery
   name: RockBridge Treatment and Recovery
   categories:
@@ -157,6 +165,7 @@
   services:
   - Residential/24-hour residential
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

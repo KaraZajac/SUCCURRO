@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -47,6 +48,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -57,35 +59,38 @@
   name: Hope Wesleyan Church
   categories:
   - meal-program
-  address: {street: 505 4Th Ave Ne, city: Independence, state: ia, zip: '50644'}
+  address:
+    street: 505 4Th Ave Ne
+    city: Independence
+    state: ia
+    zip: '50644'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Independence Comm School
     District.
   place: '1938100'
-  geo: {lat: 42.47279, lng: -91.89039}
+  geo:
+    lat: 42.47279
+    lng: -91.89039
   phone: (319) 332-0597
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0143}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0143
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/independence/independence-early-childhood-center
   name: Independence Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 1009 1st St W
-    city: Independence
-    state: ia
-    zip: '50644'
+  address: {street: 1009 1st St W, city: Independence, state: ia, zip: '50644'}
+  description: Head Start early childhood program — 10 funded slots; operated by Tri-County Child & Family
+    Development Council, Inc..
   place: '1938100'
-  geo:
-    lat: 42.46863
-    lng: -91.90561
+  geo: {lat: 42.46863, lng: -91.90561}
   phone: 319-334-2086
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/independence/mental-health-institute
   name: Mental Health Institute
   categories:
@@ -107,6 +112,7 @@
   - Seniors or older adults
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -131,6 +137,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.46881
+    lng: -91.89333
 - id: ia/independence/pathways-behavioral-services-inc
   name: Pathways Behavioral Services Inc
   categories:
@@ -149,6 +158,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

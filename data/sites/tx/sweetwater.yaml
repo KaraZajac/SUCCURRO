@@ -22,33 +22,36 @@
   name: Sweetwater Int El
   categories:
   - meal-program
-  address: {street: 705 E 3Rd, city: Sweetwater, state: tx, zip: '79556'}
+  address:
+    street: 705 E 3Rd
+    city: Sweetwater
+    state: tx
+    zip: '79556'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SWEETWATER ISD.
   place: '4871540'
-  geo: {lat: 32.47437, lng: -100.40198}
-  external_ids: {usda_master: Cycle 01_TX_SSO_1505}
+  geo:
+    lat: 32.47437
+    lng: -100.40198
+  external_ids:
+    usda_master: Cycle 01_TX_SSO_1505
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/sweetwater/sweetwater-southeast-early-childhood-center
   name: Sweetwater (Southeast Early Childhood Center)
   categories:
   - child-care
-  address:
-    street: 1202 Corral St
-    city: Sweetwater
-    state: tx
-    zip: '79556'
+  address: {street: 1202 Corral St, city: Sweetwater, state: tx, zip: '79556'}
+  description: Head Start early childhood program — 95 funded slots; operated by Education Service Center
+    Region XIV.
   place: '4871540'
-  geo:
-    lat: 32.45977
-    lng: -100.38948
+  geo: {lat: 32.45977, lng: -100.38948}
   phone: 325-235-3482
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/sweetwater/west-texas-centers-nolan-county
   name: West Texas Centers Nolan County
   categories:
@@ -78,6 +81,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -102,3 +106,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 32.45821
+    lng: -100.40418

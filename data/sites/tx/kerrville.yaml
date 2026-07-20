@@ -16,18 +16,30 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.03208
+    lng: -99.14439
 - id: tx/kerrville/daniels-el
   name: Daniels El
   categories:
   - meal-program
-  address: {street: 2002 Singing Wind Dr, city: Kerrville, state: tx, zip: '78028'}
+  address:
+    street: 2002 Singing Wind Dr
+    city: Kerrville
+    state: tx
+    zip: '78028'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KERRVILLE ISD.
   place: '4839040'
-  geo: {lat: 30.03518, lng: -99.12227}
-  external_ids: {usda_master: Cycle 01_TX_SSO_0423}
+  geo:
+    lat: 30.03518
+    lng: -99.12227
+  external_ids:
+    usda_master: Cycle 01_TX_SSO_0423
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/kerrville/hill-county-council-on-alcohol-and-drug-abuse-in
   name: Hill County Council on  Alcohol and Drug Abuse Inc
   categories:
@@ -56,6 +68,10 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -66,21 +82,15 @@
   name: Kerrville ISD Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 1011 3rd St
-    city: Kerrville
-    state: tx
-    zip: '78028'
+  address: {street: 1011 3rd St, city: Kerrville, state: tx, zip: '78028'}
+  description: Head Start early childhood program — 87 funded slots; operated by Kerrville Independent
+    School District.
   place: '4839040'
-  geo:
-    lat: 30.04736
-    lng: -99.12983
+  geo: {lat: 30.04736, lng: -99.12983}
   phone: 830-257-1335
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/kerrville/kerrville-va-medical-center
   name: Kerrville VA Medical Center
   categories:

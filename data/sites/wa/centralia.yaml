@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 46.71921
+    lng: -122.95314
 - id: wa/centralia/cascade-community-healthcare
   name: Cascade Community Healthcare
   categories:
@@ -44,6 +47,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -75,6 +79,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -85,21 +90,14 @@
   name: Centralia Center West
   categories:
   - child-care
-  address:
-    street: 701 Pioneer Way
-    city: Centralia
-    state: wa
-    zip: '98531'
+  address: {street: 701 Pioneer Way, city: Centralia, state: wa, zip: '98531'}
+  description: Head Start early childhood program — 36 funded slots; operated by RELIABLE ENTERPRISES.
   place: '5311160'
-  geo:
-    lat: 46.72288
-    lng: -122.98405
+  geo: {lat: 46.72288, lng: -122.98405}
   phone: 360-807-4813
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/centralia/centralia-first-united-methodist-church
   name: Centralia First United Methodist Church
   categories:
@@ -120,15 +118,24 @@
   name: Centralia High School
   categories:
   - meal-program
-  address: {street: 813 Eshom Rd., city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 813 Eshom Rd.
+    city: Centralia
+    state: wa
+    zip: '98531'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Centralia School District.
   place: '5311160'
-  geo: {lat: 46.72648, lng: -122.99974}
+  geo:
+    lat: 46.72648
+    lng: -122.99974
   phone: (360) 330-7600
-  external_ids: {usda_master: Cycle 09_WA_SFSP_0157}
+  external_ids:
+    usda_master: Cycle 09_WA_SFSP_0157
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/centralia/community-integrated-health-services-adult-servi
   name: Community Integrated Health Services Adult Services
   categories:
@@ -147,6 +154,7 @@
   website: https://CIhealthservices.com
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -172,6 +180,7 @@
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -207,6 +216,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -217,15 +227,24 @@
   name: Fords Prairie Elementary
   categories:
   - meal-program
-  address: {street: 1620 Harrison Ave., city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1620 Harrison Ave.
+    city: Centralia
+    state: wa
+    zip: '98531'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Centralia School District.
   place: '5311160'
-  geo: {lat: 46.73478, lng: -122.98867}
+  geo:
+    lat: 46.73478
+    lng: -122.98867
   phone: (360) 330-7600
-  external_ids: {usda_master: Cycle 09_WA_SFSP_0283}
+  external_ids:
+    usda_master: Cycle 09_WA_SFSP_0283
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/centralia/valley-view-health-center-centralia
   name: Valley View Health Center - Centralia
   categories:

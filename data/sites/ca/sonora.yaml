@@ -17,25 +17,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.99252
+    lng: -120.38366
 - id: ca/sonora/blue-bell-hs-ehs
   name: Blue Bell HS/EHS
   categories:
   - child-care
-  address:
-    street: 18080 Blue Bell Rd E
-    city: Sonora
-    state: ca
-    zip: '95370'
+  address: {street: 18080 Blue Bell Rd E, city: Sonora, state: ca, zip: '95370'}
+  description: Head Start early childhood program — 20 funded slots; operated by Amador-Tuolumne Community
+    Action Agency.
   place: '0672674'
-  geo:
-    lat: 37.95087
-    lng: -120.30946
+  geo: {lat: 37.95087, lng: -120.30946}
   phone: 209-533-5455
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/sonora/sonora-va-clinic
   name: Sonora VA Clinic
   categories:
@@ -109,6 +106,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -119,22 +120,15 @@
   name: Tuolumne Home Base
   categories:
   - child-care
-  address:
-    street: 427 Highway 49
-    street2: Ste 202
-    city: Sonora
-    state: ca
-    zip: '95370'
+  address: {street: 427 Highway 49, street2: Ste 202, city: Sonora, state: ca, zip: '95370'}
+  description: Head Start early childhood program — 30 funded slots; operated by Amador-Tuolumne Community
+    Action Agency.
   place: '0672674'
-  geo:
-    lat: 37.99133
-    lng: -120.38363
+  geo: {lat: 37.99133, lng: -120.38363}
   phone: 209-533-0361
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ca/sonora/tuolumne-me-wuk-indian-health-center-behavioral
   name: Tuolumne Me Wuk Indian Health Center Behavioral Health/Sonora
   categories:
@@ -153,6 +147,7 @@
   website: https://www.tmwihc.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

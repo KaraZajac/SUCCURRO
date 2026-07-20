@@ -2,35 +2,37 @@
   name: Elk City Head Start
   categories:
   - child-care
-  address:
-    street: 1700 W 8th St
-    street2: 1702 W 8th
-    city: Elk City
-    state: ok
-    zip: '73644'
+  address: {street: 1700 W 8th St, street2: 1702 W 8th, city: Elk City, state: ok, zip: '73644'}
+  description: Head Start early childhood program — 13 funded slots; operated by Southwest Oklahoma Community
+    Action Group, Inc..
   place: '4023500'
-  geo:
-    lat: 35.40619
-    lng: -99.40385
+  geo: {lat: 35.40619, lng: -99.40385}
   phone: 580-225-4103
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ok/elk-city/elk-city-ies-115
   name: Elk City Ies(115)
   categories:
   - meal-program
-  address: {street: 300 N. Pioneer, city: Elk City, state: ok, zip: '73644'}
+  address:
+    street: 300 N. Pioneer
+    city: Elk City
+    state: ok
+    zip: '73644'
   description: Free summer meals for kids and teens (2026 season) — sponsored by ELK CITY.
   place: '4023500'
-  geo: {lat: 35.41276, lng: -99.43488}
+  geo:
+    lat: 35.41276
+    lng: -99.43488
   phone: (580) 225-0175
-  external_ids: {usda_master: Cycle 04_OK_SFSP_0006}
+  external_ids:
+    usda_master: Cycle 04_OK_SFSP_0006
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ok/elk-city/great-plains-regional-medical-center
   name: Great Plains Regional Medical Center
   categories:
@@ -59,6 +61,7 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -107,6 +110,10 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

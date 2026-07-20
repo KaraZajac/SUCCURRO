@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -43,6 +44,10 @@
   - Outpatient
   - Regular outpatient treatment
   - Young adults
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -119,6 +124,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Persons with traumatic brain injury (TBI)
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -149,21 +155,15 @@
   name: McGriff Street Head Start/Early Head Start
   categories:
   - child-care
-  address:
-    street: 22 McGriff St NE
-    city: Fort Walton Beach
-    state: fl
-    zip: '32548'
+  address: {street: 22 McGriff St NE, city: Fort Walton Beach, state: fl, zip: '32548'}
+  description: Head Start early childhood program — 40 funded slots; operated by CDI HS/ Okaloosa County,
+    FL.
   place: '1224475'
-  geo:
-    lat: 30.41396
-    lng: -86.61059
+  geo: {lat: 30.41396, lng: -86.61059}
   phone: 850-974-8167
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: fl/fort-walton-beach/wright-elementary
   name: Wright Elementary
   categories:

@@ -58,6 +58,9 @@ def main(argv):
         if row.get("Site Status Description") != "Active":
             skipped_status += 1
             continue
+        if row.get("Health Center Type Description") == "Administrative":
+            skipped_status += 1  # admin offices, not service-delivery sites
+            continue
         name = (row.get("Site Name") or "").strip()
         city = (row.get("Site City") or "").strip()
         st = (row.get("Site State Abbreviation") or "").strip().lower()

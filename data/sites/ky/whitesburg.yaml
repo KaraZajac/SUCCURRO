@@ -1,25 +1,3 @@
-- id: ky/whitesburg/administrative-office
-  name: Administrative Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 38 College Dr
-    city: Whitesburg
-    state: ky
-    zip: '41858'
-  place: '2182776'
-  geo:
-    lat: 37.1164
-    lng: -82.82424
-  phone: 606-633-4823
-  external_ids:
-    bphc: BPS-H80-017455
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ky/whitesburg/appalachian-community-care-llc-whitesburg
   name: Appalachian Community Care LLC Whitesburg
   categories:
@@ -38,6 +16,7 @@
   website: https://appalachiancommunitycar.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -60,54 +39,49 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: ky/whitesburg/call-center
-  name: Call Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 182 Walnut St
-    city: Whitesburg
-    state: ky
-    zip: '41858'
-  place: '2182776'
-  geo:
-    lat: 37.11664
-    lng: -82.8225
-  phone: 606-633-4871
-  website: https://www.mchcky.com
-  external_ids:
-    bphc: BPS-H80-038199
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ky/whitesburg/cane
   name: Cane
   categories:
   - meal-program
-  address: {street: 38 College Dr, city: Whitesburg, state: ky, zip: '41858'}
+  address:
+    street: 38 College Dr
+    city: Whitesburg
+    state: ky
+    zip: '41858'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Cane, Inc..
   place: '2182776'
-  geo: {lat: 37.1164, lng: -82.82424}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_1071}
+  geo:
+    lat: 37.1164
+    lng: -82.82424
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_1071
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/whitesburg/cowan-elementary-school
   name: Cowan Elementary School
   categories:
   - meal-program
-  address: {street: 3125 Highway 931 South, city: Whitesburg, state: ky, zip: '41858'}
+  address:
+    street: 3125 Highway 931 South
+    city: Whitesburg
+    state: ky
+    zip: '41858'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Letcher County Board
     of Education.
   place: '2182776'
-  geo: {lat: 37.09364, lng: -82.84314}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_0776}
+  geo:
+    lat: 37.09364
+    lng: -82.84314
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_0776
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/whitesburg/cowan-elementary-school-based-clinic
   name: Cowan Elementary School Based Clinic
   categories:
@@ -135,21 +109,15 @@
   name: Cowan Head Start
   categories:
   - child-care
-  address:
-    street: 81 Sturgill Br
-    city: Whitesburg
-    state: ky
-    zip: '41858'
+  address: {street: 81 Sturgill Br, city: Whitesburg, state: ky, zip: '41858'}
+  description: Head Start early childhood program — 18 funded slots; operated by LKLP Head Start Central
+    Headquarters.
   place: '2182776'
-  geo:
-    lat: 37.07154
-    lng: -82.85907
+  geo: {lat: 37.07154, lng: -82.85907}
   phone: 606-633-0718
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/whitesburg/housing-authority-of-whitesburg
   name: Housing Authority Of Whitesburg
   categories:
@@ -190,6 +158,7 @@
   - Outpatient
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -217,6 +186,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -243,6 +213,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -269,6 +240,7 @@
   - Outpatient
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -279,15 +251,24 @@
   name: Letcher County Central High School
   categories:
   - meal-program
-  address: {street: 435 Cougar Drive, city: Whitesburg, state: ky, zip: '41858'}
+  address:
+    street: 435 Cougar Drive
+    city: Whitesburg
+    state: ky
+    zip: '41858'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Letcher County Board
     of Education.
   place: '2182776'
-  geo: {lat: 37.11885, lng: -82.79}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_0773}
+  geo:
+    lat: 37.11885
+    lng: -82.79
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_0773
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/whitesburg/letcher-county-central-high-school-based-clinic
   name: Letcher County Central High School Based Clinic
   categories:
@@ -329,6 +310,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.1169
+    lng: -82.79609
 - id: ky/whitesburg/martha-jane-potter-elementary-school-based-clini
   name: Martha Jane Potter Elementary School Based Clinic
   categories:
@@ -347,52 +331,6 @@
   website: https://www.mchcky.com
   external_ids:
     bphc: BPS-H80-011949
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ky/whitesburg/mchc-home-medical
-  name: MCHC Home Medical
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 110 Medical Plaza Ln
-    city: Whitesburg
-    state: ky
-    zip: '41858'
-  place: '2182776'
-  geo:
-    lat: 37.12281
-    lng: -82.8424
-  phone: 606-632-2800
-  website: https://www.mchcky.com
-  external_ids:
-    bphc: BPS-H80-036488
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ky/whitesburg/mchc-purchasing-receiving
-  name: MCHC Purchasing/Receiving
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 98 Walnut St
-    city: Whitesburg
-    state: ky
-    zip: '41858'
-  place: '2182776'
-  geo:
-    lat: 37.11581
-    lng: -82.82273
-  phone: 606-633-6050
-  website: https://www.mchcky.com
-  external_ids:
-    bphc: BPS-H80-036489
   sources:
   - hrsa/health-center-sites
   verified:
@@ -472,31 +410,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ky/whitesburg/mountain-comprehensive-health-corporation
-  name: Mountain Comprehensive Health Corporation
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 10 E Main St
-    city: Whitesburg
-    state: ky
-    zip: '41858'
-  place: '2182776'
-  geo:
-    lat: 37.11708
-    lng: -82.82407
-  phone: 606-633-4823
-  external_ids:
-    bphc: BPS-H80-030735
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -527,15 +444,24 @@
   name: West Whitesburg Es/Whitesburg Ms
   categories:
   - meal-program
-  address: {street: 330 Parks Street, city: Whitesburg, state: ky, zip: '41858'}
+  address:
+    street: 330 Parks Street
+    city: Whitesburg
+    state: ky
+    zip: '41858'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Letcher County Board
     of Education.
   place: '2182776'
-  geo: {lat: 37.12024, lng: -82.83687}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_0772}
+  geo:
+    lat: 37.12024
+    lng: -82.83687
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_0772
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/whitesburg/whitesburg-medical-dental-clinic
   name: Whitesburg Medical/Dental Clinic
   categories:

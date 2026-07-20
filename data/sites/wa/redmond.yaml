@@ -38,6 +38,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 47.6821
+    lng: -122.13462
 - id: wa/redmond/ikron-corporation-of-greater-seattle-redmond-off
   name: IKRON Corporation of Greater Seattle Redmond Office
   categories:
@@ -60,6 +63,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -70,34 +74,37 @@
   name: LAKE WA OLD REDMOND SCHOOLHOUSE
   categories:
   - child-care
-  address:
-    street: 16600 NE 80th St
-    city: Redmond
-    state: wa
-    zip: '98052'
+  address: {street: 16600 NE 80th St, city: Redmond, state: wa, zip: '98052'}
+  description: Head Start early childhood program — 38 funded slots; operated by Puget Sound Educational
+    Service District - HS.
   place: '5357535'
-  geo:
-    lat: 47.67543
-    lng: -122.11804
+  geo: {lat: 47.67543, lng: -122.11804}
   phone: 425-936-2530
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wa/redmond/parkway-apartments
   name: Parkway Apartments
   categories:
   - meal-program
-  address: {street: 3970 West Lk Sammamish Pkwy Ne, city: Redmond, state: wa, zip: '98052'}
+  address:
+    street: 3970 West Lk Sammamish Pkwy Ne
+    city: Redmond
+    state: wa
+    zip: '98052'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Greater Seattle.
   place: '5357535'
-  geo: {lat: 47.64547, lng: -122.10774}
+  geo:
+    lat: 47.64547
+    lng: -122.10774
   phone: (206) 717-2590
-  external_ids: {usda_master: Cycle 06_WA_SFSP_0358}
+  external_ids:
+    usda_master: Cycle 06_WA_SFSP_0358
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/redmond/redmond-therapy-group
   name: Redmond Therapy Group
   categories:
@@ -120,6 +127,7 @@
   - Active duty military
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -147,6 +155,7 @@
   - Young adults
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -194,6 +203,12 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  - fr
+  - ko
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

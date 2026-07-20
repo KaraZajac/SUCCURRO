@@ -16,6 +16,7 @@
   website: https://www.semobh.org
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -41,6 +42,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -72,6 +74,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -104,6 +107,7 @@
   - Persons experiencing first-episode psychosis
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -172,28 +176,6 @@
   website: https://www.your-chc.org
   external_ids:
     bphc: BPS-H80-018610
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: mo/rolla/four-rivers-community-health-center-admin
-  name: Four Rivers Community Health Center - Admin
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1026 Kingshighway St
-    city: Rolla
-    state: mo
-    zip: '65401'
-  place: '2962912'
-  geo:
-    lat: 37.94536
-    lng: -91.78201
-  phone: 573-426-4455
-  external_ids:
-    bphc: BPS-H80-039695
   sources:
   - hrsa/health-center-sites
   verified:
@@ -328,6 +310,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -338,32 +321,35 @@
   name: Rolla Head Start
   categories:
   - child-care
-  address:
-    street: 1811 E 10th St
-    city: Rolla
-    state: mo
-    zip: '65401'
+  address: {street: 1811 E 10th St, city: Rolla, state: mo, zip: '65401'}
+  description: Head Start early childhood program — 51 funded slots; operated by Missouri Ozarks Community
+    Action, Inc..
   place: '2962912'
-  geo:
-    lat: 37.95141
-    lng: -91.73838
+  geo: {lat: 37.95141, lng: -91.73838}
   phone: 573-364-8252
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mo/rolla/truman-elementary-non-congregate
   name: Truman Elementary - Non-Congregate
   categories:
   - meal-program
-  address: {street: 1001 E. 18Th Street, city: Rolla, state: mo, zip: '65401'}
+  address:
+    street: 1001 E. 18Th Street
+    city: Rolla
+    state: mo
+    zip: '65401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by The Favored Foundation
     for Strengthening Families.
   place: '2962912'
-  geo: {lat: 37.95792, lng: -91.76061}
+  geo:
+    lat: 37.95792
+    lng: -91.76061
   phone: (573) 458-0100
-  external_ids: {usda_master: Cycle 04_MO_SFSP_0781}
+  external_ids:
+    usda_master: Cycle 04_MO_SFSP_0781
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

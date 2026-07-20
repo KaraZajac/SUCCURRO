@@ -15,19 +15,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.69805
+    lng: -80.66638
 - id: wv/sutton/braxton-county-high
   name: Braxton County High
   categories:
   - meal-program
-  address: {street: Braxton County High School, city: Sutton, state: wv, zip: '26601'}
+  address:
+    street: Braxton County High School
+    city: Sutton
+    state: wv
+    zip: '26601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BRAXTON CO BD OF EDUCATION.
   place: '5478580'
-  geo: {lat: 38.69615, lng: -80.6674}
+  geo:
+    lat: 38.69615
+    lng: -80.6674
   phone: (304) 765-7101
-  external_ids: {usda_master: Cycle 01_WV_SFSP_0001}
+  external_ids:
+    usda_master: Cycle 01_WV_SFSP_0001
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/sutton/braxton-county-high-school-wellness-center
   name: Braxton County High School Wellness Center
   categories:
@@ -117,28 +129,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: wv/sutton/community-care-of-flatwoods-extension-office
-  name: Community Care of Flatwoods Extension Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 249 Skidmore Ln
-    city: Sutton
-    state: wv
-    zip: '26601'
-  place: '5478580'
-  geo:
-    lat: 38.70213
-    lng: -80.66643
-  phone: 304-924-6262
-  external_ids:
-    bphc: BPS-H80-019347
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: wv/sutton/community-care-of-flatwoods-ii
   name: Community Care of Flatwoods II
   categories:
@@ -188,21 +178,15 @@
   name: Sutton Elementary School
   categories:
   - child-care
-  address:
-    street: 288 N Hill Rd
-    city: Sutton
-    state: wv
-    zip: '26601'
+  address: {street: 288 N Hill Rd, city: Sutton, state: wv, zip: '26601'}
+  description: Head Start early childhood program — 26 funded slots; operated by Braxton County Board
+    of Education.
   place: '5478580'
-  geo:
-    lat: 38.66753
-    lng: -80.70738
+  geo: {lat: 38.66753, lng: -80.70738}
   phone: 304-765-5202
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/sutton/sutton-elementary-school-wellness-center
   name: Sutton Elementary School Wellness Center
   categories:
@@ -243,6 +227,7 @@
   website: https://rni.wvumedicine.org/bmed
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

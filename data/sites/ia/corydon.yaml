@@ -24,44 +24,15 @@
   name: Corydon Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 605 S West St
-    city: Corydon
-    state: ia
-    zip: '50060'
+  address: {street: 605 S West St, city: Corydon, state: ia, zip: '50060'}
+  description: Head Start early childhood program — 18 funded slots; operated by South Central Iowa Community
+    Action Program.
   place: '1916635'
-  geo:
-    lat: 40.75184
-    lng: -93.32184
+  geo: {lat: 40.75184, lng: -93.32184}
   phone: 641-872-2554
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ia/corydon/corydon-office
-  name: CORYDON OFFICE
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 215 W State St
-    city: Corydon
-    state: ia
-    zip: '50060'
-  place: '1916635'
-  geo:
-    lat: 40.75784
-    lng: -93.32008
-  phone: 641-872-1750
-  website: http://chcsi.org/
-  external_ids:
-    bphc: BPS-H80-006905
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/corydon/infinity-health-corydon
   name: Infinity Health Corydon
   categories:
@@ -82,6 +53,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -106,6 +78,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.7591
+    lng: -93.31882
 - id: ia/corydon/southern-iowa-economic-dev-association-sieda-beh
   name: Southern Iowa Economic Dev Association (SIEDA)/Behav Health and Trt Services
   categories:
@@ -127,6 +102,7 @@
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -137,12 +113,21 @@
   name: Wayne Community Jr-Sr High School
   categories:
   - meal-program
-  address: {street: 102 N Dekalb Street, city: Corydon, state: ia, zip: '50060'}
+  address:
+    street: 102 N Dekalb Street
+    city: Corydon
+    state: ia
+    zip: '50060'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wayne Comm School District.
   place: '1916635'
-  geo: {lat: 40.75812, lng: -93.3204}
+  geo:
+    lat: 40.75812
+    lng: -93.3204
   phone: (515) 208-2405
-  external_ids: {usda_master: Cycle 03_IA_SFSP_0045}
+  external_ids:
+    usda_master: Cycle 03_IA_SFSP_0045
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

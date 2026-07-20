@@ -39,6 +39,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.63726
+    lng: -124.05211
 - id: or/newport/community-services-consortium-head-start-newport
   name: Community Services consortium Head Start - Newport
   categories:
@@ -48,6 +51,8 @@
     city: Newport
     state: or
     zip: '97365'
+  description: Head Start early childhood program — 60 funded slots; operated by COMMUNITY SERVICES CONSORTIUM
+    HEAD START.
   place: '4152450'
   geo:
     lat: 44.63725
@@ -104,15 +109,24 @@
   name: Newport Middle School
   categories:
   - meal-program
-  address: {street: 825 Ne 7Th Street, city: Newport, state: or, zip: '97365'}
+  address:
+    street: 825 Ne 7Th Street
+    city: Newport
+    state: or
+    zip: '97365'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lincoln Co SD.
   place: '4152450'
-  geo: {lat: 44.64074, lng: -124.04133}
+  geo:
+    lat: 44.64074
+    lng: -124.04133
   phone: (541) 265-6601
-  external_ids: {usda_master: Cycle 03_OR_SFSP_0241}
+  external_ids:
+    usda_master: Cycle 03_OR_SFSP_0241
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/newport/newport-outreach-clinic-2
   name: Newport Outreach Clinic
   categories:
@@ -143,6 +157,11 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  languages:
+  - en
+  - es
+  - ko
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -239,6 +258,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -275,6 +298,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -285,15 +312,24 @@
   name: Sam Case Elem
   categories:
   - meal-program
-  address: {street: 459 Ne12Th Street, city: Newport, state: or, zip: '97365'}
+  address:
+    street: 459 Ne12Th Street
+    city: Newport
+    state: or
+    zip: '97365'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lincoln Co SD.
   place: '4152450'
-  geo: {lat: 44.64544, lng: -124.0471}
+  geo:
+    lat: 44.64544
+    lng: -124.0471
   phone: (541) 336-2156
-  external_ids: {usda_master: Cycle 03_OR_SFSP_0304}
+  external_ids:
+    usda_master: Cycle 03_OR_SFSP_0304
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/newport/sunshine-house
   name: Sunshine House
   categories:
@@ -310,25 +346,3 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: or/newport/western-title-building
-  name: Western Title Building
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 255 SW Coast Hwy
-    city: Newport
-    state: or
-    zip: '97365'
-  place: '4152450'
-  geo:
-    lat: 44.63378
-    lng: -124.05499
-  phone: 541-265-0450
-  external_ids:
-    bphc: BPS-H80-015276
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api

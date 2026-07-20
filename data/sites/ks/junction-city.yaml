@@ -15,6 +15,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.02831
+    lng: -96.8478
 - id: ks/junction-city/geary-county-dcf
   name: Geary County DCF
   categories:
@@ -32,6 +35,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.02831
+    lng: -96.8478
 - id: ks/junction-city/jc-north-washington-blessing-box
   name: JC North Washington Blessing Box
   categories:
@@ -68,16 +74,25 @@
   name: Junction City Family Ymca
   categories:
   - meal-program
-  address: {street: 1703 Mcfarland Rd., city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 1703 Mcfarland Rd.
+    city: Junction City
+    state: ks
+    zip: '66441'
   description: Free summer meals for kids and teens (2026 season) — sponsored by P0744 - Junction City
     Family YMCA.
   place: '2035750'
-  geo: {lat: 39.0195, lng: -96.85842}
+  geo:
+    lat: 39.0195
+    lng: -96.85842
   phone: (785) 762-4780
-  external_ids: {usda_master: Cycle 01_KS_SFSP_0218}
+  external_ids:
+    usda_master: Cycle 01_KS_SFSP_0218
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/junction-city/junction-city-housing-authority
   name: Junction City Housing Authority
   categories:
@@ -205,16 +220,25 @@
   name: Lincoln Elementary School
   categories:
   - meal-program
-  address: {street: 300 N Lincoln, city: Junction City, state: ks, zip: '66441'}
+  address:
+    street: 300 N Lincoln
+    city: Junction City
+    state: ks
+    zip: '66441'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0475 - Geary County
     Schools.
   place: '2035750'
-  geo: {lat: 39.02334, lng: -96.84045}
+  geo:
+    lat: 39.02334
+    lng: -96.84045
   phone: (785) 717-4628
-  external_ids: {usda_master: Cycle 01_KS_SSO_0167}
+  external_ids:
+    usda_master: Cycle 01_KS_SSO_0167
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/junction-city/pawnee-mental-health-services
   name: Pawnee Mental Health Services
   categories:
@@ -236,6 +260,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -266,6 +291,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

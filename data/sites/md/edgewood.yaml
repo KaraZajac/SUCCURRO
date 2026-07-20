@@ -2,34 +2,36 @@
   name: Edgewood EHS
   categories:
   - child-care
-  address:
-    street: 1980 Brookside Dr
-    city: Edgewood
-    state: md
-    zip: '21040'
+  address: {street: 1980 Brookside Dr, city: Edgewood, state: md, zip: '21040'}
+  description: Head Start early childhood program — 22 funded slots; operated by ASSOCIATED CATHOLIC CHARITIES.
   place: '2425150'
-  geo:
-    lat: 39.43356
-    lng: -76.31116
+  geo: {lat: 39.43356, lng: -76.31116}
   phone: 410-612-1760
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/edgewood/edgewood-library
   name: Edgewood Library
   categories:
   - meal-program
-  address: {street: 629 Edgewood Road, city: Edgewood, state: md, zip: '21040'}
+  address:
+    street: 629 Edgewood Road
+    city: Edgewood
+    state: md
+    zip: '21040'
   description: Free summer meals for kids and teens (2026 season) — sponsored by HARFORD CO PUB SCH.
   place: '2425150'
-  geo: {lat: 39.42622, lng: -76.29863}
+  geo:
+    lat: 39.42622
+    lng: -76.29863
   phone: (410) 612-1600
-  external_ids: {usda_master: Cycle 08_MD_SFSP_0222}
+  external_ids:
+    usda_master: Cycle 08_MD_SFSP_0222
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/edgewood/global-healthcare-systems-inc
   name: Global Healthcare Systems Inc
   categories:
@@ -61,6 +63,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -85,26 +88,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.43132
+    lng: -76.33057
 - id: md/edgewood/mrdc-head-start-edgewood-center
   name: MRDC Head Start - Edgewood Center
   categories:
   - child-care
-  address:
-    street: 1319 Woodbridge Station Way
-    street2: Ste 101
-    city: Edgewood
-    state: md
-    zip: '21040'
+  address: {street: 1319 Woodbridge Station Way, street2: Ste 101, city: Edgewood, state: md, zip: '21040'}
+  description: Head Start early childhood program — 51 funded slots; operated by MARYLAND RURAL DEVELOPMENT
+    CORPORATION.
   place: '2425150'
-  geo:
-    lat: 39.43106
-    lng: -76.33009
+  geo: {lat: 39.43106, lng: -76.33009}
   phone: 410-612-9001
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/edgewood/riverside-treatment-services
   name: Riverside Treatment Services
   categories:
@@ -135,6 +134,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

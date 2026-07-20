@@ -2,21 +2,15 @@
   name: Bedford
   categories:
   - child-care
-  address:
-    street: 3639 Business 220
-    city: Bedford
-    state: pa
-    zip: '15522'
+  address: {street: 3639 Business 220, city: Bedford, state: pa, zip: '15522'}
+  description: Head Start early childhood program — 16 funded slots; operated by Allegheny Lutheran Social
+    Ministries.
   place: '4204944'
-  geo:
-    lat: 39.99603
-    lng: -78.51246
+  geo: {lat: 39.99603, lng: -78.51246}
   phone: 814-623-4221
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/bedford/bedford-county-assistance-office
   name: Bedford County Assistance Office
   categories:
@@ -34,32 +28,53 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.02442
+    lng: -78.50435
 - id: pa/bedford/bedford-elementary
   name: Bedford Elementary
   categories:
   - meal-program
-  address: {street: 3639 Business 220, city: Bedford, state: pa, zip: '15522'}
+  address:
+    street: 3639 Business 220
+    city: Bedford
+    state: pa
+    zip: '15522'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bedford Area School District.
   place: '4204944'
-  geo: {lat: 40.033, lng: -78.50533}
+  geo:
+    lat: 40.033
+    lng: -78.50533
   phone: (814) 623-4235
-  external_ids: {usda_master: Cycle 03_PA_SSO_0026}
+  external_ids:
+    usda_master: Cycle 03_PA_SSO_0026
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/bedford/bedford-ms
   name: Bedford Ms
   categories:
   - meal-program
-  address: {street: 440 E Watson Street, city: Bedford, state: pa, zip: '15522'}
+  address:
+    street: 440 E Watson Street
+    city: Bedford
+    state: pa
+    zip: '15522'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Bedford Area School District.
   place: '4204944'
-  geo: {lat: 40.01459, lng: -78.49665}
+  geo:
+    lat: 40.01459
+    lng: -78.49665
   phone: (814) 623-4235
-  external_ids: {usda_master: Cycle 03_PA_SSO_0027}
+  external_ids:
+    usda_master: Cycle 03_PA_SSO_0027
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/bedford/bedford-somerset-dbhs
   name: Bedford Somerset DBHS
   categories:
@@ -78,6 +93,7 @@
   website: https://ccsprovider.co
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

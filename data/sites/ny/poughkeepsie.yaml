@@ -29,6 +29,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -55,6 +56,10 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -86,6 +91,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -116,6 +125,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -146,21 +156,15 @@
   name: Community Family Development
   categories:
   - child-care
-  address:
-    street: 269 Mill St
-    city: Poughkeepsie
-    state: ny
-    zip: '12601'
+  address: {street: 269 Mill St, city: Poughkeepsie, state: ny, zip: '12601'}
+  description: Head Start early childhood program — 24 funded slots; operated by Westchester Community
+    Opportunity Program, Inc. (WestCO.
   place: '3659641'
-  geo:
-    lat: 41.70573
-    lng: -73.92702
+  geo: {lat: 41.70573, lng: -73.92702}
   phone: 845-293-0308
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/poughkeepsie/county-office-for-the-aging
   name: County Office for the Aging
   categories:
@@ -178,6 +182,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.71485
+    lng: -73.93348
 - id: ny/poughkeepsie/dc-dept-behavioral-community-health-dutchess-cou
   name: DC Dept Behavioral/Community Health Dutchess County Partial Hosp Program
   categories:
@@ -201,6 +208,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -226,6 +234,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -250,6 +259,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.70238
+    lng: -73.92966
 - id: ny/poughkeepsie/family-services-poughkeepsie-mental-health-clini
   name: Family Services Poughkeepsie Mental Health Clinic
   categories:
@@ -271,6 +283,13 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  - el
+  - hi
+  - ko
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -296,6 +315,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Adult women
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -306,28 +326,46 @@
   name: G W Krieger School
   categories:
   - meal-program
-  address: {street: 265 Hooker Ave, city: Poughkeepsie, state: ny, zip: '12603'}
+  address:
+    street: 265 Hooker Ave
+    city: Poughkeepsie
+    state: ny
+    zip: '12603'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.68602, lng: -73.91034}
+  geo:
+    lat: 41.68602
+    lng: -73.91034
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0186}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0186
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/hudson-garden-apartments
   name: Hudson Garden Apartments
   categories:
   - meal-program
-  address: {street: 150 Hudson Ave, city: Poughkeepsie, state: ny, zip: '12601'}
+  address:
+    street: 150 Hudson Ave
+    city: Poughkeepsie
+    state: ny
+    zip: '12601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.70966, lng: -73.90925}
+  geo:
+    lat: 41.70966
+    lng: -73.90925
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0250}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0250
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/hudson-river-healing-services-outpatient-clinic
   name: Hudson River Healing Services Outpatient Clinic
   categories:
@@ -357,6 +395,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -412,6 +454,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -448,6 +491,10 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -476,6 +523,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -506,6 +554,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -516,73 +565,102 @@
   name: Mlk Gardens Community Center
   categories:
   - meal-program
-  address: {street: 159 Washington St, city: Poughkeepsie, state: ny, zip: '12601'}
+  address:
+    street: 159 Washington St
+    city: Poughkeepsie
+    state: ny
+    zip: '12601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.71347, lng: -73.928}
+  geo:
+    lat: 41.71347
+    lng: -73.928
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0390}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0390
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/new-hope-community-center
   name: New Hope Community Center
   categories:
   - meal-program
-  address: {street: 221 Smith St, city: Poughkeepsie, state: ny, zip: '12601'}
+  address:
+    street: 221 Smith St
+    city: Poughkeepsie
+    state: ny
+    zip: '12601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.71159, lng: -73.90936}
+  geo:
+    lat: 41.71159
+    lng: -73.90936
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0417}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0417
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/new-hope-community-center-2
   name: New Hope Community Center
   categories:
   - meal-program
-  address: {street: '221 S,Mith St', city: Poughkeepsie, state: ny, zip: '12601'}
+  address:
+    street: 221 S,Mith St
+    city: Poughkeepsie
+    state: ny
+    zip: '12601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.71159, lng: -73.90936}
+  geo:
+    lat: 41.71159
+    lng: -73.90936
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 09_NY_SFSP_0580}
+  external_ids:
+    usda_master: Cycle 09_NY_SFSP_0580
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/poughkeepsie-astor-services-for-children-familie
   name: Poughkeepsie/Astor Services For Children & Families
   categories:
   - child-care
-  address:
-    street: 50 Delafield St
-    city: Poughkeepsie
-    state: ny
-    zip: '12601'
+  address: {street: 50 Delafield St, city: Poughkeepsie, state: ny, zip: '12601'}
+  description: Head Start early childhood program — 146 funded slots; operated by Astor Services.
   place: '3659641'
-  geo:
-    lat: 41.71163
-    lng: -73.93528
+  geo: {lat: 41.71163, lng: -73.93528}
   phone: 845-452-7726
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/poughkeepsie/poughkeepsie-high-school
   name: Poughkeepsie High School
   categories:
   - meal-program
-  address: {street: 70 Forbus St, city: Poughkeepsie, state: ny, zip: '12603'}
+  address:
+    street: 70 Forbus St
+    city: Poughkeepsie
+    state: ny
+    zip: '12603'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.69423, lng: -73.9138}
+  geo:
+    lat: 41.69423
+    lng: -73.9138
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0628}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0628
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/poughkeepsie-housing-authority
   name: Poughkeepsie Housing Authority
   categories:
@@ -607,15 +685,24 @@
   name: Poughkeepsie Hs Mobile Site
   categories:
   - meal-program
-  address: {street: 70 Forbus St, city: Poughkeepsie, state: ny, zip: '12603'}
+  address:
+    street: 70 Forbus St
+    city: Poughkeepsie
+    state: ny
+    zip: '12603'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.69423, lng: -73.9138}
+  geo:
+    lat: 41.69423
+    lng: -73.9138
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0627}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0627
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/poughkeepsie-va-clinic
   name: Poughkeepsie VA Clinic
   categories:
@@ -676,6 +763,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -754,15 +842,24 @@
   name: Thurgood Marshall Community Center
   categories:
   - meal-program
-  address: {street: 109 Delafield St, city: Poughkeepsie, state: ny, zip: '12601'}
+  address:
+    street: 109 Delafield St
+    city: Poughkeepsie
+    state: ny
+    zip: '12601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Poughkeepsie City SD.
   place: '3659641'
-  geo: {lat: 41.71525, lng: -73.93322}
+  geo:
+    lat: 41.71525
+    lng: -73.93322
   phone: (845) 451-4780
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0773}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0773
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/poughkeepsie/westchester-county-health-care-corp-mid-hud-val
   name: Westchester County Health Care Corp Mid Hud Val Div of West MC Psych IP
   categories:
@@ -785,6 +882,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -813,6 +911,7 @@
   - Adult women
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

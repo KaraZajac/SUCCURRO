@@ -28,6 +28,10 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -53,6 +57,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -80,6 +85,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -106,6 +112,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -116,53 +123,34 @@
   name: Harmony Head Start
   categories:
   - child-care
-  address:
-    street: 14030 S Blackbob Rd
-    city: Olathe
-    state: ks
-    zip: '66062'
+  address: {street: 14030 S Blackbob Rd, city: Olathe, state: ks, zip: '66062'}
+  description: 'Head Start early childhood program — 49 funded slots; operated by OLATHE UNIFIED SCHOOL
+    DISTRICT #233.'
   place: '2052575'
-  geo:
-    lat: 38.88223
-    lng: -94.76119
+  geo: {lat: 38.88223, lng: -94.76119}
   phone: 913-780-7416
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/olathe/havencroft-elementary-school
   name: Havencroft Elementary School
   categories:
   - meal-program
-  address: {street: 1700 E Sheridan St, city: Olathe, state: ks, zip: '66062'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
-  place: '2052575'
-  geo: {lat: 38.86913, lng: -94.78809}
-  phone: (913) 780-7470
-  external_ids: {usda_master: Cycle 03_KS_SFSP_0057}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: ks/olathe/health-partnership-clinic-administration
-  name: Health Partnership Clinic Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
   address:
-    street: 405 S Clairborne Rd, Suite 2
+    street: 1700 E Sheridan St
     city: Olathe
     state: ks
     zip: '66062'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
   place: '2052575'
   geo:
-    lat: 38.87761
-    lng: -94.78905
-  phone: 913-730-3661
+    lat: 38.86913
+    lng: -94.78809
+  phone: (913) 780-7470
   external_ids:
-    bphc: BPS-H80-039822
+    usda_master: Cycle 03_KS_SFSP_0057
   sources:
-  - hrsa/health-center-sites
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -184,28 +172,6 @@
   website: https://www.hpcjc.org
   external_ids:
     bphc: BPS-H80-011643
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ks/olathe/health-partnership-clinic-marketing-and-developm
-  name: Health Partnership Clinic Marketing and Development
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 405 S Clairborne Rd, Suite 3
-    city: Olathe
-    state: ks
-    zip: '66062'
-  place: '2052575'
-  geo:
-    lat: 38.87761
-    lng: -94.78905
-  phone: 913-730-3661
-  external_ids:
-    bphc: BPS-H80-039823
   sources:
   - hrsa/health-center-sites
   verified:
@@ -237,21 +203,15 @@
   name: Heartland Head Start
   categories:
   - child-care
-  address:
-    street: 1700 W Sheridan St
-    city: Olathe
-    state: ks
-    zip: '66061'
+  address: {street: 1700 W Sheridan St, city: Olathe, state: ks, zip: '66061'}
+  description: 'Head Start early childhood program — 131 funded slots; operated by OLATHE UNIFIED SCHOOL
+    DISTRICT #233.'
   place: '2052575'
-  geo:
-    lat: 38.87226
-    lng: -94.84527
+  geo: {lat: 38.87226, lng: -94.84527}
   phone: 913-780-7416
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ks/olathe/johnson-county-mental-health-center-act
   name: Johnson County Mental Health Center ACT
   categories:
@@ -270,6 +230,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -297,6 +258,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -329,29 +291,47 @@
   name: Northview Elementary School
   categories:
   - meal-program
-  address: {street: 905 N Woodland Rd, city: Olathe, state: ks, zip: '66061'}
+  address:
+    street: 905 N Woodland Rd
+    city: Olathe
+    state: ks
+    zip: '66061'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
   place: '2052575'
-  geo: {lat: 38.89464, lng: -94.81613}
+  geo:
+    lat: 38.89464
+    lng: -94.81613
   phone: (913) 780-7570
-  external_ids: {usda_master: Cycle 03_KS_SFSP_0058}
+  external_ids:
+    usda_master: Cycle 03_KS_SFSP_0058
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/olathe/olathe-boys-girls-club
   name: Olathe Boys & Girls Club
   categories:
   - meal-program
-  address: {street: 520 S Harrison Street, city: Olathe, state: ks, zip: '66061'}
+  address:
+    street: 520 S Harrison Street
+    city: Olathe
+    state: ks
+    zip: '66061'
   description: Free summer meals for kids and teens (2026 season) — sponsored by X0611 - Wyandotte Co
     Boys and Girls Club.
   place: '2052575'
-  geo: {lat: 38.87436, lng: -94.81593}
+  geo:
+    lat: 38.87436
+    lng: -94.81593
   phone: (913) 689-2700
-  external_ids: {usda_master: Cycle 04_KS_SFSP_0317}
+  external_ids:
+    usda_master: Cycle 04_KS_SFSP_0317
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/olathe/olathe-housing-authority
   name: Olathe Housing Authority
   categories:
@@ -376,38 +356,65 @@
   name: Pioneer Trail Middle School
   categories:
   - meal-program
-  address: {street: 15100 West 127Th St, city: Olathe, state: ks, zip: '66062'}
+  address:
+    street: 15100 West 127Th St
+    city: Olathe
+    state: ks
+    zip: '66062'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
   place: '2052575'
-  geo: {lat: 38.89828, lng: -94.76454}
+  geo:
+    lat: 38.89828
+    lng: -94.76454
   phone: (913) 780-7270
-  external_ids: {usda_master: Cycle 03_KS_SFSP_0059}
+  external_ids:
+    usda_master: Cycle 03_KS_SFSP_0059
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/olathe/ridgeview-elementary-school
   name: Ridgeview Elementary School
   categories:
   - meal-program
-  address: {street: 1201 E Elm St, city: Olathe, state: ks, zip: '66061'}
+  address:
+    street: 1201 E Elm St
+    city: Olathe
+    state: ks
+    zip: '66061'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
   place: '2052575'
-  geo: {lat: 38.87767, lng: -94.79888}
+  geo:
+    lat: 38.87767
+    lng: -94.79888
   phone: (913) 780-7630
-  external_ids: {usda_master: Cycle 03_KS_SFSP_0060}
+  external_ids:
+    usda_master: Cycle 03_KS_SFSP_0060
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/olathe/santa-fe-trail-middle-school
   name: Santa Fe Trail Middle School
   categories:
   - meal-program
-  address: {street: 1100 N Ridgeview Rd, city: Olathe, state: ks, zip: '66061'}
+  address:
+    street: 1100 N Ridgeview Rd
+    city: Olathe
+    state: ks
+    zip: '66061'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0233 - Olathe.
   place: '2052575'
-  geo: {lat: 38.89932, lng: -94.79726}
+  geo:
+    lat: 38.89932
+    lng: -94.79726
   phone: (913) 780-7290
-  external_ids: {usda_master: Cycle 03_KS_SFSP_0061}
+  external_ids:
+    usda_master: Cycle 03_KS_SFSP_0061
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

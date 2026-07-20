@@ -14,12 +14,17 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.35004, lng: -93.97535}
 - id: mn/st-peter/counseling-services-of-southern-mn-mankato-menta
   name: Counseling Services of Southern MN Mankato Mental Health Site
   categories:
@@ -34,12 +39,17 @@
   website: https://www.counseling-services.org
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.35004, lng: -93.97535}
 - id: mn/st-peter/hra-of-st-peter-minnesota
   name: Hra Of St. Peter, Minnesota
   categories:
@@ -80,6 +90,7 @@
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -102,12 +113,14 @@
   services:
   - Residential/24-hour residential
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 44.30855, lng: -93.97936}
 - id: mn/st-peter/minnesota-valley-action-council
   name: Minnesota Valley Action Council
   categories:
@@ -127,19 +140,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.32335
+    lng: -93.9636
 - id: mn/st-peter/north-intermediate-elementary
   name: North Intermediate Elementary
   categories:
   - meal-program
-  address: {street: 815 N 9Th St, city: St Peter, state: mn, zip: '56082'}
+  address:
+    street: 815 N 9Th St
+    city: St Peter
+    state: mn
+    zip: '56082'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by St Peter ISD #508.'
   place: '2758036'
-  geo: {lat: 44.33576, lng: -93.96522}
+  geo:
+    lat: 44.33576
+    lng: -93.96522
   phone: (507) 934-5703
-  external_ids: {usda_master: Cycle 01_MN_SFSP_0090}
+  external_ids:
+    usda_master: Cycle 01_MN_SFSP_0090
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/st-peter/st-peter-head-start-center-nicollet-county-home
   name: St. Peter Head Start Center/Nicollet County Home Base
   categories:
@@ -150,6 +175,8 @@
     city: Saint Peter
     state: mn
     zip: '56082'
+  description: Head Start early childhood program — 30 funded slots; operated by Minnesota Valley Action
+    Council, Inc..
   place: '2758036'
   geo:
     lat: 44.32332

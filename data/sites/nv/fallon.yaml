@@ -15,44 +15,35 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.4774
+    lng: -118.7826
 - id: nv/fallon/fallon-center
   name: Fallon Center
   categories:
   - child-care
-  address:
-    street: 531 Humboldt St
-    city: Fallon
-    state: nv
-    zip: '89406'
+  address: {street: 531 Humboldt St, city: Fallon, state: nv, zip: '89406'}
+  description: Head Start early childhood program — 18 funded slots; operated by Centro de la Familia
+    de Utah.
   place: '3224100'
-  geo:
-    lat: 39.4699
-    lng: -118.7721
+  geo: {lat: 39.4699, lng: -118.7721}
   phone: 801-521-4473
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/fallon/fallon-head-start
   name: Fallon Head Start
   categories:
   - child-care
-  address:
-    street: 8951 Mission Rd
-    city: Fallon
-    state: nv
-    zip: '89406'
+  address: {street: 8951 Mission Rd, city: Fallon, state: nv, zip: '89406'}
+  description: Head Start early childhood program — 20 funded slots; operated by Inter Tribal Council
+    of Nevada.
   place: '3224100'
-  geo:
-    lat: 39.50442
-    lng: -118.61478
+  geo: {lat: 39.50442, lng: -118.61478}
   phone: 775-423-6351
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nv/fallon/fallon-tribal-health-center
   name: Fallon Tribal Health Center
   categories:
@@ -70,6 +61,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.48883
+    lng: -118.75827
 - id: nv/fallon/fallon-tribal-health-clinic
   name: Fallon Tribal Health Clinic
   categories:
@@ -98,6 +92,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -175,6 +170,10 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
   - Persons with traumatic brain injury (TBI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -201,6 +200,7 @@
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -211,13 +211,22 @@
   name: The Fallon Paiute-Shoshone Tribe
   categories:
   - meal-program
-  address: {street: 8955 Mission Road, city: Fallon, state: nv, zip: '89406'}
+  address:
+    street: 8955 Mission Road
+    city: Fallon
+    state: nv
+    zip: '89406'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Churchill County School
     District.
   place: '3224100'
-  geo: {lat: 39.50444, lng: -118.61413}
+  geo:
+    lat: 39.50444
+    lng: -118.61413
   phone: (775) 423-8065
-  external_ids: {usda_master: Cycle 09_NV_SFSP_0001}
+  external_ids:
+    usda_master: Cycle 09_NV_SFSP_0001
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

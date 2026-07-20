@@ -7,6 +7,8 @@
     city: Wenatchee
     state: wa
     zip: '98801'
+  description: Head Start early childhood program — 16 funded slots; operated by Chelan-Douglas Child
+    Services Association.
   place: '5377105'
   geo:
     lat: 47.40589
@@ -38,6 +40,10 @@
   - Young adults
   - Clients who have experienced trauma
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -64,6 +70,10 @@
   - Outpatient
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -96,6 +106,10 @@
   - Adult women
   - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -120,6 +134,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 47.41295
+    lng: -120.31012
 - id: wa/wenatchee/columbia-counseling-607-llc
   name: Columbia Counseling 607 LLC
   categories:
@@ -150,6 +167,7 @@
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -179,31 +197,13 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: wa/wenatchee/cvch-ballard-billing
-  name: CVCH - Ballard (Billing)
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1027 N Wenatchee Ave
-    city: Wenatchee
-    state: wa
-    zip: '98801'
-  place: '5377105'
-  geo:
-    lat: 47.43672
-    lng: -120.32122
-  phone: 509-662-6000
-  external_ids:
-    bphc: BPS-H80-036205
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -545,15 +545,24 @@
   name: John Newberry
   categories:
   - meal-program
-  address: {street: 850 N. Western Avenue, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 850 N. Western Avenue
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.43279, lng: -120.34627}
+  geo:
+    lat: 47.43279
+    lng: -120.34627
   phone: (748) 748-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0292}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0292
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/kittitas-street-central-office
   name: Kittitas Street (Central Office)
   categories:
@@ -563,6 +572,8 @@
     city: Wenatchee
     state: wa
     zip: '98801'
+  description: Head Start early childhood program — 50 funded slots; operated by Chelan-Douglas Child
+    Services Association.
   place: '5377105'
   geo:
     lat: 47.40563
@@ -577,28 +588,46 @@
   name: Lincoln Elementary
   categories:
   - meal-program
-  address: {street: 1224 Methow Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 1224 Methow Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.40705, lng: -120.30847}
+  geo:
+    lat: 47.40705
+    lng: -120.30847
   phone: (509) 679-2540
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0345}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0345
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/lincoln-park
   name: Lincoln Park
   categories:
   - meal-program
-  address: {street: 1410 Mission Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 1410 Mission Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.40318, lng: -120.30307}
+  geo:
+    lat: 47.40318
+    lng: -120.30307
   phone: (509) 423-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0349}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0349
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/methow-center
   name: Methow Center
   categories:
@@ -608,6 +637,8 @@
     city: Wenatchee
     state: wa
     zip: '98801'
+  description: Head Start early childhood program — 13 funded slots; operated by Chelan-Douglas Child
+    Services Association.
   place: '5377105'
   geo:
     lat: 47.40482
@@ -622,28 +653,46 @@
   name: Methow Park
   categories:
   - meal-program
-  address: {street: 420 Methow Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 420 Methow Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.41763, lng: -120.31037}
+  geo:
+    lat: 47.41763
+    lng: -120.31037
   phone: (509) 423-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0383}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0383
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/mission-view-elementary
   name: Mission View Elementary
   categories:
   - meal-program
-  address: {street: 60 Terminal Avenue, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 60 Terminal Avenue
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wenatchee School District.
   place: '5377105'
-  geo: {lat: 47.39791, lng: -120.29919}
+  geo:
+    lat: 47.39791
+    lng: -120.29919
   phone: (509) 663-5851
-  external_ids: {usda_master: Cycle 04_WA_SFSP_0107}
+  external_ids:
+    usda_master: Cycle 04_WA_SFSP_0107
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/new-hope-recovery
   name: New Hope Recovery
   categories:
@@ -667,6 +716,7 @@
   - Adult women
   - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -677,41 +727,68 @@
   name: Pioneer Middle School
   categories:
   - meal-program
-  address: {street: 1620 Russell Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 1620 Russell Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.41163, lng: -120.32267}
+  geo:
+    lat: 47.41163
+    lng: -120.32267
   phone: (748) 748-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0463}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0463
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/pioneer-park
   name: Pioneer Park
   categories:
   - meal-program
-  address: {street: 220 Fuller Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 220 Fuller Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.41349, lng: -120.31932}
+  geo:
+    lat: 47.41349
+    lng: -120.31932
   phone: (509) 423-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0464}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0464
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/washington-park
   name: Washington Park
   categories:
   - meal-program
-  address: {street: 110 South Miller Street, city: Wenatchee, state: wa, zip: '98801'}
+  address:
+    street: 110 South Miller Street
+    city: Wenatchee
+    state: wa
+    zip: '98801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Small Miracles.
   place: '5377105'
-  geo: {lat: 47.42207, lng: -120.32477}
+  geo:
+    lat: 47.42207
+    lng: -120.32477
   phone: (509) 423-1748
-  external_ids: {usda_master: Cycle 08_WA_SFSP_0638}
+  external_ids:
+    usda_master: Cycle 08_WA_SFSP_0638
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/wenatchee/wenatchee-fumc
   name: Wenatchee FUMC
   categories:

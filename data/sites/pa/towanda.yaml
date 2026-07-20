@@ -15,6 +15,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.79557
+    lng: -76.48589
 - id: pa/towanda/concern-towanda-branch-office
   name: CONCERN Towanda Branch Office
   categories:
@@ -33,6 +36,7 @@
   website: https://www.concern4kids.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -114,33 +118,36 @@
   name: Rnc-Towanda
   categories:
   - meal-program
-  address: {street: 109 Cherry St., city: Towanda, state: pa, zip: '18848'}
+  address:
+    street: 109 Cherry St.
+    city: Towanda
+    state: pa
+    zip: '18848'
   description: Free summer meals for kids and teens (2026 season) — sponsored by SMBMT DBA CGI United.
   place: '4277168'
-  geo: {lat: 41.77823, lng: -76.4456}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0297}
+  geo:
+    lat: 41.77823
+    lng: -76.4456
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0297
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/towanda/towanda
   name: Towanda
   categories:
   - child-care
-  address:
-    street: 382 Reuter Blvd
-    city: Towanda
-    state: pa
-    zip: '18848'
+  address: {street: 382 Reuter Blvd, city: Towanda, state: pa, zip: '18848'}
+  description: Head Start early childhood program — 17 funded slots; operated by Bradford-Tioga Head Start,
+    Inc..
   place: '4277168'
-  geo:
-    lat: 41.78646
-    lng: -76.45351
+  geo: {lat: 41.78646, lng: -76.45351}
   phone: 570-485-5087
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/towanda/towanda-laurel-health-center
   name: Towanda Laurel Health Center
   categories:

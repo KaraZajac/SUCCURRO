@@ -2,34 +2,37 @@
   name: Lyons Head Start
   categories:
   - child-care
-  address:
-    street: 6 Clyde Rd
-    city: Lyons
-    state: ny
-    zip: '14489'
+  address: {street: 6 Clyde Rd, city: Lyons, state: ny, zip: '14489'}
+  description: Head Start early childhood program — 35 funded slots; operated by WAYNE COUNTY ACTION PROGRAM,
+    INC.
   place: '3643962'
-  geo:
-    lat: 43.06453
-    lng: -76.98595
+  geo: {lat: 43.06453, lng: -76.98595}
   phone: 315-946-5388
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/lyons/lyons-senior-high-school
   name: Lyons Senior High School
   categories:
   - meal-program
-  address: {street: 10 Clyde Rd, city: Lyons, state: ny, zip: '14489'}
+  address:
+    street: 10 Clyde Rd
+    city: Lyons
+    state: ny
+    zip: '14489'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lyons CSD.
   place: '3643962'
-  geo: {lat: 43.06387, lng: -76.9846}
+  geo:
+    lat: 43.06387
+    lng: -76.9846
   phone: (317) 946-2200
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0360}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0360
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/lyons/wayne-behavioral-health-network-community-csl-ce
   name: Wayne Behavioral Health Network Community Csl Center of Wayne Cnty
   categories:
@@ -57,6 +60,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -80,6 +84,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 43.06259
+    lng: -76.99487
 - id: ny/lyons/wayne-substance-abuse-services-outpatient
   name: Wayne Substance Abuse Services Outpatient
   categories:
@@ -110,6 +117,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

@@ -17,6 +17,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -54,6 +55,10 @@
   - Adult men
   - Seniors or older adults
   - Veterans
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -119,6 +124,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -148,6 +154,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -178,6 +185,7 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -200,28 +208,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: ar/springdale/community-clinic-administration
-  name: Community Clinic Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 610 E Emma Ave, Suite B
-    city: Springdale
-    state: ar
-    zip: '72764'
-  place: 0566080
-  geo:
-    lat: 36.18526
-    lng: -94.12423
-  phone: 479-751-7417
-  external_ids:
-    bphc: BPS-H80-009548
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ar/springdale/community-clinic-central-junior-high
   name: Community Clinic Central Junior High
   categories:
@@ -262,28 +248,6 @@
   website: https://www.communityclinicnwa.org
   external_ids:
     bphc: BPS-H80-033984
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ar/springdale/community-clinic-outreach-creo
-  name: Community Clinic Outreach CREO
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 610 E Emma Ave
-    city: Springdale
-    state: ar
-    zip: '72764'
-  place: 0566080
-  geo:
-    lat: 36.18526
-    lng: -94.12423
-  phone: 479-751-7417
-  external_ids:
-    bphc: BPS-H80-040337
   sources:
   - hrsa/health-center-sites
   verified:
@@ -384,6 +348,10 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -394,15 +362,24 @@
   name: Don Tyson School Of Innovation
   categories:
   - meal-program
-  address: {street: 2667 Hylton Rd, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 2667 Hylton Rd
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.16018, lng: -94.0856}
+  geo:
+    lat: 36.16018
+    lng: -94.0856
   phone: (479) 750-8780
-  external_ids: {usda_master: Cycle 05_AR_SSO_0271}
+  external_ids:
+    usda_master: Cycle 05_AR_SSO_0271
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/economic-opportunity-agency-of-washington-county
   name: Economic Opportunity Agency of Washington County Inc. (EOAWC)
   categories:
@@ -422,19 +399,31 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 36.18482
+    lng: -94.12328
 - id: ar/springdale/elmdale-elementary
   name: Elmdale Elementary
   categories:
   - meal-program
-  address: {street: 420 North West End Ave, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 420 North West End Ave
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.19078, lng: -94.14738}
+  geo:
+    lat: 36.19078
+    lng: -94.14738
   phone: (479) 750-8859
-  external_ids: {usda_master: Cycle 07_AR_SSO_0013}
+  external_ids:
+    usda_master: Cycle 07_AR_SSO_0013
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/elmdale-school-based-health-center
   name: Elmdale School Based Health Center
   categories:
@@ -461,15 +450,24 @@
   name: George Elementary
   categories:
   - meal-program
-  address: {street: 2878 S Powell St, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 2878 S Powell St
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.15913, lng: -94.12607}
+  geo:
+    lat: 36.15913
+    lng: -94.12607
   phone: (479) 750-8710
-  external_ids: {usda_master: Cycle 07_AR_SSO_0025}
+  external_ids:
+    usda_master: Cycle 07_AR_SSO_0025
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/george-school-based-health-center
   name: George School Based Health Center
   categories:
@@ -512,15 +510,24 @@
   name: Harp Elementary
   categories:
   - meal-program
-  address: {street: 2700 Butterfield Coach Rd, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 2700 Butterfield Coach Rd
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.15997, lng: -94.09463}
+  geo:
+    lat: 36.15997
+    lng: -94.09463
   phone: (479) 750-8740
-  external_ids: {usda_master: Cycle 07_AR_SSO_0028}
+  external_ids:
+    usda_master: Cycle 07_AR_SSO_0028
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/integrated-wellness-and-mental-health
   name: Integrated Wellness and Mental Health
   categories:
@@ -539,6 +546,7 @@
   website: https://www.iwamh.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -571,40 +579,28 @@
   name: Oak Ave Head Start
   categories:
   - child-care
-  address:
-    street: 500 Oak Ave
-    city: Springdale
-    state: ar
-    zip: '72764'
+  address: {street: 500 Oak Ave, city: Springdale, state: ar, zip: '72764'}
+  description: Head Start early childhood program — 9 funded slots; operated by Economic Opportunity Agency
+    of Washington County, Inc..
   place: 0566080
-  geo:
-    lat: 36.19006
-    lng: -94.13439
+  geo: {lat: 36.19006, lng: -94.13439}
   phone: 479-751-4430
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/springdale/oak-avenue-center
   name: Oak Avenue Center
   categories:
   - child-care
-  address:
-    street: 500 Oak Ave
-    city: Springdale
-    state: ar
-    zip: '72764'
+  address: {street: 500 Oak Ave, city: Springdale, state: ar, zip: '72764'}
+  description: Head Start early childhood program — 17 funded slots; operated by Economic Opportunity
+    Agency of Washington County, Inc.
   place: 0566080
-  geo:
-    lat: 36.19009
-    lng: -94.13438
+  geo: {lat: 36.19009, lng: -94.13438}
   phone: 479-751-4430
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/springdale/olive-branch-recovery
   name: Olive Branch Recovery
   categories:
@@ -635,6 +631,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -645,15 +642,24 @@
   name: Parson Hills
   categories:
   - meal-program
-  address: {street: 2326 Cardinal Dr, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 2326 Cardinal Dr
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.17176, lng: -94.10678}
+  geo:
+    lat: 36.17176
+    lng: -94.10678
   phone: (479) 750-8877
-  external_ids: {usda_master: Cycle 07_AR_SSO_0015}
+  external_ids:
+    usda_master: Cycle 07_AR_SSO_0015
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/parson-hills-elementary-little-free-pantry
   name: Parson Hills Elementary Little Free Pantry
   categories:
@@ -696,21 +702,15 @@
   name: Springdale Center
   categories:
   - child-care
-  address:
-    street: 800 Charles Avenue
-    city: Springdale
-    state: ar
-    zip: '72764'
+  address: {street: 800 Charles Avenue, city: Springdale, state: ar, zip: '72764'}
+  description: Head Start early childhood program — 15 funded slots; operated by Economic Opportunity
+    Agency of Washington County, Inc.
   place: 0566080
-  geo:
-    lat: 36.17436
-    lng: -94.12297
+  geo: {lat: 36.17436, lng: -94.12297}
   phone: 479-751-9461
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/springdale/springdale-housing-authority
   name: Springdale Housing Authority
   categories:
@@ -937,6 +937,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -979,67 +980,73 @@
   name: The Life At Woodland Hills
   categories:
   - meal-program
-  address: {street: 1406 Oriole Street, city: Springdale, state: ar, zip: '72764'}
+  address:
+    street: 1406 Oriole Street
+    city: Springdale
+    state: ar
+    zip: '72764'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Harvest Rural Feeding
     Services Inc.
   place: 0566080
-  geo: {lat: 36.17503, lng: -94.10827}
+  geo:
+    lat: 36.17503
+    lng: -94.10827
   phone: (908) 798-3884
-  external_ids: {usda_master: Cycle 06_AR_SFSP_0018}
+  external_ids:
+    usda_master: Cycle 06_AR_SFSP_0018
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/the-pat-walker-center-for-children
   name: The Pat Walker Center for Children
   categories:
   - child-care
-  address:
-    street: 260 Victory Lane
-    city: Springdale
-    state: ar
-    zip: '72764'
+  address: {street: 260 Victory Lane, city: Springdale, state: ar, zip: '72764'}
+  description: Head Start early childhood program — 32 funded slots; operated by Economic Opportunity
+    Agency of Washington County, Inc.
   place: 0566080
-  geo:
-    lat: 36.20672
-    lng: -94.13062
+  geo: {lat: 36.20672, lng: -94.13062}
   phone: 479-927-1232
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/springdale/wacd-springdale-early-learning-academy-west
   name: WACD-Springdale Early Learning Academy West
   categories:
   - child-care
-  address:
-    street: 2920 American St
-    city: Springdale
-    state: ar
-    zip: '72764'
+  address: {street: 2920 American St, city: Springdale, state: ar, zip: '72764'}
+  description: Head Start early childhood program — 40 funded slots; operated by Arkansas Early Learning,
+    Inc..
   place: 0566080
-  geo:
-    lat: 36.15897
-    lng: -94.14526
+  geo: {lat: 36.15897, lng: -94.14526}
   phone: 479-927-6251
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ar/springdale/walker-elementary
   name: Walker Elementary
   categories:
   - meal-program
-  address: {street: 1701 S 40Th St., city: Springdale, state: ar, zip: '72762'}
+  address:
+    street: 1701 S 40Th St.
+    city: Springdale
+    state: ar
+    zip: '72762'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springdale School District.
   place: 0566080
-  geo: {lat: 36.17049, lng: -94.17475}
+  geo:
+    lat: 36.17049
+    lng: -94.17475
   phone: (479) 750-8874
-  external_ids: {usda_master: Cycle 07_AR_SSO_0018}
+  external_ids:
+    usda_master: Cycle 07_AR_SSO_0018
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ar/springdale/westwood-elementary-school
   name: Westwood Elementary School
   categories:

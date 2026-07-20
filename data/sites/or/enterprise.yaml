@@ -16,38 +16,43 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 45.43103
+    lng: -117.27895
 - id: or/enterprise/enterprise
   name: Enterprise
   categories:
   - child-care
-  address:
-    street: 670 NW 1st St
-    city: Enterprise
-    state: or
-    zip: '97828'
+  address: {street: 670 NW 1st St, city: Enterprise, state: or, zip: '97828'}
+  description: Head Start early childhood program — 6 funded slots; operated by Umatilla-Morrow Head Start.
   place: '4123500'
-  geo:
-    lat: 45.43014
-    lng: -117.2789
+  geo: {lat: 45.43014, lng: -117.2789}
   phone: 541-564-6878
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: or/enterprise/enterprise-city-park
   name: Enterprise City Park
   categories:
   - meal-program
-  address: {street: 210 W Greenwood Street, city: Enterprise, state: or, zip: '97828'}
+  address:
+    street: 210 W Greenwood Street
+    city: Enterprise
+    state: or
+    zip: '97828'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Building Healthy Families.
   place: '4123500'
-  geo: {lat: 45.42459, lng: -117.27973}
+  geo:
+    lat: 45.42459
+    lng: -117.27973
   phone: (541) 426-9411
-  external_ids: {usda_master: Cycle 01_OR_SFSP_0043}
+  external_ids:
+    usda_master: Cycle 01_OR_SFSP_0043
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/enterprise/enterprise-pharmacy-of-winding-waters
   name: Enterprise Pharmacy of Winding Waters
   categories:
@@ -92,6 +97,7 @@
   - Veterans
   - Persons experiencing first-episode psychosis
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -119,6 +125,7 @@
   - Veterans
   - Persons experiencing first-episode psychosis
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -165,28 +172,6 @@
   website: https://www.windingwaters.org
   external_ids:
     bphc: BPS-H80-015670
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: or/enterprise/winding-waters-open-space
-  name: Winding Waters Open Space
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 758 NW 1st St
-    city: Enterprise
-    state: or
-    zip: '97828'
-  place: '4123500'
-  geo:
-    lat: 45.4314
-    lng: -117.27893
-  phone: 541-426-4848
-  external_ids:
-    bphc: BPS-H80-029956
   sources:
   - hrsa/health-center-sites
   verified:

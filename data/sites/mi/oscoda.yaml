@@ -42,29 +42,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: mi/oscoda/alcona-health-center-oscoda-annex
-  name: Alcona Health Center-Oscoda Annex
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 5671 N Skeel Ave, Suite 8
-    city: Oscoda
-    state: mi
-    zip: '48750'
-  place: '2661320'
-  geo:
-    lat: 44.45071
-    lng: -83.35316
-  phone: 989-739-2550
-  website: https://alconahealthcenters.org
-  external_ids:
-    bphc: BPS-H80-002206
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: mi/oscoda/alcona-health-center-oscoda-services
   name: Alcona Health Center - Oscoda Services
   categories:
@@ -116,6 +93,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -126,22 +104,15 @@
   name: Oscoda ECC/GSRP
   categories:
   - child-care
-  address:
-    street: 3630 E River Rd
-    street2: Richardson Elementary
-    city: Oscoda
-    state: mi
-    zip: '48750'
+  address: {street: 3630 E River Rd, street2: Richardson Elementary, city: Oscoda, state: mi, zip: '48750'}
+  description: Head Start early childhood program — 48 funded slots; operated by Northeast Michigan Community
+    Service Agency, Inc..
   place: '2661320'
-  geo:
-    lat: 44.42491
-    lng: -83.37571
+  geo: {lat: 44.42491, lng: -83.37571}
   phone: 989-739-8109
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mi/oscoda/oscoda-free-little-pantry
   name: Oscoda Free Little Pantry
   categories:
@@ -227,6 +198,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

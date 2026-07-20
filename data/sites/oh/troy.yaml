@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.05872
+    lng: -84.20477
 - id: oh/troy/miami-metropolitian-housing-authority
   name: Miami Metropolitian Housing Authority
   categories:
@@ -64,6 +67,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -74,15 +78,24 @@
   name: Sw - Grab And Go Upper Valley Medical Center (Cha)
   categories:
   - meal-program
-  address: {street: 3130 N. County Rd. 25-A, city: Troy, state: oh, zip: '45373'}
+  address:
+    street: 3130 N. County Rd. 25-A
+    city: Troy
+    state: oh
+    zip: '45373'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Children's Hunger Alliance.
   place: '3977588'
-  geo: {lat: 40.08577, lng: -84.22992}
+  geo:
+    lat: 40.08577
+    lng: -84.22992
   phone: (614) 964-0327
-  external_ids: {usda_master: Cycle 02_OH_SFSP_0187}
+  external_ids:
+    usda_master: Cycle 02_OH_SFSP_0187
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/troy/tcn-troy
   name: TCN Troy
   categories:
@@ -109,6 +122,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -119,18 +133,12 @@
   name: Troy Head Start
   categories:
   - child-care
-  address:
-    street: 1849 Towne Park Dr
-    city: Troy
-    state: oh
-    zip: '45373'
+  address: {street: 1849 Towne Park Dr, city: Troy, state: oh, zip: '45373'}
+  description: Head Start early childhood program — 72 funded slots; operated by Council on Rural Service
+    Programs, Inc..
   place: '3977588'
-  geo:
-    lat: 40.06132
-    lng: -84.23626
+  geo: {lat: 40.06132, lng: -84.23626}
   phone: 937-440-9595
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

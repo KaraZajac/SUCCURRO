@@ -39,35 +39,41 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 31.88195
+    lng: -85.08338
 - id: ga/georgetown/quitman
   name: QUITMAN
   categories:
   - child-care
-  address:
-    street: 213 Kaigler Rd
-    city: Georgetown
-    state: ga
-    zip: '39854'
+  address: {street: 213 Kaigler Rd, city: Georgetown, state: ga, zip: '39854'}
+  description: Head Start early childhood program — 8 funded slots; operated by Enrichment Services Program,
+    Inc..
   place: '1332482'
-  geo:
-    lat: 31.88652
-    lng: -85.08074
+  geo: {lat: 31.88652, lng: -85.08074}
   phone: 229-334-9214
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/georgetown/quitman-county-elementary-summer
   name: Quitman County Elementary Summer
   categories:
   - meal-program
-  address: {street: 173 Kaigler Road, city: Georgetown, state: ga, zip: '39854'}
+  address:
+    street: 173 Kaigler Road
+    city: Georgetown
+    state: ga
+    zip: '39854'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Quitman County.
   place: '1332482'
-  geo: {lat: 31.88445, lng: -85.08152}
+  geo:
+    lat: 31.88445
+    lng: -85.08152
   phone: (229) 310-4856
-  external_ids: {usda_master: Cycle 04_GA_SSO_0230}
+  external_ids:
+    usda_master: Cycle 04_GA_SSO_0230
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

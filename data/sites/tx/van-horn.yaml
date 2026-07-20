@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 31.04008
+    lng: -104.82864
 - id: tx/van-horn/housing-authority-of-van-horn
   name: Housing Authority Of Van Horn
   categories:
@@ -62,6 +65,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -72,12 +79,21 @@
   name: Van Horn School
   categories:
   - meal-program
-  address: {street: 200 W 7Th Street, city: Van Horn, state: tx, zip: '79855'}
+  address:
+    street: 200 W 7Th Street
+    city: Van Horn
+    state: tx
+    zip: '79855'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CULBERSON COUNTY-ALLAMOORE
     ISD.
   place: '4875032'
-  geo: {lat: 31.04708, lng: -104.83382}
-  external_ids: {usda_master: Cycle 06_TX_SSO_3275}
+  geo:
+    lat: 31.04708
+    lng: -104.83382
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_3275
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

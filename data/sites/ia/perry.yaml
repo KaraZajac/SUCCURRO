@@ -18,6 +18,7 @@
   - Outpatient
   - Residential/24-hour residential
   - Young adults
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -42,57 +43,54 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.83971
+    lng: -94.10509
 - id: ia/perry/north-dallas-early-head-start
   name: North Dallas Early Head Start
   categories:
   - child-care
-  address:
-    street: 2816 1st Ave
-    city: Perry
-    state: ia
-    zip: '50220'
+  address: {street: 2816 1st Ave, city: Perry, state: ia, zip: '50220'}
+  description: Head Start early childhood program — 32 funded slots; operated by New Opportunities, Incorporated.
   place: '1962355'
-  geo:
-    lat: 41.85967
-    lng: -94.10557
+  geo: {lat: 41.85967, lng: -94.10557}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/perry/north-dallas-head-start
   name: North Dallas Head Start
   categories:
   - child-care
-  address:
-    street: 2816 1st Ave
-    street2: Crossroads Church
-    city: Perry
-    state: ia
-    zip: '50220'
+  address: {street: 2816 1st Ave, street2: Crossroads Church, city: Perry, state: ia, zip: '50220'}
+  description: Head Start early childhood program — 51 funded slots; operated by New Opportunities, Incorporated.
   place: '1962355'
-  geo:
-    lat: 41.86
-    lng: -94.1062
+  geo: {lat: 41.86, lng: -94.1062}
   phone: 515-465-5972
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/perry/perry-elementary-school
   name: Perry Elementary School
   categories:
   - meal-program
-  address: {street: 1600 8Th Street, city: Perry, state: ia, zip: '50220'}
+  address:
+    street: 1600 8Th Street
+    city: Perry
+    state: ia
+    zip: '50220'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Perry Comm School District.
   place: '1962355'
-  geo: {lat: 41.84378, lng: -94.09687}
+  geo:
+    lat: 41.84378
+    lng: -94.09687
   phone: (515) 465-8558
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0112}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0112
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/perry/zion-integrated-behav-health-services-perry
   name: ZION Integrated Behav Health Services Perry
   categories:
@@ -113,6 +111,7 @@
   - Intensive outpatient treatment
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

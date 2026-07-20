@@ -36,6 +36,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.08866
+    lng: -81.54125
 - id: oh/akron/akron-urban-minority-alc-drug-abuse-outreach-pro
   name: Akron Urban Minority Alc Drug Abuse Outreach Prog Inc
   categories:
@@ -66,6 +69,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -161,28 +165,6 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: oh/akron/axesspointe-community-health-center-akron-pharma
-  name: AxessPointe Community Health Center/Akron - Pharmacy Admin
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1400 S Arlington St, Unit 38 A
-    city: Akron
-    state: oh
-    zip: '44306'
-  place: '3901000'
-  geo:
-    lat: 41.03375
-    lng: -81.4929
-  phone: 888-975-9188
-  external_ids:
-    bphc: BPS-H80-039592
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: oh/akron/axesspointe-community-health-center-arlington
   name: AxessPointe Community Health Center/Arlington
   categories:
@@ -275,6 +257,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -302,12 +285,14 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 41.14009, lng: -81.64626}
 - id: oh/akron/bf-empowerment-center-llc
   name: BF Empowerment Center LLC
   categories:
@@ -333,6 +318,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -366,6 +352,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -399,6 +386,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -423,6 +411,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -450,6 +439,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -487,6 +477,7 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -544,6 +535,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -571,6 +563,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -603,15 +596,24 @@
   name: Ericsson Homes
   categories:
   - meal-program
-  address: {street: 1380 Dahlgren Dr., city: Akron, state: oh, zip: '44306'}
+  address:
+    street: 1380 Dahlgren Dr.
+    city: Akron
+    state: oh
+    zip: '44306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City Of Akron Rec Bureau.
   place: '3901000'
-  geo: {lat: 41.03273, lng: -81.48874}
+  geo:
+    lat: 41.03273
+    lng: -81.48874
   phone: (330) 344-9466
-  external_ids: {usda_master: Cycle 06_OH_SFSP_0059}
+  external_ids:
+    usda_master: Cycle 06_OH_SFSP_0059
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/greenleaf-family-center
   name: Greenleaf Family Center
   categories:
@@ -634,6 +636,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -649,6 +652,8 @@
     city: Akron
     state: oh
     zip: '44306'
+  description: Head Start early childhood program — 98 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.0577
@@ -668,6 +673,8 @@
     city: Akron
     state: oh
     zip: '44307'
+  description: Head Start early childhood program — 34 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.08195
@@ -687,6 +694,8 @@
     city: Akron
     state: oh
     zip: '44302'
+  description: Head Start early childhood program — 230 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.08858
@@ -706,6 +715,8 @@
     city: Akron
     state: oh
     zip: '44302'
+  description: Head Start early childhood program — 51 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.08867
@@ -725,6 +736,8 @@
     city: Akron
     state: oh
     zip: '44306'
+  description: Head Start early childhood program — 68 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.0242
@@ -744,6 +757,8 @@
     city: Akron
     state: oh
     zip: '44311'
+  description: Head Start early childhood program — 17 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.05957
@@ -763,6 +778,8 @@
     city: Akron
     state: oh
     zip: '44306'
+  description: Head Start early childhood program — 17 funded slots; operated by Akron Summit Community
+    Action Agency, Inc..
   place: '3901000'
   geo:
     lat: 41.02818
@@ -825,6 +842,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -852,6 +870,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -906,6 +925,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -916,28 +936,46 @@
   name: Lane Field
   categories:
   - meal-program
-  address: {street: 630 Vernon Odom Blvd, city: Akron, state: oh, zip: '44307'}
+  address:
+    street: 630 Vernon Odom Blvd
+    city: Akron
+    state: oh
+    zip: '44307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City Of Akron Rec Bureau.
   place: '3901000'
-  geo: {lat: 41.07123, lng: -81.54588}
+  geo:
+    lat: 41.07123
+    lng: -81.54588
   phone: (330) 375-2832
-  external_ids: {usda_master: Cycle 06_OH_SFSP_0147}
+  external_ids:
+    usda_master: Cycle 06_OH_SFSP_0147
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/ne-glory-hallelujah-childcare
   name: Ne - Glory Hallelujah Childcare
   categories:
   - meal-program
-  address: {street: 1140 South Hawkins Avenue, city: Akron, state: oh, zip: '44320'}
+  address:
+    street: 1140 South Hawkins Avenue
+    city: Akron
+    state: oh
+    zip: '44320'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Children's Hunger Alliance.
   place: '3901000'
-  geo: {lat: 41.07826, lng: -81.56957}
+  geo:
+    lat: 41.07826
+    lng: -81.56957
   phone: (330) 208-0222
-  external_ids: {usda_master: Cycle 05_OH_SFSP_0284}
+  external_ids:
+    usda_master: Cycle 05_OH_SFSP_0284
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/new-season-of-ohio-lp-new-season-akron
   name: New Season of Ohio LP New Season Akron
   categories:
@@ -962,6 +1000,7 @@
   - Pregnant/postpartum women
   - Adult men
   - Seniors or older adults
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -990,6 +1029,7 @@
   - Outpatient detoxification
   - Residential detoxification
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1013,6 +1053,7 @@
   website: https://www.redoakbh.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1045,6 +1086,11 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  - ja
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1074,6 +1120,10 @@
   - Residential detoxification
   - Short-term residential
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - fa
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1104,6 +1154,7 @@
   - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1137,6 +1188,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1161,6 +1213,7 @@
   services:
   - Outpatient
   - Residential/24-hour residential
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1188,6 +1241,7 @@
   - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1248,6 +1302,7 @@
   services:
   - Outpatient
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1278,6 +1333,7 @@
   - Adult women
   - Adult men
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1288,25 +1344,43 @@
   name: Vincent House
   categories:
   - meal-program
-  address: {street: 838 E. Exchange Street, city: Akron, state: oh, zip: '44306'}
+  address:
+    street: 838 E. Exchange Street
+    city: Akron
+    state: oh
+    zip: '44306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City Of Akron Rec Bureau.
   place: '3901000'
-  geo: {lat: 41.07107, lng: -81.49328}
+  geo:
+    lat: 41.07107
+    lng: -81.49328
   phone: (562) 716-7222
-  external_ids: {usda_master: Cycle 06_OH_SFSP_0241}
+  external_ids:
+    usda_master: Cycle 06_OH_SFSP_0241
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/wilbeth-arlington-homes
   name: Wilbeth-Arlington Homes
   categories:
   - meal-program
-  address: {street: 888 Eller Ave, city: Akron, state: oh, zip: '44306'}
+  address:
+    street: 888 Eller Ave
+    city: Akron
+    state: oh
+    zip: '44306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by City Of Akron Rec Bureau.
   place: '3901000'
-  geo: {lat: 41.03585, lng: -81.49514}
+  geo:
+    lat: 41.03585
+    lng: -81.49514
   phone: (330) 299-5542
-  external_ids: {usda_master: Cycle 06_OH_SFSP_0252}
+  external_ids:
+    usda_master: Cycle 06_OH_SFSP_0252
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

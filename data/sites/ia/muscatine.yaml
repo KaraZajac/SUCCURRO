@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.44182
+    lng: -91.03053
 - id: ia/muscatine/community-health-care-inc-mcsa-muscatine
   name: Community Health Care, Inc. MCSA Muscatine
   categories:
@@ -64,21 +67,15 @@
   name: MUSCATINE HEAD START AND EARLY HEAD START
   categories:
   - child-care
-  address:
-    street: 148 Colorado St
-    city: Muscatine
-    state: ia
-    zip: '52761'
+  address: {street: 148 Colorado St, city: Muscatine, state: ia, zip: '52761'}
+  description: Head Start early childhood program — 16 funded slots; operated by Community Action of Eastern
+    Iowa.
   place: '1955110'
-  geo:
-    lat: 41.44257
-    lng: -91.02657
+  geo: {lat: 41.44257, lng: -91.02657}
   phone: 563-264-2026
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/muscatine/muscatine-municipal-housing-agency
   name: Muscatine Municipal Housing Agency
   categories:
@@ -118,6 +115,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -128,13 +126,22 @@
   name: Susan Clark Junior High School
   categories:
   - meal-program
-  address: {street: 600 Kindler Avenue, city: Muscatine, state: ia, zip: '52761'}
+  address:
+    street: 600 Kindler Avenue
+    city: Muscatine
+    state: ia
+    zip: '52761'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Muscatine Comm School
     District.
   place: '1955110'
-  geo: {lat: 41.42794, lng: -91.07143}
+  geo:
+    lat: 41.42794
+    lng: -91.07143
   phone: (563) 260-1239
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0175}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0175
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

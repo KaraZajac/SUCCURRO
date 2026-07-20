@@ -2,21 +2,15 @@
   name: BB 5
   categories:
   - child-care
-  address:
-    street: 416 N State Route 2
-    city: New Martinsville
-    state: wv
-    zip: '26155'
+  address: {street: 416 N State Route 2, city: New Martinsville, state: wv, zip: '26155'}
+  description: Head Start early childhood program — 8 funded slots; operated by Northern Panhandle Head
+    Start, Inc..
   place: '5458684'
-  geo:
-    lat: 39.67931
-    lng: -80.85823
+  geo: {lat: 39.67931, lng: -80.85823}
   phone: 304-398-2318
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/new-martinsville/community-care-of-new-martinsville
   name: Community Care of New Martinsville
   categories:
@@ -43,66 +37,72 @@
   name: Magnolia Head Start Center
   categories:
   - child-care
-  address:
-    street: 601 Maple Ave
-    city: New Martinsville
-    state: wv
-    zip: '26155'
+  address: {street: 601 Maple Ave, city: New Martinsville, state: wv, zip: '26155'}
+  description: Head Start early childhood program — 14 funded slots; operated by Northern Panhandle Head
+    Start, Inc..
   place: '5458684'
-  geo:
-    lat: 39.64619
-    lng: -80.86063
+  geo: {lat: 39.64619, lng: -80.86063}
   phone: 304-455-1990
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/new-martinsville/magnolia-high-shcool
   name: Magnolia High Shcool
   categories:
   - meal-program
-  address: {street: 601 Maple Ave., city: New Martinsville, state: wv, zip: '26155'}
+  address:
+    street: 601 Maple Ave.
+    city: New Martinsville
+    state: wv
+    zip: '26155'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wetzel Co Bd of Education.
   place: '5458684'
-  geo: {lat: 39.64642, lng: -80.86138}
+  geo:
+    lat: 39.64642
+    lng: -80.86138
   phone: (304) 455-1990
-  external_ids: {usda_master: Cycle 07_WV_SFSP_0311}
+  external_ids:
+    usda_master: Cycle 07_WV_SFSP_0311
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/new-martinsville/new-martinsville-school
   name: New Martinsville School
   categories:
   - child-care
+  address: {street: 20 E Benjamin Dr, city: New Martinsville, state: wv, zip: '26155'}
+  description: Head Start early childhood program — 9 funded slots; operated by Northern Panhandle Head
+    Start, Inc..
+  place: '5458684'
+  geo: {lat: 39.6793, lng: -80.84734}
+  phone: 304-455-2291
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
+- id: wv/new-martinsville/new-martinsville-school-2
+  name: New Martinsville School
+  categories:
+  - meal-program
   address:
     street: 20 E Benjamin Dr
     city: New Martinsville
     state: wv
     zip: '26155'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Wetzel Co Bd of Education.
   place: '5458684'
   geo:
-    lat: 39.6793
-    lng: -80.84734
-  phone: 304-455-2291
+    lat: 39.68047
+    lng: -80.8559
+  phone: (304) 455-2441
+  external_ids:
+    usda_master: Cycle 07_WV_SFSP_0313
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
-- id: wv/new-martinsville/new-martinsville-school-2
-  name: New Martinsville School
-  categories:
-  - meal-program
-  address: {street: 20 E Benjamin Dr, city: New Martinsville, state: wv, zip: '26155'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Wetzel Co Bd of Education.
-  place: '5458684'
-  geo: {lat: 39.68047, lng: -80.8559}
-  phone: (304) 455-2441
-  external_ids: {usda_master: Cycle 07_WV_SFSP_0313}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
 - id: wv/new-martinsville/northwood-health-systems-wetzel-county-clinic
   name: Northwood Health Systems Wetzel County Clinic
   categories:
@@ -123,6 +123,7 @@
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -147,6 +148,7 @@
   website: https://www.northwoodhealth.com
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -184,6 +186,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -207,3 +210,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.68847
+    lng: -80.85583

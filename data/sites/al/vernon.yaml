@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 33.7554
+    lng: -88.10999
 - id: al/vernon/housing-authority-of-the-city-of-vernon-al
   name: Housing Authority Of The City Of Vernon, Al
   categories:
@@ -40,35 +43,38 @@
   name: Lamar County Head Start/Early Head Start
   categories:
   - child-care
-  address:
-    street: 9655 Highway 18
-    city: Vernon
-    state: al
-    zip: '35592'
+  address: {street: 9655 Highway 18, city: Vernon, state: al, zip: '35592'}
+  description: Head Start early childhood program — 32 funded slots; operated by Community Service Programs
+    of West Alabama, Inc..
   place: 0178480
-  geo:
-    lat: 33.74917
-    lng: -88.13233
+  geo: {lat: 33.74917, lng: -88.13233}
   phone: 205-695-6588
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: al/vernon/vernon-elem-school
   name: Vernon Elem School
   categories:
   - meal-program
-  address: {street: 9724 Hwy 18, city: Vernon, state: al, zip: '35592'}
+  address:
+    street: 9724 Hwy 18
+    city: Vernon
+    state: al
+    zip: '35592'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lamar County Board of
     Education.
   place: 0178480
-  geo: {lat: 33.75438, lng: -88.11146}
+  geo:
+    lat: 33.75438
+    lng: -88.11146
   phone: (205) 695-9125
-  external_ids: {usda_master: Cycle 03_AL_SSO_0085}
+  external_ids:
+    usda_master: Cycle 03_AL_SSO_0085
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/vernon/whatley-health-services-at-vernon
   name: Whatley Health Services at Vernon
   categories:

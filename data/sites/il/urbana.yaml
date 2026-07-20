@@ -34,22 +34,15 @@
   name: Brookens Administrative Center
   categories:
   - child-care
-  address:
-    street: 1776 E Washington St
-    street2: Pod 100
-    city: Urbana
-    state: il
-    zip: '61802'
+  address: {street: 1776 E Washington St, street2: Pod 100, city: Urbana, state: il, zip: '61802'}
+  description: Head Start early childhood program — 30 funded slots; operated by RPC Early Childhood Education
+    Program.
   place: '1777005'
-  geo:
-    lat: 40.10659
-    lng: -88.18659
+  geo: {lat: 40.10659, lng: -88.18659}
   phone: 217-328-3313
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/urbana/champaign-county-regional-planning-commission
   name: Champaign County Regional Planning Commission
   categories:
@@ -69,6 +62,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.10573
+    lng: -88.18594
 - id: il/urbana/colorado-ave-free-pantry
   name: Colorado Ave Free Pantry
   categories:
@@ -102,6 +98,7 @@
   - Residential/24-hour residential
   - Clients who have experienced trauma
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -138,6 +135,10 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -175,6 +176,10 @@
   - Hospital inpatient/24-hour hospital inpatient
   - Clients who have experienced trauma
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -239,6 +244,7 @@
   - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
   - Persons with eating disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -281,21 +287,15 @@
   name: Urbana Head Start/Early Head Start
   categories:
   - child-care
-  address:
-    street: 1603 E Mumford Dr
-    city: Urbana
-    state: il
-    zip: '61802'
+  address: {street: 1603 E Mumford Dr, city: Urbana, state: il, zip: '61802'}
+  description: Head Start early childhood program — 16 funded slots; operated by RPC Early Childhood Education
+    Program.
   place: '1777005'
-  geo:
-    lat: 40.08995
-    lng: -88.18846
+  geo: {lat: 40.08995, lng: -88.18846}
   phone: 217-278-4461
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/urbana/urbana-neighbors-helping-neighbors
   name: Urbana Neighbors Helping Neighbors
   categories:
@@ -316,12 +316,21 @@
   name: Urbana Sixth Grade Center
   categories:
   - meal-program
-  address: {street: 1602 S Anderson St, city: Urbana, state: il, zip: '61801'}
+  address:
+    street: 1602 S Anderson St
+    city: Urbana
+    state: il
+    zip: '61801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Urbana SD 116.
   place: '1777005'
-  geo: {lat: 40.09924, lng: -88.19889}
+  geo:
+    lat: 40.09924
+    lng: -88.19889
   phone: (217) 384-3670
-  external_ids: {usda_master: Cycle 01_IL_SSO_0138}
+  external_ids:
+    usda_master: Cycle 01_IL_SSO_0138
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

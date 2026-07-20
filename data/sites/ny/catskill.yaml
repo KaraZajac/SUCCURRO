@@ -2,15 +2,24 @@
   name: Catskill Elementary School
   categories:
   - meal-program
-  address: {street: 770 Embought Rd, city: Catskill, state: ny, zip: '12414'}
+  address:
+    street: 770 Embought Rd
+    city: Catskill
+    state: ny
+    zip: '12414'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Catskill CSD.
   place: '3613002'
-  geo: {lat: 42.20625, lng: -73.87403}
+  geo:
+    lat: 42.20625
+    lng: -73.87403
   phone: (518) 769-9053
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0087}
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0087
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ny/catskill/catskill-housing-authority
   name: Catskill Housing Authority
   categories:
@@ -90,6 +99,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.22041
+    lng: -73.86607
 - id: ny/catskill/greene-county-department-of-social-services
   name: Greene County Department of Social Services
   categories:
@@ -108,6 +120,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.22041
+    lng: -73.86607
 - id: ny/catskill/riverside-residential-820-residential-reintegrat
   name: Riverside Residential 820 Residential Reintegration
   categories:
@@ -125,12 +140,14 @@
   - Long-term residential
   - Adult women
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 42.22268, lng: -73.87148}
 - id: ny/catskill/twin-county-recovery-services-inc-outpatient-dru
   name: Twin County Recovery Services Inc Outpatient Drug Treatment Program
   categories:
@@ -154,6 +171,7 @@
   - Adult women
   - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

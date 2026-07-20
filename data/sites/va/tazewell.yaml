@@ -12,6 +12,7 @@
   website: https://www.cmcsb.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -59,52 +60,67 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.12704
+    lng: -81.52966
 - id: va/tazewell/tazewell-head-start-center
   name: Tazewell Head Start Center
   categories:
   - child-care
-  address:
-    street: 816 Tazewell Ave
-    city: Tazewell
-    state: va
-    zip: '24651'
+  address: {street: 816 Tazewell Ave, city: Tazewell, state: va, zip: '24651'}
+  description: Head Start early childhood program — 51 funded slots; operated by Clinch Valley Community
+    Action.
   place: '5177792'
-  geo:
-    lat: 37.12722
-    lng: -81.52399
+  geo: {lat: 37.12722, lng: -81.52399}
   phone: 276-988-5583
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/tazewell/tazewell-library-tazewell
   name: Tazewell Library- Tazewell
   categories:
   - meal-program
-  address: {street: 129 Main St., city: Tazewell, state: va, zip: '24651'}
+  address:
+    street: 129 Main St.
+    city: Tazewell
+    state: va
+    zip: '24651'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Feeding America Southwest
     Virginia.
   place: '5177792'
-  geo: {lat: 37.11594, lng: -81.52}
+  geo:
+    lat: 37.11594
+    lng: -81.52
   phone: (276) 988-2541
-  external_ids: {usda_master: Cycle 02_VA_SFSP_0589}
+  external_ids:
+    usda_master: Cycle 02_VA_SFSP_0589
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/tazewell/tazewell-middle
   name: Tazewell Middle
   categories:
   - meal-program
-  address: {street: 367 Hope Street, city: Tazewell, state: va, zip: '24651'}
+  address:
+    street: 367 Hope Street
+    city: Tazewell
+    state: va
+    zip: '24651'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Tazewell County Public
     Schools.
   place: '5177792'
-  geo: {lat: 37.12857, lng: -81.48561}
-  external_ids: {usda_master: Cycle 01_VA_SFSP_0149}
+  geo:
+    lat: 37.12857
+    lng: -81.48561
+  external_ids:
+    usda_master: Cycle 01_VA_SFSP_0149
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/tazewell/tazewell-new-day-recovery
   name: Tazewell - New Day Recovery
   categories:

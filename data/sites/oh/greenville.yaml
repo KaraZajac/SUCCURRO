@@ -48,6 +48,7 @@
   - Active duty military
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -85,6 +86,7 @@
   - Persons with traumatic brain injury (TBI)
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -140,21 +142,15 @@
   name: Greenville Head Start
   categories:
   - child-care
-  address:
-    street: 1170 Sweitzer St
-    city: Greenville
-    state: oh
-    zip: '45331'
+  address: {street: 1170 Sweitzer St, city: Greenville, state: oh, zip: '45331'}
+  description: Head Start early childhood program — 72 funded slots; operated by Council on Rural Service
+    Programs, Inc..
   place: '3932340'
-  geo:
-    lat: 40.08332
-    lng: -84.63577
+  geo: {lat: 40.08332, lng: -84.63577}
   phone: 937-547-9899
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/greenville/miami-vally-community-action-partnership
   name: Miami Vally Community Action Partnership
   categories:
@@ -173,6 +169,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.07804
+    lng: -84.63329
 - id: oh/greenville/reid-outpatient-behavioral-health
   name: Reid Outpatient Behavioral Health
   categories:
@@ -198,6 +197,7 @@
   - Clients who have experienced trauma
   - Persons with Alzheimer's or dementia
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -208,12 +208,21 @@
   name: Sw - Grab And Go Greenville Library
   categories:
   - meal-program
-  address: {street: 520 Sycamore St., city: Greenville, state: oh, zip: '45331'}
+  address:
+    street: 520 Sycamore St.
+    city: Greenville
+    state: oh
+    zip: '45331'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Children's Hunger Alliance.
   place: '3932340'
-  geo: {lat: 40.09941, lng: -84.63231}
+  geo:
+    lat: 40.09941
+    lng: -84.63231
   phone: (937) 548-3915
-  external_ids: {usda_master: Cycle 02_OH_SFSP_0184}
+  external_ids:
+    usda_master: Cycle 02_OH_SFSP_0184
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

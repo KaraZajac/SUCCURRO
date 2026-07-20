@@ -40,6 +40,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -50,40 +51,28 @@
   name: Appletree Daycare I
   categories:
   - child-care
-  address:
-    street: 104 Clarendon Cres
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 104 Clarendon Cres, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 16 funded slots; operated by Telamon Corporation -
+    NC CCP.
   place: '3755000'
-  geo:
-    lat: 35.78043
-    lng: -78.60204
+  geo: {lat: 35.78043, lng: -78.60204}
   phone: 919-821-7705
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/appletree-daycare-ii
   name: Appletree Daycare II
   categories:
   - child-care
-  address:
-    street: 2217 New Bern Ave
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 2217 New Bern Ave, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 12 funded slots; operated by Telamon Corporation -
+    NC CCP.
   place: '3755000'
-  geo:
-    lat: 35.79579
-    lng: -78.53419
+  geo: {lat: 35.79579, lng: -78.53419}
   phone: 919-821-7757
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/brier-creek-va-clinic
   name: Brier Creek VA Clinic
   categories:
@@ -137,6 +126,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons with eating disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -168,6 +158,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -199,6 +190,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -267,6 +259,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -301,6 +297,11 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  - hi
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -326,6 +327,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -368,22 +370,15 @@
   name: Crosby Head Start
   categories:
   - child-care
-  address:
-    street: 568 E Lenoir St
-    street2: Ste 213
-    city: Raleigh
-    state: nc
-    zip: '27601'
+  address: {street: 568 E Lenoir St, street2: Ste 213, city: Raleigh, state: nc, zip: '27601'}
+  description: Head Start early childhood program — 160 funded slots; operated by Telamon Corporation
+    - NC RHS/EHS.
   place: '3755000'
-  geo:
-    lat: 35.77191
-    lng: -78.62968
+  geo: {lat: 35.77191, lng: -78.62968}
   phone: 919-856-5222
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/fairmont-united-methodist-church-free-little-foo
   name: Fairmont United Methodist Church Free Little Food Pantry
   categories:
@@ -421,6 +416,7 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -518,6 +514,10 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -544,16 +544,25 @@
   name: Governor Morehead School For The Blind
   categories:
   - meal-program
-  address: {street: 329 Ashe Ave, city: Raleigh, state: nc, zip: '27606'}
+  address:
+    street: 329 Ashe Ave
+    city: Raleigh
+    state: nc
+    zip: '27606'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Governor Morehead School
     for the Blind.
   place: '3755000'
-  geo: {lat: 35.78, lng: -78.66099}
+  geo:
+    lat: 35.78
+    lng: -78.66099
   phone: (984) 292-3140
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1675}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1675
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/healing-transitions-mens-campus
   name: Healing Transitions Mens Campus
   categories:
@@ -578,6 +587,7 @@
   - Young adults
   - Adult men
   - Veterans
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: free
   sources:
   - samhsa/findtreatment
@@ -608,6 +618,7 @@
   - Young adults
   - Adult women
   - Veterans
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: free
   sources:
   - samhsa/findtreatment
@@ -618,15 +629,24 @@
   name: Historic Oak View County Park
   categories:
   - meal-program
-  address: {street: 4028 Carya Drive, city: Raleigh, state: nc, zip: '27610'}
+  address:
+    street: 4028 Carya Drive
+    city: Raleigh
+    state: nc
+    zip: '27610'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.77147, lng: -78.56985}
+  geo:
+    lat: 35.77147
+    lng: -78.56985
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0544}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0544
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/hope-friendship-center
   name: Hope Friendship Center
   categories:
@@ -653,6 +673,7 @@
   - Active duty military
   - Members of military families
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -753,6 +774,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -780,53 +802,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: nc/raleigh/nc-department-of-health-and-human-services
-  name: NC DEPARTMENT OF HEALTH AND HUMAN SERVICES
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1915 Health Services Way
-    city: Raleigh
-    state: nc
-    zip: '27607'
-  place: '3755000'
-  geo:
-    lat: 35.80927
-    lng: -78.70666
-  phone: 800-662-7030
-  external_ids:
-    bphc: BPS-H80-041365
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: nc/raleigh/neighborhealth-center-corporate-office
-  name: NeighborHealth Center Corporate Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 2605 Blue Ridge Rd, Suite 240
-    city: Raleigh
-    state: nc
-    zip: '27607'
-  place: '3755000'
-  geo:
-    lat: 35.8166
-    lng: -78.70566
-  phone: 984-222-8000
-  external_ids:
-    bphc: BPS-LAL-035511
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -877,6 +856,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -887,16 +867,25 @@
   name: New Hope Baptist Church
   categories:
   - meal-program
-  address: {street: 4301 Louisburg Rd., city: Raleigh, state: nc, zip: '27604'}
+  address:
+    street: 4301 Louisburg Rd.
+    city: Raleigh
+    state: nc
+    zip: '27604'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Central
     and Eastern North Carolina.
   place: '3755000'
-  geo: {lat: 35.84258, lng: -78.57456}
+  geo:
+    lat: 35.84258
+    lng: -78.57456
   phone: (919) 816-6155
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1719}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1719
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/new-leaf-behavioral-health
   name: New Leaf Behavioral Health
   categories:
@@ -915,6 +904,10 @@
   website: https://nlbh.org/
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -940,6 +933,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1018,67 +1012,73 @@
   name: Poe Center For Health Education (Open)
   categories:
   - meal-program
-  address: {street: 224 Sunnybrook Rd., city: Raleigh, state: nc, zip: '27610'}
+  address:
+    street: 224 Sunnybrook Rd.
+    city: Raleigh
+    state: nc
+    zip: '27610'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.77914, lng: -78.58344}
+  geo:
+    lat: 35.77914
+    lng: -78.58344
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0533}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0533
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/precious-promises-academy
   name: Precious Promises Academy
   categories:
   - child-care
-  address:
-    street: 4301 Pearl Rd
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 4301 Pearl Rd, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 24 funded slots; operated by Telamon Corporation -
+    NC CCP.
   place: '3755000'
-  geo:
-    lat: 35.72382
-    lng: -78.56012
+  geo: {lat: 35.72382, lng: -78.56012}
   phone: 919-890-5639
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/priceless-childcare-center
   name: Priceless Childcare Center
   categories:
   - child-care
-  address:
-    street: 316 S King Charles Rd
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 316 S King Charles Rd, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 12 funded slots; operated by Telamon Corporation -
+    NC CCP.
   place: '3755000'
-  geo:
-    lat: 35.7758
-    lng: -78.60536
+  geo: {lat: 35.7758, lng: -78.60536}
   phone: 919-231-3564
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/project-access-tree-top
   name: Project Access Tree Top
   categories:
   - meal-program
-  address: {street: 1328 Steinbeck Drive, city: Raleigh, state: nc, zip: '27609'}
+  address:
+    street: 1328 Steinbeck Drive
+    city: Raleigh
+    state: nc
+    zip: '27609'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Central
     and Eastern North Carolina.
   place: '3755000'
-  geo: {lat: 35.83991, lng: -78.61613}
+  geo:
+    lat: 35.83991
+    lng: -78.61613
   phone: (919) 917-6726
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1734}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1734
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/pullen-baptist-church-the-food-drive-kids-4
   name: 'Pullen Baptist Church: The Food Drive Kids #4'
   categories:
@@ -1099,15 +1099,24 @@
   name: Raleigh Church Of Christ
   categories:
   - meal-program
-  address: {street: 911 Barringer Dr, city: Raleigh, state: nc, zip: '27606'}
+  address:
+    street: 911 Barringer Dr
+    city: Raleigh
+    state: nc
+    zip: '27606'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.77572, lng: -78.72336}
+  geo:
+    lat: 35.77572
+    lng: -78.72336
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0582}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0582
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/raleigh-comprehensive-treatment-center
   name: Raleigh Comprehensive Treatment Center
   categories:
@@ -1131,6 +1140,7 @@
   - Adult women
   - Pregnant/postpartum women
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1141,15 +1151,24 @@
   name: Raleigh Parks And Rec-Peach Road Neighborhood Center
   categories:
   - meal-program
-  address: {street: 911 Ileagnes Road, city: Raleigh, state: nc, zip: '27603'}
+  address:
+    street: 911 Ileagnes Road
+    city: Raleigh
+    state: nc
+    zip: '27603'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.74283, lng: -78.65516}
+  geo:
+    lat: 35.74283
+    lng: -78.65516
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0538}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0538
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/raleigh-vet-center
   name: Raleigh Vet Center
   categories:
@@ -1215,6 +1234,7 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1225,28 +1245,46 @@
   name: Redeeming Love Missionary Baptist Church
   categories:
   - meal-program
-  address: {street: 3425 Rock Quarry Rd, city: Raleigh, state: nc, zip: '27610'}
+  address:
+    street: 3425 Rock Quarry Rd
+    city: Raleigh
+    state: nc
+    zip: '27610'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.74766, lng: -78.59041}
+  geo:
+    lat: 35.74766
+    lng: -78.59041
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0586}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0586
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/regeneration-temple
   name: Regeneration Temple
   categories:
   - meal-program
-  address: {street: 4000 Atlantic Ave, city: Raleigh, state: nc, zip: '27604'}
+  address:
+    street: 4000 Atlantic Ave
+    city: Raleigh
+    state: nc
+    zip: '27604'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.8381, lng: -78.60157}
+  geo:
+    lat: 35.8381
+    lng: -78.60157
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0583}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0583
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/saint-giles-presbyterian-church-little-free-pant
   name: Saint Giles Presbyterian Church Little Free Pantry
   categories:
@@ -1267,15 +1305,24 @@
   name: Sherrill'S University Of Barber & Cosmetology
   categories:
   - meal-program
-  address: {street: 3601 Bastion Lane, city: Raleigh, state: nc, zip: '27604'}
+  address:
+    street: 3601 Bastion Lane
+    city: Raleigh
+    state: nc
+    zip: '27604'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.79768, lng: -78.58502}
+  geo:
+    lat: 35.79768
+    lng: -78.58502
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0588}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0588
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/solas-health-pllc
   name: Solas Health PLLC
   categories:
@@ -1305,6 +1352,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1338,21 +1386,15 @@
   name: Southeast Raleigh Promise School
   categories:
   - child-care
-  address:
-    street: 1436 Rock Quarry Rd
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 1436 Rock Quarry Rd, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 36 funded slots; operated by Telamon Corporation -
+    NC RHS/EHS.
   place: '3755000'
-  geo:
-    lat: 35.76063
-    lng: -78.61596
+  geo: {lat: 35.76063, lng: -78.61596}
   phone: 919-747-7857
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/raleigh/southeast-raleigh-south
   name: SOUTHEAST RALEIGH - SOUTH
   categories:
@@ -1407,6 +1449,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1443,6 +1489,10 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1480,6 +1530,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1608,15 +1659,24 @@
   name: The Rock Church
   categories:
   - meal-program
-  address: {street: 2940 Trawick Rd, city: Raleigh, state: nc, zip: '27604'}
+  address:
+    street: 2940 Trawick Rd
+    city: Raleigh
+    state: nc
+    zip: '27604'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wake County Schools.
   place: '3755000'
-  geo: {lat: 35.81953, lng: -78.58871}
+  geo:
+    lat: 35.81953
+    lng: -78.58871
   phone: (919) 588-3515
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0587}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0587
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/the-well-fed-garden-the-food-drive-kids-3
   name: 'The Well Fed Garden: The Food Drive Kids #3'
   categories:
@@ -1657,6 +1717,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1706,37 +1767,42 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 35.78106
+    lng: -78.58541
 - id: nc/raleigh/wake-county-public-health-center
   name: Wake County Public Health Center
   categories:
   - meal-program
-  address: {street: 200 Swinburne Street, city: Raleigh, state: nc, zip: '27610'}
+  address:
+    street: 200 Swinburne Street
+    city: Raleigh
+    state: nc
+    zip: '27610'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Central
     and Eastern North Carolina.
   place: '3755000'
-  geo: {lat: 35.78143, lng: -78.5856}
+  geo:
+    lat: 35.78143
+    lng: -78.5856
   phone: (919) 250-4746
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1717}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1717
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/raleigh/wanda-s-little-hands
   name: Wanda's Little Hands
   categories:
   - child-care
-  address:
-    street: 3308 Poole Rd
-    street2: Ste 108
-    city: Raleigh
-    state: nc
-    zip: '27610'
+  address: {street: 3308 Poole Rd, street2: Ste 108, city: Raleigh, state: nc, zip: '27610'}
+  description: Head Start early childhood program — 32 funded slots; operated by Telamon Corporation -
+    NC CCP.
   place: '3755000'
-  geo:
-    lat: 35.76907
-    lng: -78.58192
+  geo: {lat: 35.76907, lng: -78.58192}
   phone: 919-231-6004
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

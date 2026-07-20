@@ -28,6 +28,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -58,35 +59,37 @@
   name: Litchfield Center
   categories:
   - child-care
-  address:
-    street: 307 E 6th St
-    street2: Wagner Education Building
-    city: Litchfield
-    state: mn
-    zip: '55355'
+  address: {street: 307 E 6th St, street2: Wagner Education Building, city: Litchfield, state: mn, zip: '55355'}
+  description: Head Start early childhood program — 33 funded slots; operated by United Community Action
+    Partnership, Inc..
   place: '2737448'
-  geo:
-    lat: 45.13229
-    lng: -94.52368
+  geo: {lat: 45.13229, lng: -94.52368}
   phone: 320-693-3645
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mn/litchfield/litchfield-senior
   name: Litchfield Senior
   categories:
   - meal-program
-  address: {street: 901 Gilman Ave N, city: Litchfield, state: mn, zip: '55355'}
+  address:
+    street: 901 Gilman Ave N
+    city: Litchfield
+    state: mn
+    zip: '55355'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Litchfield ISD #465.'
   place: '2737448'
-  geo: {lat: 45.13599, lng: -94.51913}
+  geo:
+    lat: 45.13599
+    lng: -94.51913
   phone: (320) 693-2444
-  external_ids: {usda_master: Cycle 03_MN_SFSP_0049}
+  external_ids:
+    usda_master: Cycle 03_MN_SFSP_0049
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mn/litchfield/united-community-action-partnership
   name: United Community Action Partnership
   categories:
@@ -105,6 +108,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 45.13
+    lng: -94.52824
 - id: mn/litchfield/wings-adolescent-treatment-services
   name: Wings Adolescent Treatment Services
   categories:
@@ -126,6 +132,7 @@
   - Young adults
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment

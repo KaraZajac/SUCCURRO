@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -53,6 +54,7 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -85,21 +87,15 @@
   name: HACAP Head Start - Vinton
   categories:
   - child-care
-  address:
-    street: 202 E 4th St
-    city: Vinton
-    state: ia
-    zip: '52349'
+  address: {street: 202 E 4th St, city: Vinton, state: ia, zip: '52349'}
+  description: Head Start early childhood program — 16 funded slots; operated by Hawkeye Area Community
+    Action Program.
   place: '1981210'
-  geo:
-    lat: 42.16734
-    lng: -92.02253
+  geo: {lat: 42.16734, lng: -92.02253}
   phone: 319-472-4761
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/vinton/hawkeye-area-community-action-program
   name: Hawkeye Area Community Action Program
   categories:
@@ -118,31 +114,52 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.16763
+    lng: -92.02217
 - id: ia/vinton/tilford-elementary-school
   name: Tilford Elementary School
   categories:
   - meal-program
-  address: {street: 308 E 13Th Street, city: Vinton, state: ia, zip: '52349'}
+  address:
+    street: 308 E 13Th Street
+    city: Vinton
+    state: ia
+    zip: '52349'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Vinton-Shellsburg Comm
     School District.
   place: '1981210'
-  geo: {lat: 42.15919, lng: -92.01934}
+  geo:
+    lat: 42.15919
+    lng: -92.01934
   phone: (319) 241-3749
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0248}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0248
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/vinton/vinton-shellsburg-high-school
   name: Vinton-Shellsburg High School
   categories:
   - meal-program
-  address: {street: 210 W 21St Street, city: Vinton, state: ia, zip: '52349'}
+  address:
+    street: 210 W 21St Street
+    city: Vinton
+    state: ia
+    zip: '52349'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Vinton-Shellsburg Comm
     School District.
   place: '1981210'
-  geo: {lat: 42.15212, lng: -92.02477}
+  geo:
+    lat: 42.15212
+    lng: -92.02477
   phone: (319) 436-5771
-  external_ids: {usda_master: Cycle 05_IA_SFSP_0250}
+  external_ids:
+    usda_master: Cycle 05_IA_SFSP_0250
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

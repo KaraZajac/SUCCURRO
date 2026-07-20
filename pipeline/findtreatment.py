@@ -44,11 +44,21 @@ def categories_for(row):
 
 SERVICE_GROUPS = ("Service Setting", "Special Programs/Groups Offered")
 
+LANGUAGE_CODES = {
+    "spanish": "es", "french": "fr", "german": "de", "italian": "it",
+    "portuguese": "pt", "russian": "ru", "arabic": "ar", "chinese": "zh",
+    "mandarin": "zh", "cantonese": "yue", "vietnamese": "vi", "korean": "ko",
+    "tagalog": "tl", "polish": "pl", "haitian creole": "ht", "creole": "ht",
+    "japanese": "ja", "hindi": "hi", "greek": "el", "hebrew": "he",
+    "farsi": "fa", "persian": "fa", "hmong": "hmn", "navajo": "nv",
+}
+
 
 def enrich(rec, row):
     """Pull help-seeker-relevant detail from the services blocks: settings and
-    special programs into services:, payment terms into cost:."""
-    services, payment_text = [], ""
+    special programs into services:, payment terms into cost:, language
+    services into languages:, age/sex acceptance into eligibility:."""
+    services, payment_text, langs, ages, sex = [], "", [], [], ""
     for svc in row.get("services") or []:
         f1, f3 = (svc.get("f1") or "").strip(), svc.get("f3") or ""
         if f1 in SERVICE_GROUPS:
@@ -58,8 +68,28 @@ def enrich(rec, row):
                     services.append(item)
         elif f1 in ("Payment/Insurance/Funding Accepted", "Payment Assistance Available"):
             payment_text += "; " + f3.lower()
+        elif f1 in ("Language Services", "Other Languages"):
+            for item in f3.split(";"):
+                code = LANGUAGE_CODES.get(item.strip().lower())
+                if code and code not in langs:
+                    langs.append(code)
+        elif f1 == "Age Groups Accepted":
+            ages = [a.strip() for a in f3.split(";") if a.strip()]
+        elif f1 == "Sex Accepted":
+            sex = f3.strip()
     if services:
         rec["services"] = services[:14]
+    if langs:
+        rec["languages"] = ["en"] + langs
+    parts = []
+    if ages:
+        parts.append(", ".join(a.lower() for a in ages))
+    if sex == "Female":
+        parts.append("women only")
+    elif sex == "Male":
+        parts.append("men only")
+    if parts:
+        rec["eligibility"] = "Serves " + "; ".join(parts) + "."
     if "sliding fee" in payment_text:
         rec["cost"] = "sliding-scale"
     elif "no payment accepted" in payment_text:

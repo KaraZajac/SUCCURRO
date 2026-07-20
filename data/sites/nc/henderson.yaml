@@ -17,6 +17,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Adult men
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -54,6 +55,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -111,6 +113,12 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  - fr
+  - el
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -121,21 +129,15 @@
   name: Henderson Head Start
   categories:
   - child-care
-  address:
-    street: 500 South Beckford Drive
-    city: Henderson
-    state: nc
-    zip: '27536'
+  address: {street: 500 South Beckford Drive, city: Henderson, state: nc, zip: '27536'}
+  description: Head Start early childhood program — 104 funded slots; operated by Franklin Vance Warren
+    Opportunity, Inc.
   place: '3730660'
-  geo:
-    lat: 36.33703
-    lng: -78.42365
+  geo: {lat: 36.33703, lng: -78.42365}
   phone: 252-438-8121
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/henderson/legacy-human-services-back-on-track
   name: Legacy Human Services Back On Track
   categories:
@@ -166,6 +168,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -176,35 +179,22 @@
   name: Ncm Vance County Middle School
   categories:
   - meal-program
-  address: {street: 293 Warrenron Rd, city: Henderson, state: nc, zip: '27537'}
+  address:
+    street: 293 Warrenron Rd
+    city: Henderson
+    state: nc
+    zip: '27537'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Food Bank of Central
     and Eastern North Carolina.
   place: '3730660'
-  geo: {lat: 36.3497, lng: -78.37352}
+  geo:
+    lat: 36.3497
+    lng: -78.37352
   phone: (252) 492-2127
-  external_ids: {usda_master: Cycle 06_NC_SFSP_1800}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_1800
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: nc/henderson/rural-health-group
-  name: Rural Health Group
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 100 W Parkview Dr
-    city: Henderson
-    state: nc
-    zip: '27536'
-  place: '3730660'
-  geo:
-    lat: 36.33823
-    lng: -78.4274
-  phone: 252-438-3549
-  external_ids:
-    bphc: BPS-H80-014643
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api

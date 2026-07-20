@@ -60,42 +60,28 @@
   verified:
     'on': '2026-07-19'
     method: api
-- id: wi/wautoma/noble-community-clinics-wautoma-administrative-o
-  name: Noble Community Clinics - Wautoma Administrative Office
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 443 E Division St
-    city: Wautoma
-    state: wi
-    zip: '54982'
-  place: '5584625'
-  geo:
-    lat: 44.06888
-    lng: -89.28027
-  phone: 800-942-5330
-  website: https://nobleclinics.org/
-  external_ids:
-    bphc: BPS-H80-032323
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: wi/wautoma/riverview-elementary
   name: Riverview Elementary
   categories:
   - meal-program
-  address: {street: 525 S Water Street, city: Wautoma, state: wi, zip: '53982'}
+  address:
+    street: 525 S Water Street
+    city: Wautoma
+    state: wi
+    zip: '53982'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Wautoma Area School District.
   place: '5584625'
-  geo: {lat: 44.07019, lng: -89.29191}
+  geo:
+    lat: 44.07019
+    lng: -89.29191
   phone: (920) 787-4577
-  external_ids: {usda_master: Cycle 01_WI_SFSP_0469}
+  external_ids:
+    usda_master: Cycle 01_WI_SFSP_0469
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/wautoma/waushara-county-clinical-services
   name: Waushara County Clinical Services
   categories:
@@ -122,6 +108,7 @@
   - Clients who have experienced trauma
   - Persons with traumatic brain injury (TBI)
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -146,23 +133,19 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.08001
+    lng: -89.30113
 - id: wi/wautoma/wautoma-early-learning-center
   name: Wautoma Early Learning Center
   categories:
   - child-care
-  address:
-    street: 205 E Main St
-    street2: Ste 42
-    city: Wautoma
-    state: wi
-    zip: '54982'
+  address: {street: 205 E Main St, street2: Ste 42, city: Wautoma, state: wi, zip: '54982'}
+  description: Head Start early childhood program — 19 funded slots; operated by CAP Services' Early Childhood
+    Development.
   place: '5584625'
-  geo:
-    lat: 44.07385
-    lng: -89.28389
+  geo: {lat: 44.07385, lng: -89.28389}
   phone: 920-787-7742
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

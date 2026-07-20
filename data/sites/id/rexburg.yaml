@@ -16,6 +16,7 @@
   website: https://www.centerpointcounseling.com/
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -41,6 +42,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 43.85184
+    lng: -111.77521
 - id: id/rexburg/grand-peaks-behavioral-health-adams-elementary
   name: Grand Peaks Behavioral Health-Adams Elementary
   categories:
@@ -221,15 +225,24 @@
   name: Madison Middle School
   categories:
   - meal-program
-  address: {street: 575 W. 7Th S., city: Rexburg, state: id, zip: '83440'}
+  address:
+    street: 575 W. 7Th S.
+    city: Rexburg
+    state: id
+    zip: '83440'
   description: 'Free summer meals for kids and teens (2026 season) — sponsored by Madison S.D. #321.'
   place: '1667420'
-  geo: {lat: 43.81161, lng: -111.8014}
+  geo:
+    lat: 43.81161
+    lng: -111.8014
   phone: (208) 359-3260
-  external_ids: {usda_master: Cycle 03_ID_SFSP_0057}
+  external_ids:
+    usda_master: Cycle 03_ID_SFSP_0057
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: id/rexburg/middleton-counseling-stillwater-connection
   name: Middleton Counseling Stillwater Connection
   categories:
@@ -259,6 +272,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -269,21 +283,15 @@
   name: Rexburg Center
   categories:
   - child-care
-  address:
-    street: 55 W 2nd N
-    city: Rexburg
-    state: id
-    zip: '83440'
+  address: {street: 55 W 2nd N, city: Rexburg, state: id, zip: '83440'}
+  description: Head Start early childhood program — 30 funded slots; operated by Eastern Idaho Community
+    Action Partnership.
   place: '1667420'
-  geo:
-    lat: 43.83026
-    lng: -111.78585
+  geo: {lat: 43.83026, lng: -111.78585}
   phone: 208-656-0782
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: id/rexburg/rexburg-counseling
   name: Rexburg Counseling
   categories:
@@ -309,6 +317,7 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -335,6 +344,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -361,6 +371,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

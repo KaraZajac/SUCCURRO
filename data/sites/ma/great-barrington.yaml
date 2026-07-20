@@ -28,6 +28,10 @@
   website: https://berkshiremountaindetox.com/
   services:
   - Residential/24-hour residential
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -52,29 +56,6 @@
   website: https://www.chpberkshires.org/
   external_ids:
     bphc: BPS-H80-031487
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ma/great-barrington/chp-family-services
-  name: CHP Family Services
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 442 Stockbridge Rd
-    city: Great Barrington
-    state: ma
-    zip: '01230'
-  place: '2526780'
-  geo:
-    lat: 42.21943
-    lng: -73.34236
-  phone: 413-528-0457
-  website: https://www.chpberkshires.org/  mkl
-  external_ids:
-    bphc: BPS-H80-017580
   sources:
   - hrsa/health-center-sites
   verified:
@@ -128,6 +109,7 @@
   - Young adults
   - Adult women
   - Adult men
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -138,22 +120,15 @@
   name: Muddy Brook Elementary School Head Start
   categories:
   - child-care
-  address:
-    street: 318 Monument Valley Rd
-    street2: Rm 111
-    city: Great Barrington
-    state: ma
-    zip: '01230'
+  address: {street: 318 Monument Valley Rd, street2: Rm 111, city: Great Barrington, state: ma, zip: '01230'}
+  description: Head Start early childhood program — 16 funded slots; operated by Berkshire County Head
+    Start Child Development Program, Inc..
   place: '2526780'
-  geo:
-    lat: 42.2464
-    lng: -73.32872
+  geo: {lat: 42.2464, lng: -73.32872}
   phone: 413-644-0005
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/great-barrington/spectrum-health-systems-inc
   name: Spectrum Health Systems Inc
   categories:
@@ -180,6 +155,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

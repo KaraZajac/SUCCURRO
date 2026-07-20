@@ -17,6 +17,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -45,6 +46,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Pregnant/postpartum women
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -96,6 +98,7 @@
   - Clients with HIV or AIDS
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -124,6 +127,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - hi
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -134,21 +141,14 @@
   name: Easton Child Development Center
   categories:
   - child-care
-  address:
-    street: 305 Glenwood Ave
-    city: Easton
-    state: md
-    zip: '21601'
+  address: {street: 305 Glenwood Ave, city: Easton, state: md, zip: '21601'}
+  description: Head Start early childhood program — 8 funded slots; operated by Shore Up, Inc.
   place: '2424475'
-  geo:
-    lat: 38.77431
-    lng: -76.08454
+  geo: {lat: 38.77431, lng: -76.08454}
   phone: 410-822-6641
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/easton/easton-elementary-school
   name: Easton Elementary School
   categories:
@@ -176,16 +176,25 @@
   name: Easton Elementary School
   categories:
   - meal-program
-  address: {street: 307 Glenwood Avenue, city: Easton, state: md, zip: '21601'}
+  address:
+    street: 307 Glenwood Avenue
+    city: Easton
+    state: md
+    zip: '21601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by TALBOT COUNTY PUBLIC
     SCHOOL.
   place: '2424475'
-  geo: {lat: 38.77314, lng: -76.08599}
+  geo:
+    lat: 38.77314
+    lng: -76.08599
   phone: (410) 822-0686
-  external_ids: {usda_master: Cycle 07_MD_SFSP_0068}
+  external_ids:
+    usda_master: Cycle 07_MD_SFSP_0068
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/easton/easton-health-center
   name: Easton Health Center
   categories:
@@ -285,6 +294,10 @@
   - Persons with Alzheimer's or dementia
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -322,6 +335,10 @@
   - Persons with Alzheimer's or dementia
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -389,6 +406,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.77216
+    lng: -76.07785
 - id: md/easton/outreach-recovery-ii
   name: Outreach Recovery II
   categories:
@@ -420,6 +440,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -430,55 +451,51 @@
   name: Talbot County Early Head Start
   categories:
   - child-care
-  address:
-    street: 305 Glenwood Ave
-    street2: Ste 1
-    city: Easton
-    state: md
-    zip: '21601'
+  address: {street: 305 Glenwood Ave, street2: Ste 1, city: Easton, state: md, zip: '21601'}
+  description: Head Start early childhood program — 13 funded slots; operated by Talbot County Health
+    Department.
   place: '2424475'
-  geo:
-    lat: 38.77417
-    lng: -76.08243
+  geo: {lat: 38.77417, lng: -76.08243}
   phone: 410-820-6940
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/easton/talbot-county-ehs
   name: Talbot County EHS
   categories:
   - child-care
-  address:
-    street: 305 Glenwood Ave
-    city: Easton
-    state: md
-    zip: '21601'
+  address: {street: 305 Glenwood Ave, city: Easton, state: md, zip: '21601'}
+  description: Head Start early childhood program — 27 funded slots; operated by MARYLAND FAMILY NETWORK,
+    INC..
   place: '2424475'
-  geo:
-    lat: 38.77389
-    lng: -76.08262
+  geo: {lat: 38.77389, lng: -76.08262}
   phone: 410-820-6940
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: md/easton/to-go-easton-elementary-school
   name: To Go Easton Elementary School
   categories:
   - meal-program
-  address: {street: 307 Glenwood Ave, city: Easton, state: md, zip: '21601'}
+  address:
+    street: 307 Glenwood Ave
+    city: Easton
+    state: md
+    zip: '21601'
   description: Free summer meals for kids and teens (2026 season) — sponsored by TALBOT COUNTY PUBLIC
     SCHOOL.
   place: '2424475'
-  geo: {lat: 38.77314, lng: -76.08599}
+  geo:
+    lat: 38.77314
+    lng: -76.08599
   phone: (410) 822-0686
-  external_ids: {usda_master: Cycle 09_MD_SFSP_0336}
+  external_ids:
+    usda_master: Cycle 09_MD_SFSP_0336
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: md/easton/university-of-maryland-shore-regional-shore-beha
   name: University of Maryland Shore Regional Shore Behavioral Health Services
   categories:
@@ -500,6 +517,7 @@
   - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

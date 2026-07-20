@@ -42,6 +42,7 @@
   - Veterans
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -112,6 +113,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -137,25 +139,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.66441
+    lng: -85.13356
 - id: in/connersville/maplewood-head-start
   name: Maplewood Head Start
   categories:
   - child-care
-  address:
-    street: 1800 N Eastern Ave
-    city: Connersville
-    state: in
-    zip: '47331'
+  address: {street: 1800 N Eastern Ave, city: Connersville, state: in, zip: '47331'}
+  description: Head Start early childhood program — 134 funded slots; operated by FAYETTE COUNTY SCHOOL
+    CORPORATION.
   place: '1814932'
-  geo:
-    lat: 39.65309
-    lng: -85.12776
+  geo: {lat: 39.65309, lng: -85.12776}
   phone: 765-827-0191
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/connersville/meridian-health-services-corp
   name: Meridian Health Services Corp
   categories:
@@ -182,28 +181,46 @@
   name: Nc Everton Elementary School
   categories:
   - meal-program
-  address: {street: 2440 East Everton Road, city: Connersville, state: in, zip: '47331'}
+  address:
+    street: 2440 East Everton Road
+    city: Connersville
+    state: in
+    zip: '47331'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fayette County School
     Corp.
   place: '1814932'
-  geo: {lat: 39.56264, lng: -85.09381}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0706}
+  geo:
+    lat: 39.56264
+    lng: -85.09381
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0706
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/connersville/nc-frazee-elementary-school
   name: Nc Frazee Elementary School
   categories:
   - meal-program
-  address: {street: 600 W. 3Rd Street, city: Connersville, state: in, zip: '47331'}
+  address:
+    street: 600 W. 3Rd Street
+    city: Connersville
+    state: in
+    zip: '47331'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fayette County School
     Corp.
   place: '1814932'
-  geo: {lat: 39.64012, lng: -85.14923}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0707}
+  geo:
+    lat: 39.64012
+    lng: -85.14923
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0707
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/connersville/reid-outpatient-behavioral-health
   name: Reid Outpatient Behavioral Health
   categories:
@@ -233,6 +250,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

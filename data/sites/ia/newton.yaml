@@ -28,6 +28,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -68,6 +69,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.70049
+    lng: -93.06007
 - id: ia/newton/integrated-treatment-services
   name: Integrated Treatment Services
   categories:
@@ -99,6 +103,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -126,6 +134,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -136,44 +145,56 @@
   name: Newton
   categories:
   - child-care
-  address:
-    street: 2713 N 4th Ave E
-    city: Newton
-    state: ia
-    zip: '50208'
+  address: {street: 2713 N 4th Ave E, city: Newton, state: ia, zip: '50208'}
+  description: Head Start early childhood program — 15 funded slots; operated by Drake University Head
+    Start.
   place: '1956505'
-  geo:
-    lat: 41.70226
-    lng: -93.01962
+  geo: {lat: 41.70226, lng: -93.01962}
   phone: 515-271-1854
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/newton/newton-public-library
   name: Newton Public Library
   categories:
   - meal-program
-  address: {street: 100 N. 3Rd Avenue West, city: Newton, state: ia, zip: '50208'}
+  address:
+    street: 100 N. 3Rd Avenue West
+    city: Newton
+    state: ia
+    zip: '50208'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Newton Comm School District.
   place: '1956505'
-  geo: {lat: 41.70148, lng: -93.05397}
+  geo:
+    lat: 41.70148
+    lng: -93.05397
   phone: (641) 792-4108
-  external_ids: {usda_master: Cycle 01_IA_SFSP_0081}
+  external_ids:
+    usda_master: Cycle 01_IA_SFSP_0081
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/newton/newton-senior-high-school
   name: Newton Senior High School
   categories:
   - meal-program
-  address: {street: 800 E. 4Th St. S., city: Newton, state: ia, zip: '50208'}
+  address:
+    street: 800 E. 4Th St. S.
+    city: Newton
+    state: ia
+    zip: '50208'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Newton Comm School District.
   place: '1956505'
-  geo: {lat: 41.69224, lng: -93.04967}
+  geo:
+    lat: 41.69224
+    lng: -93.04967
   phone: (641) 275-7568
-  external_ids: {usda_master: Cycle 01_IA_SFSP_0082}
+  external_ids:
+    usda_master: Cycle 01_IA_SFSP_0082
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

@@ -16,6 +16,7 @@
   website: https://centerstone.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -41,6 +42,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -66,6 +68,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.93156
+    lng: -85.39527
 - id: in/new-castle/meridian-health-services-corp
   name: Meridian Health Services Corp
   categories:
@@ -93,34 +98,37 @@
   name: Nc New Castle Library
   categories:
   - meal-program
-  address: {street: 376 S 15Th Street, city: New Castle, state: in, zip: '47362'}
+  address:
+    street: 376 S 15Th Street
+    city: New Castle
+    state: in
+    zip: '47362'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Castle Community
     School Corp.
   place: '1852740'
-  geo: {lat: 39.92926, lng: -85.36748}
-  external_ids: {usda_master: Cycle 04_IN_SFSP_0730}
+  geo:
+    lat: 39.92926
+    lng: -85.36748
+  external_ids:
+    usda_master: Cycle 04_IN_SFSP_0730
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/new-castle/new-castle
   name: New Castle
   categories:
   - child-care
-  address:
-    street: 329 S 5th St
-    city: New Castle
-    state: in
-    zip: '47362'
+  address: {street: 329 S 5th St, city: New Castle, state: in, zip: '47362'}
+  description: Head Start early childhood program — 90 funded slots; operated by Interlocal Community
+    Action Program, Inc..
   place: '1852740'
-  geo:
-    lat: 39.92727
-    lng: -85.37974
+  geo: {lat: 39.92727, lng: -85.37974}
   phone: 765-529-7260
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/new-castle/new-castle-housing-authority
   name: New Castle Housing Authority
   categories:

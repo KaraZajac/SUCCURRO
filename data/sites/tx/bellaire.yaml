@@ -1,25 +1,3 @@
-- id: tx/bellaire/administrative-offices
-  name: Administrative Offices
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 4800 Fournace Pl
-    city: Bellaire
-    state: tx
-    zip: '77401'
-  place: '4807300'
-  geo:
-    lat: 29.717
-    lng: -95.46352
-  phone: 346-426-0691
-  external_ids:
-    bphc: BPS-H80-031892
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: tx/bellaire/altura-recovery-and-wellness
   name: Altura Recovery and Wellness
   categories:
@@ -43,6 +21,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -53,14 +32,23 @@
   name: Bellaire H S
   categories:
   - meal-program
-  address: {street: 5100 Maple, city: Bellaire, state: tx, zip: '77401'}
+  address:
+    street: 5100 Maple
+    city: Bellaire
+    state: tx
+    zip: '77401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by HOUSTON ISD.
   place: '4807300'
-  geo: {lat: 29.6912, lng: -95.46915}
-  external_ids: {usda_master: Cycle 01_TX_SSO_0110}
+  geo:
+    lat: 29.6912
+    lng: -95.46915
+  external_ids:
+    usda_master: Cycle 01_TX_SSO_0110
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/bellaire/st-hope-community-health-clinic-bellaire
   name: St. Hope Community Health Clinic- Bellaire
   categories:

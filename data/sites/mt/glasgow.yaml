@@ -17,6 +17,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -27,21 +28,15 @@
   name: Glasgow Head Start
   categories:
   - child-care
-  address:
-    street: 211 1st Ave South
-    city: Glasgow
-    state: mt
-    zip: '59230'
+  address: {street: 211 1st Ave South, city: Glasgow, state: mt, zip: '59230'}
+  description: Head Start early childhood program — 18 funded slots; operated by Action For Eastern Montana
+    Head Start.
   place: '3031075'
-  geo:
-    lat: 48.19331
-    lng: -106.63243
+  geo: {lat: 48.19331, lng: -106.63243}
   phone: 406-228-2404
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: mt/glasgow/glasgow-va-clinic
   name: Glasgow VA Clinic
   categories:

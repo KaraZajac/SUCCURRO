@@ -36,6 +36,7 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -60,6 +61,7 @@
   website: https://www.concern4kids.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -85,31 +87,10 @@
   services:
   - Partial hospitalization/day treatment
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: pa/mansfield/laurel-health-specialty-center
-  name: Laurel Health Specialty Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 52 Railroad Ave
-    city: Mansfield
-    state: pa
-    zip: '16933'
-  place: '4247080'
-  geo:
-    lat: 41.80844
-    lng: -77.08063
-  phone: 570-662-1945
-  external_ids:
-    bphc: BPS-H80-038073
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -139,22 +120,16 @@
   name: Mansfield - W.L. Miller Elementary School
   categories:
   - child-care
-  address:
-    street: W. L. Miller Elementary School
-    street2: Dorsett Drive
-    city: Mansfield
-    state: pa
-    zip: '16933'
+  address: {street: W. L. Miller Elementary School, street2: Dorsett Drive, city: Mansfield, state: pa,
+    zip: '16933'}
+  description: Head Start early childhood program — 17 funded slots; operated by Bradford-Tioga Head Start,
+    Inc..
   place: '4247080'
-  geo:
-    lat: 41.79976
-    lng: -77.07896
+  geo: {lat: 41.79976, lng: -77.07896}
   phone: 570-513-0897
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/mansfield/meadowlark-counseling-services
   name: Meadowlark Counseling Services
   categories:
@@ -173,6 +148,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents.
   cost: varies
   sources:
   - samhsa/findtreatment

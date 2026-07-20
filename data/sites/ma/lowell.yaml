@@ -17,6 +17,14 @@
   services:
   - Outpatient
   - Partial hospitalization/day treatment
+  languages:
+  - en
+  - es
+  - fr
+  - el
+  - ru
+  - vi
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -46,6 +54,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -56,35 +68,37 @@
   name: Children's Village
   categories:
   - child-care
-  address:
-    street: 246 Market St
-    city: Lowell
-    state: ma
-    zip: 01852
+  address: {street: 246 Market St, city: Lowell, state: ma, zip: 01852}
+  description: Head Start early childhood program — 14 funded slots; operated by Community Teamwork, Inc..
   place: '2537000'
-  geo:
-    lat: 42.64468
-    lng: -71.31312
+  geo: {lat: 42.64468, lng: -71.31312}
   phone: 978-453-1490
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/christ-jubilee-international-ministries-sf-171-0
   name: Christ Jubilee International Ministries (Sf-171-040)
   categories:
   - meal-program
-  address: {street: 101 Smith St., city: Lowell, state: ma, zip: 01851}
+  address:
+    street: 101 Smith St.
+    city: Lowell
+    state: ma
+    zip: 01851
   description: Free summer meals for kids and teens (2026 season) — sponsored by Merrimack Valley Food
     Bank Inc. (09-160-SF-171).
   place: '2537000'
-  geo: {lat: 42.63477, lng: -71.32261}
+  geo:
+    lat: 42.63477
+    lng: -71.32261
   phone: (978) 490-4369
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0231}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0231
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/community-teamwork-inc
   name: Community Teamwork, Inc.
   categories:
@@ -123,6 +137,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.64679
+    lng: -71.31009
 - id: ma/lowell/elm-tree-clinic
   name: Elm Tree Clinic
   categories:
@@ -143,6 +160,11 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - pt
+  - ru
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -175,35 +197,37 @@
   name: Highland Parkway (Sf-171-039)
   categories:
   - meal-program
-  address: {street: 580 Chelmsford St., city: Lowell, state: ma, zip: 01851}
+  address:
+    street: 580 Chelmsford St.
+    city: Lowell
+    state: ma
+    zip: 01851
   description: Free summer meals for kids and teens (2026 season) — sponsored by Merrimack Valley Food
     Bank Inc. (09-160-SF-171).
   place: '2537000'
-  geo: {lat: 42.62416, lng: -71.32367}
+  geo:
+    lat: 42.62416
+    lng: -71.32367
   phone: (978) 364-5329
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0230}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0230
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/james-houlares-center
   name: James Houlares Center
   categories:
   - child-care
-  address:
-    street: 126 Phoenix Ave
-    city: Lowell
-    state: ma
-    zip: 01852
+  address: {street: 126 Phoenix Ave, city: Lowell, state: ma, zip: 01852}
+  description: Head Start early childhood program — 60 funded slots; operated by Community Teamwork, Inc..
   place: '2537000'
-  geo:
-    lat: 42.62866
-    lng: -71.27855
+  geo: {lat: 42.62866, lng: -71.27855}
   phone: 978-454-5100
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/kathyrn-p-stoklosa-middle-school
   name: Kathyrn P. Stoklosa Middle School
   categories:
@@ -299,21 +323,14 @@
   name: Lowell Collaborative Preschool Academy
   categories:
   - child-care
-  address:
-    street: 554 Pawtucket St
-    city: Lowell
-    state: ma
-    zip: 01854
+  address: {street: 554 Pawtucket St, city: Lowell, state: ma, zip: 01854}
+  description: Head Start early childhood program — 28 funded slots; operated by Community Teamwork, Inc..
   place: '2537000'
-  geo:
-    lat: 42.64527
-    lng: -71.33396
+  geo: {lat: 42.64527, lng: -71.33396}
   phone: 978-454-3350
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/lowell-community-health-center-inc-behavioral-he
   name: Lowell Community Health Center Inc Behavioral Health Services Outpatient
   categories:
@@ -345,6 +362,14 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with Alzheimer's or dementia
   - Persons with eating disorders
+  languages:
+  - en
+  - es
+  - ar
+  - el
+  - hi
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -381,6 +406,10 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced intimate partner violence, domestic violence
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -561,16 +590,25 @@
   name: Mcpherson Park (Sf-171-003)
   categories:
   - meal-program
-  address: {street: 984-1040 Bridge St., city: Lowell, state: ma, zip: 01850}
+  address:
+    street: 984-1040 Bridge St.
+    city: Lowell
+    state: ma
+    zip: 01850
   description: Free summer meals for kids and teens (2026 season) — sponsored by Merrimack Valley Food
     Bank Inc. (09-160-SF-171).
   place: '2537000'
-  geo: {lat: 42.66027, lng: -71.30353}
+  geo:
+    lat: 42.66027
+    lng: -71.30353
   phone: (978) 970-0644
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0225}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0225
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/megans-house
   name: Megans House
   categories:
@@ -594,6 +632,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -620,6 +659,10 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -630,30 +673,48 @@
   name: North Common Village (Sf-171-038)
   categories:
   - meal-program
-  address: {street: 21 Salem St., city: Lowell, state: ma, zip: 01854}
+  address:
+    street: 21 Salem St.
+    city: Lowell
+    state: ma
+    zip: 01854
   description: Free summer meals for kids and teens (2026 season) — sponsored by Merrimack Valley Food
     Bank Inc. (09-160-SF-171).
   place: '2537000'
-  geo: {lat: 42.64787, lng: -71.31998}
+  geo:
+    lat: 42.64787
+    lng: -71.31998
   phone: (978) 364-5367
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0229}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0229
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/o-donnell-splash-pad-sf-171-033
   name: O'Donnell Splash Pad (Sf-171-033)
   categories:
   - meal-program
-  address: {street: 1118 Gorham Street, city: Lowell, state: ma, zip: 01852}
+  address:
+    street: 1118 Gorham Street
+    city: Lowell
+    state: ma
+    zip: 01852
   description: Free summer meals for kids and teens (2026 season) — sponsored by Merrimack Valley Food
     Bank Inc. (09-160-SF-171).
   place: '2537000'
-  geo: {lat: 42.62495, lng: -71.30678}
+  geo:
+    lat: 42.62495
+    lng: -71.30678
   phone: (978) 674-4175
-  external_ids: {usda_master: Cycle 09_MA_SFSP_0228}
+  external_ids:
+    usda_master: Cycle 09_MA_SFSP_0228
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/lowell/riverbend-ambulatory-services
   name: Riverbend Ambulatory Services
   categories:
@@ -684,6 +745,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -694,41 +759,27 @@
   name: Toddler Corner
   categories:
   - child-care
-  address:
-    street: 524 Pawtucket St
-    city: Lowell
-    state: ma
-    zip: 01854
+  address: {street: 524 Pawtucket St, city: Lowell, state: ma, zip: 01854}
+  description: Head Start early childhood program — 14 funded slots; operated by Community Teamwork, Inc..
   place: '2537000'
-  geo:
-    lat: 42.64543
-    lng: -71.33329
+  geo: {lat: 42.64543, lng: -71.33329}
   phone: 978-454-7171
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/toddler-corner-hb
   name: Toddler Corner- HB
   categories:
   - child-care
-  address:
-    street: 21 Walker St
-    street2: '(Also Registered As: 524 Pawtucket St)'
-    city: Lowell
-    state: ma
-    zip: 01854
+  address: {street: 21 Walker St, street2: '(Also Registered As: 524 Pawtucket St)', city: Lowell, state: ma,
+    zip: 01854}
+  description: Head Start early childhood program — 48 funded slots; operated by Community Teamwork, Inc..
   place: '2537000'
-  geo:
-    lat: 42.64576
-    lng: -71.33327
+  geo: {lat: 42.64576, lng: -71.33327}
   phone: 978-454-3793
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ma/lowell/vinfen-behavioral-health
   name: Vinfen Behavioral Health
   categories:
@@ -749,6 +800,10 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -773,6 +828,11 @@
   website: https://vinfen.org
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  - pt
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

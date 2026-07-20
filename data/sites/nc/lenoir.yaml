@@ -20,6 +20,7 @@
   - Young adults
   - Adult men
   - Veterans
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -44,6 +45,7 @@
   - Young adults
   - Adult women
   - Veterans
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -69,6 +71,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 35.89356
+    lng: -81.57156
 - id: nc/lenoir/caldwell-unc-healthcare
   name: Caldwell UNC Healthcare
   categories:
@@ -90,6 +95,7 @@
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -114,6 +120,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -144,6 +151,7 @@
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -463,6 +471,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -473,34 +482,37 @@
   name: Ncm Gamewell Middle School
   categories:
   - meal-program
-  address: {street: 3210 Gamewell School Road, city: Lenoir, state: nc, zip: '28645'}
+  address:
+    street: 3210 Gamewell School Road
+    city: Lenoir
+    state: nc
+    zip: '28645'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Caldwell County Schools.
   place: '3737760'
-  geo: {lat: 35.87065, lng: -81.59895}
+  geo:
+    lat: 35.87065
+    lng: -81.59895
   phone: (828) 754-6201
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0227}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0227
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/lenoir/northside-learning-center
   name: Northside Learning Center
   categories:
   - child-care
-  address:
-    street: 1440 Blowing Rock Blvd
-    city: Lenoir
-    state: nc
-    zip: '28645'
+  address: {street: 1440 Blowing Rock Blvd, city: Lenoir, state: nc, zip: '28645'}
+  description: Head Start early childhood program — 8 funded slots; operated by BLUE RIDGE COMMUNITY ACTION,
+    INC.
   place: '3737760'
-  geo:
-    lat: 35.93713
-    lng: -81.53598
+  geo: {lat: 35.93713, lng: -81.53598}
   phone: 828-758-4290
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/lenoir/rha-health-services
   name: RHA Health Services
   categories:
@@ -530,6 +542,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -540,18 +553,11 @@
   name: The Enola Group Caldwell Early Head Start
   categories:
   - child-care
-  address:
-    street: 609 Harper Ave SW
-    city: Lenoir
-    state: nc
-    zip: '28645'
+  address: {street: 609 Harper Ave SW, city: Lenoir, state: nc, zip: '28645'}
+  description: Head Start early childhood program — 60 funded slots; operated by The Enola Group, Inc..
   place: '3737760'
-  geo:
-    lat: 35.9147
-    lng: -81.53711
+  geo: {lat: 35.9147, lng: -81.53711}
   phone: 828-757-8632
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

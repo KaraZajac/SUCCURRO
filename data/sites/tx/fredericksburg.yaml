@@ -16,37 +16,43 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 30.28336
+    lng: -98.87292
 - id: tx/fredericksburg/fredericksburg-isd
   name: Fredericksburg ISD
   categories:
   - child-care
-  address:
-    street: 1110 S Adams St
-    city: Fredericksburg
-    state: tx
-    zip: '78624'
+  address: {street: 1110 S Adams St, city: Fredericksburg, state: tx, zip: '78624'}
+  description: Head Start early childhood program — 102 funded slots; operated by Innovative Network of
+    Knowledge (INK).
   place: '4827348'
-  geo:
-    lat: 30.26054
-    lng: -98.87963
+  geo: {lat: 30.26054, lng: -98.87963}
   phone: 830-997-9551
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fredericksburg/fredericksburg-primary-school
   name: Fredericksburg Primary School
   categories:
   - meal-program
-  address: {street: 1110 S. Adams St, city: 'Fredericksburg,', state: tx, zip: '78624'}
+  address:
+    street: 1110 S. Adams St
+    city: Fredericksburg,
+    state: tx
+    zip: '78624'
   description: Free summer meals for kids and teens (2026 season) — sponsored by FREDERICKSBURG ISD.
   place: '4827348'
-  geo: {lat: 30.26001, lng: -98.87852}
-  external_ids: {usda_master: Cycle 06_TX_SSO_1138}
+  geo:
+    lat: 30.26001
+    lng: -98.87852
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_1138
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/fredericksburg/frontera-healthcare-fredericksburg-behavioral-he
   name: Frontera Healthcare Fredericksburg Behavioral Health Clinic
   categories:
@@ -159,6 +165,10 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -169,22 +179,15 @@
   name: Home Based Services and Services to Pregnant Women
   categories:
   - child-care
-  address:
-    street: 1110 S Adams St
-    street2: Modular 4
-    city: Fredericksburg
-    state: tx
-    zip: '78624'
+  address: {street: 1110 S Adams St, street2: Modular 4, city: Fredericksburg, state: tx, zip: '78624'}
+  description: Head Start early childhood program — 12 funded slots; operated by Innovative Network of
+    Knowledge (INK).
   place: '4827348'
-  geo:
-    lat: 30.26049
-    lng: -98.87963
+  geo: {lat: 30.26049, lng: -98.87963}
   phone: 830-331-8908
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/fredericksburg/serenity-foundation-of-texas-serenity-house-fred
   name: Serenity Foundation of Texas Serenity House Fredericksburg
   categories:
@@ -205,6 +208,7 @@
   - Short-term residential
   - Adult men
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

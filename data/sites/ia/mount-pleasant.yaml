@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -40,6 +41,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.96682
+    lng: -91.57039
 - id: ia/mount-pleasant/first-presbyterian-church
   name: First Presbyterian Church
   categories:
@@ -76,18 +80,12 @@
   name: Glenwood Head Start
   categories:
   - child-care
-  address:
-    street: 302 W Madison St
-    city: Mt Pleasant
-    state: ia
-    zip: '52641'
+  address: {street: 302 W Madison St, city: Mt Pleasant, state: ia, zip: '52641'}
+  description: Head Start early childhood program — 32 funded slots; operated by Community Action of Southeast
+    Iowa.
   place: '1954705'
-  geo:
-    lat: 40.96784
-    lng: -91.55694
+  geo: {lat: 40.96784, lng: -91.55694}
   phone: 319-201-1560
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

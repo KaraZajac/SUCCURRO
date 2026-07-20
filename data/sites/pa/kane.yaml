@@ -17,6 +17,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -50,6 +51,7 @@
   - Clients who have experienced trauma
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -60,34 +62,37 @@
   name: Kane
   categories:
   - child-care
-  address:
-    street: Chestnut St
-    city: Kane
-    state: pa
-    zip: '16735'
+  address: {street: Chestnut St, city: Kane, state: pa, zip: '16735'}
+  description: Head Start early childhood program — 34 funded slots; operated by NORTHERN TIER COMMUNITY
+    ACTION CORPORATION.
   place: '4238688'
-  geo:
-    lat: 41.65781
-    lng: -78.81099
+  geo: {lat: 41.65781, lng: -78.81099}
   phone: 814-837-8068
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/kane/kane-area-ms-wing-3-8
   name: Kane Area Ms (Wing 3-8)
   categories:
   - meal-program
-  address: {street: 400 West Hemlock Avenue, city: Kane, state: pa, zip: '16735'}
+  address:
+    street: 400 West Hemlock Avenue
+    city: Kane
+    state: pa
+    zip: '16735'
   description: Free summer meals for kids and teens (2026 season) — sponsored by KANE AREA SCHOOL DISTRICT.
   place: '4238688'
-  geo: {lat: 41.65517, lng: -78.81303}
+  geo:
+    lat: 41.65517
+    lng: -78.81303
   phone: (814) 837-9570
-  external_ids: {usda_master: Cycle 01_PA_SSO_0125}
+  external_ids:
+    usda_master: Cycle 01_PA_SSO_0125
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/kane/kane-dental-and-primary-care-center
   name: Kane Dental and Primary Care Center
   categories:

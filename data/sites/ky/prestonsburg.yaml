@@ -21,6 +21,7 @@
   - Regular outpatient treatment
   - Adult women
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -43,29 +44,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: ky/prestonsburg/big-sandy-health-care-inc
-  name: BIG SANDY HEALTH CARE, INC.
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1709 Ky Route 321
-    city: Prestonsburg
-    state: ky
-    zip: '41653'
-  place: '2162940'
-  geo:
-    lat: 37.69462
-    lng: -82.77108
-  phone: 606-886-8546
-  website: https://www.bshc.org
-  external_ids:
-    bphc: BPS-H80-002323
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: ky/prestonsburg/commonwealth-counseling-centers
   name: Commonwealth Counseling Centers
   categories:
@@ -97,6 +75,7 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -121,6 +100,7 @@
   website: https://
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -145,6 +125,7 @@
   website: https://
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -171,6 +152,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Residential/24-hour residential
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -198,6 +180,7 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -343,6 +326,7 @@
   - Clients who have experienced trauma
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -378,6 +362,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -388,34 +373,36 @@
   name: Prestonsburg Head Start
   categories:
   - child-care
-  address:
-    street: 140 Clark Dr
-    city: Prestonsburg
-    state: ky
-    zip: '41653'
+  address: {street: 140 Clark Dr, city: Prestonsburg, state: ky, zip: '41653'}
+  description: Head Start early childhood program — 49 funded slots; operated by Floyd County Head Start.
   place: '2162940'
-  geo:
-    lat: 37.65427
-    lng: -82.82309
+  geo: {lat: 37.65427, lng: -82.82309}
   phone: 606-886-3891
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ky/prestonsburg/prestonsburg-high-school
   name: Prestonsburg High School
   categories:
   - meal-program
-  address: {street: 825 Blackcat Blvd., city: Prestonsburg, state: ky, zip: '41653'}
+  address:
+    street: 825 Blackcat Blvd.
+    city: Prestonsburg
+    state: ky
+    zip: '41653'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Floyd County Board of
     Education.
   place: '2162940'
-  geo: {lat: 37.67718, lng: -82.77912}
-  external_ids: {usda_master: Cycle 02_KY_SFSP_0519}
+  geo:
+    lat: 37.67718
+    lng: -82.77912
+  external_ids:
+    usda_master: Cycle 02_KY_SFSP_0519
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ky/prestonsburg/prestonsburg-va-clinic
   name: Prestonsburg VA Clinic
   categories:
@@ -479,6 +466,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -489,12 +477,21 @@
   name: Verizon Innovation
   categories:
   - meal-program
-  address: {street: 1 Bert Combs Drive, city: Prestonsburg, state: ky, zip: '41653'}
+  address:
+    street: 1 Bert Combs Drive
+    city: Prestonsburg
+    state: ky
+    zip: '41653'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Johnson County Board
     of Education.
   place: '2162940'
-  geo: {lat: 37.6878, lng: -82.7783}
-  external_ids: {usda_master: Cycle 06_KY_SFSP_0490}
+  geo:
+    lat: 37.6878
+    lng: -82.7783
+  external_ids:
+    usda_master: Cycle 06_KY_SFSP_0490
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

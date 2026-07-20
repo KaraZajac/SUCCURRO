@@ -1,26 +1,3 @@
-- id: wv/williamson/administration
-  name: Administration
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 244 E 2nd Ave
-    city: Williamson
-    state: wv
-    zip: '25661'
-  place: '5487508'
-  geo:
-    lat: 37.67092
-    lng: -82.27694
-  phone: 304-236-5902
-  website: https://www.williamsonhealthwellness.com
-  external_ids:
-    bphc: BPS-H80-029451
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: wv/williamson/alderson-clinic-suite-1000
   name: Alderson Clinic - Suite 1000
   categories:
@@ -68,22 +45,15 @@
   name: Lenore Head Start
   categories:
   - child-care
-  address:
-    street: 45 Runyon Ave
-    street2: Rt 65
-    city: Williamson
-    state: wv
-    zip: '25661'
+  address: {street: 45 Runyon Ave, street2: Rt 65, city: Williamson, state: wv, zip: '25661'}
+  description: Head Start early childhood program — 16 funded slots; operated by Coalfield Community Action
+    Partnership, Inc..
   place: '5487508'
-  geo:
-    lat: 37.79627
-    lng: -82.28563
+  geo: {lat: 37.79627, lng: -82.28563}
   phone: 304-475-4117
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/williamson/lenore-va-clinic
   name: Lenore VA Clinic
   categories:
@@ -141,6 +111,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 37.67167
+    lng: -82.27654
 - id: wv/williamson/mountain-laurel-integrated-health-chattaroy
   name: Mountain Laurel Integrated Health-Chattaroy
   categories:
@@ -195,6 +168,7 @@
   - Members of military families
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -227,15 +201,24 @@
   name: Tug Valley High
   categories:
   - meal-program
-  address: {street: 50 Panther Blvd, city: Williamson, state: wv, zip: '25661'}
+  address:
+    street: 50 Panther Blvd
+    city: Williamson
+    state: wv
+    zip: '25661'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MINGO CO BD OF EDUCATION.
   place: '5487508'
-  geo: {lat: 37.79274, lng: -82.34086}
+  geo:
+    lat: 37.79274
+    lng: -82.34086
   phone: (304) 235-3333
-  external_ids: {usda_master: Cycle 02_WV_SFSP_0037}
+  external_ids:
+    usda_master: Cycle 02_WV_SFSP_0037
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/williamson/whw-pharmacy
   name: WHW - Pharmacy
   categories:
@@ -328,6 +311,7 @@
   - Adult women
   - Pregnant/postpartum women
   - Adult men
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -361,21 +345,15 @@
   name: Williamson Head Start
   categories:
   - child-care
-  address:
-    street: 1630 W 3rd Ave
-    city: Williamson
-    state: wv
-    zip: '25661'
+  address: {street: 1630 W 3rd Ave, city: Williamson, state: wv, zip: '25661'}
+  description: Head Start early childhood program — 40 funded slots; operated by Coalfield Community Action
+    Partnership, Inc..
   place: '5487508'
-  geo:
-    lat: 37.67215
-    lng: -82.29223
+  geo: {lat: 37.67215, lng: -82.29223}
   phone: 304-235-1833
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/williamson/williamson-health-and-wellness-center
   name: Williamson Health and Wellness Center
   categories:
@@ -441,6 +419,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -474,34 +453,37 @@
   name: Williamson Pk-8
   categories:
   - meal-program
-  address: {street: 400 Parkway Dr, city: Williamson, state: wv, zip: '25661'}
+  address:
+    street: 400 Parkway Dr
+    city: Williamson
+    state: wv
+    zip: '25661'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MINGO CO BD OF EDUCATION.
   place: '5487508'
-  geo: {lat: 37.67251, lng: -82.29301}
+  geo:
+    lat: 37.67251
+    lng: -82.29301
   phone: (304) 235-3333
-  external_ids: {usda_master: Cycle 02_WV_SFSP_0038}
+  external_ids:
+    usda_master: Cycle 02_WV_SFSP_0038
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wv/williamson/williamson-pre-k-head-start
   name: Williamson Pre K Head Start
   categories:
   - child-care
-  address:
-    street: 5 Parkway Dr
-    city: Williamson
-    state: wv
-    zip: '25661'
+  address: {street: 5 Parkway Dr, city: Williamson, state: wv, zip: '25661'}
+  description: Head Start early childhood program — 35 funded slots; operated by Coalfield Community Action
+    Partnership, Inc..
   place: '5487508'
-  geo:
-    lat: 37.67006
-    lng: -82.29189
+  geo: {lat: 37.67006, lng: -82.29189}
   phone: 304-235-3333
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wv/williamson/williamson-school-based-health-center
   name: Williamson School-Based Health Center
   categories:
@@ -556,6 +538,7 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

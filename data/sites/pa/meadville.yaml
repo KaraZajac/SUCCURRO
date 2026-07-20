@@ -19,6 +19,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -47,6 +48,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced trauma
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -71,6 +73,7 @@
   website: https://www.va.gov/erie-health-care/locations/crawford-county-va-clinic/
   services:
   - Outpatient
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -94,6 +97,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.63509
+    lng: -80.1565
 - id: pa/meadville/crawford-county-drug-and-alcohol-executive-commi
   name: Crawford County Drug and Alcohol Executive Commission Inc
   categories:
@@ -120,6 +126,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -179,22 +186,15 @@
   name: FFN/ Crawford Early Head Start
   categories:
   - child-care
-  address:
-    street: 13690 S Mosiertown Rd
-    street2: Ste A
-    city: Meadville
-    state: pa
-    zip: '16335'
+  address: {street: 13690 S Mosiertown Rd, street2: Ste A, city: Meadville, state: pa, zip: '16335'}
+  description: Head Start early childhood program — 72 funded slots; operated by Community Services of
+    Venango County, Inc..
   place: '4248360'
-  geo:
-    lat: 41.657
-    lng: -80.17331
+  geo: {lat: 41.657, lng: -80.17331}
   phone: 814-332-0242
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: pa/meadville/french-creek-recovery-center
   name: French Creek Recovery Center
   categories:
@@ -226,6 +226,7 @@
   - Persons with eating disorders
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -256,80 +257,134 @@
   name: Meadville Public Library
   categories:
   - meal-program
-  address: {street: 848 N Main St, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 848 N Main St
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.63963, lng: -80.14958}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0173}
+  geo:
+    lat: 41.63963
+    lng: -80.14958
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0173
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/rnc-first-baptist-church-of-meadville
   name: Rnc-First Baptist Church Of Meadville
   categories:
   - meal-program
-  address: {street: 353 Chestnut St, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 353 Chestnut St
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.63746, lng: -80.14963}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0271}
+  geo:
+    lat: 41.63746
+    lng: -80.14963
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0271
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/rnc-gill-village
   name: Rnc-Gill Village
   categories:
   - meal-program
-  address: {street: 111 Walker Drive, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 111 Walker Drive
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.66403, lng: -80.16082}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0272}
+  geo:
+    lat: 41.66403
+    lng: -80.16082
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0272
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/rnc-gill-village-2
   name: Rnc-Gill Village
   categories:
   - meal-program
-  address: {street: 275 Walker Drive, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 275 Walker Drive
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.66399, lng: -80.16195}
-  external_ids: {usda_master: Cycle 06_PA_SFSP_0157}
+  geo:
+    lat: 41.66399
+    lng: -80.16195
+  external_ids:
+    usda_master: Cycle 06_PA_SFSP_0157
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/rnc-woman-s-services
   name: Rnc-Woman'S Services
   categories:
   - meal-program
-  address: {street: 204 Spring St, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 204 Spring St
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.64781, lng: -80.15185}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0301}
+  geo:
+    lat: 41.64781
+    lng: -80.15185
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0301
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/shadybrook-park
   name: Shadybrook Park
   categories:
   - meal-program
-  address: {street: 899 North Morgan St, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 899 North Morgan St
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA Child Development
     Program.
   place: '4248360'
-  geo: {lat: 41.6365, lng: -80.1339}
-  external_ids: {usda_master: Cycle 05_PA_SFSP_0317}
+  geo:
+    lat: 41.6365
+    lng: -80.1339
+  external_ids:
+    usda_master: Cycle 05_PA_SFSP_0317
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/stepping-stones-unit-at-meadville-medical-center
   name: Stepping Stones Unit at Meadville Medical Center
   categories:
@@ -358,6 +413,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -368,31 +424,34 @@
   name: West End El Sch
   categories:
   - meal-program
-  address: {street: 12068 Brooks Road, city: Meadville, state: pa, zip: '16335'}
+  address:
+    street: 12068 Brooks Road
+    city: Meadville
+    state: pa
+    zip: '16335'
   description: Free summer meals for kids and teens (2026 season) — sponsored by CRAWFORD CENTRAL SCHOOL
     DISTRICT.
   place: '4248360'
-  geo: {lat: 41.632, lng: -80.23696}
+  geo:
+    lat: 41.632
+    lng: -80.23696
   phone: (814) 724-3136
-  external_ids: {usda_master: Cycle 04_PA_SSO_0670}
+  external_ids:
+    usda_master: Cycle 04_PA_SSO_0670
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/meadville/willow-child-development-center
   name: Willow Child Development Center
   categories:
   - child-care
-  address:
-    street: 15438 State Highway 86
-    city: Meadville
-    state: pa
-    zip: '16335'
+  address: {street: 15438 State Highway 86, city: Meadville, state: pa, zip: '16335'}
+  description: Head Start early childhood program — 92 funded slots; operated by Child Development Centers,
+    Inc..
   place: '4248360'
-  geo:
-    lat: 41.68299
-    lng: -80.12677
+  geo: {lat: 41.68299, lng: -80.12677}
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}

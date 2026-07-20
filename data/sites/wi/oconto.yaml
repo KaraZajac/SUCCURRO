@@ -24,6 +24,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -67,6 +68,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -91,39 +93,45 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.88911
+    lng: -87.86464
 - id: wi/oconto/oconto-elementary-school
   name: Oconto Elementary School
   categories:
   - meal-program
-  address: {street: 810 Scherer Ave, city: Oconto, state: wi, zip: '54153'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Oconto Unified School
-    District.
-  place: '5559350'
-  geo: {lat: 44.87915, lng: -87.86992}
-  phone: (920) 834-7812
-  external_ids: {usda_master: Cycle 02_WI_SFSP_0177}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: wi/oconto/oconto-head-start
-  name: Oconto Head Start
-  categories:
-  - child-care
   address:
     street: 810 Scherer Ave
     city: Oconto
     state: wi
     zip: '54153'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Oconto Unified School
+    District.
   place: '5559350'
   geo:
-    lat: 44.87933
-    lng: -87.87174
-  phone: 920-834-3107
+    lat: 44.87915
+    lng: -87.86992
+  phone: (920) 834-7812
+  external_ids:
+    usda_master: Cycle 02_WI_SFSP_0177
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/oconto/oconto-head-start
+  name: Oconto Head Start
+  categories:
+  - child-care
+  address: {street: 810 Scherer Ave, city: Oconto, state: wi, zip: '54153'}
+  description: Head Start early childhood program — 18 funded slots; operated by Family & Child Learning
+    Centers of NE WI., Inc..
+  place: '5559350'
+  geo: {lat: 44.87933, lng: -87.87174}
+  phone: 920-834-3107
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: wi/oconto/oconto-high-school
   name: Oconto High School
   categories:

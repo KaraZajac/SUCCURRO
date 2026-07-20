@@ -16,6 +16,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 40.23852
+    lng: -83.36663
 - id: oh/marysville/complete-healthcare
   name: Complete Healthcare
   categories:
@@ -37,6 +40,12 @@
   - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - es
+  - fa
+  - fr
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -47,35 +56,37 @@
   name: Marysville Center
   categories:
   - child-care
-  address:
-    street: 111 Morey Dr
-    city: Marysville
-    state: oh
-    zip: '43040'
+  address: {street: 111 Morey Dr, city: Marysville, state: oh, zip: '43040'}
+  description: Head Start early childhood program — 36 funded slots; operated by Leads, Inc..
   place: '3948160'
-  geo:
-    lat: 40.22667
-    lng: -83.36955
+  geo: {lat: 40.22667, lng: -83.36955}
   phone: 937-642-1230
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/marysville/marysville-public-library
   name: Marysville Public Library
   categories:
   - meal-program
-  address: {street: Partners Park, city: Marysville, state: oh, zip: '43040'}
+  address:
+    street: Partners Park
+    city: Marysville
+    state: oh
+    zip: '43040'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Marysville School District
     Public Library.
   place: '3948160'
-  geo: {lat: 40.23527, lng: -83.36633}
+  geo:
+    lat: 40.23527
+    lng: -83.36633
   phone: (937) 642-1876
-  external_ids: {usda_master: Cycle 05_OH_SFSP_0052}
+  external_ids:
+    usda_master: Cycle 05_OH_SFSP_0052
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/marysville/walnut-street-health-center
   name: Walnut Street Health Center
   categories:

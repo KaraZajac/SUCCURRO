@@ -44,33 +44,36 @@
   name: Madisonville CDC
   categories:
   - child-care
+  address: {street: 1000 Raney Ln, city: Madisonville, state: tx, zip: '77864'}
+  description: Head Start early childhood program — 45 funded slots; operated by Brazos Valley Community
+    Action Program.
+  place: '4845996'
+  geo: {lat: 30.94527, lng: -95.89465}
+  phone: 936-348-3915
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
+- id: tx/madisonville/madisonville-elementary-school
+  name: Madisonville Elementary School
+  categories:
+  - meal-program
   address:
     street: 1000 Raney Ln
     city: Madisonville
     state: tx
     zip: '77864'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by MADISONVILLE CONS ISD.
   place: '4845996'
   geo:
-    lat: 30.94527
-    lng: -95.89465
-  phone: 936-348-3915
+    lat: 30.94546
+    lng: -95.89419
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_2058
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
-- id: tx/madisonville/madisonville-elementary-school
-  name: Madisonville Elementary School
-  categories:
-  - meal-program
-  address: {street: 1000 Raney Ln, city: Madisonville, state: tx, zip: '77864'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by MADISONVILLE CONS ISD.
-  place: '4845996'
-  geo: {lat: 30.94546, lng: -95.89419}
-  external_ids: {usda_master: Cycle 06_TX_SSO_2058}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
 - id: tx/madisonville/mh-mr-authority-of-brazos-valley-madison-county
   name: MH/MR Authority of Brazos Valley Madison County
   categories:
@@ -95,6 +98,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

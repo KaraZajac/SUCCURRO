@@ -17,6 +17,7 @@
   - Outpatient
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -42,6 +43,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -52,15 +54,24 @@
   name: A1 Mobile Home Park
   categories:
   - meal-program
-  address: {street: 1025 Gamer St., city: Colorado Springs, state: co, zip: '80905'}
+  address:
+    street: 1025 Gamer St.
+    city: Colorado Springs
+    state: co
+    zip: '80905'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.8139, lng: -104.8342}
+  geo:
+    lat: 38.8139
+    lng: -104.8342
   phone: (719) 520-2933
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0092}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0092
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/colorado-springs/achieve-whole-recovery
   name: Achieve Whole Recovery
   categories:
@@ -82,6 +93,7 @@
   - Outpatient detoxification
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -113,6 +125,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -137,6 +150,11 @@
   website: https://www.aroundtheblockhealthcare.com/
   services:
   - Outpatient
+  languages:
+  - en
+  - es
+  - ru
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -164,6 +182,7 @@
   - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -201,6 +220,10 @@
   - Persons with Alzheimer's or dementia
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - fa
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -260,6 +283,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -275,6 +299,8 @@
     city: Colorado Springs
     state: co
     zip: '80916'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.80087
@@ -316,6 +342,7 @@
   - Clients who have experienced trauma
   - Persons with traumatic brain injury (TBI)
   - Persons with eating disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -331,6 +358,8 @@
     city: Colorado Springs
     state: co
     zip: '80910'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.80397
@@ -350,6 +379,8 @@
     city: Colorado Springs
     state: co
     zip: '80905'
+  description: Head Start early childhood program — 45 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.79887
@@ -475,6 +506,10 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -523,6 +558,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -582,6 +618,10 @@
   - Persons with eating disorders
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -620,6 +660,8 @@
     city: Colorado Springs
     state: co
     zip: '80903'
+  description: Head Start early childhood program — 19 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.83327
@@ -639,6 +681,8 @@
     city: Colorado Springs
     state: co
     zip: '80903'
+  description: Head Start early childhood program — 20 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.82449
@@ -658,6 +702,8 @@
     city: Colorado Springs
     state: co
     zip: '80910'
+  description: Head Start early childhood program — 22 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.81053
@@ -686,29 +732,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
-- id: co/colorado-springs/enrollment-services-at-academy-suite-1500
-  name: Enrollment Services at Academy, Suite 1500
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 3207 N Academy Blvd
-    city: Colorado Springs
-    state: co
-    zip: '80917'
-  place: 0816000
   geo:
-    lat: 38.87842
-    lng: -104.75515
-  phone: 719-632-5700
-  website: https://www.peakvista.org
-  external_ids:
-    bphc: BPS-H80-012373
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+    lat: 38.89643
+    lng: -104.86092
 - id: co/colorado-springs/evans
   name: EVANS
   categories:
@@ -718,6 +744,8 @@
     city: Colorado Springs
     state: co
     zip: '80915'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.85603
@@ -776,6 +804,8 @@
     city: Colorado Springs
     state: co
     zip: '80913'
+  description: Head Start early childhood program — 61 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.72718
@@ -851,6 +881,10 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -866,6 +900,8 @@
     city: Colorado Springs
     state: co
     zip: '80916'
+  description: Head Start early childhood program — 74 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.79288
@@ -885,6 +921,8 @@
     city: Colorado Springs
     state: co
     zip: '80918'
+  description: Head Start early childhood program — 15 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.89553
@@ -923,6 +961,10 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -957,6 +999,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -993,6 +1039,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1169,6 +1216,8 @@
     city: Colorado Springs
     state: co
     zip: '80920'
+  description: Head Start early childhood program — 12 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.94731
@@ -1208,6 +1257,8 @@
     city: Colorado Springs
     state: co
     zip: '80903'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.82463
@@ -1249,6 +1300,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1303,6 +1355,8 @@
     city: Colorado Springs
     state: co
     zip: '80916'
+  description: Head Start early childhood program — 16 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.80662
@@ -1345,6 +1399,8 @@
     city: Colorado Springs
     state: co
     zip: '80910'
+  description: Head Start early childhood program — 15 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.83175
@@ -1364,6 +1420,8 @@
     city: Colorado Springs
     state: co
     zip: '80910'
+  description: Head Start early childhood program — 75 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.79966
@@ -1383,6 +1441,8 @@
     city: Colorado Springs
     state: co
     zip: '80911'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.76116
@@ -1402,6 +1462,8 @@
     city: Colorado Springs
     state: co
     zip: '80906'
+  description: Head Start early childhood program — 15 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.78375
@@ -1416,58 +1478,21 @@
   name: Palmer Park
   categories:
   - meal-program
-  address: {street: 3650 Maizeland, city: Colorado Springs, state: co, zip: '80909'}
+  address:
+    street: 3650 Maizeland
+    city: Colorado Springs
+    state: co
+    zip: '80909'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.86791, lng: -104.76066}
+  geo:
+    lat: 38.86791
+    lng: -104.76066
   phone: (719) 520-2920
-  external_ids: {usda_master: Cycle 01_CO_SFSP_0091}
+  external_ids:
+    usda_master: Cycle 01_CO_SFSP_0091
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: co/colorado-springs/peak-vista-administrative-services-center
-  name: Peak Vista Administrative Services Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 3205 N Academy Blvd, Suite 130
-    city: Colorado Springs
-    state: co
-    zip: '80917'
-  place: 0816000
-  geo:
-    lat: 38.87854
-    lng: -104.75612
-  phone: 719-632-5700
-  website: https://www.peakvista.org
-  external_ids:
-    bphc: BPS-H80-014303
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: co/colorado-springs/peak-vista-pharmacy-at-academy
-  name: Peak Vista Pharmacy at Academy
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 3207 N Academy Blvd STE 1200
-    city: Colorado Springs
-    state: co
-    zip: '80917'
-  place: 0816000
-  geo:
-    lat: 38.87849
-    lng: -104.75697
-  phone: 719-344-6398
-  website: https://www.peakvista.org
-  external_ids:
-    bphc: BPS-H80-012601
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -1497,12 +1522,14 @@
   - Persons with traumatic brain injury (TBI)
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
     'on': '2026-07-19'
     method: api
+  geo: {lat: 38.92517, lng: -104.79116}
 - id: co/colorado-springs/pediatric-health-center-at-international-circle
   name: Pediatric Health Center at International Circle
   categories:
@@ -1590,6 +1617,8 @@
     city: Colorado Springs
     state: co
     zip: '80910'
+  description: Head Start early childhood program — 16 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.8113
@@ -1610,6 +1639,8 @@
     city: Colorado Springs
     state: co
     zip: '80906'
+  description: Head Start early childhood program — 63 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.76411
@@ -1629,6 +1660,8 @@
     city: Colorado Springs
     state: co
     zip: '80909'
+  description: Head Start early childhood program — 15 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.84581
@@ -1666,6 +1699,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1690,6 +1727,7 @@
   website: https://www.rivendell-health.com
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1723,6 +1761,7 @@
   - Young adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1760,6 +1799,7 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1810,6 +1850,8 @@
     city: Colorado Springs
     state: co
     zip: '80905'
+  description: Head Start early childhood program — 30 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.80586
@@ -1829,6 +1871,8 @@
     city: Colorado Springs
     state: co
     zip: '80904'
+  description: Head Start early childhood program — 25 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.84308
@@ -1937,6 +1981,8 @@
     city: Colorado Springs
     state: co
     zip: '80909'
+  description: Head Start early childhood program — 20 funded slots; operated by Community Partnership
+    For Child Development.
   place: 0816000
   geo:
     lat: 38.86076
@@ -1951,12 +1997,21 @@
   name: Wilson Elementary School
   categories:
   - meal-program
-  address: {street: 1409 Dereamer Cr., city: Colorado Springs, state: co, zip: '80915'}
+  address:
+    street: 1409 Dereamer Cr.
+    city: Colorado Springs
+    state: co
+    zip: '80915'
   description: Free summer meals for kids and teens (2026 season) — sponsored by COLORADO SPRINGS 11.
   place: 0816000
-  geo: {lat: 38.8532, lng: -104.7468}
+  geo:
+    lat: 38.8532
+    lng: -104.7468
   phone: (719) 250-2933
-  external_ids: {usda_master: Cycle 06_CO_SFSP_0207}
+  external_ids:
+    usda_master: Cycle 06_CO_SFSP_0207
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

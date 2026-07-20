@@ -16,6 +16,7 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -26,21 +27,14 @@
   name: CHS-KC-EHS
   categories:
   - child-care
-  address:
-    street: 1401 Old Fredericksburg Rd
-    city: Culpeper
-    state: va
-    zip: '22701'
+  address: {street: 1401 Old Fredericksburg Rd, city: Culpeper, state: va, zip: '22701'}
+  description: Head Start early childhood program — 80 funded slots; operated by CHS-KS-EHS.
   place: '5120752'
-  geo:
-    lat: 38.46311
-    lng: -77.99615
+  geo: {lat: 38.46311, lng: -77.99615}
   phone: 540-829-2330
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/culpeper/culpeper-county-human-services
   name: Culpeper County Human Services
   categories:
@@ -59,25 +53,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.4521
+    lng: -77.98817
 - id: va/culpeper/culpeper-human-services-head-start
   name: Culpeper Human Services Head Start
   categories:
   - child-care
-  address:
-    street: 1401 Old Fredericksburg Rd
-    city: Culpeper
-    state: va
-    zip: '22701'
+  address: {street: 1401 Old Fredericksburg Rd, city: Culpeper, state: va, zip: '22701'}
+  description: Head Start early childhood program — 128 funded slots; operated by Culpeper Human Services-Head
+    Start.
   place: '5120752'
-  geo:
-    lat: 38.46311
-    lng: -77.99615
+  geo: {lat: 38.46311, lng: -77.99615}
   phone: 540-829-2330
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/culpeper/culpeper-treatment-services
   name: Culpeper Treatment Services
   categories:
@@ -97,6 +88,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -122,6 +114,7 @@
   services:
   - Outpatient
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -150,6 +143,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -173,6 +167,10 @@
   - Short-term residential
   - Adult women
   - Adult men
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -183,15 +181,24 @@
   name: Reformation Lutheran
   categories:
   - meal-program
-  address: {street: 601 Madison Road, city: Culpeper, state: va, zip: '22701'}
+  address:
+    street: 601 Madison Road
+    city: Culpeper
+    state: va
+    zip: '22701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Culpeper Human Services.
   place: '5120752'
-  geo: {lat: 38.45865, lng: -78.01417}
+  geo:
+    lat: 38.45865
+    lng: -78.01417
   phone: (540) 829-2124
-  external_ids: {usda_master: Cycle 03_VA_SFSP_0889}
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_0889
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/culpeper/savida-health-culpeper
   name: SaVida Health Culpeper
   categories:
@@ -211,6 +218,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -221,12 +229,21 @@
   name: Wolford Street
   categories:
   - meal-program
-  address: {street: 450 Wolford Street, city: Culpeper, state: va, zip: '22701'}
+  address:
+    street: 450 Wolford Street
+    city: Culpeper
+    state: va
+    zip: '22701'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Culpeper Human Services.
   place: '5120752'
-  geo: {lat: 38.46356, lng: -77.99511}
+  geo:
+    lat: 38.46356
+    lng: -77.99511
   phone: (540) 829-2124
-  external_ids: {usda_master: Cycle 03_VA_SFSP_0888}
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_0888
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

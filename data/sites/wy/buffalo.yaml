@@ -2,21 +2,14 @@
   name: Absaroka Head Start Buffalo Center
   categories:
   - child-care
-  address:
-    street: 621 W Fetterman St
-    city: Buffalo
-    state: wy
-    zip: '82834'
+  address: {street: 621 W Fetterman St, city: Buffalo, state: wy, zip: '82834'}
+  description: Head Start early childhood program — 17 funded slots; operated by Absaroka, Inc..
   place: '5610685'
-  geo:
-    lat: 44.34634
-    lng: -106.71077
+  geo: {lat: 44.34634, lng: -106.71077}
   phone: 307-684-2873
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: wy/buffalo/housing-authority-of-the-city-of-buffalo
   name: Housing Authority Of The City Of Buffalo
   categories:
@@ -55,20 +48,32 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.35155
+    lng: -106.69895
 - id: wy/buffalo/johnson-county-library
   name: Johnson County Library
   categories:
   - meal-program
-  address: {street: 171 North Adams Ave, city: Buffalo, state: wy, zip: '82834'}
+  address:
+    street: 171 North Adams Ave
+    city: Buffalo
+    state: wy
+    zip: '82834'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Johnson County Friends
     Feeding Friends.
   place: '5610685'
-  geo: {lat: 44.3491, lng: -106.70048}
+  geo:
+    lat: 44.3491
+    lng: -106.70048
   phone: (307) 684-5546
-  external_ids: {usda_master: Cycle 04_WY_SFSP_0021}
+  external_ids:
+    usda_master: Cycle 04_WY_SFSP_0021
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wy/buffalo/volunteers-of-america-northern-rockies-buffalo-c
   name: Volunteers of America Northern Rockies Buffalo Clinic
   categories:
@@ -94,6 +99,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

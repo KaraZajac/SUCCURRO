@@ -2,21 +2,15 @@
   name: Bauer Head Start School Readiness Academy
   categories:
   - child-care
-  address:
-    street: 108 NW 9th St
-    city: Big Spring
-    state: tx
-    zip: '79720'
+  address: {street: 108 NW 9th St, city: Big Spring, state: tx, zip: '79720'}
+  description: Head Start early childhood program — 24 funded slots; operated by Greater Opportunities
+    of Permian Basin, Inc..
   place: '4808236'
-  geo:
-    lat: 32.26185
-    lng: -101.48152
+  geo: {lat: 32.26185, lng: -101.48152}
   phone: 432-267-7452
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/big-spring/big-spring-2-va-mobile-medical-unit
   name: Big Spring 2 VA Mobile Medical Unit
   categories: &id001
@@ -135,14 +129,23 @@
   name: Big Spring Junior High
   categories:
   - meal-program
-  address: {street: 624 E 6Th St, city: Big Spring, state: tx, zip: '79720'}
+  address:
+    street: 624 E 6Th St
+    city: Big Spring
+    state: tx
+    zip: '79720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BIG SPRING ISD.
   place: '4808236'
-  geo: {lat: 32.25196, lng: -101.46938}
-  external_ids: {usda_master: Cycle 06_TX_SSO_0271}
+  geo:
+    lat: 32.25196
+    lng: -101.46938
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_0271
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/big-spring/big-spring-state-hospital
   name: Big Spring State Hospital
   categories:
@@ -166,6 +169,10 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -289,14 +296,23 @@
   name: Washington El
   categories:
   - meal-program
-  address: {street: 1201 N Birdwell Ln, city: Big Spring, state: tx, zip: '79720'}
+  address:
+    street: 1201 N Birdwell Ln
+    city: Big Spring
+    state: tx
+    zip: '79720'
   description: Free summer meals for kids and teens (2026 season) — sponsored by BIG SPRING ISD.
   place: '4808236'
-  geo: {lat: 32.26849, lng: -101.45718}
-  external_ids: {usda_master: Cycle 06_TX_SSO_3367}
+  geo:
+    lat: 32.26849
+    lng: -101.45718
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_3367
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/big-spring/west-texas-centers-howard-county
   name: West Texas Centers Howard County
   categories:
@@ -326,6 +342,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -350,3 +367,6 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 32.23536
+    lng: -101.47076

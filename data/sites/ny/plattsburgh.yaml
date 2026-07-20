@@ -2,21 +2,15 @@
   name: Beekman
   categories:
   - child-care
-  address:
-    street: 127 Beekman St
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  address: {street: 127 Beekman St, city: Plattsburgh, state: ny, zip: '12901'}
+  description: Head Start early childhood program — 18 funded slots; operated by Joint Council For Economic
+    Opportunity , Inc.
   place: '3658574'
-  geo:
-    lat: 44.7044
-    lng: -73.4687
+  geo: {lat: 44.7044, lng: -73.4687}
   phone: 518-563-1110
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/behavioral-health-services-north-inc-bhsn-adult
   name: Behavioral Health Services North Inc BHSN Adult Crisis Residence
   categories:
@@ -44,6 +38,11 @@
   - Persons with eating disorders
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  languages:
+  - en
+  - es
+  - fr
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -75,6 +74,11 @@
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  - fr
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -100,6 +104,7 @@
   services:
   - Outpatient
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -126,6 +131,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -150,6 +156,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.69525
+    lng: -73.45233
 - id: ny/plattsburgh/county-office-for-the-aging
   name: County Office for the Aging
   categories:
@@ -166,38 +175,44 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.69879
+    lng: -73.45309
 - id: ny/plattsburgh/cumberland-head-elementary-school
   name: Cumberland Head Elementary School
   categories:
   - meal-program
-  address: {street: 1187 Cumberland Head Rd, city: Plattsburgh, state: ny, zip: '12901'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Beekmantown CSD.
-  place: '3658574'
-  geo: {lat: 44.72054, lng: -73.39052}
-  phone: (518) 563-8685
-  external_ids: {usda_master: Cycle 05_NY_SFSP_0121}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: ny/plattsburgh/cumberland-head-modular
-  name: Cumberland Head Modular
-  categories:
-  - child-care
   address:
     street: 1187 Cumberland Head Rd
     city: Plattsburgh
     state: ny
     zip: '12901'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Beekmantown CSD.
   place: '3658574'
   geo:
-    lat: 44.71937
-    lng: -73.39168
-  phone: 518-563-5098
+    lat: 44.72054
+    lng: -73.39052
+  phone: (518) 563-8685
+  external_ids:
+    usda_master: Cycle 05_NY_SFSP_0121
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/plattsburgh/cumberland-head-modular
+  name: Cumberland Head Modular
+  categories:
+  - child-care
+  address: {street: 1187 Cumberland Head Rd, city: Plattsburgh, state: ny, zip: '12901'}
+  description: Head Start early childhood program — 8 funded slots; operated by Joint Council For Economic
+    Opportunity , Inc.
+  place: '3658574'
+  geo: {lat: 44.71937, lng: -73.39168}
+  phone: 518-563-5098
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/cvph-medical-center-behavioral-health
   name: CVPH Medical Center Behavioral Health
   categories:
@@ -217,6 +232,7 @@
   - Hospital inpatient/24-hour hospital inpatient
   - Young adults
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -227,21 +243,15 @@
   name: EHS Home based 1
   categories:
   - child-care
-  address:
-    street: 49 Broad St
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  address: {street: 49 Broad St, city: Plattsburgh, state: ny, zip: '12901'}
+  description: Head Start early childhood program — 12 funded slots; operated by Joint Council For Economic
+    Opportunity , Inc.
   place: '3658574'
-  geo:
-    lat: 44.69411
-    lng: -73.45872
+  geo: {lat: 44.69411, lng: -73.45872}
   phone: 518-561-6310
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/jceo
   name: JCEO
   categories:
@@ -259,45 +269,35 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 44.69696
+    lng: -73.45309
 - id: ny/plattsburgh/peru-and-saranac-hs-ehs
   name: Peru and Saranac HS/EHS
   categories:
   - child-care
-  address:
-    street: 11 Big Hank Plaza
-    street2: Military Turnpike
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  address: {street: 11 Big Hank Plaza, street2: Military Turnpike, city: Plattsburgh, state: ny, zip: '12901'}
+  description: Head Start early childhood program — 35 funded slots; operated by Joint Council For Economic
+    Opportunity , Inc.
   place: '3658574'
-  geo:
-    lat: 44.68904
-    lng: -73.50722
+  geo: {lat: 44.68904, lng: -73.50722}
   phone: 518-561-1373
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/plattsburgh-city-south
   name: Plattsburgh City South
   categories:
   - child-care
-  address:
-    street: 4917 S Catherine St
-    city: Plattsburgh
-    state: ny
-    zip: '12901'
+  address: {street: 4917 S Catherine St, city: Plattsburgh, state: ny, zip: '12901'}
+  description: Head Start early childhood program — 18 funded slots; operated by Joint Council For Economic
+    Opportunity , Inc.
   place: '3658574'
-  geo:
-    lat: 44.68393
-    lng: -73.45995
+  geo: {lat: 44.68393, lng: -73.45995}
   phone: 518-561-2757
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ny/plattsburgh/plattsburgh-family-health
   name: Plattsburgh Family Health
   categories:

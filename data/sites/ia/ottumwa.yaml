@@ -2,28 +2,46 @@
   name: Eisenhower Elementary School
   categories:
   - meal-program
-  address: {street: 2624 Marilyn Road, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 2624 Marilyn Road
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ottumwa Comm School District.
   place: '1960465'
-  geo: {lat: 41.05764, lng: -92.41251}
+  geo:
+    lat: 41.05764
+    lng: -92.41251
   phone: (641) 683-1190
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0104}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0104
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/ottumwa/evans-junior-high-school
   name: Evans Junior High School
   categories:
   - meal-program
-  address: {street: 812 Chester Avenue, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 812 Chester Avenue
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ottumwa Comm School District.
   place: '1960465'
-  geo: {lat: 41.0038, lng: -92.43432}
+  geo:
+    lat: 41.0038
+    lng: -92.43432
   phone: (641) 683-1190
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0105}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0105
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/ottumwa/first-resources-corporation-hope-house-residenti
   name: First Resources Corporation Hope House Residential
   categories:
@@ -43,6 +61,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Short-term residential
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -68,6 +87,7 @@
   - Residential/24-hour residential
   - Long-term residential
   - Short-term residential
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -93,6 +113,7 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -103,15 +124,24 @@
   name: Ottumwa High School
   categories:
   - meal-program
-  address: {street: 501 East Second Street, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 501 East Second Street
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ottumwa Comm School District.
   place: '1960465'
-  geo: {lat: 41.01478, lng: -92.40652}
+  geo:
+    lat: 41.01478
+    lng: -92.40652
   phone: (641) 683-1190
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0107}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0107
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/ottumwa/ottumwa-housing-authority
   name: Ottumwa Housing Authority
   categories:
@@ -173,29 +203,6 @@
     va: vha_636GS
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ia/ottumwa/rhchc-administrative-offices
-  name: RHCHC Administrative Offices
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 116 W Main St
-    city: Ottumwa
-    state: ia
-    zip: '52501'
-  place: '1960465'
-  geo:
-    lat: 41.01817
-    lng: -92.41361
-  phone: 641-954-9971
-  website: http://www.riverhillshealth.org
-  external_ids:
-    bphc: BPS-H80-032108
-  sources:
-  - hrsa/health-center-sites
   verified:
     'on': '2026-07-19'
     method: api
@@ -395,6 +402,7 @@
   website: https://www.riverhillshealth.org
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -405,22 +413,15 @@
   name: Sieda Child Development Center-Head Start
   categories:
   - child-care
-  address:
-    street: 613 Indian Hills Dr
-    street2: Bldg 16
-    city: Ottumwa
-    state: ia
-    zip: '52501'
+  address: {street: 613 Indian Hills Dr, street2: Bldg 16, city: Ottumwa, state: ia, zip: '52501'}
+  description: Head Start early childhood program — 44 funded slots; operated by Southern Iowa Economic
+    Development Association.
   place: '1960465'
-  geo:
-    lat: 41.04705
-    lng: -92.39136
+  geo: {lat: 41.04705, lng: -92.39136}
   phone: 641-329-4332
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/ottumwa/sieda-community-action
   name: Sieda Community Action
   categories:
@@ -439,25 +440,22 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 41.02488
+    lng: -92.42033
 - id: ia/ottumwa/sieda-head-start-wapello-county-presbyterian
   name: Sieda Head Start- Wapello County-Presbyterian
   categories:
   - child-care
-  address:
-    street: 228 W 4th St
-    city: Ottumwa
-    state: ia
-    zip: '52501'
+  address: {street: 228 W 4th St, city: Ottumwa, state: ia, zip: '52501'}
+  description: Head Start early childhood program — 16 funded slots; operated by Southern Iowa Economic
+    Development Association.
   place: '1960465'
-  geo:
-    lat: 41.02077
-    lng: -92.41323
+  geo: {lat: 41.02077, lng: -92.41323}
   phone: 641-329-4165
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ia/ottumwa/southern-iowa-economic-dev-association-sieda-beh
   name: Southern Iowa Economic Dev Association (SIEDA)/Behav Health and Trt Services
   categories:
@@ -484,6 +482,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -515,6 +514,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -525,25 +525,43 @@
   name: Taft Circle Apartments
   categories:
   - meal-program
-  address: {street: 100 Taft Circle, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 100 Taft Circle
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ottumwa Comm School District.
   place: '1960465'
-  geo: {lat: 41.03966, lng: -92.43906}
+  geo:
+    lat: 41.03966
+    lng: -92.43906
   phone: (641) 683-1190
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0110}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0110
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/ottumwa/ufcw-local-230-union-hall
   name: Ufcw Local 230 Union Hall
   categories:
   - meal-program
-  address: {street: 1305 E Mary Street, city: Ottumwa, state: ia, zip: '52501'}
+  address:
+    street: 1305 E Mary Street
+    city: Ottumwa
+    state: ia
+    zip: '52501'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Ottumwa Comm School District.
   place: '1960465'
-  geo: {lat: 40.99485, lng: -92.40629}
+  geo:
+    lat: 40.99485
+    lng: -92.40629
   phone: (641) 683-1190
-  external_ids: {usda_master: Cycle 04_IA_SFSP_0111}
+  external_ids:
+    usda_master: Cycle 04_IA_SFSP_0111
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

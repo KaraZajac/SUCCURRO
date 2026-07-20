@@ -15,35 +15,41 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 42.87592
+    lng: -100.55079
 - id: ne/valentine/valentine
   name: Valentine
   categories:
   - child-care
-  address:
-    street: 615 E 5th St
-    city: Valentine
-    state: ne
-    zip: '69201'
+  address: {street: 615 E 5th St, city: Valentine, state: ne, zip: '69201'}
+  description: Head Start early childhood program — 24 funded slots; operated by Northwest Communtiy Action
+    Partnership.
   place: '3149950'
-  geo:
-    lat: 42.87753
-    lng: -100.54288
+  geo: {lat: 42.87753, lng: -100.54288}
   phone: 402-376-3237
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ne/valentine/valentine-high-school
   name: Valentine High School
   categories:
   - meal-program
-  address: {street: 431 N Green St, city: Valentine, state: ne, zip: '69201'}
+  address:
+    street: 431 N Green St
+    city: Valentine
+    state: ne
+    zip: '69201'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Valentine Community Schools.
   place: '3149950'
-  geo: {lat: 42.87716, lng: -100.53932}
+  geo:
+    lat: 42.87716
+    lng: -100.53932
   phone: (402) 376-1780
-  external_ids: {usda_master: Cycle 04_NE_SFSP_0215}
+  external_ids:
+    usda_master: Cycle 04_NE_SFSP_0215
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

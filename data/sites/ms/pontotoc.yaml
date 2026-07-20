@@ -61,6 +61,7 @@
   website: https://arcare.net
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -90,6 +91,7 @@
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -113,6 +115,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 34.27197
+    lng: -89.02262
 - id: ms/pontotoc/millcreek-of-pontotoc
   name: Millcreek of Pontotoc
   categories:
@@ -136,6 +141,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -169,40 +175,28 @@
   name: Pontotoc Head Start Center
   categories:
   - child-care
-  address:
-    street: 341 Ridge Dr
-    city: Pontotoc
-    state: ms
-    zip: '38863'
+  address: {street: 341 Ridge Dr, city: Pontotoc, state: ms, zip: '38863'}
+  description: Head Start early childhood program — 60 funded slots; operated by Mississippi Action for
+    Progress, Inc..
   place: '2859160'
-  geo:
-    lat: 34.25423
-    lng: -89.02032
+  geo: {lat: 34.25423, lng: -89.02032}
   phone: 662-509-7085
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/pontotoc/pontotoc-ii-center-partnership
   name: Pontotoc II Center (Partnership)
   categories:
   - child-care
-  address:
-    street: 145 Fred Dowdy Ave
-    city: Pontotoc
-    state: ms
-    zip: '38863'
+  address: {street: 145 Fred Dowdy Ave, city: Pontotoc, state: ms, zip: '38863'}
+  description: Head Start early childhood program — 40 funded slots; operated by Mississippi Action for
+    Progress, Inc..
   place: '2859160'
-  geo:
-    lat: 34.25204
-    lng: -89.01455
+  geo: {lat: 34.25204, lng: -89.01455}
   phone: 662-489-4973
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ms/pontotoc/the-housing-authority-of-the-city-of-pontotoc
   name: The Housing Authority Of The City Of Pontotoc
   categories:

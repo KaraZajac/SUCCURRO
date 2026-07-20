@@ -17,6 +17,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 31.5944
+    lng: -83.2563
 - id: ga/ocilla/housing-authority-of-the-city-of-ocilla
   name: Housing Authority Of The City Of Ocilla
   categories:
@@ -63,22 +66,15 @@
   name: IRWIN HEAD START
   categories:
   - child-care
-  address:
-    street: 517 E 4th St
-    street2: Ste A
-    city: Ocilla
-    state: ga
-    zip: '31774'
+  address: {street: 517 E 4th St, street2: Ste A, city: Ocilla, state: ga, zip: '31774'}
+  description: Head Start early childhood program — 17 funded slots; operated by Coastal Plain Area Economic
+    Opportunity Authority, Inc.
   place: '1357428'
-  geo:
-    lat: 31.59421
-    lng: -83.24358
+  geo: {lat: 31.59421, lng: -83.24358}
   phone: 229-468-5712
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: ga/ocilla/kid-s-health-ic-schools
   name: Kid's Health - IC Schools
   categories:
@@ -105,30 +101,48 @@
   name: Ocilla Community Center
   categories:
   - meal-program
-  address: {street: 420 N Oak St, city: Ocilla, state: ga, zip: '31774'}
+  address:
+    street: 420 N Oak St
+    city: Ocilla
+    state: ga
+    zip: '31774'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Second Harvest of South
     Georgia, Inc..
   place: '1357428'
-  geo: {lat: 31.59872, lng: -83.24465}
+  geo:
+    lat: 31.59872
+    lng: -83.24465
   phone: (229) 468-5141
-  external_ids: {usda_master: Cycle 03_GA_SFSP_0103}
+  external_ids:
+    usda_master: Cycle 03_GA_SFSP_0103
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/ocilla/ocilla-community-center-2
   name: Ocilla Community Center
   categories:
   - meal-program
-  address: {street: 402 E 4Th Street, city: Ocilla, state: ga, zip: '31774'}
+  address:
+    street: 402 E 4Th Street
+    city: Ocilla
+    state: ga
+    zip: '31774'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Second Harvest of South
     Georgia, Inc..
   place: '1357428'
-  geo: {lat: 31.59419, lng: -83.24607}
+  geo:
+    lat: 31.59419
+    lng: -83.24607
   phone: (229) 468-5141
-  external_ids: {usda_master: Cycle 05_GA_SFSP_0126}
+  external_ids:
+    usda_master: Cycle 05_GA_SFSP_0126
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ga/ocilla/south-central-family-health-care
   name: South Central Family Health Care
   categories:
@@ -146,50 +160,6 @@
   phone: 229-468-5020
   external_ids:
     bphc: BPS-H80-008608
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ga/ocilla/south-central-primary-care-center-administrative
-  name: South Central Primary Care Center - Administrative Building
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 204 E 4th St
-    city: Ocilla
-    state: ga
-    zip: '31774'
-  place: '1357428'
-  geo:
-    lat: 31.59451
-    lng: -83.24901
-  phone: 229-468-9166
-  external_ids:
-    bphc: BPS-H80-019544
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: ga/ocilla/south-central-primary-care-center-inc-operations
-  name: South Central Primary Care Center, Inc.- Operations Building
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 406 W 5th St
-    city: Ocilla
-    state: ga
-    zip: '31774'
-  place: '1357428'
-  geo:
-    lat: 31.59523
-    lng: -83.25521
-  phone: 229-468-5252
-  external_ids:
-    bphc: BPS-H80-012847
   sources:
   - hrsa/health-center-sites
   verified:

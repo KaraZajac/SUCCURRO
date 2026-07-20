@@ -1,25 +1,3 @@
-- id: tx/mason/frontera-healthcare-network-mason-admin
-  name: Frontera Healthcare Network - Mason Admin
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 204 E College Ave
-    city: Mason
-    state: tx
-    zip: '76856'
-  place: '4846968'
-  geo:
-    lat: 30.74444
-    lng: -99.22897
-  phone: 325-347-5926
-  external_ids:
-    bphc: BPS-H80-037899
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
 - id: tx/mason/frontera-healthcare-network-mason-clinic
   name: Frontera Healthcare Network Mason Clinic
   categories:
@@ -66,30 +44,33 @@
   name: Mason Head Start
   categories:
   - child-care
-  address:
-    street: 505 Millard St
-    city: Mason
-    state: tx
-    zip: '76856'
+  address: {street: 505 Millard St, city: Mason, state: tx, zip: '76856'}
+  description: Head Start early childhood program — 17 funded slots; operated by Hill Country Community
+    Action Association, Inc..
   place: '4846968'
-  geo:
-    lat: 30.75777
-    lng: -99.23383
+  geo: {lat: 30.75777, lng: -99.23383}
   phone: 325-347-5852
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/mason/mason-junior-high
   name: Mason Junior High
   categories:
   - meal-program
-  address: {street: 807 W. College Ave., city: Mason, state: tx, zip: '76856'}
+  address:
+    street: 807 W. College Ave.
+    city: Mason
+    state: tx
+    zip: '76856'
   description: Free summer meals for kids and teens (2026 season) — sponsored by MASON ISD.
   place: '4846968'
-  geo: {lat: 30.74408, lng: -99.23961}
-  external_ids: {usda_master: Cycle 06_TX_SSO_2122}
+  geo:
+    lat: 30.74408
+    lng: -99.23961
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_2122
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api

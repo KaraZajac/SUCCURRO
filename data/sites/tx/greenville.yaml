@@ -4,29 +4,6 @@
   - community-health-center
   cost: sliding-scale
   address:
-    street: 4500 Wesley St
-    city: Greenville
-    state: tx
-    zip: '75401'
-  place: '4830920'
-  geo:
-    lat: 33.12479
-    lng: -96.10952
-  phone: 903-455-5986
-  website: https://carevide.org
-  external_ids:
-    bphc: BPS-H80-001507
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: tx/greenville/carevide-2
-  name: Carevide
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
     street: 4311 Wesley St
     city: Greenville
     state: tx
@@ -39,29 +16,6 @@
   website: https://carevide.org
   external_ids:
     bphc: BPS-H80-004998
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: tx/greenville/carevide-3
-  name: Carevide
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 2824 Terrell Rd
-    city: Greenville
-    state: tx
-    zip: '75402'
-  place: '4830920'
-  geo:
-    lat: 33.10778
-    lng: -96.11089
-  phone: 903-455-5958
-  website: https://carevide.org
-  external_ids:
-    bphc: BPS-H80-015164
   sources:
   - hrsa/health-center-sites
   verified:
@@ -117,14 +71,23 @@
   name: Carver Elementary
   categories:
   - meal-program
-  address: {street: 2110 College St, city: Greenville, state: tx, zip: '75401'}
+  address:
+    street: 2110 College St
+    city: Greenville
+    state: tx
+    zip: '75401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by GREENVILLE ISD.
   place: '4830920'
-  geo: {lat: 33.1425, lng: -96.12502}
-  external_ids: {usda_master: Cycle 06_TX_SSO_0534}
+  geo:
+    lat: 33.1425
+    lng: -96.12502
+  external_ids:
+    usda_master: Cycle 06_TX_SSO_0534
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: tx/greenville/greenville-housing-authority
   name: Greenville Housing Authority
   categories:
@@ -206,6 +169,7 @@
   - Young adults
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -216,21 +180,15 @@
   name: L. P. Waters  ECLC
   categories:
   - child-care
-  address:
-    street: 2504 Carver St
-    city: Greenville
-    state: tx
-    zip: '75401'
+  address: {street: 2504 Carver St, city: Greenville, state: tx, zip: '75401'}
+  description: Head Start early childhood program — 101 funded slots; operated by Greenville Independent
+    School District.
   place: '4830920'
-  geo:
-    lat: 33.139
-    lng: -96.13418
+  geo: {lat: 33.139, lng: -96.13418}
   phone: 903-457-2680
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: tx/greenville/lakes-regional-community-center
   name: Lakes Regional Community Center
   categories:
@@ -262,6 +220,7 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment

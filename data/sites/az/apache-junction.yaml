@@ -25,34 +25,37 @@
   name: Apache Junction Head Start & Early Head Start
   categories:
   - child-care
-  address:
-    street: 900 N Plaza Dr
-    city: Apache Junction
-    state: az
-    zip: '85120'
+  address: {street: 900 N Plaza Dr, city: Apache Junction, state: az, zip: '85120'}
+  description: Head Start early childhood program — 8 funded slots; operated by Pinal Gila Community Child
+    Services, Inc..
   place: 0402830
-  geo:
-    lat: 33.42369
-    lng: -111.55096
+  geo: {lat: 33.42369, lng: -111.55096}
   phone: 480-982-4516
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: az/apache-junction/apache-junction-high-school
   name: Apache Junction High School
   categories:
   - meal-program
-  address: {street: 2525 S Ironwood, city: Apache Junction, state: az, zip: '85120'}
+  address:
+    street: 2525 S Ironwood
+    city: Apache Junction
+    state: az
+    zip: '85120'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Apache Junction Unified
     District.
   place: 0402830
-  geo: {lat: 33.39082, lng: -111.5626}
-  external_ids: {usda_master: Cycle 03_AZ_SSO_0046}
+  geo:
+    lat: 33.39082
+    lng: -111.5626
+  external_ids:
+    usda_master: Cycle 03_AZ_SSO_0046
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/apache-junction/averys-house
   name: Averys House
   categories:
@@ -72,6 +75,7 @@
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -101,6 +105,7 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -111,28 +116,46 @@
   name: Cactus Canyon Junior High
   categories:
   - meal-program
-  address: {street: 801 W Southern Ave, city: Apache Junction, state: az, zip: '85120'}
+  address:
+    street: 801 W Southern Ave
+    city: Apache Junction
+    state: az
+    zip: '85120'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Apache Junction Unified
     District.
   place: 0402830
-  geo: {lat: 33.3933, lng: -111.55553}
-  external_ids: {usda_master: Cycle 03_AZ_SSO_0047}
+  geo:
+    lat: 33.3933
+    lng: -111.55553
+  external_ids:
+    usda_master: Cycle 03_AZ_SSO_0047
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/apache-junction/four-peaks-elementary-school
   name: Four Peaks Elementary School
   categories:
   - meal-program
-  address: {street: 1785 N Idaho Rd, city: Apache Junction, state: az, zip: '85119'}
+  address:
+    street: 1785 N Idaho Rd
+    city: Apache Junction
+    state: az
+    zip: '85119'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Apache Junction Unified
     District.
   place: 0402830
-  geo: {lat: 33.43167, lng: -111.54607}
-  external_ids: {usda_master: Cycle 03_AZ_SSO_0024}
+  geo:
+    lat: 33.43167
+    lng: -111.54607
+  external_ids:
+    usda_master: Cycle 03_AZ_SSO_0024
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: az/apache-junction/horizon-health-and-wellness
   name: Horizon Health and Wellness
   categories:
@@ -154,6 +177,10 @@
   - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

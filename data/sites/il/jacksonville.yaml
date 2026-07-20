@@ -18,6 +18,7 @@
   - Outpatient
   - Partial hospitalization/day treatment
   - Residential/24-hour residential
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -28,34 +29,37 @@
   name: Il Sch For The Visually Impaired
   categories:
   - meal-program
-  address: {street: 658 E State St, city: Jacksonville, state: il, zip: '62650'}
+  address:
+    street: 658 E State St
+    city: Jacksonville
+    state: il
+    zip: '62650'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Dept of Human Services.
   place: '1738115'
-  geo: {lat: 39.73423, lng: -90.21731}
+  geo:
+    lat: 39.73423
+    lng: -90.21731
   phone: (217) 479-4400
-  external_ids: {usda_master: Cycle 01_IL_SSO_0072}
+  external_ids:
+    usda_master: Cycle 01_IL_SSO_0072
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: il/jacksonville/just-for-kids
   name: Just For Kids
   categories:
   - child-care
-  address:
-    street: 400 W State St
-    city: Jacksonville
-    state: il
-    zip: '62650'
+  address: {street: 400 W State St, city: Jacksonville, state: il, zip: '62650'}
+  description: Head Start early childhood program — 36 funded slots; operated by Springfield Urban League,
+    Inc..
   place: '1738115'
-  geo:
-    lat: 39.73434
-    lng: -90.23407
+  geo: {lat: 39.73434, lng: -90.23407}
   phone: 217-479-8272
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: il/jacksonville/mcs-community-services
   name: MCS Community Services
   categories:
@@ -74,6 +78,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 39.73425
+    lng: -90.23286
 - id: il/jacksonville/morgan-county-housing-authority
   name: Morgan County Housing Authority
   categories:
@@ -115,6 +122,7 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment

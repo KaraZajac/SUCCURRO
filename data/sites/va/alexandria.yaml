@@ -2,16 +2,25 @@
   name: Alexandria City High
   categories:
   - meal-program
-  address: {street: 3330 King St, city: Alexandria, state: va, zip: '22302'}
+  address:
+    street: 3330 King St
+    city: Alexandria
+    state: va
+    zip: '22302'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.82496, lng: -77.08461}
+  geo:
+    lat: 38.82496
+    lng: -77.08461
   phone: (703) 824-6640
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0771}
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0771
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/alexandria-community-services-board
   name: Alexandria Community Services Board
   categories:
@@ -43,6 +52,12 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
+  - ar
+  - fr
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -67,6 +82,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.83044
+    lng: -77.1163
 - id: va/alexandria/alexandria-little-free-pantry
   name: Alexandria Little Free Pantry
   categories:
@@ -149,15 +167,24 @@
   name: Audubon Mobile Home Park
   categories:
   - meal-program
-  address: {street: 7930 Audubon Avenue, city: Alexandria, state: va, zip: '22306'}
+  address:
+    street: 7930 Audubon Avenue
+    city: Alexandria
+    state: va
+    zip: '22306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Capital Area Food Bank.
   place: '5101000'
-  geo: {lat: 38.74228, lng: -77.08995}
+  geo:
+    lat: 38.74228
+    lng: -77.08995
   phone: (571) 482-4780
-  external_ids: {usda_master: Cycle 03_VA_SFSP_1195}
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_1195
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/bloom-health-centers
   name: Bloom Health Centers
   categories:
@@ -177,6 +204,7 @@
   services:
   - Outpatient
   - Partial hospitalization/day treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -187,66 +215,72 @@
   name: Bucknell Elem
   categories:
   - meal-program
-  address: {street: 6925 University Dr, city: Alexandria, state: va, zip: '22307'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
-    Schools.
-  place: '5101000'
-  geo: {lat: 38.76699, lng: -77.0749}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0299}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: va/alexandria/bucknell-elementary
-  name: Bucknell Elementary
-  categories:
-  - child-care
   address:
     street: 6925 University Dr
     city: Alexandria
     state: va
     zip: '22307'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
+    Schools.
   place: '5101000'
   geo:
-    lat: 38.76707
-    lng: -77.07279
-  phone: 703-660-2900
+    lat: 38.76699
+    lng: -77.0749
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0299
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/bucknell-elementary
+  name: Bucknell Elementary
+  categories:
+  - child-care
+  address: {street: 6925 University Dr, city: Alexandria, state: va, zip: '22307'}
+  description: Head Start early childhood program — 3 funded slots; operated by Fairfax County Board of
+    Supervisors.
+  place: '5101000'
+  geo: {lat: 38.76707, lng: -77.07279}
+  phone: 703-660-2900
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/cameron-elem
   name: Cameron Elem
   categories:
   - meal-program
-  address: {street: 3434 Campbell Dr, city: Alexandria, state: va, zip: '22303'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
-    Schools.
-  place: '5101000'
-  geo: {lat: 38.80036, lng: -77.09086}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0295}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: va/alexandria/cameron-elementary
-  name: Cameron Elementary
-  categories:
-  - child-care
   address:
     street: 3434 Campbell Dr
     city: Alexandria
     state: va
     zip: '22303'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
+    Schools.
   place: '5101000'
   geo:
-    lat: 38.80078
-    lng: -77.09151
-  phone: 703-329-2100
+    lat: 38.80036
+    lng: -77.09086
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0295
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/cameron-elementary
+  name: Cameron Elementary
+  categories:
+  - child-care
+  address: {street: 3434 Campbell Dr, city: Alexandria, state: va, zip: '22303'}
+  description: Head Start early childhood program — 10 funded slots; operated by Fairfax County Public
+    Schools.
+  place: '5101000'
+  geo: {lat: 38.80078, lng: -77.09151}
+  phone: 703-329-2100
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/center-for-discovery-alexandria
   name: Center for Discovery Alexandria
   categories:
@@ -268,6 +302,7 @@
   - Clients who have experienced trauma
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -278,21 +313,15 @@
   name: Cora Kelly
   categories:
   - child-care
-  address:
-    street: 3600 Commonwealth Ave
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 3600 Commonwealth Ave, city: Alexandria, state: va, zip: '22305'}
+  description: Head Start early childhood program — 16 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.8378
-    lng: -77.05762
+  geo: {lat: 38.8378, lng: -77.05762}
   phone: 703-459-3545
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/dale-street-community-garden-little-free-pantry
   name: Dale Street Community Garden Little Free Pantry
   categories:
@@ -345,15 +374,24 @@
   name: Douglas Macarthur Elem
   categories:
   - meal-program
-  address: {street: 1101 Janneys Ln, city: Alexandria, state: va, zip: '22302'}
+  address:
+    street: 1101 Janneys Ln
+    city: Alexandria
+    state: va
+    zip: '22302'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.81519, lng: -77.08357}
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0769}
+  geo:
+    lat: 38.81519
+    lng: -77.08357
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0769
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/embark-behavioral-health-alexandria
   name: Embark Behavioral Health Alexandria
   categories:
@@ -377,6 +415,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -405,6 +444,7 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -447,252 +487,250 @@
   name: Francis C. Hammond Middle
   categories:
   - meal-program
-  address: {street: 4646 Seminary Road, city: Alexandria, state: va, zip: '22304'}
+  address:
+    street: 4646 Seminary Road
+    city: Alexandria
+    state: va
+    zip: '22304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.82724, lng: -77.11007}
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0775}
+  geo:
+    lat: 38.82724
+    lng: -77.11007
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0775
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/george-washington
   name: George Washington
   categories:
   - child-care
-  address:
-    street: 1005 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
+  address: {street: 1005 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
+  description: Head Start early childhood program — 15 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.81586
-    lng: -77.05546
+  geo: {lat: 38.81586, lng: -77.05546}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/george-washington-middle-school-campagna-early-h
   name: George Washington Middle School--Campagna Early Head Start
   categories:
   - child-care
-  address:
-    street: 1005 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
+  address: {street: 1005 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
+  description: Head Start early childhood program — 24 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.81576
-    lng: -77.05522
+  geo: {lat: 38.81576, lng: -77.05522}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/glasgow-middle
   name: Glasgow Middle
   categories:
   - meal-program
-  address: {street: 4101 Fairfax Pkwy, city: Alexandria, state: va, zip: '22312'}
+  address:
+    street: 4101 Fairfax Pkwy
+    city: Alexandria
+    state: va
+    zip: '22312'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.83634, lng: -77.14119}
+  geo:
+    lat: 38.83634
+    lng: -77.14119
   phone: (703) 813-8721
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0281}
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0281
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/groveton-elem
   name: Groveton Elem
   categories:
   - meal-program
-  address: {street: 6900 Harrison Ln, city: Alexandria, state: va, zip: '22306'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
-    Schools.
-  place: '5101000'
-  geo: {lat: 38.76848, lng: -77.094}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0306}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: va/alexandria/groveton-elementary
-  name: Groveton Elementary
-  categories:
-  - child-care
   address:
     street: 6900 Harrison Ln
     city: Alexandria
     state: va
     zip: '22306'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
+    Schools.
   place: '5101000'
   geo:
-    lat: 38.76866
-    lng: -77.09497
-  phone: 703-718-7800
+    lat: 38.76848
+    lng: -77.094
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0306
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/groveton-elementary
+  name: Groveton Elementary
+  categories:
+  - child-care
+  address: {street: 6900 Harrison Ln, city: Alexandria, state: va, zip: '22306'}
+  description: Head Start early childhood program — 13 funded slots; operated by Fairfax County Public
+    Schools.
+  place: '5101000'
+  geo: {lat: 38.76866, lng: -77.09497}
+  phone: 703-718-7800
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/gum-springs-children-center
   name: Gum Springs Children Center
   categories:
   - child-care
-  address:
-    street: 8100 Fordson Rd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 8100 Fordson Rd, city: Alexandria, state: va, zip: '22306'}
+  description: Head Start early childhood program — 104 funded slots; operated by Fairfax County Board
+    of Supervisors.
   place: '5101000'
-  geo:
-    lat: 38.73825
-    lng: -77.08467
+  geo: {lat: 38.73825, lng: -77.08467}
   phone: 703-799-5760
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/gum-springs-glen
   name: Gum Springs Glen
   categories:
   - child-care
-  address:
-    street: 7839 Richmond Hwy
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7839 Richmond Hwy, city: Alexandria, state: va, zip: '22306'}
+  description: Head Start early childhood program — 48 funded slots; operated by Fairfax County Board
+    of Supervisors.
   place: '5101000'
-  geo:
-    lat: 38.74376
-    lng: -77.08334
+  geo: {lat: 38.74376, lng: -77.08334}
   phone: 703-799-3460
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/home-visitor
   name: Home Visitor
   categories:
   - child-care
-  address:
-    street: 418 S Washington St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 418 S Washington St, city: Alexandria, state: va, zip: '22314'}
+  description: Head Start early childhood program — 10 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.80118
-    lng: -77.0475
+  geo: {lat: 38.80118, lng: -77.0475}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/hybla-valley-elem
   name: Hybla Valley Elem
   categories:
   - meal-program
-  address: {street: 3415 Lockheed Blvd, city: Alexandria, state: va, zip: '22306'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
-    Schools.
-  place: '5101000'
-  geo: {lat: 38.75963, lng: -77.0892}
-  external_ids: {usda_master: Cycle 03_VA_SFSP_0242}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: va/alexandria/hybla-valley-elementary
-  name: Hybla Valley Elementary
-  categories:
-  - child-care
   address:
     street: 3415 Lockheed Blvd
     city: Alexandria
     state: va
     zip: '22306'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
+    Schools.
   place: '5101000'
   geo:
-    lat: 38.75873
-    lng: -77.09026
-  phone: 703-718-7000
+    lat: 38.75963
+    lng: -77.0892
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_0242
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/hybla-valley-elementary
+  name: Hybla Valley Elementary
+  categories:
+  - child-care
+  address: {street: 3415 Lockheed Blvd, city: Alexandria, state: va, zip: '22306'}
+  description: Head Start early childhood program — 9 funded slots; operated by Fairfax County Public
+    Schools.
+  place: '5101000'
+  geo: {lat: 38.75873, lng: -77.09026}
+  phone: 703-718-7000
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/james-k-polk-elem
   name: James K Polk Elem
   categories:
   - meal-program
-  address: {street: 5000 Polk Ave, city: Alexandria, state: va, zip: '22304'}
+  address:
+    street: 5000 Polk Ave
+    city: Alexandria
+    state: va
+    zip: '22304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.8221, lng: -77.11536}
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0772}
+  geo:
+    lat: 38.8221
+    lng: -77.11536
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0772
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/jefferson-houston
   name: Jefferson Houston
   categories:
   - child-care
-  address:
-    street: 1501 Cameron St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 1501 Cameron St, city: Alexandria, state: va, zip: '22314'}
+  description: Head Start early childhood program — 43 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.8082
-    lng: -77.05456
+  geo: {lat: 38.8082, lng: -77.05456}
   phone: 703-836-5774
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/john-adams
   name: John Adams
   categories:
   - child-care
+  address: {street: 5651 Rayburn Ave, city: Alexandria, state: va, zip: '22311'}
+  description: Head Start early childhood program — 110 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
+  place: '5101000'
+  geo: {lat: 38.83361, lng: -77.1257}
+  phone: 703-459-3545
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}
+- id: va/alexandria/john-adams-elem
+  name: John Adams Elem
+  categories:
+  - meal-program
   address:
     street: 5651 Rayburn Ave
     city: Alexandria
     state: va
     zip: '22311'
-  place: '5101000'
-  geo:
-    lat: 38.83361
-    lng: -77.1257
-  phone: 703-459-3545
-  sources:
-  - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
-- id: va/alexandria/john-adams-elem
-  name: John Adams Elem
-  categories:
-  - meal-program
-  address: {street: 5651 Rayburn Ave, city: Alexandria, state: va, zip: '22311'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.83252, lng: -77.12587}
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0773}
+  geo:
+    lat: 38.83252
+    lng: -77.12587
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0773
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/lifebulb-counseling-and-therapy
   name: Lifebulb Counseling and Therapy
   categories:
@@ -720,6 +758,7 @@
   - Clients who have experienced trauma
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -794,66 +833,72 @@
   name: Minnie Howard Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 3801 W Braddock Rd
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 3801 W Braddock Rd, city: Alexandria, state: va, zip: '22302'}
+  description: Head Start early childhood program — 34 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.82787
-    lng: -77.09521
+  geo: {lat: 38.82787, lng: -77.09521}
   phone: 703-824-6750
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/mount-vernon-elem
   name: Mount Vernon Elem
   categories:
   - meal-program
-  address: {street: 2601 Commonwealth Ave, city: Alexandria, state: va, zip: '22305'}
+  address:
+    street: 2601 Commonwealth Ave
+    city: Alexandria
+    state: va
+    zip: '22305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.82838, lng: -77.06061}
-  external_ids: {usda_master: Cycle 06_VA_SFSP_0774}
+  geo:
+    lat: 38.82838
+    lng: -77.06061
+  external_ids:
+    usda_master: Cycle 06_VA_SFSP_0774
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/mount-vernon-high
   name: Mount Vernon High
   categories:
   - meal-program
-  address: {street: 8515 Old Mount Vernon Rd, city: Alexandria, state: va, zip: '22309'}
+  address:
+    street: 8515 Old Mount Vernon Rd
+    city: Alexandria
+    state: va
+    zip: '22309'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.7272, lng: -77.09427}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0308}
+  geo:
+    lat: 38.7272
+    lng: -77.09427
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0308
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/mt-vernon-woods-elementary
   name: Mt. Vernon Woods Elementary
   categories:
   - child-care
-  address:
-    street: 4015 Fielding St
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 4015 Fielding St, city: Alexandria, state: va, zip: '22309'}
+  description: Head Start early childhood program — 6 funded slots; operated by Fairfax County Public
+    Schools.
   place: '5101000'
-  geo:
-    lat: 38.74233
-    lng: -77.09995
+  geo: {lat: 38.74233, lng: -77.09995}
   phone: 703-619-2814
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/national-capital-treatment-and-recover-recovery
   name: National Capital Treatment and Recover Recovery Haven
   categories:
@@ -877,6 +922,7 @@
   - Adult women
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1127,47 +1173,59 @@
   name: Parklawn Elementary
   categories:
   - child-care
-  address:
-    street: 4116 Braddock Rd
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 4116 Braddock Rd, city: Alexandria, state: va, zip: '22312'}
+  description: Head Start early childhood program — 16 funded slots; operated by Fairfax County Public
+    Schools.
   place: '5101000'
-  geo:
-    lat: 38.83371
-    lng: -77.15335
+  geo: {lat: 38.83371, lng: -77.15335}
   phone: 703-914-6941
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/riverside-elem
   name: Riverside Elem
   categories:
   - meal-program
-  address: {street: 8410 Old Mount Vernon Rd, city: Alexandria, state: va, zip: '22309'}
+  address:
+    street: 8410 Old Mount Vernon Rd
+    city: Alexandria
+    state: va
+    zip: '22309'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.72949, lng: -77.09367}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0254}
+  geo:
+    lat: 38.72949
+    lng: -77.09367
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0254
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/sandburg-middle
   name: Sandburg Middle
   categories:
   - meal-program
-  address: {street: 8428 Fort Hunt Rd, city: Alexandria, state: va, zip: '22308'}
+  address:
+    street: 8428 Fort Hunt Rd
+    city: Alexandria
+    state: va
+    zip: '22308'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.72705, lng: -77.0582}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0267}
+  geo:
+    lat: 38.72705
+    lng: -77.0582
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0267
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/sandstone-care-alexandria
   name: Sandstone Care Alexandria
   categories:
@@ -1192,6 +1250,7 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -1222,6 +1281,10 @@
   - Young adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -1232,109 +1295,126 @@
   name: St. James
   categories:
   - child-care
-  address:
-    street: 5140 Fillmore Ave
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5140 Fillmore Ave, city: Alexandria, state: va, zip: '22311'}
+  description: Head Start early childhood program — 35 funded slots; operated by Alexandria City Office
+    of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.83852
-    lng: -77.11674
+  geo: {lat: 38.83852, lng: -77.11674}
   phone: 703-459-3545
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/the-campagna-center-early-head-start-tiny-titans
   name: The Campagna Center Early Head Start Tiny Titans
   categories:
   - child-care
-  address:
-    street: 3330 King St
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 3330 King St, city: Alexandria, state: va, zip: '22302'}
+  description: Head Start early childhood program — 32 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.82469
-    lng: -77.08448
+  geo: {lat: 38.82469, lng: -77.08448}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: va/alexandria/west-potomac-high
   name: West Potomac High
   categories:
   - meal-program
-  address: {street: 6500 Quander Rd, city: Alexandria, state: va, zip: '22307'}
+  address:
+    street: 6500 Quander Rd
+    city: Alexandria
+    state: va
+    zip: '22307'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.77605, lng: -77.06967}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0286}
+  geo:
+    lat: 38.77605
+    lng: -77.06967
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0286
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/weyanoke-elem
   name: Weyanoke Elem
   categories:
   - meal-program
-  address: {street: 6520 Braddock Rd, city: Alexandria, state: va, zip: '22312'}
+  address:
+    street: 6520 Braddock Rd
+    city: Alexandria
+    state: va
+    zip: '22312'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo: {lat: 38.81929, lng: -77.16487}
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0290}
+  geo:
+    lat: 38.81929
+    lng: -77.16487
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0290
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/woodlawn-apartments
   name: Woodlawn Apartments
   categories:
   - meal-program
-  address: {street: 8488 Richmond Hwy, city: Alexandria, state: va, zip: '22309'}
+  address:
+    street: 8488 Richmond Hwy
+    city: Alexandria
+    state: va
+    zip: '22309'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Capital Area Food Bank.
   place: '5101000'
-  geo: {lat: 38.72833, lng: -77.11023}
+  geo:
+    lat: 38.72833
+    lng: -77.11023
   phone: (571) 482-4771
-  external_ids: {usda_master: Cycle 03_VA_SFSP_1196}
+  external_ids:
+    usda_master: Cycle 03_VA_SFSP_1196
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/alexandria/woodlawn-elem
   name: Woodlawn Elem
   categories:
   - meal-program
-  address: {street: 8505 Highland Ln, city: Alexandria, state: va, zip: '22309'}
-  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
-    Schools.
-  place: '5101000'
-  geo: {lat: 38.72584, lng: -77.1188}
-  phone: (703) 619-4821
-  external_ids: {usda_master: Cycle 08_VA_SFSP_0307}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: va/alexandria/woodlawn-elementary
-  name: Woodlawn Elementary
-  categories:
-  - child-care
   address:
     street: 8505 Highland Ln
     city: Alexandria
     state: va
     zip: '22309'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
+    Schools.
   place: '5101000'
   geo:
-    lat: 38.72637
-    lng: -77.11822
-  phone: 703-619-4800
+    lat: 38.72584
+    lng: -77.1188
+  phone: (703) 619-4821
+  external_ids:
+    usda_master: Cycle 08_VA_SFSP_0307
   sources:
-  - acf/head-start-locations
+  - usda/summer-meal-sites
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/alexandria/woodlawn-elementary
+  name: Woodlawn Elementary
+  categories:
+  - child-care
+  address: {street: 8505 Highland Ln, city: Alexandria, state: va, zip: '22309'}
+  description: Head Start early childhood program — 7 funded slots; operated by Fairfax County Public
+    Schools.
+  place: '5101000'
+  geo: {lat: 38.72637, lng: -77.11822}
+  phone: 703-619-4800
+  sources:
+  - acf/head-start-locations
+  verified: {'on': '2026-07-19', method: api}

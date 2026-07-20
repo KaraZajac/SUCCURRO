@@ -2,21 +2,15 @@
   name: Bedford Head Start
   categories:
   - child-care
-  address:
-    street: 710 6th St
-    city: Bedford
-    state: in
-    zip: '47421'
+  address: {street: 710 6th St, city: Bedford, state: in, zip: '47421'}
+  description: Head Start early childhood program — 102 funded slots; operated by Hoosier Uplands Head
+    Start.
   place: '1804114'
-  geo:
-    lat: 38.87308
-    lng: -86.48052
+  geo: {lat: 38.87308, lng: -86.48052}
   phone: 812-275-0052
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: in/bedford/centerstone-of-indiana-inc-centerstone-lawrence
   name: Centerstone of Indiana Inc Centerstone Lawrence County
   categories:
@@ -42,6 +36,7 @@
   - Veterans
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
@@ -67,6 +62,7 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -91,6 +87,9 @@
   verified:
     'on': '2026-07-19'
     method: scrape
+  geo:
+    lat: 38.87305
+    lng: -86.48048
 - id: in/bedford/housing-authority-city-of-bedford
   name: Housing Authority City Of Bedford
   categories:
@@ -177,6 +176,10 @@
   - Short-term residential
   - Veterans
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -203,6 +206,10 @@
   - Residential/24-hour residential
   - Veterans
   - Clients with co-occurring mental and substance use disorders
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
@@ -213,28 +220,46 @@
   name: Nc Bedford Middle School
   categories:
   - meal-program
-  address: {street: 1501 N St, city: Bedford, state: in, zip: '47421'}
+  address:
+    street: 1501 N St
+    city: Bedford
+    state: in
+    zip: '47421'
   description: Free summer meals for kids and teens (2026 season) — sponsored by North Lawrence Community
     Schools.
   place: '1804114'
-  geo: {lat: 38.86179, lng: -86.49012}
-  external_ids: {usda_master: Cycle 03_IN_SFSP_0522}
+  geo:
+    lat: 38.86179
+    lng: -86.49012
+  external_ids:
+    usda_master: Cycle 03_IN_SFSP_0522
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/bedford/nc-lawrence-county-fairgrounds
   name: Nc Lawrence County Fairgrounds
   categories:
   - meal-program
-  address: {street: 11261 Us Hwy 50 W, city: Bedford, state: in, zip: '47421'}
+  address:
+    street: 11261 Us Hwy 50 W
+    city: Bedford
+    state: in
+    zip: '47421'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Springville Community
     Academy.
   place: '1804114'
-  geo: {lat: 38.80571, lng: -86.52595}
-  external_ids: {usda_master: Cycle 05_IN_SFSP_1009}
+  geo:
+    lat: 38.80571
+    lng: -86.52595
+  external_ids:
+    usda_master: Cycle 05_IN_SFSP_1009
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/bedford/serenity-now-psychiatric-and-csl
   name: Serenity Now Psychiatric and Csl
   categories:
@@ -253,6 +278,7 @@
   website: https://serenitynowclinic.org/
   services:
   - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
