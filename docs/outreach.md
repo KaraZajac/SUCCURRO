@@ -25,6 +25,30 @@ ToS verification (2026-07-20):
 
 ---
 
+## 4. LGBT National Help Center — LGBT Near Me directory
+
+**To:** (contact on lgbtnearme.org / lgbthotline.org — their info@ address)
+**Subject:** Partnership request: LGBT Near Me resources in an open help-services directory
+
+Hello,
+
+I run SUCCURRO (succurro.org), a free, noncommercial directory of help and
+support services across the US — crisis lines, community centers, support
+groups, food and housing help — searchable by city and need. We already
+list your national hotlines (with attribution), CenterLink's member
+centers, PFLAG's chapters, and hundreds of other LGBTQ+ resources.
+
+LGBT Near Me is the deepest LGBTQ+ resource directory that exists, and I'd
+love to include its listings rather than rebuild that coverage worse. Would
+you consider sharing an export or feed? Every record would credit LGBT Near
+Me and link back, removal requests are honored immediately, and if you'd
+want conditions on any slice of the data we'll follow them exactly. Happy
+to talk it through.
+
+Kara Zajac — kara@soulstone.org
+
+**Status:** drafted 2026-07-20, not yet sent
+
 ## Batch 2 — restricted TSML intergroups (Meeting Guide sharing keys)
 
 Seventeen intergroups run TSML with feed sharing set to "restricted" — the
