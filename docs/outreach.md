@@ -3,6 +3,26 @@
 Drafts for the three permission asks (see docs/sources.md #6, #41, #63).
 Status log below each — update when sent/answered.
 
+## No-reply fallback policy (decided 2026-07-20)
+
+If a source doesn't reply by **2026-08-09** (3 weeks): facts-only ingestion
+with per-record attribution + link-back, takedown honored without argument —
+**unless the source's ToS explicitly restricts reuse**, in which case it stays
+out (the same standard applied to domesticshelters.org and OutCare).
+
+ToS verification (2026-07-20):
+- **Al-Anon** — no terms of use published anywhere on al-anon.org (privacy
+  statement only). → eligible for fallback ingestion.
+- **IAN / Pro Bono Net** — no reuse or scraping restrictions found (the
+  terms-of-use URL serves the About page; probono.net/disclaimer is a
+  liability disclaimer only). → eligible for fallback ingestion, throttled.
+- **AmpleHarvest** — Terms (§3 Use of Site Content) license one personal,
+  noncommercial copy and require **prior written consent** for any other
+  reproduction/distribution. → **not eligible**; ingestion only on an
+  affirmative yes. Alternative pantry paths if they never answer: per-bank
+  agency lists from ToS-silent Feeding America members, state/county pantry
+  lists, direct church/food-shelf directories.
+
 ---
 
 ## 1. Al-Anon WSO — meeting data
