@@ -150,6 +150,47 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/syracuse/eastwood-baptist-church-acas
+  name: Eastwood Baptist Church ACAs
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - strengthening-my-recovery
+  venue: {street: 3212 James St., city: Syracuse, state: ny, zip: '13206'}
+  place: '3673000'
+  languages:
+  - en
+  external_ids: {aca: '6460', wso: NY0241}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: ny/syracuse/eastwood-baptist-church-acas-2
+  name: Eastwood Baptist Church ACAs
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: fri, time: '18:00'}
+  format: in-person
+  types:
+  - open
+  - loving-parent-guidebook
+  venue: {street: 3212 James Street, city: Syracuse, state: ny, zip: '13206'}
+  place: '3673000'
+  languages:
+  - en
+  external_ids: {aca: '7118', wso: NY0257}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ny/syracuse/friday-nighters
   name: Friday Nighters
   program: na
@@ -638,6 +679,36 @@
   verified:
     'on': '2026-07-20'
     method: scrape
+- id: ny/syracuse/soul-searchers
+  name: Soul Searchers
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: mon
+    time: '19:00'
+  format: hybrid
+  venue_name: Robinson Memorial Church
+  venue:
+    street: 126 S. Terry Road
+    city: Syracuse
+    state: ny
+    zip: '13219'
+  place: '3673000'
+  geo:
+    lat: 43.04463
+    lng: -76.22115
+  notes: Meetings will be held in person as well as online. Please contact George at gwejrgm@gmail.com
+    email for information.
+  external_ids:
+    knack: 56097f30264e5c5c50b5064f
+    naranon: 111-057
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ny/syracuse/spiritual-warriors
   name: Spiritual Warriors
   program: na
@@ -697,6 +768,83 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/syracuse/syracuse-g-a-saturday
+  name: Syracuse G.A. - Saturday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '10:00'
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 312 Lakeside Road
+    city: Syracuse
+    state: ny
+    zip: '13209'
+  place: '3673000'
+  notes: Closed Meeting
+  external_ids:
+    gamblersanon: syracuse-g-a-saturday
+  url: https://gamblersanonymous.org/find-a-meeting/syracuse-g-a-saturday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ny/syracuse/syracuse-g-a-tuesday
+  name: Syracuse G.A. - Tuesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '18:30'
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 1700 Butternut Street
+    city: Syracuse
+    state: ny
+    zip: '13208'
+  place: '3673000'
+  notes: Closed Meeting; Use side entrance
+  external_ids:
+    gamblersanon: syracuse-g-a-tuesday
+  url: https://gamblersanonymous.org/find-a-meeting/syracuse-g-a-tuesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ny/syracuse/syracuse-lakeland-g-a-monday
+  name: Syracuse/Lakeland G.A. - Monday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - closed
+  venue_name: The Vinyard Church
+  venue:
+    street: 312 Lakeside Drive
+    city: Syracuse
+    state: ny
+    zip: '13209'
+  place: '3673000'
+  notes: Closed Meeting
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ny/syracuse/third-tradition
   name: Third Tradition
   program: na

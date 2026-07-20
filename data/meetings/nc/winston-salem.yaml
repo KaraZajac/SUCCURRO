@@ -1,3 +1,46 @@
+- id: nc/winston-salem/ardmore-aca
+  name: Ardmore ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '18:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  venue: {street: 1700 Ebert St, city: Winston-Salem, state: nc, zip: '27103'}
+  place: '3775000'
+  languages:
+  - en
+  external_ids: {aca: '7594', wso: NC0121}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: nc/winston-salem/ardmore-aca-2
+  name: Ardmore ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '12:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  venue: {street: 1700 Ebert St., city: Winston-Salem, state: nc, zip: '27103'}
+  place: '3775000'
+  notes: Monday, 6pm ET Ardmore on Monday Open Discussion/Literature 501 Miller St Winston-Salem NC 27103
+    Enter thru Rosewood Ave, downstairs Tuesday 5:30pm ET Ardmore Women's Meeting. Closed Discussion.
+    Ardmore Baptist Church 501 Miller St Winston Salem NC, 27103 Enter thru Rosewood Ave, downstairs
+  languages:
+  - en
+  external_ids: {aca: '2452', wso: NC0082}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: nc/winston-salem/circle-of-men
   name: Circle of Men
   program: na
@@ -379,6 +422,35 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: nc/winston-salem/midday-hope-nfg
+  name: Midday Hope NFG
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: mon
+    time: '12:00'
+  format: in-person
+  venue_name: Mt. Tabor United Methodist Church
+  venue:
+    street: 3543 Robinhood Road
+    city: Winston-Salem
+    state: nc
+    zip: '27106'
+  place: '3775000'
+  geo:
+    lat: 36.12118
+    lng: -80.32061
+  notes: We meet inside.
+  external_ids:
+    knack: 5e42f4eab0185e0018981dd8
+    naranon: 112-058
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: nc/winston-salem/miracles-truly-happen
   name: Miracles Truly Happen
@@ -955,6 +1027,32 @@
     smart: '8408'
   sources:
   - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: nc/winston-salem/winston-salem-g-a-thursday
+  name: Winston-Salem G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:15'
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 4403 Country Club Road
+    city: Winston-Salem
+    state: nc
+    zip: '27104'
+  place: '3775000'
+  notes: Closed Meeting; Greensboro/Winston-Salem Hotline Number (336) 681-8516
+  external_ids:
+    gamblersanon: winston-salem-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/winston-salem-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
   verified:
     'on': '2026-07-20'
     method: scrape

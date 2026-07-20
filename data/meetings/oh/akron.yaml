@@ -34,21 +34,89 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '12:00', duration_min: 60}
+  - day: sat
+    time: '12:00'
+    duration_min: 60
   format: hybrid
   types:
   - topic-meeting
   - online-local-regional
   venue_name: Summit Recovery Hub - Annex
-  venue: {street: 572 W Market St, city: Akron, state: oh, zip: '44303'}
+  venue:
+    street: 572 W Market St
+    city: Akron
+    state: oh
+    zip: '44303'
   place: '3901000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1012/
-  external_ids: {lifering: '1012'}
+  external_ids:
+    lifering: '1012'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/akron-saturday-da-hybrid-meeting-face-to-face-vi
+  name: 'Akron Saturday DA  Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '10:00'
+    duration_min: 60
+  format: hybrid
+  types:
+  - open
+  - literature-study
+  - speaker
+  - steps
+  - tools
+  - newcomer
+  venue_name: St. Paul's Episcopal Church
+  venue:
+    street: 1361 W Market St.
+    city: Akron
+    state: oh
+    zip: '44313'
+  place: '3901000'
+  notes: Eastern Time (US/CAN)
+  languages:
+  - en
+  external_ids:
+    damid: '2981'
+    da: DA-214
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/akron-thursday-aca
+  name: Akron Thursday ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '19:00'}
+  format: in-person
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  - discussion
+  - fellowship-text-brb
+  - steps
+  - strengthening-my-recovery
+  venue: {street: 834 Grant St., city: Akron, state: oh, zip: '44311'}
+  place: '3901000'
+  languages:
+  - en
+  external_ids: {aca: '8035', wso: OH5094}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/akron/come-as-you-are-group
   name: Come As You Are Group
   program: na
@@ -278,20 +346,29 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '18:30', duration_min: 60}
+  - day: tue
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
-  venue: {street: 1480 Girard St., city: Akron, state: oh, zip: '44301'}
+  venue:
+    street: 1480 Girard St.
+    city: Akron
+    state: oh
+    zip: '44301'
   place: '3901000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1021/
-  external_ids: {lifering: '1021'}
+  external_ids:
+    lifering: '1021'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/akron/how-it-works-group
   name: How it Works Group
   program: na
@@ -355,6 +432,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/messiah-lutheran-church
+  name: Messiah Lutheran Church
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - a-new-hope
+  - discussion
+  - fellowship-text-brb
+  - steps
+  - strengthening-my-recovery
+  venue: {street: 4700 S. Main St., city: Akron, state: oh, zip: '44319'}
+  place: '3901000'
+  languages:
+  - en
+  external_ids: {aca: '2899', wso: OH046}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/akron/more-will-be-revealed-group
   name: More Will Be Revealed Group
   program: na
@@ -905,6 +1006,57 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/theres-layers-to-this
+  name: There’s Layers to This
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - laundry-lists-workbook
+  - steps
+  - traditions
+  venue_name: Tyler’s Redemption Place https://maps.app.goo.gl/6gdUAMN2aY8BL2s79?g_st=ic
+  venue: {street: 2684 Sanitarium Rd, city: Akron, state: oh, zip: '44312'}
+  place: '3901000'
+  languages:
+  - en
+  external_ids: {aca: '9161', wso: OH5109}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: oh/akron/wednesday-night-fellow-travelers
+  name: Wednesday Night Fellow Travelers
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '18:30'}
+  format: in-person
+  types:
+  - closed
+  - 12-steps-yellow-workbook
+  - discussion
+  - fellowship-text-brb
+  - loving-parent-guidebook
+  - steps
+  - strengthening-my-recovery
+  venue: {street: 444 N. Hawkins Ave, city: Akron, state: oh, zip: '44313'}
+  place: '3901000'
+  notes: Safety, trust, privacy and anonymity continue, as always. Welcome!
+  languages:
+  - en
+  url: https://www.adultchildren.org
+  external_ids: {aca: '2908', wso: OH055}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/akron/woman-2-woman-group
   name: Woman 2 Woman Group
   program: na

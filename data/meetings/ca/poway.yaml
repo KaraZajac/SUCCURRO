@@ -88,3 +88,102 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/poway/poway-12-step-workbook-study
+  name: Poway 12 Step Workbook Study
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  venue_name: Suite A in the one story building. Please follow the signs,
+  venue: {street: '13939 Poway Road, Suite A', city: Poway, state: ca, zip: '92064'}
+  place: 0658520
+  languages:
+  - en
+  external_ids: {aca: '8102', wso: CA1617}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: ca/poway/poway-g-a-saturday
+  name: Poway G.A. - Saturday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '17:00'
+    duration_min: 120
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 13939 Poway Road
+    city: Poway
+    state: ca
+    zip: '13939'
+  place: 0658520
+  notes: Open Meeting; combined meeting; milestone at the end of the month on the last Saturday
+  external_ids:
+    gamblersanon: poway-g-a-saturday
+  url: https://gamblersanonymous.org/find-a-meeting/poway-g-a-saturday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/poway/saturday-poway
+  name: Saturday - Poway
+  program: gam-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: sat
+    time: '17:00'
+  format: in-person
+  types:
+  - combined-gam-anon-ga
+  venue_name: Poway Alano Club
+  venue:
+    street: 13939 Poway Rd. Suite A
+    city: Poway
+    state: ca
+    zip: '92064'
+  place: 0658520
+  notes: This is a combined Gam-Anon/GA meeting.
+  languages:
+  - en
+  external_ids:
+    gamanon: '428'
+  url: https://gam-anon.org/meeting-directory/meeting-details/united-states/california/sandiegoarea/7-saturday-poway-combined-gam-anon-ga-meeting
+  sources:
+  - gamanon/us-meeting-directory
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/poway/we-can-heal
+  name: We Can Heal
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '18:00'}
+  format: in-person
+  types:
+  - closed
+  - 12-steps-yellow-workbook
+  - discussion
+  venue: {street: 16275 Pomerado Road, city: Poway, state: ca, zip: '92064'}
+  place: 0658520
+  languages:
+  - en
+  external_ids: {aca: '551', wso: CA1309}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}

@@ -1,3 +1,30 @@
+- id: mi/ann-arbor/ann-arbor-g-a-wednesday
+  name: Ann Arbor G.A. - Wednesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '20:00'
+  format: in-person
+  types:
+  - open
+  venue_name: Washtennaw Alano Club
+  venue:
+    street: 995 North Maple Road
+    city: Ann Arbor
+    state: mi
+    zip: '48103'
+  place: '2603000'
+  notes: Open Meeting
+  external_ids:
+    gamblersanon: ann-arbor-g-a-wednesday
+  url: https://gamblersanonymous.org/find-a-meeting/ann-arbor-g-a-wednesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/ann-arbor/end-of-the-road
   name: End of the Road
   program: na
@@ -60,6 +87,34 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: mi/ann-arbor/in-person-hybrid
+  name: In Person/Hybrid
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '18:30'
+  format: hybrid
+  types:
+  - literature
+  venue:
+    street: 2145 Independence Blvd
+    city: Ann Arbor
+    state: mi
+    zip: '48104'
+  place: '2603000'
+  notes: Eastern Time
+  languages:
+  - en
+  url: https://oa.org/meetings/01081/
+  external_ids:
+    oa: 01081
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: mi/ann-arbor/miracles-on-west-huron
   name: Miracles on West Huron
@@ -307,6 +362,39 @@
   verified:
     'on': '2026-07-20'
     method: scrape
+- id: mi/ann-arbor/steps-to-prosperity
+  name: Steps to Prosperity
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - closed
+  - literature-study
+  - steps
+  - tools
+  - newcomer
+  venue_name: West Side United Methodist Church
+  venue:
+    street: 900 South 7th Street
+    city: Ann Arbor
+    state: mi
+    zip: '48103'
+  place: '2603000'
+  languages:
+  - en
+  external_ids:
+    damid: '3517'
+    da: DA-404
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/ann-arbor/surrender-on-sunday
   name: Surrender on Sunday
   program: na
@@ -339,6 +427,70 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/ann-arbor/the-solution
+  name: The Solution
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sun, time: '16:15'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  venue_name: The church is located on the NW corner of Scio Church and Greenview Drive. We meet in the
+    basement - rooms 43/45
+  venue: {street: 'Westminster Presbyterian Church, 1500 Scio Church Rd, Ann Arbor, MI', city: Ann Arbor,
+    state: mi, zip: '48103'}
+  place: '2603000'
+  languages:
+  - en
+  external_ids: {aca: '4753', wso: MI0173}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: mi/ann-arbor/true-self
+  name: True Self
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '10:15'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  venue: {street: 995 N. Maple Rd, city: Ann Arbor, state: mi, zip: '48103'}
+  place: '2603000'
+  languages:
+  - en
+  external_ids: {aca: '2194', wso: MI055}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: mi/ann-arbor/tuesday-night-aca
+  name: Tuesday Night ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '19:00'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  - steps
+  venue: {street: 1679 Broadway St, city: Ann Arbor, state: mi, zip: '48105'}
+  place: '2603000'
+  languages:
+  - en
+  external_ids: {aca: '2182', wso: MI0169}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: mi/ann-arbor/work-the-steps-or-die
   name: Work the Steps or Die
   program: na

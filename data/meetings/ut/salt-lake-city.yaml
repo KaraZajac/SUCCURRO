@@ -1,3 +1,34 @@
+- id: ut/salt-lake-city/da-bda-sunday-step-study
+  name: DA-BDA Sunday Step Study
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '16:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  - steps
+  - bda
+  venue_name: Fit to Recover
+  venue:
+    street: 1335 S. Major St.
+    city: Salt Lake city
+    state: ut
+    zip: '84115'
+  place: '4967000'
+  languages:
+  - en
+  external_ids:
+    damid: '3624'
+    da: DA-7956
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ut/salt-lake-city/rd-salt-lake-usara
   name: RD Salt Lake @ USARA
   program: recovery-dharma
@@ -30,27 +61,63 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ut/salt-lake-city/risen-life-church
+  name: Risen Life Church
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '18:30'
+  format: in-person
+  types:
+  - newcomer
+  venue:
+    street: 2780 E 3900 S
+    city: Salt Lake City
+    state: ut
+    zip: '84124'
+  place: '4967000'
+  languages:
+  - en
+  url: https://oa.org/meetings/22068/
+  external_ids:
+    oa: '22068'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ut/salt-lake-city/salt-lake-city-saturday
   name: Salt Lake City Saturday
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '11:00', duration_min: 90}
+  - day: sat
+    time: '11:00'
+    duration_min: 90
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: First Baptist Church  , 2nd floor, library room
-  venue: {street: 777 South 1300 East, city: Salt Lake City, state: ut, zip: '84102'}
+  venue:
+    street: 777 South 1300 East
+    city: Salt Lake City
+    state: ut
+    zip: '84102'
   place: '4967000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1015/
-  external_ids: {lifering: '1015'}
+  external_ids:
+    lifering: '1015'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ut/salt-lake-city/smart-recovery-meeting-4312
   name: 'SMART Recovery Meeting #4312'
   program: smart
@@ -142,3 +209,27 @@
   verified:
     'on': '2026-07-20'
     method: scrape
+- id: ut/salt-lake-city/strength-in-unity
+  name: Strength in Unity
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '18:15'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  - steps
+  - strengthening-my-recovery
+  - traditions
+  venue: {street: 801 East 900 South, city: Salt Lake City, state: ut, zip: '84105'}
+  place: '4967000'
+  languages:
+  - en
+  external_ids: {aca: '8681', wso: UT0059}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}

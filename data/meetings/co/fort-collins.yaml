@@ -1,3 +1,49 @@
+- id: co/fort-collins/12-step-yellow-workbook
+  name: 12 Step Yellow Workbook
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  - discussion
+  - steps
+  venue: {street: 301 Drake Rd., city: Fort Collins, state: co, zip: '80526'}
+  place: 0827425
+  languages:
+  - en
+  external_ids: {aca: '7063', wso: CO0117}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: co/fort-collins/aca-big-red-book-study-meeting
+  name: ACA BIg Red Book Study Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  venue_name: Christ United Methodist Church, Room 015-016
+  venue: {street: 301 E Drake Rd, city: Fort Collins, state: co, zip: '80525'}
+  place: 0827425
+  notes: This is a Big Red Book Study meeting where we gather in fellowship to read and share. All are
+    welcome. Please join us downstairs in Room 015-016.
+  languages:
+  - en
+  external_ids: {aca: '7221', wso: CO0121}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: co/fort-collins/drugbusters
   name: DrugBusters
   program: na
@@ -28,6 +74,32 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/fort-collins/ft-collins-g-a-thursday
+  name: Ft. Collins G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 2000 South Lemay Avenue
+    city: Fort Collins
+    state: co
+    zip: '80525'
+  place: 0827425
+  notes: Open Meeting; Room 3W
+  external_ids:
+    gamblersanon: ft-collins-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/ft-collins-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: co/fort-collins/fun-addicts
   name: Fun Addicts
   program: na
@@ -406,20 +478,29 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '18:00', duration_min: 60}
+  - day: wed
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
-  venue: {street: 2201 S Shields St, city: Fort Collins, state: co, zip: '80526'}
+  venue:
+    street: 2201 S Shields St
+    city: Fort Collins
+    state: co
+    zip: '80526'
   place: 0827425
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1018/
-  external_ids: {lifering: '1018'}
+  external_ids:
+    lifering: '1018'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: co/fort-collins/smart-recovery-family-friends-meeting-9301
   name: 'SMART Recovery Family & Friends Meeting #9301'
   program: smart

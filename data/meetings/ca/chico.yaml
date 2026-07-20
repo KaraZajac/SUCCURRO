@@ -61,6 +61,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/chico/chico-aca-df
+  name: Chico ACA/DF
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '19:00'}
+  format: in-person
+  types:
+  - open
+  - a-new-hope
+  - fellowship-text-brb
+  - steps
+  venue: {street: 667 E. First Ave.  Rm 4, city: Chico, state: ca, zip: '95926'}
+  place: '0613014'
+  notes: Come join us! We are currently alternating between the BRB and A New Hope with meetings for journaling.
+    We are excited to revitalize this Chico in person meeting which was transferred to ZOOM in 2020 due
+    to COVID.
+  languages:
+  - en
+  external_ids: {aca: '8582', wso: CA1661}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/chico/chico-cna-group
   name: Chico (CNA) Group
   program: na
@@ -517,6 +542,90 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: ca/chico/chico-g-a-thursday
+  name: Chico G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: in-person
+  types:
+  - open
+  venue_name: Faith Lutheran Church
+  venue:
+    street: 667 East 1st Street
+    city: Chico
+    state: ca
+    zip: '95926'
+  place: '0613014'
+  notes: Open Meeting
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/chico/currency-of-hope
+  name: Currency of Hope
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '17:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  - literature-study
+  - speaker
+  - tools
+  venue_name: Faith Lutheran Church
+  venue:
+    street: 667 E. 1st Avenue
+    city: Chico
+    state: ca
+    zip: '95926'
+  place: '0613014'
+  languages:
+  - en
+  external_ids:
+    damid: '2892'
+    da: DA-7852
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/chico/hope-starts-here
+  name: Hope Starts Here
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: wed
+    time: '19:00'
+  format: in-person
+  venue_name: Faith Lutheran
+  venue:
+    street: 667 E First Ave.
+    city: Chico
+    state: ca
+    zip: '95926'
+  place: '0613014'
+  geo:
+    lat: 39.74159
+    lng: -121.83693
+  external_ids:
+    knack: 561d54de16f7a87d5541742b
+    naranon: 131-096
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: ca/chico/keeping-it-real
   name: Keeping It Real

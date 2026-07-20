@@ -21,13 +21,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/aca-meeting-web0845
+  name: ACA Meeting WEB0845
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '19:00'}
+  format: online
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  notes: Please join our Big Red Book study and discussion meeting. To get the updated Zoom code, please
+    send a text to Geo at 614-831-1962.
+  languages:
+  - en
+  external_ids: {aca: '6911', wso: WEB0845}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/online/akron-ohio-lifering-local-online
   name: Akron Ohio LifeRing Local Online
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '19:00', duration_min: 60}
+  - day: thu
+    time: '19:00'
+    duration_min: 60
   format: online
   types:
   - how-was-your-week-meeting
@@ -35,10 +58,13 @@
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1013/
-  external_ids: {lifering: '1013'}
+  external_ids:
+    lifering: '1013'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/online/an-alcoholic-like-me-telephone-meeting
   name: An Alcoholic Like Me (Telephone Meeting)
   program: aa
@@ -702,6 +728,25 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/candlelight-topic-discussion
+  name: Candlelight Topic Discussion
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '18:00'}
+  format: online
+  types:
+  - open
+  - discussion
+  notes: If you need Zoom meeting access information, please contact Geo at (614) 831-1962.
+  languages:
+  - en
+  external_ids: {aca: '4953', wso: OH5073}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/online/cincy-noon-aa
   name: Cincy Noon AA
   program: aa
@@ -795,6 +840,57 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/dayton-ohio-united-states-sunday
+  name: Dayton, Ohio, United States - Sunday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '19:30'
+  format: online
+  notes: 'Zoom ID: 538 124 0585; Access Code: 435713'
+  external_ids:
+    gamblersanon: dayton-ohio-united-states-sunday
+  url: https://gamblersanonymous.org/find-a-meeting/dayton-ohio-united-states-sunday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/online/dayton-ohio-united-states-thursday
+  name: Dayton, Ohio, United States – Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: online
+  notes: 'Zoom ID: 538 124 0585; Access Code: 435713'
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/online/dayton-ohio-united-states-tuesday
+  name: Dayton, Ohio, United States - Tuesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:00'
+  format: online
+  notes: 'Zoom ID: 538 124 0585; Access Code: 435713'
+  external_ids:
+    gamblersanon: dayton-ohio-united-states-tuesday
+  url: https://gamblersanonymous.org/find-a-meeting/dayton-ohio-united-states-tuesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/online/delaware-sunsrise-group
   name: Delaware Sunsrise Group
   program: aa
@@ -890,6 +986,25 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/emotional-sobriety-group
+  name: Emotional Sobriety Group
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '19:00'}
+  format: online
+  types:
+  - closed
+  - fellowship-text-brb
+  notes: Please email Andy for meeting ID information. Newcomers welcome!
+  languages:
+  - en
+  external_ids: {aca: '7584', wso: WEB1114}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/online/friday-big-book
   name: Friday Big Book
   program: aa
@@ -936,6 +1051,25 @@
   - aa/recoverydharma
   verified:
     'on': '2026-07-19'
+    method: api
+- id: oh/online/hamilton-nfg
+  name: Hamilton NFG
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: wed
+    time: '19:00'
+  format: online
+  notes: Please contact peaceofmindinst@gmail.com for the virtual meeting link.
+  external_ids:
+    knack: 55f71f3c11b108d13e6ad99e
+    naranon: 117-018 (V)
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: oh/online/hotel-lobby-incident
   name: Hotel Lobby Incident
@@ -1306,6 +1440,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/mens-yellow-workbook-step-study
+  name: Men’s Yellow Workbook Step Study
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '10:00'}
+  format: online
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  - discussion
+  - men-only
+  conference_url: https://us02web.zoom.us/j/208340359?pwd=YXJXbTFtUSs0VlNpa1d1WDJ2ZVVHZz09
+  notes: Meeting ID 208 340 359. Password 418867 zoom meeting link listed https://us02web.zoom.us/j/208340359?pwd=YXJXbTFtUSs0VlNpa1d1WDJ2ZVVHZz09
+    Meets 7:00 am MST-Arizona https://us02web.zoom.us/j/208340359?pwd=YXJXbTFtUSs0VlNpa1d1WDJ2ZVVHZz09
+  languages:
+  - en
+  external_ids: {aca: '6118', wso: WEB0448}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/online/national
   name: National
   program: smart
@@ -1668,6 +1825,48 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/north-royalton-aca-12-step-saturday
+  name: North Royalton ACA 12 Step Saturday
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '10:00'}
+  format: online
+  types:
+  - open
+  - 12-step-study-group
+  - book-study
+  - discussion
+  notes: We use the Yellow Workbook (Twelve Steps of Adult Children). Available at the meeting. Email
+    Contact Person to obtain electronic link to meeting. Turn onto Abbey Rd. off of Rt. 82; go to the
+    rear upper level of the church parking lot; signs on the door and in the building will direct you
+    to the classroom we use. Meeting lasts from 10:00 am to 11:30 am ET.
+  languages:
+  - en
+  external_ids: {aca: '2912', wso: OH059}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: oh/online/ravenna-ohio-united-states-friday
+  name: Ravenna, Ohio, United States - Friday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '19:00'
+  format: online
+  notes: 'Zoom ID: 952 4458 6017; Access Code: 1234'
+  external_ids:
+    gamblersanon: ravenna-ohio-united-states-friday
+  url: https://gamblersanonymous.org/find-a-meeting/ravenna-ohio-united-states-friday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/online/rebellion-dogs
   name: Rebellion Dogs
   program: aa
@@ -1693,6 +1892,62 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/online/saturday-14-traits-workbook
+  name: Saturday 14 Traits Workbook
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '14:00'}
+  format: online
+  types:
+  - open
+  - discussion
+  - laundry-lists-workbook
+  languages:
+  - en
+  external_ids: {aca: '2921', wso: OH068}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: oh/online/saturday-beginnings
+  name: Saturday Beginnings
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '13:00'}
+  format: online
+  types:
+  - open
+  - discussion
+  - speaker
+  languages:
+  - en
+  external_ids: {aca: '2922', wso: OH069}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: oh/online/seven-hills-ohio-united-states-friday
+  name: Seven Hills, Ohio, United States - Friday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '19:00'
+  format: online
+  notes: 'Zoom ID: 382 151 911; Access Code:'
+  external_ids:
+    gamblersanon: seven-hills-ohio-united-states-friday
+  url: https://gamblersanonymous.org/find-a-meeting/seven-hills-ohio-united-states-friday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/online/simply-sober
   name: Simply Sober
   program: aa
@@ -2303,6 +2558,75 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: oh/online/truth-seekers-men-s-meeting
+  name: Truth Seekers Men's Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '09:45'}
+  format: online
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  - men-only
+  conference_url: https://us02web.zoom.us/j/248076738?pwd=STRrL2JUZFlGWjdTSXMwSEtBVzBWUT09
+  notes: 'Zoom meeting only, at this time. Meeting ID: 248 076 738 Passcode 136539 Meeting link: https://us02web.zoom.us/j/248076738?pwd=STRrL2JUZFlGWjdTSXMwSEtBVzBWUT09
+    https://us02web.zoom.us/j/248076738?pwd=STRrL2JUZFlGWjdTSXMwSEtBVzBWUT09'
+  languages:
+  - en
+  external_ids: {aca: '5900', wso: WEB0299}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: oh/online/view-meeting-details
+  name: View meeting details
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:00'
+    duration_min: 30
+  format: online
+  types:
+  - phone
+  - recovery-from-relapse
+  notes: Eastern Time
+  languages:
+  - en
+  url: https://oa.org/meetings/55046/
+  external_ids:
+    oa: '55046'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: oh/online/view-meeting-details-2
+  name: View meeting details
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:00'
+  format: online
+  types:
+  - newcomer
+  notes: Eastern Time
+  languages:
+  - en
+  url: https://oa.org/meetings/800618/
+  external_ids:
+    oa: '800618'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: oh/online/wake-up-into-action
   name: Wake Up Into Action

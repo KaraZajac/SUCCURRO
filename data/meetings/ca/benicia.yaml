@@ -40,21 +40,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '19:00', duration_min: 60}
+  - day: tue
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: First Baptist Church of Benicia, Meeting Room D
-  venue: {street: 1055 Southampton Rd, city: Benicia, state: ca, zip: '94510'}
+  venue:
+    street: 1055 Southampton Rd
+    city: Benicia
+    state: ca
+    zip: '94510'
   place: 0605290
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1038/
-  external_ids: {lifering: '1038'}
+  external_ids:
+    lifering: '1038'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/benicia/hooked-on-recovery-group
   name: Hooked on Recovery Group
   program: na
@@ -88,6 +97,26 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/benicia/one-step-at-a-time
+  name: One step at a time
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  venue: {street: 2046 Columbus Pkwy, city: Benicia, state: ca, zip: '94510'}
+  place: 0605290
+  languages:
+  - en
+  external_ids: {aca: '9271', wso: CA1714}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/benicia/sunday-serenity
   name: Sunday Serenity
   program: na

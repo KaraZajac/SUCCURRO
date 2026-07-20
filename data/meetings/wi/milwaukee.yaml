@@ -514,6 +514,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/milwaukee/milwaukee-nfg
+  name: Milwaukee NFG
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: wed
+    time: '19:00'
+  format: in-person
+  venue_name: Martin Luther Church
+  venue:
+    street: 9235 West Bluemound Road
+    city: Milwaukee
+    state: wi
+    zip: '53226'
+  place: '5553000'
+  geo:
+    lat: 43.03542
+    lng: -88.02839
+  notes: Please enter into the basement off the lower parking lot in the back of the church (St. Paul
+    Ave.).
+  external_ids:
+    knack: 55f71edc11b108d13e6ad8e6
+    naranon: 130-005
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: wi/milwaukee/monday-night-candlelight-meeting
   name: Monday Night Candlelight Meeting
   program: na
@@ -779,6 +809,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/milwaukee/saturday-afternoon-literature-study
+  name: Saturday Afternoon Literature Study
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  - fellowship-text-brb
+  - laundry-lists-workbook
+  - traditions
+  venue: {street: 6249 W Forest Home Ave., city: Milwaukee, state: wi, zip: '53220'}
+  place: '5553000'
+  languages:
+  - en
+  external_ids: {aca: '9099', wso: WI0183}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: wi/milwaukee/short-and-serene
   name: Short and Serene
   program: na
@@ -896,6 +949,38 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/milwaukee/sunday-financial-freedom-hybrid-meeting-face-to
+  name: 'Sunday Financial Freedom  Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '16:00'
+    duration_min: 75
+  format: hybrid
+  types:
+  - closed
+  - literature-study
+  - steps
+  venue_name: Pass It On Club
+  venue:
+    street: 6229 West Forest Home Avenue
+    city: Milwaukee
+    state: wi
+    zip: '53220'
+  place: '5553000'
+  notes: Central Time (US/CAN)
+  languages:
+  - en
+  external_ids:
+    damid: '2955'
+    da: DA-452
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: wi/milwaukee/thrive-at-five
   name: Thrive At Five
   program: na

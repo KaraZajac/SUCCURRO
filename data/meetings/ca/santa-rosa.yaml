@@ -1,3 +1,25 @@
+- id: ca/santa-rosa/aca-one-small-step-a-yellow-aca-steps-workbook-m
+  name: ACA One Small Step - A Yellow ACA Steps Workbook Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: fri, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - 12-steps-yellow-workbook
+  venue: {street: 1165 Montgomery Dr, city: Santa Rosa, state: ca, zip: '95405'}
+  place: 0670098
+  notes: This is Workbook meeting to help our members work through the Yellow ACA Steps Workbook. Please
+    bring your own yellow ACA 12 Steps Workbook when attending. No fragrance please.
+  languages:
+  - en
+  external_ids: {aca: '8609', wso: CA1664}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/santa-rosa/area-service-committee-3rd-thursday
   name: Area Service Committee - 3rd Thursday
   program: na
@@ -155,6 +177,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/santa-rosa/fellow-travelers
+  name: Fellow Travelers
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  - speaker
+  venue: {street: 1165 Montgomery Dr, city: Santa Rosa, state: ca, zip: '95405'}
+  place: 0670098
+  notes: 'Please bring your Big Red Book or ebook. We will have a monthly speaker last Tuesday of the
+    month. Contact for more info: fellowtravelerACA@gmail.com'
+  languages:
+  - en
+  external_ids: {aca: '7838', wso: CA1590}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/santa-rosa/friday-11th-step
   name: Friday 11th Step
   program: na
@@ -708,21 +753,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 90}
+  - day: mon
+    time: '19:00'
+    duration_min: 90
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Kaiser AMRS (Entrance Level)
-  venue: {street: '3554 Round Barn Blvd., Room L', city: Santa Rosa, state: ca, zip: '95403'}
+  venue:
+    street: 3554 Round Barn Blvd., Room L
+    city: Santa Rosa
+    state: ca
+    zip: '95403'
   place: 0670098
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1279/
-  external_ids: {lifering: '1279'}
+  external_ids:
+    lifering: '1279'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/santa-rosa/refuge-recovery-santa-rosa-ca-tuesdays-7pm
   name: Refuge Recovery – Santa Rosa, CA – Tuesdays 7pm
   program: refuge-recovery
@@ -754,6 +808,35 @@
   - aa/refugerecovery
   verified:
     'on': '2026-07-19'
+    method: api
+- id: ca/santa-rosa/santa-rosa-central
+  name: Santa Rosa Central
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: thu
+    time: '19:45'
+  format: hybrid
+  venue_name: Providence (Memorial) Hospital
+  venue:
+    street: 1165 Montgomery Drive
+    city: Santa Rosa
+    state: ca
+    zip: '95405'
+  place: 0670098
+  geo:
+    lat: 38.4438
+    lng: -122.70088
+  notes: Pacific Time (PT)
+  external_ids:
+    knack: 5aaaf17b537461530c192bf0
+    naranon: 131-128
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: ca/santa-rosa/santa-rosa-courage-to-change
   name: Santa Rosa- Courage To Change
@@ -787,6 +870,42 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/santa-rosa/santa-rosa-saturday-morning-hybrid-meeting-face
+  name: 'Santa Rosa Saturday Morning  Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '10:30'
+    duration_min: 75
+  format: hybrid
+  types:
+  - open
+  - other
+  - this-meeting-has-five-formats-that-rotate-each-w
+  - 2-step-study
+  - 3-speaker
+  - 4-literature-study
+  - 5-visioning
+  venue_name: First United Methodist Church
+  venue:
+    street: 1551 Montgomery Drive
+    city: Santa Rosa
+    state: ca
+    zip: '95405'
+  place: 0670098
+  notes: Pacific Time (US/CAN)
+  languages:
+  - en
+  external_ids:
+    damid: '3319'
+    da: DA-141
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/santa-rosa/smart-recovery-meeting-4776
   name: 'SMART Recovery Meeting #4776'
   program: smart
@@ -1247,6 +1366,67 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/santa-rosa/tuesday-d-a-b-d-a-santa-rosa-serenity-and-prospe
+  name: Tuesday D.A.-B.D.A. Santa Rosa Serenity and Prosperity
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:00'
+    duration_min: 75
+  format: in-person
+  types:
+  - open
+  - steps
+  - tools
+  - newcomer
+  venue_name: Bethlehem Lutheran Church
+  venue:
+    street: 1300 Saint Francis Road
+    city: Santa Rosa
+    state: ca
+    zip: '95409'
+  place: 0670098
+  languages:
+  - en
+  external_ids:
+    damid: '3685'
+    da: DA-7999
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/santa-rosa/wednesday-night-loving-parent-meeting
+  name: Wednesday Night Loving Parent Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '19:00'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  - fellowship-text-brb
+  - loving-parent-guidebook
+  - speaker
+  - steps
+  - traditions
+  venue: {street: 1551 Montgomery Dr, city: Santa Rosa, state: ca, zip: '95405'}
+  place: 0670098
+  notes: As of 08/30/24 this meeting is active and in-person only. The meeting has 5 different weekly
+    formats. We read the Loving Parent Guidebook, Big Red Book (Study, Steps & Traditions) and we meditate.
+    5th Wednesdays (when they occur) are speaker meetings. We strive to integrate the Loving Parent/Inner
+    Family work every week.
+  languages:
+  - en
+  external_ids: {aca: '7835', wso: CA1588}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/santa-rosa/women-first
   name: Women First
   program: na

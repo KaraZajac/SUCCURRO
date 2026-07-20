@@ -1,3 +1,57 @@
+- id: ca/san-francisco/afternoon-debtors
+  name: Afternoon Debtors
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '16:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  - speaker
+  venue_name: Castro Country Club
+  venue:
+    street: 4058 18th Street
+    city: San Francisco
+    state: ca
+    zip: '94114'
+  place: '0667000'
+  languages:
+  - en
+  external_ids:
+    damid: '3461'
+    da: DA-7799
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/beginners-meeting
+  name: Beginners Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '11:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  venue_name: The Dry Dock-PLEASE NOTE; meeting begins at 11:05am
+  venue: {street: 2118 Greenwich Street, city: San Francisco, state: ca, zip: '94121'}
+  place: '0667000'
+  notes: Meeting runs 85 minutes and is a Big Red Book meeting, except on the 3rd Saturday of each month,
+    which is a speaker meeting.
+  languages:
+  - en
+  external_ids: {aca: '672', wso: CA850}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/bread-n-butter
   name: Bread N Butter
   program: na
@@ -57,6 +111,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/from-surviving-to-thriving
+  name: From Surviving to Thriving
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: fri, time: '18:50'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  - speaker
+  venue_name: 6:50 pm at The Dry Dock--the door on the right, next to the coffee. Alternating speaker
+    and reading meeting. Join us! :)
+  venue: {street: 2118 Greenwich St., city: San Francisco, state: ca, zip: '94123'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '8497', wso: CA1651}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/from-the-heart
   name: From the Heart
   program: na
@@ -321,27 +398,80 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/lgbtqia-a-safe-place-for-you
+  name: LGBTQIA A Safe Place for You
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '17:30'}
+  format: in-person
+  types:
+  - closed
+  - strengthening-my-recovery
+  - lgbtq
+  venue: {street: 4058 18th Street, city: San Francisco, state: ca, zip: '94114'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '6433', wso: CA1495}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: ca/san-francisco/lgbtqia-a-safe-place-for-you-2
+  name: LGBTQIA+ A Safe Place for You
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '19:30'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  - speaker
+  - lgbtq
+  venue_name: We are in the Conference Room, past the main hall, at the end of the courtyard.
+  venue: {street: 152 Church St., city: San Francisco, state: ca, zip: '94114'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '7610', wso: CA1572}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/lifering-in-san-francisco-kaiser-amrs
   name: LifeRing in San Francisco Kaiser AMRS
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '13:00', duration_min: 60}
+  - day: tue
+    time: '13:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Floor 6, Room 6B
-  venue: {street: 939 Ellis Street, city: San Francisco, state: ca, zip: '94109'}
+  venue:
+    street: 939 Ellis Street
+    city: San Francisco
+    state: ca
+    zip: '94109'
   place: '0667000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1041/
-  external_ids: {lifering: '1041'}
+  external_ids:
+    lifering: '1041'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/san-francisco/meat-n-potatoes
   name: Meat 'N Potatoes
   program: na
@@ -372,6 +502,49 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/men-s-meeting
+  name: Men's Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '19:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - speaker
+  - men-only
+  venue: {street: 1320 7th Ave, city: San Francisco, state: ca, zip: '94122'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '8195', wso: CA1625}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: ca/san-francisco/monthly-aca-women-s-meeting
+  name: Monthly ACA Women's Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: fri, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - speaker
+  - women-only
+  venue: {street: 501 Castro Street, city: San Francisco, state: ca, zip: '94114'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '8823', wso: CA1682}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/new-attitude
   name: New Attitude
   program: na
@@ -432,6 +605,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/northern-california-da-intergroup-intergroup-252
+  name: 'Northern California DA Intergroup (Intergroup #25200) Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '10:15'
+    duration_min: 120
+  format: in-person
+  types:
+  - open
+  - other
+  - san-francisco-intergroup
+  venue_name: St. Teresa of Avila Catholic Church
+  venue:
+    street: 390 Missouri Street
+    city: San Francisco
+    state: ca
+    zip: '94107'
+  place: '0667000'
+  languages:
+  - en
+  external_ids:
+    damid: '3488'
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/san-francisco/prime-time
   name: Prime Time
   program: na
@@ -889,27 +1092,111 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/room-to-grow
+  name: Room to Grow
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sun, time: '18:00'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  - speaker
+  - steps
+  - strengthening-my-recovery
+  - traditions
+  venue: {street: 152 Church St, city: San Francisco, state: ca, zip: '94114'}
+  place: '0667000'
+  languages:
+  - en
+  external_ids: {aca: '9256', wso: CA1711}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/san-francisco-city-hall
   name: San Francisco City Hall
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: fri, time: '12:00', duration_min: 60}
+  - day: fri
+    time: '12:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: San Francisco City Hall | Room 278 | Between Polk and McAllister
-  venue: {street: 1 Dr. Carlton B. Goodlett Place, city: San Francisco, state: ca, zip: '94102'}
+  venue:
+    street: 1 Dr. Carlton B. Goodlett Place
+    city: San Francisco
+    state: ca
+    zip: '94102'
   place: '0667000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1023/
-  external_ids: {lifering: '1023'}
+  external_ids:
+    lifering: '1023'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/san-francisco-g-a-saturday
+  name: San Francisco G.A. - Saturday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: 09:30
+    duration_min: 60
+  format: in-person
+  venue_name: St. Francis Lutheran Church 152 Church Street
+  venue:
+    street: 152 Church Street
+    city: San Francisco
+    state: ca
+    zip: '94114'
+  place: '0667000'
+  external_ids:
+    gamblersanon: san-francisco-g-a-saturday
+  url: https://gamblersanonymous.org/find-a-meeting/san-francisco-g-a-saturday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/san-francisco-g-a-thursday
+  name: San Francisco G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  venue_name: First Unitarian Universalist Church and Center
+  venue:
+    street: 1187 Franklin Street
+    city: San Francisco
+    state: ca
+    zip: '94109'
+  place: '0667000'
+  notes: Meets in Kincaid Room; We will read the Blue Book - Sharing Recovery Through Gamblers Anonymous.;
+    Entrance is on Frankin Street. Ring the doorbell and you will be let in.; Open Meeting
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/san-francisco/san-francisco-nooners
   name: San Francisco Nooners
   program: na
@@ -1115,6 +1402,59 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/sunday-sf-debtors-anonymous
+  name: Sunday SF Debtors Anonymous
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '17:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  - literature-study
+  - speaker
+  - steps
+  venue_name: CPMC Hospital Davies Campus
+  venue:
+    street: 45 Castro Street @ Duboce Rm B3
+    city: San Francisco
+    state: ca
+    zip: '94114'
+  place: '0667000'
+  languages:
+  - en
+  external_ids:
+    damid: '3584'
+    da: DA-7936
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/the-sunday-solution
+  name: The Sunday Solution
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sun, time: '11:00'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  venue: {street: 2101 Mariposa St, city: San Francisco, state: ca, zip: '94107'}
+  place: '0667000'
+  notes: Last Sunday of the Month is Reparenting Check In & Chips!
+  languages:
+  - en
+  external_ids: {aca: '9322', wso: CA1720}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/san-francisco/van-ness-recovery-dharma
   name: Van Ness Recovery Dharma
   program: recovery-dharma
@@ -1177,6 +1517,31 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: ca/san-francisco/welcome-all
+  name: Welcome All
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '18:00'
+  format: in-person
+  venue:
+    street: 4058 18th St
+    city: San Francisco
+    state: ca
+    zip: '94114'
+  place: '0667000'
+  languages:
+  - en
+  url: https://oa.org/meetings/57949/
+  external_ids:
+    oa: '57949'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: ca/san-francisco/welcome-home-group
   name: Welcome Home Group

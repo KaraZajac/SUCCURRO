@@ -251,6 +251,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/miami/big-red-book-study
+  name: Big Red Book Study
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  venue_name: 'We meet in the Library: take your first left when entering from the main parking lot.'
+  venue: {street: 7190 Sunset Drive, city: Miami, state: fl, zip: '33143'}
+  place: '1245000'
+  languages:
+  - en
+  external_ids: {aca: '7133', wso: FL0368}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/miami/brownsville-connection
   name: Brownsville Connection
   program: na
@@ -765,6 +786,60 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/miami/miami-g-a-spanish-speaking-sunday
+  name: Miami G.A. Spanish Speaking - Sunday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '18:00'
+    duration_min: 120
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 133 Ponce de Leon
+    city: Miami
+    state: fl
+    zip: '33135'
+  place: '1245000'
+  notes: Closed Meeting; Spanish speaking
+  external_ids:
+    gamblersanon: miami-g-a-spanish-speaking-sunday
+  url: https://gamblersanonymous.org/find-a-meeting/miami-g-a-spanish-speaking-sunday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: fl/miami/monday-miami-the-last-monday-of-each-month
+  name: Monday - Miami (The last Monday of each month)
+  program: gam-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: mon
+    time: '20:00'
+  format: in-person
+  venue_name: Killian Pines Methodist Church
+  venue:
+    street: 10755 SW. 112th Street
+    city: Miami
+    state: fl
+    zip: '33176'
+  place: '1245000'
+  languages:
+  - en
+  external_ids:
+    gamanon: '499'
+  url: https://gam-anon.org/meeting-directory/meeting-details/united-states/florida/southfloridaeastcoast/2-monday-miami
+  sources:
+  - gamanon/us-meeting-directory
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: fl/miami/na-at-little-river
   name: NA at Little River
   program: na
@@ -1433,6 +1508,63 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: fl/miami/south-miami-kendall-g-a-monday
+  name: South Miami/Kendall G.A. - Monday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '20:00'
+    duration_min: 120
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 10755 Southwest 112th Street
+    city: Miami
+    state: fl
+    zip: '10755'
+  place: '1245000'
+  notes: Closed Meeting; comment meeting
+  external_ids:
+    gamblersanon: south-miami-kendall-g-a-monday
+  url: https://gamblersanonymous.org/find-a-meeting/south-miami-kendall-g-a-monday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: fl/miami/south-miami-recovery-group
+  name: South Miami Recovery Group
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: tue
+    time: '20:00'
+  format: hybrid
+  venue_name: South Miami Lutheran Church
+  venue:
+    street: 7190 Sunset Drive
+    city: Miami
+    state: fl
+    zip: '33143'
+  place: '1245000'
+  geo:
+    lat: 25.70292
+    lng: -80.30906
+  notes: We meet both in person and also virtual. Meet in Shafer Room (on west side of church) Please
+    contact Tracey on 305-495-2440 for virtual meeting information.
+  external_ids:
+    knack: 55f71e6411b108d13e6ad81a
+    naranon: 127-029
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: fl/miami/stairway-to-recovery
   name: Stairway to Recovery

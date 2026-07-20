@@ -146,6 +146,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/salem/fellow-travelers
+  name: Fellow Travelers
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sun, time: '19:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  venue_name: Red Book Study
+  venue: {street: 700 Marion St NE, city: Salem, state: or, zip: '97301'}
+  place: '4164900'
+  languages:
+  - en
+  external_ids: {aca: '7000', wso: OR0154}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: or/salem/felony-flats-afternoon-fix
   name: Felony Flats Afternoon Fix
   program: na
@@ -303,21 +324,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '17:30', duration_min: 60}
+  - day: mon
+    time: '17:30'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-topic-meeting
   - all-are-welcome
   venue_name: IKE Box - Bay Room
-  venue: {street: 299 Cottage St NE, city: Salem, state: or, zip: '97301'}
+  venue:
+    street: 299 Cottage St NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1292/
-  external_ids: {lifering: '1292'}
+  external_ids:
+    lifering: '1292'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: or/salem/living-clean-book-study
   name: Living Clean Book Study
   program: na
@@ -625,6 +655,138 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/salem/salem-g-a-monday
+  name: Salem G.A. - Monday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:00'
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 3825 D Street Northeast
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  notes: Open Meeting; Bi-lingual; Large meeting room
+  external_ids:
+    gamblersanon: salem-g-a-monday
+  url: https://gamblersanonymous.org/find-a-meeting/salem-g-a-monday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: or/salem/salem-g-a-saturday
+  name: Salem G.A. - Saturday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '17:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 3825 D Street Northeast
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  notes: Open Meeting
+  external_ids:
+    gamblersanon: salem-g-a-saturday
+  url: https://gamblersanonymous.org/find-a-meeting/salem-g-a-saturday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: or/salem/salem-g-a-sunday
+  name: Salem G.A. - Sunday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '19:00'
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 790 Marion Street Northeast
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  notes: Open Meeting
+  external_ids:
+    gamblersanon: salem-g-a-sunday
+  url: https://gamblersanonymous.org/find-a-meeting/salem-g-a-sunday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: or/salem/salem-g-a-thursday
+  name: Salem G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 790 Marion Street Northeast
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  notes: Open Meeting; At Winter Street
+  external_ids:
+    gamblersanon: salem-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/salem-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: or/salem/salem-g-a-wednesday
+  name: Salem G.A. - Wednesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '19:30'
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 3825 D Street Northeast
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  notes: Open Meeting; Step meeting
+  external_ids:
+    gamblersanon: salem-g-a-wednesday
+  url: https://gamblersanonymous.org/find-a-meeting/salem-g-a-wednesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: or/salem/sink-or-swim
   name: Sink or Swim
   program: na

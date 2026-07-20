@@ -1,3 +1,45 @@
+- id: tx/dallas/aca-dallas-speaker-discussion-meeting
+  name: ACA Dallas Speaker & Discussion Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: tue, time: '19:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - speaker
+  venue: {street: 5324 Northwest Hwy., city: Dallas, state: tx, zip: '75220'}
+  place: '4819000'
+  languages:
+  - en
+  external_ids: {aca: '3901', wso: TX0172}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: tx/dallas/aca-dallas-women-s-meeting
+  name: ACA Dallas Women's Meeting
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sun, time: '13:00'}
+  format: in-person
+  types:
+  - closed
+  - loving-parent-guidebook
+  - women-only
+  venue: {street: '5324 W. Northwest Highway, Room 105', city: Dallas, state: tx, zip: '75220'}
+  place: '4819000'
+  languages:
+  - en
+  external_ids: {aca: '8434', wso: TX0297}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: tx/dallas/central-group
   name: Central Group
   program: na
@@ -117,6 +159,120 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/dallas/dallas-g-a-sunday
+  name: Dallas G.A. - Sunday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '16:30'
+  format: in-person
+  types:
+  - open
+  venue_name: Center for Spiritual Development
+  venue:
+    street: 5324 W. Northwest Highway
+    city: Dallas
+    state: tx
+    zip: '75220'
+  place: '4819000'
+  notes: Room 202; Elevator available; Open Meeting
+  external_ids:
+    gamblersanon: dallas-g-a-sunday
+  url: https://gamblersanonymous.org/find-a-meeting/dallas-g-a-sunday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: tx/dallas/dallas-g-a-thursday
+  name: Dallas G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: in-person
+  types:
+  - closed
+  - open
+  venue_name: Center of Spiritual Development
+  venue:
+    street: 5324 W. Northwest Highway
+    city: Dallas
+    state: tx
+    zip: '75220'
+  place: '4819000'
+  notes: Open Meeting; Room 202; Elevator available; Closed meeting last Thursday of month
+  external_ids:
+    gamblersanon: dallas-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/dallas-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: tx/dallas/dallas-g-a-tuesday
+  name: Dallas G.A. - Tuesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:00'
+  format: in-person
+  types:
+  - closed
+  venue_name: Center for Spiritual Development
+  venue:
+    street: 5324 W Northwest Hwy
+    city: Dallas
+    state: tx
+    zip: '75220'
+  place: '4819000'
+  notes: Closed Meeting; Room 201; Elevator available
+  external_ids:
+    gamblersanon: dallas-g-a-tuesday
+  url: https://gamblersanonymous.org/find-a-meeting/dallas-g-a-tuesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: tx/dallas/dallas-tx-hope-group-hybrid-meeting-face-to-face
+  name: 'Dallas TX Hope Group  Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:30'
+    duration_min: 60
+  format: hybrid
+  types:
+  - closed
+  - literature-study
+  - steps
+  venue_name: Center for Spiritual Development
+  venue:
+    street: 5324 W. Northwest Hwy.
+    city: Dallas
+    state: tx
+    zip: '75220'
+  place: '4819000'
+  notes: Central Time (US/CAN)
+  languages:
+  - en
+  external_ids:
+    damid: '3337'
+    da: DA-365
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: tx/dallas/duncanville-group
   name: Duncanville Group
   program: na
@@ -2655,6 +2811,39 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: tx/dallas/prosperity-group-hybrid-meeting-face-to-face-vid
+  name: 'Prosperity Group  Hybrid meeting: Face-to-face, Video'
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: 09:00
+    duration_min: 60
+  format: hybrid
+  types:
+  - closed
+  - literature-study
+  - speaker
+  - steps
+  venue_name: Center for Spiritual Development
+  venue:
+    street: 5324 W. Northwest Hwy.
+    city: Dallas
+    state: tx
+    zip: '75220'
+  place: '4819000'
+  notes: Central Time (US/CAN)
+  languages:
+  - en
+  external_ids:
+    damid: '3231'
+    da: DA-364
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: tx/dallas/raw-group-recovery-at-work
   name: RAW Group (Recovery at Work)
   program: na
@@ -3616,4 +3805,31 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: tx/dallas/voices-of-recovery
+  name: Voices of Recovery
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:30'
+  format: in-person
+  types:
+  - literature
+  venue:
+    street: 701 Commerce St
+    city: Dallas
+    state: tx
+    zip: '75202'
+  place: '4819000'
+  languages:
+  - es
+  url: https://oa.org/meetings/54569/
+  external_ids:
+    oa: '54569'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
     method: api

@@ -1,3 +1,25 @@
+- id: oh/cleveland/aca-meeting-oh0094
+  name: ACA Meeting OH0094
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  - steps
+  venue: {street: 435 SOM Center Rd., city: Cleveland, state: oh, zip: '44143'}
+  place: '3916000'
+  languages:
+  - en
+  external_ids: {aca: '4554', wso: OH0094}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/cleveland/addicts-in-recovery
   name: Addicts in Recovery
   program: na
@@ -148,6 +170,60 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/cleveland/cleveland-g-a-friday
+  name: Cleveland G.A. - Friday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '19:30'
+  format: in-person
+  types:
+  - closed
+  venue_name: Wade Park Veterans Hospital
+  venue:
+    street: 10701 East Boulevard
+    city: Cleveland
+    state: oh
+    zip: '10701'
+  place: '3916000'
+  notes: Cares Tower, Rockefeller Room; Closed Meeting
+  external_ids:
+    gamblersanon: cleveland-g-a-friday
+  url: https://gamblersanonymous.org/find-a-meeting/cleveland-g-a-friday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/cleveland/cleveland-g-a-wednesday
+  name: Cleveland G.A. - Wednesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '19:30'
+  format: in-person
+  types:
+  - closed
+  venue_name: Wade Park Veterans Hospital
+  venue:
+    street: 10701 East Boulevard
+    city: Cleveland
+    state: oh
+    zip: '10701'
+  place: '3916000'
+  notes: Cares Tower; Rockefeller Room; Closed Meeting
+  external_ids:
+    gamblersanon: cleveland-g-a-wednesday
+  url: https://gamblersanonymous.org/find-a-meeting/cleveland-g-a-wednesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/cleveland/downtown-recovery
   name: Downtown Recovery
   program: na
@@ -424,21 +500,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '19:00', duration_min: 60}
+  - day: thu
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-topic-meeting
   - all-are-welcome
   venue_name: Rise Above Cafe - Coffee Shop/Back Room
-  venue: {street: 10400 Lorain Ave, city: Cleveland, state: oh, zip: '44111'}
+  venue:
+    street: 10400 Lorain Ave
+    city: Cleveland
+    state: oh
+    zip: '44111'
   place: '3916000'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1047/
-  external_ids: {lifering: '1047'}
+  external_ids:
+    lifering: '1047'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/cleveland/message-of-hope-promise-of-freedom-group
   name: Message of Hope, Promise of Freedom Group
   program: na

@@ -700,21 +700,72 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: fri, time: '18:00', duration_min: 60}
+  - day: fri
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-topic-meeting
   - all-are-welcome
   venue_name: Bethlehem Lutheran Church; Library
-  venue: {street: 1050 Peninsula Dr, city: Traverse City, state: mi, zip: '49686'}
+  venue:
+    street: 1050 Peninsula Dr
+    city: Traverse City
+    state: mi
+    zip: '49686'
   place: '2680340'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1043/
-  external_ids: {lifering: '1043'}
+  external_ids:
+    lifering: '1043'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: mi/traverse-city/the-lucky-ones
+  name: The Lucky Ones
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '19:00'}
+  format: in-person
+  types:
+  - closed
+  - loving-parent-guidebook
+  venue_name: Sign on building says Alano by the Bay
+  venue: {street: 4125 Cedar Run Road, city: Traverse City, state: mi, zip: '49684'}
+  place: '2680340'
+  languages:
+  - en
+  external_ids: {aca: '7681', wso: MI0205}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: mi/traverse-city/traverse-city-adult-children
+  name: Traverse City Adult Children
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '17:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  venue: {street: 1050 Peninsula Dr., city: Traverse City, state: mi, zip: '49686'}
+  place: '2680340'
+  languages:
+  - en
+  external_ids: {aca: '2242', wso: MI115}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: mi/traverse-city/we-are-enough
   name: We Are Enough
   program: na

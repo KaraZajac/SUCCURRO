@@ -1,24 +1,78 @@
+- id: il/evanston/evanston-aca
+  name: Evanston Aca
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '15:00'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  venue_name: Lake Street Church of Evanston. 2nd Floor. Free Street Pkg Front of Church-Meters Too
+  venue: {street: 607 Lake Street, city: Evanston, state: il, zip: '60201'}
+  place: '1724582'
+  notes: We Supply Brb At Mtgs
+  languages:
+  - en
+  external_ids: {aca: '1719', wso: IL123}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: il/evanston/lifering-at-st-francis-hospital
   name: LifeRing at St. Francis Hospital
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Ascension Saint Francis, Glass House
-  venue: {street: 355 Ridge Ave, city: Evanston, state: il, zip: '60202'}
+  venue:
+    street: 355 Ridge Ave
+    city: Evanston
+    state: il
+    zip: '60202'
   place: '1724582'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1033/
-  external_ids: {lifering: '1033'}
+  external_ids:
+    lifering: '1033'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: il/evanston/monday-night-evanston-aca-meeting-breaking-free
+  name: Monday Night Evanston ACA Meeting - Breaking Free
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  - speaker
+  venue_name: St. Matthew's Church, Go up the stairs to the main door.
+  venue: {street: 2120 Lincoln Street, city: Evanston, state: il, zip: '60201'}
+  place: '1724582'
+  notes: This is a Big Red Book Study with the last Monday of the month being a speaker meeting.
+  languages:
+  - en
+  external_ids: {aca: '9302', wso: IL0307}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: il/evanston/rd-evanston
   name: RD Evanston
   program: recovery-dharma
@@ -58,18 +112,27 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '12:00', duration_min: 45}
+  - day: tue
+    time: '12:00'
+    duration_min: 45
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Evanston Hospital Chapman Center
-  venue: {street: 2650 Ridge Ave, city: Evanston, state: il, zip: '60201'}
+  venue:
+    street: 2650 Ridge Ave
+    city: Evanston
+    state: il
+    zip: '60201'
   place: '1724582'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1019/
-  external_ids: {lifering: '1019'}
+  external_ids:
+    lifering: '1019'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape

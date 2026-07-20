@@ -130,27 +130,122 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/walnut-creek/walnut-creek-g-a-tuesday
+  name: Walnut Creek G.A. - Tuesday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 1871 Geary Rd
+    city: Walnut Creek
+    state: ca
+    zip: '94597'
+  place: 0683346
+  notes: 'Closed Meeting; Meet in Education Bldg; Community Room #1'
+  external_ids:
+    gamblersanon: walnut-creek-g-a-tuesday
+  url: https://gamblersanonymous.org/find-a-meeting/walnut-creek-g-a-tuesday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/walnut-creek/walnut-creek-kaiser-amrs
   name: Walnut Creek Kaiser AMRS
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '12:30', duration_min: 60}
+  - day: mon
+    time: '12:30'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Room 3-E
-  venue: {street: 710 S. Broadway, city: Walnut Creek, state: ca, zip: '94596'}
+  venue:
+    street: 710 S. Broadway
+    city: Walnut Creek
+    state: ca
+    zip: '94596'
   place: 0683346
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1009/
-  external_ids: {lifering: '1009'}
+  external_ids:
+    lifering: '1009'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/walnut-creek/walnut-creek-nfg
+  name: Walnut Creek NFG
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: fri
+    time: '12:00'
+  format: hybrid
+  venue_name: Hillside Covenant Church
+  venue:
+    street: 2060 Magnolia Way
+    city: Walnut Creek
+    state: ca
+    zip: '94595'
+  place: 0683346
+  geo:
+    lat: 37.88379
+    lng: -122.06846
+  notes: Pacific Time (PT)
+  external_ids:
+    knack: 59665b3c27186c502265c9e4
+    naranon: 131-122
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
+    method: api
+- id: ca/walnut-creek/walnut-creek-thursday-meeting
+  name: Walnut Creek Thursday meeting
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: thu
+    time: '12:00'
+  format: in-person
+  venue_name: Mt Diablo Unitarian Universalist Church
+  venue:
+    street: 55 Eckley Lane
+    city: Walnut Creek
+    state: ca
+    zip: '94596'
+  place: 0683346
+  geo:
+    lat: 37.89972
+    lng: -122.04594
+  notes: We meet in the OAK ROOM - from the parking lot, go through the door next to the Church Office
+    Door.
+  external_ids:
+    knack: 651b06267f764a00290b8263
+    naranon: 131-162
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
+    method: api
 - id: ca/walnut-creek/welcome-to-na-workshop-in-person
   name: Welcome to NA Workshop- In Person
   program: na

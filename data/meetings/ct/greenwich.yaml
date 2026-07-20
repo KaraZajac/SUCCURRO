@@ -125,6 +125,28 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ct/greenwich/aca-meeting-ct0149
+  name: ACA Meeting CT0149
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: thu, time: '07:00'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  - steps
+  venue_name: Second Congregational Church
+  venue: {street: 139 East Putnam Ave, city: Greenwich, state: ct, zip: 06830}
+  place: 0933690
+  languages:
+  - en
+  external_ids: {aca: '9268', wso: CT0149}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ct/greenwich/brunch-bunch-group
   name: Brunch Bunch Group
   program: aa
@@ -737,42 +759,60 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '15:30', duration_min: 60}
+  - day: sun
+    time: '15:30'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Watson Pavilion -  Round Hill Conference Room (lower level)
-  venue: {street: 3 Perryridge Rd., city: Greenwich, state: ct, zip: 06830}
+  venue:
+    street: 3 Perryridge Rd.
+    city: Greenwich
+    state: ct
+    zip: 06830
   place: 0933690
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1005/
-  external_ids: {lifering: '1005'}
+  external_ids:
+    lifering: '1005'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ct/greenwich/greenwich-hospital-2
   name: Greenwich Hospital
   program: lifering
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '18:00', duration_min: 60}
+  - day: wed
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-meeting
   - all-are-welcome
   venue_name: Watson Pavilion -  Round Hill Conference Room (lower level)
-  venue: {street: 5 Perryridge Rd, city: Greenwich, state: ct, zip: 06830}
+  venue:
+    street: 5 Perryridge Rd
+    city: Greenwich
+    state: ct
+    zip: 06830
   place: 0933690
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1029/
-  external_ids: {lifering: '1029'}
+  external_ids:
+    lifering: '1029'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ct/greenwich/greenwich-men-s-group
   name: Greenwich Men's Group
   program: aa

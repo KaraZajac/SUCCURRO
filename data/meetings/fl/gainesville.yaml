@@ -66,6 +66,48 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/gainesville/adult-children-anonymous
+  name: Adult Children Anonymous
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: mon, time: '18:00'}
+  format: in-person
+  types:
+  - open
+  - loving-parent-guidebook
+  venue: {street: 1521 NW 34th St, city: Gainesville, state: fl, zip: '32605'}
+  place: '1225175'
+  notes: 'Monday: Loving Parent Guidebook, 60 min.'
+  languages:
+  - en
+  external_ids: {aca: '6346', wso: FL0342}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: fl/gainesville/adult-children-anonymous-2
+  name: Adult Children Anonymous
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '19:00'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  venue_name: Inside Triangle Club, down the hall.
+  venue: {street: 1005 SE 4th Ave, city: Gainesville, state: fl, zip: '32601'}
+  place: '1225175'
+  languages:
+  - en
+  external_ids: {aca: '7401', wso: FL0380}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: fl/gainesville/freedom-of-choice
   name: Freedom of Choice
   program: na
@@ -132,6 +174,59 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/gainesville/gainesville-g-a-monday
+  name: Gainesville G.A. - Monday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:00'
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 7100 Northwest 39th Avenue
+    city: Gainesville
+    state: fl
+    zip: '32606'
+  place: '1225175'
+  notes: Open Meeting; music ministry room
+  external_ids:
+    gamblersanon: gainesville-g-a-monday
+  url: https://gamblersanonymous.org/find-a-meeting/gainesville-g-a-monday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: fl/gainesville/gainesville-g-a-thursday
+  name: Gainesville G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - open
+  venue:
+    street: 7100 Northwest 39th Avenue
+    city: Gainesville
+    state: fl
+    zip: '32606'
+  place: '1225175'
+  notes: Open Meeting
+  external_ids:
+    gamblersanon: gainesville-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/gainesville-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: fl/gainesville/give-yourself-a-break
   name: Give Yourself a Break
   program: na
@@ -628,21 +723,29 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '15:00', duration_min: 60}
+  - day: wed
+    time: '15:00'
+    duration_min: 60
   format: in-person
   types:
   - how-was-your-week-topic-meeting
   - all-are-welcome
   venue_name: The Nehemiah Project
-  venue: {city: Gainesville, state: fl, zip: '32609'}
+  venue:
+    city: Gainesville
+    state: fl
+    zip: '32609'
   place: '1225175'
   languages:
   - en
   url: https://meetings.lifering.org/meetings/1308/
-  external_ids: {lifering: '1308'}
+  external_ids:
+    lifering: '1308'
   sources:
   - lifering/meeting-finder
-  verified: {'on': '2026-07-20', method: scrape}
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: fl/gainesville/room-to-breathe
   name: Room to Breathe
   program: na

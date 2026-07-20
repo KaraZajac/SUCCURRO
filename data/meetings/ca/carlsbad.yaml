@@ -29,6 +29,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/carlsbad/carlsbad-aca
+  name: Carlsbad ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '18:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - steps
+  venue_name: Pilgrim UCC. Youth Lounge in the BACK of church by church offices./on Chestnut AV.
+  venue: {street: 2020 Chestnut St, city: Carlsbad, state: ca, zip: '92008'}
+  place: 0611194
+  notes: All are Welcome
+  languages:
+  - en
+  external_ids: {aca: '6730', wso: CA1513}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ca/carlsbad/principles-by-the-sea
   name: Principles by the Sea
   program: na
@@ -179,6 +202,32 @@
     smart: '7303'
   sources:
   - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/carlsbad/thursday-carlsbad
+  name: Thursday - Carlsbad
+  program: gam-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: thu
+    time: '18:30'
+  format: in-person
+  venue_name: St. Elizabeth Seton Catholic Church 6628 Santa isabel St
+  venue:
+    city: Carlsbad
+    state: ca
+    zip: '92009'
+  place: 0611194
+  languages:
+  - en
+  external_ids:
+    gamanon: '426'
+  url: https://gam-anon.org/meeting-directory/meeting-details/united-states/california/sandiegoarea/5-thursday-carlsbad
+  sources:
+  - gamanon/us-meeting-directory
   verified:
     'on': '2026-07-20'
     method: scrape

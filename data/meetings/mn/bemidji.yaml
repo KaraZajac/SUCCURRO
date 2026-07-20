@@ -1,3 +1,52 @@
+- id: mn/bemidji/aca
+  name: ACA
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '09:30'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  venue_name: We are located across the street from Sanford Hospital.
+  venue: {street: '3802 Greenleaf Ave NW,', city: Bemidji, state: mn, zip: '56601'}
+  place: '2705068'
+  languages:
+  - en
+  external_ids: {aca: '8504', wso: MN0194}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: mn/bemidji/bemidji-g-a-thursday
+  name: Bemidji G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: in-person
+  types:
+  - closed
+  venue_name: Alano Club
+  venue:
+    street: 3802 Greenleaf Avenue Northwest
+    city: Bemidji
+    state: mn
+    zip: '56601'
+  place: '2705068'
+  notes: Closed Meeting
+  external_ids:
+    gamblersanon: bemidji-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/bemidji-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mn/bemidji/serenity-at-6
   name: Serenity at 6
   program: na
@@ -87,4 +136,31 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: mn/bemidji/the-promises-literature-meeting
+  name: The Promises Literature Meeting
+  program: oa
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:30'
+  format: in-person
+  types:
+  - topics-vary
+  venue:
+    street: 3802 Greenleaf Ave NW
+    city: Bemidji
+    state: mn
+    zip: '56601'
+  place: '2705068'
+  languages:
+  - en
+  url: https://oa.org/meetings/57983/
+  external_ids:
+    oa: '57983'
+  sources:
+  - oa/meeting-finder
+  verified:
+    'on': '2026-07-20'
     method: api

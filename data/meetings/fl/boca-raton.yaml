@@ -28,6 +28,83 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/boca-raton/boca-pines
+  name: Boca Pines
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '17:30'}
+  format: in-person
+  types:
+  - closed
+  - discussion
+  venue_name: Boca Pines Club. Just east of 441, between Hillsboro and Palmetto Park Rd.
+  venue: {street: '9910 Sandalfoot Blvd, Unit 5', city: Boca Raton, state: fl, zip: '33428'}
+  place: '1207300'
+  languages:
+  - en
+  external_ids: {aca: '6873', wso: FL0362}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
+- id: fl/boca-raton/boca-raton-g-a-friday
+  name: Boca Raton G.A. - Friday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 21121 Judge Winikoff Road
+    city: Boca Raton
+    state: fl
+    zip: '21121'
+  place: '1207300'
+  notes: Closed Meeting; In room next to church; go west on Glades Rd 1.5 miles past 441 & south on Judge
+    Winikoff; take county road for .5 mile
+  external_ids:
+    gamblersanon: boca-raton-g-a-friday
+  url: https://gamblersanonymous.org/find-a-meeting/boca-raton-g-a-friday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: fl/boca-raton/boca-raton-g-a-thursday
+  name: Boca Raton G.A. - Thursday
+  program: ga
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+    duration_min: 120
+  format: in-person
+  types:
+  - closed
+  venue:
+    street: 21121 Judge Winikoff Road
+    city: Boca Raton
+    state: fl
+    zip: '21121'
+  place: '1207300'
+  notes: Closed Meeting; Therapy/Comment meeting; go west on Glades 1.5 miles past 441 and south on Judge
+    Winikoff. Take County Rd for 1/2 mile. Meeting held in room next to church
+  external_ids:
+    gamblersanon: boca-raton-g-a-thursday
+  url: https://gamblersanonymous.org/find-a-meeting/boca-raton-g-a-thursday/
+  sources:
+  - gamblersanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: fl/boca-raton/clean-scene
   name: Clean Scene
   program: na
@@ -57,6 +134,34 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: fl/boca-raton/easy-does-it
+  name: Easy Does It
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: wed
+    time: '19:00'
+  format: in-person
+  venue_name: B’Nai Torah
+  venue:
+    street: 6261 SW 18th Street
+    city: Boca Raton
+    state: fl
+    zip: '33433'
+  place: '1207300'
+  geo:
+    lat: 26.33193
+    lng: -80.1408
+  external_ids:
+    knack: 55f71e8d11b108d13e6ad866
+    naranon: 127-001
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: fl/boca-raton/last-call
   name: Last Call
@@ -158,6 +263,35 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: fl/boca-raton/thursday-boca-raton
+  name: Thursday - Boca Raton
+  program: gam-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: thu
+    time: '19:00'
+  format: hybrid
+  venue_name: Glades Presbyterian Church
+  venue:
+    street: 21121 Judge Winikoff St
+    city: Boca Raton
+    state: fl
+    zip: '33434'
+  place: '1207300'
+  notes: 'HYBRID: MEMBERS ATTEND THIS MEETING IN PERSON AND VIRTUALLY AT THE SAME TIME. Details to join
+    the meeting virtually are provided to members who attend in person.'
+  languages:
+  - en
+  external_ids:
+    gamanon: '498'
+  url: https://gam-anon.org/meeting-directory/meeting-details/united-states/florida/southfloridaeastcoast/5-thursday-boca-raton
+  sources:
+  - gamanon/us-meeting-directory
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: fl/boca-raton/why-are-we-here
   name: Why Are We Here
   program: na

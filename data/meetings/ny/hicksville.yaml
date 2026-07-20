@@ -275,6 +275,29 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ny/hicksville/good-enough
+  name: Good enough
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: wed, time: '15:30'}
+  format: in-person
+  types:
+  - open
+  - fellowship-text-brb
+  - loving-parent-guidebook
+  venue_name: Wednesday meeting is upstairs , Sunday meeting is downstairs
+  venue: {street: 95 Stewart Ave., city: Hicksville, state: ny, zip: '11801'}
+  place: '3634374'
+  notes: Wednesday is Big Red book Sunday loving parent guidebook
+  languages:
+  - en
+  external_ids: {aca: '9147', wso: NY0308}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
 - id: ny/hicksville/hicksville-group
   name: Hicksville Group
   program: aa
@@ -714,6 +737,36 @@
   - bmlt/aggregator
   verified:
     'on': '2026-07-19'
+    method: api
+- id: ny/hicksville/narateen-hicksville
+  name: Narateen Hicksville
+  program: nar-anon
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - day: thu
+    time: '20:00'
+  format: in-person
+  types:
+  - narateen
+  venue_name: Parkway Community Church
+  venue:
+    street: 95 Stewart Avenue
+    city: Hicksville
+    state: ny
+    zip: '11801'
+  place: '3634374'
+  geo:
+    lat: 40.7479
+    lng: -73.54345
+  external_ids:
+    knack: 56f3152b48713edf61e13630
+    naranon: 111-064
+  sources:
+  - naranon/group-database
+  verified:
+    'on': '2026-07-20'
     method: api
 - id: ny/hicksville/only-solutions
   name: Only Solutions

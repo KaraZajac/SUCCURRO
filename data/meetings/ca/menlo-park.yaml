@@ -31,6 +31,41 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/menlo-park/menlo-park-bda-face-to-face
+  name: Menlo Park BDA Face-to-Face
+  program: da
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '12:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - bda
+  - open
+  - literature-study
+  - speaker
+  - steps
+  - tools
+  - newcomer
+  venue_name: Menlo Church
+  venue:
+    street: 900 Santa Cruz Ave
+    city: Menlo Park
+    state: ca
+    zip: '94025'
+  place: 0646870
+  languages:
+  - en
+  external_ids:
+    damid: '3621'
+    da: BDA-7955
+  sources:
+  - debtorsanon/meeting-search
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/menlo-park/out-of-the-basement-group
   name: Out of the Basement Group
   program: na
@@ -61,3 +96,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/menlo-park/womens-aca-big-red-book-mtg-menlo-park
+  name: Women’s ACA Big Red Book Mtg Menlo Park
+  program: aca
+  categories:
+  - recovery-meeting
+  - family-support
+  schedule:
+  - {day: sat, time: '09:00'}
+  format: in-person
+  types:
+  - open
+  - discussion
+  - fellowship-text-brb
+  - women-only
+  venue_name: 2nd Floor top of stairs
+  venue: {street: 1177 University Drive, city: Menlo Park, state: ca, zip: '94025'}
+  place: 0646870
+  notes: Speaker meeting first Saturday of the quarter
+  languages:
+  - en
+  external_ids: {aca: '9314', wso: CA1719}
+  sources:
+  - aca/meeting-search
+  verified: {'on': '2026-07-20', method: api}
