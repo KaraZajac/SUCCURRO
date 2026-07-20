@@ -348,20 +348,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '18:00', duration_min: 60}
+  - day: tue
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: RD BWROC
-  venue: {street: 617 10th St, city: Port Huron, state: mi, zip: '48060'}
+  venue:
+    street: 617 10th St
+    city: Port Huron
+    state: mi
+    zip: '48060'
   place: '2665820'
-  geo: {lat: 42.97767, lng: -82.4335}
+  geo:
+    lat: 42.97767
+    lng: -82.4335
   url: https://recoverydharma.org/meetings/rd-bwroc-617-10th-st-port-huron-mi-48060/
-  external_ids: {tsml: 'recoverydharma:247984'}
+  external_ids:
+    tsml: recoverydharma:247984
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/port-huron/saturday-night-live
   name: Saturday Night Live
   program: na
@@ -393,6 +404,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/port-huron/smart-recovery-meeting-7636
+  name: 'SMART Recovery Meeting #7636'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '13:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: BWROC
+  venue:
+    city: Port Huron
+    state: mi
+  place: '2665820'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7636/
+  external_ids:
+    smart: '7636'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/port-huron/stairway-to-recovery-h-i-subcommittee-meets-dire
   name: Stairway To Recovery (H&I Subcommittee meets directly after)
   program: na

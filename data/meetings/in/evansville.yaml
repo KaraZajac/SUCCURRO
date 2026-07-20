@@ -306,22 +306,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '18:00', duration_min: 60}
+  - day: tue
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - fbs
   - o
   - nl
   venue_name: Mindful Heart Buddhist Sangha
-  venue: {street: 'Bradford Park Office Complex, 600 N Weinbach Ave #220', city: Evansville, state: in,
-    zip: '47711'}
+  venue:
+    street: 'Bradford Park Office Complex, 600 N Weinbach Ave #220'
+    city: Evansville
+    state: in
+    zip: '47711'
   place: '1822000'
-  geo: {lat: 37.98319, lng: -87.53042}
+  geo:
+    lat: 37.98319
+    lng: -87.53042
   url: https://recoverydharma.org/meetings/rd-evansville-sangha-mindful-heart-buddhist-sangha/
-  external_ids: {tsml: 'recoverydharma:248629'}
+  external_ids:
+    tsml: recoverydharma:248629
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: in/evansville/recovery-on-the-go
   name: Recovery on the Go!
   program: na
@@ -444,6 +454,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: in/evansville/smart-recovery-meeting-7738
+  name: 'SMART Recovery Meeting #7738'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '12:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: SWBH-Stepping Stone
+  venue:
+    street: 4001 John Street
+    city: Evansville
+    state: in
+    zip: '47714'
+  place: '1822000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7738/
+  external_ids:
+    smart: '7738'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: in/evansville/stairway-to-recovery
   name: Stairway to Recovery
   program: na

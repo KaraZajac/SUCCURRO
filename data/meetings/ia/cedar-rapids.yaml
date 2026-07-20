@@ -267,34 +267,85 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '17:00', duration_min: 60}
+  - day: mon
+    time: '17:00'
+    duration_min: 60
   format: in-person
   venue_name: Human Services Campus
-  venue: {street: 'Human Services campus, 317 7th Ave SE Ste 304', city: Cedar Rapids, state: ia, zip: '52401'}
+  venue:
+    street: Human Services campus, 317 7th Ave SE Ste 304
+    city: Cedar Rapids
+    state: ia
+    zip: '52401'
   place: '1912000'
-  geo: {lat: 41.97424, lng: -91.66113}
+  geo:
+    lat: 41.97424
+    lng: -91.66113
   url: https://recoverydharma.org/meetings/rd-crush-monday/
-  external_ids: {tsml: 'recoverydharma:254720'}
+  external_ids:
+    tsml: recoverydharma:254720
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/cedar-rapids/recovery-dharma-crush-community-center-2
   name: Recovery Dharma @ CRUSH Community Center
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: fri, time: '08:00', duration_min: 60}
+  - day: fri
+    time: 08:00
+    duration_min: 60
   format: in-person
   venue_name: Human Services Campus
-  venue: {street: 'Human Services campus, 317 7th Ave SE Ste 304', city: Cedar Rapids, state: ia, zip: '52401'}
+  venue:
+    street: Human Services campus, 317 7th Ave SE Ste 304
+    city: Cedar Rapids
+    state: ia
+    zip: '52401'
   place: '1912000'
-  geo: {lat: 41.97424, lng: -91.66113}
+  geo:
+    lat: 41.97424
+    lng: -91.66113
   url: https://recoverydharma.org/meetings/rd-crush-friday/
-  external_ids: {tsml: 'recoverydharma:254722'}
+  external_ids:
+    tsml: recoverydharma:254722
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ia/cedar-rapids/smart-recovery-meeting-7438
+  name: 'SMART Recovery Meeting #7438'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '17:15'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 317 7th Ave. SE, STE 304
+    city: Cedar Rapids
+    state: ia
+    zip: '52401'
+  place: '1912000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7438/
+  external_ids:
+    smart: '7438'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ia/cedar-rapids/steps-in-the-right-direction
   name: Steps in the Right Direction
   program: na

@@ -97,42 +97,94 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '19:15', duration_min: 60}
+  - day: wed
+    time: '19:15'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: New Way Recovery Center
-  venue: {street: '85 Quincy Ave #2', city: Quincy, state: ma, zip: 02169}
+  venue:
+    street: '85 Quincy Ave #2'
+    city: Quincy
+    state: ma
+    zip: 02169
   place: '2555745'
-  geo: {lat: 42.24311, lng: -70.99712}
+  geo:
+    lat: 42.24311
+    lng: -70.99712
   url: https://recoverydharma.org/meetings/new-way-recovery-center/
-  external_ids: {tsml: 'recoverydharma:248732'}
+  external_ids:
+    tsml: recoverydharma:248732
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/quincy/rd-quincy-young-adult-meeting
   name: RD Quincy Young Adult Meeting
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '19:00', duration_min: 60}
+  - day: tue
+    time: '19:00'
+    duration_min: 60
   format: hybrid
   types:
   - pr
   - o
   - nl
   - onl
-  venue: {street: 85 Quincy Ave, city: Quincy, state: ma, zip: 02169}
+  venue:
+    street: 85 Quincy Ave
+    city: Quincy
+    state: ma
+    zip: 02169
   place: '2555745'
-  geo: {lat: 42.24311, lng: -70.99712}
+  geo:
+    lat: 42.24311
+    lng: -70.99712
   url: https://recoverydharma.org/meetings/rd-plymouth-young-adult-meeting/
   conference_url: https://baystatecs-org.zoom.us/j/88638763546?pwd=M1R3WWxoTE1rZDZUUitMeE85cUJTdz09
-  external_ids: {tsml: 'recoverydharma:248228'}
+  external_ids:
+    tsml: recoverydharma:248228
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ma/quincy/smart-recovery-meeting-2734
+  name: 'SMART Recovery Meeting #2734'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '12:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: A New Way Recovery Center/MA Young People in Recovery
+  venue:
+    street: 85 Quincy Ave. Suite B
+    city: Quincy
+    state: ma
+    zip: 02169
+  place: '2555745'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/2734/
+  external_ids:
+    smart: '2734'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ma/quincy/we-all-belong
   name: We All Belong
   program: na

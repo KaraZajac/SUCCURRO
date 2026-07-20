@@ -374,20 +374,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '19:00', duration_min: 60}
+  - day: sun
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: Madison Perennial Yoga Studio (Garver Feed Mill - 2nd Floor)
-  venue: {street: 3241 Garver Green, city: Madison, state: wi, zip: '53704'}
+  venue:
+    street: 3241 Garver Green
+    city: Madison
+    state: wi
+    zip: '53704'
   place: '5548000'
-  geo: {lat: 43.09475, lng: -89.33428}
+  geo:
+    lat: 43.09475
+    lng: -89.33428
   url: https://recoverydharma.org/meetings/open-air-rd-madison-perennial-yoga-studio/
-  external_ids: {tsml: 'recoverydharma:249239'}
+  external_ids:
+    tsml: recoverydharma:249239
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/madison/serenity-on-spaight
   name: Serenity On Spaight
   program: na
@@ -421,6 +432,65 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wi/madison/smart-recovery-meeting-184
+  name: 'SMART Recovery Meeting #184'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 504 S Brearly St
+    city: Madison
+    state: wi
+    zip: '53703'
+  place: '5548000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/184/
+  external_ids:
+    smart: '184'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: wi/madison/smart-recovery-meeting-7382
+  name: 'SMART Recovery Meeting #7382'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '18:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Asbury Church
+  venue:
+    street: 6101 University Ave
+    city: Madison
+    state: wi
+    zip: '53705'
+  place: '5548000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7382/
+  external_ids:
+    smart: '7382'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: wi/madison/the-breakfast-club
   name: The Breakfast Club
   program: na

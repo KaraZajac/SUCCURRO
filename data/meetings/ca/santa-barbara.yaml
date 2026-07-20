@@ -243,19 +243,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '17:00', duration_min: 60}
+  - day: sun
+    time: '17:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   venue_name: Unity Spiritual Center
-  venue: {street: 227 E Arrellaga St, city: Santa Barbara, state: ca, zip: '93101'}
+  venue:
+    street: 227 E Arrellaga St
+    city: Santa Barbara
+    state: ca
+    zip: '93101'
   place: 0669070
-  geo: {lat: 34.43005, lng: -119.7071}
+  geo:
+    lat: 34.43005
+    lng: -119.7071
   url: https://recoverydharma.org/meetings/rd-santa-barbara/
-  external_ids: {tsml: 'recoverydharma:250120'}
+  external_ids:
+    tsml: recoverydharma:250120
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/santa-barbara/sleepwalkers
   name: Sleepwalkers
   program: na
@@ -286,6 +297,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/santa-barbara/smart-recovery-meeting-2416
+  name: 'SMART Recovery Meeting #2416'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Veterans Memorial Hall
+  venue:
+    street: 112 West Cabrillo Blvd.
+    city: Santa Barbara
+    state: ca
+    zip: '93101'
+  place: 0669070
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/2416/
+  external_ids:
+    smart: '2416'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/santa-barbara/space-cowboys
   name: Space Cowboys
   program: na

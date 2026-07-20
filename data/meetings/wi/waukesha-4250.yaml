@@ -65,37 +65,86 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: WisHope Recovery Community Center
-  venue: {street: 139 W Broadway, city: Waukesha, state: wi, zip: '53186'}
+  venue:
+    street: 139 W Broadway
+    city: Waukesha
+    state: wi
+    zip: '53186'
   place: '5584250'
-  geo: {lat: 43.01034, lng: -88.22873}
+  geo:
+    lat: 43.01034
+    lng: -88.22873
   url: https://recoverydharma.org/meetings/800-pm-ct-rd-waukesha-sangha-candlelight-meditation-open-share/
-  external_ids: {tsml: 'recoverydharma:249233'}
+  external_ids:
+    tsml: recoverydharma:249233
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: wi/waukesha-4250/smart-recovery-meeting-4365
+  name: 'SMART Recovery Meeting #4365'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: 09:30
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Citizens Bank
+  venue:
+    city: Waukesha
+    state: wi
+  place: '5584250'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/4365/
+  external_ids:
+    smart: '4365'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: wi/waukesha-4250/southside-aa-group
   name: Southside AA Group
   program: aa
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '08:00'}
+  - day: mon
+    time: 08:00
   format: in-person
   venue_name: Southside Alano Club
-  venue: {street: 4112 S West Ave, city: Waukesha, state: wi, zip: '53189'}
+  venue:
+    street: 4112 S West Ave
+    city: Waukesha
+    state: wi
+    zip: '53189'
   place: '5584250'
-  geo: {lat: 42.9721, lng: -88.2337}
+  geo:
+    lat: 42.9721
+    lng: -88.2337
   url: https://area63aa.org/meetings/southside-aa-group/
-  external_ids: {tsml: 'area63aa:427857'}
+  external_ids:
+    tsml: area63aa:427857
   sources:
   - aa/area63aa
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wi/waukesha-4250/starting-the-week-off-right
   name: Starting The Week Off Right
   program: na

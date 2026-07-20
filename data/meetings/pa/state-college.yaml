@@ -93,20 +93,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: 220 Regent Ct Suite B, State College, PA 16801
-  venue: {street: 220 Regent Ct Suite B, city: State College, state: pa, zip: '16801'}
+  venue:
+    street: 220 Regent Ct Suite B
+    city: State College
+    state: pa
+    zip: '16801'
   place: '4273808'
-  geo: {lat: 40.78398, lng: -77.82069}
+  geo:
+    lat: 40.78398
+    lng: -77.82069
   url: https://recoverydharma.org/meetings/happy-valley-rd/
-  external_ids: {tsml: 'recoverydharma:255715'}
+  external_ids:
+    tsml: recoverydharma:255715
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: pa/state-college/it-works-if-you-let-it-group
   name: It Works If You Let It Group
   program: na
@@ -169,6 +180,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: pa/state-college/smart-recovery-meeting-8175
+  name: 'SMART Recovery Meeting #8175'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Schlow Centre Region Library, 2nd Floor Conference Room
+  venue:
+    street: 211 South Allen Street
+    city: State College
+    state: pa
+    zip: '16801'
+  place: '4273808'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8175/
+  external_ids:
+    smart: '8175'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: pa/state-college/we-do-recover-group
   name: We Do Recover Group
   program: na

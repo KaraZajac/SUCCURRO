@@ -385,20 +385,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '12:00', duration_min: 60}
+  - day: mon
+    time: '12:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: 45 Willard Ave, Providence, RI 02905, USA
-  venue: {street: 45 Willard Ave, city: Providence, state: ri, zip: 02905}
+  venue:
+    street: 45 Willard Ave
+    city: Providence
+    state: ri
+    zip: 02905
   place: '4459000'
-  geo: {lat: 41.80957, lng: -71.40787}
+  geo:
+    lat: 41.80957
+    lng: -71.40787
   url: https://recoverydharma.org/meetings/rd-rhode-island/
-  external_ids: {tsml: 'recoverydharma:249072'}
+  external_ids:
+    tsml: recoverydharma:249072
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ri/providence/room-to-grow
   name: Room to Grow
   program: na
@@ -431,6 +442,35 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ri/providence/smart-recovery-meeting-6505
+  name: 'SMART Recovery Meeting #6505'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '15:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 310 Reservoir Avenue
+    city: Providence
+    state: ri
+    zip: 02907
+  place: '4459000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6505/
+  external_ids:
+    smart: '6505'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ri/providence/step-sisters
   name: Step Sisters
   program: na

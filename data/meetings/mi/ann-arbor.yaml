@@ -160,42 +160,64 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '12:00', duration_min: 60}
+  - day: sun
+    time: '12:00'
+    duration_min: 60
   format: hybrid
   types:
   - nl
   - o
   - onl
   venue_name: Zen Buddhist Temple
-  venue: {street: 1214 Packard St, city: Ann Arbor, state: mi, zip: '48104'}
+  venue:
+    street: 1214 Packard St
+    city: Ann Arbor
+    state: mi
+    zip: '48104'
   place: '2603000'
-  geo: {lat: 42.26548, lng: -83.73522}
+  geo:
+    lat: 42.26548
+    lng: -83.73522
   url: https://recoverydharma.org/meetings/rd-ann-arbor/
   conference_url: http://zoom.us/j/85106225103?pwd=c29SWXh3aW8rOGswQzBTb28xSFpTQT09
-  external_ids: {tsml: 'recoverydharma:247954'}
+  external_ids:
+    tsml: recoverydharma:247954
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/rd-wrap
   name: RD WRAP
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '18:00', duration_min: 60}
+  - day: mon
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: Ann Arbor
-  venue: {street: 1432 Washtenaw Ave, city: Ann Arbor, state: mi, zip: '48104'}
+  venue:
+    street: 1432 Washtenaw Ave
+    city: Ann Arbor
+    state: mi
+    zip: '48104'
   place: '2603000'
-  geo: {lat: 42.27365, lng: -83.73104}
+  geo:
+    lat: 42.27365
+    lng: -83.73104
   url: https://recoverydharma.org/meetings/600-pm-et-rd-ann-arbor/
-  external_ids: {tsml: 'recoverydharma:247982'}
+  external_ids:
+    tsml: recoverydharma:247982
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/ann-arbor/serenitea
   name: SereniTEA
   program: na
@@ -227,6 +249,64 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/ann-arbor/smart-recovery-meeting-4709
+  name: 'SMART Recovery Meeting #4709'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Washtenaw Alano Club
+  venue:
+    street: 995 N Maple Road
+    city: Ann Arbor
+    state: mi
+    zip: '48103'
+  place: '2603000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/4709/
+  external_ids:
+    smart: '4709'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: mi/ann-arbor/smart-recovery-meeting-8263
+  name: 'SMART Recovery Meeting #8263'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Alano Club
+  venue:
+    city: Ann Arbor
+    state: mi
+  place: '2603000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8263/
+  external_ids:
+    smart: '8263'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/ann-arbor/surrender-on-sunday
   name: Surrender on Sunday
   program: na

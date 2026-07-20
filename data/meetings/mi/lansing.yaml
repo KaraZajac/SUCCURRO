@@ -245,6 +245,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/lansing/mid-michigan-lifering
+  name: Mid-Michigan LifeRing
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: fri, time: '18:00', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue_name: Mid-Michigan Recovery Services; downstairs
+  venue: {street: 316 Moores River Dr., city: Lansing, state: mi, zip: '48915'}
+  place: '2646000'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1273/
+  external_ids: {lifering: '1273'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: mi/lansing/midday-recovery-group
   name: Midday Recovery Group
   program: na
@@ -717,41 +738,63 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '19:00', duration_min: 60}
+  - day: wed
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - en
   - o
   - wa
   venue_name: Lifeboat
-  venue: {street: 1601 E Michigan Ave, city: Lansing, state: mi, zip: '48912'}
+  venue:
+    street: 1601 E Michigan Ave
+    city: Lansing
+    state: mi
+    zip: '48912'
   place: '2646000'
-  geo: {lat: 42.73379, lng: -84.527}
+  geo:
+    lat: 42.73379
+    lng: -84.527
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-lansing-mi-wednesdays-7pm/
-  external_ids: {tsml: 'refugerecovery:644'}
+  external_ids:
+    tsml: refugerecovery:644
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/lansing/sangha-skywood-lansing-mi
   name: Sangha @ Skywood - Lansing, MI
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '17:00', duration_min: 60}
+  - day: mon
+    time: '17:00'
+    duration_min: 60
   format: hybrid
   types:
   - fbs
   - onl
-  venue: {street: 3645 E Jolly Rd Ste b, city: Lansing, state: mi, zip: '48910'}
+  venue:
+    street: 3645 E Jolly Rd Ste b
+    city: Lansing
+    state: mi
+    zip: '48910'
   place: '2646000'
-  geo: {lat: 42.6836, lng: -84.49906}
+  geo:
+    lat: 42.6836
+    lng: -84.49906
   url: https://recoverydharma.org/meetings/skywood-sangha/
   conference_url: https://uhsinc.zoom.us/j/95408707277
-  external_ids: {tsml: 'recoverydharma:257060'}
+  external_ids:
+    tsml: recoverydharma:257060
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/lansing/sisters-in-surrender
   name: Sisters in Surrender
   program: na
@@ -786,6 +829,65 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/lansing/smart-recovery-meeting-7754
+  name: 'SMART Recovery Meeting #7754'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Wellness INX
+  venue:
+    street: 1601 E Michigan Ave
+    city: Lansing
+    state: mi
+    zip: '48912'
+  place: '2646000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7754/
+  external_ids:
+    smart: '7754'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: mi/lansing/smart-recovery-meeting-9115
+  name: 'SMART Recovery Meeting #9115'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '15:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Community Mental Health Authority
+  venue:
+    city: Lansing
+    state: mi
+    zip: '48910'
+  place: '2646000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9115/
+  external_ids:
+    smart: '9115'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/lansing/spiritual-awakening
   name: Spiritual Awakening
   program: na

@@ -38,20 +38,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '12:00', duration_min: 60}
+  - day: wed
+    time: '12:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Montachusett Recovery Center
-  venue: {street: 106 Carter St Suite 40, city: Leominster, state: ma, zip: '01453'}
+  venue:
+    street: 106 Carter St Suite 40
+    city: Leominster
+    state: ma
+    zip: '01453'
   place: '2535075'
-  geo: {lat: 42.52033, lng: -71.7477}
+  geo:
+    lat: 42.52033
+    lng: -71.7477
   url: https://recoverydharma.org/meetings/montachusett-recovery-center-wednesday-1200-pm/
-  external_ids: {tsml: 'recoverydharma:248728'}
+  external_ids:
+    tsml: recoverydharma:248728
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/leominster/not-alone
   name: Not Alone
   program: na
@@ -85,6 +96,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/leominster/smart-recovery-meeting-8321
+  name: 'SMART Recovery Meeting #8321'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '17:45'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Ripple Effect Peer Recovery Center
+  venue:
+    street: 40 Spruce Street, Suite 200
+    city: Leominster
+    state: ma
+    zip: '01453'
+  place: '2535075'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8321/
+  external_ids:
+    smart: '8321'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ma/leominster/together-we-can
   name: Together We Can
   program: na

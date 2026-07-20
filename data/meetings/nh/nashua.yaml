@@ -190,40 +190,62 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 75}
+  - day: mon
+    time: '19:00'
+    duration_min: 75
   format: in-person
   types:
   - nl
   - o
   venue_name: Revive
-  venue: {street: 263 Main St, city: Nashua, state: nh, zip: '03060'}
+  venue:
+    street: 263 Main St
+    city: Nashua
+    state: nh
+    zip: '03060'
   place: '3350260'
-  geo: {lat: 42.75595, lng: -71.4634}
+  geo:
+    lat: 42.75595
+    lng: -71.4634
   url: https://recoverydharma.org/meetings/75-min-awakening-sangha-revive/
-  external_ids: {tsml: 'recoverydharma:248803'}
+  external_ids:
+    tsml: recoverydharma:248803
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/nashua/rd-nashua-revive-2
   name: RD Nashua @ Revive
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '19:00', duration_min: 75}
+  - day: wed
+    time: '19:00'
+    duration_min: 75
   format: in-person
   types:
   - o
   - nl
   venue_name: Revive
-  venue: {street: 263 Main St, city: Nashua, state: nh, zip: '03060'}
+  venue:
+    street: 263 Main St
+    city: Nashua
+    state: nh
+    zip: '03060'
   place: '3350260'
-  geo: {lat: 42.75595, lng: -71.4634}
+  geo:
+    lat: 42.75595
+    lng: -71.4634
   url: https://recoverydharma.org/meetings/75-min-rd-inquiry-meeting/
-  external_ids: {tsml: 'recoverydharma:248808'}
+  external_ids:
+    tsml: recoverydharma:248808
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/nashua/saturday-daily-inventory
   name: Saturday Daily Inventory
   program: na
@@ -286,6 +308,66 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/nashua/smart-recovery-meeting-6817
+  name: 'SMART Recovery Meeting #6817'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Revive Recovery
+  venue:
+    street: 263 Main St
+    city: Nashua
+    state: nh
+    zip: '03060'
+  place: '3350260'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6817/
+  external_ids:
+    smart: '6817'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: nh/nashua/smart-recovery-meeting-8015
+  name: 'SMART Recovery Meeting #8015'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Revive Recovery
+  venue:
+    street: Revive Recovery, 263 Main Street
+    city: Nashua
+    state: nh
+    zip: '03060'
+  place: '3350260'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8015/
+  external_ids:
+    smart: '8015'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: nh/nashua/trusting-the-process
   name: Trusting the Process
   program: na

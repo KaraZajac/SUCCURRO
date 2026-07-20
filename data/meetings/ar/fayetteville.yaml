@@ -260,16 +260,57 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '19:00', duration_min: 60}
+  - day: tue
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   venue_name: Good Shepherd Lutheran Church
-  venue: {street: 2925 Old Missouri Rd, city: Fayetteville, state: ar, zip: '72703'}
+  venue:
+    street: 2925 Old Missouri Rd
+    city: Fayetteville
+    state: ar
+    zip: '72703'
   place: 0523290
-  geo: {lat: 36.10432, lng: -94.13414}
+  geo:
+    lat: 36.10432
+    lng: -94.13414
   url: https://recoverydharma.org/meetings/rd-fayetteville/
-  external_ids: {tsml: 'recoverydharma:249976'}
+  external_ids:
+    tsml: recoverydharma:249976
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ar/fayetteville/smart-recovery-meeting-6278
+  name: 'SMART Recovery Meeting #6278'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Squire Jehagen Outreach Center
+  venue:
+    street: 115 S Willow Ave
+    city: Fayetteville
+    state: ar
+    zip: '72701'
+  place: 0523290
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6278/
+  external_ids:
+    smart: '6278'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape

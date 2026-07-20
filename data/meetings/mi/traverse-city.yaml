@@ -192,19 +192,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '19:00', duration_min: 60}
+  - day: wed
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   venue_name: Commongrounds Co-op 3rd floor in the Crow's Nest
-  venue: {street: 414 E Eighth St, city: Traverse City, state: mi, zip: '49686'}
+  venue:
+    street: 414 E Eighth St
+    city: Traverse City
+    state: mi
+    zip: '49686'
   place: '2680340'
-  geo: {lat: 44.75909, lng: -85.61512}
+  geo:
+    lat: 44.75909
+    lng: -85.61512
   url: https://recoverydharma.org/meetings/noble-living-sangha/
-  external_ids: {tsml: 'recoverydharma:247991'}
+  external_ids:
+    tsml: recoverydharma:247991
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/traverse-city/public-relations-open-speaker-meeting
   name: Public Relations Open Speaker Meeting
   program: na
@@ -243,22 +254,33 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '11:30', duration_min: 60}
+  - day: sun
+    time: '11:30'
+    duration_min: 60
   format: hybrid
   types:
   - nl
   - o
   - onl
   venue_name: 217 Recovery Center
-  venue: {street: 945 E Eighth St, city: Traverse City, state: mi, zip: '49686'}
+  venue:
+    street: 945 E Eighth St
+    city: Traverse City
+    state: mi
+    zip: '49686'
   place: '2680340'
-  geo: {lat: 44.75904, lng: -85.59827}
+  geo:
+    lat: 44.75904
+    lng: -85.59827
   url: https://recoverydharma.org/meetings/1130-am-et-rd-traverse-city/
   conference_url: https://us02web.zoom.us/j/7991006997
-  external_ids: {tsml: 'recoverydharma:247952'}
+  external_ids:
+    tsml: recoverydharma:247952
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/traverse-city/recovery-1st-group
   name: Recovery 1st Group
   program: na
@@ -672,6 +694,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/traverse-city/tc-lifering
+  name: TC Lifering
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: fri, time: '18:00', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-topic-meeting
+  - all-are-welcome
+  venue_name: Bethlehem Lutheran Church; Library
+  venue: {street: 1050 Peninsula Dr, city: Traverse City, state: mi, zip: '49686'}
+  place: '2680340'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1043/
+  external_ids: {lifering: '1043'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: mi/traverse-city/we-are-enough
   name: We Are Enough
   program: na

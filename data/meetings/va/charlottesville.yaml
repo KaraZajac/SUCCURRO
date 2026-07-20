@@ -377,40 +377,62 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '16:30', duration_min: 60}
+  - day: sun
+    time: '16:30'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: First Presbyterian Church Carriage House
-  venue: {street: 516 Park St, city: Charlottesville, state: va, zip: '22902'}
+  venue:
+    street: 516 Park St
+    city: Charlottesville
+    state: va
+    zip: '22902'
   place: '5114968'
-  geo: {lat: 38.03421, lng: -78.47588}
+  geo:
+    lat: 38.03421
+    lng: -78.47588
   url: https://recoverydharma.org/meetings/rd-charlottesville-first-presbyterian-church-carriage-house-500-park-st-charlottesville-va-22902/
-  external_ids: {tsml: 'recoverydharma:249164'}
+  external_ids:
+    tsml: recoverydharma:249164
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/charlottesville/rd-charlottesville-quaker-friends-meeting-house
   name: RD Charlottesville @ Quaker Friends Meeting House
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '19:30', duration_min: 60}
+  - day: wed
+    time: '19:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Quaker Friends Meeting House
-  venue: {street: 1104 Forest St, city: Charlottesville, state: va, zip: '22903'}
+  venue:
+    street: 1104 Forest St
+    city: Charlottesville
+    state: va
+    zip: '22903'
   place: '5114968'
-  geo: {lat: 38.04017, lng: -78.4833}
+  geo:
+    lat: 38.04017
+    lng: -78.4833
   url: https://recoverydharma.org/meetings/rd-charlottesville-quaker-friends-meeting-house/
-  external_ids: {tsml: 'recoverydharma:249182'}
+  external_ids:
+    tsml: recoverydharma:249182
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/charlottesville/save-our-serenity
   name: Save Our Serenity
   program: na
@@ -443,6 +465,66 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/charlottesville/smart-recovery-meeting-5463
+  name: 'SMART Recovery Meeting #5463'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '17:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: On Our Own Charlottesville
+  venue:
+    street: 123 4th St. NW
+    city: Charlottesville
+    state: va
+    zip: '22903'
+  place: '5114968'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/5463/
+  external_ids:
+    smart: '5463'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: va/charlottesville/smart-recovery-meeting-8168
+  name: 'SMART Recovery Meeting #8168'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '13:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Blue Ridge Center
+  venue:
+    street: 100 Burnet St
+    city: Charlottesville
+    state: va
+    zip: '22902'
+  place: '5114968'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8168/
+  external_ids:
+    smart: '8168'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: va/charlottesville/spiritual-solutions
   name: Spiritual Solutions
   program: na

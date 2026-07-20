@@ -33,19 +33,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '18:00', duration_min: 60}
+  - day: mon
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
-  venue: {street: 206 W Michigan St, city: Mt Pleasant, state: mi, zip: '48858'}
+  venue:
+    street: 206 W Michigan St
+    city: Mt Pleasant
+    state: mi
+    zip: '48858'
   place: '2656020'
-  geo: {lat: 43.60372, lng: -84.77817}
+  geo:
+    lat: 43.60372
+    lng: -84.77817
   url: https://recoverydharma.org/meetings/rd-mount-pleasant/
-  external_ids: {tsml: 'recoverydharma:250789'}
+  external_ids:
+    tsml: recoverydharma:250789
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/mount-pleasant/recovery-zone
   name: Recovery Zone
   program: na
@@ -77,3 +88,31 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/mount-pleasant/smart-recovery-meeting-9062
+  name: 'SMART Recovery Meeting #9062'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '13:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: New Hope
+  venue:
+    city: Mt Pleasant
+    state: mi
+  place: '2656020'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9062/
+  external_ids:
+    smart: '9062'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape

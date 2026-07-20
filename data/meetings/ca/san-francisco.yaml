@@ -321,6 +321,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/lifering-in-san-francisco-kaiser-amrs
+  name: LifeRing in San Francisco Kaiser AMRS
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: tue, time: '13:00', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue_name: Floor 6, Room 6B
+  venue: {street: 939 Ellis Street, city: San Francisco, state: ca, zip: '94109'}
+  place: '0667000'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1041/
+  external_ids: {lifering: '1041'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: ca/san-francisco/meat-n-potatoes
   name: Meat 'N Potatoes
   program: na
@@ -448,44 +469,66 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '17:00', duration_min: 60}
+  - day: sun
+    time: '17:00'
+    duration_min: 60
   format: hybrid
   types:
   - nl
   - o
   - onl
   venue_name: 24th St @ Alabama, In the Mission
-  venue: {street: 2929 24th St, city: San Francisco, state: ca, zip: '94110'}
+  venue:
+    street: 2929 24th St
+    city: San Francisco
+    state: ca
+    zip: '94110'
   place: '0667000'
-  geo: {lat: 37.75256, lng: -122.41066}
+  geo:
+    lat: 37.75256
+    lng: -122.41066
   url: https://recoverydharma.org/meetings/rd-san-francisco-alabama-in-the-mission-2/
   conference_url: https://zoom.us/j/545039806#success
-  external_ids: {tsml: 'recoverydharma:248452'}
+  external_ids:
+    tsml: recoverydharma:248452
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-francisco/rd-san-francisco-24th-st-alabama-in-the-mission-2
   name: RD San Francisco, 24th St @ Alabama, In the Mission
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: fri, time: '18:00', duration_min: 60}
+  - day: fri
+    time: '18:00'
+    duration_min: 60
   format: hybrid
   types:
   - nl
   - o
   - onl
   venue_name: 24th St @ Alabama, In the Mission
-  venue: {street: 2929 24th St, city: San Francisco, state: ca, zip: '94110'}
+  venue:
+    street: 2929 24th St
+    city: San Francisco
+    state: ca
+    zip: '94110'
   place: '0667000'
-  geo: {lat: 37.75256, lng: -122.41066}
+  geo:
+    lat: 37.75256
+    lng: -122.41066
   url: https://recoverydharma.org/meetings/rd-san-francisco-alabama-in-the-mission/
   conference_url: https://zoom.us/j/545039806#success
-  external_ids: {tsml: 'recoverydharma:248411'}
+  external_ids:
+    tsml: recoverydharma:248411
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-francisco/recovery-at-work-raw
   name: Recovery At Work (RAW
   program: na
@@ -695,27 +738,40 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '18:00', duration_min: 60}
+  - day: tue
+    time: '18:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: Castro Country Club
-  venue: {street: 4058 18th St, city: San Francisco, state: ca, zip: '94114'}
+  venue:
+    street: 4058 18th St
+    city: San Francisco
+    state: ca
+    zip: '94114'
   place: '0667000'
-  geo: {lat: 37.76113, lng: -122.43409}
+  geo:
+    lat: 37.76113
+    lng: -122.43409
   url: https://recoverydharma.org/meetings/recovery-dharma-at-the-castro-country-club/
-  external_ids: {tsml: 'recoverydharma:248442'}
+  external_ids:
+    tsml: recoverydharma:248442
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-francisco/recovery-dharma-at-the-castro-country-club-2
   name: Recovery Dharma at the Castro Country Club
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '09:00', duration_min: 60}
+  - day: sat
+    time: 09:00
+    duration_min: 60
   format: hybrid
   types:
   - nl
@@ -723,15 +779,24 @@
   - fbs
   - onl
   venue_name: Castro Country Club
-  venue: {street: 4058 18th St, city: San Francisco, state: ca, zip: '94114'}
+  venue:
+    street: 4058 18th St
+    city: San Francisco
+    state: ca
+    zip: '94114'
   place: '0667000'
-  geo: {lat: 37.76113, lng: -122.43409}
+  geo:
+    lat: 37.76113
+    lng: -122.43409
   url: https://recoverydharma.org/meetings/rd-the-castro-club/
   conference_url: http://zoom.us/j/6787421497?pwd=UlIzRTdPczZjdjZEUUZtdUNvTHlHUT09
-  external_ids: {tsml: 'recoverydharma:248436'}
+  external_ids:
+    tsml: recoverydharma:248436
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-francisco/recovery-in-the-bayview
   name: Recovery in the Bayview
   program: na
@@ -798,21 +863,53 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '19:30', duration_min: 60}
+  - day: tue
+    time: '19:30'
+    duration_min: 60
   format: in-person
   types:
   - o
   - wa
   - en
   venue_name: San Francisco Gratitude Center
-  venue: {street: 1320 7th Ave, city: San Francisco, state: ca, zip: '94122'}
+  venue:
+    street: 1320 7th Ave
+    city: San Francisco
+    state: ca
+    zip: '94122'
   place: '0667000'
-  geo: {lat: 37.76376, lng: -122.46384}
+  geo:
+    lat: 37.76376
+    lng: -122.46384
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-dharmapunx-sf-tuesdays-730pm-pst-915pm-pst/
-  external_ids: {tsml: 'refugerecovery:602'}
+  external_ids:
+    tsml: refugerecovery:602
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: ca/san-francisco/san-francisco-city-hall
+  name: San Francisco City Hall
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: fri, time: '12:00', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue_name: San Francisco City Hall | Room 278 | Between Polk and McAllister
+  venue: {street: 1 Dr. Carlton B. Goodlett Place, city: San Francisco, state: ca, zip: '94102'}
+  place: '0667000'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1023/
+  external_ids: {lifering: '1023'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: ca/san-francisco/san-francisco-nooners
   name: San Francisco Nooners
   program: na
@@ -900,6 +997,93 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/san-francisco/smart-recovery-meeting-6635
+  name: 'SMART Recovery Meeting #6635'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    city: San Francisco
+    state: ca
+  place: '0667000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6635/
+  external_ids:
+    smart: '6635'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/smart-recovery-meeting-7501
+  name: 'SMART Recovery Meeting #7501'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '10:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  - lgbtqia
+  venue_name: Castro Country Club
+  venue:
+    city: San Francisco
+    state: ca
+    zip: '94132'
+  place: '0667000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7501/
+  external_ids:
+    smart: '7501'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ca/san-francisco/smart-recovery-meeting-9094
+  name: 'SMART Recovery Meeting #9094'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '13:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Maya Angelou room, Glide Memorial Church
+  venue:
+    street: 330 Ellis St
+    city: San Francisco
+    state: ca
+    zip: '94102'
+  place: '0667000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9094/
+  external_ids:
+    smart: '9094'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/san-francisco/spiritual-principles
   name: Spiritual Principles
   program: na
@@ -937,21 +1121,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '13:00', duration_min: 60}
+  - day: mon
+    time: '13:00'
+    duration_min: 60
   format: in-person
   types:
   - fbs
   - o
   - nl
   venue_name: Kaiser Permanente Addiction Medicine and Recovery Services
-  venue: {street: 939 Ellis St, city: San Francisco, state: ca, zip: '94109'}
+  venue:
+    street: 939 Ellis St
+    city: San Francisco
+    state: ca
+    zip: '94109'
   place: '0667000'
-  geo: {lat: 37.78349, lng: -122.4217}
+  geo:
+    lat: 37.78349
+    lng: -122.4217
   url: https://recoverydharma.org/meetings/rd-at-kaiser-permanente-all-are-welcome/
-  external_ids: {tsml: 'recoverydharma:248425'}
+  external_ids:
+    tsml: recoverydharma:248425
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/san-francisco/we-do-recover
   name: We Do Recover
   program: na

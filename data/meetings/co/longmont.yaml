@@ -1,3 +1,23 @@
+- id: co/longmont/a-way-forward-inc-in-person-meeting
+  name: A Way Forward Inc, In-Person Meeting
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: sun, time: '10:30', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-topic-meeting
+  - all-are-welcome
+  venue: {street: 600 Terry Street, city: Longmont, state: co, zip: '80501'}
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1045/
+  external_ids: {lifering: '1045'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: co/longmont/clean-for-today
   name: Clean For Today
   program: na
@@ -60,6 +80,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/longmont/how-was-your-week-longmont-saturday
+  name: How Was Your Week Longmont Saturday
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: sat, time: '10:30', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue_name: A Way Forward - meeting room
+  venue: {street: 600 Terry St., city: Longmont, state: co, zip: '80501'}
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1270/
+  external_ids: {lifering: '1270'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: co/longmont/no-matter-what
   name: No Matter What
   program: na
@@ -94,20 +135,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '18:30', duration_min: 60}
+  - day: tue
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: A Way Forward
-  venue: {street: 600 Terry St, city: Longmont, state: co, zip: '80501'}
+  venue:
+    street: 600 Terry St
+    city: Longmont
+    state: co
+    zip: '80501'
   place: 0845970
-  geo: {lat: 40.16924, lng: -105.10481}
+  geo:
+    lat: 40.16924
+    lng: -105.10481
   url: https://recoverydharma.org/meetings/rd-a-way-forward-600-terry-st-longmont-co-80501/
-  external_ids: {tsml: 'recoverydharma:248516'}
+  external_ids:
+    tsml: recoverydharma:248516
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/longmont/silver-linings
   name: Silver Linings
   program: na
@@ -172,6 +224,151 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/longmont/smart-recovery-family-friends-meeting-7218
+  name: 'SMART Recovery Family & Friends Meeting #7218'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - family-amp-friends
+  - adult-family-members-and-friends
+  venue_name: Recovery Cafe
+  venue:
+    city: Longmont
+    state: co
+    zip: '80501'
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7218/
+  external_ids:
+    smart: '7218'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: co/longmont/smart-recovery-family-friends-meeting-8626
+  name: 'SMART Recovery Family & Friends Meeting #8626'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '16:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - family-amp-friends
+  - adult-family-members-and-friends
+  venue_name: A Way Foward (La Casa Amarilla)
+  venue:
+    street: 600 Terry St
+    city: Longmont
+    state: co
+    zip: '80501'
+  place: 0845970
+  languages:
+  - es
+  url: https://meetings.smartrecovery.org/meetings/8626/
+  external_ids:
+    smart: '8626'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: co/longmont/smart-recovery-meeting-6793
+  name: 'SMART Recovery Meeting #6793'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Recovery Café
+  venue:
+    city: Longmont
+    state: co
+    zip: '80501'
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6793/
+  external_ids:
+    smart: '6793'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: co/longmont/smart-recovery-meeting-8289
+  name: 'SMART Recovery Meeting #8289'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: A Way Forward
+  venue:
+    city: Longmont
+    state: co
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8289/
+  external_ids:
+    smart: '8289'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: co/longmont/smart-recovery-meeting-8739
+  name: 'SMART Recovery Meeting #8739'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '13:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: The Yellow House
+  venue:
+    city: Longmont
+    state: co
+    zip: '80501'
+  place: 0845970
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8739/
+  external_ids:
+    smart: '8739'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: co/longmont/sunday-solutions
   name: Sunday Solutions
   program: na

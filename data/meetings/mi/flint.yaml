@@ -406,20 +406,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '12:30', duration_min: 60}
+  - day: sat
+    time: '12:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Gloria Coles Flint Public Library
-  venue: {street: 1026 E Kearsley St, city: Flint, state: mi, zip: '48503'}
+  venue:
+    street: 1026 E Kearsley St
+    city: Flint
+    state: mi
+    zip: '48503'
   place: '2629000'
-  geo: {lat: 43.02168, lng: -83.6793}
+  geo:
+    lat: 43.02168
+    lng: -83.6793
   url: https://recoverydharma.org/meetings/rd-michigan/
-  external_ids: {tsml: 'recoverydharma:247946'}
+  external_ids:
+    tsml: recoverydharma:247946
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/flint/saturday-serenity
   name: Saturday Serenity
   program: na
@@ -452,6 +463,67 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/flint/smart-recovery-family-friends-meeting-8240
+  name: 'SMART Recovery Family & Friends Meeting #8240'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '14:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - family-amp-friends
+  - adult-family-members-and-friends
+  venue_name: The Bridge Church
+  venue:
+    street: G3326 Corunna Rd
+    city: Flint
+    state: mi
+    zip: '48532'
+  place: '2629000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8240/
+  external_ids:
+    smart: '8240'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: mi/flint/smart-recovery-meeting-8609
+  name: 'SMART Recovery Meeting #8609'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '17:00'
+    duration_min: 60
+  format: hybrid
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Serenity House Communities
+  venue:
+    street: 1015 Church Street
+    city: Flint
+    state: mi
+    zip: '48502'
+  place: '2629000'
+  conference_url: https://instance-us.pathcheck.net/j/M8P3U4
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8609/
+  external_ids:
+    smart: '8609'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/flint/southside-group-of-na
   name: Southside Group of NA
   program: na

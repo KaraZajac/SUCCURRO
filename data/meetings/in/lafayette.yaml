@@ -419,19 +419,60 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '10:15', duration_min: 60}
+  - day: tue
+    time: '10:15'
+    duration_min: 60
   format: in-person
   types:
   - nl
   venue_name: Recovery Cafe
-  venue: {street: 'Recovery Cafe Lafayette, 2300 Ferry St', city: Lafayette, state: in, zip: '47904'}
+  venue:
+    street: Recovery Cafe Lafayette, 2300 Ferry St
+    city: Lafayette
+    state: in
+    zip: '47904'
   place: '1840788'
-  geo: {lat: 40.41919, lng: -86.87103}
+  geo:
+    lat: 40.41919
+    lng: -86.87103
   url: https://recoverydharma.org/meetings/rd-lafayette/
-  external_ids: {tsml: 'recoverydharma:254042'}
+  external_ids:
+    tsml: recoverydharma:254042
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: in/lafayette/smart-recovery-meeting-8295
+  name: 'SMART Recovery Meeting #8295'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '17:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Lafayette Recovery Cafe
+  venue:
+    street: 2300 Ferry Street
+    city: Lafayette
+    state: in
+    zip: '47904'
+  place: '1840788'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8295/
+  external_ids:
+    smart: '8295'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: in/lafayette/wabash-valley-group
   name: Wabash Valley Group
   program: na

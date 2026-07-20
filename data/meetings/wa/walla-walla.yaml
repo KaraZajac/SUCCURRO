@@ -66,21 +66,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '18:30', duration_min: 60}
+  - day: wed
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   - fbs
   venue_name: Garage
-  venue: {street: 304 E Cherry St, city: Walla Walla, state: wa, zip: '99362'}
+  venue:
+    street: 304 E Cherry St
+    city: Walla Walla
+    state: wa
+    zip: '99362'
   place: '5375775'
-  geo: {lat: 46.07139, lng: -118.33831}
+  geo:
+    lat: 46.07139
+    lng: -118.33831
   url: https://recoverydharma.org/meetings/630-pm-pt-rd-walla-walla-serenity-through-dharma/
-  external_ids: {tsml: 'recoverydharma:249224'}
+  external_ids:
+    tsml: recoverydharma:249224
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: wa/walla-walla/saturday-night-live
   name: Saturday Night Live
   program: na
@@ -116,6 +127,66 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: wa/walla-walla/smart-recovery-meeting-6026
+  name: 'SMART Recovery Meeting #6026'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Pioneer Methodist Church
+  venue:
+    street: 209 East Birch Street, Room 101
+    city: Walla Walla
+    state: wa
+    zip: '99362'
+  place: '5375775'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6026/
+  external_ids:
+    smart: '6026'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: wa/walla-walla/smart-recovery-meeting-6027
+  name: 'SMART Recovery Meeting #6027'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Pioneer Methodist Church
+  venue:
+    street: 209 East Birch Street, Room 101
+    city: Walla Walla
+    state: wa
+    zip: '99362'
+  place: '5375775'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6027/
+  external_ids:
+    smart: '6027'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: wa/walla-walla/upward-bound
   name: Upward Bound
   program: na

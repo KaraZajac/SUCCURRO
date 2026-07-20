@@ -126,20 +126,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: fri, time: '17:00', duration_min: 60}
+  - day: fri
+    time: '17:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Blue Lotus Counseling and Wellness Center
-  venue: {street: 558 Pine St, city: Manchester, state: nh, zip: '03104'}
+  venue:
+    street: 558 Pine St
+    city: Manchester
+    state: nh
+    zip: '03104'
   place: '3345140'
-  geo: {lat: 42.99854, lng: -71.46039}
+  geo:
+    lat: 42.99854
+    lng: -71.46039
   url: https://recoverydharma.org/meetings/blue-lotus-counseling-and-wellness-center/
-  external_ids: {tsml: 'recoverydharma:248799'}
+  external_ids:
+    tsml: recoverydharma:248799
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nh/manchester/roomful-of-miracles
   name: Roomful of Miracles
   program: na
@@ -331,6 +342,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nh/manchester/smart-recovery-meeting-2991
+  name: 'SMART Recovery Meeting #2991'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '17:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Manchester Recovery Community Center
+  venue:
+    street: 293 Wilson St.
+    city: Manchester
+    state: nh
+    zip: '03103'
+  place: '3345140'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/2991/
+  external_ids:
+    smart: '2991'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: nh/manchester/the-straight-ahead-group
   name: The Straight Ahead Group
   program: na

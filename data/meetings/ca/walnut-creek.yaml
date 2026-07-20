@@ -37,20 +37,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Unity Center
-  venue: {street: 1871 Geary Rd, city: Walnut Creek, state: ca, zip: '94597'}
+  venue:
+    street: 1871 Geary Rd
+    city: Walnut Creek
+    state: ca
+    zip: '94597'
   place: 0683346
-  geo: {lat: 37.92587, lng: -122.07267}
+  geo:
+    lat: 37.92587
+    lng: -122.07267
   url: https://recoverydharma.org/meetings/rd-unity-center-sangha/
-  external_ids: {tsml: 'recoverydharma:248429'}
+  external_ids:
+    tsml: recoverydharma:248429
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/walnut-creek/short-sweet
   name: Short & Sweet
   program: na
@@ -119,6 +130,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/walnut-creek/walnut-creek-kaiser-amrs
+  name: Walnut Creek Kaiser AMRS
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: mon, time: '12:30', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue_name: Room 3-E
+  venue: {street: 710 S. Broadway, city: Walnut Creek, state: ca, zip: '94596'}
+  place: 0683346
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1009/
+  external_ids: {lifering: '1009'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: ca/walnut-creek/welcome-to-na-workshop-in-person
   name: Welcome to NA Workshop- In Person
   program: na

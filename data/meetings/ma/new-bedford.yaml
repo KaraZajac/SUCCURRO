@@ -259,21 +259,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - en
   - o
   - wa
   venue_name: Sangha New Bedford
-  venue: {street: 693 Purchase St, city: New Bedford, state: ma, zip: '02740'}
+  venue:
+    street: 693 Purchase St
+    city: New Bedford
+    state: ma
+    zip: '02740'
   place: '2545000'
-  geo: {lat: 41.63325, lng: -70.92593}
+  geo:
+    lat: 41.63325
+    lng: -70.92593
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-sangha-new-bedford-new-bedford-ma-mondays-7pm/
-  external_ids: {tsml: 'refugerecovery:511'}
+  external_ids:
+    tsml: refugerecovery:511
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/new-bedford/saturday-night-live
   name: Saturday Night Live
   program: na
@@ -342,6 +353,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/new-bedford/smart-recovery-meeting-7957
+  name: 'SMART Recovery Meeting #7957'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '13:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Steppingstone Peer2Peer
+  venue:
+    street: 174 Union Street, Suite One East
+    city: New Bedford
+    state: ma
+    zip: '02740'
+  place: '2545000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7957/
+  external_ids:
+    smart: '7957'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ma/new-bedford/stepping-up-1-2-3-group
   name: Stepping Up 1 2 3 Group
   program: na

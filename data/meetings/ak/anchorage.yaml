@@ -449,20 +449,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '18:30', duration_min: 60}
+  - day: wed
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: AK Center for Spiritual Living
-  venue: {street: 929 E 81st Ave, city: Anchorage, state: ak, zip: '99518'}
+  venue:
+    street: 929 E 81st Ave
+    city: Anchorage
+    state: ak
+    zip: '99518'
   place: '0203000'
-  geo: {lat: 61.14784, lng: -149.86564}
+  geo:
+    lat: 61.14784
+    lng: -149.86564
   url: https://recoverydharma.org/meetings/rd-anchorage-ak-center-for-spiritual-living/
-  external_ids: {tsml: 'recoverydharma:248373'}
+  external_ids:
+    tsml: recoverydharma:248373
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ak/anchorage/roundabout
   name: Roundabout
   program: na
@@ -610,6 +621,93 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ak/anchorage/smart-recovery-meeting-8060
+  name: 'SMART Recovery Meeting #8060'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '17:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Partners for Progress
+  venue:
+    city: Anchorage
+    state: ak
+    zip: '99501'
+  place: '0203000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8060/
+  external_ids:
+    smart: '8060'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ak/anchorage/smart-recovery-meeting-8470
+  name: 'SMART Recovery Meeting #8470'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Partners Reentry Center
+  venue:
+    street: 417 Barrow St
+    city: Anchorage
+    state: ak
+    zip: '99501'
+  place: '0203000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8470/
+  external_ids:
+    smart: '8470'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ak/anchorage/smart-recovery-meeting-8945
+  name: 'SMART Recovery Meeting #8945'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '17:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Partners For Progress
+  venue:
+    city: Anchorage
+    state: ak
+  place: '0203000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8945/
+  external_ids:
+    smart: '8945'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ak/anchorage/the-morning-after
   name: The Morning After
   program: na

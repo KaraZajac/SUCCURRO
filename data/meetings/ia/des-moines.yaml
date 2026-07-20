@@ -415,39 +415,61 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '17:30', duration_min: 60}
+  - day: mon
+    time: '17:30'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: '@ Full Circle Recovery'
-  venue: {street: 4725 Merle Hay Rd STE 107, city: Des Moines, state: ia, zip: '50322'}
+  venue:
+    street: 4725 Merle Hay Rd STE 107
+    city: Des Moines
+    state: ia
+    zip: '50322'
   place: '1921000'
-  geo: {lat: 41.63562, lng: -93.70359}
+  geo:
+    lat: 41.63562
+    lng: -93.70359
   url: https://recoverydharma.org/meetings/rd-full-circle-recovery/
-  external_ids: {tsml: 'recoverydharma:248634'}
+  external_ids:
+    tsml: recoverydharma:248634
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/rd-rise-recovery-center
   name: RD @ Rise Recovery Center
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '10:30', duration_min: 60}
+  - day: sat
+    time: '10:30'
+    duration_min: 60
   format: in-person
   types:
   - o
   venue_name: Rise Recovery Center
-  venue: {street: 3120 SW 9th St, city: Des Moines, state: ia, zip: '50315'}
+  venue:
+    street: 3120 SW 9th St
+    city: Des Moines
+    state: ia
+    zip: '50315'
   place: '1921000'
-  geo: {lat: 41.5566, lng: -93.62611}
+  geo:
+    lat: 41.5566
+    lng: -93.62611
   url: https://recoverydharma.org/meetings/rd-rise-recovery/
-  external_ids: {tsml: 'recoverydharma:255247'}
+  external_ids:
+    tsml: recoverydharma:255247
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ia/des-moines/saturday-night-salvation
   name: Saturday Night Salvation
   program: na
@@ -477,6 +499,124 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ia/des-moines/smart-recovery-meeting-6739
+  name: 'SMART Recovery Meeting #6739'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 4725 Merle Hay Rd, Ste 107
+    city: Des Moines
+    state: ia
+    zip: '50322'
+  place: '1921000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6739/
+  external_ids:
+    smart: '6739'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ia/des-moines/smart-recovery-meeting-6820
+  name: 'SMART Recovery Meeting #6820'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Full Circle RCC
+  venue:
+    street: 4725 Merle Hay Rd, Ste 107
+    city: Des Moines
+    state: ia
+    zip: '50322'
+  place: '1921000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6820/
+  external_ids:
+    smart: '6820'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ia/des-moines/smart-recovery-meeting-8077
+  name: 'SMART Recovery Meeting #8077'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: 09:00
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 4725 Merle Hay Road, Ste. 107
+    city: Des Moines
+    state: ia
+    zip: '50310'
+  place: '1921000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8077/
+  external_ids:
+    smart: '8077'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ia/des-moines/smart-recovery-meeting-9282
+  name: 'SMART Recovery Meeting #9282'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '12:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Rise Recovery center
+  venue:
+    street: 3120 sw 9th
+    city: Des Moines
+    state: ia
+    zip: '50315'
+  place: '1921000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9282/
+  external_ids:
+    smart: '9282'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ia/des-moines/stepping-into-traditions
   name: Stepping Into Traditions
   program: na

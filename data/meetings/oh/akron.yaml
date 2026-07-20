@@ -28,6 +28,27 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/akron-ohio-squirrel-saturday-hybrid
+  name: Akron Ohio Squirrel Saturday Hybrid
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: sat, time: '12:00', duration_min: 60}
+  format: hybrid
+  types:
+  - topic-meeting
+  - online-local-regional
+  venue_name: Summit Recovery Hub - Annex
+  venue: {street: 572 W Market St, city: Akron, state: oh, zip: '44303'}
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1012/
+  external_ids: {lifering: '1012'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: oh/akron/come-as-you-are-group
   name: Come As You Are Group
   program: na
@@ -251,6 +272,26 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/firestone-park-community-center
+  name: Firestone Park Community Center
+  program: lifering
+  categories:
+  - recovery-meeting
+  schedule:
+  - {day: tue, time: '18:30', duration_min: 60}
+  format: in-person
+  types:
+  - how-was-your-week-meeting
+  - all-are-welcome
+  venue: {street: 1480 Girard St., city: Akron, state: oh, zip: '44301'}
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.lifering.org/meetings/1021/
+  external_ids: {lifering: '1021'}
+  sources:
+  - lifering/meeting-finder
+  verified: {'on': '2026-07-20', method: scrape}
 - id: oh/akron/how-it-works-group
   name: How it Works Group
   program: na
@@ -381,7 +422,9 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '17:00', duration_min: 60}
+  - day: thu
+    time: '17:00'
+    duration_min: 60
   format: hybrid
   types:
   - fis
@@ -389,59 +432,90 @@
   - nl
   - onl
   venue_name: JADFA House in Akron
-  venue: {street: 916 Kenmore Blvd, city: Akron, state: oh, zip: '44314'}
+  venue:
+    street: 916 Kenmore Blvd
+    city: Akron
+    state: oh
+    zip: '44314'
   place: '3901000'
-  geo: {lat: 41.0435, lng: -81.55671}
+  geo:
+    lat: 41.0435
+    lng: -81.55671
   url: https://recoverydharma.org/meetings/rd-inquiry-circle-jadfa-house-in-akron/
   conference_url: https://us05web.zoom.us/j/82710898911?pwd=95DgPAwNgOVQQfs1YTxwB7MvBGsHvl.1
-  external_ids: {tsml: 'recoverydharma:253147'}
+  external_ids:
+    tsml: recoverydharma:253147
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/rd-just-a-dad-from-akron
   name: RD @ Just a Dad from Akron
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '16:00', duration_min: 60}
+  - day: thu
+    time: '16:00'
+    duration_min: 60
   format: hybrid
   types:
   - o
   - nl
   - onl
   venue_name: JADFA House in Akron
-  venue: {street: 916 Kenmore Blvd, city: Akron, state: oh, zip: '44314'}
+  venue:
+    street: 916 Kenmore Blvd
+    city: Akron
+    state: oh
+    zip: '44314'
   place: '3901000'
-  geo: {lat: 41.0435, lng: -81.55671}
+  geo:
+    lat: 41.0435
+    lng: -81.55671
   url: https://recoverydharma.org/meetings/rd-just-a-dad-from-akron/
   conference_url: https://us05web.zoom.us/j/82710898911?pwd=95DgPAwNgOVQQfs1YTxwB7MvBGsHvl.1
-  external_ids: {tsml: 'recoverydharma:253144'}
+  external_ids:
+    tsml: recoverydharma:253144
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/rd-the-summit-recovery-hub
   name: RD @ the Summit Recovery Hub
   program: recovery-dharma
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '14:00', duration_min: 60}
+  - day: sat
+    time: '14:00'
+    duration_min: 60
   format: hybrid
   types:
   - o
   - nl
   - onl
   venue_name: the Summit Recovery Hub
-  venue: {street: '572 W Market St # 2', city: Akron, state: oh, zip: '44303'}
+  venue:
+    street: '572 W Market St # 2'
+    city: Akron
+    state: oh
+    zip: '44303'
   place: '3901000'
-  geo: {lat: 41.09266, lng: -81.53622}
+  geo:
+    lat: 41.09266
+    lng: -81.53622
   url: https://recoverydharma.org/meetings/recovery-dharma-the-summit-recovery-hub-572-w-market-st-unit-2-akron-oh-44303-60-minute-in-person-meeting-8-fold-path-beginners-meeting-meditation-literature-check-ins/
   conference_url: https://us06web.zoom.us/j/84625635342?pwd=KcRCR5yY7dfq6fkb7uc1fPox32Ww1H.1
-  external_ids: {tsml: 'recoverydharma:248920'}
+  external_ids:
+    tsml: recoverydharma:248920
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: oh/akron/rubber-city-recovery-group
   name: Rubber City Recovery Group
   program: na
@@ -502,6 +576,181 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: oh/akron/smart-recovery-meeting-7953
+  name: 'SMART Recovery Meeting #7953'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Summa Juve Behavioral Health Pavilion
+  venue:
+    street: 45 Arch St
+    city: Akron
+    state: oh
+    zip: '44304'
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7953/
+  external_ids:
+    smart: '7953'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/smart-recovery-meeting-8166
+  name: 'SMART Recovery Meeting #8166'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: The Summit Recovery Hub
+  venue:
+    city: Akron
+    state: oh
+    zip: '44303'
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8166/
+  external_ids:
+    smart: '8166'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/smart-recovery-meeting-8313
+  name: 'SMART Recovery Meeting #8313'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '13:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Tyler&#x27;s Redemption Place
+  venue:
+    city: Akron
+    state: oh
+    zip: '44312'
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8313/
+  external_ids:
+    smart: '8313'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/smart-recovery-meeting-8409
+  name: 'SMART Recovery Meeting #8409'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '13:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Summit Rcovery Hub
+  venue:
+    city: Akron
+    state: oh
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8409/
+  external_ids:
+    smart: '8409'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/smart-recovery-meeting-8473
+  name: 'SMART Recovery Meeting #8473'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sat
+    time: '12:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Tyler&#x27;s Redemption Place
+  venue:
+    city: Akron
+    state: oh
+    zip: '44312'
+  place: '3901000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8473/
+  external_ids:
+    smart: '8473'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: oh/akron/smart-recovery-meeting-9055
+  name: 'SMART Recovery Meeting #9055'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '14:30'
+    duration_min: 60
+  format: hybrid
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: '572 W. Market St. Unit #2'
+    city: Akron
+    state: oh
+    zip: '44303'
+  place: '3901000'
+  conference_url: https://instance-us.pathcheck.net/j/M3V3Q9
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9055/
+  external_ids:
+    smart: '9055'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: oh/akron/southside-recovery-group
   name: Southside Recovery Group
   program: na

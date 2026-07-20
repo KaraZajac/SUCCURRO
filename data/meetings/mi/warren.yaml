@@ -454,20 +454,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '19:30', duration_min: 60}
+  - day: tue
+    time: '19:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Midwest Buddhist Meditation Center (MDMC)
-  venue: {street: 29750 Ryan Rd, city: Warren, state: mi, zip: '48092'}
+  venue:
+    street: 29750 Ryan Rd
+    city: Warren
+    state: mi
+    zip: '48092'
   place: '2684000'
-  geo: {lat: 42.51182, lng: -83.06702}
+  geo:
+    lat: 42.51182
+    lng: -83.06702
   url: https://recoverydharma.org/meetings/rd-midwest-buddhist-meditation-center-mdmc/
-  external_ids: {tsml: 'recoverydharma:247988'}
+  external_ids:
+    tsml: recoverydharma:247988
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: mi/warren/recovery-zone
   name: Recovery Zone
   program: na
@@ -498,6 +509,35 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: mi/warren/smart-recovery-meeting-7718
+  name: 'SMART Recovery Meeting #7718'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: wed
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: East Side Alano Club
+  venue:
+    city: Warren
+    state: mi
+    zip: '48089'
+  place: '2684000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7718/
+  external_ids:
+    smart: '7718'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: mi/warren/spiritual-journey
   name: Spiritual Journey
   program: na

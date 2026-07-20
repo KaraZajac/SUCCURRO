@@ -66,20 +66,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: tue, time: '20:00', duration_min: 75}
+  - day: tue
+    time: '20:00'
+    duration_min: 75
   format: in-person
   types:
   - o
   - nl
   venue_name: SHARE! (Self-Help and Recovery Exchange)
-  venue: {street: 6666 Green Valley Cir, city: Culver City, state: ca, zip: '90230'}
+  venue:
+    street: 6666 Green Valley Cir
+    city: Culver City
+    state: ca
+    zip: '90230'
   place: 0617568
-  geo: {lat: 33.97834, lng: -118.38532}
+  geo:
+    lat: 33.97834
+    lng: -118.38532
   url: https://recoverydharma.org/meetings/rd-west-los-angeles/
-  external_ids: {tsml: 'recoverydharma:248473'}
+  external_ids:
+    tsml: recoverydharma:248473
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ca/culver-city/saturday-night-live-snl
   name: Saturday Night Live (SNL)
   program: na
@@ -114,6 +125,34 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ca/culver-city/smart-recovery-meeting-7936
+  name: 'SMART Recovery Meeting #7936'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    city: Culver City
+    state: ca
+    zip: '90230'
+  place: 0617568
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7936/
+  external_ids:
+    smart: '7936'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ca/culver-city/you-grow-girl
   name: You Grow Girl
   program: na

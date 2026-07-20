@@ -335,16 +335,56 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '14:00', duration_min: 60}
+  - day: sat
+    time: '14:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   venue_name: The Recovery Bank
-  venue: {street: 120 Wyoming Ave, city: Scranton, state: pa, zip: '18503'}
+  venue:
+    street: 120 Wyoming Ave
+    city: Scranton
+    state: pa
+    zip: '18503'
   place: '4269000'
-  geo: {lat: 41.40804, lng: -75.66547}
+  geo:
+    lat: 41.40804
+    lng: -75.66547
   url: https://recoverydharma.org/meetings/rd-with-tara/
-  external_ids: {tsml: 'recoverydharma:255211'}
+  external_ids:
+    tsml: recoverydharma:255211
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: pa/scranton/smart-recovery-meeting-9257
+  name: 'SMART Recovery Meeting #9257'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '17:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 431 Wyoming Ave
+    city: Scranton
+    state: pa
+    zip: '18503'
+  place: '4269000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9257/
+  external_ids:
+    smart: '9257'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape

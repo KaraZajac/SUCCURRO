@@ -64,19 +64,30 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '18:30', duration_min: 60}
+  - day: wed
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - c
   venue_name: Church
-  venue: {street: 7077 Harvest Rd, city: Boulder, state: co, zip: '80301'}
+  venue:
+    street: 7077 Harvest Rd
+    city: Boulder
+    state: co
+    zip: '80301'
   place: 0807850
-  geo: {lat: 40.0723, lng: -105.18843}
+  geo:
+    lat: 40.0723
+    lng: -105.18843
   url: https://daccaa.org/meetings/no-reservation/
-  external_ids: {tsml: 'daccaa:143143'}
+  external_ids:
+    tsml: daccaa:143143
   sources:
   - aa/daccaa
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/boulder/progress-not-perfection
   name: Progress Not Perfection
   program: na
@@ -110,20 +121,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '18:30', duration_min: 60}
+  - day: thu
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Out Boulder County Pridehouse
-  venue: {street: 'Heritage Building, 1443 Spruce St', city: Boulder, state: co, zip: '80302'}
+  venue:
+    street: Heritage Building, 1443 Spruce St
+    city: Boulder
+    state: co
+    zip: '80302'
   place: 0807850
-  geo: {lat: 40.01989, lng: -105.27675}
+  geo:
+    lat: 40.01989
+    lng: -105.27675
   url: https://recoverydharma.org/meetings/boulder-rd-out-boulder-county-pridehouse/
-  external_ids: {tsml: 'recoverydharma:248506'}
+  external_ids:
+    tsml: recoverydharma:248506
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: co/boulder/ready-to-work
   name: Ready to Work
   program: na
@@ -309,6 +331,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: co/boulder/smart-recovery-meeting-7800
+  name: 'SMART Recovery Meeting #7800'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 90
+  format: hybrid
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Della Cava Medical Pavilion
+  venue:
+    city: Boulder
+    state: co
+    zip: '80301'
+  place: 0807850
+  conference_url: https://instance-us.pathcheck.net/j/J9N3Y8
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7800/
+  external_ids:
+    smart: '7800'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: co/boulder/sunday-morning-tune-up
   name: Sunday Morning Tune-Up
   program: na

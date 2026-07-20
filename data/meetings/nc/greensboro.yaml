@@ -1378,20 +1378,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: College Park Baptist Church
-  venue: {street: 1601 Walker Ave, city: Greensboro, state: nc, zip: '27403'}
+  venue:
+    street: 1601 Walker Ave
+    city: Greensboro
+    state: nc
+    zip: '27403'
   place: '3728000'
-  geo: {lat: 36.06828, lng: -79.81559}
+  geo:
+    lat: 36.06828
+    lng: -79.81559
   url: https://recoverydharma.org/meetings/recovery-dharma-greensboro-college-park-baptist-church/
-  external_ids: {tsml: 'recoverydharma:248875'}
+  external_ids:
+    tsml: recoverydharma:248875
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: nc/greensboro/rising-sun
   name: Rising Sun
   program: na
@@ -1694,6 +1705,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: nc/greensboro/smart-recovery-meeting-148
+  name: 'SMART Recovery Meeting #148'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Deep Roots Market
+  venue:
+    street: 600 N Eugene St.
+    city: Greensboro
+    state: nc
+    zip: '27401'
+  place: '3728000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/148/
+  external_ids:
+    smart: '148'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: nc/greensboro/unnamed-group
   name: Unnamed Group
   program: na

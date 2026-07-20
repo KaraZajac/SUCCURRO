@@ -247,40 +247,62 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: wed, time: '12:00', duration_min: 60}
+  - day: wed
+    time: '12:00'
+    duration_min: 60
   format: in-person
   types:
   - o
   - nl
   venue_name: Bend Oregon
-  venue: {street: 908 NE 4th St, city: Bend, state: or, zip: '97701'}
+  venue:
+    street: 908 NE 4th St
+    city: Bend
+    state: or
+    zip: '97701'
   place: '4105800'
-  geo: {lat: 44.05919, lng: -121.30049}
+  geo:
+    lat: 44.05919
+    lng: -121.30049
   url: https://recoverydharma.org/meetings/rd-oregon-2/
-  external_ids: {tsml: 'recoverydharma:248982'}
+  external_ids:
+    tsml: recoverydharma:248982
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/bend/refuge-recovery-meditate-amp-destroy-bend-or-mon
   name: Refuge Recovery 'Meditate &amp; Destroy' – Bend, OR – Mondays 7pm
   program: refuge-recovery
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '19:00', duration_min: 60}
+  - day: mon
+    time: '19:00'
+    duration_min: 60
   format: in-person
   types:
   - en
   - o
   venue_name: Trinity Episcopal Church- Fireside Room
-  venue: {street: 469 NW Wall St, city: Bend, state: or, zip: '97703'}
+  venue:
+    street: 469 NW Wall St
+    city: Bend
+    state: or
+    zip: '97703'
   place: '4105800'
-  geo: {lat: 44.05572, lng: -121.31794}
+  geo:
+    lat: 44.05572
+    lng: -121.31794
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-meditate-destroy-bend-or-mondays-7pm/
-  external_ids: {tsml: 'refugerecovery:515'}
+  external_ids:
+    tsml: refugerecovery:515
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: or/bend/saturday-night-basic-text
   name: Saturday Night Basic Text
   program: na
@@ -340,6 +362,64 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: or/bend/smart-recovery-meeting-2231
+  name: 'SMART Recovery Meeting #2231'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: fri
+    time: '16:30'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue:
+    street: 300 SE Reed Market Road, The Lotus Building, 1st Floor Events Room
+    city: Bend
+    state: or
+    zip: '97702'
+  place: '4105800'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/2231/
+  external_ids:
+    smart: '2231'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: or/bend/smart-recovery-meeting-4209
+  name: 'SMART Recovery Meeting #4209'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '17:00'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - teens-13-17
+  venue_name: THE DROP
+  venue:
+    city: Bend
+    state: or
+    zip: '97703'
+  place: '4105800'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/4209/
+  external_ids:
+    smart: '4209'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: or/bend/so-fresh-so-clean
   name: So Fresh & So Clean
   program: na

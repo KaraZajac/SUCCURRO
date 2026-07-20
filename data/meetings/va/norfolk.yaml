@@ -551,20 +551,31 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '20:00', duration_min: 60}
+  - day: mon
+    time: '20:00'
+    duration_min: 60
   format: in-person
   types:
   - en
   - o
   venue_name: Watermark Psychological Center lobby
-  venue: {street: '819 W 21st St #200', city: Norfolk, state: va, zip: '23517'}
+  venue:
+    street: '819 W 21st St #200'
+    city: Norfolk
+    state: va
+    zip: '23517'
   place: '5157000'
-  geo: {lat: 36.87104, lng: -76.29707}
+  geo:
+    lat: 36.87104
+    lng: -76.29707
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-third-ear-refuge-norfolk-va-mondays-8pm/
-  external_ids: {tsml: 'refugerecovery:526'}
+  external_ids:
+    tsml: refugerecovery:526
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: va/norfolk/serenity-in-the-sand-seasonal-may-sept-only
   name: Serenity In The Sand (Seasonal May-Sept Only)
   program: na
@@ -597,6 +608,36 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: va/norfolk/smart-recovery-meeting-7217
+  name: 'SMART Recovery Meeting #7217'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: mon
+    time: '18:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: The Up Center
+  venue:
+    street: 222 West 19th Street
+    city: Norfolk
+    state: va
+    zip: '23517'
+  place: '5157000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/7217/
+  external_ids:
+    smart: '7217'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: va/norfolk/surrender-to-live
   name: Surrender to Live
   program: na

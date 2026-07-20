@@ -389,21 +389,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sat, time: '10:00', duration_min: 60}
+  - day: sat
+    time: '10:00'
+    duration_min: 60
   format: in-person
   types:
   - en
   - o
   - wa
   venue_name: Worcester Massachusetts
-  venue: {street: 1329 Main St, city: Worcester, state: ma, zip: '01603'}
+  venue:
+    street: 1329 Main St
+    city: Worcester
+    state: ma
+    zip: '01603'
   place: '2582000'
-  geo: {lat: 42.24157, lng: -71.84821}
+  geo:
+    lat: 42.24157
+    lng: -71.84821
   url: https://refugerecoverymeetings.org/meetings/refuge-recovery-worcester-ma-saturdays-10am/
-  external_ids: {tsml: 'refugerecovery:783'}
+  external_ids:
+    tsml: refugerecovery:783
   sources:
   - aa/refugerecovery
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/worcester/rise-and-shine
   name: Rise And Shine
   program: na
@@ -649,6 +660,64 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/worcester/smart-recovery-meeting-5878
+  name: 'SMART Recovery Meeting #5878'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '18:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Salem Covenant Church
+  venue:
+    street: 215 Mountain St. E.
+    city: Worcester
+    state: ma
+    zip: '01606'
+  place: '2582000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/5878/
+  external_ids:
+    smart: '5878'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
+- id: ma/worcester/smart-recovery-meeting-6757
+  name: 'SMART Recovery Meeting #6757'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '18:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Salem Covenant Church
+  venue:
+    city: Worcester
+    state: ma
+  place: '2582000'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/6757/
+  external_ids:
+    smart: '6757'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: ma/worcester/solo-por-hoy
   name: Solo por Hoy
   program: na

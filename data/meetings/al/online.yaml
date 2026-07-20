@@ -109,17 +109,22 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: sun, time: '14:00', duration_min: 60}
+  - day: sun
+    time: '14:00'
+    duration_min: 60
   format: online
   types:
   - 8f
   - onl
   url: https://recoverydharma.org/meetings/dharma-de-recuperacion-first-sundays/
   conference_url: https://us02web.zoom.us/j/4931920124?pwd=elZWWGJtWXhHZDQrK3NjRHg4UmpLQT09
-  external_ids: {tsml: 'recoverydharma:256684'}
+  external_ids:
+    tsml: recoverydharma:256684
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: al/online/gift-of-desperation-god
   name: Gift of Desperation (GOD)
   program: na
@@ -913,6 +918,30 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: al/online/smart-recovery-meeting-9215
+  name: 'SMART Recovery Meeting #9215'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: sun
+    time: '14:00'
+    duration_min: 60
+  format: online
+  types:
+  - 4-point-recovery
+  - adults
+  conference_url: https://instance-us.pathcheck.net/j/F9P3N8
+  languages:
+  - es
+  url: https://meetings.smartrecovery.org/meetings/9215/
+  external_ids:
+    smart: '9215'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: al/online/we-do-recover
   name: We Do Recover
   program: na

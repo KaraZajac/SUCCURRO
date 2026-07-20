@@ -252,20 +252,61 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: thu, time: '18:30', duration_min: 60}
+  - day: thu
+    time: '18:30'
+    duration_min: 60
   format: in-person
   types:
   - nl
   - o
   venue_name: Elkton
-  venue: {street: 411 W Pulaski Hwy, city: Elkton, state: md, zip: '21921'}
+  venue:
+    street: 411 W Pulaski Hwy
+    city: Elkton
+    state: md
+    zip: '21921'
   place: '2425800'
-  geo: {lat: 39.6078, lng: -75.85689}
+  geo:
+    lat: 39.6078
+    lng: -75.85689
   url: https://recoverydharma.org/meetings/cecil-county-recovery-sangha/
-  external_ids: {tsml: 'recoverydharma:248690'}
+  external_ids:
+    tsml: recoverydharma:248690
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
+- id: md/elkton/smart-recovery-meeting-9041
+  name: 'SMART Recovery Meeting #9041'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: thu
+    time: '19:00'
+    duration_min: 90
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Voices of Hope Recovery Center
+  venue:
+    street: 227 Howard St
+    city: Elkton
+    state: md
+    zip: '21921'
+  place: '2425800'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/9041/
+  external_ids:
+    smart: '9041'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
 - id: md/elkton/surrender-on-sundays
   name: Surrender on Sundays
   program: na

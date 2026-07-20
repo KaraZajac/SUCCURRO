@@ -4,21 +4,32 @@
   categories:
   - recovery-meeting
   schedule:
-  - {day: mon, time: '17:30', duration_min: 60}
+  - day: mon
+    time: '17:30'
+    duration_min: 60
   format: in-person
   types:
   - fbs
   - o
   - nl
   venue_name: Turning Point Recovery Center
-  venue: {street: 32 Common St, city: Walpole, state: ma, zip: 02081}
+  venue:
+    street: 32 Common St
+    city: Walpole
+    state: ma
+    zip: 02081
   place: '2572460'
-  geo: {lat: 42.14377, lng: -71.25276}
+  geo:
+    lat: 42.14377
+    lng: -71.25276
   url: https://recoverydharma.org/meetings/rd-walpole-ma/
-  external_ids: {tsml: 'recoverydharma:248703'}
+  external_ids:
+    tsml: recoverydharma:248703
   sources:
   - aa/recoverydharma
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ma/walpole/safe-haven
   name: Safe Haven
   program: na
@@ -51,3 +62,33 @@
   verified:
     'on': '2026-07-19'
     method: api
+- id: ma/walpole/smart-recovery-meeting-8623
+  name: 'SMART Recovery Meeting #8623'
+  program: smart
+  categories:
+  - recovery-meeting
+  schedule:
+  - day: tue
+    time: '18:30'
+    duration_min: 60
+  format: in-person
+  types:
+  - 4-point-recovery
+  - adults
+  venue_name: Turning Point Recovery Center
+  venue:
+    street: 32 Common Street
+    city: Walpole
+    state: ma
+    zip: 02081
+  place: '2572460'
+  languages:
+  - en
+  url: https://meetings.smartrecovery.org/meetings/8623/
+  external_ids:
+    smart: '8623'
+  sources:
+  - smart/meeting-finder
+  verified:
+    'on': '2026-07-20'
+    method: scrape
