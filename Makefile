@@ -1,7 +1,7 @@
 .PHONY: help places build meta verify conformance install-hooks site site-dev
 
 MODULES = findtreatment summermeals hrsa headstart hud bmlt nami pflag feedingamerica ndbn \
-          mutualaidhub littlefreepantry va tsml nnedv lsc mha clubhouse ccusa eoir liheap fdpir wic lifeline988 centerlink dbsa compassionatefriends \
+          mutualaidhub littlefreepantry va tsml nnedv lsc mha clubhouse ccusa eoir liheap fdpir wic lifeline988 centerlink dbsa compassionatefriends lllusa thearc afsp alz smallchapters teamrwb nyscadv \
           smart lifering
 
 help: ## list targets
