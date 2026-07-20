@@ -1,32 +1,22 @@
-/* Design system: CSS custom properties, hand-tuned light + dark (family
-   convention — dark is its own palette, not an auto-flip). */
+/* Design system: Catppuccin Latte, lavender accents — the site's only theme.
+   https://catppuccin.com/palette (Latte) */
 :root {
-  --bg: #faf9f7;
-  --surface: #ffffff;
-  --text: #1f2430;
-  --muted: #5b6272;
-  --line: #e3e1dc;
-  --accent: #1a6b5a;
-  --accent-soft: #e3f0ec;
-  --warn: #9a5b00;
+  --bg: #eff1f5;           /* base */
+  --surface: #e6e9ef;      /* mantle */
+  --crust: #dce0e8;
+  --text: #4c4f69;         /* text */
+  --muted: #6c6f85;        /* subtext0 */
+  --line: #ccd0da;         /* surface0 */
+  --accent: #7287fd;       /* lavender */
+  --accent-strong: #5a6fe8; /* lavender deepened for small-text legibility */
+  --accent-soft: #e3e7fc;  /* lavender wash for chips/bands */
+  --warn: #df8e1d;         /* yellow */
   --radius: 8px;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14161c;
-    --surface: #1c1f27;
-    --text: #e8e6e1;
-    --muted: #9aa0ad;
-    --line: #2c303a;
-    --accent: #57b79c;
-    --accent-soft: #1e2f2a;
-    --warn: #d99a3d;
-  }
-}
 
 * { box-sizing: border-box; }
-html { color-scheme: light dark; }
+html { color-scheme: light; }
 body {
   margin: 0;
   background: var(--bg);
@@ -36,7 +26,7 @@ body {
 }
 .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1rem; }
 
-a { color: var(--accent); }
+a { color: var(--accent-strong); font-weight: 500; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 header.site {
@@ -74,7 +64,7 @@ h2 { font-size: 1.15rem; margin: 1.6rem 0 0.5rem; }
 .chip {
   display: inline-block;
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-strong);
   border-radius: 99px;
   padding: 0.05rem 0.6rem;
   font-size: 0.78rem;
