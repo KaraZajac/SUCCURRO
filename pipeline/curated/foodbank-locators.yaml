@@ -600,3 +600,282 @@
   url: https://www.mountaineerfoodbank.org/mobilepantry
   floor: 20
   notes: mobile pantry stops (monthly schedule); the pantry directory needs headless Wix
+
+# --- 2026-07 headless-capture pass additions ----------------------------------
+# Survey "needs-headless" banks converted after a chromium XHR-capture pass;
+# every endpoint below was re-verified with plain urllib + browser UA (no
+# browser needed at runtime). Newly found Vivery banks stay out per DATA-RIGHTS:
+#   in/hoosier-hills-food-bank, ca/feeding-america-riverside-san-bernardino,
+#   fl/feeding-northeast-florida, ga/atlanta-community-food-bank,
+#   pa/helping-harvest, la/second-harvest-food-bank-of-greater-new-orleans,
+#   tx/houston-food-bank, tx/south-plains-food-bank  (api.accessfood.org maps)
+
+# reused platforms
+- id: mo-second-harvest-community-food-bank
+  org: mo/second-harvest-community-food-bank
+  name: Second Harvest Community Food Bank
+  state: mo
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=1T4oBxH4blsVJiUXazB-jsQCRHeRd4sA&forcekml=1
+  url: https://www.shcfb.org/agency-partner-food-sites
+  floor: 15
+- id: nv-three-square-food-bank
+  org: nv/three-square-food-bank
+  name: Three Square Food Bank
+  state: nv
+  platform: foodfinder
+  endpoint: https://foodfinder.threesquare.org/
+  url: https://foodfinder.threesquare.org/
+  floor: 100
+- id: wa-second-harvest-inland-northwest
+  org: wa/second-harvest-inland-northwest
+  name: Second Harvest Inland Northwest
+  state: wa
+  platform: foodfinder
+  endpoint: https://foodfinder.2-harvest.org/
+  url: https://foodfinder.2-harvest.org/
+  floor: 80
+- id: mi-greater-lansing-food-bank
+  org: mi/greater-lansing-food-bank
+  name: Greater Lansing Food Bank
+  state: mi
+  platform: custom
+  parser: feedwm
+  endpoint: https://greaterlansingfoodbank.org/get-help/pantries
+  url: https://greaterlansingfoodbank.org/get-help/pantries
+  floor: 40
+  notes: same findafoodpantry-client plugin as feedwm (fafpfixed inline array)
+
+# --- MapSVG (WP REST objects dump) --------------------------------------------
+- id: al-food-bank-of-north-alabama
+  org: al/food-bank-of-north-alabama
+  name: Food Bank of North Alabama
+  state: al
+  platform: mapsvg
+  endpoint: https://foodbanknorthal.org/wp-json/mapsvg/v1/objects/objects_3?perpage=0
+  url: https://www.foodbanknorthal.org/findfood/
+  floor: 150
+
+# --- Store Locator Widgets (cdn JSONP dump) -----------------------------------
+- id: fl-second-harvest-food-bank-of-central-florida-inc
+  org: fl/second-harvest-food-bank-of-central-florida-inc
+  name: Second Harvest Food Bank of Central Florida
+  state: fl
+  platform: slw
+  endpoint: https://cdn.storelocatorwidgets.com/json/cf41cdd4c90f847cb249c034543a8078
+  url: https://feedhopenow.org/find-help/food-finder/
+  floor: 200
+
+# --- FreshTrak pantry-finder API (PantryTrak; zip+radius sweep) ---------------
+# open JSON API; zip_prefixes keep each bank to its own counties since the API
+# has no per-bank filter (PantryTrak is Ohio-wide)
+- id: oh-akron-canton-regional-foodbank
+  org: oh/akron-canton-regional-foodbank
+  name: Akron-Canton Regional Foodbank
+  state: oh
+  platform: freshtrak
+  endpoint: https://pantry-finder-api.freshtrak.com/api/agencies
+  url: https://www.akroncantonfoodbank.org/find-help
+  floor: 50
+  zips: ['44305', '44702', '44266', '44256', '44691', '44654', '44663', '44615']
+  distance: 30
+  zip_prefixes: ['442', '443', '446']
+- id: oh-se-ohio-foodbank
+  org: oh/se-ohio-foodbank
+  name: SE Ohio Foodbank
+  state: oh
+  platform: freshtrak
+  endpoint: https://pantry-finder-api.freshtrak.com/api/agencies
+  url: https://hapcap.org/food/
+  floor: 12
+  zips: ['45701', '43138', '43764', '43756', '45750', '45769', '45631', '45638', '45640', '45651']
+  distance: 30
+  zip_prefixes: ['431', '437', '456', '457']
+
+# --- The Events Calendar venues REST (mobile-pantry / partner-site venues) ----
+- id: mi-food-gatherers
+  org: mi/food-gatherers
+  name: Food Gatherers
+  state: mi
+  platform: tribevenues
+  endpoint: https://www.foodgatherers.org/wp-json/tribe/events/v1/venues
+  url: https://www.foodgatherers.org/foodresources/
+  floor: 30
+- id: ct-connecticut-foodshare
+  org: ct/connecticut-foodshare
+  name: Connecticut Foodshare
+  state: ct
+  platform: tribevenues
+  endpoint: https://mobilefoodpantry.ctfoodshare.org/wp-json/tribe/events/v1/venues
+  url: https://mobilefoodpantry.ctfoodshare.org/
+  floor: 60
+  type_text: mobile pantry stop
+  notes: mobile-pantry stop venues only; the partner-pantry network map on the
+    Duda main site exposes no data endpoint
+
+# --- per-bank custom parsers (2026-07 pass) -----------------------------------
+- id: ca-second-harvest-of-silicon-valley
+  org: ca/second-harvest-of-silicon-valley
+  name: Second Harvest of Silicon Valley
+  state: ca
+  platform: custom
+  parser: shsv
+  endpoint: https://www.shfb.org/wp-admin/admin-ajax.php?action=mmfl_get_data&page_slug=get-food
+  url: https://www.shfb.org/get-food/
+  floor: 150
+- id: ga-second-harvest-of-south-georgia
+  org: ga/second-harvest-of-south-georgia
+  name: Second Harvest of South Georgia
+  state: ga
+  platform: custom
+  parser: feedingsga
+  endpoint: https://feedingsga.org/wp-content/mu-plugins/feedingsga-pantry-assets/pantry-finder-init.js
+  url: https://feedingsga.org/find-help/
+  floor: 60
+- id: ny-city-harvest
+  org: ny/city-harvest
+  name: City Harvest
+  state: ny
+  platform: custom
+  parser: cityharvest
+  endpoint: https://nfa-admin.foodmedcenter.org/file-by-filename/foodPantriesOpen.json
+  url: https://www.cityharvest.org/food-map/
+  floor: 400
+- id: ny-long-island-cares-inc
+  org: ny/long-island-cares-inc
+  name: Long Island Cares
+  state: ny
+  platform: custom
+  parser: licares
+  endpoint: https://food-lookup.kcrawford.workers.dev/?categories=&zip=
+  url: https://www.licares.org/find-food/
+  floor: 200
+- id: tn-mid-south-food-bank
+  org: tn/mid-south-food-bank
+  name: Mid-South Food Bank
+  state: tn
+  platform: custom
+  parser: sitewrench
+  endpoint: https://api.sitewrench.com/locations/257633.json?token=d0c4d88655f6e9f594ed0d90d7fb7386b2ef41f5&siteId=2749
+  url: https://www.midsouthfoodbank.org/find-food
+  floor: 60
+  notes: static widget token embedded in the public locator page
+- id: sd-feeding-south-dakota
+  org: sd/feeding-south-dakota
+  name: Feeding South Dakota
+  state: sd
+  platform: custom
+  parser: feedingsd
+  endpoint: https://www.feedingsouthdakota.org/api
+  url: https://feedingsouthdakota.org/find-food/
+  floor: 180
+  notes: Craft CMS public GraphQL endpoint (POST)
+- id: ca-alameda-county-community-food-bank
+  org: ca/alameda-county-community-food-bank
+  name: Alameda County Community Food Bank
+  state: ca
+  platform: custom
+  parser: foodnow
+  endpoint: https://accfbfnfaust.wpengine.com/index.php
+  url: https://foodnow.net/find-a-food-pantry/
+  floor: 60
+  notes: content-reuse consent ToS - facts-only re-expression, cite carefully
+- id: ny-food-bank-for-new-york-city
+  org: ny/food-bank-for-new-york-city
+  name: Food Bank For New York City
+  state: ny
+  platform: custom
+  parser: fbnyc
+  endpoint: 'https://fbnycpublic.blob.core.windows.net/mapdata/customsearch_agency_map_data.csv?sv=2022-11-02&ss=bfqt&srt=sco&sp=rptfx&se=2050-01-18T03:56:20Z&st=2025-01-17T19:56:20Z&spr=https&sig=u41iVNckMwY%2Fkx76wPlA6CfSUzP9Ls4PUijuBfSsWAY%3D'
+  url: https://www.foodbanknyc.org/get-help/
+  floor: 250
+  notes: public-container SAS link (expires 2050) used by the bank's own map app
+- id: ca-sf-marin-food-bank
+  org: ca/sf-marin-food-bank
+  name: SF-Marin Food Bank
+  state: ca
+  platform: custom
+  parser: sfmarin
+  endpoint: https://foodlocator.sfmfoodbank.org
+  url: https://foodlocator.sfmfoodbank.org/
+  floor: 40
+  counties: [sf, marin]
+  notes: Laravel XSRF cookie + POST /resource per county; neighborhood grocery
+    network pantries only
+- id: mo-southeast-missouri-food-bank
+  org: mo/southeast-missouri-food-bank
+  name: Southeast Missouri Food Bank
+  state: mo
+  platform: custom
+  parser: semo
+  endpoint: https://semofoodbank.org/pantries/
+  url: https://semofoodbank.org/pantries/
+  floor: 40
+- id: tx-southeast-texas-food-bank
+  org: tx/southeast-texas-food-bank
+  name: Southeast Texas Food Bank
+  state: tx
+  platform: custom
+  parser: setx
+  endpoint: https://setxfoodbank.org/get-help/{county}-county-food-bank-agencies/
+  url: https://setxfoodbank.org/get-help/
+  floor: 40
+  counties: [hardin, jasper, jefferson, newton, orange, polk, sabine]
+- id: al-feeding-the-gulf-coast
+  org: al/feeding-the-gulf-coast
+  name: Feeding the Gulf Coast
+  state: al
+  platform: custom
+  parser: gulfcoast
+  endpoint: https://www.feedingthegulfcoast.org/find-help/find-a-pantry/results
+  url: https://www.feedingthegulfcoast.org/find-help/find-a-pantry
+  floor: 150
+- id: mo-harvesters-the-community-food-network
+  org: mo/harvesters-the-community-food-network
+  name: Harvesters - The Community Food Network
+  state: mo
+  platform: custom
+  parser: harvesters
+  endpoint: https://www.harvesters.org/get-food-assistance/food-locator
+  url: https://www.harvesters.org/get-food-assistance/food-locator
+  floor: 120
+- id: oh-second-harvest-food-bank-of-clark-champaign-loga
+  org: oh/second-harvest-food-bank-of-clark-champaign-loga
+  name: Second Harvest Food Bank of Clark, Champaign & Logan Counties
+  state: oh
+  platform: custom
+  parser: theshfb
+  endpoint: https://www.theshfb.org/pantries
+  url: https://www.theshfb.org/pantries
+  floor: 25
+- id: ak-food-bank-of-alaska-inc
+  org: ak/food-bank-of-alaska-inc
+  name: Food Bank of Alaska
+  state: ak
+  platform: custom
+  parser: akhubdb
+  endpoint: https://api.hubapi.com/hubdb/api/v2/tables/109511849/rows?portalId=47948829
+  url: https://foodbankofalaska.org/agency-partners
+  floor: 40
+  notes: HubDB agency-partner table; name/city/website only (no street addresses
+    published)
+- id: pa-second-harvest-food-bank-of-northwest-pennsylvan
+  org: pa/second-harvest-food-bank-of-northwest-pennsylvan
+  name: Second Harvest Food Bank of Northwest Pennsylvania
+  state: pa
+  platform: custom
+  parser: pantryhawk
+  endpoint: https://nwpafoodbank.org
+  url: https://nwpafoodbank.org/need-help/agency-locator/
+  floor: 25
+  addresses:
+    - 814 French St, Erie, PA 16501
+    - 984 Water St, Meadville, PA 16335
+    - 204 Liberty St, Warren, PA 16365
+    - 221 Seneca St, Oil City, PA 16301
+    - 155 W Connelly Blvd, Sharon, PA 16146
+    - 33 N Center St, Corry, PA 16407
+    - 110 W Spring St, Titusville, PA 16354
+    - 300 S Main St, Cambridge Springs, PA 16403
+  notes: pantry-hawk plugin; per-run nonce read from the locator page, nearest-15
+    search swept over service-area towns

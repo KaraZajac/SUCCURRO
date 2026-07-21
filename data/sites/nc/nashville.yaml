@@ -3,128 +3,67 @@
   org: nc/inter-faith-food-shuttle
   categories:
   - food-pantry
-  address:
-    street: 5193 Momeyer Way
-    city: Nashville
-    state: nc
-    zip: '27856'
+  address: {street: 5193 Momeyer Way, city: Nashville, state: nc, zip: '27856'}
   place: '3746000'
   sources:
   - foodbank/nc-inter-faith-food-shuttle
-  verified:
-    'on': '2026-07-20'
-    method: api
-  geo: {lat: 35.96118, lng: -78.0563}
+  verified: {'on': '2026-07-21', method: api}
 - id: nc/nashville/a-touch-of-the-father-s-love-inc
   name: A Touch of the Father's Love Inc
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address:
-    street: 5193 Momeyer Way
-    city: Nashville
-    state: nc
-    zip: '27856'
+  address: {street: 5193 Momeyer Way, city: Nashville, state: nc, zip: '27856'}
   place: '3746000'
-  geo:
-    lat: 35.96098
-    lng: -78.05635
+  geo: {lat: 35.96098, lng: -78.05635}
   phone: 252-377-2209
   hours:
-  - days:
-    - mon
-    open: 09:00
-    close: '12:00'
-  - days:
-    - wed
-    open: 09:00
-    close: '12:00'
-  - days:
-    - fri
-    open: 09:00
-    close: '12:00'
-  - days:
-    - sat
-    open: 09:00
-    close: '12:00'
-    note: 1st and 3rd Saturdays
-  external_ids:
-    nc-food-bank-of-central-eastern-north-carolina: a-touch-of-the-father-s-love-inc
+  - {days: [mon], open: '09:00', close: '12:00'}
+  - {days: [wed], open: '09:00', close: '12:00'}
+  - {days: [fri], open: '09:00', close: '12:00'}
+  - {days: [sat], open: '09:00', close: '12:00', note: 1st and 3rd Saturdays}
+  external_ids: {nc-food-bank-of-central-eastern-north-carolina: a-touch-of-the-father-s-love-inc}
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
 - id: nc/nashville/mission-in-action
   name: Mission in Action
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address:
-    street: 904 S Alston St
-    city: Nashville
-    state: nc
-    zip: '27856'
+  address: {street: 904 S Alston St, city: Nashville, state: nc, zip: '27856'}
   place: '3746000'
-  geo:
-    lat: 35.96615
-    lng: -77.96977
+  geo: {lat: 35.96615, lng: -77.96977}
   phone: 252-908-2282
   hours:
-  - days:
-    - sun
-    open: '15:00'
-    close: '16:00'
-    note: 4th Sundays
-  - days:
-    - wed
-    open: '14:00'
-    close: '15:00'
-    note: 3rd Wednesdays
-  external_ids:
-    nc-food-bank-of-central-eastern-north-carolina: mission-in-action
+  - {days: [sun], open: '15:00', close: '16:00', note: 4th Sundays}
+  - {days: [wed], open: '14:00', close: '15:00', note: 3rd Wednesdays}
+  external_ids: {nc-food-bank-of-central-eastern-north-carolina: mission-in-action}
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
 - id: nc/nashville/nash-central-middle
   name: Nash Central Middle
   categories:
   - meal-program
-  address:
-    street: 1638 South First Street
-    city: Nashville
-    state: nc
-    zip: '27856'
+  address: {street: 1638 South First Street, city: Nashville, state: nc, zip: '27856'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Nash County Public Schools.
   place: '3746000'
-  geo:
-    lat: 35.95745
-    lng: -77.95543
+  geo: {lat: 35.95745, lng: -77.95543}
   phone: (252) 937-9068
-  external_ids:
-    usda_master: Cycle 06_NC_SSO_0714
+  external_ids: {usda_master: Cycle 06_NC_SSO_0714}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/nashville/nash-county-department-of-social-services
   name: Nash County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Nash County
-  address:
-    street: 120 Washington Street (P. O. Drawer 819)
-    city: Nashville
-    state: nc
-    zip: '27856'
+  address: {street: 120 Washington Street (P. O. Drawer 819), city: Nashville, state: nc, zip: '27856'}
   place: '3746000'
   phone: 252-459-9818
   website: https://nashcountync.gov/266/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}

@@ -3,11 +3,7 @@
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 5665 Hoover Road
-    city: Grove City
-    state: oh
-    zip: '43123'
+  address: {street: 5665 Hoover Road, city: Grove City, state: oh, zip: '43123'}
   place: '3932592'
   phone: 614-875-2371
   website: https://www.buckeyeranch.org
@@ -21,38 +17,21 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
-  geo:
-    lat: 39.84756
-    lng: -83.07199
+  verified: {'on': '2026-07-19', method: api}
+  geo: {lat: 39.84756, lng: -83.07199}
 - id: oh/grove-city/grove-city-va-clinic
   name: Grove City VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 5775 North Meadows Drive
-    city: Grove City
-    state: oh
-    zip: '43123'
+  address: {street: 5775 North Meadows Drive, city: Grove City, state: oh, zip: '43123'}
   place: '3932592'
-  geo:
-    lat: 39.84366
-    lng: -83.08458
+  geo: {lat: 39.84366, lng: -83.08458}
   phone: 614-257-5800
   website: https://www.va.gov/central-ohio-health-care/locations/grove-city-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
   services:
   - Audiology and speech
   - Cardiology
@@ -64,27 +43,18 @@
   - Primary care
   - Social work
   - Suicide prevention
-  external_ids:
-    va: vha_757GB
+  external_ids: {va: vha_757GB}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/grove-city/highlife-recovery
   name: Highlife Recovery
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 3142 Broadway
-    city: Grove City
-    state: oh
-    zip: '43123'
+  address: {street: 3142 Broadway, city: Grove City, state: oh, zip: '43123'}
   place: '3932592'
-  geo:
-    lat: 39.89977
-    lng: -83.07762
+  geo: {lat: 39.89977, lng: -83.07762}
   phone: 614-776-4696
   website: https://www.highliferecovery.com
   services:
@@ -94,40 +64,19 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/grove-city/mid-ohio-market-gantz-road
   name: Mid-Ohio Market Gantz Road
   org: oh/mid-ohio-food-collective
   categories:
   - food-pantry
-  address:
-    street: 4041 Gantz Road
-    city: Grove City
-    state: oh
-    zip: '43123'
+  address: {street: 4041 Gantz Road, city: Grove City, state: oh, zip: '43123'}
   place: '3932592'
   phone: 614-317-9487
   hours:
-  - days:
-    - mon
-    open: '15:00'
-    close: '19:00'
-  - days:
-    - tue
-    - wed
-    - thu
-    - fri
-    open: '12:30'
-    close: '19:00'
-  - days:
-    - sat
-    open: 09:30
-    close: '13:30'
+  - {days: [mon], open: '15:00', close: '19:00'}
+  - {days: [tue, wed, thu, fri], open: '12:30', close: '19:00'}
+  - {days: [sat], open: '09:30', close: '13:30'}
   sources:
   - foodbank/oh-mid-ohio-food-collective
-  verified:
-    'on': '2026-07-20'
-    method: scrape
-  geo: {lat: 39.88071, lng: -83.05597}
+  verified: {'on': '2026-07-21', method: scrape}

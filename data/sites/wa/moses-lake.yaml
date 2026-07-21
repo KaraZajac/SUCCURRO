@@ -263,6 +263,22 @@
   sources:
   - hrsa/health-center-sites
   verified: {'on': '2026-07-19', method: api}
+- id: wa/moses-lake/moses-lake-food-bank
+  name: Moses Lake Food Bank
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 9299 Beacon Rd NE, city: Moses Lake, state: wa, zip: '98837'}
+  place: '5347245'
+  geo: {lat: 47.15016, lng: -119.29331}
+  phone: 509-765-8101
+  website: https://www.mlfood.org/
+  hours:
+  - {days: [mon, tue, wed, thu], open: '11:00', close: '14:45'}
+  external_ids: {wa-second-harvest-inland-northwest: moses-lake-food-bank}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: wa/moses-lake/moses-lake-high-school
   name: Moses Lake High School
   categories:
@@ -276,6 +292,22 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: wa/moses-lake/moses-lake-senior-opportunity-service
+  name: Moses Lake Senior Opportunity & Service
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - meal-program
+  address: {street: 608 E 3rd Ave, city: Moses Lake, state: wa, zip: '98837'}
+  place: '5347245'
+  geo: {lat: 47.13373, lng: -119.27167}
+  phone: 509-765-7809
+  website: http://www.moseslakeseniorcenter.org/thirft-store.html
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '12:00', close: '13:00', note: Meal service}
+  external_ids: {wa-second-harvest-inland-northwest: moses-lake-senior-opportunity-service}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: wa/moses-lake/moses-lake-service-center
   name: Moses Lake Service Center
   categories:

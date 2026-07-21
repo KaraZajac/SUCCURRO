@@ -11,7 +11,27 @@
   external_ids: {id-the-idaho-foodbank: '1'}
   sources:
   - foodbank/id-the-idaho-foodbank
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-07-21', method: api}
+- id: id/post-falls/3rd-avenue-marketplace
+  name: 3rd Avenue Marketplace
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - meal-program
+  address: {street: 1215 E 3rd Ave, city: Post Falls, state: id, zip: '83854'}
+  place: '1664810'
+  geo: {lat: 47.70847, lng: -116.92926}
+  phone: 208-773-0139
+  website: https://3rdavenuemarketplace.org/
+  hours:
+  - {days: [mon], open: '11:00', close: '18:00', note: 3rd Avenue Market only}
+  - {days: [tue], open: '09:00', close: '14:00', note: 3rd Avenue Market only}
+  - {days: [thu], open: '09:00', close: '14:00', note: 3rd Avenue Market only}
+  - {days: [wed], open: '09:00', close: '14:00', note: 3rd Avenue Market & Senior Cafe}
+  - {days: [fri], open: '09:00', close: '14:00', note: 3rd Avenue Market & Senior Cafe}
+  external_ids: {wa-second-harvest-inland-northwest: post-falls-food-bank}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: id/post-falls/bigfoot-counseling-llc
   name: Bigfoot Counseling LLC
   categories:
@@ -178,6 +198,22 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: id/post-falls/real-life-ministries-food-bank
+  name: Real Life Ministries Food Bank
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 1866 N Cecil Rd, city: Post Falls, state: id, zip: '83854'}
+  place: '1664810'
+  geo: {lat: 47.72621, lng: -116.90283}
+  phone: 208-777-7325
+  website: https://www.reallifeministries.com/post-falls/help/community-assistance
+  hours:
+  - {days: [tue, wed, thu], open: '10:00', close: '12:00'}
+  external_ids: {wa-second-harvest-inland-northwest: real-life-ministries-food-bank}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: id/post-falls/river-city-middle-school
   name: River City Middle School
   categories:

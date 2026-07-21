@@ -13,3 +13,37 @@
   sources:
   - wic/wa-doh
   verified: {'on': '2026-07-20', method: api}
+- id: wa/ritzville/ritzville-food-pantry
+  name: Ritzville Food Pantry
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 104 W Main St, city: Ritzville, state: wa, zip: '99169'}
+  place: '5358725'
+  geo: {lat: 47.12755, lng: -118.3804}
+  phone: 509-659-4449
+  hours:
+  - {days: [wed], open: '09:00', close: '12:30'}
+  external_ids: {wa-second-harvest-inland-northwest: ritzville-food-pantry}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
+- id: wa/ritzville/the-collective-adventure
+  name: The Collective Adventure
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - meal-program
+  address: {street: 109 W Main Ave, city: Ritzville, state: wa, zip: '99169'}
+  place: '5358725'
+  geo: {lat: 47.12706, lng: -118.38017}
+  phone: 509-344-9593
+  website: https://www.facebook.com/CollectiveAdventure/
+  hours:
+  - {days: [mon], open: '09:00', close: '17:00'}
+  - {days: [wed, thu, fri, sat], open: '09:00', close: '17:00'}
+  - {days: [tue], open: '09:00', close: '17:00', note: Meals}
+  - {days: [tue], open: '18:30', close: '19:30'}
+  external_ids: {wa-second-harvest-inland-northwest: the-collective-adventure}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}

@@ -3,10 +3,13 @@
 Harvests every bank in pipeline/curated/foodbank-locators.yaml (the registry
 built from docs/research/foodbank-locators-2026-07.md): one parser per locator
 platform family (wpsl, wpgmza, asl, slp, storepoint, storerocket, mymaps KML,
-arcgis, ssf, foodfinder) plus small per-bank custom parsers for the static-HTML
-and inline-JSON sites. Page-capped WP Store Locator plugins are un-capped with a
-lat/lng grid sweep (registry `sweep`); Store Locator Plus honors an
-options[initial_results_returned] override.
+arcgis, ssf, foodfinder, mapsvg, slw, freshtrak, tribevenues) plus small
+per-bank custom parsers for the static-HTML and inline-JSON sites. Page-capped
+WP Store Locator plugins are un-capped with a lat/lng grid sweep (registry
+`sweep`); Store Locator Plus honors an options[initial_results_returned]
+override. The 2026-07 headless pass added endpoints first discovered with a
+one-shot chromium XHR capture; all of them replay with plain urllib (POST /
+cookie flows go through cache_json), so no browser is needed at runtime.
 
 Records are pantry/agency sites: facts only (name, address, phone, hours where
 structured, geo), org FK set to the bank (they're the bank's partner agencies),
@@ -22,10 +25,15 @@ run aborts if fewer than 45 banks or 6,000 records survive.
 
 Usage: python3 -m pipeline.foodbanklocators [--force] [--dry bank-id ...]
 """
+import csv
 import html as htmllib
+import io
 import json
 import re
 import sys
+import time
+import urllib.parse
+import urllib.request
 
 from .emit import Places, norm, replace_records, today, write_source
 from .util import BROWSER_UA, Flow, ROOT, SOURCES, UA, fetch, load_yaml
@@ -242,6 +250,27 @@ def fetch_text(bank, url, cachefile, force):
     ua = BROWSER_UA if bank.get("ua") == "browser" else UA
     return fetch(url, CACHE / bank["id"] / cachefile, force=force,
                  ua=ua).read_text(errors="replace")
+
+
+def cache_json(bank, cachefile, force, producer):
+    """Cache-through for endpoints util.fetch can't express (POST, cookie
+    flows): producer() -> bytes, called only on a cache miss."""
+    path = CACHE / bank["id"] / cachefile
+    if force or not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(producer())
+        print(f"fetched -> {path.relative_to(ROOT)}")
+    return json.loads(path.read_text(errors="replace"))
+
+
+def post_bytes(url, data, headers=None, timeout=120):
+    """Throttled POST (the shared util helper is GET-only)."""
+    time.sleep(1.0)
+    h = {"User-Agent": BROWSER_UA}
+    h.update(headers or {})
+    with urllib.request.urlopen(
+            urllib.request.Request(url, data=data, headers=h), timeout=timeout) as resp:
+        return resp.read()
 
 
 def frange(lo, hi, step):
@@ -611,6 +640,103 @@ def harvest_foodfinder(bank, force):
     return rows
 
 
+# --- platform: MapSVG (WP REST objects dump) ------------------------------------------------------
+
+def harvest_mapsvg(bank, force):
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in data["items"]:
+        name = clean(r.get("name") or r.get("title"))
+        if not name:
+            continue
+        rows.append(row(
+            name, street=(clean(r.get("address")).split(",")[0] or None),
+            city=clean(r.get("city")) or None,
+            state=state_code(r.get("state"), bank["state"]),
+            zip5=clean_zip(r.get("zip")), phone=clean_phone(r.get("phone")),
+            lat=r.get("latitude"), lng=r.get("longitude"),
+            type_text=clean(r.get("services")), uid=r.get("id")))
+    return rows
+
+
+# --- platform: Store Locator Widgets (cdn JSONP dump) ---------------------------------------------
+
+def harvest_slw(bank, force):
+    text = fetch_text(bank, bank["endpoint"], "dump.jsonp", force)
+    data = json.loads(re.sub(r"^\s*slw\(|\)\s*$", "", text.strip()))
+    rows = []
+    for r in data.get("stores") or []:
+        name = clean(r.get("name"))
+        if not name:
+            continue
+        d = r.get("data") or {}
+        addr = clean(d.get("address"))
+        street, city, st, zip5 = parse_oneline(addr, None)
+        if not city:  # "18510 Madison Avenue, FL, 32820" (no city published)
+            m = re.match(r"^(.*?),\s*([A-Z]{2}),?\s*(\d{5})?$", addr)
+            if m:
+                street, city, st, zip5 = m.group(1).strip(" ,"), None, \
+                    state_code(m.group(2)), m.group(3)
+        rows.append(row(
+            name, street=street or None, city=city,
+            state=st or bank["state"], zip5=zip5,
+            phone=clean_phone(d.get("phone")),
+            website=clean(d.get("website")) or None, lat=d.get("map_lat"),
+            lng=d.get("map_lng"), uid=r.get("storeid")))
+    return rows
+
+
+# --- platform: FreshTrak / PantryTrak pantry-finder API -------------------------------------------
+
+def harvest_freshtrak(bank, force):
+    prefixes = tuple(bank.get("zip_prefixes") or ())
+    seen, rows = set(), []
+    for zc in bank["zips"]:
+        url = f"{bank['endpoint']}?zip_code={zc}&distance={bank['distance']}"
+        data = fetch_json(bank, url, f"zip-{zc}.json", force)
+        for r in data.get("agencies") or []:
+            if r.get("id") in seen or not clean(r.get("name")):
+                continue
+            zip5 = clean_zip(r.get("zip"))
+            if prefixes and not (zip5 or "").startswith(prefixes):
+                continue  # another bank's territory (the API is bank-agnostic)
+            seen.add(r.get("id"))
+            types = ", ".join(sorted({clean(e.get("name")) for e in r.get("events") or []
+                                      if clean(e.get("name"))}))
+            rows.append(row(
+                r["name"], street=clean(r.get("address")) or None,
+                city=clean(r.get("city")) or None,
+                state=state_code(r.get("state"), bank["state"]), zip5=zip5,
+                phone=clean_phone(r.get("phone")), lat=r.get("latitude"),
+                lng=r.get("longitude"), type_text=types, uid=r.get("id")))
+    return rows
+
+
+# --- platform: The Events Calendar venues REST ----------------------------------------------------
+
+def harvest_tribevenues(bank, force):
+    rows, page = [], 1
+    while True:
+        data = fetch_json(bank, f"{bank['endpoint']}?per_page=50&page={page}",
+                          f"venues-p{page}.json", force)
+        for v in data.get("venues") or []:
+            name = strip_tags(v.get("venue") or "")
+            if not name:
+                continue
+            rows.append(row(
+                name, street=clean(v.get("address")) or None,
+                city=clean(v.get("city")) or None,
+                state=state_code(v.get("state") or v.get("state_province"),
+                                 bank["state"]),
+                zip5=clean_zip(v.get("zip")), phone=clean_phone(v.get("phone")),
+                website=clean(v.get("website")) or None, lat=v.get("geo_lat"),
+                lng=v.get("geo_lng"), type_text=bank.get("type_text", ""),
+                uid=v.get("id")))
+        if page >= (data.get("total_pages") or 1):
+            return rows
+        page += 1
+
+
 # --- per-bank custom parsers ----------------------------------------------------------------------
 
 def _balanced_array(text, start):
@@ -954,12 +1080,507 @@ def parse_mountaineer(bank, force):
     return rows
 
 
+def _balanced_object(text, key_idx):
+    """Extract the {...} JSON object enclosing text[key_idx]."""
+    depth, i = 0, key_idx
+    while i >= 0:
+        ch = text[i]
+        if ch == "}":
+            depth += 1
+        elif ch == "{":
+            if depth == 0:
+                break
+            depth -= 1
+        i -= 1
+    start = i
+    depth, in_str, esc, j = 0, False, False, start
+    while j < len(text):
+        ch = text[j]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+        elif ch == '"':
+            in_str = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start:j + 1]
+        j += 1
+    return None
+
+
+def parse_shsv(bank, force):
+    """Second Harvest of Silicon Valley mm-food-locator admin-ajax dump."""
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in (data.get("locations") or {}).values():
+        if not clean(r.get("name")):
+            continue
+        rows.append(row(
+            r["name"], street=clean(r.get("street")) or None,
+            city=clean(r.get("city")) or None,
+            state=state_code(r.get("state"), bank["state"]),
+            zip5=clean_zip(r.get("zip")), lat=r.get("lat"), lng=r.get("lng"),
+            uid=r.get("siteId")))
+    return rows
+
+
+def parse_feedingsga(bank, force):
+    """Second Harvest of South Georgia: DATA array inline in the map-init JS."""
+    text = fetch_text(bank, bank["endpoint"], "init.js", force)
+    m = re.search(r"var DATA = \[", text)
+    if not m:
+        raise SystemExit("DATA array not found - pantry-finder-init.js changed")
+    rows = []
+    for r in json.loads(_balanced_array(text, m.end() - 1)):
+        name = clean(r.get("name"))
+        if not name:
+            continue
+        city, st = clean(r.get("city")), None
+        cm = re.match(r"^(.*?),\s*([A-Za-z]{2})\.?$", city)
+        if cm:
+            city, st = cm.group(1).strip(), state_code(cm.group(2))
+        rows.append(row(
+            name, street=clean(r.get("address")) or None, city=city or None,
+            state=st or bank["state"], phone=clean_phone(r.get("phone")),
+            website=clean(r.get("url")) or None, lat=r.get("lat"),
+            lng=r.get("lng")))
+    return rows
+
+
+CH_DAYS = {"Mo": "mon", "Tu": "tue", "We": "wed", "Th": "thu", "Fr": "fri",
+           "Sa": "sat", "Su": "sun"}
+
+
+def parse_cityharvest(bank, force):
+    """City Harvest food map: open pantry dataset behind the map iframe."""
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in data:
+        name = clean(r.get("name"))
+        if not name:
+            continue
+        entries = []
+        for h in r.get("hours") or []:
+            days = [CH_DAYS[d] for d in h.get("days") or [] if d in CH_DAYS]
+            open_t = (h.get("timeStart") or "")[:5]
+            close_t = (h.get("timeEnd") or "")[:5]
+            if days and re.match(r"^\d{2}:\d{2}$", open_t) \
+                    and re.match(r"^\d{2}:\d{2}$", close_t) and open_t < close_t:
+                entries.append(Flow(days=sorted(days, key=DAY_TOKENS.index),
+                                    open=open_t, close=close_t))
+        phones = r.get("phoneNumbers") or []
+        phone = clean_phone(phones[0].get("phoneNumber")) if phones else None
+        geo = (r.get("geolocation") or {}).get("coordinates") or [None, None]
+        rows.append(row(
+            name, street=clean(r.get("streetAddress")) or None,
+            city=clean(r.get("addressLocality")) or None,
+            state=state_code(r.get("addressRegion"), "ny"),
+            zip5=clean_zip(r.get("postalCode")), phone=phone,
+            website=clean(r.get("website")) or None, lat=geo[1], lng=geo[0],
+            hours=entries or None, uid=r.get("id")))
+    return rows
+
+
+def parse_licares(bank, force):
+    """Long Island Cares: Cloudflare-worker JSON behind the mapbox map."""
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in data.get("result") or []:
+        name = clean(r.get("name"))
+        if not name:
+            continue
+        rows.append(row(
+            name, street=clean(r.get("address")) or None,
+            street2=clean(r.get("address2")) or None,
+            city=clean(r.get("city")) or None,
+            state=state_code(r.get("state"), "ny"),
+            zip5=clean_zip(r.get("zip")),
+            phone=clean_phone(r.get("description")), lat=r.get("lat"),
+            lng=r.get("lng"), uid=r.get("id")))
+    return rows
+
+
+def parse_sitewrench(bank, force):
+    """Mid-South Food Bank: SiteWrench locator-map Places dump."""
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in data.get("Places") or []:
+        name = clean(r.get("Name"))
+        street = clean(r.get("Address"))
+        if not name or not street:
+            continue  # county headers and empty markers
+        lat, lng = r.get("CenterPointLat"), r.get("CenterPointLong")
+        if (lat, lng) == (37.09024, -95.712891):  # widget default US center
+            lat = lng = None
+        rows.append(row(
+            name, street=street, city=clean(r.get("City")) or None,
+            state=state_code(r.get("State"), bank["state"]),
+            zip5=clean_zip(r.get("Zipcode")), phone=clean_phone(r.get("Phone")),
+            website=clean(r.get("Url")) or None, lat=lat, lng=lng,
+            type_text=clean(r.get("Description")), uid=r.get("PlaceId")))
+    return rows
+
+
+FEEDINGSD_QUERY = """query { entries(section: "locations", limit: 600) {
+  id title
+  ... on location_Entry {
+    locationMap { lat lng parts { number address city state postcode } }
+    foodDistributionPhoneNumber
+  }
+} }"""
+
+
+def parse_feedingsd(bank, force):
+    """Feeding South Dakota: Craft CMS public GraphQL."""
+    data = cache_json(bank, "dump.json", force, lambda: post_bytes(
+        bank["endpoint"], json.dumps({"query": FEEDINGSD_QUERY}).encode(),
+        {"Content-Type": "application/json"}))
+    rows = []
+    for r in (data.get("data") or {}).get("entries") or []:
+        name = clean(r.get("title"))
+        lm = r.get("locationMap") or {}
+        parts = lm.get("parts") or {}
+        if not name:
+            continue
+        street = clean(f"{parts.get('number') or ''} {parts.get('address') or ''}") or None
+        rows.append(row(
+            name, street=street, city=clean(parts.get("city")) or None,
+            state=state_code(parts.get("state"), "sd"),
+            zip5=clean_zip(parts.get("postcode")),
+            phone=clean_phone(r.get("foodDistributionPhoneNumber")),
+            lat=lm.get("lat"), lng=lm.get("lng"), uid=r.get("id")))
+    return rows
+
+
+FOODNOW_QUERY = """query getLocations($where: RootQueryToLocationConnectionWhereArgs, $first: Int) {
+  locations(where: $where, first: $first) {
+    nodes { id locationFields {
+      agencyIdentifier addressLine1 addressLine2 archive city displayName
+      fbcAgencyCategoryCode zipCode latitude longitude } } } }"""
+
+
+def parse_foodnow(bank, force):
+    """Alameda County CFB foodnow.net: headless-WP GraphQL locations."""
+    url = f"{bank['endpoint']}?" + urllib.parse.urlencode({
+        "graphql": "", "query": FOODNOW_QUERY,
+        "variables": json.dumps({"where": {"language": "EN"}, "first": 1000})})
+    data = fetch_json(bank, url, "dump.json", force)
+    rows = []
+    for node in data["data"]["locations"]["nodes"]:
+        f = node.get("locationFields") or {}
+        name = clean(f.get("displayName"))
+        if not name or f.get("archive"):
+            continue
+        rows.append(row(
+            name, street=clean(f.get("addressLine1")) or None,
+            street2=clean(f.get("addressLine2")) or None,
+            city=clean(f.get("city")) or None, state="ca",
+            zip5=clean_zip(f.get("zipCode")), lat=f.get("latitude"),
+            lng=f.get("longitude"),
+            type_text=clean(f.get("fbcAgencyCategoryCode")),
+            uid=f.get("agencyIdentifier") or node.get("id")))
+    return rows
+
+
+def parse_fbnyc(bank, force):
+    """Food Bank For NYC: agency×day CSV behind the Azure-hosted map."""
+    text = fetch_text(bank, bank["endpoint"], "dump.csv", force)
+    sites: dict[tuple, dict] = {}
+    for r in csv.DictReader(io.StringIO(text.lstrip("\ufeff"))):
+        name = clean((r.get("Agency") or "").split(" : ")[0])
+        street = clean(r.get("Address 1"))
+        if not name or clean(r.get("Inactive")).lower() == "yes":
+            continue
+        key = (norm(name), norm(street))
+        site = sites.setdefault(key, {
+            "name": name, "street": street or None,
+            "city": clean(r.get("Address 3")) or None,
+            "zip": clean_zip(r.get("Address 4")),
+            "phone": clean_phone(r.get("Phone")), "lat": r.get("Latitude"),
+            "lng": r.get("Longitude"),
+            "type": clean(r.get("Program Type")), "pairs": []})
+        day = DAY_NAMES.get(clean(r.get("Day of the Week")).lower())
+        o, c = clean(r.get("Opening Hour")), clean(r.get("Closing Hour"))
+        freq = clean(r.get("Frequency")).lower()
+        if day and o and c and freq in ("", "weekly", "every week"):
+            site["pairs"].append((day, f"{o} - {c}"))
+    return [row(s["name"], street=s["street"], city=s["city"], state="ny",
+                zip5=s["zip"], phone=s["phone"], lat=s["lat"], lng=s["lng"],
+                hours=hours_from_pairs(s["pairs"]), type_text=s["type"])
+            for s in sites.values()]
+
+
+def parse_sfmarin(bank, force):
+    """SF-Marin food locator: Laravel app, XSRF cookie + POST /resource."""
+    def produce(county):
+        import http.cookiejar
+        jar = http.cookiejar.CookieJar()
+        opener = urllib.request.build_opener(
+            urllib.request.HTTPCookieProcessor(jar))
+        req = urllib.request.Request(f"{bank['endpoint']}/en/{county}",
+                                     headers={"User-Agent": BROWSER_UA})
+        opener.open(req, timeout=120).read()
+        token = urllib.parse.unquote(
+            next(c.value for c in jar if c.name == "XSRF-TOKEN"))
+        body = {"visit_county": county, "visit_zip": "unknown",
+                "visit_senior": "0", "visit_urgent": "0", "visit_disabled": "0",
+                "visit_lang": "en", "visit_calfresh": "0", "visit_hdg": "0"}
+        time.sleep(1.0)
+        req = urllib.request.Request(
+            f"{bank['endpoint']}/resource", data=json.dumps(body).encode(),
+            headers={"User-Agent": BROWSER_UA, "Content-Type": "application/json",
+                     "X-XSRF-TOKEN": token, "X-Requested-With": "XMLHttpRequest"})
+        return opener.open(req, timeout=120).read()
+
+    rows = []
+    for county in bank["counties"]:
+        data = cache_json(bank, f"{county}.json", force,
+                          lambda c=county: produce(c))
+        for r in data.get("ngns") or []:
+            name = clean(r.get("name"))
+            if not name:
+                continue
+            pairs = []
+            if r.get("distro_day") and r.get("distro_start") and r.get("distro_end"):
+                token_day = DAY_NAMES.get(clean(r["distro_day"]).lower())
+                if token_day:
+                    pairs.append((token_day,
+                                  f"{r['distro_start']} - {r['distro_end']}"))
+            rows.append(row(
+                name, street=clean(r.get("address")) or None,
+                city=clean(r.get("city")) or None, state="ca",
+                zip5=clean_zip(r.get("zip")), phone=clean_phone(r.get("phone")),
+                lat=r.get("lat"), lng=r.get("lng"),
+                hours=hours_from_pairs(pairs), uid=r.get("id")))
+    return rows
+
+
+def parse_semo(bank, force):
+    """Southeast Missouri FB: county-accordion static pantry list."""
+    page = fetch_text(bank, bank["endpoint"], "page.html", force)
+    rows = []
+    # several pantries share one <p>; each starts with a <strong>NAME</strong>
+    for p in re.findall(r"<strong>(.*?)</strong>(.*?)(?=<strong>|</p>)",
+                        page, re.S):
+        name = strip_tags(p[0])
+        lines = [strip_tags(x) for x in re.split(r"<br\s*/?>", p[1])]
+        lines = [x for x in lines if x]
+        if not name or not lines:
+            continue
+        street = city = zip5 = phone = None
+        for ln in lines:
+            cm = re.match(r"^(.+?),\s*MO\.?\s*(\d{5})?", ln, re.I)
+            if cm and not city:
+                city, zip5 = cm.group(1).title().strip(" ,"), cm.group(2)
+            elif not phone and clean_phone(ln):
+                phone = clean_phone(ln)
+            elif not street and re.match(r"^\d+ ", ln):
+                street = ln.rstrip(",")
+        if not city:
+            continue  # not an address block (intro copy etc.)
+        rows.append(row(name.title() if name.isupper() else name,
+                        street=street, city=city, state="mo", zip5=zip5,
+                        phone=phone))
+    return rows
+
+
+def parse_setx(bank, force):
+    """Southeast Texas FB: Connections-plugin per-county agency pages."""
+    rows = []
+    for county in bank["counties"]:
+        page = fetch_text(bank, bank["endpoint"].format(county=county),
+                          f"{county}.html", force)
+        for block in re.split(r'class="cn-list-row', page)[1:]:
+            nm = re.search(r'<span class="org fn notranslate">(.*?)</span>', block, re.S)
+            if not nm:
+                continue
+            def span(cls):
+                m = re.search(rf'class="{cls}[^"]*">(.*?)</span>', block, re.S)
+                return strip_tags(m.group(1)) if m else None
+            tel = re.search(r'class="value">(.*?)</span>', block, re.S)
+            rows.append(row(
+                strip_tags(nm.group(1)), street=span("street-address"),
+                city=span("locality"), state=state_code(span("region"), "tx"),
+                zip5=clean_zip(span("postal-code")),
+                phone=clean_phone(tel.group(1)) if tel else None,
+                type_text=""))
+    return rows
+
+
+def parse_gulfcoast(bank, force):
+    """Feeding the Gulf Coast: server-rendered pantry search results."""
+    url = f"{bank['endpoint']}?" + urllib.parse.urlencode({
+        "address": "Mobile, AL", "near": "200", "pantry": "3102",
+        "distribution": "3101", "soup-kitchen": "3247", "seniors": "3099"})
+    page = fetch_text(bank, url, "results.html", force)
+    rows = []
+    for block in re.split(r'<div class="pantry-result">', page)[1:]:
+        nm = re.search(r'<p class="epsilon">(.*?)</p>', block, re.S)
+        ad = re.search(r'<p class="street">(.*?)</p>', block, re.S)
+        if not nm or not ad:
+            continue
+        lines = [strip_tags(x) for x in re.split(r"<br\s*/?>", ad.group(1))]
+        lines = [x for x in lines if x]
+        street = lines[0] if lines else None
+        city = st = zip5 = None
+        if len(lines) > 1:
+            cm = re.match(r"^(.+?),\s*([A-Z]{2})\s*(\d{5})?", lines[-1])
+            if cm:
+                city, st, zip5 = cm.group(1), state_code(cm.group(2)), cm.group(3)
+        ph = re.search(r'<p class="phone-number[^"]*">(.*?)</p>', block, re.S)
+        rows.append(row(
+            strip_tags(nm.group(1)), street=street, city=city,
+            state=st or bank["state"], zip5=zip5,
+            phone=clean_phone(strip_tags(ph.group(1))) if ph else None))
+    return rows
+
+
+def parse_harvesters(bank, force):
+    """Harvesters: server-rendered locator results (statewide 500mi search)."""
+    url = f"{bank['endpoint']}?" + urllib.parse.urlencode(
+        {"zip": "Kansas City, MO", "radius": "500"})
+    page = fetch_text(bank, url, "results.html", force)
+    rows, seen = [], set()
+    for block in re.split(r'class="location-result', page)[1:]:
+        nm = re.search(r'<h6[^>]*>(.*?)</h6>', block, re.S)
+        ad = re.search(r'<p class="mb-0">(.*?)</p>', block, re.S)
+        if not nm or not ad:
+            continue
+        name = strip_tags(nm.group(1))
+        lines = [strip_tags(x) for x in re.split(r"<br\s*/?>", ad.group(1))]
+        lines = [x for x in lines if x]
+        street = lines[0] if lines else None
+        city = st = zip5 = phone = None
+        for ln in lines[1:]:
+            cm = re.match(r"^(.+?),\s*([A-Z]{2})\s*(\d{5})?", ln)
+            if cm:
+                city, st, zip5 = cm.group(1), state_code(cm.group(2)), cm.group(3)
+            elif clean_phone(ln):
+                phone = clean_phone(ln)
+        key = (norm(name), norm(street or ""), norm(city or ""))
+        if key in seen:
+            continue  # desktop + mobile markup renders each result twice
+        seen.add(key)
+        alt = re.search(r'alt="([^"]+)"', block)
+        type_text = alt.group(1) if alt else ""
+        if type_text.lower() == "kitchen":
+            type_text = "meal site"
+        rows.append(row(name, street=street, city=city, state=st or "mo",
+                        zip5=zip5, phone=phone, type_text=type_text))
+    return rows
+
+
+def parse_theshfb(bank, force):
+    """Second Harvest Clark/Champaign/Logan: Wix warmupData collection items."""
+    page = fetch_text(bank, bank["endpoint"], "page.html", force)
+    recs = {}
+    for m in re.finditer(r'"agencyName":"', page):
+        obj = _balanced_object(page, m.start())
+        if not obj:
+            continue
+        try:
+            d = json.loads(obj)
+        except ValueError:
+            continue
+        if clean(d.get("agencyName")):
+            recs[d["_id"] if d.get("_id") else d["agencyName"]] = d
+    rows = []
+    for uid, d in recs.items():
+        street, city, st, zip5 = parse_oneline(d.get("physicalAddress"), "oh")
+        rows.append(row(
+            d["agencyName"], street=(street or "").split(",")[0] or None,
+            city=clean(d.get("city")) or city,
+            state=state_code(d.get("state"), st or "oh"),
+            zip5=clean_zip(d.get("zip")) or zip5,
+            phone=clean_phone(d.get("phoneNumber")), uid=uid))
+    return rows
+
+
+def parse_akhubdb(bank, force):
+    """Food Bank of Alaska: HubDB agency-partner table (name/city/website)."""
+    data = fetch_json(bank, bank["endpoint"], "dump.json", force)
+    rows = []
+    for r in data.get("objects") or []:
+        v = r.get("values") or {}
+        name = clean(v.get("1"))
+        if not name:
+            continue
+        website = clean(v.get("8"))
+        rows.append(row(name, city=clean(v.get("4")) or None, state="ak",
+                        website=website or None, uid=r.get("id")))
+    return rows
+
+
+def parse_pantryhawk(bank, force):
+    """Second Harvest NW PA: pantry-hawk nearest-15 search swept over the
+    service-area towns; the nonce is read fresh from the locator page."""
+    def produce(addr):
+        from .util import get as util_get
+        page = util_get(f"{bank['endpoint']}/need-help/agency-locator/",
+                        ua=BROWSER_UA).decode("utf-8", "replace")
+        m = re.search(r'LSAjax = \{"security":"(\w+)"', page)
+        if not m:
+            raise SystemExit("pantry-hawk nonce not found - page changed")
+        fields = [("LocationSearch_Address", addr),
+                  ("LocationSearch_Category", "12011")]
+        params = {"action": "locationsearch", "security": m.group(1)}
+        for i, (n, val) in enumerate(fields):
+            params[f"form_data[{i}][name]"] = n
+            params[f"form_data[{i}][value]"] = val
+        return post_bytes(
+            f"{bank['endpoint']}/wp-admin/admin-ajax.php",
+            urllib.parse.urlencode(params).encode(),
+            {"Content-Type": "application/x-www-form-urlencoded"})
+
+    rows, seen = [], set()
+    for k, addr in enumerate(bank["addresses"]):
+        data = cache_json(bank, f"search-{k:02d}.json", force,
+                          lambda a=addr: produce(a))
+        if "locationsFound" not in data:
+            raise SystemExit(f"pantry-hawk error: {str(data)[:150]}")
+        for r in json.loads(data["locationsFound"]):
+            if r.get("id") in seen or not clean(r.get("loc_name")):
+                continue
+            seen.add(r.get("id"))
+            pairs = []
+            for day in DAY_TOKENS:
+                try:
+                    windows = json.loads(r.get(f"loc_{day}_hrs") or "[]")
+                except ValueError:
+                    continue
+                for w in windows:
+                    if isinstance(w, list) and len(w) == 2 and w[0] and w[1]:
+                        pairs.append((day, f"{w[0]} - {w[1]}"))
+            pm = re.match(r"POINT\((-?[\d.]+) (-?[\d.]+)\)", r.get("loc_point") or "")
+            rows.append(row(
+                r["loc_name"], street=clean(r.get("loc_address_1")) or None,
+                street2=clean(r.get("loc_address_2")) or None,
+                city=clean(r.get("loc_city")) or None,
+                state=state_code(r.get("loc_state"), "pa"),
+                zip5=clean_zip(r.get("loc_zipcode")),
+                phone=clean_phone(r.get("loc_phone")),
+                email=clean(r.get("loc_email")) or None,
+                lat=pm.group(1) if pm else None,
+                lng=pm.group(2) if pm else None,
+                hours=hours_from_pairs(pairs), uid=r.get("id")))
+    return rows
+
+
 HARVESTERS = {
     "wpsl": harvest_wpsl, "wpgmza": harvest_wpgmza, "asl": harvest_asl,
     "slp": harvest_slp, "storepoint": harvest_storepoint,
     "storerocket": harvest_storerocket, "mymaps": harvest_mymaps,
     "arcgis": harvest_arcgis, "ssf": harvest_ssf,
-    "foodfinder": harvest_foodfinder,
+    "foodfinder": harvest_foodfinder, "mapsvg": harvest_mapsvg,
+    "slw": harvest_slw, "freshtrak": harvest_freshtrak,
+    "tribevenues": harvest_tribevenues,
 }
 PARSERS = {
     "cleveland": parse_cleveland, "ozarks": parse_ozarks,
@@ -968,11 +1589,21 @@ PARSERS = {
     "godspantry": parse_godspantry, "mfbn": parse_mfbn, "ccs": parse_ccs,
     "fbd": parse_fbd, "iowa": parse_iowa, "smfoodbank": parse_smfoodbank,
     "mofc": parse_mofc, "mountaineer": parse_mountaineer,
+    "shsv": parse_shsv, "feedingsga": parse_feedingsga,
+    "cityharvest": parse_cityharvest, "licares": parse_licares,
+    "sitewrench": parse_sitewrench, "feedingsd": parse_feedingsd,
+    "foodnow": parse_foodnow, "fbnyc": parse_fbnyc, "sfmarin": parse_sfmarin,
+    "semo": parse_semo, "setx": parse_setx, "gulfcoast": parse_gulfcoast,
+    "harvesters": parse_harvesters, "theshfb": parse_theshfb,
+    "akhubdb": parse_akhubdb, "pantryhawk": parse_pantryhawk,
 }
 # verified.method: structured data feeds are api; parsed HTML pages are scrape
 API_PLATFORMS = {"wpsl", "wpgmza", "asl", "slp", "storepoint", "storerocket",
-                 "mymaps", "arcgis", "ssf"}
-API_PARSERS = {"iowa", "daretocare"}
+                 "mymaps", "arcgis", "ssf", "mapsvg", "slw", "freshtrak",
+                 "tribevenues"}
+API_PARSERS = {"iowa", "daretocare", "shsv", "cityharvest", "licares",
+               "sitewrench", "feedingsd", "foodnow", "fbnyc", "sfmarin",
+               "akhubdb", "pantryhawk"}
 
 
 def harvest(bank, force):

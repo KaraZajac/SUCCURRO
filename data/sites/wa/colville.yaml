@@ -55,6 +55,38 @@
   sources:
   - acf/head-start-locations
   verified: {'on': '2026-07-19', method: api}
+- id: wa/colville/feed-the-hungry
+  name: Feed the Hungry
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - meal-program
+  address: {street: 1221 E Hawthorne, city: Colville, state: wa, zip: '99114'}
+  place: '5314170'
+  geo: {lat: 48.54418, lng: -117.90253}
+  phone: 509-690-7880
+  website: https://colvillefoodbank.org/
+  hours:
+  - {days: [wed], open: '11:30', close: '12:30'}
+  external_ids: {wa-second-harvest-inland-northwest: feed-the-hungry}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
+- id: wa/colville/hope-vineyard
+  name: Hope Vineyard
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 184 Degrief Rd, city: Colville, state: wa, zip: '99114'}
+  place: '5314170'
+  geo: {lat: 48.54961, lng: -117.8771}
+  phone: 509-685-9272
+  website: https://hopevineyardcolville.org/reachout
+  hours:
+  - {days: [thu], open: '13:00', close: '14:30', note: 1st & 3rd Thursday}
+  external_ids: {wa-second-harvest-inland-northwest: hope-vineyard}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: wa/colville/ne-tri-chd-colville-wic-clinic
   name: NE Tri CHD-Colville WIC Clinic
   categories:
@@ -125,3 +157,36 @@
   - acf/liheap-clearinghouse
   verified: {'on': '2026-07-19', method: scrape}
   geo: {lat: 48.53596, lng: -117.90566}
+- id: wa/colville/seventh-day-adventist-sda-colville-food-bank
+  name: Seventh-day Adventist (SDA) - Colville Food Bank
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - meal-program
+  address: {street: 138 E Cedar Loop, city: Colville, state: wa, zip: '99114'}
+  place: '5314170'
+  geo: {lat: 48.53172, lng: -117.89592}
+  phone: 509-684-5845
+  website: https://www.colvilleadventist.org/
+  hours:
+  - {days: [tue], open: '11:15', close: '12:30', note: Weekly Meals}
+  external_ids: {wa-second-harvest-inland-northwest: seventh-day-adventist-sda-colville-food-bank}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
+- id: wa/colville/volunteer-food-resource-center-colville-food-pan
+  name: Volunteer Food Resource Center (Colville Food Pantry)
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 210 S Wynne, city: Colville, state: wa, zip: '99114'}
+  place: '5314170'
+  geo: {lat: 48.54313, lng: -117.90779}
+  phone: 509-684-2971
+  website: https://colvillefoodbank.org/
+  hours:
+  - {days: [tue, wed], open: '10:00', close: '12:30'}
+  - {days: [fri], open: '10:00', close: '12:30'}
+  external_ids: {wa-second-harvest-inland-northwest: volunteer-food-resource-center-colville-food-pantry}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}

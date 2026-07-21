@@ -43,6 +43,24 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: wa/deer-park/greenhouse-food-bank
+  name: GreenHouse Food Bank
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 125 North Park Ave, city: Deer Park, state: wa, zip: '99006'}
+  place: '5317320'
+  geo: {lat: 47.95615, lng: -117.47994}
+  phone: 509-276-6897
+  website: http://www.greenhousedp.com/
+  hours:
+  - {days: [mon], open: '14:00', close: '17:45'}
+  - {days: [wed], open: '13:00', close: '15:45'}
+  - {days: [fri], open: '13:00', close: '15:45'}
+  external_ids: {wa-second-harvest-inland-northwest: greenhouse-food-bank}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: wa/deer-park/north-county-clinic
   name: North County Clinic
   categories:
@@ -57,6 +75,23 @@
   sources:
   - hrsa/health-center-sites
   verified: {'on': '2026-07-19', method: api}
+- id: wa/deer-park/north-county-food-pantry
+  name: North County Food Pantry
+  org: wa/second-harvest-inland-northwest
+  categories:
+  - food-pantry
+  address: {street: 40015 N Collins Rd, city: Elk, state: wa, zip: '99009'}
+  place: '5317320'
+  geo: {lat: 48.01791, lng: -117.29609}
+  phone: 509-292-2530
+  website: https://www.northcountyfoodpantry.org/
+  hours:
+  - {days: [mon], open: '10:00', close: '14:00'}
+  - {days: [wed], open: '08:30', close: '12:00'}
+  external_ids: {wa-second-harvest-inland-northwest: north-county-food-pantry}
+  sources:
+  - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
 - id: wa/deer-park/spokane-rhd-deer-park-wic-clinic
   name: Spokane RHD-Deer Park WIC Clinic
   categories:

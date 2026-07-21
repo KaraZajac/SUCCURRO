@@ -3,204 +3,108 @@
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 301 Lloyd St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 301 Lloyd St, city: Carrboro, state: nc, zip: '27510'}
   place: '3710620'
-  geo:
-    lat: 35.91346
-    lng: -79.06977
+  geo: {lat: 35.91346, lng: -79.06977}
   phone: 919-942-8741
   website: https://www.piedmonthealth.org
-  external_ids:
-    bphc: BPS-H80-004319
+  external_ids: {bphc: BPS-H80-004319}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/carrboro/carrboro-elementary
   name: Carrboro Elementary
   categories:
   - child-care
-  address:
-    street: 400 Shelton St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 400 Shelton St, city: Carrboro, state: nc, zip: '27510'}
   description: Head Start early childhood program — 14 funded slots; operated by Chapel Hill-Carrboro
     City School District.
   place: '3710620'
-  geo:
-    lat: 35.91448
-    lng: -79.07859
+  geo: {lat: 35.91448, lng: -79.07859}
   phone: 919-968-3652
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/carrboro/carrboro-elementary-2
   name: Carrboro elementary
   categories:
   - food-pantry
   place: '3710620'
-  geo:
-    lat: 35.91494
-    lng: -79.07805
+  geo: {lat: 35.91494, lng: -79.07805}
   website: https://mapping.littlefreepantry.org/pantry/3666
-  external_ids:
-    lfp: '3666'
+  external_ids: {lfp: '3666'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}
 - id: nc/carrboro/inter-faith-council-community-kitchen
   name: Inter-Faith Council Community Kitchen
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - meal-program
-  address:
-    street: 110 West Main St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 110 West Main St, city: Carrboro, state: nc, zip: '27510'}
   place: '3710620'
-  geo:
-    lat: 35.91034
-    lng: -79.0736
+  geo: {lat: 35.91034, lng: -79.0736}
   phone: 919-929-6380
   hours:
-  - days:
-    - sun
-    open: '11:15'
-    close: '12:00'
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: '11:15'
-    close: '12:30'
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: '17:00'
-    close: '17:45'
-  - days:
-    - sat
-    open: '11:15'
-    close: '12:00'
-  external_ids:
-    nc-food-bank-of-central-eastern-north-carolina: inter-faith-council-community-kitchen
+  - {days: [sun], open: '11:15', close: '12:00'}
+  - {days: [mon, tue, wed, thu, fri], open: '11:15', close: '12:30'}
+  - {days: [mon, tue, wed, thu, fri], open: '17:00', close: '17:45'}
+  - {days: [sat], open: '11:15', close: '12:00'}
+  external_ids: {nc-food-bank-of-central-eastern-north-carolina: inter-faith-council-community-kitchen}
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
 - id: nc/carrboro/inter-faith-council-community-market
   name: Inter-Faith Council Community Market
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address:
-    street: 110 West Main St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 110 West Main St, city: Carrboro, state: nc, zip: '27510'}
   place: '3710620'
-  geo:
-    lat: 35.91034
-    lng: -79.0736
+  geo: {lat: 35.91034, lng: -79.0736}
   phone: 919-929-6380
   hours:
-  - days:
-    - mon
-    open: 09:00
-    close: '17:00'
-  - days:
-    - tue
-    - wed
-    open: 09:00
-    close: '19:00'
-  - days:
-    - thu
-    - fri
-    open: 09:00
-    close: '17:00'
-  external_ids:
-    nc-food-bank-of-central-eastern-north-carolina: inter-faith-council-community-market
+  - {days: [mon], open: '09:00', close: '17:00'}
+  - {days: [tue, wed], open: '09:00', close: '19:00'}
+  - {days: [thu, fri], open: '09:00', close: '17:00'}
+  external_ids: {nc-food-bank-of-central-eastern-north-carolina: inter-faith-council-community-market}
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified:
-    'on': '2026-07-20'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
 - id: nc/carrboro/inter-faith-council-social-service
   name: Inter-Faith Council Social Service
   org: nc/inter-faith-food-shuttle
   categories:
   - food-pantry
-  address:
-    street: 110 W. Main St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 110 W. Main St, city: Carrboro, state: nc, zip: '27510'}
   place: '3710620'
   sources:
   - foodbank/nc-inter-faith-food-shuttle
-  verified:
-    'on': '2026-07-20'
-    method: api
-  geo: {lat: 35.91032, lng: -79.07261}
+  verified: {'on': '2026-07-21', method: api}
 - id: nc/carrboro/oakwood
   name: Oakwood
   categories:
   - meal-program
-  address:
-    street: 605 Oak Ave
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 605 Oak Ave, city: Carrboro, state: nc, zip: '27510'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Chapel Hill-Carrboro
     Schools.
   place: '3710620'
-  geo:
-    lat: 35.9183
-    lng: -79.07231
+  geo: {lat: 35.9183, lng: -79.07231}
   phone: (919) 967-8211
-  external_ids:
-    usda_master: Cycle 09_NC_SFSP_0166
+  external_ids: {usda_master: Cycle 09_NC_SFSP_0166}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: nc/carrboro/piedmont-health-mobile-unit
   name: Piedmont Health Mobile Unit
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 301 Lloyd St
-    city: Carrboro
-    state: nc
-    zip: '27510'
+  address: {street: 301 Lloyd St, city: Carrboro, state: nc, zip: '27510'}
   place: '3710620'
-  geo:
-    lat: 35.91346
-    lng: -79.06977
+  geo: {lat: 35.91346, lng: -79.06977}
   phone: 919-942-8741
-  external_ids:
-    bphc: BPS-H80-035664
+  external_ids: {bphc: BPS-H80-035664}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
