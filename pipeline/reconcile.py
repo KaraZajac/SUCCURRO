@@ -16,7 +16,8 @@ import re
 import sys
 from pathlib import Path
 
-from .util import DATA, dump_yaml, load_yaml
+from .emit import _reflow
+from .util import DATA, Flow, dump_yaml, load_yaml
 
 _norm = re.compile(r"[^a-z0-9]+")
 
@@ -37,7 +38,56 @@ def source_family(rec):
     return src.split("/")[0]
 
 
+MERGE_FILL = ("address", "geo", "phone", "email", "website", "description",
+              "service_area", "parent_org")
+
+
+def merge_org_duplicates():
+    """Same-name, same-state orgs arriving via different source networks are
+    the same organization wearing multiple hats (a food bank that is also a
+    diaper-bank member; a legal-aid org that is also a DV program). Merge:
+    the fuller record wins as base, categories/sources/external_ids union,
+    missing scalars fill from the others, duplicates are deleted.
+    Deterministic, so module re-runs followed by reconcile converge."""
+    groups = {}
+    base_dir = DATA / "orgs"
+    for path in sorted(base_dir.rglob("*.yaml")):
+        rec = load_yaml(path)
+        key = (norm(rec.get("name", "")), rec["id"].split("/")[0])
+        groups.setdefault(key, []).append((path, rec))
+
+    merged = 0
+    for key, entries in groups.items():
+        families = {r["sources"][0].split("/")[0] for _, r in entries}
+        if len(entries) < 2 or len(families) < 2:
+            continue
+        entries.sort(key=lambda pr: (-len(pr[1]), pr[1]["id"]))
+        base_path, base = entries[0]
+        for path, other in entries[1:]:
+            for cat in other.get("categories", []):
+                if cat not in base["categories"]:
+                    base["categories"].append(cat)
+            for src in other.get("sources", []):
+                if src not in base["sources"]:
+                    base["sources"].append(src)
+            if other.get("external_ids"):
+                ids = dict(other["external_ids"])
+                ids.update(base.get("external_ids") or {})
+                base["external_ids"] = Flow(ids)
+            for field in MERGE_FILL:
+                if field not in base and field in other:
+                    base[field] = other[field]
+            if (other.get("verified", {}).get("on", "") >
+                    base.get("verified", {}).get("on", "")):
+                base["verified"] = other["verified"]
+            path.unlink()
+            merged += 1
+        dump_yaml(_reflow(base), base_path)
+    print(f"reconcile: merged {merged} cross-source duplicate orgs")
+
+
 def main(argv):
+    merge_org_duplicates()
     va_addrs = set()
     files = sorted((DATA / "sites").rglob("*.yaml"))
     for path in files:
