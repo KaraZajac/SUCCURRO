@@ -255,7 +255,7 @@ export const CATEGORY_COLORS = {
   "mental-health": "#8839ef", recovery: "#40a02b", lgbtq: "#ea76cb",
   housing: "#209fb5", veterans: "#179299", crisis: "#d20f39",
   legal: "#e64553", financial: "#dd7878", seniors: "#04a5e5",
-  "mutual-aid": "#dc8a78", other: "#9ca0b0",
+  "mutual-aid": "#dc8a78", reentry: "#7c7f93", other: "#9ca0b0",
 };
 export const catColor = (root) => CATEGORY_COLORS[root] || CATEGORY_COLORS.other;
 
