@@ -3,62 +3,112 @@
   org: mo/harvesters-the-community-food-network
   categories:
   - food-pantry
-  address: {street: 12600 West 87th Street Parkway, city: Lenexa, state: ks, zip: '66215'}
+  address:
+    street: 12600 West 87th Street Parkway
+    city: Lenexa
+    state: ks
+    zip: '66215'
   place: '2039350'
   phone: 913-541-2600
   sources:
   - foodbank/mo-harvesters-the-community-food-network
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
+  geo: {lat: 38.97108, lng: -94.7308}
 - id: ks/lenexa/city-center-church
   name: City Center Church
   org: mo/harvesters-the-community-food-network
   categories:
   - food-pantry
-  address: {street: 17500 W 87t St. Pkwy, city: Lenexa, state: ks, zip: '66219'}
+  address:
+    street: 17500 W 87t St. Pkwy
+    city: Lenexa
+    state: ks
+    zip: '66219'
   place: '2039350'
   phone: 913-888-1559
   sources:
   - foodbank/mo-harvesters-the-community-food-network
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: ks/lenexa/johnson-county-housing-authority
   name: Johnson County Housing Authority
   categories:
   - housing-assistance
-  address: {street: 12425 W 87th Street Pkwy, city: Lenexa, state: ks, zip: '66215'}
+  address:
+    street: 12425 W 87th Street Pkwy
+    city: Lenexa
+    state: ks
+    zip: '66215'
   description: Housing Choice Voucher (Section 8) agency
   place: '2039350'
-  geo: {lat: 38.97082, lng: -94.73016}
+  geo:
+    lat: 38.97082
+    lng: -94.73016
   phone: 913-715-6600
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/kansas-city-va-mobile-medical-unit
   name: Kansas City VA Mobile Medical Unit
   categories: &id001
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address: {street: '15512 West 113th Street, Lenexa VA Clinic', city: Lenexa, state: ks, zip: '66219'}
+  address:
+    street: 15512 West 113th Street, Lenexa VA Clinic
+    city: Lenexa
+    state: ks
+    zip: '66219'
   place: '2039350'
-  geo: {lat: 38.92226, lng: -94.76534}
+  geo:
+    lat: 38.92226
+    lng: -94.76534
   phone: 816-861-4700
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  external_ids: {va: vha_589QI}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  external_ids:
+    va: vha_589QI
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/lenexa-va-clinic
   name: Lenexa VA Clinic
   categories: *id001
   description: Multi-Specialty CBOC
-  address: {street: 15512 West 113th Street, city: Lenexa, state: ks, zip: '66219'}
+  address:
+    street: 15512 West 113th Street
+    city: Lenexa
+    state: ks
+    zip: '66219'
   place: '2039350'
-  geo: {lat: 38.92181, lng: -94.7639}
+  geo:
+    lat: 38.92181
+    lng: -94.7639
   phone: 816-922-2522
   website: https://www.va.gov/kansas-city-health-care/locations/lenexa-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - Cardiology
@@ -75,53 +125,86 @@
   - Prosthetics and rehabilitation
   - Radiology
   - Telehealth
-  external_ids: {va: vha_589JG}
+  external_ids:
+    va: vha_589JG
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/rosehill-elementary-school
   name: Rosehill Elementary School
   categories:
   - meal-program
-  address: {street: 9801 Rosehill Rd, city: Lenexa, state: ks, zip: '66215'}
+  address:
+    street: 9801 Rosehill Rd
+    city: Lenexa
+    state: ks
+    zip: '66215'
   description: Free summer meals for kids and teens (2026 season) — sponsored by D0512 - Shawnee Mission.
   place: '2039350'
-  geo: {lat: 38.95075, lng: -94.73287}
+  geo:
+    lat: 38.95075
+    lng: -94.73287
   phone: (913) 993-4804
-  external_ids: {usda_master: Cycle 01_KS_SFSP_0211}
+  external_ids:
+    usda_master: Cycle 01_KS_SFSP_0211
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-07-19'
+    method: api
 - id: ks/lenexa/salem-lutheran-church
   name: Salem Lutheran Church
   org: mo/harvesters-the-community-food-network
   categories:
   - food-pantry
-  address: {street: 13402 W 92nd Street, city: Lenexa, state: ks, zip: '66215'}
+  address:
+    street: 13402 W 92nd Street
+    city: Lenexa
+    state: ks
+    zip: '66215'
   place: '2039350'
   phone: 913-888-5051
   sources:
   - foodbank/mo-harvesters-the-community-food-network
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
+  geo: {lat: 38.96179, lng: -94.74089}
 - id: ks/lenexa/shawnee-mission-unitarian-universalist-church
   name: Shawnee Mission Unitarian Universalist Church
   org: mo/harvesters-the-community-food-network
   categories:
   - food-pantry
-  address: {street: 9400 Pflumm Road, city: Lenexa, state: ks, zip: '66215'}
+  address:
+    street: 9400 Pflumm Road
+    city: Lenexa
+    state: ks
+    zip: '66215'
   place: '2039350'
   phone: 913-228-2993
   sources:
   - foodbank/mo-harvesters-the-community-food-network
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
+  geo: {lat: 38.96008, lng: -94.74229}
 - id: ks/lenexa/west-lenexa-seventh-day-adventist-pantry
   name: West Lenexa Seventh Day Adventist Pantry
   org: mo/harvesters-the-community-food-network
   categories:
   - food-pantry
-  address: {street: 24450 W 83rd Street, city: Lenexa, state: ks, zip: '66227'}
+  address:
+    street: 24450 W 83rd Street
+    city: Lenexa
+    state: ks
+    zip: '66227'
   place: '2039350'
   phone: 816-812-3043
   sources:
   - foodbank/mo-harvesters-the-community-food-network
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
+  geo: {lat: 38.97799, lng: -94.86984}
