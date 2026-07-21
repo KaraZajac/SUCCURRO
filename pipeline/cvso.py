@@ -9,15 +9,20 @@ cvso/<st>), so each state's re-run replaces exactly its own records.
 Pages/feeds cache under sources/cvso/.
 
 2026-07 all-state survey summary (see module registry for the built
-set): built 19 states (the LA/ND/NY multi-page crawls deferred by the
-survey are now built); JS/blocked with no recoverable feed: CA, KS, MA,
-NH, VA (MA's monthly VSO CSV re-probed 2026-07: mass.gov's WAF 403s
-python and curl even with browser headers — client fingerprinting, not
-UA); PDF-only left unbuilt: AR, FL (multi-column), NC (interleaved
-3-column), TX (county->website only); state-office systems only (no
-county roster): AK, AZ, CT, DE, GA, HI, ID, KY, MD, ME, MO*, MT, NM,
-NV, OK, RI, UT, VT, WA, WV, WY (*MO's ArcGIS feed is state-run
-offices; MI similar).
+set): built 22 states (the LA/ND/NY multi-page crawls deferred by the
+survey are now built, and the AR/FL/NC PDFs deferred as multi-column
+are parsed via blank-gutter column splitting below); JS/blocked with no
+recoverable feed: CA, KS, MA, NH, VA (MA's monthly VSO CSV re-probed
+2026-07: mass.gov's WAF 403s python and curl even with browser
+headers — client fingerprinting, not UA); PDF-only left unbuilt: TX
+(the FIND-A-VSO roster is county->website only; recovering phones would
+mean crawling ~250 county sites — skipped); state-office systems only
+(no county roster): AK, AZ, CT, DE, GA, HI, ID, KY, MD, ME, MO*, MT,
+NM, NV, OK, RI, UT, VT, WA, WV, WY (*MO's ArcGIS feed is state-run
+offices; MI similar). NC's county roster is no longer on the live DMVA
+site (the 2026 refresh points veterans at county websites); it is
+parsed from the DMVA Resource Guide 2024-25 PDF via the Internet
+Archive (archive_url on the source record).
 
 FACTS-ONLY: the office is the record, not the person — officer personal
 names and personal emails are never recorded; phone is the published
@@ -847,6 +852,283 @@ def parse_wi(page: str, source_id: str) -> list[dict]:
     return records
 
 
+# --- shared PDF helpers (AR / FL / NC) -------------------------------------
+
+def pdf_layout_text(url: str, cache_name: str, force: bool) -> str:
+    pdf = fetch(url, SOURCES / "cvso" / cache_name, force=force)
+    out = subprocess.run(["pdftotext", "-layout", str(pdf), "-"],
+                         capture_output=True, text=True)
+    if out.returncode != 0:
+        raise SystemExit(f"pdftotext failed on {cache_name}: "
+                         f"{out.stderr[:200]}")
+    return out.stdout
+
+
+def column_spans(lines: list[str], min_gap: int = 3) -> list[tuple]:
+    """(start, end) spans of a page's text columns, split at vertical
+    all-blank gutters at least min_gap chars wide (cf. eoir.find_gutter,
+    generalized to any column count)."""
+    width = max((len(l) for l in lines), default=0)
+    occ = [0] * (width + 1)
+    for l in lines:
+        for i, ch in enumerate(l):
+            if ch != " ":
+                occ[i] += 1
+    gaps, start = [], None
+    for i in range(width + 1):
+        if occ[i] == 0:
+            if start is None:
+                start = i
+        else:
+            if start is not None and i - start >= min_gap:
+                gaps.append((start, i))
+            start = None
+    if start is not None:
+        gaps.append((start, width + 1))
+    edges = [0]
+    for a, b in gaps:
+        if a == 0:
+            edges[0] = b
+        else:
+            edges.append(a)
+    spans = list(zip(edges, edges[1:] + [width + 1]))
+    return [(a, b) for a, b in spans
+            if any(l[a:b].strip() for l in lines)]
+
+
+COUNTY_INBOX_RE = re.compile(r"cvso|vcso|vso|veteran|vets", re.I)
+
+
+def county_org_email(text: str) -> str | None:
+    """org_email(), plus county-style office inboxes whose local part
+    names the office rather than a person (boonecvso@gmail.com,
+    veteransdrewcounty@...). First.Last addresses stay excluded."""
+    e = org_email(text)
+    if e:
+        return e
+    for m in EMAIL_RE.finditer(text or ""):
+        cand = m.group(0)
+        if re.match(r"^\w+\.\w+@", cand):
+            continue
+        if COUNTY_INBOX_RE.search(cand.split("@")[0]):
+            return cand.lower()
+    return None
+
+
+def clean_city(fragment: str) -> str | None:
+    """City from a captured '<junk>  City' PDF cell: keep the last
+    2-plus-space-separated chunk, then drop street residue."""
+    city = re.split(r"\s{2,}", fragment.strip())[-1]
+    city = re.sub(r"^.*\d\S*\s+", "", city).strip(" ,.")
+    return city or None
+
+
+# --- AR: ADVA VSO/DVSO/CVSO directory PDF ----------------------------------
+# One block per county ("X COUNTY" headline, District line, address /
+# City, AR zip / Phone / Hours / Email cells). Officer and assistant
+# names on the same rows are never parsed (facts-only). The directory
+# marks several offices VACANT — those counties still get a record
+# (office identity, no phone).
+
+AR_URL = "https://www.veterans.arkansas.gov/s/Directory-5-20-2026.pdf"
+AR_HEAD_RE = re.compile(r"^\s*([A-Z][A-Z .&']+?) COUNTY\b")
+# upstream quirks: the county is Hot Spring (the PDF says HOT SPRINGS);
+# Jefferson's city cell wraps "Pine / Bluff" across lines
+AR_COUNTY_FIX = {"Hot Springs": "Hot Spring"}
+AR_CITY_FIX = {"Jefferson": "Pine Bluff"}
+
+
+def parse_ar(text: str, source_id: str) -> list[dict]:
+    lines = text.splitlines()
+    heads = [(i, m.group(1)) for i, l in enumerate(lines)
+             for m in [AR_HEAD_RE.match(l)] if m]
+    records = []
+    for k, (i, raw) in enumerate(heads):
+        end = heads[k + 1][0] if k + 1 < len(heads) else len(lines)
+        seg = "\n".join(lines[i:end])
+        county = raw.title()
+        county = AR_COUNTY_FIX.get(county, county)
+        cm = re.search(r"([A-Za-z][A-Za-z .'-]+?),?\s+AR\.?,?\s+\d{5}", seg) \
+            or re.search(r"([A-Za-z][A-Za-z .'-]+?),\s+AR\s*$", seg, re.M)
+        city = clean_city(cm.group(1)) if cm else None
+        city = AR_CITY_FIX.get(county, city)
+        pm = re.search(r"(?:Phone|Office):\s*(\(?\d[\d() .\-]{8,})", seg)
+        records.append(record(
+            "ar", county, source_id, city=city,
+            phone=phone_fmt(pm.group(1)) if pm else None,
+            email=county_org_email(seg)))
+    return records
+
+
+# --- FL: FDVA CVSO directory PDF (two-column) ------------------------------
+# County blocks headed "NAME (n)" (n = 1..67) with "NAME cont." blocks
+# for overflow; a block can continue at the top of the same-side column
+# of the next page, so per-column cursors carry across pages and the
+# heading-less top of each column is attached first (keeping the main
+# office's address ahead of satellite offices in the county's text).
+# Staff names on the roster lines are never parsed.
+
+FL_URL = ("https://floridavets.org/wp-content/uploads/2026/04/"
+          "CVSO-Directory-Apr-2026.pdf")
+FL_HEAD_RE = re.compile(r"^([A-Z][A-Z .\-']+?)\s*\((\d+)\)$")
+FL_CONT_RE = re.compile(r"^([A-Z][A-Z .\-']+?)\s+[Cc]ont\.?$")
+FL_JUNK_RE = re.compile(
+    r"County Veterans Service Officers|Updated \w+ \d{4}|^\s*\d+\s*$")
+FL_COUNTY_FIX = {"St Johns": "St. Johns", "St Lucie": "St. Lucie",
+                 "Desoto": "DeSoto"}
+
+
+def parse_fl(text: str, source_id: str) -> list[dict]:
+    county_txt: dict[str, list] = {}
+    numbered: set[int] = set()
+    prev_open: list = []
+    for page in text.split("\f"):
+        lines = [l for l in page.splitlines() if not FL_JUNK_RE.search(l)]
+        if not any(l.strip() for l in lines):
+            continue
+        cols = [[l[a:b].strip() for l in lines]
+                for a, b in column_spans(lines)]
+        rests = []
+        for k, col in enumerate(cols):  # pass 1: page-break overflow
+            cur = prev_open[k] if k < len(prev_open) else None
+            j = 0
+            while j < len(col) and not (FL_HEAD_RE.match(col[j])
+                                        or FL_CONT_RE.match(col[j])):
+                if cur and col[j] and cur in county_txt:
+                    county_txt[cur].append(col[j])
+                j += 1
+            rests.append((cur, col[j:]))
+        prev_open = []
+        for cur, rest in rests:  # pass 2: headed blocks
+            for l in rest:
+                hm = FL_HEAD_RE.match(l) or FL_CONT_RE.match(l)
+                if hm:
+                    cur = hm.group(1).title()
+                    cur = FL_COUNTY_FIX.get(cur, cur)
+                    county_txt.setdefault(cur, [])
+                    if hm.re is FL_HEAD_RE:
+                        numbered.add(int(hm.group(2)))
+                elif cur and l:
+                    county_txt[cur].append(l)
+            prev_open.append(cur)
+    missing = set(range(1, 68)) - numbered
+    if missing:
+        print(f"fl: numbered county headings missing: {sorted(missing)}")
+    records = []
+    for county, ls in county_txt.items():
+        seg = "\n".join(ls)
+        cm = re.search(r"([A-Za-z][A-Za-z .'-]+?),?\s+F[Ll]\.?,?\s+\d{5}",
+                       seg)
+        city = clean_city(cm.group(1)) if cm else None
+        pm = re.search(r"(?:Phone|PH|Office|Tel)\b\.?:?\s*"
+                       r"(\(?\d[\d() .\-/]{8,})", seg, re.I)
+        phone = phone_fmt(pm.group(1)) if pm else None
+        if not phone:  # e.g. Sarasota's unlabeled "941-861-8387(VETS)"
+            phone = phone_fmt(re.sub(r"Fax:?[^\n]*", "", seg, flags=re.I))
+        records.append(record("fl", county, source_id, city=city,
+                              phone=phone, email=county_org_email(seg)))
+    return records
+
+
+# --- NC: DMVA Resource Guide 2024-25 county-offices chapter ----------------
+# The live milvets.nc.gov no longer publishes a county roster; the
+# 2024-25 Resource Guide PDF (fetched from the Internet Archive) holds a
+# 4-column COUNTY VETERANS SERVICE OFFICES chapter. Page-wide gutter
+# splitting breaks on the pages' decorative sidebars, so cells (2+
+# space-separated runs) are assigned to per-page column anchors derived
+# from the county-heading x-positions; margin/page-number cells fall
+# left of every anchor and are dropped. Counties served by a state
+# veterans service center carry that center's contact details with a
+# served-through note. Forsyth and Lincoln are absent from the chapter
+# upstream (98 of 100 counties).
+
+NC_URL = "https://www.milvets.nc.gov/dmva-resource-guide-202425/open"
+NC_ARCHIVE = ("https://web.archive.org/web/20240614012836if_/"
+              "https://www.milvets.nc.gov/dmva-resource-guide-202425/open")
+NC_HEAD_RE = re.compile(r"^([A-Z][A-Z .\-']+?) COUNTY( ANNEX)?$")
+NC_CELL_RE = re.compile(r" {2,}")
+NC_COUNTY_FIX = {"Mcdowell": "McDowell", "Swaine": "Swain"}
+
+
+def parse_nc(text: str, source_id: str) -> list[dict]:
+    pages = text.split("\f")
+    try:
+        start = next(i for i, p in enumerate(pages)
+                     if "COUNTY VETERANS SERVICE OFFICES" in p)
+    except StopIteration:
+        raise SystemExit("nc: county-offices chapter not found — "
+                         "guide layout changed")
+    county_txt: dict[str, list] = {}
+    order: list[str] = []
+    prev: dict[int, str] = {}
+    for p in pages[start:]:
+        if "USDVA" in p or "NCWORKS" in p:
+            break  # next chapter
+        rows = []
+        for l in p.splitlines():
+            if "COUNTY VETERANS SERVICE OFFICES" in l:
+                continue
+            row, pos = [], 0
+            for part in NC_CELL_RE.split(l):
+                if part.strip():
+                    x = l.find(part, pos)
+                    row.append((x, part.strip()))
+                    pos = x + len(part)
+            rows.append(row)
+        anchors: list[int] = []
+        for a in sorted({x for row in rows for x, t in row
+                         if NC_HEAD_RE.match(t)}):
+            if not anchors or a - anchors[-1] > 3:
+                anchors.append(a)
+        if not anchors:
+            continue
+        cols: dict[int, list] = {i: [] for i in range(len(anchors))}
+        for row in rows:
+            for x, t in row:
+                idx = None
+                for i, a in enumerate(anchors):
+                    if x >= a - 2:
+                        idx = i
+                if idx is not None:  # cells left of every anchor: margin
+                    cols[idx].append(t)
+        cursors = {}
+        for i in range(len(anchors)):
+            cur, carry = prev.get(i), ""
+            for t in cols[i]:
+                hm = NC_HEAD_RE.match(t)
+                if not hm and t == "COUNTY" and carry \
+                        and re.fullmatch(r"[A-Z][A-Z .\-']+", carry) \
+                        and not carry.endswith("COUNTY"):
+                    hm = NC_HEAD_RE.match(f"{carry} COUNTY")  # wrapped head
+                if hm:
+                    cur = hm.group(1).title()
+                    cur = NC_COUNTY_FIX.get(cur, cur)
+                    if cur not in county_txt:
+                        county_txt[cur] = []
+                        order.append(cur)
+                elif cur and t:
+                    county_txt[cur].append(t)
+                carry = t
+            cursors[i] = cur
+        prev = cursors
+
+    records = []
+    for county in order:
+        seg = "\n".join(county_txt[county])
+        cm = re.search(r"([A-Za-z][A-Za-z .'-]+?),?\s+NC,?\s+\d{5}", seg)
+        desc = ""
+        if re.search(r"is served by", seg, re.I):
+            desc = (f"County veterans service point for {county} County, "
+                    "NC, served through a nearby veterans service center "
+                    "(contact details are the serving center's). Assists "
+                    "veterans and their families with VA benefit claims.")
+        records.append(record(
+            "nc", county, source_id, desc=desc,
+            city=clean_city(cm.group(1)) if cm else None,
+            phone=phone_fmt(seg)))
+    return records
+
+
 # --- registry --------------------------------------------------------------
 # st: (publisher, url, title, parse, floor). Default fetch is one GET of
 # `url` cached as sources/cvso/<st>.html; FETCHERS override (JSON feeds,
@@ -857,6 +1139,12 @@ STATES = {
            "https://va.alabama.gov/service-officer/",
            "County veterans service offices (service-officer map)",
            parse_al, 55),
+    "ar": ("Arkansas Department of Veterans Affairs",
+           AR_URL, "VSO, DVSO, CVSO directory (county section)",
+           parse_ar, 70),
+    "fl": ("Florida Department of Veterans' Affairs",
+           FL_URL, "County Veterans Service Officers directory",
+           parse_fl, 60),
     "co": ("Colorado Division of Veterans Affairs",
            "https://vets.colorado.gov/county-veterans-service-offices",
            "County veterans service offices", parse_co, 55),
@@ -882,6 +1170,10 @@ STATES = {
     "ms": ("Mississippi Veterans Affairs",
            "https://www.msva.ms.gov/serviceofficers",
            "County veterans service offices", parse_ms, 75),
+    "nc": ("North Carolina Department of Military and Veterans Affairs",
+           NC_URL,
+           "County veterans service offices (DMVA Resource Guide "
+           "2024-25)", parse_nc, 90),
     "nd": ("North Dakota Department of Veterans Affairs",
            ND_INDEX,
            "County veterans service officers (find-a-service-officer "
@@ -934,9 +1226,12 @@ TN_API = ("https://www.tn.gov/veteran/contact-us/county-veterans-services/"
           ".exceldriven.json")
 
 FETCHERS = {
+    "ar": lambda url, force: pdf_layout_text(url, "ar.pdf", force),
     "co": lambda url, force: fetch(url, SOURCES / "cvso" / "co.html",
                                    force=force, ua=BROWSER_UA
                                    ).read_text(errors="replace"),
+    "fl": lambda url, force: pdf_layout_text(url, "fl.pdf", force),
+    "nc": lambda url, force: pdf_layout_text(NC_ARCHIVE, "nc.pdf", force),
     "il": lambda url, force: fetch(IL_API, SOURCES / "cvso" / "il.json",
                                    force=force).read_text(errors="replace"),
     "la": fetch_la,
@@ -950,6 +1245,17 @@ FETCHERS = {
     "pa": fetch_pa,
     "tn": lambda url, force: fetch(TN_API, SOURCES / "cvso" / "tn.json",
                                    force=force).read_text(errors="replace"),
+}
+
+# per-state extra source-record fields (NC's live URL 404s since the
+# 2026 milvets refresh; the guide is fetched from the Internet Archive)
+SOURCE_EXTRAS = {
+    "nc": {"archive_url": NC_ARCHIVE,
+           "notes": "County roster from the DMVA Resource Guide 2024-25 "
+                    "PDF. The live URL 404s since the 2026 milvets.nc.gov "
+                    "refresh (which points veterans at county websites "
+                    "instead of publishing a roster); fetched from the "
+                    "Internet Archive snapshot in archive_url."},
 }
 
 # officer-name patterns must never reach a record (facts-only assert)
@@ -971,7 +1277,7 @@ def main(argv):
                          force=force).read_text(errors="replace")
         source_id = write_source(
             "cvso", st, kind="directory", publisher=publisher, title=title,
-            url=url, tier="primary")
+            url=url, tier="primary", **SOURCE_EXTRAS.get(st, {}))
         records = parse(page, source_id)
         if len(records) < floor:
             raise SystemExit(
