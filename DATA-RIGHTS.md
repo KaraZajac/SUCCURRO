@@ -28,7 +28,7 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 | NAMI, PFLAG, Feeding America, NNEDV, CenterLink, NDBN, MHA, Clubhouse, CCUSA, LSC, 988 roster | Org sites, ToS vary; facts-only | Facts-only re-expression, per-record citation + archive link; throttled, robots-respecting |
 | ProPublica Nonprofit Explorer | Attribution + link required; no paywalling | Enrichment only, attributed |
 | 211/United Way, findhelp.org | ToS restrict bulk use | **Not bulk-collected.** Manual gap-fill/verification only, cited as secondary |
-| domesticshelters.org, OutCare, In The Rooms, Vivery/AccessFood, FoodPantries.org, NFCC, GriefShare | ToS prohibit scraping/reuse (verified) | **Not ingested.** Link-out only; Vivery/AmpleHarvest/IAN via partnership ask |
+| domesticshelters.org, OutCare, In The Rooms, Vivery/AccessFood, FoodPantries.org, NFCC, GriefShare, American Cancer Society | ToS prohibit scraping/reuse (verified) | **Not ingested.** Link-out only; Vivery/AmpleHarvest/IAN via partnership ask |
 | Al-Anon WSO, Immigration Advocates Network | Asked 2026-07-19; no restrictive ToS exists (verified) | No reply by 2026-08-09 → facts-only ingestion, attributed, takedown honored |
 | AmpleHarvest | ToS §3 requires prior written consent for redistribution (verified) | **Ingest only on an affirmative yes** |
 | ThroughLine, NSPN | No public bulk; partnership-friendly orgs | Contact first — do not scrape |

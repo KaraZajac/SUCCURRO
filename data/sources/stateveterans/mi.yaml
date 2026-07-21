@@ -1,0 +1,10 @@
+id: stateveterans/mi
+kind: api-feed
+publisher: Michigan Veterans Affairs Agency
+title: MVAA veteran service office locator (SXA search feed)
+url: https://www.michigan.gov/mvaa/county-filter-search-locations
+tier: primary
+notes: Sitecore SXA search JSON behind the locator page, queried as https://www.michigan.gov/mvaa/sxa/search/results/?s=%7B100D5773-CF67-4556-A677-D5D4D7E4ADB1%7D&itemid=%7B897DB20A-86AE-4E35-90A4-5EBF87C2E08C%7D&v=%7BB068F05D-8C7B-460C-AA58-32B17FCDD22E%7D&p=400&e=0&g=42.73194%7C-84.55225
+  (the g= geolocation param is required for the index to return results; it only affects distance scoring).
+  Telework (phone-only) entries are not recorded as sites; officer personal names/emails are never recorded.
+retrieved_on: '2026-07-20'
