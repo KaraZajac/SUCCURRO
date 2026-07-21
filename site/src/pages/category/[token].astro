@@ -15,16 +15,24 @@ const entry = taxonomy().find((t) => t.id === token);
 const children = taxonomy().filter((t) => t.parent === token && !t.superseded_by);
 const color = catColor(rootOf(token));
 
-const perState = categoryCounts().tokenPlaces[token] || {};
-const states = Object.entries(perState)
-  .map(([st, places]) => ({
+const { tokenPlaces, tokenOrgs } = categoryCounts();
+const perState = tokenPlaces[token] || {};
+const orgStates = tokenOrgs[token] || {};
+const stateSet = new Set([...Object.keys(perState), ...Object.keys(orgStates)]);
+stateSet.delete("us");
+const national = (orgStates.us || []).length;
+
+const states = [...stateSet]
+  .map((st) => ({
     st,
     name: STATE_NAMES[st] || st.toUpperCase(),
-    listings: Object.values(places).reduce((a, b) => a + b, 0),
-    communities: Object.keys(places).filter((s) => s !== "online" && s !== "unknown").length,
+    listings: Object.values(perState[st] || {}).reduce((a, b) => a + b, 0),
+    communities: Object.keys(perState[st] || {})
+      .filter((s) => s !== "online" && s !== "unknown").length,
+    orgs: (orgStates[st] || []).length,
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
-const total = states.reduce((a, s) => a + s.listings, 0);
+const total = states.reduce((a, s) => a + s.listings + s.orgs, 0) + national;
 ---
 <Base title={`${entry.label} — SUCCURRO`}>
   <h1 class="cat" style={`--cat:${color};border-left:4px solid var(--cat);padding-left:0.5rem`}>{entry.label}</h1>
@@ -36,7 +44,7 @@ const total = states.reduce((a, s) => a + s.listings, 0);
       ))}
     </p>
   )}
-  {states.length === 0 ? (
+  {total === 0 ? (
     <p>
       No listings under this need yet — coverage grows with every data refresh.
       Try the <a href={`${base}/category/${rootOf(token)}`}>broader category</a>
@@ -45,17 +53,24 @@ const total = states.reduce((a, s) => a + s.listings, 0);
   ) : (
     <>
       <p>
-        {total.toLocaleString()} listings across {states.length} states.
-        Pick your state to see the communities that have them:
+        {total.toLocaleString()} listings and organizations
+        {states.length > 0 && ` across ${states.length} state${states.length === 1 ? "" : "s"}`}
+        {national > 0 && `, plus ${national} national resource${national === 1 ? "" : "s"}`}.
+        Pick your state:
       </p>
+      {national > 0 && (
+        <p><a class="chip cat" style={`--cat:${color}`}
+              href={`${base}/category/${token}/us`}>National &amp; online resources ({national})</a></p>
+      )}
       <div class="table-scroll"><table>
-        <thead><tr><th>State</th><th>Listings</th><th>Communities</th></tr></thead>
+        <thead><tr><th>State</th><th>Local listings</th><th>Communities</th><th>Organizations</th></tr></thead>
         <tbody>
           {states.map((s) => (
             <tr>
               <td><a href={`${base}/category/${token}/${s.st}`}>{s.name}</a></td>
               <td>{s.listings.toLocaleString()}</td>
               <td>{s.communities.toLocaleString()}</td>
+              <td>{s.orgs.toLocaleString()}</td>
             </tr>
           ))}
         </tbody>

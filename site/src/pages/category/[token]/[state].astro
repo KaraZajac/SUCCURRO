@@ -2,21 +2,26 @@
 import Base from "../../../layouts/Base.astro";
 import {
   taxonomy, STATE_NAMES, placesFor, categoryCounts, catColor, rootOf, label,
+  orgsFor, taxonomyIndex, sourceIndex,
 } from "../../../lib/data.js";
 
 export function getStaticPaths() {
-  const { tokenPlaces } = categoryCounts();
-  const paths = [];
+  const { tokenPlaces, tokenOrgs } = categoryCounts();
+  const combos = new Set();
   for (const [token, states] of Object.entries(tokenPlaces)) {
-    for (const state of Object.keys(states)) {
-      paths.push({ params: { token, state } });
-    }
+    for (const state of Object.keys(states)) combos.add(`${token}|${state}`);
   }
-  return paths;
+  for (const [token, states] of Object.entries(tokenOrgs)) {
+    for (const state of Object.keys(states)) combos.add(`${token}|${state}`);
+  }
+  return [...combos].map((c) => {
+    const [token, state] = c.split("|");
+    return { params: { token, state } };
+  });
 }
 const { token, state } = Astro.params;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-const stateName = STATE_NAMES[state] || state.toUpperCase();
+const stateName = state === "us" ? "National & online" : STATE_NAMES[state] || state.toUpperCase();
 const color = catColor(rootOf(token));
 const anchor = rootOf(token) === "recovery" && token === "recovery-meeting"
   ? "meetings" : rootOf(token);
@@ -30,20 +35,73 @@ const places = Object.entries(categoryCounts().tokenPlaces[token]?.[state] || {}
   }))
   .filter((p) => p.slug !== "unknown")
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
-const total = places.reduce((a, p) => a + p.n, 0);
+const listingTotal = places.reduce((a, p) => a + p.n, 0);
+
+// orgs in this state carrying the token (or a descendant of it)
+const tax = taxonomyIndex();
+const matches = (tok) => {
+  let t = tax.get(tok);
+  while (t) {
+    if (t.id === token) return true;
+    t = t.parent ? tax.get(t.parent) : null;
+  }
+  return false;
+};
+const orgs = orgsFor(state)
+  .filter((o) => (o.categories || []).some(matches))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const srcIdx = sourceIndex();
+const attribution = (rec) => {
+  const s = srcIdx.get((rec.sources || [])[0]);
+  return s ? { name: s.publisher, url: s.url || s.archive_url } : null;
+};
 ---
 <Base title={`${label(token)} in ${stateName} — SUCCURRO`}>
   <p class="meta">
     <a href={`${base}/category/${token}`}>{label(token)}</a> → {stateName}
   </p>
   <h1 class="cat" style={`--cat:${color};border-left:4px solid var(--cat);padding-left:0.5rem`}>
-    {label(token)} in {stateName}
+    {label(token)}{state === "us" ? " — national & online resources" : ` in ${stateName}`}
   </h1>
-  <p>{total.toLocaleString()} listings in {places.length} communities — sorted by most listings:</p>
-  {places.map((p) => (
-    <div class="card">
-      <h3><a href={`${base}/${state}/${p.slug}#${anchor}`}>{p.name}</a></h3>
-      <div class="meta">{p.n} listing{p.n === 1 ? "" : "s"}</div>
-    </div>
-  ))}
+
+  {orgs.length > 0 && (
+    <>
+      <h2>Organizations{state !== "us" && ` in ${stateName}`} ({orgs.length})</h2>
+      {orgs.map((o) => (
+        <div class="card">
+          <h3>{o.website ? <a href={o.website}>{o.name}</a> : o.name}</h3>
+          <div class="meta">
+            {(o.categories || []).map((c) => (
+              <span class="chip cat" style={`--cat:${catColor(rootOf(c))}`}>{label(c)}</span>
+            ))}
+          </div>
+          <div class="meta">
+            {o.address?.city && `${o.address.city}${o.address.state ? ", " + o.address.state.toUpperCase() : ""}`}
+            {o.address?.city && o.phone && " · "}
+            {o.phone && o.phone}
+          </div>
+          {o.description && <div class="meta">{o.description}</div>}
+          {attribution(o) && (
+            <div class="meta">
+              via {attribution(o).url
+                ? <a href={attribution(o).url}>{attribution(o).name}</a>
+                : attribution(o).name}, verified {o.verified?.on}
+            </div>
+          )}
+        </div>
+      ))}
+    </>
+  )}
+
+  {places.length > 0 && (
+    <>
+      <h2>Communities with local listings ({listingTotal.toLocaleString()} listings)</h2>
+      {places.map((p) => (
+        <div class="card">
+          <h3><a href={`${base}/${state}/${p.slug}#${anchor}`}>{p.name}</a></h3>
+          <div class="meta">{p.n} listing{p.n === 1 ? "" : "s"}</div>
+        </div>
+      ))}
+    </>
+  )}
 </Base>

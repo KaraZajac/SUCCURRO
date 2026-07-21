@@ -228,7 +228,23 @@ export function categoryCounts() {
     }
     byPlaceTotal[key] = total;
   }
-  const result = { national, byState, byPlaceTotal, tokenPlaces };
+  // organizations carry much of the category coverage (chapters, centers,
+  // hotlines) — index them token -> state -> org ids so by-need pages can
+  // list them alongside site/meeting communities
+  const tokenOrgs = {};
+  for (const state of STATES().concat("us")) {
+    for (const org of orgsFor(state)) {
+      const seen = new Set();
+      for (const raw of org.categories || []) {
+        for (const t of withAncestors(raw)) {
+          if (seen.has(t)) continue;
+          seen.add(t);
+          ((tokenOrgs[t] ??= {})[state] ??= []).push(org.id);
+        }
+      }
+    }
+  }
+  const result = { national, byState, byPlaceTotal, tokenPlaces, tokenOrgs };
   cache.set("_catCounts", result);
   return result;
 }
