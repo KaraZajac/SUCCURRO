@@ -49,6 +49,35 @@ Kara Zajac — kara@soulstone.org
 
 **Status:** drafted 2026-07-20, not yet sent
 
+## 5. Vivery / AccessFood (Thierer Family Foundation) — pantry platform
+
+**To:** vivery.org/contact (and/or partnerships address if listed)
+**Subject:** Partnership request: Vivery-hosted pantry listings in an open help-services directory
+
+Hello,
+
+I run SUCCURRO (succurro.org), a free, noncommercial (CC BY-NC) directory
+of help and support services across the US. We already list ~12,000 food
+pantries and meal sites drawn from USDA data and the published locators of
+62 Feeding America member banks — always with attribution and links back,
+and takedowns honored immediately.
+
+Sixty-seven food banks host their agency locators on Vivery, and your
+terms rightly require permission for reuse — so I'm asking for it directly:
+would Vivery share a feed or export of the pantry listings your platform
+hosts (or the subset of banks that opt in)? I know 211 Metro Chicago
+accesses your API under a partnership; we'd gladly work within the same
+kind of arrangement. Every listing would credit the pantry's food bank and
+link to its Vivery page, driving traffic to the platform rather than away
+from it.
+
+Happy to discuss whatever terms make this work for you and your member
+banks.
+
+Kara Zajac — kara@soulstone.org
+
+**Status:** drafted 2026-07-21, not yet sent
+
 ## Batch 2 — restricted TSML intergroups (Meeting Guide sharing keys)
 
 Seventeen intergroups run TSML with feed sharing set to "restricted" — the
