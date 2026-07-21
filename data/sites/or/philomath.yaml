@@ -11,6 +11,22 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: or/philomath/nancy-s-food-pantry
+  name: Nancy's Food Pantry
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 350 S 9th Street, city: Philomath, state: or, zip: '97370'}
+  place: '4157450'
+  geo: {lat: 44.53566, lng: -123.37432}
+  phone: 541-231-0825
+  hours:
+  - {days: [tue], open: '16:30', close: '19:30'}
+  - {days: [thu], open: '09:00', close: '12:00'}
+  external_ids: {or-oregon-food-bank: philomath-food-bank}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/philomath/philomath
   name: Philomath
   categories:
@@ -24,3 +40,19 @@
   sources:
   - acf/head-start-locations
   verified: {'on': '2026-07-19', method: api}
+- id: or/philomath/philomath-community-gleaners
+  name: Philomath Community Gleaners
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 306 S 9th Street, city: Philomath, state: or, zip: '97370'}
+  place: '4157450'
+  geo: {lat: 44.53678, lng: -123.37402}
+  phone: 541-758-2609
+  hours:
+  - {days: [wed], open: '17:00', close: '19:00'}
+  - {days: [sat], open: '12:00', close: '14:00'}
+  external_ids: {or-oregon-food-bank: philomath-community-gleaners}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

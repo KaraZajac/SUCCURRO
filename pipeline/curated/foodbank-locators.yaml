@@ -1,0 +1,602 @@
+# Feeding America member food-bank pantry/agency locator registry.
+# One row per scrapeable bank (survey: docs/research/foodbank-locators-2026-07.md),
+# keyed to the bank's data/orgs id. Verify an endpoint with
+#   curl -sL '<endpoint>' | head -c 300
+# Platforms: wpsl (WP Store Locator admin-ajax), wpgmza (WP Go Maps REST),
+# asl (Agile Store Locator), slp (Store Locator Plus), storepoint, storerocket,
+# mymaps (Google My Maps KML), arcgis (FeatureServer), ssf (Super Store Finder XML),
+# foodfinder (Rails/React food-finder app, data-props inline JSON), plus per-bank
+# custom parsers (platform: custom, parser: <name>) for static-HTML/inline-JSON sites.
+#
+# PERMISSION-FIRST (STRONG anti-automation ToS; do NOT add until an affirmative yes,
+# same gate as AmpleHarvest — see DATA-RIGHTS.md):
+#   md/maryland-food-bank        (static HTML, ToS bans automated scraping)
+#   oh/freestore-foodbank        (Google My Maps mid=14JPRi0SFtdGN_pOP6c7w4vJpvXlvl0I)
+#   mi/food-bank-of-eastern-michigan  (Store Locator Plus at fbem.org)
+#   ca/food-bank-for-monterey-county  (MapSVG; needs headless anyway)
+# Excluded for other reasons (2026-07 build):
+#   all 67 Vivery/AccessFood banks     - platform ToS, rejected per DATA-RIGHTS
+#   nc/food-bank-of-the-albemarle      - locator 404, homepage 403 (WAF)
+#   nc/second-harvest-food-bank-of-northwest-north-caro - ArcGIS embed resolves to
+#     the statewide "NC Summer Meals for Children" app, not an agency network
+#   al/heart-of-alabama-food-bank      - find-help map is the multi-bank Feeding
+#     Alabama statewide webmap (sheet-backed layers, per-layer org attribution
+#     unclear) - needs its own design pass
+#   oh/the-foodbank-inc (Dayton)       - JetEngine AJAX-paginated listing, needs headless
+#   ny/feeding-westchester, va/foodbank-of-southeastern-virginia-and-the-easter -
+#     wpsl nonce-gated (store_search returns empty)
+#
+# Fields: id (registry slug = org id with / -> -), org (data/orgs FK), name
+# (publisher), state (home state, fallback), platform, endpoint (data URL),
+# url (human locator page for the source record), floor (min plausible records),
+# verify (api|scrape verified-method stamp). Optional: sweep {box:[latmin,latmax,
+# lngmin,lngmax], step, max_results, radius} for page-capped wpsl; fields/oid for
+# arcgis; state_field where the feed is multi-state; parser for custom; ua: browser;
+# keep (category allowlist); notes.
+
+# --- WP Store Locator (wpsl) -------------------------------------------------
+- id: me-good-shepherd-food-bank
+  org: me/good-shepherd-food-bank
+  name: Good Shepherd Food Bank
+  state: me
+  platform: wpsl
+  endpoint: https://www.gsfb.org/wp-admin/admin-ajax.php
+  url: https://www.gsfb.org/get-help/
+  floor: 300
+- id: ma-food-bank-of-western-massachusetts
+  org: ma/food-bank-of-western-massachusetts
+  name: Food Bank of Western Massachusetts
+  state: ma
+  platform: wpsl
+  endpoint: https://www.foodbankwma.org/wp-admin/admin-ajax.php
+  url: https://www.foodbankwma.org/get-help/food-pantry-meal-program-schedule/
+  floor: 120
+- id: ma-worcester-county-food-bank
+  org: ma/worcester-county-food-bank
+  name: Worcester County Food Bank
+  state: ma
+  platform: wpsl
+  endpoint: https://foodbank.org/wp-admin/admin-ajax.php
+  url: https://foodbank.org/find-food/
+  floor: 40
+- id: ga-second-harvest-of-coastal-georgia
+  org: ga/second-harvest-of-coastal-georgia
+  name: Second Harvest of Coastal Georgia
+  state: ga
+  platform: wpsl
+  endpoint: https://helpendhunger.org/wp-admin/admin-ajax.php
+  url: https://helpendhunger.org/find-food/
+  floor: 100
+- id: ga-feeding-the-valley-food-bank
+  org: ga/feeding-the-valley-food-bank
+  name: Feeding the Valley Food Bank
+  state: ga
+  platform: wpsl
+  endpoint: https://feedingthevalley.org/wp-admin/admin-ajax.php
+  url: https://feedingthevalley.org/locate-a-food-pantry-near-you/
+  floor: 50
+- id: la-food-bank-of-northeast-louisiana
+  org: la/food-bank-of-northeast-louisiana
+  name: Food Bank of Northeast Louisiana
+  state: la
+  platform: wpsl
+  endpoint: https://www.foodbanknela.org/wp-admin/admin-ajax.php
+  url: https://www.foodbanknela.org/find-food/
+  floor: 20
+- id: ca-los-angeles-regional-food-bank
+  org: ca/los-angeles-regional-food-bank
+  name: Los Angeles Regional Food Bank
+  state: ca
+  platform: wpsl
+  endpoint: https://www.lafoodbank.org/wp-admin/admin-ajax.php
+  url: https://www.lafoodbank.org/find-food/pantry-locator/
+  floor: 150
+  # max_results/search_radius are validated against the plugin's dropdown
+  # values - LA accepts 25 for both; the dense urban core needs a tight grid
+  sweep:
+    - {box: [33.9, 34.18, -118.55, -118.05], step: 0.07, max_results: 25, radius: 25}
+    - {box: [33.6, 34.9, -118.9, -117.6], step: 0.2, max_results: 25, radius: 25}
+- id: ca-second-harvest-food-bank-of-orange-county
+  org: ca/second-harvest-food-bank-of-orange-county
+  name: Second Harvest Food Bank of Orange County
+  state: ca
+  platform: wpsl
+  endpoint: https://feedoc.org/wp-admin/admin-ajax.php
+  url: https://feedoc.org/need-food/
+  floor: 60
+  sweep: {box: [33.35, 33.95, -118.15, -117.4], step: 0.25, max_results: 100, radius: 50}
+- id: mo-st-louis-area-foodbank
+  org: mo/st-louis-area-foodbank
+  name: St. Louis Area Foodbank
+  state: mo
+  platform: wpsl
+  endpoint: https://stlfoodbank.org/wp-admin/admin-ajax.php
+  url: https://stlfoodbank.org/programs-services/find-food/
+  floor: 80
+  sweep: {box: [37.9, 39.4, -91.5, -89.2], step: 0.45, max_results: 100, radius: 60}
+- id: pa-philabundance
+  org: pa/philabundance
+  name: Philabundance
+  state: pa
+  platform: wpsl
+  endpoint: https://www.philabundance.org/wp-admin/admin-ajax.php
+  url: https://www.philabundance.org/find-food/
+  floor: 50
+  sweep: {box: [39.4, 40.4, -75.9, -74.5], step: 0.35, max_results: 100, radius: 50}
+- id: pa-second-harvest-food-bank-of-lehigh-valley-and-ne
+  org: pa/second-harvest-food-bank-of-lehigh-valley-and-ne
+  name: Second Harvest Food Bank of Lehigh Valley and NE Pennsylvania
+  state: pa
+  platform: wpsl
+  endpoint: https://shfblv.org/wp-admin/admin-ajax.php
+  url: https://shfblv.org/find-food/
+  floor: 60
+  sweep: {box: [40.4, 41.6, -76.3, -74.9], step: 0.4, max_results: 100, radius: 50}
+- id: ri-rhode-island-community-food-bank
+  org: ri/rhode-island-community-food-bank
+  name: Rhode Island Community Food Bank
+  state: ri
+  platform: wpsl
+  endpoint: https://rifoodbank.org/wp-admin/admin-ajax.php
+  url: https://rifoodbank.org/find-food/
+  floor: 80
+  sweep: {box: [41.3, 42.05, -71.95, -71.1], step: 0.3, max_results: 100, radius: 30}
+- id: ny-regional-food-bank-of-northeastern-new-york
+  org: ny/regional-food-bank-of-northeastern-new-york
+  name: Regional Food Bank of Northeastern New York
+  state: ny
+  platform: wpsl
+  endpoint: https://regionalfoodbank.net/wp-admin/admin-ajax.php
+  url: https://regionalfoodbank.net/find-nearest-agency/
+  floor: 60
+  sweep: {box: [41.2, 45.0, -76.0, -73.2], step: 0.55, max_results: 50, radius: 60}
+- id: tx-coastal-bend-food-bank
+  org: tx/coastal-bend-food-bank
+  name: Coastal Bend Food Bank
+  state: tx
+  platform: wpsl
+  endpoint: https://coastalbendfoodbank.org/wp-admin/admin-ajax.php
+  url: https://coastalbendfoodbank.org/get-help/
+  floor: 60
+  sweep: {box: [26.6, 28.9, -98.7, -96.7], step: 0.6, max_results: 100, radius: 70}
+
+# --- WP Go Maps (wpgmza) -----------------------------------------------------
+- id: in-community-harvest-food-bank-of-northeast-indiana
+  org: in/community-harvest-food-bank-of-northeast-indiana
+  name: Community Harvest Food Bank of Northeast Indiana
+  state: in
+  platform: wpgmza
+  endpoint: https://www.communityharvest.org/wp-json/wpgmza/v1/markers
+  url: https://www.communityharvest.org/get-help/
+  floor: 30
+- id: ky-feeding-america-kentucky-s-heartland
+  org: ky/feeding-america-kentucky-s-heartland
+  name: Feeding America, Kentucky's Heartland
+  state: ky
+  platform: wpgmza
+  endpoint: https://feedingamericaky.org/wp-json/wpgmza/v1/markers
+  url: https://feedingamericaky.org/find-help/
+  floor: 200
+- id: mn-channel-one-regional-food-bank
+  org: mn/channel-one-regional-food-bank
+  name: Channel One Regional Food Bank
+  state: mn
+  platform: wpgmza
+  endpoint: https://www.helpingfeedpeople.org/wp-json/wpgmza/v1/markers
+  url: https://www.helpingfeedpeople.org/programs/
+  floor: 40
+- id: nd-great-plains-food-bank
+  org: nd/great-plains-food-bank
+  name: Great Plains Food Bank
+  state: nd
+  platform: wpgmza
+  endpoint: https://greatplainsfoodbank.org/wp-json/wpgmza/v1/markers
+  url: https://www.greatplainsfoodbank.org/get-help/
+  floor: 1
+  notes: markers are the bank's own distribution sites, not an agency network
+- id: ok-food-bank-of-eastern-oklahoma
+  org: ok/food-bank-of-eastern-oklahoma
+  name: Food Bank of Eastern Oklahoma
+  state: ok
+  platform: wpgmza
+  endpoint: https://okfoodbank.org/wp-json/wpgmza/v1/markers
+  url: https://www.okfoodbank.org/help
+  floor: 130
+- id: va-feeding-southwest-virginia
+  org: va/feeding-southwest-virginia
+  name: Feeding Southwest Virginia
+  state: va
+  platform: wpgmza
+  endpoint: https://feedingswva.org/wp-json/wpgmza/v1/markers
+  url: https://feedingswva.org/map-directory/
+  floor: 1
+  notes: markers are the bank's own sites, not an agency network
+- id: wi-feeding-america-eastern-wisconsin
+  org: wi/feeding-america-eastern-wisconsin
+  name: Feeding America Eastern Wisconsin
+  state: wi
+  platform: wpgmza
+  endpoint: https://feedingamericawi.org/wp-json/wpgmza/v1/markers
+  url: https://feedingamericawi.org/find-a-pantry
+  floor: 170
+- id: wi-second-harvest-foodbank-of-southern-wisconsin
+  org: wi/second-harvest-foodbank-of-southern-wisconsin
+  name: Second Harvest Foodbank of Southern Wisconsin
+  state: wi
+  platform: wpgmza
+  endpoint: https://www.secondharvestsw.org/wp-json/wpgmza/v1/markers
+  url: https://www.secondharvestsw.org/find-food-near-you/
+  floor: 1
+  notes: markers are the bank's own sites, not an agency network
+
+# --- Agile Store Locator (asl) -----------------------------------------------
+- id: ca-food-share-inc
+  org: ca/food-share-inc
+  name: Food Share of Ventura County
+  state: ca
+  platform: asl
+  endpoint: https://foodshare.com/wp-admin/admin-ajax.php
+  url: https://foodshare.com/findhelp/
+  floor: 70
+- id: id-the-idaho-foodbank
+  org: id/the-idaho-foodbank
+  name: The Idaho Foodbank
+  state: id
+  platform: asl
+  endpoint: https://idahofoodbank.org/wp-admin/admin-ajax.php
+  url: https://idahofoodbank.org/locations/
+  floor: 120
+- id: nj-food-bank-of-south-jersey
+  org: nj/food-bank-of-south-jersey
+  name: Food Bank of South Jersey
+  state: nj
+  platform: asl
+  endpoint: https://foodbanksj.org/wp-admin/admin-ajax.php
+  url: https://foodbanksj.org/zip-code-locator/
+  floor: 80
+- id: nj-fulfill
+  org: nj/fulfill
+  name: Fulfill
+  state: nj
+  platform: asl
+  endpoint: https://fulfillnj.org/wp-admin/admin-ajax.php
+  url: https://fulfillnj.org/get-help/
+  floor: 60
+- id: sc-lowcountry-food-bank
+  org: sc/lowcountry-food-bank
+  name: Lowcountry Food Bank
+  state: sc
+  platform: asl
+  endpoint: https://lowcountryfoodbank.org/wp-admin/admin-ajax.php
+  url: https://lowcountryfoodbank.org/find-food/
+  floor: 100
+
+# --- Store Locator Plus (slp) ------------------------------------------------
+# csl_ajax_onload honors options[initial_results_returned]; lat/lng is the
+# search center, radius in miles.
+- id: ar-river-valley-regional-food-bank
+  org: ar/river-valley-regional-food-bank
+  name: River Valley Regional Food Bank
+  state: ar
+  platform: slp
+  endpoint: https://www.rvrfoodbank.org/wp-admin/admin-ajax.php
+  url: https://www.rvrfoodbank.org/get-help/pantry-locator/
+  floor: 45
+  center: [35.2, -94.2]
+- id: fl-treasure-coast-food-bank
+  org: fl/treasure-coast-food-bank
+  name: Treasure Coast Food Bank
+  state: fl
+  platform: slp
+  endpoint: https://stophunger.org/wp-admin/admin-ajax.php
+  url: https://stophunger.org/findhelp/
+  floor: 35
+  center: [27.4, -80.3]
+  notes: content-reuse consent ToS - facts-only re-expression, cite carefully
+- id: ga-golden-harvest-food-bank
+  org: ga/golden-harvest-food-bank
+  name: Golden Harvest Food Bank
+  state: ga
+  platform: slp
+  endpoint: https://goldenharvest.org/wp-admin/admin-ajax.php
+  url: https://goldenharvest.org/find-help/
+  floor: 80
+  center: [33.5, -82.0]
+- id: nc-second-harvest-food-bank-of-southeast-north-caro
+  org: nc/second-harvest-food-bank-of-southeast-north-caro
+  name: Second Harvest Food Bank of Southeast North Carolina
+  state: nc
+  platform: slp
+  endpoint: https://hungercantwait.org/wp-admin/admin-ajax.php
+  url: https://hungercantwait.org/find-help/find-food/
+  floor: 60
+  center: [35.05, -78.9]
+- id: ny-feedmore-western-new-york-inc
+  org: ny/feedmore-western-new-york-inc
+  name: FeedMore Western New York
+  state: ny
+  platform: slp
+  endpoint: https://www.feedmorewny.org/wp-admin/admin-ajax.php
+  url: https://www.feedmorewny.org/programs-services/find-food/pantry-locator/
+  floor: 80
+  center: [42.9, -78.85]
+
+# --- Storepoint ----------------------------------------------------------------
+- id: ne-food-bank-for-the-heartland
+  org: ne/food-bank-for-the-heartland
+  name: Food Bank for the Heartland
+  state: ne
+  platform: storepoint
+  endpoint: https://api.storepoint.co/v1/161e1dcd91b7b8/locations?rq
+  url: https://foodbankheartland.org/get-food/
+  floor: 90
+- id: oh-toledo-northwestern-ohio-food-bank
+  org: oh/toledo-northwestern-ohio-food-bank
+  name: Toledo Northwestern Ohio Food Bank
+  state: oh
+  platform: storepoint
+  endpoint: https://api.storepoint.co/v1/1662a5ad8a1488/locations?rq
+  url: https://www.toledofoodbank.org/get-help/
+  floor: 60
+- id: ca-feeding-san-diego
+  org: ca/feeding-san-diego
+  name: Feeding San Diego
+  state: ca
+  platform: storepoint
+  endpoint: https://api.storepoint.co/v1/16765f3e46d5c1/locations?rq
+  url: https://feedingsandiego.org/find-food/
+  floor: 90
+
+# --- StoreRocket ----------------------------------------------------------------
+- id: ny-island-harvest
+  org: ny/island-harvest
+  name: Island Harvest
+  state: ny
+  platform: storerocket
+  endpoint: https://storerocket.io/api/user/n0pjnLgp6V/locations
+  url: https://www.islandharvest.org/find-help/find-a-food-pantry/
+  floor: 100
+- id: tn-second-harvest-food-bank-of-middle-tennessee-inc
+  org: tn/second-harvest-food-bank-of-middle-tennessee-inc
+  name: Second Harvest Food Bank of Middle Tennessee
+  state: tn
+  platform: storerocket
+  endpoint: https://storerocket.io/api/user/BZJW1vbp0o/locations
+  url: https://www.secondharvestmidtn.org/get-help/
+  floor: 120
+
+# --- Google My Maps (KML) ------------------------------------------------------
+- id: hi-hawaii-foodbank
+  org: hi/hawaii-foodbank
+  name: Hawaii Foodbank
+  state: hi
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=1U3q_j27iwLeAJqzyMuMptu6U8QIdh6vx&forcekml=1
+  url: https://hawaiifoodbank.org/get-help/find-food/
+  floor: 70
+- id: tn-second-harvest-food-bank-of-east-tennessee
+  org: tn/second-harvest-food-bank-of-east-tennessee
+  name: Second Harvest Food Bank of East Tennessee
+  state: tn
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=16ei4cVPP4mTcCaEocPz3eV4Pd3qm5ZA&forcekml=1
+  url: https://secondharvestetn.org/find-a-food-pantry/
+  floor: 90
+- id: nc-inter-faith-food-shuttle
+  org: nc/inter-faith-food-shuttle
+  name: Inter-Faith Food Shuttle
+  state: nc
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=1ufqSw9bSrfF9HltumRDL6biGzmvgWFc&forcekml=1
+  url: https://www.foodshuttle.org/findfood
+  floor: 12
+- id: ne-food-bank-of-lincoln
+  org: ne/food-bank-of-lincoln
+  name: Food Bank of Lincoln
+  state: ne
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=1-fJ6qDSkRyYFuINZPbOev_Y6HaLN29id&forcekml=1
+  url: https://www.lincolnfoodbank.org/get-food/food-distribution-schedule/
+  floor: 20
+- id: tx-food-bank-of-west-central-texas
+  org: tx/food-bank-of-west-central-texas
+  name: Food Bank of West Central Texas
+  state: tx
+  platform: mymaps
+  endpoint: https://www.google.com/maps/d/kml?mid=15jt8EPmUrPHFQsKt6ESIDVGXgz3fqVs&forcekml=1
+  url: https://fbwct.org/food-pantry-and-meal-site-schedules/
+  floor: 30
+  notes: content-reuse consent ToS - facts-only re-expression, cite carefully
+
+# --- ArcGIS FeatureServer --------------------------------------------------------
+- id: dc-capital-area-food-bank
+  org: dc/capital-area-food-bank
+  name: Capital Area Food Bank
+  state: dc
+  platform: arcgis
+  endpoint: https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0
+  url: https://www.capitalareafoodbank.org/find-food-assistance/
+  floor: 150
+  oid: FID
+  state_field: state
+  fields: {name: name, street: address1, street2: address2, city: city, zip: zip, phone: phone, email: email}
+- id: sc-harvest-hope-food-bank
+  org: sc/harvest-hope-food-bank
+  name: Harvest Hope Food Bank
+  state: sc
+  platform: arcgis
+  endpoint: https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/_Food_Pantry_Map_Data_May_2026/FeatureServer/0
+  url: https://www.harvesthope.org/get-help
+  floor: 40
+  oid: ObjectId
+  fields: {name: Name_of_Facility_Organization_Resource, address: Address, phone: Phone_Number, website: Website_Link, type: Type_of_Resources_Provided}
+
+# --- Super Store Finder (XML) -----------------------------------------------------
+- id: ca-central-california-food-bank
+  org: ca/central-california-food-bank
+  name: Central California Food Bank
+  state: ca
+  platform: ssf
+  endpoint: https://ccfoodbank.org/wp-content/plugins/superstorefinder-wp/ssf-wp-xml.php
+  url: https://ccfoodbank.org/home/findfood/food-locator/
+  floor: 100
+
+# --- Food-finder app (data-props inline JSON) --------------------------------------
+- id: or-oregon-food-bank
+  org: or/oregon-food-bank
+  name: Oregon Food Bank
+  state: or
+  platform: foodfinder
+  endpoint: https://foodfinder.oregonfoodbank.org/
+  url: https://foodfinder.oregonfoodbank.org/
+  floor: 300
+- id: va-blue-ridge-area-food-bank
+  org: va/blue-ridge-area-food-bank
+  name: Blue Ridge Area Food Bank
+  state: va
+  platform: foodfinder
+  endpoint: https://foodfinder.brafb.org/
+  url: https://foodfinder.brafb.org/
+  floor: 120
+- id: nc-food-bank-of-central-eastern-north-carolina
+  org: nc/food-bank-of-central-eastern-north-carolina
+  name: Food Bank of Central & Eastern North Carolina
+  state: nc
+  platform: foodfinder
+  endpoint: https://foodbankcenc.org/food-finder/
+  url: https://foodbankcenc.org/food-finder/
+  floor: 250
+
+# --- Per-bank custom parsers (static HTML / inline JSON) ----------------------------
+- id: oh-greater-cleveland-food-bank
+  org: oh/greater-cleveland-food-bank
+  name: Greater Cleveland Food Bank
+  state: oh
+  platform: custom
+  parser: cleveland
+  endpoint: https://www.greaterclevelandfoodbank.org/get-help/map
+  url: https://www.greaterclevelandfoodbank.org/get-help/map
+  floor: 200
+- id: mo-ozarks-food-harvest
+  org: mo/ozarks-food-harvest
+  name: Ozarks Food Harvest
+  state: mo
+  platform: custom
+  parser: ozarks
+  endpoint: https://ozarksfoodharvest.org/need-help/
+  url: https://ozarksfoodharvest.org/need-help/
+  floor: 130
+- id: mi-feeding-america-west-michigan
+  org: mi/feeding-america-west-michigan
+  name: Feeding America West Michigan
+  state: mi
+  platform: custom
+  parser: feedwm
+  endpoint: https://www.feedwm.org/findfood/
+  url: https://www.feedwm.org/findfood/
+  floor: 150
+  notes: fafpfixed array only; fafpgather (seasonal Gather 2 Grow summer sites) skipped
+- id: in-food-bank-of-northern-indiana
+  org: in/food-bank-of-northern-indiana
+  name: Food Bank of Northern Indiana
+  state: in
+  platform: custom
+  parser: feedindiana
+  endpoint: https://feedindiana.org/food-pantries
+  url: https://feedindiana.org/food-pantries
+  floor: 30
+- id: ky-dare-to-care-food-bank
+  org: ky/dare-to-care-food-bank
+  name: Dare to Care Food Bank
+  state: ky
+  platform: custom
+  parser: daretocare
+  endpoint: https://daretocare.org/need-food/
+  url: https://daretocare.org/need-food/
+  floor: 100
+  notes: FacetWP map pins joined to /wp-json/wp/v2/location titles; name+geo only
+- id: mn-north-country-food-bank-inc
+  org: mn/north-country-food-bank-inc
+  name: North Country Food Bank
+  state: mn
+  platform: custom
+  parser: northcountry
+  endpoint: https://www.northcountryfoodbank.org/agency-directory/
+  url: https://www.northcountryfoodbank.org/agency-directory/
+  floor: 35
+- id: ky-gods-pantry-food-bank-inc
+  org: ky/gods-pantry-food-bank-inc
+  name: God's Pantry Food Bank
+  state: ky
+  platform: custom
+  parser: godspantry
+  endpoint: https://godspantry.org/help/
+  url: https://godspantry.org/help/
+  floor: 100
+- id: mt-montana-food-bank-network
+  org: mt/montana-food-bank-network
+  name: Montana Food Bank Network
+  state: mt
+  platform: custom
+  parser: mfbn
+  endpoint: https://mfbn.org/partner-agencies/
+  url: https://mfbn.org/partner-agencies/
+  floor: 80
+- id: ca-food-bank-of-contra-costa-and-solano
+  org: ca/food-bank-of-contra-costa-and-solano
+  name: Food Bank of Contra Costa and Solano
+  state: ca
+  platform: custom
+  parser: ccs
+  endpoint: https://www.foodbankccs.org/find-food/foodbycity/
+  url: https://www.foodbankccs.org/find-food/foodbycity/
+  floor: 150
+- id: de-food-bank-of-delaware
+  org: de/food-bank-of-delaware
+  name: Food Bank of Delaware
+  state: de
+  platform: custom
+  parser: fbd
+  endpoint: https://www.fbd.org/get-help/community-food-pantries/
+  url: https://www.fbd.org/get-help/community-food-pantries/
+  floor: 60
+- id: ia-food-bank-of-iowa
+  org: ia/food-bank-of-iowa
+  name: Food Bank of Iowa
+  state: ia
+  platform: custom
+  parser: iowa
+  endpoint: https://opensheet.elk.sh/184BAGr66tI7TMYIyRIz1Qbt-Jbmor-Dn4c7VpLyhRCE/fboi
+  url: https://foodbankiowa.org/find-food/
+  floor: 120
+  keep: [pantry, mobile-distribution, multi-service, meal-site]
+  notes: content-reuse consent ToS - facts-only re-expression, cite carefully
+- id: mi-south-michigan-food-bank
+  org: mi/south-michigan-food-bank
+  name: South Michigan Food Bank
+  state: mi
+  platform: custom
+  parser: smfoodbank
+  endpoint: https://smfoodbank.org/getfood/findfood/
+  url: https://smfoodbank.org/getfood/findfood/
+  floor: 90
+- id: oh-mid-ohio-food-collective
+  org: oh/mid-ohio-food-collective
+  name: Mid-Ohio Food Collective
+  state: oh
+  platform: custom
+  parser: mofc
+  endpoint: https://mofc.org/get-help/
+  url: https://mofc.org/get-help/
+  floor: 4
+  notes: Mid-Ohio Market sites only; partner-agency finder is not statically reachable
+- id: wv-mountaineer-food-bank
+  org: wv/mountaineer-food-bank
+  name: Mountaineer Food Bank
+  state: wv
+  platform: custom
+  parser: mountaineer
+  endpoint: https://www.mountaineerfoodbank.org/mobilepantry
+  url: https://www.mountaineerfoodbank.org/mobilepantry
+  floor: 20
+  notes: mobile pantry stops (monthly schedule); the pantry directory needs headless Wix

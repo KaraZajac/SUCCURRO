@@ -11,6 +11,20 @@
   sources:
   - lsc/office-locations
   verified: {'on': '2026-07-20', method: api}
+- id: va/lexington/campus-kitchen-washington-and-lee-university
+  name: Campus Kitchen @ Washington and Lee University
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 204 West Washington Street, city: Lexington, state: va, zip: '24450'}
+  place: '5145512'
+  geo: {lat: 37.78628, lng: -79.44405}
+  phone: 540-458-4669
+  website: https://my.wlu.edu/the-shepherd-program/community-engagement/campus-kitchen-at-washington-and-lee
+  external_ids: {va-blue-ridge-area-food-bank: campus-kitchen-washington-and-lee-university}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/lexington/cdc-rkbc-waddell
   name: CDC RKBC - Waddell
   categories:
@@ -163,6 +177,24 @@
   sources:
   - hrsa/health-center-sites
   verified: {'on': '2026-07-19', method: api}
+- id: va/lexington/rockbridge-area-relief-association
+  name: Rockbridge Area Relief Association
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 350 Spotswood Drive, city: Lexington, state: va, zip: '24450'}
+  place: '5145512'
+  geo: {lat: 37.77903, lng: -79.44307}
+  phone: 540-463-6642
+  website: http://raralex.org/faq/
+  hours:
+  - {days: [mon], open: '14:30', close: '16:30'}
+  - {days: [wed, thu], open: '14:30', close: '16:30'}
+  - {days: [sat], open: '10:00', close: '12:00'}
+  external_ids: {va-blue-ridge-area-food-bank: rockbridge-area-relief-association}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/lexington/rockbridge-buena-vista-lexington-area-social-ser
   name: Rockbridge-Buena Vista-Lexington Area Social Services
   categories:

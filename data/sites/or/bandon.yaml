@@ -24,6 +24,21 @@
   sources:
   - hrsa/health-center-sites
   verified: {'on': '2026-07-19', method: api}
+- id: or/bandon/bandon-good-neighbors
+  name: Bandon Good Neighbors
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 1100 11th Street, city: Bandon, state: or, zip: '97411'}
+  place: '4103800'
+  geo: {lat: 43.1135, lng: -124.43185}
+  phone: 541-347-3268
+  hours:
+  - {days: [tue], open: '09:00', close: '12:00'}
+  external_ids: {or-oregon-food-bank: bandon-good-neighbors}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/bandon/bandon-sr-high
   name: Bandon Sr High
   categories:
@@ -67,3 +82,32 @@
   sources:
   - wic/or-wic
   verified: {'on': '2026-07-20', method: api}
+- id: or/bandon/food-and-faith
+  name: Food and Faith
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  place: '4103800'
+  geo: {lat: 43.114, lng: -124.41218}
+  phone: 714-768-4154
+  hours:
+  - {days: [fri], open: '13:00', close: '16:00'}
+  external_ids: {or-oregon-food-bank: food-and-faith}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
+- id: or/bandon/restoration-worship-center
+  name: Restoration Worship Center
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 89 North Avenue NE, city: Bandon, state: or, zip: '97411'}
+  place: '4103800'
+  geo: {lat: 43.11804, lng: -124.41671}
+  phone: 541-347-4900
+  hours:
+  - {days: [thu], open: '16:00', close: '18:00'}
+  external_ids: {or-oregon-food-bank: restoration-worship-center}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

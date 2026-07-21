@@ -45,6 +45,26 @@
   sources:
   - acf/head-start-locations
   verified: {'on': '2026-07-19', method: api}
+- id: or/florence/florence-food-share
+  name: Florence Food Share
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 2190 Spruce St., city: Florence, state: or, zip: '97439'}
+  place: '4126050'
+  geo: {lat: 43.98557, lng: -124.09757}
+  phone: 541-997-9110
+  hours:
+  - {days: [mon, tue], open: '09:30', close: '13:00'}
+  - {days: [mon], open: '16:00', close: '18:00'}
+  - {days: [wed], open: '09:30', close: '13:00'}
+  - {days: [wed], open: '16:00', close: '18:00'}
+  - {days: [fri], open: '09:30', close: '13:00'}
+  - {days: [sat], open: '10:00', close: '13:00'}
+  external_ids: {or-oregon-food-bank: florence-food-share}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/florence/florence-little-free-pantry
   name: Florence Little Free Pantry
   categories:
@@ -56,6 +76,23 @@
   sources:
   - littlefreepantry/map
   verified: {'on': '2026-07-19', method: scrape}
+- id: or/florence/helping-hands-coalition
+  name: Helping Hands Coalition
+  org: or/oregon-food-bank
+  categories:
+  - meal-program
+  address: {street: 4590 Hwy 101, city: Florence, state: or, zip: '97439'}
+  place: '4126050'
+  geo: {lat: 44.00655, lng: -124.10291}
+  phone: 541-997-5057
+  hours:
+  - {days: [mon], open: '12:00', close: '13:00'}
+  - {days: [wed], open: '12:00', close: '13:00'}
+  - {days: [fri], open: '12:00', close: '13:00'}
+  external_ids: {or-oregon-food-bank: helping-hands-coalition}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/florence/lane-co-health-dept-wic-clinic
   name: Lane Co. Health Dept. WIC Clinic
   categories:

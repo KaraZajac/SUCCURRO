@@ -42,6 +42,22 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: or/cottage-grove/community-sharing
+  name: Community Sharing
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 1440 Birch Street, city: Cottage Grove, state: or, zip: '97424'}
+  place: '4115950'
+  geo: {lat: 43.79978, lng: -123.071}
+  phone: 541-942-2176
+  hours:
+  - {days: [mon], open: '13:30', close: '18:00'}
+  - {days: [tue, wed, thu, fri], open: '11:00', close: '15:30'}
+  external_ids: {or-oregon-food-bank: community-sharing}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/cottage-grove/cottage-grove-high
   name: Cottage Grove High
   categories:
@@ -144,3 +160,18 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: or/cottage-grove/up-river-pantry-culp-creek
+  name: Up River Pantry (Culp Creek)
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 37895 Row River Road, city: Dorena, state: or, zip: '97434'}
+  place: '4115950'
+  geo: {lat: 43.69907, lng: -122.84443}
+  phone: 541-946-1821
+  hours:
+  - {days: [fri], open: '16:00', close: '17:30'}
+  external_ids: {or-oregon-food-bank: up-river-pantry-culp-creek}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

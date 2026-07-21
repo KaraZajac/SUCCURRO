@@ -1,3 +1,19 @@
+- id: va/palmyra/flrd-community-food-pantry
+  name: FLRD Community Food Pantry
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  place: '5160392'
+  geo: {lat: 37.87425, lng: -78.26145}
+  phone: 434-987-1938
+  website: https://fluvannalrd.org/community-food-pantry
+  hours:
+  - {days: [tue], open: '10:00', close: '14:00'}
+  - {days: [thu], open: '10:00', close: '14:00'}
+  external_ids: {va-blue-ridge-area-food-bank: flrd-community-food-pantry}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/palmyra/fluvanna-county-public-library
   name: Fluvanna County Public Library
   categories:
@@ -12,3 +28,39 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: va/palmyra/macaa-monticello-area-community-action-agency
+  name: MACAA (Monticello Area Community Action Agency)
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 8880 James Madison Highway, city: Fork Union, state: va, zip: '23055'}
+  place: '5160392'
+  geo: {lat: 37.81177, lng: -78.24029}
+  phone: 434-842-2521
+  website: https://www.macaa.org/ruraloutreach
+  hours:
+  - {days: [mon], open: '13:00', close: '18:00'}
+  - {days: [tue, wed], open: '10:00', close: '14:00'}
+  - {days: [fri], open: '10:00', close: '14:00'}
+  - {days: [thu], open: '13:00', close: '18:00'}
+  - {days: [sat], open: '10:00', close: '14:00', note: Third Saturday of the month}
+  external_ids: {va-blue-ridge-area-food-bank: macaa-monticello-area-community-action-agency}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
+- id: va/palmyra/palmyra-mobile-food-pantry
+  name: Palmyra Mobile Food Pantry
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 'Effort Church, 7820 Thomas Jefferson Parkway', city: Palmyra, state: va, zip: '22963'}
+  place: '5160392'
+  geo: {lat: 37.92684, lng: -78.35827}
+  phone: 540-213-8400
+  website: https://www.brafb.org/about-us/how-we-work/programs/mobile-food-pantry/
+  hours:
+  - {days: [thu], open: '10:00', close: '11:00'}
+  external_ids: {va-blue-ridge-area-food-bank: palmyra-mobile-food-pantry}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

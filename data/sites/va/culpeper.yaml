@@ -40,6 +40,41 @@
   - acf/liheap-clearinghouse
   verified: {'on': '2026-07-19', method: scrape}
   geo: {lat: 38.4521, lng: -77.98817}
+- id: va/culpeper/culpeper-food-closet
+  name: Culpeper Food Closet
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 120 N Commerce Street, city: Culpeper, state: va, zip: '22701'}
+  place: '5120752'
+  geo: {lat: 38.47324, lng: -77.99343}
+  phone: 540-825-1177
+  website: https://www.ststephensculpeper.net/culpeper-food-closet/
+  hours:
+  - {days: [mon, tue, wed], open: '09:00', close: '12:00'}
+  - {days: [fri], open: '09:00', close: '12:00'}
+  - {days: [thu], open: '09:00', close: '12:00'}
+  - {days: [thu], open: '16:00', close: '18:00'}
+  external_ids: {va-blue-ridge-area-food-bank: culpeper-food-closet}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
+- id: va/culpeper/culpeper-hope-food-pantry
+  name: Culpeper Hope Food Pantry
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  place: '5120752'
+  geo: {lat: 38.45452, lng: -78.00181}
+  phone: 571-405-7556
+  website: https://www.hopecva.org/our-ministries
+  hours:
+  - {days: [tue], open: '12:00', close: '14:00'}
+  - {days: [fri], open: '12:00', close: '14:00'}
+  external_ids: {va-blue-ridge-area-food-bank: hope-culpeper-church-of-the-nazarene}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/culpeper/culpeper-human-services-head-start
   name: Culpeper Human Services Head Start
   categories:
@@ -71,6 +106,22 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: va/culpeper/empowering-culpeper
+  name: Empowering Culpeper
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 1233 Oaklawn Drive, city: Culpeper, state: va, zip: '22701'}
+  place: '5120752'
+  geo: {lat: 38.46411, lng: -78.0038}
+  phone: 540-727-0372
+  website: https://www.foodpantries.org/li/impowering_culpeper_22701
+  hours:
+  - {days: [sat], open: '09:00', close: '11:00', note: <p>Third Saturday of the month</p>}
+  external_ids: {va-blue-ridge-area-food-bank: empowering-culpeper}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/culpeper/empowering-families-program
   name: Empowering Families Program
   categories:
@@ -172,6 +223,22 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: va/culpeper/reva-mobile-food-pantry
+  name: Reva Mobile Food Pantry
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 'Reva Volunteer Fire Department, 18230 Birmingham Rd.', city: Reva, state: va, zip: '22713'}
+  place: '5120752'
+  geo: {lat: 38.45169, lng: -78.0964}
+  phone: 540-213-8400
+  website: https://www.brafb.org/about-us/how-we-work/programs/mobile-food-pantry/
+  hours:
+  - {days: [wed], open: '09:30', close: '11:00'}
+  external_ids: {va-blue-ridge-area-food-bank: reva-mobile-food-pantry}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/culpeper/savida-health-culpeper
   name: SaVida Health Culpeper
   categories:

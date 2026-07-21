@@ -63,6 +63,21 @@
   sources:
   - wic/or-wic
   verified: {'on': '2026-07-20', method: api}
+- id: or/john-day/grant-county-food-bank
+  name: Grant County Food Bank
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: '530 E Main, Suite 9', city: John Day, state: or, zip: '97845'}
+  place: '4137550'
+  geo: {lat: 44.41584, lng: -118.94418}
+  phone: 541-377-4140
+  hours:
+  - {days: [wed], open: '09:00', close: '13:00'}
+  external_ids: {or-oregon-food-bank: grant-county-food-bank}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/john-day/john-day
   name: John Day
   categories:
@@ -76,3 +91,18 @@
   sources:
   - acf/head-start-locations
   verified: {'on': '2026-07-19', method: api}
+- id: or/john-day/john-day-helping-hands-pantry
+  name: John Day Helping Hands Pantry
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 126 NW Canton Street, city: John Day, state: or, zip: '97845'}
+  place: '4137550'
+  geo: {lat: 44.41673, lng: -118.95593}
+  phone: 541-575-1326
+  hours:
+  - {days: [fri], open: '15:00', close: '16:00'}
+  external_ids: {or-oregon-food-bank: john-day-helping-hands-pantry}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

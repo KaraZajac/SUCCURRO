@@ -32,6 +32,22 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: va/warrenton/fauquier-community-food-bank
+  name: Fauquier Community Food Bank
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 249 E Shirley Avenue, city: Warrenton, state: va, zip: '20186'}
+  place: '5183136'
+  geo: {lat: 38.70464, lng: -77.79263}
+  phone: 540-359-6053
+  website: https://fauquierfoodbank.org/
+  hours:
+  - {days: [mon, tue, wed, thu, fri], open: '12:00', close: '16:00'}
+  external_ids: {va-blue-ridge-area-food-bank: fauquier-community-food-bank}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: va/warrenton/fauquier-county-department-of-social-services
   name: Fauquier County Department of Social Services
   categories:
@@ -56,3 +72,35 @@
   sources:
   - littlefreepantry/map
   verified: {'on': '2026-07-19', method: scrape}
+- id: va/warrenton/fauquier-fish-2
+  name: Fauquier FISH
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 680A Industrial Rd, city: Warrenton, state: va, zip: '20186'}
+  place: '5183136'
+  geo: {lat: 38.69714, lng: -77.78522}
+  phone: 540-347-3474
+  website: http://fauquierfish.org/
+  hours:
+  - {days: [tue], open: '09:30', close: '12:00'}
+  - {days: [thu], open: '18:00', close: '19:30'}
+  - {days: [sat], open: '09:30', close: '12:00'}
+  external_ids: {va-blue-ridge-area-food-bank: fauquier-fish}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
+- id: va/warrenton/laurel-ridge-community-college-fauquier-campus-f
+  name: Laurel Ridge Community College Fauquier Campus Feeding Success Pantry
+  org: va/blue-ridge-area-food-bank
+  categories:
+  - food-pantry
+  address: {street: 6040 College St, city: Warrenton, state: va, zip: '20187'}
+  place: '5183136'
+  geo: {lat: 38.68221, lng: -77.78322}
+  phone: 540-347-8515
+  website: https://laurelridge.edu/foodpantry/
+  external_ids: {va-blue-ridge-area-food-bank: laurel-ridge-community-college-fauquier-campus-feeding-success-pantry}
+  sources:
+  - foodbank/va-blue-ridge-area-food-bank
+  verified: {'on': '2026-07-20', method: scrape}

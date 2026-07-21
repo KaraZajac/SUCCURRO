@@ -11,6 +11,23 @@
   sources:
   - acf/head-start-locations
   verified: {'on': '2026-07-19', method: api}
+- id: or/dallas/dallas-food-bank
+  name: Dallas Food Bank
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  place: '4117700'
+  geo: {lat: 44.92728, lng: -123.31395}
+  phone: 503-623-3578
+  hours:
+  - {days: [mon, tue], open: '13:00', close: '15:00'}
+  - {days: [wed], open: '09:00', close: '11:00'}
+  - {days: [thu], open: '13:00', close: '15:00'}
+  - {days: [fri], open: '09:00', close: '11:00'}
+  external_ids: {or-oregon-food-bank: dallas-food-bank}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/dallas/housing-and-urban-renewal-agency-of-polk-county
   name: Housing And Urban Renewal Agency Of Polk County
   categories:
@@ -23,6 +40,21 @@
   sources:
   - hud/resource-locator
   verified: {'on': '2026-07-19', method: api}
+- id: or/dallas/james-2-community-kitchen-dallas-umc
+  name: James 2 Community Kitchen - Dallas UMC
+  org: or/oregon-food-bank
+  categories:
+  - meal-program
+  address: {street: 565 SE LaCreole Drive, city: Dallas, state: or, zip: '97338'}
+  place: '4117700'
+  geo: {lat: 44.92448, lng: -123.29971}
+  phone: 503-623-2481
+  hours:
+  - {days: [thu], open: '16:30', close: '18:00'}
+  external_ids: {or-oregon-food-bank: james-2-community-kitchen-dallas-umc}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/dallas/polk-adolescent-day-treatment-center
   name: Polk Adolescent Day Treatment Center
   categories:
@@ -52,6 +84,21 @@
   sources:
   - wic/or-wic
   verified: {'on': '2026-07-20', method: api}
+- id: or/dallas/sda-dallas
+  name: SDA Dallas
+  org: or/oregon-food-bank
+  categories:
+  - food-pantry
+  address: {street: 589 SW Birch St, city: Dallas, state: or, zip: '97338'}
+  place: '4117700'
+  geo: {lat: 44.91547, lng: -123.32432}
+  phone: 503-623-5872
+  hours:
+  - {days: [wed], open: '10:00', close: '13:00'}
+  external_ids: {or-oregon-food-bank: sda-dallas}
+  sources:
+  - foodbank/or-oregon-food-bank
+  verified: {'on': '2026-07-20', method: scrape}
 - id: or/dallas/whitworth-elementary
   name: Whitworth Elementary
   categories:
