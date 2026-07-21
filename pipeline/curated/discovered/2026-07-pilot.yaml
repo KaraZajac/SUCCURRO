@@ -1,0 +1,591 @@
+# Discovery batch: BMF-verify pilot, 2026-07. Loaded by pipeline/discovered.py;
+# design in docs/research/discovery-engine-design.md.
+#
+# Candidates pulled from sources/irs/eo{1..4}.csv by NTEE class x gap city from
+# docs/research/bmf-gap-audit-2026-07.md: seniors P81 (Philadelphia, Chicago,
+# Phoenix, Baltimore, Houston, St. Louis), crisis F40/F42/P43 (Los Angeles,
+# Las Vegas, Phoenix, Dallas, Detroit, Charlotte), financial P51/P60 (New York,
+# Lawrenceville, Marietta, Scottsdale, Douglasville, Lakewood NJ).
+# Every org below was verified against its own live website on the date in
+# run_on / verified_on; `checked:` records what was confirmed (audit trail,
+# not emitted). DV policy: domestic-violence orgs carry no address at any
+# precision — `city:` is a place-resolution hint only.
+batch: 2026-07-pilot
+run_on: "2026-07-20"
+title: BMF discovery pilot — seniors/crisis/financial gap cities
+notes: >-
+  Hand-verified discovery batch. Candidates selected from the cached IRS EO BMF
+  (July 2026 pull) by NTEE class x gap city per the 2026-07 BMF gap audit;
+  each org's own website was fetched and confirmed live, currently providing
+  direct services matching its category, and still operating in-state.
+  Grantmakers, employee funds, shells, dead sites, and moved/defunct orgs were
+  rejected (funnel: 268 candidates pulled, 144 web-checked, 43 verified, 101
+  rejected; second wave verified on 2026-07-21; 2 of the 43 already exist under
+  their operating names from other sources and are skipped by the loader).
+  Each record's website field is the page it was verified against; the per-org
+  checked field in the batch file (pipeline/curated/discovered/2026-07-pilot.yaml)
+  records what was confirmed. Domestic-violence orgs carry no address per the
+  DV safety policy in DATA-RIGHTS.md.
+orgs:
+  # ---- seniors: Philadelphia PA ----
+  - name: Philadelphia Corporation for Aging
+    state: pa
+    categories: [seniors, meal-program]
+    description: Area Agency on Aging for Philadelphia County — helpline, home-delivered
+      meals, care management, senior centers, transportation, protective services, and
+      caregiver support for older adults.
+    address: {street: 642 N. Broad Street, city: Philadelphia, state: pa, zip: "19130"}
+    website: https://www.pcacares.org/
+    phone: "215-765-9000"
+    service_area: {kind: county, name: Philadelphia, state: pa}
+    external_ids: {ein: 23-1905649}
+    checked: live site; services list home-delivered meals, helpline, care management,
+      senior centers, transportation, protective services; address and phones on site
+  - name: Penn's Village
+    state: pa
+    categories: [seniors, peer-support]
+    description: Membership village whose volunteers help central Philadelphia older
+      adults live independently at home through rides, practical assistance, and social,
+      educational, health, and wellness programs.
+    address: {street: 201 South 21st Street, city: Philadelphia, state: pa, zip: "19103"}
+    website: https://www.pennsvillage.org/
+    phone: "215-925-7333"
+    external_ids: {ein: 42-1745957}
+    checked: live site; welcome page describes volunteer services and current events;
+      contact page publishes address and phone matching BMF
+  - name: Catholic Housing and Community Services
+    state: pa
+    categories: [seniors, housing-assistance]
+    description: Operates senior community centers, older adult care management, in-home
+      support programs, an elder care helpline, senior clubs, and affordable senior
+      housing for the Archdiocese of Philadelphia region.
+    address: {street: "1601 Cherry Street, Suite 1100", city: Philadelphia, state: pa, zip: "19102"}
+    website: https://chcsphiladelphia.org/
+    phone: "215-587-3663"
+    external_ids: {ein: 82-2320973}
+    checked: live site; services text lists senior centers, care management, in-home
+      support, elder care helpline, senior clubs; address and phone published
+  - name: Village on the Ridge
+    state: pa
+    city: Philadelphia
+    categories: [seniors, peer-support]
+    description: Provides Roxborough-area older adults with volunteer-run social,
+      wellness, and educational programs, in-home practical assistance and tech help,
+      and rides to medical appointments.
+    website: https://villageontheridge.org/
+    external_ids: {ein: 99-0569995}
+    checked: live site; lists current programs and 2025 attendance; EIN on site matches
+      BMF; no street address or phone published
+  - name: FRIEDA
+    state: pa
+    aliases: [FRIEDA Community]
+    categories: [seniors]
+    description: Operates an intergenerational community space and cafe at 320 Walnut
+      Street with a membership program of ongoing activities and excursions for older
+      adults.
+    address: {street: 320 Walnut Street, city: Philadelphia, state: pa, zip: "19106"}
+    website: https://friedaforgenerations.com/
+    phone: "215-600-1291"
+    external_ids: {ein: 30-1253565}
+    checked: live site, 2026 copyright; contact page address matches BMF; membership
+      program of activities and excursions for older adults described on site
+  - name: North City Congress
+    state: pa
+    categories: [seniors]
+    description: Operates the Northern Living Center, a senior center where North
+      Philadelphia older adults take part in wellness, social, and enrichment
+      programming, alongside behavioral health and home health services.
+    address: {street: 827 N. Franklin Street, city: Philadelphia, state: pa, zip: "19123"}
+    website: https://north-city.org/
+    phone: "215-978-1300"
+    external_ids: {ein: 23-1636636}
+    checked: live site; homepage describes Northern Living Center senior community;
+      address matches BMF; phone published
+
+  # ---- seniors: Baltimore MD ----
+  - name: St. Mary's Outreach Center
+    state: md
+    categories: [seniors]
+    description: Helps adults 55 and over in north-central Baltimore age in place
+      through benefits assistance, referrals, educational workshops, and emergency
+      supplies.
+    address: {street: 3939 Roland Avenue, city: Baltimore, state: md, zip: "21211"}
+    website: https://www.smocbaltimore.org/
+    phone: "410-366-3106"
+    external_ids: {ein: 11-3699100}
+    checked: live site; services page lists benefits assistance, referrals, education,
+      emergency supplies for 55+; current office address and hours published (BMF
+      street outdated, same neighborhood)
+
+  # ---- seniors: Phoenix AZ ----
+  - name: Area Agency on Aging, Region One
+    state: az
+    categories: [seniors, family-support]
+    description: Area Agency on Aging for Maricopa County — in-home services, family
+      caregiver support, benefits assistance, a long-term care ombudsman, and a 24-hour
+      Senior HELP LINE.
+    address: {street: 1366 E Thomas Rd Ste 108, city: Phoenix, state: az, zip: "85014"}
+    website: https://aaaphx.org
+    phone: "602-264-2255"
+    service_area: {kind: county, name: Maricopa, state: az}
+    external_ids: {ein: 74-2371957}
+    checked: live site; homepage confirms name, exact BMF address, phone, 24-hour help
+      line, and current program list
+  - name: AllThrive 365
+    state: az
+    aliases: [FSL Programs, Foundation for Senior Living]
+    categories: [seniors, housing-assistance, family-support]
+    description: Provides adult day health centers, adult foster care, nutrition
+      assistance, caregiver support, transportation help, home improvement, and
+      affordable housing programs for older Arizonans.
+    address: {street: 1201 E Thomas Rd, city: Phoenix, state: az, zip: "85014"}
+    website: https://allthrive365.org
+    phone: "602-285-1800"
+    external_ids: {ein: 86-0411904}
+    checked: fsl.org redirects to allthrive365.org; site shows BMF street address,
+      phone, serving Arizonans since 1974, current health/housing/connection programs
+
+  # ---- seniors: Chicago IL ----
+  - name: The Village Chicago
+    state: il
+    aliases: [Lincoln Park Village]
+    categories: [seniors, peer-support]
+    description: Membership village network for adults over 50 providing volunteer
+      rides, tech help, check-ins, health and wellness programs, referrals to vetted
+      providers, and social activities.
+    address: {street: 2502 N Clark St, city: Chicago, state: il, zip: "60614"}
+    website: https://www.thevillagechicago.org/
+    phone: "773-248-8700"
+    external_ids: {ein: 33-1195665}
+    checked: live site; homepage confirms active village-model programs; contact page
+      address and phone match BMF
+  - name: EngAGE Beverly
+    state: il
+    city: Chicago
+    categories: [seniors]
+    description: Hosts recurring dementia-friendly day gatherings for older adults
+      experiencing memory changes in Chicago's Beverly and South Side neighborhoods.
+    website: https://www.engagebeverly.org/
+    external_ids: {ein: 42-1905294}
+    checked: live site confirms identity and currently running gatherings plus a
+      planned literary cafe; early-stage org, no street address or phone published —
+      re-check at next batch
+
+  # ---- crisis: Phoenix AZ (DV policy — no addresses) ----
+  - name: Sojourner Center
+    state: az
+    city: Phoenix
+    categories: [domestic-violence, emergency-shelter, crisis-hotline, transitional-housing]
+    description: Provides emergency shelter, transitional housing apartments, community
+      outreach, and a 24-hour crisis hotline for domestic violence survivors and their
+      children, including a pet companion shelter.
+    website: https://www.sojournercenter.org/
+    phone: "602-244-0089"
+    external_ids: {ein: 94-2465081}
+    checked: live site; confirmed Phoenix location, services list, 24-hour hotline;
+      address withheld per DV policy
+  - name: Chrysalis
+    state: az
+    city: Phoenix
+    aliases: [Chrysalis Shelter for Victims of Domestic Violence]
+    categories: [domestic-violence, emergency-shelter, counseling]
+    description: Operates emergency shelter, trauma-informed counseling, legal
+      advocacy, and long-term support for domestic violence survivors and their
+      families in Phoenix.
+    website: https://chrysalisaz.org/
+    phone: "602-955-9059"
+    external_ids: {ein: 86-0447620}
+    checked: live site (legacy noabuse.org redirects); confirmed Phoenix operations,
+      current services, 24/7 line; address withheld per DV policy
+
+  # ---- crisis: Detroit MI ----
+  - name: Avalon Healing Center
+    state: mi
+    categories: [sexual-assault, counseling]
+    description: Provides free 24/7 sexual assault medical-forensic exams, crisis
+      intervention, individual and group counseling, advocacy, follow-up wellness
+      clinic care, and human trafficking support for survivors of all ages.
+    address: {street: 601 Bagley St, city: Detroit, state: mi, zip: "48226"}
+    website: https://www.avalonhealing.org/
+    phone: "313-474-7233"
+    external_ids: {ein: 20-0631006}
+    checked: live site; Detroit address matches BMF, 24/7 staffing, crisis line
+      confirmed; non-confidential public office, address published by the org
+  - name: A Starr's Initiative
+    state: mi
+    city: Detroit
+    categories: [domestic-violence, transitional-housing]
+    description: Provides safe transitional housing, emergency assistance and advocacy,
+      and legal, medical, and wellness resource referrals for domestic violence
+      survivors, especially women.
+    website: https://astarrsinitiative.org/
+    phone: "313-591-1617"
+    external_ids: {ein: 85-3180526}
+    checked: live site displays matching EIN, Detroit-area phone, current DV services;
+      address withheld per DV policy
+
+  # ---- crisis: Dallas TX ----
+  - name: The Family Place
+    state: tx
+    city: Dallas
+    categories: [domestic-violence, emergency-shelter, counseling]
+    description: Delivers emergency shelter, crisis counseling, legal advocacy,
+      supervised visitation, and children's programs at no cost to family violence
+      survivors in Dallas, in English and Spanish.
+    website: https://www.familyplace.org/
+    phone: "214-941-1991"
+    languages: [en, es]
+    external_ids: {ein: 75-1590896}
+    checked: live site; confirmed Dallas operations, current services, 24-hour hotline;
+      address withheld per DV policy
+  - name: Genesis Women's Shelter and Support
+    state: tx
+    city: Dallas
+    categories: [domestic-violence, emergency-shelter, counseling, transitional-housing]
+    description: Provides emergency shelter, long-term housing, counseling and group
+      therapy, legal services, advocacy, and on-site school and childcare for women and
+      children fleeing domestic violence, free and confidential.
+    website: https://www.genesisshelter.org/
+    phone: "214-946-4357"
+    external_ids: {ein: 87-1061849}
+    checked: live site; confirmed Dallas operations, service list, 24-hour call/text
+      helpline; address withheld per DV policy
+  - name: Hear My Cry Foundation
+    state: tx
+    categories: [suicide-prevention, crisis-hotline, counseling]
+    description: Provides free mental health support to uninsured individuals through
+      counseling, suicide prevention, 24/7 crisis phone and text support, and
+      medication assistance for Texas residents.
+    address: {city: Dallas, state: tx}
+    website: https://hearmycryfoundation.org/
+    phone: "214-828-1000"
+    service_area: {kind: state, state: tx}
+    external_ids: {ein: 46-3652341}
+    checked: live site; active free-counseling request portal and crisis line listed
+      alongside 988; no street address published
+  - name: Wells of Treasure Foundation
+    state: tx
+    city: Dallas
+    categories: [domestic-violence, transitional-housing, counseling]
+    description: Provides temporary and transitional safe-haven housing, counseling and
+      mental health support, legal advocacy, and empowerment education for domestic
+      abuse survivors, single parents, and at-risk youth.
+    website: https://wellsoftreasure.org/
+    phone: "832-850-3277"
+    external_ids: {ein: 92-1213970}
+    checked: live site; confirmed Dallas 501(c)(3), active program descriptions and
+      phone; address withheld per DV policy
+
+  # ---- crisis: Los Angeles CA ----
+  - name: East Los Angeles Women's Center
+    state: ca
+    city: Los Angeles
+    categories: [domestic-violence, sexual-assault, crisis-hotline, counseling]
+    description: Operates a 24/7 bilingual crisis hotline and provides counseling,
+      advocacy, and housing assistance for survivors of domestic and sexual violence
+      in East Los Angeles.
+    website: https://www.elawc.org/
+    phone: "800-585-6231"
+    languages: [en, es]
+    external_ids: {ein: 51-0204577}
+    checked: live site; 24/7 hotline, DV/SA survivor services, Los Angeles location
+      confirmed; address withheld per DV policy
+  - name: Jenesse Center
+    state: ca
+    city: Los Angeles
+    categories: [domestic-violence, emergency-shelter, transitional-housing, counseling]
+    description: Provides emergency and transitional housing, a 24/7 crisis hotline,
+      legal services, mental health counseling, and children's programs for domestic
+      violence survivors in Los Angeles.
+    website: https://jenesse.org/
+    phone: "800-479-7328"
+    external_ids: {ein: 95-3652529}
+    checked: live site; 24/7 hotline, current shelter/legal/counseling programs, Los
+      Angeles service area confirmed; address withheld per DV policy
+  - name: Los Angeles House of Ruth
+    state: ca
+    city: Los Angeles
+    categories: [domestic-violence, emergency-shelter, transitional-housing, family-support]
+    description: Provides emergency shelter, transitional housing, case management,
+      counseling, and permanent housing placement for women and children fleeing
+      domestic violence in Los Angeles.
+    website: https://losangeleshouseofruth.com/
+    phone: "323-266-4139"
+    external_ids: {ein: 95-3411454}
+    checked: live site with current 2026 activity; shelter-housing program page and
+      contact number confirmed; address withheld per DV policy
+  - name: Voices Beyond Assault
+    state: ca
+    city: Los Angeles
+    categories: [sexual-assault, counseling, peer-support]
+    description: Survivor-led nonprofit providing licensed clinical therapy, group
+      counseling, healing retreats, and care coordination for survivors of sexual and
+      domestic violence, based in Los Angeles.
+    website: https://voicesbeyondassault.org/
+    external_ids: {ein: 81-1869608}
+    checked: live site; EIN on site matches BMF, current clinical and care-coordination
+      programs; serves DV survivors, so address withheld per DV policy; no phone
+      published
+
+  # ---- crisis: Las Vegas NV ----
+  - name: SafeNest
+    state: nv
+    city: Las Vegas
+    aliases: [Safe Nest Temporary Assistance for Domestic Crisis]
+    categories: [domestic-violence, crisis-hotline, emergency-shelter, counseling]
+    description: Operates a 24/7 domestic violence hotline, emergency shelter,
+      counseling, court advocacy, and case management serving Clark County, Nevada.
+    website: https://www.safenest.org/
+    phone: "702-646-4981"
+    service_area: {kind: county, name: Clark, state: nv}
+    external_ids: {ein: 94-2411883}
+    checked: live site; legal name match, 24/7 hotline, current shelter, counseling and
+      advocacy services confirmed; address withheld per DV policy
+  - name: Lotus Rising
+    state: nv
+    city: Las Vegas
+    aliases: [Lotus-Rising Inc]
+    categories: [domestic-violence, emergency-shelter, counseling, peer-support]
+    description: Survivor-led organization providing domestic violence support,
+      counseling and healing services, emergency safe shelter assistance, and
+      male-survivor resources in Las Vegas and surrounding areas.
+    website: https://lotus-rising.org/
+    phone: "702-706-8556"
+    external_ids: {ein: 39-4343280}
+    checked: live site; service pages for DV support, counseling, emergency safe
+      shelter; Las Vegas confirmed; address withheld per DV policy
+
+  # ---- financial: New York NY ----
+  - name: The Blue Card
+    state: ny
+    aliases: [Blue Card Inc]
+    categories: [financial]
+    description: Provides emergency cash assistance, monthly stipends, and medical,
+      dental, and nutritional aid to Holocaust survivors in need.
+    address: {street: "171 Madison Avenue, Suite 1405", city: New York, state: ny, zip: "10016"}
+    website: https://bluecardfund.org/
+    phone: "212-239-2251"
+    external_ids: {ein: 13-1623910}
+    checked: live site; services, address matching BMF, phone confirmed
+  - name: The Bridge Fund of New York
+    state: ny
+    city: New York
+    categories: [financial, housing-assistance]
+    description: Provides interest-free loans, grants, and one-on-one budget counseling
+      to working-poor tenants facing eviction in New York City and Westchester.
+    website: https://thebridgefund.org/
+    external_ids: {ein: 13-3824852}
+    checked: live site; EIN displayed on site matches BMF; intake is referral-only and
+      no street address or phone published
+  - name: Career Gear
+    state: ny
+    categories: [financial]
+    description: Provides professional clothing and image-presentation services to men
+      entering or re-entering the workforce, working through referral agencies and
+      institutions.
+    address: {street: "1230 Avenue of the Americas, 18th Fl", city: New York, state: ny, zip: "10022"}
+    website: https://careergear.rfcec.com/
+    phone: "212-577-6190"
+    external_ids: {ein: 13-4055952}
+    checked: careergear.org redirects to careergear.rfcec.com; footer address matches
+      BMF street (site prints zip 10022 vs BMF 10020); 2026 copyright, mission text on
+      homepage
+  - name: Hebrew Free Loan Society
+    state: ny
+    city: New York
+    categories: [financial]
+    description: Offers interest-free loans of up to $7,500 and a range of other loan
+      programs to residents of New York City, Westchester, and Long Island facing
+      emergencies and large expenses.
+    website: https://www.hfls.org/
+    phone: "212-687-0188"
+    service_area: {kind: regional, name: "New York City, Westchester, and Long Island", state: ny}
+    external_ids: {ein: 13-5562239}
+    checked: live site; loan programs, service area, phone confirmed; street address
+      not published on fetched pages
+  - name: Good+Foundation
+    state: ny
+    aliases: [Good Plus Foundation]
+    categories: [financial, family-support]
+    description: Distributes cribs, diapers, strollers, and other essential goods and
+      provides family cash grants to under-resourced parents through partner
+      anti-poverty programs, with a warehouse in New York City.
+    address: {street: "306 West 37th Street, 8th Floor", city: New York, state: ny, zip: "10018"}
+    website: https://goodplusfoundation.org/
+    phone: "212-736-1777"
+    external_ids: {ein: 31-1777082}
+    checked: live site; goods distribution, cash grants, NYC warehouse on homepage;
+      contact page address matches BMF
+  - name: Family Legal Care
+    state: ny
+    categories: [financial, legal-aid, family-support]
+    description: Provides free legal consultations, a helpline, and plain-language
+      guides for unrepresented parents and caregivers navigating New York Family Court
+      matters including child support and custody.
+    address: {street: "60 Broad Street, 24th Floor", city: New York, state: ny, zip: "10004"}
+    website: https://www.familylegalcare.org/
+    phone: "212-343-1122"
+    external_ids: {ein: 13-3910567}
+    checked: live site; services, helpline, current address (moved within Manhattan
+      from BMF's 55 Broadway)
+  - name: Qualitas of Life Foundation
+    state: ny
+    categories: [financial]
+    description: Provides free financial education courses and workshops on personal
+      finance, entrepreneurship, and asset building to Hispanic individuals and
+      families from its New York City base.
+    address: {street: 1221 6th Ave, city: New York, state: ny, zip: "10020"}
+    website: https://qualitasoflife.org/
+    phone: "646-885-2295"
+    languages: [en, es]
+    external_ids: {ein: 06-1833489}
+    checked: live site; services, address matching BMF, phone confirmed
+  - name: Start Small Think Big
+    state: ny
+    city: New York
+    categories: [financial]
+    description: Provides free finance, legal, and bookkeeping services to
+      under-resourced small business owners through a pro bono professional network.
+    website: https://www.startsmallthinkbig.org/
+    phone: "646-723-4053"
+    external_ids: {ein: 27-1821066}
+    checked: live site; services and phone confirmed; EIN displayed on site matches
+      BMF; street address not published on fetched pages
+  - name: Graffiti Community Ministries
+    state: ny
+    categories: [financial, food, meal-program]
+    description: Provides food and clothing distribution, weekly community meals, and
+      tutoring and after-school programs for low-income and homeless neighbors on
+      Manhattan's Lower East Side.
+    address: {street: 205 E 7th St, city: New York, state: ny, zip: "10009"}
+    website: https://graffitichurch.org/
+    phone: "212-473-0044"
+    external_ids: {ein: 13-3861124}
+    checked: live site; services list, address matching BMF, phone confirmed
+  - name: First Generation Investors
+    state: ny
+    categories: [financial]
+    description: Teaches high school students in underserved communities an
+      eight-session investing course led by college tutors and provides them real
+      money to invest.
+    address: {street: "48 Wall Street, Suite 1100", city: New York, state: ny, zip: "10005"}
+    website: https://firstgenerationinvestors.com/
+    external_ids: {ein: 84-3859483}
+    checked: live .com site (the .org is under construction); program description and
+      BMF-matching address; no phone published
+
+  # ---- financial: Marietta GA ----
+  - name: The Center for Family Resources
+    state: ga
+    categories: [financial, housing-assistance, food-pantry]
+    description: Provides homelessness prevention and crisis assistance, housing
+      services, and the Family Cupboard choice food pantry for families in Cobb
+      County, Georgia.
+    address: {street: "400 Franklin Gateway SE, Suite 250", city: Marietta, state: ga, zip: "30067"}
+    website: https://www.thecfr.org/
+    phone: "770-428-2601"
+    service_area: {kind: county, name: Cobb, state: ga}
+    external_ids: {ein: 58-0876634}
+    checked: live site; services, address and phone matching BMF confirmed
+
+  # ---- wave 2 (verified 2026-07-21) ----
+  # ---- seniors: St. Louis MO ----
+  - name: Meals on Wheels of Greater St. Louis
+    state: mo
+    city: Saint Louis
+    categories: [seniors, meal-program]
+    description: All-volunteer organization that delivers hot, professionally prepared
+      meals to elderly, disabled, and convalescent residents unable to shop or cook for
+      themselves, through 13 area programs across St. Louis City and County.
+    website: https://mowstl.org/
+    phone: "314-374-9549"
+    external_ids: {ein: 43-1657131}
+    verified_on: "2026-07-21"
+    checked: live site; current meal-delivery operations, service area, and phone
+      confirmed; only a PO box published, so no street address
+  - name: STL Village
+    state: mo
+    categories: [seniors, peer-support]
+    description: Member of the Village to Village Network that helps people age 50 and
+      older stay in their own homes through volunteer neighbor-to-neighbor assistance,
+      activities, and support services.
+    address: {street: 4501 Westminster Place, city: Saint Louis, state: mo, zip: "63108"}
+    website: https://www.stlvillage.org/
+    phone: "314-240-5020"
+    external_ids: {ein: 80-0915577}
+    verified_on: "2026-07-21"
+    checked: live site; village-model services confirmed; address matches BMF; phone
+      published
+  - name: Southside Wellness Center
+    state: mo
+    aliases: [Southside Senior Citizens Center]
+    categories: [seniors, meal-program]
+    description: Operates an adult day care program with meals, exercise, and health
+      monitoring, plus in-home care with RN oversight and door-to-door transportation,
+      serving St. Louis seniors for more than 45 years.
+    address: {street: 3017 Park Avenue, city: Saint Louis, state: mo, zip: "63104"}
+    website: https://southsidewellness.org/
+    phone: "314-664-5024"
+    external_ids: {ein: 43-1086743}
+    verified_on: "2026-07-21"
+    checked: live site; address matches BMF exactly; services confirmed on homepage and
+      services pages
+  - name: Lindenwood Area Senior Ministry
+    state: mo
+    categories: [seniors]
+    description: Faith-community partnership that helps Lindenwood Park area seniors
+      age in place through volunteer transportation to appointments, household repair
+      and yard help, and social engagement programming.
+    address: {street: 6401 Scanlan Avenue, city: Saint Louis, state: mo, zip: "63139"}
+    website: https://www.lasministry.org/
+    phone: "314-647-4591"
+    external_ids: {ein: 41-2270885}
+    verified_on: "2026-07-21"
+    checked: live site; services on homepage; address matching BMF and phone from
+      contact page
+  - name: Covenant Place
+    state: mo
+    aliases: [Covenant Place Senior Center]
+    categories: [seniors]
+    description: Operates the on-campus Mirowitz Center, a community center offering
+      classes, programs, events, health services, and community resources for older
+      adults alongside its supportive senior residences.
+    address: {street: 8 Millstone Campus Drive, city: Saint Louis, state: mo, zip: "63146"}
+    website: https://covenantplacestl.org/
+    phone: "314-432-1610"
+    external_ids: {ein: 81-0697852}
+    verified_on: "2026-07-21"
+    checked: live site; address matches BMF; Mirowitz Center community programming
+      confirmed on site
+
+  # ---- financial/food: Douglasville GA ----
+  - name: Good Samaritan Center
+    state: ga
+    aliases: [Good Samaritan Center of Douglas County]
+    categories: [food-pantry, financial]
+    description: Provides food and essential goods to Douglas County residents in need
+      through its food bank, mobile pantry, senior box program, community kitchen
+      healthy-eating initiative, and social service assistance.
+    address: {street: 8366 Grady Street, city: Douglasville, state: ga, zip: "30134"}
+    website: https://www.goodsamaritan-center.org/
+    phone: "770-949-7335"
+    service_area: {kind: county, name: Douglas, state: ga}
+    external_ids: {ein: 58-1516735}
+    verified_on: "2026-07-21"
+    checked: live site; programs page confirms current food bank, mobile pantry, senior
+      box, and social service assistance; address matches BMF
+
+  # ---- financial: Scottsdale AZ ----
+  - name: The Financial Act
+    state: az
+    categories: [financial]
+    description: Donation-funded nonprofit providing free financial literacy education
+      and counseling to the public on credit, debt management, identity protection,
+      homeownership, veterans housing, and youth financial skills.
+    address: {street: "9375 E Shea Blvd, Suite 100", city: Scottsdale, state: az, zip: "85260"}
+    website: https://thefinancialact.org/
+    external_ids: {ein: 85-0769738}
+    verified_on: "2026-07-21"
+    checked: live site (homepage and contact page); address matches BMF; site states it
+      is funded entirely by private contributions and does not lend money; no phone
+      published
