@@ -2,37 +2,46 @@
   name: Huron Potawatomi Pine Creek Reservation
   categories:
   - child-care
-  address:
-    street: 2342 1 1/2 Mile Rd
-    city: Fulton
-    state: mi
-    zip: '49052'
+  address: {street: 2342 1 1/2 Mile Rd, city: Fulton, state: mi, zip: '49052'}
   description: Head Start early childhood program — 20 funded slots; operated by INTER-TRIBAL COUNCIL
     OF MICHIGAN, INC.
   place: '2631120'
-  geo:
-    lat: 42.10757
-    lng: -85.26013
+  geo: {lat: 42.10757, lng: -85.26013}
   phone: 269-704-9450
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
+- id: mi/fulton/nhbp-pine-creek
+  name: NHBP Pine Creek
+  categories:
+  - health
+  description: Tribal health facility
+  address: {street: 1485 Mno-Bmadzewen Way, city: Fulton, state: mi, zip: '49052'}
+  geo: {lat: 42.10509, lng: -85.26159}
+  place: '2631120'
+  phone: 269-729-4422
+  website: https://nhbp-nsn.gov/
+  services:
+  - Full Ambulatory Care
+  - Acute Care
+  - Behavioral Health
+  - Chronic Disease Management
+  - Dentistry
+  - Nutrition
+  - Primary Care
+  - Traditional Healer Services
+  external_ids: {asufac: '182337'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
 - id: mi/fulton/wakeshma-community-church
   name: Wakeshma Community Church
   org: mi/south-michigan-food-bank
   categories:
   - food-pantry
-  address:
-    street: 16732 UV Ave
-    city: Fulton
-    state: mi
-    zip: '49042'
+  address: {street: 16732 UV Ave, city: Fulton, state: mi, zip: '49042'}
   place: '2631120'
   sources:
   - foodbank/mi-south-michigan-food-bank
-  verified:
-    'on': '2026-07-21'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
   geo: {lat: 42.13687, lng: -85.3001}

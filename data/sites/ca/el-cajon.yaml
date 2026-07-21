@@ -190,6 +190,23 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: ca/el-cajon/el-cajon-clubhouse
+  name: El Cajon Clubhouse
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 1171 E Madison Ave, city: El Cajon, state: ca, zip: '92021'}
+  geo: {lat: 32.79914, lng: -116.94122}
+  place: '0621712'
+  phone: 619-442-0371
+  website: http://www.bgcec.org
+  services:
+  - Teen center
+  - Meals
+  external_ids: {bgca_site: '3110', bgca_org: '10720'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: ca/el-cajon/el-cajon-comprehensive-treatment-center
   name: El Cajon Comprehensive Treatment Center
   categories:
@@ -596,6 +613,24 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: ca/el-cajon/revive-pathway-opioid-treatment-program
+  name: Revive Pathway Opioid Treatment Program
+  categories:
+  - health
+  - su-treatment
+  description: Tribal behavioral health facility
+  address: {street: 1240 Broadway, city: El Cajon, state: ca, zip: '92021'}
+  geo: {lat: 32.8089, lng: -116.93866}
+  place: '0621712'
+  phone: 619-841-1310
+  website: https://rp.health/
+  services:
+  - Outpatient Substance Use Disorder Treatment
+  - Scientific approach to substance use disorder
+  external_ids: {asufac: '662155'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
 - id: ca/el-cajon/rock-church-el-cajon
   name: Rock Church - El Cajon
   org: ca/feeding-san-diego
@@ -686,3 +721,56 @@
   sources:
   - foodbank/ca-feeding-san-diego
   verified: {'on': '2026-07-21', method: api}
+- id: ca/el-cajon/sycuan-medical-dental-center
+  name: Sycuan Medical & Dental Center
+  categories:
+  - health
+  description: Tribal health center
+  address: {street: 5442 Sycuan Road, city: El Cajon, state: ca, zip: '92019'}
+  geo: {lat: 32.77908, lng: -116.84064}
+  place: '0621712'
+  website: https://www.sycuanmedicaldentalcenter.org/
+  services:
+  - Full Ambulatory Care
+  - Behavioral Health
+  - Chiropractor
+  - Dentistry
+  - Family Medicine
+  - Internal Medicine
+  - Lab
+  - Pharmacy
+  - X-Ray
+  external_ids: {asufac: '663230'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
+- id: ca/el-cajon/volunteers-in-medicine-san-diego
+  name: Volunteers in Medicine – San Diego
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 1457 East Madison Avenue, city: El Cajon, state: ca, zip: '92019'}
+  geo: {lat: 32.79968, lng: -116.92877}
+  place: '0621712'
+  phone: 619-440-4591
+  website: https://vim-sandiego.org/
+  services:
+  - Mammogram Referrals
+  - Mental Health
+  - Social Services
+  - Women's Health
+  - Dietitian/Nutrition
+  - Labs
+  - Primary Care
+  - Referrals
+  - Specialty Care
+  - Physical Therapy
+  - Discounted Pharmacy Cards
+  - Acupuncture
+  - Chiropractic
+  cost: free
+  external_ids: {nafc: volunteers-in-medicine-san-diego}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}

@@ -24,6 +24,19 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: or/eugene/bethel-clubhouse
+  name: Bethel Clubhouse
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 4646 Barger Drive, city: Eugene, state: or, zip: '97402'}
+  geo: {lat: 44.08322, lng: -123.17496}
+  place: '4123850'
+  website: https://www.bgcev.org/
+  external_ids: {bgca_site: '10615', bgca_org: '11079'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: or/eugene/bethel-family-resource-center
   name: Bethel Family Resource Center
   org: or/oregon-food-bank
@@ -53,6 +66,24 @@
   sources:
   - foodbank/or-oregon-food-bank
   verified: {'on': '2026-07-21', method: scrape}
+- id: or/eugene/boys-girls-clubs-of-emerald-valley
+  name: Boys & Girls Clubs of Emerald Valley
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 1545 W 22nd Ave, city: Eugene, state: or, zip: '97405'}
+  geo: {lat: 44.03676, lng: -123.11464}
+  place: '4123850'
+  phone: 541-345-9939
+  website: https://www.bgcev.org/
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  external_ids: {bgca_site: '5788', bgca_org: '11079'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: or/eugene/brewer-park
   name: Brewer Park
   categories:
@@ -232,6 +263,30 @@
   sources:
   - hrsa/health-center-sites
   verified: {'on': '2026-07-19', method: api}
+- id: or/eugene/dove-medical
+  name: Dove Medical
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 487 East 11th Avenue, city: Eugene, state: or, zip: '97401'}
+  geo: {lat: 44.04786, lng: -123.08546}
+  place: '4123850'
+  phone: 541-485-3683
+  website: https://dovemedical.org/
+  services:
+  - Dental
+  - Health Education
+  - Acute Care
+  - Labs
+  - Primary Care
+  - Referrals
+  - Write Prescriptions for filing off-site
+  cost: free
+  external_ids: {nafc: dove-medical}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: or/eugene/downtown-eugene-va-clinic
   name: Downtown Eugene VA Clinic
   categories: &id001
@@ -584,6 +639,29 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: or/eugene/ko-kwel-wellness-center-eugene
+  name: Ko-Kwel Wellness Center - Eugene
+  categories:
+  - health
+  description: Tribal health center
+  address: {street: '2401 River Road, Ste. 101', city: Eugene, state: or, zip: '97404'}
+  geo: {lat: 44.09944, lng: -106.58436}
+  place: '4123850'
+  phone: 541-916-7025
+  website: https://kokwelwellness.org/
+  services:
+  - Full Ambulatory Care
+  - Acute Care
+  - Behavioral Health
+  - Chronic Disease Management
+  - Limited Lab Services
+  - Nutrition Services
+  - Primary Care
+  - Specialty Care Referrals
+  external_ids: {asufac: '758657'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
 - id: or/eugene/lane-co-health-dept-wic-clinic
   name: Lane Co. Health Dept. WIC Clinic
   categories:

@@ -28,6 +28,28 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: va/yorktown/lackey-clinic
+  name: Lackey Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 1620 Old Williamsburg Rd, city: Yorktown, state: va, zip: '23690'}
+  geo: {lat: 37.23096, lng: -76.55538}
+  place: '5188240'
+  phone: 757-886-0608
+  website: https://lackeyclinic.org
+  services:
+  - Dental
+  - Primary Care
+  - Specialty Care
+  - Telehealth
+  - Behavioral Health
+  cost: free
+  external_ids: {nafc: lackey-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: va/yorktown/milieu-therapeutic-services-dba-tmtsonline-com
   name: Milieu Therapeutic Services DBA Tmtsonline Com
   categories:
@@ -57,6 +79,25 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: va/yorktown/york-county-boys-girls-club
+  name: York County Boys & Girls Club
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 11201 GEORGE WASHINGTON MEM HWY, city: Yorktown, state: va, zip: '23690'}
+  geo: {lat: 37.29973, lng: -76.51193}
+  place: '5188240'
+  phone: 757-243-8307
+  website: http://www.bagclub.com
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  - Military youth partnership
+  external_ids: {bgca_site: '508', bgca_org: '10307'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: va/yorktown/york-poquoson-social-services
   name: York/Poquoson Social Services
   categories:

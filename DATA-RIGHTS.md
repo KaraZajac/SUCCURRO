@@ -19,7 +19,7 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 
 | Source | Terms | Handling |
 |---|---|---|
-| Census, SAMHSA, HRSA, HUD, USDA, VA (CC0), ACF (Head Start, RHY, FVPSA, LIHEAP), IRS EO BMF, EOIR | US federal public domain | Full use, attributed |
+| Census, SAMHSA, HRSA, HUD, USDA, VA (CC0), ACF (Head Start, RHY, FVPSA, LIHEAP), IRS EO BMF, EOIR, IHS | US federal public domain | Full use, attributed |
 | BMLT (NA), TSML feeds (AA, Recovery Dharma, Refuge Recovery) | Open community feeds, no stated license; Meeting Guide spec is MIT | Facts extracted, feed cited per record; courtesy notification; honor any service-body takedown request |
 | Al-Anon WSO locator dataset | Widget data URL, not an offered API; © Al-Anon HQ | Permission email before redistribution; facts-only |
 | Mutual Aid Hub | **PDDL 1.0** (public-domain dedication) | Full use, attributed; snapshot early (fragile endpoint) |
@@ -32,6 +32,9 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 | Al-Anon WSO, Immigration Advocates Network | Asked 2026-07-19; no restrictive ToS exists (verified) | No reply by 2026-08-09 → facts-only ingestion, attributed, takedown honored |
 | AmpleHarvest | ToS §3 requires prior written consent for redistribution (verified) | **Ingest only on an affirmative yes** |
 | ThroughLine, NSPN | No public bulk; partnership-friendly orgs | Contact first — do not scrape |
+| NAFC (nafcclinics.org) | Only terms page is a GDPR privacy notice — no anti-scrape/reuse restrictions; robots.txt allows all paths for `*` (verified 2026-07-21) | Facts-only re-expression, attributed; throttled cached crawl |
+| BGCA (bgca.org) | No published website ToS (only SMS terms); robots.txt explicitly allows all agents (verified 2026-07-21) | Facts-only re-expression of find-a-club feed, attributed |
+| YMCA of the USA (ymca.org) | Terms & Conditions: personal use only; publish/display/exploit requires prior written consent (verified 2026-07-21) | **Not ingested.** Link-out only; partnership ask |
 
 ## Umbrella license
 

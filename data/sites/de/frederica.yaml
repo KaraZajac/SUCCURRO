@@ -3,15 +3,23 @@
   org: de/food-bank-of-delaware
   categories:
   - food-pantry
-  address:
-    street: 216 S Market St
-    city: Frederica
-    state: de
-    zip: '19946'
+  address: {street: 216 S Market St, city: Frederica, state: de, zip: '19946'}
   place: '1028440'
   sources:
   - foodbank/de-food-bank-of-delaware
-  verified:
-    'on': '2026-07-21'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}
   geo: {lat: 39.00623, lng: -75.46582}
+- id: de/frederica/lake-forest-east-boys-girls-club
+  name: Lake Forest East Boys & Girls Club
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 124 W FRONT ST, city: Frederica, state: de, zip: '19946'}
+  geo: {lat: 39.00673, lng: -75.47328}
+  place: '1028440'
+  phone: 302-270-5817
+  website: http://www.bgclubs.org
+  external_ids: {bgca_site: '9224', bgca_org: '10014'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}

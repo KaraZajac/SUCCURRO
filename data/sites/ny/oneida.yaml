@@ -13,6 +13,21 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: ny/oneida/mary-rose-clinic
+  name: Mary Rose Clinic
+  categories:
+  - free-clinic
+  - health
+  address: {street: 1081 Northside Shopping Ctr, city: Oneida, state: ny, zip: '13421'}
+  geo: {lat: 43.10298, lng: -75.66122}
+  place: '3654837'
+  phone: 315-280-0855
+  website: https://www.maryrosecenter.org
+  cost: free
+  external_ids: {nafc: mary-rose-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ny/oneida/oneida
   name: Oneida
   categories:
@@ -38,6 +53,48 @@
   sources:
   - hud/resource-locator
   verified: {'on': '2026-07-19', method: api}
+- id: ny/oneida/oneida-indian-nation-behavioral-health
+  name: Oneida Indian Nation Behavioral Health
+  categories:
+  - health
+  - mh-treatment
+  description: Tribal behavioral health facility
+  address: {street: 2057 Dreamcatcher Plaza, city: Oneida, state: ny, zip: '13421'}
+  geo: {lat: 43.07667, lng: -75.64631}
+  place: '3654837'
+  phone: 315-829-8760
+  website: https://www.oneidaindiannation.com/
+  services:
+  - Outpatient Behavioral Health Services
+  - Individual & Group Counseling
+  - Mental Health Assessment & Diagnosis
+  - Case Management
+  - Treatment Planning
+  external_ids: {asufac: '587810'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
+- id: ny/oneida/oneida-indian-nation-health-services
+  name: Oneida Indian Nation Health Services
+  categories:
+  - health
+  description: Tribal health center
+  address: {street: 2057 Dreamcatcher Plaza, city: Oneida, state: ny, zip: '13421'}
+  geo: {lat: 43.0766, lng: -75.64777}
+  place: '3654837'
+  website: https://www.oneidaindiannation.com/
+  services:
+  - Full Ambulatory Care
+  - Accredited Diabetes Program
+  - Dentistry
+  - Family Practice
+  - Lab
+  - Podiatry
+  - Primary Care
+  external_ids: {asufac: '587830'}
+  sources:
+  - ihs/find-health-care
+  verified: {'on': '2026-07-21', method: api}
 - id: ny/oneida/seneca-street-school
   name: Seneca Street School
   categories:

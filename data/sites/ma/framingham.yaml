@@ -42,6 +42,24 @@
   sources:
   - hud/resource-locator
   verified: {'on': '2026-07-19', method: api}
+- id: ma/framingham/framingham-unit
+  name: Framingham Unit
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 25 CLINTON ST, city: Framingham, state: ma}
+  geo: {lat: 42.28075, lng: -71.41467}
+  place: '2524960'
+  phone: 508-620-7145
+  website: http://www.bgcmetrowest.org
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  external_ids: {bgca_site: '2886', bgca_org: '10041'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: ma/framingham/framingham-va-clinic
   name: Framingham VA Clinic
   categories:
@@ -91,6 +109,48 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: ma/framingham/gratis-healthcare
+  name: Gratis Healthcare
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 10 Pearl St., city: Framingham, state: ma, zip: '01702'}
+  geo: {lat: 42.27886, lng: -71.42023}
+  place: '2524960'
+  phone: 401-647-6896
+  website: https://www.gratishealth.org
+  cost: free
+  external_ids: {nafc: gratis-healthcare}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
+- id: ma/framingham/metrowest-free-medical-program
+  name: MetroWest Free Medical Program
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 110 Edgell Road, city: Framingham, state: ma, zip: '01701'}
+  geo: {lat: 42.30421, lng: -71.43395}
+  place: '2524960'
+  phone: 508-656-0740
+  website: https://metrowestfreemedicalprogram.org/
+  services:
+  - Health Education
+  - Mammogram Referrals
+  - Social Services
+  - Vision
+  - Women's Health
+  - Case Management
+  - Primary Care
+  - Physical Therapy
+  - Discounted Pharmacy Cards
+  cost: free
+  external_ids: {nafc: metrowest-free-medical-program-2}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ma/framingham/new-england-aftercare-ministries-inc-the-bridge
   name: New England Aftercare Ministries Inc The Bridge House
   categories:

@@ -232,6 +232,21 @@
   - acf/liheap-clearinghouse
   verified: {'on': '2026-07-19', method: scrape}
   geo: {lat: 41.64062, lng: -91.53046}
+- id: ia/iowa-city/healthy-kids-school-based-health-clinics-hksbhc
+  name: Healthy Kids School-Based Health Clinics (HKSBHC)
+  categories:
+  - free-clinic
+  - health
+  address: {street: 1900 Morningside Dr, city: Iowa City, state: ia, zip: '52245'}
+  geo: {lat: 41.65915, lng: -91.50589}
+  place: '1938595'
+  phone: 319-631-3204
+  website: https://www.iowacityschools.org/Page/1164
+  cost: free
+  external_ids: {nafc: healthy-kids-school-based-health-clinics-hksbhc}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ia/iowa-city/iowa-city-2-va-mobile-medical-unit
   name: Iowa City 2 VA Mobile Medical Unit
   categories: &id001
@@ -247,6 +262,22 @@
   sources:
   - va/facilities-api
   verified: {'on': '2026-07-19', method: api}
+- id: ia/iowa-city/iowa-city-free-medical-clinic
+  name: Iowa City Free Medical Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 1039 Arthur Street, city: Iowa City, state: ia, zip: '52240'}
+  geo: {lat: 41.64844, lng: -91.49759}
+  place: '1938595'
+  phone: 319-338-7884
+  website: https://freemedicalclinic.org
+  cost: free
+  external_ids: {nafc: iowa-city-free-medical-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ia/iowa-city/iowa-city-housing-authority
   name: Iowa City Housing Authority
   categories:
@@ -317,6 +348,22 @@
   sources:
   - lsc/office-locations
   verified: {'on': '2026-07-20', method: api}
+- id: ia/iowa-city/iowa-city-unit
+  name: Iowa City Unit
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: '1030 Cross Park Ave
+
+      Faith Academy Faith Academy', city: Iowa City, state: ia, zip: '52240'}
+  geo: {lat: 41.63977, lng: -91.52101}
+  place: '1938595'
+  phone: 319-558-8719
+  website: http://www.bgccr.org
+  external_ids: {bgca_site: '8815', bgca_org: '10474'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: ia/iowa-city/iowa-city-va-clinic
   name: Iowa City VA Clinic
   categories: *id001

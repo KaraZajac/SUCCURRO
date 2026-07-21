@@ -121,6 +121,22 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: al/opelika/mercy-medical-clinic
+  name: Mercy Medical Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 325 Dunlop Drive, city: Opelika, state: al, zip: '36801'}
+  geo: {lat: 32.64748, lng: -85.41216}
+  place: 0157048
+  phone: 334-501-1081
+  website: https://www.mercymedicalministry.org
+  cost: free
+  external_ids: {nafc: mercy-medical-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: al/opelika/opelika-high-school
   name: Opelika High School
   categories:
@@ -147,3 +163,21 @@
   sources:
   - hud/resource-locator
   verified: {'on': '2026-07-19', method: api}
+- id: al/opelika/potter-daniel-boys-girls-club
+  name: Potter-Daniel Boys & Girls Club
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 1610 Toomer St, city: Opelika, state: al, zip: '36801'}
+  geo: {lat: 32.63416, lng: -85.37842}
+  place: 0157048
+  phone: 334-745-2582
+  website: http://www.bgceastal.org
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  external_ids: {bgca_site: '2806', bgca_org: '10199'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}

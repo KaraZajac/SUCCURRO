@@ -68,6 +68,22 @@
   sources:
   - samhsa/findtreatment
   verified: {'on': '2026-07-19', method: api}
+- id: ca/poway/new-health-coalition
+  name: New Health Coalition
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 15644 Pomerado Road suite 204, city: Poway, state: ca, zip: '92064'}
+  geo: {lat: 32.99809, lng: -117.05886}
+  place: 0658520
+  phone: 949-545-4817
+  website: https://newhealthcoalition.org
+  cost: free
+  external_ids: {nafc: new-health-coalition}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ca/poway/our-lady-of-mt-carmel-church
   name: Our Lady of Mt. Carmel Church
   org: ca/feeding-san-diego
@@ -118,6 +134,25 @@
   external_ids: {ca-feeding-san-diego: '67242834'}
   sources:
   - foodbank/ca-feeding-san-diego
+  verified: {'on': '2026-07-21', method: api}
+- id: ca/poway/rich-gaby-sulpizio-family-branch
+  name: Rich & Gaby Sulpizio Family Branch
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 13094 Bowron Rd, city: Poway, state: ca, zip: '92064'}
+  geo: {lat: 32.95448, lng: -117.0458}
+  place: 0658520
+  phone: 858-748-9933
+  website: http://www.sdyouth.org
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  - Military youth partnership
+  external_ids: {bgca_site: '3162', bgca_org: '10724'}
+  sources:
+  - bgca/find-a-club
   verified: {'on': '2026-07-21', method: api}
 - id: ca/poway/st-bart-s-church
   name: St. Bart's Church

@@ -24,6 +24,35 @@
   sources:
   - foodbank/ca-food-bank-of-contra-costa-and-solano
   verified: {'on': '2026-07-21', method: scrape}
+- id: ca/magalia/medspire-health-mobile-clinic
+  name: Medspire Health Mobile Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 15180 Torey Pine Rd, city: Magalia, state: ca, zip: '95954'}
+  geo: {lat: 39.85968, lng: -121.59876}
+  place: '0645120'
+  phone: 833-633-7747
+  website: https://medspire.org/
+  services:
+  - Health Education
+  - Mammogram Referrals
+  - Mental Health
+  - Case Management
+  - Family Planning
+  - Immunizations
+  - Medication Therapy Management (MTM)
+  - Primary Care
+  - Referrals
+  - Acupuncture
+  - Chiropractic
+  - Write Prescriptions for filing off-site
+  cost: free
+  external_ids: {nafc: medspire-health-mobile-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ca/magalia/pine-ridge
   name: Pine Ridge
   categories:
@@ -38,3 +67,17 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: ca/magalia/pine-ridge-school
+  name: Pine Ridge School
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 13878 Compton Drive, city: Magalia, state: ca, zip: '95954'}
+  geo: {lat: 39.81292, lng: -121.60103}
+  place: '0645120'
+  phone: 530-873-6592
+  website: http://www.bgcnv.org/
+  external_ids: {bgca_site: '558', bgca_org: '10716'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}

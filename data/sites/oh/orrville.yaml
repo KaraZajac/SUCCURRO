@@ -3,15 +3,9 @@
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 859 South Main Street
-    city: Orrville
-    state: oh
-    zip: '44667'
+  address: {street: 859 South Main Street, city: Orrville, state: oh, zip: '44667'}
   place: '3958828'
-  geo:
-    lat: 40.84773
-    lng: -81.76464
+  geo: {lat: 40.84773, lng: -81.76464}
   phone: 330-683-5106
   website: https://www.ccwhc.org
   services:
@@ -22,71 +16,62 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/orrville/friendship-meals-inc
   name: Friendship Meals Inc
   org: oh/akron-canton-regional-foodbank
   categories:
   - meal-program
-  address:
-    street: 301 N Main St
-    city: Orrville
-    state: oh
-    zip: '44667'
+  address: {street: 301 N Main St, city: Orrville, state: oh, zip: '44667'}
   place: '3958828'
-  external_ids:
-    oh-akron-canton-regional-foodbank: '4588'
+  external_ids: {oh-akron-canton-regional-foodbank: '4588'}
   sources:
   - foodbank/oh-akron-canton-regional-foodbank
-  verified:
-    'on': '2026-07-21'
-    method: api
+  verified: {'on': '2026-07-21', method: api}
   geo: {lat: 40.83837, lng: -81.76442}
+- id: oh/orrville/orrville-area-boys-girls-club
+  name: Orrville Area Boys & Girls Club
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 820 N Ella St, city: Orrville, state: oh, zip: '44667'}
+  geo: {lat: 40.84735, lng: -81.76887}
+  place: '3958828'
+  phone: 330-683-4888
+  website: http://www.oabgc.org
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  external_ids: {bgca_site: '6802', bgca_org: '10373'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: oh/orrville/orrville-head-start
   name: Orrville Head Start
   categories:
   - child-care
-  address:
-    street: 1801 Smucker Rd
-    street2: Na
-    city: Orrville
-    state: oh
-    zip: '44667'
+  address: {street: 1801 Smucker Rd, street2: Na, city: Orrville, state: oh, zip: '44667'}
   description: Head Start early childhood program — 34 funded slots; operated by Community Action Wayne/Medina.
   place: '3958828'
-  geo:
-    lat: 40.8599
-    lng: -81.7878
+  geo: {lat: 40.8599, lng: -81.7878}
   phone: 330-930-0030
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-07-19'
-    method: api
+  verified: {'on': '2026-07-19', method: api}
 - id: oh/orrville/orrville-loaves-fishes
   name: Orrville Loaves & Fishes
   org: oh/akron-canton-regional-foodbank
   categories:
   - food-pantry
-  address:
-    street: 925 N Elm St
-    city: Orrville
-    state: oh
-    zip: '44667'
+  address: {street: 925 N Elm St, city: Orrville, state: oh, zip: '44667'}
   place: '3958828'
-  geo:
-    lat: 40.85111
-    lng: -81.77433
+  geo: {lat: 40.85111, lng: -81.77433}
   phone: 330-682-3686
-  external_ids:
-    oh-akron-canton-regional-foodbank: '4535'
+  external_ids: {oh-akron-canton-regional-foodbank: '4535'}
   sources:
   - foodbank/oh-akron-canton-regional-foodbank
-  verified:
-    'on': '2026-07-21'
-    method: api
+  verified: {'on': '2026-07-21', method: api}
 - id: oh/orrville/orrville-maiwurm-service-center
   name: Orrville Maiwurm Service Center
   categories:
@@ -94,14 +79,8 @@
   - utility-assistance
   - financial
   description: Salvation Army service center
-  address:
-    street: 401 West High Street
-    city: Orrville
-    state: oh
-    zip: '44667'
-  geo:
-    lat: 40.84402
-    lng: -81.76863
+  address: {street: 401 West High Street, city: Orrville, state: oh, zip: '44667'}
+  geo: {lat: 40.84402, lng: -81.76863}
   place: '3958828'
   phone: 330-683-3138
   website: https://www.salvationarmyusa.org/oh/orrville/west-high-street/
@@ -112,26 +91,34 @@
   - Hunger
   - Utility Rent Assistance
   - Donation Dropoff
-  external_ids:
-    gdos: 8a80825760dfe07d01612f0650f80016
+  external_ids: {gdos: 8a80825760dfe07d01612f0650f80016}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-07-20'
-    method: api
+  verified: {'on': '2026-07-20', method: api}
 - id: oh/orrville/orrville-trinity-umc-give-take
   name: Orrville Trinity UMC Give & Take
   categories:
   - food-pantry
   place: '3958828'
-  geo:
-    lat: 40.84756
-    lng: -81.78408
+  geo: {lat: 40.84756, lng: -81.78408}
   website: https://mapping.littlefreepantry.org/pantry/1106
-  external_ids:
-    lfp: '1106'
+  external_ids: {lfp: '1106'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-07-19'
-    method: scrape
+  verified: {'on': '2026-07-19', method: scrape}
+- id: oh/orrville/viola-startzman-clinic
+  name: Viola Startzman Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 820 North Ella Street, city: Orrville, state: oh, zip: '44667'}
+  geo: {lat: 40.84741, lng: -81.76888}
+  place: '3958828'
+  phone: 330-262-2500
+  website: https://www.startzmanclinic.org/
+  cost: free
+  external_ids: {nafc: viola-startzman-clinic-3}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}

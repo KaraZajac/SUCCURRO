@@ -112,6 +112,22 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: ms/columbus/columbus-lowndes-free-medical-clinic
+  name: Columbus Lowndes Free Medical Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 520 College Street, city: Columbus, state: ms, zip: '39701'}
+  geo: {lat: 33.49387, lng: -88.42687}
+  place: '2815380'
+  phone: 662-244-0044
+  website: https://www.goodsamaritanmedicalclinic.com
+  cost: free
+  external_ids: {nafc: columbus-lowndes-free-medical-clinic}
+  sources:
+  - nafc/find-a-clinic
+  verified: {'on': '2026-07-21', method: scrape}
 - id: ms/columbus/columbus-ms-corps
   name: Columbus MS Corps
   categories:
@@ -142,6 +158,24 @@
   sources:
   - salvationarmy/location-finder
   verified: {'on': '2026-07-20', method: api}
+- id: ms/columbus/columbus-unit
+  name: Columbus Unit
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 1815 14TH AVE N, city: Columbus, state: ms, zip: '39701'}
+  geo: {lat: 33.51125, lng: -88.41377}
+  place: '2815380'
+  phone: 662-244-7090
+  website: http://bgcgt.org/
+  services:
+  - Teen center
+  - Summer programs
+  - Meals
+  external_ids: {bgca_site: '4144', bgca_org: '30163'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: ms/columbus/columbus-va-clinic
   name: Columbus VA Clinic
   categories:

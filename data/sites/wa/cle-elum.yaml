@@ -11,6 +11,19 @@
   sources:
   - usda/summer-meal-sites
   verified: {'on': '2026-07-19', method: api}
+- id: wa/cle-elum/cle-elum-site
+  name: Cle Elum Site
+  categories:
+  - family-youth
+  description: Boys & Girls Club
+  address: {street: 2692 Washington 903, city: Cle Elum, state: wa, zip: '98922'}
+  geo: {lat: 47.20401, lng: -120.97277}
+  place: '5312945'
+  website: http://www.bngclub.org
+  external_ids: {bgca_site: '12915', bgca_org: '10935'}
+  sources:
+  - bgca/find-a-club
+  verified: {'on': '2026-07-21', method: api}
 - id: wa/cle-elum/comm-health-cw-cle-elum-wic-clinic
   name: Comm Health CW-Cle Elum WIC Clinic
   categories:
@@ -42,4 +55,29 @@
   external_ids: {wa-second-harvest-inland-northwest: hope-source}
   sources:
   - foodbank/wa-second-harvest-inland-northwest
+  verified: {'on': '2026-07-21', method: scrape}
+- id: wa/cle-elum/open-door-health-clinic
+  name: Open Door Health Clinic
+  categories:
+  - free-clinic
+  - health
+  description: NAFC member clinic
+  address: {street: 201 Alpha Way, city: Cle Elum, state: wa, zip: '98922'}
+  geo: {lat: 47.19528, lng: -120.9502}
+  place: '5312945'
+  phone: 509-929-7266
+  website: https://www.opendoorhealthclinic.org/
+  services:
+  - Mammogram Referrals
+  - Mental Health
+  - Vision
+  - Fill Prescriptions On-Site
+  - Primary Care
+  - Referrals
+  - Discounted Pharmacy Cards
+  - Write Prescriptions for filing off-site
+  cost: free
+  external_ids: {nafc: open-door-health-clinic}
+  sources:
+  - nafc/find-a-clinic
   verified: {'on': '2026-07-21', method: scrape}
