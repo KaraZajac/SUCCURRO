@@ -102,7 +102,11 @@ h2.cat {
 .usmap path { fill: var(--surface); stroke: var(--accent); stroke-width: 0.8; }
 .usmap a:hover path, .usmap a:focus-visible path { fill: var(--accent-soft); }
 .state-map path.outline { fill: var(--surface); stroke: var(--accent); stroke-width: 1; }
-.state-map circle { fill: var(--accent); fill-opacity: 0.7; stroke: var(--bg); stroke-width: 1; }
+.state-map circle { fill: var(--dot, var(--accent)); fill-opacity: 0.7; stroke: var(--bg); stroke-width: 1; }
+.state-map a:hover circle, .state-map a:focus-visible circle { fill: var(--dot, var(--accent-strong)); fill-opacity: 1; }
+.choropleth path { stroke: var(--line); stroke-width: 0.6; }
+.choropleth a:hover path, .choropleth a:focus-visible path { stroke: var(--text); stroke-width: 1.2; }
+.choropleth-legend .swatch { display: inline-block; width: 0.85rem; height: 0.85rem; border-radius: 3px; vertical-align: text-bottom; margin: 0 0.2rem 0 0.6rem; }
 .state-map a:hover circle, .state-map a:focus-visible circle { fill: var(--accent-strong); fill-opacity: 1; }
 
 /* donut chart */

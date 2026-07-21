@@ -1,0 +1,55 @@
+---
+// Per-category US choropleth: states shaded by coverage (listings + orgs)
+// in the category's own hue — sequential single-hue ramp, light -> dark,
+// mixed against the page background so lightness is monotonic by
+// construction. Exact numbers live in tooltips and the table below the map
+// (the text fallback for low-contrast steps). Zero-coverage states render
+// as plain surface and aren't links.
+import { nationalGeometry, STATE_NAMES, catColor, rootOf } from "../lib/data.js";
+
+const { token, values } = Astro.props; // values: { st: count }
+const geo = nationalGeometry();
+const color = catColor(rootOf(token));
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const nonzero = Object.values(values).filter((v) => v > 0);
+const max = Math.max(...nonzero, 1);
+const BINS = 4;
+const MIX = [18, 38, 62, 88]; // % of category hue mixed into --bg per bin
+const bin = (v) =>
+  v <= 0 ? -1 : Math.min(BINS - 1,
+    Math.floor((Math.log(v + 1) / Math.log(max + 1)) * BINS));
+const fill = (v) =>
+  bin(v) < 0 ? "var(--surface)"
+  : `color-mix(in srgb, ${color} ${MIX[bin(v)]}%, var(--bg))`;
+// upper value of each bin, for the legend ranges
+const binTop = (k) => Math.max(1, Math.round(Math.pow(max + 1, (k + 1) / BINS) - 1));
+const ranges = MIX.map((_, k) => {
+  const lo = k === 0 ? 1 : binTop(k - 1) + 1;
+  const hi = binTop(k);
+  return lo >= hi ? `${hi}` : `${lo}–${hi}`;
+});
+---
+<svg class="usmap choropleth" viewBox={`0 0 ${geo.width} ${geo.height}`}
+  role="img" aria-label="Coverage by state" style="max-width:100%;height:auto;">
+  {Object.entries(geo.states).map(([st, d]) => {
+    const v = values[st] || 0;
+    const shape = (
+      <path d={d} style={`fill:${fill(v)}`}>
+        <title>{STATE_NAMES[st] || st.toUpperCase()} — {v.toLocaleString()} listing{v === 1 ? "" : "s"} &amp; orgs</title>
+      </path>
+    );
+    return v > 0
+      ? <a href={`${base}/category/${token}/${st}`} aria-label={`${STATE_NAMES[st] || st}: ${v}`}>{shape}</a>
+      : shape;
+  })}
+</svg>
+<p class="meta choropleth-legend">
+  <span class="swatch" style="background:var(--surface);border:1px solid var(--line)"></span> 0
+  {MIX.map((m, k) => (
+    <>
+      {" "}
+      <span class="swatch" style={`background:color-mix(in srgb, ${color} ${m}%, var(--bg))`}></span> {ranges[k]}
+    </>
+  ))}
+</p>

@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import CategoryMap from "../../components/CategoryMap.astro";
 import {
   taxonomy, STATE_NAMES, categoryCounts, catColor, rootOf,
 } from "../../lib/data.js";
@@ -62,6 +63,8 @@ const total = states.reduce((a, s) => a + s.listings + s.orgs, 0) + national;
         <p><a class="chip cat" style={`--cat:${color}`}
               href={`${base}/category/${token}/us`}>National &amp; online resources ({national})</a></p>
       )}
+      <CategoryMap token={token}
+        values={Object.fromEntries(states.map((s) => [s.st, s.listings + s.orgs]))} />
       <div class="table-scroll"><table>
         <thead><tr><th>State</th><th>Local listings</th><th>Communities</th><th>Organizations</th></tr></thead>
         <tbody>

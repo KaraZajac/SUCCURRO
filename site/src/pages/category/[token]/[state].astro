@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import StateOutline from "../../../components/StateOutline.astro";
 import {
   taxonomy, STATE_NAMES, placesFor, categoryCounts, catColor, rootOf, label,
   orgsFor, taxonomyIndex, sourceIndex,
@@ -26,16 +27,19 @@ const color = catColor(rootOf(token));
 const anchor = rootOf(token) === "recovery" && token === "recovery-meeting"
   ? "meetings" : rootOf(token);
 
-const placeNames = new Map(placesFor(state).map((p) => [p.slug, p.name]));
-const places = Object.entries(categoryCounts().tokenPlaces[token]?.[state] || {})
+const placeIndex = new Map(placesFor(state).map((p) => [p.slug, p]));
+const tokenCounts = categoryCounts().tokenPlaces[token]?.[state] || {};
+const places = Object.entries(tokenCounts)
   .map(([slug, n]) => ({
     slug, n,
     name: slug === "online" ? `Online (${stateName})`
-      : placeNames.get(slug) || slug.replace(/-/g, " "),
+      : placeIndex.get(slug)?.name || slug.replace(/-/g, " "),
+    geo: placeIndex.get(slug)?.geo,
   }))
   .filter((p) => p.slug !== "unknown")
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
 const listingTotal = places.reduce((a, p) => a + p.n, 0);
+const mappable = places.filter((p) => p.geo && p.slug !== "online");
 
 // orgs in this state carrying the token (or a descendant of it)
 const tax = taxonomyIndex();
@@ -63,6 +67,11 @@ const attribution = (rec) => {
   <h1 class="cat" style={`--cat:${color};border-left:4px solid var(--cat);padding-left:0.5rem`}>
     {label(token)}{state === "us" ? " — national & online resources" : ` in ${stateName}`}
   </h1>
+
+  {mappable.length > 0 && state !== "us" && (
+    <StateOutline state={state} places={mappable} counts={tokenCounts}
+      color={color} anchor={anchor} />
+  )}
 
   {orgs.length > 0 && (
     <>
