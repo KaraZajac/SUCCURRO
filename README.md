@@ -1,8 +1,6 @@
 # SUCCURRO
 
-<!-- DOI badge: fill in after the first Zenodo release (docs/RELEASE-CHECKLIST.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21634583.svg)](https://doi.org/10.5281/zenodo.21634583)
 
 A curated, source-anchored, hyper-local dataset of help and support services across the
 United States — mutual-aid meetings (AA, NA, SMART, ACA and more), NAMI affiliates and

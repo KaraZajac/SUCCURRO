@@ -107,3 +107,11 @@ Confidence notes: high on NaNDA granularity/licenses, HIFLD timeline, OSM
 counts, federal characteristics; medium on the 211 NDP license claim, OEPS
 terms, and the negative "no national AA/NA dataset exists" (thoroughly searched;
 negatives are never certain).
+
+## Our record
+
+SUCCURRO v1.0 is archived on Zenodo — concept DOI
+[10.5281/zenodo.21634583](https://doi.org/10.5281/zenodo.21634583) (resolves to the
+latest version), first minted 2026-07-28. The release bundle carries an Open
+Referral HSDS 3.0 export, which per the survey above makes it the first
+national US help-services dataset published in HSDS format with a DOI.
