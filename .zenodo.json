@@ -1,0 +1,68 @@
+{
+  "title": "SUCCURRO: a curated hyper-local dataset of US help and support services",
+  "upload_type": "dataset",
+  "description": "A curated, source-anchored directory of help and support services across the United States, resolved to the city and town level: food assistance, shelter and housing, substance-use and mental-health treatment, recovery and support meetings, crisis lines, domestic violence programs, veteran services, LGBTQ+ centers, legal aid, free clinics, disability and refugee services, and childcare. Roughly 260,000 records — 12,947 organizations, 136,038 service locations, and 77,714 recurring meetings across 32,307 US places — each citing at least one of 251 first-class source records and carrying a verification stamp with the date it was last checked. Assembled from US federal open data (SAMHSA, HRSA, VA, HUD, USDA, ACF, IHS, DOJ, Census), open community feeds (the BMLT ecosystem for NA; Meeting Guide/TSML feeds for AA; SMART, ACA, Nar-Anon, Overeaters Anonymous, Gamblers Anonymous and others), and facts-only re-expression of national nonprofit network directories. Includes the first national Open Referral HSDS 3.0 export of a US help-services dataset published with a DOI. A prior-art survey (docs/prior-art.md) found no existing dataset that is simultaneously national, point/city-resolved, multi-category, openly licensed and maintained; several categories here — recovery meetings, peer support, crisis-line directories — had no open national dataset at all. Ships with a JSON Schema, an independent validation gate, per-record provenance and freshness stamps, a documented rights posture including the sources deliberately not collected because their terms prohibit it (DATA-RIGHTS.md), and a datasheet following Gebru et al. Safety posture: confidential domestic violence shelter locations are never published; recovery meeting records carry venue and schedule facts only, respecting fellowship anonymity; stale safety-critical records are suppressed rather than shown. This is a frozen snapshot; the continuously maintained version is at https://succurro.org.",
+  "creators": [
+    {
+      "name": "Zajac, Kara",
+      "orcid": "0009-0001-7400-1394"
+    }
+  ],
+  "license": "CC-BY-NC-4.0",
+  "access_right": "open",
+  "keywords": [
+    "social services",
+    "human services",
+    "help directory",
+    "mutual aid",
+    "recovery meetings",
+    "mental health",
+    "food security",
+    "homelessness",
+    "domestic violence",
+    "veterans services",
+    "LGBTQ+ services",
+    "legal aid",
+    "Open Referral",
+    "HSDS",
+    "open data",
+    "service accessibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://succurro.org",
+      "resource_type": "other"
+    },
+    {
+      "relation": "isCompiledBy",
+      "identifier": "https://github.com/KaraZajac/SUCCURRO",
+      "resource_type": "software"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "https://findtreatment.gov",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "https://data.hrsa.gov",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "https://developer.va.gov/explore/api/va-facilities",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "isCompatibleWith",
+      "identifier": "https://docs.openreferral.org/en/latest/hsds/overview.html",
+      "resource_type": "other"
+    }
+  ]
+}

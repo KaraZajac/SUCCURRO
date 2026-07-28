@@ -42,3 +42,6 @@ site-dev: ## run the site dev server
 
 archive: ## add Wayback archive_url to source records (--save via ARGS)
 	python3 -m pipeline.archive $(ARGS)
+
+release: ## build the citable release bundle (JSONL + HSDS + stats + checksums)
+	python3 publish/export_release.py $(ARGS)

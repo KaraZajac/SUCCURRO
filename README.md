@@ -1,12 +1,28 @@
 # SUCCURRO
 
+<!-- DOI badge: fill in after the first Zenodo release (docs/RELEASE-CHECKLIST.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+-->
+
 A curated, source-anchored, hyper-local dataset of help and support services across the
-United States — mutual-aid meetings (AA, NA, Al-Anon, SMART), NAMI affiliates and peer
-support, shelters and housing assistance, food banks and pantries, veteran services,
+United States — mutual-aid meetings (AA, NA, SMART, ACA and more), NAMI affiliates and
+peer support, shelters and housing assistance, food banks and pantries, veteran services,
 LGBTQ+ centers, crisis lines, free clinics, legal aid — resolvable down to the city and
 town level, plus a static Astro site that makes it searchable by location and need.
 
+**Live site: [succurro.org](https://succurro.org)** · roughly 260,000 records —
+organizations, service locations, and recurring meetings — across 32,307 US places,
+every one citing its source and carrying the date it was last verified.
+
 *Succurro* (Latin): to run to the aid of, to help.
+
+## Citing / releases
+
+Tagged releases are archived on Zenodo with a DOI; `publish/export_release.py`
+builds the citable bundle (JSONL + an Open Referral **HSDS 3.0** export + schema +
+statistics + `SHA256SUMS`). See `publish/DATASHEET.md` for the datasheet
+(Gebru et al. framework), `docs/RELEASE-CHECKLIST.md` for the release gate, and
+`CITATION.cff` for how to cite.
 
 ## Design
 

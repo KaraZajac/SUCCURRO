@@ -1,22 +1,49 @@
 cff-version: 1.2.0
-message: If you use this dataset, please cite it as below.
+message: >-
+  If you use SUCCURRO, please cite it as below, and cite the upstream sources
+  listed in each record's `sources:` entries (federal datasets, community
+  feeds, and network directories are enumerated in docs/sources.md).
 type: dataset
 title: "SUCCURRO: a curated hyper-local dataset of US help and support services"
 authors:
   - family-names: Zajac
     given-names: Kara
-repository-code: https://github.com/KaraZajac/SUCCURRO
+    orcid: "https://orcid.org/0009-0001-7400-1394"
+repository-code: "https://github.com/KaraZajac/SUCCURRO"
+url: "https://succurro.org"
+# doi: 10.5281/zenodo.XXXXXXX  # concept DOI — fill in after the first Zenodo release
 license: CC-BY-NC-4.0
 keywords:
   - social services
+  - human services
+  - help directory
   - mutual aid
+  - recovery meetings
   - mental health
-  - recovery
   - food security
-  - housing
+  - homelessness
+  - domestic violence
+  - veterans services
+  - LGBTQ+ services
+  - legal aid
+  - Open Referral
+  - HSDS
   - open data
-abstract: >
-  A curated, source-anchored dataset of help and support services across the United
-  States — recovery meetings, peer support, shelters, food banks, veteran services,
-  LGBTQ+ centers, crisis lines, clinics, and legal aid — resolved to the city and
-  town level, with per-record provenance and freshness verification.
+abstract: >-
+  A curated, source-anchored directory of help and support services across the
+  United States, resolved to the city and town level — food assistance, shelter
+  and housing, treatment, recovery and support meetings, crisis lines, domestic
+  violence programs, veteran services, LGBTQ+ centers, legal aid, free clinics,
+  disability and refugee services, and childcare. Roughly 260,000 records
+  (12,947 organizations, 136,038 service locations, 77,714 recurring meetings)
+  across 32,307 US places, each citing at least one of 251 first-class source
+  records and carrying a verification stamp with the date it was last checked.
+  Assembled from US federal open data, open community feeds (the BMLT ecosystem
+  for NA; Meeting Guide/TSML feeds for AA; SMART, ACA, Nar-Anon, Overeaters
+  Anonymous, Gamblers Anonymous and others), and facts-only re-expression of
+  national nonprofit network directories. Ships with a JSON Schema, an
+  independent validation gate, an Open Referral HSDS 3.0 export, a datasheet
+  following Gebru et al., and a documented rights posture that includes the
+  sources deliberately not collected because their terms prohibit it.
+  Confidential domestic violence shelter locations are never published, and
+  recovery meeting records carry venue and schedule facts only.
