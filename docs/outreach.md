@@ -3,6 +3,24 @@
 Drafts for the three permission asks (see docs/sources.md #6, #41, #63).
 Status log below each — update when sent/answered.
 
+## Status board (as of 2026-07-30)
+
+| Source | Asked | Restrictive ToS | State |
+|---|---|---|---|
+| Al-Anon WSO | 2026-07-19 | none | **silent** — fallback 2026-08-09, module built and gated (`pipeline/alanon.py`, 9,895 US meetings ready); follow-up drafted giving notice of intent |
+| Immigration Advocates Network | 2026-07-19 | none | **silent** — fallback 2026-08-09; follow-up drafted |
+| AmpleHarvest | 2026-07-19 | consent required | **silent** — silence is *not* consent; follow-up drafted; stays out indefinitely absent a yes |
+| Vivery | 2026-07-27 | consent required | sent, no reply (too early to read anything into it) |
+| Church Initiative / GriefShare | 2026-07-27 | consent required | sent, no reply |
+| NFCC | 2026-07-27 | consent required | sent, no reply |
+| American Cancer Society | 2026-07-27 | consent required | sent, no reply |
+| LGBT Near Me | — | unknown | draft ready; no published address, needs their contact form |
+| 17 AA intergroups | — | n/a (access-gated) | contact addresses being verified before sending |
+
+The policy below is **enforced in code** by `pipeline/_gate.py`: a gated module
+aborts unless a grant is recorded there or the fallback date has passed, and
+consent-required sources are refused outright.
+
 ## No-reply fallback policy (decided 2026-07-20)
 
 If a source doesn't reply by **2026-08-09** (3 weeks): facts-only ingestion
