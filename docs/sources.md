@@ -49,7 +49,7 @@ Counts for in-use entries are from the 2026-07-20 build (`data/meta.yaml`:
    `https://central-query.apps.code4recovery.org/api/v1/meetings` (rich JSON) but
    responses window at ~51 records; pagination unresolved — ask in Code for
    Recovery's public Slack.
-6. **Al-Anon/Alateen — WSO locator dataset** — **held (permission clock)**.
+6. **Al-Anon/Alateen — WSO locator dataset** — **held (permission clock)**; parser built and gated (`pipeline/alanon.py`, 9,895 US meetings verified by dry run; `pipeline/_gate.py` blocks writes until a grant or the fallback date).
    *Verified:* single 12.8 MB JSONP file behind their Store Locator Widgets embed
    — **14,472 US/CA meetings** with lat/lng, language, format. One GET. Not an
    offered API. Permission email sent 2026-07-19; no ToS exists on al-anon.org
@@ -423,7 +423,7 @@ addresses, even where published).
     125 orgs). Quarterly two-column PDF parsed via `pdftotext -layout` with
     modal-indent column splitting; private-attorney entries skipped; providers
     dedupe across courts. Public domain; July 2026 edition current.
-63. **Immigration Advocates Network directory** — **held (permission clock)**.
+63. **Immigration Advocates Network directory** — **held (permission clock)**. Parser built and gated (`pipeline/ian.py`, 996 orgs after dedup, robots.txt Crawl-delay honored, volunteer-coordinator contacts excluded by construction).
     900+ nonprofit immigration legal providers, best-in-class; partnership
     email sent 2026-07-19 (they already syndicate to partners). No reuse or
     scraping restrictions found (verified 2026-07-20), so no reply by
