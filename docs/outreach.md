@@ -99,15 +99,30 @@ Kara Zajac — kara@soulstone.org
 ## Batch 2 — restricted TSML intergroups (Meeting Guide sharing keys)
 
 Seventeen intergroups run TSML with feed sharing set to "restricted" — the
-plugin supports issuing named sharing keys. One short email each. Contacts
-are each site's webmaster/office address (on their contact pages):
-Dallas (aadallas.org), Fort Worth (fortworthaa.org), Boston (aaboston.org),
-Miami-Dade (aamiamidade.org), Tampa (aatampa-area.org), Charlotte
-(charlotteaa.org), Salt Lake (saltlakeaa.org), Cleveland (aacle.org),
-Akron (akronaa.org), Anchorage (anchorageaa.org), Buffalo (buffaloaany.org),
-SE Michigan Area 33 (aa-semi.org), NH Area 43 (nhaa.net), RI Area 61
-(aainri.com), ND Area 41 (aanorthdakota.org), Idaho Area 18
-(idahoarea18aa.org), TN Area 64 (area64assembly.org).
+plugin supports issuing named sharing keys. Verified contacts are in
+`docs/research/intergroup-contacts-2026-07.md` (2026-07-30 sweep; none
+guessed). Corrections from that sweep: aanorthdakota.org is **Area 52** (not
+41), charlotteaa.org trades as **Metrolina Intergroup**, and Tampa's feed
+lives on `meetings.aatampa-area.org`, not the apex domain.
+
+**Open ethics decision — the static-cache route.** Five of the seventeen
+(SE Michigan Area 33, Fort Worth, NH Area 43, Idaho Area 18, Buffalo) serve
+their complete feed as an unauthenticated `wp-content/tsml-cache-<hash>.json`
+even though their AJAX endpoint is key-gated — 4,552 meetings, technically
+reachable today. **Not collected.** Restricting the feed is an expressed
+intent about third-party consumption, and the cache file exists to serve the
+intergroup's own front end; taking it obtains precisely what was gated through
+a door meant for someone else. Facts-only re-expression is legal here, but
+this project's posture is to honor stated intent, not just the letter. These
+five stay in the outreach batch unless Kara decides otherwise; if any grants a
+key, the normal TSML path applies.
+
+Emailable now (verified addresses): Dallas `office@aadallas.org`, Boston
+`aaboston1945@gmail.com`, Miami-Dade `aamiamidade@bellsouth.net`, Tampa
+`aainfo@aatampa-area.org`, Metrolina/Charlotte `info@charlotteaa.org`, Akron
+`itchairman@akronaa.org`, Anchorage `chair@anchorageaa.org`, RI Area 61
+`webmaster@aainri.com`, TN Area 64 `techsupport@area64assembly.org`.
+Form-only (no published address): Salt Lake, Cleveland, ND Area 52.
 
 **Template** (subject: *Meeting Guide feed sharing key request — succurro.org*):
 
