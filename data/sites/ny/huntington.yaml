@@ -1,15 +1,16 @@
 - id: ny/huntington/family-service-league-inc-huntington-clinic
   name: Family Service League Inc Huntington Clinic
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 55 Horizon Drive, city: Huntington, state: ny, zip: '11743'}
+  address: {city: Huntington, state: ny, zip: '11743'}
   place: '3636233'
-  geo: {lat: 40.85807, lng: -73.42256}
   phone: 631-396-2300
   website: https://www.fsl-li.org
   services:
   - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Persons  18 and older with serious mental illness (SMI)
   languages:
   - en
   - es
@@ -17,11 +18,10 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/family-service-league-stepping-stones-pros
   name: Family Service League Stepping Stones PROS
   categories:
-  - su-treatment
   - mh-treatment
   address: {city: Huntington, state: ny, zip: '11743'}
   place: '3636233'
@@ -34,7 +34,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/huntington-art
   name: Huntington Art
   org: ny/long-island-cares-inc
@@ -46,7 +46,7 @@
   external_ids: {ny-long-island-cares-inc: '1193'}
   sources:
   - foodbank/ny-long-island-cares-inc
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/huntington-head-start-center-ddi
   name: Huntington Head Start Center @ DDI
   categories:
@@ -59,7 +59,7 @@
   phone: 631-266-4428
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/huntington-hospital
   name: Huntington Hospital
   categories:
@@ -76,7 +76,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/huntington-library
   name: Huntington Library
   org: ny/long-island-cares-inc
@@ -88,7 +88,7 @@
   external_ids: {ny-long-island-cares-inc: '1180'}
   sources:
   - foodbank/ny-long-island-cares-inc
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/huntington-public-library-little-free-pantry
   name: Huntington Public Library Little Free Pantry
   categories:
@@ -99,7 +99,7 @@
   external_ids: {lfp: '3962'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: ny/huntington/huntington-youth-bureau-huntington-drug-and-alco
   name: Huntington Youth Bureau Huntington Drug and Alcohol Project
   categories:
@@ -111,6 +111,7 @@
   website: https://hdacc.org
   services:
   - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Adolescents
   - Adult women
@@ -119,11 +120,11 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/joshua-baptist-church
   name: Joshua Baptist Church
   org: ny/island-harvest
@@ -138,7 +139,7 @@
   external_ids: {ny-island-harvest: '9109028'}
   sources:
   - foodbank/ny-island-harvest
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/mountainside-huntington-outpatient-clinic
   name: Mountainside Huntington Outpatient Clinic
   categories:
@@ -157,11 +158,11 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
-  cost: varies
+  eligibility: Serves young adults, adults.
+  cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/tri-community-and-youth-agency
   name: Tri Community and Youth Agency
   org: ny/long-island-cares-inc
@@ -173,7 +174,7 @@
   external_ids: {ny-long-island-cares-inc: '1234571'}
   sources:
   - foodbank/ny-long-island-cares-inc
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/well-life-network-huntington
   name: Well Life Network - Huntington
   org: ny/island-harvest
@@ -188,7 +189,33 @@
   external_ids: {ny-island-harvest: '9109171'}
   sources:
   - foodbank/ny-island-harvest
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: ny/huntington/welllife-network-inc-huntington-act-team
+  name: WellLife Network Inc Huntington ACT Team
+  categories:
+  - su-treatment
+  - mh-treatment
+  address: {street: 55 Horizon Drive, city: Huntington, state: ny, zip: '11743'}
+  place: '3636233'
+  geo: {lat: 40.85806, lng: -73.42278}
+  phone: 631-929-8000
+  website: https://www.welllifenetwork.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: ny/huntington/welllife-network-inc-outpatient-clinic-2-ars-hun
   name: WellLife Network Inc Outpatient Clinic 2/ARS Huntington
   categories:
@@ -201,11 +228,13 @@
   website: https://www.welllifenetwork.org
   services:
   - Outpatient
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

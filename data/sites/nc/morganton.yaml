@@ -10,24 +10,23 @@
   website: https://www.caringalternative.com
   services:
   - Outpatient
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
   - Young adults
   - Seniors or older adults
-  - Veterans
-  - Active duty military
-  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  - Persons with traumatic brain injury (TBI)
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/archway-counseling
   name: Archway Counseling
   categories:
@@ -40,14 +39,11 @@
   services:
   - Outpatient
   - Regular outpatient treatment
-  languages:
-  - en
-  - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/burke-county-department-of-social-services
   name: Burke County Department of Social Services
   categories:
@@ -60,7 +56,7 @@
   website: https://www.burkenc.org/1217/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: nc/morganton/burke-dental
   name: Burke Dental
   categories:
@@ -74,7 +70,7 @@
   external_ids: {bphc: BPS-H80-034321}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/burke-medical
   name: Burke Medical
   categories:
@@ -87,11 +83,13 @@
   website: https://www.highcountrycommunityhealth.com
   services:
   - Outpatient
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/burke-recovery
   name: Burke Recovery
   categories:
@@ -104,17 +102,19 @@
   website: https://www.burkerecovery.com
   services:
   - Outpatient
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
-  - Adult men
+  - Veterans
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/first-presbyterian-church
   name: First Presbyterian Church
   categories:
@@ -127,7 +127,7 @@
   phone: 828-438-6255
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/flynn-recovery-community
   name: Flynn Recovery Community
   categories:
@@ -140,81 +140,16 @@
   website: https://www.burkerecovery.com/
   services:
   - Residential/24-hour residential
-  - Veterans
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  eligibility: Serves young adults, adults, seniors.
+  - Long-term residential
+  - Adult men
+  eligibility: Serves young adults, adults; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: nc/morganton/focus-behavioral-health-services-llc-burke-day-t
-  name: Focus Behavioral Health Services LLC Burke Day Treatment
-  categories:
-  - su-treatment
-  - mh-treatment
-  address: {street: P.O. Box 3624, city: Morganton, state: nc, zip: '28680'}
-  place: '3744400'
-  phone: 828-439-2604
-  website: https://www.focusbhsllc.com
-  services:
-  - Partial hospitalization/day treatment
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: nc/morganton/focus-behavioral-health-services-llc-caldwell-da
-  name: Focus Behavioral Health Services LLC Caldwell Day Treatment
-  categories:
-  - su-treatment
-  - mh-treatment
-  address: {street: P.O. Box 3624, city: Morganton, state: nc, zip: '28680'}
-  place: '3744400'
-  phone: 828-439-8191
-  website: https://www.focusbhsllc.com
-  services:
-  - Partial hospitalization/day treatment
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: nc/morganton/focus-behavioral-health-services-llc-horizons-da
-  name: Focus Behavioral Health Services LLC Horizons Day Treatment
-  categories:
-  - su-treatment
-  - mh-treatment
-  address: {street: P.O. Box 3624, city: Morganton, state: nc, zip: '28680'}
-  place: '3744400'
-  phone: 828-439-8191
-  website: https://www.focusbhsllc.com
-  services:
-  - Partial hospitalization/day treatment
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/focus-behavioral-health-services-llc-mull-day-tr
   name: Focus Behavioral Health Services LLC Mull Day Treatment
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 1140 Old North Carolina 18 Road, city: Morganton, state: nc, zip: '28655'}
   place: '3744400'
@@ -227,11 +162,11 @@
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
+  eligibility: Serves children/adolescents.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/good-samaritan-clinic
   name: Good Samaritan Clinic
   categories:
@@ -244,7 +179,7 @@
   external_ids: {bphc: BPS-H80-036733}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/good-samaritan-clinic-mobile-unit
   name: Good Samaritan Clinic Mobile Unit.
   categories:
@@ -257,7 +192,7 @@
   external_ids: {bphc: BPS-H80-019629}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/good-samaritan-clinic-nc
   name: Good Samaritan Clinic – NC
   categories:
@@ -284,7 +219,7 @@
   external_ids: {lfp: '2303'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: nc/morganton/hillcrest-food-truck
   name: Hillcrest Food Truck
   categories:
@@ -297,7 +232,7 @@
   external_ids: {usda_master: Cycle 06_NC_SFSP_0169}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/kintegrea-at-drexel-elementary
   name: Kintegrea at Drexel Elementary
   categories:
@@ -311,7 +246,7 @@
   external_ids: {bphc: BPS-H80-041463}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/legal-aid-of-north-carolina-foothills
   name: Legal Aid of North Carolina - Foothills
   categories:
@@ -324,7 +259,7 @@
   external_ids: {lsc_office: '63403206'}
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/martha-s-park-food-truck
   name: Martha'S Park Food Truck
   categories:
@@ -337,7 +272,7 @@
   external_ids: {usda_master: Cycle 06_NC_SFSP_0170}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/morganton-housing-authority
   name: Morganton Housing Authority
   categories:
@@ -349,7 +284,7 @@
   phone: 828-437-9101
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/morganton-nc-service-center
   name: Morganton NC Service Center
   categories:
@@ -371,7 +306,7 @@
   external_ids: {gdos: 2c9f7fc097c55e9f0197f8f1ebcb0003}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/morganton-office-301-e-meeting-street
   name: Morganton Office 301 E Meeting Street
   categories:
@@ -384,7 +319,7 @@
   external_ids: {bphc: BPS-H80-021660}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/mountain-view-elementary-school
   name: Mountain View Elementary School
   categories:
@@ -397,7 +332,7 @@
   external_ids: {usda_master: Cycle 06_NC_SFSP_0168}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/my-next-steps-of-morganton
   name: My Next Steps of Morganton
   categories:
@@ -425,7 +360,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/ncm-table-rock-middle-school
   name: Ncm Table Rock Middle School
   categories:
@@ -438,7 +373,7 @@
   external_ids: {usda_master: Cycle 06_NC_SFSP_0173}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/salem-elementary-school
   name: Salem Elementary School
   categories:
@@ -451,7 +386,7 @@
   phone: 828-438-6255
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/the-enola-group-burke-early-head-start
   name: The Enola Group Burke Early Head Start
   categories:
@@ -463,7 +398,7 @@
   phone: 828-475-0107
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: nc/morganton/w-a-young-elementary
   name: W A Young Elementary
   categories:
@@ -476,4 +411,4 @@
   external_ids: {usda_master: Cycle 06_NC_SFSP_0166}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

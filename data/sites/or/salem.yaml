@@ -1,10 +1,41 @@
+- id: or/salem/adams-lane
+  name: Adams Lane
+  categories:
+  - mh-treatment
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
+  place: '4164900'
+  phone: 503-581-1732
+  website: https://www.shangrilaoregon.org
+  services:
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
+  geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/amazing-treatment
   name: Amazing Treatment
   categories:
   - su-treatment
-  address: {street: 525 Ferry Street SE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 525 Ferry Street SE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.93868, lng: -123.03731}
+  geo:
+    lat: 44.93868
+    lng: -123.03731
   phone: 503-363-6103
   website: https://www.amazingtreatment.org
   services:
@@ -22,17 +53,22 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/arcadia-rth
   name: Arcadia RTH
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -45,45 +81,106 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/arches-community-action-agency
   name: ARCHES (Community Action Agency)
   org: or/oregon-food-bank
   categories:
   - meal-program
-  address: {street: 615 Commercial Street NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 615 Commercial Street NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.94656, lng: -123.03813}
+  geo:
+    lat: 44.94656
+    lng: -123.03813
   phone: 503-585-6232
   hours:
-  - {days: [sun], open: '09:00', close: '16:15'}
-  - {days: [wed, thu, fri], open: '09:00', close: '16:15'}
-  external_ids: {or-oregon-food-bank: arches-community-action-agency}
+  - days:
+    - sun
+    open: 09:00
+    close: '16:15'
+  - days:
+    - wed
+    - thu
+    - fri
+    open: 09:00
+    close: '16:15'
+  external_ids:
+    or-oregon-food-bank: arches-community-action-agency
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/battle-creek-elementary-school
   name: Battle Creek Elementary School
   categories:
   - meal-program
-  address: {street: 1640 Waln Dr Se, city: Salem, state: or, zip: '97306'}
+  address:
+    street: 1640 Waln Dr Se
+    city: Salem
+    state: or
+    zip: '97306'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.86503, lng: -123.02512}
+  geo:
+    lat: 44.86503
+    lng: -123.02512
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0035}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0035
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: or/salem/branches-outpatient-salem
+  name: Branches Outpatient Salem
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    street: 1321 Tandem Avenue NE
+    city: Salem
+    state: or
+    zip: '97301'
+  place: '4164900'
+  geo:
+    lat: 44.97399
+    lng: -123.01625
+  phone: 971-433-3033
+  website: https://branchesoregon.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/bridgeway-recovery-services-detox-unit
   name: Bridgeway Recovery Services Detox Unit
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 3321 Harold Drive NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 3321 Harold Drive NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96757, lng: -122.98561}
+  geo:
+    lat: 44.96757
+    lng: -122.98561
   phone: 971-239-4781
   website: https://www.bridgewayrecovery.com
   services:
@@ -97,28 +194,45 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/capital-park-food-pantry
   name: Capital Park Food Pantry
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 410 19th ST SE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 410 19th ST SE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.93099, lng: -123.01955}
+  geo:
+    lat: 44.93099
+    lng: -123.01955
   phone: 503-362-6626
   hours:
-  - {days: [wed], open: '17:00', close: '19:00'}
-  external_ids: {or-oregon-food-bank: capital-park-food-pantry}
+  - days:
+    - wed
+    open: '17:00'
+    close: '19:00'
+  external_ids:
+    or-oregon-food-bank: capital-park-food-pantry
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/casa-rio
   name: Casa Rio
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -131,15 +245,23 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/center-for-addiction-and-counseling
   name: Center for Addiction and Counseling
   categories:
   - su-treatment
-  address: {street: 470 Lancaster Drive NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 470 Lancaster Drive NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.93543, lng: -122.9825}
+  geo:
+    lat: 44.93543
+    lng: -122.9825
   phone: 503-584-1906
   website: https://www.cacssalem.com
   services:
@@ -156,31 +278,47 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/center-street-outreach
   name: Center Street/Outreach
   categories:
   - child-care
-  address: {street: 2395 Center St NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2395 Center St NE
+    city: Salem
+    state: or
+    zip: '97301'
   description: Head Start early childhood program — 34 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.9401, lng: -123.00885}
+  geo:
+    lat: 44.9401
+    lng: -123.00885
   phone: 503-339-7943
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/chemawa-indian-health-center
   name: Chemawa Indian Health Center
   categories:
   - health
   description: IHS health center
-  address: {street: 3750 Chemawa Road NE, city: Salem, state: or, zip: '97305'}
-  geo: {lat: 44.99998, lng: -122.98295}
+  address:
+    street: 3750 Chemawa Road NE
+    city: Salem
+    state: or
+    zip: '97305'
+  geo:
+    lat: 44.99998
+    lng: -122.98295
   place: '4164900'
   phone: 503-304-7600
   website: https://www.ihs.gov/Portland/healthcarefacilities/westernoregon/
@@ -196,30 +334,48 @@
   - Ophthalmology
   - Pharmacy
   - Preventive Medicine & Wellness
-  external_ids: {asufac: '708210'}
+  external_ids:
+    asufac: '708210'
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/claggett-creek-middle
   name: Claggett Creek Middle
   categories:
   - meal-program
-  address: {street: 1810 Alder Dr. Ne, city: Salem, state: or, zip: '97303'}
+  address:
+    street: 1810 Alder Dr. Ne
+    city: Salem
+    state: or
+    zip: '97303'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.98549, lng: -123.01128}
+  geo:
+    lat: 44.98549
+    lng: -123.01128
   phone: (503) 399-3701
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0099}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0099
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/community-counseling-center-catholic-community-s
   name: Community Counseling Center Catholic Community Services
   categories:
   - mh-treatment
-  address: {street: 3737 Portland Road NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 3737 Portland Road NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.97357, lng: -123.00306}
+  geo:
+    lat: 44.97357
+    lng: -123.00306
   phone: 503-390-2600
   website: https://ccswv.org/
   services:
@@ -228,14 +384,22 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/confederated-tribes-of-grand-ronde
   name: Confederated Tribes of Grand Ronde
   categories:
   - su-treatment
-  address: {street: 1011 Commercial Street NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 1011 Commercial Street NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.95051, lng: -123.03621}
+  geo:
+    lat: 44.95051
+    lng: -123.03621
   phone: 503-983-9900
   website: https://
   services:
@@ -246,13 +410,18 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/danebo
   name: Danebo
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -265,15 +434,23 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/eastwood-boys-girls-club-branch
   name: Eastwood Boys & Girls Club Branch
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 1120 Savage Rd Ne, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.94609, lng: -122.99558}
+  address:
+    street: 1120 Savage Rd Ne
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.94609
+    lng: -122.99558
   place: '4164900'
   phone: 503-361-3081
   website: http://www.bgc-salem.org
@@ -281,30 +458,48 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '5025', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '5025'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/edgewater
   name: Edgewater
   categories:
   - child-care
-  address: {street: 1135 Edgewater St NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1135 Edgewater St NW
+    city: Salem
+    state: or
+    zip: '97304'
   description: Head Start early childhood program — 16 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.94126, lng: -123.05751}
+  geo:
+    lat: 44.94126
+    lng: -123.05751
   phone: 503-363-3057
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/epping-homestead-branch
   name: Epping Homestead Branch
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 3805 Lancaster Dr Ne, city: Salem, state: or, zip: '97305'}
-  geo: {lat: 44.97433, lng: -122.98398}
+  address:
+    street: 3805 Lancaster Dr Ne
+    city: Salem
+    state: or
+    zip: '97305'
+  geo:
+    lat: 44.97433
+    lng: -122.98398
   place: '4164900'
   phone: 503-407-6360
   website: http://www.bgc-salem.org
@@ -312,57 +507,96 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '10886', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '10886'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/family-building-blocks-helen-s-place
   name: Family Building Blocks Helen's Place
   categories:
   - child-care
-  address: {street: 180 18th St NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 180 18th St NE
+    city: Salem
+    state: or
+    zip: '97301'
   description: Head Start early childhood program — 70 funded slots; operated by Family Building Blocks.
   place: '4164900'
-  geo: {lat: 44.93534, lng: -123.0186}
+  geo:
+    lat: 44.93534
+    lng: -123.0186
   phone: 503-566-2132
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/feed-salem
   name: FEED Salem
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 1268 Broadway St. NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 1268 Broadway St. NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.95173, lng: -123.03349}
+  geo:
+    lat: 44.95173
+    lng: -123.03349
   phone: 503-581-2129
   hours:
-  - {days: [sat], open: '10:00', close: '12:00'}
-  external_ids: {or-oregon-food-bank: feed-salem}
+  - days:
+    - sat
+    open: '10:00'
+    close: '12:00'
+  external_ids:
+    or-oregon-food-bank: feed-salem
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/four-corners-elem
   name: Four Corners Elem
   categories:
   - meal-program
-  address: {street: 500 Elma Avenue Se, city: Salem, state: or, zip: '97317'}
+  address:
+    street: 500 Elma Avenue Se
+    city: Salem
+    state: or
+    zip: '97317'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.92257, lng: -122.97815}
+  geo:
+    lat: 44.92257
+    lng: -122.97815
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 08_OR_SFSP_0187}
+  external_ids:
+    usda_master: Cycle 08_OR_SFSP_0187
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/great-circle-recovery-salem
   name: Great Circle Recovery Salem
   categories:
   - su-treatment
-  address: {street: 1011 Commercial Street NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 1011 Commercial Street NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.95051, lng: -123.03621}
+  geo:
+    lat: 44.95051
+    lng: -123.03621
   phone: 503-983-9900
   website: https://www.greatcirclerecovery.org/
   services:
@@ -376,13 +610,18 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/harlow-rth
   name: Harlow RTH
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -395,87 +634,118 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/hawthorne-ehs
   name: Hawthorne EHS
   categories:
   - child-care
-  address: {street: 748 Hawthorne Ave NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 748 Hawthorne Ave NE
+    city: Salem
+    state: or
+    zip: '97301'
   description: Head Start early childhood program — 16 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.94049, lng: -122.99172}
+  geo:
+    lat: 44.94049
+    lng: -122.99172
   phone: 503-581-1152
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/hoap-services-nw-human-services
   name: HOAP Services (NW Human Services)
   org: or/oregon-food-bank
   categories:
   - meal-program
-  address: {street: 694 Church St. NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 694 Church St. NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.94553, lng: -123.03179}
+  geo:
+    lat: 44.94553
+    lng: -123.03179
   phone: 503-588-5827
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '09:00', close: '13:00'}
-  external_ids: {or-oregon-food-bank: hoap-services-nw-human-services}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 09:00
+    close: '13:00'
+  external_ids:
+    or-oregon-food-bank: hoap-services-nw-human-services
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/jan-s-place
   name: Jan's Place
   categories:
   - child-care
-  address: {street: 3674 12th St SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 3674 12th St SE
+    city: Salem
+    state: or
+    zip: '97302'
   description: Head Start early childhood program — 108 funded slots; operated by Family Building Blocks.
   place: '4164900'
-  geo: {lat: 44.9023, lng: -123.0301}
+  geo:
+    lat: 44.9023
+    lng: -123.0301
   phone: 503-566-2132
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/judson-middle
   name: Judson Middle
   categories:
   - meal-program
-  address: {street: 4512 Jones Rd Se, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4512 Jones Rd Se
+    city: Salem
+    state: or
+    zip: '97302'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.88943, lng: -123.04557}
+  geo:
+    lat: 44.88943
+    lng: -123.04557
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0266}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0266
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: or/salem/kairos-cadenza
-  name: Kairos Cadenza
-  categories:
-  - su-treatment
-  - mh-treatment
-  address: {city: Salem, state: or, zip: '97305'}
-  place: '4164900'
-  phone: 541-956-4943
-  website: https://www.kairosnw.org
-  services:
-  - Residential/24-hour residential
-  - Young adults
-  - Persons  18 and older with serious mental illness (SMI)
-  eligibility: Serves children/adolescents, young adults, adults.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/kaiser-permanente-keizer-station-department-of-a
   name: Kaiser Permanente Keizer Station Department of Addiction Medicine
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 5940 Ulali Drive NE, city: Salem, state: or, zip: '97306'}
+  address:
+    street: 5940 Ulali Drive NE
+    city: Salem
+    state: or
+    zip: '97306'
   place: '4164900'
-  geo: {lat: 45.00748, lng: -122.99728}
+  geo:
+    lat: 45.00748
+    lng: -122.99728
   phone: 855-632-8280
   website: https://www.kp.org
   services:
@@ -490,15 +760,23 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/kaiser-permanente-north-lancaster-department-of
   name: Kaiser Permanente North Lancaster/Department of Add Med
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 2400 Lancaster Drive NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 2400 Lancaster Drive NE
+    city: Salem
+    state: or
+    zip: '97305'
   place: '4164900'
-  geo: {lat: 44.9571, lng: -122.98273}
+  geo:
+    lat: 44.9571
+    lng: -122.98273
   phone: 855-632-8280
   website: https://www.kp.org
   services:
@@ -520,15 +798,23 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/kaiser-permanente-skyline-department-of-addictio
   name: Kaiser Permanente/Skyline Department of Addiction Medicine
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 5125  South Skyline Road, city: Salem, state: or, zip: '97306'}
+  address:
+    street: 5125  South Skyline Road
+    city: Salem
+    state: or
+    zip: '97306'
   place: '4164900'
-  geo: {lat: 44.88248, lng: -123.07219}
+  geo:
+    lat: 44.88248
+    lng: -123.07219
   phone: 855-632-8280
   website: https://kp.org
   services:
@@ -543,14 +829,22 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/knudson-branch
   name: Knudson Branch
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 1395 Summer St Ne, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.95074, lng: -123.02486}
+  address:
+    street: 1395 Summer St Ne
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.95074
+    lng: -123.02486
   place: '4164900'
   phone: 503-581-7383
   website: http://www.bgc-salem.org
@@ -558,126 +852,213 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '2338', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '2338'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/la-clinica-guadalupe
   name: La Clinica Guadalupe
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: 1495 Liberty St NE, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.95419, lng: -123.03293}
+  address:
+    street: 1495 Liberty St NE
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.95419
+    lng: -123.03293
   place: '4164900'
   phone: 503-364-5818
   website: https://guadalupeclinicsalem.org
   cost: free
-  external_ids: {nafc: la-clinica-guadalupe}
+  external_ids:
+    nafc: la-clinica-guadalupe
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: or/salem/lamb-elementary
   name: Lamb Elementary
   categories:
   - meal-program
-  address: {street: 4930 Herrin Road Ne, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4930 Herrin Road Ne
+    city: Salem
+    state: or
+    zip: '97305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.97693, lng: -122.96024}
+  geo:
+    lat: 44.97693
+    lng: -122.96024
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0282}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0282
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/lancaster-family-health-center-at-beverly
   name: Lancaster Family Health Center at Beverly
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: '3896 Beverly Ave NE, Suite 22', city: Salem, state: or, zip: '97305'}
+  address:
+    street: 3896 Beverly Ave NE, Suite 22
+    city: Salem
+    state: or
+    zip: '97305'
   place: '4164900'
-  geo: {lat: 44.96085, lng: -122.98487}
+  geo:
+    lat: 44.96085
+    lng: -122.98487
   phone: 503-588-0076
   website: https://www.yvfwc.com
-  external_ids: {bphc: BPS-H80-004780}
+  external_ids:
+    bphc: BPS-H80-004780
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/lancaster-family-health-center-at-lancaster
   name: Lancaster Family Health Center at Lancaster
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 255 Lancaster Dr NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 255 Lancaster Dr NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.92996, lng: -122.98473}
+  geo:
+    lat: 44.92996
+    lng: -122.98473
   phone: 503-588-0076
   website: https://www.yvfwc.com
-  external_ids: {bphc: BPS-H80-017938}
+  external_ids:
+    bphc: BPS-H80-017938
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/life-essentials-at-life-church
   name: Life Essentials at Life Church
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 255 College Drive NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 255 College Drive NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.93309, lng: -123.07986}
+  geo:
+    lat: 44.93309
+    lng: -123.07986
   phone: 503-362-0362
   hours:
-  - {days: [thu], open: '18:00', close: '20:00'}
-  external_ids: {or-oregon-food-bank: life-essentials-at-life-church}
+  - days:
+    - thu
+    open: '18:00'
+    close: '20:00'
+  external_ids:
+    or-oregon-food-bank: life-essentials-at-life-church
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/lord-s-cupboard-trinity-umc
   name: Lord's Cupboard - Trinity UMC
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 590 Elma Ave. SE, city: Salem, state: or, zip: '97317'}
+  address:
+    street: 590 Elma Ave. SE
+    city: Salem
+    state: or
+    zip: '97317'
   place: '4164900'
-  geo: {lat: 44.92219, lng: -122.97758}
+  geo:
+    lat: 44.92219
+    lng: -122.97758
   phone: 503-585-8851
   hours:
-  - {days: [sat], open: '12:30', close: '14:30'}
-  external_ids: {or-oregon-food-bank: lord-s-cupboard-trinity-umc}
+  - days:
+    - sat
+    open: '12:30'
+    close: '14:30'
+  external_ids:
+    or-oregon-food-bank: lord-s-cupboard-trinity-umc
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/mano-a-mano-saddle-club
   name: Mano-A-Mano Saddle Club
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: '2921 Saddle Club St. SE, Suite #1009', city: Salem, state: or, zip: '97301'}
+  address:
+    street: '2921 Saddle Club St. SE, Suite #1009'
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.90216, lng: -122.97091}
+  geo:
+    lat: 44.90216
+    lng: -122.97091
   phone: 503-315-2290
   hours:
-  - {days: [tue], open: '12:20', close: '17:45'}
-  - {days: [thu], open: '00:20', close: '17:45'}
-  external_ids: {or-oregon-food-bank: mano-a-mano-saddle-club}
+  - days:
+    - tue
+    open: '12:20'
+    close: '17:45'
+  - days:
+    - thu
+    open: 00:20
+    close: '17:45'
+  external_ids:
+    or-oregon-food-bank: mano-a-mano-saddle-club
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/maple
   name: Maple
   categories:
   - child-care
-  address: {street: 999 Locust St NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 999 Locust St NE
+    city: Salem
+    state: or
+    zip: '97301'
   description: Head Start early childhood program — 17 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.9676, lng: -123.0222}
+  geo:
+    lat: 44.9676
+    lng: -123.0222
   phone: 503-362-5434
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/marion-co-health-dept-wic-clinic
   name: Marion Co. Health Dept. WIC Clinic
   categories:
@@ -686,22 +1067,37 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 3160 Center St NE, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.93887, lng: -122.99622}
+  address:
+    street: 3160 Center St NE
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.93887
+    lng: -122.99622
   place: '4164900'
   phone: 503-588-5057
   website: http://www.co.marion.or.us/HLT/PH/WIC/Pages/default.aspx
-  external_ids: {wic: 'or-wic:85'}
+  external_ids:
+    wic: or-wic:85
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/marion-county-health-and-human-servs-addiction-t
   name: Marion County Health and Human Servs Addiction Treatment Services
   categories:
   - su-treatment
-  address: {street: 2045 Silverton Road NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2045 Silverton Road NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96361, lng: -123.00852}
+  geo:
+    lat: 44.96361
+    lng: -123.00852
   phone: 503-588-5358
   website: https://www.co.marion.or.us/HLT/Pages/directory.aspx
   services:
@@ -723,12 +1119,18 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/marion-county-health-and-human-servs-addiction-t-2
-  name: Marion County Health and Human Servs Addiction Treatment Services Her Place
+  name: Marion County Health and Human Servs Addiction Treatment Services
   categories:
   - su-treatment
-  address: {street: 3180 Center Street, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 3180 Center Street
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
   phone: 503-576-4660
   website: https://www.co.marion.or.us/HLT/
@@ -750,15 +1152,23 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.93976, lng: -122.99542}
 - id: or/salem/marion-county-health-department-childrens-behavi
   name: Marion County Health Department Childrens Behavioral Health
   categories:
   - mh-treatment
-  address: {street: 3867 Wolverine Street NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 3867 Wolverine Street NE
+    city: Salem
+    state: or
+    zip: '97305'
   place: '4164900'
-  geo: {lat: 44.95968, lng: -122.98418}
+  geo:
+    lat: 44.95968
+    lng: -122.98418
   phone: 503-588-5352
   website: https://www.co.marion.or.us/HLT/MH/Pages/cmh.aspx
   services:
@@ -775,65 +1185,101 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/marion-county-housing-authority
   name: Marion County Housing Authority
   categories:
   - housing-assistance
-  address: {street: 2645 Portland Rd NE Ste 200, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2645 Portland Rd NE Ste 200
+    city: Salem
+    state: or
+    zip: '97301'
   description: Public housing and Housing Choice Voucher agency
   place: '4164900'
-  geo: {lat: 44.96154, lng: -123.0145}
+  geo:
+    lat: 44.96154
+    lng: -123.0145
   phone: 503-798-4170
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/mckay-high
   name: Mckay High
   categories:
   - meal-program
-  address: {street: 2440 Lancaster Dr Ne, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 2440 Lancaster Dr Ne
+    city: Salem
+    state: or
+    zip: '97305'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.95722, lng: -122.98363}
+  geo:
+    lat: 44.95722
+    lng: -122.98363
   phone: (503) 399-3080
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0333}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0333
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/mid-willamette-valley-community-action-agency
   name: Mid-Willamette Valley Community Action Agency
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Marion, Polk Counties
-  address: {street: 2475 Center St., city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2475 Center St.
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
   phone: 503-588-9016
   email: info@mwvcaa.org
   website: https://mwvcaa.org/programs/energy-services/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 44.94005, lng: -123.00767}
 - id: or/salem/middle-grove
   name: Middle Grove
   categories:
   - child-care
-  address: {street: 4950 Silverton Rd NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4950 Silverton Rd NE
+    city: Salem
+    state: or
+    zip: '97305'
   description: Head Start early childhood program — 170 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.96993, lng: -122.95986}
+  geo:
+    lat: 44.96993
+    lng: -122.95986
   phone: 971-301-8000
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/myers
   name: Myers
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -846,162 +1292,279 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/new-harvest-church-food-pantry
   name: New Harvest Church Food Pantry
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 4290 Portland Road NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 4290 Portland Road NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.98133, lng: -122.99443}
+  geo:
+    lat: 44.98133
+    lng: -122.99443
   phone: 503-763-6911
   hours:
-  - {days: [sat], open: '09:00', close: '11:00'}
-  external_ids: {or-oregon-food-bank: new-harvest-church-food-pantry}
+  - days:
+    - sat
+    open: 09:00
+    close: '11:00'
+  external_ids:
+    or-oregon-food-bank: new-harvest-church-food-pantry
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/new-hope-foursquare-church
   name: New Hope Foursquare Church
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 4963 Swegle Road NE, city: Salem, state: or, zip: '97381'}
+  address:
+    street: 4963 Swegle Road NE
+    city: Salem
+    state: or
+    zip: '97381'
   place: '4164900'
-  geo: {lat: 44.95027, lng: -122.95979}
+  geo:
+    lat: 44.95027
+    lng: -122.95979
   phone: 503-370-8886
   hours:
-  - {days: [sun], open: '14:00', close: '16:00', note: 2nd & 4th Sundays}
-  external_ids: {or-oregon-food-bank: new-hope-foursquare-church}
+  - days:
+    - sun
+    open: '14:00'
+    close: '16:00'
+    note: 2nd & 4th Sundays
+  external_ids:
+    or-oregon-food-bank: new-hope-foursquare-church
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/northwest-human-services-hoap-homeless-outreach
   name: NORTHWEST HUMAN SERVICES-HOAP Homeless Outreach & Advocacy Project
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 694 Church St NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 694 Church St NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.94557, lng: -123.03199}
+  geo:
+    lat: 44.94557
+    lng: -123.03199
   phone: 503-588-5827
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-000304}
+  external_ids:
+    bphc: BPS-H80-000304
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/northwest-human-services-host-youth-family-progr
   name: NORTHWEST HUMAN SERVICES-HOST Youth & Family Program
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 1143 Liberty St NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 1143 Liberty St NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.95125, lng: -123.0345}
+  geo:
+    lat: 44.95126
+    lng: -123.03451
   phone: 503-588-5825
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-005602}
+  external_ids:
+    bphc: BPS-H80-005602
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/pauline-memorial-ame-zion-church
   name: Pauline Memorial AME Zion Church
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 3593 Sunnyview Road, city: Salem, state: or, zip: '97303'}
+  address:
+    street: 3593 Sunnyview Road
+    city: Salem
+    state: or
+    zip: '97303'
   place: '4164900'
-  geo: {lat: 44.95413, lng: -122.98912}
+  geo:
+    lat: 44.95413
+    lng: -122.98912
   phone: 971-239-3469
   hours:
-  - {days: [tue], open: '09:30', close: '12:30'}
-  external_ids: {or-oregon-food-bank: pauline-memorial-ame-zion-church}
+  - days:
+    - tue
+    open: 09:30
+    close: '12:30'
+  external_ids:
+    or-oregon-food-bank: pauline-memorial-ame-zion-church
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/people-s-church-pantry
   name: People's Church Pantry
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 4500 Lancaster Drive NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4500 Lancaster Drive NE
+    city: Salem
+    state: or
+    zip: '97305'
   place: '4164900'
-  geo: {lat: 44.98546, lng: -122.98065}
+  geo:
+    lat: 44.98546
+    lng: -122.98065
   phone: 503-304-4000
   hours:
-  - {days: [mon], open: '09:00', close: '10:30'}
-  - {days: [sat], open: '10:00', close: '11:30'}
-  external_ids: {or-oregon-food-bank: people-s-church-pantry}
+  - days:
+    - mon
+    open: 09:00
+    close: '10:30'
+  - days:
+    - sat
+    open: '10:00'
+    close: '11:30'
+  external_ids:
+    or-oregon-food-bank: people-s-church-pantry
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/quickcare-clinic
   name: QuickCare Clinic
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 1233 Edgewater St NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1233 Edgewater St NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.94023, lng: -123.05987}
+  geo:
+    lat: 44.94023
+    lng: -123.05987
   phone: 503-588-5816
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-036091}
+  external_ids:
+    bphc: BPS-H80-036091
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/richmond-school-boys-girls-club
   name: Richmond School Boys & Girls Club
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 466 Richmond Ave SE, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.92946, lng: -123.01273}
+  address:
+    street: 466 Richmond Ave SE
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.92946
+    lng: -123.01273
   place: '4164900'
   phone: 503-507-2945
   website: http://www.bgc-salem.org
   services:
   - Meals
-  external_ids: {bgca_site: '6683', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '6683'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem
   name: Salem
   categories:
   - child-care
-  address: {street: 3960 Chemawa Rd NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 3960 Chemawa Rd NE
+    city: Salem
+    state: or
+    zip: '97305'
   description: Head Start early childhood program — 20 funded slots; operated by Confederated Tribes of
     Siletz Indians.
   place: '4164900'
-  geo: {lat: 45.00393, lng: -122.98107}
+  geo:
+    lat: 45.00393
+    lng: -122.98107
   phone: 503-393-6942
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-adventist-community-services
   name: Salem Adventist Community Services
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 1860 Summer Street NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 1860 Summer Street NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.95515, lng: -123.02203}
+  geo:
+    lat: 44.95515
+    lng: -123.02203
   phone: 503-363-8893
   hours:
-  - {days: [wed], open: '09:00', close: '12:00'}
-  external_ids: {or-oregon-food-bank: salem-adventist-community-services}
+  - days:
+    - wed
+    open: 09:00
+    close: '12:00'
+  external_ids:
+    or-oregon-food-bank: salem-adventist-community-services
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/salem-cboc
   name: Salem CBOC
   categories:
   - su-treatment
-  address: {street: 1750 McGilchrist Street SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1750 McGilchrist Street SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.91585, lng: -123.02438}
+  geo:
+    lat: 44.91585
+    lng: -123.02438
   phone: 503-210-4900
   website: https://www.va.gov/portland-health-care/locations/salem-va-clinic/
   services:
@@ -1009,17 +1572,25 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Veterans
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-comprehensive-treatment-center-crc-health
   name: Salem Comprehensive Treatment Center CRC Health Oregon LLC
   categories:
   - su-treatment
-  address: {street: 1160 Liberty Street SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1160 Liberty Street SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.92941, lng: -123.0422}
+  geo:
+    lat: 44.92941
+    lng: -123.0422
   phone: 503-391-9762
   website: https://www.ctcprograms.com/salem
   services:
@@ -1033,40 +1604,61 @@
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults, seniors.
+  - de
+  eligibility: Serves young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-free-clinics
   name: Salem Free Clinics
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: '1300 Broadway St NE, Suite 104', city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.95263, lng: -123.0304}
+  address:
+    street: 1300 Broadway St NE, Suite 104
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.95263
+    lng: -123.0304
   place: '4164900'
   phone: 503-990-8772
   website: https://salemfreeclinics.org/
   cost: free
-  external_ids: {nafc: salem-free-clinics}
+  external_ids:
+    nafc: salem-free-clinics
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: or/salem/salem-keizer-teen-parent-program
   name: Salem Keizer Teen Parent Program
   categories:
   - child-care
-  address: {street: 4071 Winema Pl NE, street2: Bldg 50, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4071 Winema Pl NE
+    street2: Bldg 50
+    city: Salem
+    state: or
+    zip: '97305'
   description: Head Start early childhood program — 22 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.9739, lng: -122.98094}
+  geo:
+    lat: 44.9739
+    lng: -122.98094
   phone: 503-365-4807
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-kroc-corps-community-center
   name: Salem Kroc Corps Community Center
   categories:
@@ -1074,8 +1666,14 @@
   - family-support
   - family-youth
   description: Salvation Army kroc center
-  address: {street: 1865 Bill Frey Dr. N.E., city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.97624, lng: -123.00916}
+  address:
+    street: 1865 Bill Frey Dr. N.E.
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.97624
+    lng: -123.00916
   place: '4164900'
   phone: 503-566-5762
   website: https://www.salvationarmyusa.org/or/salem/bill-frey-dr-ne/
@@ -1086,79 +1684,132 @@
   - Senior Services
   - Family Services
   - Youth Services
-  external_ids: {gdos: 8a78d5473e314c1b013e37737aa410a4}
+  external_ids:
+    gdos: 8a78d5473e314c1b013e37737aa410a4
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-mission-faith-ministries
   name: Salem Mission Faith Ministries
   org: or/oregon-food-bank
   categories:
   - food-pantry
   place: '4164900'
-  geo: {lat: 44.89276, lng: -123.02813}
+  geo:
+    lat: 44.89276
+    lng: -123.02813
   hours:
-  - {days: [tue], open: '16:00', close: '18:00', note: '2nd, 3rd, & 4th Tuesday'}
-  external_ids: {or-oregon-food-bank: salem-mission-faith-ministries}
+  - days:
+    - tue
+    open: '16:00'
+    close: '18:00'
+    note: 2nd, 3rd, & 4th Tuesday
+  external_ids:
+    or-oregon-food-bank: salem-mission-faith-ministries
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/salem-mobile-vet-center
   name: Salem Mobile Vet Center
   categories: &id001
   - vet-center
-  address: {street: '2645 Portland Road, NE, Suite 250', city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2645 Portland Road, NE, Suite 250
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96139, lng: -123.01487}
+  geo:
+    lat: 44.96139
+    lng: -123.01487
   phone: 503-362-9911
   website: https://www.va.gov/salem-vet-center/locations/#salem-mobile-vet-center
-  external_ids: {va: vc_0840MVC}
+  external_ids:
+    va: vc_0840MVC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-or-transitional-shelter
   name: Salem, OR Transitional Shelter
   categories:
   - transitional-housing
   - emergency-shelter
   description: Salvation Army transitional housing shelter
-  address: {street: 1901 Front Street N.E., city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.95874, lng: -123.03449}
+  address:
+    street: 1901 Front Street N.E.
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.95874
+    lng: -123.03449
   place: '4164900'
   phone: 503-585-6688
   website: https://www.salvationarmyusa.org/or/salem/front-street-ne/
   services:
   - Homelessness
-  external_ids: {gdos: 8a78d5473e314c1b013e377015700fba}
+  external_ids:
+    gdos: 8a78d5473e314c1b013e377015700fba
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-regional-office
   name: Salem Regional Office
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of Legal Aid Services of Oregon
   org: or/legal-aid-services-of-oregon
-  address: {street: 105 High Street SE, street2: '0', city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.93956, lng: -123.03731}
+  address:
+    street: 105 High Street SE
+    street2: '0'
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.93956
+    lng: -123.03731
   place: '4164900'
-  external_ids: {lsc_office: '93800418'}
+  external_ids:
+    lsc_office: '93800418'
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-va-clinic
   name: Salem VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1750 McGilchrist Street Southeast, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1750 McGilchrist Street Southeast
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.91603, lng: -123.02439}
+  geo:
+    lat: 44.91603
+    lng: -123.02439
   phone: 971-304-2200
   website: https://www.va.gov/portland-health-care/locations/salem-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 07:30
+    close: '16:30'
   services:
   - Audiology and speech
   - Blind and low vision rehabilitation
@@ -1177,20 +1828,36 @@
   - Telehealth
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_648GB}
+  external_ids:
+    va: vha_648GB
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salem-vet-center
   name: Salem Vet Center
   categories: *id001
-  address: {street: '2645 Portland Road, NE, Suite 250', city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2645 Portland Road, NE, Suite 250
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.96139, lng: -123.01487}
+  geo:
+    lat: 44.96139
+    lng: -123.01487
   phone: 503-362-9911
   website: https://www.va.gov/salem-vet-center/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Addiction and substance use care
   - Community engagement
@@ -1206,10 +1873,13 @@
   - Whole health
   - Women Veteran care
   - Workshops and classes
-  external_ids: {va: vc_0640V}
+  external_ids:
+    va: vc_0640V
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salud-wic-program
   name: Salud WIC Program
   categories:
@@ -1218,15 +1888,24 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 3886 Beverly Ave NE, city: Salem, state: or, zip: '97305'}
-  geo: {lat: 44.96039, lng: -122.98487}
+  address:
+    street: 3886 Beverly Ave NE
+    city: Salem
+    state: or
+    zip: '97305'
+  geo:
+    lat: 44.96039
+    lng: -122.98487
   place: '4164900'
   phone: 503-391-7872
   website: http://www.saludwic.org/
-  external_ids: {wic: 'or-wic:91'}
+  external_ids:
+    wic: or-wic:91
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salud-wic-program-2
   name: Salud WIC Program
   categories:
@@ -1235,51 +1914,91 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 225 Lancaster Dr VE, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.93, lng: -122.98473}
+  address:
+    street: 225 Lancaster Dr VE
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.93
+    lng: -122.98473
   place: '4164900'
   phone: 503-576-8360
   website: http://www.saludwic.org/
-  external_ids: {wic: 'or-wic:107'}
+  external_ids:
+    wic: or-wic:107
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/salvation-army-salem-food-pantry
   name: Salvation Army Salem Food Pantry
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 1977 Front St. NE, city: Salem, state: or, zip: '97303'}
+  address:
+    street: 1977 Front St. NE
+    city: Salem
+    state: or
+    zip: '97303'
   place: '4164900'
-  geo: {lat: 44.95941, lng: -123.03415}
+  geo:
+    lat: 44.95941
+    lng: -123.03415
   phone: 503-585-6688
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '09:00', close: '12:00'}
-  external_ids: {or-oregon-food-bank: salvation-army-salem-food-pantry}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 09:00
+    close: '12:00'
+  external_ids:
+    or-oregon-food-bank: salvation-army-salem-food-pantry
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/sda-salem-spanish
   name: SDA Salem Spanish
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 4625 Cordon Road NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4625 Cordon Road NE
+    city: Salem
+    state: or
+    zip: '97305'
   place: '4164900'
-  geo: {lat: 44.98921, lng: -122.95666}
+  geo:
+    lat: 44.98921
+    lng: -122.95666
   phone: 503-856-9700
   hours:
-  - {days: [wed], open: '17:30', close: '19:30'}
-  external_ids: {or-oregon-food-bank: sda-salem-spanish}
+  - days:
+    - wed
+    open: '17:30'
+    close: '19:30'
+  external_ids:
+    or-oregon-food-bank: sda-salem-spanish
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/sequoia-creek
   name: Sequoia Creek
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -1292,16 +2011,24 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/serenity-lane-salem
   name: Serenity Lane Salem
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 960 Liberty Street SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 960 Liberty Street SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.93144, lng: -123.04192}
+  geo:
+    lat: 44.93144
+    lng: -123.04192
   phone: 503-588-2804
   website: https://serenitylane.org
   services:
@@ -1323,68 +2050,113 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/shared-blessings-at-mosaic-church
   name: Shared Blessings (at Mosaic Church)
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 1675 Wallace Road NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1675 Wallace Road NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.95816, lng: -123.0539}
+  geo:
+    lat: 44.95816
+    lng: -123.0539
   phone: 503-364-0002
   hours:
-  - {days: [wed], open: '08:30', close: '11:00'}
-  external_ids: {or-oregon-food-bank: shared-blessing-westgate-assembly-of-god}
+  - days:
+    - wed
+    open: 08:30
+    close: '11:00'
+  external_ids:
+    or-oregon-food-bank: shared-blessing-westgate-assembly-of-god
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/silverton-road
   name: Silverton Road
   categories:
   - child-care
-  address: {street: 4412 Silverton Rd NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4412 Silverton Rd NE
+    city: Salem
+    state: or
+    zip: '97305'
   description: Head Start early childhood program — 17 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.96982, lng: -122.97458}
+  geo:
+    lat: 44.96982
+    lng: -122.97458
   phone: 503-584-1788
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/south-marion-concordia
   name: South Marion-Concordia
   categories:
   - child-care
-  address: {street: 4611 Lancaster Dr NE, city: Salem, state: or, zip: '97305'}
+  address:
+    street: 4611 Lancaster Dr NE
+    city: Salem
+    state: or
+    zip: '97305'
   description: Head Start early childhood program — 64 funded slots; operated by Oregon Child Development
     Coalition.
   place: '4164900'
-  geo: {lat: 44.98785, lng: -122.98375}
+  geo:
+    lat: 44.98785
+    lng: -122.98375
   phone: 503-485-0866
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/south-salem-high
   name: South Salem High
   categories:
   - meal-program
-  address: {street: 1910 Church St. Se, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1910 Church St. Se
+    city: Salem
+    state: or
+    zip: '97302'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.9219, lng: -123.04041}
+  geo:
+    lat: 44.9219
+    lng: -123.04041
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0494}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0494
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/swegle-boys-girls-club
   name: Swegle Boys & Girls Club
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 4445 MARKET ST NE, city: Salem, state: or, zip: '97301'}
-  geo: {lat: 44.95041, lng: -122.97596}
+  address:
+    street: 4445 MARKET ST NE
+    city: Salem
+    state: or
+    zip: '97301'
+  geo:
+    lat: 44.95041
+    lng: -122.97596
   place: '4164900'
   phone: 503-391-1519
   website: http://www.bgc-salem.org
@@ -1392,66 +2164,104 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '3498', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '3498'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/table-of-plenty
   name: Table of Plenty
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 4227 Lone Oak Rd. SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4227 Lone Oak Rd. SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
-  geo: {lat: 44.89485, lng: -123.04979}
+  geo:
+    lat: 44.89485
+    lng: -123.04979
   phone: 503-364-7202
   hours:
-  - {days: [thu], open: '16:30', close: '19:00'}
-  external_ids: {or-oregon-food-bank: table-of-plenty}
+  - days:
+    - thu
+    open: '16:30'
+    close: '19:00'
+  external_ids:
+    or-oregon-food-bank: table-of-plenty
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/the-strong-s-little-free-pantry
   name: The Strong's Little Free Pantry
   categories:
   - food-pantry
   place: '4164900'
-  geo: {lat: 44.93827, lng: -123.02303}
+  geo:
+    lat: 44.93827
+    lng: -123.02303
   website: https://mapping.littlefreepantry.org/pantry/3401
-  external_ids: {lfp: '3401'}
+  external_ids:
+    lfp: '3401'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/trinity-covenant-church-little-free-pantry
   name: Trinity Covenant Church Little Free Pantry
   categories:
   - food-pantry
   place: '4164900'
-  geo: {lat: 44.88417, lng: -123.06026}
+  geo:
+    lat: 44.88417
+    lng: -123.06026
   website: https://mapping.littlefreepantry.org/pantry/5237
-  external_ids: {lfp: '5237'}
+  external_ids:
+    lfp: '5237'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/union-gospel-mission-men-s-mission
   name: Union Gospel Mission - Men's Mission
   org: or/oregon-food-bank
   categories:
   - meal-program
-  address: {street: 777 Commercial St. NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 777 Commercial St. NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.9432, lng: -123.03954}
+  geo:
+    lat: 44.9432
+    lng: -123.03954
   phone: 503-362-3983
-  external_ids: {or-oregon-food-bank: union-gospel-mission-men-s-mission}
+  external_ids:
+    or-oregon-food-bank: union-gospel-mission-men-s-mission
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/via-verde
   name: Via Verde
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 4080 Reed Road SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 4080 Reed Road SE
+    city: Salem
+    state: or
+    zip: '97302'
   place: '4164900'
   phone: 503-581-1732
   website: https://www.shangrilaoregon.org
@@ -1465,130 +2275,215 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   geo: {lat: 44.89624, lng: -123.01045}
 - id: or/salem/wade-harris-outreach-ministries
   name: Wade Harris Outreach Ministries
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 865 Medical Center Drive NE, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 865 Medical Center Drive NE
+    city: Salem
+    state: or
+    zip: '97301'
   place: '4164900'
-  geo: {lat: 44.94319, lng: -123.0103}
+  geo:
+    lat: 44.94319
+    lng: -123.0103
   hours:
-  - {days: [fri], open: '10:00', close: '11:30'}
-  external_ids: {or-oregon-food-bank: wade-harris-outreach-ministries}
+  - days:
+    - fri
+    open: '10:00'
+    close: '11:30'
+  external_ids:
+    or-oregon-food-bank: wade-harris-outreach-ministries
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/salem/waldo-middle
   name: Waldo Middle
   categories:
   - meal-program
-  address: {street: 2805 Lansing Ave. Ne, city: Salem, state: or, zip: '97301'}
+  address:
+    street: 2805 Lansing Ave. Ne
+    city: Salem
+    state: or
+    zip: '97301'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.96188, lng: -122.99882}
+  geo:
+    lat: 44.96188
+    lng: -122.99882
   phone: (503) 399-3215
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0566}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0566
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/wallace
   name: Wallace
   categories:
   - child-care
-  address: {street: 1205 Wallace Rd NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1205 Wallace Rd NW
+    city: Salem
+    state: or
+    zip: '97304'
   description: Head Start early childhood program — 51 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.95228, lng: -123.05305}
+  geo:
+    lat: 44.95228
+    lng: -123.05305
   phone: 503-581-1152
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/west-high
   name: West High
   categories:
   - meal-program
-  address: {street: 1776 Titan Dr. Nw, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1776 Titan Dr. Nw
+    city: Salem
+    state: or
+    zip: '97304'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Salem-Keizer SD 24J.
   place: '4164900'
-  geo: {lat: 44.95913, lng: -123.08621}
+  geo:
+    lat: 44.95913
+    lng: -123.08621
   phone: (503) 399-3091
-  external_ids: {usda_master: Cycle 04_OR_SFSP_0581}
+  external_ids:
+    usda_master: Cycle 04_OR_SFSP_0581
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/west-salem-boys-girls-branch
   name: West Salem Boys & Girls Branch
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: 1075 8th Street NW, city: Salem, state: or, zip: '97304'}
-  geo: {lat: 44.94769, lng: -123.05926}
+  address:
+    street: 1075 8th Street NW
+    city: Salem
+    state: or
+    zip: '97304'
+  geo:
+    lat: 44.94769
+    lng: -123.05926
   place: '4164900'
   website: http://www.bgc-salem.org
   services:
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '1401', bgca_org: '10843'}
+  external_ids:
+    bgca_site: '1401'
+    bgca_org: '10843'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/west-salem-clinic
   name: WEST SALEM CLINIC
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 1233 Edgewater St NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1233 Edgewater St NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.94023, lng: -123.05987}
+  geo:
+    lat: 44.94023
+    lng: -123.05987
   phone: 503-378-7526
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-004239}
+  external_ids:
+    bphc: BPS-H80-004239
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/west-salem-clinic-mental-health
   name: West Salem Clinic Mental Health
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 1233 Edgewater St NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1233 Edgewater St NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.94023, lng: -123.05987}
+  geo:
+    lat: 44.94023
+    lng: -123.05987
   phone: 503-588-5816
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-036090}
+  external_ids:
+    bphc: BPS-H80-036090
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/west-salem-dental-clinic
   name: West Salem Dental Clinic
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 1233 Edgewater St NW, city: Salem, state: or, zip: '97304'}
+  address:
+    street: 1233 Edgewater St NW
+    city: Salem
+    state: or
+    zip: '97304'
   place: '4164900'
-  geo: {lat: 44.94023, lng: -123.05987}
+  geo:
+    lat: 44.94023
+    lng: -123.05987
   phone: 503-378-7526
   website: https://www.northwesthumanservices.org
-  external_ids: {bphc: BPS-H80-036089}
+  external_ids:
+    bphc: BPS-H80-036089
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/salem/wilbur
   name: Wilbur
   categories:
   - child-care
-  address: {street: 1154 Wilbur St SE, city: Salem, state: or, zip: '97302'}
+  address:
+    street: 1154 Wilbur St SE
+    city: Salem
+    state: or
+    zip: '97302'
   description: Head Start early childhood program — 16 funded slots; operated by Mid-Willamette Valley
     CAA.
   place: '4164900'
-  geo: {lat: 44.92435, lng: -123.03158}
+  geo:
+    lat: 44.92435
+    lng: -123.03158
   phone: 503-585-6509
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

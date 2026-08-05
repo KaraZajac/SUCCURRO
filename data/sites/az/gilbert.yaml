@@ -12,7 +12,7 @@
   external_ids: {wic: 'az-dhs:138'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/care-clinic
   name: Care Clinic
   categories:
@@ -29,24 +29,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: az/gilbert/cleanslate-centers
-  name: CleanSlate Centers
-  categories:
-  - su-treatment
-  address: {street: 2451 East Baseline Road, city: Gilbert, state: az, zip: '85234'}
-  place: '0427400'
-  geo: {lat: 33.37879, lng: -111.778}
-  phone: 602-313-4391
-  website: https://www.cleanslatecenters.com
-  services:
-  - Outpatient
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  eligibility: Serves young adults, adults, seniors.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/copper-springs-east
   name: Copper Springs East
   categories:
@@ -60,8 +43,15 @@
   services:
   - Hospital inpatient/24-hour hospital inpatient
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Members of military families
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
   languages:
   - en
   - es
@@ -69,7 +59,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/down-town-gilbert
   name: Down Town Gilbert
   categories:
@@ -80,7 +70,7 @@
   external_ids: {lfp: '4993'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: az/gilbert/down-town-gilbert-2
   name: Down Town Gilbert
   categories:
@@ -91,7 +81,7 @@
   external_ids: {lfp: '4992'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: az/gilbert/gateway-campus-gateway-campus-integrated-health
   name: Gateway Campus Gateway Campus Integrated Health Home
   categories:
@@ -104,21 +94,16 @@
   website: https://copahealth.org/
   services:
   - Outpatient
-  - Seniors or older adults
-  - Veterans
-  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  - Persons with eating disorders
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
-  languages:
-  - en
-  - es
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/gilbert-b-g-club
   name: Gilbert B&G Club
   categories:
@@ -131,7 +116,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/gilbert-branch
   name: Gilbert Branch
   categories:
@@ -149,7 +134,7 @@
   external_ids: {bgca_site: '6246', bgca_org: '10696'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/gilbert-wic-at-maricopa-county
   name: Gilbert WIC At Maricopa County
   categories:
@@ -164,7 +149,7 @@
   external_ids: {wic: 'az-dhs:155'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/grossman-and-grossman-ltd-mesa-office
   name: Grossman and Grossman Ltd Mesa Office
   categories:
@@ -181,6 +166,7 @@
   - Adolescents
   - Young adults
   - Adult women
+  - Pregnant/postpartum women
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
@@ -188,11 +174,11 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/mesquite-jr-high-school
   name: Mesquite Jr High School
   categories:
@@ -204,7 +190,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SFSP_0081}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/recovia-gilbert
   name: Recovia Gilbert
   categories:
@@ -217,19 +203,14 @@
   website: https://www.recovia.com
   services:
   - Outpatient
-  - Outpatient detoxification
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
+  - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced trauma
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/renaissance-recovery-center
   name: Renaissance Recovery Center
   categories:
@@ -254,11 +235,11 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/river-source-treatment-center-outpatient-service
   name: River Source Treatment Center Outpatient Services
   categories:
@@ -271,13 +252,24 @@
   website: https://www.theriversource.org
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/san-tan-behavioral-health-services
   name: San Tan Behavioral Health Services
   categories:
@@ -301,7 +293,24 @@
   external_ids: {asufac: '656757'}
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: az/gilbert/spero-health
+  name: Spero Health
+  categories:
+  - su-treatment
+  address: {street: 2451 East Baseline Road, city: Gilbert, state: az, zip: '85234'}
+  place: '0427400'
+  geo: {lat: 33.37874, lng: -111.7778}
+  phone: 602-313-4391
+  website: https://www.cleanslatecenters.com
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  eligibility: Serves young adults, adults.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/staff-sergeant-alexander-w-conrad-veterans-affai
   name: Staff Sergeant Alexander W. Conrad Veterans Affairs Health Care Clinic
   categories:
@@ -324,6 +333,7 @@
   - Nutrition, food, and dietary care
   - Orthopedics
   - Physical medicine and rehabilitation
+  - Podiatry
   - Primary care
   - Psychiatry
   - Psychology
@@ -333,7 +343,32 @@
   external_ids: {va: vha_644BY}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: az/gilbert/transitions-counseling-and-consulting
+  name: Transitions Counseling and Consulting
+  categories:
+  - su-treatment
+  - mh-treatment
+  address: {street: 1744 East Boston Street, city: Gilbert, state: az, zip: '85295'}
+  place: '0427400'
+  geo: {lat: 33.3036, lng: -111.75256}
+  phone: 602-363-0629
+  website: https://transitionscounselingandconsult.com
+  services:
+  - Outpatient
+  - Partial hospitalization/day treatment
+  - Young adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/tutor-time-6066
   name: 'Tutor Time #6066'
   categories:
@@ -346,7 +381,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/tutor-time-6068
   name: 'Tutor Time #6068'
   categories:
@@ -359,7 +394,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/gilbert/tutor-time-6083
   name: 'Tutor Time #6083'
   categories:
@@ -372,4 +407,4 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

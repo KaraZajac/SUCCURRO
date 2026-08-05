@@ -21,7 +21,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/cedar-city-center
   name: Cedar City Center
   categories:
@@ -34,7 +34,7 @@
   phone: 435-586-6070
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/cedar-city-housing-authority
   name: Cedar City Housing Authority
   categories:
@@ -46,7 +46,7 @@
   phone: 435-586-8462
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/cedar-east-elementary
   name: Cedar East Elementary
   categories:
@@ -59,7 +59,7 @@
   external_ids: {bgca_site: '29902', bgca_org: '10874'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/discovery-ranch-south
   name: Discovery Ranch South
   categories:
@@ -72,13 +72,15 @@
   website: https://www.discoveryranchsouth.com
   services:
   - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
+  eligibility: Serves children/adolescents.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/family-healthcare-cedar-east
   name: Family Healthcare Cedar East
   categories:
@@ -92,7 +94,7 @@
   external_ids: {bphc: BPS-H80-014975}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/family-healthcare-integrated-clinic
   name: Family Healthcare Integrated Clinic
   categories:
@@ -105,7 +107,7 @@
   external_ids: {bphc: BPS-H80-027275}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/fiddler-s-canyon-elementary
   name: Fiddler's Canyon Elementary
   categories:
@@ -118,7 +120,7 @@
   external_ids: {bgca_site: '29901', bgca_org: '10874'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/fiddler-s-center
   name: Fiddler's Center
   categories:
@@ -131,7 +133,7 @@
   phone: 435-586-7639
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/fourpoints-health-cedar-city
   name: Fourpoints Health - Cedar City
   categories:
@@ -151,7 +153,7 @@
   external_ids: {asufac: '656133'}
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/fourpoints-health-paiute-indian-tribe-of-utah
   name: FourPoints Health Paiute Indian Tribe of Utah
   categories:
@@ -171,7 +173,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/high-desert-counseling
   name: High Desert Counseling
   categories:
@@ -189,13 +191,14 @@
   - Adult women
   - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/main-street-park
   name: Main Street Park
   categories:
@@ -208,7 +211,7 @@
   external_ids: {usda_master: Cycle 04_UT_SFSP_0072}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/renewed-hope-ranch
   name: Renewed Hope Ranch
   categories:
@@ -219,21 +222,25 @@
   phone: 435-531-0040
   website: https://renewedhoperanch.com/
   services:
-  - Hospital inpatient/24-hour hospital inpatient
   - Outpatient
-  - Partial hospitalization/day treatment
   - Residential/24-hour residential
-  - Members of military families
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Long-term residential
+  - Adolescents
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  - Persons with eating disorders
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/south-elementary-school
   name: South Elementary School
   categories:
@@ -246,7 +253,7 @@
   external_ids: {bgca_site: '29899', bgca_org: '10874'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/southwest-behavioral-health-center-cedar-city-ou
   name: Southwest Behavioral Health Center Cedar City Outpatient Treatment Servs
   categories:
@@ -276,32 +283,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: ut/cedar-city/southwest-behavioral-health-center-horizon-house
-  name: SouthWest Behavioral Health Center Horizon House East
-  categories:
-  - su-treatment
-  address: {city: Cedar City, state: ut, zip: '84720'}
-  place: '4911320'
-  phone: 435-586-2515
-  website: https://www.sbhc.us
-  services:
-  - Outpatient
-  - Residential/24-hour residential
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Long-term residential
-  - Adult women
-  - Adult men
-  - Veterans
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  eligibility: Serves young adults, adults, seniors.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ut/cedar-city/three-peaks-elementary-school
   name: Three Peaks Elementary School
   categories:
@@ -314,4 +296,4 @@
   external_ids: {bgca_site: '29898', bgca_org: '10874'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}

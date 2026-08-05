@@ -3,49 +3,84 @@
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 2411 NW Carden Ave, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 2411 NW Carden Ave
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.67814, lng: -118.81783}
+  geo:
+    lat: 45.67814
+    lng: -118.81783
   hours:
-  - {days: [mon, tue, wed, thu], open: '09:00', close: '15:00'}
-  external_ids: {or-oregon-food-bank: blue-mountain-community-college-the-den-bmcc}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 09:00
+    close: '15:00'
+  external_ids:
+    or-oregon-food-bank: blue-mountain-community-college-the-den-bmcc
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/pendleton/cay-uma-wa-head-start
   name: Cay-Uma-Wa Head Start
   categories:
   - child-care
-  address: {street: 46411 Timine Way, street2: 46251 Nax Winatas, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 46411 Timine Way
+    street2: 46251 Nax Winatas
+    city: Pendleton
+    state: or
+    zip: '97801'
   description: Head Start early childhood program — 40 funded slots; operated by Confederated Tribes of
     The Umatilla Indian Res..
   place: '4157150'
-  geo: {lat: 45.66539, lng: -118.68628}
+  geo:
+    lat: 45.66539
+    lng: -118.68628
   phone: 541-429-7836
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/community-action-programs-of-eastern-central-ore
   name: Community Action Programs of Eastern-Central Oregon (CAPECO)
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Gilliam, Morrow, Umatilla, Wheeler Counties
-  address: {street: 211 SE Byers Ave., city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 211 SE Byers Ave.
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
   phone: 541-276-1926
   website: https://www.capeco-works.org/energy.html
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 45.67426, lng: -118.78606}
 - id: or/pendleton/community-counseling-solutions-mhs-services
   name: Community Counseling Solutions MHS Services
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 331 SE 2nd Street, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 331 SE 2nd Street
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.67164, lng: -118.78496}
+  geo:
+    lat: 45.67164
+    lng: -118.78496
   phone: 541-276-6207
   website: https://www.ccswebsite.org
   services:
@@ -54,9 +89,9 @@
   - Seniors or older adults
   - Veterans
   - Active duty military
-  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
@@ -65,69 +100,46 @@
   languages:
   - en
   - es
-  - ar
-  - ht
-  - fa
-  - fr
-  - de
-  - el
-  - he
-  - hi
-  - hmn
-  - it
-  - ja
-  - ko
-  - pl
-  - pt
-  - ru
-  - tl
-  - vi
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/community-counseling-solutions-sud-services
   name: Community Counseling Solutions SUD Services
   categories:
   - su-treatment
-  address: {street: 211 SW 1st Street, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 211 SW 1st Street
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.67211, lng: -118.78849}
+  geo:
+    lat: 45.67211
+    lng: -118.78849
   phone: 541-278-6330
   website: https://www.ccswebsite.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  - Adult women
+  - Adult men
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced intimate partner violence, domestic violence
   languages:
   - en
   - es
-  - ar
-  - ht
-  - fa
-  - fr
-  - de
-  - el
-  - he
-  - hi
-  - hmn
-  - it
-  - ja
-  - ko
-  - pl
-  - pt
-  - ru
-  - tl
-  - vi
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/confederated-tribes-of-umatilla-wic-clinic
   name: Confederated Tribes of Umatilla WIC Clinic
   categories:
@@ -136,21 +148,36 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 73265 Confederated Way, city: Pendleton, state: or, zip: '97801'}
-  geo: {lat: 45.66508, lng: -118.66245}
+  address:
+    street: 73265 Confederated Way
+    city: Pendleton
+    state: or
+    zip: '97801'
+  geo:
+    lat: 45.66508
+    lng: -118.66245
   place: '4157150'
   phone: 541-278-7563
-  external_ids: {wic: 'or-wic:27'}
+  external_ids:
+    wic: or-wic:27
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/copes-outpatient
   name: Copes Outpatient
   categories:
   - su-treatment
-  address: {street: 200 SE Halley Avenue, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 200 SE Halley Avenue
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.66767, lng: -118.78217}
+  geo:
+    lat: 45.66767
+    lng: -118.78217
   phone: 541-663-4104
   website: https://www.owhn.net
   services:
@@ -171,18 +198,26 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/eastern-oregon-alcoholism-foundation
   name: Eastern Oregon Alcoholism Foundation
   categories:
   - su-treatment
-  address: {street: 216 SW Hailey Avenue, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 216 SW Hailey Avenue
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.66654, lng: -118.78687}
+  geo:
+    lat: 45.66654
+    lng: -118.78687
   phone: 541-276-3518
   website: https://www.eoaf.org
   services:
@@ -192,29 +227,42 @@
   - Adult women
   - Adult men
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/little-free-pantry-pendleton
   name: Little Free Pantry Pendleton
   categories:
   - food-pantry
   place: '4157150'
-  geo: {lat: 45.66011, lng: -118.80871}
+  geo:
+    lat: 45.66011
+    lng: -118.80871
   website: https://mapping.littlefreepantry.org/pantry/3801
-  external_ids: {lfp: '3801'}
+  external_ids:
+    lfp: '3801'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/pendleton/ortc-llc-dba-pendleton-treatment-center
   name: ORTC LLC DBA Pendleton Treatment Center
   categories:
   - su-treatment
-  address: {street: 110 SW 20th Street, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 110 SW 20th Street
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.66871, lng: -118.80644}
+  geo:
+    lat: 45.66871
+    lng: -118.80644
   phone: 541-429-8261
   website: https://ortc.care
   services:
@@ -232,11 +280,13 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/pendleton-corps-community-center
   name: Pendleton Corps Community Center
   categories:
@@ -249,8 +299,14 @@
   - family-youth
   - emergency-shelter
   description: Salvation Army community center
-  address: {street: 150 S.E. Emigrant Ave., city: Pendleton, state: or, zip: '97801'}
-  geo: {lat: 45.67105, lng: -118.78488}
+  address:
+    street: 150 S.E. Emigrant Ave.
+    city: Pendleton
+    state: or
+    zip: '97801'
+  geo:
+    lat: 45.67105
+    lng: -118.78488
   place: '4157150'
   phone: 541-276-3369
   website: https://www.salvationarmyusa.org/or/pendleton/se-emigrant-ave-corps/
@@ -268,99 +324,174 @@
   - Disaster Relief
   - Youth Services
   - Homelessness
-  external_ids: {gdos: 8a808375559c116c0155becd12ec00fd}
+  external_ids:
+    gdos: 8a808375559c116c0155becd12ec00fd
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/pendleton-early-head-start-center
   name: Pendleton Early Head Start Center
   categories:
   - child-care
-  address: {street: 1800 NW Carden Ave, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 1800 NW Carden Ave
+    city: Pendleton
+    state: or
+    zip: '97801'
   description: Head Start early childhood program — 8 funded slots; operated by Umatilla-Morrow Head Start.
   place: '4157150'
-  geo: {lat: 45.67342, lng: -118.8011}
+  geo:
+    lat: 45.67342
+    lng: -118.8011
   phone: 541-966-3821
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/pendleton-early-learning-center-pelc
   name: Pendleton Early Learning Center (PELC)
   categories:
   - child-care
-  address: {street: 455 SW 13th St, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 455 SW 13th St
+    city: Pendleton
+    state: or
+    zip: '97801'
   description: Head Start early childhood program — 76 funded slots; operated by Umatilla-Morrow Head
     Start.
   place: '4157150'
-  geo: {lat: 45.66633, lng: -118.79801}
+  geo:
+    lat: 45.66633
+    lng: -118.79801
   phone: 541-966-3361
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/pendleton-early-learning-center-pelc-2
   name: Pendleton Early Learning Center (Pelc)
   categories:
   - meal-program
-  address: {street: 455 Sw 13Th Street, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 455 Sw 13Th Street
+    city: Pendleton
+    state: or
+    zip: '97801'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Pendleton SD 16.
   place: '4157150'
-  geo: {lat: 45.66687, lng: -118.79838}
+  geo:
+    lat: 45.66687
+    lng: -118.79838
   phone: (541) 966-3267
-  external_ids: {usda_master: Cycle 01_OR_SFSP_0117}
+  external_ids:
+    usda_master: Cycle 01_OR_SFSP_0117
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/pendleton-regional-office
   name: Pendleton Regional Office
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of Legal Aid Services of Oregon
   org: or/legal-aid-services-of-oregon
-  address: {street: 365 SE 3rd St, city: Pendleton, state: or, zip: '97801'}
-  geo: {lat: 45.6721, lng: -118.78388}
+  address:
+    street: 365 SE 3rd St
+    city: Pendleton
+    state: or
+    zip: '97801'
+  geo:
+    lat: 45.6721
+    lng: -118.78388
   place: '4157150'
-  external_ids: {lsc_office: '93800407'}
+  external_ids:
+    lsc_office: '93800407'
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/salvation-army-pendleton
   name: Salvation Army Pendleton
   org: or/oregon-food-bank
   categories:
   - meal-program
-  address: {street: 150 SE Emigrant, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 150 SE Emigrant
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.67105, lng: -118.78479}
+  geo:
+    lat: 45.67105
+    lng: -118.78479
   phone: 541-276-3369
   hours:
-  - {days: [mon, tue, wed, thu, fri, sat], open: '11:30', close: '12:30'}
-  external_ids: {or-oregon-food-bank: salvation-army-pendleton}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: '11:30'
+    close: '12:30'
+  external_ids:
+    or-oregon-food-bank: salvation-army-pendleton
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/pendleton/st-mary-s-outreach
   name: St Mary's Outreach
   org: or/oregon-food-bank
   categories:
   - food-pantry
-  address: {street: 440 SW Emigrant, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 440 SW Emigrant
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.66933, lng: -118.79036}
+  geo:
+    lat: 45.66933
+    lng: -118.79036
   phone: 541-276-2878
   hours:
-  - {days: [mon, tue, wed, thu], open: '10:00', close: '14:30'}
-  external_ids: {or-oregon-food-bank: st-mary-s-outreach}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: '10:00'
+    close: '14:30'
+  external_ids:
+    or-oregon-food-bank: st-mary-s-outreach
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: or/pendleton/tm-counseling-and-consulting
   name: TM Counseling and Consulting
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 920 SW Frazer Street, city: Pendleton, state: or, zip: '97801'}
+  address:
+    street: 920 SW Frazer Street
+    city: Pendleton
+    state: or
+    zip: '97801'
   place: '4157150'
-  geo: {lat: 45.66667, lng: -118.79437}
+  geo:
+    lat: 45.66667
+    lng: -118.79437
   phone: 541-276-1022
   website: https://
   services:
@@ -378,11 +509,13 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/umatilla-morrow-head-start-wic-clinic
   name: Umatilla-Morrow Head Start WIC Clinic
   categories:
@@ -391,22 +524,37 @@
   description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
     healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
     parents and children under 5.'
-  address: {street: 455 SW 13th, city: Pendleton, state: or, zip: '97801'}
-  geo: {lat: 45.66632, lng: -118.79808}
+  address:
+    street: 455 SW 13th
+    city: Pendleton
+    state: or
+    zip: '97801'
+  geo:
+    lat: 45.66632
+    lng: -118.79808
   place: '4157150'
   phone: 800-559-5878
   website: http://www.umchs.org/programs/wic.html
-  external_ids: {wic: 'or-wic:76'}
+  external_ids:
+    wic: or-wic:76
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: or/pendleton/yellowhawk-tribal-health-center
   name: Yellowhawk Tribal Health Center
   categories:
   - health
   description: Tribal health center
-  address: {street: 46314 Timine Way, city: Pendleton, state: or, zip: '97801'}
-  geo: {lat: 45.66631, lng: -118.68981}
+  address:
+    street: 46314 Timine Way
+    city: Pendleton
+    state: or
+    zip: '97801'
+  geo:
+    lat: 45.66631
+    lng: -118.68981
   place: '4157150'
   phone: 541-240-8499
   website: https://yellowhawk.org/
@@ -428,7 +576,10 @@
   - Radiology
   - Pharmacy
   - Physical Therapy
-  external_ids: {asufac: '757710'}
+  external_ids:
+    asufac: '757710'
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

@@ -10,7 +10,7 @@
   external_ids: {bphc: BPS-H80-021339}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/baltimore-county-eastern-family-resource-center-2
   name: Baltimore County Eastern Family Resource Center, Dental Clinic
   categories:
@@ -24,7 +24,7 @@
   external_ids: {bphc: BPS-H80-041451}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/bcpl-rosedale-branch
   name: Bcpl Rosedale Branch
   categories:
@@ -37,7 +37,7 @@
   external_ids: {usda_master: Cycle 06_MD_SFSP_0026}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/bms-at-rosedale
   name: BMS at Rosedale
   categories:
@@ -51,7 +51,7 @@
   external_ids: {bphc: BPS-H80-033898}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/eastern-baltimore-co-va-outpatient-clinic
   name: Eastern Baltimore CO VA Outpatient Clinic
   categories:
@@ -74,11 +74,11 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/eastern-baltimore-county-va-clinic
   name: Eastern Baltimore County VA Clinic
   categories:
@@ -104,7 +104,7 @@
   external_ids: {va: vha_512GF}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/eastern-family-resource-center-wic-clinic
   name: Eastern Family Resource Center WIC Clinic
   categories:
@@ -121,7 +121,7 @@
   external_ids: {wic: 'md-health:15'}
   sources:
   - wic/md-health
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/epec-clinic-llc
   name: EPEC Clinic LLC
   categories:
@@ -134,24 +134,9 @@
   website: https://www.epecclinic.com
   services:
   - Outpatient
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: md/rosedale/partners-in-recovery-sphs-mosaic-community-servi
-  name: Partners in Recovery/SPHS Mosaic Community Services
-  categories:
-  - su-treatment
-  address: {street: 9201 Philadelphia Road, city: Rosedale, state: md, zip: '21237'}
-  place: '2468400'
-  geo: {lat: 39.34895, lng: -76.46858}
-  phone: 410-285-8157
-  website: https://www.sheppardpratt.org
-  services:
-  - Outpatient
-  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
+  - Adolescents
   - Young adults
   - Adult women
   - Pregnant/postpartum women
@@ -162,12 +147,11 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/riverside-treatment-services
   name: Riverside Treatment Services
   categories:
@@ -196,7 +180,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/sanbridge-early-learning-center-rosedale
   name: Sanbridge Early Learning Center Rosedale
   categories:
@@ -210,7 +194,36 @@
   external_ids: {usda_master: Cycle 07_MD_SFSP_0163}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: md/rosedale/sheppard-pratt-mosaic-community-services
+  name: Sheppard Pratt Mosaic Community Services
+  categories:
+  - su-treatment
+  address: {street: 9201 Philadelphia Road, city: Rosedale, state: md, zip: '21237'}
+  place: '2468400'
+  geo: {lat: 39.34876, lng: -76.46914}
+  phone: 410-938-5434
+  website: https://www.sheppardpratt.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/star-apple-daycare
   name: Star Apple Daycare
   categories:
@@ -223,7 +236,7 @@
   external_ids: {usda_master: Cycle 10_MD_SFSP_0215}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/tots-headquarters
   name: Tots Headquarters
   categories:
@@ -236,7 +249,7 @@
   external_ids: {usda_master: Cycle 07_MD_SFSP_0196}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: md/rosedale/y-head-start-eastern-family-resource-center
   name: Y Head Start, Eastern Family Resource Center
   categories:
@@ -249,4 +262,4 @@
   phone: 410-801-1650
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

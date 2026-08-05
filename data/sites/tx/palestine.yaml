@@ -10,18 +10,24 @@
   website: https://www.accessmhmr.org
   services:
   - Outpatient
+  - Young adults
+  - Seniors or older adults
   - Veterans
+  - Active duty military
+  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced trauma
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
-  languages:
-  - en
-  - es
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/anderson-county-tx-palestine-service-unit
   name: Anderson County TX (Palestine) Service Unit
   categories:
@@ -44,7 +50,7 @@
   external_ids: {gdos: 8a82818e8d73bcf9018d7b9794330062}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/central-texas-va-healthcare-system-palestine-cbo
   name: Central Texas VA Healthcare System Palestine CBOC
   categories:
@@ -70,7 +76,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/community-blessing-box
   name: Community Blessing Box
   categories:
@@ -81,7 +87,7 @@
   external_ids: {lfp: '818'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: tx/palestine/crossroads-family-care-palestine
   name: Crossroads Family Care Palestine
   categories:
@@ -94,7 +100,7 @@
   external_ids: {bphc: BPS-H80-022085}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/palestine-h-s
   name: Palestine H S
   categories:
@@ -106,11 +112,10 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_1164}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/palestine-regional-medical-center-psychiatric-pr
   name: Palestine Regional Medical Center Psychiatric Programs
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 4000 South Loop 256, city: Palestine, state: tx, zip: '75801'}
   place: '4854708'
@@ -125,7 +130,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/palestine-va-clinic
   name: Palestine VA Clinic
   categories:
@@ -145,6 +150,7 @@
   - Laboratory and pathology
   - Mental health care
   - My HealtheVet coordinator
+  - Nutrition, food, and dietary care
   - Pharmacy
   - Primary care
   - Smoking and tobacco cessation
@@ -152,7 +158,7 @@
   external_ids: {va: vha_674GA}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/palestine-washington-early-childhood-center
   name: PALESTINE WASHINGTON EARLY CHILDHOOD CENTER
   categories:
@@ -165,7 +171,7 @@
   phone: 903-727-2619
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/story-el
   name: Story El
   categories:
@@ -177,7 +183,7 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_1485}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/story-int
   name: Story Int
   categories:
@@ -189,7 +195,7 @@
   external_ids: {usda_master: Cycle 10_TX_SSO_3181}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/washington-early-childhood-center
   name: Washington Early Childhood Center
   categories:
@@ -201,7 +207,7 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_1657}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/westwood-j-h
   name: Westwood J H
   categories:
@@ -213,7 +219,19 @@
   external_ids: {usda_master: Cycle 06_TX_SSO_3427}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: tx/palestine/westwood-middle
+  name: Westwood Middle
+  categories:
+  - meal-program
+  address: {street: 1801 Panther Blvd, city: Palestine, state: tx, zip: '75803'}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by WESTWOOD ISD.
+  place: '4854708'
+  geo: {lat: 31.73079, lng: -95.6818}
+  external_ids: {usda_master: Cycle 14_TX_SSO_3623}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/palestine/westwood-primary
   name: WESTWOOD PRIMARY
   categories:
@@ -226,4 +244,4 @@
   phone: 903-723-1035
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

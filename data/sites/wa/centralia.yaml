@@ -3,21 +3,33 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Lewis County
-  address: {street: 409 N. Tower Ave., city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 409 N. Tower Ave.
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
   phone: 360-736-1800
   website: http://www.caclmt.org
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 46.71921, lng: -122.95314}
 - id: wa/centralia/cascade-community-healthcare
   name: Cascade Community Healthcare
   categories:
   - mh-treatment
-  address: {street: 2428 West Reynolds Avenue, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 2428 West Reynolds Avenue
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.73477, lng: -122.983}
+  geo:
+    lat: 46.73477
+    lng: -122.983
   phone: 360-330-9044
   website: https://cascadecommunityhealthcare.org/
   services:
@@ -25,10 +37,6 @@
   - Young adults
   - Seniors or older adults
   - Veterans
-  - Active duty military
-  - Members of military families
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
@@ -37,43 +45,98 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/cascade-community-healthcare-evaluation-and-trea
   name: Cascade Community Healthcare Evaluation and Treatment Center
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 3510 Steelhammer Lane, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 3510 Steelhammer Lane
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.73419, lng: -123.00334}
+  geo:
+    lat: 46.73419
+    lng: -123.00334
   phone: 360-623-8020
   website: https://www.cascadementalhealth.org
   services:
   - Residential/24-hour residential
   - Seniors or older adults
   - Veterans
-  - Members of military families
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
   - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wa/centralia/cascade-evaluation-and-trt-center
+  name: Cascade Evaluation and Trt Center
+  categories:
+  - su-treatment
+  address:
+    street: 3510 Steelhammer Lane
+    city: Centralia
+    state: wa
+    zip: '98531'
+  place: '5311160'
+  geo:
+    lat: 46.73423
+    lng: -123.00072
+  phone: 360-330-9044
+  website: https://
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/centralia-center-west
   name: Centralia Center West
   categories:
   - child-care
-  address: {street: 701 Pioneer Way, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 701 Pioneer Way
+    city: Centralia
+    state: wa
+    zip: '98531'
   description: Head Start early childhood program — 36 funded slots; operated by RELIABLE ENTERPRISES.
   place: '5311160'
-  geo: {lat: 46.72288, lng: -122.98405}
+  geo:
+    lat: 46.72288
+    lng: -122.98405
   phone: 360-807-4813
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/centralia-corps-community-center
   name: Centralia Corps Community Center
   categories:
@@ -85,8 +148,14 @@
   - family-youth
   - emergency-shelter
   description: Salvation Army community center
-  address: {street: 303 N. Gold, city: Centralia, state: wa, zip: '98531'}
-  geo: {lat: 46.71751, lng: -122.95097}
+  address:
+    street: 303 N. Gold
+    city: Centralia
+    state: wa
+    zip: '98531'
+  geo:
+    lat: 46.71751
+    lng: -122.95097
   place: '5311160'
   phone: 360-736-4339
   website: https://www.salvationarmyusa.org/wa/centralia/n-gold-corps/
@@ -103,42 +172,65 @@
   - Disaster Relief
   - Youth Services
   - Homelessness
-  external_ids: {gdos: 8a808375559c116c0155becde771021d}
+  external_ids:
+    gdos: 8a808375559c116c0155becde771021d
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/centralia-first-united-methodist-church
   name: Centralia First United Methodist Church
   categories:
   - food-pantry
   place: '5311160'
-  geo: {lat: 46.71341, lng: -122.96291}
+  geo:
+    lat: 46.71341
+    lng: -122.96291
   website: https://mapping.littlefreepantry.org/pantry/119
-  external_ids: {lfp: '119'}
+  external_ids:
+    lfp: '119'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: wa/centralia/centralia-high-school
   name: Centralia High School
   categories:
   - meal-program
-  address: {street: 813 Eshom Rd., city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 813 Eshom Rd.
+    city: Centralia
+    state: wa
+    zip: '98531'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Centralia School District.
   place: '5311160'
-  geo: {lat: 46.72648, lng: -122.99974}
+  geo:
+    lat: 46.72648
+    lng: -122.99974
   phone: (360) 330-7600
-  external_ids: {usda_master: Cycle 09_WA_SFSP_0157}
+  external_ids:
+    usda_master: Cycle 09_WA_SFSP_0157
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/community-integrated-health-services-adult-servi
   name: Community Integrated Health Services Adult Services
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 1616 South Gold Street, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1707 Cooks Hill Road
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.69696, lng: -122.95678}
+  geo:
+    lat: 46.71412
+    lng: -122.98214
   phone: 360-261-6930
   website: https://CIhealthservices.com
   services:
@@ -147,33 +239,48 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/community-integrated-health-services-youth-servi
   name: Community Integrated Health Services Youth Services
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 1707 Cooks Hill Road, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1616 South Gold Street
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.71412, lng: -122.98212}
+  geo:
+    lat: 46.69696
+    lng: -122.95678
   phone: 360-261-6930
   website: https://CIhealthservices.com
   services:
   - Outpatient
   - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
+  eligibility: Serves children/adolescents, young adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/core-health-centralia
   name: CORE Health Centralia
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 1126 South Gold Street, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1126 South Gold Street
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.70372, lng: -122.9558}
+  geo:
+    lat: 46.70372
+    lng: -122.9558
   phone: 360-807-3144
   website: https://www.corehealthwa.org
   services:
@@ -193,44 +300,70 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/fords-prairie-elementary
   name: Fords Prairie Elementary
   categories:
   - meal-program
-  address: {street: 1620 Harrison Ave., city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1620 Harrison Ave.
+    city: Centralia
+    state: wa
+    zip: '98531'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Centralia School District.
   place: '5311160'
-  geo: {lat: 46.73478, lng: -122.98867}
+  geo:
+    lat: 46.73478
+    lng: -122.98867
   phone: (360) 330-7600
-  external_ids: {usda_master: Cycle 09_WA_SFSP_0283}
+  external_ids:
+    usda_master: Cycle 09_WA_SFSP_0283
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/gather-medsfirst-program
   name: Gather MedsFirst Program
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: 408 West Main Street, city: Centralia, state: wa, zip: '98531'}
-  geo: {lat: 46.71676, lng: -122.95831}
+  address:
+    street: 408 West Main Street
+    city: Centralia
+    state: wa
+    zip: '98531'
+  geo:
+    lat: 46.71676
+    lng: -122.95831
   place: '5311160'
   phone: 360-827-0264
   website: https://www.gatherchurch.com/meds-first-clinic
   cost: free
-  external_ids: {nafc: gather-medsfirst-program}
+  external_ids:
+    nafc: gather-medsfirst-program
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: wa/centralia/health-hope-medical-outreach
   name: Health & Hope Medical Outreach
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: 1911 Cooks Hill Rd, city: Centralia, state: wa, zip: '98531'}
-  geo: {lat: 46.71432, lng: -122.98573}
+  address:
+    street: 1911 Cooks Hill Rd
+    city: Centralia
+    state: wa
+    zip: '98531'
+  geo:
+    lat: 46.71432
+    lng: -122.98573
   place: '5311160'
   phone: 360-623-1485
   website: https://hhmo.org/
@@ -247,48 +380,78 @@
   - Discounted Pharmacy Cards
   - Write Prescriptions for filing off-site
   cost: free
-  external_ids: {nafc: health-hope-medical-outreach}
+  external_ids:
+    nafc: health-hope-medical-outreach
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: wa/centralia/valley-view-health-center-centralia
   name: Valley View Health Center - Centralia
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: '1800 Cooks Hill Rd, Ste F', city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1800 Cooks Hill Rd, Ste F
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.71371, lng: -122.98382}
+  geo:
+    lat: 46.71371
+    lng: -122.98382
   phone: 360-669-0335
   website: https://vvhc.org/
-  external_ids: {bphc: BPS-H80-033031}
+  external_ids:
+    bphc: BPS-H80-033031
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/valley-view-health-center-centralia-pediatric-de
   name: Valley View Health Center Centralia Pediatric Dental
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 711 Harrison Ave, city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 711 Harrison Ave
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.72423, lng: -122.97267}
+  geo:
+    lat: 46.72423
+    lng: -122.97267
   phone: 360-736-5405
   website: https://www.vvhc.org
-  external_ids: {bphc: BPS-H80-024677}
+  external_ids:
+    bphc: BPS-H80-024677
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wa/centralia/valley-view-health-center-walk-in-clinic
   name: Valley View Health Center - Walk-In Clinic
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: '1800 Cooks Hill Rd, Ste G', city: Centralia, state: wa, zip: '98531'}
+  address:
+    street: 1800 Cooks Hill Rd, Ste G
+    city: Centralia
+    state: wa
+    zip: '98531'
   place: '5311160'
-  geo: {lat: 46.71371, lng: -122.98382}
+  geo:
+    lat: 46.71371
+    lng: -122.98382
   phone: 360-736-3042
-  external_ids: {bphc: BPS-H80-013024}
+  external_ids:
+    bphc: BPS-H80-013024
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

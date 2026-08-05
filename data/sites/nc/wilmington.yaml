@@ -3,9 +3,15 @@
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 5710 Oleander Drive, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 5710 Oleander Drive
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.20775, lng: -77.84928}
+  geo:
+    lat: 34.20775
+    lng: -77.84928
   phone: 910-239-0377
   website: https://brighterstarthealth.com/
   services:
@@ -23,77 +29,117 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/a-helping-hand-of-wilmington
   name: A Helping Hand of Wilmington
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 5013 Wrightsville Avenue, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 5013 Wrightsville Avenue
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.21315, lng: -77.87341}
+  geo:
+    lat: 34.21315
+    lng: -77.87341
   phone: 910-796-6868
   website: https://www.ahelpinghandofwilmington.com/
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
   - Seniors or older adults
   - Veterans
-  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/bread-for-life
   name: Bread for Life
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 108 N Kerr Ave Suite K1, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 108 N Kerr Ave Suite K1
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.24418, lng: -77.88844}
+  geo:
+    lat: 34.24418
+    lng: -77.88844
   hours:
-  - {days: [tue], open: '10:00', close: '12:00', note: 1st Tuesday}
-  - {days: [fri], open: '10:00', close: '12:00', note: '2nd, 3rd, and 4th Fridays'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: bread-for-life}
+  - days:
+    - tue
+    open: '10:00'
+    close: '12:00'
+    note: 1st Tuesday
+  - days:
+    - fri
+    open: '10:00'
+    close: '12:00'
+    note: 2nd, 3rd, and 4th Fridays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: bread-for-life
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/brigade-boys-and-girls-club
   name: Brigade Boys And Girls Club
   categories:
   - meal-program
-  address: {street: 2759 Vance St., city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 2759 Vance St.
+    city: Wilmington
+    state: nc
+    zip: '28412'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.1887, lng: -77.94027}
+  geo:
+    lat: 34.1887
+    lng: -77.94027
   phone: (910) 815-6947
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2045}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2045
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/cape-fear-clinic-inc
   name: Cape Fear Clinic Inc
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: 1605 Doctors Circle, city: Wilmington, state: nc, zip: '28401'}
-  geo: {lat: 34.20603, lng: -77.92685}
+  address:
+    street: 1605 Doctors Circle
+    city: Wilmington
+    state: nc
+    zip: '28401'
+  geo:
+    lat: 34.20603
+    lng: -77.92685
   place: '3774440'
   phone: 910-343-8736
   website: https://capefearclinic.org/
@@ -116,38 +162,64 @@
   - Specialty Care
   - Discounted Pharmacy Cards
   cost: free
-  external_ids: {nafc: cape-fear-clinic-inc}
+  external_ids:
+    nafc: cape-fear-clinic-inc
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: nc/wilmington/capeside-pllc
   name: CapeSide PLLC
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: '- - -', city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: '- - -'
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.2633, lng: -77.8402}
+  geo:
+    lat: 34.2633
+    lng: -77.8402
   phone: 910-791-6767
   website: https://capesidepsychiatry.com
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults, seniors.
+  - Young adults
+  - Adult women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/carl-brown-youth-center
   name: Carl Brown Youth Center
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: '140 Cinema Dr
+  address:
+    street: '140 Cinema Dr
 
-      Unit H Unit H', city: Wilmington, state: nc, zip: '28403'}
-  geo: {lat: 34.2389, lng: -77.89102}
+      Unit H Unit H'
+    city: Wilmington
+    state: nc
+    zip: '28403'
+  geo:
+    lat: 34.2389
+    lng: -77.89102
   place: '3774440'
   phone: 910-392-0747
   website: http://www.cbgcw.org/
@@ -156,68 +228,118 @@
   - Summer programs
   - Meals
   - Military youth partnership
-  external_ids: {bgca_site: '5852', bgca_org: '11244'}
+  external_ids:
+    bgca_site: '5852'
+    bgca_org: '11244'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/catholic-charities
   name: Catholic Charities
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 4280 US Highway 421 N Suite 110, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 4280 US Highway 421 N Suite 110
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.30776, lng: -77.98233}
+  geo:
+    lat: 34.30776
+    lng: -77.98233
   phone: 910-251-8130
   hours:
-  - {days: [tue], open: '09:00', close: '11:30'}
-  - {days: [fri], open: '09:00', close: '11:30'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: catholic-charities}
+  - days:
+    - tue
+    open: 09:00
+    close: '11:30'
+  - days:
+    - fri
+    open: 09:00
+    close: '11:30'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: catholic-charities
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/cec-of-saint-peter-the-fisherman
   name: CEC of Saint Peter the Fisherman
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 314 S Carolina Ave, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 314 S Carolina Ave
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.20854, lng: -77.94638}
+  geo:
+    lat: 34.20854
+    lng: -77.94638
   phone: 910-763-6222
   hours:
-  - {days: [wed], open: '09:00', close: '12:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: cec-of-saint-peter-the-fisherman}
+  - days:
+    - wed
+    open: 09:00
+    close: '12:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: cec-of-saint-peter-the-fisherman
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/cec-of-saint-peter-the-fisherman-inc
   name: CEC of Saint Peter the Fisherman Inc
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - meal-program
-  address: {street: 411 Market St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 411 Market St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.23604, lng: -77.94417}
+  geo:
+    lat: 34.23604
+    lng: -77.94417
   phone: 910-763-6222
   hours:
-  - {days: [tue], open: '10:00', close: '11:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: cec-of-saint-peter-the-fisherman-inc}
+  - days:
+    - tue
+    open: '10:00'
+    close: '11:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: cec-of-saint-peter-the-fisherman-inc
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/chrysalis-center-counseling-and-eating-disorder
   name: Chrysalis Center Counseling and Eating Disorder Trt
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 3240 Burnt Mills Drive, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 3240 Burnt Mills Drive
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.23106, lng: -77.90134}
+  geo:
+    lat: 34.23106
+    lng: -77.90134
   phone: 910-790-9500
   website: https://chrysaliscenter-nc.com/
   services:
   - Outpatient
+  - Partial hospitalization/day treatment
   - Clients who have experienced trauma
   - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
@@ -225,119 +347,176 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/coastal-horizons-center-inc
   name: Coastal Horizons Center Inc
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 615 Shipyard Boulevard, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 615 Shipyard Boulevard
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.19366, lng: -77.93268}
+  geo:
+    lat: 34.19366
+    lng: -77.93268
   phone: 910-343-0145
   website: https://www.coastalhorizons.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
+  - Partial hospitalization/day treatment
   - Seniors or older adults
   - Veterans
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  languages:
-  - en
-  - es
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/coastal-horizons-open-house-youth-shelter
   name: Coastal Horizons- Open House Youth Shelter
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 615 Shipyard Blvd, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 615 Shipyard Blvd
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.19137, lng: -77.93293}
+  geo:
+    lat: 34.19137
+    lng: -77.93293
   phone: 910-392-6936
   hours:
-  - {days: [sun, mon, tue, wed, thu, fri, sat], open: '00:00', close: '23:59'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: coastal-horizons-open-house-youth-shelter}
+  - days:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 00:00
+    close: '23:59'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: coastal-horizons-open-house-youth-shelter
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/community-boys-and-girls-club-of-wilmington
   name: Community Boys And Girls Club Of Wilmington
   categories:
   - meal-program
-  address: {street: 901 Nixon St., city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 901 Nixon St.
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.24967, lng: -77.93928}
+  geo:
+    lat: 34.24967
+    lng: -77.93928
   phone: (910) 815-6947
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2044}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2044
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/cr-pantry
   name: CR Pantry
   categories:
   - food-pantry
   place: '3774440'
-  geo: {lat: 34.23368, lng: -77.86924}
+  geo:
+    lat: 34.23368
+    lng: -77.86924
   website: https://mapping.littlefreepantry.org/pantry/5222
-  external_ids: {lfp: '5222'}
+  external_ids:
+    lfp: '5222'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/d-and-a-assessment-services-inc
   name: D and A  Assessment Services Inc
   categories:
   - su-treatment
-  address: {street: 3965 Market Street, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 3965 Market Street
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.24237, lng: -77.89678}
+  geo:
+    lat: 34.24237
+    lng: -77.89678
   phone: 910-343-8185
   website: https://www.dwiassessmentnc.com
   services:
   - Outpatient
   - Outpatient day treatment or partial hospitalization
   - Regular outpatient treatment
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/d-c-virgo-preparatory-academy
   name: D. C. Virgo Preparatory Academy
   categories:
   - meal-program
-  address: {street: 813 Nixon St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 813 Nixon St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.24959, lng: -77.94059}
+  geo:
+    lat: 34.24959
+    lng: -77.94059
   phone: (910) 815-6947
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2039}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2039
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/daniel-d-cameron-unit
   name: Daniel D. Cameron Unit
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: '140 Cinema Dr
+  address:
+    street: '140 Cinema Dr
 
-      Unit H Unit H', city: Wilmington, state: nc, zip: '28403'}
-  geo: {lat: 34.2389, lng: -77.89102}
+      Unit H Unit H'
+    city: Wilmington
+    state: nc
+    zip: '28403'
+  geo:
+    lat: 34.2389
+    lng: -77.89102
   place: '3774440'
   phone: 910-762-1252
   website: http://www.cbgcw.org/
@@ -345,18 +524,28 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids: {bgca_site: '2982', bgca_org: '11244'}
+  external_ids:
+    bgca_site: '2982'
+    bgca_org: '11244'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/delta-behavioral-health
   name: Delta Behavioral Health
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 1606 Physicians Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1606 Physicians Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19967, lng: -77.9238}
+  geo:
+    lat: 34.19967
+    lng: -77.9238
   phone: 910-343-6890
   website: https://
   services:
@@ -369,138 +558,277 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/dorothy-b-johnson-pre-k-center
   name: Dorothy B. Johnson Pre-K Center
   categories:
   - child-care
-  address: {street: 1100 McRae St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1100 McRae St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Head Start early childhood program — 260 funded slots; operated by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.24889, lng: -77.93748}
+  geo:
+    lat: 34.24889
+    lng: -77.93748
   phone: 910-254-4168
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/edwin-a-alderman-elementary
   name: Edwin A Alderman Elementary
   categories:
   - meal-program
-  address: {street: 2025 Independence Blvd., city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 2025 Independence Blvd.
+    city: Wilmington
+    state: nc
+    zip: '28403'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.20618, lng: -77.90855}
+  geo:
+    lat: 34.20618
+    lng: -77.90855
   phone: (910) 350-1830
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2030}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2030
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/excel-17th-street
   name: Excel 17th Street
   categories:
   - child-care
-  address: {street: 4308 S 17th St, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 4308 S 17th St
+    city: Wilmington
+    state: nc
+    zip: '28412'
   description: Head Start early childhood program — 34 funded slots; operated by Early Learning Academies.
   place: '3774440'
-  geo: {lat: 34.17453, lng: -77.89677}
+  geo:
+    lat: 34.17453
+    lng: -77.89677
   phone: 910-799-4160
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/excel-vision-dr
   name: Excel Vision Dr.
   categories:
   - child-care
-  address: {street: 165 Vision Dr, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 165 Vision Dr
+    city: Wilmington
+    state: nc
+    zip: '28403'
   description: Head Start early childhood program — 82 funded slots; operated by Early Learning Academies.
   place: '3774440'
-  geo: {lat: 34.24415, lng: -77.85844}
+  geo:
+    lat: 34.24415
+    lng: -77.85844
   phone: 910-793-4884
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: nc/wilmington/family-works-psychological-ctr
+  name: Family Works Psychological Ctr
+  categories:
+  - su-treatment
+  address:
+    street: 2002 Eastwood Street
+    city: Wilmington
+    state: nc
+    zip: '28403'
+  place: '3774440'
+  geo:
+    lat: 34.22172
+    lng: -77.82033
+  phone: 910-509-0588
+  website: https://www.familyworkscenter.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/first-fruit-ministries
   name: First Fruit Ministries
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 2750 Vance St, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 2750 Vance St
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.18797, lng: -77.94091}
+  geo:
+    lat: 34.18797
+    lng: -77.94091
   phone: 910-794-9656
   hours:
-  - {days: [mon], open: '10:00', close: '12:00'}
-  - {days: [wed], open: '10:00', close: '12:00'}
-  - {days: [sat], open: '10:00', close: '13:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: first-fruit-ministries-28412}
+  - days:
+    - mon
+    open: '10:00'
+    close: '12:00'
+  - days:
+    - wed
+    open: '10:00'
+    close: '12:00'
+  - days:
+    - sat
+    open: '10:00'
+    close: '13:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: first-fruit-ministries-28412
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/forest-hills-elementary
   name: Forest Hills Elementary
   categories:
   - meal-program
-  address: {street: 602 Colonial Drive, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 602 Colonial Drive
+    city: Wilmington
+    state: nc
+    zip: '28403'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.23055, lng: -77.91286}
+  geo:
+    lat: 34.23055
+    lng: -77.91286
   phone: (910) 251-6189
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2031}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2031
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/good-shepherd-center-meals
   name: Good Shepherd Center - Meals
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - meal-program
-  address: {street: 811 Martin St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 811 Martin St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.21872, lng: -77.93667}
+  geo:
+    lat: 34.21872
+    lng: -77.93667
   phone: 910-362-0292
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '11:00', close: '12:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-meals}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: '11:00'
+    close: '12:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-meals
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/good-shepherd-center-pantry
   name: Good Shepherd Center - Pantry
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 811 Martin St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 811 Martin St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.21872, lng: -77.93667}
+  geo:
+    lat: 34.21872
+    lng: -77.93667
   phone: 910-362-0292
   hours:
-  - {days: [wed], open: '12:00', close: '13:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-pantry}
+  - days:
+    - wed
+    open: '12:00'
+    close: '13:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-pantry
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/good-shepherd-center-shelter
   name: Good Shepherd Center - Shelter
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 811 Martin St, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 811 Martin St
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.21872, lng: -77.93667}
+  geo:
+    lat: 34.21872
+    lng: -77.93667
   phone: 910-362-0292
   hours:
-  - {days: [sun, mon, tue, wed, thu, fri, sat], open: '00:00', close: '23:59'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-shelter}
+  - days:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 00:00
+    close: '23:59'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: good-shepherd-center-shelter
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/healing-place-of-new-hanover-county
   name: Healing Place of New Hanover County
   categories:
   - su-treatment
-  address: {street: 1000 Medical Center Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1000 Medical Center Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19846, lng: -77.93089}
+  geo:
+    lat: 34.19846
+    lng: -77.93089
   phone: 910-970-4673
   website: https://thpnc.org
   services:
@@ -516,240 +844,429 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/house-of-mercy-outreach
   name: House of Mercy Outreach
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 4702 S College Rd, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 4702 S College Rd
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.15475, lng: -77.89256}
+  geo:
+    lat: 34.15475
+    lng: -77.89256
   phone: 910-392-2899
   hours:
-  - {days: [thu], open: '11:00', close: '13:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: house-of-mercy-outreach}
+  - days:
+    - thu
+    open: '11:00'
+    close: '13:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: house-of-mercy-outreach
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/housing-authority-of-the-city-of-wilmington
   name: Housing Authority Of The City Of Wilmington
   categories:
   - housing-assistance
-  address: {street: 1524 S 16th St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1524 S 16th St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Public housing and Housing Choice Voucher agency
   place: '3774440'
-  geo: {lat: 34.21794, lng: -77.92686}
+  geo:
+    lat: 34.21794
+    lng: -77.92686
   phone: 910-341-7700
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/iglesia-vision-3d
   name: Iglesia Vision 3D
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 359 Mercer Ave, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 359 Mercer Ave
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.23329, lng: -77.90557}
+  geo:
+    lat: 34.23329
+    lng: -77.90557
   phone: 910-512-6816
   hours:
-  - {days: [fri], open: '16:00', close: '17:00', note: '1st, 2nd, 4th, and 5th Fridays'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: iglesia-vision-3d}
+  - days:
+    - fri
+    open: '16:00'
+    close: '17:00'
+    note: 1st, 2nd, 4th, and 5th Fridays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: iglesia-vision-3d
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/john-j-blair-elementary
   name: John J Blair Elementary
   categories:
   - meal-program
-  address: {street: 6510 Market St, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 6510 Market St
+    city: Wilmington
+    state: nc
+    zip: '28405'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.25724, lng: -77.83935}
+  geo:
+    lat: 34.25724
+    lng: -77.83935
   phone: (910) 350-2044
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2032}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2032
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/lake-forest-academy
   name: Lake Forest Academy
   categories:
   - meal-program
-  address: {street: 1806 South 16Th Street, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1806 South 16Th Street
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.21467, lng: -77.92634}
+  geo:
+    lat: 34.21467
+    lng: -77.92634
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2037}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2037
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/lakeside-villas
   name: Lakeside Villas
   categories:
   - meal-program
-  address: {street: 1519 Lake Branch Dr., city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1519 Lake Branch Dr.
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.21606, lng: -77.9357}
+  geo:
+    lat: 34.21606
+    lng: -77.9357
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 09_NC_SFSP_0138}
+  external_ids:
+    usda_master: Cycle 09_NC_SFSP_0138
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/legal-aid-of-north-carolina-wilmington
   name: Legal Aid of North Carolina - Wilmington
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of Legal Aid of North Carolina, Inc.
   org: nc/legal-aid-of-north-carolina-inc
-  address: {street: 272 North Front Street, street2: Suite 220, city: Wilmington, state: nc, zip: '28402'}
-  geo: {lat: 34.23866, lng: -77.94879}
+  address:
+    street: 272 North Front Street
+    street2: Suite 220
+    city: Wilmington
+    state: nc
+    zip: '28402'
+  geo:
+    lat: 34.23866
+    lng: -77.94879
   place: '3774440'
-  external_ids: {lsc_office: '63403211'}
+  external_ids:
+    lsc_office: '63403211'
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/liberty-baptist-church-of-wilmington
   name: Liberty Baptist Church of Wilmington
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 7957 Market St, city: Wilmington, state: nc, zip: '28411'}
+  address:
+    street: 7957 Market St
+    city: Wilmington
+    state: nc
+    zip: '28411'
   place: '3774440'
-  geo: {lat: 34.29066, lng: -77.80203}
+  geo:
+    lat: 34.29066
+    lng: -77.80203
   phone: 910-686-0176
   hours:
-  - {days: [mon], open: '13:00', close: '16:00', note: 1st and 3rd Mondays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: liberty-baptist-church-of-wilmington}
+  - days:
+    - mon
+    open: '13:00'
+    close: '16:00'
+    note: 1st and 3rd Mondays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: liberty-baptist-church-of-wilmington
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/lighthouse-shining-ministries
   name: Lighthouse Shining Ministries
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 6622 Carolina Beach Rd, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 6622 Carolina Beach Rd
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.0968, lng: -77.89896}
+  geo:
+    lat: 34.0968
+    lng: -77.89896
   phone: 910-262-5233
   hours:
-  - {days: [sun], open: '10:15', close: '11:00'}
-  - {days: [thu], open: '16:00', close: '18:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: lighthouse-shining-ministries}
+  - days:
+    - sun
+    open: '10:15'
+    close: '11:00'
+  - days:
+    - thu
+    open: '16:00'
+    close: '18:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: lighthouse-shining-ministries
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/maides-park
   name: Maides Park
   categories:
   - meal-program
-  address: {street: 1101 Manly Ave, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 1101 Manly Ave
+    city: Wilmington
+    state: nc
+    zip: '28405'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.25043, lng: -77.90066}
+  geo:
+    lat: 34.25043
+    lng: -77.90066
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2043}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2043
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/market-on-greenfield
   name: Market on Greenfield
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1000 Greenfield St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1000 Greenfield St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.21713, lng: -77.93441}
+  geo:
+    lat: 34.21713
+    lng: -77.93441
   phone: 910-251-1465
   hours:
-  - {days: [mon], open: '10:00', close: '13:00'}
-  - {days: [tue], open: '13:00', close: '16:00'}
-  - {days: [thu], open: '10:00', close: '13:00'}
-  - {days: [fri], open: '13:00', close: '16:00'}
-  - {days: [sat], open: '10:00', close: '13:00', note: 2nd and 4th Saturdays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: market-on-greenfield}
+  - days:
+    - mon
+    open: '10:00'
+    close: '13:00'
+  - days:
+    - tue
+    open: '13:00'
+    close: '16:00'
+  - days:
+    - thu
+    open: '10:00'
+    close: '13:00'
+  - days:
+    - fri
+    open: '13:00'
+    close: '16:00'
+  - days:
+    - sat
+    open: '10:00'
+    close: '13:00'
+    note: 2nd and 4th Saturdays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: market-on-greenfield
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/martin-luther-king-center
   name: Martin Luther King Center
   categories:
   - meal-program
-  address: {street: 401 S 8Th St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 401 S 8Th St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.23103, lng: -77.93872}
+  geo:
+    lat: 34.23103
+    lng: -77.93872
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2041}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2041
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/mary-sidberry-mosley
   name: Mary Sidberry Mosley
   categories:
   - meal-program
-  address: {street: 3702 Princess Place Dr., city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 3702 Princess Place Dr.
+    city: Wilmington
+    state: nc
+    zip: '28405'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.24394, lng: -77.9006}
+  geo:
+    lat: 34.24394
+    lng: -77.9006
   phone: (910) 251-6170
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2038}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2038
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/mednorth-health-center
   name: MedNorth Health Center
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 917 N 4th St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 917 N 4th St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.22346, lng: -77.94306}
+  geo:
+    lat: 34.22346
+    lng: -77.94306
   phone: 910-343-0270
   website: http://www.mednorth.org/
-  external_ids: {bphc: BPS-H80-041392}
+  external_ids:
+    bphc: BPS-H80-041392
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/mednorth-health-center-at-calhoun-drive
   name: MedNorth Health Center at Calhoun Drive
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 240 Calhoun Dr, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 240 Calhoun Dr
+    city: Wilmington
+    state: nc
+    zip: '28412'
   place: '3774440'
-  geo: {lat: 34.18908, lng: -77.94085}
+  geo:
+    lat: 34.18908
+    lng: -77.94085
   phone: 910-340-0270
-  external_ids: {bphc: BPS-H80-032522}
+  external_ids:
+    bphc: BPS-H80-032522
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/miracle-on-meares-agency
   name: Miracle on Meares Agency
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1019 Meares St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1019 Meares St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.2227, lng: -77.93423}
+  geo:
+    lat: 34.2227
+    lng: -77.93423
   hours:
-  - {days: [mon], open: '18:00', close: '19:00', note: 1st and 3rd Mondays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: miracle-on-meares-agency}
+  - days:
+    - mon
+    open: '18:00'
+    close: '19:00'
+    note: 1st and 3rd Mondays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: miracle-on-meares-agency
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/montgomery-register-teen-center
   name: Montgomery-Register Teen Center
   categories:
   - family-youth
   description: Boys & Girls Club
-  address: {street: '140 Cinema Dr
+  address:
+    street: '140 Cinema Dr
 
-      Unit H Unit H', city: Wilmington, state: nc, zip: '28403'}
-  geo: {lat: 34.2389, lng: -77.89102}
+      Unit H Unit H'
+    city: Wilmington
+    state: nc
+    zip: '28403'
+  geo:
+    lat: 34.2389
+    lng: -77.89102
   place: '3774440'
   phone: 910-392-0747
   website: http://www.cbgcw.org/
@@ -758,101 +1275,172 @@
   - Summer programs
   - Meals
   - Military youth partnership
-  external_ids: {bgca_site: '4086', bgca_org: '11244'}
+  external_ids:
+    bgca_site: '4086'
+    bgca_org: '11244'
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/mother-hubbard-s-cupboard
   name: Mother Hubbard's Cupboard
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 315 Red Cross St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 315 Red Cross St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.24142, lng: -77.94581}
+  geo:
+    lat: 34.24142
+    lng: -77.94581
   phone: 910-762-2199
   hours:
-  - {days: [wed], open: '12:00', close: '15:00'}
-  - {days: [sat], open: '09:00', close: '12:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: mother-hubbard-s-cupboard}
+  - days:
+    - wed
+    open: '12:00'
+    close: '15:00'
+  - days:
+    - sat
+    open: 09:00
+    close: '12:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: mother-hubbard-s-cupboard
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/mt-olive-ame-church-helping-hand-food-pantry
   name: Mt Olive AME Church - Helping Hand Food Pantry
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1001 S 7th St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1001 S 7th St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.22327, lng: -77.93906}
+  geo:
+    lat: 34.22327
+    lng: -77.93906
   phone: 910-620-4738
   hours:
-  - {days: [sat], open: '10:00', close: '12:00', note: 2nd and 3rd Saturdays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: mt-olive-ame-church-helping-hand-food-pantry}
+  - days:
+    - sat
+    open: '10:00'
+    close: '12:00'
+    note: 2nd and 3rd Saturdays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: mt-olive-ame-church-helping-hand-food-pantry
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/murrayville-elementary
   name: Murrayville Elementary
   categories:
   - meal-program
-  address: {street: 225 Mabee Way, city: Wilmington, state: nc, zip: '28411'}
+  address:
+    street: 225 Mabee Way
+    city: Wilmington
+    state: nc
+    zip: '28411'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.29858, lng: -77.84952}
+  geo:
+    lat: 34.29858
+    lng: -77.84952
   phone: (910) 790-5069
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2033}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2033
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/mustard-seed-ministry-youth-center
   name: Mustard Seed Ministry Youth Center
   categories:
   - meal-program
-  address: {street: 5656 Carolina Beach Road, city: Wilmington, state: nc, zip: '28412'}
+  address:
+    street: 5656 Carolina Beach Road
+    city: Wilmington
+    state: nc
+    zip: '28412'
   description: Free summer meals for kids and teens (2026 season) — sponsored by The Mustard Seed Ministry.
   place: '3774440'
-  geo: {lat: 34.13298, lng: -77.89557}
+  geo:
+    lat: 34.13298
+    lng: -77.89557
   phone: (910) 471-5497
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2208}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2208
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/ncm-ncino-sports-park
   name: Ncm Ncino Sports Park
   categories:
   - meal-program
-  address: {street: 205 Sutton Steam Plant Rd, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 205 Sutton Steam Plant Rd
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by YMCA of Southeastern
     NC.
   place: '3774440'
-  geo: {lat: 34.27809, lng: -77.96862}
+  geo:
+    lat: 34.27809
+    lng: -77.96862
   phone: (704) 985-5718
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2282}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2282
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/new-hanover-county-department-of-social-services
   name: New Hanover County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving New Hanover County
-  address: {street: 1650 Greenfield Street, city: Wilmington, state: nc, zip: '28402'}
+  address:
+    street: 1650 Greenfield Street
+    city: Wilmington
+    state: nc
+    zip: '28402'
   place: '3774440'
   phone: 910-798-3400
   website: https://www.nhcgov.com/417/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 34.21804, lng: -77.92572}
 - id: nc/wilmington/new-hanover-metro-treatment-center-metro-treatme
   name: New Hanover Metro Treatment Center Metro Treatment of North Carolina LP
   categories:
   - su-treatment
-  address: {street: 1611 Castle Hayne Road, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1611 Castle Hayne Road
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.26678, lng: -77.93094}
+  geo:
+    lat: 34.26678
+    lng: -77.93094
   phone: 910-251-6644 x12105
   website: https://www.newseason.com/clinics/new-hanover-metro-treatment-center/
   services:
@@ -864,19 +1452,26 @@
   - Pregnant/postpartum women
   - Adult men
   - Seniors or older adults
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/novant-health-new-hanover-regional-medical-cente
   name: Novant Health New Hanover Regional Medical Center
   categories:
-  - su-treatment
   - mh-treatment
-  address: {street: 2131 South 17th Street, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 2131 South 17th Street
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.20539, lng: -77.922}
+  geo:
+    lat: 34.20539
+    lng: -77.922
   phone: 910-342-3494
   website: https://www.novanthealth.org
   services:
@@ -885,15 +1480,23 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/partial-hospital-at-delta
   name: Partial Hospital at Delta
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 1606 Physicians Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1606 Physicians Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19973, lng: -77.92379}
+  geo:
+    lat: 34.19973
+    lng: -77.92379
   phone: 910-343-6890
   website: https://www.deltadbt.com
   services:
@@ -911,18 +1514,26 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/reflections-of-hope-llp
   name: Reflections of Hope LLP
   categories:
   - su-treatment
-  address: {street: 33 Darlington Avenue, city: Wilmington, state: nc, zip: '28403'}
+  address:
+    street: 33 Darlington Avenue
+    city: Wilmington
+    state: nc
+    zip: '28403'
   place: '3774440'
-  geo: {lat: 34.23991, lng: -77.90192}
+  geo:
+    lat: 34.23991
+    lng: -77.90192
   phone: 910-782-8752
   website: https://www.rohwilmington.com/
   services:
@@ -943,137 +1554,252 @@
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults, seniors.
-  cost: sliding-scale
+  eligibility: Serves young adults, adults.
+  cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/saint-jude-s-metropolitan
   name: Saint Jude's Metropolitan
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 19 N 26th St, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 19 N 26th St
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.23958, lng: -77.91388}
+  geo:
+    lat: 34.23958
+    lng: -77.91388
   phone: 910-762-5833
   hours:
-  - {days: [tue], open: '08:30', close: '11:00', note: 1st and 3rd Tuesdays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: saint-jude-s-metropolitan}
+  - days:
+    - tue
+    open: 08:30
+    close: '11:00'
+    note: 1st and 3rd Tuesdays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: saint-jude-s-metropolitan
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/saint-luke-ame-zion-church
   name: Saint Luke AME Zion Church
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 709 Church St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 709 Church St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.22993, lng: -77.93949}
+  geo:
+    lat: 34.22993
+    lng: -77.93949
   phone: 910-762-7876
   hours:
-  - {days: [wed], open: '11:00', close: '13:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: saint-luke-ame-zion-church}
+  - days:
+    - wed
+    open: '11:00'
+    close: '13:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: saint-luke-ame-zion-church
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/salvation-army-wilmington
   name: Salvation Army - Wilmington
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1410 William Booth Drive, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 1410 William Booth Drive
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.25622, lng: -77.90822}
+  geo:
+    lat: 34.25622
+    lng: -77.90822
   phone: 910-762-7354
   hours:
-  - {days: [sun, mon, tue, wed, thu, fri, sat], open: '00:00', close: '23:59'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: salvation-army-wilmington}
+  - days:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    open: 00:00
+    close: '23:59'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: salvation-army-wilmington
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/salvation-army-wilmington-2
   name: Salvation Army - Wilmington
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 20 N 4th St Suite 221, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 20 N 4th St Suite 221
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.23638, lng: -77.94443}
+  geo:
+    lat: 34.23638
+    lng: -77.94443
   phone: 910-762-7354
   hours:
-  - {days: [tue], open: '09:00', close: '11:30'}
-  - {days: [thu], open: '09:00', close: '11:30'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: salvation-army-wilmington-28401}
+  - days:
+    - tue
+    open: 09:00
+    close: '11:30'
+  - days:
+    - thu
+    open: 09:00
+    close: '11:30'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: salvation-army-wilmington-28401
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/shiloh-missionary-baptist-church
   name: Shiloh Missionary Baptist Church
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 719 Walnut St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 719 Walnut St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.24066, lng: -77.9409}
+  geo:
+    lat: 34.24066
+    lng: -77.9409
   phone: 910-232-6587
   hours:
-  - {days: [tue], open: '10:00', close: '12:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: shiloh-missionary-baptist-church}
+  - days:
+    - tue
+    open: '10:00'
+    close: '12:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: shiloh-missionary-baptist-church
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/sunset-park-elementary
   name: Sunset Park Elementary
   categories:
   - meal-program
-  address: {street: 613 Alabama Ave, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 613 Alabama Ave
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.20718, lng: -77.94129}
+  geo:
+    lat: 34.20718
+    lng: -77.94129
   phone: (910) 815-6947
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2034}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2034
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/the-healing-place-of-new-hanover-county-inc
   name: The Healing Place of New Hanover County, Inc.
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1000 Medical Center Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1000 Medical Center Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19762, lng: -77.9319}
+  geo:
+    lat: 34.19762
+    lng: -77.9319
   phone: 910-970-4673
   hours:
-  - {days: [mon], open: '16:00', close: '17:00', note: 2nd and 4th Mondays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: the-healing-place-of-new-hanover-county-inc-28401}
+  - days:
+    - mon
+    open: '16:00'
+    close: '17:00'
+    note: 2nd and 4th Mondays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: the-healing-place-of-new-hanover-county-inc-28401
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/the-sister-isaac-center
   name: The Sister Isaac Center
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 412 Ann St, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 412 Ann St
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.23173, lng: -77.94357}
+  geo:
+    lat: 34.23173
+    lng: -77.94357
   phone: 910-762-5491
   hours:
-  - {days: [mon, tue, wed, thu], open: '09:00', close: '11:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: the-sister-isaac-center}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    open: 09:00
+    close: '11:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: the-sister-isaac-center
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/tree-house-recovery-nc
   name: Tree House Recovery NC
   categories:
   - su-treatment
-  address: {street: 1118 North 4th Street, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1118 North 4th Street
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.24878, lng: -77.94591}
+  geo:
+    lat: 34.24878
+    lng: -77.94591
   phone: 910-812-1728
   website: https://treehouserecoverync.com/
   services:
@@ -1090,52 +1816,85 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/union-missionary-baptist
   name: Union Missionary Baptist
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 2711 Princess Pl Dr, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 2711 Princess Pl Dr
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.24438, lng: -77.91163}
+  geo:
+    lat: 34.24438
+    lng: -77.91163
   phone: 910-763-3006
   hours:
-  - {days: [fri], open: '16:00', close: '18:00', note: 2nd and 3rd Fridays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: union-missionary-baptist}
+  - days:
+    - fri
+    open: '16:00'
+    close: '18:00'
+    note: 2nd and 3rd Fridays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: union-missionary-baptist
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/wilmington/village-at-greenfield
   name: Village At Greenfield
   categories:
   - meal-program
-  address: {street: 1519 Lake Branch Dr., city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1519 Lake Branch Dr.
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.21606, lng: -77.9357}
+  geo:
+    lat: 34.21606
+    lng: -77.9357
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2040}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2040
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/williston-middle
   name: Williston Middle
   categories:
   - meal-program
-  address: {street: 401 South 10Th Street, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 401 South 10Th Street
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.23026, lng: -77.93598}
+  geo:
+    lat: 34.23026
+    lng: -77.93598
   phone: (910) 815-6908
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2035}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2035
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wilmington-corps
   name: Wilmington Corps
   categories:
@@ -1143,8 +1902,14 @@
   - family-support
   - family-youth
   description: Salvation Army community center
-  address: {street: 223 S 3rd St, city: Wilmington, state: nc, zip: '28401'}
-  geo: {lat: 34.23202, lng: -77.94522}
+  address:
+    street: 223 S 3rd St
+    city: Wilmington
+    state: nc
+    zip: '28401'
+  geo:
+    lat: 34.23202
+    lng: -77.94522
   place: '3774440'
   phone: 910-762-2070
   website: https://www.salvationarmyusa.org/nc/wilmington/s-3rd-st-corps/
@@ -1156,10 +1921,13 @@
   - Family Services
   - Disaster Relief
   - Youth Services
-  external_ids: {gdos: 402818763d5b8722013d5cecc6cd21d5}
+  external_ids:
+    gdos: 402818763d5b8722013d5cecc6cd21d5
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wilmington-social-services
   name: Wilmington Social Services
   categories:
@@ -1169,8 +1937,14 @@
   - food-pantry
   - family-youth
   description: Salvation Army shelter
-  address: {street: '20 North 4th, Suite 214', city: Wilmington, state: nc, zip: '28401'}
-  geo: {lat: 34.23647, lng: -77.94438}
+  address:
+    street: 20 North 4th, Suite 214
+    city: Wilmington
+    state: nc
+    zip: '28401'
+  geo:
+    lat: 34.23647
+    lng: -77.94438
   place: '3774440'
   phone: 910-762-5948
   website: https://www.salvationarmyusa.org/nc/wilmington/north-4th-suite-214/
@@ -1180,17 +1954,26 @@
   - Hunger
   - Youth Services
   - Homelessness
-  external_ids: {gdos: 8a82804a7f50c9e9017f58e810f80056}
+  external_ids:
+    gdos: 8a82804a7f50c9e9017f58e810f80056
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wilmington-treatment-center
   name: Wilmington Treatment Center
   categories:
   - su-treatment
-  address: {street: 2520 Troy Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 2520 Troy Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19411, lng: -77.92946}
+  geo:
+    lat: 34.19411
+    lng: -77.92946
   phone: 855-240-7360
   website: https://www.wilmingtontreatment.com
   services:
@@ -1208,18 +1991,26 @@
   - Adult men
   - Seniors or older adults
   - Veterans
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wilmington-treatment-center-intensive-outpatient
   name: Wilmington Treatment Center Intensive Outpatient Program
   categories:
   - su-treatment
-  address: {street: 1524 Harbour Drive, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 1524 Harbour Drive
+    city: Wilmington
+    state: nc
+    zip: '28401'
   place: '3774440'
-  geo: {lat: 34.19637, lng: -77.92284}
+  geo:
+    lat: 34.19637
+    lng: -77.92284
   phone: 855-240-7361
   website: https://www.wilmingtontreatment.com
   services:
@@ -1237,24 +2028,39 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced sexual abuse
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wilmington-va-clinic
   name: Wilmington VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address: {street: 1705 Gardner Road, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 1705 Gardner Road
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.26873, lng: -77.91841}
+  geo:
+    lat: 34.26873
+    lng: -77.91841
   phone: 910-343-5300
   website: https://www.va.gov/fayetteville-coastal-health-care/locations/wilmington-va-clinic/
   hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
   services:
   - Audiology and speech
   - COVID-19 vaccines
@@ -1267,6 +2073,7 @@
   - Infectious disease
   - Mental health care
   - Neurology
+  - Nutrition, food, and dietary care
   - Ophthalmology
   - Optometry
   - Orthopedics
@@ -1277,36 +2084,63 @@
   - Sleep medicine
   - Urology
   - Women Veteran care
-  external_ids: {va: vha_565GC}
+  external_ids:
+    va: vha_565GC
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wrightsboro-elementary
   name: Wrightsboro Elementary
   categories:
   - meal-program
-  address: {street: 2716 Castle Hayne Rd, city: Wilmington, state: nc, zip: '28401'}
+  address:
+    street: 2716 Castle Hayne Rd
+    city: Wilmington
+    state: nc
+    zip: '28401'
   description: Free summer meals for kids and teens (2026 season) — sponsored by New Hanover County Schools.
   place: '3774440'
-  geo: {lat: 34.29275, lng: -77.92115}
+  geo:
+    lat: 34.29275
+    lng: -77.92115
   phone: (910) 815-6912
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2036}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2036
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/wilmington/wrightsboro-united-methodist
   name: Wrightsboro United Methodist
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 3300 N Kerr Ave, city: Wilmington, state: nc, zip: '28405'}
+  address:
+    street: 3300 N Kerr Ave
+    city: Wilmington
+    state: nc
+    zip: '28405'
   place: '3774440'
-  geo: {lat: 34.28893, lng: -77.91352}
+  geo:
+    lat: 34.28893
+    lng: -77.91352
   phone: 910-762-2583
   hours:
-  - {days: [wed], open: '08:30', close: '10:00'}
-  - {days: [thu], open: '15:15', close: '16:30'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: wrightsboro-united-methodist}
+  - days:
+    - wed
+    open: 08:30
+    close: '10:00'
+  - days:
+    - thu
+    open: '15:15'
+    close: '16:30'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: wrightsboro-united-methodist
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape

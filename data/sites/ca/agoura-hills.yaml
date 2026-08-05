@@ -22,7 +22,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/bni-treatment-centers-intensive-outpatient-progr
   name: BNI Treatment Centers Intensive Outpatient Program
   categories:
@@ -49,7 +49,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/bni-treatment-centers-partial-hospitalization-pr
   name: BNI Treatment Centers Partial Hospitalization Program
   categories:
@@ -76,7 +76,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/evolve-adolescent-behavioral-health
   name: Evolve Adolescent Behavioral Health
   categories:
@@ -95,7 +95,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/found-recovery
   name: Found Recovery
   categories:
@@ -121,11 +121,11 @@
   - Veterans
   - Active duty military
   - Members of military families
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/foy-wellness-and-recovery
   name: FOY Wellness and Recovery
   categories:
@@ -137,24 +137,31 @@
   website: https://www.foywellnessandrecovery.com
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/highlands-in-bloom
   name: Highlands in Bloom
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 28051 Balkins Drive, city: Agoura Hills, state: ca, zip: '91301'}
+  address: {city: Agoura Hills, state: ca, zip: '91301'}
   place: 0600394
-  geo: {lat: 34.15625, lng: -118.73637}
   phone: 805-892-6313
   website: https://www.highlandsinbloom.com
   services:
@@ -164,70 +171,55 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons with post-traumatic stress disorder (PTSD)
-  eligibility: Serves young adults, seniors.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/hillcrest-adolescent-treatment-center
   name: Hillcrest Adolescent Treatment Center
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 3821 Marks Road, city: Agoura Hills, state: ca, zip: '91301'}
+  address: {city: Agoura Hills, state: ca, zip: '91301'}
   place: 0600394
-  geo: {lat: 34.12959, lng: -118.71862}
   phone: 844-913-2788
   website: https://www.hillcrestatc.com/
   services:
   - Residential/24-hour residential
-  - Long-term residential
-  - Short-term residential
-  - Adolescents
-  - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/inspire-malibu
   name: Inspire Malibu
   categories:
   - su-treatment
+  - mh-treatment
   address: {city: Agoura Hills, state: ca, zip: '91301'}
   place: 0600394
   phone: 818-707-7100
   website: https://www.inspiremalibu.com
   services:
+  - Outpatient
+  - Partial hospitalization/day treatment
   - Residential/24-hour residential
-  - Residential detoxification
-  - Long-term residential
-  - Short-term residential
-  - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
-  - Seniors or older adults
   - Veterans
-  - Active duty military
-  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  languages:
-  - en
-  - ru
-  - tl
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/linda-david-catlin-boys-girls-club
   name: Linda & David Catlin Boys & Girls Club
   categories:
@@ -245,11 +237,10 @@
   external_ids: {bgca_site: '8478', bgca_org: '24181'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/monte-nido-clementine-malibu
   name: Monte Nido Clementine Malibu
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 29470 Lake Vista Drive, city: Agoura Hills, state: ca, zip: '91301'}
   place: 0600394
@@ -263,11 +254,10 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ca/agoura-hills/monte-nido-vista
   name: Monte Nido Vista
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 28855 Lake Vista Drive, city: Agoura Hills, state: ca, zip: '91301'}
   place: 0600394
@@ -281,4 +271,4 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

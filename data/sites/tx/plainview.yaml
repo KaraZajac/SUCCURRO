@@ -1,7 +1,6 @@
 - id: tx/plainview/allegiance-behavioral-healthcare
   name: Allegiance Behavioral Healthcare
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 2601 Dimmitt Road, city: Plainview, state: tx, zip: '79072'}
   place: '4857980'
@@ -28,7 +27,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/central-el
   name: Central El
   categories:
@@ -40,7 +39,7 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_0305}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/central-plains-center-outpatient-youth-sa-progra
   name: Central Plains Center Outpatient Youth SA Program
   categories:
@@ -55,11 +54,16 @@
   - Regular outpatient treatment
   - Adolescents
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/creative-zones
   name: Creative Zones
   categories:
@@ -72,7 +76,7 @@
   phone: 806-293-8014
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/date-street-housing
   name: Date Street Housing
   categories:
@@ -85,7 +89,7 @@
   external_ids: {usda_master: Cycle 06_TX_SFSP_0796}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/hale-county-housing-authority
   name: Hale County Housing Authority
   categories:
@@ -97,7 +101,7 @@
   phone: 806-293-4160
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/outcast-international-ministries
   name: Outcast International Ministries
   categories:
@@ -110,7 +114,7 @@
   external_ids: {usda_master: Cycle 06_TX_SFSP_2431}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview
   name: Plainview
   categories:
@@ -123,7 +127,7 @@
   phone: 806-239-3730
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview-2
   name: Plainview
   categories:
@@ -136,7 +140,7 @@
   external_ids: {lsc_office: '74405008'}
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview-early-learning-center
   name: Plainview Early Learning Center
   categories:
@@ -148,7 +152,7 @@
   external_ids: {usda_master: Cycle 10_TX_SSO_2663}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview-j-h
   name: Plainview J H
   categories:
@@ -160,7 +164,7 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_1210}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview-serenity-center-inc-house-of-hope
   name: Plainview Serenity Center Inc House of Hope
   categories:
@@ -177,22 +181,14 @@
   - Regular outpatient treatment
   - Long-term residential
   - Short-term residential
-  - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
-  - Seniors or older adults
-  - Veterans
-  - Active duty military
-  - Members of military families
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults, seniors; women only.
+  eligibility: Serves young adults, adults; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/plainview-service-center
   name: Plainview Service Center
   categories:
@@ -214,7 +210,7 @@
   external_ids: {gdos: 402818763d5b8722013d5d2bc785257a}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/regence-health-network-inc-rda-plnv
   name: Regence Health Network, Inc. RDA - PLNV
   categories:
@@ -228,7 +224,7 @@
   external_ids: {bphc: BPS-H80-002212}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/regence-health-network-inc-rmda-pcs
   name: Regence Health Network, Inc. RMDA - PCS
   categories:
@@ -241,7 +237,7 @@
   external_ids: {bphc: BPS-H80-035589}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/south-el
   name: South El
   categories:
@@ -253,7 +249,7 @@
   external_ids: {usda_master: Cycle 01_TX_SSO_1432}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: tx/plainview/stonebriar
   name: Stonebriar
   categories:
@@ -266,4 +262,4 @@
   external_ids: {usda_master: Cycle 06_TX_SFSP_3035}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

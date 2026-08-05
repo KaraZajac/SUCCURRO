@@ -1,136 +1,198 @@
-- id: nc/warrenton/freedom-house-recovery-center
-  name: Freedom House Recovery Center
-  categories:
-  - su-treatment
-  - mh-treatment
-  address: {city: Warrenton, state: nc, zip: '27589'}
-  place: '3771100'
-  phone: 252-879-0091
-  website: https://www.freedomhouserecovery.org
-  services:
-  - Outpatient
-  - Young adults
-  - Seniors or older adults
-  - Veterans
-  - Members of military families
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
 - id: nc/warrenton/loaves-and-fishes-ministries
   name: Loaves and Fishes Ministries
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 538 W Ridgeway St, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 538 W Ridgeway St
+    city: Warrenton
+    state: nc
+    zip: '27589'
   place: '3771100'
-  geo: {lat: 36.40481, lng: -78.16205}
+  geo:
+    lat: 36.40481
+    lng: -78.16205
   phone: 252-257-1160
   hours:
-  - {days: [mon], open: '09:00', close: '13:00'}
-  - {days: [tue], open: '07:30', close: '10:00'}
-  - {days: [wed], open: '12:30', close: '16:30'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: loaves-and-fishes-ministries}
+  - days:
+    - mon
+    open: 09:00
+    close: '13:00'
+  - days:
+    - tue
+    open: 07:30
+    close: '10:00'
+  - days:
+    - wed
+    open: '12:30'
+    close: '16:30'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: loaves-and-fishes-ministries
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/warrenton/mariam-boyd-elementary
   name: Mariam Boyd Elementary
   categories:
   - meal-program
-  address: {street: 203 Cousin Lucy'S Ln, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 203 Cousin Lucy'S Ln
+    city: Warrenton
+    state: nc
+    zip: '27589'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Warren County Schools.
   place: '3771100'
-  geo: {lat: 36.39548, lng: -78.15849}
+  geo:
+    lat: 36.39548
+    lng: -78.15849
   phone: (252) 257-3184
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0590}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0590
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/warrenton/warren-community-health-clinic-inc
   name: Warren Community Health Clinic, Inc.
   categories:
   - free-clinic
   - health
-  address: {street: 546 West Ridgeway Street, city: Warrenton, state: nc, zip: 27589-1716}
-  geo: {lat: 36.40612, lng: -78.16365}
+  address:
+    street: 546 West Ridgeway Street
+    city: Warrenton
+    state: nc
+    zip: 27589-1716
+  geo:
+    lat: 36.40612
+    lng: -78.16365
   place: '3771100'
   phone: 252-257-1904
   cost: free
-  external_ids: {nafc: warren-community-health-clinic-inc}
+  external_ids:
+    nafc: warren-community-health-clinic-inc
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: nc/warrenton/warren-county-department-of-social-services
   name: Warren County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Warren County
-  address: {street: 307 N. Main Street, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 307 N. Main Street
+    city: Warrenton
+    state: nc
+    zip: '27589'
   place: '3771100'
   phone: 252-257-5000
   website: https://www.warrencountync.com/167/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 36.403, lng: -78.15363}
 - id: nc/warrenton/warren-county-high-school-agri-stem-camp
   name: Warren County High School- Agri Stem Camp
   categories:
   - meal-program
-  address: {street: 149 Campus Dr, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 149 Campus Dr
+    city: Warrenton
+    state: nc
+    zip: '27589'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Warren County Schools.
   place: '3771100'
-  geo: {lat: 36.43226, lng: -78.16646}
+  geo:
+    lat: 36.43226
+    lng: -78.16646
   phone: (252) 257-3184
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0598}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0598
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/warrenton/warren-county-memorial-library
   name: Warren County Memorial Library
   categories:
   - meal-program
-  address: {street: 119 Front Street, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 119 Front Street
+    city: Warrenton
+    state: nc
+    zip: '27589'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Warren County Schools.
   place: '3771100'
-  geo: {lat: 36.3975, lng: -78.15657}
+  geo:
+    lat: 36.3975
+    lng: -78.15657
   phone: (252) 257-3184
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0592}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0592
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/warrenton/warren-county-middle
   name: Warren County Middle
   categories:
   - meal-program
-  address: {street: 118 Campus Dr, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 118 Campus Dr
+    city: Warrenton
+    state: nc
+    zip: '27589'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Warren County Schools.
   place: '3771100'
-  geo: {lat: 36.43202, lng: -78.16766}
+  geo:
+    lat: 36.43202
+    lng: -78.16766
   phone: (252) 257-3184
-  external_ids: {usda_master: Cycle 06_NC_SFSP_0591}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_0591
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/warrenton/warrenton-missionary-baptist-church
   name: Warrenton Missionary Baptist Church
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 114 S Bragg St, city: Warrenton, state: nc, zip: '27589'}
+  address:
+    street: 114 S Bragg St
+    city: Warrenton
+    state: nc
+    zip: '27589'
   place: '3771100'
-  geo: {lat: 36.39735, lng: -78.15428}
+  geo:
+    lat: 36.39735
+    lng: -78.15428
   phone: 252-213-4859
   hours:
-  - {days: [thu], open: '09:00', close: '10:30', note: 1st and 3rd Thursdays}
-  - {days: [sat], open: '09:00', close: '10:30', note: 1st Saturday}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: warrenton-missionary-baptist-church}
+  - days:
+    - thu
+    open: 09:00
+    close: '10:30'
+    note: 1st and 3rd Thursdays
+  - days:
+    - sat
+    open: 09:00
+    close: '10:30'
+    note: 1st Saturday
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: warrenton-missionary-baptist-church
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape

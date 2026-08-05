@@ -3,23 +3,37 @@
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 1110 E Washington St, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 1110 E Washington St
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.94112, lng: -79.75948}
+  geo:
+    lat: 34.94112
+    lng: -79.75948
   phone: 910-215-3685
   hours:
-  - {days: [sat], open: '08:00', close: '10:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: christ-memorial-church}
+  - days:
+    - sat
+    open: 08:00
+    close: '10:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: christ-memorial-church
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/rockingham/constance-pearson-lcmhc-lcas-constance-pearson-c
   name: Constance Pearson LCMHC LCAS Constance Pearson Counseling
   categories:
   - su-treatment
-  address: {street: 405 East Washington Street, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.94017, lng: -79.77057}
   phone: 910-377-0312
   website: https://cpearsoncounseling.com
   services:
@@ -29,20 +43,31 @@
   - Adult men
   - Veterans
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/daymark-recovery-services-richmond-county
   name: Daymark Recovery Services Richmond County
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 523 North U.S. Highway 1, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 523 North U.S. Highway 1
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.93863, lng: -79.77251}
+  geo:
+    lat: 34.93863
+    lng: -79.77251
   phone: 910-895-2462
   website: https://www.daymarkrecovery.org
   services:
@@ -64,167 +89,285 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/east-rockingham-elementary
   name: East Rockingham Elementary
   categories:
   - meal-program
-  address: {street: 154 Chalk Road, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 154 Chalk Road
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond County Schools.
   place: '3757260'
-  geo: {lat: 34.89476, lng: -79.75081}
+  geo:
+    lat: 34.89476
+    lng: -79.75081
   phone: (910) 582-5860
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2169}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2169
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/goshen-medical-center-rockingham
   name: GOSHEN MEDICAL CENTER - ROCKINGHAM
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 811 E US Highway 74, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 811 E US Highway 74
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.91303, lng: -79.72926}
+  geo:
+    lat: 34.91303
+    lng: -79.72926
   phone: 910-719-3666
   website: https://goshenmedical.org
-  external_ids: {bphc: BPS-H80-039841}
+  external_ids:
+    bphc: BPS-H80-039841
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/goshen-medical-center-rockingham-mobile-unit
   name: GOSHEN MEDICAL CENTER -  ROCKINGHAM MOBILE UNIT
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 811 US-74 Bus E, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 811 US-74 Bus E
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.92793, lng: -79.75909}
+  geo:
+    lat: 34.92793
+    lng: -79.75909
   phone: 910-557-9447
-  external_ids: {bphc: BPS-H80-032839}
+  external_ids:
+    bphc: BPS-H80-032839
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/goshen-medical-center-rockingham-mobile-unit-2
   name: GOSHEN MEDICAL CENTER - ROCKINGHAM MOBILE UNIT 2
   categories:
   - community-health-center
   cost: sliding-scale
-  address: {street: 811 E US Highway 74, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 811 E US Highway 74
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.91303, lng: -79.72926}
+  geo:
+    lat: 34.91303
+    lng: -79.72926
   phone: 910-267-1942
   website: https://goshenmedical.org/
-  external_ids: {bphc: BPS-H80-041029}
+  external_ids:
+    bphc: BPS-H80-041029
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/mount-zion-ucc-rockingham
   name: Mount Zion UCC/Rockingham
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 986 Ledbetter Rd, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 986 Ledbetter Rd
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 35.00271, lng: -79.68837}
+  geo:
+    lat: 35.00271
+    lng: -79.68837
   phone: 910-895-5792
   hours:
-  - {days: [sat], open: '11:00', close: '12:00', note: 2nd and 4th Saturdays}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: mount-zion-ucc-rockingham}
+  - days:
+    - sat
+    open: '11:00'
+    close: '12:00'
+    note: 2nd and 4th Saturdays
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: mount-zion-ucc-rockingham
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/rockingham/our-daily-bread-christian-food
   name: Our Daily Bread Christian Food
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: 108 S Randolph St, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 108 S Randolph St
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.93905, lng: -79.77115}
+  geo:
+    lat: 34.93905
+    lng: -79.77115
   phone: 910-895-3536
   hours:
-  - {days: [tue, wed, thu], open: '09:30', close: '12:30'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: our-daily-bread-christian-food}
+  - days:
+    - tue
+    - wed
+    - thu
+    open: 09:30
+    close: '12:30'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: our-daily-bread-christian-food
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/rockingham/philadelphia-united-methodist-church
   name: Philadelphia United Methodist Church
   categories:
   - meal-program
-  address: {street: 157 Philadelphia Drive, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 157 Philadelphia Drive
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Restoring Hope Center,
     Inc..
   place: '3757260'
-  geo: {lat: 34.95565, lng: -79.7259}
+  geo:
+    lat: 34.95565
+    lng: -79.7259
   phone: (910) 206-2215
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2244}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2244
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/place-of-grace
   name: Place of Grace
   org: nc/food-bank-of-central-eastern-north-carolina
   categories:
   - food-pantry
-  address: {street: '252 School St, Rockingham', city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 252 School St, Rockingham
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.91543, lng: -79.76511}
+  geo:
+    lat: 34.91543
+    lng: -79.76511
   phone: 910-817-7801
   website: https://www.placeofgracechurch.com/outreach
   hours:
-  - {days: [mon], open: '10:00', close: '14:00'}
-  - {days: [wed], open: '10:00', close: '14:00'}
-  external_ids: {nc-food-bank-of-central-eastern-north-carolina: place-of-grace}
+  - days:
+    - mon
+    open: '10:00'
+    close: '14:00'
+  - days:
+    - wed
+    open: '10:00'
+    close: '14:00'
+  external_ids:
+    nc-food-bank-of-central-eastern-north-carolina: place-of-grace
   sources:
   - foodbank/nc-food-bank-of-central-eastern-north-carolina
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: nc/rockingham/richmond-county-department-of-social-services
   name: Richmond County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Richmond County
-  address: {street: 125 Caroline St. (P. O. Box 518), city: Rockingham, state: nc, zip: '28380'}
+  address:
+    street: 125 Caroline St. (P. O. Box 518)
+    city: Rockingham
+    state: nc
+    zip: '28380'
   place: '3757260'
   phone: 910-997-8480
   website: https://www.richmondnc.com/149/SOCIAL-SERVICES
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 34.92605, lng: -79.77616}
 - id: nc/rockingham/richmond-senior-high
   name: Richmond Senior High
   categories:
   - meal-program
-  address: {street: Us Highway 1 North, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: Us Highway 1 North
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond County Schools.
   place: '3757260'
-  geo: {lat: 34.95938, lng: -79.68902}
+  geo:
+    lat: 34.95938
+    lng: -79.68902
   phone: (910) 582-5860
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2166}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2166
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/rockingham-housing-authority
   name: Rockingham Housing Authority
   categories:
   - housing-assistance
-  address: {street: 809 Armstead St, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 809 Armstead St
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Public housing and Housing Choice Voucher agency
   place: '3757260'
-  geo: {lat: 34.93751, lng: -79.76346}
+  geo:
+    lat: 34.93751
+    lng: -79.76346
   phone: 910-997-3316
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/samaritan-colony
   name: Samaritan Colony
   categories:
   - su-treatment
-  address: {street: 136 Samaritan Drive, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 136 Samaritan Drive
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 35.00632, lng: -79.76942}
+  geo:
+    lat: 35.00632
+    lng: -79.76942
   phone: 910-895-3243
   website: https://www.samaritancolony.org
   services:
@@ -238,14 +381,22 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/sandhills-behavioral-care-pllc
   name: Sandhills Behavioral Care PLLC
   categories:
   - su-treatment
-  address: {street: 523 Rockingham Road, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 523 Rockingham Road
+    city: Rockingham
+    state: nc
+    zip: '28379'
   place: '3757260'
-  geo: {lat: 34.93795, lng: -79.76778}
+  geo:
+    lat: 34.93795
+    lng: -79.76778
   phone: 910-562-9882
   website: https://sandhillscares.com
   services:
@@ -271,30 +422,50 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/washington-street
   name: Washington Street
   categories:
   - meal-program
-  address: {street: 566 E. Washington St, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 566 E. Washington St
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond County Schools.
   place: '3757260'
-  geo: {lat: 34.93992, lng: -79.7684}
+  geo:
+    lat: 34.93992
+    lng: -79.7684
   phone: (910) 582-5860
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2168}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2168
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: nc/rockingham/west-rockingham-elementary
   name: West Rockingham Elementary
   categories:
   - meal-program
-  address: {street: 271 W.Us Hwy 74, city: Rockingham, state: nc, zip: '28379'}
+  address:
+    street: 271 W.Us Hwy 74
+    city: Rockingham
+    state: nc
+    zip: '28379'
   description: Free summer meals for kids and teens (2026 season) — sponsored by Richmond County Schools.
   place: '3757260'
-  geo: {lat: 34.94536, lng: -79.78739}
+  geo:
+    lat: 34.94536
+    lng: -79.78739
   phone: (910) 582-5860
-  external_ids: {usda_master: Cycle 06_NC_SFSP_2167}
+  external_ids:
+    usda_master: Cycle 06_NC_SFSP_2167
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

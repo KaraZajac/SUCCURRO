@@ -22,7 +22,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/community-medical-services-lake-havasu
   name: Community Medical Services Lake Havasu
   categories:
@@ -37,11 +37,12 @@
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
   - Pregnant/postpartum women
-  eligibility: Serves young adults, adults, seniors.
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/economic-security
   name: Economic Security
   categories:
@@ -54,7 +55,7 @@
   external_ids: {fns: '493701'}
   sources:
   - usda/fdpir-csfp-agencies
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/elk-ridge-lake-havasu-city-clinic
   name: ELK RIDGE - LAKE HAVASU CITY CLINIC
   categories:
@@ -67,7 +68,7 @@
   external_ids: {bphc: BPS-H80-041632}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/havasupai-elementary-school
   name: Havasupai Elementary School
   categories:
@@ -79,7 +80,7 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0492}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/havasupai-head-start
   name: Havasupai Head Start
   categories:
@@ -92,7 +93,7 @@
   phone: 928-505-6046
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/lake-havasu-city-head-start-center
   name: Lake Havasu City Head Start Center
   categories:
@@ -105,7 +106,7 @@
   phone: 928-680-6212
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/lake-havasu-city-service-center
   name: Lake Havasu City Service Center
   categories:
@@ -127,7 +128,7 @@
   external_ids: {gdos: 8a808375559c116c0155bece8403031c}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/lake-havasu-city-va-clinic
   name: Lake Havasu City VA Clinic
   categories:
@@ -154,7 +155,7 @@
   external_ids: {va: vha_649GC}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/lake-havasu-wic
   name: Lake Havasu WIC
   categories:
@@ -169,7 +170,7 @@
   external_ids: {wic: 'az-dhs:167'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/mohave-mental-health-clinic-inc
   name: Mohave Mental Health Clinic Inc
   categories:
@@ -185,11 +186,14 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/mohave-mental-health-clinic-inc-children-and-fam
   name: Mohave Mental Health Clinic Inc Children and Family Services
   categories:
@@ -202,18 +206,24 @@
   website: https://www.mmhc-inc.org
   services:
   - Outpatient
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
+  - Members of military families
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced sexual abuse
+  - Clients with HIV or AIDS
   - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
+  - Persons with traumatic brain injury (TBI)
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/nautilus-elementary-school
   name: Nautilus Elementary School
   categories:
@@ -225,7 +235,7 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0167}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/oro-grande-classical-academy
   name: Oro Grande Classical Academy
   categories:
@@ -237,7 +247,7 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0168}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: az/lake-havasu-city/smoketree-elementary-school
   name: Smoketree Elementary School
   categories:
@@ -249,4 +259,4 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0169}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

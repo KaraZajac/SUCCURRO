@@ -10,7 +10,7 @@
   external_ids: {usda_master: Cycle 05_WA_SFSP_0014}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/columbia-wellness-kelso
   name: Columbia Wellness Kelso
   categories:
@@ -18,17 +18,36 @@
   - mh-treatment
   address: {street: 305 South Pacific Avenue, city: Kelso, state: wa, zip: '98626'}
   place: '5335065'
-  geo: {lat: 46.14369, lng: -122.91234}
+  geo: {lat: 46.14371, lng: -122.91235}
   phone: 360-423-0203
   website: https://www.columbiawell.org
   services:
   - Outpatient
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents, adults.
+  - Regular outpatient treatment
+  - Adolescents
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: wa/kelso/cowlitz-family-health-center
+  name: Cowlitz Family Health Center
+  categories:
+  - su-treatment
+  address: {street: 621 Grade Street, city: Kelso, state: wa, zip: '98626'}
+  place: '5335065'
+  geo: {lat: 46.14222, lng: -122.90684}
+  phone: 360-425-9210
+  website: https://
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  eligibility: Serves young adults, adults.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/fhc-kelso-clinic
   name: FHC Kelso Clinic
   categories:
@@ -42,7 +61,7 @@
   external_ids: {bphc: BPS-H80-012656}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/grade-street-campus
   name: Grade Street Campus
   categories:
@@ -56,7 +75,19 @@
   external_ids: {bphc: BPS-H80-018602}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: wa/kelso/ha-city-of-kelso
+  name: Ha City Of Kelso
+  categories:
+  - housing-assistance
+  address: {street: 1415 S 10th Ave, city: Kelso, state: wa, zip: '98626'}
+  description: Public housing and Housing Choice Voucher agency
+  place: '5335065'
+  geo: {lat: 46.13099, lng: -122.90804}
+  phone: 360-423-3490
+  sources:
+  - hud/resource-locator
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/kelso-comprehensive-treatment-center-wchs-inc
   name: Kelso Comprehensive Treatment Center WCHS Inc
   categories:
@@ -69,15 +100,19 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adolescents
+  - Young adults
   - Adult women
   - Pregnant/postpartum women
   - Adult men
   - Seniors or older adults
-  eligibility: Serves young adults, adults, seniors.
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/kelso-high-school
   name: Kelso High School
   categories:
@@ -90,7 +125,7 @@
   external_ids: {usda_master: Cycle 05_WA_SFSP_0127}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/kelso-public-library
   name: Kelso Public Library
   categories:
@@ -103,7 +138,7 @@
   external_ids: {usda_master: Cycle 05_WA_SFSP_0223}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/lexington-elementary
   name: Lexington Elementary
   categories:
@@ -116,7 +151,7 @@
   external_ids: {usda_master: Cycle 05_WA_SFSP_0035}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/sea-mar-behavioral-health-kelso-sea-mar-communit
   name: Sea Mar Behavioral Health Kelso/Sea Mar Community Health Centers
   categories:
@@ -131,22 +166,20 @@
   - Outpatient
   - Young adults
   - Seniors or older adults
-  - Veterans
-  - Active duty military
-  - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
   - Clients who have experienced trauma
-  - Persons with eating disorders
   - Persons with post-traumatic stress disorder (PTSD)
   - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
+  languages:
+  - en
+  - es
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/sea-mar-chc-kelso-allen-st
   name: Sea Mar CHC - Kelso Allen St.
   categories:
@@ -159,7 +192,7 @@
   external_ids: {bphc: BPS-H80-017452}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: wa/kelso/wallace-elementary
   name: Wallace Elementary
   categories:
@@ -172,4 +205,4 @@
   external_ids: {usda_master: Cycle 05_WA_SFSP_0060}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

@@ -2,23 +2,58 @@
   name: Albion Housing Authority
   categories:
   - housing-assistance
-  address: {street: 827 W Columbia St, city: Albion, state: ne, zip: '68620'}
+  address:
+    street: 827 W Columbia St
+    city: Albion
+    state: ne
+    zip: '68620'
   description: Public housing (Low-Rent) agency
   place: '3100555'
-  geo: {lat: 41.68764, lng: -98.00645}
+  geo:
+    lat: 41.68764
+    lng: -98.00645
   phone: 402-395-2224
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: ne/albion/boone-county-mobile
+  name: Boone County Mobile
+  org: ne/food-bank-for-the-heartland
+  categories:
+  - food-pantry
+  address:
+    street: 'Casey’s Building Albion Fairgrounds: 1300 W South St'
+    city: Albion
+    state: ne
+    zip: '68620'
+  place: '3100555'
+  geo:
+    lat: 41.68127
+    lng: -98.01066
+  external_ids:
+    ne-food-bank-for-the-heartland: '68268055'
+  sources:
+  - foodbank/ne-food-bank-for-the-heartland
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: ne/albion/nebraska-department-of-health-and-human-services
   name: Nebraska Department of Health and Human Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Boone County
-  address: {street: 233 South 4th Street, city: Albion, state: ne, zip: '68620'}
+  address:
+    street: 233 South 4th Street
+    city: Albion
+    state: ne
+    zip: '68620'
   place: '3100555'
   phone: 402-395-5036
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 41.69114, lng: -98.00106}

@@ -19,7 +19,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ma/belmont/belmont-housing-authority
   name: Belmont Housing Authority
   categories:
@@ -31,7 +31,21 @@
   phone: 617-484-2160
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: ma/belmont/belmont-housing-authority-sf-9x-162
+  name: Belmont Housing Authority (Sf-9X-162)
+  categories:
+  - meal-program
+  address: {street: 59 Pearson Rd, city: Belmont, state: ma, zip: 02478}
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Dept. Of Human Service
+    Prog. (09-049-SF-9X).
+  place: '2505105'
+  geo: {lat: 42.3925, lng: -71.18125}
+  phone: (617) 484-2160
+  external_ids: {usda_master: Cycle 13_MA_SFSP_0338}
+  sources:
+  - usda/summer-meal-sites
+  verified: {'on': '2026-08-05', method: api}
 - id: ma/belmont/leader-mclean-hospital
   name: LEADER McLean Hospital
   categories:
@@ -51,7 +65,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ma/belmont/mclean-hospital-alcohol-and-drug-abuse-treatment
   name: McLean Hospital Alcohol and Drug Abuse Treatment
   categories:
@@ -80,7 +94,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ma/belmont/mclean-naukeag-treatment-center-at-naukeag
   name: McLean Naukeag Treatment Center at Naukeag
   categories:
@@ -98,4 +112,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: ma/belmont/the-kidlet
+  name: The Kidlet :)
+  categories:
+  - food-pantry
+  place: '2505105'
+  geo: {lat: 42.40261, lng: -71.16971}
+  website: https://mapping.littlefreepantry.org/pantry/6103
+  external_ids: {lfp: '6103'}
+  sources:
+  - littlefreepantry/map
+  verified: {'on': '2026-08-05', method: scrape}

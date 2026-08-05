@@ -10,7 +10,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0644}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/covington-ga-service-center
   name: Covington GA Service Center
   categories:
@@ -32,7 +32,7 @@
   external_ids: {gdos: 402818763d5b8722013d5d324edb25da}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/covington-housing-authority
   name: Covington Housing Authority
   categories:
@@ -45,7 +45,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0223}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/covington-little-pantry
   name: Covington Little Pantry
   categories:
@@ -56,7 +56,7 @@
   external_ids: {lfp: '4960'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: ga/covington/covington-va-clinic
   name: Covington VA Clinic
   categories:
@@ -74,13 +74,15 @@
   - Dermatology
   - Laboratory and pathology
   - Mental health care
+  - Nutrition, food, and dietary care
   - Ophthalmology
+  - Podiatry
   - Primary care
   - Telehealth
   external_ids: {va: vha_508GN}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/heard-mixon-elementary
   name: Heard Mixon Elementary
   categories:
@@ -93,7 +95,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0416}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/housing-authority-of-the-city-of-covington
   name: Housing Authority Of The City Of Covington
   categories:
@@ -105,7 +107,7 @@
   phone: 770-786-7739
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/middle-ridge-elementary
   name: Middle Ridge Elementary
   categories:
@@ -118,7 +120,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0226}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/nelson-heights-community-center
   name: Nelson Heights Community Center
   categories:
@@ -131,7 +133,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0224}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/newton-county-head-start
   name: NEWTON COUNTY HEAD START
   categories:
@@ -144,7 +146,7 @@
   phone: 770-784-7528
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/newton-high-school
   name: Newton High School
   categories:
@@ -158,7 +160,7 @@
   external_ids: {usda_master: Cycle 07_GA_SFSP_0485}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/oak-hill-elementary
   name: Oak Hill Elementary
   categories:
@@ -171,7 +173,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0227}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/pleasant-view-baptist-church
   name: Pleasant View Baptist Church
   categories:
@@ -184,7 +186,7 @@
   external_ids: {usda_master: Cycle 04_GA_SSO_0221}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/southeastern-psychological-assoc-inc
   name: Southeastern Psychological Assoc Inc
   categories:
@@ -197,27 +199,25 @@
   website: https://
   services:
   - Outpatient
-  - Regular outpatient treatment
-  - Adolescents
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
+  - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/view-point-health-gran-recovery-center
   name: View Point Health GRAN Recovery Center
   categories:
   - su-treatment
-  address: {street: 215 Kirkland Road, city: Covington, state: ga, zip: '30016'}
+  address: {city: Covington, state: ga, zip: '30016'}
   place: '1320064'
-  geo: {lat: 33.5865, lng: -83.91679}
   phone: 678-209-2411
   website: https://www.myviewpointhealth.org
   services:
+  - Hospital inpatient/24-hour hospital inpatient
   - Residential/24-hour residential
+  - Hospital inpatient treatment
   - Short-term residential
   - Young adults
   - Adult women
@@ -229,13 +229,11 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/view-point-health-newton-outpatient-center
   name: View Point Health Newton Outpatient Center
   categories:
@@ -255,12 +253,13 @@
   - Clients who have experienced trauma
   - Persons experiencing first-episode psychosis
   - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
   - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: ga/covington/willing-helpers-medical-inc
   name: Willing Helpers Medical, Inc
   categories:
@@ -301,4 +300,4 @@
   external_ids: {usda_master: Cycle 05_GA_SFSP_0169}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

@@ -14,7 +14,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/compass-health
   name: Compass Health
   categories:
@@ -32,7 +32,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/compass-health-2
   name: Compass Health
   categories:
@@ -52,15 +52,14 @@
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves children/adolescents.
+  eligibility: Serves children/adolescents, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/compass-health-inc
   name: Compass Health Inc
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 575 Blues Lake Parkway, city: Rolla, state: mo, zip: '65401'}
   place: '2962912'
@@ -81,7 +80,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/compass-health-inc-2
   name: Compass Health, Inc.
   categories:
@@ -94,21 +93,27 @@
   external_ids: {bphc: BPS-H80-040455}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: mo/rolla/four-rivers-community-health-center
-  name: Four Rivers Community Health Center
+  verified: {'on': '2026-08-05', method: api}
+- id: mo/rolla/compass-health-inc-3
+  name: Compass Health Inc
   categories:
-  - community-health-center
-  cost: sliding-scale
-  address: {street: 509 E 10th St, city: Rolla, state: mo, zip: '65401'}
+  - mh-treatment
+  address: {street: 1060 West 10th Street, city: Rolla, state: mo, zip: '65401'}
   place: '2962912'
-  geo: {lat: 37.9515, lng: -91.76598}
-  phone: 573-426-4455
-  external_ids: {bphc: BPS-H80-036535}
+  geo: {lat: 37.95371, lng: -91.78485}
+  phone: 660-885-8131
+  website: https://www.compasshealthnetwork.org
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: sliding-scale
   sources:
-  - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: mo/rolla/four-rivers-community-health-center-2
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
+- id: mo/rolla/four-rivers-community-health-center
   name: Four Rivers Community Health Center
   categories:
   - community-health-center
@@ -121,7 +126,20 @@
   external_ids: {bphc: BPS-H80-018610}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: mo/rolla/four-rivers-community-health-center-2
+  name: Four Rivers Community Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 509 E 10th St, city: Rolla, state: mo, zip: '65401'}
+  place: '2962912'
+  geo: {lat: 37.9515, lng: -91.76598}
+  phone: 573-426-4455
+  external_ids: {bphc: BPS-H80-036535}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/four-rivers-community-health-center-bishop-ave
   name: Four Rivers Community Health Center - Bishop Ave
   categories:
@@ -134,7 +152,7 @@
   external_ids: {bphc: BPS-H80-038966}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/four-rivers-community-health-center-mobile-medic
   name: Four Rivers Community Health Center Mobile Medical
   categories:
@@ -147,7 +165,7 @@
   external_ids: {bphc: BPS-H80-031384}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/four-rivers-community-health-center-smile-mobile
   name: Four Rivers Community Health Center Smile Mobile
   categories:
@@ -160,7 +178,7 @@
   external_ids: {bphc: BPS-H80-027239}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/housing-authority-of-the-city-of-rolla
   name: Housing Authority Of The City Of Rolla
   categories:
@@ -172,7 +190,7 @@
   phone: 573-364-6460
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/pediatric-dentistry-of-the-ozarks
   name: Pediatric Dentistry of the Ozarks
   categories:
@@ -185,11 +203,10 @@
   external_ids: {bphc: BPS-H80-040200}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/phelps-health-director-of-acute-psych-unit
   name: Phelps Health Director of Acute Psych Unit
   categories:
-  - su-treatment
   - mh-treatment
   address: {street: 1000 West 10th Street, city: Rolla, state: mo, zip: '65401'}
   place: '2962912'
@@ -198,14 +215,13 @@
   website: https://www.phelpshealth.org
   services:
   - Hospital inpatient/24-hour hospital inpatient
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves young adults, adults.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/rolla
   name: Rolla
   categories:
@@ -218,7 +234,7 @@
   external_ids: {lsc_office: '52605101'}
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/rolla-head-start
   name: Rolla Head Start
   categories:
@@ -231,7 +247,7 @@
   phone: 573-364-8252
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/rolla-veteran-service-office
   name: Rolla Veteran Service Office
   categories:
@@ -239,13 +255,13 @@
   description: State veteran service office of the Missouri Veterans Commission serving Phelps, Dent,
     Crawford and Maries counties. Veteran service officers assist veterans and their families with VA
     benefit claims.
-  address: {street: 1101 Kingshighway, city: Rolla, state: mo, zip: '65401'}
+  address: {street: 1107 Kingshighway, city: Rolla, state: mo, zip: '65401'}
   geo: {lat: 37.94737, lng: -91.77693}
   place: '2962912'
   phone: 573-899-6026
   sources:
   - stateveterans/mo
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: mo/rolla/truman-elementary-non-congregate
   name: Truman Elementary - Non-Congregate
   categories:
@@ -259,4 +275,4 @@
   external_ids: {usda_master: Cycle 04_MO_SFSP_0781}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}

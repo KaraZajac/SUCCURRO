@@ -19,7 +19,26 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: or/roseburg/adapt-integrated-healthcare-deer-creek-adolescen
+  name: Adapt Integrated Healthcare Deer Creek/Adolescent Trt Center
+  categories:
+  - su-treatment
+  address: {street: P.O. Box 1121, city: Roseburg, state: or, zip: '97470'}
+  place: '4163650'
+  phone: 541-673-5119
+  website: https://www.adaptoregon.org
+  services:
+  - Residential/24-hour residential
+  - Long-term residential
+  - Adolescents
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, adults.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/adapt-integrated-healthcare-madrone
   name: Adapt Integrated Healthcare Madrone
   categories:
@@ -32,24 +51,21 @@
   website: https://www.adaptoregon.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
   - Seniors or older adults
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults, seniors.
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/adapt-integrated-healthcare-opioid-treatment-pro
   name: Adapt Integrated Healthcare Opioid Treatment Program
   categories:
@@ -74,11 +90,11 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/adapt-integrated-healthcare-the-crossroads
   name: Adapt Integrated Healthcare The Crossroads
   categories:
@@ -93,21 +109,15 @@
   - Residential detoxification
   - Short-term residential
   - Adult women
-  - Pregnant/postpartum women
   - Adult men
-  - Seniors or older adults
-  - Veterans
-  - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients with HIV or AIDS
-  eligibility: Serves young adults, adults, seniors.
+  - Clients who have experienced trauma
+  eligibility: Serves young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/adapt-integrated-healthcare-youth-outpatient-pro
   name: Adapt Integrated Healthcare Youth Outpatient Program
   categories:
@@ -123,11 +133,12 @@
   - Adolescents
   - Young adults
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
   eligibility: Serves children/adolescents, young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/aviva-health-reproductive-women-s-health-clinic
   name: Aviva Health - Reproductive & Women's Health Clinic
   categories:
@@ -140,7 +151,7 @@
   external_ids: {bphc: BPS-H80-039967}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/aviva-outpatient-behavioral-health
   name: Aviva Outpatient Behavioral Health
   categories:
@@ -153,7 +164,7 @@
   external_ids: {bphc: BPS-H80-035397}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/boys-girls-club-of-the-umpqua-valley
   name: Boys & Girls Club of the  Umpqua Valley
   categories:
@@ -171,7 +182,20 @@
   external_ids: {bgca_site: '1207', bgca_org: '24616'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
+- id: or/roseburg/child-advocacy-center
+  name: Child Advocacy Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 1128 SE Stephens St, city: Roseburg, state: or, zip: '97470'}
+  place: '4163650'
+  geo: {lat: 43.20522, lng: -123.34936}
+  phone: 541-672-9596
+  external_ids: {bphc: BPS-H80-041970}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/cow-creek-health-and-wellness-behavioral-health
   name: Cow Creek Health and Wellness Behavioral Health
   categories:
@@ -184,11 +208,16 @@
   website: https://www.cowcreek.com
   services:
   - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/cow-creek-health-wellness-north-campus
   name: Cow Creek Health & Wellness - North Campus
   categories:
@@ -211,7 +240,7 @@
   external_ids: {asufac: '758650'}
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-07-21', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/creekside-family-church
   name: Creekside Family Church
   categories:
@@ -224,7 +253,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0033}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/eastwood-park
   name: Eastwood Park
   categories:
@@ -237,7 +266,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0040}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/ehs-central-hb
   name: EHS Central HB
   categories:
@@ -250,7 +279,7 @@
   phone: 541-673-6306
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/faith-lutheran-church
   name: Faith Lutheran Church
   categories:
@@ -263,7 +292,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0046}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/fir-grove-elem
   name: Fir Grove Elem
   categories:
@@ -276,7 +305,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0048}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/fish-of-roseburg
   name: FISH of Roseburg
   org: or/oregon-food-bank
@@ -293,7 +322,7 @@
   external_ids: {or-oregon-food-bank: fish-of-roseburg}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/fqhc-diamond-lake-blvd
   name: FQHC Diamond Lake Blvd
   categories:
@@ -307,7 +336,7 @@
   external_ids: {bphc: BPS-H80-035148}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/fqhc-jackson-street
   name: FQHC - Jackson Street
   categories:
@@ -321,7 +350,7 @@
   external_ids: {bphc: BPS-H80-032047}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/fqhc-madrone
   name: FQHC - Madrone
   categories:
@@ -335,7 +364,7 @@
   external_ids: {bphc: BPS-H80-024422}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/fqhc-mobile-medical-clinic
   name: FQHC Mobile Medical Clinic
   categories:
@@ -349,7 +378,7 @@
   external_ids: {bphc: BPS-H80-037255}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/friendly-kitchen-meals-on-wheels
   name: Friendly Kitchen Meals on Wheels
   org: or/oregon-food-bank
@@ -364,7 +393,7 @@
   external_ids: {or-oregon-food-bank: friendly-kitchen-meals-on-wheels}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/green-elementary
   name: Green Elementary
   categories:
@@ -377,7 +406,7 @@
   external_ids: {usda_master: Cycle 03_OR_SFSP_0126}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/housing-authority-of-douglas-county
   name: Housing Authority Of Douglas County
   categories:
@@ -389,7 +418,7 @@
   phone: 541-673-6548
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/hucrest-elem
   name: Hucrest Elem
   categories:
@@ -402,7 +431,7 @@
   external_ids: {usda_master: Cycle 03_OR_SFSP_0158}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/joseph-lane-middle-school
   name: Joseph Lane Middle School
   categories:
@@ -415,7 +444,7 @@
   external_ids: {usda_master: Cycle 03_OR_SFSP_0179}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/lookingglass-elem
   name: Lookingglass Elem
   categories:
@@ -428,7 +457,7 @@
   external_ids: {usda_master: Cycle 03_OR_SFSP_0202}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/mobile-unit-24
   name: Mobile Unit 24
   categories:
@@ -441,7 +470,7 @@
   external_ids: {bphc: BPS-H80-032347}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/mobile-unit-41
   name: Mobile Unit 41
   categories:
@@ -454,7 +483,7 @@
   external_ids: {bphc: BPS-H80-032344}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg
   name: Roseburg
   categories:
@@ -467,7 +496,7 @@
   phone: 541-673-6306
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-club-location
   name: Roseburg Club Location
   categories:
@@ -481,7 +510,7 @@
   external_ids: {usda_master: Cycle 03_OR_SFSP_0294}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-corps-community-center
   name: Roseburg Corps Community Center
   categories:
@@ -513,7 +542,7 @@
   external_ids: {gdos: 8a808375559c116c0155becd16f80103}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-dream-center
   name: Roseburg Dream Center
   org: or/oregon-food-bank
@@ -529,7 +558,7 @@
   external_ids: {or-oregon-food-bank: roseburg-dream-center}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/roseburg-high-school
   name: ROSEBURG HIGH SCHOOL
   categories:
@@ -543,7 +572,7 @@
   external_ids: {bphc: BPS-H80-004003}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-office
   name: Roseburg Office
   categories:
@@ -556,7 +585,7 @@
   external_ids: {lsc_office: '93800405'}
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-sr-high
   name: Roseburg Sr High
   categories:
@@ -569,7 +598,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0127}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/roseburg-va-medical-center
   name: Roseburg VA Medical Center
   categories:
@@ -615,7 +644,7 @@
   external_ids: {va: vha_653}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/saddle-butte-mobile-manor
   name: Saddle Butte Mobile Manor
   categories:
@@ -628,7 +657,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0131}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/salvation-army-roseburg
   name: Salvation Army Roseburg
   org: or/oregon-food-bank
@@ -644,7 +673,7 @@
   external_ids: {or-oregon-food-bank: salvation-army-roseburg}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/sda-roseburg-community-services
   name: SDA Roseburg Community Services
   org: or/oregon-food-bank
@@ -659,7 +688,7 @@
   external_ids: {or-oregon-food-bank: sda-roseburg-community-services}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/serenity-lane-roseburg
   name: Serenity Lane Roseburg
   categories:
@@ -678,7 +707,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/st-joseph-s-community-kitchen
   name: St Joseph's Community Kitchen
   org: or/oregon-food-bank
@@ -694,7 +723,7 @@
   external_ids: {or-oregon-food-bank: st-joseph-s-community-kitchen}
   sources:
   - foodbank/or-oregon-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/sunnyslope-elementary
   name: Sunnyslope Elementary
   categories:
@@ -707,7 +736,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0148}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/thompson-park
   name: Thompson Park
   categories:
@@ -720,7 +749,7 @@
   external_ids: {usda_master: Cycle 01_OR_SFSP_0154}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/uchc-denture-lab
   name: UCHC Denture Lab
   categories:
@@ -733,7 +762,7 @@
   external_ids: {bphc: BPS-H80-028038}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/umpqua-community-health-center
   name: Umpqua Community Health Center
   categories:
@@ -747,7 +776,7 @@
   external_ids: {bphc: BPS-H80-008886}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/united-community-action-network
   name: United Community Action Network
   categories:
@@ -759,7 +788,7 @@
   website: https://www.ucancap.org/utility-bill/
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified: {'on': '2026-08-05', method: scrape}
 - id: or/roseburg/va-roseburg-healthcare-system
   name: VA Roseburg Healthcare System
   categories:
@@ -785,7 +814,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified: {'on': '2026-08-05', method: api}
 - id: or/roseburg/wic-of-douglas-county-a-program-of-ucan
   name: WIC of Douglas County, A Program of UCAN
   categories:
@@ -801,4 +830,4 @@
   external_ids: {wic: 'or-wic:12'}
   sources:
   - wic/or-wic
-  verified: {'on': '2026-07-20', method: api}
+  verified: {'on': '2026-08-05', method: api}

@@ -2,8 +2,14 @@
   name: Brandon Residential Treatment Ctr
   categories:
   - mh-treatment
-  address: {street: 27 Winter Street, city: Natick, state: ma, zip: '01760'}
-  geo: {lat: 42.31931, lng: -71.33804}
+  address:
+    street: 27 Winter Street
+    city: Natick
+    state: ma
+    zip: '01760'
+  geo:
+    lat: 42.31931
+    lng: -71.33804
   phone: 508-655-6400 x204
   website: https://www.brandonschool.org
   services:
@@ -18,17 +24,49 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   place: '2514570'
 - id: ma/natick/natick-housing-authority
   name: Natick Housing Authority
   categories:
   - housing-assistance
-  address: {street: 4 Cottage St, city: Natick, state: ma, zip: '01760'}
+  address:
+    street: 4 Cottage St
+    city: Natick
+    state: ma
+    zip: '01760'
   description: Housing Choice Voucher (Section 8) agency
-  geo: {lat: 42.2801, lng: -71.34697}
+  geo:
+    lat: 42.2801
+    lng: -71.34697
   phone: 508-653-2971
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
   place: '2514570'
+- id: ma/natick/west-hill-park-sf-309-035
+  name: West Hill Park (Sf-309-035)
+  categories:
+  - meal-program
+  address:
+    street: West Hill Park Near Corner Of Mill St
+    city: Natick
+    state: ma
+    zip: '01760'
+  description: Free summer meals for kids and teens (2026 season) — sponsored by Metrowest YMCA (09-100-SF-309).
+  geo:
+    lat: 42.28029
+    lng: -71.38074
+  phone: (508) 879-4420
+  external_ids:
+    usda_master: Cycle 12_MA_SFSP_0380
+  sources:
+  - usda/summer-meal-sites
+  verified:
+    'on': '2026-08-05'
+    method: api
+  place: '2524960'

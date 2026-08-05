@@ -2,21 +2,35 @@
   name: Absaroka Head Start Cody Center
   categories:
   - child-care
-  address: {street: 1701 29th St, city: Cody, state: wy, zip: '82414'}
+  address:
+    street: 1701 29th St
+    city: Cody
+    state: wy
+    zip: '82414'
   description: Head Start early childhood program — 17 funded slots; operated by Absaroka, Inc..
   place: '5615760'
-  geo: {lat: 44.52102, lng: -109.03368}
+  geo:
+    lat: 44.52102
+    lng: -109.03368
   phone: 307-527-6454
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: wy/cody/cedar-mountain-center-at-cody-regional-health
   name: Cedar Mountain Center at Cody Regional Health
   categories:
   - su-treatment
-  address: {street: 707 Sheridan Avenue, city: Cody, state: wy, zip: '82414'}
+  address:
+    street: 707 Sheridan Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
   place: '5615760'
-  geo: {lat: 44.52656, lng: -109.07378}
+  geo:
+    lat: 44.52656
+    lng: -109.07378
   phone: 307-578-2531
   website: https://www.codyregionalhealth.org
   services:
@@ -28,125 +42,28 @@
   - Long-term residential
   - Short-term residential
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
-- id: wy/cody/cody
-  name: Cody
-  categories:
-  - legal-aid
-  description: LSC-funded legal aid branch office of Legal Aid of Wyoming, Inc.
-  org: wy/legal-aid-of-wyoming-inc
-  address: {street: 1501 Stampede Ave., street2: Suite 3212, city: Cody, state: wy, zip: '82414'}
-  geo: {lat: 44.51892, lng: -109.05652}
-  place: '5615760'
-  external_ids: {lsc_office: '95105005'}
-  sources:
-  - lsc/office-locations
-  verified: {'on': '2026-07-20', method: api}
-- id: wy/cody/cody-va-clinic
-  name: Cody VA Clinic
-  categories:
-  - va-facility
-  - health
-  description: Other Outpatient Services (OOS)
-  address: {street: 1432 Rumsey Avenue, city: Cody, state: wy, zip: '82414'}
-  place: '5615760'
-  geo: {lat: 44.52715, lng: -109.05888}
-  phone: 307-587-4015
-  website: https://www.va.gov/sheridan-health-care/locations/cody-va-clinic/
-  hours:
-  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
-  services:
-  - Audiology and speech
-  - Cardiology
-  - Laboratory and pathology
-  - Mental health care
-  - Primary care
-  - Telehealth
-  external_ids: {va: vha_666GD}
-  sources:
-  - va/facilities-api
-  verified: {'on': '2026-07-19', method: api}
-- id: wy/cody/eastside-elementary
-  name: Eastside Elementary
-  categories:
-  - meal-program
-  address: {street: 801 17Th Street, city: Cody, state: wy, zip: '82414'}
-  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Park CSD # 6.'
-  place: '5615760'
-  geo: {lat: 44.52929, lng: -109.05444}
-  phone: (307) 587-4251
-  external_ids: {usda_master: Cycle 03_WY_SFSP_0008}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: wy/cody/heart-mountain-volunteer-medical-clinic
-  name: Heart Mountain Volunteer Medical Clinic
-  categories:
-  - free-clinic
-  - health
-  address: {street: 1735 Sheridan Avenue, city: Cody, state: wy, zip: '82414'}
-  geo: {lat: 44.52575, lng: -109.0541}
-  place: '5615760'
-  phone: 307-272-1735
-  website: https://www.hmvmc.org
-  cost: free
-  external_ids: {nafc: heart-mountain-volunteer-medical-clinic}
-  sources:
-  - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
-- id: wy/cody/one-health-cody-clinic
-  name: One Health - Cody Clinic
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address: {street: 902 Blackburn St STE F, city: Cody, state: wy, zip: '82414'}
-  place: '5615760'
-  geo: {lat: 44.52853, lng: -109.04252}
-  phone: 307-291-0447
-  external_ids: {bphc: BPS-H80-038321}
-  sources:
-  - hrsa/health-center-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: wy/cody/park-county-department-of-family-services
-  name: Park County Department of Family Services
-  categories:
-  - utility-assistance
-  description: LIHEAP intake office serving Park County
-  address: {street: '1501 Stampede Ave., Unit 9009', city: Cody, state: wy, zip: '82414'}
-  place: '5615760'
-  phone: 307-587-6246
-  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
-  sources:
-  - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
-  geo: {lat: 44.51888, lng: -109.05698}
-- id: wy/cody/paul-stock-aquatic-and-recreation-center
-  name: Paul Stock Aquatic And Recreation Center
-  categories:
-  - meal-program
-  address: {street: 1402 Heart Mountain St, city: Cody, state: wy, zip: '82414'}
-  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Park CSD # 6.'
-  place: '5615760'
-  geo: {lat: 44.52222, lng: -109.06094}
-  phone: (307) 587-0400
-  external_ids: {usda_master: Cycle 03_WY_SFSP_0009}
-  sources:
-  - usda/summer-meal-sites
-  verified: {'on': '2026-07-19', method: api}
-- id: wy/cody/west-park-behavioral-health-cody-regional-health
-  name: West Park Behavioral Health Cody Regional Health
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/cedar-mountain-cody-park-sud-sor
+  name: Cedar Mountain Cody/Park (SUD) SOR
   categories:
   - su-treatment
-  - mh-treatment
-  address: {street: 424 West Yellowstone Avenue, city: Cody, state: wy, zip: '82414'}
+  address:
+    street: 424 Yellowstone Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
   place: '5615760'
-  geo: {lat: 44.51194, lng: -109.11344}
+  geo:
+    lat: 44.51613
+    lng: -109.08532
   phone: 307-578-2283
-  website: https://www.codyregionalhealth.org/service-cedar-mountain.
+  website: https://www.codyregionalhealth.org
   services:
   - Outpatient
   - Outpatient detoxification
@@ -155,8 +72,212 @@
   - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
+  eligibility: Serves young adults, adults.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/cody
+  name: Cody
+  categories:
+  - legal-aid
+  description: LSC-funded legal aid branch office of Legal Aid of Wyoming, Inc.
+  org: wy/legal-aid-of-wyoming-inc
+  address:
+    street: 1501 Stampede Ave.
+    street2: Suite 3212
+    city: Cody
+    state: wy
+    zip: '82414'
+  geo:
+    lat: 44.51892
+    lng: -109.05652
+  place: '5615760'
+  external_ids:
+    lsc_office: '95105005'
+  sources:
+  - lsc/office-locations
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/cody-va-clinic
+  name: Cody VA Clinic
+  categories:
+  - va-facility
+  - health
+  description: Other Outpatient Services (OOS)
+  address:
+    street: 1432 Rumsey Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
+  place: '5615760'
+  geo:
+    lat: 44.52715
+    lng: -109.05888
+  phone: 307-587-4015
+  website: https://www.va.gov/sheridan-health-care/locations/cody-va-clinic/
+  hours:
+  - days:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    open: 08:00
+    close: '16:30'
+  services:
+  - Audiology and speech
+  - Cardiology
+  - Dermatology
+  - Laboratory and pathology
+  - Mental health care
+  - Primary care
+  - Telehealth
+  - Urology
+  external_ids:
+    va: vha_666GD
+  sources:
+  - va/facilities-api
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/eastside-elementary
+  name: Eastside Elementary
+  categories:
+  - meal-program
+  address:
+    street: 801 17Th Street
+    city: Cody
+    state: wy
+    zip: '82414'
+  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Park CSD # 6.'
+  place: '5615760'
+  geo:
+    lat: 44.52929
+    lng: -109.05444
+  phone: (307) 587-4251
+  external_ids:
+    usda_master: Cycle 03_WY_SFSP_0008
+  sources:
+  - usda/summer-meal-sites
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/heart-mountain-volunteer-medical-clinic
+  name: Heart Mountain Volunteer Medical Clinic
+  categories:
+  - free-clinic
+  - health
+  address:
+    street: 1735 Sheridan Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
+  geo:
+    lat: 44.52575
+    lng: -109.0541
+  place: '5615760'
+  phone: 307-272-1735
+  website: https://www.hmvmc.org
+  cost: free
+  external_ids:
+    nafc: heart-mountain-volunteer-medical-clinic
+  sources:
+  - nafc/find-a-clinic
+  verified:
+    'on': '2026-07-21'
+    method: scrape
+- id: wy/cody/one-health-cody-clinic
+  name: One Health - Cody Clinic
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 902 Blackburn St STE F
+    city: Cody
+    state: wy
+    zip: '82414'
+  place: '5615760'
+  geo:
+    lat: 44.52853
+    lng: -109.04252
+  phone: 307-291-0447
+  external_ids:
+    bphc: BPS-H80-038321
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/park-county-department-of-family-services
+  name: Park County Department of Family Services
+  categories:
+  - utility-assistance
+  description: LIHEAP intake office serving Park County
+  address:
+    street: 1501 Stampede Ave., Unit 9009
+    city: Cody
+    state: wy
+    zip: '82414'
+  place: '5615760'
+  phone: 307-587-6246
+  website: https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/
+  sources:
+  - acf/liheap-clearinghouse
+  verified:
+    'on': '2026-08-05'
+    method: scrape
+  geo: {lat: 44.51888, lng: -109.05698}
+- id: wy/cody/paul-stock-aquatic-and-recreation-center
+  name: Paul Stock Aquatic And Recreation Center
+  categories:
+  - meal-program
+  address:
+    street: 1402 Heart Mountain St
+    city: Cody
+    state: wy
+    zip: '82414'
+  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Park CSD # 6.'
+  place: '5615760'
+  geo:
+    lat: 44.52222
+    lng: -109.06094
+  phone: (307) 587-0400
+  external_ids:
+    usda_master: Cycle 03_WY_SFSP_0009
+  sources:
+  - usda/summer-meal-sites
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: wy/cody/west-park-behavioral-health-cody-regional-health
+  name: West Park Behavioral Health Cody Regional Health
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    street: 424 West Yellowstone Avenue
+    city: Cody
+    state: wy
+    zip: '82414'
+  place: '5615760'
+  geo:
+    lat: 44.51194
+    lng: -109.11344
+  phone: 307-578-2283
+  website: https://www.codyregionalhealth.org/service-cedar-mountain.
+  services:
+  - Outpatient
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

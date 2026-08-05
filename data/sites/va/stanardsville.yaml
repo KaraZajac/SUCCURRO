@@ -3,28 +3,55 @@
   org: va/blue-ridge-area-food-bank
   categories:
   - food-pantry
-  address: {street: 81 Main Street, city: Stanardsville, state: va, zip: '22973'}
+  address:
+    street: 81 Main Street
+    city: Stanardsville
+    state: va
+    zip: '22973'
   place: '5175008'
-  geo: {lat: 38.2978, lng: -78.44051}
+  geo:
+    lat: 38.2978
+    lng: -78.44051
   phone: 434-985-3663
   website: http://www.feedinggreeneinc.org
   hours:
-  - {days: [tue], open: '09:00', close: '12:00'}
-  - {days: [thu], open: '09:00', close: '12:00'}
-  - {days: [wed], open: '16:00', close: '18:00'}
-  - {days: [sat], open: '09:00', close: '12:00'}
-  external_ids: {va-blue-ridge-area-food-bank: feeding-greene}
+  - days:
+    - tue
+    open: 09:00
+    close: '12:00'
+  - days:
+    - thu
+    open: 09:00
+    close: '12:00'
+  - days:
+    - wed
+    open: '16:00'
+    close: '18:00'
+  - days:
+    - sat
+    open: 09:00
+    close: '12:00'
+  external_ids:
+    va-blue-ridge-area-food-bank: feeding-greene
   sources:
   - foodbank/va-blue-ridge-area-food-bank
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: va/stanardsville/greene-care-clinic
   name: Greene Care Clinic
   categories:
   - free-clinic
   - health
   description: NAFC member clinic
-  address: {street: 39 Stanard Street, city: Stanardsville, state: va, zip: '22973'}
-  geo: {lat: 38.29613, lng: -78.44051}
+  address:
+    street: 39 Stanard Street
+    city: Stanardsville
+    state: va
+    zip: '22973'
+  geo:
+    lat: 38.29613
+    lng: -78.44051
   place: '5175008'
   phone: 434-985-7000
   website: https://www.greenecareclinic.org/
@@ -37,33 +64,50 @@
   - Primary Care
   - Write Prescriptions for filing off-site
   cost: free
-  external_ids: {nafc: greene-care-clinic}
+  external_ids:
+    nafc: greene-care-clinic
   sources:
   - nafc/find-a-clinic
-  verified: {'on': '2026-07-21', method: scrape}
+  verified:
+    'on': '2026-07-21'
+    method: scrape
 - id: va/stanardsville/greene-county-department-of-social-services
   name: Greene County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Greene County
-  address: {street: 10009 Spotswood Trail, city: Stanardsville, state: va, zip: 22973-0117}
+  address:
+    street: 10009 Spotswood Trail
+    city: Stanardsville
+    state: va
+    zip: 22973-0117
   place: '5175008'
   phone: 434-985-5246
   website: https://www.greenecountyva.gov/189/Social-Services
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 38.2856, lng: -78.41983}
 - id: va/stanardsville/skyline-cap-head-start-greene-county
   name: Skyline CAP Head Start - Greene County
   categories:
   - child-care
-  address: {street: 64 Monroe Dr, street2: Greene County Primary School, city: Stanardsville, state: va,
-    zip: '22973'}
+  address:
+    street: 64 Monroe Dr
+    street2: Greene County Primary School
+    city: Stanardsville
+    state: va
+    zip: '22973'
   description: Head Start early childhood program — 36 funded slots; operated by Skyline CAP, Inc..
   place: '5175008'
-  geo: {lat: 38.29658, lng: -78.443}
+  geo:
+    lat: 38.29658
+    lng: -78.443
   phone: 434-985-6535
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api

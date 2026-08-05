@@ -3,14 +3,20 @@
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Dallas County
-  address: {street: 410 E. 4th Street, city: Fordyce, state: ar, zip: '71742'}
+  address:
+    street: 410 E. 4th Street
+    city: Fordyce
+    state: ar
+    zip: '71742'
   place: '0524220'
   phone: 870-352-8894
   email: LIHEAPINFO@CADC.COM
   website: https://www.cadc.com/utility-assistance
   sources:
   - acf/liheap-clearinghouse
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
   geo: {lat: 33.81537, lng: -92.4098}
 - id: ar/fordyce/dallas-county-ar-fordyce-service-unit
   name: Dallas County AR (Fordyce) Service Unit
@@ -19,8 +25,14 @@
   - family-youth
   - food-pantry
   description: Salvation Army service unit
-  address: {street: Unspecified, city: Fordyce, state: ar, zip: '71742'}
-  geo: {lat: 33.81877, lng: -92.42125}
+  address:
+    street: Unspecified
+    city: Fordyce
+    state: ar
+    zip: '71742'
+  geo:
+    lat: 33.81877
+    lng: -92.42125
   place: '0524220'
   phone: 405-254-1100
   website: https://www.salvationarmyusa.org/ar/fordyce/unspecified/
@@ -31,31 +43,71 @@
   - Poverty
   - Youth Services
   - Hunger
-  external_ids: {gdos: 8a8280448d73b80d018d7b962dad001d}
+  external_ids:
+    gdos: 8a8280448d73b80d018d7b962dad001d
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-07-20', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
 - id: ar/fordyce/fordyce-blessing-box-lisa-j444
   name: Fordyce Blessing Box @Lisa_J444
   categories:
   - food-pantry
   place: '0524220'
-  geo: {lat: 33.81251, lng: -92.42594}
+  geo:
+    lat: 33.81251
+    lng: -92.42594
   website: https://mapping.littlefreepantry.org/pantry/4229
-  external_ids: {lfp: '4229'}
+  external_ids:
+    lfp: '4229'
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-07-19', method: scrape}
+  verified:
+    'on': '2026-08-05'
+    method: scrape
 - id: ar/fordyce/fordyce-head-start-early-head-start
   name: Fordyce Head Start / Early Head Start
   categories:
   - child-care
-  address: {street: 104 W College, city: Fordyce, state: ar, zip: '71742'}
+  address:
+    street: 104 W College
+    city: Fordyce
+    state: ar
+    zip: '71742'
   description: Head Start early childhood program — 30 funded slots; operated by Families and Children
     Together, Inc..
   place: '0524220'
-  geo: {lat: 33.81654, lng: -92.41481}
+  geo:
+    lat: 33.81654
+    lng: -92.41481
   phone: 870-352-3333
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-07-19', method: api}
+  verified:
+    'on': '2026-08-05'
+    method: api
+- id: ar/fordyce/millcreek-behavioral-health
+  name: Millcreek Behavioral Health
+  categories:
+  - mh-treatment
+  address:
+    street: P.O. Box 727
+    city: Fordyce
+    state: ar
+    zip: '71742'
+  place: '0524220'
+  phone: 870-352-8203
+  website: https://www.millcreekbehavioralhealth.com/
+  services:
+  - Hospital inpatient/24-hour hospital inpatient
+  - Residential/24-hour residential
+  - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-08-05'
+    method: api
