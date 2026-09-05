@@ -13,7 +13,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/evergreenhealth-monroe-recovery-center
   name: EvergreenHealth Monroe Recovery Center
   categories:
@@ -36,11 +36,11 @@
   - Adult women
   - Pregnant/postpartum women
   - Adult men
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/frank-wagner-elementary
   name: Frank Wagner Elementary
   categories:
@@ -53,7 +53,7 @@
   external_ids: {usda_master: Cycle 06_WA_SFSP_0210}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/hazels-free-little-pantry
   name: Hazel’s Free Little Pantry
   categories:
@@ -64,7 +64,7 @@
   external_ids: {lfp: '2490'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
 - id: wa/monroe/monroe-boys-girls-club
   name: Monroe Boys & Girls Club
   categories:
@@ -83,7 +83,7 @@
   external_ids: {bgca_site: '2679', bgca_org: '10851'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/monroe-site
   name: Monroe Site
   categories:
@@ -96,7 +96,7 @@
   phone: 425-550-3817
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/pregnancy-aid-wic-monroe
   name: Pregnancy Aid WIC-Monroe
   categories:
@@ -111,7 +111,7 @@
   external_ids: {wic: 'wa-doh:22'}
   sources:
   - wic/wa-doh
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/sea-mar-behavioral-health-sea-mar-community-heal
   name: Sea Mar Behavioral Health Sea Mar Community Health Centers
   categories:
@@ -124,20 +124,27 @@
   website: https://www.seamar.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
   - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
   languages:
   - en
   - es
-  - hi
-  - tl
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/sea-mar-chc-monroe-fryelands-blvd-se
   name: Sea Mar CHC - Monroe Fryelands Blvd. SE
   categories:
@@ -151,8 +158,21 @@
   external_ids: {bphc: BPS-H80-010569}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/sea-mar-chc-monroe-w-main-st
+  name: Sea Mar CHC - Monroe W. Main St.
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 800 W Main St, city: Monroe, state: wa, zip: '98272'}
+  place: '5346685'
+  geo: {lat: 47.85227, lng: -121.98079}
+  phone: 360-805-3122
+  external_ids: {bphc: BPS-H80-038643}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-09-05', method: api}
+- id: wa/monroe/sea-mar-chc-monroe-w-main-st-2
   name: Sea Mar CHC - Monroe W. Main St.
   categories:
   - community-health-center
@@ -165,20 +185,7 @@
   external_ids: {bphc: BPS-H80-008047}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
-- id: wa/monroe/sea-mar-chc-monroe-w-main-st-2
-  name: Sea Mar CHC - Monroe W. Main St.
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address: {street: 800 W Main St, city: Monroe, state: wa, zip: '98272'}
-  place: '5346685'
-  geo: {lat: 47.85227, lng: -121.98079}
-  phone: 360-805-3122
-  external_ids: {bphc: BPS-H80-038643}
-  sources:
-  - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: wa/monroe/sound-family-center-llc
   name: Sound Family Center LLC
   categories:
@@ -199,8 +206,8 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}

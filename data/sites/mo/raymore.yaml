@@ -28,7 +28,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mo/raymore/compass-health-2
   name: Compass Health
@@ -48,15 +48,14 @@
   website: https://www.compasshealthnetwork.org/
   services:
   - Outpatient
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
+  - Young adults
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mo/raymore/compass-health-inc
   name: Compass Health Inc.
@@ -79,7 +78,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mo/raymore/compass-health-inc-2
   name: Compass Health, Inc.
@@ -102,9 +101,27 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mo/raymore/wcmcaa-raymore-office
+  name: WCMCAA Raymore Office
+  org: mo/harvesters-the-community-food-network
+  categories:
+  - food-pantry
+  address:
+    street: 208 W Walnut Street
+    city: Raymore
+    state: mo
+    zip: '64083'
+  place: '2960752'
+  phone: 660-476-2185
+  sources:
+  - foodbank/mo-harvesters-the-community-food-network
+  verified:
+    'on': '2026-09-05'
+    method: scrape
+  geo: {lat: 38.80424, lng: -94.45504}
+- id: mo/raymore/wcmcaa-raymore-office-2
   name: WCMCAA Raymore Office
   org: mo/harvesters-the-community-food-network
   categories:
@@ -119,24 +136,6 @@
   sources:
   - foodbank/mo-harvesters-the-community-food-network
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 38.80422, lng: -94.4547}
-- id: mo/raymore/wcmcaa-raymore-office-2
-  name: WCMCAA-Raymore Office
-  org: mo/harvesters-the-community-food-network
-  categories:
-  - food-pantry
-  address:
-    street: 208 W Walnut Street
-    city: Raymore
-    state: mo
-    zip: '64083'
-  place: '2960752'
-  phone: 660-476-2185
-  sources:
-  - foodbank/mo-harvesters-the-community-food-network
-  verified:
-    'on': '2026-08-05'
-    method: scrape
-  geo: {lat: 38.80424, lng: -94.45504}

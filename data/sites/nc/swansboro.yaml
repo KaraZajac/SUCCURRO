@@ -4,18 +4,18 @@
   - su-treatment
   address: {street: 1150 Cedar Point Boulevard, city: Swansboro, state: nc, zip: '28584'}
   place: '3766360'
-  geo: {lat: 34.68643, lng: -77.0741}
+  geo: {lat: 34.68643, lng: -77.07409}
   phone: 252-764-9023
-  website: https://www.bearislandrecoveryservices.com
+  website: https://
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: nc/swansboro/queens-creek-elementary
   name: QUEENS CREEK ELEMENTARY
   categories:
@@ -28,4 +28,19 @@
   phone: 910-326-5115
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: nc/swansboro/salvation-army-jacksonville
+  name: Salvation Army - Jacksonville
+  org: nc/food-bank-of-central-eastern-north-carolina
+  categories:
+  - food-pantry
+  address: {street: 665 W Corbett Ave, city: Swansboro, state: nc, zip: '28584'}
+  place: '3766360'
+  geo: {lat: 34.69211, lng: -77.1282}
+  phone: 910-333-0453
+  hours:
+  - {days: [tue], open: '10:00', close: '11:00', note: 2nd Tuesday}
+  external_ids: {nc-food-bank-of-central-eastern-north-carolina: salvation-army-jacksonville}
+  sources:
+  - foodbank/nc-food-bank-of-central-eastern-north-carolina
+  verified: {'on': '2026-09-05', method: scrape}

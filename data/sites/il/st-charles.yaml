@@ -20,7 +20,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/baker-memorial-united-methodist-church-pantry
   name: Baker Memorial United Methodist Church Pantry
   categories:
@@ -31,7 +31,7 @@
   external_ids: {lfp: '2408'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
 - id: il/st-charles/behavioral-health-services-delnor-hospital
   name: Behavioral Health Services Delnor Hospital
   categories:
@@ -49,7 +49,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/ecker-center-for-behavioral-health
   name: Ecker Center for Behavioral Health
   categories:
@@ -69,7 +69,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/ecker-center-for-behavioral-health-behavioral-he
   name: Ecker Center for Behavioral Health Behavioral Health
   categories:
@@ -86,11 +86,11 @@
   - Adult women
   - Adult men
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/fox-valley-office
   name: Fox Valley Office
   categories:
@@ -103,7 +103,7 @@
   external_ids: {lsc_office: '51407601'}
   sources:
   - lsc/office-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/lighthouse-recovery-inc
   name: Lighthouse Recovery Inc
   categories:
@@ -111,15 +111,18 @@
   - mh-treatment
   address: {street: 210 South 5th Street, city: Saint Charles, state: il, zip: '60174'}
   place: '1766703'
-  geo: {lat: 41.91067, lng: -88.31807}
+  geo: {lat: 41.91067, lng: -88.31805}
   phone: 630-940-2468
   website: https://www.lighthouserecoveryinc.com
   services:
   - Outpatient
-  - Young adults
-  - Seniors or older adults
-  - Clients with co-occurring mental and substance use disorders
-  - Persons  18 and older with serious mental illness (SMI)
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Adult women
+  - Adult men
   languages:
   - en
   - es
@@ -127,7 +130,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/naperville-psychiatric-ventures-dba-linden-oaks
   name: Naperville Psychiatric Ventures DBA Linden Oaks Hospital
   categories:
@@ -146,7 +149,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/recovery-centers-of-america-outpatient-services
   name: Recovery Centers of America Outpatient Services
   categories:
@@ -168,11 +171,11 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/recovery-centers-of-america-saint-charles
   name: Recovery Centers of America Saint Charles
   categories:
@@ -192,11 +195,11 @@
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/st-charles-blessing-box
   name: St. Charles Blessing Box
   categories:
@@ -207,7 +210,7 @@
   external_ids: {lfp: '452'}
   sources:
   - littlefreepantry/map
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
 - id: il/st-charles/st-charles-tri-city-corps-community-center
   name: St. Charles (Tri City) Corps Community Center
   categories:
@@ -228,16 +231,37 @@
   - Giving Back
   - Holiday Giving
   - Hunger
-  - Poverty
+  - Finacial Assistance
   - Senior Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Adult Program Services
   - Youth Services
   external_ids: {gdos: 402818763d5b8722013d5c1c12001461}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: il/st-charles/tools-for-life-ltd
+  name: Tools for Life Ltd
+  categories:
+  - su-treatment
+  - mh-treatment
+  address: {street: 2325 Dean Street, city: Saint Charles, state: il, zip: '60175'}
+  place: '1766703'
+  geo: {lat: 41.75759, lng: -88.31614}
+  phone: 630-906-1200
+  website: https://www.toolsforlife.info
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-09-05', method: api}
 - id: il/st-charles/tri-city-health-partnership
   name: Tri City Health Partnership
   categories:

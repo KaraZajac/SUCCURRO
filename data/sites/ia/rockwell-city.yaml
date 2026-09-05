@@ -16,12 +16,12 @@
   services:
   - Outpatient
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ia/rockwell-city/mobile-pantry-calhoun-county-rockwell-city
   name: Mobile Pantry - Calhoun County -Rockwell City
@@ -42,7 +42,7 @@
   sources:
   - foodbank/ia-food-bank-of-iowa
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ia/rockwell-city/new-opportunities-inc
   name: New Opportunities, Inc.
@@ -60,7 +60,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 42.39355, lng: -94.63233}
 - id: ia/rockwell-city/new-opportunities-inc-calhoun
@@ -84,7 +84,7 @@
   sources:
   - foodbank/ia-food-bank-of-iowa
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ia/rockwell-city/rockwell-city-ia-service-extension
   name: 'Rockwell City, IA: Service Extension'
@@ -107,7 +107,7 @@
   - Giving Back
   - Disaster Relief
   - Utility Rent Assistance
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Holiday Giving
   external_ids:
@@ -115,7 +115,37 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: ia/rockwell-city/rockwell-city-ia-service-extension-2
+  name: 'Rockwell City, IA: Service Extension'
+  categories:
+  - utility-assistance
+  - financial
+  - food-pantry
+  description: Salvation Army service extension
+  address:
+    city: Rockwell City
+    state: ia
+    zip: '50579'
+  geo:
+    lat: 42.39553
+    lng: -94.63282
+  place: '1968295'
+  phone: 402-898-5942
+  website: https://www.salvationarmyusa.org/ia/rockwell-city/service-extension-2/
+  services:
+  - Giving Back
+  - Disaster Relief
+  - Utility Rent Assistance
+  - Holiday Giving
+  - Hunger
+  external_ids:
+    gdos: 8a80823b5adc4fcd015d7aacd6770211
+  sources:
+  - salvationarmy/location-finder
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: ia/rockwell-city/scc-preschool-rockwell-city
   name: SCC PreSchool - Rockwell City
@@ -135,7 +165,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ia/rockwell-city/south-central-calhoun-elementary-school
   name: South Central Calhoun Elementary School
@@ -158,5 +188,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

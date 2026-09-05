@@ -22,7 +22,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/antelope-recovery
   name: Antelope Recovery
@@ -42,10 +42,11 @@
   website: https://www.AntelopeRecovery.com
   services:
   - Outpatient
-  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  - Children/adolescents with serious emotional disturbance (SED)
   languages:
   - en
   - es
@@ -54,7 +55,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-county-department-of-housing-and-human-s
   name: Boulder County Department of Housing and Human Services - Boulder
@@ -73,7 +74,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 40.03743, lng: -105.282}
 - id: co/boulder/boulder-county-housing-authority
@@ -94,7 +95,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-emotional-wellness
   name: Boulder Emotional Wellness
@@ -130,7 +131,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-housing-partners
   name: Boulder Housing Partners
@@ -150,7 +151,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-integrated-health
   name: Boulder Integrated Health
@@ -164,26 +165,28 @@
     zip: '80304'
   place: 0807850
   phone: 720-739-6500 x1
-  website: https://www.boulderintegratedhealth.com
+  website: https://rainierrehab.org/facilities/boulder-integrated-health-2511628
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
   - Young adults
+  - Adult women
+  - Adult men
   - Seniors or older adults
   - Veterans
   - Active duty military
   - Members of military families
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  - Persons with eating disorders
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
+  - Clients with co-occurring pain and substance use disorders
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 40.02248, lng: -105.28161}
 - id: co/boulder/boulder-shelter-for-the-homeless
@@ -207,7 +210,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-valley-health-center
   name: Boulder Valley Health Center
@@ -275,7 +278,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/boulder-wic-clinic
   name: Boulder WIC Clinic
@@ -300,7 +303,7 @@
   sources:
   - wic/co-cdphe
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/cfhw-specialty-behavioral-health-servs-ryan-well
   name: CFHW Specialty Behavioral Health Servs Ryan Wellness Center
@@ -336,7 +339,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/clinica-family-health-mhp-alpine
   name: Clinica Family Health - MHP Alpine
@@ -359,7 +362,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/clinica-family-health-people-s
   name: Clinica Family Health - People's
@@ -382,7 +385,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/clinica-family-health-wellness-halcyon-school
   name: Clinica Family Health & Wellness -- Halcyon School
@@ -404,7 +407,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/clinica-family-health-wellness-norton-center-for
   name: Clinica Family Health & Wellness -- Norton Center for Behavioral Medicine
@@ -426,7 +429,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/columbine-elementary-school
   name: Columbine Elementary School
@@ -449,7 +452,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/dental-aid
   name: Dental Aid
@@ -494,12 +497,12 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/halcyon-school
   name: Halcyon School
@@ -521,7 +524,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/jewish-family-service
   name: Jewish Family Service
@@ -564,7 +567,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/redpoint-center
   name: Redpoint Center
@@ -597,12 +600,12 @@
   - Veterans
   - Active duty military
   - Members of military families
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/sandstone-care-residential-at-the-alps
   name: Sandstone Care Residential at The Alps
@@ -630,7 +633,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/university-hill-elementary-school
   name: University Hill Elementary School
@@ -653,7 +656,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: co/boulder/woodlands
   name: Woodlands
@@ -673,5 +676,5 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

@@ -10,7 +10,7 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0371}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/arizona-complete-health-avondale-resource-center
   name: Arizona Complete Health Avondale Resource Center
   categories:
@@ -23,7 +23,7 @@
   external_ids: {usda_master: Cycle 11_AZ_SFSP_0206}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/avondale-south
   name: Avondale South
   categories:
@@ -36,7 +36,7 @@
   phone: 623-882-9547
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/avondale-wic-clinic
   name: Avondale WIC Clinic
   categories:
@@ -51,7 +51,7 @@
   external_ids: {wic: 'az-dhs:106'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/bob-bov-branch-a-thornwood-legacy
   name: Bob Bov Branch, A Thornwood Legacy
   categories:
@@ -69,7 +69,7 @@
   external_ids: {bgca_site: '1752', bgca_org: '10696'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/canyon-breeze-elementary
   name: Canyon Breeze Elementary
   categories:
@@ -82,7 +82,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SFSP_0011}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/city-of-avondale-civic-center-library
   name: City Of Avondale - Civic Center Library
   categories:
@@ -95,7 +95,7 @@
   external_ids: {usda_master: Cycle 06_AZ_SFSP_0100}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/city-of-avondale-sam-garcia-library
   name: City Of Avondale - Sam Garcia Library
   categories:
@@ -108,7 +108,7 @@
   external_ids: {usda_master: Cycle 06_AZ_SFSP_0101}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/collier-elementary-school
   name: Collier Elementary School
   categories:
@@ -121,7 +121,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0060}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/copper-springs
   name: Copper Springs
   categories:
@@ -129,16 +129,24 @@
   - mh-treatment
   address: {street: 10550 West Mcdowell Road, city: Avondale, state: az, zip: '85392'}
   place: '0404720'
-  geo: {lat: 33.4654, lng: -112.28777}
+  geo: {lat: 33.46539, lng: -112.28777}
   phone: 480-565-3035
-  website: https://Coppersprings.com
+  website: https://www.coppersprings.com/
   services:
   - Hospital inpatient/24-hour hospital inpatient
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Hospital inpatient detoxification
+  - Hospital inpatient treatment
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Adult women
   - Veterans
   - Active duty military
+  - Members of military families
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
   languages:
   - en
   - es
@@ -146,15 +154,15 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/denova-collaborative-health-avondale
   name: Denova Collaborative Health Avondale
   categories:
   - su-treatment
   - mh-treatment
-  address: {street: 235 West Western Avenue, city: Avondale, state: az, zip: '85323'}
+  address: {street: 506 East Western Avenue, city: Avondale, state: az, zip: '85323'}
   place: '0404720'
-  geo: {lat: 33.43502, lng: -112.35149}
+  geo: {lat: 33.43555, lng: -112.34463}
   phone: 602-230-7373
   website: https://www.denova.com
   services:
@@ -173,14 +181,12 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/estrella-mountain-corps-community-center
   name: Estrella Mountain Corps Community Center
   categories:
   - family-support
   - food-pantry
-  - utility-assistance
-  - financial
   - family-youth
   description: Salvation Army community center
   address: {street: 11 N. 3rd Avenue, city: Avondale, state: az, zip: '85323'}
@@ -189,20 +195,19 @@
   phone: 623-932-0472
   website: https://www.salvationarmyusa.org/az/avondale/n-3rd-avenue-corps/
   services:
-  - Family Services
+  - Adult Program Services
+  - Worship Services
   - Giving Back
   - Holiday Giving
+  - Family Services
+  - Finacial Assistance
   - Hunger
-  - Poverty
-  - Worship and Spiritual Programs
-  - Utility Rent Assistance
-  - Adult Program Services
-  - Correctional Services
   - Youth Services
+  - Correctional Services
   external_ids: {gdos: 8a808375559c116c0155bece78b80304}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/garden-lakes-elementary-school
   name: Garden Lakes Elementary School
   categories:
@@ -215,7 +220,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SFSP_0015}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/housing-authority-of-maricopa-county-rose-terrac
   name: Housing Authority Of Maricopa County - Rose Terrace
   categories:
@@ -228,7 +233,7 @@
   external_ids: {usda_master: Cycle 06_AZ_SFSP_0150}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/imagine-avondale-elementary
   name: Imagine Avondale Elementary
   categories:
@@ -241,7 +246,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0112}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/la-joya-community-high-school
   name: La Joya Community High School
   categories:
@@ -254,7 +259,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0146}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/lattie-coor
   name: Lattie Coor
   categories:
@@ -267,7 +272,7 @@
   phone: 602-772-4435
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/lifeline-behavioral-health
   name: Lifeline Behavioral Health
   categories:
@@ -280,29 +285,29 @@
   website: https://www.lifelinepcs.com
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
   - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
   - Seniors or older adults
   - Veterans
   - Active duty military
   - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  - Persons with traumatic brain injury (TBI)
-  - Persons with Alzheimer's or dementia
   languages:
   - en
   - es
   - fr
   - ru
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/littleton
   name: Littleton
   categories:
@@ -315,7 +320,7 @@
   phone: 602-650-4866
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/littleton-branch
   name: Littleton Branch
   categories:
@@ -335,7 +340,7 @@
   external_ids: {bgca_site: '9861', bgca_org: '10696'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/michael-anderson
   name: Michael Anderson
   categories:
@@ -348,7 +353,7 @@
   phone: 623-772-5166
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/michael-anderson-2
   name: Michael Anderson
   categories:
@@ -360,7 +365,7 @@
   external_ids: {usda_master: Cycle 04_AZ_SSO_0315}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/project-access-the-peaks-on-4th
   name: Project Access - The Peaks On 4Th
   categories:
@@ -373,7 +378,7 @@
   external_ids: {usda_master: Cycle 06_AZ_SFSP_0114}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/rio-vista-elementary
   name: Rio Vista Elementary
   categories:
@@ -386,7 +391,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SFSP_0016}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/stand-together-and-recover-centers
   name: Stand Together and Recover Centers
   categories:
@@ -406,7 +411,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/touchstone-health-services
   name: Touchstone Health Services
   categories:
@@ -419,12 +424,13 @@
   website: https://www.touchstonehs.org
   services:
   - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
   - Young adults
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
   - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
   languages:
   - en
   - es
@@ -432,7 +438,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/underdown-learning-center
   name: Underdown Learning Center
   categories:
@@ -445,7 +451,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0163}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/valleywise-community-health-center-avondale
   name: Valleywise Community Health Center - Avondale
   categories:
@@ -459,7 +465,7 @@
   external_ids: {bphc: BPS-H80-029526}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/west-point-high-school
   name: West Point High School
   categories:
@@ -472,7 +478,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0149}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/avondale/westview-high-school
   name: Westview High School
   categories:
@@ -485,4 +491,4 @@
   external_ids: {usda_master: Cycle 03_AZ_SSO_0150}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}

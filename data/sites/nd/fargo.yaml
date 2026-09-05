@@ -1,5 +1,5 @@
-- id: nd/fargo/adapt-addiction-and-behavioral-health
-  name: ADAPT Addiction and Behavioral Health
+- id: nd/fargo/adapt-addiction-and-behavioral-health-fargo
+  name: ADAPT Addiction and Behavioral Health Fargo
   categories:
   - su-treatment
   - mh-treatment
@@ -12,7 +12,7 @@
   geo:
     lat: 46.87385
     lng: -96.79143
-  phone: 701-248-8027
+  phone: 701-954-0479
   website: https://www.adaptaddictionandbehavioralhealthinc.net
   services:
   - Outpatient
@@ -22,7 +22,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/bennett-extension
   name: Bennett Extension
@@ -48,7 +48,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/boys-girls-club-at-clara-barton
   name: Boys & Girls Club at Clara Barton
@@ -71,7 +71,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/boys-girls-club-of-the-red-river-valley-horace-m
   name: Boys & Girls Club of the Red River Valley - Horace Mann
@@ -94,7 +94,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/boys-girls-club-of-the-red-river-valley-rose-cre
   name: Boys & Girls Club of the Red River Valley - Rose Creek Unit
@@ -121,7 +121,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/boys-girls-club-of-the-red-river-valley-south-fa
   name: Boys & Girls Club of the Red River Valley -  South Fargo Unit
@@ -151,7 +151,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/brunsdale-park-mobile-meal-unit
   name: Brunsdale Park-Mobile Meal Unit
@@ -174,7 +174,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/cass-county-jail
   name: CASS COUNTY JAIL
@@ -197,7 +197,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/cass-county-social-services-board
   name: Cass County Social Services Board
@@ -214,7 +214,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 46.87266, lng: -96.79504}
 - id: nd/fargo/centennial-extension
@@ -242,7 +242,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/central-head-start
   name: Central Head Start
@@ -263,7 +263,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/centre-fargo-female
   name: Centre Fargo Female
@@ -277,18 +277,22 @@
     zip: '58103'
   place: '3825700'
   geo:
-    lat: 46.86647
-    lng: -96.83838
+    lat: 46.86629
+    lng: -96.83842
   phone: 701-365-4199
   website: https://www.centreinc.org
   services:
   - Residential/24-hour residential
-  eligibility: Serves young adults, adults, seniors.
+  - Long-term residential
+  - Short-term residential
+  - Adult women
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/centre-fargo-male
   name: Centre Fargo Male
@@ -313,7 +317,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/community-medical-services-fargo
   name: Community Medical Services Fargo
@@ -339,12 +343,12 @@
   - Pregnant/postpartum women
   - Adult men
   - Seniors or older adults
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/dacotah-foundation-alternative-care-services
   name: Dacotah Foundation Alternative Care Services
@@ -364,15 +368,44 @@
   website: https://www.dacotahfoundation.org
   services:
   - Residential/24-hour residential
-  - Residential detoxification
-  - Short-term residential
-  eligibility: Serves young adults, adults.
-  cost: free
+  - Clients with co-occurring mental and substance use disorders
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
+- id: nd/fargo/dakota-boys-and-girls-ranch-fargo
+  name: Dakota Boys and Girls Ranch Fargo
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    street: 7151 15th Street South
+    city: Fargo
+    state: nd
+    zip: '58104'
+  place: '3825700'
+  phone: 701-551-6830
+  website: https://www.dakotaranch.org
+  services:
+  - Residential/24-hour residential
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+  geo: {lat: 46.77962, lng: -96.80439}
 - id: nd/fargo/eagles
   name: Eagles
   categories:
@@ -398,7 +431,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/early-head-start
   name: Early Head Start
@@ -419,7 +452,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/ed-clapp
   name: Ed Clapp
@@ -446,7 +479,27 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: nd/fargo/emergency-food-pantry
+  name: Emergency Food Pantry
+  org: nd/great-plains-food-bank
+  categories:
+  - food-pantry
+  address:
+    street: 1101 4th Avenue North
+    city: Fargo
+    state: nd
+  place: '3825700'
+  geo:
+    lat: 46.88056
+    lng: -96.79569
+  external_ids:
+    nd-great-plains-food-bank: '4'
+  sources:
+  - foodbank/nd-great-plains-food-bank
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/family-healthcare-mobile-clinic-1
   name: 'Family HealthCare Mobile Clinic #1'
@@ -468,7 +521,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/family-healthcare-south-fargo
   name: Family HealthCare South Fargo
@@ -490,7 +543,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-housing-and-redevelopment-authority
   name: Fargo Housing And Redevelopment Authority
@@ -510,7 +563,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-law-office
   name: Fargo Law Office
@@ -533,7 +586,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-mobile-vet-center
   name: Fargo Mobile Vet Center
@@ -555,7 +608,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-va-healthcare-system-substance-use-disorde
   name: Fargo VA Healthcare System Substance Use Disorder Treatment Prog
@@ -587,7 +640,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-va-medical-center
   name: Fargo VA Medical Center
@@ -667,7 +720,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-va-regional-benefit-office-at-north-fargo
   name: Fargo VA Regional Benefit Office at North Fargo VA Clinic
@@ -700,7 +753,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-vet-center
   name: Fargo Vet Center
@@ -758,7 +811,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fargo-worship-and-service-center
   name: Fargo Worship and Service Center
@@ -781,11 +834,11 @@
   website: https://www.salvationarmyusa.org/nd/fargo/roberts-street-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Giving Back
   - Holiday Giving
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
   - Youth Services
@@ -795,7 +848,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/fhc-medical-dental-homeless-services-and-adminis
   name: FHC Medical, Dental, Homeless Services, and Administrative Site in Fargo
@@ -818,7 +871,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/first-step-recovery-the-village-family
   name: First Step Recovery The Village Family
@@ -840,7 +893,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.86357, lng: -96.82222}
 - id: nd/fargo/hawthorne
@@ -867,7 +920,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/healing-center-counseling-and-consulting-service
   name: Healing Center Counseling and Consulting Services
@@ -880,10 +933,10 @@
     zip: '58104'
   place: '3825700'
   geo:
-    lat: 46.8265
-    lng: -96.86367
+    lat: 46.82643
+    lng: -96.86356
   phone: 701-532-1447
-  website: https://www.thehealingcentercity.com
+  website: https://
   services:
   - Outpatient
   - Intensive outpatient treatment
@@ -904,7 +957,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/homeless-health-services-resource-recovery-cente
   name: Homeless Health Services - Resource & Recovery Center
@@ -926,7 +979,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/jefferson-elementary-school
   name: Jefferson Elementary School
@@ -948,7 +1001,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/kappel
   name: Kappel
@@ -970,7 +1023,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/kennedy-extension
   name: Kennedy Extension
@@ -996,7 +1049,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/lewis-clark
   name: Lewis & Clark
@@ -1023,7 +1076,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/lewis-clark-elementary-school
   name: Lewis & Clark Elementary School
@@ -1045,7 +1098,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/lincoln
   name: Lincoln
@@ -1072,7 +1125,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/longfellow
   name: Longfellow
@@ -1098,7 +1151,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/ndsu-goods-for-the-herd
   name: NDSU Goods for the Herd
@@ -1114,7 +1167,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: nd/fargo/nexus-path-luther-hall
   name: Nexus Path Luther Hall
@@ -1141,7 +1194,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/north-fargo-va-clinic
   name: North Fargo VA Clinic
@@ -1176,7 +1229,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/sagent-behavioral-health-formerly-nys
   name: Sagent Behavioral Health formerly Nys
@@ -1208,7 +1261,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/sanford-health-behavioral-health-services
   name: Sanford Health Behavioral Health Services
@@ -1243,7 +1296,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/sanford-medical-center-behavioral-health-outpati
   name: Sanford Medical Center Behavioral Health Outpatient Adult Services
@@ -1267,7 +1320,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/sanford-medical-center-outpatient-bh-child-and-a
   name: Sanford Medical Center Outpatient BH/Child and Adolescent
@@ -1291,7 +1344,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/schlossman-family-ymca-west-schoolage
   name: Schlossman Family Ymca West Schoolage
@@ -1314,7 +1367,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/schlossman-ymca-mini-pantry
   name: Schlossman YMCA Mini Pantry
@@ -1330,7 +1383,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: nd/fargo/sharehouse-inc-fargo-outpatient
   name: ShareHouse Inc Fargo Outpatient
@@ -1356,12 +1409,12 @@
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/sharehouse-inc-fargo-residential-east
   name: ShareHouse Inc Fargo Residential East
@@ -1377,15 +1430,18 @@
   phone: 701-282-6561 x354
   website: https://www.sharehouse.org
   services:
-  - Outpatient
+  - Residential/24-hour residential
+  - Long-term residential
+  - Short-term residential
+  - Adult women
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.86687, lng: -96.85281}
 - id: nd/fargo/sharehouse-inc-fargo-residential-west
@@ -1411,12 +1467,12 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/solutions-behav-hlthcare-professionals
   name: Solutions Behav Hlthcare Professionals
@@ -1443,7 +1499,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/soul-solutions-recovery-center
   name: Soul Solutions Recovery Center
@@ -1470,7 +1526,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/south-head-start
   name: South Head Start
@@ -1491,7 +1547,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/south-high-school
   name: South High School
@@ -1513,7 +1569,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/southeast-behavioral-health-clinic
   name: Southeast Behavioral Health Clinic
@@ -1546,7 +1602,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/the-arbors-at-mccormick-park
   name: The Arbors At Mccormick Park
@@ -1569,7 +1625,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/urban-plains-ymca-sa-summer
   name: Urban Plains Ymca Sa Summer
@@ -1592,7 +1648,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/washington-extension
   name: Washington Extension
@@ -1619,7 +1675,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/willow-park-elementary
   name: Willow Park Elementary
@@ -1641,7 +1697,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/withdrawal-management-unit-city-of-fargo-dba-fcp
   name: Withdrawal Management Unit City of Fargo DBA FCPH
@@ -1671,12 +1727,12 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: free
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nd/fargo/ymca-early-learning-center-south
   name: YMCA Early Learning Center - South
@@ -1697,5 +1753,5 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

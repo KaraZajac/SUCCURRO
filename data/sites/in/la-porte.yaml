@@ -16,11 +16,11 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/groups-recover-together
   name: Groups Recover Together
   categories:
@@ -38,7 +38,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/hailmann-club
   name: Hailmann Club
   categories:
@@ -51,7 +51,7 @@
   external_ids: {bgca_site: '12852', bgca_org: '10422'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/handley-school
   name: Handley School
   categories:
@@ -64,7 +64,7 @@
   external_ids: {usda_master: Cycle 02_IN_SFSP_0003}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/healthlinc-la-porte
   name: HealthLinc La Porte
   categories:
@@ -77,7 +77,7 @@
   external_ids: {bphc: BPS-H80-027898}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/healthlinc-la-porte-pediatrics
   name: HealthLinc La Porte Pediatrics
   categories:
@@ -90,7 +90,7 @@
   external_ids: {bphc: BPS-H80-039370}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/kesling-campus
   name: Kesling Campus
   categories:
@@ -103,7 +103,7 @@
   external_ids: {usda_master: Cycle 02_IN_SFSP_0001}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/kesling-club
   name: Kesling Club
   categories:
@@ -121,7 +121,7 @@
   external_ids: {bgca_site: '12310', bgca_org: '10422'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/lapark
   name: Lapark
   categories:
@@ -134,7 +134,7 @@
   external_ids: {usda_master: Cycle 02_IN_SFSP_0021}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/laporte-county-comp-mh-council-inc-swanson-cente
   name: LaPorte County Comp MH Council Inc Swanson Center LP Outpatient
   categories:
@@ -151,11 +151,22 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: in/la-porte/laporte-library
+  name: Laporte library
+  categories:
+  - food-pantry
+  place: '1842246'
+  geo: {lat: 41.60848, lng: -86.72184}
+  website: https://mapping.littlefreepantry.org/pantry/6191
+  external_ids: {lfp: '6191'}
+  sources:
+  - littlefreepantry/map
+  verified: {'on': '2026-09-05', method: scrape}
 - id: in/la-porte/northshore-health-centers
   name: NorthShore Health Centers
   categories:
@@ -168,25 +179,20 @@
   website: https://northshorehealth.org/health-services/substance-abuse/
   services:
   - Outpatient
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/northshore-laporte-health-center
-  name: NorthShore LaPorte Health Center
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address: {street: 504 Legacy Plz W, city: La Porte, state: in, zip: '46350'}
-  place: '1842246'
-  geo: {lat: 41.60192, lng: -86.69561}
-  phone: 219-763-8112
-  external_ids: {bphc: BPS-H80-032342}
-  sources:
-  - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
-- id: in/la-porte/northshore-laporte-health-center-2
   name: NorthShore LaPorte Health Center
   categories:
   - community-health-center
@@ -198,7 +204,20 @@
   external_ids: {bphc: BPS-H80-032380}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: in/la-porte/northshore-laporte-health-center-2
+  name: NorthShore LaPorte Health Center
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address: {street: 504 Legacy Plz W, city: La Porte, state: in, zip: '46350'}
+  place: '1842246'
+  geo: {lat: 41.60192, lng: -86.69561}
+  phone: 219-763-8112
+  external_ids: {bphc: BPS-H80-032342}
+  sources:
+  - hrsa/health-center-sites
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/northshore-laporte-high-school-health-center
   name: NorthShore LaPorte High School Health Center
   categories:
@@ -211,7 +230,7 @@
   external_ids: {bphc: BPS-H80-032742}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/paladin-bethany-lutheran-church
   name: Paladin - Bethany Lutheran Church
   categories:
@@ -223,7 +242,7 @@
   phone: 219-873-2146
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/porter-starke-services-inc-recovery-center-lapor
   name: Porter Starke Services Inc Recovery Center/LaPorte
   categories:
@@ -242,7 +261,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: in/la-porte/salvation-army-laporte-food-pantry
   name: Salvation Army LaPorte Food Pantry
   org: in/food-bank-of-northern-indiana
@@ -253,7 +272,7 @@
   geo: {lat: 41.59759, lng: -86.68527}
   sources:
   - foodbank/in-food-bank-of-northern-indiana
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
 - id: in/la-porte/the-pax-center-food-pantry-and-soup-kitchen
   name: The Pax Center Food Pantry and Soup Kitchen
   org: in/food-bank-of-northern-indiana
@@ -264,7 +283,7 @@
   geo: {lat: 41.61377, lng: -86.72132}
   sources:
   - foodbank/in-food-bank-of-northern-indiana
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
 - id: in/la-porte/the-salvation-army-of-laporte-corps-community-ce
   name: The Salvation Army of LaPorte Corps Community Center
   categories:
@@ -281,15 +300,15 @@
   website: https://www.salvationarmyusa.org/in/la-porte/monroe-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Giving Back
   - Holiday Giving
   - Family Services
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Youth Services
   external_ids: {gdos: 402818763d5b8722013d5b9b7bf004fe}
   sources:
   - salvationarmy/location-finder
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}

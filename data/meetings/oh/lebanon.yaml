@@ -18,7 +18,7 @@
   external_ids: {bmlt: '27:554'}
   sources:
   - bmlt/aggregator
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: oh/lebanon/lebanon-12-12
   name: Lebanon 12&12
   program: aa
@@ -39,7 +39,7 @@
   external_ids: {tsml: 'aacincinnati:147710'}
   sources:
   - aa/aacincinnati
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: oh/lebanon/lebanon-big-book
   name: Lebanon Big Book
   program: aa
@@ -59,7 +59,7 @@
   external_ids: {tsml: 'aacincinnati:147068'}
   sources:
   - aa/aacincinnati
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: oh/lebanon/lebanon-wednesday-discussion
   name: Lebanon Wednesday Discussion
   program: aa
@@ -69,8 +69,8 @@
   - {day: wed, time: '20:30', duration_min: 60}
   format: in-person
   types:
+  - c
   - d
-  - o
   venue_name: Lebanon Presbyterian Church
   venue: {street: 123 N East St, city: Lebanon, state: oh, zip: '45036'}
   place: '3942364'
@@ -79,4 +79,23 @@
   external_ids: {tsml: 'aacincinnati:147464'}
   sources:
   - aa/aacincinnati
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: oh/lebanon/monthly-meeting
+  name: Monthly Meeting
+  program: pflag
+  categories:
+  - lgbtq
+  - family-support
+  - peer-support
+  org: oh/pflag-lebanon-warren-county
+  schedule:
+  - {day: tue, time: '19:00', duration_min: 120, note: 4th Tuesday of the month (EDT)}
+  format: in-person
+  venue_name: Resurrection Lutheran Church
+  venue: {street: 1270 N Broadway St., city: Lebanon, state: oh, zip: '45036'}
+  place: '3942364'
+  url: https://pflag.org/chapter/lebanon-warren-county/
+  external_ids: {pflag_chapter: lebanon-warren-county}
+  sources:
+  - pflag/chapter-meetings
+  verified: {'on': '2026-09-05', method: scrape}

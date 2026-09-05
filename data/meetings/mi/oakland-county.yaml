@@ -1,7 +1,7 @@
-- id: mi/oakland-county/1st-tuesday-parent-group
-  name: 1st Tuesday Parent Group
+- id: mi/oakland-county/1st-tuesday-parent-group-oakland-county-mi-in-pe
+  name: 1st Tuesday Parent Group –Oakland County, MI (In Person)
   program: stand-with-trans
-  categories:
+  categories: &id001
   - trans-services
   - family-support
   - peer-support
@@ -14,4 +14,18 @@
   url: https://standwithtrans.org/community-connections/
   sources:
   - standwithtrans/support-groups
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: scrape}
+- id: mi/oakland-county/2nd-monday-parent-group-virtual
+  name: 2nd Monday Parent Group (Virtual)
+  program: stand-with-trans
+  categories: *id001
+  org: mi/stand-with-trans
+  schedule:
+  - {day: mon, time: '18:00', duration_min: 75, note: 2nd Monday of each month (ET)}
+  format: in-person
+  notes: This group is for parents of transgender youth/ individuals anywhere in the U.S. Registration
+    is required.
+  url: https://standwithtrans.org/community-connections/
+  sources:
+  - standwithtrans/support-groups
+  verified: {'on': '2026-09-05', method: scrape}

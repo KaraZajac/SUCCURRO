@@ -18,7 +18,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/boys-girls-clubs-of-the-danville-area
   name: Boys & Girls Clubs of the Danville Area
@@ -46,7 +46,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/calm-source-danville
   name: Calm Source Danville
@@ -73,7 +73,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 36.57931, lng: -79.40328}
 - id: va/danville/cardinal-village-youth-center
@@ -97,7 +97,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/crossroads-treatment-centers-danville
   name: Crossroads Treatment Centers Danville
@@ -118,12 +118,12 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Pregnant/postpartum women
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/crossroads-treatment-centers-danville-pc
   name: Crossroads Treatment Centers Danville PC
@@ -144,12 +144,12 @@
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
   - Pregnant/postpartum women
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/danville-branch-office
   name: Danville Branch Office
@@ -171,7 +171,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/danville-division-of-social-services
   name: Danville Division of Social Services
@@ -189,7 +189,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 36.58642, lng: -79.39256}
 - id: va/danville/danville-pittsylvania-community-servs-dpcs
@@ -216,36 +216,13 @@
   - Pregnant/postpartum women
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: va/danville/danville-pittsylvania-community-servs-dpcs-gretn
-  name: Danville Pittsylvania Community Servs (DPCS) Gretna Location
-  categories:
-  - su-treatment
-  - mh-treatment
-  address:
-    street: 245 Hairston Street
-    city: Danville
-    state: va
-    zip: '24540'
-  place: '5121344'
-  phone: 434-799-0456
-  website: https://www.dpcs.org
-  services:
-  - Outpatient
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-  geo: {lat: 36.5967, lng: -79.41502}
 - id: va/danville/danville-redevelopment-housing-authority
   name: Danville Redevelopment & Housing Authority
   categories:
@@ -264,7 +241,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/danville-va-clinic
   name: Danville VA Clinic
@@ -308,7 +285,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/danville-va-corps
   name: Danville VA Corps
@@ -333,12 +310,12 @@
   website: https://www.salvationarmyusa.org/va/danville/henry-st-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Senior Services
   - Utility Rent Assistance
   - Giving Back
   - Family Services
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
   - Youth Services
@@ -347,7 +324,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/e-a-gibson-elem
   name: E. A. Gibson Elem
@@ -370,7 +347,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/epic-health-partners
   name: Epic Health Partners
@@ -390,13 +367,25 @@
   website: https://www.epichealthpartners.com
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/focus-point-mental-health-llc
   name: Focus Point Mental Health LLC
@@ -432,7 +421,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-cedar-terrace
   name: Food Truck Cedar Terrace
@@ -455,7 +444,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-clear-pond-apartments
   name: Food Truck - Clear Pond Apartments
@@ -478,7 +467,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-northpointe-apartments
   name: Food Truck - Northpointe Apartments
@@ -501,7 +490,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-pleasant-view
   name: Food Truck Pleasant View
@@ -524,7 +513,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-purdum-woods
   name: Food Truck Purdum Woods
@@ -547,7 +536,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-seeland-crossing-apartments
   name: Food Truck - Seeland Crossing Apartments
@@ -570,7 +559,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/food-truck-woodside-village
   name: Food Truck Woodside Village
@@ -593,7 +582,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/free-pantry-at-anointed-salvation-ministries
   name: Free Pantry at Anointed Salvation Ministries
@@ -609,7 +598,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/free-pantry-at-anointed-salvation-ministry
   name: Free Pantry at Anointed Salvation Ministry
@@ -625,7 +614,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/free-pantry-at-stokesland-prayer-worship-center
   name: Free Pantry at Stokesland Prayer & Worship Center
@@ -641,7 +630,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/g-l-h-johnson-elem
   name: G.L.H. Johnson Elem
@@ -664,7 +653,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/galileo-magnet-high
   name: Galileo Magnet High
@@ -686,7 +675,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/george-s-market-at-trinity-methodist-church
   name: George's Market at Trinity Methodist Church
@@ -702,7 +691,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/george-washington-high
   name: George Washington High
@@ -725,7 +714,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/god-s-storehouse-peace-pantry
   name: God's Storehouse Peace Pantry
@@ -741,7 +730,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/hoop-don-t-shoot
   name: Hoop, Don'T Shoot
@@ -763,7 +752,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/hughes-center
   name: Hughes Center
@@ -793,7 +782,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/nurturing-young-minds-childcare
   name: Nurturing Young Minds Childcare
@@ -815,7 +804,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/nurturing-young-minds-childcare-brosville
   name: Nurturing Young Minds Childcare- Brosville
@@ -837,7 +826,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/o-trent-bonner-middle
   name: O. Trent Bonner Middle
@@ -859,7 +848,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/park-avenue-elem
   name: Park Avenue Elem
@@ -882,7 +871,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-community-dental-center-danville
   name: PATHS Community Dental Center - Danville
@@ -904,7 +893,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-community-medical-center-danville
   name: PATHS Community Medical Center - Danville
@@ -927,7 +916,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-community-medical-center-danville-riversid
   name: PATHS Community Medical Center  -  Danville Riverside
@@ -950,7 +939,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-community-pharmacy-danville
   name: PATHS Community Pharmacy - Danville
@@ -972,7 +961,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-george-washington-high-school-based-health
   name: PATHS George Washington High School Based Health Center
@@ -995,7 +984,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/paths-sbss-mobile-unit
   name: PATHS SBSS Mobile Unit
@@ -1018,7 +1007,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/pcca-bethel-head-start-c-18-bethel-baptist-churc
   name: PCCA Bethel Head Start C#18 (Bethel Baptist Church)
@@ -1039,7 +1028,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/peace-pantry-at-the-house-of-hope
   name: Peace Pantry at the House of Hope
@@ -1055,7 +1044,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/peace-pantry-at-the-salvation-army-post
   name: Peace Pantry at the Salvation Army Post
@@ -1071,7 +1060,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/peace-pantry-at-the-salvation-army-thrift-store
   name: Peace Pantry at the Salvation Army Thrift Store
@@ -1087,7 +1076,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: va/danville/savida-health-danville
   name: SaVida Health Danville
@@ -1113,7 +1102,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/schoolfield-elem
   name: Schoolfield Elem
@@ -1135,37 +1124,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
-    method: api
-- id: va/danville/southern-virginia-mh-institute
-  name: Southern Virginia MH Institute
-  categories:
-  - su-treatment
-  - mh-treatment
-  address:
-    city: Danville
-    state: va
-    zip: '24541'
-  place: '5121344'
-  phone: 434-799-6220
-  website: https://www.svmhi.dbhds.virginia.gov
-  services:
-  - Hospital inpatient/24-hour hospital inpatient
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  - Persons with traumatic brain injury (TBI)
-  - Persons with Alzheimer's or dementia
-  - Persons experiencing first-episode psychosis
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
-  eligibility: Serves young adults, adults.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/southwyck-hills-apartments
   name: Southwyck Hills Apartments
@@ -1188,7 +1147,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/sovah-health-danville-behavioral-health
   name: Sovah Health/Danville Behavioral Health
@@ -1213,7 +1172,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/stony-mill-elem
   name: Stony Mill Elem
@@ -1235,7 +1194,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/the-harvest-corner
   name: The Harvest Corner
@@ -1257,7 +1216,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/turning-point-interventions
   name: Turning Point Interventions
@@ -1283,7 +1242,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/twin-springs-elem
   name: Twin Springs Elem
@@ -1305,7 +1264,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/wanda-s-wonderland-education-center
   name: Wanda'S Wonderland Education Center
@@ -1327,7 +1286,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/westmoreland-center
   name: Westmoreland Center
@@ -1348,7 +1307,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/westwood-middle
   name: Westwood Middle
@@ -1371,7 +1330,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: va/danville/woodberry-hills-elem
   name: Woodberry Hills Elem
@@ -1394,5 +1353,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

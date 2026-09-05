@@ -23,7 +23,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/aptiv-little-food-pantry
   name: Aptiv Little Food Pantry
@@ -39,7 +39,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: wi/la-crosse/avon-pantry
   name: Avon Pantry
@@ -55,7 +55,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: wi/la-crosse/badger-hickey-park
   name: Badger-Hickey Park
@@ -77,7 +77,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/cavalier-cupboard
   name: Cavalier Cupboard
@@ -98,7 +98,7 @@
   sources:
   - foodbank/mn-channel-one-regional-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/central-head-start-1
   name: Central Head Start-1
@@ -120,7 +120,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/central-high-school
   name: Central High School
@@ -142,7 +142,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/dahl-ymca
   name: Dahl Ymca
@@ -165,7 +165,28 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: wi/la-crosse/driftless-recovery-services-inc
+  name: Driftless Recovery Services Inc
+  categories:
+  - su-treatment
+  address:
+    city: La Crosse
+    state: wi
+    zip: '54601'
+  place: '5540775'
+  phone: 608-519-5906
+  website: https://www.driftlessrecovery.com
+  services:
+  - Outpatient
+  - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/emerson
   name: Emerson
@@ -187,7 +208,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/emplify-health-behavioral-health-department
   name: Emplify Health Behavioral Health Department
@@ -215,34 +236,10 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: wi/la-crosse/gundersen-clinic-ltd-behavioral-health-departmen
-  name: Gundersen Clinic Ltd Behavioral Health Department
-  categories:
-  - su-treatment
-  address:
-    city: La Crosse
-    state: wi
-    zip: '54601'
-  place: '5540775'
-  phone: 608-775-2287
-  website: https://www.gundersenhealth.org
-  services:
-  - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: wi/la-crosse/gundersen-lutheran-medical-ctr-inc-behavioral-he
-  name: Gundersen Lutheran Medical Ctr Inc Behavioral Health Department
+- id: wi/la-crosse/emplify-health-behavioral-health-department-2
+  name: Emplify Health Behavioral Health Department
   categories:
   - su-treatment
   - mh-treatment
@@ -255,14 +252,76 @@
   website: https://www.gundersenhealth.org
   services:
   - Outpatient
-  - Regular outpatient treatment
-  - Clients with co-occurring mental and substance use disorders
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: wi/la-crosse/gundersen-clinic-ltd-behavioral-health-departmen
+  name: Gundersen Clinic Ltd Behavioral Health Department
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    city: La Crosse
+    state: wi
+    zip: '54601'
+  place: '5540775'
+  phone: 608-775-2287
+  website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  - Persons with eating disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+- id: wi/la-crosse/gundersen-lutheran-medical-ctr-inc-amplify-healt
+  name: Gundersen Lutheran Medical Ctr Inc Amplify Health
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    city: La Crosse
+    state: wi
+    zip: '54601'
+  place: '5540775'
+  phone: 608-326-3380
+  website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+- id: wi/la-crosse/gundersen-lutheran-medical-ctr-inc-behavioral-he
+  name: Gundersen Lutheran Medical Ctr Inc Behavioral Health Department
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    city: La Crosse
+    state: wi
+    zip: '54601'
+  place: '5540775'
+  phone: 608-374-3853
+  website: https://www.gundersenhealth.org
+  services:
+  - Outpatient
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/gundersen-medical-center
   name: Gundersen Medical Center
@@ -284,7 +343,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/hamilton-branch
   name: Hamilton Branch
@@ -312,7 +371,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/hamilton-elc
   name: Hamilton Elc
@@ -334,7 +393,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/hamilton-helping-hands-free-little-pantry
   name: Hamilton Helping Hands - Free Little Pantry
@@ -350,7 +409,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: wi/la-crosse/hintgen-elementary
   name: Hintgen Elementary
@@ -372,7 +431,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/hintgen-helping-club-little-food-pantry
   name: Hintgen Helping Club Little Food Pantry
@@ -388,7 +447,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: wi/la-crosse/ho-chunk-three-rivers-house
   name: Ho-Chunk Three Rivers House
@@ -417,7 +476,7 @@
   sources:
   - ihs/find-health-care
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/huber-court-bgc
   name: Huber Court Bgc
@@ -440,7 +499,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/la-crosse-area-family-ymca
   name: La Crosse Area Family YMCA
@@ -461,7 +520,7 @@
   sources:
   - foodbank/mn-channel-one-regional-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/la-crosse-corps-community-center-and-emergency-s
   name: La Crosse Corps Community Center and Emergency Shelter
@@ -486,13 +545,13 @@
   phone: 608-782-6126
   website: https://www.salvationarmyusa.org/wi/la-crosse/north-8th-street-corps/
   services:
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Giving Back
   - Holiday Giving
   - Health Services
   - Family Services
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
   - Youth Services
@@ -503,7 +562,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/la-crosse-county-department-of-human-services
   name: La Crosse County Department of Human Services
@@ -521,7 +580,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 43.81423, lng: -91.24983}
 - id: wi/la-crosse/la-crosse-housing-authority
@@ -542,7 +601,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/la-crosse-public-library-main-branch
   name: La Crosse Public Library Main Branch
@@ -565,7 +624,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/la-crosse-va-clinic
   name: La Crosse VA Clinic
@@ -610,7 +669,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/lacrosse-county-housing-authority
   name: Lacrosse County Housing Authority
@@ -630,7 +689,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/legal-action-of-wisconsin-inc
   name: Legal Action of Wisconsin, Inc.
@@ -653,7 +712,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/logan-high
   name: Logan High
@@ -675,7 +734,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/logan-middle
   name: Logan Middle
@@ -697,7 +756,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/longfellow-middle-school
   name: Longfellow Middle School
@@ -719,7 +778,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/margaret-annett-hs-and-ehs
   name: Margaret Annett HS and EHS
@@ -740,7 +799,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/mayo-clinic-health-system-psychiatry-psychology
   name: Mayo Clinic Health System Psychiatry Psychology Department
@@ -764,12 +823,12 @@
   - Regular outpatient treatment
   - Adolescents
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/myrick-park
   name: Myrick Park
@@ -792,7 +851,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/northside-elementary
   name: Northside Elementary
@@ -814,10 +873,10 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: wi/la-crosse/nystrom-and-associates-ltd
-  name: Nystrom and Associates Ltd
+- id: wi/la-crosse/sagent-behaviour-health
+  name: Sagent Behaviour Health
   categories:
   - mh-treatment
   address:
@@ -827,8 +886,8 @@
     zip: '54601'
   place: '5540775'
   geo:
-    lat: 43.81353
-    lng: -91.25308
+    lat: 43.81347
+    lng: -91.25327
   phone: 608-668-4005
   website: https://www.nystromcounseling.com/our-locations/
   services:
@@ -838,29 +897,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
-    method: api
-- id: wi/la-crosse/scenic-bluffs-health-center-inc-lacrosse
-  name: Scenic Bluffs Health Center Inc - LaCrosse
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 2030 7th St S
-    city: La Crosse
-    state: wi
-    zip: '54601'
-  place: '5540775'
-  geo:
-    lat: 43.79118
-    lng: -91.24957
-  phone: 608-654-5100
-  external_ids:
-    bphc: BPS-H80-030863
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/scenic-bluffs-health-center-laxbh
   name: Scenic Bluffs Health Center LAXBH
@@ -882,7 +919,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/scenic-bluffs-health-centers-inc-reach-lacrosse
   name: Scenic Bluffs Health Centers Inc- REACH LaCrosse
@@ -904,7 +941,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/schuh-mullen-bgc
   name: Schuh Mullen Bgc
@@ -927,7 +964,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/schuh-mullen-housing-boys-girls-club
   name: Schuh/Mullen Housing Boys & Girls Club
@@ -955,7 +992,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/spence-elementary
   name: Spence Elementary
@@ -977,7 +1014,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/st-clare-health-mission
   name: St Clare Health Mission
@@ -1072,7 +1109,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/terry-erickson-club
   name: Terry Erickson Club
@@ -1100,10 +1137,10 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: wi/la-crosse/tomah-vamc-va-river-valley-integrated-hlth-ctr
-  name: Tomah VAMC VA River Valley Integrated Hlth Ctr
+- id: wi/la-crosse/tomah-vamc-la-crosse-outpatient-clinic
+  name: Tomah VAMC La Crosse Outpatient clinic
   categories:
   - su-treatment
   - mh-treatment
@@ -1137,7 +1174,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/vivent-health
   name: Vivent Health
@@ -1158,7 +1195,7 @@
   sources:
   - foodbank/mn-channel-one-regional-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/wafer
   name: WAFER
@@ -1179,7 +1216,7 @@
   sources:
   - foodbank/mn-channel-one-regional-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/washburn-lincoln-little-free-pantry
   name: Washburn/Lincoln Little Free Pantry
@@ -1195,7 +1232,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: wi/la-crosse/weigent-park
   name: Weigent Park
@@ -1218,7 +1255,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wi/la-crosse/y-community-youth-center
   name: Y Community Youth Center
@@ -1241,5 +1278,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

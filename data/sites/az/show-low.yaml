@@ -25,7 +25,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/changepoint-integrated-health-medical
   name: ChangePoint Integrated Health Medical
@@ -58,12 +58,12 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/changepoint-integrated-health-outpatient-clinic
   name: ChangePoint Integrated Health Outpatient Clinic
@@ -83,25 +83,25 @@
   website: https://www.mychangepoint.org
   services:
   - Outpatient
-  - Residential/24-hour residential
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adolescents
   - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
   - Seniors or older adults
   - Veterans
   - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with HIV or AIDS
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  - Persons with traumatic brain injury (TBI)
-  - Persons with Alzheimer's or dementia
-  - Persons with eating disorders
-  - Persons experiencing first-episode psychosis
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/changepoint-integrated-health-substance-abuse-re
   name: ChangePoint Integrated Health Substance Abuse Residential
@@ -121,25 +121,14 @@
   website: https://www.mychangepoint.org
   services:
   - Residential/24-hour residential
-  - Long-term residential
-  - Short-term residential
-  - Young adults
-  - Adult women
-  - Adult men
-  - Seniors or older adults
-  - Veterans
-  - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients with HIV or AIDS
-  - Clients who have experienced sexual abuse
-  eligibility: Serves young adults, adults.
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/community-medical-services-show-low
   name: Community Medical Services Show Low
@@ -162,12 +151,12 @@
   - Regular outpatient treatment
   - Pregnant/postpartum women
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/elk-ridge-show-low-clinic
   name: ELK RIDGE - SHOW LOW CLINIC
@@ -189,7 +178,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/show-low
   name: Show Low
@@ -210,7 +199,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/show-low-junior-high-school
   name: Show Low Junior High School
@@ -231,7 +220,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/show-low-va-clinic
   name: Show Low VA Clinic
@@ -274,7 +263,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/show-low-wic
   name: Show Low WIC
@@ -298,7 +287,7 @@
   sources:
   - wic/az-dhs
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: az/show-low/sober-mountain-triple-r-ranch
   name: Sober Mountain Triple R Ranch
@@ -312,17 +301,19 @@
     zip: '85901'
   place: '0466470'
   phone: 928-551-6099 x223
-  website: https://triplerrecovery.com
+  website: https://
   services:
   - Outpatient
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced intimate partner violence, domestic violence
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adult women
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 34.25447, lng: -110.03642}
 - id: az/show-low/waypoint-recovery
@@ -337,19 +328,17 @@
     zip: '85901'
   place: '0466470'
   phone: 928-551-6099 x223
-  website: https://Waypointrecovery.com
+  website: https://
   services:
   - Outpatient
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adult men
-  eligibility: Serves young adults, adults; men only.
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 34.25447, lng: -110.03642}
 - id: az/show-low/white-mountain-counseling
@@ -364,29 +353,28 @@
     zip: '85901'
   place: '0466470'
   geo:
-    lat: 34.25272
-    lng: -110.02966
+    lat: 34.25278
+    lng: -110.02971
   phone: 928-532-3238
   website: https://www.whitemountaincounseling.org
   services:
   - Outpatient
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
   - Seniors or older adults
   - Veterans
   - Active duty military
   - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced trauma
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

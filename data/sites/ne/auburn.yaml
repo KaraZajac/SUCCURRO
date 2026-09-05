@@ -17,7 +17,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ne/auburn/auburn-ne-service-extension
   name: 'Auburn, NE: Service Extension'
@@ -41,7 +41,7 @@
   - Giving Back
   - Disaster Relief
   - Utility Rent Assistance
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Homelessness
   - Holiday Giving
@@ -50,32 +50,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
-    method: api
-- id: ne/auburn/auburn-wic-clinic
-  name: Auburn WIC Clinic
-  categories:
-  - food
-  - family-support
-  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
-    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
-    parents and children under 5. (United Methodist Church)'
-  address:
-    street: 1205 L St
-    city: Auburn
-    state: ne
-    zip: '68305'
-  geo:
-    lat: 40.39251
-    lng: -95.84125
-  place: '3102655'
-  phone: 402-335-2988
-  external_ids:
-    wic: ne-dhhs:29
-  sources:
-  - wic/ne-dhhs
-  verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ne/auburn/blue-valley-behavioral-health-auburn-office
   name: Blue Valley Behavioral Health Auburn Office
@@ -96,12 +71,12 @@
   services:
   - Outpatient
   - Regular outpatient treatment
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ne/auburn/bulldog-beginnings
   name: Bulldog Beginnings
@@ -122,7 +97,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ne/auburn/calvert-elementary-school
   name: Calvert Elementary School
@@ -144,7 +119,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ne/auburn/nebraska-department-of-health-and-human-services
   name: Nebraska Department of Health and Human Services
@@ -161,6 +136,31 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 40.3852, lng: -95.84544}
+- id: ne/auburn/southeast-district-health-department-wic-clinic
+  name: Southeast District Health Department WIC Clinic
+  categories:
+  - food
+  - family-support
+  description: 'WIC clinic — Special Supplemental Nutrition Program for Women, Infants, and Children:
+    healthy food benefits, nutrition counseling, and breastfeeding support for pregnant and postpartum
+    parents and children under 5. (Southeast District Health Department)'
+  address:
+    street: 2511 Schneider Ave
+    city: Auburn
+    state: ne
+    zip: '68305'
+  geo:
+    lat: 40.37881
+    lng: -95.83722
+  place: '3102655'
+  phone: 402-335-2988
+  external_ids:
+    wic: ne-dhhs:29
+  sources:
+  - wic/ne-dhhs
+  verified:
+    'on': '2026-09-05'
+    method: api

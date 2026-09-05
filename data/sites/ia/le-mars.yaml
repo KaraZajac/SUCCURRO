@@ -18,7 +18,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ia/le-mars/little-help-pantry
   name: Little Help Pantry
@@ -34,7 +34,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: ia/le-mars/mid-sioux-opportunity-inc
   name: Mid-Sioux Opportunity Inc.
@@ -52,7 +52,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 42.78119, lng: -96.16396}
 - id: ia/le-mars/plains-area-mental-health-center-inc-le-mars
@@ -73,11 +73,65 @@
   website: https://www.plainsareamentalhealth.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves children/adolescents, young adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+- id: ia/le-mars/rosecrance-jackson-centers-bill-and-marianne-cen
+  name: Rosecrance Jackson Centers Bill and Marianne Center
+  categories:
+  - su-treatment
+  address:
+    street: 119 1st Avenue SW
+    city: Le Mars
+    state: ia
+    zip: '51031'
+  place: '1944400'
+  phone: 800-472-9018
+  website: https://www.rosecrance.org
+  services:
+  - Residential/24-hour residential
+  - Residential detoxification
+  - Short-term residential
+  - Adolescents
+  - Adult men
   - Clients with co-occurring mental and substance use disorders
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
+  geo: {lat: 42.79161, lng: -96.16788}
+- id: ia/le-mars/rosecrance-jackson-centers-le-mars
+  name: Rosecrance Jackson Centers Le Mars
+  categories:
+  - su-treatment
+  address:
+    street: 119 1st Avenue SW
+    city: Le Mars
+    state: ia
+    zip: '51031'
+  place: '1944400'
+  phone: 712-624-5712
+  website: https://www.rosecrance.org
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+  geo: {lat: 42.79161, lng: -96.16788}

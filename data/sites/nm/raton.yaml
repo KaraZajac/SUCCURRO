@@ -13,31 +13,9 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 36.88222, lng: -104.43855}
-- id: nm/raton/raton-clinic
-  name: Raton Clinic
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 166 Hospital Dr
-    city: Raton
-    state: nm
-    zip: '87740'
-  place: '3562060'
-  geo:
-    lat: 36.86423
-    lng: -104.44451
-  phone: 575-445-3626
-  external_ids:
-    bphc: BPS-LAL-037828
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-08-05'
-    method: api
 - id: nm/raton/raton-early-head-start
   name: Raton Early Head Start
   categories:
@@ -56,7 +34,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nm/raton/raton-head-start
   name: Raton Head Start
@@ -76,7 +54,29 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: nm/raton/raton-primary-care
+  name: Raton Primary Care
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 166 Hospital Dr
+    city: Raton
+    state: nm
+    zip: '87740'
+  place: '3562060'
+  geo:
+    lat: 36.86423
+    lng: -104.44451
+  phone: 575-445-3626
+  external_ids:
+    bphc: BPS-LAL-037828
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: nm/raton/raton-va-clinic
   name: Raton VA Clinic
@@ -116,5 +116,5 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

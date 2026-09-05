@@ -15,7 +15,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 41.71513, lng: -72.22856}
 - id: ct/willimantic/arts-at-the-capitol-theater-sbhc
@@ -38,12 +38,13 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/community-health-resources-roots-to-recovery
   name: Community Health Resources Roots to Recovery
   categories:
   - su-treatment
+  - mh-treatment
   address:
     city: Willimantic
     state: ct
@@ -53,16 +54,17 @@
   website: https://www.chrhealth.org
   services:
   - Residential/24-hour residential
-  - Long-term residential
-  - Adult men
+  - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults, seniors; men only.
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/generations-family-health-center
   name: Generations Family Health Center
@@ -85,7 +87,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/generations-family-health-center-inc
   name: Generations Family Health Center Inc
@@ -115,7 +117,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/generations-family-health-center-inc-2
   name: Generations Family Health Center, Inc.
@@ -138,7 +140,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/gfhc-mobile-health-unit
   name: GFHC Mobile Health Unit
@@ -161,7 +163,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/hartford-dispensary-root-center-for-advanced-rec
   name: Hartford Dispensary Root Center for Advanced Recovery
@@ -181,14 +183,28 @@
   website: https://www.rootcenter.org
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
+  languages:
+  - en
+  - es
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/lauter-park
   name: Lauter Park
@@ -210,7 +226,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/recreation-park
   name: Recreation Park
@@ -232,7 +248,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/rushford-center-inc
   name: Rushford Center Inc
@@ -261,7 +277,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/tyler-square
   name: Tyler Square
@@ -282,7 +298,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/willimantic-corps
   name: Willimantic Corps
@@ -309,7 +325,7 @@
   - Giving Back
   - Holiday Giving
   - Senior Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Donation Dropoff
   - Youth Services
@@ -318,7 +334,28 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: ct/willimantic/willimantic-first-congregational-church
+  name: WILLIMANTIC – First Congregational Church
+  org: ct/connecticut-foodshare
+  categories:
+  - food-pantry
+  address:
+    street: 199 Valley St
+    city: Willimantic
+    state: ct
+    zip: '06226'
+  place: 0985810
+  geo:
+    lat: 41.71445
+    lng: -72.21476
+  external_ids:
+    ct-connecticut-foodshare: '290'
+  sources:
+  - foodbank/ct-connecticut-foodshare
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/willimantic-housing-authority
   name: Willimantic Housing Authority
@@ -338,7 +375,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/willimantic-va-clinic
   name: Willimantic VA Clinic
@@ -376,7 +413,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/windham-early-childhood-center
   name: Windham Early Childhood Center
@@ -396,7 +433,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/windham-high-school
   name: Windham High School
@@ -418,7 +455,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ct/willimantic/windham-technical-high-school
   name: Windham Technical High School
@@ -440,5 +477,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

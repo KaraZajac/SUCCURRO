@@ -19,7 +19,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/housing-authority-of-the-city-of-williamson
   name: Housing Authority Of The City Of Williamson
@@ -39,7 +39,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/lenore-head-start
   name: Lenore Head Start
@@ -61,7 +61,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/lenore-va-clinic
   name: Lenore VA Clinic
@@ -89,7 +89,6 @@
     open: 08:00
     close: '16:30'
   services:
-  - Dermatology
   - Mental health care
   - My HealtheVet coordinator
   - Nutrition, food, and dietary care
@@ -102,7 +101,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/mingo-county-dhhr-office
   name: Mingo County DHHR Office
@@ -119,7 +118,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 37.67167, lng: -82.27654}
 - id: wv/williamson/mountain-laurel-integrated-health-chattaroy
@@ -143,10 +142,10 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: wv/williamson/ovp-health-logan
-  name: OVP Health Logan
+- id: wv/williamson/ovp-health-williamson
+  name: OVP Health Williamson
   categories:
   - su-treatment
   - mh-treatment
@@ -159,7 +158,44 @@
   geo:
     lat: 37.67358
     lng: -82.2787
-  phone: 304-443-0233
+  phone: 304-429-1088
+  website: https://ovphealth.com
+  services:
+  - Outpatient
+  - Young adults
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+- id: wv/williamson/ovp-health-williamson-2
+  name: OVP Health/Williamson
+  categories:
+  - su-treatment
+  address:
+    street: 141 East 2nd Avenue
+    city: Williamson
+    state: wv
+    zip: '25661'
+  place: '5487508'
+  geo:
+    lat: 37.67358
+    lng: -82.2787
+  phone: 304-429-1088
   website: https://ovphealth.com
   services:
   - Outpatient
@@ -181,7 +217,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/tug-fork-clinic
   name: Tug Fork Clinic
@@ -203,7 +239,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/tug-valley-high
   name: Tug Valley High
@@ -225,7 +261,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/whw-pharmacy
   name: WHW - Pharmacy
@@ -248,7 +284,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/whwc-mobile-medical
   name: WHWC - Mobile Medical
@@ -270,7 +306,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/whwc-sud-clinic
   name: WHWC SUD Clinic
@@ -293,7 +329,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-comprehensive-treatment-center
   name: Williamson Comprehensive Treatment Center
@@ -319,12 +355,12 @@
   - Adult women
   - Pregnant/postpartum women
   - Adult men
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-dental-clinic
   name: Williamson Dental Clinic
@@ -347,7 +383,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-head-start
   name: Williamson Head Start
@@ -368,7 +404,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-health-and-wellness-center
   name: Williamson Health and Wellness Center
@@ -390,7 +426,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-health-and-wellness-center-2
   name: Williamson Health and Wellness Center
@@ -413,7 +449,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-health-and-wellness-center-behavioral
   name: Williamson Health and Wellness Center Behavioral Medicine Clinic
@@ -438,7 +474,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-health-and-wellness-center-downstairs
   name: Williamson Health and Wellness Center - Downstairs
@@ -461,7 +497,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-pk-8
   name: Williamson Pk-8
@@ -483,7 +519,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-pre-k-head-start
   name: Williamson Pre K Head Start
@@ -504,7 +540,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/williamson-school-based-health-center
   name: Williamson School-Based Health Center
@@ -527,7 +563,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wv/williamson/wise-path-recovery-centers
   name: Wise Path Recovery Centers
@@ -565,5 +601,5 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

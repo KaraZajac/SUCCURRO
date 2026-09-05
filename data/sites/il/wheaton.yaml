@@ -23,7 +23,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/dupage-county-department-of-community-services
   name: DuPage County Department of Community Services
@@ -42,7 +42,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 41.86108, lng: -88.14252}
 - id: il/wheaton/dupage-county-health-department-central-public-h
@@ -63,16 +63,17 @@
   website: https://www.dupagehealth.org
   services:
   - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Children/adolescents with serious emotional disturbance (SED)
-  - Persons  18 and older with serious mental illness (SMI)
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/dupage-county-health-department-crisis-recovery
   name: DuPage County Health Department Crisis Recovery Center
@@ -94,12 +95,12 @@
   - Residential detoxification
   - Adult women
   - Adult men
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/dupage-county-health-department-linda-a-kurzawa
   name: DuPage County Health Department Linda A Kurzawa Community Center
@@ -119,20 +120,18 @@
   website: https://www.dupagehealth.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Adult women
-  - Adult men
+  - Partial hospitalization/day treatment
+  - Residential/24-hour residential
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/dupage-housing-authority
   name: Dupage  Housing Authority
@@ -152,7 +151,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/early-head-start-home-based
   name: Early Head Start Home-Based
@@ -173,7 +172,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/evangelical-child-and-family-agency
   name: Evangelical Child and Family Agency
@@ -195,7 +194,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/first-choice-dui-and-counseling-servic
   name: First Choice DUI and Counseling Servic
@@ -215,12 +214,12 @@
   services:
   - Outpatient
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/healthcare-alternative-systems-inc-wheaton
   name: Healthcare Alternative Systems Inc Wheaton
@@ -240,7 +239,9 @@
   website: https://www.hascares.org
   services:
   - Outpatient
-  - Clients with co-occurring mental and substance use disorders
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
   languages:
   - en
   - es
@@ -249,7 +250,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/longfellow-elemntary-school
   name: Longfellow Elemntary School
@@ -270,7 +271,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/lowell-elementary
   name: Lowell Elementary
@@ -291,7 +292,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/metropolitan-family-service-metropolitan-fam-ser
   name: Metropolitan Family Service Metropolitan Fam Servs/DuPage Center
@@ -304,8 +305,8 @@
     zip: '60187'
   place: '1781048'
   geo:
-    lat: 41.86287
-    lng: -88.10404
+    lat: 41.86293
+    lng: -88.10395
   phone: 630-784-4800
   website: https://www.metrofamily.org
   services:
@@ -314,12 +315,12 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/milton-township-general-assistance-service-exten
   name: 'Milton Township General Assistance (Service Extension) Service Area: Glen Ellyn, Wheaton'
@@ -346,7 +347,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/stonybrook-center-inc
   name: Stonybrook Center Inc
@@ -373,12 +374,12 @@
   - Adult men
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/vna-health-center-dupage-county-health-departmen
   name: VNA Health Center- DuPage County Health Department
@@ -401,7 +402,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/wheaton-office
   name: Wheaton Office
@@ -423,7 +424,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: il/wheaton/whittier-elementary
   name: Whittier Elementary
@@ -444,5 +445,5 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

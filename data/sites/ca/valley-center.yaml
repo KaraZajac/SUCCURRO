@@ -11,7 +11,7 @@
   external_ids: {usda_master: Cycle 05_CA_SFSP_0533}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/indian-health-council-rincon-health-center
   name: Indian Health Council Rincon Health Center
   categories:
@@ -44,7 +44,7 @@
   external_ids: {asufac: '661610'}
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/james-a-bronner-family-branch
   name: James A. Bronner Family Branch
   categories:
@@ -63,7 +63,7 @@
   external_ids: {bgca_site: '6290', bgca_org: '10724'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/la-jolla-reservation-mobile-pantry
   name: La Jolla Reservation Mobile Pantry
   org: ca/feeding-san-diego
@@ -74,7 +74,7 @@
   external_ids: {ca-feeding-san-diego: '67837520'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/lilac
   name: Lilac
   categories:
@@ -88,7 +88,7 @@
   external_ids: {bgca_site: '9986', bgca_org: '10724'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/lilac-school
   name: Lilac School
   categories:
@@ -101,7 +101,7 @@
   external_ids: {bphc: BPS-H80-029732}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/neighborhood-healthcare-valley-center
   name: Neighborhood Healthcare ~ Valley Center
   categories:
@@ -109,12 +109,12 @@
   cost: sliding-scale
   address: {street: 28477 Lizard Rocks Rd, city: Valley Center, state: ca, zip: '92082'}
   place: 0681736
-  geo: {lat: 33.23087, lng: -117.02143}
+  geo: {lat: 33.23096, lng: -117.02122}
   phone: 760-520-8300
   external_ids: {bphc: BPS-H80-031476}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/pauma-pantry
   name: Pauma Pantry
   org: ca/feeding-san-diego
@@ -122,10 +122,12 @@
   - food-pantry
   place: 0681736
   geo: {lat: 33.29359, lng: -116.96929}
+  hours:
+  - {days: [tue], open: '12:00', close: '13:00'}
   external_ids: {ca-feeding-san-diego: '67242880'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/rincon
   name: Rincon
   categories:
@@ -138,7 +140,7 @@
   phone: 760-749-5189
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/rincon-pantry
   name: Rincon Pantry
   org: ca/feeding-san-diego
@@ -146,10 +148,12 @@
   - food-pantry
   place: 0681736
   geo: {lat: 33.27505, lng: -116.96345}
+  hours:
+  - {days: [wed], open: '12:00', close: '14:00'}
   external_ids: {ca-feeding-san-diego: '67242921'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/san-pasqual-pantry
   name: San Pasqual Pantry
   org: ca/feeding-san-diego
@@ -157,10 +161,12 @@
   - food-pantry
   place: 0681736
   geo: {lat: 33.21449, lng: -116.98137}
+  hours:
+  - {days: [wed], open: '13:00', close: '16:00'}
   external_ids: {ca-feeding-san-diego: '67282735'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/so-calif-tribal-assoc
   name: So. Calif. Tribal Assoc.
   categories:
@@ -173,7 +179,7 @@
   external_ids: {fns: '699006'}
   sources:
   - usda/fdpir-csfp-agencies
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/st-vincent-de-paul-at-st-stephen-s
   name: St Vincent de Paul at St Stephen's
   org: ca/feeding-san-diego
@@ -187,20 +193,7 @@
   external_ids: {ca-feeding-san-diego: '67242865'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
-- id: ca/valley-center/summer-food-service-program-valley-center-librar
-  name: 'Summer Food Service Program: Valley Center Library'
-  org: ca/feeding-san-diego
-  categories:
-  - food-pantry
-  place: 0681736
-  geo: {lat: 33.24322, lng: -117.02372}
-  hours:
-  - {days: [thu], open: '10:00', close: '18:00'}
-  external_ids: {ca-feeding-san-diego: '67242922'}
-  sources:
-  - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/valley-center-mobile-pantry
   name: Valley Center Mobile Pantry
   org: ca/feeding-san-diego
@@ -211,7 +204,7 @@
   external_ids: {ca-feeding-san-diego: '67242868'}
   sources:
   - foodbank/ca-feeding-san-diego
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ca/valley-center/valley-center-primary
   name: Valley Center Primary
   categories:
@@ -224,4 +217,4 @@
   external_ids: {bgca_site: '12838', bgca_org: '10724'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}

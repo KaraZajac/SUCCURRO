@@ -18,7 +18,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/barton-hill-elementary
@@ -41,7 +41,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662644'
 - id: ca/san-pedro/barton-hill-elementary-2
@@ -70,7 +70,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/beacon-house-association-of-san-pedro
   name: Beacon House Association of San Pedro
@@ -91,12 +91,12 @@
   - Intensive outpatient treatment
   - Regular outpatient treatment
   - Adult men
-  eligibility: Serves young adults, seniors; men only.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/beacon-house-association-of-san-pedro-lighthouse
@@ -118,12 +118,12 @@
   - Long-term residential
   - Adult men
   - Clients who have experienced trauma
-  eligibility: Serves young adults, seniors; men only.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/boys-girls-club-of-park-western-elementary-schoo
@@ -153,7 +153,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/boys-girls-club-of-san-pedro
   name: Boys & Girls Club of San Pedro
@@ -182,7 +182,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/coastwise-recovery-center
   name: Coastwise Recovery Center
@@ -201,16 +201,14 @@
   website: https://www.coastwisehealth.com
   services:
   - Outpatient
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  - Partial hospitalization/day treatment
+  - Clients with co-occurring mental and substance use disorders
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/dana-middle-school
@@ -240,7 +238,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/fifteenth-street-elementary
   name: Fifteenth Street Elementary
@@ -262,7 +260,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/fred-browns-recovery-services-inc-outpatient
@@ -294,15 +292,43 @@
   - en
   - es
   - tl
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/fred-browns-recovery-services-inc-residential-fa
+  name: Fred Browns Recovery Services Inc Residential Facility
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    street: 270, 276, and 278 West 14th Street
+    city: San Pedro
+    state: ca
+    zip: '90731'
+  geo:
+    lat: 33.73179
+    lng: -118.28303
+  phone: 310-519-8723
+  website: https://www.fredbrown.org
+  services:
+  - Residential/24-hour residential
+  languages:
+  - en
+  - es
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+  place: '0662602'
+- id: ca/san-pedro/fred-browns-recovery-services-inc-residential-fa-2
   name: Fred Browns Recovery Services Inc Residential Facility
   categories:
   - su-treatment
@@ -328,46 +354,12 @@
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults; men only.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
-    method: api
-  place: '0662602'
-- id: ca/san-pedro/fred-browns-recovery-services-inc-residential-fa-2
-  name: Fred Browns Recovery Services Inc Residential Facility
-  categories:
-  - su-treatment
-  - mh-treatment
-  address:
-    street: 270, 276, and 278 West 14th Street
-    city: San Pedro
-    state: ca
-    zip: '90731'
-  geo:
-    lat: 33.73179
-    lng: -118.28303
-  phone: 310-519-8723
-  website: https://www.fredbrown.org
-  services:
-  - Residential/24-hour residential
-  - Long-term residential
-  - Short-term residential
-  - Young adults
-  - Adult men
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  languages:
-  - en
-  - es
-  eligibility: Serves young adults, adults; men only.
-  cost: varies
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/fred-browns-recovery-services-inc-residential-fa-3
@@ -395,7 +387,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/fred-browns-recovery-services-inc-residential-fa-4
@@ -415,21 +407,15 @@
   website: https://www.fredbrown.org
   services:
   - Residential/24-hour residential
-  - Long-term residential
-  - Short-term residential
-  - Young adults
-  - Adult men
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults; men only.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/fred-kennedy-associates-inc-dui-treatment-progra
@@ -452,12 +438,12 @@
   languages:
   - en
   - es
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662644'
 - id: ca/san-pedro/guidance-center-san-pedro
@@ -485,7 +471,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 33.73887, lng: -118.30673}
   place: '0662602'
@@ -516,12 +502,12 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults; women only.
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/pacific-avenue-health-center
@@ -544,7 +530,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/peck-park-recreation-center
@@ -567,7 +553,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/port-of-los-angeles-boys-girls-club
@@ -597,7 +583,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/providence-little-company-of-mary-recovery-san-p
   name: Providence Little Company of Mary Recovery/San Pedro
@@ -628,12 +614,12 @@
   - Clients with co-occurring mental and substance use disorders
   - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/rc-peck-park
@@ -655,7 +641,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/richard-henry-dana-middle
@@ -678,13 +664,14 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
-- id: ca/san-pedro/san-pedro-temple-ca-corps-community-center
-  name: 'SAN PEDRO (Temple), CA: Corps Community Center'
+- id: ca/san-pedro/san-pedro-corps-community-center
+  name: San Pedro Corps Community Center
   categories:
   - family-support
+  - food-pantry
   - family-youth
   description: Salvation Army community center
   address:
@@ -699,17 +686,18 @@
   phone: 310-832-7228
   website: https://www.salvationarmyusa.org/ca/san-pedro/s-bandini-avenue-corps/
   services:
-  - Family Services
-  - Giving Back
-  - Worship and Spiritual Programs
   - Adult Program Services
+  - Worship Services
+  - Giving Back
+  - Family Services
+  - Hunger
   - Youth Services
   external_ids:
     gdos: 8a78d5473e314c1b013e376cdff40ec4
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ca/san-pedro/santa-cruz
   name: Santa Cruz
@@ -729,7 +717,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662644'
 - id: ca/san-pedro/taper-avenue-elementary
@@ -752,7 +740,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662644'
 - id: ca/san-pedro/toberman-neighborhood-center
@@ -774,7 +762,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662602'
 - id: ca/san-pedro/william-j-johnston-community-day
@@ -797,6 +785,6 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   place: '0662644'

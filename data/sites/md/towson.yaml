@@ -33,7 +33,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/baltimore-county-office
   name: Baltimore County Office
@@ -55,7 +55,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/bcpl-loch-raven-branch
   name: Bcpl Loch Raven Branch
@@ -77,7 +77,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/center-for-creative-values-inc-yes-initiative
   name: Center for Creative Values Inc Yes Initiative
@@ -97,25 +97,28 @@
   website: https://www.ccvalues.com
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
   - Young adults
-  - Seniors or older adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
   - Veterans
   - Active duty military
-  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Members of military families
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
   languages:
   - en
-  - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - fr
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/congruent-counseling-services-llc
   name: Congruent Counseling Services LLC
@@ -129,19 +132,22 @@
     zip: '21204'
   place: '2478425'
   geo:
-    lat: 39.38709
-    lng: -76.60643
+    lat: 39.38711
+    lng: -76.60646
   phone: 410-740-8066
   website: https://www.congruentcounseling.com
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/global-healthcare-systems-inc
   name: Global Healthcare Systems Inc
@@ -155,31 +161,25 @@
     zip: '21286'
   place: '2478425'
   geo:
-    lat: 39.38353
-    lng: -76.57434
+    lat: 39.38354
+    lng: -76.57433
   phone: 410-296-0180
   website: https://www.globalhealthcaresystems.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
-  - Adult women
-  - Adult men
   - Seniors or older adults
-  - Veterans
-  - Active duty military
-  - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Children/adolescents with serious emotional disturbance (SED)
+  languages:
+  - en
+  - es
   eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/matclinics
   name: MATClinics
@@ -212,12 +212,12 @@
   - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/optimal-healthcare-services-llc
   name: Optimal Healthcare Services LLC
@@ -239,7 +239,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 39.38749, lng: -76.60935}
 - id: md/towson/retreat-at-sheppard-pratt
@@ -277,7 +277,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/sandstone-care-treatment-center
   name: Sandstone Care Treatment Center
@@ -311,7 +311,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/towson-health-center-wic-clinic
   name: Towson Health Center WIC Clinic
@@ -333,11 +333,11 @@
   phone: 410-887-6000
   email: WICProgram@baltimorecountymd.gov
   external_ids:
-    wic: md-health:9
+    wic: md-health:98
   sources:
   - wic/md-health
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: md/towson/y-head-start-mt-calvary-life-education-center
   name: Y Head Start, Mt. Calvary Life & Education Center
@@ -358,5 +358,5 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

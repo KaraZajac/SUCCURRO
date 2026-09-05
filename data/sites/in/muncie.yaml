@@ -24,7 +24,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/centerstone-of-indiana-inc-centerstone-delaware
   name: Centerstone of Indiana Inc Centerstone Delaware County
@@ -50,7 +50,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/central-high-school
   name: Central High School
@@ -71,7 +71,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/cleanslate-centers-muncie
   name: CleanSlate Centers Muncie
@@ -91,12 +91,12 @@
   services:
   - Outpatient
   - Regular outpatient treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/delaware-county-housing-authority
   name: Delaware County Housing Authority
@@ -116,7 +116,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/east-washington-academy
   name: East Washington Academy
@@ -137,7 +137,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/grissom-elementary-school
   name: Grissom Elementary School
@@ -158,7 +158,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/groups-recover-together
   name: Groups Recover Together
@@ -184,7 +184,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/housing-authority-of-the-city-of-muncie
   name: Housing Authority Of The City Of Muncie
@@ -204,7 +204,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/inspire-academy
   name: Inspire Academy
@@ -226,7 +226,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/interlocal-community-action-program-inc
   name: Interlocal Community Action Program, Inc.
@@ -245,7 +245,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 40.19368, lng: -85.39001}
 - id: in/muncie/longfellow-elementary-school
@@ -267,7 +267,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services
   name: Meridian Health Services
@@ -287,23 +287,20 @@
   website: https://www.meridianhs.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
   - Young adults
-  - Adult women
-  - Adult men
+  - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
   - Clients with HIV or AIDS
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services-2
   name: Meridian Health Services
@@ -326,7 +323,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services-corp
   name: MERIDIAN HEALTH SERVICES CORP
@@ -348,31 +345,9 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services-corp-2
-  name: Meridian Health Services Corp
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 1601 E 26th St
-    city: Muncie
-    state: in
-    zip: '47302'
-  place: '1851876'
-  geo:
-    lat: 40.16275
-    lng: -85.36932
-  phone: 765-288-1928
-  external_ids:
-    bphc: BPS-H80-030477
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: in/muncie/meridian-health-services-corp-3
   name: Meridian Health Services Corp
   categories:
   - community-health-center
@@ -392,7 +367,29 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: in/muncie/meridian-health-services-corp-3
+  name: Meridian Health Services Corp
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 1601 E 26th St
+    city: Muncie
+    state: in
+    zip: '47302'
+  place: '1851876'
+  geo:
+    lat: 40.16275
+    lng: -85.36932
+  phone: 765-288-1928
+  external_ids:
+    bphc: BPS-H80-030477
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services-corp-4
   name: Meridian Health Services Corp
@@ -415,31 +412,9 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridian-health-services-corp-5
-  name: Meridian Health Services Corp
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 801 N Walnut St
-    city: Muncie
-    state: in
-    zip: '47305'
-  place: '1851876'
-  geo:
-    lat: 40.20152
-    lng: -85.38758
-  phone: 765-288-1928
-  external_ids:
-    bphc: BPS-H80-031021
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: in/muncie/meridian-health-services-corp-6
   name: Meridian Health Services Corp
   categories:
   - community-health-center
@@ -460,7 +435,29 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: in/muncie/meridian-health-services-corp-6
+  name: Meridian Health Services Corp
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 801 N Walnut St
+    city: Muncie
+    state: in
+    zip: '47305'
+  place: '1851876'
+  geo:
+    lat: 40.20152
+    lng: -85.38758
+  phone: 765-288-1928
+  external_ids:
+    bphc: BPS-H80-031021
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/meridianmd
   name: MeridianMD
@@ -482,7 +479,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/mitchell-early-childhood-family-learning-center
   name: Mitchell Early Childhood & Family Learning Center
@@ -503,7 +500,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/muncie-mission-clinic
   name: Muncie Mission Clinic
@@ -557,10 +554,7 @@
     close: '16:30'
   services:
   - Addiction and substance use care
-  - Cardiology
-  - Dermatology
   - Laboratory and pathology
-  - Mental health care
   - My HealtheVet coordinator
   - PTSD care
   - Pharmacy
@@ -571,7 +565,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/north-view-elementary-school
   name: North View Elementary School
@@ -592,7 +586,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/open-door-health-services
   name: Open Door Health Services
@@ -615,7 +609,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/open-door-health-services-ymca
   name: Open Door Health Services YMCA
@@ -637,7 +631,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/open-door-mobile-school-health-1
   name: 'Open Door Mobile School Health #1'
@@ -660,7 +654,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/open-door-pediatrics-and-family-medicine
   name: Open Door Pediatrics and Family Medicine
@@ -683,7 +677,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/owe-muncie-community-box
   name: OWE Muncie Community Box
@@ -699,7 +693,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: in/muncie/ross-community-center
   name: Ross Community Center
@@ -720,7 +714,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/roy-c-buley-club
   name: Roy C. Buley Club
@@ -748,7 +742,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/royerton-elementary-school
   name: Royerton Elementary School
@@ -770,7 +764,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/south-view-elementary-school
   name: South View Elementary School
@@ -791,7 +785,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/spero-health-muncie
   name: Spero Health Muncie
@@ -823,12 +817,12 @@
   - Clients with HIV or AIDS
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/teddy-bear-child-care
   name: Teddy Bear Child Care
@@ -849,7 +843,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/the-salvation-army-of-muncie-corps-community-cen
   name: The Salvation Army of Muncie Corps Community Center
@@ -872,11 +866,11 @@
   website: https://www.salvationarmyusa.org/in/muncie/n-wheeling-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Giving Back
   - Holiday Giving
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
   - Youth Services
@@ -885,7 +879,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/trc-muncie-head-start
   name: TRC Muncie Head Start
@@ -906,7 +900,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/urgent-care
   name: Urgent Care
@@ -928,7 +922,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: in/muncie/west-view-elementary-school
   name: West View Elementary School
@@ -949,5 +943,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

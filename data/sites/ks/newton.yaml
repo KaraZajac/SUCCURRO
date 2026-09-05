@@ -18,7 +18,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/cooper-early-education-center
   name: Cooper Early Education Center
@@ -39,13 +39,12 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/emberhope-youthville
   name: EmberHope Youthville
   categories:
   - su-treatment
-  - mh-treatment
   address:
     street: P.O. Box 210
     city: Newton
@@ -55,19 +54,21 @@
   phone: 800-593-1950
   website: https://www.emberhope.org
   services:
-  - Residential/24-hour residential
-  - Members of military families
+  - Outpatient
+  - Regular outpatient treatment
+  - Adolescents
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
   - Clients with HIV or AIDS
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Children/adolescents with serious emotional disturbance (SED)
-  eligibility: Serves children/adolescents.
+  eligibility: Serves children/adolescents, young adults; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/harvey-county-dcf
   name: Harvey County DCF
@@ -84,32 +85,10 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 38.039, lng: -97.34476}
 - id: ks/newton/health-ministries-clinic
-  name: Health Ministries Clinic
-  categories:
-  - community-health-center
-  cost: sliding-scale
-  address:
-    street: 700 Medical Center Dr, Suite 101
-    city: Newton
-    state: ks
-    zip: '67114'
-  place: '2050475'
-  geo:
-    lat: 38.02316
-    lng: -97.3336
-  phone: 316-283-6103
-  external_ids:
-    bphc: BPS-H80-036945
-  sources:
-  - hrsa/health-center-sites
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: ks/newton/health-ministries-clinic-2
   name: Health Ministries Clinic
   categories:
   - community-health-center
@@ -130,9 +109,9 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: ks/newton/health-ministries-clinic-3
+- id: ks/newton/health-ministries-clinic-2
   name: Health Ministries Clinic
   categories:
   - community-health-center
@@ -153,7 +132,29 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: ks/newton/health-ministries-clinic-3
+  name: Health Ministries Clinic
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 700 Medical Center Dr, Suite 101
+    city: Newton
+    state: ks
+    zip: '67114'
+  place: '2050475'
+  geo:
+    lat: 38.02316
+    lng: -97.3336
+  phone: 316-283-6103
+  external_ids:
+    bphc: BPS-H80-036945
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/health-ministries-clinic-dental-office
   name: Health Ministries Clinic Dental Office
@@ -175,7 +176,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/health-ministries-clinic-mobile-unit
   name: 'Health Ministries Clinic: Mobile Unit'
@@ -198,7 +199,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/immanuel-baptist-church
   name: Immanuel Baptist Church
@@ -220,7 +221,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/mirror-inc-newton-outpatient
   name: Mirror Inc Newton Outpatient
@@ -236,7 +237,7 @@
   geo:
     lat: 38.05813
     lng: -97.33246
-  phone: 316-803-0150
+  phone: 316-283-7829
   website: https://www.mirrorinc.org/
   services:
   - Outpatient
@@ -258,7 +259,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/mirror-inc-newton-residential-and-outpatient-rec
   name: Mirror Inc/Newton Residential and Outpatient Recovery
@@ -278,12 +279,25 @@
   website: https://www.mirrorinc.org
   services:
   - Outpatient
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Residential/24-hour residential
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Residential detoxification
+  - Long-term residential
+  - Short-term residential
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/mirror-inc-newton-residential-recovery-services
   name: Mirror Inc Newton Residential Recovery Services
@@ -320,7 +334,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/newton-municipal-swimming-pool
   name: Newton Municipal Swimming Pool
@@ -342,7 +356,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/nmc-health-senior-behavioral-health-center
   name: NMC Health Senior Behavioral Health Center
@@ -370,7 +384,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/opportunity-academy
   name: Opportunity Academy
@@ -392,7 +406,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/prairie-view-inc-newton
   name: Prairie View Inc Newton
@@ -406,15 +420,16 @@
     zip: '67114'
   place: '2050475'
   geo:
-    lat: 38.04145
-    lng: -97.31373
+    lat: 38.0415
+    lng: -97.31361
   phone: 316-284-6400
   website: https://www.prairieview.org/
   services:
   - Outpatient
-  - Residential/24-hour residential
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
-  - Persons  18 and older with serious mental illness (SMI)
+  - Clients who have experienced trauma
   languages:
   - en
   - es
@@ -423,7 +438,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/red-door-box-of-blessing
   name: Red Door Box of Blessing
@@ -439,7 +454,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: ks/newton/seak
   name: Seak
@@ -461,7 +476,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/springlake-water-park
   name: Springlake Water Park
@@ -483,7 +498,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ks/newton/sunset-elementary-school
   name: Sunset Elementary School
@@ -505,5 +520,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

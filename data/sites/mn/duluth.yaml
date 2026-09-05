@@ -21,7 +21,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/arrowhead-economic-opportunity-agency-city-of-du
   name: Arrowhead Economic Opportunity Agency (City of Duluth)
@@ -40,7 +40,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 47.51778, lng: -92.53462}
 - id: mn/duluth/bay-view-elementary
@@ -63,7 +63,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/bethel-port-rehabilitation-center
   name: Bethel Port Rehabilitation Center
@@ -84,12 +84,12 @@
   - Regular outpatient treatment
   - Long-term residential
   - Short-term residential
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.78001, lng: -92.1083}
 - id: mn/duluth/center-for-alcohol-and-drug-treatment-duluth-det
@@ -111,12 +111,12 @@
   services:
   - Residential/24-hour residential
   - Residential detoxification
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/center-for-alcohol-and-drug-treatment-howard-fri
   name: Center for Alcohol and Drug Treatment Howard Friese Hillside
@@ -137,12 +137,12 @@
   - Residential/24-hour residential
   - Long-term residential
   - Short-term residential
-  eligibility: Serves young adults, adults; men only.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/center-for-alcohol-and-drug-treatment-howard-fri-2
   name: Center for Alcohol and Drug Treatment Howard Friese House Lakeside
@@ -163,12 +163,12 @@
   - Residential/24-hour residential
   - Long-term residential
   - Short-term residential
-  eligibility: Serves young adults, adults; men only.
+  eligibility: Serves young adults, adults, seniors; men only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/center-for-alcohol-and-drug-treatment-marty-mann
   name: Center for Alcohol and Drug Treatment Marty Mann House
@@ -189,12 +189,12 @@
   - Residential/24-hour residential
   - Long-term residential
   - Short-term residential
-  eligibility: Serves young adults, adults; women only.
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/center-for-alcohol-and-drug-treatment-outpatient
   name: Center for Alcohol and Drug Treatment Outpatient Treatment
@@ -215,12 +215,12 @@
   - Outpatient
   - Intensive outpatient treatment
   - Regular outpatient treatment
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/chum-warming-center
   name: Chum Warming Center
@@ -242,7 +242,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/congdon
   name: Congdon
@@ -263,7 +263,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/dave-goldberg-family-branch
   name: Dave Goldberg Family Branch
@@ -291,7 +291,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/denfeld-senior
   name: Denfeld Senior
@@ -313,7 +313,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/duluth-mobile-vet-center
   name: Duluth Mobile Vet Center
@@ -335,7 +335,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/duluth-vet-center
   name: Duluth Vet Center
@@ -388,14 +388,16 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/duluth-worship-and-service-center
   name: Duluth Worship and Service Center
   categories:
   - utility-assistance
   - financial
+  - family-support
   - food-pantry
+  - family-youth
   - emergency-shelter
   description: Salvation Army community center
   address:
@@ -411,19 +413,22 @@
   website: https://www.salvationarmyusa.org/mn/duluth/south-27th-ave-west-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Utility Rent Assistance
   - Giving Back
-  - Poverty
+  - Holiday Giving
+  - Family Services
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
+  - Youth Services
   - Homelessness
   external_ids:
     gdos: 402818763d5b8722013d5ba35e6f065a
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/essentia-health-behavioral-health-services
   name: Essentia Health Behavioral Health Services
@@ -450,7 +455,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/fond-du-lac-center-for-american-indian-resources
   name: Fond du Lac Center for American Indian Resources
@@ -489,7 +494,7 @@
   sources:
   - ihs/find-health-care
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/fond-du-lac-human-services-tagwii-recovery-cente
   name: Fond du Lac Human Services Tagwii Recovery Center CAIR Adult Outp
@@ -502,19 +507,44 @@
     zip: '55806'
   place: '2717000'
   geo:
-    lat: 46.7872
-    lng: -92.106
+    lat: 46.7873
+    lng: -92.10614
   phone: 218-878-3858
   website: https://www.fdlband.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: mn/duluth/gary-new-duluth-recreation-center
+  name: Gary New Duluth Recreation Center
+  categories:
+  - meal-program
+  address:
+    street: 801 101St Ave W
+    city: Duluth
+    state: mn
+    zip: '55808'
+  description: 'Free summer meals for kids and teens (2026 season) — sponsored by Duluth ISD #709.'
+  place: '2717000'
+  geo:
+    lat: 46.66508
+    lng: -92.2279
+  phone: (218) 336-8707
+  external_ids:
+    usda_master: Cycle 14_MN_SFSP_0001
+  sources:
+  - usda/summer-meal-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/genesis-recovery-services-llc
   name: Genesis Recovery Services LLC
@@ -528,23 +558,20 @@
     zip: '55802'
   place: '2717000'
   geo:
-    lat: 46.78413
-    lng: -92.10235
+    lat: 46.78416
+    lng: -92.10239
   phone: 218-722-2368
   website: https://www.grsduluth.com
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adult women
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults.
+  - Clients who have experienced trauma
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/harbor-highlands-community-center
   name: Harbor Highlands Community Center
@@ -566,7 +593,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/homecroft
   name: Homecroft
@@ -587,7 +614,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/hope-clinic
   name: HOPE Clinic
@@ -631,7 +658,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/human-development-center-recovery-services
   name: Human Development Center Recovery Services
@@ -662,7 +689,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lake-superior-community-health-center
   name: LAKE SUPERIOR COMMUNITY HEALTH CENTER
@@ -685,7 +712,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lakeview-behavioral-health
   name: Lakeview Behavioral Health
@@ -711,7 +738,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/laura-macarthur
   name: Laura MacArthur
@@ -732,7 +759,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/laura-macarthur-elementary
   name: Laura Macarthur Elementary
@@ -754,7 +781,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/legal-aid-service-of-northeastern-mn
   name: Legal Aid Service of Northeastern MN
@@ -776,7 +803,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lester-park
   name: Lester Park
@@ -797,7 +824,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lincoln-park-middle
   name: Lincoln Park Middle
@@ -819,7 +846,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lincoln-park-school-branch
   name: Lincoln Park School Branch
@@ -847,7 +874,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lowell-music-magnet-elementary
   name: Lowell Music Magnet Elementary
@@ -869,7 +896,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lowell-school
   name: Lowell School
@@ -890,7 +917,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/lschc-denfeld-retail-center
   name: LSCHC Denfeld Retail Center
@@ -912,7 +939,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/mn-adult-and-teen-challenge
   name: MN Adult and Teen Challenge
@@ -942,7 +969,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/myers-wilkins-elementary
   name: Myers-Wilkins Elementary
@@ -964,7 +991,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/myers-wilkins-head-start
   name: Myers Wilkins Head Start
@@ -985,7 +1012,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-children-s-services
   name: Northwood Children's Services
@@ -1007,7 +1034,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-diagnostic-and-asse
   name: Northwood Childrens Services Diagnostic and Assessment Center
@@ -1039,7 +1066,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-laura-maccarthur-da
   name: Northwood Childrens Services Laura MacCarthur Day Treatment
@@ -1066,7 +1093,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.74327, lng: -92.16642}
 - id: mn/duluth/northwood-childrens-services-lincoln-park-day-tr
@@ -1094,7 +1121,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.75842, lng: -92.14182}
 - id: mn/duluth/northwood-childrens-services-little-learners-enr
@@ -1125,7 +1152,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-main-campus-qrtp
   name: Northwood Childrens Services Main Campus QRTP
@@ -1157,7 +1184,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-merritt-creek-day-t
   name: Northwood Childrens Services Merritt Creek Day Treatment
@@ -1187,7 +1214,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-myers-wilkins-inten
   name: Northwood Childrens Services Myers Wilkins Intensive Day Treatment
@@ -1214,7 +1241,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.80132, lng: -92.09936}
 - id: mn/duluth/northwood-childrens-services-piedmont-intensive
@@ -1242,7 +1269,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.78249, lng: -92.15865}
 - id: mn/duluth/northwood-childrens-services-prtf
@@ -1277,7 +1304,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/northwood-childrens-services-rockridge-day-treat
   name: Northwood Childrens Services Rockridge Day Treatment
@@ -1304,7 +1331,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
   geo: {lat: 46.8474, lng: -92.02512}
 - id: mn/duluth/partners-behavioral-healthcare
@@ -1325,20 +1352,12 @@
   website: https://pbhmn.com
   services:
   - Outpatient
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adult women
-  - Adult men
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/piedmont
   name: Piedmont
@@ -1359,7 +1378,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/piedmont-elementary
   name: Piedmont Elementary
@@ -1381,7 +1400,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/sagent-behavioral-health
   name: Sagent Behavioral Health
@@ -1401,25 +1420,13 @@
   website: https://www.sagentbh.com
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Young adults
-  - Adult women
-  - Adult men
-  - Seniors or older adults
-  - Veterans
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/sagent-behavioral-health-2
   name: Sagent Behavioral Health
@@ -1439,25 +1446,13 @@
   website: https://www.sagentbh.com
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Adolescents
-  - Young adults
-  - Adult women
-  - Adult men
-  - Seniors or older adults
-  - Veterans
-  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients who have experienced sexual abuse
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/stowe
   name: Stowe
@@ -1478,7 +1473,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/superior-treatment-center
   name: Superior Treatment Center
@@ -1493,7 +1488,7 @@
   geo:
     lat: 46.78327
     lng: -92.10246
-  phone: 715-392-9300
+  phone: 218-336-9300
   website: https://rainierrehab.org/facilities/superior-treatment-center-8654876
   services:
   - Outpatient
@@ -1505,7 +1500,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/the-college-of-st-scholastica
   name: The College of St. Scholastica
@@ -1550,12 +1545,12 @@
   services:
   - Residential/24-hour residential
   - Long-term residential
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: mn/duluth/webmed-mental-health-services-duluth
   name: WebMed Mental Health Services Duluth
@@ -1575,23 +1570,23 @@
   website: https://www.webmedmn.com
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
   - Seniors or older adults
   - Veterans
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults.
+  - Clients with HIV or AIDS
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

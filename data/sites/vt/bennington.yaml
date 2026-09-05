@@ -18,7 +18,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/baart-programs-bennington
   name: BAART Programs Bennington
@@ -45,7 +45,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/bennington-college
   name: Bennington College
@@ -67,7 +67,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/bennington-free-clinic
   name: Bennington Free Clinic
@@ -111,7 +111,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/bennington-recreation-center
   name: Bennington Recreation Center
@@ -133,7 +133,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/bennington-sports-center
   name: Bennington Sports Center
@@ -155,7 +155,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/bennington-va-clinic
   name: Bennington VA Clinic
@@ -194,7 +194,6 @@
   - Mental health care
   - Nutrition, food, and dietary care
   - Pharmacy
-  - Podiatry
   - Primary care
   - Social work
   - Telehealth
@@ -204,7 +203,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/broc-community-action-in-southwestern-vermont
   name: BROC - Community Action in Southwestern Vermont
@@ -223,7 +222,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 42.88854, lng: -73.19788}
 - id: vt/bennington/mount-anthony-union-middle-school
@@ -246,7 +245,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/mpcc-monument
   name: MPCC Monument
@@ -267,7 +266,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/savida-health-bennington
   name: SaVida Health Bennington
@@ -287,13 +286,25 @@
   website: https://www.savidahealth.com
   services:
   - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Seniors or older adults
+  - Veterans
+  - Active duty military
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients with HIV or AIDS
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/spring-center-at-655-gage-street-bennington
   name: Spring Center at 655 Gage Street, Bennington
@@ -314,7 +325,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/turning-point-recovery-center-of-bennington-vt
   name: Turning Point Recovery Center of Bennington, VT
@@ -336,7 +347,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/ucs-infant-toddler-center
   name: UCS Infant Toddler Center
@@ -357,8 +368,40 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
+- id: vt/bennington/united-counseling-services-battelle-house-crisis
+  name: United Counseling Services Battelle House Crisis Center
+  categories:
+  - su-treatment
+  - mh-treatment
+  address:
+    street: 100 Ledge Hill Drive
+    city: Bennington
+    state: vt
+    zip: '05201'
+  place: '5004750'
+  phone: 802-442-5491 x401
+  website: https://www.ucsvt.org
+  services:
+  - Residential/24-hour residential
+  - Young adults
+  - Seniors or older adults
+  - Members of military families
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves young adults, adults, seniors.
+  cost: varies
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
+    method: api
+  geo: {lat: 42.87247, lng: -73.20465}
 - id: vt/bennington/united-counseling-services-bennington
   name: United Counseling Services Bennington
   categories:
@@ -377,25 +420,25 @@
   website: https://www.ucsvt.org
   services:
   - Outpatient
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adolescents
+  - Residential/24-hour residential
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
   - Seniors or older adults
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients with HIV or AIDS
-  eligibility: Serves children/adolescents, young adults, adults.
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons experiencing first-episode psychosis
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/willow-park
   name: Willow Park
@@ -417,7 +460,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: vt/bennington/willowbrook-apts
   name: Willowbrook Apts
@@ -439,5 +482,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

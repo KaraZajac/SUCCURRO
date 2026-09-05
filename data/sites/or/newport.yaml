@@ -12,22 +12,12 @@
   geo:
     lat: 44.63198
     lng: -124.05728
-  phone: 541-265-5232
-  hours:
-  - days:
-    - sun
-    open: '12:00'
-    close: '13:00'
-  - days:
-    - wed
-    open: '16:30'
-    close: '17:30'
   external_ids:
     or-oregon-food-bank: calvary-baptist-soup-kitchen
   sources:
   - foodbank/or-oregon-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: or/newport/coastal-healthcare-newport
   name: Coastal Healthcare - Newport
@@ -50,7 +40,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/community-services-consortium
   name: Community Services Consortium
@@ -68,7 +58,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 44.63726, lng: -124.05211}
 - id: or/newport/community-services-consortium-head-start-newport
@@ -90,7 +80,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/housing-authority-of-lincoln-county
   name: Housing Authority Of Lincoln County
@@ -110,7 +100,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/lincoln-co-health-dept-wic-clinic
   name: Lincoln Co. Health Dept. WIC Clinic
@@ -136,7 +126,7 @@
   sources:
   - wic/or-wic
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/lincoln-county-office
   name: Lincoln County Office
@@ -158,7 +148,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-community-shelter-and-resource-center
   name: Newport Community Shelter and Resource Center
@@ -180,16 +170,13 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-corps-community-center
   name: Newport Corps Community Center
   categories:
   - family-support
   - food-pantry
-  - seniors
-  - utility-assistance
-  - financial
   - family-youth
   description: Salvation Army community center
   address:
@@ -204,23 +191,21 @@
   phone: 541-265-6814
   website: https://www.salvationarmyusa.org/or/newport/ne-4th-street-corps/
   services:
-  - Disaster Relief
-  - Family Services
+  - Adult Program Services
+  - Worship Services
   - Giving Back
   - Holiday Giving
+  - Family Services
+  - Finacial Assistance
   - Hunger
-  - Poverty
-  - Senior Services
-  - Worship and Spiritual Programs
-  - Utility Rent Assistance
-  - Adult Program Services
+  - Disaster Relief
   - Youth Services
   external_ids:
     gdos: 8a808375559c116c0155becd10ea00fa
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-middle-school
   name: Newport Middle School
@@ -242,7 +227,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-outreach-clinic-2
   name: Newport Outreach Clinic
@@ -283,7 +268,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-school-based-health-center
   name: NEWPORT SCHOOL BASED HEALTH CENTER
@@ -306,7 +291,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/newport-va-clinic
   name: Newport VA Clinic
@@ -343,49 +328,9 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/reconnections-alc-and-drug-trt-inc
-  name: Reconnections Alc and Drug Trt Inc
-  categories:
-  - su-treatment
-  address:
-    street: 547 Southwest 7th Street
-    city: Newport
-    state: or
-    zip: '97365'
-  place: '4152450'
-  geo:
-    lat: 44.63185
-    lng: -124.06051
-  phone: 541-819-0280
-  website: https://www.reconnectionscounseling.com/
-  services:
-  - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adolescents
-  - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  - Clients who have experienced trauma
-  languages:
-  - en
-  - es
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
-    method: api
-- id: or/newport/reconnections-alc-and-drug-trt-inc-2
   name: Reconnections Alc and Drug Trt Inc
   categories:
   - su-treatment
@@ -423,7 +368,47 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: or/newport/reconnections-alc-and-drug-trt-inc-2
+  name: Reconnections Alc and Drug Trt Inc
+  categories:
+  - su-treatment
+  address:
+    street: 547 Southwest 7th Street
+    city: Newport
+    state: or
+    zip: '97365'
+  place: '4152450'
+  geo:
+    lat: 44.63185
+    lng: -124.06051
+  phone: 541-819-0280
+  website: https://www.reconnectionscounseling.com/
+  services:
+  - Outpatient
+  - Intensive outpatient treatment
+  - Regular outpatient treatment
+  - Adolescents
+  - Young adults
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
+  - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
+  - Clients who have experienced trauma
+  languages:
+  - en
+  - es
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: or/newport/salvation-army-newport-pantry-of-hope
   name: Salvation Army Newport Pantry of Hope
@@ -439,24 +424,12 @@
   geo:
     lat: 44.63861
     lng: -124.05397
-  phone: 541-283-0659
-  hours:
-  - days:
-    - wed
-    open: '10:00'
-    close: '12:00'
-    note: Pantry is open on Wednesdays from 10am-12pm & 1pm-4pm
-  - days:
-    - wed
-    open: '13:00'
-    close: '16:00'
-    note: Pantry is open on Wednesdays from 10am-12pm & 1pm-4pm
   external_ids:
     or-oregon-food-bank: salvation-army-newport-pantry-of-hope
   sources:
   - foodbank/or-oregon-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: or/newport/sam-case-elem
   name: Sam Case Elem
@@ -478,13 +451,13 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: or/newport/stone-soup-supper
   name: Stone Soup Supper
   org: or/oregon-food-bank
   categories:
-  - meal-program
+  - food-pantry
   address:
     street: 410 SW 9th Street
     city: Newport
@@ -494,18 +467,12 @@
   geo:
     lat: 44.63263
     lng: -124.05608
-  phone: 541-265-5251
-  hours:
-  - days:
-    - mon
-    open: '17:00'
-    close: '18:00'
   external_ids:
     or-oregon-food-bank: stone-soup-supper
   sources:
   - foodbank/or-oregon-food-bank
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: or/newport/sunshine-house
   name: Sunshine House
@@ -521,5 +488,5 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape

@@ -18,7 +18,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/accordia-health-cop
   name: Accordia Health  -  COP
@@ -41,7 +41,30 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: al/mobile/accordia-health-midtown
+  name: Accordia Health  -  Midtown
+  categories:
+  - community-health-center
+  cost: sliding-scale
+  address:
+    street: 4013 Airport Blvd
+    city: Mobile
+    state: al
+    zip: '36608'
+  place: '0150000'
+  geo:
+    lat: 30.67466
+    lng: -88.14966
+  phone: 251-450-5901
+  website: https://accordia-health.org/
+  external_ids:
+    bphc: BPS-H80-041812
+  sources:
+  - hrsa/health-center-sites
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/accordia-health-mobile-unit-south
   name: Accordia Health - Mobile Unit South
@@ -64,7 +87,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/accordia-health-zop
   name: Accordia Health  -  ZOP
@@ -86,7 +109,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/accordia-pediatrics-and-pediatric-psychiatry
   name: Accordia Pediatrics and Pediatric Psychiatry
@@ -108,7 +131,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/all-saints-food-share-pantry
   name: All Saints Food Share Pantry
@@ -124,7 +147,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/altapointe-health-systems-inc-altapointe-substan
   name: AltaPointe Health Systems Inc AltaPointe Substance Use Services
@@ -144,20 +167,24 @@
   website: https://www.altapointe.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Pregnant/postpartum women
+  - Adult men
   - Veterans
-  - Active duty military
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced sexual abuse
+  - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  - Persons experiencing first-episode psychosis
-  - Persons with post-traumatic stress disorder (PTSD)
-  - Persons  18 and older with serious mental illness (SMI)
   eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/altapointe-health-systems-inc-baypointe-hospital
   name: AltaPointe Health Systems Inc BayPointe Hospital
@@ -192,7 +219,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/apostolic-pentecostal-holy-church-of-god
   name: Apostolic Pentecostal Holy Church Of God
@@ -209,7 +236,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.72675, lng: -88.11103}
 - id: al/mobile/bc-rain-high
@@ -232,7 +259,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/beacon-community-share
   name: Beacon Community Share
@@ -248,7 +275,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/bernard-malkove-branch
   name: Bernard Malkove Branch
@@ -277,7 +304,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/bhg-mobile-treatment-center
   name: BHG Mobile Treatment Center
@@ -309,12 +336,12 @@
   - Active duty military
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/bishop-state-community-college-boys-girls-club
   name: Bishop State Community College Boys & Girls Club
@@ -336,7 +363,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/booker-t-washington-mdsch
   name: Booker T Washington Mdsch
@@ -359,7 +386,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/bradford-health-services-mobile-regional-facilit
   name: Bradford Health Services Mobile Regional Facility
@@ -383,12 +410,12 @@
   - Regular outpatient treatment
   - Adult women
   - Adult men
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/bridge-inc-mobile-addictions-treatment-center
   name: Bridge Inc Mobile Addictions Treatment Center
@@ -414,12 +441,12 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/calloway-smith-middle-school
   name: Calloway-Smith Middle School
@@ -442,7 +469,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/calvary-assembly-of-god
   name: Calvary Assembly of God
@@ -459,7 +486,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.58901, lng: -88.19952}
 - id: al/mobile/catholic-social-services-service-center
@@ -477,7 +504,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68213, lng: -88.10092}
 - id: al/mobile/ccbhc-at-vets-recover
@@ -516,7 +543,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/chastang-fournier
   name: Chastang-Fournier
@@ -539,7 +566,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/coastal-alabama-area-command
   name: Coastal Alabama Area Command
@@ -563,7 +590,7 @@
   services:
   - Utility Rent Assistance
   - Giving Back
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Disaster Relief
   - Homelessness
@@ -572,7 +599,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/coastal-alabama-dauphin-way-lodge
   name: Coastal Alabama Dauphin Way Lodge
@@ -592,8 +619,8 @@
   phone: 251-438-7740
   website: https://www.salvationarmyusa.org/al/mobile/dauphin-st/
   services:
-  - Worship and Spiritual Programs
-  - Poverty
+  - Worship Services
+  - Finacial Assistance
   - Hunger
   - Homelessness
   external_ids:
@@ -601,7 +628,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/cody-road-boys-and-girls-club
   name: Cody Road Boys And Girls Club
@@ -623,7 +650,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/collier-elementary-school
   name: Collier Elementary School
@@ -646,7 +673,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/congregation-tree-of-life
   name: Congregation Tree of Life
@@ -663,7 +690,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.65093, lng: -88.24872}
 - id: al/mobile/covenant-academy-of-mobile
@@ -686,7 +713,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/dauphin-island-parkway-health-center
   name: Dauphin Island Parkway Health Center
@@ -709,7 +736,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/dr-robert-w-gilliard-elementary-school
   name: Dr. Robert W. Gilliard Elementary School
@@ -732,7 +759,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/dumas-wesley-community-center
   name: Dumas Wesley Community Center
@@ -754,7 +781,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/eight-mile-health-center
   name: Eight Mile Health Center
@@ -777,7 +804,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/el-bethel-daycare
   name: El Bethel Daycare
@@ -799,7 +826,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/er-dickson-elementary-sch
   name: Er Dickson Elementary Sch
@@ -822,7 +849,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/erwin-craighead-elem-school
   name: Erwin Craighead Elem School
@@ -845,25 +872,8 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
-- id: al/mobile/exchange-club-family-center
-  name: Exchange Club Family Center
-  org: al/feeding-the-gulf-coast
-  categories:
-  - food-pantry
-  address:
-    street: 6106 Grelot Rd
-    city: Mobile
-    state: al
-    zip: '36609'
-  place: '0150000'
-  phone: 251-767-8426
-  sources:
-  - foodbank/al-feeding-the-gulf-coast
-  verified:
-    'on': '2026-08-05'
-    method: scrape
 - id: al/mobile/family-oriented-primary-health-care-clinic-downt
   name: Family Oriented Primary Health Care Clinic - Downtown Health Center
   categories:
@@ -885,7 +895,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/first-baptist-church-of-baltimore-street
   name: First Baptist Church of Baltimore Street
@@ -902,7 +912,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.6665, lng: -88.06513}
 - id: al/mobile/first-baptist-tillman-s-corner
@@ -920,7 +930,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.58919, lng: -88.17298}
 - id: al/mobile/florence-howard-head-start-center
@@ -942,7 +952,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/fonvielle-head-start
   name: FONVIELLE HEAD START
@@ -963,7 +973,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/food-distribution-africatown-cdc
   name: 'FOOD DISTRIBUTION:: Africatown CDC'
@@ -971,7 +981,7 @@
   categories:
   - food-pantry
   address:
-    street: 850 Edwards St
+    street: 2201 Paper Mill Rd
     city: Mobile
     state: al
     zip: '36610'
@@ -979,9 +989,9 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
-  geo: {lat: 30.73711, lng: -88.05852}
+  geo: {lat: 30.73514, lng: -88.05355}
 - id: al/mobile/food-distribution-dotch-community-center
   name: 'FOOD DISTRIBUTION:: Dotch Community Center'
   org: al/feeding-the-gulf-coast
@@ -996,7 +1006,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/forest-hill-baptist-church
   name: Forest Hill Baptist Church
@@ -1018,7 +1028,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/forest-hill-elementary-sch
   name: Forest Hill Elementary Sch
@@ -1041,7 +1051,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/franklin-medical-and-dental-express
   name: Franklin Medical and Dental Express
@@ -1064,7 +1074,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/franklin-medical-mall
   name: FRANKLIN MEDICAL MALL
@@ -1087,7 +1097,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/franklin-s-wellness-smiles-and-vision-express
   name: Franklin's Wellness, Smiles and Vision Express
@@ -1109,7 +1119,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/gateway-community-outreach-at-navco
   name: Gateway Community Outreach at Navco
@@ -1126,7 +1136,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.63008, lng: -88.10669}
 - id: al/mobile/george-hall-elementary-sch
@@ -1150,7 +1160,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/grant-elementary-school
   name: Grant Elementary School
@@ -1173,7 +1183,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/grecs
   name: GRECS
@@ -1195,7 +1205,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/grecs-early-learning-center-mid-city
   name: GRECS Early Learning Center Mid-City
@@ -1216,7 +1226,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/gulf-regional-dearborn-ymca-tot-time-preschool
   name: GULF REGIONAL - Dearborn YMCA Tot Time Preschool
@@ -1237,7 +1247,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/gulf-regional-faith-tabernacle-academy
   name: GULF REGIONAL- Faith Tabernacle Academy
@@ -1258,7 +1268,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/h-e-savage-memorial-center
   name: H.E. Savage Memorial Center
@@ -1281,7 +1291,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/harmon-recreation-center
   name: Harmon Recreation Center
@@ -1303,7 +1313,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/harvest-church
   name: Harvest Church
@@ -1320,7 +1330,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/hillsdale-recreation-center
   name: Hillsdale Recreation Center
@@ -1342,7 +1352,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/hope-plateau-community-center
   name: Hope Plateau Community Center
@@ -1364,7 +1374,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/house-of-rescue-church-ministries
   name: House of Rescue Church Ministries
@@ -1381,7 +1391,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.75165, lng: -88.11115}
 - id: al/mobile/howard-elementary-school
@@ -1405,7 +1415,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/hutchens-elementary-school
   name: Hutchens Elementary School
@@ -1428,7 +1438,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/insight-treatment-program-inc
   name: Insight Treatment Program Inc
@@ -1449,12 +1459,12 @@
   - Outpatient
   - Regular outpatient treatment
   - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/j-r-thomas-wellness-and-fitness-center
   name: J.R. Thomas Wellness and Fitness Center
@@ -1476,7 +1486,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/james-seals-recreation-center
   name: James Seals Recreation Center
@@ -1498,7 +1508,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/jimmy-knight-head-start
   name: JIMMY KNIGHT HEAD START
@@ -1519,7 +1529,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/joseph-dotch-community-center
   name: Joseph Dotch Community Center
@@ -1541,7 +1551,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/kate-shephard-elem-school
   name: Kate Shephard Elem School
@@ -1564,7 +1574,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/kingswood-united-methodist-church
   name: Kingswood United Methodist Church
@@ -1581,7 +1591,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.63304, lng: -88.16341}
 - id: al/mobile/kiwanis-boys-and-girls-club
@@ -1604,7 +1614,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/kiwanis-boys-girls-club
   name: Kiwanis Boys & Girls Club
@@ -1633,7 +1643,7 @@
   sources:
   - bgca/find-a-club
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/laun-park
   name: Laun Park
@@ -1655,7 +1665,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/lavretta-arts-culture-center
   name: Lavretta Arts & Culture Center
@@ -1677,7 +1687,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/le-flore-high-school
   name: Le Flore High School
@@ -1700,7 +1710,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/leona-b-warren-head-start
   name: LEONA B. WARREN HEAD START
@@ -1721,7 +1731,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/lillie-b-williamson-franklin-primary-school-base
   name: Lillie B. Williamson Franklin Primary School Based Clinic
@@ -1743,7 +1753,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/living-word-christian-center-kingdom-academy
   name: Living Word Christian Center Kingdom Academy
@@ -1765,7 +1775,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/loaves-and-fish
   name: Loaves and Fish
@@ -1782,7 +1792,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68749, lng: -88.06508}
 - id: al/mobile/maryvale-elementary-school
@@ -1806,7 +1816,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mason-memorial-temple-church-of-god-in-christ
   name: Mason Memorial Temple Church Of God In Christ
@@ -1828,7 +1838,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/maysville-medical-center
   name: MAYSVILLE MEDICAL CENTER
@@ -1851,7 +1861,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/metro-treatment-of-alabama-lp-dba-mobile-metro-t
   name: Metro Treatment of Alabama LP DBA Mobile Metro Treatment Center
@@ -1885,7 +1895,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/michael-figures-community-center
   name: Michael Figures Community Center
@@ -1907,7 +1917,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-community-action-agency
   name: Mobile Community Action Agency
@@ -1925,7 +1935,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.70462, lng: -88.08231}
 - id: al/mobile/mobile-county-corps
@@ -1948,11 +1958,11 @@
   website: https://www.salvationarmyusa.org/al/mobile/pleasant-valley-rd-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
+  - Worship Services
   - Senior Services
   - Giving Back
   - Family Services
-  - Poverty
+  - Finacial Assistance
   - Disaster Relief
   - Youth Services
   external_ids:
@@ -1960,7 +1970,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-family-haven-center
   name: Mobile Family Haven Center
@@ -1981,7 +1991,7 @@
   website: https://www.salvationarmyusa.org/al/mobile/boykin-blvd/
   services:
   - Adult Program Services
-  - Poverty
+  - Finacial Assistance
   - Hunger
   - Homelessness
   external_ids:
@@ -1989,7 +1999,7 @@
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-housing-authority
   name: Mobile Housing Authority
@@ -2009,7 +2019,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-medical-unit-ii
   name: Mobile Medical Unit II
@@ -2032,7 +2042,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-office
   name: Mobile Office
@@ -2055,7 +2065,7 @@
   sources:
   - lsc/office-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-va-clinic
   name: Mobile VA Clinic
@@ -2099,7 +2109,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mobile-vet-center
   name: Mobile Vet Center
@@ -2140,7 +2150,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/mt-hebron-missionary-baptist-church
   name: Mt. Hebron Missionary Baptist Church
@@ -2157,7 +2167,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/mt-zion-baptist-church
   name: Mt. Zion Baptist Church
@@ -2174,7 +2184,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69481, lng: -88.06076}
 - id: al/mobile/nan-gray-davis-elem-school
@@ -2198,7 +2208,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/new-age-academy-john-will
   name: New Age Academy @John Will
@@ -2220,7 +2230,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/new-beginning-church-of-god
   name: New Beginning Church of God
@@ -2237,7 +2247,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.70146, lng: -88.11417}
 - id: al/mobile/new-beginnings-seventh-day-adventist-church
@@ -2255,7 +2265,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.66302, lng: -88.10593}
 - id: al/mobile/new-birth-community-church
@@ -2273,7 +2283,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.71698, lng: -88.16665}
 - id: al/mobile/new-generation-church
@@ -2291,7 +2301,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.71604, lng: -88.20769}
 - id: al/mobile/new-pleasant-view-baptist-church
@@ -2309,7 +2319,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.72275, lng: -88.11082}
 - id: al/mobile/nina-nix-joseph-child-development-center
@@ -2331,7 +2341,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/noah-s-ark-childcare-development-center
   name: Noah'S Ark Childcare Development Center
@@ -2353,7 +2363,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/outbreak-christian-ministries
   name: Outbreak Christian Ministries
@@ -2375,7 +2385,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/ozanam-charitable-pharmacy-inc
   name: Ozanam Charitable Pharmacy, Inc.
@@ -2421,7 +2431,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/redeemed-community-church
   name: Redeemed Community Church
@@ -2438,7 +2448,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.7261, lng: -88.18892}
 - id: al/mobile/regency-church-of-christ
@@ -2456,7 +2466,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: al/mobile/revelation-missionary-baptist-church
   name: Revelation Missionary Baptist Church
@@ -2478,7 +2488,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/rickarby-park
   name: Rickarby Park
@@ -2500,7 +2510,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/salvation-army
   name: Salvation Army
@@ -2517,7 +2527,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68774, lng: -88.05789}
 - id: al/mobile/scarborough-model-middle-school
@@ -2541,7 +2551,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/serving-our-unique-people-soup
   name: Serving Our Unique People - SOUP
@@ -2558,7 +2568,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69388, lng: -88.06817}
 - id: al/mobile/so-many-things-llc
@@ -2581,7 +2591,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/south-brookley-head-start
   name: SOUTH BROOKLEY HEAD START
@@ -2602,7 +2612,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/southwest-mobile-health-center
   name: Southwest Mobile Health Center
@@ -2625,7 +2635,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/spencer-westlawn-head-start
   name: SPENCER WESTLAWN HEAD START
@@ -2646,7 +2656,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/springhill-community-center
   name: Springhill Community Center
@@ -2668,7 +2678,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/st-andrew-episcopal-church
   name: St. Andrew Episcopal Church
@@ -2685,7 +2695,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.58924, lng: -88.08635}
 - id: al/mobile/st-john-s-deliverance-temple
@@ -2703,7 +2713,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68079, lng: -88.10226}
 - id: al/mobile/st-louis-street-missionary-baptist-church
@@ -2721,7 +2731,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69066, lng: -88.05104}
 - id: al/mobile/st-mark-united-methodist-church-society-of-st-st
@@ -2739,7 +2749,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.66613, lng: -88.15196}
 - id: al/mobile/st-pius-x-church
@@ -2757,7 +2767,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.67806, lng: -88.11445}
 - id: al/mobile/st-stephen-african-methodist-episcopal-church
@@ -2775,7 +2785,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.70497, lng: -88.10323}
 - id: al/mobile/state-street-ame-zion-church
@@ -2793,7 +2803,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69378, lng: -88.04993}
 - id: al/mobile/stott-s-recreation-center
@@ -2816,7 +2826,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/taylor-park-united-methodist-inner-city-mission
   name: Taylor Park United Methodist Inner City Mission 2
@@ -2838,7 +2848,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/the-bush-tot-spot
   name: The Bush Tot Spot
@@ -2860,7 +2870,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/the-charles-white-family-health-center
   name: The Charles White Family Health Center
@@ -2883,7 +2893,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/the-core-project-inc
   name: The CORE Project, Inc.
@@ -2910,24 +2920,6 @@
   verified:
     'on': '2026-07-21'
     method: scrape
-- id: al/mobile/the-family-center
-  name: The Family Center
-  org: al/feeding-the-gulf-coast
-  categories:
-  - food-pantry
-  address:
-    street: 3100 Cottage Hill Rd
-    city: Mobile
-    state: al
-    zip: '36606'
-  place: '0150000'
-  phone: 251-479-5700
-  sources:
-  - foodbank/al-feeding-the-gulf-coast
-  verified:
-    'on': '2026-08-05'
-    method: scrape
-  geo: {lat: 30.66712, lng: -88.11952}
 - id: al/mobile/the-hadley-medical-center
   name: THE HADLEY MEDICAL CENTER
   categories:
@@ -2949,7 +2941,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/the-joseph-project
   name: The Joseph Project
@@ -2966,7 +2958,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69481, lng: -88.10386}
 - id: al/mobile/the-one-2eight-project
@@ -2984,7 +2976,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.67614, lng: -88.27678}
 - id: al/mobile/the-redeemed-christian-church-of-god
@@ -3002,7 +2994,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.66583, lng: -88.15223}
 - id: al/mobile/the-shoulder
@@ -3030,12 +3022,12 @@
   - Veterans
   - Members of military families
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults; women only.
+  eligibility: Serves young adults, adults, seniors; women only.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/thomas-sullivan-community-center
   name: Thomas Sullivan Community Center
@@ -3057,7 +3049,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/tillmans-corner-senior-service-center
   name: Tillmans Corner Senior Service Center
@@ -3074,7 +3066,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.59655, lng: -88.1776}
 - id: al/mobile/tld-youth-of-destiny-holy-church-ministries
@@ -3097,7 +3089,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/trinity-episcopal-church
   name: Trinity Episcopal Church
@@ -3114,7 +3106,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68628, lng: -88.08596}
 - id: al/mobile/trinity-evangelical-lutheran-school
@@ -3138,7 +3130,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/truly-anointed-reconciliation-ministries
   name: Truly Anointed Reconciliation Ministries
@@ -3155,7 +3147,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.71152, lng: -88.17229}
 - id: al/mobile/university-of-south-alabama-literacy-center
@@ -3178,7 +3170,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/vets-recover
   name: Vets Recover
@@ -3211,7 +3203,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/walk-by-faith-christian-ministries
   name: Walk By Faith Christian Ministries
@@ -3227,7 +3219,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.67799, lng: -88.05954}
 - id: al/mobile/waterfront-rescue-mission
@@ -3245,7 +3237,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.69346, lng: -88.05342}
 - id: al/mobile/west-mobile-baptist-church
@@ -3263,7 +3255,7 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.68612, lng: -88.21753}
 - id: al/mobile/west-mobile-family-medical-center
@@ -3286,7 +3278,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/wh-leinkauf-elementary-sch
   name: Wh Leinkauf Elementary Sch
@@ -3309,7 +3301,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/williamson-high-school
   name: Williamson High School
@@ -3331,7 +3323,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/women-s-health-center
   name: Women's Health Center
@@ -3354,7 +3346,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: al/mobile/woodridge-baptist-church
   name: Woodridge Baptist Church
@@ -3371,6 +3363,6 @@
   sources:
   - foodbank/al-feeding-the-gulf-coast
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 30.63617, lng: -88.22478}

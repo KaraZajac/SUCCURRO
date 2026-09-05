@@ -18,7 +18,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/atrium-health-union
   name: Atrium Health Union
@@ -41,7 +41,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/community-health-services-of-union-county-inc
   name: Community Health Services of Union County Inc
@@ -98,25 +98,13 @@
   website: https://www.daymarkrecovery.org
   services:
   - Hospital inpatient/24-hour hospital inpatient
-  - Residential/24-hour residential
-  - Hospital inpatient detoxification
-  - Hospital inpatient treatment
-  - Residential detoxification
-  - Adult women
-  - Adult men
-  - Seniors or older adults
-  - Veterans
   - Active duty military
-  - Members of military families
-  - Criminal justice (other than DUI/DWI)/Forensic clients
-  - Clients with co-occurring mental and substance use disorders
-  - Clients with co-occurring pain and substance use disorders
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/daymark-recovery-services-union-center
   name: Daymark Recovery Services Union Center
@@ -146,7 +134,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/dickerson-recreation-summer-camp
   name: Dickerson Recreation Summer Camp
@@ -168,7 +156,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/healthquest-of-union-county
   name: HealthQuest of Union County
@@ -239,7 +227,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/kintegra-at-atrium-women-s-center-monroe
   name: Kintegra at Atrium Women's Center - Monroe
@@ -262,7 +250,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/little-gerald-services
   name: Little Gerald Services
@@ -282,21 +270,22 @@
   website: https://www.lgservicesnc.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
-  - Adult women
-  - Adult men
   - Seniors or older adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
+  - Persons with traumatic brain injury (TBI)
+  - Persons with Alzheimer's or dementia
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/mcleod-centers-for-wellbeing-monroe
   name: McLeod Centers for Wellbeing Monroe
@@ -322,7 +311,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/monroe-housing-authority
   name: Monroe Housing Authority
@@ -342,7 +331,7 @@
   sources:
   - hud/resource-locator
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/monroe-parks-rec-j-ray-shute
   name: Monroe Parks & Rec J. Ray Shute
@@ -364,7 +353,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/ncm-rocky-river-elementary
   name: Ncm Rocky River Elementary
@@ -386,7 +375,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/sutton-park-recreation-summer-camp
   name: Sutton Park Recreation Summer Camp
@@ -408,7 +397,34 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
+    method: api
+- id: nc/monroe/the-salvation-army-of-greater-charlotte-monroe
+  name: The Salvation Army of Greater Charlotte - Monroe
+  categories:
+  - family-youth
+  - family-support
+  description: Salvation Army youth program center
+  address:
+    street: 830 M L King Jr Blvd S
+    city: Monroe
+    state: nc
+    zip: '28112'
+  geo:
+    lat: 34.97104
+    lng: -80.58272
+  place: '3743920'
+  phone: 704-716-2769
+  website: https://www.salvationarmyusa.org/nc/monroe/m-l-king-jr-blvd-s/
+  services:
+  - Family Services
+  - Youth Services
+  external_ids:
+    gdos: 8a8281fc7f267c9a017f58e6c0c50096
+  sources:
+  - salvationarmy/location-finder
+  verified:
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/union-county-department-of-social-services
   name: Union County Department of Social Services
@@ -426,7 +442,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 35.01225, lng: -80.54494}
 - id: nc/monroe/walter-bickett-elementary
@@ -449,7 +465,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/winchester-center
   name: Winchester Center
@@ -470,7 +486,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: nc/monroe/winchester-summer-organized-activity-program
   name: Winchester Summer Organized Activity Program
@@ -492,5 +508,5 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

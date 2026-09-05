@@ -18,7 +18,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/commonwealth-substance-abuse-services
   name: Commonwealth Substance Abuse Services
@@ -39,12 +39,12 @@
   - Outpatient
   - Regular outpatient treatment
   - Criminal justice (other than DUI/DWI)/Forensic clients
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/florence-elementary
   name: Florence Elementary
@@ -66,7 +66,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/florence-va-clinic
   name: Florence VA Clinic
@@ -111,7 +111,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/grace-s-kitchen
   name: Grace's Kitchen
@@ -127,7 +127,7 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
 - id: ky/florence/healthpoint-florence
   name: HealthPoint Florence
@@ -150,7 +150,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/mosby-s-point
   name: Mosby'S Point
@@ -171,7 +171,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/northern-kentucky-community-action-commission
   name: Northern Kentucky Community Action Commission
@@ -189,7 +189,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 39.00533, lng: -84.61763}
 - id: ky/florence/northkey-community-care-je-willett-treatment-cen
@@ -204,21 +204,25 @@
     zip: '41042'
   place: '2127982'
   geo:
-    lat: 38.99981
-    lng: -84.63708
+    lat: 39.00001
+    lng: -84.63728
   phone: 859-578-3200
   website: https://www.northkey.org
   services:
   - Outpatient
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients who have experienced intimate partner violence, domestic violence
-  - Persons experiencing first-episode psychosis
-  - Persons  18 and older with serious mental illness (SMI)
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/ockerman-middle-school
   name: Ockerman Middle School
@@ -240,7 +244,7 @@
   sources:
   - usda/summer-meal-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: ky/florence/price-pike-pantry
   name: Price Pike Pantry
@@ -256,33 +260,5 @@
   sources:
   - littlefreepantry/map
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
-- id: ky/florence/sunrise-treatment-center-florence
-  name: Sunrise Treatment Center Florence
-  categories:
-  - su-treatment
-  - mh-treatment
-  address:
-    street: 7075 Industrial Road
-    city: Florence
-    state: ky
-    zip: '41042'
-  place: '2127982'
-  geo:
-    lat: 38.97659
-    lng: -84.60921
-  phone: 859-795-0440 x1805
-  website: https://www.sunrisetreatmentcenter.net
-  services:
-  - Outpatient
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  - Persons with post-traumatic stress disorder (PTSD)
-  eligibility: Serves young adults, adults, seniors.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified:
-    'on': '2026-08-05'
-    method: api

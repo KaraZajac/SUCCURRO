@@ -16,7 +16,7 @@
   sources:
   - acf/head-start-locations
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/one-health-sheridan
   name: One Health - Sheridan
@@ -39,7 +39,7 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/one-health-whitney-building
   name: One Health - Whitney Building
@@ -62,15 +62,15 @@
   sources:
   - hrsa/health-center-sites
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/sheridan-corps-community-center
   name: Sheridan Corps Community Center
   categories:
-  - utility-assistance
-  - financial
   - family-support
   - food-pantry
+  - su-treatment
+  - emergency-shelter
   description: Salvation Army community center
   address:
     street: 150 S. Tschirgi Street
@@ -85,22 +85,23 @@
   website: https://www.salvationarmyusa.org/wy/sheridan/s-tschirgi-street-corps/
   services:
   - Adult Program Services
-  - Worship and Spiritual Programs
-  - Utility Rent Assistance
+  - Worship Services
   - Giving Back
   - Holiday Giving
   - Family Services
-  - Poverty
+  - Finacial Assistance
   - Hunger
+  - Recovery
   - Disaster Relief
   - Correctional Services
+  - Homelessness
   - Thrift Stores
   external_ids:
     gdos: 8a808375559c116c0155becddc630208
   sources:
   - salvationarmy/location-finder
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/sheridan-county-department-of-family-services
   name: Sheridan County Department of Family Services
@@ -118,7 +119,7 @@
   sources:
   - acf/liheap-clearinghouse
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: scrape
   geo: {lat: 44.79959, lng: -106.9522}
 - id: wy/sheridan/sheridan-health-center-inc
@@ -196,6 +197,7 @@
   - Cardiology
   - CaregiverSupport
   - Dental/oral surgery
+  - Gastroenterology
   - Homeless Veteran care
   - LGBTQ+ Veteran care
   - Mental health care
@@ -216,7 +218,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/va-regional-benefit-satellite-office-at-sheridan
   name: VA Regional Benefit Satellite Office at Sheridan VA Medical Center
@@ -245,7 +247,7 @@
   sources:
   - va/facilities-api
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/volunteers-of-america-northern-rockies-gathering
   name: Volunteers of America Northern Rockies/Gathering Place
@@ -279,7 +281,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/volunteers-of-america-northern-rockies-life-hous
   name: Volunteers of America  Northern Rockies/Life House
@@ -316,7 +318,7 @@
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api
 - id: wy/sheridan/volunteers-of-america-northern-rockies-sheridan
   name: Volunteers of America Northern Rockies Sheridan Clinic
@@ -336,23 +338,17 @@
   website: https://www.voanr.org
   services:
   - Outpatient
-  - Intensive outpatient treatment
-  - Regular outpatient treatment
-  - Adolescents
   - Young adults
-  - Adult women
-  - Pregnant/postpartum women
-  - Adult men
-  - Veterans
-  - Active duty military
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced sexual abuse
-  - Clients who have experienced intimate partner violence, domestic violence
-  eligibility: Serves children/adolescents, young adults, adults.
+  - Persons with eating disorders
+  - Persons with post-traumatic stress disorder (PTSD)
+  - Children/adolescents with serious emotional disturbance (SED)
+  - Persons  18 and older with serious mental illness (SMI)
+  eligibility: Serves children/adolescents, young adults, adults, seniors.
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
   verified:
-    'on': '2026-08-05'
+    'on': '2026-09-05'
     method: api

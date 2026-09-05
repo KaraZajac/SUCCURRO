@@ -10,11 +10,13 @@
   website: https://www.citizenadvocates.net
   services:
   - Outpatient
-  eligibility: Serves children/adolescents, young adults, adults, seniors.
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/col-c-david-merkel-md-veterans-residential-progr
   name: Col C David Merkel MD Veterans Residential Program
   categories:
@@ -32,7 +34,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/harrietstown-housing-authority
   name: Harrietstown Housing Authority
   categories:
@@ -44,29 +46,7 @@
   phone: 518-891-3050
   sources:
   - hud/resource-locator
-  verified: {'on': '2026-08-05', method: api}
-- id: ny/saranac-lake/robert-r-reiss-comm-servs-ctr-cop
-  name: Robert R Reiss Comm Servs Ctr COP
-  categories:
-  - su-treatment
-  address: {street: 50 John Munn Road, city: Saranac Lake, state: ny, zip: '12983'}
-  place: '3665233'
-  geo: {lat: 44.3333, lng: -74.14499}
-  phone: 518-651-2305
-  website: https://www.stjoestreatment.org
-  services:
-  - Outpatient
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Regular outpatient treatment
-  - Adult women
-  - Adult men
-  - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
-  eligibility: Serves children/adolescents, young adults, adults.
-  cost: sliding-scale
-  sources:
-  - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/saint-josephs-atrc-inpatient-program
   name: Saint Josephs ATRC Inpatient Program
   categories:
@@ -88,11 +68,33 @@
   - Clients who have experienced sexual abuse
   - Clients who have experienced intimate partner violence, domestic violence
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
+- id: ny/saranac-lake/saint-josephs-atrc-saranac-lake-comprehensive-ou
+  name: Saint Josephs ATRC Saranac Lake Comprehensive Outpatient
+  categories:
+  - su-treatment
+  address: {street: 50 John Munn Road, city: Saranac Lake, state: ny, zip: '12983'}
+  place: '3665233'
+  geo: {lat: 44.3333, lng: -74.14499}
+  phone: 518-891-5353
+  website: https://www.stjoestreatment.org
+  services:
+  - Outpatient
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
+  - Adult women
+  - Adult men
+  - Clients with co-occurring mental and substance use disorders
+  - Clients who have experienced trauma
+  eligibility: Serves children/adolescents, young adults, seniors.
+  cost: sliding-scale
+  sources:
+  - samhsa/findtreatment
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/saranac-lake-ehs-hs
   name: Saranac Lake/EHS & HS
   categories:
@@ -105,7 +107,7 @@
   phone: 518-603-3749
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/saranac-lake-family-health
   name: Saranac Lake Family Health
   categories:
@@ -118,7 +120,7 @@
   external_ids: {bphc: BPS-H80-030807}
   sources:
   - hrsa/health-center-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/saranac-lake/saranac-lake-va-clinic
   name: Saranac Lake VA Clinic
   categories:
@@ -133,7 +135,6 @@
   hours:
   - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
-  - Dermatology
   - Laboratory and pathology
   - Mental health care
   - Pharmacy
@@ -143,4 +144,4 @@
   external_ids: {va: vha_528QK}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}

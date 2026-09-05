@@ -12,7 +12,7 @@
   external_ids: {wic: 'az-dhs:138'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/care-clinic
   name: Care Clinic
   categories:
@@ -29,7 +29,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/copper-springs-east
   name: Copper Springs East
   categories:
@@ -39,19 +39,12 @@
   place: '0427400'
   geo: {lat: 33.28219, lng: -111.75019}
   phone: 480-667-5500
-  website: https://coppersprings.com/
+  website: https://www.coppersprings.com/
   services:
   - Hospital inpatient/24-hour hospital inpatient
   - Outpatient
-  - Hospital inpatient detoxification
-  - Hospital inpatient treatment
-  - Outpatient detoxification
-  - Outpatient day treatment or partial hospitalization
-  - Intensive outpatient treatment
-  - Outpatient methadone/buprenorphine or naltrexone treatment
-  - Members of military families
+  - Partial hospitalization/day treatment
   - Clients with co-occurring mental and substance use disorders
-  - Clients who have experienced trauma
   languages:
   - en
   - es
@@ -59,29 +52,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
-- id: az/gilbert/down-town-gilbert
-  name: Down Town Gilbert
-  categories:
-  - food-pantry
-  place: '0427400'
-  geo: {lat: 33.35153, lng: -111.78598}
-  website: https://mapping.littlefreepantry.org/pantry/4993
-  external_ids: {lfp: '4993'}
-  sources:
-  - littlefreepantry/map
-  verified: {'on': '2026-08-05', method: scrape}
-- id: az/gilbert/down-town-gilbert-2
-  name: Down Town Gilbert
-  categories:
-  - food-pantry
-  place: '0427400'
-  geo: {lat: 33.35153, lng: -111.78598}
-  website: https://mapping.littlefreepantry.org/pantry/4992
-  external_ids: {lfp: '4992'}
-  sources:
-  - littlefreepantry/map
-  verified: {'on': '2026-08-05', method: scrape}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/gateway-campus-gateway-campus-integrated-health
   name: Gateway Campus Gateway Campus Integrated Health Home
   categories:
@@ -99,11 +70,11 @@
   - Young adults
   - Clients with co-occurring mental and substance use disorders
   - Clients who have experienced trauma
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/gilbert-b-g-club
   name: Gilbert B&G Club
   categories:
@@ -116,7 +87,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/gilbert-branch
   name: Gilbert Branch
   categories:
@@ -134,7 +105,7 @@
   external_ids: {bgca_site: '6246', bgca_org: '10696'}
   sources:
   - bgca/find-a-club
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/gilbert-wic-at-maricopa-county
   name: Gilbert WIC At Maricopa County
   categories:
@@ -149,7 +120,7 @@
   external_ids: {wic: 'az-dhs:155'}
   sources:
   - wic/az-dhs
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/grossman-and-grossman-ltd-mesa-office
   name: Grossman and Grossman Ltd Mesa Office
   categories:
@@ -174,11 +145,11 @@
   languages:
   - en
   - es
-  eligibility: Serves children/adolescents, young adults, adults.
+  eligibility: Serves children/adolescents, young adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/mesquite-jr-high-school
   name: Mesquite Jr High School
   categories:
@@ -190,7 +161,7 @@
   external_ids: {usda_master: Cycle 03_AZ_SFSP_0081}
   sources:
   - usda/summer-meal-sites
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/recovia-gilbert
   name: Recovia Gilbert
   categories:
@@ -203,14 +174,19 @@
   website: https://www.recovia.com
   services:
   - Outpatient
-  - Partial hospitalization/day treatment
+  - Outpatient detoxification
+  - Outpatient day treatment or partial hospitalization
+  - Intensive outpatient treatment
+  - Outpatient methadone/buprenorphine or naltrexone treatment
+  - Regular outpatient treatment
   - Clients with co-occurring mental and substance use disorders
+  - Clients with co-occurring pain and substance use disorders
   - Clients who have experienced trauma
   eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/renaissance-recovery-center
   name: Renaissance Recovery Center
   categories:
@@ -235,11 +211,11 @@
   - Members of military families
   - Criminal justice (other than DUI/DWI)/Forensic clients
   - Clients with co-occurring mental and substance use disorders
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/river-source-treatment-center-outpatient-service
   name: River Source Treatment Center Outpatient Services
   categories:
@@ -269,7 +245,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/san-tan-behavioral-health-services
   name: San Tan Behavioral Health Services
   categories:
@@ -293,7 +269,7 @@
   external_ids: {asufac: '656757'}
   sources:
   - ihs/find-health-care
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/spero-health
   name: Spero Health
   categories:
@@ -306,11 +282,11 @@
   services:
   - Outpatient
   - Outpatient methadone/buprenorphine or naltrexone treatment
-  eligibility: Serves young adults, adults.
+  eligibility: Serves young adults, adults, seniors.
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/staff-sergeant-alexander-w-conrad-veterans-affai
   name: Staff Sergeant Alexander W. Conrad Veterans Affairs Health Care Clinic
   categories:
@@ -343,7 +319,7 @@
   external_ids: {va: vha_644BY}
   sources:
   - va/facilities-api
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/transitions-counseling-and-consulting
   name: Transitions Counseling and Consulting
   categories:
@@ -368,7 +344,7 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/tutor-time-6066
   name: 'Tutor Time #6066'
   categories:
@@ -381,7 +357,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/tutor-time-6068
   name: 'Tutor Time #6068'
   categories:
@@ -394,7 +370,7 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
 - id: az/gilbert/tutor-time-6083
   name: 'Tutor Time #6083'
   categories:
@@ -407,4 +383,4 @@
   phone: 602-372-3700
   sources:
   - acf/head-start-locations
-  verified: {'on': '2026-08-05', method: api}
+  verified: {'on': '2026-09-05', method: api}
