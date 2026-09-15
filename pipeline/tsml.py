@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 from .emit import Places, replace_records, today, write_source
-from .util import BROWSER_UA, Flow, ROOT, SOURCES, UA, fetch, load_yaml, slugify
+from .util import BROWSER_UA, DATA, Flow, ROOT, SOURCES, UA, fetch, load_yaml, slugify
 
 FEEDS = ROOT / "pipeline" / "curated" / "feeds.yaml"
 
@@ -121,6 +121,59 @@ def build_record(row, feed, places, source_id):
     return rec
 
 
+def fetch_feed(feed, cache, force):
+    """Fetch one feed, retrying once as a browser when a WAF turns us away.
+
+    Intergroup sites run on WordPress behind filters that begin returning
+    403/401 to non-browser clients without notice. Reading that as "no
+    meetings" deletes a whole city's listings, so try the browser UA the
+    project already keeps for such hosts before giving up. Still throttled,
+    still identifies the project and a contact address.
+    """
+    ua = BROWSER_UA if feed.get("ua") == "browser" else UA
+    try:
+        return fetch(feed["feed"], cache, force=force, ua=ua)
+    except SystemExit:
+        if ua is BROWSER_UA:
+            raise
+        print(f"  {feed['id']}: refused the project UA — retrying as a browser")
+        return fetch(feed["feed"], cache, force=force, ua=BROWSER_UA)
+
+
+def existing_aa():
+    """Every aa/ meeting record currently on disk."""
+    base = DATA / "meetings"
+    if not base.exists():
+        return []
+    return [rec for path in sorted(base.rglob("*.yaml"))
+            for rec in load_yaml(path) or []
+            if any(s.startswith("aa/") for s in rec.get("sources") or [])]
+
+
+def carry_over(on_disk, skipped_feeds):
+    """Keep the records of feeds that failed this run, exactly as they were.
+
+    A fetch that fails is not evidence that a meeting stopped happening.
+    Because the module owns the whole "aa/" prefix, letting a skipped feed fall
+    out of `records` deletes its meetings outright — which is how eight
+    intergroups' listings, some 8,000 meetings across Philadelphia, Atlanta,
+    Portland and others, disappeared behind a warning nobody read. Carrying
+    them keeps the old verified.on, so the staleness machinery reports them
+    honestly until the feed answers again.
+    """
+    wanted = {f"aa/{fid}" for fid in skipped_feeds}
+    carried = []
+    for rec in on_disk:
+        if not wanted & set(rec.get("sources") or []):
+            continue
+        rec = dict(rec)
+        state, place_slug, _ = rec["id"].split("/", 2)
+        rec["_state"], rec["_place_slug"] = state, place_slug
+        rec["_name"] = rec.get("name", "")
+        carried.append(rec)
+    return carried
+
+
 def main(argv):
     force = "--force" in argv
     places = Places()
@@ -131,9 +184,8 @@ def main(argv):
     records, seen_exact, skipped_feeds = [], set(), []
     for feed in feeds:
         cache = SOURCES / "tsml" / f"{feed['id']}.json"
-        ua = BROWSER_UA if feed.get("ua") == "browser" else UA
         try:
-            rows = json.loads(fetch(feed["feed"], cache, force=force, ua=ua).read_text())
+            rows = json.loads(fetch_feed(feed, cache, force).read_text())
         except (SystemExit, json.JSONDecodeError) as e:
             print(f"WARNING: skipping feed {feed['id']}: {e}")
             skipped_feeds.append(feed["id"])
@@ -167,8 +219,23 @@ def main(argv):
             kept += 1
         print(f"{feed['id']}: {kept}/{len(rows)} kept")
 
+    on_disk = existing_aa()
     if skipped_feeds:
         print(f"skipped feeds: {', '.join(skipped_feeds)}")
+        carried = carry_over(on_disk, skipped_feeds)
+        if carried:
+            print(f"carried over {len(carried)} records from {len(skipped_feeds)} "
+                  f"unreachable feed(s) rather than deleting them")
+            records.extend(carried)
+
+    # A feed answering with a short-but-plausible payload still slips past the
+    # per-feed check; a large net loss across the whole family does not.
+    if on_disk and len(records) < len(on_disk) * 0.8:
+        raise SystemExit(
+            f"tsml: {len(records)} records vs {len(on_disk)} on disk — a drop of "
+            f"{100 * (1 - len(records) / len(on_disk)):.0f}%. Refusing to delete "
+            f"the difference; investigate the feeds before re-running.")
+
     replace_records("meetings", "aa/", records)
 
 
