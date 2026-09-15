@@ -8,7 +8,7 @@ peer support, shelters and housing assistance, food banks and pantries, veteran 
 LGBTQ+ centers, crisis lines, free clinics, legal aid — resolvable down to the city and
 town level, plus a static Astro site that makes it searchable by location and need.
 
-**Live site: [succurro.org](https://succurro.org)** · roughly 260,000 records —
+**Live site: [succurro.org](https://succurro.org)** · roughly 257,000 records —
 organizations, service locations, and recurring meetings — across 32,307 US places,
 every one citing its source and carrying the date it was last verified.
 

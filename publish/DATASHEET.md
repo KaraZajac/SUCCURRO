@@ -33,8 +33,8 @@ Supporting records: **places** (the Census-derived geo backbone of every US
 city, town, CDP and New England town), **sources** (first-class provenance
 records), and a **taxonomy** of service categories.
 
-**How many instances?** At v1.0: 12,947 organizations, 136,038 sites, 77,714
-meetings, across 32,307 places and 251 source records — roughly 260,000
+**How many instances?** At v1.1: 12,950 organizations, 136,526 sites, 74,790
+meetings, across 32,307 places and 251 source records — roughly 257,000
 records in 53 states and territories.
 
 **What data does each instance consist of?** Name; service categories from a
@@ -86,7 +86,7 @@ everything its source publishes for the US. But the *set of sources* is a
 convenience sample of what is publicly reachable and rights-clean, which is
 the dominant selection effect in this dataset.
 
-**Over what timeframe?** Collected July 2026; source records carry
+**Over what timeframe?** Collected July–September 2026; source records carry
 `retrieved_on` dates and each record a `verified` date. A monthly refresh
 workflow re-pulls every source.
 
