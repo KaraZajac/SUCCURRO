@@ -33,10 +33,15 @@ against seven formatting variants of the number.
 **Requester told.** The exact source, both USDA master IDs, the field each uses,
 and the route to a correction at USDA FNS and the Puerto Rico state agency.
 
+**Archive.** v1.1 was cut on 2026-09-15 and deposited as
+`10.5281/zenodo.22779177`. The concept DOI `10.5281/zenodo.21634583` now
+resolves to it, so anyone citing or downloading SUCCURRO gets the corrected
+data by default.
+
 **Outstanding.**
-- The v1.0 release on Zenodo (`10.5281/zenodo.21634583`) carries the value in
-  `sites.jsonl` and `hsds/phone.csv`. Needs a corrected version deposited and a
-  restriction request on the affected files of the earlier one.
+- The v1.0 deposits (`10.5281/zenodo.21634584`, `10.5281/zenodo.21634634`)
+  still carry the value in `sites.jsonl` and `hsds/phone.csv`. Zenodo versions
+  are immutable; removing it needs a restriction request to Zenodo support.
 - The value predates the removal in public git history.
 - Upstream correction at USDA FNS is requested but not confirmed. Until it
   lands, the denylist is what keeps the value out on each refresh.
