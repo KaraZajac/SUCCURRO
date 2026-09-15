@@ -15,6 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from .suppress import denylist
 from .util import DATA, Flow, dump_yaml, load_yaml, slugify
 
 _norm = re.compile(r"[^a-z0-9]+")
@@ -130,6 +131,8 @@ def replace_records(kind: str, source_id: str, records: list[dict]):
     base = DATA / kind
     kept: dict[Path, list[dict]] = defaultdict(list)
     taken: set[str] = set()
+    dl = denylist()
+    scrubbed = 0
 
     if kind == "orgs":
         for path in sorted(base.rglob("*.yaml")) if base.exists() else []:
@@ -142,10 +145,18 @@ def replace_records(kind: str, source_id: str, records: list[dict]):
         for path in sorted(base.rglob("*.yaml")) if base.exists() else []:
             remaining = [r for r in load_yaml(path) or [] if not _cites(r, source_id)]
             if remaining:
+                for r in remaining:  # other sources' records are re-dumped here too
+                    scrubbed += len(dl.scrub(r))
                 kept[path] = [_reflow(r) for r in remaining]
                 taken.update(r["id"] for r in remaining)
             else:
                 path.unlink()  # file held only this source's records (or was empty)
+
+    # A removal request outlives the pull it came from: a suppressed contact
+    # value is stripped on every write, so re-running a module or the monthly
+    # refresh cannot reintroduce it (pipeline/curated/suppressed.yaml).
+    for rec in records:
+        scrubbed += len(dl.scrub(rec))
 
     grouped: dict[Path, list[dict]] = defaultdict(list)
     for rec in sorted(records, key=lambda r: (r["_state"], r["_place_slug"], r["_name"])):
@@ -175,4 +186,5 @@ def replace_records(kind: str, source_id: str, records: list[dict]):
         for path, recs in merged.items():
             dump_yaml(sorted(recs, key=lambda r: r["id"]), path)
 
-    print(f"{kind}: wrote {len(records)} records for {source_id}")
+    msg = f"{kind}: wrote {len(records)} records for {source_id}"
+    print(f"{msg} ({scrubbed} suppressed values stripped)" if scrubbed else msg)

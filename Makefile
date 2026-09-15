@@ -1,4 +1,4 @@
-.PHONY: help places build meta verify conformance install-hooks site site-dev
+.PHONY: help places build meta verify conformance install-hooks site site-dev suppress
 
 MODULES = findtreatment summermeals hrsa headstart hud bmlt nami pflag feedingamerica ndbn \
           mutualaidhub littlefreepantry va tsml nnedv lsc mha clubhouse ccusa eoir liheap fdpir wic lifeline988 centerlink dbsa compassionatefriends lllusa thearc afsp alz smallchapters teamrwb dvcoalitions warmlines afspgroups cvso lawhelpny rhy fvpsa discovered cils orr peerrespites sage standwithtrans lgbtqseed gamblersanon naranon oa debtorsanon gamanon aca oiaa salvationarmy mssociety psi lscoffices taps stateveterans foodbanklocators ihs nafc bgca \
@@ -30,6 +30,9 @@ verify: ## full validation gate: schema conformance + referential integrity + fr
 
 conformance: ## JSON Schema conformance only
 	python3 -m pipeline.validate --conformance-only
+
+suppress: ## scrub contact values on the removal denylist from data/ (ARGS=--check)
+	python3 -m pipeline.suppress $(ARGS)
 
 install-hooks: ## enable the pre-commit gate on data/ changes
 	git config core.hooksPath .githooks

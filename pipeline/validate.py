@@ -15,6 +15,7 @@ import json
 import re
 import sys
 
+from .suppress import CONTACT_FIELDS, denylist
 from .util import DATA, ROOT, load_yaml
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -63,6 +64,7 @@ def check_verified(rel, rec, kind, today):
 def main(argv):
     conformance_only = "--conformance-only" in argv
     today = datetime.date.today()
+    deny = denylist()
 
     taxonomy = load_yaml(DATA / "taxonomy" / "services.yaml") or []
     tokens = {t["id"] for t in taxonomy}
@@ -131,6 +133,11 @@ def main(argv):
                     err(f"{rel}: dangling site ref {rec['site']!r}")
                 if rec.get("dv_confidential") and rec.get("address"):
                     err(f"{rel}: dv_confidential record must not carry an address")
+                for field in CONTACT_FIELDS:
+                    if field in rec and deny.blocks(rec[field], field):
+                        err(f"{rel}: {rec.get('id')} carries a suppressed {field} "
+                            f"(pipeline/curated/suppressed.yaml) — "
+                            f"run python3 -m pipeline.suppress")
                 check_verified(rel, rec, kind, today)
                 if kind in ("sites", "meetings") and rec.get("format") != "online":
                     if "geo" not in rec:
@@ -153,7 +160,8 @@ def main(argv):
 
     counted = sum(len(v) for v in records_by_kind.values())
     print(f"checked {counted} entity records, {len(source_ids)} sources, "
-          f"{len(places)} places, {len(tokens)} taxonomy tokens")
+          f"{len(places)} places, {len(tokens)} taxonomy tokens, "
+          f"{len(deny.by_hash)} suppressed contact values")
     for f in findings:
         print(f"FINDING: {f}")
     if findings:

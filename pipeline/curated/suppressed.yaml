@@ -1,0 +1,30 @@
+# Contact values that must never be published, whatever a source says.
+#
+# Sources sometimes carry a private individual's number in a field meant for an
+# organization's public contact line. Deleting the record from data/ does not
+# hold: every module re-emits its records from the upstream pull on each run
+# (pipeline/emit.py replace_records), so the value returns on the next refresh.
+# This list is consulted at emit time, swept over data/ by `python3 -m
+# pipeline.suppress`, and enforced by the validation gate.
+#
+# Entries store the SHA-256 of the normalized value, never the value itself —
+# the point is to keep it out of a public repo, its history and its indexes.
+# Normalization: phone -> digits only, a leading US "1" dropped; email ->
+# lowercased and trimmed. Add an entry with:
+#
+#     python3 -m pipeline.suppress --add '<value>' --fields phone --reason '...'
+#
+# This obscures, it does not encrypt: a 10-digit number is low-entropy and a
+# determined party can confirm a guess against the hash. It stops the value
+# being readable, greppable and search-indexable, which is the harm being
+# remedied here.
+
+- sha256: 7ca668b7a33186dc35dceb459648360076b9d1b9c426c20911fa038df6d89be6
+  fields: [phone]
+  requested_on: '2026-09-15'
+  reason: >-
+    Personal line published upstream as a site contact number. USDA FNS Summer
+    Meals Site Finder (2026 season) carries it in Site_Phone on master record
+    Cycle 07_PR_SFSP_0198 and in Contact_Phone on Cycle 08_PR_SFSP_0171;
+    only the former reached data/. Removal requested by the line's owner;
+    correction requested upstream at USDA FNS.

@@ -54,6 +54,16 @@ This dataset describes services for people in crisis. Accordingly:
   names of members or contacts beyond published intergroup phone numbers.
 - **Takedown:** any listed org may request correction or removal; honored without
   argument. Contact in README.
+- **Suppressed contact values.** A source sometimes publishes a private
+  individual's number in a field meant for an organization's public contact
+  line. Deleting the record is not enough — each module re-emits from its
+  upstream pull, so the value returns on the next refresh. Such values go on the
+  denylist in `pipeline/curated/suppressed.yaml`, which is applied on every
+  write (`pipeline/emit.py`), swept over `data/` by `make suppress`, and
+  enforced by the validation gate, so no re-pull can reintroduce one. Entries
+  store a SHA-256 of the normalized value, never the value itself. Upstream is
+  asked to correct its own record; until it does, the suppression is what keeps
+  the value out of this dataset.
 
 ## Citation
 
