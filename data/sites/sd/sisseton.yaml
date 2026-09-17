@@ -4,105 +4,64 @@
   - legal-aid
   description: LSC-funded legal aid branch office of Dakota Plains Legal Services, Inc.
   org: sd/dakota-plains-legal-services-inc
-  address:
-    street: 301 Veterans Ave.
-    street2: Suite 4
-    city: Sisseton
-    state: sd
-    zip: '57262'
-  geo:
-    lat: 45.66286
-    lng: -97.04957
+  address: {street: 301 Veterans Ave., street2: Suite 4, city: Sisseton, state: sd, zip: '57262'}
+  geo: {lat: 45.66286, lng: -97.04957}
   place: '4659260'
-  external_ids:
-    lsc_office: '74201805'
+  external_ids: {lsc_office: '74201805'}
   sources:
   - lsc/office-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/roberts-county-liheap
   name: Roberts County Liheap
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Roberts County
-  address:
-    street: 10 E. Hickory St. Ste. 2
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  address: {street: 10 E. Hickory St. Ste. 2, city: Sisseton, state: sd, zip: '57262'}
   place: '4659260'
   phone: 605-698-7673
   email: DSSRegion5EA@state.sd.us
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
   geo: {lat: 45.66002, lng: -97.05071}
 - id: sd/sisseton/sisseton-center
   name: SISSETON CENTER
   categories:
   - child-care
-  address:
-    street: 622 Veterans Ave
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  address: {street: 622 Veterans Ave, city: Sisseton, state: sd, zip: '57262'}
   description: Head Start early childhood program — 30 funded slots; operated by Northeast South Dakota
     Head Start Program, Inc..
   place: '4659260'
-  geo:
-    lat: 45.66611
-    lng: -97.04999
+  geo: {lat: 45.66611, lng: -97.04999}
   phone: 605-698-4228
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/sisseton-housing-redevelopment-commission
   name: Sisseton Housing & Redevelopment Commission
   categories:
   - housing-assistance
-  address:
-    street: 123 E Chestnut St
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  address: {street: 123 E Chestnut St, city: Sisseton, state: sd, zip: '57262'}
   description: Public housing (Low-Rent) agency
   place: '4659260'
-  geo:
-    lat: 45.66759
-    lng: -97.04881
+  geo: {lat: 45.66759, lng: -97.04881}
   phone: 605-698-3463
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/sisseton-ministerial-food-pantry
   name: Sisseton Ministerial Food Pantry
   org: sd/feeding-south-dakota
   categories:
   - food-pantry
-  address:
-    street: 405 1st Ave W.
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  address: {street: 405 1st Ave W., city: Sisseton, state: sd, zip: '57262'}
   place: '4659260'
-  geo:
-    lat: 45.66398
-    lng: -97.05197
+  geo: {lat: 45.66398, lng: -97.05197}
   phone: 605-698-7631
-  external_ids:
-    sd-feeding-south-dakota: '8569'
+  external_ids: {sd-feeding-south-dakota: '8569'}
   sources:
   - foodbank/sd-feeding-south-dakota
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/sisseton-sd-service-extension
   name: 'Sisseton, SD: Service Extension'
   categories:
@@ -110,14 +69,8 @@
   - utility-assistance
   - financial
   description: Salvation Army service extension
-  address:
-    street: 104 Ash St
-    city: Sisseton
-    state: sd
-    zip: '57262'
-  geo:
-    lat: 45.66283
-    lng: -97.04956
+  address: {street: 104 Ash St, city: Sisseton, state: sd, zip: '57262'}
+  geo: {lat: 45.66283, lng: -97.04956}
   place: '4659260'
   phone: 402-898-5942
   website: https://www.salvationarmyusa.org/sd/sisseton/ash-st/
@@ -128,22 +81,16 @@
   - Hunger
   - Finacial Assistance
   - Utility Rent Assistance
-  external_ids:
-    gdos: 402818763d5b8722013d5bafd82908d6
+  external_ids: {gdos: 402818763d5b8722013d5bafd82908d6}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/sisseton-wahpeton-sioux-tribe-dakota-pride-treat
   name: Sisseton Wahpeton Sioux Tribe Dakota Pride Treatment Center
   categories:
   - su-treatment
-  address:
-    street: 388 Dakota Avenue
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  - lgbtq-affirming
+  address: {street: 388 Dakota Avenue, city: Sisseton, state: sd, zip: '57262'}
   place: '4659260'
   phone: 605-698-3917 x106
   website: https://
@@ -166,46 +113,30 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
   geo: {lat: 45.5631, lng: -97.07644}
 - id: sd/sisseton/westside-elementary
   name: Westside Elementary
   categories:
   - meal-program
-  address:
-    street: 320 W Walnut St
-    city: Sisseton
-    state: sd
-    zip: '57262'
+  address: {street: 320 W Walnut St, city: Sisseton, state: sd, zip: '57262'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by SISSETON SCHOOL DISTRICT
     54-2.
   place: '4659260'
-  geo:
-    lat: 45.6619
-    lng: -97.05636
+  geo: {lat: 45.6619, lng: -97.05636}
   phone: (605) 698-7613
-  external_ids:
-    usda_master: Cycle 06_SD_SFSP_0011
+  external_ids: {usda_master: Cycle 06_SD_SFSP_0011}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: sd/sisseton/woodrow-wilson-keeble-memorial
   name: Woodrow Wilson Keeble Memorial
   categories:
   - health
   description: IHS health center
-  address:
-    street: 100 Lake Traverse Drive
-    city: Sisseton
-    state: sd
-    zip: '57262'
-  geo:
-    lat: 45.65684
-    lng: -110.97141
+  address: {street: 100 Lake Traverse Drive, city: Sisseton, state: sd, zip: '57262'}
+  geo: {lat: 45.65684, lng: -110.97141}
   place: '4659260'
   phone: 605-698-7606
   website: https://www.ihs.gov/greatplains/healthcarefacilities/wwkmhcc/
@@ -227,10 +158,7 @@
   - Plastic & Reconstructive Surgery
   - Radiology
   - Wound Care
-  external_ids:
-    asufac: '101701'
+  external_ids: {asufac: '101701'}
   sources:
   - ihs/find-health-care
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}

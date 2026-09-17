@@ -3,59 +3,36 @@
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 1112 First St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 1112 First St, city: Alexandria, state: va, zip: '22314'}
   place: '5101000'
-  geo:
-    lat: 38.81576
-    lng: -77.04985
-  external_ids:
-    dc-capital-area-food-bank: '169'
+  geo: {lat: 38.81576, lng: -77.04985}
+  external_ids: {dc-capital-area-food-bank: '169'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-city-high
   name: Alexandria City High
   categories:
   - meal-program
-  address:
-    street: 3330 King St
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 3330 King St, city: Alexandria, state: va, zip: '22302'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.82496
-    lng: -77.08461
+  geo: {lat: 38.82496, lng: -77.08461}
   phone: (703) 824-6640
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0771
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0771}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-community-services-board
   name: Alexandria Community Services Board
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 4850 Mark Center Drive
-    city: Alexandria
-    state: va
-    zip: '22311'
+  - lgbtq-affirming
+  address: {street: 4850 Mark Center Drive, city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
-  geo:
-    lat: 38.8299
-    lng: -77.11912
+  geo: {lat: 38.8299, lng: -77.11912}
   phone: 703-746-3400
   website: https://www.alexandriava.gov/DCHS
   services:
@@ -77,102 +54,65 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-division-of-human-services
   name: Alexandria Division of Human Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Alexandria City, Fairfax Counties
-  address:
-    street: 4850 Mark Center Dr.
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 4850 Mark Center Dr., city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
   phone: 703-746-5700
   website: http://www.alexandriava.gov/DCHS
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
   geo: {lat: 38.83044, lng: -77.1163}
 - id: va/alexandria/alexandria-food-pantry
   name: Alexandria Food Pantry
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 4725A Eisenhower Avenue
-    city: ALEXANDRIA
-    state: va
-    zip: '22304'
+  address: {street: 4725A Eisenhower Avenue, city: ALEXANDRIA, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.80451
-    lng: -77.11695
+  geo: {lat: 38.80451, lng: -77.11695}
   phone: 703-991-6940
-  external_ids:
-    dc-capital-area-food-bank: '27'
+  external_ids: {dc-capital-area-food-bank: '27'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-little-free-pantry
   name: Alexandria Little Free Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.81269
-    lng: -77.04831
+  geo: {lat: 38.81269, lng: -77.04831}
   website: https://mapping.littlefreepantry.org/pantry/2454
-  external_ids:
-    lfp: '2454'
+  external_ids: {lfp: '2454'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/alexandria-office
   name: Alexandria Office
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of Legal Services of Northern Virginia, Inc.
   org: va/legal-services-of-northern-virginia-inc
-  address:
-    street: 121 N Washington St
-    street2: 300A
-    city: Alexandria
-    state: va
-    zip: '22314'
-  geo:
-    lat: 38.80527
-    lng: -77.04683
+  address: {street: 121 N Washington St, street2: 300A, city: Alexandria, state: va, zip: '22314'}
+  geo: {lat: 38.80527, lng: -77.04683}
   place: '5101000'
-  external_ids:
-    lsc_office: '44700706'
+  external_ids: {lsc_office: '44700706'}
   sources:
   - lsc/office-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-olympic-boys-girls-club
   name: Alexandria-Olympic Boys & Girls Club
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 401 N Payne St
-    city: Alexandria
-    state: va
-    zip: '22314'
-  geo:
-    lat: 38.80947
-    lng: -77.05244
+  address: {street: 401 N Payne St, city: Alexandria, state: va, zip: '22314'}
+  geo: {lat: 38.80947, lng: -77.05244}
   place: '5101000'
   phone: 703-549-3077
   website: http://www.bgcgw.org
@@ -181,34 +121,22 @@
   - Summer programs
   - Meals
   - Military youth partnership
-  external_ids:
-    bgca_site: '1872'
-    bgca_org: '10313'
+  external_ids: {bgca_site: '1872', bgca_org: '10313'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-redevelopment-housing-authority
   name: Alexandria Redevelopment & Housing Authority
   categories:
   - housing-assistance
-  address:
-    street: 401 Wythe St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 401 Wythe St, city: Alexandria, state: va, zip: '22314'}
   description: Public housing and Housing Choice Voucher agency
   place: '5101000'
-  geo:
-    lat: 38.81167
-    lng: -77.04241
+  geo: {lat: 38.81167, lng: -77.04241}
   phone: 703-549-7115
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-va-corps
   name: Alexandria VA Corps
   categories:
@@ -218,14 +146,8 @@
   - food-pantry
   - family-youth
   description: Salvation Army community center
-  address:
-    street: 1804 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
-  geo:
-    lat: 38.82294
-    lng: -77.05826
+  address: {street: 1804 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
+  geo: {lat: 38.82294, lng: -77.05826}
   place: '5101000'
   phone: 703-836-2427
   website: https://www.salvationarmyusa.org/va/alexandria/mount-vernon-ave-corps/
@@ -239,37 +161,21 @@
   - Hunger
   - Disaster Relief
   - Youth Services
-  external_ids:
-    gdos: 402818763d5b8722013d5d52cba5279f
+  external_ids: {gdos: 402818763d5b8722013d5d52cba5279f}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alexandria-va-vet-center
   name: Alexandria, VA Vet Center
   categories:
   - vet-center
-  address:
-    street: 6940 South Kings Highway, Suite 204
-    city: Alexandria
-    state: va
-    zip: '22310'
+  address: {street: '6940 South Kings Highway, Suite 204', city: Alexandria, state: va, zip: '22310'}
   place: '5101000'
-  geo:
-    lat: 38.76788
-    lng: -77.11916
+  geo: {lat: 38.76788, lng: -77.11916}
   phone: 703-360-8633
   website: https://www.va.gov/alexandria-va-vet-center/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Addiction and substance use care
   - Community engagement
@@ -281,93 +187,57 @@
   - Suicide prevention
   - Telehealth
   - Veteran connections
-  external_ids:
-    va: vc_0228V
+  external_ids: {va: vc_0228V}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alive
   name: ALIVE!
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 801 S Payne St
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 801 S Payne St, city: Alexandria, state: va, zip: '22302'}
   place: '5101000'
-  geo:
-    lat: 38.79778
-    lng: -77.05586
+  geo: {lat: 38.79778, lng: -77.05586}
   phone: 703-837-9300
-  external_ids:
-    dc-capital-area-food-bank: '128'
+  external_ids: {dc-capital-area-food-bank: '128'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/alive-2
   name: ALIVE!
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 619 South Pickett Street
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 619 South Pickett Street, city: Alexandria, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.80528
-    lng: -77.13125
+  geo: {lat: 38.80528, lng: -77.13125}
   phone: 703-837-9300
-  external_ids:
-    dc-capital-area-food-bank: '129'
+  external_ids: {dc-capital-area-food-bank: '129'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/audubon-mobile-home-park
   name: Audubon Mobile Home Park
   categories:
   - meal-program
-  address:
-    street: 7930 Audubon Avenue
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7930 Audubon Avenue, city: Alexandria, state: va, zip: '22306'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Capital Area Food Bank.
   place: '5101000'
-  geo:
-    lat: 38.74228
-    lng: -77.08995
+  geo: {lat: 38.74228, lng: -77.08995}
   phone: (571) 482-4780
-  external_ids:
-    usda_master: Cycle 03_VA_SFSP_1195
+  external_ids: {usda_master: Cycle 03_VA_SFSP_1195}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/bloom-health-centers
   name: Bloom Health Centers
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 1729 King Street
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 1729 King Street, city: Alexandria, state: va, zip: '22314'}
   place: '5101000'
-  geo:
-    lat: 38.8071
-    lng: -77.058
+  geo: {lat: 38.8071, lng: -77.058}
   phone: 571-440-7122
   website: https://www.bloomhealthcenters.com
   services:
@@ -377,108 +247,67 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/bucknell-elem
   name: Bucknell Elem
   categories:
   - meal-program
-  address:
-    street: 6925 University Dr
-    city: Alexandria
-    state: va
-    zip: '22307'
+  address: {street: 6925 University Dr, city: Alexandria, state: va, zip: '22307'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.76699
-    lng: -77.0749
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0299
+  geo: {lat: 38.76699, lng: -77.0749}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0299}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/bucknell-elementary
   name: Bucknell Elementary
   categories:
   - child-care
-  address:
-    street: 6925 University Dr
-    city: Alexandria
-    state: va
-    zip: '22307'
+  address: {street: 6925 University Dr, city: Alexandria, state: va, zip: '22307'}
   description: Head Start early childhood program — 3 funded slots; operated by Fairfax County Board of
     Supervisors.
   place: '5101000'
-  geo:
-    lat: 38.76707
-    lng: -77.07279
+  geo: {lat: 38.76707, lng: -77.07279}
   phone: 703-660-2900
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/cameron-elem
   name: Cameron Elem
   categories:
   - meal-program
-  address:
-    street: 3434 Campbell Dr
-    city: Alexandria
-    state: va
-    zip: '22303'
+  address: {street: 3434 Campbell Dr, city: Alexandria, state: va, zip: '22303'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.80036
-    lng: -77.09086
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0295
+  geo: {lat: 38.80036, lng: -77.09086}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0295}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/cameron-elementary
   name: Cameron Elementary
   categories:
   - child-care
-  address:
-    street: 3434 Campbell Dr
-    city: Alexandria
-    state: va
-    zip: '22303'
+  address: {street: 3434 Campbell Dr, city: Alexandria, state: va, zip: '22303'}
   description: Head Start early childhood program — 10 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.80078
-    lng: -77.09151
+  geo: {lat: 38.80078, lng: -77.09151}
   phone: 703-329-2100
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/center-for-discovery-alexandria
   name: Center for Discovery Alexandria
   categories:
   - mh-treatment
-  address:
-    street: 209 Madison Street
-    city: Alexandria
-    state: va
-    zip: '22306'
+  - lgbtq-affirming
+  address: {street: 209 Madison Street, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.81273
-    lng: -77.04042
+  geo: {lat: 38.81273, lng: -77.04042}
   phone: 855-818-2029
   website: https://centerfordiscovery.com/locations/alexandria-outpatient/
   services:
@@ -491,156 +320,99 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/chick-armstrong-recreation-center
   name: Chick Armstrong Recreation Center
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 25 W Reed Ave
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 25 W Reed Ave, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83705
-    lng: -77.05798
-  external_ids:
-    dc-capital-area-food-bank: '131'
+  geo: {lat: 38.83705, lng: -77.05798}
+  external_ids: {dc-capital-area-food-bank: '131'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/christ-church-lazarus-ministry
   name: Christ Church Lazarus Ministry
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 118 North Washington St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 118 North Washington St, city: Alexandria, state: va, zip: '22314'}
   place: '5101000'
-  geo:
-    lat: 38.80582
-    lng: -77.04761
+  geo: {lat: 38.80582, lng: -77.04761}
   phone: 703-549-1450
-  external_ids:
-    dc-capital-area-food-bank: '316'
+  external_ids: {dc-capital-area-food-bank: '316'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/cora-kelly
   name: Cora Kelly
   categories:
   - child-care
-  address:
-    street: 3600 Commonwealth Ave
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 3600 Commonwealth Ave, city: Alexandria, state: va, zip: '22305'}
   description: Head Start early childhood program — 16 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.8378
-    lng: -77.05762
+  geo: {lat: 38.8378, lng: -77.05762}
   phone: 703-459-3545
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/dale-street-community-garden-little-free-pantry
   name: Dale Street Community Garden Little Free Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.83756
-    lng: -77.05917
+  geo: {lat: 38.83756, lng: -77.05917}
   website: https://mapping.littlefreepantry.org/pantry/3207
-  external_ids:
-    lfp: '3207'
+  external_ids: {lfp: '3207'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/del-ray-gw-pantry
   name: Del Ray/GW Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.81793
-    lng: -77.05715
+  geo: {lat: 38.81793, lng: -77.05715}
   website: https://mapping.littlefreepantry.org/pantry/4813
-  external_ids:
-    lfp: '4813'
+  external_ids: {lfp: '4813'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/del-ray-pantry
   name: Del Ray Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.82159
-    lng: -77.05782
+  geo: {lat: 38.82159, lng: -77.05782}
   website: https://mapping.littlefreepantry.org/pantry/4812
-  external_ids:
-    lfp: '4812'
+  external_ids: {lfp: '4812'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/douglas-macarthur-elem
   name: Douglas Macarthur Elem
   categories:
   - meal-program
-  address:
-    street: 1101 Janneys Ln
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 1101 Janneys Ln, city: Alexandria, state: va, zip: '22302'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.81519
-    lng: -77.08357
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0769
+  geo: {lat: 38.81519, lng: -77.08357}
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0769}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/embark-behavioral-health-alexandria
   name: Embark Behavioral Health Alexandria
   categories:
   - mh-treatment
-  address:
-    street: 7809 Schelhorn Road
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7809 Schelhorn Road, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.74556
-    lng: -77.07709
+  geo: {lat: 38.74556, lng: -77.07709}
   phone: 571-489-4879
   website: https://www.embarkbh.com/locations/virginia/alexandria/
   services:
@@ -653,22 +425,14 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/fairfax-falls-church-comm-servs-board-crossroads
   name: Fairfax/Falls Church Comm Servs Board Crossroads
   categories:
   - su-treatment
-  address:
-    street: 6901 South Van Dorn Street
-    city: Alexandria
-    state: va
-    zip: '22315'
+  address: {street: 6901 South Van Dorn Street, city: Alexandria, state: va, zip: '22315'}
   place: '5101000'
-  geo:
-    lat: 38.77042
-    lng: -77.1295
+  geo: {lat: 38.77042, lng: -77.1295}
   phone: 703-313-6300
   website: https://www.fairfaxcounty.gov/community-services-board/
   services:
@@ -685,550 +449,334 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/fairlington-presbyterian-church-little-free-pant
   name: Fairlington Presbyterian Church Little Free Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.83138
-    lng: -77.09462
+  geo: {lat: 38.83138, lng: -77.09462}
   website: https://mapping.littlefreepantry.org/pantry/3588
-  external_ids:
-    lfp: '3588'
+  external_ids: {lfp: '3588'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/first-agape-baptist-church
   name: First Agape Baptist Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 2423 Mt. Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
+  address: {street: 2423 Mt. Vernon Ave, city: Alexandria, state: va, zip: '22301'}
   place: '5101000'
-  geo:
-    lat: 38.82768
-    lng: -77.05877
+  geo: {lat: 38.82768, lng: -77.05877}
   phone: 703-505-2913
-  external_ids:
-    dc-capital-area-food-bank: '186'
+  external_ids: {dc-capital-area-food-bank: '186'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/first-christian-church-of-alexandria-cub-scout-p
   name: First Christian Church of Alexandria & Cub Scout Pack 801
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.81554
-    lng: -77.07224
+  geo: {lat: 38.81554, lng: -77.07224}
   website: https://mapping.littlefreepantry.org/pantry/5764
-  external_ids:
-    lfp: '5764'
+  external_ids: {lfp: '5764'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/francis-c-hammond-middle
   name: Francis C. Hammond Middle
   categories:
   - meal-program
-  address:
-    street: 4646 Seminary Road
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 4646 Seminary Road, city: Alexandria, state: va, zip: '22304'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.82724
-    lng: -77.11007
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0775
+  geo: {lat: 38.82724, lng: -77.11007}
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0775}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/francis-c-hammond-middle-school
   name: Francis C. Hammond Middle School
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 4646 Seminary Rd
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 4646 Seminary Rd, city: Alexandria, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.82585
-    lng: -77.11234
+  geo: {lat: 38.82585, lng: -77.11234}
   phone: 571-329-1856
-  external_ids:
-    dc-capital-area-food-bank: '241'
+  external_ids: {dc-capital-area-food-bank: '241'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/george-washington
   name: George Washington
   categories:
   - child-care
-  address:
-    street: 1005 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
+  address: {street: 1005 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
   description: Head Start early childhood program — 15 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.81586
-    lng: -77.05546
+  geo: {lat: 38.81586, lng: -77.05546}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/george-washington-middle-school-campagna-early-h
   name: George Washington Middle School--Campagna Early Head Start
   categories:
   - child-care
-  address:
-    street: 1005 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
+  address: {street: 1005 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
   description: Head Start early childhood program — 24 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.81576
-    lng: -77.05522
+  geo: {lat: 38.81576, lng: -77.05522}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/glasgow-middle
   name: Glasgow Middle
   categories:
   - meal-program
-  address:
-    street: 4101 Fairfax Pkwy
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 4101 Fairfax Pkwy, city: Alexandria, state: va, zip: '22312'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.83634
-    lng: -77.14119
+  geo: {lat: 38.83634, lng: -77.14119}
   phone: (703) 813-8721
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0281
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0281}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/grace-episcopal-church
   name: Grace Episcopal Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 3601 Russell Road
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 3601 Russell Road, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83743
-    lng: -77.0648
+  geo: {lat: 38.83743, lng: -77.0648}
   phone: 703-549-1980
-  external_ids:
-    dc-capital-area-food-bank: '157'
+  external_ids: {dc-capital-area-food-bank: '157'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/groveton-baptist-church
   name: Groveton Baptist Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 6511 Richmond Highway
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 6511 Richmond Highway, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.77578
-    lng: -77.08005
+  geo: {lat: 38.77578, lng: -77.08005}
   phone: 703-768-9084
-  external_ids:
-    dc-capital-area-food-bank: '74'
+  external_ids: {dc-capital-area-food-bank: '74'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/groveton-elem
   name: Groveton Elem
   categories:
   - meal-program
-  address:
-    street: 6900 Harrison Ln
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 6900 Harrison Ln, city: Alexandria, state: va, zip: '22306'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.76848
-    lng: -77.094
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0306
+  geo: {lat: 38.76848, lng: -77.094}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0306}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/groveton-elementary
   name: Groveton Elementary
   categories:
   - child-care
-  address:
-    street: 6900 Harrison Ln
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 6900 Harrison Ln, city: Alexandria, state: va, zip: '22306'}
   description: Head Start early childhood program — 13 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.76866
-    lng: -77.09497
+  geo: {lat: 38.76866, lng: -77.09497}
   phone: 703-718-7800
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/gum-springs-children-center
   name: Gum Springs Children Center
   categories:
   - child-care
-  address:
-    street: 8100 Fordson Rd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 8100 Fordson Rd, city: Alexandria, state: va, zip: '22306'}
   description: Head Start early childhood program — 104 funded slots; operated by Fairfax County Board
     of Supervisors.
   place: '5101000'
-  geo:
-    lat: 38.73825
-    lng: -77.08467
+  geo: {lat: 38.73825, lng: -77.08467}
   phone: 703-799-5760
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/gum-springs-glen
   name: Gum Springs Glen
   categories:
   - child-care
-  address:
-    street: 7839 Richmond Hwy
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7839 Richmond Hwy, city: Alexandria, state: va, zip: '22306'}
   description: Head Start early childhood program — 48 funded slots; operated by Fairfax County Board
     of Supervisors.
   place: '5101000'
-  geo:
-    lat: 38.74376
-    lng: -77.08334
+  geo: {lat: 38.74376, lng: -77.08334}
   phone: 703-799-3460
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/home-visitor
   name: Home Visitor
   categories:
   - child-care
-  address:
-    street: 418 S Washington St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 418 S Washington St, city: Alexandria, state: va, zip: '22314'}
   description: Head Start early childhood program — 10 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.80118
-    lng: -77.0475
+  geo: {lat: 38.80118, lng: -77.0475}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/hybla-valley-community-center
   name: Hybla Valley Community Center
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 7950 Audubon Ave
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7950 Audubon Ave, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.74209
-    lng: -77.09437
+  geo: {lat: 38.74209, lng: -77.09437}
   phone: 703-324-9270
-  external_ids:
-    dc-capital-area-food-bank: '253'
+  external_ids: {dc-capital-area-food-bank: '253'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/hybla-valley-elem
   name: Hybla Valley Elem
   categories:
   - meal-program
-  address:
-    street: 3415 Lockheed Blvd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 3415 Lockheed Blvd, city: Alexandria, state: va, zip: '22306'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.75963
-    lng: -77.0892
-  external_ids:
-    usda_master: Cycle 03_VA_SFSP_0242
+  geo: {lat: 38.75963, lng: -77.0892}
+  external_ids: {usda_master: Cycle 03_VA_SFSP_0242}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/hybla-valley-elementary
   name: Hybla Valley Elementary
   categories:
   - child-care
-  address:
-    street: 3415 Lockheed Blvd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 3415 Lockheed Blvd, city: Alexandria, state: va, zip: '22306'}
   description: Head Start early childhood program — 9 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.75873
-    lng: -77.09026
+  geo: {lat: 38.75873, lng: -77.09026}
   phone: 703-718-7000
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/icna-relief-usa
   name: ICNA Relief USA
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 2912 WOODLAWN TRAIL
-    city: ALEXANDRIA
-    state: va
-    zip: '22306'
+  address: {street: 2912 WOODLAWN TRAIL, city: ALEXANDRIA, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.75166
-    lng: -77.08221
+  geo: {lat: 38.75166, lng: -77.08221}
   phone: 571-662-0786
-  external_ids:
-    dc-capital-area-food-bank: '101'
+  external_ids: {dc-capital-area-food-bank: '101'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/james-k-polk-elem
   name: James K Polk Elem
   categories:
   - meal-program
-  address:
-    street: 5000 Polk Ave
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 5000 Polk Ave, city: Alexandria, state: va, zip: '22304'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.8221
-    lng: -77.11536
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0772
+  geo: {lat: 38.8221, lng: -77.11536}
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0772}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/jefferson-houston
   name: Jefferson Houston
   categories:
   - child-care
-  address:
-    street: 1501 Cameron St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 1501 Cameron St, city: Alexandria, state: va, zip: '22314'}
   description: Head Start early childhood program — 43 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.8082
-    lng: -77.05456
+  geo: {lat: 38.8082, lng: -77.05456}
   phone: 703-836-5774
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/jefferson-houston-elementary-school
   name: Jefferson-Houston Elementary School
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 1501 Cameron St
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 1501 Cameron St, city: Alexandria, state: va, zip: '22314'}
   place: '5101000'
-  geo:
-    lat: 38.80839
-    lng: -77.05526
-  external_ids:
-    dc-capital-area-food-bank: '132'
+  geo: {lat: 38.80839, lng: -77.05526}
+  external_ids: {dc-capital-area-food-bank: '132'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/john-adams
   name: John Adams
   categories:
   - child-care
-  address:
-    street: 5651 Rayburn Ave
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5651 Rayburn Ave, city: Alexandria, state: va, zip: '22311'}
   description: Head Start early childhood program — 110 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.83361
-    lng: -77.1257
+  geo: {lat: 38.83361, lng: -77.1257}
   phone: 703-459-3545
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/john-adams-elem
   name: John Adams Elem
   categories:
   - meal-program
-  address:
-    street: 5651 Rayburn Ave
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5651 Rayburn Ave, city: Alexandria, state: va, zip: '22311'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.83252
-    lng: -77.12587
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0773
+  geo: {lat: 38.83252, lng: -77.12587}
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0773}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/koinonia-foundation-inc
   name: Koinonia Foundation, Inc.
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 6107 Franconia Road
-    city: Alexandria
-    state: va
-    zip: '22310'
+  address: {street: 6107 Franconia Road, city: Alexandria, state: va, zip: '22310'}
   place: '5101000'
-  geo:
-    lat: 38.78183
-    lng: -77.14588
+  geo: {lat: 38.78183, lng: -77.14588}
   phone: 703-971-1991
-  external_ids:
-    dc-capital-area-food-bank: '44'
+  external_ids: {dc-capital-area-food-bank: '44'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/lifebulb-counseling-and-therapy
   name: Lifebulb Counseling and Therapy
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 6210 Old Franconia Road
-    city: Alexandria
-    state: va
-    zip: '22310'
+  address: {street: 6210 Old Franconia Road, city: Alexandria, state: va, zip: '22310'}
   place: '5101000'
-  geo:
-    lat: 38.77978
-    lng: -77.1539
+  geo: {lat: 38.77978, lng: -77.1539}
   phone: 703-955-3703
   website: https://www.lifebulb.com/alexandria
   services:
@@ -1246,215 +794,135 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/little-free-pantry-acds
   name: Little Free Pantry - ACDS
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.82899
-    lng: -77.06651
+  geo: {lat: 38.82899, lng: -77.06651}
   website: https://mapping.littlefreepantry.org/pantry/2571
-  external_ids:
-    lfp: '2571'
+  external_ids: {lfp: '2571'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/little-free-pantry-chirilagua
   name: Little Free Pantry - Chirilagua
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.84134
-    lng: -77.06196
+  geo: {lat: 38.84134, lng: -77.06196}
   website: https://mapping.littlefreepantry.org/pantry/1631
-  external_ids:
-    lfp: '1631'
+  external_ids: {lfp: '1631'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/little-free-pantry-duke-street
   name: Little Free Pantry - Duke Street
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.80701
-    lng: -77.07491
+  geo: {lat: 38.80701, lng: -77.07491}
   website: https://mapping.littlefreepantry.org/pantry/1988
-  external_ids:
-    lfp: '1988'
+  external_ids: {lfp: '1988'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/little-free-pantry-st-rita-s
   name: Little Free Pantry - St Rita's
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.83896
-    lng: -77.06271
+  geo: {lat: 38.83896, lng: -77.06271}
   website: https://mapping.littlefreepantry.org/pantry/2570
-  external_ids:
-    lfp: '2570'
+  external_ids: {lfp: '2570'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/maranatha-springfield-church
   name: Maranatha Springfield Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 5515 Cherokee Ave
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 5515 Cherokee Ave, city: Alexandria, state: va, zip: '22312'}
   place: '5101000'
-  geo:
-    lat: 38.80471
-    lng: -77.16715
-  external_ids:
-    dc-capital-area-food-bank: '281'
+  geo: {lat: 38.80471, lng: -77.16715}
+  external_ids: {dc-capital-area-food-bank: '281'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/minnie-howard-early-childhood-center
   name: Minnie Howard Early Childhood Center
   categories:
   - child-care
-  address:
-    street: 3801 W Braddock Rd
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 3801 W Braddock Rd, city: Alexandria, state: va, zip: '22302'}
   description: Head Start early childhood program — 34 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.82787
-    lng: -77.09521
+  geo: {lat: 38.82787, lng: -77.09521}
   phone: 703-824-6750
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/mother-of-light-center
   name: Mother of Light Center
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 421 Clifford Ave
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 421 Clifford Ave, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83196
-    lng: -77.05197
+  geo: {lat: 38.83196, lng: -77.05197}
   phone: 703-508-5289
-  external_ids:
-    dc-capital-area-food-bank: '214'
+  external_ids: {dc-capital-area-food-bank: '214'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/mount-vernon-elem
   name: Mount Vernon Elem
   categories:
   - meal-program
-  address:
-    street: 2601 Commonwealth Ave
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 2601 Commonwealth Ave, city: Alexandria, state: va, zip: '22305'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Alexandria City Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.82838
-    lng: -77.06061
-  external_ids:
-    usda_master: Cycle 06_VA_SFSP_0774
+  geo: {lat: 38.82838, lng: -77.06061}
+  external_ids: {usda_master: Cycle 06_VA_SFSP_0774}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/mount-vernon-high
   name: Mount Vernon High
   categories:
   - meal-program
-  address:
-    street: 8515 Old Mount Vernon Rd
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8515 Old Mount Vernon Rd, city: Alexandria, state: va, zip: '22309'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.7272
-    lng: -77.09427
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0308
+  geo: {lat: 38.7272, lng: -77.09427}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0308}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/mt-vernon-woods-elementary
   name: Mt. Vernon Woods Elementary
   categories:
   - child-care
-  address:
-    street: 4015 Fielding St
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 4015 Fielding St, city: Alexandria, state: va, zip: '22309'}
   description: Head Start early childhood program — 6 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.74233
-    lng: -77.09995
+  geo: {lat: 38.74233, lng: -77.09995}
   phone: 703-619-2814
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/national-capital-treatment-and-recover-recovery
   name: National Capital Treatment and Recover Recovery Haven
   categories:
   - su-treatment
-  address:
-    street: 120 South Payne Street
-    city: Alexandria
-    state: va
-    zip: '22314'
+  address: {street: 120 South Payne Street, city: Alexandria, state: va, zip: '22314'}
   place: '5101000'
-  geo:
-    lat: 38.8052
-    lng: -77.05343
+  geo: {lat: 38.8052, lng: -77.05343}
   phone: 703-841-0703
   website: https://natcaptreatment.org
   services:
@@ -1470,233 +938,141 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-2-east
   name: Neighborhood Health at 2 East
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 2 E Glebe Rd
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 2 E Glebe Rd, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83554
-    lng: -77.05744
+  geo: {lat: 38.83554, lng: -77.05744}
   phone: 703-535-5568
   website: https://www.neighborhoodhealth.org
-  external_ids:
-    bphc: BPS-H80-001589
+  external_ids: {bphc: BPS-H80-001589}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-martha-custis-drive
   name: Neighborhood Health at Martha Custis Drive
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 1225 Martha Custis Dr, Apartment C-1
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: '1225 Martha Custis Dr, Apartment C-1', city: Alexandria, state: va, zip: '22302'}
   place: '5101000'
-  geo:
-    lat: 38.84223
-    lng: -77.0801
+  geo: {lat: 38.84223, lng: -77.0801}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-034341
+  external_ids: {bphc: BPS-H80-034341}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-richmond-highway
   name: Neighborhood Health at Richmond Highway
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 6677 Richmond Hwy
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 6677 Richmond Hwy, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.77349
-    lng: -77.08046
+  geo: {lat: 38.77349, lng: -77.08046}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-013594
+  external_ids: {bphc: BPS-H80-013594}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-sherwood-hall-lane
   name: Neighborhood Health at Sherwood Hall Lane
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 2616 Sherwood Hall Ln, Ste 106
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: '2616 Sherwood Hall Ln, Ste 106', city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.74318
-    lng: -77.07715
+  geo: {lat: 38.74318, lng: -77.07715}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-021467
+  external_ids: {bphc: BPS-H80-021467}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-south-county-center
   name: Neighborhood Health at South County Center
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 8350 Richmond Hwy, Suite 301
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: '8350 Richmond Hwy, Suite 301', city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.7315
-    lng: -77.10412
+  geo: {lat: 38.7315, lng: -77.10412}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-027764
+  external_ids: {bphc: BPS-H80-027764}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-the-casey-clinic
   name: Neighborhood Health at the Casey Clinic
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 1200 N Howard St
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 1200 N Howard St, city: Alexandria, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.8215
-    lng: -77.10504
+  geo: {lat: 38.8215, lng: -77.10504}
   phone: 703-778-0340
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-008867
+  external_ids: {bphc: BPS-H80-008867}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-the-gartlan-mental-health
   name: Neighborhood Health at the Gartlan Mental Health Center
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 8119 Holland Rd
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 8119 Holland Rd, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.73729
-    lng: -77.07912
+  geo: {lat: 38.73729, lng: -77.07912}
   phone: 703-535-5568
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-013829
+  external_ids: {bphc: BPS-H80-013829}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-at-the-wow-bus
   name: Neighborhood Health at the WOW Bus
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 2 E Glebe Rd
-    city: Alexandria
-    state: va
-    zip: '22305'
+  address: {street: 2 E Glebe Rd, city: Alexandria, state: va, zip: '22305'}
   place: '5101000'
-  geo:
-    lat: 38.83554
-    lng: -77.05744
+  geo: {lat: 38.83554, lng: -77.05744}
   phone: 703-535-5568
   website: https://www.neighborhoodhealthva.org
-  external_ids:
-    bphc: BPS-H80-013799
+  external_ids: {bphc: BPS-H80-013799}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-mark-center-drive
   name: Neighborhood Health Mark Center Drive
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 4850 Mark Center Dr
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 4850 Mark Center Dr, city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
-  geo:
-    lat: 38.83009
-    lng: -77.11905
+  geo: {lat: 38.83009, lng: -77.11905}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-036570
+  external_ids: {bphc: BPS-H80-036570}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/neighborhood-health-south-county-dental
   name: Neighborhood Health South County Dental
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 8350 Richmond Hwy, Suite 233
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: '8350 Richmond Hwy, Suite 233', city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.7315
-    lng: -77.10412
+  geo: {lat: 38.7315, lng: -77.10412}
   phone: 703-535-5568
-  external_ids:
-    bphc: BPS-H80-036123
+  external_ids: {bphc: BPS-H80-036123}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/northern-virginia-adult-rehabilitation-center
   name: Northern Virginia Adult Rehabilitation Center
   categories:
@@ -1706,14 +1082,8 @@
   - family-youth
   - emergency-shelter
   description: Salvation Army adult rehabilitation center
-  address:
-    street: 6528 Little River Tpke
-    city: Alexandria
-    state: va
-    zip: '22312'
-  geo:
-    lat: 38.82297
-    lng: -77.159
+  address: {street: 6528 Little River Tpke, city: Alexandria, state: va, zip: '22312'}
+  geo: {lat: 38.82297, lng: -77.159}
   place: '5101000'
   phone: 703-642-9270
   website: https://www.salvationarmyusa.org/va/alexandria/little-river-tpke/
@@ -1726,80 +1096,53 @@
   - Recovery
   - Youth Services
   - Homelessness
-  external_ids:
-    gdos: 8a8381de9524cbe201952a7cd690006b
+  external_ids: {gdos: 8a8381de9524cbe201952a7cd690006b}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/oakies-pantry
   name: Oakies Pantry
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.85046
-    lng: -77.07032
+  geo: {lat: 38.85046, lng: -77.07032}
   website: https://mapping.littlefreepantry.org/pantry/5272
-  external_ids:
-    lfp: '5272'
+  external_ids: {lfp: '5272'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/old-town-north-alexandria
   name: Old town north alexandria
   categories:
   - food-pantry
   place: '5101000'
-  geo:
-    lat: 38.81096
-    lng: -77.05271
+  geo: {lat: 38.81096, lng: -77.05271}
   website: https://mapping.littlefreepantry.org/pantry/6145
-  external_ids:
-    lfp: '6145'
+  external_ids: {lfp: '6145'}
   sources:
   - littlefreepantry/map
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
 - id: va/alexandria/parklawn-elementary
   name: Parklawn Elementary
   categories:
   - child-care
-  address:
-    street: 4116 Braddock Rd
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 4116 Braddock Rd, city: Alexandria, state: va, zip: '22312'}
   description: Head Start early childhood program — 16 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.83371
-    lng: -77.15335
+  geo: {lat: 38.83371, lng: -77.15335}
   phone: 703-914-6941
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/railton-residence
   name: Railton Residence
   categories:
   - transitional-housing
   - emergency-shelter
   description: Salvation Army transitional housing shelter
-  address:
-    street: 1804 Mount Vernon Ave
-    city: Alexandria
-    state: va
-    zip: '22301'
-  geo:
-    lat: 38.82294
-    lng: -77.05826
+  address: {street: 1804 Mount Vernon Ave, city: Alexandria, state: va, zip: '22301'}
+  geo: {lat: 38.82294, lng: -77.05826}
   place: '5101000'
   phone: 703-836-2427
   website: https://www.salvationarmyusa.org/va/alexandria/mount-vernon-ave-1/
@@ -1807,138 +1150,83 @@
   - Worship Services
   - Finacial Assistance
   - Homelessness
-  external_ids:
-    gdos: 8a8280ad86c0acb30187175df3f60011
+  external_ids: {gdos: 8a8280ad86c0acb30187175df3f60011}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/rising-hope-methodist-mission-church
   name: Rising Hope Methodist Mission Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 8220 Russell Road
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8220 Russell Road, city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.73404
-    lng: -77.1016
+  geo: {lat: 38.73404, lng: -77.1016}
   phone: 703-360-1976
-  external_ids:
-    dc-capital-area-food-bank: '6'
+  external_ids: {dc-capital-area-food-bank: '6'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/riverside-elem
   name: Riverside Elem
   categories:
   - meal-program
-  address:
-    street: 8410 Old Mount Vernon Rd
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8410 Old Mount Vernon Rd, city: Alexandria, state: va, zip: '22309'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.72949
-    lng: -77.09367
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0254
+  geo: {lat: 38.72949, lng: -77.09367}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0254}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/route-1-office
   name: Route 1 Office
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of Legal Services of Northern Virginia, Inc.
   org: va/legal-services-of-northern-virginia-inc
-  address:
-    street: 8305 Richmond Highway
-    street2: Suite 17B
-    city: Alexandria
-    state: va
-    zip: '22309'
-  geo:
-    lat: 38.73218
-    lng: -77.10055
+  address: {street: 8305 Richmond Highway, street2: Suite 17B, city: Alexandria, state: va, zip: '22309'}
+  geo: {lat: 38.73218, lng: -77.10055}
   place: '5101000'
-  external_ids:
-    lsc_office: '44700709'
+  external_ids: {lsc_office: '44700709'}
   sources:
   - lsc/office-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/royal-missionary-baptist-church
   name: Royal Missionary Baptist Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 8631 Engleside Office Park
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8631 Engleside Office Park, city: Alexandria, state: va, zip: '22309'}
   place: '5101000'
-  geo:
-    lat: 38.72342
-    lng: -77.11807
+  geo: {lat: 38.72342, lng: -77.11807}
   phone: 571-481-1896
-  external_ids:
-    dc-capital-area-food-bank: '81'
+  external_ids: {dc-capital-area-food-bank: '81'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/sandburg-middle
   name: Sandburg Middle
   categories:
   - meal-program
-  address:
-    street: 8428 Fort Hunt Rd
-    city: Alexandria
-    state: va
-    zip: '22308'
+  address: {street: 8428 Fort Hunt Rd, city: Alexandria, state: va, zip: '22308'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.72705
-    lng: -77.0582
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0267
+  geo: {lat: 38.72705, lng: -77.0582}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0267}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/sandstone-care-alexandria
   name: Sandstone Care Alexandria
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 5400 Shawnee Road
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 5400 Shawnee Road, city: Alexandria, state: va, zip: '22312'}
   place: '5101000'
-  geo:
-    lat: 38.80579
-    lng: -77.16765
+  geo: {lat: 38.80579, lng: -77.16765}
   phone: 571-556-7505
   website: https://www.sandstonecare.com/locations/alexandria-treatment-center/
   services:
@@ -1953,23 +1241,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/south-county-youth-services
   name: South County Youth Services
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 8350 Richmond Highway
-    city: Alexandria
-    state: va
-    zip: '22310'
+  address: {street: 8350 Richmond Highway, city: Alexandria, state: va, zip: '22310'}
   place: '5101000'
-  geo:
-    lat: 38.73144
-    lng: -77.10456
+  geo: {lat: 38.73144, lng: -77.10456}
   phone: 703-704-6707
   website: https://www.fairfaxcounty.gov/csb
   services:
@@ -1985,266 +1265,159 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/st-james
   name: St. James
   categories:
   - child-care
-  address:
-    street: 5140 Fillmore Ave
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5140 Fillmore Ave, city: Alexandria, state: va, zip: '22311'}
   description: Head Start early childhood program — 35 funded slots; operated by Alexandria City Office
     of Economic Opportunity.
   place: '5101000'
-  geo:
-    lat: 38.83852
-    lng: -77.11674
+  geo: {lat: 38.83852, lng: -77.11674}
   phone: 703-459-3545
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/st-john-s-community-service-center
   name: St. John's Community Service Center
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 4700 Eisenhower Ave
-    city: Alexandria
-    state: va
-    zip: '22304'
+  address: {street: 4700 Eisenhower Ave, city: Alexandria, state: va, zip: '22304'}
   place: '5101000'
-  geo:
-    lat: 38.80278
-    lng: -77.11564
-  external_ids:
-    dc-capital-area-food-bank: '302'
+  geo: {lat: 38.80278, lng: -77.11564}
+  external_ids: {dc-capital-area-food-bank: '302'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/the-campagna-center-early-head-start-tiny-titans
   name: The Campagna Center Early Head Start Tiny Titans
   categories:
   - child-care
-  address:
-    street: 3330 King St
-    city: Alexandria
-    state: va
-    zip: '22302'
+  address: {street: 3330 King St, city: Alexandria, state: va, zip: '22302'}
   description: Head Start early childhood program — 32 funded slots; operated by Campagna Center, Inc..
   place: '5101000'
-  geo:
-    lat: 38.82469
-    lng: -77.08448
+  geo: {lat: 38.82469, lng: -77.08448}
   phone: 703-549-0111
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/united-community-ministry
   name: United Community Ministry
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 7511 Fordson Road
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7511 Fordson Road, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.75378
-    lng: -77.08519
+  geo: {lat: 38.75378, lng: -77.08519}
   phone: 703-768-7106
-  external_ids:
-    dc-capital-area-food-bank: '159'
+  external_ids: {dc-capital-area-food-bank: '159'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/west-end-food-pantry
   name: West End Food Pantry
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 5150 Fillmore Ave
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5150 Fillmore Ave, city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
-  geo:
-    lat: 38.83871
-    lng: -77.11771
+  geo: {lat: 38.83871, lng: -77.11771}
   phone: 703-256-3889
-  external_ids:
-    dc-capital-area-food-bank: '99'
+  external_ids: {dc-capital-area-food-bank: '99'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/west-potomac-high
   name: West Potomac High
   categories:
   - meal-program
-  address:
-    street: 6500 Quander Rd
-    city: Alexandria
-    state: va
-    zip: '22307'
+  address: {street: 6500 Quander Rd, city: Alexandria, state: va, zip: '22307'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.77605
-    lng: -77.06967
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0286
+  geo: {lat: 38.77605, lng: -77.06967}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0286}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/weyanoke-elem
   name: Weyanoke Elem
   categories:
   - meal-program
-  address:
-    street: 6520 Braddock Rd
-    city: Alexandria
-    state: va
-    zip: '22312'
+  address: {street: 6520 Braddock Rd, city: Alexandria, state: va, zip: '22312'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.81929
-    lng: -77.16487
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0290
+  geo: {lat: 38.81929, lng: -77.16487}
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0290}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/william-ramsay-recreation-center
   name: William Ramsay Recreation Center
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 5650 Sanger Avenue
-    city: Alexandria
-    state: va
-    zip: '22311'
+  address: {street: 5650 Sanger Avenue, city: Alexandria, state: va, zip: '22311'}
   place: '5101000'
-  geo:
-    lat: 38.8272
-    lng: -77.13044
+  geo: {lat: 38.8272, lng: -77.13044}
   phone: 703-837-9300
-  external_ids:
-    dc-capital-area-food-bank: '130'
+  external_ids: {dc-capital-area-food-bank: '130'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/woodlawn-apartments
   name: Woodlawn Apartments
   categories:
   - meal-program
-  address:
-    street: 8488 Richmond Hwy
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8488 Richmond Hwy, city: Alexandria, state: va, zip: '22309'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Capital Area Food Bank.
   place: '5101000'
-  geo:
-    lat: 38.72833
-    lng: -77.11023
+  geo: {lat: 38.72833, lng: -77.11023}
   phone: (571) 482-4771
-  external_ids:
-    usda_master: Cycle 03_VA_SFSP_1196
+  external_ids: {usda_master: Cycle 03_VA_SFSP_1196}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/woodlawn-elem
   name: Woodlawn Elem
   categories:
   - meal-program
-  address:
-    street: 8505 Highland Ln
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8505 Highland Ln, city: Alexandria, state: va, zip: '22309'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.72584
-    lng: -77.1188
+  geo: {lat: 38.72584, lng: -77.1188}
   phone: (703) 619-4821
-  external_ids:
-    usda_master: Cycle 08_VA_SFSP_0307
+  external_ids: {usda_master: Cycle 08_VA_SFSP_0307}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/woodlawn-elementary
   name: Woodlawn Elementary
   categories:
   - child-care
-  address:
-    street: 8505 Highland Ln
-    city: Alexandria
-    state: va
-    zip: '22309'
+  address: {street: 8505 Highland Ln, city: Alexandria, state: va, zip: '22309'}
   description: Head Start early childhood program — 7 funded slots; operated by Fairfax County Public
     Schools.
   place: '5101000'
-  geo:
-    lat: 38.72637
-    lng: -77.11822
+  geo: {lat: 38.72637, lng: -77.11822}
   phone: 703-619-4800
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: va/alexandria/woodlawn-united-methodist-church
   name: Woodlawn United Methodist Church
   org: dc/capital-area-food-bank
   categories:
   - food-pantry
-  address:
-    street: 7730 Fordson Road
-    city: Alexandria
-    state: va
-    zip: '22306'
+  address: {street: 7730 Fordson Road, city: Alexandria, state: va, zip: '22306'}
   place: '5101000'
-  geo:
-    lat: 38.74694
-    lng: -77.08173
+  geo: {lat: 38.74694, lng: -77.08173}
   phone: 703-360-9450
-  external_ids:
-    dc-capital-area-food-bank: '1'
+  external_ids: {dc-capital-area-food-bank: '1'}
   sources:
   - foodbank/dc-capital-area-food-bank
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}

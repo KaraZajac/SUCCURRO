@@ -3,109 +3,63 @@
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 852 5th Ave
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 852 5th Ave, city: Troy, state: ny, zip: '12182'}
   place: '3675484'
-  geo:
-    lat: 42.78436
-    lng: -73.66858
+  geo: {lat: 42.78436, lng: -73.66858}
   phone: 518-912-4864
   hours:
-  - days:
-    - mon
-    - wed
-    open: '17:00'
-    close: '18:30'
-  - days:
-    - fri
-    open: '17:00'
-    close: '18:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '19660'
+  - {days: [mon, wed], open: '17:00', close: '18:30'}
+  - {days: [fri], open: '17:00', close: '18:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '19660'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/boys-girls-club-of-troy
   name: Boys & Girls Club Of Troy
   categories:
   - meal-program
-  address:
-    street: 1700 7Th Ave
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 1700 7Th Ave, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club Of
     The Capital Are.
   place: '3675484'
-  geo:
-    lat: 42.72912
-    lng: -73.68612
+  geo: {lat: 42.72912, lng: -73.68612}
   phone: (518) 462-5528
-  external_ids:
-    usda_master: Cycle 08_NY_SFSP_0642
+  external_ids: {usda_master: Cycle 08_NY_SFSP_0642}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/carroll-hill-school
   name: Carroll Hill School
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 112 Delaware Avenue
-    city: Troy
-    state: ny
-    zip: '12180'
-  geo:
-    lat: 42.71124
-    lng: -73.68144
+  address: {street: 112 Delaware Avenue, city: Troy, state: ny, zip: '12180'}
+  geo: {lat: 42.71124, lng: -73.68144}
   place: '3675484'
   website: https://www.bgccapitalarea.org/
-  external_ids:
-    bgca_site: '29568'
-    bgca_org: '10122'
+  external_ids: {bgca_site: '29568', bgca_org: '10122'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/community-resource-center
   name: Community Resource Center
   categories:
   - child-care
-  address:
-    street: 2328 5th Ave
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 2328 5th Ave, city: Troy, state: ny, zip: '12180'}
   description: Head Start early childhood program — 28 funded slots; operated by C.E.O. for the Greater
     Capital Region, Inc..
   place: '3675484'
-  geo:
-    lat: 42.73858
-    lng: -73.68505
+  geo: {lat: 42.73858, lng: -73.68505}
   phone: 518-272-6012
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/elizabeth-house-rri
   name: Elizabeth House RRi
   categories:
   - su-treatment
-  address:
-    street: 106-108 9th St
-    city: Troy
-    state: ny
-    zip: '12180'
+  - lgbtq-affirming
+  address: {street: 106-108 9th St, city: Troy, state: ny, zip: '12180'}
   place: '3675484'
   phone: 518-482-4673
   website: https://www.hopehouseinc.org
@@ -123,23 +77,16 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
   geo: {lat: 42.735, lng: -73.6819}
 - id: ny/troy/fusion-recovery-centers-llc-rri
   name: Fusion Recovery Centers LLC RRi
   categories:
   - su-treatment
-  address:
-    street: 820 River Street
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 820 River Street, city: Troy, state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.75035
-    lng: -73.68229
+  geo: {lat: 42.75035, lng: -73.68229}
   phone: 518-650-2966 x105
   website: https://fusionrecovery.com
   services:
@@ -151,62 +98,38 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/griswold-heights-2
   name: Griswold Heights (2)
   categories:
   - meal-program
-  address:
-    street: 350 Griswold Heights
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 350 Griswold Heights, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.71245
-    lng: -73.67527
+  geo: {lat: 42.71245, lng: -73.67527}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0212
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0212}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/hope-7-community-center
   name: Hope 7 Community Center
   categories:
   - meal-program
-  address:
-    street: 596 Pawling Ave
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 596 Pawling Ave, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.70491
-    lng: -73.65966
+  geo: {lat: 42.70491, lng: -73.65966}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0237
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0237}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/hope-house-inc-outpatient-clinic
   name: Hope House Inc Outpatient Clinic
   categories:
   - su-treatment
-  address:
-    street: 1724 5th Avenue
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 1724 5th Avenue, city: Troy, state: ny, zip: '12180'}
   place: '3675484'
   phone: 518-272-3918
   website: https://www.hopehouseinc.org
@@ -229,23 +152,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
   geo: {lat: 42.73009, lng: -73.68793}
 - id: ny/troy/hope-house-supportive-living-rri
   name: Hope House Supportive Living RRi
   categories:
   - su-treatment
-  address:
-    street: 559-565 6th Avenue
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 559-565 6th Avenue, city: Troy, state: ny, zip: '12182'}
   place: '3675484'
-  geo:
-    lat: 42.77341
-    lng: -73.67289
+  geo: {lat: 42.77341, lng: -73.67289}
   phone: 518-482-4673
   website: https://www.hopehouseinc.org/
   services:
@@ -256,66 +171,40 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/knickerbocker-park-playground
   name: Knickerbocker Park Playground
   categories:
   - meal-program
-  address:
-    street: 104Th St & 7Th Ave
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 104Th St & 7Th Ave, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.75979
-    lng: -73.67752
+  geo: {lat: 42.75979, lng: -73.67752}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0326
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0326}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/lansingburgh-boys-girls-club
   name: Lansingburgh Boys & Girls Club
   categories:
   - meal-program
-  address:
-    street: 501 4Th Ave
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 501 4Th Ave, city: Troy, state: ny, zip: '12182'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.77183
-    lng: -73.67595
+  geo: {lat: 42.77183, lng: -73.67595}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0333
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0333}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/lansingburgh-boys-girls-club-2
   name: Lansingburgh Boys & Girls Club
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 501 4TH AVE
-    city: Troy
-    state: ny
-    zip: '12182'
-  geo:
-    lat: 42.77194
-    lng: -73.67631
+  address: {street: 501 4TH AVE, city: Troy, state: ny, zip: '12182'}
+  geo: {lat: 42.77194, lng: -73.67631}
   place: '3675484'
   phone: 518-235-4143
   website: https://www.lansingburghboysandgirlsclub.com/
@@ -323,443 +212,254 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids:
-    bgca_site: '4749'
-    bgca_org: '10121'
+  external_ids: {bgca_site: '4749', bgca_org: '10121'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/lansingburgh-family-resource-center
   name: Lansingburgh Family Resource Center
   categories:
   - child-care
-  address:
-    street: 754 4th Ave
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 754 4th Ave, city: Troy, state: ny, zip: '12182'}
   description: Head Start early childhood program — 71 funded slots; operated by C.E.O. for the Greater
     Capital Region, Inc..
   place: '3675484'
-  geo:
-    lat: 42.78096
-    lng: -73.67137
+  geo: {lat: 42.78096, lng: -73.67137}
   phone: 518-235-9035
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/lansingburgh-senior-high-school
   name: Lansingburgh Senior High School
   categories:
   - meal-program
-  address:
-    street: 320 7Th Ave
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 320 7Th Ave, city: Troy, state: ny, zip: '12182'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lansingburgh CSD.
   place: '3675484'
-  geo:
-    lat: 42.7639
-    lng: -73.67555
+  geo: {lat: 42.7639, lng: -73.67555}
   phone: (518) 233-6829
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0334
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0334}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/martin-luther-king
   name: Martin Luther King
   categories:
   - meal-program
-  address:
-    street: 3 Eddy'S Ln
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 3 Eddy'S Ln, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.75113
-    lng: -73.67512
+  geo: {lat: 42.75113, lng: -73.67512}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0372
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0372}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/north-troy
   name: North Troy
   categories:
   - community-health-center
   cost: sliding-scale
-  address:
-    street: 849 2nd Ave
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 849 2nd Ave, city: Troy, state: ny, zip: '12182'}
   place: '3675484'
-  geo:
-    lat: 42.7849
-    lng: -73.67331
+  geo: {lat: 42.7849, lng: -73.67331}
   phone: 518-833-6900
-  external_ids:
-    bphc: BPS-H80-027720
+  external_ids: {bphc: BPS-H80-027720}
   sources:
   - hrsa/health-center-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/oakwood-food-pantry
   name: Oakwood Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 313 Tenth St.
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 313 Tenth St., city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.7398
-    lng: -73.67971
+  geo: {lat: 42.7398, lng: -73.67971}
   phone: 518-272-2434
   website: https://www.oakwoodcommunitycenter.org/food-pantry
   hours:
-  - days:
-    - sat
-    open: 09:00
-    close: '11:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '8115'
+  - {days: [sat], open: '09:00', close: '11:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '8115'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/react-inc-food-pantry
   name: REACT, Inc. Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 2100 6th Ave
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 2100 6th Ave, city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.73351
-    lng: -73.68698
+  geo: {lat: 42.73351, lng: -73.68698}
   phone: 518-272-8974
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 07:30
-    close: '10:30'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7879'
+  - {days: [mon, tue, wed, thu, fri], open: '07:30', close: '10:30'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7879'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/rensselaer-county-ceo-food-pantry
   name: Rensselaer County CEO Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 2328 5th Ave - call for an appointment
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 2328 5th Ave - call for an appointment, city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.73858
-    lng: -73.68505
+  geo: {lat: 42.73858, lng: -73.68505}
   website: https://www.ceoempowers.org/services/health-wellness/food-pantry/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 09:00
-    close: '16:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7887'
+  - {days: [mon, tue, wed, thu, fri], open: '09:00', close: '16:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7887'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/rensselaer-county-department-of-social-services
   name: Rensselaer County Department of Social Services
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Rensselaer County
-  address:
-    street: 547 River Street
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 547 River Street, city: Troy, state: ny, zip: '12180'}
   place: '3675484'
   phone: 518-266-7960
   email: Dfa4a38.sm.rcdss.heap@dfa.state.ny.us
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
   geo: {lat: 42.74083, lng: -73.68571}
 - id: ny/troy/rensselaer-park-elementary-school
   name: Rensselaer Park Elementary School
   categories:
   - meal-program
-  address:
-    street: 70 110Th St
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 70 110Th St, city: Troy, state: ny, zip: '12182'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lansingburgh CSD.
   place: '3675484'
-  geo:
-    lat: 42.76668
-    lng: -73.67248
+  geo: {lat: 42.76668, lng: -73.67248}
   phone: (518) 233-6829
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0677
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0677}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/salvation-army-troy-food-pantry
   name: Salvation Army – Troy Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 410 River St.
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 410 River St., city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.73551
-    lng: -73.68723
+  geo: {lat: 42.73551, lng: -73.68723}
   phone: 518-714-9500
   website: https://easternusa.salvationarmy.org/empire/troy/
   hours:
-  - days:
-    - tue
-    - thu
-    open: '10:00'
-    close: '13:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7959'
+  - {days: [tue, thu], open: '10:00', close: '13:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7959'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/salvation-army-troy-soup-kitchen
   name: Salvation Army – Troy Soup Kitchen
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - meal-program
-  address:
-    street: 410 River St.
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 410 River St., city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.73551
-    lng: -73.68723
+  geo: {lat: 42.73551, lng: -73.68723}
   phone: 518-272-4901
   website: https://easternusa.salvationarmy.org/empire/troy/
   hours:
-  - days:
-    - mon
-    - fri
-    open: '16:00'
-    close: '17:30'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7151'
+  - {days: [mon, fri], open: '16:00', close: '17:30'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7151'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/school-14
   name: School 14
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 1700 Tibbits Avenue
-    city: Troy
-    state: ny
-    zip: '12180'
-  geo:
-    lat: 42.72577
-    lng: -73.66888
+  address: {street: 1700 Tibbits Avenue, city: Troy, state: ny, zip: '12180'}
+  geo: {lat: 42.72577, lng: -73.66888}
   place: '3675484'
   website: https://www.bgccapitalarea.org/
-  external_ids:
-    bgca_site: '29567'
-    bgca_org: '10122'
+  external_ids: {bgca_site: '29567', bgca_org: '10122'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/school-2
   name: School 2
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 470 10th Street
-    city: Troy
-    state: ny
-    zip: '12180'
-  geo:
-    lat: 42.74508
-    lng: -73.67774
+  address: {street: 470 10th Street, city: Troy, state: ny, zip: '12180'}
+  geo: {lat: 42.74508, lng: -73.67774}
   place: '3675484'
   website: https://www.bgccapitalarea.org/
-  external_ids:
-    bgca_site: '29566'
-    bgca_org: '10122'
+  external_ids: {bgca_site: '29566', bgca_org: '10122'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/south-troy-pool
   name: South Troy Pool
   categories:
   - meal-program
-  address:
-    street: 1 S Troy Pool Lane
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 1 S Troy Pool Lane, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Boys & Girls Club Of
     The Capital Are.
   place: '3675484'
-  geo:
-    lat: 42.73209
-    lng: -73.66133
+  geo: {lat: 42.73209, lng: -73.66133}
   phone: (518) 462-5528
-  external_ids:
-    usda_master: Cycle 08_NY_SFSP_0987
+  external_ids: {usda_master: Cycle 08_NY_SFSP_0987}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/st-augustines-food-pantry
   name: St. Augustine’s Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 25 115th St.
-    city: Troy,
-    state: ny
-    zip: '12182'
+  address: {street: 25 115th St., city: 'Troy,', state: ny, zip: '12182'}
   place: '3675484'
-  geo:
-    lat: 42.77431
-    lng: -73.67442
+  geo: {lat: 42.77431, lng: -73.67442}
   phone: 518-235-3861
   hours:
-  - days:
-    - sat
-    open: 09:00
-    close: '10:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7999'
+  - {days: [sat], open: '09:00', close: '10:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7999'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/sunnyside-center
   name: Sunnyside Center
   categories:
   - meal-program
-  address:
-    street: 110 East Sunnyside Way
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 110 East Sunnyside Way, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.74732
-    lng: -73.67718
+  geo: {lat: 42.74732, lng: -73.67718}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0749
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0749}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/team-hero
   name: Team Hero
   categories:
   - meal-program
-  address:
-    street: 274 Second St Ste 101
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 274 Second St Ste 101, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.72102
-    lng: -73.69377
+  geo: {lat: 42.72102, lng: -73.69377}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0759
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0759}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/troy-boys-girls-club
   name: Troy Boys & Girls Club
   categories:
   - family-youth
   description: Boys & Girls Club
-  address:
-    street: 1700 7th Ave
-    city: Troy
-    state: ny
-    zip: '12180'
-  geo:
-    lat: 42.72928
-    lng: -73.68639
+  address: {street: 1700 7th Ave, city: Troy, state: ny, zip: '12180'}
+  geo: {lat: 42.72928, lng: -73.68639}
   place: '3675484'
   phone: 518-274-3781
   website: https://www.bgccapitalarea.org/
@@ -767,76 +467,48 @@
   - Teen center
   - Summer programs
   - Meals
-  external_ids:
-    bgca_site: '3333'
-    bgca_org: '10122'
+  external_ids: {bgca_site: '3333', bgca_org: '10122'}
   sources:
   - bgca/find-a-club
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/troy-housing-authority
   name: Troy Housing Authority
   categories:
   - housing-assistance
-  address:
-    street: 1 Eddys Ln
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 1 Eddys Ln, city: Troy, state: ny, zip: '12180'}
   description: Public housing and Housing Choice Voucher agency
   place: '3675484'
-  geo:
-    lat: 42.75073
-    lng: -73.67492
+  geo: {lat: 42.75073, lng: -73.67492}
   phone: 518-273-3600
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/troy-school-12
   name: Troy School 12
   categories:
   - child-care
-  address:
-    street: 475 1st St
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 475 1st St, city: Troy, state: ny, zip: '12180'}
   description: Head Start early childhood program — 104 funded slots; operated by C.E.O. for the Greater
     Capital Region, Inc..
   place: '3675484'
-  geo:
-    lat: 42.71231
-    lng: -73.69746
+  geo: {lat: 42.71231, lng: -73.69746}
   phone: 518-271-5420
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/troy-school-2
   name: Troy School 2
   categories:
   - child-care
-  address:
-    street: 470 10th St
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 470 10th St, city: Troy, state: ny, zip: '12180'}
   description: Head Start early childhood program — 36 funded slots; operated by C.E.O. for the Greater
     Capital Region, Inc..
   place: '3675484'
-  geo:
-    lat: 42.74522
-    lng: -73.67793
+  geo: {lat: 42.74522, lng: -73.67793}
   phone: 518-271-5410
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/troy-temple-corps
   name: Troy Temple Corps
   categories:
@@ -845,14 +517,8 @@
   - seniors
   - family-youth
   description: Salvation Army community center
-  address:
-    street: 410 River Street
-    city: Troy
-    state: ny
-    zip: '12180'
-  geo:
-    lat: 42.73553
-    lng: -73.68707
+  address: {street: 410 River Street, city: Troy, state: ny, zip: '12180'}
+  geo: {lat: 42.73553, lng: -73.68707}
   place: '3675484'
   phone: 518-272-4901
   website: https://www.salvationarmyusa.org/ny/troy/river-street-corps/
@@ -868,140 +534,78 @@
   - Adult Program Services
   - Donation Dropoff
   - Youth Services
-  external_ids:
-    gdos: 402818763d5b8722013d5b93fb490366
+  external_ids: {gdos: 402818763d5b8722013d5b93fb490366}
   sources:
   - salvationarmy/location-finder
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/turnpike-elementary-school
   name: Turnpike Elementary School
   categories:
   - meal-program
-  address:
-    street: 55 New Turnpike Rd
-    city: Troy
-    state: ny
-    zip: '12182'
+  address: {street: 55 New Turnpike Rd, city: Troy, state: ny, zip: '12182'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Lansingburgh CSD.
   place: '3675484'
-  geo:
-    lat: 42.78985
-    lng: -73.66614
+  geo: {lat: 42.78985, lng: -73.66614}
   phone: (518) 233-6829
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0782
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0782}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/unity-house
   name: Unity House
   categories:
   - meal-program
-  address:
-    street: 79 102Nd St
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 79 102Nd St, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.75593
-    lng: -73.67608
+  geo: {lat: 42.75593, lng: -73.67608}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0787
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0787}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/unity-house-community-meal
   name: Unity House Community Meal
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 2431 6th Ave.
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 2431 6th Ave., city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.73765
-    lng: -73.6841
+  geo: {lat: 42.73765, lng: -73.6841}
   phone: 518-274-2607
   website: https://www.unityhouseny.org/services/community-resources/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: '12:00'
-    close: '13:00'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '7025'
+  - {days: [mon, tue, wed, thu, fri], open: '12:00', close: '13:00'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '7025'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/unity-house-food-pantry
   name: Unity House Food Pantry
   org: ny/regional-food-bank-of-northeastern-new-york
   categories:
   - food-pantry
-  address:
-    street: 2431 6th Ave.
-    city: Troy,
-    state: ny
-    zip: '12180'
+  address: {street: 2431 6th Ave., city: 'Troy,', state: ny, zip: '12180'}
   place: '3675484'
-  geo:
-    lat: 42.74022
-    lng: -73.68354
+  geo: {lat: 42.74022, lng: -73.68354}
   phone: 518-274-2607
   website: https://www.unityhouseny.org/services/community-resources/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:30
-    close: '16:30'
-  external_ids:
-    ny-regional-food-bank-of-northeastern-new-york: '8169'
+  - {days: [mon, tue, wed, thu, fri], open: '08:30', close: '16:30'}
+  external_ids: {ny-regional-food-bank-of-northeastern-new-york: '8169'}
   sources:
   - foodbank/ny-regional-food-bank-of-northeastern-new-york
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/troy/ymca-troy
   name: Ymca Troy
   categories:
   - meal-program
-  address:
-    street: 2500 21St St
-    city: Troy
-    state: ny
-    zip: '12180'
+  address: {street: 2500 21St St, city: Troy, state: ny, zip: '12180'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by Troy City SD.
   place: '3675484'
-  geo:
-    lat: 42.74197
-    lng: -73.66888
+  geo: {lat: 42.74197, lng: -73.66888}
   phone: (518) 328-5490
-  external_ids:
-    usda_master: Cycle 05_NY_SFSP_0845
+  external_ids: {usda_master: Cycle 05_NY_SFSP_0845}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}

@@ -2,14 +2,9 @@
   name: La Jolla Healing Center
   categories:
   - su-treatment
-  address:
-    street: 7590 Fay Avenue
-    city: La Jolla
-    state: ca
-    zip: '92037'
-  geo:
-    lat: 32.84179
-    lng: -117.27461
+  - lgbtq-affirming
+  address: {street: 7590 Fay Avenue, city: La Jolla, state: ca, zip: '92037'}
+  geo: {lat: 32.84179, lng: -117.27461}
   phone: 858-454-4357
   website: https://
   services:
@@ -34,23 +29,17 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
   place: '0666000'
 - id: ca/la-jolla/la-jolla-recovery-outpatient
   name: La Jolla Recovery Outpatient
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 7632 Herschel Avenue
-    city: La Jolla
-    state: ca
-    zip: '92037'
-  geo:
-    lat: 32.84346
-    lng: -117.27243
+  - lgbtq-affirming
+  address: {street: 7632 Herschel Avenue, city: La Jolla, state: ca, zip: '92037'}
+  geo: {lat: 32.84346, lng: -117.27243}
   phone: 858-877-3422
   website: https://www.lajollarecovery.com
   services:
@@ -68,22 +57,15 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
   place: '0666000'
 - id: ca/la-jolla/practical-recovery-psychology-group
   name: Practical Recovery Psychology Group
   categories:
   - su-treatment
-  address:
-    street: 8950 Villa La Jolla Drive
-    city: La Jolla
-    state: ca
-    zip: '92037'
-  geo:
-    lat: 32.87116
-    lng: -117.23557
+  address: {street: 8950 Villa La Jolla Drive, city: La Jolla, state: ca, zip: '92037'}
+  geo: {lat: 32.87116, lng: -117.23557}
   phone: 858-546-1100
   website: https://www.practicalrecovery.com
   services:
@@ -96,9 +78,7 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
   place: 0618506
 - id: ca/la-jolla/ucsd-student-run-free-clinic-project
   name: UCSD Student-Run Free Clinic Project
@@ -106,14 +86,8 @@
   - free-clinic
   - health
   description: NAFC member clinic
-  address:
-    street: 9500 Gilman Dr, Dept 0696
-    city: La Jolla
-    state: ca
-    zip: '92093'
-  geo:
-    lat: 32.87997
-    lng: -117.23708
+  address: {street: '9500 Gilman Dr, Dept 0696', city: La Jolla, state: ca, zip: '92093'}
+  geo: {lat: 32.87997, lng: -117.23708}
   place: 0618506
   phone: 858-534-6160
   website: https://medschool.ucsd.edu/som/fmph/education/freeclinic/Pages/default.aspx
@@ -141,10 +115,7 @@
   - Acupuncture
   - Surgery
   cost: free
-  external_ids:
-    nafc: ucsd-student-run-free-clinic-project
+  external_ids: {nafc: ucsd-student-run-free-clinic-project}
   sources:
   - nafc/find-a-clinic
-  verified:
-    'on': '2026-07-21'
-    method: scrape
+  verified: {'on': '2026-07-21', method: scrape}

@@ -120,6 +120,9 @@ Counts for in-use entries are from the 2026-07-20 build (`data/meta.yaml`:
     results in practice; a single national radius query (limitType=2, 6,000 km
     from the CONUS centroid, pageSize=2000) returns the full set. VA-run
     facilities that duplicate #46 are dropped by `pipeline/reconcile.py`.
+    **Gap:** the export carries 23 special-population codes and none for LGBTQ+
+    clients — `sCodes=GL` is rejected by the API as invalid — so the locator
+    alone cannot answer "LGBTQ+-affirming treatment near me". Filled by #74.
 14. **HRSA Data Warehouse** — **in-use** (`pipeline/hrsa.py`, 17,574 sites).
     Daily-refreshed CSV of every FQHC/look-alike service delivery site at a
     stable DD_Files URL. Ryan White HIV care orgs and shortage-area files
@@ -489,7 +492,22 @@ addresses, even where published).
 
 72. **211 / United Way** — **rejected for bulk, manual gap-fill only** (ToS; no
     bulk export). Cite as secondary where used.
-73. **findhelp.org (Aunt Bertha)** — **rejected**: proprietary, ToS forbids
+74. **SAMHSA N-SUMHSS National Directories** — **in-use**
+    (`pipeline/nsumhss.py`, enrichment: 4,846 sites flagged). The annual
+    N-SUMHSS survey asks whether a facility runs a program or group
+    specifically tailored for LGBT clients (category `SG`, code `GL`) and
+    publishes facility-level answers as XLSX — the one federal source for the
+    flag #13 dropped. Parsed with stdlib `zipfile`+`ElementTree`; xlsx is a zip
+    of XML, so no new dependency. Runs as a post-pass after `findtreatment`,
+    which rewrites those records on every pull. Matching is exact on
+    normalized name or street plus city and state: ~69% of the 7,709 flagged
+    directory rows match a locator record, and the flag is documented as a
+    lower bound rather than fuzzy-matched upward, because a false positive
+    sends someone to a facility expecting affirming care that was never
+    claimed. No records are created from the 2024 survey — a row absent from
+    the current locator may be a closed facility. Public domain. Gap reported
+    by Randy Palmer (docs/acknowledgements.md).
+75. **findhelp.org (Aunt Bertha)** — **rejected**: proprietary, ToS forbids
     scraping.
 
 ## Build status (2026-07-20) and remaining order

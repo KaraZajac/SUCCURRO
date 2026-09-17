@@ -29,6 +29,11 @@ jobs:
             echo "== $mod"
             python3 -m pipeline.$mod --force || echo "::warning::$mod failed"
           done
+          # Not warn-and-continue like the modules above: findtreatment has already
+          # rewritten its records by this point, so a silent failure here drops the
+          # LGBTQ+-affirming flag from every one of them and nothing downstream
+          # would notice. Fail the step instead and commit nothing.
+          python3 -m pipeline.nsumhss --force
           python3 -m pipeline.reconcile
           python3 -m pipeline.enrich
           python3 -m pipeline.meta

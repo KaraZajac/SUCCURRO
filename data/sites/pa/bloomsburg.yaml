@@ -2,87 +2,52 @@
   name: Bloomsburg Children's Center
   categories:
   - child-care
-  address:
-    street: 215 E 5th St
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 215 E 5th St, city: Bloomsburg, state: pa, zip: '17815'}
   description: Head Start early childhood program — 17 funded slots; operated by COLUMBIA DAY CARE PROGRAM,
     INC.
   place: '4207128'
-  geo:
-    lat: 41.00157
-    lng: -76.45083
+  geo: {lat: 41.00157, lng: -76.45083}
   phone: 570-784-8618
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/columbia-county-assistance-office
   name: Columbia County Assistance Office
   categories:
   - utility-assistance
   description: LIHEAP intake office serving Columbia County
-  address:
-    street: 27 East Seventh Street (P. O. Box 628)
-    city: Bloomsburg
-    state: pa
-    zip: 17815-0628
+  address: {street: 27 East Seventh Street (P. O. Box 628), city: Bloomsburg, state: pa, zip: 17815-0628}
   place: '4207128'
   phone: 570-387-4232
   sources:
   - acf/liheap-clearinghouse
-  verified:
-    'on': '2026-09-05'
-    method: scrape
+  verified: {'on': '2026-09-05', method: scrape}
   geo: {lat: 40.99834, lng: -76.45213}
 - id: pa/bloomsburg/columbia-county-housing-authority
   name: Columbia County Housing Authority
   categories:
   - housing-assistance
-  address:
-    street: 160 W 6th St Ste 101
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 160 W 6th St Ste 101, city: Bloomsburg, state: pa, zip: '17815'}
   description: Public housing and Housing Choice Voucher agency
   place: '4207128'
-  geo:
-    lat: 40.99746
-    lng: -76.45531
+  geo: {lat: 40.99746, lng: -76.45531}
   phone: 570-394-4633
   sources:
   - hud/resource-locator
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/columbia-county-va-clinic
   name: Columbia County VA Clinic
   categories:
   - va-facility
   - health
   description: Other Outpatient Services (OOS)
-  address:
-    street: 225 Columbia Mall Drive, Columbia County Mall
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: '225 Columbia Mall Drive, Columbia County Mall', city: Bloomsburg, state: pa, zip: '17815'}
   place: '4207128'
-  geo:
-    lat: 41.01592
-    lng: -76.48631
+  geo: {lat: 41.01592, lng: -76.48631}
   phone: 570-316-4116
   website: https://www.va.gov/wilkes-barre-health-care/locations/columbia-county-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - COVID-19 vaccines
   - Laboratory and pathology
@@ -95,27 +60,18 @@
   - Telehealth
   - Toxic exposure screening
   - Women Veteran care
-  external_ids:
-    va: vha_693GF
+  external_ids: {va: vha_693GF}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/crossroads-counseling-bloomsburg-office
   name: Crossroads Counseling Bloomsburg Office
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 140 Market Street
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 140 Market Street, city: Bloomsburg, state: pa, zip: '17815'}
   place: '4207128'
-  geo:
-    lat: 41.00311
-    lng: -76.45877
+  geo: {lat: 41.00311, lng: -76.45877}
   phone: 570-389-1249
   website: https://www.crossroadscounselinginc.com
   services:
@@ -129,23 +85,16 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/genesis-house-inc
   name: Genesis House Inc
   categories:
   - su-treatment
   - mh-treatment
-  address:
-    street: 823 Central Road
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  - lgbtq-affirming
+  address: {street: 823 Central Road, city: Bloomsburg, state: pa, zip: '17815'}
   place: '4207128'
-  geo:
-    lat: 41.02333
-    lng: -76.42177
+  geo: {lat: 41.02333, lng: -76.42177}
   phone: 570-322-0520
   website: https://genesishouseoutpatient.com
   services:
@@ -170,96 +119,59 @@
   cost: varies
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/memorial-el-sch
   name: Memorial El Sch
   categories:
   - meal-program
-  address:
-    street: 500 Market Street
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 500 Market Street, city: Bloomsburg, state: pa, zip: '17815'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by BLOOMSBURG AREA SCHOOL
     DISTRICT.
   place: '4207128'
-  geo:
-    lat: 40.99876
-    lng: -76.45506
+  geo: {lat: 40.99876, lng: -76.45506}
   phone: (570) 784-5000
-  external_ids:
-    usda_master: Cycle 01_PA_SSO_0142
+  external_ids: {usda_master: Cycle 01_PA_SSO_0142}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/norris-e-rock-memorial-swimming-pool
   name: Norris E Rock Memorial Swimming Pool
   categories:
   - meal-program
-  address:
-    street: 1360 Catherine Street
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 1360 Catherine Street, city: Bloomsburg, state: pa, zip: '17815'}
   description: Free summer meals for kids and teens (2026 season) — sponsored by BLOOMSBURG AREA SCHOOL
     DISTRICT.
   place: '4207128'
-  geo:
-    lat: 40.99317
-    lng: -76.44455
+  geo: {lat: 40.99317, lng: -76.44455}
   phone: (570) 784-5000
-  external_ids:
-    usda_master: Cycle 01_PA_SSO_0164
+  external_ids: {usda_master: Cycle 01_PA_SSO_0164}
   sources:
   - usda/summer-meal-sites
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/north-penn-legal-services-08
   name: North Penn Legal Services 08
   categories:
   - legal-aid
   description: LSC-funded legal aid branch office of North Penn Legal Services, Inc.
   org: pa/north-penn-legal-services-inc
-  address:
-    street: 168 E. Fifth St.
-    street2: '0'
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
-  geo:
-    lat: 41.00077
-    lng: -76.45103
+  address: {street: 168 E. Fifth St., street2: '0', city: Bloomsburg, state: pa, zip: '17815'}
+  geo: {lat: 41.00077, lng: -76.45103}
   place: '4207128'
-  external_ids:
-    lsc_office: '33907008'
+  external_ids: {lsc_office: '33907008'}
   sources:
   - lsc/office-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: pa/bloomsburg/town-park-village
   name: Town Park Village
   categories:
   - child-care
-  address:
-    street: 1310 Ferry Rd
-    city: Bloomsburg
-    state: pa
-    zip: '17815'
+  address: {street: 1310 Ferry Rd, city: Bloomsburg, state: pa, zip: '17815'}
   description: Head Start early childhood program — 25 funded slots; operated by COLUMBIA DAY CARE PROGRAM,
     INC.
   place: '4207128'
-  geo:
-    lat: 40.99529
-    lng: -76.44202
+  geo: {lat: 40.99529, lng: -76.44202}
   phone: 570-784-0390
   sources:
   - acf/head-start-locations
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}

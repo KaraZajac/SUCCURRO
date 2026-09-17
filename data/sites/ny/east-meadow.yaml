@@ -3,74 +3,44 @@
   org: ny/long-island-cares-inc
   categories:
   - food-pantry
-  address:
-    street: 24 Newbridge Road
-    city: East Meadow
-    state: ny
-    zip: '11554'
+  address: {street: 24 Newbridge Road, city: East Meadow, state: ny, zip: '11554'}
   place: '3622502'
-  geo:
-    lat: 40.72385
-    lng: -73.54493
-  external_ids:
-    ny-long-island-cares-inc: '1418'
+  geo: {lat: 40.72385, lng: -73.54493}
+  external_ids: {ny-long-island-cares-inc: '1418'}
   sources:
   - foodbank/ny-long-island-cares-inc
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/east-meadow/east-meadow-va-clinic
   name: East Meadow VA Clinic
   categories:
   - va-facility
   - health
   description: Multi-Specialty CBOC
-  address:
-    street: 2201 Hempstead Turnpike
-    city: East Meadow
-    state: ny
-    zip: '11554'
+  address: {street: 2201 Hempstead Turnpike, city: East Meadow, state: ny, zip: '11554'}
   place: '3622502'
-  geo:
-    lat: 40.72641
-    lng: -73.55334
+  geo: {lat: 40.72641, lng: -73.55334}
   phone: 631-754-7978
   website: https://www.va.gov/northport-health-care/locations/east-meadow-va-clinic/
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 08:00
-    close: '16:30'
+  - {days: [mon, tue, wed, thu, fri], open: '08:00', close: '16:30'}
   services:
   - Mental health care
   - Nutrition, food, and dietary care
   - Podiatry
   - Primary care
   - Women Veteran care
-  external_ids:
-    va: vha_632GA
+  external_ids: {va: vha_632GA}
   sources:
   - va/facilities-api
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/east-meadow/epic-long-island-inc-outpatient-mental-health
   name: EPIC Long Island Inc Outpatient Mental Health
   categories:
   - mh-treatment
-  address:
-    street: 1500 Hempstead Turnpike
-    city: East Meadow
-    state: ny
-    zip: '11554'
+  - lgbtq-affirming
+  address: {street: 1500 Hempstead Turnpike, city: East Meadow, state: ny, zip: '11554'}
   place: '3622502'
-  geo:
-    lat: 40.72204
-    lng: -73.57883
+  geo: {lat: 40.72204, lng: -73.57883}
   phone: 516-739-7733 x1618
   website: https://www.epicli.org
   services:
@@ -84,58 +54,32 @@
   cost: sliding-scale
   sources:
   - samhsa/findtreatment
-  verified:
-    'on': '2026-09-05'
-    method: api
+  - samhsa/nsumhss-directory
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/east-meadow/st-raphael-pantry
   name: St. Raphael Pantry
   org: ny/long-island-cares-inc
   categories:
   - food-pantry
-  address:
-    street: 600 Newbridge Road
-    city: East Meadow
-    state: ny
-    zip: '11554'
+  address: {street: 600 Newbridge Road, city: East Meadow, state: ny, zip: '11554'}
   place: '3622502'
-  geo:
-    lat: 40.70741
-    lng: -73.54511
-  external_ids:
-    ny-long-island-cares-inc: '1234576'
+  geo: {lat: 40.70741, lng: -73.54511}
+  external_ids: {ny-long-island-cares-inc: '1234576'}
   sources:
   - foodbank/ny-long-island-cares-inc
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}
 - id: ny/east-meadow/vet-mart
   name: Vet Mart
   org: ny/island-harvest
   categories:
   - food-pantry
-  address:
-    street: 2201 Hempstead Turnpike
-    city: East Meadow
-    state: ny
-    zip: '11554'
+  address: {street: 2201 Hempstead Turnpike, city: East Meadow, state: ny, zip: '11554'}
   place: '3622502'
-  geo:
-    lat: 40.72615
-    lng: -73.55427
+  geo: {lat: 40.72615, lng: -73.55427}
   phone: 516-572-6565
   hours:
-  - days:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    open: 09:00
-    close: '12:00'
-  external_ids:
-    ny-island-harvest: '9109167'
+  - {days: [mon, tue, wed, thu, fri], open: '09:00', close: '12:00'}
+  external_ids: {ny-island-harvest: '9109167'}
   sources:
   - foodbank/ny-island-harvest
-  verified:
-    'on': '2026-09-05'
-    method: api
+  verified: {'on': '2026-09-05', method: api}

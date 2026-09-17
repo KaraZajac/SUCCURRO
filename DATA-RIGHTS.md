@@ -29,6 +29,7 @@ copyrightable) plus URL, archive URL, and retrieval date for every claim.
 | ProPublica Nonprofit Explorer | Attribution + link required; no paywalling | Enrichment only, attributed |
 | 211/United Way, findhelp.org | ToS restrict bulk use | **Not bulk-collected.** Manual gap-fill/verification only, cited as secondary |
 | domesticshelters.org, OutCare, In The Rooms, Vivery/AccessFood, FoodPantries.org, NFCC, GriefShare, American Cancer Society | ToS prohibit scraping/reuse (verified) | **Not ingested.** Link-out only; Vivery/AmpleHarvest/IAN via partnership ask |
+| drugrehabus.org and paid-referral treatment directories | Site discloses it "receives advertising payments from the treatment centers that respond to calls made to the toll-free numbers listed on this website"; "any treatment center receiving calls from the site is a paid advertiser" (verified 2026-09-16) | **Not ingested, not linked.** A paid-placement hotline in front of someone seeking treatment is a referral we are not in a position to vouch for. The underlying facts come from SAMHSA directly (#13, #74) |
 | Al-Anon WSO, Immigration Advocates Network | Asked 2026-07-19; no restrictive ToS exists (verified) | No reply by 2026-08-09 → facts-only ingestion, attributed, takedown honored |
 | AmpleHarvest | ToS §3 requires prior written consent for redistribution (verified) | **Ingest only on an affirmative yes** |
 | ThroughLine, NSPN | No public bulk; partnership-friendly orgs | Contact first — do not scrape |
